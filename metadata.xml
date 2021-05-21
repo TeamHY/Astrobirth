@@ -1,8 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-	<name>Redrawn_Hard</name>
-	<directory>redrawn_hard</directory>
-	<description/>
-	<version>1.0</version>
-	<visibility/>
-</metadata>
+    <name>Redrawn_Hard</name>
+    <directory>redrawn_hard</directory>
+    <id>2492350811</id>
+    <description>
+한국어 설명은 하단에 있습니다!
 
+[h1]Please Note This.[/h1]
+This mod was implemented for the personal streaming.
+Therefore, It may be inappropriate for general runs.
+Also, we cannot guarantee the compatibility with other mods.
+
+[h1]Introduction[/h1]
+Redrawn Mod was developed for TBoI: Time Attack Race, which is one of the contents that [url=https://www.youtube.com/user/afreecaBJHY/]HY[/url] creates.
+Since redrawn mod is currently a beta version, there's nothing lot to write down...
+I'd add things later :sweat_smile:
+
+[h1]Mods that recommended[/h1]
+We highly recommend that use Kor version of External item descriptions
+https://steamcommunity.com/sharedfiles/filedetails/?id=1630138997
+More mods gonna be added here...I hope
+
+참고해주세요.
+
+이 모드는 개인 방송을 위해 개발되었습니다.
+그러므로, 일반적인 게임 플레이에는 부적절할 수 있습니다.
+또한, 다른 모드들과의 호환성은 보장되지 않습니다.
+
+소개
+Redrawn 모드는헌영님의 컨텐츠인 아이작 타임어택 대결을 위해 개발되었습니다.
+Redrawn 모드가 현재 베타 버전이기 때문에, 적을 게 별로 없네요...
+나중에 더 추가하도록 하겠습니다 😅
+
+추천 모드들
+한국어 아이템 설명 모드를 같이 사용하시는걸 강하게 추천드립니다.
+https://steamcommunity.com/sharedfiles/filedetails/?id=1630138997
+다른 모드들도 곧 추가될겁니다!... 아마도요..
+
+[h1]Contact[/h1]
+[url=https://www.twitch.tv/iwt2hw]Twitch Account of HY[/url]
+[url=https://www.youtube.com/user/afreecaBJHY/]Youtube Account of HY[/url]
+</description>
+    <version>1.2</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Items"/>
+    <tag id="Active Items"/>
+    <tag id="Trinkets"/>
+    <tag id="Pills"/>
+    <tag id="Cards"/>
+    <tag id="Pickups"/>
+    <tag id="Rooms"/>
+    <tag id="Floors"/>
+    <tag id="Graphics"/>
+</metadata>
