@@ -804,196 +804,131 @@
 		<Item Id="729" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="shop">
-		<!--The Compass-->
-		<Item Id="21" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--The Bible-->
-		<Item Id="33" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Treasure Map-->
-		<Item Id="54" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--The Ladder-->
-		<Item Id="60" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--The Battery-->
-		<Item Id="63" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Steam Sale-->
-		<Item Id="64" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--PHD-->
-		<Item Id="75" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Deck of Cards-->
-		<Item Id="85" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mom's Bottle of Pills-->
-		<Item Id="102" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--9 Volt-->
-		<Item Id="116" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Remote Detonator-->
-		<Item Id="137" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mom's Purse-->
-		<Item Id="139" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Notched Axe-->
-		<Item Id="147" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Habit-->
-		<Item Id="156" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--The Candle-->
-		<Item Id="164" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Portable Slot-->
-		<Item Id="177" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mom's Coin Purse-->
-		<Item Id="195" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mom's Key-->
-		<Item Id="199" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Humbleing Bundle-->
-		<Item Id="203" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Fanny Pack-->
-		<Item Id="204" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Sharp Plug-->
-		<Item Id="205" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Champion Belt-->
-		<Item Id="208" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Piggy Bank-->
-		<Item Id="227" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Stop Watch-->
-		<Item Id="232" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Blue Map-->
-		<Item Id="246" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--BFFS!-->
-		<Item Id="247" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Hive Mind-->
-		<Item Id="248" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--There's Options-->
-		<Item Id="249" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--BOGO Bombs-->
-		<Item Id="250" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Starter Deck-->
-		<Item Id="251" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Little Baggy-->
-		<Item Id="252" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Black Candle-->
-		<Item Id="260" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Blank Card-->
-		<Item Id="286" Weight="0.2" DecreaseBy="0.2" RemoveOn="0.02"/>
-		<!--Red Candle-->
-		<Item Id="289" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--The Jar-->
-		<Item Id="290" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Magic Fingers-->
-		<Item Id="295" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Converter-->
-		<Item Id="296" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Pandora's Box-->
-		<Item Id="297" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Broken Watch-->
-		<Item Id="337" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--The Boomerang-->
-		<Item Id="338" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Diplopia-->
-		<Item Id="347" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Placebo-->
-		<Item Id="348" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Wooden Nickel-->
-		<Item Id="349" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Car Battery-->
-		<Item Id="356" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Box of Friends-->
-		<Item Id="357" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Charged Baby-->
-		<Item Id="372" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Restock-->
-		<Item Id="376" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Pay To Play-->
-		<Item Id="380" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Tear Detonator-->
-		<Item Id="383" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Ventricle Razor-->
-		<Item Id="396" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Chaos-->
-		<Item Id="402" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
-		<!--Spider Mod-->
-		<Item Id="403" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--More Options-->
-		<Item Id="414" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Deep Pockets-->
-		<Item Id="416" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Glowing Hour Glass-->
-		<Item Id="422" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Sack Head-->
-		<Item Id="424" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
-		<!--Night Light-->
-		<Item Id="425" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Jar of Flies-->
-		<Item Id="434" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mom's Box-->
-		<Item Id="439" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Tarot Cloth-->
-		<Item Id="451" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--King Baby-->
-		<Item Id="472" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Plan C-->
-		<Item Id="475" Weight="0.2" DecreaseBy="0.2" RemoveOn="0.02"/>
-		<!--Smelter-->
-		<Item Id="479" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Compost-->
-		<Item Id="480" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mama Mega!-->
-		<Item Id="483" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
-		<!--Crooked Penny-->
-		<Item Id="485" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
-		<!--Dull Razor-->
-		<Item Id="486" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Potato Peeler-->
-		<Item Id="487" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Poke Go-->
-		<Item Id="505" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Broken Modem-->
-		<Item Id="514" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mystery Gift-->
-		<Item Id="515" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Buddy in a Box-->
-		<Item Id="518" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Jumper Cables-->
-		<Item Id="520" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Coupon-->
-		<Item Id="521" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Moving Box-->
-		<Item Id="523" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mr. ME!-->
-		<Item Id="527" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Schoolbag-->
-		<Item Id="534" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Blanket-->
-		<Item Id="535" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Dream Catcher-->
-		<Item Id="566" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Alabaster Box-->
-		<Item Id="585" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Voodoo Head-->
-		<Item Id="599" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Member Card-->
-		<Item Id="602" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Battery Pack-->
-		<Item Id="603" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mom's Bracelet-->
-		<Item Id="604" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Birthright-->
-		<Item Id="619" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Red Stew-->
-		<Item Id="621" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Sharp Key-->
-		<Item Id="623" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Booster Pack-->
-		<Item Id="624" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Eraser-->
-		<Item Id="638" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Magic Skin-->
-		<Item Id="642" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
-		<!--4.5 Volt-->
-		<Item Id="647" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Card Reading-->
-		<Item Id="660" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
-		<!--Options?-->
-		<Item Id="670" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Keeper's Sack-->
-		<Item Id="716" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Keeper's Box-->
-		<Item Id="719" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
+
+		<Item Id="3" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="13" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="19" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="21" Weight="0.2" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="27" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="28" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="44" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="46" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="63" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="64" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="72" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="73" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="75" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="76" Weight="0.5" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="78" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="85" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="91" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="94" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="115" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="116" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="127" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="139" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="147" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="156" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="161" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="164" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="192" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="195" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="199" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="215" Weight="0.2" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="232" Weight="0.2" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="241" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="242" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="260" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="271" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="278" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="279" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="281" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="287" Weight="0.75" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="289" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="291" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="292" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="297" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="324" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="347" Weight="0.2" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="356" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="375" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="376" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="381" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="389" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="396" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="416" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="419" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="422" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="423" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="425" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="434" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="439" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="445" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="451" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="454" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="455" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="458" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="476" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="478" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="479" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="485" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="490" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="492" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="500" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="515" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="520" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="521" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="527" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="534" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="535" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="538" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="555" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="557" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="562" Weight="0.2" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="566" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="571" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="577" Weight="0.2" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="580" Weight="0.35" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="586" Weight="0.2" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="589" Weight="0.2" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="599" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="602" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="609" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="619" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="622" Weight="0.2" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="624" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="628" Weight="0.1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="636" Weight="0.1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="638" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="642" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="647" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="654" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="660" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="661" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="670" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="672" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="673" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="682" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="683" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="689" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="701" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="716" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="717" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+		<Item Id="723" Weight="1" DecreaseBy="0" RemoveOn="0"/>
+
+
+
+
+
+
+		
+
+
+		
+
+		
+
+
 	</Pool>
 	<Pool Name="boss">
 		<!--Roid Rage-->

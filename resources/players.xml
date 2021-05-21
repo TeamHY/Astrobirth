@@ -5,7 +5,7 @@
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_Isaac.png" skinColor="-1"
 		  birthright="More options" />
-	<player id="1" items="414" name="Magdalene" skin="Character_002_Magdalene.png" costume="7" hp="8" items="45" achievement="1"
+	<player id="1" items="414,498,499" name="Magdalene" skin="Character_002_Magdalene.png" costume="7" hp="8" items="45" achievement="1"
           nameimage="PlayerName_02_Magdalene.png"
           portrait="PlayerPortrait_Magdalene.png" skinColor="-1"
 		  birthright="???" />
@@ -17,7 +17,7 @@
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_Judas.png" skinColor="-1"
 		  birthright="???" />
-	<player id="4" name="???" skin="Character_006_Bluebaby.png" hp="0" armor="6" items="36,414" achievement="32"
+	<player id="4" name="???" skin="Character_006_Bluebaby.png" hp="0" armor="6" items="414,479,538" achievement="32"
           nameimage="PlayerName_06_BlueBaby.png" 
           portrait="PlayerPortrait_Bluebaby.png" skinColor="2" costumeSuffix="bluebaby"
 		  birthright="Stronger spirit" />
@@ -33,7 +33,7 @@
           nameimage="PlayerName_08_Azazel.png" 
           portrait="PlayerPortrait_Azazel.png" skinColor="1"
 		  birthright="Wide breath" />
-	<player id="8" items="414" name="Lazarus" skin="Character_009_Lazarus.png" hp="6" pill="1" achievement="80"
+	<player id="8" items="249,402,414" name="Lazarus" skin="Character_009_Lazarus.png" hp="6" pill="1" achievement="80"
           nameimage="PlayerName_10_Lazarus.png" 
           portrait="PlayerPortrait_Lazarus.png" costume="32" skinColor="-1"
 		  birthright="Come back stronger" />
