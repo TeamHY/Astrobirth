@@ -2712,7 +2712,7 @@
 		<bestiary transform="0,10,.7" anim="Tantrum" />
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
-	<entity id="407" variant="0" name="Hush" baseHP="6666" shieldStrength="70" stageHP="0" boss="1" bossID="63" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="100" friction="1" numGridCollisionPoints="40" shadowSize="0" portrait="85" anm2path="407.000_Hush.anm2">
+	<entity id="407" variant="0" name="Hush" baseHP="6666" shieldStrength="100" stageHP="0" boss="1" bossID="63" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="100" friction="1" numGridCollisionPoints="40" shadowSize="0" portrait="85" anm2path="407.000_Hush.anm2">
 		<bestiary transform="0,-16,.4" anim="AttackLoopDown" />
 		<gibs amount="24" blood="1" bone="0" eye="0" gut="1" large="1" />
 	</entity>
@@ -2753,7 +2753,7 @@
     <entity id="411" variant="2" name="Big Hole" baseHP="480" stageHP="0" boss="1" champion="0" collisionDamage="0" collisionMass="20" collisionRadius="80" friction="1" numGridCollisionPoints="40" shadowSize="0" portrait="90" anm2path="411.000_BigHorn.anm2">
 		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 	</entity>
-	<entity id="412" variant="0" name="Delirium" baseHP="8000" stageHP="0" boss="1" bossID="70" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="40" shadowSize="0" portrait="91" anm2path="412.000_Delirium.anm2">
+	<entity id="412" variant="0" name="Delirium" baseHP="9000" stageHP="0" boss="1" bossID="70" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="40" shadowSize="0" portrait="91" anm2path="412.000_Delirium.anm2">
 		<bestiary transform="0,-15,0.75" anim="Idle" />
 		<gibs amount="24" blood="1" bone="0" eye="0" gut="1" large="1" />
 	</entity>
