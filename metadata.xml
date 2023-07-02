@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-    <name>zRedrawn_Hard</name>
+    <name>!Redrawn_Hard</name>
     <directory>redrawn_hard</directory>
     <id>2492350811</id>
     <description>
@@ -51,7 +51,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1630138997
 [url=https://www.twitch.tv/iwt2hw]헌영 트위치[/url]
 [url=https://www.youtube.com/user/afreecaBJHY/]헌영 유튜브[/url]
 </description>
-    <version>1.1</version>
+    <version>1.2</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
     <tag id="Items"/>
