@@ -1,13 +1,13 @@
 
-function mod:CurseRemove(curse) -- 입장 전 저주 제거
+function RedrawnMod:CurseRemove(curse) -- 입장 전 저주 제거
 	if (Game():GetLevel():GetStage() <= 3 and curse ~= 0) then
 		return 0
 	end
 end
 
-mod:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, mod.CurseRemove)
+RedrawnMod:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, RedrawnMod.CurseRemove)
 
-function mod:OnUpdate(player)
+function RedrawnMod:OnUpdate(player)
 	if Game():GetLevel():GetStage() >= 9 then
 		if player:GetPlayerType() == PlayerType.PLAYER_KEEPER or player:GetPlayerType() == PlayerType.PLAYER_KEEPER_B then
 		elseif player:GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN or player:GetPlayerType() == PlayerType.PLAYER_THESOUL then
@@ -19,4 +19,4 @@ function mod:OnUpdate(player)
 	end
 end
 
-mod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, mod.OnUpdate)
+RedrawnMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RedrawnMod.OnUpdate)

@@ -1,4 +1,4 @@
-mod = RegisterMod("Redrawn_Mod", 1)
+RedrawnMod = RegisterMod("Redrawn_Mod", 1)
 
 init = require "scripts.init"
-ban = require "scripts.ban"
+banManager = require "scripts.ban-manager"
