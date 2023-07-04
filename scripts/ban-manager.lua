@@ -4,7 +4,11 @@ function BanManager:Init()
     local banTable = {
         all = function()
             self.BanCollectible(CollectibleType.COLLECTIBLE_SAD_ONION)
-            self.BanTrinket(TrinketType.TRINKET_SWALLOWED_PENNY)
+            self.BanTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
+            self.BanTrinket(TrinketType.TRINKET_CARTRIDGE)
+            self.BanTrinket(TrinketType.TRINKET_MOMS_TOENAIL)
+            self.BanTrinket(TrinketType.TRINKET_MYSTERIOUS_PAPER)
+            self.BanTrinket(TrinketType.TRINKET_ERROR)
         end,
         [PlayerType.PLAYER_ISAAC] = function()
         end,

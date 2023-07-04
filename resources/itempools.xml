@@ -1188,7 +1188,7 @@
 		<Item Id="311" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="313" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="330" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="331" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="331" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="336" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="345" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="350" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
