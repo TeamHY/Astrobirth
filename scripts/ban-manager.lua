@@ -1,4 +1,6 @@
-local BanManager = {}
+Redrawn.BanManager = {}
+
+local BanManager = Redrawn.BanManager
 
 function BanManager:Init()
     local banTable = {
@@ -116,4 +118,4 @@ function BanManager:OnPostGameStarted(newstart)
     BanManager:Init()
 end
 
-RedrawnMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, BanManager.OnPostGameStarted)
+Redrawn:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, BanManager.OnPostGameStarted)
