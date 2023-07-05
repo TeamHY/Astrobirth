@@ -1,6 +1,6 @@
-local item = {}
+local capricornEX = {}
 
-function item:OnPostNewRoom()
+function capricornEX:OnPostNewRoom()
     local game = Game();
 
     if game:GetRoom():GetType() == RoomType.ROOM_DEVIL then
@@ -8,6 +8,6 @@ function item:OnPostNewRoom()
     end
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, item.OnPostNewRoom)
+Redrawn:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, capricornEX.OnPostNewRoom)
 
-return item
+return capricornEX

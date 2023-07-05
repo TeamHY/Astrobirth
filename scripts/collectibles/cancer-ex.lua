@@ -1,4 +1,4 @@
-local item = {}
+local cancerEX = {}
 
 ---comment
 ---@param entity Entity
@@ -6,7 +6,7 @@ local item = {}
 ---@param damageFlags number
 ---@param source EntityRef
 ---@param countdownFrames number
-function item:OnEntityTakeDmg(entity, amount, damageFlags, source, countdownFrames)
+function cancerEX:OnEntityTakeDmg(entity, amount, damageFlags, source, countdownFrames)
     local player = Isaac.GetPlayer(0)
     local entities = Isaac.GetRoomEntities()
 
@@ -24,6 +24,6 @@ function item:OnEntityTakeDmg(entity, amount, damageFlags, source, countdownFram
     end
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, item.OnEntityTakeDmg)
+Redrawn:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, cancerEX.OnEntityTakeDmg)
 
-return item
+return cancerEX

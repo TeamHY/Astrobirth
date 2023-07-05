@@ -1,8 +1,8 @@
-Redrawn.BanManager = {}
+Redrawn.Ban = {}
 
-local BanManager = Redrawn.BanManager
+local Ban = Redrawn.Ban
 
-function BanManager:Init()
+function Ban:Init()
     local banTable = {
         all = function()
             self.BanCollectible(CollectibleType.COLLECTIBLE_SAD_ONION)
@@ -104,18 +104,18 @@ end
 
 ---comment
 ---@param itemId CollectibleType | number
-function BanManager.BanCollectible(itemId)
+function Ban.BanCollectible(itemId)
     Game():GetItemPool():RemoveCollectible(itemId)
 end
 
 ---comment
 ---@param itemId TrinketType | number
-function BanManager.BanTrinket(itemId)
+function Ban.BanTrinket(itemId)
     Game():GetItemPool():RemoveTrinket(itemId)
 end
 
-function BanManager:OnPostGameStarted(newstart)
-    BanManager:Init()
+function Ban:OnPostGameStarted(newstart)
+    Ban:Init()
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, BanManager.OnPostGameStarted)
+Redrawn:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Ban.OnPostGameStarted)
