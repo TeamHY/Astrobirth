@@ -4,4 +4,5 @@
 	<passive gfx="Collectibles_CancerEX.png" name="Cancer EX" />
 	<passive gfx="Collectibles_ScorpioEX.png" name="Scorpio EX" />
 	<passive gfx="Collectibles_CapricornEX.png" name="Capricorn EX" />
+	<passive gfx="Collectibles_VirgoEX.png" name="Virgo EX" />
 </items>

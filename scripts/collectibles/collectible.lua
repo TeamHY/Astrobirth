@@ -3,7 +3,8 @@ Redrawn.Collectible = {
     LibraEX = Isaac.GetItemIdByName("Libra EX"),
     CancerEX = Isaac.GetItemIdByName("Cancer EX"),
     ScorpioEX = Isaac.GetItemIdByName("Scorpio EX"),
-    CapricornEX = Isaac.GetItemIdByName("Capricorn EX")
+    CapricornEX = Isaac.GetItemIdByName("Capricorn EX"),
+    VirgoEX = Isaac.GetItemIdByName("Virgo EX")
 }
 
 require "scripts.collectibles.cygnus"
@@ -11,3 +12,4 @@ require "scripts.collectibles.cygnus"
 require "scripts.collectibles.cancer-ex"
 require "scripts.collectibles.scorpio-ex"
 -- require "scripts.collectibles.capricorn-ex"
+require "scripts.collectibles.virgo-ex"
