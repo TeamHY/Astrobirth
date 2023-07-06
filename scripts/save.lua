@@ -1,5 +1,5 @@
 Redrawn.Data = {
-    Storage = {}
+    Save = {}
 }
 
 function Redrawn:SaveData()
@@ -9,16 +9,15 @@ end
 ---comment
 ---@param isContinued boolean
 function Redrawn:LoadSaveData(isContinued)
-    if not Redrawn:HasData() then
-        return
-    end
+    if Redrawn:HasData() then
+        local raw = Redrawn:LoadData()
+        local data = Json.decode(raw)
 
-    local raw = Redrawn:LoadData()
-    local data = Json.decode(raw)
-
-    Redrawn.Data.Storage = data.Storage or {}
-
-    if isContinued then
+        Redrawn.Data = data or {}
+    
+        if isContinued then
+            Redrawn.Data.Save = Redrawn.Data.Save or {}
+        end
     end
 end
 
