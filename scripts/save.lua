@@ -6,24 +6,27 @@ function Redrawn:SaveData()
     Isaac.SaveModData(Redrawn, Json.encode(Redrawn.Data))
 end
 
-function Redrawn:LoadSaveData()
+---comment
+---@param isContinued boolean
+function Redrawn:LoadSaveData(isContinued)
+    if not Redrawn:HasData() then
+        return
+    end
+
     local raw = Redrawn:LoadData()
     local data = Json.decode(raw)
 
-    Redrawn.Data = data
+    Redrawn.Data.Storage = data.Storage or {}
+
+    if isContinued then
+    end
 end
 
 Redrawn:AddPriorityCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     CallbackPriority.IMPORTANT,
     function(isContinued)
-        if isContinued then
-            Redrawn:LoadSaveData()
-        else
-            local data = Json.decode(Redrawn:LoadData())
-
-            Redrawn.Data.Storage = data.Storage
-        end
+        Redrawn:LoadSaveData(isContinued)
     end
 )
 
