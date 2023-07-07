@@ -3816,28 +3816,23 @@
 		<Item Id="727" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="planetarium">
-		<!--Sol-->
 		<Item Id="588" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Luna-->
 		<Item Id="589" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mercurius-->
 		<Item Id="590" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Venus-->
 		<Item Id="591" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Terra-->
 		<Item Id="592" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mars-->
 		<Item Id="593" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Jupiter-->
 		<Item Id="594" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Saturnus-->
 		<Item Id="595" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Uranus-->
 		<Item Id="596" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Neptunus-->
 		<Item Id="597" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Pluto-->
 		<Item Id="598" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cygnus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Libra EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cancer EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Scorpio EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Virgo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="oldChest">
 		<!--Mom's Underwear-->
