@@ -1,8 +1,8 @@
 <items gfxroot="gfx/items/" version="1">
-	<passive gfx="Collectibles_Cygnus.png" name="Cygnus" />
-	<passive tags="dead tech battery syringe mom guppy fly bob mushroom baby angel devil poop book spider" gfx="Collectibles_LibraEX.png" name="Libra EX" />
-	<passive gfx="Collectibles_CancerEX.png" name="Cancer EX" />
-	<passive gfx="Collectibles_ScorpioEX.png" name="Scorpio EX" />
-	<passive gfx="Collectibles_CapricornEX.png" name="Capricorn EX" />
-	<passive gfx="Collectibles_VirgoEX.png" name="Virgo EX" />
+	<passive gfx="Cygnus.png" name="Cygnus" />
+	<passive tags="dead tech battery syringe mom guppy fly bob mushroom baby angel devil poop book spider" gfx="Libra.png" name="Libra EX" />
+	<passive gfx="Cancer.png" name="Cancer EX" />
+	<passive gfx="Scorpio.png" name="Scorpio EX" />
+	<passive gfx="Capricorn.png" name="Capricorn EX" />
+	<passive gfx="Virgo.png" name="Virgo EX" />
 </items>
