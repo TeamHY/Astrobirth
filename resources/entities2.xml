@@ -4967,7 +4967,7 @@
     <entity anm2path="951.042_ultra death head.anm2" baseHP="100" boss="0" champion="0" collisionDamage="1" collisionMass="300" collisionRadius="40" friction="1" gridCollision="none" id="951" name="Ultra Death Head" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="42">
         <gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" poop="0" rock="0" sound_bone="1"/>
     </entity>
-    <entity anm2path="951.000_beast.anm2" baseHP="10000" boss="1" bossID="100" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="166" collisionRadiusYMulti="1.3" friction="1" gridCollision="none" id="951" name="#THE_BEAST" numGridCollisionPoints="12" portrait="131" shadowSize="0" shieldStrength="60" stageHP="0" tags="nodelirium" variant="0">
+    <entity anm2path="951.000_beast.anm2" baseHP="20000" boss="1" bossID="100" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="166" collisionRadiusYMulti="1.3" friction="1" gridCollision="none" id="951" name="#THE_BEAST" numGridCollisionPoints="12" portrait="131" shadowSize="0" shieldStrength="60" stageHP="0" tags="nodelirium" variant="0">
         <bestiary anim="Idle" transform="0,-40,0.5"/>
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="0"/>
     </entity>
