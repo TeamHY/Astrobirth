@@ -3,3 +3,5 @@
 .luarc.json
 
 disable.it
+.vscode/settings.json
+.luarc.json
