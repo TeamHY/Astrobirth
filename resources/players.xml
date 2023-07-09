@@ -1,7 +1,7 @@
 <players root="gfx/characters/costumes/" 
          portraitroot="gfx/ui/stage/" 
          nameimageroot="gfx/ui/boss/">
-	<player id="0" name="#ISAAC_NAME" skin="Character_001_Isaac.png" hp="6" items="105,414" bombs="1"
+	<player id="0" name="#ISAAC_NAME" skin="Character_001_Isaac.png" hp="6" items="414" bombs="1"
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_Isaac.png" skinColor="-1"
 		  birthright="#ISAAC_BIRTHRIGHT" />
@@ -13,7 +13,7 @@
           nameimage="PlayerName_03_Cain.png" 
           portrait="PlayerPortrait_Cain.png" skinColor="-1"
 		  birthright="#CAIN_BIRTHRIGHT" />
-	<player id="3" name="#JUDAS_NAME" skin="Character_004_Judas.png" costume="9" hp="2" coins="3" items="34,414" achievement="3"
+	<player id="3" name="#JUDAS_NAME" skin="Character_004_Judas.png" costume="9" hp="2" coins="3" pocketActive="34" items="414" achievement="3"
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_Judas.png" skinColor="-1"
 		  birthright="#JUDAS_BIRTHRIGHT" />
