@@ -42,10 +42,13 @@ Redrawn:AddCallback(ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD, Redrawn.OnRoomClear)
 
 
 
--- Automatically waste The Sun, The World, Ansuz
-function WasteCard(player, CardID, index)
-	player:SetCard(index, 0)
-	player:UseCard(CardID)
+--- Automatically waste The Sun, The World, Ansuz
+---@param player EntityPlayer
+---@param cardID Card
+---@param slotId integer
+local function WasteCard(player, cardID, slotId)
+	player:SetCard(slotId, 0)
+	player:UseCard(cardID)
 end
 
 ---@param player EntityPlayer
