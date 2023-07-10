@@ -5,7 +5,7 @@
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_Isaac.png" skinColor="-1"
 		  birthright="#ISAAC_BIRTHRIGHT" />
-	<player id="1" name="#MAGDALENE_NAME" skin="Character_002_Magdalene.png" costume="7" hp="8" items="45,414" achievement="1"
+	<player id="1" name="#MAGDALENE_NAME" skin="Character_002_Magdalene.png" costume="7" hp="8" pocketActive="45" items="414" achievement="1"
           nameimage="PlayerName_02_Magdalene.png"
           portrait="PlayerPortrait_Magdalene.png" skinColor="-1"
 		  birthright="#MAGDALENE_BIRTHRIGHT" />
@@ -17,11 +17,11 @@
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_Judas.png" skinColor="-1"
 		  birthright="#JUDAS_BIRTHRIGHT" />
-	<player id="4" name="#BLUEBABY_NAME" skin="Character_006_Bluebaby.png" hp="0" armor="6" items="36,414" achievement="32"
+	<player id="4" name="#BLUEBABY_NAME" skin="Character_006_Bluebaby.png" hp="0" armor="6" pocketActive="36" items="414" achievement="32"
           nameimage="PlayerName_06_BlueBaby.png" 
           portrait="PlayerPortrait_Bluebaby.png" skinColor="2" costumeSuffix="bluebaby"
 		  birthright="#BLUEBABY_BIRTHRIGHT" />
-	<player id="5" name="#EVE_NAME" skin="Character_005_Eve.png" costume="10" hp="4" items="122,117,414" achievement="42"
+	<player id="5" name="#EVE_NAME" skin="Character_005_Eve.png" costume="10" hp="4" pocketActive="126" items="122,117,414" achievement="42"
           nameimage="PlayerName_05_Eve.png" 
           portrait="PlayerPortrait_Eve.png" skinColor="-1"
 		  birthright="#EVE_BIRTHRIGHT" />
@@ -83,7 +83,7 @@
 		<hair gfx="Character_009_EdenHair40.png" />
 	</player>
 	<!-- starting item was D4 (284), now Eternal D6 (609) -->
-	<player id="10" name="#THE_LOST_NAME" skin="Character_012_TheLost.png" hp="0" armor="1" coins="1" items="414,609" achievement="82"
+	<player id="10" name="#THE_LOST_NAME" skin="Character_012_TheLost.png" hp="0" armor="1" coins="1" pocketActive="609" items="414" achievement="82"
           nameimage="PlayerName_12_TheLost.png" 
           portrait="PlayerPortrait_TheLost.png" skinColor="0"
 		  birthright="#THE_LOST_BIRTHRIGHT" />
@@ -95,7 +95,7 @@
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_DarkJudas.png" skinColor="1" costumeSuffix="shadow"
 		  birthright="#BLACK_JUDAS_BIRTHRIGHT" />
-	<player id="13" name="#LILITH_NAME" skin="Character_014_Lilith.png" hp="2" black="4" canShoot="false" items="357,412,414" achievement="199"
+	<player id="13" name="#LILITH_NAME" skin="Character_014_Lilith.png" hp="2" black="4" canShoot="false" pocketActive="357" items="412,414" achievement="199"
           nameimage="PlayerName_13_Lilith.png" 
           portrait="PlayerPortrait_Lilith.png" costume="34" skinColor="1" costumeSuffix="lilith"
 		  birthright="#LILITH_BIRTHRIGHT" />
@@ -103,7 +103,7 @@
           nameimage="PlayerName_14_TheKeeper.png" 
           portrait="PlayerPortrait_Keeper.png" skinColor="5" costume="47" costumeSuffix="keeper"
 		  birthright="#KEEPER_BIRTHRIGHT" />
-	<player id="15" name="#APOLLYON_NAME" skin="Character_016_Apollyon.png" costume="36" hp="4" items="414,477" achievement="340"
+	<player id="15" name="#APOLLYON_NAME" skin="Character_016_Apollyon.png" costume="36" hp="4" pocketActive="477" items="414" achievement="340"
           nameimage="PlayerName_15_Apollyon.png" 
           portrait="PlayerPortrait_Apollyon.png" skinColor="5" costumeSuffix="apollyon"
 		  birthright="#APOLLYON_BIRTHRIGHT" />
