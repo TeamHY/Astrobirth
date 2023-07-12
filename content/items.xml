@@ -5,4 +5,8 @@
 	<passive gfx="Scorpio.png" name="Scorpio EX" />
 	<passive gfx="Capricorn.png" name="Capricorn EX" />
 	<passive gfx="Virgo.png" name="Virgo EX" />
+	<passive gfx="Leo.png" name="Leo EX" />
+	<passive gfx="Aries.png" name="Aries EX" />
+	<passive cache="firedelay speed" gfx="Taurus.png" name="Taurus EX" />
+	<passive gfx="Aquarius.png" name="Aquarius EX" />
 </items>

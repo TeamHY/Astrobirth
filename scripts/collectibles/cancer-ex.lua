@@ -10,13 +10,16 @@ function cancerEX:OnEntityTakeDmg(entity, amount, damageFlags, source, countdown
     local player = Isaac.GetPlayer(0)
     local entities = Isaac.GetRoomEntities()
 
-    if player:HasCollectible(Redrawn.Collectible.CancerEX) and entity:IsVulnerableEnemy() then
+    if
+        player:HasCollectible(Redrawn.Collectible.CANCER_EX) and entity:IsVulnerableEnemy() and
+            entity.Type ~= EntityType.ENTITY_FIREPLACE
+     then
         if
             source.Type == EntityType.ENTITY_TEAR or damageFlags & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or
                 source.Type == EntityType.ENTITY_KNIFE
          then
             for i = 1, #entities do
-                if entities[i]:IsVulnerableEnemy() then
+                if entities[i]:IsVulnerableEnemy() and entities[i].Type ~= EntityType.ENTITY_FIREPLACE then
                     entities[i]:TakeDamage(amount / 5, 0, EntityRef(player), 1)
                 end
             end

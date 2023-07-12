@@ -4,7 +4,7 @@ local cygnus = {}
 ---@param player EntityPlayer
 function cygnus:OnPostPeffectUpdate(player)
     if Game():GetFrameCount() % 450 == 0 then
-        if player:HasCollectible(Redrawn.Collectible.Cygnus) then
+        if player:HasCollectible(Redrawn.Collectible.CYGNUS) then
             player:UseActiveItem(160, false, true, false, false)
             player:UseActiveItem(160, false, true, false, false)
         end
