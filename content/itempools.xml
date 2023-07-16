@@ -6,6 +6,10 @@
 		<Item Name="Scorpio EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Virgo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="angel">
 		<Item Name="Cygnus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -14,6 +18,10 @@
 		<Item Name="Scorpio EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Virgo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="ultraSecret">
 		<Item Name="Cygnus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -22,5 +30,9 @@
 		<Item Name="Scorpio EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Virgo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 </ItemPools>
