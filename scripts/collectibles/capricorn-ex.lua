@@ -1,19 +1,59 @@
-local capricornEX = {}
+Redrawn.Collectible.CAPRICORN_EX = Isaac.GetItemIdByName("Capricorn EX")
 
---- 작동하지 않음
----@param player EntityPlayer
-function capricornEX:OnPostPeffectUpdate(player)
-    local effects = player:GetEffects()
+local prevCount = 0
 
-    if player:HasCollectible(Redrawn.Collectible.CAPRICORN_EX) then
-        if not effects:HasTrinketEffect(TrinketType.TRINKET_NUMBER_MAGNET) then
-            effects:AddTrinketEffect(TrinketType.TRINKET_NUMBER_MAGNET, false)
-        end
-    else
-        effects:RemoveTrinketEffect(TrinketType.TRINKET_NUMBER_MAGNET)
+local function ComputeCount()
+    local count = 0
+
+    for i = 1, Game():GetNumPlayers() do
+        local player = Isaac.GetPlayer(i - 1)
+
+        count = count + player:GetCollectibleNum(Redrawn.Collectible.CAPRICORN_EX, true)
     end
+
+    return count
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, capricornEX.OnPostPeffectUpdate)
+Redrawn:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    ---@param isContinued boolean
+    function(_, isContinued)
+        prevCount = ComputeCount()
+    end
+)
 
-return capricornEX
+Redrawn:AddCallback(
+    ModCallbacks.MC_POST_PEFFECT_UPDATE,
+    ---@param player EntityPlayer
+    function(_, player)
+        local currentRoom = Game():GetLevel():GetCurrentRoom()
+
+        if player:HasCollectible(Redrawn.Collectible.CAPRICORN_EX) then
+            local currentCount = ComputeCount()
+
+            if prevCount < currentCount then
+                local itemPool = Game():GetItemPool()
+                local pillColor = itemPool:ForceAddPillEffect(PillEffect.PILLEFFECT_GULP)
+
+                Isaac.Spawn(
+                    EntityType.ENTITY_PICKUP,
+                    PickupVariant.PICKUP_PILL,
+                    pillColor,
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+                    Vector.Zero,
+                    nil
+                )
+                Isaac.Spawn(
+                    EntityType.ENTITY_PICKUP,
+                    PickupVariant.PICKUP_TRINKET,
+                    TrinketType.TRINKET_NUMBER_MAGNET,
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+                    Vector.Zero,
+                    nil
+                )
+            end
+
+            prevCount = currentCount
+        end
+    end
+)

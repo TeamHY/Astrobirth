@@ -14,10 +14,12 @@ function Redrawn:LoadSaveData(isContinued)
         local data = Json.decode(raw)
 
         Redrawn.Data = data or {}
-    
-        if isContinued then
-            Redrawn.Data.Save = Redrawn.Data.Save or {}
-        end
+
+        -- if isContinued then
+        --     Redrawn.Data.Save = Redrawn.Data.Save ~= nil and Redrawn.Data.Save or {}
+        -- else
+        --     Redrawn.Data.Save = {}
+        -- end
     end
 end
 
