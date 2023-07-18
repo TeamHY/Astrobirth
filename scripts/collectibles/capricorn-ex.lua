@@ -1,7 +1,7 @@
 Redrawn.Collectible.CAPRICORN_EX = Isaac.GetItemIdByName("Capricorn EX")
 
 if EID then
-    EID:addCollectible(Redrawn.Collectible.CAPRICORN_EX, "획득 시 {{Trinket174}}숫자 자석, {{Pill1}}Gulp!(장신구 흡수 알약)이 소환됩니다", "초 염소자리")
+    EID:addCollectible(Redrawn.Collectible.CAPRICORN_EX, "획득 시 {{Trinket174}}Number Magnet, {{Pill1}}Gulp!가 소환됩니다", "초 염소자리")
 end
 
 local prevCount = 0
