@@ -1,40 +1,40 @@
-Redrawn.Data = {
+Astrobirth.Data = {
     Save = {}
 }
 
-function Redrawn:SaveData()
-    Isaac.SaveModData(Redrawn, Json.encode(Redrawn.Data))
+function Astrobirth:SaveData()
+    Isaac.SaveModData(Astrobirth, Json.encode(Astrobirth.Data))
 end
 
 ---comment
 ---@param isContinued boolean
-function Redrawn:LoadSaveData(isContinued)
-    if Redrawn:HasData() then
-        local raw = Redrawn:LoadData()
+function Astrobirth:LoadSaveData(isContinued)
+    if Astrobirth:HasData() then
+        local raw = Astrobirth:LoadData()
         local data = Json.decode(raw)
 
-        Redrawn.Data = data or {}
+        Astrobirth.Data = data or {}
 
         -- if isContinued then
-        --     Redrawn.Data.Save = Redrawn.Data.Save ~= nil and Redrawn.Data.Save or {}
+        --     Astrobirth.Data.Save = Astrobirth.Data.Save ~= nil and Astrobirth.Data.Save or {}
         -- else
-        --     Redrawn.Data.Save = {}
+        --     Astrobirth.Data.Save = {}
         -- end
     end
 end
 
-Redrawn:AddPriorityCallback(
+Astrobirth:AddPriorityCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     CallbackPriority.IMPORTANT,
     function(isContinued)
-        Redrawn:LoadSaveData(isContinued)
+        Astrobirth:LoadSaveData(isContinued)
     end
 )
 
-Redrawn:AddPriorityCallback(
+Astrobirth:AddPriorityCallback(
     ModCallbacks.MC_PRE_GAME_EXIT,
     CallbackPriority.LATE,
     function(shouldSave)
-        Redrawn:SaveData()
+        Astrobirth:SaveData()
     end
 )

@@ -1,6 +1,6 @@
-Redrawn.Ban = {}
+Astrobirth.Ban = {}
 
-local Ban = Redrawn.Ban
+local Ban = Astrobirth.Ban
 
 function Ban:Init()
     local banTable = {
@@ -118,4 +118,4 @@ function Ban:OnPostGameStarted(newstart)
     Ban:Init()
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Ban.OnPostGameStarted)
+Astrobirth:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Ban.OnPostGameStarted)

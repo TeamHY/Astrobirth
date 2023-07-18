@@ -7,9 +7,9 @@ if not string.match(tostring(err), "attempt to call a nil value %(method 'ForceE
 end
 
 --default config values (and just in case the config was unable to load)
-Redrawn.OriginalRepentance = true
-Redrawn.OriginalCorruption = false
-Redrawn.OriginalCold = false
+Astrobirth.OriginalRepentance = true
+Astrobirth.OriginalCorruption = false
+Astrobirth.OriginalCold = false
 --load config
 local _, err = pcall(require, "config")
 if not string.match(tostring(err), "attempt to call a nil value %(method 'ForceError'%)") then
@@ -67,7 +67,7 @@ local checkedForModContent = false
 LostCardsOtherModPickupVariant = {
 	HEART_HOLY = -1
 }
-function Redrawn:checkForModContent()
+function Astrobirth:checkForModContent()
 	if not checkedForModContent then
 		--holy heart
 		LostCardsOtherModPickupVariant.HEART_HOLY = Isaac.GetEntityVariantByName("Heart (holy)")
@@ -77,7 +77,7 @@ function Redrawn:checkForModContent()
 end
 
 --function that returns true if the card is a lost card
-function Redrawn:isLostCard(card)
+function Astrobirth:isLostCard(card)
 	if card == LostCardsCardType.CARD_COLD then
 		return true
 	elseif card == LostCardsCardType.CARD_SERVANT then
@@ -112,7 +112,7 @@ end
 
 --returns a random lost card
 local getRandomLostCardRNG = piber20HelperMod:getInitializedRNG()
-function Redrawn:getRandomLostCard(ignoreUnlocked)
+function Astrobirth:getRandomLostCard(ignoreUnlocked)
 	local lostCardsPool = {
 		LostCardsCardType.CARD_COLD,
 		LostCardsCardType.CARD_SERVANT,
@@ -151,7 +151,7 @@ end
 local coldIsActive = false
 local clearColdTimer = 0
 
-function Redrawn:useCold(card)
+function Astrobirth:useCold(card)
 
 
 	player = piber20HelperMod:getPlayerUsingItem()
@@ -182,9 +182,9 @@ function Redrawn:useCold(card)
 
 
 end
-Redrawn:AddCallback(ModCallbacks.MC_USE_CARD, Redrawn.useCold, LostCardsCardType.CARD_COLD)
+Astrobirth:AddCallback(ModCallbacks.MC_USE_CARD, Astrobirth.useCold, LostCardsCardType.CARD_COLD)
 
-function Redrawn:ColdEffect()
+function Astrobirth:ColdEffect()
 	local player = piber20HelperMod:getPlayerUsingItem()
 	local level = Game():GetLevel()
 	local CurRoom = level:GetCurrentRoomIndex()
@@ -211,27 +211,27 @@ function Redrawn:ColdEffect()
 
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Redrawn.ColdEffect)
+Astrobirth:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Astrobirth.ColdEffect)
 
 
 --the servant - gives random familiar for the room (basically the effect of the monster manual item)
-function Redrawn:useServant(card)
+function Astrobirth:useServant(card)
 	local player = piber20HelperMod:getPlayerUsingItem()
 	player:UseActiveItem(CollectibleType.COLLECTIBLE_MONSTER_MANUAL, false, true, false, false)
 	player:UseActiveItem(CollectibleType.COLLECTIBLE_MONSTER_MANUAL, false, true, false, false)
 	player:UseActiveItem(CollectibleType.COLLECTIBLE_MONSTER_MANUAL, false, true, false, false)
 end
-Redrawn:AddCallback(ModCallbacks.MC_USE_CARD, Redrawn.useServant, LostCardsCardType.CARD_SERVANT)
+Astrobirth:AddCallback(ModCallbacks.MC_USE_CARD, Astrobirth.useServant, LostCardsCardType.CARD_SERVANT)
 
 --wisdom - teleports the player to the super secret room
-function Redrawn:useWisdom(card)
+function Astrobirth:useWisdom(card)
 	piber20HelperMod:teleportToRoomType(RoomType.ROOM_SUPERSECRET)
 end
-Redrawn:AddCallback(ModCallbacks.MC_USE_CARD, Redrawn.useWisdom, LostCardsCardType.CARD_WISDOM)
+Astrobirth:AddCallback(ModCallbacks.MC_USE_CARD, Astrobirth.useWisdom, LostCardsCardType.CARD_WISDOM)
 
 --repentance - rerolls pickups in the room (like d6 + d20, but more focused. cards reroll into different cards, trinkets reroll into other trinkets, etc)
 local getChestRerollRNG = piber20HelperMod:getInitializedRNG()
-function Redrawn:getChestReroll()
+function Astrobirth:getChestReroll()
 	local variant = PickupVariant.PICKUP_CHEST
 	local chestType = piber20HelperMod:getRandomNumber(1, 7, getChestRerollRNG)
 	if chestType == 1 then
@@ -253,7 +253,7 @@ function Redrawn:getChestReroll()
 	return variant
 end
 local getAppleRerollRNG = piber20HelperMod:getInitializedRNG()
-function Redrawn:getAppleReroll()
+function Astrobirth:getAppleReroll()
 	local variant = AdamExpansionPickupVariant.APPLE_RED
 	local appleType = piber20HelperMod:getRandomNumber(1, 9, getAppleRerollRNG)
 	if appleType == 1 or appleType == 2 or appleType == 3 then
@@ -270,7 +270,7 @@ function Redrawn:getAppleReroll()
 
 	return variant
 end
-function Redrawn:replacePickup(pickup, type, variant, subType)
+function Astrobirth:replacePickup(pickup, type, variant, subType)
 	local sprite = pickup:GetSprite()
 	if not sprite:IsPlaying("Collect") then
 		pickup = pickup:ToPickup()
@@ -285,57 +285,57 @@ function Redrawn:replacePickup(pickup, type, variant, subType)
 		end
 	end
 end
-function Redrawn:useRepentance(card)
+function Astrobirth:useRepentance(card)
 	local player = piber20HelperMod:getPlayerUsingItem()
 
 	--do d6 effect
 	player:UseActiveItem(CollectibleType.COLLECTIBLE_D6, false, true, false, false)
 
 	--our effect: reroll the other pickups as well
-	if not Redrawn.OriginalRepentance then
+	if not Astrobirth.OriginalRepentance then
 		for _, heart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, -1, false, false)) do
-			Redrawn:replacePickup(heart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+			Astrobirth:replacePickup(heart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 		end
 		for _, coin in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, -1, false, false)) do
-			Redrawn:replacePickup(coin, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 0)
+			Astrobirth:replacePickup(coin, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 0)
 		end
 		for _, key in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_KEY, -1, false, false)) do
-			Redrawn:replacePickup(key, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_KEY, 0)
+			Astrobirth:replacePickup(key, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_KEY, 0)
 		end
 		for _, bomb in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMB, -1, false, false)) do
-			Redrawn:replacePickup(bomb, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMB, 0)
+			Astrobirth:replacePickup(bomb, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMB, 0)
 		end
 		for _, chest in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_CHEST, -1, false, false)) do
-			local variant = Redrawn:getChestReroll()
-			Redrawn:replacePickup(chest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
+			local variant = Astrobirth:getChestReroll()
+			Astrobirth:replacePickup(chest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
 		end
 		for _, bombChest in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMBCHEST, -1, false, false)) do
-			local variant = Redrawn:getChestReroll()
-			Redrawn:replacePickup(bombChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
+			local variant = Astrobirth:getChestReroll()
+			Astrobirth:replacePickup(bombChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
 		end
 		for _, spikeChest in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_SPIKEDCHEST, -1, false, false)) do
-			local variant = Redrawn:getChestReroll()
-			Redrawn:replacePickup(spikeChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
+			local variant = Astrobirth:getChestReroll()
+			Astrobirth:replacePickup(spikeChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
 		end
 		for _, eternalChest in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_ETERNALCHEST, -1, false, false)) do
-			local variant = Redrawn:getChestReroll()
-			Redrawn:replacePickup(eternalChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
+			local variant = Astrobirth:getChestReroll()
+			Astrobirth:replacePickup(eternalChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
 		end
 		for _, mimicChest in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_MIMICCHEST, -1, false, false)) do
-			local variant = Redrawn:getChestReroll()
-			Redrawn:replacePickup(mimicChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
+			local variant = Astrobirth:getChestReroll()
+			Astrobirth:replacePickup(mimicChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
 		end
 		for _, lockedChest in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LOCKEDCHEST, -1, false, false)) do
-			local variant = Redrawn:getChestReroll()
-			Redrawn:replacePickup(lockedChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
+			local variant = Astrobirth:getChestReroll()
+			Astrobirth:replacePickup(lockedChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
 		end
 		for _, redChest in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_REDCHEST, -1, false, false)) do
-			local variant = Redrawn:getChestReroll()
-			Redrawn:replacePickup(redChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
+			local variant = Astrobirth:getChestReroll()
+			Astrobirth:replacePickup(redChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
 		end
 		for _, pill in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_PILL, -1, false, false)) do
 			local subType = piber20HelperMod:getRandomPill()
-			Redrawn:replacePickup(pill, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_PILL, subType)
+			Astrobirth:replacePickup(pill, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_PILL, subType)
 		end
 		for _, card in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_TAROTCARD, -1, false, false)) do
 			local subType = card.SubType
@@ -347,164 +347,164 @@ function Redrawn:useRepentance(card)
 				subType = piber20HelperMod:getRandomMagicCard()
 			elseif piber20HelperMod:isRune(subType) then
 				subType = piber20HelperMod:getRandomRune()
-			elseif Redrawn:isLostCard(subType) then
-				subType = Redrawn:getRandomLostCard()
+			elseif Astrobirth:isLostCard(subType) then
+				subType = Astrobirth:getRandomLostCard()
 			end
-			Redrawn:replacePickup(card, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_TAROTCARD, subType)
+			Astrobirth:replacePickup(card, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_TAROTCARD, subType)
 		end
 		for _, trinket in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_TRINKET, -1, false, false)) do
 			local subType = Game():GetItemPool():GetTrinket()
-			Redrawn:replacePickup(trinket, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_PILL, subType)
+			Astrobirth:replacePickup(trinket, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_PILL, subType)
 		end
 		if RebalancedBlackHeartsMod then
 			for _, halfBlackHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, RebalancedBlackHeartVariant.HEART_HALF_BLACK_REAL, -1, false, false)) do
-				Redrawn:replacePickup(halfBlackHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(halfBlackHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 		end
 		if AdamExpansionMod then
 			for _, halfBlackHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.HEART_HALF_BLACK, -1, false, false)) do
-				Redrawn:replacePickup(halfBlackHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(halfBlackHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 			for _, doubleEternalHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.HEART_DOUBLE_ETERNAL, -1, false, false)) do
-				Redrawn:replacePickup(doubleEternalHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(doubleEternalHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 			for _, blackRedHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.HEART_BLENDED_BLACK_RED, -1, false, false)) do
-				Redrawn:replacePickup(blackRedHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(blackRedHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 			for _, redEternalHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.HEART_BLENDED_RED_ETERNAL, -1, false, false)) do
-				Redrawn:replacePickup(redEternalHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(redEternalHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 			for _, eternalSoulHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.HEART_BLENDED_ETERNAL_SOUL, -1, false, false)) do
-				Redrawn:replacePickup(eternalSoulHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(eternalSoulHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 			for _, soulBlackHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.HEART_BLENDED_SOUL_BLACK, -1, false, false)) do
-				Redrawn:replacePickup(soulBlackHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(soulBlackHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 			for _, spikierChest in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.CHEST_SPIKIER, -1, false, false)) do
-				local variant = Redrawn:getChestReroll()
-				Redrawn:replacePickup(spikierChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
+				local variant = Astrobirth:getChestReroll()
+				Astrobirth:replacePickup(spikierChest, EntityType.ENTITY_PICKUP, variant, ChestSubType.CHEST_CLOSED)
 			end
 			for _, redApple in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.APPLE_RED, -1, false, false)) do
-				local variant = Redrawn:getAppleReroll()
-				Redrawn:replacePickup(redApple, EntityType.ENTITY_PICKUP, variant, redApple.SubType)
+				local variant = Astrobirth:getAppleReroll()
+				Astrobirth:replacePickup(redApple, EntityType.ENTITY_PICKUP, variant, redApple.SubType)
 			end
 			for _, whiteApple in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.APPLE_WHITE, -1, false, false)) do
-				local variant = Redrawn:getAppleReroll()
-				Redrawn:replacePickup(whiteApple, EntityType.ENTITY_PICKUP, variant, whiteApple.SubType)
+				local variant = Astrobirth:getAppleReroll()
+				Astrobirth:replacePickup(whiteApple, EntityType.ENTITY_PICKUP, variant, whiteApple.SubType)
 			end
 			for _, redDoubleApple in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.APPLE_DOUBLE_RED, -1, false, false)) do
-				local variant = Redrawn:getAppleReroll()
-				Redrawn:replacePickup(redDoubleApple, EntityType.ENTITY_PICKUP, variant, redDoubleApple.SubType)
+				local variant = Astrobirth:getAppleReroll()
+				Astrobirth:replacePickup(redDoubleApple, EntityType.ENTITY_PICKUP, variant, redDoubleApple.SubType)
 			end
 			for _, whiteDoubleApple in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.APPLE_DOUBLE_WHITE, -1, false, false)) do
-				local variant = Redrawn:getAppleReroll()
-				Redrawn:replacePickup(whiteDoubleApple, EntityType.ENTITY_PICKUP, variant, whiteDoubleApple.SubType)
+				local variant = Astrobirth:getAppleReroll()
+				Astrobirth:replacePickup(whiteDoubleApple, EntityType.ENTITY_PICKUP, variant, whiteDoubleApple.SubType)
 			end
 			for _, redWhiteDoubleApple in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, AdamExpansionPickupVariant.APPLE_DOUBLE_RED_WHITE, -1, false, false)) do
-				local variant = Redrawn:getAppleReroll()
-				Redrawn:replacePickup(redWhiteDoubleApple, EntityType.ENTITY_PICKUP, variant, redWhiteDoubleApple.SubType)
+				local variant = Astrobirth:getAppleReroll()
+				Astrobirth:replacePickup(redWhiteDoubleApple, EntityType.ENTITY_PICKUP, variant, redWhiteDoubleApple.SubType)
 			end
 		end
 		if StackableFreePickups then
 			for _, tripleHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.HEART_TRIPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(tripleHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(tripleHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 			for _, quadrupleHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.HEART_QUADRUPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(quadrupleHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(quadrupleHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 			for _, quintupleHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.HEART_QUINTUPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(quintupleHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(quintupleHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 			for _, tripleCoin in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.COIN_TRIPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(tripleCoin, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 0)
+				Astrobirth:replacePickup(tripleCoin, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 0)
 			end
 			for _, quadrupleCoin in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.COIN_QUADRUPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(quadrupleCoin, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 0)
+				Astrobirth:replacePickup(quadrupleCoin, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 0)
 			end
 			for _, quintupleCoin in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.COIN_QUINTUPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(quintupleCoin, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 0)
+				Astrobirth:replacePickup(quintupleCoin, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COIN, 0)
 			end
 			for _, tripleKey in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.KEY_TRIPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(tripleKey, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_KEY, 0)
+				Astrobirth:replacePickup(tripleKey, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_KEY, 0)
 			end
 			for _, quadrupleKey in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.KEY_QUADRUPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(quadrupleKey, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_KEY, 0)
+				Astrobirth:replacePickup(quadrupleKey, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_KEY, 0)
 			end
 			for _, quintupleKey in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.KEY_QUINTUPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(quintupleKey, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_KEY, 0)
+				Astrobirth:replacePickup(quintupleKey, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_KEY, 0)
 			end
 			for _, tripleBomb in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.BOMB_TRIPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(tripleBomb, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMB, 0)
+				Astrobirth:replacePickup(tripleBomb, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMB, 0)
 			end
 			for _, quadrupleBomb in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.BOMB_QUADRUPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(quadrupleBomb, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMB, 0)
+				Astrobirth:replacePickup(quadrupleBomb, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMB, 0)
 			end
 			for _, quintupleBomb in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, StackableFreePickupVariant.BOMB_QUINTUPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(quintupleBomb, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMB, 0)
+				Astrobirth:replacePickup(quintupleBomb, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_BOMB, 0)
 			end
 		end
 		if HolyHeartMod then
 			for _, holyHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, LostCardsOtherModPickupVariant.HEART_HOLY, -1, false, false)) do
-				Redrawn:replacePickup(holyHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(holyHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 		end
 		if RebalancedBatteriesMod then
 			for _, battery in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, -1, false, false)) do
-				Redrawn:replacePickup(battery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
+				Astrobirth:replacePickup(battery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
 			end
 			for _, normalBattery in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, RebalancedBatteryVariant.BATTERY_NORMAL, -1, false, false)) do
-				Redrawn:replacePickup(normalBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
+				Astrobirth:replacePickup(normalBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
 			end
 			for _, doubleBattery in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, RebalancedBatteryVariant.BATTERY_DOUBLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(doubleBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
+				Astrobirth:replacePickup(doubleBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
 			end
 			for _, tripleBattery in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, RebalancedBatteryVariant.BATTERY_TRIPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(tripleBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
+				Astrobirth:replacePickup(tripleBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
 			end
 			for _, quadrupleBattery in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, RebalancedBatteryVariant.BATTERY_QUADRUPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(quadrupleBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
+				Astrobirth:replacePickup(quadrupleBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
 			end
 			for _, quintupleBattery in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, RebalancedBatteryVariant.BATTERY_QUINTUPLEPACK, -1, false, false)) do
-				Redrawn:replacePickup(quintupleBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
+				Astrobirth:replacePickup(quintupleBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
 			end
 			for _, microBattery in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, RebalancedBatteryVariant.BATTERY_MICRO, -1, false, false)) do
-				Redrawn:replacePickup(microBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
+				Astrobirth:replacePickup(microBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
 			end
 			for _, megaBattery in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, RebalancedBatteryVariant.BATTERY_MEGA, -1, false, false)) do
-				Redrawn:replacePickup(megaBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
+				Astrobirth:replacePickup(megaBattery, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_LIL_BATTERY, 0)
 			end
 		end
 		if RebalancedBlackHeartsMod then
 			for _, halfBlackHeart in pairs(Isaac.FindByType(EntityType.ENTITY_PICKUP, RebalancedBlackHeartVariant.HEART_HALF_BLACK_REAL, -1, false, false)) do
-				Redrawn:replacePickup(halfBlackHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
+				Astrobirth:replacePickup(halfBlackHeart, EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 0)
 			end
 		end
 	end
 end
-Redrawn:AddCallback(ModCallbacks.MC_USE_CARD, Redrawn.useRepentance, LostCardsCardType.CARD_REPENTANCE)
+Astrobirth:AddCallback(ModCallbacks.MC_USE_CARD, Astrobirth.useRepentance, LostCardsCardType.CARD_REPENTANCE)
 
 --eternity - gives an eternal heart
-function Redrawn:useEternity(card)
+function Astrobirth:useEternity(card)
 	local player = piber20HelperMod:getPlayerUsingItem()
 	local room = Game():GetRoom()
 	Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, HeartSubType.HEART_ETERNAL, room:FindFreePickupSpawnPosition(player.Position, 0, true), Vector(0,0), nil)
 end
-Redrawn:AddCallback(ModCallbacks.MC_USE_CARD, Redrawn.useEternity, LostCardsCardType.CARD_ETERNITY)
+Astrobirth:AddCallback(ModCallbacks.MC_USE_CARD, Astrobirth.useEternity, LostCardsCardType.CARD_ETERNITY)
 
 --corruption - teleports the player to the i am error room
-function Redrawn:useCorruption(card)
-	if Redrawn.OriginalCorruption then --original effect - teleports to i am error room
+function Astrobirth:useCorruption(card)
+	if Astrobirth.OriginalCorruption then --original effect - teleports to i am error room
 		piber20HelperMod:teleportToRoomType(GridRooms.ROOM_ERROR_IDX)
 	else --our effect - do undefined effect
 		local player = piber20HelperMod:getPlayerUsingItem()
 		player:UseActiveItem(CollectibleType.COLLECTIBLE_UNDEFINED, false, true, false, false)
 	end
 end
-Redrawn:AddCallback(ModCallbacks.MC_USE_CARD, Redrawn.useCorruption, LostCardsCardType.CARD_CORRUPTION)
+Astrobirth:AddCallback(ModCallbacks.MC_USE_CARD, Astrobirth.useCorruption, LostCardsCardType.CARD_CORRUPTION)
 
 --immolation - 50% chance to teleport to the curse room or sacrifice room
 local immolationRNG = piber20HelperMod:getInitializedRNG()
-function Redrawn:useImmolation(card)
+function Astrobirth:useImmolation(card)
 	--get the level
 	local level = Game():GetLevel()
 
@@ -532,11 +532,11 @@ function Redrawn:useImmolation(card)
 	piber20HelperMod:teleportToRoomIndex(roomIndex)
 	--if neither of them exists, this function will just teleport to a random room, so that's fine.
 end
-Redrawn:AddCallback(ModCallbacks.MC_USE_CARD, Redrawn.useImmolation, LostCardsCardType.CARD_IMMOLATION)
+Astrobirth:AddCallback(ModCallbacks.MC_USE_CARD, Astrobirth.useImmolation, LostCardsCardType.CARD_IMMOLATION)
 
 --worship - 50% chance to spawn a collectible or do 2 hearts of damage
 local worshipRNG = piber20HelperMod:getInitializedRNG()
-function Redrawn:useWorship(card)
+function Astrobirth:useWorship(card)
 	local player = piber20HelperMod:getPlayerUsingItem()
 	if piber20HelperMod:getRandomNumber(1, 2, worshipRNG) <= 1 then
 		--do 2 hearts of damage to the player
@@ -553,11 +553,11 @@ function Redrawn:useWorship(card)
 		player:AnimateHappy()
 	end
 end
-Redrawn:AddCallback(ModCallbacks.MC_USE_CARD, Redrawn.useWorship, LostCardsCardType.CARD_WORSHIP)
+Astrobirth:AddCallback(ModCallbacks.MC_USE_CARD, Astrobirth.useWorship, LostCardsCardType.CARD_WORSHIP)
 
 --1/10 chance to replace a tarot card with one of our lost cards
 local lostCardReplaceRNG = piber20HelperMod:getInitializedRNG()
-function Redrawn:replaceCard(rng, currentCard, isPlayingCard, isRune, onlyRunes)
+function Astrobirth:replaceCard(rng, currentCard, isPlayingCard, isRune, onlyRunes)
 	--check if it's a tarot card
 	if piber20HelperMod:isTarotCard(currentCard) then
 		--1/20 chance to replace
@@ -584,17 +584,17 @@ function Redrawn:replaceCard(rng, currentCard, isPlayingCard, isRune, onlyRunes)
 		end
 	end
 end
-Redrawn:AddCallback(ModCallbacks.MC_GET_CARD, Redrawn.replaceCard)
+Astrobirth:AddCallback(ModCallbacks.MC_GET_CARD, Astrobirth.replaceCard)
 
-function Redrawn:onRoomChange()
+function Astrobirth:onRoomChange()
 	--clear cold card effect after a few frames
 	if coldIsActive then
 		clearColdTimer = 6
 	end
 end
-Redrawn:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Redrawn.onRoomChange)
+Astrobirth:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Astrobirth.onRoomChange)
 
-function Redrawn:onRender()
+function Astrobirth:onRender()
 	--do revelations snow overlay if cold card was used
 	if REVEL then
 		--make sure we're not in glacier, we dont want to mess with any existing snow overlays
@@ -631,12 +631,12 @@ function Redrawn:onRender()
 		end
 	end
 end
-Redrawn:AddCallback(ModCallbacks.MC_POST_RENDER, Redrawn.onRender)
+Astrobirth:AddCallback(ModCallbacks.MC_POST_RENDER, Astrobirth.onRender)
 
-function Redrawn:replaceLostCardBacks(card)
+function Astrobirth:replaceLostCardBacks(card)
 	if not CardBacksMod then
 		local subType = card.SubType
-		if Redrawn:isLostCard(subType) then
+		if Astrobirth:isLostCard(subType) then
 			local animation = "Appear"
 			local room = Game():GetRoom()
 			if (room:GetFrameCount() <= 0 and not room:IsFirstVisit()) or card:IsShopItem() then
@@ -648,10 +648,10 @@ function Redrawn:replaceLostCardBacks(card)
 		end
 	end
 end
-Redrawn:AddCallback(ModCallbacks.MC_POST_PICKUP_INIT, Redrawn.replaceLostCardBacks, PickupVariant.PICKUP_TAROTCARD)
+Astrobirth:AddCallback(ModCallbacks.MC_POST_PICKUP_INIT, Astrobirth.replaceLostCardBacks, PickupVariant.PICKUP_TAROTCARD)
 
-function Redrawn:onGameStart(isSaveGame)
-	Redrawn:checkForModContent()
+function Astrobirth:onGameStart(isSaveGame)
+	Astrobirth:checkForModContent()
 
 	piber20HelperMod:resetRNGSeed(getRandomLostCardRNG)
 	piber20HelperMod:resetRNGSeed(getChestRerollRNG)
@@ -660,17 +660,17 @@ function Redrawn:onGameStart(isSaveGame)
 	piber20HelperMod:resetRNGSeed(worshipRNG)
 	piber20HelperMod:resetRNGSeed(lostCardReplaceRNG)
 
-	if Redrawn.OriginalRepentance then
+	if Astrobirth.OriginalRepentance then
 		__eidCardDescriptions[LostCardsCardType.CARD_REPENTANCE] = "Rerolls collectibles in the room"
 	end
-	if Redrawn.OriginalCorruption then
+	if Astrobirth.OriginalCorruption then
 		__eidCardDescriptions[LostCardsCardType.CARD_CORRUPTION] = "Teleports you to the error room"
 	end
-	if Redrawn.OriginalCold then
+	if Astrobirth.OriginalCold then
 		__eidCardDescriptions[LostCardsCardType.CARD_COLD] = "Slows all enemies in the room"
 	end
 end
-Redrawn:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Redrawn.onGameStart)
+Astrobirth:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Astrobirth.onGameStart)
 
 local function setLostCardsBackSprites()
 	CardBacksMod:AssociateCardWithHudSprite(LostCardsCardType.CARD_COLD, CardBacksHudTypes.CUSTOM, "gfx/ui/unique_cards/lost_card.png", false)

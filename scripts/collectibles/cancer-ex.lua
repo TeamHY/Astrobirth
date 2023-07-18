@@ -1,10 +1,10 @@
-Redrawn.Collectible.CANCER_EX = Isaac.GetItemIdByName("Cancer EX")
+Astrobirth.Collectible.CANCER_EX = Isaac.GetItemIdByName("Cancer EX")
 
 if EID then
-    EID:addCollectible(Redrawn.Collectible.CANCER_EX, "몬스터에게 준 피해의 1/4 만큼 방안에 모든 몬스터들에게 대미지를 입힙니다", "초 게자리")
+    EID:addCollectible(Astrobirth.Collectible.CANCER_EX, "몬스터에게 준 피해의 1/4 만큼 방안에 모든 몬스터들에게 대미지를 입힙니다", "초 게자리")
 end
 
-Redrawn:AddCallback(
+Astrobirth:AddCallback(
     ModCallbacks.MC_ENTITY_TAKE_DMG,
     ---@param entity Entity
     ---@param amount number
@@ -16,7 +16,7 @@ Redrawn:AddCallback(
         local entities = Isaac.GetRoomEntities()
 
         if
-            player:HasCollectible(Redrawn.Collectible.CANCER_EX) and entity:IsVulnerableEnemy() and
+            player:HasCollectible(Astrobirth.Collectible.CANCER_EX) and entity:IsVulnerableEnemy() and
                 entity.Type ~= EntityType.ENTITY_FIREPLACE
          then
             if

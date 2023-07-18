@@ -1,4 +1,4 @@
-Redrawn.Utill = {}
+Astrobirth.Utill = {}
 
 --- From isaacscript-common
 ---
@@ -9,7 +9,7 @@ Redrawn.Utill = {}
 --- a last resort, it will attempt to use the `Entity.ToPlayer` method on the entity itself.
 ---@param entity Entity
 ---@return EntityPlayer | nil
-function Redrawn.Utill:GetPlayerFromEntity(entity)
+function Astrobirth.Utill:GetPlayerFromEntity(entity)
     if entity == nil then
         return nil
     end

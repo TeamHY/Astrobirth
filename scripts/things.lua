@@ -1,12 +1,12 @@
 -- For Card Reading, replace boss portal to random portal
 ---@param type EntityType
-function Redrawn:OnSpawningBossPortal(type, variant, subtype)
+function Astrobirth:OnSpawningBossPortal(type, variant, subtype)
 	if (type == EntityType.ENTITY_EFFECT and variant == EffectVariant.PORTAL_TELEPORT and subtype == 1) then
 		return {type, variant, 3, seed}
 	end
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_PRE_ENTITY_SPAWN, Redrawn.OnSpawningBossPortal)
+Astrobirth:AddCallback(ModCallbacks.MC_PRE_ENTITY_SPAWN, Astrobirth.OnSpawningBossPortal)
 
 --- When killing The Lamb or ???, giving you a full key
 --- And when killing boss in mirror world, giving you a knife piece 2
@@ -35,7 +35,7 @@ local function OnBossRoomClear(level, currentRoom)
 	end
 end
 
-function Redrawn:OnRoomClear()
+function Astrobirth:OnRoomClear()
 	local level = Game():GetLevel()
 	local currentRoom = level:GetCurrentRoom()
 
@@ -44,7 +44,7 @@ function Redrawn:OnRoomClear()
 	end
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD, Redrawn.OnRoomClear)
+Astrobirth:AddCallback(ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD, Astrobirth.OnRoomClear)
 
 --- Automatically waste The Sun, The World, Ansuz
 ---@param player EntityPlayer
@@ -56,7 +56,7 @@ local function WasteCard(player, cardID, slotId)
 end
 
 ---@param player EntityPlayer
-function Redrawn:AutoWastingCard(player)
+function Astrobirth:AutoWastingCard(player)
 	if player:GetCard(0) == Card.RUNE_ANSUZ then
 		WasteCard(player, Card.RUNE_ANSUZ, 0)
 	elseif player:GetCard(0) == Card.CARD_WORLD then
@@ -66,4 +66,4 @@ function Redrawn:AutoWastingCard(player)
 	end
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Redrawn.AutoWastingCard)
+Astrobirth:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astrobirth.AutoWastingCard)

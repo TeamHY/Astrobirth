@@ -1,7 +1,7 @@
-Redrawn.Collectible.CAPRICORN_EX = Isaac.GetItemIdByName("Capricorn EX")
+Astrobirth.Collectible.CAPRICORN_EX = Isaac.GetItemIdByName("Capricorn EX")
 
 if EID then
-    EID:addCollectible(Redrawn.Collectible.CAPRICORN_EX, "획득 시 {{Trinket174}}Number Magnet, {{Pill1}}Gulp!가 소환됩니다", "초 염소자리")
+    EID:addCollectible(Astrobirth.Collectible.CAPRICORN_EX, "획득 시 {{Trinket174}}Number Magnet, {{Pill1}}Gulp!가 소환됩니다", "초 염소자리")
 end
 
 local prevCount = 0
@@ -12,13 +12,13 @@ local function ComputeCount()
     for i = 1, Game():GetNumPlayers() do
         local player = Isaac.GetPlayer(i - 1)
 
-        count = count + player:GetCollectibleNum(Redrawn.Collectible.CAPRICORN_EX, true)
+        count = count + player:GetCollectibleNum(Astrobirth.Collectible.CAPRICORN_EX, true)
     end
 
     return count
 end
 
-Redrawn:AddCallback(
+Astrobirth:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     ---@param isContinued boolean
     function(_, isContinued)
@@ -26,13 +26,13 @@ Redrawn:AddCallback(
     end
 )
 
-Redrawn:AddCallback(
+Astrobirth:AddCallback(
     ModCallbacks.MC_POST_PEFFECT_UPDATE,
     ---@param player EntityPlayer
     function(_, player)
         local currentRoom = Game():GetLevel():GetCurrentRoom()
 
-        if player:HasCollectible(Redrawn.Collectible.CAPRICORN_EX) then
+        if player:HasCollectible(Astrobirth.Collectible.CAPRICORN_EX) then
             local currentCount = ComputeCount()
 
             if prevCount < currentCount then

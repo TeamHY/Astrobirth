@@ -1,5 +1,5 @@
 
-function Redrawn:CurseRemove(curse) -- 입장 전 저주 제거
+function Astrobirth:CurseRemove(curse) -- 입장 전 저주 제거
 	if (Game():GetLevel():GetStage() <= 3 and curse ~= 0) then
 		return 0
 	else
@@ -12,10 +12,10 @@ function Redrawn:CurseRemove(curse) -- 입장 전 저주 제거
 	end
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, Redrawn.CurseRemove)
+Astrobirth:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, Astrobirth.CurseRemove)
 
 ---@param player EntityPlayer
-function Redrawn:OnUpdate(player)
+function Astrobirth:OnUpdate(player)
 	if Game():GetLevel():GetStage() >= 9 then
 		if player:GetPlayerType() == PlayerType.PLAYER_KEEPER or player:GetPlayerType() == PlayerType.PLAYER_KEEPER_B then
 		elseif player:GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN then
@@ -33,4 +33,4 @@ function Redrawn:OnUpdate(player)
 	end
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Redrawn.OnUpdate)
+Astrobirth:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astrobirth.OnUpdate)

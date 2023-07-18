@@ -1,4 +1,4 @@
-Redrawn = RegisterMod("Redrawn_Mod", 1)
+Astrobirth = RegisterMod("Redrawn_Mod", 1)
 
 Json = require "json"
 

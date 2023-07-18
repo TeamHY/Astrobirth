@@ -1,4 +1,4 @@
-Redrawn.Collectible = {}
+Astrobirth.Collectible = {}
 
 require "scripts.collectibles.cygnus"
 require "scripts.collectibles.libra-ex"

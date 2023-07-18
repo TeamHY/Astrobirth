@@ -1,8 +1,8 @@
-Redrawn.Collectible.TAURUS_EX = Isaac.GetItemIdByName("Taurus EX")
+Astrobirth.Collectible.TAURUS_EX = Isaac.GetItemIdByName("Taurus EX")
 
 if EID then
     EID:addCollectible(
-        Redrawn.Collectible.TAURUS_EX,
+        Astrobirth.Collectible.TAURUS_EX,
         "방 입장 시 아래 효과중 한가지가 적용됩니다 #{{ColorSilver}}{{Tears}}연사(상한+2) 증가됩니다 #{{ColorSilver}}{{Damage}}공격력이 +2 증가됩니다 ({{Collectible34}} 액티브와 동일) #{{ColorSilver}}{{Speed}}이동 속도가 2로 고정됩니다 #{{ColorSilver}}유도 특성이 적용됩니다 ({{Collectible192}} 액티브와 동일)",
         "초 황소자리"
     )
@@ -25,14 +25,14 @@ local effects = {
     end
 }
 
-Redrawn:AddCallback(
+Astrobirth:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
     function()
         ---@type EntityPlayer
         for i = 1, Game():GetNumPlayers() do
             local player = Isaac.GetPlayer(i - 1)
 
-            if player:HasCollectible(Redrawn.Collectible.TAURUS_EX) then
+            if player:HasCollectible(Astrobirth.Collectible.TAURUS_EX) then
                 local data = player:GetData()
 
                 if data.Taurus == nil then
@@ -41,7 +41,7 @@ Redrawn:AddCallback(
                     }
                 end
 
-                data.Taurus.Key = player:GetCollectibleRNG(Redrawn.Collectible.TAURUS_EX):RandomInt(4)
+                data.Taurus.Key = player:GetCollectibleRNG(Astrobirth.Collectible.TAURUS_EX):RandomInt(4)
                 effects[data.Taurus.Key](player)
                 player:AddCacheFlags(CacheFlag.CACHE_SPEED)
                 player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
@@ -50,12 +50,12 @@ Redrawn:AddCallback(
     end
 )
 
-Redrawn:AddCallback(
+Astrobirth:AddCallback(
     ModCallbacks.MC_EVALUATE_CACHE,
     ---@param player EntityPlayer
     ---@param cacheFlag CacheFlag
     function(_, player, cacheFlag)
-        if player:HasCollectible(Redrawn.Collectible.TAURUS_EX) then
+        if player:HasCollectible(Astrobirth.Collectible.TAURUS_EX) then
             local data = player:GetData()
 
             if data.Taurus ~= nil then
