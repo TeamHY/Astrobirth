@@ -19,11 +19,9 @@ local effects = {
     end,
     ---@param player EntityPlayer
     [2] = function(player)
-        player:AddCacheFlags(CacheFlag.CACHE_SPEED)
     end,
     ---@param player EntityPlayer
     [3] = function(player)
-        player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
     end
 }
 
@@ -45,6 +43,8 @@ Redrawn:AddCallback(
 
                 data.Taurus.Key = player:GetCollectibleRNG(Redrawn.Collectible.TAURUS_EX):RandomInt(4)
                 effects[data.Taurus.Key](player)
+                player:AddCacheFlags(CacheFlag.CACHE_SPEED)
+                player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
             end
         end
     end
