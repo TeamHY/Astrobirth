@@ -1,5 +1,9 @@
 Redrawn.Collectible.ARIES_EX = Isaac.GetItemIdByName("Aries EX")
 
+if EID then
+    EID:addCollectible(Redrawn.Collectible.ARIES_EX, "피격 시 무효화 처리되며, 5초간 무적이 됩니다 {{Timer}}쿨타임 25초", "초 양자리")
+end
+
 --- 쿨타임
 local cooldown = 25 * 30
 

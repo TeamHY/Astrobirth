@@ -1,5 +1,9 @@
 Redrawn.Collectible.AQUARIUS_EX = Isaac.GetItemIdByName("Aquarius EX")
 
+if EID then
+    EID:addCollectible(Redrawn.Collectible.AQUARIUS_EX, "공격 당한 몬스터에서 눈물이 뿜어져 나옵니다 (대미지는 캐릭터와 동일)", "초 물병자리")
+end
+
 Redrawn:AddCallback(
     ModCallbacks.MC_ENTITY_TAKE_DMG,
     ---@param entity Entity

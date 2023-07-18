@@ -1,5 +1,9 @@
 Redrawn.Collectible.LEO_EX = Isaac.GetItemIdByName("Leo EX")
 
+if EID then
+    EID:addCollectible(Redrawn.Collectible.LEO_EX, "방 입장 시 모든 몬스터가 5초간 {{Freezing}}빙결 상태가 됩니다 ({{Trinket188}} 만럭 효과와 동일)", "초 사자자리")
+end
+
 --- 지속 시간
 local freezeDuration = 5 * 30
 

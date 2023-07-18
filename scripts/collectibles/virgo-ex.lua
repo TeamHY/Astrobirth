@@ -1,28 +1,31 @@
-local virgoEX = {}
+Redrawn.Collectible.VIRGO_EX = Isaac.GetItemIdByName("Virgo EX")
 
----comment
----@param isContinued boolean
-function virgoEX:OnPostGameStarted(isContinued)
-    if not isContinued and Redrawn.Data.GoPlanetarium then
-        local player = Isaac.GetPlayer()
-        local collectibleRNG = player:GetCollectibleRNG(Redrawn.Collectible.VIRGO_EX)
-
-        Isaac.ExecuteCommand("goto s.planetarium." .. collectibleRNG:RandomInt(7))
-        Redrawn.Data.GoPlanetarium = false
-    end
+if EID then
+    EID:addCollectible(Redrawn.Collectible.VIRGO_EX, "다음 게임 시작 시 {{Planetarium}}행성방으로 이동됩니다", "초 처녀자리")
 end
 
-Redrawn:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, virgoEX.OnPostGameStarted)
+Redrawn:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    ---@param isContinued boolean
+    function(_, isContinued)
+        if not isContinued and Redrawn.Data.GoPlanetarium then
+            local player = Isaac.GetPlayer()
+            local collectibleRNG = player:GetCollectibleRNG(Redrawn.Collectible.VIRGO_EX)
 
-
----comment
----@param isGameOver boolean
-function virgoEX:OnPostGameEnd(isGameOver)
-    local player = Isaac.GetPlayer(0)
-
-    if player:HasCollectible(Redrawn.Collectible.VIRGO_EX) then
-        Redrawn.Data.GoPlanetarium = true
+            Isaac.ExecuteCommand("goto s.planetarium." .. collectibleRNG:RandomInt(7))
+            Redrawn.Data.GoPlanetarium = false
+        end
     end
-end
+)
 
-Redrawn:AddCallback(ModCallbacks.MC_POST_GAME_END, virgoEX.OnPostGameEnd)
+Redrawn:AddCallback(
+    ModCallbacks.MC_POST_GAME_END,
+    ---@param isGameOver boolean
+    function(_, isGameOver)
+        local player = Isaac.GetPlayer(0)
+
+        if player:HasCollectible(Redrawn.Collectible.VIRGO_EX) then
+            Redrawn.Data.GoPlanetarium = true
+        end
+    end
+)
