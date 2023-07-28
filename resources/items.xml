@@ -328,7 +328,7 @@
 	<active achievement="106" description="#ISAACS_TEARS_DESCRIPTION" gfx="collectibles_323_isaacstears.png" id="323" maxcharges="6" name="#ISAACS_TEARS_NAME" chargetype="special" />
 	<active achievement="125" description="#UNDEFINED_DESCRIPTION" gfx="collectibles_324_Undefined.png" id="324" maxcharges="6" name="#UNDEFINED_NAME" />
 	<active achievement="30" cache="familiars" description="#SCISSORS_DESCRIPTION" gfx="collectibles_325_scissors.png" id="325" maxcharges="4" name="#SCISSORS_NAME" />
-	<active cooldown="31" description="#BREATH_OF_LIFE_DESCRIPTION" gfx="collectibles_326_breathoflife.png" id="326" maxcharges="1" name="#BREATH_OF_LIFE_NAME" chargetype="timed" />
+	<active cooldown="31" description="#BREATH_OF_LIFE_DESCRIPTION" gfx="collectibles_326_breathoflife.png" id="326" maxcharges="30" name="#BREATH_OF_LIFE_NAME" chargetype="timed" />
 	<passive achievement="57" cooldown="150" description="#THE_POLAROID_DESCRIPTION" gfx="collectibles_327_thepolaroid.png" id="327" name="#THE_POLAROID_NAME" />
 	<passive achievement="78" cache="damage" description="#THE_NEGATIVE_DESCRIPTION" gfx="collectibles_328_thenegative.png" id="328" name="#THE_NEGATIVE_NAME" />
 	<passive cache="all" description="#THE_LUDOVICO_TECHNIQUE_DESCRIPTION" gfx="collectibles_329_theludovicotechnique.png" id="329" name="#THE_LUDOVICO_TECHNIQUE_NAME" special="true" />

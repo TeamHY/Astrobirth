@@ -6,12 +6,18 @@ function Ban:Init()
     local banTable = {
         all = function()
             self.BanCollectible(CollectibleType.COLLECTIBLE_DADS_NOTE)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_CANCER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_FRIEND_FINDER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_SPIN_TO_WIN)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_MEGA_BEAN)
             self.BanTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
             self.BanTrinket(TrinketType.TRINKET_CARTRIDGE)
             self.BanTrinket(TrinketType.TRINKET_MOMS_TOENAIL)
             self.BanTrinket(TrinketType.TRINKET_MYSTERIOUS_PAPER)
             self.BanTrinket(TrinketType.TRINKET_ERROR)
             self.BanTrinket(TrinketType.TRINKET_FILIGREE_FEATHERS)
+            self.BanTrinket(TrinketType.TRINKET_RC_REMOTE)
+            self.BanTrinket(TrinketType.TRINKET_EXPANSION_PACK)
         end,
         [PlayerType.PLAYER_ISAAC] = function()
         end,
