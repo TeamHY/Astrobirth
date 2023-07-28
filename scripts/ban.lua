@@ -5,12 +5,13 @@ local Ban = Astrobirth.Ban
 function Ban:Init()
     local banTable = {
         all = function()
-            self.BanCollectible(CollectibleType.COLLECTIBLE_SAD_ONION)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_DADS_NOTE)
             self.BanTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
             self.BanTrinket(TrinketType.TRINKET_CARTRIDGE)
             self.BanTrinket(TrinketType.TRINKET_MOMS_TOENAIL)
             self.BanTrinket(TrinketType.TRINKET_MYSTERIOUS_PAPER)
             self.BanTrinket(TrinketType.TRINKET_ERROR)
+            self.BanTrinket(TrinketType.TRINKET_FILIGREE_FEATHERS)
         end,
         [PlayerType.PLAYER_ISAAC] = function()
         end,
