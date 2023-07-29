@@ -24,6 +24,46 @@ function(_, entityNPC)
 	end
 end, EntityType.ENTITY_MOMS_HEART)
 
+---@param currentRoom Room
+local function TrySpawnRandomPickup(currentRoom)
+	for i = 1, Game():GetNumPlayers() do
+		local player = Isaac.GetPlayer(i - 1)
+
+		if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+			local n = math.random(3)
+
+			if n == 1 then
+				Isaac.Spawn(
+                    EntityType.ENTITY_PICKUP,
+                    PickupVariant.PICKUP_COIN,
+                    0,
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+                    Vector.Zero,
+                    nil
+                )
+			elseif n == 2 then
+				Isaac.Spawn(
+					EntityType.ENTITY_PICKUP,
+					PickupVariant.PICKUP_BOMB,
+					0,
+					currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+					Vector.Zero,
+					nil
+				)
+			elseif n == 3 then
+				Isaac.Spawn(
+					EntityType.ENTITY_PICKUP,
+					PickupVariant.PICKUP_KEY,
+					0,
+					currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+					Vector.Zero,
+					nil
+				)
+			end
+		end
+	end
+end
+
 --- When killing The Lamb or ???, giving you a full key
 --- And when killing boss in mirror world, giving you a knife piece 2
 ---@param level Level
@@ -51,6 +91,8 @@ local function OnBossRoomClear(level, currentRoom)
 			player:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2)
 		end
 	end
+
+	TrySpawnRandomPickup(currentRoom)
 end
 
 function Astrobirth:OnRoomClear()
