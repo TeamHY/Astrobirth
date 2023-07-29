@@ -18,14 +18,28 @@ Astrobirth:AddCallback(
     end
 )
 
+-- 최적화 필요
 Astrobirth:AddCallback(
-    ModCallbacks.MC_POST_GAME_END,
-    ---@param isGameOver boolean
-    function(_, isGameOver)
-        local player = Isaac.GetPlayer(0)
+    ModCallbacks.MC_POST_UPDATE,
+    function(_)
+        for i = 1, Game():GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
 
-        if player:HasCollectible(Astrobirth.Collectible.VIRGO_EX) then
-            Astrobirth.Data.GoPlanetarium = true
+            if player:HasCollectible(Astrobirth.Collectible.VIRGO_EX) then
+                Astrobirth.Data.GoPlanetarium = true
+            end
         end
     end
 )
+
+-- Astrobirth:AddCallback(
+--     ModCallbacks.MC_POST_GAME_END,
+--     ---@param isGameOver boolean
+--     function(_, isGameOver)
+--         local player = Isaac.GetPlayer(0)
+
+--         if player:HasCollectible(Astrobirth.Collectible.VIRGO_EX) then
+--             Astrobirth.Data.GoPlanetarium = true
+--         end
+--     end
+-- )
