@@ -1,13 +1,21 @@
 function Astrobirth:CurseRemove(curse) -- 입장 전 저주 제거
 	if (Game():GetLevel():GetStage() <= 3 and curse ~= 0) then
 		return 0
-	else
-		return ~(~BitSet128(curse) | BitSet128(
-			LevelCurse.CURSE_OF_MAZE |
-			LevelCurse.CURSE_OF_DARKNESS |
-			LevelCurse.CURSE_OF_THE_LOST |
-			LevelCurse.CURSE_OF_THE_UNKNOWN
-		)).l;
+	end
+
+	-- return ~(~BitSet128(curse) | BitSet128(
+	-- 	LevelCurse.CURSE_OF_MAZE |
+	-- 	LevelCurse.CURSE_OF_DARKNESS |
+	-- 	LevelCurse.CURSE_OF_THE_LOST |
+	-- 	LevelCurse.CURSE_OF_THE_UNKNOWN
+	-- )).l;
+
+	for i = 1, Game():GetNumPlayers() do
+		local player = Isaac.GetPlayer(i - 1)
+
+		if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+			return 0
+		end
 	end
 end
 
