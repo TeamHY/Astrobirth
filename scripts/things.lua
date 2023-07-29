@@ -69,6 +69,20 @@ function Astrobirth:AutoWastingCard(player)
 		WasteCard(player, Card.CARD_WORLD, 0)
 	elseif player:GetCard(0) == Card.CARD_SUN then
 		WasteCard(player, Card.CARD_SUN, 0)
+	elseif player:GetCard(0) == Card.CARD_JUSTICE then
+		WasteCard(player, Card.CARD_JUSTICE, 0)
+	elseif player:GetCard(0) == Card.CARD_HIEROPHANT then
+		WasteCard(player, Card.CARD_HIEROPHANT, 0)
+	elseif player:GetCard(0) == Card.CARD_REVERSE_HIEROPHANT then
+		WasteCard(player, Card.CARD_REVERSE_HIEROPHANT, 0)
+	elseif player:GetCard(0) == Card.CARD_RULES then
+		WasteCard(player, Card.CARD_RULES, 0)
+	elseif player:GetCard(0) == Card.CARD_ANCIENT_RECALL then
+		WasteCard(player, Card.CARD_ANCIENT_RECALL, 0)
+	elseif player:GetCard(0) == Card.CARD_REVERSE_MAGICIAN then
+		WasteCard(player, Card.CARD_REVERSE_MAGICIAN, 0)
+	elseif player:GetCard(0) == Card.RUNE_BERKANO then
+		WasteCard(player, Card.RUNE_BERKANO, 0)
 	end
 end
 
