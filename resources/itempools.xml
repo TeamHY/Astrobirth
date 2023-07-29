@@ -168,7 +168,7 @@
 		<Item Id="166" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="167" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="168" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="169" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="169" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="170" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="171" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="172" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -306,7 +306,7 @@
 		<Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="308" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="309" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="310" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="310" Weight="0.2" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="311" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="312" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="313" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
@@ -346,7 +346,7 @@
 		<Item Id="347" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="348" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="349" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="350" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="350" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="352" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="353" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="354" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -929,9 +929,9 @@
 
 	</Pool>
 	<Pool Name="devil">
+		<Item Id="3" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="4" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="8" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="46" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="48" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="51" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -998,7 +998,7 @@
 		<Item Id="369" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="370" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="373" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="374" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="374" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="381" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="387" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="390" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1058,9 +1058,9 @@
 
 	</Pool>
 	<Pool Name="angel">
+		<Item Id="3" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="4" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="8" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="46" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="48" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="51" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1497,9 +1497,9 @@
 		<Item Id="732" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="demonBeggar">
+		<Item Id="3" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="4" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="8" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="46" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="48" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="51" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1616,9 +1616,9 @@
 		<Item Id="705" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 	</Pool>
 	<Pool Name="curse">
+		<Item Id="3" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="4" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="8" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="46" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="48" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="51" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -3461,7 +3461,7 @@
 		<Item Id="166" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="167" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="168" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="169" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="169" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="170" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="171" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="172" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -3599,7 +3599,7 @@
 		<Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="308" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="309" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="310" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="310" Weight="0.2" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="311" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="312" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="313" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
@@ -3639,7 +3639,7 @@
 		<Item Id="347" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="348" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="349" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="350" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="350" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="352" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="353" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="354" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -4020,9 +4020,9 @@
 		<Item Id="732" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="ultraSecret">
+		<Item Id="3" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="4" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="8" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="46" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="48" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="51" Weight="1" DecreaseBy="1" RemoveOn="0"/>
