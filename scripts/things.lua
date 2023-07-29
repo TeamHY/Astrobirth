@@ -18,13 +18,13 @@ local function TrySpawnRandomPickup(currentRoom)
 
 			if n == 1 then
 				Isaac.Spawn(
-                    EntityType.ENTITY_PICKUP,
-                    PickupVariant.PICKUP_COIN,
-                    0,
-                    currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
-                    Vector.Zero,
-                    nil
-                )
+					EntityType.ENTITY_PICKUP,
+					PickupVariant.PICKUP_COIN,
+					0,
+					currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+					Vector.Zero,
+					nil
+				)
 			elseif n == 2 then
 				Isaac.Spawn(
 					EntityType.ENTITY_PICKUP,
@@ -48,36 +48,54 @@ local function TrySpawnRandomPickup(currentRoom)
 	end
 end
 
----@param player EntityPlayer
-local function TryAddDogma(player)
-	if player:HasTrinket(TrinketType.TRINKET_PERFECTION) and not player:HasCollectible(CollectibleType.COLLECTIBLE_DOGMA, true) then
-		player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
-	end
-end
-
 --- When killing The Lamb or ???, giving you a full key
 --- And when killing boss in mirror world, giving you a knife piece 2
 ---@param level Level
 ---@param currentRoom Room
 local function OnBossRoomClear(level, currentRoom)
 	local stage = level:GetAbsoluteStage()
-	local player = Isaac.GetPlayer()
+	local firstPlayer = Isaac.GetPlayer()
 
 	if stage == LevelStage.STAGE1_1 or stage == LevelStage.STAGE1_2 then
 		Isaac.Spawn(EntityType.ENTITY_SLOT, 10, 0, currentRoom:GetCenterPos(), Vector(0, 0), nil) -- Shop Restock Machine
 
 		if currentRoom:IsMirrorWorld() then
-			player:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
+			firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
 		end
-	elseif stage == LevelStage.STAGE4_2 and level:GetStageType() ~= StageType.STAGETYPE_REPENTANCE then
-		TryAddDogma(player)
 	elseif stage == LevelStage.STAGE6 then
-		if not player:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1, true) then
-			player:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1)
+		if not firstPlayer:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1, true) then
+			firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1)
 		end
 
-		if not player:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2, true) then
-			player:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2)
+		if not firstPlayer:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2, true) then
+			firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2)
+		end
+	end
+
+	local isSpawndFool = false
+
+	for i = 1, Game():GetNumPlayers() do
+		local player = Isaac.GetPlayer(i - 1)
+
+		if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+			if stage == LevelStage.STAGE3_2 then
+				player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+
+				if currentRoom:GetBossID() == 6 and not isSpawndFool then
+					Isaac.Spawn(
+						EntityType.ENTITY_PICKUP,
+						PickupVariant.PICKUP_TAROTCARD,
+						Card.CARD_FOOL,
+						currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+						Vector.Zero,
+						nil
+					)
+
+					isSpawndFool = true
+				end
+			elseif stage == LevelStage.STAGE4_2 and level:GetStageType() ~= StageType.STAGETYPE_REPENTANCE then
+				player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+			end
 		end
 	end
 
@@ -95,19 +113,63 @@ end
 
 Astrobirth:AddCallback(ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD, Astrobirth.OnRoomClear)
 
-Astrobirth:AddCallback(ModCallbacks.MC_POST_NPC_DEATH,
----@param entityNPC EntityNPC
-function(_, entityNPC)
-	if entityNPC.Variant == 0 then
-		local player = Isaac.GetPlayer(0)
-		local level = Game():GetLevel()
-		local stage = level:GetAbsoluteStage()
+-- Astrobirth:AddCallback(
+-- 	ModCallbacks.MC_POST_NPC_DEATH,
+-- 	---@param entityNPC EntityNPC
+-- 	function(_, entityNPC)
+-- 		if entityNPC.Variant == 0 or entityNPC.Variant == 10 then
+-- 			for i = 1, Game():GetNumPlayers() do
+-- 				local player = Isaac.GetPlayer(i - 1)
 
-		if stage == LevelStage.STAGE3_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE then
-			TryAddDogma(player)
-		end
-	end
-end, EntityType.ENTITY_MOMS_HEART)
+-- 				if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+-- 					local level = Game():GetLevel()
+-- 					local stage = level:GetAbsoluteStage()
+
+-- 					if stage == LevelStage.STAGE3_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE then
+-- 						player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+-- 					elseif stage == LevelStage.STAGE4_2 and level:GetStageType() ~= StageType.STAGETYPE_REPENTANCE then
+-- 						player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+-- 					end
+-- 				end
+-- 			end
+-- 		end
+-- 	end,
+-- 	EntityType.ENTITY_MOMS_HEART
+-- )
+
+-- Astrobirth:AddCallback(
+-- 	ModCallbacks.MC_POST_NPC_DEATH,
+-- 	---@param entityNPC EntityNPC
+-- 	function(_, entityNPC)
+-- 		local stage = Game():GetLevel():GetAbsoluteStage()
+
+-- 		local isSpawndFool = false
+
+-- 		for i = 1, Game():GetNumPlayers() do
+-- 			local player = Isaac.GetPlayer(i - 1)
+
+-- 			if player:HasTrinket(TrinketType.TRINKET_PERFECTION) and stage == LevelStage.STAGE3_2 then
+-- 				if not isSpawndFool then
+-- 					local currentRoom = Game():GetLevel():GetCurrentRoom()
+
+-- 					Isaac.Spawn(
+-- 						EntityType.ENTITY_PICKUP,
+-- 						PickupVariant.PICKUP_TAROTCARD,
+-- 						Card.CARD_FOOL,
+-- 						currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+-- 						Vector.Zero,
+-- 						nil
+-- 					)
+
+-- 					isSpawndFool = true
+-- 				end
+
+-- 				player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+-- 			end
+-- 		end
+-- 	end,
+-- 	EntityType.ENTITY_MOM
+-- )
 
 --- Automatically waste The Sun, The World, Ansuz
 ---@param player EntityPlayer
