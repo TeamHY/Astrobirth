@@ -1372,7 +1372,7 @@
         <gibs amount="4" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" rock="1"/>
     	<devolve id="44.1.0" weight="1" />
 	</entity>
-    <entity anm2path="045.000_Mom.anm2" baseHP="645" boss="1" bossID="6" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="35" friction="1" id="45" name="#MOM" numGridCollisionPoints="0" portrait="9" shadowSize="33" stageHP="0" variant="0">
+    <entity anm2path="045.000_Mom.anm2" baseHP="1500" boss="1" bossID="6" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="35" friction="1" id="45" name="#MOM" numGridCollisionPoints="0" portrait="9" shadowSize="33" stageHP="0" variant="0">
         <bestiary anim="Eye" transform="0,0,1"/>
         <gibs amount="20" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <preload-snd id="97"/>
