@@ -14,36 +14,30 @@ local function TrySpawnRandomPickup(currentRoom)
 		local player = Isaac.GetPlayer(i - 1)
 
 		if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
-			local n = math.random(3)
-
-			if n == 1 then
-				Isaac.Spawn(
-					EntityType.ENTITY_PICKUP,
-					PickupVariant.PICKUP_COIN,
-					0,
-					currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
-					Vector.Zero,
-					nil
-				)
-			elseif n == 2 then
-				Isaac.Spawn(
-					EntityType.ENTITY_PICKUP,
-					PickupVariant.PICKUP_BOMB,
-					0,
-					currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
-					Vector.Zero,
-					nil
-				)
-			elseif n == 3 then
-				Isaac.Spawn(
-					EntityType.ENTITY_PICKUP,
-					PickupVariant.PICKUP_KEY,
-					0,
-					currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
-					Vector.Zero,
-					nil
-				)
-			end
+			Isaac.Spawn(
+				EntityType.ENTITY_PICKUP,
+				PickupVariant.PICKUP_COIN,
+				0,
+				currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+				Vector.Zero,
+				nil
+			)
+			Isaac.Spawn(
+				EntityType.ENTITY_PICKUP,
+				PickupVariant.PICKUP_BOMB,
+				0,
+				currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+				Vector.Zero,
+				nil
+			)
+			Isaac.Spawn(
+				EntityType.ENTITY_PICKUP,
+				PickupVariant.PICKUP_KEY,
+				0,
+				currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+				Vector.Zero,
+				nil
+			)
 		end
 	end
 end
