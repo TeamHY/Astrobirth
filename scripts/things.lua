@@ -8,6 +8,22 @@ end
 
 Astrobirth:AddCallback(ModCallbacks.MC_PRE_ENTITY_SPAWN, Astrobirth.OnSpawningBossPortal)
 
+Astrobirth:AddCallback(ModCallbacks.MC_POST_NPC_DEATH,
+---@param entityNPC EntityNPC
+function(_, entityNPC)
+	if entityNPC.Variant == 0 then
+		local player = Isaac.GetPlayer(0)
+		local level = Game():GetLevel()
+		local stage = level:GetAbsoluteStage()
+
+		if stage == LevelStage.STAGE3_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE then
+			if not player:HasCollectible(CollectibleType.COLLECTIBLE_DOGMA, true) then
+				player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+			end
+		end
+	end
+end, EntityType.ENTITY_MOMS_HEART)
+
 --- When killing The Lamb or ???, giving you a full key
 --- And when killing boss in mirror world, giving you a knife piece 2
 ---@param level Level
@@ -21,10 +37,6 @@ local function OnBossRoomClear(level, currentRoom)
 
 		if currentRoom:IsMirrorWorld() then
 			player:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
-		end
-	elseif stage == LevelStage.STAGE3_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE then
-		if not player:HasCollectible(CollectibleType.COLLECTIBLE_DOGMA, true) then
-			player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
 		end
 	elseif stage == LevelStage.STAGE4_2 and level:GetStageType() ~= StageType.STAGETYPE_REPENTANCE then
 		if not player:HasCollectible(CollectibleType.COLLECTIBLE_DOGMA, true) then
