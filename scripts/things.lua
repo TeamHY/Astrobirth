@@ -8,22 +8,6 @@ end
 
 Astrobirth:AddCallback(ModCallbacks.MC_PRE_ENTITY_SPAWN, Astrobirth.OnSpawningBossPortal)
 
-Astrobirth:AddCallback(ModCallbacks.MC_POST_NPC_DEATH,
----@param entityNPC EntityNPC
-function(_, entityNPC)
-	if entityNPC.Variant == 0 then
-		local player = Isaac.GetPlayer(0)
-		local level = Game():GetLevel()
-		local stage = level:GetAbsoluteStage()
-
-		if stage == LevelStage.STAGE3_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE then
-			if not player:HasCollectible(CollectibleType.COLLECTIBLE_DOGMA, true) then
-				player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
-			end
-		end
-	end
-end, EntityType.ENTITY_MOMS_HEART)
-
 ---@param currentRoom Room
 local function TrySpawnRandomPickup(currentRoom)
 	for i = 1, Game():GetNumPlayers() do
@@ -64,6 +48,13 @@ local function TrySpawnRandomPickup(currentRoom)
 	end
 end
 
+---@param player EntityPlayer
+local function TryAddDogma(player)
+	if player:HasTrinket(TrinketType.TRINKET_PERFECTION) and not player:HasCollectible(CollectibleType.COLLECTIBLE_DOGMA, true) then
+		player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+	end
+end
+
 --- When killing The Lamb or ???, giving you a full key
 --- And when killing boss in mirror world, giving you a knife piece 2
 ---@param level Level
@@ -79,9 +70,7 @@ local function OnBossRoomClear(level, currentRoom)
 			player:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
 		end
 	elseif stage == LevelStage.STAGE4_2 and level:GetStageType() ~= StageType.STAGETYPE_REPENTANCE then
-		if not player:HasCollectible(CollectibleType.COLLECTIBLE_DOGMA, true) then
-			player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
-		end
+		TryAddDogma(player)
 	elseif stage == LevelStage.STAGE6 then
 		if not player:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1, true) then
 			player:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1)
@@ -105,6 +94,20 @@ function Astrobirth:OnRoomClear()
 end
 
 Astrobirth:AddCallback(ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD, Astrobirth.OnRoomClear)
+
+Astrobirth:AddCallback(ModCallbacks.MC_POST_NPC_DEATH,
+---@param entityNPC EntityNPC
+function(_, entityNPC)
+	if entityNPC.Variant == 0 then
+		local player = Isaac.GetPlayer(0)
+		local level = Game():GetLevel()
+		local stage = level:GetAbsoluteStage()
+
+		if stage == LevelStage.STAGE3_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE then
+			TryAddDogma(player)
+		end
+	end
+end, EntityType.ENTITY_MOMS_HEART)
 
 --- Automatically waste The Sun, The World, Ansuz
 ---@param player EntityPlayer
