@@ -14,24 +14,30 @@ Astrobirth:AddCallback(ModCallbacks.MC_PRE_ENTITY_SPAWN, Astrobirth.OnSpawningBo
 ---@param currentRoom Room
 local function OnBossRoomClear(level, currentRoom)
 	local stage = level:GetAbsoluteStage()
+	local player = Isaac.GetPlayer()
 
 	if stage == LevelStage.STAGE1_1 or stage == LevelStage.STAGE1_2 then
 		Isaac.Spawn(EntityType.ENTITY_SLOT, 10, 0, currentRoom:GetCenterPos(), Vector(0, 0), nil) -- Shop Restock Machine
 
 		if currentRoom:IsMirrorWorld() then
-			local player = Isaac.GetPlayer() -- 의도 됨
-
 			player:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
 		end
+	elseif stage == LevelStage.STAGE3_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE then
+		if not player:HasCollectible(CollectibleType.COLLECTIBLE_DOGMA, true) then
+			player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+		end
+	elseif stage == LevelStage.STAGE4_2 and level:GetStageType() ~= StageType.STAGETYPE_REPENTANCE then
+		if not player:HasCollectible(CollectibleType.COLLECTIBLE_DOGMA, true) then
+			player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+		end
 	elseif stage == LevelStage.STAGE6 then
-		Isaac.Spawn(
-			EntityType.ENTITY_FAMILIAR,
-			FamiliarVariant.KEY_FULL,
-			0,
-			currentRoom:GetRandomPosition(0),
-			Vector(0, 0),
-			nil
-		)
+		if not player:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1, true) then
+			player:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1)
+		end
+
+		if not player:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2, true) then
+			player:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2)
+		end
 	end
 end
 
