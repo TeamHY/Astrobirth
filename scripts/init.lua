@@ -58,6 +58,16 @@ function Astrobirth:OnUpdate(player)
 			end
 		end
 	end
+
+	if player:HasCollectible(CollectibleType.COLLECTIBLE_MAGIC_8_BALL, true) then
+		local idx = level:QueryRoomTypeIndex(RoomType.ROOM_PLANETARIUM, false, RNG())
+		local room = level:GetRoomByIdx(idx)
+
+		if room ~= nil then
+			room.DisplayFlags = room.DisplayFlags | 1 << 2
+			level:UpdateVisibility()
+		end
+	end
 end
 
 Astrobirth:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astrobirth.OnUpdate)
