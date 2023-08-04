@@ -109,8 +109,6 @@ local function OnBossRoomClear(level, currentRoom)
 					Vector.Zero,
 					nil
 				)
-			elseif level:GetStageType() > StageType.STAGETYPE_AFTERBIRTH then
-				break
 			elseif stage == LevelStage.STAGE2_2 then
 				Isaac.Spawn(
 					EntityType.ENTITY_PICKUP,
@@ -180,7 +178,7 @@ local function OnBossRoomClear(level, currentRoom)
 						Vector.Zero,
 						nil
 					):ToPickup().OptionsPickupIndex = OPTIONS_PICKUP_INDEX
-			elseif stage == LevelStage.STAGE4_2 then
+			elseif stage == LevelStage.STAGE4_2 or (stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 8) then
 				Isaac.Spawn(
 						EntityType.ENTITY_PICKUP,
 						PickupVariant.PICKUP_COLLECTIBLE,
