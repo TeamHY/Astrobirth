@@ -26,7 +26,7 @@ end
 Astrobirth:AddPriorityCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     CallbackPriority.IMPORTANT,
-    function(isContinued)
+    function(_, isContinued)
         Astrobirth:LoadSaveData(isContinued)
     end
 )
@@ -34,7 +34,7 @@ Astrobirth:AddPriorityCallback(
 Astrobirth:AddPriorityCallback(
     ModCallbacks.MC_PRE_GAME_EXIT,
     CallbackPriority.LATE,
-    function(shouldSave)
+    function(_, shouldSave)
         Astrobirth:SaveData()
     end
 )
