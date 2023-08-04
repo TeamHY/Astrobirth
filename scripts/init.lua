@@ -63,7 +63,7 @@ function Astrobirth:OnUpdate(player)
 		local idx = level:QueryRoomTypeIndex(RoomType.ROOM_PLANETARIUM, false, RNG())
 		local room = level:GetRoomByIdx(idx)
 
-		if room ~= nil then
+		if room.Data.Type == RoomType.ROOM_PLANETARIUM then
 			room.DisplayFlags = room.DisplayFlags | 1 << 2
 			level:UpdateVisibility()
 		end
