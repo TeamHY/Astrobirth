@@ -525,7 +525,7 @@
 	
 	<!-- Booster Pack #1 -->
 	<familiar achievement="352" description="#ANGRY_FLY_DESCRIPTION" gfx="Collectibles_511_AngryFly.png" id="511" name="#ANGRY_FLY_NAME" />
-	<active achievement="349" description="#BLACK_HOLE_DESCRIPTION" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="4" name="#BLACK_HOLE_NAME" />
+	<active achievement="349" description="#BLACK_HOLE_DESCRIPTION" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="3" name="#BLACK_HOLE_NAME" />
 	<passive achievement="353" cache="damage" name="#BOZO_NAME" description="#BOZO_DESCRIPTION" soulhearts="2" id="513" gfx="Collectibles_513_Bozo.png" />
 	<passive achievement="354" name="#BROKEN_MODEM_NAME" description="#BROKEN_MODEM_DESCRIPTION" id="514" gfx="Collectibles_514_BrokenModem.png" />
 	<active achievement="350" description="#MYSTERY_GIFT_DESCRIPTION" id="515" gfx="Collectibles_515_MysteryGift.png" name="#MYSTERY_GIFT_NAME" />
@@ -739,7 +739,7 @@
 	<active		id="711"	achievement="592" gfx="Collectibles_711_Flip.png" name="#FLIP_NAME" description="#FLIP_DESCRIPTION" maxcharges="6" />
 	<active		id="712"	achievement="599" gfx="Collectibles_712_Lemegeton.png" name="#LEMEGETON_NAME" description="#LEMEGETON_DESCRIPTION" maxcharges="6" />
 	<active		id="713"	achievement="589" gfx="Collectibles_713_Sumptorium.png" name="#SUMPTORIUM_NAME" description="#SUMPTORIUM_DESCRIPTION" maxcharges="300" chargetype="timed" cooldown="60" />
-	<active		id="714"	gfx="Collectibles_714_Recall.png" name="#RECALL_NAME" description="#RECALL_DESCRIPTION" maxcharges="45" chargetype="timed" cache="flying" cooldown="150" hidden="true" />
+	<active		id="714"	gfx="Collectibles_714_Recall.png" name="#RECALL_NAME" description="#RECALL_DESCRIPTION" maxcharges="45" chargetype="timed" cache="flying" cooldown="75" hidden="true" />
 	<active		id="715"	gfx="Collectibles_715_Hold.png" name="#HOLD_NAME" description="#HOLD_DESCRIPTION" maxcharges="0" hidden="true" />
 	<passive	id="716"	achievement="464" gfx="Collectibles_716_KeepersSack.png" name="#KEEPERS_SACK_NAME" description="#KEEPERS_SACK_DESCRIPTION" cache="damage speed range" />
 	<passive	id="717"	achievement="596" gfx="Collectibles_717_KeepersKin.png" name="#KEEPERS_KIN_NAME" description="#KEEPERS_KIN_DESCRIPTION" />
