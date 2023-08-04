@@ -145,7 +145,7 @@
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_Judas_b.png" skinColor="1" costumeSuffix="shadow"
 		  birthright="#JUDAS_B_BIRTHRIGHT" />
-	<player id="25" name="#BLUEBABY_NAME" skin="Character_005b_Bluebaby.png" costume="83" hp="0" armor="6" keys="1" bombs="1" items="414" pocketActive="715" achievement="478" bombs="3"
+	<player id="25" name="#BLUEBABY_NAME" skin="Character_005b_Bluebaby.png" costume="83" hp="0" armor="6" keys="1" bombs="1" items="250,256,375,414,619" pocketActive="37" achievement="478" bombs="3"
           nameimage="PlayerName_06_BlueBaby.png" 
           portrait="PlayerPortrait_Bluebaby_b.png" skinColor="2" costumeSuffix="bluebaby"
 		  birthright="#BLUEBABY_B_BIRTHRIGHT" />
@@ -185,7 +185,7 @@
           nameimage="PlayerName_15_Apollyon.png" 
           portrait="PlayerPortrait_Apollyon_b.png" skinColor="5" costumeSuffix="apollyon" pocketActive="706"
 		  birthright="#APOLLYON_B_BIRTHRIGHT" />
-	<player id="35" name="#THE_FORGOTTEN_NAME" skin="Character_016b_TheForgotten.png" costume="93" keys="1" bombs="1" armor="6" items="414" achievement="488"
+	<player id="35" name="#THE_FORGOTTEN_NAME" skin="Character_016b_TheForgotten.png" costume="93" keys="1" bombs="1" armor="6" items="414,619" achievement="488"
           nameimage="PlayerName_16_TheForgotten.png" 
           portrait="PlayerPortrait_TheForgotten_b.png" skinColor="5" costumeSuffix="forgotten"
 		  birthright="#THE_FORGOTTEN_B_BIRTHRIGHT" />
