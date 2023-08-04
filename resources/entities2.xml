@@ -1030,7 +1030,7 @@
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="0"/>
         <preload-snd id="115"/>
     </entity>
-    <entity anm2path="019.001_The Hollow.anm2" baseHP="26" boss="1" bossID="26" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" gridCollision="walls" id="19" name="#THE_HOLLOW" numGridCollisionPoints="8" portrait="1" shadowSize="23" stageHP="0" variant="1">
+    <entity anm2path="019.001_The Hollow.anm2" baseHP="0" boss="1" bossID="26" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" gridCollision="walls" id="19" name="#THE_HOLLOW" numGridCollisionPoints="8" portrait="1" shadowSize="23" stageHP="6.5" variant="1">
         <bestiary anim="WalkHeadHori" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1"/>
     </entity>
@@ -1137,7 +1137,7 @@
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1"/>
     	<devolve id="30.0.0" weight="1" />
 	</entity>
-    <entity anm2path="028.000_Chub.anm2" baseHP="350" boss="1" bossID="3" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="18" friction="1" id="28" name="#CHUB" numGridCollisionPoints="12" portrait="3" shadowSize="42" stageHP="0" variant="0">
+    <entity anm2path="028.000_Chub.anm2" baseHP="0" boss="1" bossID="3" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="18" friction="1" id="28" name="#CHUB" numGridCollisionPoints="12" portrait="3" shadowSize="42" stageHP="87.5" variant="0">
         <bestiary anim="WalkNormalHori" transform="0,0,1"/>
         <gibs amount="12" blood="1" bone="0" eye="1" gut="1" large="1" worm="1"/>
         <preload-snd id="117"/>
@@ -1146,7 +1146,7 @@
         <preload-snd id="115"/>
         <preload-snd id="142"/>
     </entity>
-    <entity anm2path="028.001_C.H.A.D..anm2" baseHP="350" boss="1" bossID="21" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="18" friction="1" id="28" name="#CHAD" numGridCollisionPoints="12" portrait="4" shadowSize="42" stageHP="0" variant="1">
+    <entity anm2path="028.001_C.H.A.D..anm2" baseHP="0" boss="1" bossID="21" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="18" friction="1" id="28" name="#CHAD" numGridCollisionPoints="12" portrait="4" shadowSize="42" stageHP="87.5" variant="1">
         <bestiary anim="WalkNormalHori" transform="0,0,1"/>
         <gibs amount="12" blood="1" bone="0" eye="1" gut="1" large="1" worm="1"/>
         <preload-snd id="117"/>
@@ -1155,7 +1155,7 @@
         <preload-snd id="115"/>
         <preload-snd id="142"/>
     </entity>
-    <entity anm2path="028.002_The Carrion Queen.anm2" baseHP="350" boss="1" bossID="27" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="18" friction="1" id="28" name="#THE_CARRION_QUEEN" numGridCollisionPoints="12" portrait="5" shadowSize="42" stageHP="0" variant="2">
+    <entity anm2path="028.002_The Carrion Queen.anm2" baseHP="0" boss="1" bossID="27" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="18" friction="1" id="28" name="#THE_CARRION_QUEEN" numGridCollisionPoints="12" portrait="5" shadowSize="42" stageHP="87.5" variant="2">
         <bestiary anim="WalkNormalHori" transform="0,0,1"/>
         <gibs amount="12" blood="0" bone="1" eye="0" gut="1" large="1" worm="1"/>
         <preload-snd id="117"/>
@@ -1258,7 +1258,7 @@
     <entity anm2path="035.010_Mr. Maw Neck.anm2" baseHP="25" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="35" name="Mr. Maw Neck" numGridCollisionPoints="0" shadowSize="8" shutdoors="false" stageHP="0" tags="noreroll" variant="10">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="036.000_Gurdy.anm2" baseHP="595" boss="1" bossID="4" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="80" collisionRadiusYMulti="0.35" friction="1" id="36" name="#GURDY" numGridCollisionPoints="12" portrait="6" shadowSize="100" stageHP="0" variant="0">
+    <entity anm2path="036.000_Gurdy.anm2" baseHP="0" boss="1" bossID="4" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="80" collisionRadiusYMulti="0.35" friction="1" id="36" name="#GURDY" numGridCollisionPoints="12" portrait="6" shadowSize="100" stageHP="148.75" variant="0">
         <bestiary anim="Attack2" transform="0,0,.6"/>
         <gibs amount="18" blood="1" bone="1" eye="1" gut="1" large="1" worm="1"/>
         <preload-snd id="265"/>
@@ -1592,7 +1592,7 @@
         <preload-snd id="64"/>
         <preload-snd id="66"/>
     </entity>
-    <entity anm2path="062.002_TheFrail.anm2" baseHP="200" boss="1" bossID="66" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="62" name="#THE_FRAIL" numGridCollisionPoints="12" portrait="87" shadowSize="18" stageHP="0" variant="2">
+    <entity anm2path="062.002_TheFrail.anm2" baseHP="0" boss="1" bossID="66" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="62" name="#THE_FRAIL" numGridCollisionPoints="12" portrait="87" shadowSize="18" stageHP="50" variant="2">
         <bestiary anim="Attack1" transform="0,-10,1"/>
         <gibs amount="7" blood="0" bone="1" eye="0" gut="0" large="1"/>
         <preload-snd id="117"/>
@@ -1608,7 +1608,7 @@
         <preload-snd id="114"/>
         <preload-snd id="265"/>
     </entity>
-    <entity anm2path="064.000_Pestilence.anm2" baseHP="280" boss="1" bossID="10" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="1" id="64" name="#PESTILENCE" numGridCollisionPoints="0" portrait="28" shadowSize="19" stageHP="0" variant="0">
+    <entity anm2path="064.000_Pestilence.anm2" baseHP="0" boss="1" bossID="10" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="1" id="64" name="#PESTILENCE" numGridCollisionPoints="0" portrait="28" shadowSize="19" stageHP="70" variant="0">
         <bestiary anim="Walk" transform="0,2,1"/>
         <gibs amount="12" blood="1" bone="1" eye="1" gut="1" large="1" worm="1"/>
         <preload-snd id="158"/>
@@ -1656,11 +1656,11 @@
         <preload-snd id="106"/>
         <preload-snd id="112"/>
     </entity>
-    <entity anm2path="067.001_The Husk.anm2" baseHP="150" boss="1" bossID="29" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="35" friction="1" id="67" name="#THE_HUSK" numGridCollisionPoints="12" portrait="33" shadowSize="34" stageHP="0" variant="1">
+    <entity anm2path="067.001_The Husk.anm2" baseHP="0" boss="1" bossID="29" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="35" friction="1" id="67" name="#THE_HUSK" numGridCollisionPoints="12" portrait="33" shadowSize="34" stageHP="37.5" variant="1">
         <bestiary anim="Walk" transform="0,10,1"/>
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1"/>
     </entity>
-    <entity anm2path="068.000_Peep.anm2" baseHP="450" boss="1" bossID="14" champion="0" collisionDamage="2" collisionMass="40" collisionRadius="27" friction="1" id="68" name="#PEEP" numGridCollisionPoints="12" portrait="34" shadowSize="41" stageHP="0" variant="0">
+    <entity anm2path="068.000_Peep.anm2" baseHP="0" boss="1" bossID="14" champion="0" collisionDamage="2" collisionMass="40" collisionRadius="27" friction="1" id="68" name="#PEEP" numGridCollisionPoints="12" portrait="34" shadowSize="41" stageHP="112.5" variant="0">
         <bestiary anim="AttackAlt01" transform="0,0,1"/>
         <gibs amount="14" blood="1" bone="1" eye="0" gut="1" large="1"/>
         <preload-snd id="15"/>
@@ -1695,7 +1695,7 @@
         <bestiary anim="Attack01" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0"/>
     </entity>
-    <entity anm2path="071.000_Fistula Big.anm2" baseHP="60" boss="1" bossID="18" champion="0" collisionDamage="2" collisionMass="40" collisionRadius="40" friction="1" gridCollision="walls" hasFloorAlts="true" id="71" name="#FISTULA" numGridCollisionPoints="12" portrait="38" shadowSize="43" stageHP="0" variant="0">
+    <entity anm2path="071.000_Fistula Big.anm2" baseHP="0" boss="1" bossID="18" champion="0" collisionDamage="2" collisionMass="40" collisionRadius="40" friction="1" gridCollision="walls" hasFloorAlts="true" id="71" name="#FISTULA" numGridCollisionPoints="12" portrait="38" shadowSize="43" stageHP="15" variant="0">
         <bestiary anim="Biggest" transform="0,8,1"/>
         <gibs amount="20" blood="1" bone="1" eye="0" gut="1" large="1" worm="1"/>
         <preload id="72" variant="0"/>
@@ -1706,7 +1706,7 @@
         <gibs amount="20" blood="1" bone="1" eye="0" gut="0" large="1" worm="1"/>
         <preload id="72" variant="1"/>
     </entity>
-    <entity anm2path="072.000_Fistula Medium.anm2" baseHP="15" boss="1" bossID="18" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="1" gridCollision="walls" hasFloorAlts="true" id="72" name="Fistula Medium" numGridCollisionPoints="12" portrait="39" shadowSize="25" stageHP="0" variant="0">
+    <entity anm2path="072.000_Fistula Medium.anm2" baseHP="0" boss="1" bossID="18" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="1" gridCollision="walls" hasFloorAlts="true" id="72" name="Fistula Medium" numGridCollisionPoints="12" portrait="39" shadowSize="25" stageHP="3.75" variant="0">
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="1" worm="1"/>
         <preload id="73" variant="0"/>
     	<devolve id="73.0.0" weight="1" />
@@ -1715,7 +1715,7 @@
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="1" worm="1"/>
         <preload id="73" variant="1"/>
     </entity>
-    <entity anm2path="073.000_Fistula Small.anm2" baseHP="8" boss="1" bossID="18" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="13" friction="1" gridCollision="walls" hasFloorAlts="true" id="73" name="Fistula Small" numGridCollisionPoints="12" portrait="40" shadowSize="22" stageHP="0" variant="0">
+    <entity anm2path="073.000_Fistula Small.anm2" baseHP="0" boss="1" bossID="18" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="13" friction="1" gridCollision="walls" hasFloorAlts="true" id="73" name="Fistula Small" numGridCollisionPoints="12" portrait="40" shadowSize="22" stageHP="2" variant="0">
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" worm="1"/>
     	<devolve id="310.1.0" weight="1" />
 	</entity>
@@ -1835,7 +1835,7 @@
         <preload id="1000" subtype="1" variant="50"/>
         <preload-snd id="5"/>
     </entity>
-    <entity anm2path="081.001_Krampus.anm2" baseHP="60" boss="1" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="20" friction="1" id="81" name="#KRAMPUS" numGridCollisionPoints="0" portrait="53" shadowSize="24" stageHP="45" variant="1">
+    <entity anm2path="081.001_Krampus.anm2" baseHP="0" boss="1" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="20" friction="1" id="81" name="#KRAMPUS" numGridCollisionPoints="0" portrait="53" shadowSize="24" stageHP="75" variant="1">
         <bestiary anim="Walk" transform="0,0,1"/>
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="1"/>
     </entity>
@@ -1946,7 +1946,7 @@
         <bestiary anim="HeartBeat" transform="0,0,1"/>
         <gibs amount="20" blood="1" bone="0" eye="0" gut="0" large="1"/>
     </entity>
-    <entity anm2path="099.000_Gurdy Jr..anm2" baseHP="250" boss="1" bossID="28" champion="0" collisionDamage="1" collisionMass="80" collisionRadius="35" friction="1" id="99" name="#GURDY_JR" numGridCollisionPoints="12" portrait="57" shadowSize="57" stageHP="0" variant="0">
+    <entity anm2path="099.000_Gurdy Jr..anm2" baseHP="0" boss="1" bossID="28" champion="0" collisionDamage="1" collisionMass="80" collisionRadius="35" friction="1" id="99" name="#GURDY_JR" numGridCollisionPoints="12" portrait="57" shadowSize="57" stageHP="62.5" variant="0">
         <bestiary anim="Attack02" transform="0,0,1"/>
         <gibs amount="15" blood="1" bone="1" eye="1" gut="1" large="1" worm="1"/>
         <preload-snd id="117"/>
@@ -1962,7 +1962,7 @@
         <preload-snd id="185"/>
         <preload-snd id="158"/>
     </entity>
-    <entity anm2path="100.001_The Wretched.anm2" baseHP="215" boss="1" bossID="36" champion="0" collisionDamage="1" collisionMass="38" collisionRadius="35" friction="1" id="100" name="#THE_WRETCHED" numGridCollisionPoints="12" portrait="59" shadowSize="54" stageHP="0" variant="1">
+    <entity anm2path="100.001_The Wretched.anm2" baseHP="0" boss="1" bossID="36" champion="0" collisionDamage="1" collisionMass="38" collisionRadius="35" friction="1" id="100" name="#THE_WRETCHED" numGridCollisionPoints="12" portrait="59" shadowSize="54" stageHP="53.75" variant="1">
         <bestiary anim="Attack02" transform="0,0,1"/>
         <gibs amount="20" blood="1" bone="1" eye="1" gut="1" large="1" worm="1"/>
     </entity>
@@ -2495,7 +2495,7 @@
         <preload-snd id="413"/>
         <preload-snd id="72"/>
     </entity>
-    <entity anm2path="262.000_MegaMaw.anm2" baseHP="350" boss="1" bossID="45" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="33" friction="1" id="262" name="#MEGA_MAW" numGridCollisionPoints="12" portrait="66" shadowSize="50" stageHP="0" variant="0">
+    <entity anm2path="262.000_MegaMaw.anm2" baseHP="0" boss="1" bossID="45" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="33" friction="1" id="262" name="#MEGA_MAW" numGridCollisionPoints="12" portrait="66" shadowSize="50" stageHP="87.5" variant="0">
         <bestiary anim="Appear" transform="0,0,.7"/>
         <gibs amount="12" blood="1" bone="1" eye="0" gut="0" large="1"/>
         <preload-snd id="310"/>
@@ -2516,7 +2516,7 @@
         <preload id="1000" subtype="1" variant="50"/>
         <preload-snd id="5"/>
     </entity>
-    <entity anm2path="264.000_Mega Fatty.anm2" baseHP="600" boss="1" bossID="47" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" id="264" name="#MEGA_FATTY" numGridCollisionPoints="12" portrait="68" shadowSize="56" stageHP="0" variant="0">
+    <entity anm2path="264.000_Mega Fatty.anm2" baseHP="0" boss="1" bossID="47" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" id="264" name="#MEGA_FATTY" numGridCollisionPoints="12" portrait="68" shadowSize="56" stageHP="150" variant="0">
         <bestiary anim="Idle" transform="0,0,1"/>
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1"/>
         <preload-snd id="302"/>
@@ -2550,7 +2550,7 @@
     <entity anm2path="266.000_Mega Gurdy.anm2" baseHP="1" boss="1" bossID="49" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="30" friction="1" id="266" name="Mama Gurdy Right Hand" numGridCollisionPoints="12" portrait="70" shadowSize="0" stageHP="0" variant="2">
         <gibs amount="14" blood="1" bone="1" eye="0" gut="1" large="1" worm="1"/>
     </entity>
-    <entity anm2path="267.000_Dark One.anm2" baseHP="400" boss="1" bossID="50" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" gridCollision="walls" id="267" name="#DARK_ONE" numGridCollisionPoints="12" portrait="71" shadowSize="22" stageHP="0" variant="0">
+    <entity anm2path="267.000_Dark One.anm2" baseHP="0" boss="1" bossID="50" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" gridCollision="walls" id="267" name="#DARK_ONE" numGridCollisionPoints="12" portrait="71" shadowSize="22" stageHP="100" variant="0">
         <bestiary anim="Walk" transform="0,10,1"/>
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1"/>
         <preload-snd id="104"/>
@@ -2574,7 +2574,7 @@
         <preload id="1000" subtype="1" variant="50"/>
         <preload-snd id="5"/>
     </entity>
-    <entity anm2path="269.000_Polycephalus.anm2" baseHP="200" boss="1" bossID="52" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" id="269" name="#POLYCEPHALUS" numGridCollisionPoints="12" portrait="73" shadowSize="0" stageHP="0" variant="0">
+    <entity anm2path="269.000_Polycephalus.anm2" baseHP="0" boss="1" bossID="52" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" id="269" name="#POLYCEPHALUS" numGridCollisionPoints="12" portrait="73" shadowSize="0" stageHP="50" variant="0">
         <bestiary anim="Idle" transform="0,0,1"/>
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1"/>
         <preload id="244" variant="0"/>
@@ -2879,7 +2879,7 @@
     <entity anm2path="311.010_Mr. Mine Neck.anm2" baseHP="20" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" gridCollision="none" id="311" name="Mr. Mine Neck" numGridCollisionPoints="0" shadowSize="8" shutdoors="false" stageHP="0" tags="noreroll" variant="10">
         <gibs amount="4" blood="1" bone="0" eye="0" gut="1" large="0"/>
     </entity>
-    <entity anm2path="401.000_TheStain.anm2" baseHP="400" boss="1" bossID="57" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="35" friction="1" id="401" name="#THE_STAIN" numGridCollisionPoints="12" portrait="79" shadowSize="0" stageHP="0" variant="0">
+    <entity anm2path="401.000_TheStain.anm2" baseHP="0" boss="1" bossID="57" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="35" friction="1" id="401" name="#THE_STAIN" numGridCollisionPoints="12" portrait="79" shadowSize="0" stageHP="100" variant="0">
         <bestiary anim="Idle" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
@@ -2887,7 +2887,7 @@
         <bestiary anim="Idle_Happy" transform="0,0,.8"/>
         <gibs amount="15" blood="0" bone="0" eye="0" gut="0" large="1" poop="1"/>
     </entity>
-    <entity anm2path="403.000_TheForsaken.anm2" baseHP="220" boss="1" bossID="59" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="26" friction="1" id="403" name="#THE_FORSAKEN" numGridCollisionPoints="12" portrait="81" shadowSize="28" stageHP="0" tags="ghost" variant="0">
+    <entity anm2path="403.000_TheForsaken.anm2" baseHP="0" boss="1" bossID="59" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="26" friction="1" id="403" name="#THE_FORSAKEN" numGridCollisionPoints="12" portrait="81" shadowSize="28" stageHP="55" tags="ghost" variant="0">
         <bestiary anim="Idle" transform="0,14,1"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
@@ -2921,7 +2921,7 @@
     <entity anm2path="408.000_Hush_Skinless.anm2" baseHP="500" boss="1" bossID="63" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="100" friction="1" id="408" name="Hush (Skinless)" numGridCollisionPoints="40" portrait="85" shadowSize="60" stageHP="0" variant="0">
         <gibs amount="24" blood="1" bone="0" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="409.000_RagMega.anm2" baseHP="120" boss="1" bossID="67" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="35" friction="1" id="409" name="#RAG_MEGA" numGridCollisionPoints="12" portrait="88" shadowSize="34" stageHP="0" variant="0">
+    <entity anm2path="409.000_RagMega.anm2" baseHP="0" boss="1" bossID="67" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="35" friction="1" id="409" name="#RAG_MEGA" numGridCollisionPoints="12" portrait="88" shadowSize="34" stageHP="30" variant="0">
         <bestiary anim="Walk" transform="0,14,1"/>
         <gibs amount="16" blood="1" bone="1" eye="0" gut="1" large="1"/>
         <preload-snd id="108"/>
@@ -2945,7 +2945,7 @@
         <preload id="7" variant="1"/>
         <preload id="1000" subtype="1" variant="50"/>
     </entity>
-    <entity anm2path="411.000_BigHorn.anm2" baseHP="480" boss="1" bossID="69" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="62" collisionRadiusYMulti="0.35" friction="1" id="411" name="#BIG_HORN" numGridCollisionPoints="40" portrait="90" shadowSize="0" stageHP="0" variant="0">
+    <entity anm2path="411.000_BigHorn.anm2" baseHP="0" boss="1" bossID="69" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="62" collisionRadiusYMulti="0.35" friction="1" id="411" name="#BIG_HORN" numGridCollisionPoints="40" portrait="90" shadowSize="0" stageHP="120" variant="0">
         <bestiary anim="Idle" transform="0,-6,1"/>
         <gibs amount="24" blood="1" bone="0" eye="0" gut="1" large="1"/>
     </entity>
@@ -3787,11 +3787,11 @@
         <gibs amount="6" blood="1" bone="1" eye="1" gut="0" large="0" worm="1"/>
     	<devolve id="15.0.0" weight="1" />
 	</entity>
-    <entity anm2path="019.002_tuff twin.anm2" baseHP="35" boss="1" bossID="80" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="20" friction="1" gridCollision="walls" id="19" name="#TUFF_TWIN" numGridCollisionPoints="8" portrait="106" shadowSize="25" stageHP="0" tags="nodelirium" variant="2">
+    <entity anm2path="019.002_tuff twin.anm2" baseHP="0" boss="1" bossID="80" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="20" friction="1" gridCollision="walls" id="19" name="#TUFF_TWIN" numGridCollisionPoints="8" portrait="106" shadowSize="25" stageHP="8.75" tags="nodelirium" variant="2">
         <bestiary anim="WalkHeadHori" transform="0,0,1"/>
         <gibs amount="10" blood="1" bone="0" eye="0" gut="1" large="0"/>
     </entity>
-    <entity anm2path="019.003_the shell.anm2" baseHP="35" boss="1" bossID="96" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="20" friction="1" id="19" name="#THE_SHELL" numGridCollisionPoints="10" portrait="126" shadowSize="22" stageHP="0" tags="nodelirium" variant="3">
+    <entity anm2path="019.003_the shell.anm2" baseHP="0" boss="1" bossID="96" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="20" friction="1" id="19" name="#THE_SHELL" numGridCollisionPoints="10" portrait="126" shadowSize="22" stageHP="8.75" tags="nodelirium" variant="3">
         <bestiary anim="WalkHeadRef" transform="0,0,1"/>
         <gibs amount="10" blood="1" bone="0" eye="0" gut="1" large="0"/>
     </entity>
@@ -4068,7 +4068,7 @@
         <preload id="1000" subtype="1" variant="50"/>
         <preload-snd id="5"/>
     </entity>
-    <entity anm2path="269.001_polycephalus2.anm2" baseHP="580" boss="1" bossID="73" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" id="269" name="#THE_PILE" numGridCollisionPoints="12" portrait="98" shadowSize="0" stageHP="0" variant="1">
+    <entity anm2path="269.001_polycephalus2.anm2" baseHP="0" boss="1" bossID="73" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" id="269" name="#THE_PILE" numGridCollisionPoints="12" portrait="98" shadowSize="0" stageHP="145" variant="1">
         <bestiary anim="Idle" transform="0,0,1"/>
         <gibs amount="20" blood="0" bone="1" eye="0" gut="0" large="1"/>
     </entity>
@@ -4756,7 +4756,7 @@
         <bestiary anim="Idle4" transform="0,-10,1"/>
         <gibs amount="8" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" rock="1"/>
     </entity>
-    <entity anm2path="900.000_reap creep.anm2" baseHP="690" boss="1" bossID="74" champion="0" collisionDamage="1" collisionMass="38" collisionRadius="35" friction="1" gridCollision="none" id="900" name="#REAP_CREEP" numGridCollisionPoints="12" portrait="100" shadowSize="54" stageHP="0" tags="nodelirium" variant="0">
+    <entity anm2path="900.000_reap creep.anm2" baseHP="0" boss="1" bossID="74" champion="0" collisionDamage="1" collisionMass="38" collisionRadius="35" friction="1" gridCollision="none" id="900" name="#REAP_CREEP" numGridCollisionPoints="12" portrait="100" shadowSize="54" stageHP="172.5" tags="nodelirium" variant="0">
         <bestiary anim="WalkLeft" overlay="Idle1" transform="0,-20,1"/>
         <gibs amount="19" blood="1" bone="1" eye="1" gut="1" large="1"/>
     </entity>
@@ -4795,7 +4795,7 @@
         <bestiary anim="Attack1" transform="0,0,1"/>
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="906.000_hornfel.anm2" baseHP="240" boss="1" bossID="82" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="20" friction="1" gridCollision="none" id="906" name="#HORNFEL" numGridCollisionPoints="12" portrait="108" shadowSize="18" stageHP="0" tags="nodelirium" variant="0">
+    <entity anm2path="906.000_hornfel.anm2" baseHP="0" boss="1" bossID="82" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="20" friction="1" gridCollision="none" id="906" name="#HORNFEL" numGridCollisionPoints="12" portrait="108" shadowSize="18" stageHP="60" tags="nodelirium" variant="0">
         <bestiary anim="Idle" anm2path="906.000_hornfel (bestiary).anm2" transform="0,0,1"/>
         <gibs amount="10" blood="1" bone="1" eye="1" gut="1" large="0"/>
     </entity>
@@ -4872,14 +4872,14 @@
         <bestiary anim="Fart" transform="0,0,1"/>
         <gibs amount="0" blood="1" bone="1" eye="1" gut="1" large="0"/>
     </entity>
-    <entity anm2path="915.000_singe.anm2" baseHP="444" boss="1" bossID="93" champion="0" collisionDamage="1" collisionMass="20" collisionRadius="20" friction="1" id="915" name="#SINGE" numGridCollisionPoints="12" portrait="123" shadowSize="18" stageHP="0" tags="nodelirium" variant="0">
+    <entity anm2path="915.000_singe.anm2" baseHP="0" boss="1" bossID="93" champion="0" collisionDamage="1" collisionMass="20" collisionRadius="20" friction="1" id="915" name="#SINGE" numGridCollisionPoints="12" portrait="123" shadowSize="18" stageHP="111" tags="nodelirium" variant="0">
         <bestiary anim="yeehaw" transform="0,0,1"/>
         <gibs amount="20" blood="0" bone="1" eye="1" gut="0" large="0"/>
     </entity>
     <entity anm2path="915.001_singe ball.anm2" baseHP="100" boss="0" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="17" friction="1" id="915" name="Singe&apos;s Ball" numGridCollisionPoints="12" portrait="296" shadowSize="18" shutdoors="false" stageHP="0" tags="noreroll" variant="1">
         <gibs amount="6" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" rock="1"/>
     </entity>
-    <entity anm2path="916.000_bumbino.anm2" baseHP="385" boss="1" bossID="94" champion="0" collisionDamage="1" collisionMass="40" collisionRadius="30" friction="1" id="916" name="#BUMBINO" numGridCollisionPoints="12" portrait="124" shadowSize="40" stageHP="0" variant="0">
+    <entity anm2path="916.000_bumbino.anm2" baseHP="0" boss="1" bossID="94" champion="0" collisionDamage="1" collisionMass="40" collisionRadius="30" friction="1" id="916" name="#BUMBINO" numGridCollisionPoints="12" portrait="124" shadowSize="40" stageHP="96.25" variant="0">
         <bestiary anim="Idle2" transform="0,0,1"/>
         <gibs amount="20" blood="1" bone="1" eye="1" gut="1" large="1"/>
     </entity>
@@ -4901,7 +4901,7 @@
         <bestiary anim="Idle" transform="0,0,1"/>
         <gibs amount="10" blood="1" bone="1" eye="1" gut="1" large="0"/>
     </entity>
-    <entity anm2path="921.000_clutch.anm2" baseHP="500" boss="1" bossID="102" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="30" friction="1" gridCollision="none" id="921" name="#CLUTCH" numGridCollisionPoints="12" portrait="137" shadowSize="22" stageHP="0" tags="ghost nodelirium" variant="0">
+    <entity anm2path="921.000_clutch.anm2" baseHP="0" boss="1" bossID="102" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="30" friction="1" gridCollision="none" id="921" name="#CLUTCH" numGridCollisionPoints="12" portrait="137" shadowSize="22" stageHP="125" tags="ghost nodelirium" variant="0">
         <bestiary anm2path="921.000_clutch (bestiary).anm2" anim="Idle" transform="0,0,1"/>
         <gibs amount="10" blood="0" bone="0" eye="0" gut="0" large="1"/>
     </entity>
