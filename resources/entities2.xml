@@ -1592,7 +1592,7 @@
         <preload-snd id="64"/>
         <preload-snd id="66"/>
     </entity>
-    <entity anm2path="062.002_TheFrail.anm2" baseHP="0" boss="1" bossID="66" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="62" name="#THE_FRAIL" numGridCollisionPoints="12" portrait="87" shadowSize="18" stageHP="50" variant="2">
+    <entity anm2path="062.002_TheFrail.anm2" baseHP="1" boss="1" bossID="66" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="62" name="#THE_FRAIL" numGridCollisionPoints="12" portrait="87" shadowSize="18" stageHP="50" variant="2">
         <bestiary anim="Attack1" transform="0,-10,1"/>
         <gibs amount="7" blood="0" bone="1" eye="0" gut="0" large="1"/>
         <preload-snd id="117"/>
