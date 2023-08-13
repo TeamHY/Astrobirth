@@ -1,4 +1,4 @@
-Astrobirth.Utill = {}
+Astro.Utill = {}
 
 --- From isaacscript-common
 ---
@@ -9,7 +9,7 @@ Astrobirth.Utill = {}
 --- a last resort, it will attempt to use the `Entity.ToPlayer` method on the entity itself.
 ---@param entity Entity
 ---@return EntityPlayer | nil
-function Astrobirth.Utill:GetPlayerFromEntity(entity)
+function Astro.Utill:GetPlayerFromEntity(entity)
     if entity == nil then
         return nil
     end

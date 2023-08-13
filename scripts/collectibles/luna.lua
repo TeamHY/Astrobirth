@@ -12,7 +12,7 @@ local function ComputeCount()
     return count
 end
 
-Astrobirth:AddCallback(
+Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     ---@param isContinued boolean
     function(_, isContinued)
@@ -20,7 +20,7 @@ Astrobirth:AddCallback(
     end
 )
 
-Astrobirth:AddCallback(
+Astro:AddCallback(
     ModCallbacks.MC_POST_PEFFECT_UPDATE,
     ---@param player EntityPlayer
     function(_, player)

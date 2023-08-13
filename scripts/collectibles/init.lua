@@ -1,4 +1,4 @@
-Astrobirth.Collectible = {}
+Astro.Collectible = {}
 
 require "scripts.collectibles.cygnus"
 require "scripts.collectibles.libra-ex"

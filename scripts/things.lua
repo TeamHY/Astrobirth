@@ -1,12 +1,12 @@
 -- For Card Reading, replace boss portal to random portal
 ---@param type EntityType
-function Astrobirth:OnSpawningBossPortal(type, variant, subtype)
+function Astro:OnSpawningBossPortal(type, variant, subtype)
 	if (type == EntityType.ENTITY_EFFECT and variant == EffectVariant.PORTAL_TELEPORT and subtype == 1) then
 		return {type, variant, 3, seed}
 	end
 end
 
-Astrobirth:AddCallback(ModCallbacks.MC_PRE_ENTITY_SPAWN, Astrobirth.OnSpawningBossPortal)
+Astro:AddCallback(ModCallbacks.MC_PRE_ENTITY_SPAWN, Astro.OnSpawningBossPortal)
 
 local OPTIONS_PICKUP_INDEX = 145
 local GRID_SIZE = 40
@@ -243,7 +243,7 @@ local function OnBossRoomClear(level, currentRoom)
 	end
 end
 
-function Astrobirth:OnRoomClear()
+function Astro:OnRoomClear()
 	local level = Game():GetLevel()
 	local currentRoom = level:GetCurrentRoom()
 
@@ -252,7 +252,7 @@ function Astrobirth:OnRoomClear()
 	end
 end
 
-Astrobirth:AddCallback(ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD, Astrobirth.OnRoomClear)
+Astro:AddCallback(ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD, Astro.OnRoomClear)
 
 -- Astrobirth:AddCallback(
 -- 	ModCallbacks.MC_POST_NPC_DEATH,
@@ -322,7 +322,7 @@ local function WasteCard(player, cardID, slotId)
 end
 
 ---@param player EntityPlayer
-function Astrobirth:AutoWastingCard(player)
+function Astro:AutoWastingCard(player)
 	if player:GetCard(0) == Card.RUNE_ANSUZ then
 		WasteCard(player, Card.RUNE_ANSUZ, 0)
 	elseif player:GetCard(0) == Card.CARD_WORLD then
@@ -346,4 +346,4 @@ function Astrobirth:AutoWastingCard(player)
 	end
 end
 
-Astrobirth:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astrobirth.AutoWastingCard)
+Astro:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astro.AutoWastingCard)

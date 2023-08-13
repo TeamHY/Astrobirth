@@ -1,4 +1,4 @@
-function Astrobirth:CurseRemove(curse) -- 입장 전 저주 제거
+function Astro:CurseRemove(curse) -- 입장 전 저주 제거
 	if (Game():GetLevel():GetStage() <= 3 and curse ~= 0) then
 		return 0
 	end
@@ -19,10 +19,10 @@ function Astrobirth:CurseRemove(curse) -- 입장 전 저주 제거
 	end
 end
 
-Astrobirth:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, Astrobirth.CurseRemove)
+Astro:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, Astro.CurseRemove)
 
 ---@param player EntityPlayer
-function Astrobirth:OnUpdate(player)
+function Astro:OnUpdate(player)
 	local level = Game():GetLevel()
 	local stage = level:GetStage()
 
@@ -70,4 +70,4 @@ function Astrobirth:OnUpdate(player)
 	end
 end
 
-Astrobirth:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astrobirth.OnUpdate)
+Astro:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astro.OnUpdate)

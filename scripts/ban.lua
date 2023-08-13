@@ -1,6 +1,6 @@
-Astrobirth.Ban = {}
+Astro.Ban = {}
 
-local Ban = Astrobirth.Ban
+local Ban = Astro.Ban
 
 function Ban:Init()
     local banTable = {
@@ -126,14 +126,14 @@ function Ban:OnPostGameStarted(newstart)
     Ban:Init()
 end
 
-Astrobirth:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Ban.OnPostGameStarted)
+Astro:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Ban.OnPostGameStarted)
 
 -- Ban Room Type
 
 local tryCount = 0
 local LIMIT = 100
 
-Astrobirth:AddPriorityCallback(
+Astro:AddPriorityCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     CallbackPriority.IMPORTANT,
     function(_, isContinued)
@@ -141,7 +141,7 @@ Astrobirth:AddPriorityCallback(
     end
 )
 
-Astrobirth:AddCallback(
+Astro:AddCallback(
 	ModCallbacks.MC_POST_NEW_LEVEL,
 	function(_)
         local hasMissingNo = false

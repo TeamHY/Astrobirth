@@ -1,19 +1,19 @@
-Astrobirth.Data = {
+Astro.Data = {
     Save = {}
 }
 
-function Astrobirth:SaveData()
-    Isaac.SaveModData(Astrobirth, Json.encode(Astrobirth.Data))
+function Astro:SaveData()
+    Isaac.SaveModData(Astro, Json.encode(Astro.Data))
 end
 
 ---comment
 ---@param isContinued boolean
-function Astrobirth:LoadSaveData(isContinued)
-    if Astrobirth:HasData() then
-        local raw = Astrobirth:LoadData()
+function Astro:LoadSaveData(isContinued)
+    if Astro:HasData() then
+        local raw = Astro:LoadData()
         local data = Json.decode(raw)
 
-        Astrobirth.Data = data or {}
+        Astro.Data = data or {}
 
         -- if isContinued then
         --     Astrobirth.Data.Save = Astrobirth.Data.Save ~= nil and Astrobirth.Data.Save or {}
@@ -23,18 +23,18 @@ function Astrobirth:LoadSaveData(isContinued)
     end
 end
 
-Astrobirth:AddPriorityCallback(
+Astro:AddPriorityCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     CallbackPriority.IMPORTANT,
     function(_, isContinued)
-        Astrobirth:LoadSaveData(isContinued)
+        Astro:LoadSaveData(isContinued)
     end
 )
 
-Astrobirth:AddPriorityCallback(
+Astro:AddPriorityCallback(
     ModCallbacks.MC_PRE_GAME_EXIT,
     CallbackPriority.LATE,
     function(_, shouldSave)
-        Astrobirth:SaveData()
+        Astro:SaveData()
     end
 )
