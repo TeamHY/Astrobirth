@@ -765,7 +765,7 @@
 	<trinket description="#PETRIFIED_POOP_DESCRIPTION" gfx="trinket_002_petrifiedpoop.png" id="2" name="#PETRIFIED_POOP_NAME" />
 	<trinket description="#AAA_BATTERY_DESCRIPTION" gfx="trinket_003_aaabattery.png" id="3" name="#AAA_BATTERY_NAME" />
 	<trinket description="#BROKEN_REMOTE_DESCRIPTION" gfx="trinket_004_brokenremote.png" id="4" name="#BROKEN_REMOTE_NAME" />
-	<trinket description="#PURPLE_HEART_DESCRIPTION" gfx="trinket_005_purpleheart.png" id="5" name="#PURPLE_HEART_NAME" />
+	<trinket cache="damage" description="#PURPLE_HEART_DESCRIPTION" gfx="trinket_005_purpleheart.png" id="5" name="#PURPLE_HEART_NAME" />
 	<trinket description="#BROKEN_MAGNET_DESCRIPTION" gfx="trinket_006_brokenmagnet.png" id="6" name="#BROKEN_MAGNET_NAME" />
 	<trinket description="#ROSARY_BEAD_DESCRIPTION" gfx="trinket_007_rosarybead.png" id="7" name="#ROSARY_BEAD_NAME" />
 	<trinket description="#CARTRIDGE_DESCRIPTION" gfx="trinket_008_cartridge.png" id="8" name="#CARTRIDGE_NAME" />
@@ -790,8 +790,8 @@
 	<trinket cache="shotspeed" description="#WHIP_WORM_DESCRIPTION" gfx="trinket_027_whipworm.png" id="27" name="#WHIP_WORM_NAME" />
 	<trinket achievement="117" description="#BROKEN_ANKH_DESCRIPTION" gfx="trinket_028_brokenankh.png" id="28" name="#BROKEN_ANKH_NAME" />
 	<trinket description="#FISH_HEAD_DESCRIPTION" gfx="trinket_029_fishhead.png" id="29" name="#FISH_HEAD_NAME" />
-	<trinket description="#PINKY_EYE_DESCRIPTION" gfx="trinket_030_pinkyeye.png" id="30" name="#PINKY_EYE_NAME" />
-	<trinket description="#PUSH_PIN_DESCRIPTION" gfx="trinket_031_pushpin.png" id="31" name="#PUSH_PIN_NAME" />
+	<trinket cache="tearcolor tearflag" description="#PINKY_EYE_DESCRIPTION" gfx="trinket_030_pinkyeye.png" id="30" name="#PINKY_EYE_NAME" />
+	<trinket cache="tearcolor tearflag" description="#PUSH_PIN_DESCRIPTION" gfx="trinket_031_pushpin.png" id="31" name="#PUSH_PIN_NAME" />
 	<trinket description="#LIBERTY_CAP_DESCRIPTION" gfx="trinket_032_libertycap.png" id="32" name="#LIBERTY_CAP_NAME" />
 	<trinket description="#UMBILICAL_CORD_DESCRIPTION" gfx="trinket_033_umbilicalcord.png" id="33" name="#UMBILICAL_CORD_NAME" />
 	<trinket description="#CHILDS_HEART_DESCRIPTION" gfx="trinket_034_childsheart.png" id="34" name="#CHILDS_HEART_NAME" cache="pickupvision" />

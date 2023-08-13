@@ -1,12 +1,14 @@
-Astro = RegisterMod("Redrawn_Mod", 1)
+local isc = require("astro.lib.isaacscript-common")
+
+Astro = isc:upgradeMod(RegisterMod("Redrawn_Mod", 1))
 
 Json = require "json"
 
-require "scripts.init"
-require "scripts.ban"
-require "scripts.save"
-require "scripts.things"
-require "scripts.utill"
--- require "scripts.extracard"
-require "scripts.collectibles.init"
-require "scripts.trinkets.init"
+require "astro.init"
+require "astro.ban"
+require "astro.save"
+require "astro.things"
+require "astro.utill"
+-- require "astro.extracard"
+require "astro.collectibles.init"
+require "astro.trinkets.init"

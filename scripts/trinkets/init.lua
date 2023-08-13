@@ -1,1 +1,0 @@
-require "scripts.trinkets.golden"
