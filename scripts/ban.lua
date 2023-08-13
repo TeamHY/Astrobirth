@@ -10,6 +10,7 @@ function Ban:Init()
             self.BanCollectible(CollectibleType.COLLECTIBLE_FRIEND_FINDER)
             self.BanCollectible(CollectibleType.COLLECTIBLE_SPIN_TO_WIN)
             self.BanCollectible(CollectibleType.COLLECTIBLE_MEGA_BEAN)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_MOMS_PURSE) --c139
             self.BanTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
             self.BanTrinket(TrinketType.TRINKET_CARTRIDGE)
             self.BanTrinket(TrinketType.TRINKET_MOMS_TOENAIL)

@@ -11,7 +11,7 @@
 	<familiar description="#HALO_OF_FLIES_DESCRIPTION" gfx="Collectibles_010_HaloOfFlies.png" id="10" name="#HALO_OF_FLIES_NAME" />
 	<familiar description="#1UP_DESCRIPTION" gfx="Collectibles_011_1Up.png" id="11" name="#1UP_NAME" />
 	<passive cache="damage range speed size" description="#MAGIC_MUSHROOM_DESCRIPTION" gfx="Collectibles_012_MagicMushroom.png" hearts="100" id="12" maxhearts="2" name="#MAGIC_MUSHROOM_NAME" />
-	<passive cache="speed color" description="#THE_VIRUS_DESCRIPTION" gfx="Collectibles_013_TheVirus.png" id="13" name="#THE_VIRUS_NAME" />
+	<passive cache="speed color" description="#THE_VIRUS_DESCRIPTION" shopprice="12" gfx="Collectibles_013_TheVirus.png" id="13" name="#THE_VIRUS_NAME" />
 	<passive cache="range speed" description="#ROID_RAGE_DESCRIPTION" gfx="Collectibles_014_RoidRage.png" id="14" name="#ROID_RAGE_NAME" />
 	<passive description="#HEART_DESCRIPTION" gfx="Collectibles_015_Heart.png" hearts="99" id="15" maxhearts="2" name="#HEART_NAME" />
 	<passive description="#RAW_LIVER_DESCRIPTION" gfx="Collectibles_016_RawLiver.png" hearts="99" id="16" maxhearts="4" name="#RAW_LIVER_NAME" />
@@ -19,7 +19,7 @@
 	<passive coins="100" description="#A_DOLLAR_DESCRIPTION" gfx="Collectibles_018_ADollar.png" id="18" name="#A_DOLLAR_NAME" />
 	<passive bombs="10" description="#BOOM_DESCRIPTION" gfx="Collectibles_019_Boom.png" id="19" name="#BOOM_NAME" />
 	<passive achievement="8" cache="flying" description="#TRANSCENDENCE_DESCRIPTION" gfx="Collectibles_020_Transcendence.png" id="20" name="#TRANSCENDENCE_NAME" />
-	<passive description="#THE_COMPASS_DESCRIPTION" gfx="Collectibles_021_TheCompass.png" id="21" name="#THE_COMPASS_NAME" />
+	<passive description="#THE_COMPASS_DESCRIPTION" gfx="Collectibles_021_TheCompass.png" id="21" shopprice="35" name="#THE_COMPASS_NAME" />
 	<passive description="#LUNCH_DESCRIPTION" gfx="Collectibles_022_Lunch.png" hearts="4" id="22" maxhearts="2" name="#LUNCH_NAME" />
 	<passive description="#DINNER_DESCRIPTION" gfx="Collectibles_023_Dinner.png" hearts="4" id="23" maxhearts="2" name="#DINNER_NAME" />
 	<passive description="#DESSERT_DESCRIPTION" gfx="Collectibles_024_Dessert.png" hearts="4" id="24" maxhearts="2" name="#DESSERT_NAME" />
@@ -27,12 +27,12 @@
 	<passive description="#ROTTEN_MEAT_DESCRIPTION" gfx="Collectibles_026_RottenMeat.png" hearts="4" id="26" maxhearts="2" name="#ROTTEN_MEAT_NAME" />
 	<passive cache="speed" description="#WOODEN_SPOON_DESCRIPTION" gfx="Collectibles_027_WoodenSpoon.png" id="27" name="#WOODEN_SPOON_NAME" />
 	<passive cache="speed" description="#THE_BELT_DESCRIPTION" gfx="Collectibles_028_TheBelt.png" id="28" name="#THE_BELT_NAME" />
-	<passive cache="range" description="#MOMS_UNDERWEAR_DESCRIPTION" gfx="Collectibles_029_MomsUnderwear.png" id="29" name="#MOMS_UNDERWEAR_NAME" />
+	<passive cache="range" description="#MOMS_UNDERWEAR_DESCRIPTION" shopprice="10" gfx="Collectibles_029_MomsUnderwear.png" id="29" name="#MOMS_UNDERWEAR_NAME" />
 	<passive cache="range" description="#MOMS_HEELS_DESCRIPTION" gfx="Collectibles_030_MomsHeels.png" id="30" name="#MOMS_HEELS_NAME" />
 	<passive cache="range" description="#MOMS_LIPSTICK_DESCRIPTION" gfx="Collectibles_031_MomsLipstick.png" id="31" name="#MOMS_LIPSTICK_NAME" />
 	<passive achievement="139" cache="firedelay" description="#WIRE_COAT_HANGER_DESCRIPTION" gfx="Collectibles_032_WireCoatHanger.png" id="32" name="#WIRE_COAT_HANGER_NAME" />
 	<active cache="flying" description="#THE_BIBLE_DESCRIPTION" gfx="Collectibles_033_TheBible.png" id="33" maxcharges="2" name="#THE_BIBLE_NAME" />
-	<active cache="damage" description="#THE_BOOK_OF_BELIAL_DESCRIPTION" gfx="Collectibles_034_TheBookOfBelial.png" id="34" maxcharges="3" name="#THE_BOOK_OF_BELIAL_NAME" />
+	<active cache="damage" description="#THE_BOOK_OF_BELIAL_DESCRIPTION" gfx="Collectibles_034_TheBookOfBelial.png" id="34" maxcharges="3" shopprice="10" name="#THE_BOOK_OF_BELIAL_NAME" />
 	<active achievement="36" description="#THE_NECRONOMICON_DESCRIPTION" gfx="Collectibles_035_TheNecronomicon.png" id="35" maxcharges="4" name="#THE_NECRONOMICON_NAME" />
 	<active description="#THE_POOP_DESCRIPTION" gfx="Collectibles_036_ThePoop.png" id="36" maxcharges="1" name="#THE_POOP_NAME" />
 	<active description="#MR_BOOM_DESCRIPTION" gfx="Collectibles_037_MrBoom.png" id="37" maxcharges="2" name="#MR_BOOM_NAME" />
@@ -44,7 +44,7 @@
 	<!-- <active description="#PILLS_HERE_DESCRIPTION" id="43" name="#PILLS_HERE_NAME" /> -->
 	<active cooldown="30" description="#TELEPORT_DESCRIPTION" gfx="Collectibles_044_Teleport.png" id="44" maxcharges="2" name="#TELEPORT_NAME" />
 	<active description="#YUM_HEART_DESCRIPTION" gfx="Collectibles_045_YumHeart.png" id="45" maxcharges="4" name="#YUM_HEART_NAME" />
-	<passive cache="luck" description="#LUCKY_FOOT_DESCRIPTION" gfx="Collectibles_046_LuckyFoot.png" id="46" name="#LUCKY_FOOT_NAME" />
+	<passive cache="luck" description="#LUCKY_FOOT_DESCRIPTION" gfx="Collectibles_046_LuckyFoot.png" id="46" shopprice="25" name="#LUCKY_FOOT_NAME" />
 	<active description="#DOCTORS_REMOTE_DESCRIPTION" gfx="Collectibles_047_DoctorsRemote.png" id="47" maxcharges="2" name="#DOCTORS_REMOTE_NAME" />
 	<passive cache="tearflag" description="#CUPIDS_ARROW_DESCRIPTION" gfx="Collectibles_048_CupidsArrow.png" id="48" name="#CUPIDS_ARROW_NAME" />
 	<active description="#SHOOP_DA_WHOOP_DESCRIPTION" gfx="Collectibles_049_ShoopDaWhoop.png" id="49" maxcharges="2" name="#SHOOP_DA_WHOOP_NAME" />
@@ -52,7 +52,7 @@
 	<passive cache="damage" description="#PENTAGRAM_DESCRIPTION" gfx="Collectibles_051_Pentagram.png" id="51" name="#PENTAGRAM_NAME" />
 	<passive achievement="11" cache="all" description="#DR_FETUS_DESCRIPTION" gfx="Collectibles_052_DrFetus.png" id="52" name="#DR_FETUS_NAME" special="true" />
 	<passive description="#MAGNETO_DESCRIPTION" gfx="Collectibles_053_Magneto.png" id="53" name="#MAGNETO_NAME" />
-	<passive description="#TREASURE_MAP_DESCRIPTION" gfx="Collectibles_054_TreasureMap.png" id="54" name="#TREASURE_MAP_NAME" />
+	<passive description="#TREASURE_MAP_DESCRIPTION" gfx="Collectibles_054_TreasureMap.png" id="54" shopprice="35" name="#TREASURE_MAP_NAME" />
 	<passive description="#MOMS_EYE_DESCRIPTION" gfx="Collectibles_055_MomsEye.png" id="55" name="#MOMS_EYE_NAME" />
 	<active description="#LEMON_MISHAP_DESCRIPTION" gfx="Collectibles_056_LemonMishap.png" id="56" maxcharges="2" name="#LEMON_MISHAP_NAME" />
 	<familiar description="#DISTANT_ADMIRATION_DESCRIPTION" gfx="Collectibles_057_DistantAdmiration.png" id="57" name="#DISTANT_ADMIRATION_NAME" />
@@ -73,10 +73,10 @@
 	<passive description="#ROSARY_DESCRIPTION" gfx="Collectibles_072_Rosary.png" id="72" name="#ROSARY_NAME" soulhearts="6" cache="firedelay" />
 	<familiar achievement="6" description="#CUBE_OF_MEAT_DESCRIPTION" gfx="Collectibles_073_CubeOfMeat.png" id="73" name="#CUBE_OF_MEAT_NAME" />
 	<passive achievement="10" coins="25" description="#A_QUARTER_DESCRIPTION" gfx="Collectibles_074_AQuarter.png" id="74" name="#A_QUARTER_NAME" />
-	<passive description="#PHD_DESCRIPTION" gfx="Collectibles_075_PHD.png" hearts="4" id="75" name="#PHD_NAME" />
-	<passive description="#XRAY_VISION_DESCRIPTION" gfx="Collectibles_076_XrayVision.png" id="76" name="#XRAY_VISION_NAME" />
+	<passive description="#PHD_DESCRIPTION" gfx="Collectibles_075_PHD.png" hearts="4" shopprice="25" id="75" name="#PHD_NAME" />
+	<passive description="#XRAY_VISION_DESCRIPTION" gfx="Collectibles_076_XrayVision.png" id="76" shopprice="30" name="#XRAY_VISION_NAME" />
 	<active cache="speed" cooldown="180" description="#MY_LITTLE_UNICORN_DESCRIPTION" gfx="Collectibles_077_MyLittleUnicorn.png" id="77" maxcharges="4" name="#MY_LITTLE_UNICORN_NAME" />
-	<active achievement="7" description="#BOOK_OF_REVELATIONS_DESCRIPTION" gfx="Collectibles_078_BookOfRevelations.png" id="78" maxcharges="6" name="#BOOK_OF_REVELATIONS_NAME" />
+	<active achievement="7" description="#BOOK_OF_REVELATIONS_DESCRIPTION" shopprice="10" gfx="Collectibles_078_BookOfRevelations.png" id="78" maxcharges="6" name="#BOOK_OF_REVELATIONS_NAME" />
 	<passive cache="damage speed" description="#THE_MARK_DESCRIPTION" gfx="Collectibles_079_TheMark.png" devilprice="1" id="79" name="#THE_MARK_NAME" blackhearts="2" />
 	<passive cache="damage firedelay" description="#THE_PACT_DESCRIPTION" devilprice="2" gfx="Collectibles_080_ThePact.png" id="80" name="#THE_PACT_NAME" blackhearts="4" />
 	<familiar description="#DEAD_CAT_DESCRIPTION" gfx="Collectibles_081_DeadCat.png" id="81" name="#DEAD_CAT_NAME" devilprice="2" />
@@ -89,14 +89,14 @@
 	<familiar achievement="14" description="#LITTLE_CHUBBY_DESCRIPTION" gfx="Collectibles_088_LittleChubby.png" id="88" name="#LITTLE_CHUBBY_NAME" />
 	<passive cache="tearcolor tearflag" description="#SPIDER_BITE_DESCRIPTION" gfx="Collectibles_089_SpidersBite.png" id="89" name="#SPIDER_BITE_NAME" />
 	<passive achievement="12" cache="tearcolor damage speed firedelay" description="#THE_SMALL_ROCK_DESCRIPTION" gfx="Collectibles_090_SmallRock.png" id="90" name="#THE_SMALL_ROCK_NAME" />
-	<passive description="#SPELUNKER_HAT_DESCRIPTION" gfx="Collectibles_091_SpelunkerHat.png" id="91" name="#SPELUNKER_HAT_NAME" />
+	<passive description="#SPELUNKER_HAT_DESCRIPTION" gfx="Collectibles_091_SpelunkerHat.png" id="91" shopprice="35" name="#SPELUNKER_HAT_NAME" />
 	<passive achievement="19" description="#SUPER_BANDAGE_DESCRIPTION" gfx="Collectibles_092_SuperBandage.png" hearts="4" id="92" maxhearts="2" name="#SUPER_BANDAGE_NAME" soulhearts="4" />
 	<active achievement="26" cooldown="200" description="#THE_GAMEKID_DESCRIPTION" gfx="Collectibles_093_TheGameKid.png" id="93" maxcharges="4" name="#THE_GAMEKID_NAME" />
 	<familiar achievement="21" description="#SACK_OF_PENNIES_DESCRIPTION" gfx="Collectibles_094_SackOfPennies.png" id="94" name="#SACK_OF_PENNIES_NAME" />
 	<familiar description="#ROBOBABY_DESCRIPTION" gfx="Collectibles_095_RoboBaby.png" id="95" name="#ROBOBABY_NAME" />
 	<familiar achievement="25" description="#LITTLE_CHAD_DESCRIPTION" gfx="Collectibles_096_LittleChad.png" id="96" name="#LITTLE_CHAD_NAME" />
 	<active achievement="22" description="#THE_BOOK_OF_SIN_DESCRIPTION" gfx="Collectibles_097_BookOfSin.png" id="97" maxcharges="4" name="#THE_BOOK_OF_SIN_NAME" />
-	<familiar achievement="20" description="#THE_RELIC_DESCRIPTION" gfx="Collectibles_098_TheRelic.png" id="98" name="#THE_RELIC_NAME" devilprice="2" />
+	<familiar achievement="20" description="#THE_RELIC_DESCRIPTION" gfx="Collectibles_098_TheRelic.png" id="98" name="#THE_RELIC_NAME" shopprice="30" devilprice="2" />
 	<familiar achievement="23" description="#LITTLE_GISH_DESCRIPTION" gfx="Collectibles_099_LittleGish.png" id="99" name="#LITTLE_GISH_NAME" />
 	<familiar achievement="24" description="#LITTLE_STEVEN_DESCRIPTION" gfx="Collectibles_100_LittleSteve.png" id="100" name="#LITTLE_STEVEN_NAME" />
 	<passive achievement="27" cache="damage firedelay range speed" description="#THE_HALO_DESCRIPTION" gfx="Collectibles_101_TheHalo.png" hearts="4" id="101" maxhearts="2" name="#THE_HALO_NAME" />
@@ -136,7 +136,7 @@
 	<active cooldown="15" description="#IV_BAG_DESCRIPTION" gfx="Collectibles_135_IVBag.png" id="135" maxcharges="0" name="#IV_BAG_NAME" />
 	<active description="#BEST_FRIEND_DESCRIPTION" gfx="Collectibles_136_BestFriend.png" id="136" maxcharges="3" name="#BEST_FRIEND_NAME" />
 	<active bombs="5" cooldown="2" description="#REMOTE_DETONATOR_DESCRIPTION" gfx="Collectibles_137_RemoteDetonator.png" id="137" maxcharges="0" name="#REMOTE_DETONATOR_NAME" />
-	<passive cache="damage" description="#STIGMATA_DESCRIPTION" gfx="Collectibles_138_Stigmata.png" hearts="4" id="138" maxhearts="2" name="#STIGMATA_NAME" />
+	<passive cache="damage" description="#STIGMATA_DESCRIPTION" gfx="Collectibles_138_Stigmata.png" shopprice="9" hearts="4" id="138" maxhearts="2" name="#STIGMATA_NAME" />
 	<passive description="#MOMS_PURSE_DESCRIPTION" gfx="Collectibles_139_MomsPurse.png" id="139" name="#MOMS_PURSE_NAME" />
 	<passive bombs="5" description="#BOBS_CURSE_DESCRIPTION" gfx="Collectibles_140_BobsCurse.png" id="140" name="#BOBS_CURSE_NAME" />
 	<passive description="#PAGEANT_BOY_DESCRIPTION" gfx="Collectibles_141_PageantBoy.png" id="141" name="#PAGEANT_BOY_NAME" />
@@ -198,11 +198,11 @@
 	<passive cache="damage range" description="#JESUS_JUICE_DESCRIPTION" gfx="Collectibles_197_JesusJuice.png" id="197" name="#JESUS_JUICE_NAME" />
 	<passive description="#BOX_DESCRIPTION" gfx="Collectibles_198_Box.png" id="198" name="#BOX_NAME" />
 	
-	<passive description="#MOMS_KEY_DESCRIPTION" gfx="collectibles_199_momskey.png" id="199" keys="2" name="#MOMS_KEY_NAME" cache="pickupvision" />
+	<passive description="#MOMS_KEY_DESCRIPTION" gfx="collectibles_199_momskey.png" id="199" shopprice="30" keys="2" name="#MOMS_KEY_NAME" cache="pickupvision" />
 	<passive cache="tearcolor" description="#MOMS_EYESHADOW_DESCRIPTION" gfx="collectibles_200_momseyeshadow.png" id="200" name="#MOMS_EYESHADOW_NAME" />
 	<passive cache="damage" description="#IRON_BAR_DESCRIPTION" gfx="collectibles_201_ironbar.png" id="201" name="#IRON_BAR_NAME" />
 	<passive description="#MIDAS_TOUCH_DESCRIPTION" gfx="collectibles_202_midastouch.png" id="202" name="#MIDAS_TOUCH_NAME" />
-	<passive description="#HUMBLEING_BUNDLE_DESCRIPTION" gfx="collectibles_203_humblingbundle.png" id="203" name="#HUMBLEING_BUNDLE_NAME" />
+	<passive description="#HUMBLEING_BUNDLE_DESCRIPTION" shopprice="30" gfx="collectibles_203_humblingbundle.png" id="203" name="#HUMBLEING_BUNDLE_NAME" />
 	<passive description="#FANNY_PACK_DESCRIPTION" gfx="collectibles_204_fannypack.png" id="204" name="#FANNY_PACK_NAME" />
 	<passive description="#SHARP_PLUG_DESCRIPTION" gfx="collectibles_205_sharpplug.png" id="205" name="#SHARP_PLUG_NAME" />
 	<familiar achievement="107" cache="damage firedelay" description="#GUILLOTINE_DESCRIPTION" gfx="collectibles_206_guillotine.png" id="206" name="#GUILLOTINE_NAME" />
@@ -222,7 +222,7 @@
 	<passive bombs="5" description="#SAD_BOMBS_DESCRIPTION" gfx="collectibles_220_sadbombs.png" id="220" name="#SAD_BOMBS_NAME" />
 	<passive achievement="150" cache="tearcolor tearflag" description="#RUBBER_CEMENT_DESCRIPTION" gfx="collectibles_221_rubbercement.png" id="221" devilprice="2" name="#RUBBER_CEMENT_NAME" />
 	<passive cache="firedelay tearflag color" description="#ANTIGRAVITY_DESCRIPTION" gfx="collectibles_222_antigravity.png" id="222" name="#ANTIGRAVITY_NAME" />
-	<passive bombs="5" description="#PYROMANIAC_DESCRIPTION" gfx="collectibles_223_pyromaniac.png" id="223" name="#PYROMANIAC_NAME" special="true" />
+	<passive bombs="5" description="#PYROMANIAC_DESCRIPTION" shopprice="20" gfx="collectibles_223_pyromaniac.png" id="223" name="#PYROMANIAC_NAME" special="true" />
 	<passive cache="firedelay range tearflag" description="#CRICKETS_BODY_DESCRIPTION" devilprice="2" gfx="collectibles_224_cricketsbody.png" id="224" name="#CRICKETS_BODY_NAME" />
 	<passive description="#GIMPY_DESCRIPTION" gfx="collectibles_225_gimpy.png" id="225" name="#GIMPY_NAME" />
 	<passive blackhearts="2" description="#BLACK_LOTUS_DESCRIPTION" gfx="collectibles_226_blacklotus.png" hearts="4" id="226" maxhearts="2" name="#BLACK_LOTUS_NAME" soulhearts="2" />
@@ -245,12 +245,12 @@
 	<passive cache="weapon" description="#TRINITY_SHIELD_DESCRIPTION" gfx="collectibles_243_trinityshield.png" id="243" name="#TRINITY_SHIELD_NAME" devilprice="2" />
 	<passive achievement="104" description="#TECH5_DESCRIPTION" gfx="collectibles_244_techpointfive.png" id="244" name="#TECH5_NAME" />
 	<passive description="#2020_DESCRIPTION" devilprice="2" gfx="collectibles_245_2020.png" id="245" name="#2020_NAME" cache="damage firedelay" />
-	<passive achievement="134" description="#BLUE_MAP_DESCRIPTION" gfx="collectibles_246_bluemap.png" id="246" name="#BLUE_MAP_NAME" />
+	<passive achievement="134" description="#BLUE_MAP_DESCRIPTION" shopprice="35" gfx="collectibles_246_bluemap.png" id="246" name="#BLUE_MAP_NAME" />
 	<passive description="#BFFS_DESCRIPTION" gfx="collectibles_247_bffs.png" id="247" name="#BFFS_NAME" />
-	<passive description="#HIVE_MIND_DESCRIPTION" gfx="collectibles_248_hivemind.png" id="248" name="#HIVE_MIND_NAME" />
+	<passive description="#HIVE_MIND_DESCRIPTION" gfx="collectibles_248_hivemind.png" id="248" shopprice="20" name="#HIVE_MIND_NAME" />
 	<passive achievement="135" description="#THERES_OPTIONS_DESCRIPTION" gfx="collectibles_249_theresoptions.png" id="249" name="#THERES_OPTIONS_NAME" />
 	<passive description="#BOGO_BOMBS_DESCRIPTION" gfx="collectibles_250_bogobombs.png" id="250" name="#BOGO_BOMBS_NAME" />
-	<passive description="#STARTER_DECK_DESCRIPTION" devilprice="2" gfx="collectibles_251_starterdeck.png" id="251" name="#STARTER_DECK_NAME" />
+	<passive description="#STARTER_DECK_DESCRIPTION" devilprice="2" gfx="collectibles_251_starterdeck.png" shopprice="32" id="251" name="#STARTER_DECK_NAME" />
 	<passive achievement="146" description="#LITTLE_BAGGY_DESCRIPTION" gfx="collectibles_252_littlebaggy.png" id="252" name="#LITTLE_BAGGY_NAME" />
 	<passive cache="luck" description="#MAGIC_SCAB_DESCRIPTION" gfx="collectibles_253_magicscab.png" hearts="4" id="253" maxhearts="2" name="#MAGIC_SCAB_NAME" />
 	<passive description="#BLOOD_CLOT_DESCRIPTION" gfx="collectibles_254_bloodclot.png" id="254" name="#BLOOD_CLOT_NAME" />
@@ -270,7 +270,7 @@
 	<familiar description="#DRY_BABY_DESCRIPTION" gfx="collectibles_265_drybaby.png" id="265" name="#DRY_BABY_NAME" />
 	<familiar description="#JUICY_SACK_DESCRIPTION" gfx="collectibles_266_juicysack.png" id="266" name="#JUICY_SACK_NAME" />
 	<familiar achievement="102" description="#ROBOBABY_20_DESCRIPTION" gfx="collectibles_267_robobaby2.png" id="267" name="#ROBOBABY_20_NAME" />
-	<familiar description="#ROTTEN_BABY_DESCRIPTION" gfx="collectibles_268_rottenbaby.png" id="268" name="#ROTTEN_BABY_NAME" />
+	<familiar description="#ROTTEN_BABY_DESCRIPTION" gfx="collectibles_268_rottenbaby.png" id="268" shopprice="20" name="#ROTTEN_BABY_NAME" />
 	<familiar description="#HEADLESS_BABY_DESCRIPTION" gfx="collectibles_269_headlessbaby.png" id="269" name="#HEADLESS_BABY_NAME" />
 	<familiar description="#LEECH_DESCRIPTION" gfx="collectibles_270_leech.png" id="270" name="#LEECH_NAME" />
 	<familiar achievement="124" description="#MYSTERY_SACK_DESCRIPTION" gfx="collectibles_271_mysterysack.png" id="271" name="#MYSTERY_SACK_NAME" />
@@ -289,7 +289,7 @@
 	<active achievement="148" description="#D4_DESCRIPTION" gfx="collectibles_284_d4.png" id="284" maxcharges="6" name="#D4_NAME" />
 	<active description="#D10_DESCRIPTION" gfx="collectibles_285_d10.png" id="285" maxcharges="2" name="#D10_NAME" />
 	<active achievement="121" description="#BLANK_CARD_DESCRIPTION" gfx="collectibles_286_blankcard.png" id="286" maxcharges="4" name="#BLANK_CARD_NAME" />
-	<active achievement="122" description="#BOOK_OF_SECRETS_DESCRIPTION" gfx="collectibles_287_bookofsecrets.png" id="287" maxcharges="6" name="#BOOK_OF_SECRETS_NAME" />
+	<active achievement="122" description="#BOOK_OF_SECRETS_DESCRIPTION" shopprice="30" gfx="collectibles_287_bookofsecrets.png" id="287" maxcharges="6" name="#BOOK_OF_SECRETS_NAME" />
 	<active description="#BOX_OF_SPIDERS_DESCRIPTION" gfx="collectibles_288_boxofspiders.png" id="288" maxcharges="2" name="#BOX_OF_SPIDERS_NAME" />
 	<active achievement="137" description="#RED_CANDLE_DESCRIPTION" gfx="collectibles_289_redcandle.png" id="289" maxcharges="75" name="#RED_CANDLE_NAME" chargetype="timed" />
 	<active description="#THE_JAR_DESCRIPTION" gfx="collectibles_290_thejar.png" id="290" maxcharges="0" name="#THE_JAR_NAME" shopprice="10" />
@@ -305,7 +305,7 @@
 	<passive cache="speed" description="#ARIES_DESCRIPTION" gfx="collectibles_300_aries.png" id="300" name="#ARIES_NAME" />
 	<passive description="#CANCER_DESCRIPTION" gfx="collectibles_301_cancer.png" id="301" name="#CANCER_NAME" soulhearts="6" />
 	<passive cache="size" description="#LEO_DESCRIPTION" gfx="collectibles_302_leo.png" id="302" name="#LEO_NAME" />
-	<passive description="#VIRGO_DESCRIPTION" gfx="collectibles_303_virgo.png" id="303" name="#VIRGO_NAME" />
+	<passive description="#VIRGO_DESCRIPTION" gfx="collectibles_303_virgo.png" id="303" shopprice="25" name="#VIRGO_NAME" />
 	<passive bombs="6" cache="speed firedelay damage range" coins="6" description="#LIBRA_DESCRIPTION" gfx="collectibles_304_libra.png" id="304" keys="6" name="#LIBRA_NAME" />
 	<passive cache="tearflag tearcolor" description="#SCORPIO_DESCRIPTION" devilprice="2" gfx="collectibles_305_scorpio.png" id="305" name="#SCORPIO_NAME" />
 	<passive cache="tearflag speed" description="#SAGITTARIUS_DESCRIPTION" gfx="collectibles_306_sagittarius.png" id="306" name="#SAGITTARIUS_NAME" />
@@ -429,7 +429,7 @@
 	<active description="#KIDNEY_BEAN_DESCRIPTION" gfx="Collectibles_421_KidneyBean.png" id="421" name="#KIDNEY_BEAN_NAME" maxcharges="1" />
 	<active description="#GLOWING_HOUR_GLASS_DESCRIPTION" gfx="Collectibles_422_GlowingHourGlass.png" id="422" name="#GLOWING_HOUR_GLASS_NAME" maxcharges="2" />
 	<passive description="#CIRCLE_OF_PROTECTION_DESCRIPTION" gfx="Collectibles_423_CircleOfProtection.png" id="423" name="#CIRCLE_OF_PROTECTION_NAME" />
-	<passive description="#SACK_HEAD_DESCRIPTION" gfx="Collectibles_424_SackHead.png" id="424" name="#SACK_HEAD_NAME" />
+	<passive description="#SACK_HEAD_DESCRIPTION" gfx="Collectibles_424_SackHead.png" id="424" shopprice="33" name="#SACK_HEAD_NAME" />
 	<passive description="#NIGHT_LIGHT_DESCRIPTION" devilprice="2" gfx="Collectibles_425_NightLight.png" id="425" name="#NIGHT_LIGHT_NAME" />
 	<familiar description="#OBSESSED_FAN_DESCRIPTION" gfx="Collectibles_426_ObsessedFan.png" id="426" name="#OBSESSED_FAN_NAME" />
 	<active description="#MINE_CRAFTER_DESCRIPTION" gfx="Collectibles_427_MineCrafter.png" id="427" name="#MINE_CRAFTER_NAME" maxcharges="1" />
@@ -553,7 +553,7 @@
 	<passive achievement="377" cache="weapon firedelay damage tearcolor range" description="#HAEMOLACRIA_DESCRIPTION" gfx="Collectibles_531_Haemolacria.png" devilprice="2" name="#HAEMOLACRIA_NAME" id="531" />
 	<passive achievement="378" cache="tearflag" description="#LACHRYPHAGY_DESCRIPTION" devilprice="2" gfx="Collectibles_532_Lachryphagy.png" name="#LACHRYPHAGY_NAME" id="532" />
 	<passive achievement="380" cache="tearflag" description="#TRISAGION_DESCRIPTION" devilprice="2" gfx="Collectibles_533_Trisagion.png" name="#TRISAGION_NAME" id="533" />
-	<passive achievement="379" description="#SCHOOLBAG_DESCRIPTION" gfx="collectibles_534_Schoolbag.png" name="#SCHOOLBAG_NAME" id="534" />
+	<passive achievement="379" description="#SCHOOLBAG_DESCRIPTION" gfx="collectibles_534_Schoolbag.png" shopprice="20" name="#SCHOOLBAG_NAME" id="534" />
 	
 	<!-- Booster Pack #5 -->
 	<passive achievement="385" name="#BLANKET_NAME" description="#BLANKET_DESCRIPTION" gfx="Collectibles_535_Blanket.png" id="535" hearts="2" soulhearts="2" />
@@ -614,7 +614,7 @@
 	<passive	id="586"	achievement="429" gfx="Collectibles_586_JacobsLadder.png" name="#THE_STAIRWAY_NAME" description="#THE_STAIRWAY_DESCRIPTION" />
 	
 	<passive	id="588"	gfx="Collectibles_588_Sol.png" name="#SOL_NAME" devilprice="2" description="#SOL_DESCRIPTION" />
-	<passive	id="589"	gfx="Collectibles_589_Luna.png" name="#LUNA_NAME" description="#LUNA_DESCRIPTION" />
+	<passive	id="589"	gfx="Collectibles_589_Luna.png" shopprice="26" name="#LUNA_NAME" description="#LUNA_DESCRIPTION" />
 	<passive	id="590"	gfx="Collectibles_590_Mercurius.png" name="#MERCURIUS_NAME" description="#MERCURIUS_DESCRIPTION" cache="speed" />
 	<passive	id="591"	gfx="Collectibles_591_Venus.png" name="#VENUS_NAME" description="#VENUS_DESCRIPTION" maxhearts="2" hearts="4" />
 	<passive	id="592"	gfx="Collectibles_592_Terra.png" name="#TERRA_NAME" description="#TERRA_DESCRIPTION" cache="damage tearflag" />
@@ -626,7 +626,7 @@
 	<passive	id="598"	gfx="Collectibles_598_Pluto.png" name="#PLUTO_NAME" description="#PLUTO_DESCRIPTION" cache="range firedelay speed size" />
 	<passive	id="599"	gfx="Collectibles_599_VoodooHead.png" name="#VOODOO_HEAD_NAME" description="#VOODOO_HEAD_DESCRIPTION" />
 	<passive	id="600"	gfx="Collectibles_600_EyeDrops.png" name="#EYE_DROPS_NAME" description="#EYE_DROPS_DESCRIPTION" cache="firedelay" />
-	<passive	id="601"	gfx="Collectibles_601_ActOfContrition.png" name="#ACT_OF_CONTRITION_NAME" description="#ACT_OF_CONTRITION_DESCRIPTION" cache="firedelay" />
+	<passive	id="601"	gfx="Collectibles_601_ActOfContrition.png" shopprice="21" name="#ACT_OF_CONTRITION_NAME" description="#ACT_OF_CONTRITION_DESCRIPTION" cache="firedelay" />
 	<passive	id="602"	achievement="582" gfx="Collectibles_602_MemberCard.png" name="#MEMBER_CARD_NAME" description="#MEMBER_CARD_DESCRIPTION" />
 	<passive	id="603"	gfx="Collectibles_603_BatteryPack.png" name="#BATTERY_PACK_NAME" description="#BATTERY_PACK_DESCRIPTION" />
 	<active		id="604"	gfx="Collectibles_604_MomsBracelet.png" name="#MOMS_BRACELET_NAME" description="#MOMS_BRACELET_DESCRIPTION" shopprice="10" maxcharges="30" chargetype="timed" />
@@ -679,13 +679,13 @@
 	<familiar	id="651"	achievement="425" devilprice="2" gfx="Collectibles_651_StarOfBethlehem.png" name="#STAR_OF_BETHLEHEM_NAME" description="#STAR_OF_BETHLEHEM_DESCRIPTION" />
 	<familiar	id="652"	gfx="Collectibles_652_CubeBaby.png" name="#CUBE_BABY_NAME" description="#CUBE_BABY_DESCRIPTION" />
 	<active		id="653"	achievement="424" gfx="Collectibles_653_VadeRetro.png" name="#VADE_RETRO_NAME" description="#VADE_RETRO_DESCRIPTION" />
-	<passive	id="654"	gfx="Collectibles_654_FalsePhd.png" name="#FALSE_PHD_NAME" description="#FALSE_PHD_DESCRIPTION" cache="damage" blackhearts="2" />
+	<passive	id="654"	gfx="Collectibles_654_FalsePhd.png" name="#FALSE_PHD_NAME" shopprice="25" description="#FALSE_PHD_DESCRIPTION" cache="damage" blackhearts="2" />
 	<active		id="655"	gfx="Collectibles_655_SpinToWin.png" name="#SPIN_TO_WIN_NAME" description="#SPIN_TO_WIN_DESCRIPTION" maxcharges="90" cache="familiars" chargetype="timed" passivecache="true" />
 	<familiar	id="656"	achievement="432" gfx="Collectibles_577_Damocles.png" name="#DAMOCLES_NAME" description="#DAMOCLES_DESCRIPTION" devilprice="2" cache="familiars damage" hidden="true" />
 	<passive	id="657"	gfx="Collectibles_657_Vasculitis.png" name="#VASCULITIS_NAME" description="#VASCULITIS_DESCRIPTION" />
 	<passive	id="658"	gfx="Collectibles_658_GiantCell.png" name="#GIANT_CELL_NAME" description="#GIANT_CELL_DESCRIPTION" />
 	<passive	id="659"	gfx="Collectibles_659_Tropicamide.png" name="#TROPICAMIDE_NAME" description="#TROPICAMIDE_DESCRIPTION" cache="range" />
-	<passive	id="660"	gfx="Collectibles_660_CardReading.png" name="#CARD_READING_NAME" description="#CARD_READING_DESCRIPTION" />
+	<passive	id="660"	gfx="Collectibles_660_CardReading.png" shopprice="35" name="#CARD_READING_NAME" description="#CARD_READING_DESCRIPTION" />
 	<passive	id="661"	gfx="Collectibles_661_Quints.png" name="#QUINTS_NAME" description="#QUINTS_DESCRIPTION" />
 	
 	<passive	id="663"	gfx="Collectibles_663_ToothAndNail.png" name="#TOOTH_AND_NAIL_NAME" description="#TOOTH_AND_NAIL_DESCRIPTION" />
@@ -695,7 +695,7 @@
 	<familiar	id="667"	achievement="503" gfx="Collectibles_667_Strawman.png" name="#STRAWMAN_NAME" description="#STRAWMAN_DESCRIPTION" bombs="1" persistent="true" />
 	<passive	id="668"	gfx="Collectibles_668_DadsNote.png" name="#DADS_NOTE_NAME" description="#DADS_NOTE_DESCRIPTION" />
 	<passive	id="669"	gfx="Collectibles_669_Sausage.png" name="#SAUSAGE_NAME" description="#SAUSAGE_DESCRIPTION" maxhearts="2" hearts="99" cache="all"  />
-	<passive	id="670"	achievement="441" gfx="Collectibles_670_Options.png" name="#OPTIONS_NAME" description="#OPTIONS_DESCRIPTION" />
+	<passive	id="670"	achievement="441" gfx="Collectibles_670_Options.png" shopprice="30" name="#OPTIONS_NAME" description="#OPTIONS_DESCRIPTION" />
 	<passive	id="671"	achievement="443" gfx="Collectibles_671_CandyHeart.png" name="#CANDY_HEART_NAME" description="#CANDY_HEART_DESCRIPTION" />
 	<passive	id="672"	achievement="445" gfx="Collectibles_672_PoundOfFlesh.png" name="#A_POUND_OF_FLESH_NAME" description="#A_POUND_OF_FLESH_DESCRIPTION" />
 	<passive	id="673"	achievement="447" gfx="Collectibles_673_Redemption.png" name="#REDEMPTION_NAME" description="#REDEMPTION_DESCRIPTION" persistent="true" />
