@@ -62,10 +62,6 @@ Astro:AddCallback(
     end
 )
 
-local function TEARFLAG(x)
-    return x >= 64 and BitSet128(0,1<<(x-64)) or BitSet128(1<<x,0)
-end
-
 Astro:AddCallback(
     ModCallbacks.MC_POST_FIRE_TEAR,
     ---@param tear EntityTear
@@ -100,7 +96,16 @@ Astro:AddCallback(
                 local rng = player:GetTrinketRNG(TrinketType.TRINKET_RAINBOW_WORM)
 
                 if rng:RandomFloat() < 0.25 + player.Luck / 100 then
-                    tear.TearFlags = tear.TearFlags | TEARFLAG(rng:RandomInt(TearFlags.TEAR_EFFECT_COUNT))
+                    player:AddCollectible(CollectibleType.COLLECTIBLE_FRUIT_CAKE)
+
+                    local tearParams = player:GetTearHitParams(WeaponType.WEAPON_TEARS)
+                    tear.Color = tearParams.TearColor
+                    tear.CollisionDamage = tearParams.TearDamage
+                    tear.TearFlags = tear.TearFlags | tearParams.TearFlags
+                    tear.Height = tearParams.TearHeight
+                    tear.Scale = tearParams.TearScale
+
+                    player:RemoveCollectible(CollectibleType.COLLECTIBLE_FRUIT_CAKE)
                 end
             end
 
@@ -109,7 +114,7 @@ Astro:AddCallback(
 
                 if rng:RandomFloat() < 0.5 + player.Luck / 100 then
                     tear.TearFlags = tear.TearFlags | TearFlags.TEAR_HOMING
-                    -- tear.Color = Color(0.4, 0.15, 0.38, 1, 0.27843, 0, 0.4549)
+                -- tear.Color = Color(0.4, 0.15, 0.38, 1, 0.27843, 0, 0.4549)
                 end
             end
         end
@@ -171,6 +176,22 @@ Astro:AddCallback(
             end
         end
     end
+)
+
+Astro:AddCallbackCustom(
+    isc.ModCallbackCustom.POST_ITEM_PICKUP,
+    ---@param player EntityPlayer
+    ---@param pickingUpItem {subType: TrinketType}
+    function(_, player, pickingUpItem)
+        if
+            pickingUpItem.subType == TrinketType.TRINKET_SILVER_DOLLAR and
+                player:GetTrinketMultiplier(TrinketType.TRINKET_SILVER_DOLLAR) > 1
+         then
+            player:TryRemoveTrinket(TrinketType.TRINKET_SILVER_DOLLAR)
+            isc:smeltTrinket(player, TrinketType.TRINKET_SILVER_DOLLAR)
+        end
+    end,
+    ItemType.ITEM_TRINKET
 )
 
 Astro:AddCallbackCustom(
