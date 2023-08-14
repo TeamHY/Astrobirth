@@ -1,14 +1,14 @@
--- TrinketType.TRINKET_UMBILICAL_CORD : 해당 장신구 증발되고, 리틀 스티븐(CollectibleType.COLLECTIBLE_LITTLE_STEVEN) 지급
--- TrinketType.TRINKET_MISSING_PAGE : 해당 장신구 증발되고, 네크로노미콘(CollectibleType.COLLECTIBLE_NECRONOMICON) 소환
--- TrinketType.TRINKET_FADED_POLAROID : 해당 장신구 증발되고, 네거티브, 폴라로이드 2개 등장 후 한개 획득
--- TrinketType.TRINKET_LOUSE : 해당 장신구 증발되고, 인페2(CollectibleType.COLLECTIBLE_INFESTATION_2) 소환
--- TrinketType.TRINKET_BROKEN_SYRINGE : 해당 장신구 증발되면서 아이작에 존재하는 주사기 2개 소환되고 1개 선택
+-- TrinketType.TRINKET_UMBILICAL_CORD : 해당 장신구 증발되고, 리틀 스티븐(CollectibleType.COLLECTIBLE_LITTLE_STEVEN) 지급 []
+-- TrinketType.TRINKET_MISSING_PAGE : 해당 장신구 증발되고, 네크로노미콘(CollectibleType.COLLECTIBLE_NECRONOMICON) 소환 []
+-- TrinketType.TRINKET_FADED_POLAROID : 해당 장신구 증발되고, 네거티브, 폴라로이드 2개 등장 후 한개 획득 []
+-- TrinketType.TRINKET_LOUSE : 해당 장신구 증발되고, 인페2(CollectibleType.COLLECTIBLE_INFESTATION_2) 소환 []
+-- TrinketType.TRINKET_BROKEN_SYRINGE : 해당 장신구 증발되면서 아이작에 존재하는 주사기 2개 소환되고 1개 선택 []
 
--- TrinketType.TRINKET_SILVER_DOLLAR : 황금으로 되는 즉시 캐릭터에게 흡수
--- TrinketType.TRINKET_BLOODY_CROWN : 황금으로 되는 즉시 캐릭터에게 흡수
--- TrinketType.TRINKET_HOLY_CROWN : 황금으로 되는 즉시 캐릭터에게 흡수
--- TrinketType.TRINKET_WICKED_CROWN : 황금으로 되는 즉시 캐릭터에게 흡수
--- TrinketType.TRINKET_NUMBER_MAGNET : 황금으로 되는 즉시 캐릭터에게 흡수
+-- TrinketType.TRINKET_SILVER_DOLLAR : 황금으로 되는 즉시 캐릭터에게 흡수 []
+-- TrinketType.TRINKET_BLOODY_CROWN : 황금으로 되는 즉시 캐릭터에게 흡수 []
+-- TrinketType.TRINKET_HOLY_CROWN : 황금으로 되는 즉시 캐릭터에게 흡수 []
+-- TrinketType.TRINKET_WICKED_CROWN : 황금으로 되는 즉시 캐릭터에게 흡수 []
+-- TrinketType.TRINKET_NUMBER_MAGNET : 황금으로 되는 즉시 캐릭터에게 흡수 []
 
 -- TrinketType.TRINKET_PURPLE_HEART : 배수 1.2배 증가  []
 
@@ -36,6 +36,148 @@
 local isc = require("astro.lib.isaacscript-common")
 
 local GRID_SIZE = 40
+local GOLDEN_TRINKET_OFFSET = 32768
+
+---@param value integer
+---@param trinket TrinketType
+---@return boolean
+local function CheckTrinket(value, trinket)
+    if value == trinket or value - GOLDEN_TRINKET_OFFSET == trinket then
+        return true
+    end
+
+    return false
+end
+
+---@param player EntityPlayer
+---@param type integer
+---@return boolean
+local function RunEffect(player, type)
+    if CheckTrinket(type, TrinketType.TRINKET_UMBILICAL_CORD) then
+        player:AddCollectible(CollectibleType.COLLECTIBLE_LITTLE_STEVEN)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_MISSING_PAGE) then
+        local currentRoom = Game():GetLevel():GetCurrentRoom()
+        Isaac.Spawn(
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            CollectibleType.COLLECTIBLE_NECRONOMICON,
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
+            Vector.Zero,
+            nil
+        )
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_FADED_POLAROID) then
+        local currentRoom = Game():GetLevel():GetCurrentRoom()
+        Isaac.Spawn(
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            CollectibleType.COLLECTIBLE_POLAROID,
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(-GRID_SIZE, -GRID_SIZE), GRID_SIZE, true),
+            Vector.Zero,
+            nil
+        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
+        Isaac.Spawn(
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            CollectibleType.COLLECTIBLE_NEGATIVE,
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(GRID_SIZE, -GRID_SIZE), GRID_SIZE, true),
+            Vector.Zero,
+            nil
+        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_LOUSE) then
+        local currentRoom = Game():GetLevel():GetCurrentRoom()
+        Isaac.Spawn(
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            CollectibleType.COLLECTIBLE_INFESTATION_2,
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
+            Vector.Zero,
+            nil
+        )
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_BROKEN_SYRINGE) then
+        local currentRoom = Game():GetLevel():GetCurrentRoom()
+        local rng = player:GetTrinketRNG(TrinketType.TRINKET_BROKEN_SYRINGE)
+        
+        local syringes = {
+            CollectibleType.COLLECTIBLE_VIRUS,
+            CollectibleType.COLLECTIBLE_ROID_RAGE,
+            CollectibleType.COLLECTIBLE_GROWTH_HORMONES,
+            CollectibleType.COLLECTIBLE_SPEED_BALL,
+            CollectibleType.COLLECTIBLE_EXPERIMENTAL_TREATMENT,
+            CollectibleType.COLLECTIBLE_SYNTHOIL,
+            CollectibleType.COLLECTIBLE_ADRENALINE,
+            CollectibleType.COLLECTIBLE_EUTHANASIA
+        }
+
+        local count = #syringes
+
+        local firstIndex = rng:RandomInt(count) + 1
+        local secondIndex = rng:RandomInt(count - 1) + 1
+        
+        Isaac.Spawn(
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            syringes[firstIndex],
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(-GRID_SIZE, -GRID_SIZE), GRID_SIZE, true),
+            Vector.Zero,
+            nil
+        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
+
+        table.remove(syringes, firstIndex)
+
+        Isaac.Spawn(
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            syringes[secondIndex],
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(GRID_SIZE, -GRID_SIZE), GRID_SIZE, true),
+            Vector.Zero,
+            nil
+        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_SILVER_DOLLAR) then
+        isc:smeltTrinket(player, TrinketType.TRINKET_SILVER_DOLLAR + GOLDEN_TRINKET_OFFSET)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_BLOODY_CROWN) then
+        isc:smeltTrinket(player, TrinketType.TRINKET_BLOODY_CROWN + GOLDEN_TRINKET_OFFSET)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_HOLY_CROWN) then
+        isc:smeltTrinket(player, TrinketType.TRINKET_HOLY_CROWN + GOLDEN_TRINKET_OFFSET)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_WICKED_CROWN) then
+        isc:smeltTrinket(player, TrinketType.TRINKET_WICKED_CROWN + GOLDEN_TRINKET_OFFSET)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_NUMBER_MAGNET) then
+        isc:smeltTrinket(player, TrinketType.TRINKET_NUMBER_MAGNET + GOLDEN_TRINKET_OFFSET)
+        return true
+    end
+
+    return false
+end
+
+-- 최적화 해야 함
+Astro:AddCallback(
+    ModCallbacks.MC_POST_PEFFECT_UPDATE,
+    ---@param player EntityPlayer
+    function(_, player)
+        local trinket0 = player:GetTrinket(0)
+        local trinket1 = player:GetTrinket(1)
+
+        if
+            (player:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX) or isc:isGoldenTrinketType(trinket0)) and
+                RunEffect(player, trinket0)
+         then
+            player:TryRemoveTrinket(trinket0)
+        elseif
+            (player:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX) or isc:isGoldenTrinketType(trinket1)) and
+                RunEffect(player, trinket1)
+         then
+            player:TryRemoveTrinket(trinket1)
+        end
+    end
+)
 
 Astro:AddCallback(
     ModCallbacks.MC_EVALUATE_CACHE,
@@ -176,22 +318,6 @@ Astro:AddCallback(
             end
         end
     end
-)
-
-Astro:AddCallbackCustom(
-    isc.ModCallbackCustom.POST_ITEM_PICKUP,
-    ---@param player EntityPlayer
-    ---@param pickingUpItem {subType: TrinketType}
-    function(_, player, pickingUpItem)
-        if
-            pickingUpItem.subType == TrinketType.TRINKET_SILVER_DOLLAR and
-                player:GetTrinketMultiplier(TrinketType.TRINKET_SILVER_DOLLAR) > 1
-         then
-            player:TryRemoveTrinket(TrinketType.TRINKET_SILVER_DOLLAR)
-            isc:smeltTrinket(player, TrinketType.TRINKET_SILVER_DOLLAR)
-        end
-    end,
-    ItemType.ITEM_TRINKET
 )
 
 Astro:AddCallbackCustom(
