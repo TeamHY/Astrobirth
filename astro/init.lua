@@ -30,12 +30,14 @@ function Astro:OnUpdate(player)
 		stage >= LevelStage.STAGE4_3 or
 			(stage == LevelStage.STAGE4_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE)
 	 then
-		if player:GetPlayerType() == PlayerType.PLAYER_KEEPER or player:GetPlayerType() == PlayerType.PLAYER_KEEPER_B then
-		elseif player:GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN then
+		local playerType = player:GetPlayerType()
+
+		if playerType == PlayerType.PLAYER_KEEPER or playerType == PlayerType.PLAYER_KEEPER_B or playerType == PlayerType.PLAYER_THESOUL_B then
+		elseif playerType == PlayerType.PLAYER_THEFORGOTTEN then
 			player:AddBoneHearts(-player:GetBoneHearts() + 2)
 			player:AddBrokenHearts(4 - player:GetBrokenHearts())
 			player:GetSubPlayer():AddBrokenHearts(2 - player:GetSubPlayer():GetBrokenHearts())
-		elseif player:GetPlayerType() == PlayerType.PLAYER_THESOUL then
+		elseif playerType == PlayerType.PLAYER_THESOUL then
 			player:AddBrokenHearts(2 - player:GetBrokenHearts())
 			player:GetSubPlayer():AddBoneHearts(-player:GetSubPlayer():GetBoneHearts() + 2)
 			player:GetSubPlayer():AddBrokenHearts(4 - player:GetSubPlayer():GetBrokenHearts())
