@@ -1,3 +1,14 @@
+Astro:AddCallback(
+	ModCallbacks.MC_POST_GAME_STARTED,
+	function(_, _)
+		local player = Isaac.GetPlayer()
+		local itemConfig = Isaac.GetItemConfig()
+		local itemConfigItem = itemConfig:GetCollectible(CollectibleType.COLLECTIBLE_MORE_OPTIONS)
+
+		player:RemoveCostume(itemConfigItem)
+	end
+)
+
 function Astro:CurseRemove(curse) -- 입장 전 저주 제거
 	if (Game():GetLevel():GetStage() <= 3 and curse ~= 0) then
 		return 0
