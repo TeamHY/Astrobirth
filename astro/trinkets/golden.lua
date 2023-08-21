@@ -1,8 +1,8 @@
 -- TrinketType.TRINKET_UMBILICAL_CORD : 해당 장신구 증발되고, 리틀 스티븐(CollectibleType.COLLECTIBLE_LITTLE_STEVEN) 지급 []
--- TrinketType.TRINKET_MISSING_PAGE : 해당 장신구 증발되고, 네크로노미콘(CollectibleType.COLLECTIBLE_NECRONOMICON) 소환 []
+-- TrinketType.TRINKET_MISSING_PAGE : 해당 장신구 증발되고, 네크로노미콘(CollectibleType.COLLECTIBLE_NECRONOMICON) 소환 [] //
 -- TrinketType.TRINKET_FADED_POLAROID : 해당 장신구 증발되고, 네거티브, 폴라로이드 2개 등장 후 한개 획득 []
--- TrinketType.TRINKET_LOUSE : 해당 장신구 증발되고, 인페2(CollectibleType.COLLECTIBLE_INFESTATION_2) 소환 []
--- TrinketType.TRINKET_BROKEN_SYRINGE : 해당 장신구 증발되면서 아이작에 존재하는 주사기 2개 소환되고 1개 선택 []
+-- TrinketType.TRINKET_LOUSE : 해당 장신구 증발되고, 인페2(CollectibleType.COLLECTIBLE_INFESTATION_2) 소환 [] //
+-- TrinketType.TRINKET_BROKEN_SYRINGE : 해당 장신구 증발되면서 아이작에 존재하는 주사기 2개 소환되고 1개 선택 [] //
 
 -- TrinketType.TRINKET_SILVER_DOLLAR : 황금으로 되는 즉시 캐릭터에게 흡수 []
 -- TrinketType.TRINKET_BLOODY_CROWN : 황금으로 되는 즉시 캐릭터에게 흡수 []
@@ -38,6 +38,65 @@ local isc = require("astro.lib.isaacscript-common")
 local GRID_SIZE = 40
 local GOLDEN_TRINKET_OFFSET = 32768
 
+if EID then
+    ---@param id TrinketType
+    ---@param appendText string | table
+    ---@param numbersToMultiply number | table | nil
+    ---@param maxMultiplier number | table | nil
+    local function addGoldenTrinketDescription(id, appendText, numbersToMultiply, maxMultiplier)
+        local data = EID.GoldenTrinketData[id]
+
+        if data then
+            if type(data) == "number" then
+                EID:addGoldenTrinketMetadata(id, appendText, numbersToMultiply or data, maxMultiplier)
+            else
+                EID:addGoldenTrinketMetadata(id, appendText, numbersToMultiply or data.t, maxMultiplier or data.mult)
+            end
+        else
+            EID:addGoldenTrinketMetadata(id, appendText, numbersToMultiply or 0, maxMultiplier)
+        end
+
+        if maxMultiplier and maxMultiplier > 4 then
+            EID.GoldenTrinketData[id].mults = {maxMultiplier, maxMultiplier}
+        end
+    end
+
+    addGoldenTrinketDescription(
+        TrinketType.TRINKET_UMBILICAL_CORD,
+        {"!!! 획득 시 사라지고 {{Collectible100}}Little Steven을 획득합니다."}
+    )
+    addGoldenTrinketDescription(
+        TrinketType.TRINKET_MISSING_PAGE,
+        {"!!! 획득 시 사라지고 {{Collectible35}}The Necronomicon을 소환합니다."}
+    )
+    addGoldenTrinketDescription(
+        TrinketType.TRINKET_FADED_POLAROID,
+        {"!!! 획득 시 사라지고 {{Collectible327}}The Polaroid과 {{Collectible328}}The Negative를 소환합니다. 하나를 선택하면 나머지는 사라집니다."}
+    )
+    addGoldenTrinketDescription(
+        TrinketType.TRINKET_LOUSE,
+        {
+            "효과 2배 #!!! {{ColorGold}}획득 시 사라지고 {{Collectible234}} 소환합니다.",
+            "효과 3배 #!!! {{ColorGold}}해당 장신구는 사라지고 {{Collectible234}} 소환합니다."
+        }
+    )
+    addGoldenTrinketDescription(
+        TrinketType.TRINKET_BROKEN_SYRINGE,
+        {"!!! 획득 시 사라지고 랜덤한 주사기 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다."}
+    )
+
+    addGoldenTrinketDescription(TrinketType.TRINKET_SILVER_DOLLAR, {"!!! 획득 시 바로 흡수됩니다."})
+    addGoldenTrinketDescription(TrinketType.TRINKET_BLOODY_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
+    addGoldenTrinketDescription(TrinketType.TRINKET_HOLY_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
+    addGoldenTrinketDescription(TrinketType.TRINKET_WICKED_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
+    addGoldenTrinketDescription(TrinketType.TRINKET_NUMBER_MAGNET, {"!!! 획득 시 바로 흡수됩니다."})
+
+    addGoldenTrinketDescription(TrinketType.TRINKET_PURPLE_HEART, {"↑ {{DamageSmall}}공격력 x1.2"})
+
+    addGoldenTrinketDescription(TrinketType.TRINKET_PINKY_EYE, "", 10, 10)
+    addGoldenTrinketDescription(TrinketType.TRINKET_PUSH_PIN, "", 10, 10)
+end
+
 ---@param value integer
 ---@param trinket TrinketType
 ---@return boolean
@@ -70,21 +129,29 @@ local function RunEffect(player, type)
     elseif CheckTrinket(type, TrinketType.TRINKET_FADED_POLAROID) then
         local currentRoom = Game():GetLevel():GetCurrentRoom()
         Isaac.Spawn(
-            EntityType.ENTITY_PICKUP,
-            PickupVariant.PICKUP_COLLECTIBLE,
-            CollectibleType.COLLECTIBLE_POLAROID,
-            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(-GRID_SIZE, -GRID_SIZE), GRID_SIZE, true),
-            Vector.Zero,
-            nil
-        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
+                EntityType.ENTITY_PICKUP,
+                PickupVariant.PICKUP_COLLECTIBLE,
+                CollectibleType.COLLECTIBLE_POLAROID,
+                currentRoom:FindFreePickupSpawnPosition(
+                    player.Position + Vector(-GRID_SIZE, -GRID_SIZE),
+                    GRID_SIZE,
+                    true
+                ),
+                Vector.Zero,
+                nil
+            ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
         Isaac.Spawn(
-            EntityType.ENTITY_PICKUP,
-            PickupVariant.PICKUP_COLLECTIBLE,
-            CollectibleType.COLLECTIBLE_NEGATIVE,
-            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(GRID_SIZE, -GRID_SIZE), GRID_SIZE, true),
-            Vector.Zero,
-            nil
-        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
+                EntityType.ENTITY_PICKUP,
+                PickupVariant.PICKUP_COLLECTIBLE,
+                CollectibleType.COLLECTIBLE_NEGATIVE,
+                currentRoom:FindFreePickupSpawnPosition(
+                    player.Position + Vector(GRID_SIZE, -GRID_SIZE),
+                    GRID_SIZE,
+                    true
+                ),
+                Vector.Zero,
+                nil
+            ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
         return true
     elseif CheckTrinket(type, TrinketType.TRINKET_LOUSE) then
         local currentRoom = Game():GetLevel():GetCurrentRoom()
@@ -100,7 +167,7 @@ local function RunEffect(player, type)
     elseif CheckTrinket(type, TrinketType.TRINKET_BROKEN_SYRINGE) then
         local currentRoom = Game():GetLevel():GetCurrentRoom()
         local rng = player:GetTrinketRNG(TrinketType.TRINKET_BROKEN_SYRINGE)
-        
+
         local syringes = {
             CollectibleType.COLLECTIBLE_VIRUS,
             CollectibleType.COLLECTIBLE_ROID_RAGE,
@@ -116,26 +183,34 @@ local function RunEffect(player, type)
 
         local firstIndex = rng:RandomInt(count) + 1
         local secondIndex = rng:RandomInt(count - 1) + 1
-        
+
         Isaac.Spawn(
-            EntityType.ENTITY_PICKUP,
-            PickupVariant.PICKUP_COLLECTIBLE,
-            syringes[firstIndex],
-            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(-GRID_SIZE, -GRID_SIZE), GRID_SIZE, true),
-            Vector.Zero,
-            nil
-        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
+                EntityType.ENTITY_PICKUP,
+                PickupVariant.PICKUP_COLLECTIBLE,
+                syringes[firstIndex],
+                currentRoom:FindFreePickupSpawnPosition(
+                    player.Position + Vector(-GRID_SIZE, -GRID_SIZE),
+                    GRID_SIZE,
+                    true
+                ),
+                Vector.Zero,
+                nil
+            ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
 
         table.remove(syringes, firstIndex)
 
         Isaac.Spawn(
-            EntityType.ENTITY_PICKUP,
-            PickupVariant.PICKUP_COLLECTIBLE,
-            syringes[secondIndex],
-            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(GRID_SIZE, -GRID_SIZE), GRID_SIZE, true),
-            Vector.Zero,
-            nil
-        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
+                EntityType.ENTITY_PICKUP,
+                PickupVariant.PICKUP_COLLECTIBLE,
+                syringes[secondIndex],
+                currentRoom:FindFreePickupSpawnPosition(
+                    player.Position + Vector(GRID_SIZE, -GRID_SIZE),
+                    GRID_SIZE,
+                    true
+                ),
+                Vector.Zero,
+                nil
+            ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
         return true
     elseif CheckTrinket(type, TrinketType.TRINKET_SILVER_DOLLAR) then
         isc:smeltTrinket(player, TrinketType.TRINKET_SILVER_DOLLAR + GOLDEN_TRINKET_OFFSET)
