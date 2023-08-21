@@ -186,7 +186,7 @@ Astro:AddCallback(
     function(_, player, cacheFlag)
         if cacheFlag == CacheFlag.CACHE_DAMAGE then
             if player:GetTrinketMultiplier(TrinketType.TRINKET_PURPLE_HEART) > 1 then
-                player.Damage = player.Damage * 1.5
+                player.Damage = player.Damage * 1.2
             end
         elseif cacheFlag == CacheFlag.CACHE_FLYING then
             if player:GetTrinketMultiplier(TrinketType.TRINKET_BAT_WING) > 1 then
