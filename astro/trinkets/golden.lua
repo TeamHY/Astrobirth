@@ -16,10 +16,10 @@
 -- TrinketType.TRINKET_PUSH_PIN : 공격 시 100% 확률로 관통 눈물 []
 
 -- TrinketType.TRINKET_SUPER_BALL : 공격 시 25% 확률로 시맨트 적용 (럭1당 1%p 증가) []
--- TrinketType.TRINKET_RAINBOW_WORM : 눈물 공격 시 25% 확률로 생과일(CollectibleType.COLLECTIBLE_FRUIT_CAKE) 효과 적용 (럭1당 1%p 증가) []
+-- TrinketType.TRINKET_RAINBOW_WORM : 눈물 공격 시 25% 확률로 생과일(CollectibleType.COLLECTIBLE_FRUIT_CAKE) 효과 적용 (럭1당 1%p 증가) [] //
 -- TrinketType.TRINKET_BRAIN_WORM : 공격 시 50% 확률로 유도 적용 (럭1당 1%p 증가) []
 
--- TrinketType.TRINKET_BLACK_LIPSTICK : 스테이지 진입 시 블랙 하트 1개 소환 []
+-- TrinketType.TRINKET_BLACK_LIPSTICK : 스테이지 진입 시 블랙 하트 1개 소환 [] //
 -- TrinketType.TRINKET_RUSTED_KEY : 스테이지 진입 시 마다 금키 소환 []
 -- TrinketType.TRINKET_SAFETY_CAP : 스테이지 진입 시 마다 걸프 알약 소환 []
 -- TrinketType.TRINKET_ACE_SPADES : 스테이지 진입 시 마다 랜덤 카드 소환 []
@@ -95,6 +95,37 @@ if EID then
 
     addGoldenTrinketDescription(TrinketType.TRINKET_PINKY_EYE, "", 10, 10)
     addGoldenTrinketDescription(TrinketType.TRINKET_PUSH_PIN, "", 10, 10)
+
+    addGoldenTrinketDescription(
+        TrinketType.TRINKET_SUPER_BALL,
+        "25%의 확률로 적용됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률"
+    )
+    addGoldenTrinketDescription( -- 적용 안 됨
+        TrinketType.TRINKET_RAINBOW_WORM,
+        {
+            "일부 벌레 장신구의 능력치 증가 효과 2배#{{ColorGold}}25%의 확률로 눈물에 랜덤한 효과가 부여됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률",
+            "일부 벌레 장신구의 능력치 증가 효과 3배#{{ColorGold}}25%의 확률로 눈물에 랜덤한 효과가 부여됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률",
+            "일부 벌레 장신구의 능력치 증가 효과 4배#{{ColorGold}}25%의 확률로 눈물에 랜덤한 효과가 부여됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률"
+        }
+    )
+    addGoldenTrinketDescription(
+        TrinketType.TRINKET_BRAIN_WORM,
+        "눈물을 발사할 때 25%의 확률로 유도 효과가 생깁니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 50 이상일 때 100% 확률"
+    )
+
+    addGoldenTrinketDescription(TrinketType.TRINKET_BLACK_LIPSTICK, "스테이지를 넘어갈 때마다 {{BlackHeart}}블랙하트를 하나 드랍합니다.")
+    addGoldenTrinketDescription(TrinketType.TRINKET_RUSTED_KEY, "스테이지를 넘어갈 때마다 {{GoldenKey}}황금열쇠를 하나 드랍합니다.")
+    addGoldenTrinketDescription(TrinketType.TRINKET_SAFETY_CAP, "스테이지를 넘어갈 때마다 {{Pill1}}Gulp! 알약을 하나 드랍합니다.")
+    addGoldenTrinketDescription(TrinketType.TRINKET_ACE_SPADES, "스테이지를 넘어갈 때마다 {{Card}}카드를 하나 생성합니다.")
+
+    addGoldenTrinketDescription(TrinketType.TRINKET_BLOODY_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
+    addGoldenTrinketDescription(TrinketType.TRINKET_BURNT_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
+    addGoldenTrinketDescription(TrinketType.TRINKET_FLAT_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
+    addGoldenTrinketDescription(TrinketType.TRINKET_COUNTERFEIT_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
+    addGoldenTrinketDescription(TrinketType.TRINKET_ROTTEN_PENNY, "효과가 1번 더 발동합니다.")
+    addGoldenTrinketDescription(TrinketType.TRINKET_BLESSED_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 88 이상일 때 100% 확률")
+
+    addGoldenTrinketDescription(TrinketType.TRINKET_BAT_WING, "!!! 비행 능력을 얻습니다.")
 end
 
 ---@param value integer
