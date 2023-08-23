@@ -16,7 +16,6 @@
 -- TrinketType.TRINKET_PUSH_PIN : 공격 시 100% 확률로 관통 눈물 []
 
 -- TrinketType.TRINKET_SUPER_BALL : 공격 시 25% 확률로 시맨트 적용 (럭1당 1%p 증가) []
--- TrinketType.TRINKET_RAINBOW_WORM : 눈물 공격 시 25% 확률로 생과일(CollectibleType.COLLECTIBLE_FRUIT_CAKE) 효과 적용 (럭1당 1%p 증가) [] //
 -- TrinketType.TRINKET_BRAIN_WORM : 공격 시 50% 확률로 유도 적용 (럭1당 1%p 증가) []
 
 -- TrinketType.TRINKET_BLACK_LIPSTICK : 스테이지 진입 시 블랙 하트 1개 소환 [] //
@@ -99,14 +98,6 @@ if EID then
     addGoldenTrinketDescription(
         TrinketType.TRINKET_SUPER_BALL,
         "25%의 확률로 적용됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률"
-    )
-    addGoldenTrinketDescription( -- 적용 안 됨
-        TrinketType.TRINKET_RAINBOW_WORM,
-        {
-            "일부 벌레 장신구의 능력치 증가 효과 2배#{{ColorGold}}25%의 확률로 눈물에 랜덤한 효과가 부여됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률",
-            "일부 벌레 장신구의 능력치 증가 효과 3배#{{ColorGold}}25%의 확률로 눈물에 랜덤한 효과가 부여됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률",
-            "일부 벌레 장신구의 능력치 증가 효과 4배#{{ColorGold}}25%의 확률로 눈물에 랜덤한 효과가 부여됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률"
-        }
     )
     addGoldenTrinketDescription(
         TrinketType.TRINKET_BRAIN_WORM,
@@ -337,23 +328,6 @@ Astro:AddCallback(
                 if rng:RandomFloat() < 0.25 + player.Luck / 100 then
                     tear.TearFlags = tear.TearFlags | TearFlags.TEAR_BOUNCE
                     tear.Color = Color(1, 1, 0.8, 1, 0.1, 0.1, 0.1)
-                end
-            end
-
-            if player:GetTrinketMultiplier(TrinketType.TRINKET_RAINBOW_WORM) > 1 then
-                local rng = player:GetTrinketRNG(TrinketType.TRINKET_RAINBOW_WORM)
-
-                if rng:RandomFloat() < 0.25 + player.Luck / 100 then
-                    player:AddCollectible(CollectibleType.COLLECTIBLE_FRUIT_CAKE)
-
-                    local tearParams = player:GetTearHitParams(WeaponType.WEAPON_TEARS)
-                    tear.Color = tearParams.TearColor
-                    tear.CollisionDamage = tearParams.TearDamage
-                    tear.TearFlags = tear.TearFlags | tearParams.TearFlags
-                    tear.Height = tearParams.TearHeight
-                    tear.Scale = tearParams.TearScale
-
-                    player:RemoveCollectible(CollectibleType.COLLECTIBLE_FRUIT_CAKE)
                 end
             end
 
