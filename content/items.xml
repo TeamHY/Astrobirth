@@ -1,12 +1,12 @@
 <items gfxroot="gfx/items/" version="1">
-	<passive gfx="Cygnus.png" name="Cygnus" />
-	<passive tags="dead tech battery syringe mom guppy fly bob mushroom baby angel devil poop book spider" gfx="Libra.png" name="Libra EX" />
-	<passive gfx="Cancer.png" name="Cancer EX" />
-	<passive gfx="Scorpio.png" name="Scorpio EX" />
-	<passive gfx="Capricorn.png" name="Capricorn EX" />
-	<passive gfx="Virgo.png" name="Virgo EX" />
-	<passive gfx="Leo.png" name="Leo EX" />
-	<passive gfx="Aries.png" name="Aries EX" />
-	<passive cache="firedelay speed" gfx="Taurus.png" name="Taurus EX" />
-	<passive gfx="Aquarius.png" name="Aquarius EX" />
+	<passive gfx="Cygnus.png" quality="4" name="Cygnus" />
+	<passive tags="dead tech battery syringe mom guppy fly bob mushroom baby angel devil poop book spider" gfx="Libra.png" quality="3" name="Libra EX" />
+	<passive gfx="Cancer.png" quality="3" name="Cancer EX" />
+	<passive gfx="Scorpio.png" quality="3" name="Scorpio EX" />
+	<passive gfx="Capricorn.png" quality="2" name="Capricorn EX" />
+	<passive gfx="Virgo.png" quality="4" name="Virgo EX" />
+	<passive gfx="Leo.png" quality="3" name="Leo EX" />
+	<passive gfx="Aries.png" quality="4" name="Aries EX" />
+	<passive cache="firedelay speed" gfx="Taurus.png" quality="2" name="Taurus EX" />
+	<passive gfx="Aquarius.png" quality="3" name="Aquarius EX" />
 </items>

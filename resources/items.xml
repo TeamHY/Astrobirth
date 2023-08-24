@@ -1,7 +1,7 @@
 <items gfxroot="gfx/items/" version="1">
 	<passive cache="firedelay" description="#THE_SAD_ONION_DESCRIPTION" gfx="Collectibles_001_TheSadOnion.png" id="1" name="#THE_SAD_ONION_NAME" />
 	<passive cache="firedelay damage" description="#THE_INNER_EYE_DESCRIPTION" gfx="Collectibles_002_TheInnerEye.png" id="2" name="#THE_INNER_EYE_NAME" />
-	<passive cache="speed tearcolor tearflag" description="#SPOON_BENDER_DESCRIPTION" devilprice="2" gfx="Collectibles_003_SpoonBender.png" id="3" name="#SPOON_BENDER_NAME" />
+	<passive cache="speed tearcolor tearflag" description="#SPOON_BENDER_DESCRIPTION" devilprice="2" gfx="Collectibles_003_SpoonBender.png" id="3" shopprice="60" name="#SPOON_BENDER_NAME" />
 	<passive cache="damage shotspeed" description="#CRICKETS_HEAD_DESCRIPTION" devilprice="2" gfx="Collectibles_004_CricketsHead.png" id="4" name="#CRICKETS_HEAD_NAME" />
 	<passive cache="damage luck tearflag shotspeed range" description="#MY_REFLECTION_DESCRIPTION" gfx="Collectibles_005_MyReflection.png" id="5" name="#MY_REFLECTION_NAME" />
 	<passive cache="firedelay range tearcolor" description="#NUMBER_ONE_DESCRIPTION" gfx="Collectibles_006_NumberOne.png" id="6" name="#NUMBER_ONE_NAME" />
@@ -231,7 +231,7 @@
 	<passive cache="all" description="#MONSTROS_LUNG_DESCRIPTION" gfx="collectibles_229_monstroslung.png" id="229" name="#MONSTROS_LUNG_NAME" />
 	<passive achievement="128" cache="damage speed" description="#ABADDON_DESCRIPTION" devilprice="2" gfx="collectibles_230_abaddon.png" id="230" name="#ABADDON_NAME" />
 	<passive cache="tearcolor" description="#BALL_OF_TAR_DESCRIPTION" gfx="collectibles_231_balloftar.png" id="231" name="#BALL_OF_TAR_NAME" />
-	<passive achievement="138" cache="speed" description="#STOP_WATCH_DESCRIPTION" gfx="collectibles_232_stopwatch.png" id="232" name="#STOP_WATCH_NAME" />
+	<passive achievement="138" cache="speed" description="#STOP_WATCH_DESCRIPTION" shopprice="80" gfx="collectibles_232_stopwatch.png" id="232" name="#STOP_WATCH_NAME" />
 	<passive cache="all" description="#TINY_PLANET_DESCRIPTION" gfx="collectibles_233_tinyplanet.png" id="233" name="#TINY_PLANET_NAME" />
 	<passive description="#INFESTATION_2_DESCRIPTION" devilprice="2" gfx="collectibles_234_infestation2.png" id="234" name="#INFESTATION_2_NAME" />
 	
