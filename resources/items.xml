@@ -630,7 +630,7 @@
 	<passive	id="602"	achievement="582" gfx="Collectibles_602_MemberCard.png" name="#MEMBER_CARD_NAME" description="#MEMBER_CARD_DESCRIPTION" />
 	<passive	id="603"	gfx="Collectibles_603_BatteryPack.png" name="#BATTERY_PACK_NAME" description="#BATTERY_PACK_DESCRIPTION" />
 	<active		id="604"	gfx="Collectibles_604_MomsBracelet.png" name="#MOMS_BRACELET_NAME" description="#MOMS_BRACELET_DESCRIPTION" shopprice="10" maxcharges="30" chargetype="timed" />
-	<active		id="605"	gfx="Collectibles_605_TheScooper.png" name="#THE_SCOOPER_NAME" description="#THE_SCOOPER_DESCRIPTION" maxcharges="3" cache="familiars" />
+	<active		id="605"	gfx="Collectibles_605_TheScooper.png" name="#THE_SCOOPER_NAME" description="#THE_SCOOPER_DESCRIPTION" maxcharges="2" cache="familiars" />
 	<passive	id="606"	gfx="Collectibles_606_OculusRift.png" name="#OCULAR_RIFT_NAME" description="#OCULAR_RIFT_DESCRIPTION" devilprice="2" />
 	<familiar	id="607"	gfx="Collectibles_607_BoiledBaby.png" name="#BOILED_BABY_NAME" description="#BOILED_BABY_DESCRIPTION" />
 	<familiar	id="608"	gfx="Collectibles_608_FreezerBaby.png" name="#FREEZER_BABY_NAME" description="#FREEZER_BABY_DESCRIPTION" />

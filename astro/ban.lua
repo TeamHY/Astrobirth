@@ -21,6 +21,7 @@ function Ban:Init()
             self.BanTrinket(TrinketType.TRINKET_FILIGREE_FEATHERS)
             self.BanTrinket(TrinketType.TRINKET_RC_REMOTE)
             self.BanTrinket(TrinketType.TRINKET_EXPANSION_PACK)
+            self.BanTrinket(TrinketType.TRINKET_FOUND_SOUL)
         end,
         [PlayerType.PLAYER_ISAAC] = function()
         end,
