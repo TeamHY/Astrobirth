@@ -137,7 +137,7 @@
           nameimage="PlayerName_02_Magdalene.png"
           portrait="PlayerPortrait_Magdalene_b.png" skinColor="-1"
 		  birthright="#MAGDALENE_B_BIRTHRIGHT" />
-	<player id="23" name="#CAIN_NAME" skin="Character_003b_Cain.png" costume="81" hp="4" items="414,618" keys="1" bombs="1" pocketActive="710" achievement="476"
+	<player id="23" name="#CAIN_NAME" skin="Character_003b_Cain.png" costume="81" hp="4" items="414,619" keys="1" bombs="1" pocketActive="710" achievement="476"
           nameimage="PlayerName_03_Cain.png" 
           portrait="PlayerPortrait_Cain_b.png" skinColor="-1"
 		  birthright="#CAIN_B_BIRTHRIGHT" />

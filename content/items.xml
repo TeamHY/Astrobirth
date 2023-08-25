@@ -9,4 +9,17 @@
 	<passive gfx="Aries.png" quality="4" name="Aries EX" />
 	<passive cache="firedelay speed" gfx="Taurus.png" quality="2" name="Taurus EX" />
 	<passive gfx="Aquarius.png" quality="3" name="Aquarius EX" />
+	<passive gfx="Casiopea.png" quality="3" name="Casiopea" />
+	<passive gfx="Corvus.png" quality="3" name="Corvus" />
+	<passive gfx="Pavo.png" quality="4" name="Pavo" />
+	<passive gfx="Comet.png" quality="3" name="Comet" />
+
+
+
+
+
+	<!-- 아래부터는 커스텀 장신구 -->
+	<trinket gfx="Eye of God.png" name="Eye Of God" />
+	<trinket gfx="Left Foot.png" name="Left Foot" />
+	<trinket gfx="Absolute Zero.png" name="Absolute Zero" />
 </items>

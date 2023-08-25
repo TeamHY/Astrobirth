@@ -84,6 +84,8 @@ function Ban:Init()
         [PlayerType.PLAYER_LAZARUS_B] = function()
         end,
         [PlayerType.PLAYER_EDEN_B] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_MISSING_NO)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
         end,
         [PlayerType.PLAYER_THELOST_B] = function()
         end,
