@@ -62,8 +62,10 @@ function Ban:Init()
         [PlayerType.PLAYER_BETHANY] = function()
         end,
         [PlayerType.PLAYER_JACOB] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_SCHOOLBAG)
         end,
         [PlayerType.PLAYER_ESAU] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_SCHOOLBAG)
         end,
         [PlayerType.PLAYER_ISAAC_B] = function()
         end,
