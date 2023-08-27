@@ -40,3 +40,25 @@ function Astro.Utill:GetPlayerFromEntity(entity)
 
     return entity:ToPlayer()
 end
+
+---@param id TrinketType
+---@param appendText string | table
+---@param numbersToMultiply number | table | nil
+---@param maxMultiplier number | table | nil
+function Astro.Utill:addGoldenTrinketDescription(id, appendText, numbersToMultiply, maxMultiplier)
+    local data = EID.GoldenTrinketData[id]
+
+    if data then
+        if type(data) == "number" then
+            EID:addGoldenTrinketMetadata(id, appendText, numbersToMultiply or data, maxMultiplier)
+        else
+            EID:addGoldenTrinketMetadata(id, appendText, numbersToMultiply or data.t, maxMultiplier or data.mult)
+        end
+    else
+        EID:addGoldenTrinketMetadata(id, appendText, numbersToMultiply or 0, maxMultiplier)
+    end
+
+    if maxMultiplier and maxMultiplier > 4 then
+        EID.GoldenTrinketData[id].mults = {maxMultiplier, maxMultiplier}
+    end
+end

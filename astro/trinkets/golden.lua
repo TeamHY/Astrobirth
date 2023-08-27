@@ -38,85 +38,63 @@ local GRID_SIZE = 40
 local GOLDEN_TRINKET_OFFSET = 32768
 
 if EID then
-    ---@param id TrinketType
-    ---@param appendText string | table
-    ---@param numbersToMultiply number | table | nil
-    ---@param maxMultiplier number | table | nil
-    local function addGoldenTrinketDescription(id, appendText, numbersToMultiply, maxMultiplier)
-        local data = EID.GoldenTrinketData[id]
-
-        if data then
-            if type(data) == "number" then
-                EID:addGoldenTrinketMetadata(id, appendText, numbersToMultiply or data, maxMultiplier)
-            else
-                EID:addGoldenTrinketMetadata(id, appendText, numbersToMultiply or data.t, maxMultiplier or data.mult)
-            end
-        else
-            EID:addGoldenTrinketMetadata(id, appendText, numbersToMultiply or 0, maxMultiplier)
-        end
-
-        if maxMultiplier and maxMultiplier > 4 then
-            EID.GoldenTrinketData[id].mults = {maxMultiplier, maxMultiplier}
-        end
-    end
-
-    addGoldenTrinketDescription(
+    Astro.Utill:addGoldenTrinketDescription(
         TrinketType.TRINKET_UMBILICAL_CORD,
         {"!!! 획득 시 사라지고 {{Collectible100}}Little Steven을 획득합니다."}
     )
-    addGoldenTrinketDescription(
+    Astro.Utill:addGoldenTrinketDescription(
         TrinketType.TRINKET_MISSING_PAGE,
         {"!!! 획득 시 사라지고 {{Collectible35}}The Necronomicon을 소환합니다."}
     )
-    addGoldenTrinketDescription(
+    Astro.Utill:addGoldenTrinketDescription(
         TrinketType.TRINKET_FADED_POLAROID,
         {"!!! 획득 시 사라지고 {{Collectible327}}The Polaroid과 {{Collectible328}}The Negative를 소환합니다. 하나를 선택하면 나머지는 사라집니다."}
     )
-    addGoldenTrinketDescription(
+    Astro.Utill:addGoldenTrinketDescription(
         TrinketType.TRINKET_LOUSE,
         {
             "효과 2배 #!!! {{ColorGold}}획득 시 사라지고 {{Collectible234}} 소환합니다.",
             "효과 3배 #!!! {{ColorGold}}해당 장신구는 사라지고 {{Collectible234}} 소환합니다."
         }
     )
-    addGoldenTrinketDescription(
+    Astro.Utill:addGoldenTrinketDescription(
         TrinketType.TRINKET_BROKEN_SYRINGE,
         {"!!! 획득 시 사라지고 랜덤한 주사기 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다."}
     )
 
-    addGoldenTrinketDescription(TrinketType.TRINKET_SILVER_DOLLAR, {"!!! 획득 시 바로 흡수됩니다."})
-    addGoldenTrinketDescription(TrinketType.TRINKET_BLOODY_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
-    addGoldenTrinketDescription(TrinketType.TRINKET_HOLY_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
-    addGoldenTrinketDescription(TrinketType.TRINKET_WICKED_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
-    addGoldenTrinketDescription(TrinketType.TRINKET_NUMBER_MAGNET, {"!!! 획득 시 바로 흡수됩니다."})
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_SILVER_DOLLAR, {"!!! 획득 시 바로 흡수됩니다."})
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_BLOODY_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_HOLY_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_WICKED_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_NUMBER_MAGNET, {"!!! 획득 시 바로 흡수됩니다."})
 
-    addGoldenTrinketDescription(TrinketType.TRINKET_PURPLE_HEART, {"↑ {{DamageSmall}}공격력 x1.2"})
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_PURPLE_HEART, {"↑ {{DamageSmall}}공격력 x1.2"})
 
-    addGoldenTrinketDescription(TrinketType.TRINKET_PINKY_EYE, "", 10, 10)
-    addGoldenTrinketDescription(TrinketType.TRINKET_PUSH_PIN, "", 10, 10)
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_PINKY_EYE, "", 10, 10)
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_PUSH_PIN, "", 10, 10)
 
-    addGoldenTrinketDescription(
+    Astro.Utill:addGoldenTrinketDescription(
         TrinketType.TRINKET_SUPER_BALL,
         "25%의 확률로 적용됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률"
     )
-    addGoldenTrinketDescription(
+    Astro.Utill:addGoldenTrinketDescription(
         TrinketType.TRINKET_BRAIN_WORM,
         "눈물을 발사할 때 25%의 확률로 유도 효과가 생깁니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 50 이상일 때 100% 확률"
     )
 
-    addGoldenTrinketDescription(TrinketType.TRINKET_BLACK_LIPSTICK, "스테이지를 넘어갈 때마다 {{BlackHeart}}블랙하트를 하나 드랍합니다.")
-    addGoldenTrinketDescription(TrinketType.TRINKET_RUSTED_KEY, "스테이지를 넘어갈 때마다 {{GoldenKey}}황금열쇠를 하나 드랍합니다.")
-    addGoldenTrinketDescription(TrinketType.TRINKET_SAFETY_CAP, "스테이지를 넘어갈 때마다 {{Pill1}}Gulp! 알약을 하나 드랍합니다.")
-    addGoldenTrinketDescription(TrinketType.TRINKET_ACE_SPADES, "스테이지를 넘어갈 때마다 {{Card}}카드를 하나 생성합니다.")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_BLACK_LIPSTICK, "스테이지를 넘어갈 때마다 {{BlackHeart}}블랙하트를 하나 드랍합니다.")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_RUSTED_KEY, "스테이지를 넘어갈 때마다 {{GoldenKey}}황금열쇠를 하나 드랍합니다.")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_SAFETY_CAP, "스테이지를 넘어갈 때마다 {{Pill1}}Gulp! 알약을 하나 드랍합니다.")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_ACE_SPADES, "스테이지를 넘어갈 때마다 {{Card}}카드를 하나 생성합니다.")
 
-    addGoldenTrinketDescription(TrinketType.TRINKET_BLOODY_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
-    addGoldenTrinketDescription(TrinketType.TRINKET_BURNT_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
-    addGoldenTrinketDescription(TrinketType.TRINKET_FLAT_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
-    addGoldenTrinketDescription(TrinketType.TRINKET_COUNTERFEIT_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
-    addGoldenTrinketDescription(TrinketType.TRINKET_ROTTEN_PENNY, "효과가 1번 더 발동합니다.")
-    addGoldenTrinketDescription(TrinketType.TRINKET_BLESSED_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 88 이상일 때 100% 확률")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_BLOODY_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_BURNT_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_FLAT_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_COUNTERFEIT_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_ROTTEN_PENNY, "효과가 1번 더 발동합니다.")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_BLESSED_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 88 이상일 때 100% 확률")
 
-    addGoldenTrinketDescription(TrinketType.TRINKET_BAT_WING, "!!! 비행 능력을 얻습니다.")
+    Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_BAT_WING, "!!! 비행 능력을 얻습니다.")
 end
 
 ---@param value integer
