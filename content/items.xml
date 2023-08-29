@@ -20,6 +20,6 @@
 
 	<!-- 아래부터는 커스텀 장신구 -->
 	<trinket gfx="Eye of God.png" name="Eye Of God" />
-	<trinket gfx="Left Foot.png" name="The Left Foot" />
+	<trinket gfx="The Left Foot.png" name="The Left Foot" />
 	<trinket gfx="Absolute Zero.png" name="Absolute Zero" />
 </items>
