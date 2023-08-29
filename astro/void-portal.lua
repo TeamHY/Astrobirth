@@ -19,8 +19,6 @@ Astro:AddCallback(
         portal:GetSprite():Load("gfx/grid/voidtrapdoor.anm2", true)
 
         currentRoom:SetClear(true)
-
-        Astro.Data.MegaSatanPortal = true
     end,
     275
 )
@@ -31,12 +29,12 @@ Astro:AddCallback(
         local level = Game():GetLevel()
         local currentRoom = level:GetCurrentRoom()
 
-        if level:GetStage() ~= 9 and not Astro.Data.MegaSatanPortal then
+        if level:GetStage() ~= 9 and currentRoom:GetBossID() ~= 55 then
             for i = 1, currentRoom:GetGridSize() do
                 local gridEnt = currentRoom:GetGridEntity(i)
 
                 if gridEnt then
-                    if gridEnt:GetType() == 17 then
+                    if gridEnt:GetType() == 17 and gridEnt.VarData == 1 then
                         currentRoom:RemoveGridEntity(i, 0, false)
                     end
                 end
