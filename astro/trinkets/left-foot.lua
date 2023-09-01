@@ -1,5 +1,3 @@
-local isc = require("astro.lib.isaacscript-common")
-
 Astro.Trinket.LEFT_FOOT = Isaac.GetTrinketIdByName("The Left Foot")
 
 if EID then
