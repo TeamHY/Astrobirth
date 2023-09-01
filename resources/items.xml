@@ -212,7 +212,7 @@
 	<passive description="#GNAWED_LEAF_DESCRIPTION" gfx="Collectibles_210_GnawedLeaf.png" id="210" name="#GNAWED_LEAF_NAME" />
 	<passive description="#SPIDERBABY_DESCRIPTION" gfx="collectibles_211_spiderbaby.png" id="211" name="#SPIDERBABY_NAME" />
 	<passive description="#GUPPYS_COLLAR_DESCRIPTION" gfx="Collectibles_212_GuppysCollar.png" id="212" name="#GUPPYS_COLLAR_NAME" />
-	<passive cache="shotspeed tearflag" description="#LOST_CONTACT_DESCRIPTION" gfx="collectibles_213_lostcontact.png" id="213" name="#LOST_CONTACT_NAME" />
+	<passive cache="shotspeed tearflag damage" description="#LOST_CONTACT_DESCRIPTION" gfx="collectibles_213_lostcontact.png" id="213" name="#LOST_CONTACT_NAME" />
 	<passive cache="range" description="#ANEMIC_DESCRIPTION" gfx="collectibles_214_anemic.png" id="214" name="#ANEMIC_NAME" />
 	<passive cache="damage" description="#GOAT_HEAD_DESCRIPTION" devilprice="2" gfx="collectibles_215_goathead.png" id="215" name="#GOAT_HEAD_NAME" />
 	<passive cache="damage" blackhearts="6" description="#CEREMONIAL_ROBES_DESCRIPTION" gfx="Collectibles_216_CeremonialRobes.png" id="216" name="#CEREMONIAL_ROBES_NAME" devilprice="2" />
@@ -504,7 +504,7 @@
 	<passive description="#ADRENALINE_DESCRIPTION" gfx="collectibles_493_adderline.png" id="493" name="#ADRENALINE_NAME" cache="damage" />
 	<passive description="#JACOBS_LADDER_DESCRIPTION" gfx="collectibles_494_jacobsladder.png" devilprice="2" id="494" name="#JACOBS_LADDER_NAME" cache="tearflag tearcolor" />
 	<passive description="#GHOST_PEPPER_DESCRIPTION" gfx="collectibles_495_ghostpepper.png" devilprice="2" id="495" name="#GHOST_PEPPER_NAME" />
-	<passive achievement="292" description="#EUTHANASIA_DESCRIPTION" devilprice="2" gfx="collectibles_496_euthanasia.png" id="496" name="#EUTHANASIA_NAME" />
+	<passive achievement="292" cache="damage" description="#EUTHANASIA_DESCRIPTION" devilprice="2" gfx="collectibles_496_euthanasia.png" id="496" name="#EUTHANASIA_NAME" />
 	<passive description="#CAMO_UNDIES_DESCRIPTION" gfx="collectibles_497_camoundies.png" id="497" name="#CAMO_UNDIES_NAME" cache="speed" />
 	<passive achievement="306" description="#DUALITY_DESCRIPTION" gfx="collectibles_498_duality.png" id="498" name="#DUALITY_NAME" />
 	<passive achievement="283" description="#EUCHARIST_DESCRIPTION" gfx="collectibles_499_eucharist.png" id="499" name="#EUCHARIST_NAME" />
@@ -513,7 +513,7 @@
 	<passive achievement="335" description="#GREEDS_GULLET_DESCRIPTION" gfx="Collectibles_501_GreedsGullet.png" id="501" name="#GREEDS_GULLET_NAME" />
 
 	<passive description="#LARGE_ZIT_DESCRIPTION" gfx="Collectibles_502_LargeZit.png" id="502" name="#LARGE_ZIT_NAME" />
-	<passive description="#LITTLE_HORN_DESCRIPTION" gfx="Collectibles_503_LittleHorn.png" devilprice="2" id="503" name="#LITTLE_HORN_NAME" />
+	<passive cache="damage" description="#LITTLE_HORN_DESCRIPTION" gfx="Collectibles_503_LittleHorn.png" devilprice="2" id="503" name="#LITTLE_HORN_NAME" />
 	<active achievement="316" description="#BROWN_NUGGET_DESCRIPTION" gfx="Collectibles_504_BrownNugget.png" id="504" name="#BROWN_NUGGET_NAME" cache="familiars" maxcharges="250" chargetype="timed" />
 	<passive description="#POKE_GO_DESCRIPTION" gfx="Collectibles_505_PokeGo.png" id="505" name="#POKE_GO_NAME" />
 	<passive description="#BACKSTABBER_DESCRIPTION" devilprice="2" gfx="Collectibles_506_Backstabber.png" id="506" name="#BACKSTABBER_NAME" cache="tearflag" />
