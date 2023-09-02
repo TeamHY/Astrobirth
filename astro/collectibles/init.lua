@@ -43,11 +43,15 @@ Astro:AddCallback(
     ---@param cacheFlag CacheFlag
     function(_, player, cacheFlag)
         if cacheFlag == CacheFlag.CACHE_DAMAGE then
-            if
-                player:HasCollectible(CollectibleType.COLLECTIBLE_LITTLE_HORN) or
-                    player:HasCollectible(CollectibleType.COLLECTIBLE_EUTHANASIA) or
-                    player:HasCollectible(CollectibleType.COLLECTIBLE_LOST_CONTACT)
-             then
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_LITTLE_HORN) then
+                player.Damage = player.Damage * 0.75
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_EUTHANASIA) then
+                player.Damage = player.Damage * 0.75
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_LOST_CONTACT) then
                 player.Damage = player.Damage * 0.75
             end
         end
