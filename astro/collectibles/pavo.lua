@@ -5,19 +5,17 @@ if EID then
 end
 
 Astro:AddCallback(
-    ModCallbacks.MC_POST_NEW_ROOM,
-    function(_)
-        local entities = Isaac.GetRoomEntities()
-
+    ModCallbacks.MC_POST_NPC_INIT,
+    ---@param entity Entity
+    function(_, entity)
         local isRun = false
+        
         for i = 1, Game():GetNumPlayers() do
             local player = Isaac.GetPlayer(i - 1)
 
             if player:HasCollectible(Astro.Collectible.PAVO) and not isRun then
-                for i = 1, #entities do
-                    if entities[i]:IsVulnerableEnemy() and entities[i].Type ~= EntityType.ENTITY_FIREPLACE then
-                        entities[i]:TakeDamage(entities[i].HitPoints * 0.25, 0, EntityRef(player), 1)
-                    end
+                if entity:IsVulnerableEnemy() and entity.Type ~= EntityType.ENTITY_FIREPLACE then
+                    entity.HitPoints = entity.HitPoints - entity.MaxHitPoints * 0.25
                 end
 
                 isRun = true
