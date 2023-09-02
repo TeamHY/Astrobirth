@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.CORVUS = Isaac.GetItemIdByName("Corvus")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.CORVUS, "게임 시간 20초마다 {{Card86}}Soul of Eve가 발동됩니다.#다음 게임 시작 시 {{Card86}}Soul of Eve을 하나 소환합니다.", "백조자리")
+    EID:addCollectible(Astro.Collectible.CORVUS, "게임 시간 20초마다 {{Card86}}Soul of Eve가 발동됩니다.#다음 게임 시작 시 {{Card86}}Soul of Eve을 하나 소환합니다.", "까마귀자리")
 end
 
 Astro:AddCallback(
