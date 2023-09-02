@@ -11,6 +11,10 @@
 		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
 	</Pool>
 	<Pool Name="angel">
 		<Item Name="Cygnus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -24,6 +28,10 @@
 		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
 	</Pool>
 	<Pool Name="devil">
 		<Item Name="Cygnus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -37,6 +45,10 @@
 		<Item Name="Taurus EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Capricorn EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Casiopea" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Corvus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pavo" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+
 	</Pool>
 	<Pool Name="ultraSecret">
 		<Item Name="Cygnus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -50,5 +62,9 @@
 		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
 	</Pool>
 </ItemPools>

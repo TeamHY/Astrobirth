@@ -35,7 +35,7 @@ Astro:AddCallback(
             ---@type EntityPlayer
             local player = entity:GetData().AquariusSource
 
-            if player ~= nil and entity:IsVulnerableEnemy() and Game().TimeCounter % 10 == 0 then
+            if player ~= nil and entity:IsVulnerableEnemy() and Game().TimeCounter % 7 == 0 then
                 local splashTear =
                     player:FireTear(
                     entity.Position,

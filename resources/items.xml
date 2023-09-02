@@ -450,7 +450,7 @@
 	
 	<!-- Afterbirth+ -->
 	<passive achievement="290" description="#DARK_PRINCES_CROWN_DESCRIPTION" gfx="Collectibles_442_DarkPrincesCrown.png" id="442" name="#DARK_PRINCES_CROWN_NAME" cache="range firedelay shotspeed" devilprice="1" />
-	<passive description="#APPLE_DESCRIPTION" gfx="Collectibles_443_Apple.png" id="443" name="#APPLE_NAME" cache="firedelay" />
+	<passive description="#APPLE_DESCRIPTION" gfx="Collectibles_443_Apple.png" id="443" devilprice="2" name="#APPLE_NAME" cache="firedelay" />
 	<passive description="#LEAD_PENCIL_DESCRIPTION" gfx="Collectibles_444_LeadPencil.png" id="444" name="#LEAD_PENCIL_NAME" />
 	<passive description="#DOG_TOOTH_DESCRIPTION" gfx="Collectibles_445_DogTooth.png" id="445" name="#DOG_TOOTH_NAME" cache="damage speed" />
 	<passive description="#DEAD_TOOTH_DESCRIPTION" gfx="Collectibles_446_DeadTooth.png" id="446" name="#DEAD_TOOTH_NAME" />
@@ -650,7 +650,7 @@
 	<active		id="622"	achievement="436" devilprice="2" gfx="Collectibles_622_Genesis.png" name="#GENESIS_NAME" description="#GENESIS_DESCRIPTION" />
 	<active		id="623"	gfx="Collectibles_623_SharpKey.png" name="#SHARP_KEY_NAME" description="#SHARP_KEY_DESCRIPTION" keys="5" maxcharges="0" />
 	<passive	id="624"	gfx="Collectibles_624_BoosterPack.png" name="#BOOSTER_PACK_NAME" description="#BOOSTER_PACK_DESCRIPTION" />
-	<active		id="625"	achievement="547" gfx="Collectibles_625_MegaMush.png" name="#MEGA_MUSH_NAME" description="#MEGA_MUSH_DESCRIPTION" maxcharges="12" cooldown="900" persistent="true" cache="all" />
+	<active		id="625"	achievement="547" gfx="Collectibles_625_MegaMush.png" name="#MEGA_MUSH_NAME" description="#MEGA_MUSH_DESCRIPTION" maxcharges="50" cooldown="900" persistent="true" cache="all" />
 	<familiar	id="626"	gfx="Collectibles_626_KnifePiece1.png" name="#KNIFE_PIECE_1_NAME" description="#KNIFE_PIECE_1_DESCRIPTION" />
 	<familiar	id="627"	gfx="Collectibles_627_KnifePiece2.png" name="#KNIFE_PIECE_2_NAME" description="#KNIFE_PIECE_2_DESCRIPTION" />
 	<active		id="628"	achievement="636" gfx="Collectibles_628_DeathCertificate.png" name="#DEATH_CERTIFICATE_NAME" description="#DEATH_CERTIFICATE_DESCRIPTION" maxcharges="0" />
