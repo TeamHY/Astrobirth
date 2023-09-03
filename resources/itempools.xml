@@ -827,6 +827,21 @@
 		<Item Id="716" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="730" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
+		<!-- 2차 추가 배열 상점 아이템들 -->
+
+		<Item Id="33" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="217" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="249" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="273" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="347" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="445" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="586" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="619" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="632" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="673" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="690" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="693" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
 
 
 
@@ -1100,6 +1115,7 @@
 		<Item Id="224" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="228" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="230" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="232" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="234" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="237" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="244" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -4058,6 +4074,7 @@
 		<Item Id="224" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="228" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="230" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="232" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="234" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="237" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="244" Weight="1" DecreaseBy="1" RemoveOn="0"/>
