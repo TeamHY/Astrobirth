@@ -158,7 +158,7 @@
 	<passive achievement="54" cache="damage color" description="#BLOODY_LUST_DESCRIPTION" gfx="Collectibles_157_BloodyLust.png" id="157" name="#BLOODY_LUST_NAME" />
 	<active description="#CRYSTAL_BALL_DESCRIPTION" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="6" name="#CRYSTAL_BALL_NAME" />
 	<passive cache="flying tearflag tearcolor" description="#SPIRIT_OF_THE_NIGHT_DESCRIPTION" devilprice="2" gfx="Collectibles_159_SpiritOfTheNight.png" id="159" name="#SPIRIT_OF_THE_NIGHT_NAME" />
-	<active cooldown="30" description="#CRACK_THE_SKY_DESCRIPTION" persistent="true" gfx="Collectibles_160_CrackTheSky.png" id="160" maxcharges="3" name="#CRACK_THE_SKY_NAME" />
+	<active cooldown="60" description="#CRACK_THE_SKY_DESCRIPTION" persistent="true" gfx="Collectibles_160_CrackTheSky.png" id="160" maxcharges="3" name="#CRACK_THE_SKY_NAME" />
 	<passive description="#ANKH_DESCRIPTION" gfx="Collectibles_161_Ankh.png" id="161" name="#ANKH_NAME" />
 	<passive achievement="50" cooldown="200" description="#CELTIC_CROSS_DESCRIPTION" gfx="Collectibles_162_CelticCross.png" id="162" name="#CELTIC_CROSS_NAME" />
 	<familiar description="#GHOST_BABY_DESCRIPTION" gfx="Collectibles_163_GhostBaby.png" id="163" name="#GHOST_BABY_NAME" />
@@ -441,7 +441,7 @@
 	<familiar achievement="195" description="#MY_SHADOW_DESCRIPTION" gfx="Collectibles_433_MyShadow.png" id="433" name="#MY_SHADOW_NAME" />
 	<active description="#JAR_OF_FLIES_DESCRIPTION" gfx="Collectibles_434_JarOfFlies.png" id="434" name="#JAR_OF_FLIES_NAME" maxcharges="0" />
 	<familiar description="#LIL_LOKI_DESCRIPTION" gfx="Collectibles_435_LilLoki.png" id="435" name="#LIL_LOKI_NAME" />
-	<familiar description="#MILK_DESCRIPTION" gfx="Collectibles_436_Milk.png" id="436" name="#MILK_NAME" cache="firedelay" />
+	<familiar description="#MILK_DESCRIPTION" gfx="Collectibles_436_Milk.png" id="436" name="#MILK_NAME" persistent="false" cache="firedelay" />
 	<active description="#D7_DESCRIPTION" gfx="Collectibles_437_D7.png" id="437" name="#D7_NAME" maxcharges="3" />
 	<passive description="#BINKY_DESCRIPTION" gfx="Collectibles_438_Binky.png" id="438" name="#BINKY_NAME" cache="firedelay size" soulhearts="2" />
 	<active description="#MOMS_BOX_DESCRIPTION" gfx="Collectibles_439_MomsBox.png" id="439" name="#MOMS_BOX_NAME" maxcharges="4" cache="all" passivecache="true" />
@@ -484,7 +484,7 @@
 	<active description="#BROKEN_GLASS_CANNON_DESCRIPTION" gfx="Collectibles_474_BrokenGlassCannon.png" id="474" name="#BROKEN_GLASS_CANNON_NAME" maxcharges="4" initcharge="0" />
 	<active achievement="305" description="#PLAN_C_DESCRIPTION" gfx="Collectibles_475_PlanC.png" id="475" name="#PLAN_C_NAME" maxcharges="0" />
 	<active achievement="296" description="#D1_DESCRIPTION" gfx="Collectibles_476_D1.png" id="476" name="#D1_NAME" maxcharges="4" />
-	<active achievement="295" description="#VOID_DESCRIPTION" gfx="Collectibles_477_Void.png" id="477" name="#VOID_NAME" maxcharges="6" />
+	<active achievement="295" description="#VOID_DESCRIPTION" gfx="Collectibles_477_Void.png" id="477" name="#VOID_NAME" maxcharges="4" />
 	<active description="#PAUSE_DESCRIPTION" gfx="Collectibles_478_Pause.png" id="478" name="#PAUSE_NAME" maxcharges="2" />
 	<active achievement="318" description="#SMELTER_DESCRIPTION" gfx="Collectibles_479_Smelter.png" id="479" name="#SMELTER_NAME" maxcharges="6" />
 	<active description="#COMPOST_DESCRIPTION" gfx="Collectibles_480_Compost.png" id="480" name="#COMPOST_NAME" shopprice="10" maxcharges="2" />
@@ -741,7 +741,7 @@
 	<active		id="713"	achievement="589" gfx="Collectibles_713_Sumptorium.png" name="#SUMPTORIUM_NAME" description="#SUMPTORIUM_DESCRIPTION" maxcharges="300" chargetype="timed" cooldown="60" />
 	<active		id="714"	gfx="Collectibles_714_Recall.png" name="#RECALL_NAME" description="#RECALL_DESCRIPTION" maxcharges="45" chargetype="timed" cache="flying" cooldown="75" hidden="true" />
 	<active		id="715"	gfx="Collectibles_715_Hold.png" name="#HOLD_NAME" description="#HOLD_DESCRIPTION" maxcharges="0" hidden="true" />
-	<passive	id="716"	achievement="464" gfx="Collectibles_716_KeepersSack.png" name="#KEEPERS_SACK_NAME" description="#KEEPERS_SACK_DESCRIPTION" cache="damage speed range" />
+	<passive	id="716"	achievement="464" gfx="Collectibles_716_KeepersSack.png" shopprice="23" name="#KEEPERS_SACK_NAME" description="#KEEPERS_SACK_DESCRIPTION" cache="damage speed range" />
 	<passive	id="717"	achievement="596" gfx="Collectibles_717_KeepersKin.png" name="#KEEPERS_KIN_NAME" shopprice="23" description="#KEEPERS_KIN_DESCRIPTION" />
 	
 	<active		id="719"	achievement="465" gfx="Collectibles_719_KeepersBox.png" name="#KEEPERS_BOX_NAME" description="#KEEPERS_BOX_DESCRIPTION" maxcharges="4" />

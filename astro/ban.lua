@@ -13,6 +13,7 @@ function Ban:Init()
             self.BanCollectible(CollectibleType.COLLECTIBLE_MOMS_PURSE) --c139
             self.BanCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1)
             self.BanCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_CLICKER)
             self.BanTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
             self.BanTrinket(TrinketType.TRINKET_CARTRIDGE)
             self.BanTrinket(TrinketType.TRINKET_MOMS_TOENAIL)
@@ -44,6 +45,9 @@ function Ban:Init()
         [PlayerType.PLAYER_EDEN] = function()
         end,
         [PlayerType.PLAYER_THELOST] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
         end,
         [PlayerType.PLAYER_LAZARUS2] = function()
         end,
@@ -52,6 +56,11 @@ function Ban:Init()
         [PlayerType.PLAYER_LILITH] = function()
         end,
         [PlayerType.PLAYER_KEEPER] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_GREEDS_GULLET)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_APOLLYON] = function()
         end,
@@ -62,10 +71,18 @@ function Ban:Init()
         [PlayerType.PLAYER_BETHANY] = function()
         end,
         [PlayerType.PLAYER_JACOB] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
         self.BanCollectible(CollectibleType.COLLECTIBLE_SCHOOLBAG)
+        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_ESAU] = function()
         self.BanCollectible(CollectibleType.COLLECTIBLE_SCHOOLBAG)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_ISAAC_B] = function()
         end,
@@ -84,6 +101,10 @@ function Ban:Init()
         [PlayerType.PLAYER_AZAZEL_B] = function()
         end,
         [PlayerType.PLAYER_LAZARUS_B] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_EDEN_B] = function()
         self.BanCollectible(CollectibleType.COLLECTIBLE_MISSING_NO)
@@ -94,18 +115,35 @@ function Ban:Init()
         [PlayerType.PLAYER_LILITH_B] = function()
         end,
         [PlayerType.PLAYER_KEEPER_B] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_GREEDS_GULLET)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_APOLLYON_B] = function()
         end,
         [PlayerType.PLAYER_THEFORGOTTEN_B] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_BETHANY_B] = function()
         end,
         [PlayerType.PLAYER_JACOB_B] = function()
         end,
         [PlayerType.PLAYER_LAZARUS2_B] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_JACOB2_B] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_THESOUL_B] = function()
         end

@@ -31,6 +31,7 @@
 -- TrinketType.TRINKET_BLESSED_PENNY : 동전 획득 시 종류 상관 없이 12.5% 확률로 소울 하트 반칸 소환 (럭1당 1%p 증가) []
 
 -- TrinketType.TRINKET_BAT_WING : 소지중인 상태일경우 공중 적용 []
+-- TrinketType.TRINKET_RED_PATCH : 해당 장신구 증발되고, 블러디 러스트 소환
 
 local isc = require("astro.lib.isaacscript-common")
 
@@ -95,6 +96,11 @@ if EID then
     Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_BLESSED_PENNY, "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 88 이상일 때 100% 확률")
 
     Astro.Utill:addGoldenTrinketDescription(TrinketType.TRINKET_BAT_WING, "!!! 비행 능력을 얻습니다.")
+
+    Astro.Utill:addGoldenTrinketDescription(
+        TrinketType.TRINKET_RED_PATCH,
+        {"!!! 획득 시 사라지고 {{Collectible157}}BloodyLust을 소환합니다."}
+    )
 end
 
 ---@param value integer
@@ -121,6 +127,17 @@ local function RunEffect(player, type)
             EntityType.ENTITY_PICKUP,
             PickupVariant.PICKUP_COLLECTIBLE,
             CollectibleType.COLLECTIBLE_NECRONOMICON,
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
+            Vector.Zero,
+            nil
+        )
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_RED_PATCH) then
+        local currentRoom = Game():GetLevel():GetCurrentRoom()
+        Isaac.Spawn(
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            CollectibleType.COLLECTIBLE_BLOODY_LUST,
             currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
             Vector.Zero,
             nil
@@ -226,6 +243,18 @@ local function RunEffect(player, type)
         return true
     elseif CheckTrinket(type, TrinketType.TRINKET_NUMBER_MAGNET) then
         isc:smeltTrinket(player, TrinketType.TRINKET_NUMBER_MAGNET + GOLDEN_TRINKET_OFFSET)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_PESTILENCE) then
+        isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_PESTILENCE + GOLDEN_TRINKET_OFFSET)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_FAMINE) then
+        isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_FAMINE + GOLDEN_TRINKET_OFFSET)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_DEATH) then
+        isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_DEATH + GOLDEN_TRINKET_OFFSET)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_CONQUEST) then
+        isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_CONQUEST + GOLDEN_TRINKET_OFFSET)
         return true
     end
 
