@@ -132,6 +132,10 @@ function Ban:Init()
         [PlayerType.PLAYER_BETHANY_B] = function()
         end,
         [PlayerType.PLAYER_JACOB_B] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_LAZARUS2_B] = function()
         self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
