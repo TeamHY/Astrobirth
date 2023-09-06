@@ -322,7 +322,7 @@ local function WasteCard(player, cardID, slotId)
 end
 
 ---@param player EntityPlayer
-function Astro:AutoWastingCard(player)
+function Astro:AutoWasting(player)
 	if player:GetCard(0) == Card.RUNE_ANSUZ then
 		WasteCard(player, Card.RUNE_ANSUZ, 0)
 	elseif player:GetCard(0) == Card.CARD_WORLD then
@@ -343,7 +343,19 @@ function Astro:AutoWastingCard(player)
 		WasteCard(player, Card.CARD_REVERSE_MAGICIAN, 0)
 	elseif player:GetCard(0) == Card.RUNE_BERKANO then
 		WasteCard(player, Card.RUNE_BERKANO, 0)
+	else
+		local pillColor = player:GetPill(0)
+
+		if pillColor then
+			local itemPool = Game():GetItemPool()
+			local pillEffect = itemPool:GetPillEffect(pillColor)
+
+			if pillEffect == PillEffect.PILLEFFECT_BALLS_OF_STEEL then
+				player:SetPill(0, PillColor.PILL_NULL)
+				player:UsePill(PillEffect.PILLEFFECT_BALLS_OF_STEEL, pillColor)
+			end
+		end
 	end
 end
 
-Astro:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astro.AutoWastingCard)
+Astro:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astro.AutoWasting)

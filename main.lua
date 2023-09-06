@@ -1,6 +1,11 @@
+local hiddenItemManager = require("astro.lib.hidden_item_manager")
 local isc = require("astro.lib.isaacscript-common")
 
-Astro = isc:upgradeMod(RegisterMod("Redrawn_Mod", 1))
+local mod = RegisterMod("Redrawn_Mod", 1)
+
+hiddenItemManager:Init(mod)
+
+Astro = isc:upgradeMod(mod)
 
 Json = require "json"
 

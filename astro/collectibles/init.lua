@@ -30,6 +30,10 @@ if EID then
                     descObj.ObjSubType == CollectibleType.COLLECTIBLE_LOST_CONTACT
              then
                 EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.75")
+             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_GHOST_PEPPER or
+                descObj.ObjSubType == CollectibleType.COLLECTIBLE_BIRDS_EYE
+             then
+                EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.8#↓ {{LuckSmall}}행운 -5")
             end
 
             return descObj
@@ -53,6 +57,22 @@ Astro:AddCallback(
 
             if player:HasCollectible(CollectibleType.COLLECTIBLE_LOST_CONTACT) then
                 player.Damage = player.Damage * 0.75
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_GHOST_PEPPER) then
+                player.Damage = player.Damage * 0.8
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_BIRDS_EYE) then
+                player.Damage = player.Damage * 0.8
+            end
+        elseif cacheFlag == CacheFlag.CACHE_LUCK then
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_GHOST_PEPPER) then
+                player.Luck = player.Luck - 5
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_BIRDS_EYE) then
+                player.Luck = player.Luck - 5
             end
         end
     end

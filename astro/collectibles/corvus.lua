@@ -12,7 +12,7 @@ Astro:AddCallback(
     function(_, player)
         if Game():GetFrameCount() % 600 == 0 then
             if player:HasCollectible(Astro.Collectible.CORVUS) then
-                player:UseCard(Card.CARD_SOUL_EVE)
+                player:UseCard(Card.CARD_SOUL_EVE, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)
             end
         end
     end

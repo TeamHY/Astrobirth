@@ -1,7 +1,24 @@
+local hiddenItemManager = require("astro.lib.hidden_item_manager")
+
 Astro:AddCallback(
 	ModCallbacks.MC_POST_GAME_STARTED,
-	function(_, _)
+	function(_, isContinued)
 		local player = Isaac.GetPlayer()
+
+		if not isContinued then
+			hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_MORE_OPTIONS)
+
+			if
+				player:GetPlayerType() == PlayerType.PLAYER_CAIN_B or
+				player:GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN_B or
+				player:GetPlayerType() == PlayerType.PLAYER_THESOUL_B or
+				player:GetPlayerType() == PlayerType.PLAYER_LAZARUS_B or
+				player:GetPlayerType() == PlayerType.PLAYER_BLUEBABY_B
+			 then
+				hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_BIRTHRIGHT)
+			end
+		end
+
 		local itemConfig = Isaac.GetItemConfig()
 		local itemConfigItem = itemConfig:GetCollectible(CollectibleType.COLLECTIBLE_MORE_OPTIONS)
 
@@ -43,7 +60,10 @@ function Astro:OnUpdate(player)
 	 then
 		local playerType = player:GetPlayerType()
 
-		if playerType == PlayerType.PLAYER_KEEPER or playerType == PlayerType.PLAYER_KEEPER_B or playerType == PlayerType.PLAYER_THESOUL_B then
+		if
+			playerType == PlayerType.PLAYER_KEEPER or playerType == PlayerType.PLAYER_KEEPER_B or
+				playerType == PlayerType.PLAYER_THESOUL_B
+		 then
 		elseif playerType == PlayerType.PLAYER_THEFORGOTTEN then
 			player:AddBoneHearts(-player:GetBoneHearts() + 2)
 			player:AddBrokenHearts(4 - player:GetBrokenHearts())

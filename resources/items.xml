@@ -503,7 +503,7 @@
 	<familiar description="#YO_LISTEN_DESCRIPTION" gfx="collectibles_492_yolisten.png" id="492" name="#YO_LISTEN_NAME" cache="luck" />
 	<passive description="#ADRENALINE_DESCRIPTION" gfx="collectibles_493_adderline.png" id="493" name="#ADRENALINE_NAME" cache="damage" />
 	<passive description="#JACOBS_LADDER_DESCRIPTION" gfx="collectibles_494_jacobsladder.png" devilprice="2" id="494" name="#JACOBS_LADDER_NAME" cache="tearflag tearcolor" />
-	<passive description="#GHOST_PEPPER_DESCRIPTION" gfx="collectibles_495_ghostpepper.png" devilprice="2" id="495" name="#GHOST_PEPPER_NAME" />
+	<passive cache="damage luck" description="#GHOST_PEPPER_DESCRIPTION" gfx="collectibles_495_ghostpepper.png" devilprice="2" id="495" name="#GHOST_PEPPER_NAME" />
 	<passive achievement="292" cache="damage" description="#EUTHANASIA_DESCRIPTION" devilprice="2" gfx="collectibles_496_euthanasia.png" id="496" name="#EUTHANASIA_NAME" />
 	<passive description="#CAMO_UNDIES_DESCRIPTION" gfx="collectibles_497_camoundies.png" id="497" name="#CAMO_UNDIES_NAME" cache="speed" />
 	<passive achievement="306" description="#DUALITY_DESCRIPTION" gfx="collectibles_498_duality.png" id="498" name="#DUALITY_NAME" />
@@ -641,7 +641,7 @@
 	
 	<passive	id="614"	gfx="Collectibles_614_BloodBombs.png" name="#BLOOD_BOMBS_NAME" description="#BLOOD_BOMBS_DESCRIPTION" maxhearts="2" hearts="10" />
 	<familiar	id="615"	gfx="Collectibles_615_LilDumpy.png" name="#LIL_DUMPY_NAME" description="#LIL_DUMPY_DESCRIPTION" />
-	<passive	id="616"	gfx="Collectibles_616_BirdsEye.png" name="#BIRDS_EYE_NAME" description="#BIRDS_EYE_DESCRIPTION" />
+	<passive	id="616"	gfx="Collectibles_616_BirdsEye.png" name="#BIRDS_EYE_NAME" description="#BIRDS_EYE_DESCRIPTION" cache="damage luck" />
 	<passive	id="617"	gfx="Collectibles_617_Lodestone.png" name="#LODESTONE_NAME" description="#LODESTONE_DESCRIPTION" cache="tearcolor" />
 	<passive	id="618"	gfx="Collectibles_618_RottenTomato.png" name="#ROTTEN_TOMATO_NAME" description="#ROTTEN_TOMATO_DESCRIPTION" cache="tearcolor" />
 	<passive	id="619"	achievement="431" gfx="Collectibles_619_Birthright.png" devilprice="2" shopprice="31" name="#BIRTHRIGHT_NAME" description="#BIRTHRIGHT_DESCRIPTION" cache="all" />

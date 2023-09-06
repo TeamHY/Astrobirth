@@ -53,6 +53,17 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
+        local currentRoom = Game():GetLevel():GetCurrentRoom()
+
+        Isaac.Spawn(
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_TAROTCARD,
+            Card.CARD_CRACKED_KEY,
+            currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+            Vector.Zero,
+            nil
+        )
+
         Astro.Data.RunComet = true
     end,
     Astro.Collectible.COMET

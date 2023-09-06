@@ -1,3 +1,5 @@
+local hiddenItemManager = require("astro.lib.hidden_item_manager")
+
 Astro.Data = {
     Save = {}
 }
@@ -13,6 +15,8 @@ Astro:AddPriorityCallback(
             local data = Json.decode(raw)
 
             Astro.Data = data or {}
+            
+            hiddenItemManager:LoadData(Astro.Data.HiddenItemData)
         end
     end
 )
@@ -23,6 +27,7 @@ Astro:AddPriorityCallback(
     CallbackPriority.LATE,
     ---@param shouldSave boolean
     function(_, shouldSave)
+        Astro.Data.HiddenItemData = hiddenItemManager:GetSaveData()
         Astro:SaveData(Json.encode(Astro.Data))
     end
 )
