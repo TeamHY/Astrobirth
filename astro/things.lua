@@ -359,3 +359,25 @@ function Astro:AutoWasting(player)
 end
 
 Astro:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astro.AutoWasting)
+
+Astro:AddCallback(
+	ModCallbacks.MC_POST_NEW_ROOM,
+	function(_)
+		local level = Game():GetLevel()
+		local currentRoom = level:GetCurrentRoom()
+
+		if currentRoom:GetType() == RoomType.ROOM_DICE and currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
+			local itemPool = Game():GetItemPool()
+			local collectible = itemPool:GetCollectible(ItemPoolType.POOL_KEY_MASTER, true, currentRoom:GetSpawnSeed())
+
+			Isaac.Spawn(
+				EntityType.ENTITY_PICKUP,
+				PickupVariant.PICKUP_COLLECTIBLE,
+				collectible,
+				currentRoom:GetTopLeftPos() + Vector(80, 20),
+				Vector.Zero,
+				nil
+			)
+		end
+	end
+)
