@@ -5,26 +5,27 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.COMET = Isaac.GetItemIdByName("Comet")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.COMET, "획득 시 {{Card78}}Cracked Key가 하나 드랍됩니다.#(미구현) {{ColorBlack}}맵에 {{UltraSecretRoom}}특급 비밀방의 위치가 표시됩니다.#다음 게임 시작 시 {{Card78}}Cracked Key을 하나 소환합니다.", "혜성")
+    EID:addCollectible(
+        Astro.Collectible.COMET,
+        "획득 시 {{Card78}}Cracked Key가 하나 드랍됩니다.#다음 게임 시작 시 {{Card78}}Cracked Key을 하나 소환합니다.#맵에 {{UltraSecretRoom}}특급 비밀방의 위치가 표시됩니다.",
+        "혜성"
+    )
 end
 
--- TODO: 획득 시와 스테이지 입장 시로 변경
-Astro:AddCallback(
-    ModCallbacks.MC_POST_PEFFECT_UPDATE,
-    ---@param player EntityPlayer
-    function(_, player)
-        if player:HasCollectible(Astro.Collectible.COMET) then
-            local level = Game():GetLevel()
-            local idx = level:QueryRoomTypeIndex(RoomType.ROOM_ULTRASECRET, false, RNG())
-            local room = level:GetRoomByIdx(idx)
-    
-            if room.Data.Type == RoomType.ROOM_ULTRASECRET then
-                room.DisplayFlags = room.DisplayFlags | 1 << 2
-                level:UpdateVisibility()
-            end
+-- https://steamcommunity.com/sharedfiles/filedetails/?id=2557887449
+local function displayUltraSecretRoom()
+    local level = Game():GetLevel()
+
+    for i = 0, 169 do
+        local room = level:GetRoomByIdx(i)
+
+        if room.Data and room.Data.Type == RoomType.ROOM_ULTRASECRET then
+            room.DisplayFlags = room.DisplayFlags | 1 << 2
+            level:UpdateVisibility()
+            return
         end
     end
-)
+end
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
@@ -48,6 +49,20 @@ Astro:AddCallback(
     end
 )
 
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_LEVEL,
+    function(_)
+        for i = 1, Game():GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
+
+            if player:HasCollectible(Astro.Collectible.COMET) then
+                displayUltraSecretRoom()
+                break
+            end
+        end
+    end
+)
+
 Astro:AddCallbackCustom(
     isc.ModCallbackCustom.POST_PLAYER_COLLECTIBLE_ADDED,
     ---@param player EntityPlayer
@@ -63,6 +78,8 @@ Astro:AddCallbackCustom(
             Vector.Zero,
             nil
         )
+
+        displayUltraSecretRoom()
 
         Astro.Data.RunComet = true
     end,
