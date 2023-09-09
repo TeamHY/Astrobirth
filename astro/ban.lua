@@ -45,9 +45,9 @@ function Ban:Init()
         [PlayerType.PLAYER_EDEN] = function()
         end,
         [PlayerType.PLAYER_THELOST] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
         end,
         [PlayerType.PLAYER_LAZARUS2] = function()
         end,
@@ -56,11 +56,11 @@ function Ban:Init()
         [PlayerType.PLAYER_LILITH] = function()
         end,
         [PlayerType.PLAYER_KEEPER] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_GREEDS_GULLET)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
-        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_GREEDS_GULLET)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+            self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_APOLLYON] = function()
         end,
@@ -71,18 +71,18 @@ function Ban:Init()
         [PlayerType.PLAYER_BETHANY] = function()
         end,
         [PlayerType.PLAYER_JACOB] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_SCHOOLBAG)
-        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_SCHOOLBAG)
+            self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_ESAU] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_SCHOOLBAG)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
-        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_SCHOOLBAG)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+            self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_ISAAC_B] = function()
         end,
@@ -101,53 +101,53 @@ function Ban:Init()
         [PlayerType.PLAYER_AZAZEL_B] = function()
         end,
         [PlayerType.PLAYER_LAZARUS_B] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
-        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+            self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_EDEN_B] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_MISSING_NO)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_MISSING_NO)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
         end,
         [PlayerType.PLAYER_THELOST_B] = function()
         end,
         [PlayerType.PLAYER_LILITH_B] = function()
         end,
         [PlayerType.PLAYER_KEEPER_B] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_GREEDS_GULLET)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
-        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_GREEDS_GULLET)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+            self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_APOLLYON_B] = function()
         end,
         [PlayerType.PLAYER_THEFORGOTTEN_B] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
-        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+            self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_BETHANY_B] = function()
         end,
         [PlayerType.PLAYER_JACOB_B] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
-        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+            self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_LAZARUS2_B] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
-        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+            self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_JACOB2_B] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
-        self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
-        self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_LAZARUS_RAGS)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
+            self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_THESOUL_B] = function()
         end
@@ -186,13 +186,13 @@ Astro:AddPriorityCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     CallbackPriority.IMPORTANT,
     function(_, isContinued)
-        tryCount = 0;
+        tryCount = 0
     end
 )
 
 Astro:AddCallback(
-	ModCallbacks.MC_POST_NEW_LEVEL,
-	function(_)
+    ModCallbacks.MC_POST_NEW_LEVEL,
+    function(_)
         local hasMissingNo = false
 
         for i = 1, Game():GetNumPlayers() do
@@ -203,15 +203,22 @@ Astro:AddCallback(
             end
         end
 
-		if tryCount < LIMIT and not hasMissingNo then
-			local level = Game():GetLevel()
-			local isaacsRoom = level:GetRoomByIdx(level:QueryRoomTypeIndex(RoomType.ROOM_ISAACS, false, RNG()))
-			local barrenRoom = level:GetRoomByIdx(level:QueryRoomTypeIndex(RoomType.ROOM_BARREN, false, RNG()))
+        if tryCount < LIMIT and not hasMissingNo then
+            local level = Game():GetLevel()
+            local isaacsRoom = level:GetRoomByIdx(level:QueryRoomTypeIndex(RoomType.ROOM_ISAACS, false, RNG()))
+            local barrenRoom = level:GetRoomByIdx(level:QueryRoomTypeIndex(RoomType.ROOM_BARREN, false, RNG()))
+            local sacrificeRoom = level:GetRoomByIdx(level:QueryRoomTypeIndex(RoomType.ROOM_SACRIFICE, false, RNG()))
 
-			if isaacsRoom.Data.Type == RoomType.ROOM_ISAACS or barrenRoom.Data.Type == RoomType.ROOM_BARREN then
-				tryCount = tryCount + 1
-				Isaac.ExecuteCommand("reseed")
-			end
-		end
-	end
+            -- 막달레나일 경우 케이스 추가
+            -- TODO: 더 추가될 경우 보기 쉽게 변경해야 함
+            if
+                isaacsRoom.Data.Type == RoomType.ROOM_ISAACS or barrenRoom.Data.Type == RoomType.ROOM_BARREN or
+                (sacrificeRoom.Data.Type ~= RoomType.ROOM_SACRIFICE and Isaac.GetPlayer():GetPlayerType() == PlayerType.PLAYER_MAGDALENE and level:GetStage() == LevelStage.STAGE1_1 and level:GetStageType() <= StageType.STAGETYPE_AFTERBIRTH)
+             then
+                tryCount = tryCount + 1
+                Isaac.ExecuteCommand("reseed")
+                Isaac.DebugString("Run reseed: " .. tryCount)
+            end
+        end
+    end
 )
