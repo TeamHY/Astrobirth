@@ -13,7 +13,7 @@
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
 		<Item Name="Comet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
 	</Pool>
@@ -31,7 +31,7 @@
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
 		<Item Name="Comet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
 	</Pool>
@@ -49,7 +49,7 @@
 		<Item Name="Capricorn EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Pavo" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
 		<Item Name="Comet" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 
 	</Pool>
@@ -67,7 +67,7 @@
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
 		<Item Name="Comet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
 	</Pool>

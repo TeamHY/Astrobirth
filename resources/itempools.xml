@@ -1405,17 +1405,13 @@
 		
 	</Pool>
 	<Pool Name="redChest">
-		<Item Id="51" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="79" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="80" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="133" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="134" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="145" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="187" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="134" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="212" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="216" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="328" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="633" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="665" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
 
 
 
