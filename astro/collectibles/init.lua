@@ -66,6 +66,10 @@ Astro:AddCallback(
             if player:HasCollectible(CollectibleType.COLLECTIBLE_BIRDS_EYE) then
                 player.Damage = player.Damage * 0.8
             end
+            
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_C_SECTION) then
+                player.Damage = player.Damage * 0.8
+            end
         elseif cacheFlag == CacheFlag.CACHE_LUCK then
             if player:HasCollectible(CollectibleType.COLLECTIBLE_GHOST_PEPPER) then
                 player.Luck = player.Luck - 5
