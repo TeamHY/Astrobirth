@@ -24,16 +24,12 @@ if EID then
             return true
         end,
         function(descObj)
-            if
-                descObj.ObjSubType == CollectibleType.COLLECTIBLE_LITTLE_HORN or
-                    descObj.ObjSubType == CollectibleType.COLLECTIBLE_EUTHANASIA or
-                    descObj.ObjSubType == CollectibleType.COLLECTIBLE_LOST_CONTACT
-             then
+            if descObj.ObjSubType == CollectibleType.COLLECTIBLE_LITTLE_HORN or descObj.ObjSubType == CollectibleType.COLLECTIBLE_EUTHANASIA or descObj.ObjSubType == CollectibleType.COLLECTIBLE_LOST_CONTACT then
                 EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.75")
-             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_GHOST_PEPPER or
-                descObj.ObjSubType == CollectibleType.COLLECTIBLE_BIRDS_EYE
-             then
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_GHOST_PEPPER or descObj.ObjSubType == CollectibleType.COLLECTIBLE_BIRDS_EYE then
                 EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.8#↓ {{LuckSmall}}행운 -5")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_C_SECTION then
+                EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.8")
             end
 
             return descObj
