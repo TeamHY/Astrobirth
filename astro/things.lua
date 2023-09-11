@@ -385,6 +385,12 @@ Astro:AddCallback(
 			-- 	beggar:Kill()
 			end
 		end
+
+		local roomDesc = level:GetRoomByIdx(level:GetCurrentRoomIndex())
+
+		if roomDesc.Data.Name:sub(1, 6) == "[MIST]" then
+			roomDesc.Flags = roomDesc.Flags | RoomDescriptor.FLAG_CURSED_MIST
+		end
 	end
 )
 
