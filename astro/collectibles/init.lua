@@ -30,6 +30,10 @@ if EID then
                 EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.8#↓ {{LuckSmall}}행운 -5")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_C_SECTION then
                 EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.8")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_HUSHY then
+                EID:appendToDescription(descObj, "#Hush의 체력이 15% 감소됩니다.")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LIL_DELIRIUM then
+                EID:appendToDescription(descObj, "#Delirium의 체력이 15% 감소됩니다.")
             end
 
             return descObj
@@ -73,6 +77,32 @@ Astro:AddCallback(
 
             if player:HasCollectible(CollectibleType.COLLECTIBLE_BIRDS_EYE) then
                 player.Luck = player.Luck - 5
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NPC_INIT,
+    ---@param entity Entity
+    function(_, entity)
+        if entity.Type == EntityType.ENTITY_HUSH then
+            for i = 1, Game():GetNumPlayers() do
+                local player = Isaac.GetPlayer(i - 1)
+    
+                if player:HasCollectible(CollectibleType.COLLECTIBLE_HUSHY)then
+                    entity.HitPoints = entity.HitPoints - entity.MaxHitPoints * 0.15
+                    break
+                end
+            end
+        elseif entity.Type == EntityType.ENTITY_DELIRIUM then
+            for i = 1, Game():GetNumPlayers() do
+                local player = Isaac.GetPlayer(i - 1)
+    
+                if player:HasCollectible(CollectibleType.COLLECTIBLE_LIL_DELIRIUM)then
+                    entity.HitPoints = entity.HitPoints - entity.MaxHitPoints * 0.15
+                    break
+                end
             end
         end
     end

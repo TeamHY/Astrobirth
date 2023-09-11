@@ -8,12 +8,10 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_NPC_INIT,
     ---@param entity Entity
     function(_, entity)
-        local isRun = false
-
         for i = 1, Game():GetNumPlayers() do
             local player = Isaac.GetPlayer(i - 1)
 
-            if player:HasCollectible(Astro.Collectible.PAVO) and not isRun then
+            if player:HasCollectible(Astro.Collectible.PAVO) then
                 if entity:IsVulnerableEnemy() and entity.Type ~= EntityType.ENTITY_FIREPLACE then
                     if entity.Type == EntityType.ENTITY_MEGA_SATAN then
                         entity.HitPoints = entity.HitPoints - entity.MaxHitPoints * 0.2
@@ -22,7 +20,7 @@ Astro:AddCallback(
                     end
                 end
 
-                isRun = true
+                break
             end
         end
     end
