@@ -366,18 +366,44 @@ Astro:AddCallback(
 		local level = Game():GetLevel()
 		local currentRoom = level:GetCurrentRoom()
 
-		if currentRoom:GetType() == RoomType.ROOM_DICE and currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
-			local itemPool = Game():GetItemPool()
-			local collectible = itemPool:GetCollectible(ItemPoolType.POOL_KEY_MASTER, true, currentRoom:GetSpawnSeed())
+		if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
+			if currentRoom:GetType() == RoomType.ROOM_DICE and currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
+				local itemPool = Game():GetItemPool()
+				local collectible = itemPool:GetCollectible(ItemPoolType.POOL_KEY_MASTER, true, currentRoom:GetSpawnSeed())
 
-			Isaac.Spawn(
-				EntityType.ENTITY_PICKUP,
-				PickupVariant.PICKUP_COLLECTIBLE,
-				collectible,
-				currentRoom:GetTopLeftPos() + Vector(80, 20),
-				Vector.Zero,
-				nil
-			)
+				Isaac.Spawn(
+					EntityType.ENTITY_PICKUP,
+					PickupVariant.PICKUP_COLLECTIBLE,
+					collectible,
+					currentRoom:GetTopLeftPos() + Vector(80, 20),
+					Vector.Zero,
+					nil
+				)
+			-- elseif currentRoom:GetType() == RoomType.ROOM_SUPERSECRET then
+			-- 	local beggar = Isaac.Spawn(EntityType.ENTITY_SLOT, 4, 0, currentRoom:GetCenterPos(), Vector.Zero, nil)
+
+			-- 	beggar:Kill()
+			end
+		end
+	end
+)
+
+Astro:AddCallback(
+	ModCallbacks.MC_PRE_TEAR_COLLISION,
+	---@param entityTear EntityTear
+	---@param collider Entity
+	---@param low boolean
+	function(_, entityTear, collider, low)
+		if collider.Type == EntityType.ENTITY_DEATHS_HEAD then
+			if entityTear:HasTearFlags(TearFlags.TEAR_HORN) or entityTear:HasTearFlags(TearFlags.TEAR_NEEDLE) then
+				return nil
+			end
+
+			if not entityTear:HasTearFlags(TearFlags.TEAR_PIERCING) then
+				entityTear:Die()
+			end
+
+			return true
 		end
 	end
 )
