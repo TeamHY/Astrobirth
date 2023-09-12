@@ -275,7 +275,7 @@
 	<familiar description="#LEECH_DESCRIPTION" gfx="collectibles_270_leech.png" id="270" name="#LEECH_NAME" />
 	<familiar achievement="124" description="#MYSTERY_SACK_DESCRIPTION" gfx="collectibles_271_mysterysack.png" id="271" name="#MYSTERY_SACK_NAME" />
 	<familiar description="#BBF_DESCRIPTION" gfx="collectibles_272_bff.png" id="272" name="#BBF_NAME" />
-	<familiar description="#BOBS_BRAIN_DESCRIPTION" gfx="collectibles_273_bobsbrain.png" id="273" name="#BOBS_BRAIN_NAME" />
+	<familiar description="#BOBS_BRAIN_DESCRIPTION" gfx="collectibles_273_bobsbrain.png" id="273" shopprice="5" name="#BOBS_BRAIN_NAME" />
 	<familiar description="#BEST_BUD_DESCRIPTION" gfx="collectibles_274_bestbud.png" id="274" name="#BEST_BUD_NAME" />
 	<familiar description="#LIL_BRIMSTONE_DESCRIPTION" gfx="collectibles_275_lilbrimstone.png" devilprice="1" id="275" name="#LIL_BRIMSTONE_NAME" />
 	<familiar achievement="129" description="#ISAACS_HEART_DESCRIPTION" gfx="collectibles_276_isaacsheart.png" id="276" name="#ISAACS_HEART_NAME" />
@@ -477,7 +477,7 @@
 	<familiar description="#FINGER_DESCRIPTION" gfx="Collectibles_467_Finger.png" id="467" name="#FINGER_NAME" />
 	<familiar achievement="285" description="#SHADE_DESCRIPTION" gfx="Collectibles_468_Shade.png" id="468" name="#SHADE_NAME" />
 	<familiar description="#DEPRESSION_DESCRIPTION" gfx="Collectibles_469_Depression.png" id="469" name="#DEPRESSION_NAME" />
-	<familiar achievement="315" description="#HUSHY_DESCRIPTION" gfx="Collectibles_470_Hushy.png" id="470" name="#HUSHY_NAME" />
+	<familiar achievement="315" description="#HUSHY_DESCRIPTION" gfx="Collectibles_470_Hushy.png" id="470" shopprice="5" name="#HUSHY_NAME" />
 	<familiar description="#LIL_MONSTRO_DESCRIPTION" gfx="Collectibles_471_LilMonstro.png" id="471" name="#LIL_MONSTRO_NAME" />
 	<familiar achievement="286" description="#KING_BABY_DESCRIPTION" gfx="Collectibles_472_KingBaby.png" id="472" name="#KING_BABY_NAME" />
 	<familiar description="#BIG_CHUBBY_DESCRIPTION" gfx="Collectibles_473_BigChubby.png" id="473" name="#BIG_CHUBBY_NAME" />
@@ -532,7 +532,7 @@
 	<active achievement="351" cache="familiars" name="#SPRINKLER_NAME" gfx="Collectibles_516_Sprinkler.png" description="#SPRINKLER_DESCRIPTION" id="516" maxcharges="4" />
 	<passive achievement="356" name="#FAST_BOMBS_NAME" gfx="Collectibles_517_FastBombs.png" description="#FAST_BOMBS_DESCRIPTION" id="517" bombs="7" />
 	<familiar achievement="355" description="#BUDDY_IN_A_BOX_DESCRIPTION" gfx="Collectibles_518_BuddyBox.png" id="518" name="#BUDDY_IN_A_BOX_NAME" />
-	<familiar achievement="357" description="#LIL_DELIRIUM_DESCRIPTION" gfx="Collectibles_519_LilDelirium.png" id="519" name="#LIL_DELIRIUM_NAME" />
+	<familiar achievement="357" description="#LIL_DELIRIUM_DESCRIPTION" gfx="Collectibles_519_LilDelirium.png" id="519" shopprice="5" name="#LIL_DELIRIUM_NAME" />
 	
 	<!-- Booster Pack #2 -->
 	<passive achievement="367" description="#JUMPER_CABLES_DESCRIPTION" gfx="Collectibles_520_JumperCable.png" name="#JUMPER_CABLES_NAME" id="520" />

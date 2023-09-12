@@ -842,6 +842,11 @@
 		<Item Id="690" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="693" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
+		<!-- 2차 추가 배열 상점 아이템들 -->
+
+		<Item Id="470" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="519" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
 
 
 
