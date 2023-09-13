@@ -34,6 +34,16 @@ if EID then
                 EID:appendToDescription(descObj, "#Hush의 체력이 15% 감소됩니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LIL_DELIRIUM then
                 EID:appendToDescription(descObj, "#Delirium의 체력이 15% 감소됩니다.")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_PARASITOID then
+                EID:appendToDescription(descObj, "#{{LuckSmall}}행운 -2")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_TOUGH_LOVE then
+                EID:appendToDescription(descObj, "#{{LuckSmall}}행운 -3")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_APPLE then
+                EID:appendToDescription(descObj, "#{{LuckSmall}}행운 -4")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_ATHAME then
+                EID:appendToDescription(descObj, "#{{LuckSmall}}행운 -3")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LODESTONE then
+                EID:appendToDescription(descObj, "#{{LuckSmall}}행운 -2")
             end
 
             return descObj
@@ -77,6 +87,26 @@ Astro:AddCallback(
 
             if player:HasCollectible(CollectibleType.COLLECTIBLE_BIRDS_EYE) then
                 player.Luck = player.Luck - 5
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_PARASITOID) then
+                player.Luck = player.Luck - 2
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_TOUGH_LOVE) then
+                player.Luck = player.Luck - 3
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_APPLE) then
+                player.Luck = player.Luck - 4
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_ATHAME) then
+                player.Luck = player.Luck - 3
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_LODESTONE) then
+                player.Luck = player.Luck - 2
             end
         end
     end
