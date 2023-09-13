@@ -1,25 +1,25 @@
 <items gfxroot="gfx/items/" version="1">
-	<passive gfx="Cygnus.png" quality="4" name="Cygnus" />
-	<passive tags="dead tech battery syringe mom guppy fly bob mushroom baby angel devil poop book spider" gfx="Libra.png" quality="3" name="Libra EX" />
-	<passive gfx="Cancer.png" quality="3" name="Cancer EX" />
+	<passive gfx="Cygnus.png" quality="4" devilprice="2" name="Cygnus" />
+	<passive tags="dead tech battery syringe mom guppy fly bob mushroom baby angel devil poop book spider" gfx="Libra.png" devilprice="2" quality="3" name="Libra EX" />
+	<passive gfx="Cancer.png" quality="3" devilprice="2" name="Cancer EX" />
 	<passive gfx="Scorpio.png" quality="3" name="Scorpio EX" />
-	<passive gfx="Capricorn.png" quality="2" name="Capricorn EX" />
-	<passive gfx="Virgo.png" quality="4" name="Virgo EX" />
-	<passive gfx="Leo.png" quality="3" name="Leo EX" />
-	<passive gfx="Aries.png" quality="4" name="Aries EX" />
-	<passive cache="firedelay speed" gfx="Taurus.png" quality="2" name="Taurus EX" />
-	<passive gfx="Aquarius.png" quality="3" name="Aquarius EX" />
-	<passive gfx="Casiopea.png" quality="3" name="Casiopea" />
-	<passive gfx="Corvus.png" quality="3" name="Corvus" />
-	<passive gfx="Pavo.png" quality="4" name="Pavo" />
-	<passive gfx="Comet.png" quality="3" name="Comet" />
+	<passive gfx="Capricorn.png" quality="2" devilprice="2" name="Capricorn EX" />
+	<passive gfx="Virgo.png" quality="4" devilprice="2" name="Virgo EX" />
+	<passive gfx="Leo.png" quality="3" devilprice="2" name="Leo EX" />
+	<passive gfx="Aries.png" quality="4" devilprice="2" name="Aries EX" />
+	<passive cache="firedelay speed" gfx="Taurus.png" quality="2" devilprice="2" name="Taurus EX" />
+	<passive gfx="Aquarius.png" quality="3" devilprice="2" name="Aquarius EX" />
+	<passive gfx="Casiopea.png" quality="3" devilprice="2" name="Casiopea" />
+	<passive gfx="Corvus.png" quality="3" devilprice="2" name="Corvus" />
+	<passive gfx="Pavo.png" quality="4" devilprice="2" name="Pavo" />
+	<passive gfx="Comet.png" quality="3" devilprice="2" name="Comet" />
 
 
 
 
 
 	<!-- 아래부터는 커스텀 장신구 -->
-	<trinket cache="tearflag" gfx="Eye of God.png" name="Eye Of God" />
+	<trinket  gfx="Eye of God.png" name="Eye Of God" cache="tearflag" />
 	<trinket gfx="The Left Foot.png" name="The Left Foot" />
 	<trinket gfx="Absolute Zero.png" name="Absolute Zero" />
 </items>

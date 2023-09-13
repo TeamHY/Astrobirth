@@ -13,11 +13,11 @@
           nameimage="PlayerName_03_Cain.png" 
           portrait="PlayerPortrait_Cain.png" skinColor="-1"
 		  birthright="#CAIN_BIRTHRIGHT" />
-	<player id="3" name="#JUDAS_NAME" skin="Character_004_Judas.png" costume="9" hp="2" keys="1" bombs="1" coins="3" pocketActive="34" achievement="3"
+	<player id="3" name="#JUDAS_NAME" skin="Character_004_Judas.png" costume="9" hp="0" keys="1" bombs="1" armor="1" items="678" coins="3" trinket="56" pocketActive="34" achievement="3"
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_Judas.png" skinColor="-1"
 		  birthright="#JUDAS_BIRTHRIGHT" />
-	<player id="4" name="#BLUEBABY_NAME" skin="Character_006_Bluebaby.png" hp="0" armor="6" keys="1" bombs="1" pocketActive="36" achievement="32"
+	<player id="4" name="#BLUEBABY_NAME" skin="Character_006_Bluebaby.png" hp="0" armor="6" keys="1" bombs="1" items="36" trinket="86" pocketActive="479" achievement="32"
           nameimage="PlayerName_06_BlueBaby.png" 
           portrait="PlayerPortrait_Bluebaby.png" skinColor="2" costumeSuffix="bluebaby"
 		  birthright="#BLUEBABY_BIRTHRIGHT" />
@@ -33,7 +33,7 @@
           nameimage="PlayerName_08_Azazel.png" 
           portrait="PlayerPortrait_Azazel.png" skinColor="1"
 		  birthright="#AZAZEL_BIRTHRIGHT" />
-	<player id="8" name="#LAZARUS_NAME" skin="Character_009_Lazarus.png" hp="6" keys="1" bombs="1" pill="1" achievement="80"
+	<player id="8" name="#LAZARUS_NAME" skin="Character_009_Lazarus.png" hp="6" keys="1" bombs="1" items="402" pill="1" achievement="80"
           nameimage="PlayerName_10_Lazarus.png" 
           portrait="PlayerPortrait_Lazarus.png" costume="32" skinColor="-1"
 		  birthright="#LAZARUS_BIRTHRIGHT" />
@@ -95,7 +95,7 @@
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_DarkJudas.png" skinColor="1" costumeSuffix="shadow"
 		  birthright="#BLACK_JUDAS_BIRTHRIGHT" />
-	<player id="13" name="#LILITH_NAME" skin="Character_014_Lilith.png" hp="2" black="4" keys="1" bombs="1" canShoot="false" pocketActive="357" items="412" achievement="199"
+	<player id="13" name="#LILITH_NAME" skin="Character_014_Lilith.png" hp="2" black="4" keys="1" bombs="1" canShoot="true" trinket="127" items="412" achievement="199"
           nameimage="PlayerName_13_Lilith.png" 
           portrait="PlayerPortrait_Lilith.png" costume="34" skinColor="1" costumeSuffix="lilith"
 		  birthright="#LILITH_BIRTHRIGHT" />
@@ -116,7 +116,7 @@
           portrait="PlayerPortrait_TheForgotten.png" skinColor="2" costumeSuffix="forgottensoul"
 		  birthright="#THE_SOUL_BIRTHRIGHT" />
 <!-- REPENTANCE BEGIN -->
-	<player id="18" name="#BETHANY_NAME" skin="Character_001x_Bethany.png" costume="51" keys="1" bombs="1" items="584" hp="6" armor="4" achievement="404"
+	<player id="18" name="#BETHANY_NAME" skin="Character_001x_Bethany.png" costume="51" keys="1" bombs="1" items="584" pocketActive="580" hp="6" armor="4" achievement="404"
           nameimage="PlayerName_01x_Bethany.png" 
           portrait="PlayerPortrait_Bethany.png" skinColor="-1"
 		  birthright="#BETHANY_BIRTHRIGHT" />
@@ -205,7 +205,7 @@
           nameimage="PlayerName_02x_Jacob.png" 
           portrait="PlayerPortrait_Jacob_b.png" skinColor="0" pocketActive="722"
 		  birthright="#JACOB_B_BIRTHRIGHT" />
-	<player id="40" name="#THE_SOUL_NAME" skin="Character_017b_TheSoul.png" armor="1" keys="1" bombs="1" items="414" achievement="-2" costume="105"
+	<player id="40" name="#THE_SOUL_NAME" skin="Character_017b_TheSoul.png" armor="1" keys="1" bombs="1" items="414,619" achievement="-2" costume="105"
           nameimage="PlayerName_16_TheForgotten.png" 
           portrait="PlayerPortrait_TheForgotten_b.png" skinColor="2" costumeSuffix="forgottensoul"
 		  birthright="#THE_FORGOTTEN_B_BIRTHRIGHT" />
