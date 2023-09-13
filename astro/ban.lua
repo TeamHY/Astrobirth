@@ -70,6 +70,7 @@ function Ban:Init()
         [PlayerType.PLAYER_THESOUL] = function()
         end,
         [PlayerType.PLAYER_BETHANY] = function()
+            self.BanCollectible(Astro.Collectible.COMET)
         end,
         [PlayerType.PLAYER_JACOB] = function()
             self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
