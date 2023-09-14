@@ -2748,16 +2748,16 @@
     <entity anm2path="grid/grid_tnt_minecrafter.anm2" baseHP="4" boss="0" champion="0" collisionDamage="0" collisionMass="20" collisionRadius="20" friction="1" id="292" name="Movable TNT (Mine Crafter)" numGridCollisionPoints="12" portrait="113" shadowSize="0" shutdoors="false" stageHP="0" tags="noreroll" variant="1">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" worm="0"/>
     </entity>
-    <entity anm2path="293.000_UltraGreedCoins.anm2" baseHP="50" boss="0" champion="0" collisionDamage="1" collisionMass="7" collisionRadius="28" friction="1" id="293" name="Ultra Greed Coin (Spinner)" numGridCollisionPoints="12" portrait="151" shadowSize="14" shutdoors="true" stageHP="0" variant="0">
+    <entity anm2path="293.000_UltraGreedCoins.anm2" baseHP="1000" boss="0" champion="0" collisionDamage="1" collisionMass="7" collisionRadius="28" friction="1" id="293" name="Ultra Greed Coin (Spinner)" numGridCollisionPoints="12" portrait="151" shadowSize="14" shutdoors="true" stageHP="0" variant="0">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" worm="0"/>
     </entity>
-    <entity anm2path="293.000_UltraGreedCoins.anm2" baseHP="60" boss="0" champion="0" collisionDamage="0" collisionMass="7" collisionRadius="28" friction="1" id="293" name="Ultra Greed Coin (Key)" numGridCollisionPoints="12" portrait="151" shadowSize="14" shutdoors="true" stageHP="0" variant="1">
+    <entity anm2path="293.000_UltraGreedCoins.anm2" baseHP="1000" boss="0" champion="0" collisionDamage="0" collisionMass="7" collisionRadius="28" friction="1" id="293" name="Ultra Greed Coin (Key)" numGridCollisionPoints="12" portrait="151" shadowSize="14" shutdoors="true" stageHP="0" variant="1">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" worm="0"/>
     </entity>
-    <entity anm2path="293.000_UltraGreedCoins.anm2" baseHP="50" boss="0" champion="0" collisionDamage="0" collisionMass="7" collisionRadius="28" friction="1" id="293" name="Ultra Greed Coin (Bomb)" numGridCollisionPoints="12" portrait="151" shadowSize="14" shutdoors="true" stageHP="0" variant="2">
+    <entity anm2path="293.000_UltraGreedCoins.anm2" baseHP="1000" boss="0" champion="0" collisionDamage="0" collisionMass="7" collisionRadius="28" friction="1" id="293" name="Ultra Greed Coin (Bomb)" numGridCollisionPoints="12" portrait="151" shadowSize="14" shutdoors="true" stageHP="0" variant="2">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" worm="0"/>
     </entity>
-    <entity anm2path="293.000_UltraGreedCoins.anm2" baseHP="40" boss="0" champion="0" collisionDamage="0" collisionMass="7" collisionRadius="28" friction="1" id="293" name="Ultra Greed Coin (Heart)" numGridCollisionPoints="12" portrait="151" shadowSize="14" shutdoors="true" stageHP="0" variant="3">
+    <entity anm2path="293.000_UltraGreedCoins.anm2" baseHP="1000" boss="0" champion="0" collisionDamage="0" collisionMass="7" collisionRadius="28" friction="1" id="293" name="Ultra Greed Coin (Heart)" numGridCollisionPoints="12" portrait="151" shadowSize="14" shutdoors="true" stageHP="0" variant="3">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" worm="0"/>
     </entity>
     <entity anm2path="294.000_UltraGreedDoor.anm2" baseHP="0" boss="1" champion="0" collisionDamage="0" collisionMass="50" collisionRadius="10" friction="1" id="294" name="Ultra Greed Door" numGridCollisionPoints="0" portrait="84" shadowSize="0" shutdoors="false" stageHP="0" tags="noreroll" variant="0">
@@ -2895,7 +2895,7 @@
         <bestiary anim="Idle" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="404.001_DarkBall.anm2" baseHP="10" boss="0" champion="0" collisionDamage="1" collisionMass="20" collisionRadius="13" friction="1" id="404" name="Dark Ball" numGridCollisionPoints="16" portrait="161" shadowSize="16" stageHP="0" variant="1">
+    <entity anm2path="404.001_DarkBall.anm2" baseHP="5" boss="0" champion="0" collisionDamage="1" collisionMass="20" collisionRadius="13" friction="1" id="404" name="Dark Ball" numGridCollisionPoints="16" portrait="161" shadowSize="16" stageHP="0" variant="1">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     	<devolve id="999.147.0" weight="1" />
 	</entity>
@@ -2906,11 +2906,11 @@
     <entity anm2path="405.001_Ragman_Rolling_Head.anm2" baseHP="25" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="20" friction="1" id="405" name="Rag Man&apos;s Head" numGridCollisionPoints="12" portrait="83" shadowSize="16" stageHP="0" variant="1">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="406.000_UltraGreed.anm2" baseHP="3500" boss="1" bossID="62" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="25" friction="1" id="406" name="#ULTRA_GREED" numGridCollisionPoints="40" portrait="84" shadowSize="60" stageHP="0" variant="0">
+    <entity anm2path="406.000_UltraGreed.anm2" baseHP="10000" boss="1" bossID="62" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="25" friction="1" id="406" name="#ULTRA_GREED" numGridCollisionPoints="40" portrait="84" shadowSize="60" stageHP="0" variant="0">
         <bestiary anim="SlotSpinningFast" transform="0,10,.7"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="406.001_UltraGreedier.anm2" baseHP="2500" boss="1" bossID="71" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="25" friction="1" id="406" name="#ULTRA_GREEDIER" numGridCollisionPoints="40" portrait="84" shadowSize="60" stageHP="0" variant="1">
+    <entity anm2path="406.001_UltraGreedier.anm2" baseHP="10000" boss="1" bossID="71" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="25" friction="1" id="406" name="#ULTRA_GREEDIER" numGridCollisionPoints="40" portrait="84" shadowSize="60" stageHP="0" variant="1">
         <bestiary anim="Tantrum" transform="0,10,.7"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
@@ -4908,14 +4908,14 @@
     <entity anm2path="003.128_Bone Orbital.anm2" baseHP="200" boss="0" champion="0" collisionDamage="1" collisionMass="60" collisionRadius="12" friction="1" gridCollision="none" id="921" name="Clutch Orbital" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="1">
         <gibs amount="1" blood="0" bone="1" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="950.000_dogma.anm2" baseHP="1200" boss="1" bossID="99" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="26" friction="1" gridCollision="none" id="950" name="#DOGMA" numGridCollisionPoints="12" portrait="129" shadowSize="0" shieldStrength="50" stageHP="0" tags="nodelirium" variant="0">
+    <entity anm2path="950.000_dogma.anm2" baseHP="10000" boss="1" bossID="99" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="26" friction="1" gridCollision="none" id="950" name="#DOGMA" numGridCollisionPoints="12" portrait="129" shadowSize="0" shieldStrength="50" stageHP="0" tags="nodelirium" variant="0">
         <bestiary anim="Idle" transform="0,0,1"/>
         <gibs amount="10" blood="1" bone="0" eye="0" gut="0" large="0" poop="0"/>
     </entity>
-    <entity anm2path="950.001_dogma tv.anm2" baseHP="1200" boss="1" bossID="99" champion="0" collisionDamage="1" collisionMass="200" collisionRadius="48" collisionRadiusYMulti="0.8" friction="1" id="950" name="Dogma&apos;s TV" numGridCollisionPoints="129" portrait="129" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="1">
+    <entity anm2path="950.001_dogma tv.anm2" baseHP="10000" boss="1" bossID="99" champion="0" collisionDamage="1" collisionMass="200" collisionRadius="48" collisionRadiusYMulti="0.8" friction="1" id="950" name="Dogma&apos;s TV" numGridCollisionPoints="129" portrait="129" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="1">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="0"/>
     </entity>
-    <entity anm2path="950.002_dogma angel.anm2" baseHP="1200" boss="1" bossID="99" champion="0" collisionDamage="1" collisionMass="120" collisionRadius="36" friction="1" gridCollision="none" id="950" name="Dogma Angel" numGridCollisionPoints="12" portrait="130" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="2">
+    <entity anm2path="950.002_dogma angel.anm2" baseHP="10000" boss="1" bossID="99" champion="0" collisionDamage="1" collisionMass="120" collisionRadius="36" friction="1" gridCollision="none" id="950" name="Dogma Angel" numGridCollisionPoints="12" portrait="130" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="2">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="0"/>
     </entity>
     <entity anm2path="950.010_dogma angel baby.anm2" baseHP="30" boss="0" bossID="99" champion="0" collisionDamage="1" collisionMass="200" collisionRadius="12" friction="1" gridCollision="none" id="950" name="Dogma Angel Baby" numGridCollisionPoints="8" portrait="0" shadowSize="0" stageHP="0" variant="10">
