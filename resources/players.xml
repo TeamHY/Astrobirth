@@ -95,7 +95,7 @@
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_DarkJudas.png" skinColor="1" costumeSuffix="shadow"
 		  birthright="#BLACK_JUDAS_BIRTHRIGHT" />
-	<player id="13" name="#LILITH_NAME" skin="Character_014_Lilith.png" hp="2" black="4" keys="1" bombs="1" canShoot="true" trinket="127" items="412" achievement="199"
+	<player id="13" name="#LILITH_NAME" skin="Character_014_Lilith.png" hp="2" black="4" keys="1" bombs="1" canShoot="false" trinket="127" items="412" achievement="199"
           nameimage="PlayerName_13_Lilith.png" 
           portrait="PlayerPortrait_Lilith.png" costume="34" skinColor="1" costumeSuffix="lilith"
 		  birthright="#LILITH_BIRTHRIGHT" />
