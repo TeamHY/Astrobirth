@@ -642,8 +642,8 @@
 	<passive	id="614"	gfx="Collectibles_614_BloodBombs.png" name="#BLOOD_BOMBS_NAME" description="#BLOOD_BOMBS_DESCRIPTION" maxhearts="2" hearts="10" />
 	<familiar	id="615"	gfx="Collectibles_615_LilDumpy.png" name="#LIL_DUMPY_NAME" description="#LIL_DUMPY_DESCRIPTION" />
 	<passive	id="616"	gfx="Collectibles_616_BirdsEye.png" name="#BIRDS_EYE_NAME" description="#BIRDS_EYE_DESCRIPTION" cache="damage luck" />
-	<passive	id="617"	gfx="Collectibles_617_Lodestone.png" name="#LODESTONE_NAME" description="#LODESTONE_DESCRIPTION" cache="tearcolor" />
-	<passive	id="618"	gfx="Collectibles_618_RottenTomato.png" name="#ROTTEN_TOMATO_NAME" description="#ROTTEN_TOMATO_DESCRIPTION" cache="tearcolor luck" />
+	<passive	id="617"	gfx="Collectibles_617_Lodestone.png" name="#LODESTONE_NAME" description="#LODESTONE_DESCRIPTION" cache="tearcolor luck" />
+	<passive	id="618"	gfx="Collectibles_618_RottenTomato.png" name="#ROTTEN_TOMATO_NAME" description="#ROTTEN_TOMATO_DESCRIPTION" cache="tearcolor" />
 	<passive	id="619"	achievement="431" gfx="Collectibles_619_Birthright.png" devilprice="2" shopprice="31" name="#BIRTHRIGHT_NAME" description="#BIRTHRIGHT_DESCRIPTION" cache="all" />
 	
 	<passive	id="621"	achievement="430" gfx="Collectibles_621_RedStew.png" name="#RED_STEW_NAME" description="#RED_STEW_DESCRIPTION" hearts="99" cache="damage" />
