@@ -7,7 +7,7 @@ if EID then
         "왼발"
     )
 
-    Astro.Utill:addGoldenTrinketDescription(Astro.Trinket.LEFT_FOOT, "", 30, 5 / 3)
+    Astro:AddGoldenTrinketDescription(Astro.Trinket.LEFT_FOOT, "", 30, 5 / 3)
 end
 
 -- 중복 생성하지 않기 위해, 이미 존재하는 빨간 상자를 무시하기 위해 SubType을 사용한다.

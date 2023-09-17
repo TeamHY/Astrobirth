@@ -1,5 +1,3 @@
-Astro.Utill = {}
-
 --- From isaacscript-common
 ---
 --- Helper function to get the player from a tear, laser, bomb, etc. Returns undefined if the entity
@@ -9,7 +7,7 @@ Astro.Utill = {}
 --- a last resort, it will attempt to use the `Entity.ToPlayer` method on the entity itself.
 ---@param entity Entity
 ---@return EntityPlayer | nil
-function Astro.Utill:GetPlayerFromEntity(entity)
+function Astro:GetPlayerFromEntity(entity)
     if entity == nil then
         return nil
     end
@@ -45,7 +43,7 @@ end
 ---@param appendText string | table
 ---@param numbersToMultiply number | table | nil
 ---@param maxMultiplier number | table | nil
-function Astro.Utill:addGoldenTrinketDescription(id, appendText, numbersToMultiply, maxMultiplier)
+function Astro:AddGoldenTrinketDescription(id, appendText, numbersToMultiply, maxMultiplier)
     local data = EID.GoldenTrinketData[id]
 
     if data then
@@ -61,4 +59,42 @@ function Astro.Utill:addGoldenTrinketDescription(id, appendText, numbersToMultip
     if maxMultiplier and maxMultiplier > 4 then
         EID.GoldenTrinketData[id].mults = {maxMultiplier, maxMultiplier}
     end
+end
+
+---@param collectibles CollectibleType[]
+---@param rng RNG
+---@param count integer
+---@param ignoreCollectible CollectibleType?
+---@param ignoreQuest boolean?
+function Astro:GetRandomCollectibles(collectibles, rng, count, ignoreCollectible, ignoreQuest)
+    ---@type CollectibleType[]
+    local list = {}
+
+    if ignoreQuest then
+        local itemConfig = Isaac.GetItemConfig()
+
+        for key, value in pairs(collectibles) do
+            if value ~= ignoreCollectible and itemConfig:GetCollectible(value).Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST then
+                table.insert(list, value)
+            end
+        end
+    else
+        list = collectibles
+    end
+
+    ---@type CollectibleType[]
+    local result = {}
+
+    for i = 1, count do
+        if #list == 0 then
+            break
+        end
+
+        local idx = rng:RandomInt(#list) + 1
+
+        table.insert(result, list[idx])
+        table.remove(list, idx)
+    end
+
+    return result
 end

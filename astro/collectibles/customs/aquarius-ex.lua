@@ -12,7 +12,7 @@ Astro:AddCallback(
     ---@param source EntityRef
     ---@param countdownFrames number
     function(_, entity, amount, damageFlags, source, countdownFrames)
-        local player = Astro.Utill:GetPlayerFromEntity(source.Entity)
+        local player = Astro:GetPlayerFromEntity(source.Entity)
 
         if player ~= nil and player:HasCollectible(Astro.Collectible.AQUARIUS_EX) and entity:IsVulnerableEnemy() then
             if

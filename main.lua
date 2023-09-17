@@ -5,7 +5,7 @@ local mod = RegisterMod("Redrawn_Mod", 1)
 
 hiddenItemManager:Init(mod)
 
-Astro = isc:upgradeMod(mod)
+Astro = isc:upgradeMod(mod, {isc.ISCFeature.PLAYER_INVENTORY})
 
 Json = require "json"
 

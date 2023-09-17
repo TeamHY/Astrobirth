@@ -45,6 +45,7 @@ Astro:AddCallback(
                 effects[data.Taurus.Key](player)
                 player:AddCacheFlags(CacheFlag.CACHE_SPEED)
                 player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
+                player:EvaluateItems()
             end
         end
     end

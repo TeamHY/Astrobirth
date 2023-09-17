@@ -9,11 +9,10 @@ Astro:AddCallback(
 			hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_MORE_OPTIONS)
 
 			if
-				player:GetPlayerType() == PlayerType.PLAYER_CAIN_B or
-				player:GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN_B or
-				player:GetPlayerType() == PlayerType.PLAYER_THESOUL_B or
-				player:GetPlayerType() == PlayerType.PLAYER_LAZARUS_B or
-				player:GetPlayerType() == PlayerType.PLAYER_BLUEBABY_B
+				player:GetPlayerType() == PlayerType.PLAYER_CAIN_B or player:GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN_B or
+					player:GetPlayerType() == PlayerType.PLAYER_THESOUL_B or
+					player:GetPlayerType() == PlayerType.PLAYER_LAZARUS_B or
+					player:GetPlayerType() == PlayerType.PLAYER_BLUEBABY_B
 			 then
 				hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_BIRTHRIGHT)
 			end
@@ -27,23 +26,27 @@ Astro:AddCallback(
 )
 
 function Astro:CurseRemove(curse) -- 입장 전 저주 제거
-	if (Game():GetLevel():GetStage() <= 3 and curse ~= 0) then
-		return 0
-	end
-
-	-- return ~(~BitSet128(curse) | BitSet128(
-	-- 	LevelCurse.CURSE_OF_MAZE |
-	-- 	LevelCurse.CURSE_OF_DARKNESS |
-	-- 	LevelCurse.CURSE_OF_THE_LOST |
-	-- 	LevelCurse.CURSE_OF_THE_UNKNOWN
-	-- )).l;
+	local hasPrometheus = false
+	local hasPerfection = false
 
 	for i = 1, Game():GetNumPlayers() do
 		local player = Isaac.GetPlayer(i - 1)
 
-		if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
-			return 0
+		if player:HasCollectible(Astro.Collectible.PROMETHEUS) then
+			hasPrometheus = true
 		end
+
+		if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+			hasPerfection = true
+		end
+	end
+
+	if hasPrometheus and not hasPerfection then
+		return curse | LevelCurse.CURSE_OF_DARKNESS
+	end
+
+	if (Game():GetLevel():GetStage() <= 3 and curse ~= 0) or hasPerfection then
+		return 0
 	end
 end
 
