@@ -56,7 +56,7 @@
 	<passive description="#MOMS_EYE_DESCRIPTION" gfx="Collectibles_055_MomsEye.png" id="55" name="#MOMS_EYE_NAME" />
 	<active description="#LEMON_MISHAP_DESCRIPTION" gfx="Collectibles_056_LemonMishap.png" id="56" maxcharges="2" name="#LEMON_MISHAP_NAME" />
 	<familiar description="#DISTANT_ADMIRATION_DESCRIPTION" gfx="Collectibles_057_DistantAdmiration.png" id="57" name="#DISTANT_ADMIRATION_NAME" />
-	<active cooldown="300" description="#BOOK_OF_SHADOWS_DESCRIPTION" gfx="Collectibles_058_BookOfShadows.png" id="58" maxcharges="3" persistent="true" name="#BOOK_OF_SHADOWS_NAME" />
+	<active cooldown="300" description="#BOOK_OF_SHADOWS_DESCRIPTION" gfx="Collectibles_058_BookOfShadows.png" id="58" maxcharges="3" persistent="false" name="#BOOK_OF_SHADOWS_NAME" />
 	<passive cache="damage" description="#THE_BOOK_OF_BELIAL_DESCRIPTION" gfx="Collectibles_034_TheBookOfBelial.png" id="59" maxcharges="3" name="#THE_BOOK_OF_BELIAL_NAME" hidden="true" />
 	<passive cache="tearflag" description="#THE_LADDER_DESCRIPTION" gfx="Collectibles_060_TheLadder.png" id="60" name="#THE_LADDER_NAME" />
 	<!-- <passive description="#TAROT_CARD_DESCRIPTION" id="61" name="#TAROT_CARD_NAME" /> -->
@@ -158,7 +158,7 @@
 	<passive achievement="54" cache="damage color" description="#BLOODY_LUST_DESCRIPTION" gfx="Collectibles_157_BloodyLust.png" id="157" name="#BLOODY_LUST_NAME" />
 	<active description="#CRYSTAL_BALL_DESCRIPTION" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="6" name="#CRYSTAL_BALL_NAME" />
 	<passive cache="flying tearflag tearcolor" description="#SPIRIT_OF_THE_NIGHT_DESCRIPTION" devilprice="2" gfx="Collectibles_159_SpiritOfTheNight.png" id="159" name="#SPIRIT_OF_THE_NIGHT_NAME" />
-	<active cooldown="60" description="#CRACK_THE_SKY_DESCRIPTION" persistent="true" gfx="Collectibles_160_CrackTheSky.png" id="160" maxcharges="3" name="#CRACK_THE_SKY_NAME" />
+	<active cooldown="60" description="#CRACK_THE_SKY_DESCRIPTION" persistent="false" gfx="Collectibles_160_CrackTheSky.png" id="160" maxcharges="3" name="#CRACK_THE_SKY_NAME" />
 	<passive description="#ANKH_DESCRIPTION" gfx="Collectibles_161_Ankh.png" id="161" name="#ANKH_NAME" />
 	<passive achievement="50" cooldown="200" description="#CELTIC_CROSS_DESCRIPTION" gfx="Collectibles_162_CelticCross.png" id="162" name="#CELTIC_CROSS_NAME" />
 	<familiar description="#GHOST_BABY_DESCRIPTION" gfx="Collectibles_163_GhostBaby.png" id="163" name="#GHOST_BABY_NAME" />
