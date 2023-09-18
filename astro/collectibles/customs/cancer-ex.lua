@@ -25,7 +25,7 @@ Astro:AddCallback(
                     source.Type == EntityType.ENTITY_KNIFE
              then
                 for i = 1, #entities do
-                    if entities[i]:IsVulnerableEnemy() and entities[i].Type ~= EntityType.ENTITY_FIREPLACE then
+                    if entities[i]:IsVulnerableEnemy() and entities[i].Type ~= EntityType.ENTITY_FIREPLACE and not (entities[i].Type == EntityType.ENTITY_MAMA_GURDY and entities[i].Variant > 0) then
                         entities[i]:TakeDamage(amount / 5, 0, EntityRef(player), 1)
                     end
                 end
