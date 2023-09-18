@@ -2544,10 +2544,10 @@
         <preload-snd id="116"/>
         <preload-snd id="308"/>
     </entity>
-    <entity anm2path="266.000_Mega Gurdy.anm2" baseHP="1" boss="1" bossID="49" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="30" friction="1" id="266" name="Mama Gurdy Left Hand" numGridCollisionPoints="12" portrait="70" shadowSize="0" stageHP="0" variant="1">
+    <entity anm2path="266.000_Mega Gurdy.anm2" baseHP="100000" boss="1" bossID="49" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="30" friction="1" id="266" name="Mama Gurdy Left Hand" numGridCollisionPoints="12" portrait="70" shadowSize="0" stageHP="0" variant="1">
         <gibs amount="14" blood="1" bone="1" eye="0" gut="1" large="1" worm="1"/>
     </entity>
-    <entity anm2path="266.000_Mega Gurdy.anm2" baseHP="1" boss="1" bossID="49" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="30" friction="1" id="266" name="Mama Gurdy Right Hand" numGridCollisionPoints="12" portrait="70" shadowSize="0" stageHP="0" variant="2">
+    <entity anm2path="266.000_Mega Gurdy.anm2" baseHP="100000" boss="1" bossID="49" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="30" friction="1" id="266" name="Mama Gurdy Right Hand" numGridCollisionPoints="12" portrait="70" shadowSize="0" stageHP="0" variant="2">
         <gibs amount="14" blood="1" bone="1" eye="0" gut="1" large="1" worm="1"/>
     </entity>
     <entity anm2path="267.000_Dark One.anm2" baseHP="0" boss="1" bossID="50" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" gridCollision="walls" id="267" name="#DARK_ONE" numGridCollisionPoints="12" portrait="71" shadowSize="22" stageHP="100" variant="0">
