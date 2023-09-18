@@ -27,7 +27,7 @@ require "astro.collectibles.customs.virgo-ex"
 
 if EID then
     EID:addDescriptionModifier(
-        "Astro",
+        "AstroCollectibles",
         function(descObj)
             return true
         end,

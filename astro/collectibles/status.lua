@@ -1,6 +1,6 @@
 if EID then
     EID:addDescriptionModifier(
-        "Astro",
+        "AstroCollectiblesStatus",
         function(descObj)
             return true
         end,
