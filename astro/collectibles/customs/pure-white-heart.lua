@@ -3,7 +3,7 @@ Astro.Collectible.PURE_WHITE_HEART = Isaac.GetItemIdByName("Pure White Heart")
 if EID then
     EID:addCollectible(
         Astro.Collectible.PURE_WHITE_HEART,
-        "소지한 상태에서 보스방 클리어 시 현재 아이템 중 랜덤으로 3개가 제거되며, 천사방 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다.",
+        "소지한 상태에서 보스방 클리어 시 현재 아이템 중 랜덤으로 3개가 제거되며, 천사방 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다.#!!! 효과가 발동한 뒤 사라집니다.",
         "순백의 심장"
     )
 end
@@ -47,6 +47,8 @@ Astro:AddCallback(
                         Vector.Zero,
                         nil
                     ):ToPickup().OptionsPickupIndex = Astro.Collectible.PURE_WHITE_HEART
+
+                player:RemoveCollectible(Astro.Collectible.PURE_WHITE_HEART)
             end
         end
     end
