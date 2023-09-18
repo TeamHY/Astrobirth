@@ -367,7 +367,9 @@ Astro:AddCallback(
 		local currentRoom = level:GetCurrentRoom()
 
 		if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
-			if currentRoom:GetType() == RoomType.ROOM_DICE and currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
+			local roomType = currentRoom:GetType()
+
+			if roomType == RoomType.ROOM_DICE then
 				local itemPool = Game():GetItemPool()
 				local collectible = itemPool:GetCollectible(ItemPoolType.POOL_KEY_MASTER, true, currentRoom:GetSpawnSeed())
 
@@ -383,6 +385,15 @@ Astro:AddCallback(
 			-- 	local beggar = Isaac.Spawn(EntityType.ENTITY_SLOT, 4, 0, currentRoom:GetCenterPos(), Vector.Zero, nil)
 
 			-- 	beggar:Kill()
+			elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 70 then -- Delirium
+				Isaac.Spawn(
+					EntityType.ENTITY_PICKUP,
+					PickupVariant.PICKUP_COLLECTIBLE,
+					Astro.Collectible.Greed,
+					currentRoom:GetTopLeftPos() + Vector(20, 20),
+					Vector.Zero,
+					nil
+				)
 			end
 		end
 
