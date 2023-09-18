@@ -13,39 +13,6 @@ end
 local GRID_SIZE = 40
 
 Astro:AddCallback(
-    ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
-    function()
-        local level = Game():GetLevel()
-        local currentRoom = level:GetCurrentRoom()
-
-        for i = 1, Game():GetNumPlayers() do
-            local player = Isaac.GetPlayer(i - 1)
-
-            if player:HasCollectible(Astro.Collectible.GEMINI_EX) and currentRoom:GetType() == RoomType.ROOM_BOSS then
-                local rng = player:GetCollectibleRNG(Astro.Collectible.GEMINI_EX)
-                local inventory = Astro:getPlayerInventory(player)
-                local itemPool = Game():GetItemPool()
-
-                local listToRemove = Astro:GetRandomCollectibles(inventory, rng, 5, Astro.Collectible.GEMINI_EX, true)
-
-                for key, value in ipairs(listToRemove) do
-                    Isaac.Spawn(
-                            EntityType.ENTITY_PICKUP,
-                            PickupVariant.PICKUP_COLLECTIBLE,
-                            itemPool:GetCollectible(ItemPoolType.POOL_ANGEL, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:FindFreePickupSpawnPosition(
-                                player.Position + Vector(GRID_SIZE * (-3 + key), -GRID_SIZE)
-                            ),
-                            Vector.Zero,
-                            nil
-                        ):ToPickup().OptionsPickupIndex = Astro.Collectible.GEMINI_EX
-                end
-            end
-        end
-    end
-)
-
-Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     ---@param isContinued boolean
     function(_, isContinued)
