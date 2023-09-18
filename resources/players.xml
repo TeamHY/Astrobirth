@@ -5,7 +5,7 @@
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_Isaac.png" skinColor="-1"
 		  birthright="#ISAAC_BIRTHRIGHT" />
-	<player card="51" id="1" name="#MAGDALENE_NAME" skin="Character_002_Magdalene.png" costume="7" keys="1" bombs="2" hp="8" pocketActive="45" achievement="1"
+	<player card="51" id="1" name="#MAGDALENE_NAME" skin="Character_002_Magdalene.png" costume="7" keys="1" bombs="2" hp="14" pocketActive="45" achievement="1"
           nameimage="PlayerName_02_Magdalene.png"
           portrait="PlayerPortrait_Magdalene.png" skinColor="-1"
 		  birthright="#MAGDALENE_BIRTHRIGHT" />
@@ -133,7 +133,7 @@
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_Isaac_b.png" skinColor="-1"
 		  birthright="#ISAAC_B_BIRTHRIGHT" />
-	<player card="51" id="22" name="#MAGDALENE_NAME" skin="Character_002b_Magdalene.png" costume="80" hp="14" keys="1" bombs="2" pocketActive="45" achievement="475"
+	<player card="51" id="22" name="#MAGDALENE_NAME" skin="Character_002b_Magdalene.png" costume="80" hp="8" keys="1" bombs="2" pocketActive="45" achievement="475"
           nameimage="PlayerName_02_Magdalene.png"
           portrait="PlayerPortrait_Magdalene_b.png" skinColor="-1"
 		  birthright="#MAGDALENE_B_BIRTHRIGHT" />
