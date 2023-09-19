@@ -56,13 +56,13 @@ Astro:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, Astro.CurseRemove)
 function Astro:OnUpdate(player)
 	local level = Game():GetLevel()
 	local stage = level:GetStage()
+	local playerType = player:GetPlayerType()
 
 	if
 		stage >= LevelStage.STAGE4_3 or
-			(stage == LevelStage.STAGE4_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE)
+			(stage == LevelStage.STAGE4_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE) or
+			playerType == PlayerType.PLAYER_JUDAS
 	 then
-		local playerType = player:GetPlayerType()
-
 		if
 			playerType == PlayerType.PLAYER_KEEPER or playerType == PlayerType.PLAYER_KEEPER_B or
 				playerType == PlayerType.PLAYER_THESOUL_B

@@ -1,41 +1,3 @@
--- TrinketType.TRINKET_UMBILICAL_CORD : 해당 장신구 증발되고, 리틀 스티븐(CollectibleType.COLLECTIBLE_LITTLE_STEVEN) 지급
--- TrinketType.TRINKET_MISSING_PAGE : 해당 장신구 증발되고, 네크로노미콘(CollectibleType.COLLECTIBLE_NECRONOMICON) 소환
--- TrinketType.TRINKET_FADED_POLAROID : 해당 장신구 증발되고, 네거티브, 폴라로이드 2개 등장 후 한개 획득
--- TrinketType.TRINKET_LOUSE : 해당 장신구 증발되고, 인페2(CollectibleType.COLLECTIBLE_INFESTATION_2) 소환
--- TrinketType.TRINKET_BROKEN_SYRINGE : 해당 장신구 증발되면서 아이작에 존재하는 주사기 2개 소환되고 1개 선택
--- TrinketType.TRINKET_RED_PATCH : 해당 장신구 증발되고, 블러디 러스트 소환
-
--- TrinketType.TRINKET_SILVER_DOLLAR : 황금으로 되는 즉시 캐릭터에게 흡수
--- TrinketType.TRINKET_BLOODY_CROWN : 황금으로 되는 즉시 캐릭터에게 흡수
--- TrinketType.TRINKET_HOLY_CROWN : 황금으로 되는 즉시 캐릭터에게 흡수
--- TrinketType.TRINKET_WICKED_CROWN : 황금으로 되는 즉시 캐릭터에게 흡수
--- TrinketType.TRINKET_NUMBER_MAGNET : 황금으로 되는 즉시 캐릭터에게 흡수
-
--- TrinketType.TRINKET_PURPLE_HEART : 배수 1.2배 증가
-
--- TrinketType.TRINKET_PINKY_EYE : 공격 시 100% 확률로 독눈물
--- TrinketType.TRINKET_PUSH_PIN : 공격 시 100% 확률로 관통 눈물
-
--- TrinketType.TRINKET_SUPER_BALL : 공격 시 25% 확률로 시맨트 적용 (럭1당 1%p 증가)
--- TrinketType.TRINKET_BRAIN_WORM : 공격 시 50% 확률로 유도 적용 (럭1당 1%p 증가)
-
--- TrinketType.TRINKET_BLACK_LIPSTICK : 스테이지 진입 시 블랙 하트 1개 소환
--- TrinketType.TRINKET_RUSTED_KEY : 스테이지 진입 시 마다 금키 소환
--- TrinketType.TRINKET_SAFETY_CAP : 스테이지 진입 시 마다 걸프 알약 소환
--- TrinketType.TRINKET_ACE_SPADES : 스테이지 진입 시 마다 랜덤 카드 소환
--- TrinketType.TRINKET_MATCH_STICK : 스테이지 진입 시 기가 폭탄 소환(5.40.7)
-
--- TrinketType.TRINKET_BLOODY_PENNY : 동전 획득 시 종류 상관 없이 25% 확률로 빨간 하트 반칸 드랍 (럭1당 1%p 증가)
--- TrinketType.TRINKET_BURNT_PENNY : 동전 획득 시 종류 상관 없이 25% 확률로 랜덤 폭탄 소환 (럭1당 1%p 증가)
--- TrinketType.TRINKET_FLAT_PENNY : 동전 획득 시 종류 상관 없이 25% 확률로 랜덤 열쇠 소환 (럭1당 1%p 증가)
--- TrinketType.TRINKET_COUNTERFEIT_PENNY : 동전 획득 시 종류 상관 없이 25% 확률로 랜덤 동전 1개 소환 (럭1당 1%p 증가)
--- TrinketType.TRINKET_ROTTEN_PENNY : 동전 획득 시 종류 상관 없이 100% 확률로 자폭 파리 하나 소환
--- TrinketType.TRINKET_BLESSED_PENNY : 동전 획득 시 종류 상관 없이 12.5% 확률로 소울 하트 반칸 소환 (럭1당 1%p 증가)
-
--- TrinketType.TRINKET_BAT_WING : 소지중인 상태일경우 공중 적용
-
--- TrinketType.TRINKET_TEMPORARY_TATTOO : 미니맵에 전투방 위치를 표시해주고, 전투방을 조건없이 들어갈 수 있음
-
 local isc = require("astro.lib.isaacscript-common")
 
 local GRID_SIZE = 40
@@ -53,6 +15,18 @@ if EID then
         {"!!! 획득 시 사라지고 {{Collectible35}}The Necronomicon을 소환합니다."}
     )
     Astro:AddGoldenTrinketDescription(
+        TrinketType.TRINKET_RED_PATCH,
+        {"!!! 획득 시 사라지고 {{Collectible157}}Bloody Lust을 소환합니다."}
+    )
+    Astro:AddGoldenTrinketDescription(
+        TrinketType.TRINKET_SUPER_MAGNET,
+        {"!!! 획득 시 사라지고 {{Collectible617}}Lodestone을 소환합니다."}
+    )
+    Astro:AddGoldenTrinketDescription(
+        TrinketType.TRINKET_BROKEN_ANKH,
+        {"!!! 획득 시 사라지고 {{Collectible161}}Ankh을 소환합니다."}
+    )
+    Astro:AddGoldenTrinketDescription(
         TrinketType.TRINKET_FADED_POLAROID,
         {"!!! 획득 시 사라지고 {{Collectible327}}The Polaroid과 {{Collectible328}}The Negative를 소환합니다. 하나를 선택하면 나머지는 사라집니다."}
     )
@@ -66,10 +40,6 @@ if EID then
     Astro:AddGoldenTrinketDescription(
         TrinketType.TRINKET_BROKEN_SYRINGE,
         {"!!! 획득 시 사라지고 랜덤한 주사기 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다."}
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_RED_PATCH,
-        {"!!! 획득 시 사라지고 {{Collectible157}}BloodyLust을 소환합니다."}
     )
 
     Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_SILVER_DOLLAR, {"!!! 획득 시 바로 흡수됩니다."})
@@ -169,6 +139,28 @@ local function RunEffect(player, type)
             EntityType.ENTITY_PICKUP,
             PickupVariant.PICKUP_COLLECTIBLE,
             CollectibleType.COLLECTIBLE_BLOODY_LUST,
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
+            Vector.Zero,
+            nil
+        )
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_SUPER_MAGNET) then
+        local currentRoom = game:GetLevel():GetCurrentRoom()
+        Isaac.Spawn(
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            CollectibleType.COLLECTIBLE_LODESTONE,
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
+            Vector.Zero,
+            nil
+        )
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_BROKEN_ANKH) then
+        local currentRoom = game:GetLevel():GetCurrentRoom()
+        Isaac.Spawn(
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            CollectibleType.COLLECTIBLE_ANKH,
             currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
             Vector.Zero,
             nil

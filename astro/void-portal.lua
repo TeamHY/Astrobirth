@@ -20,7 +20,7 @@ Astro:AddCallback(
 
         currentRoom:SetClear(true)
     end,
-    275
+    EntityType.ENTITY_MEGA_SATAN_2
 )
 
 Astro:AddCallback(

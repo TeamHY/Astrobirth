@@ -1,3 +1,5 @@
+-- - [ ] -머큐리 : 소지 시 스피드 아무리 높아도 1.4 초과 안되게 설정
+
 if EID then
     EID:addDescriptionModifier(
         "AstroCollectiblesStatus",
@@ -5,9 +7,16 @@ if EID then
             return true
         end,
         function(descObj)
-            if descObj.ObjSubType == CollectibleType.COLLECTIBLE_LITTLE_HORN or descObj.ObjSubType == CollectibleType.COLLECTIBLE_EUTHANASIA or descObj.ObjSubType == CollectibleType.COLLECTIBLE_LOST_CONTACT then
+            if
+                descObj.ObjSubType == CollectibleType.COLLECTIBLE_LITTLE_HORN or
+                    descObj.ObjSubType == CollectibleType.COLLECTIBLE_EUTHANASIA or
+                    descObj.ObjSubType == CollectibleType.COLLECTIBLE_LOST_CONTACT
+             then
                 EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.75")
-            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_GHOST_PEPPER or descObj.ObjSubType == CollectibleType.COLLECTIBLE_BIRDS_EYE then
+            elseif
+                descObj.ObjSubType == CollectibleType.COLLECTIBLE_GHOST_PEPPER or
+                    descObj.ObjSubType == CollectibleType.COLLECTIBLE_BIRDS_EYE
+             then
                 EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.5#↓ {{LuckSmall}}행운 -5")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_C_SECTION then
                 EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.75")
@@ -53,7 +62,7 @@ Astro:AddCallback(
             if player:HasCollectible(CollectibleType.COLLECTIBLE_BIRDS_EYE) then
                 player.Damage = player.Damage * 0.5
             end
-            
+
             if player:HasCollectible(CollectibleType.COLLECTIBLE_C_SECTION) then
                 player.Damage = player.Damage * 0.75
             end
@@ -84,6 +93,12 @@ Astro:AddCallback(
 
             if player:HasCollectible(CollectibleType.COLLECTIBLE_LODESTONE) then
                 player.Luck = player.Luck - 2
+            end
+        elseif cacheFlag == CacheFlag.CACHE_SPEED then
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_MERCURIUS) then
+                if player.MoveSpeed > 1.4 then
+                    player.MoveSpeed = 1.4
+                end
             end
         end
     end

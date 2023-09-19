@@ -74,7 +74,10 @@ function Astro:GetRandomCollectibles(collectibles, rng, count, ignoreCollectible
         local itemConfig = Isaac.GetItemConfig()
 
         for key, value in pairs(collectibles) do
-            if value ~= ignoreCollectible and itemConfig:GetCollectible(value).Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST then
+            if
+                value ~= ignoreCollectible and
+                    itemConfig:GetCollectible(value).Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST
+             then
                 table.insert(list, value)
             end
         end
@@ -97,4 +100,64 @@ function Astro:GetRandomCollectibles(collectibles, rng, count, ignoreCollectible
     end
 
     return result
+end
+
+---@param player EntityPlayer
+---@param type CollectibleType
+function Astro:RemoveAllCollectible(player, type)
+    for _ = 1, player:GetCollectibleNum(type) do
+        player:RemoveCollectible(type)
+    end
+end
+
+---@param pillEffect PillEffect
+---@param position Vector
+function Astro:SpawnPill(pillEffect, position)
+    local currentRoom = Game():GetLevel():GetCurrentRoom()
+    local itemPool = Game():GetItemPool()
+    local pillColor = itemPool:ForceAddPillEffect(pillEffect)
+
+    Isaac.Spawn(
+        EntityType.ENTITY_PICKUP,
+        PickupVariant.PICKUP_PILL,
+        pillColor,
+        currentRoom:FindFreePickupSpawnPosition(position, 40, true),
+        Vector.Zero,
+        nil
+    )
+end
+
+---@param collectibleType CollectibleType
+---@param position Vector
+---@param optionsPickupIndex integer?
+function Astro:SpawnCollectible(collectibleType, position, optionsPickupIndex)
+    local currentRoom = Game():GetLevel():GetCurrentRoom()
+
+    local pickup = Isaac.Spawn(
+        EntityType.ENTITY_PICKUP,
+        PickupVariant.PICKUP_COLLECTIBLE,
+        collectibleType,
+        currentRoom:FindFreePickupSpawnPosition(position, 40, true),
+        Vector.Zero,
+        nil
+    ):ToPickup()
+
+    if optionsPickupIndex then
+        pickup.OptionsPickupIndex = optionsPickupIndex
+    end
+end
+
+---@param trinketType TrinketType
+---@param position Vector
+function Astro:SpawnTrinket(trinketType, position)
+    local currentRoom = Game():GetLevel():GetCurrentRoom()
+
+    Isaac.Spawn(
+        EntityType.ENTITY_PICKUP,
+        PickupVariant.PICKUP_TRINKET,
+        trinketType,
+        currentRoom:FindFreePickupSpawnPosition(position, 40, true),
+        Vector.Zero,
+        nil
+    )
 end

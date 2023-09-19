@@ -62,7 +62,15 @@ Astro:AddCallback(
             if data.Taurus ~= nil then
                 if cacheFlag == CacheFlag.CACHE_SPEED and data.Taurus.Key == 2 then
                     Isaac.DebugString("Taurus EX Speed")
-                    player.MoveSpeed = 10
+                    if player:HasCollectible(CollectibleType.COLLECTIBLE_MERCURIUS) then
+                        if player.MoveSpeed < 1.4 then
+                            player.MoveSpeed = 1.4
+                        end
+                    else
+                        if player.MoveSpeed < 2 then
+                            player.MoveSpeed = 2
+                        end
+                    end
                 elseif cacheFlag == CacheFlag.CACHE_FIREDELAY and data.Taurus.Key == 3 then
                     Isaac.DebugString("Taurus EX FireDelay")
                     player.MaxFireDelay = player.MaxFireDelay - 2
