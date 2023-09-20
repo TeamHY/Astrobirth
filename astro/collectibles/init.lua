@@ -31,7 +31,9 @@ if EID then
     EID:addDescriptionModifier(
         "AstroCollectibles",
         function(descObj)
-            return true
+            if descObj.ObjVariant == 100 then
+                return true
+            end
         end,
         function(descObj)
             if descObj.ObjSubType == CollectibleType.COLLECTIBLE_HUSHY then
