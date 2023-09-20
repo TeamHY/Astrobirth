@@ -129,7 +129,9 @@
 		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
-
+	<Pool Name="shop">
+		<Item Name="Pure White Heart" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
 
 	<Pool Name="craneGame">
 		<Item Name="Prometheus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

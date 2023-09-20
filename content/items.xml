@@ -17,7 +17,7 @@
 	<passive gfx="Gemini.png" quality="3" devilprice="2" name="Gemini EX" />
 	<passive gfx="Greed.png" quality="3" devilprice="2" name="Greed" />
 	<passive cache="damage" gfx="Prometheus.png" quality="3" devilprice="2" name="Prometheus" />
-	<passive gfx="Pure White Heart.png" quality="3" devilprice="2" name="Pure White Heart" />
+	<passive gfx="Pure White Heart.png" quality="3" devilprice="2" shopprice="20" name="Pure White Heart" />
 	<passive cache="damage" gfx="Silver Bullet.png" quality="3" devilprice="2" name="Silver Bullet" />
 
 

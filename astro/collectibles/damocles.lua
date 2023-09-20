@@ -2,12 +2,20 @@ local isc = require("astro.lib.isaacscript-common")
 
 local collectibles = {
     CollectibleType.COLLECTIBLE_1UP,
-    CollectibleType.COLLECTIBLE_LAZARUS_RAGS
+    CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
+    CollectibleType.COLLECTIBLE_DEAD_CAT, --81
+    CollectibleType.COLLECTIBLE_GLOWING_HOUR_GLASS, --422
+    CollectibleType.COLLECTIBLE_ANKH, --161
+    CollectibleType.COLLECTIBLE_GNAWED_LEAF, --210
+    CollectibleType.COLLECTIBLE_JUDAS_SHADOW, --311
+    CollectibleType.COLLECTIBLE_INNER_CHILD, --688
+    CollectibleType.COLLECTIBLE_ESAU_JR, --703
+    CollectibleType.COLLECTIBLE_GENESIS --622
 }
 
 local trinkets = {
     TrinketType.TRINKET_BROKEN_ANKH,
-    TrinketType.TRINKET_MISSING_PAGE
+    TrinketType.TRINKET_MISSING_POSTER
 }
 
 if EID then
@@ -19,7 +27,7 @@ if EID then
             end
         end,
         function(descObj)
-            EID:appendToDescription(descObj, "#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible332}}, {{Trinket28}}, {{Trinket48}}")
+            EID:appendToDescription(descObj, "#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible332}}, {{Collectible81}}, {{Collectible422}}, {{Collectible161}}, {{Collectible210}}, {{Collectible311}}, {{Collectible688}}, {{Collectible703}}, {{Collectible622}}, {{Trinket28}}, {{Trinket23}}")
 
             return descObj
         end

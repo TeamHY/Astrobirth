@@ -155,9 +155,6 @@
 		<spawn x="1" y="0">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="2" y="0">
-			<entity type="33" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="12" y="0">
 			<entity type="5000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
@@ -166,6 +163,9 @@
 		</spawn>
 		<spawn x="1" y="1">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="1">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="3" name="Grave Room" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">

@@ -26,6 +26,8 @@ function Ban:Init()
             self.BanTrinket(TrinketType.TRINKET_RC_REMOTE)
             self.BanTrinket(TrinketType.TRINKET_EXPANSION_PACK)
             self.BanTrinket(TrinketType.TRINKET_FOUND_SOUL)
+            self.BanTrinket(TrinketType.TRINKET_MYOSOTIS)
+            self.BanTrinket(TrinketType.TRINKET_HOLLOW_HEART)
         end,
         [PlayerType.PLAYER_ISAAC] = function()
         end,
@@ -53,6 +55,7 @@ function Ban:Init()
             self.BanCollectible(CollectibleType.COLLECTIBLE_JUDAS_SHADOW)
             self.BanCollectible(CollectibleType.COLLECTIBLE_LOST_CONTACT)
             self.BanCollectible(CollectibleType.COLLECTIBLE_PSY_FLY)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_DAMOCLES)
         end,
         [PlayerType.PLAYER_LAZARUS2] = function()
         end,
@@ -118,6 +121,7 @@ function Ban:Init()
             self.BanCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
         end,
         [PlayerType.PLAYER_THELOST_B] = function()
+            self.BanCollectible(CollectibleType.COLLECTIBLE_DAMOCLES)
         end,
         [PlayerType.PLAYER_LILITH_B] = function()
         end,
