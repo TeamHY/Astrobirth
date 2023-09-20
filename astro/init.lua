@@ -1,42 +1,27 @@
 local hiddenItemManager = require("astro.lib.hidden_item_manager")
 
----@param player EntityPlayer
----@param collectibleType CollectibleType
-local function AddForceOne(player, collectibleType)
-	if not hiddenItemManager:Has(player, collectibleType) then
-		hiddenItemManager:Add(player, collectibleType)
-	end
-end
-
 Astro:AddCallback(
 	ModCallbacks.MC_POST_GAME_STARTED,
 	function(_, isContinued)
 		local player = Isaac.GetPlayer()
-		local itemConfig = Isaac.GetItemConfig()
-		local itemConfigItem = itemConfig:GetCollectible(CollectibleType.COLLECTIBLE_MORE_OPTIONS)
 
-		player:RemoveCostume(itemConfigItem)
-	end
-)
+		if not isContinued then
+			hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_MORE_OPTIONS)
 
-Astro:AddCallback(
-	ModCallbacks.MC_POST_NEW_LEVEL,
-	function(_)
-		local player = Isaac.GetPlayer()
-		local itemConfig = Isaac.GetItemConfig()
-		local itemConfigItem = itemConfig:GetCollectible(CollectibleType.COLLECTIBLE_MORE_OPTIONS)
-
-		AddForceOne(player, CollectibleType.COLLECTIBLE_MORE_OPTIONS)
-		player:RemoveCostume(itemConfigItem)
-
-		if
-			player:GetPlayerType() == PlayerType.PLAYER_CAIN_B or player:GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN_B or
-				player:GetPlayerType() == PlayerType.PLAYER_THESOUL_B or
-				player:GetPlayerType() == PlayerType.PLAYER_LAZARUS_B or
-				player:GetPlayerType() == PlayerType.PLAYER_BLUEBABY_B
-		 then
-			AddForceOne(player, CollectibleType.COLLECTIBLE_BIRTHRIGHT)
+			if
+				player:GetPlayerType() == PlayerType.PLAYER_CAIN_B or player:GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN_B or
+					player:GetPlayerType() == PlayerType.PLAYER_THESOUL_B or
+					player:GetPlayerType() == PlayerType.PLAYER_LAZARUS_B or
+					player:GetPlayerType() == PlayerType.PLAYER_BLUEBABY_B
+			 then
+				hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_BIRTHRIGHT)
+			end
 		end
+
+		local itemConfig = Isaac.GetItemConfig()
+		local itemConfigItem = itemConfig:GetCollectible(CollectibleType.COLLECTIBLE_MORE_OPTIONS)
+
+		player:RemoveCostume(itemConfigItem)
 	end
 )
 
