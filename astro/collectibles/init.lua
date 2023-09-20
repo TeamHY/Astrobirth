@@ -89,11 +89,15 @@ Astro:AddCallback(
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
     function(_)
-        for i = 1, Game():GetNumPlayers() do
-            local player = Isaac.GetPlayer(i - 1)
+        local currentRoom = Game():GetLevel():GetCurrentRoom()
 
-            if player:HasCollectible(CollectibleType.COLLECTIBLE_MILK) then
-                player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR, false, true, false, false)
+        if not currentRoom:IsClear() then
+            for i = 1, Game():GetNumPlayers() do
+                local player = Isaac.GetPlayer(i - 1)
+    
+                if player:HasCollectible(CollectibleType.COLLECTIBLE_MILK) then
+                    player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR, false, true, false, false)
+                end
             end
         end
     end
