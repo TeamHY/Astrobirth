@@ -1,10 +1,8 @@
--- - [ ] -머큐리 : 소지 시 스피드 아무리 높아도 1.4 초과 안되게 설정
-
 if EID then
     EID:addDescriptionModifier(
         "AstroCollectiblesStatus",
         function(descObj)
-            if descObj.ObjVariant == 100 then
+            if descObj.ObjVariant == PickupVariant.PICKUP_COLLECTIBLE then
                 return true
             end
         end,

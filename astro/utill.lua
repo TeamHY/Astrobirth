@@ -110,6 +110,18 @@ function Astro:RemoveAllCollectible(player, type)
     end
 end
 
+---@param player EntityPlayer
+---@param type TrinketType
+function Astro:RemoveAllTrinket(player, type)
+    local limit = 3
+    local count = 0
+
+    while player:HasTrinket(type) and count < limit do
+        player:TryRemoveTrinket(type)
+        count = count + 1
+    end
+end
+
 ---@param pillEffect PillEffect
 ---@param position Vector
 function Astro:SpawnPill(pillEffect, position)

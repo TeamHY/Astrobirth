@@ -2,6 +2,7 @@ local isc = require("astro.lib.isaacscript-common")
 
 Astro.Collectible = {}
 
+require "astro.collectibles.damocles"
 require "astro.collectibles.status"
 
 require "astro.collectibles.customs.aquarius-ex"
@@ -31,7 +32,7 @@ if EID then
     EID:addDescriptionModifier(
         "AstroCollectibles",
         function(descObj)
-            if descObj.ObjVariant == 100 then
+            if descObj.ObjVariant == PickupVariant.PICKUP_COLLECTIBLE then
                 return true
             end
         end,
