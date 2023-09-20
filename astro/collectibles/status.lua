@@ -4,7 +4,9 @@ if EID then
     EID:addDescriptionModifier(
         "AstroCollectiblesStatus",
         function(descObj)
-            return true
+            if descObj.ObjVariant == 100 then
+                return true
+            end
         end,
         function(descObj)
             if
