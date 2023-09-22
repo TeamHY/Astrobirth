@@ -149,9 +149,9 @@
 	<passive description="#INFESTATION_DESCRIPTION" gfx="Collectibles_148_Infestation.png" id="148" name="#INFESTATION_NAME" />
 	<passive achievement="140" cache="all" description="#IPECAC_DESCRIPTION" gfx="Collectibles_149_Ipecac.png" id="149" name="#IPECAC_NAME" />
 	<passive description="#TOUGH_LOVE_DESCRIPTION" gfx="Collectibles_150_ToughLove.png" cache="luck" devilprice="2" id="150" name="#TOUGH_LOVE_NAME" />
-	<passive cache="tearflag" description="#THE_MULLIGAN_DESCRIPTION" gfx="Collectibles_151_TheMulligan.png" id="151" name="#THE_MULLIGAN_NAME" />
+	<passive cache="tearflag" description="#THE_MULLIGAN_DESCRIPTION" gfx="Collectibles_151_TheMulligan.png" id="151" devilprice="2" name="#THE_MULLIGAN_NAME" />
 	<passive cache="weapon firedelay" description="#TECHNOLOGY_2_DESCRIPTION" gfx="Collectibles_152_Technology2.png" id="152" name="#TECHNOLOGY_2_NAME" />
-	<passive cache="firedelay damage" description="#MUTANT_SPIDER_DESCRIPTION" gfx="Collectibles_153_MutantSpider.png" id="153" name="#MUTANT_SPIDER_NAME" special="true" />
+	<passive cache="firedelay damage" description="#MUTANT_SPIDER_DESCRIPTION" gfx="Collectibles_153_MutantSpider.png" id="153" devilprice="2" name="#MUTANT_SPIDER_NAME" special="true" />
 	<passive cache="damage" description="#CHEMICAL_PEEL_DESCRIPTION" gfx="Collectibles_154_ChemicalPeel.png" id="154" name="#CHEMICAL_PEEL_NAME" />
 	<familiar description="#THE_PEEPER_DESCRIPTION" gfx="Collectibles_155_ThePeeper.png" id="155" name="#THE_PEEPER_NAME" />
 	<passive description="#HABIT_DESCRIPTION" gfx="Collectibles_156_Habit.png" id="156" name="#HABIT_NAME" />
@@ -374,7 +374,7 @@
 	<passive description="#STICKY_BOMBS_DESCRIPTION" gfx="Collectibles_367_StickyBombs.png" id="367" name="#STICKY_BOMBS_NAME" bombs="5" />
 	<passive description="#EPIPHORA_DESCRIPTION" gfx="Collectibles_368_Epiphora.png" id="368" name="#EPIPHORA_NAME" />
 	<passive description="#CONTINUUM_DESCRIPTION" gfx="Collectibles_369_Continuum.png" id="369" name="#CONTINUUM_NAME" cache="tearflag range" />
-	<passive description="#MR_DOLLY_DESCRIPTION" gfx="Collectibles_370_MrDolly.png" id="370" name="#MR_DOLLY_NAME" cache="range firedelay" />
+	<passive description="#MR_DOLLY_DESCRIPTION" gfx="Collectibles_370_MrDolly.png" id="370" name="#MR_DOLLY_NAME" devilprice="2" cache="range firedelay" />
 	<passive description="#CURSE_OF_THE_TOWER_DESCRIPTION" gfx="Collectibles_371_CurseOfTheTower.png" id="371" name="#CURSE_OF_THE_TOWER_NAME" />
 	<familiar description="#CHARGED_BABY_DESCRIPTION" gfx="Collectibles_372_ChargedBaby.png" id="372" name="#CHARGED_BABY_NAME" />
 	<passive description="#DEAD_EYE_DESCRIPTION" devilprice="2" gfx="Collectibles_373_DeadEye.png" id="373" name="#DEAD_EYE_NAME" cache="damage" />
