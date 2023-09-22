@@ -737,7 +737,7 @@
 	<active		id="709"	achievement="437" gfx="Collectibles_709_Suplex.png" name="#SUPLEX_NAME" description="#SUPLEX_DESCRIPTION" maxcharges="200" chargetype="timed" />
 	<active		id="710"	achievement="586" gfx="Collectibles_710_BagOfCrafting.png" name="#BAG_OF_CRAFTING_NAME" description="#BAG_OF_CRAFTING_DESCRIPTION" />
 	<active		id="711"	achievement="592" gfx="Collectibles_711_Flip.png" name="#FLIP_NAME" description="#FLIP_DESCRIPTION" maxcharges="6" />
-	<active		id="712"	achievement="599" gfx="Collectibles_712_Lemegeton.png" name="#LEMEGETON_NAME" description="#LEMEGETON_DESCRIPTION" maxcharges="6" />
+	<active		id="712"	achievement="599" gfx="Collectibles_712_Lemegeton.png" name="#LEMEGETON_NAME" description="#LEMEGETON_DESCRIPTION" maxcharges="12" />
 	<active		id="713"	achievement="589" gfx="Collectibles_713_Sumptorium.png" name="#SUMPTORIUM_NAME" description="#SUMPTORIUM_DESCRIPTION" maxcharges="300" chargetype="timed" cooldown="60" />
 	<active		id="714"	gfx="Collectibles_714_Recall.png" name="#RECALL_NAME" description="#RECALL_DESCRIPTION" maxcharges="1" chargetype="timed" cache="flying" cooldown="45" hidden="true" />
 	<active		id="715"	gfx="Collectibles_715_Hold.png" name="#HOLD_NAME" description="#HOLD_DESCRIPTION" maxcharges="0" hidden="true" />
