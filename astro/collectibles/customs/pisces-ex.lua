@@ -1,10 +1,10 @@
 local isc = require("astro.lib.isaacscript-common")
 
-Astro.Collectible.PISCES_EX = Isaac.GetItemIdByName("Pisces EX")
+Astro.Collectible.B = Isaac.GetItemIdByName("Pisces EX")
 
 if EID then
     EID:addCollectible(
-        Astro.Collectible.PISCES_EX,
+        Astro.Collectible.B,
         "게임 시간 2분마다 {{Card57}}The Magician?가 발동됩니다.#다음 게임 시작 시 {{Card57}}The Magician?을 하나 소환합니다.",
         "초 물고기자리"
     )
@@ -15,7 +15,7 @@ Astro:AddCallback(
     ---@param player EntityPlayer
     function(_, player)
         if Game():GetFrameCount() % 3600 == 0 then
-            if player:HasCollectible(Astro.Collectible.PISCES_EX) then
+            if player:HasCollectible(Astro.Collectible.B) then
                 player:UseCard(Card.CARD_REVERSE_MAGICIAN, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)
             end
         end
@@ -51,5 +51,5 @@ Astro:AddCallbackCustom(
     function(_, player, collectibleType)
         Astro.Data.RunPiscesEX = true
     end,
-    Astro.Collectible.PISCES_EX
+    Astro.Collectible.B
 )
