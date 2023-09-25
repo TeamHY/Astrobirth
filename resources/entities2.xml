@@ -4840,7 +4840,7 @@
     <entity anm2path="911.002_rotgut heart.anm2" baseHP="600" boss="1" bossID="87" champion="0" collisionDamage="1" collisionMass="80" collisionRadius="70" friction="1" gridCollision="none" id="911" name="Rotgut (heart)" numGridCollisionPoints="12" portrait="118" shadowSize="0" stageHP="0" tags="nodelirium" variant="2">
         <gibs amount="20" blood="1" bone="0" colorblood="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="912.000_witness.anm2" baseHP="6000" boss="1" bossID="88" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="90" friction="1" gridCollision="none" id="912" name="#MOTHER" numGridCollisionPoints="12" portrait="119" shadowSize="0" shieldStrength="140" stageHP="0" tags="nodelirium" variant="0">
+    <entity anm2path="912.000_witness.anm2" baseHP="10000" boss="1" bossID="88" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="90" friction="1" gridCollision="none" id="912" name="#MOTHER" numGridCollisionPoints="12" portrait="119" shadowSize="0" shieldStrength="140" stageHP="0" tags="nodelirium" variant="0">
         <bestiary anim="Idle" transform="0,-20,0.5"/>
         <gibs amount="20" blood="1" bone="0" colorblood="1" eye="0" gut="1" large="1"/>
     </entity>
