@@ -19,6 +19,15 @@
 	<passive cache="damage" gfx="Prometheus.png" quality="3" devilprice="2" name="Prometheus" />
 	<passive gfx="Pure White Heart.png" quality="3" devilprice="2" shopprice="20" name="Pure White Heart" />
 	<passive cache="damage" gfx="Silver Bullet.png" quality="3" devilprice="2" name="Silver Bullet" />
+	<passive gfx="Death's Eyes.png" quality="4" devilprice="2" name="Death's Eyes" />
+	<passive gfx="Altair.png" quality="3" devilprice="2" name="Altair" />
+	<passive gfx="Deneb.png" quality="3" devilprice="2" name="Deneb" />
+	<passive gfx="Vega.png" quality="4" devilprice="2" name="Vega" />
+	<passive gfx="Cursed Heart.png" quality="4" devilprice="2" name="Cursed Heart" />
+	<passive gfx="Super Magneto.png" quality="4" devilprice="2" name="Super Magneto" />
+	<passive gfx="Solar System.png" quality="4" devilprice="2" name="Solar System" />
+	<passive gfx="Ptolemaeus.png" quality="4" devilprice="2" name="Ptolemaeus" />
+	<passive gfx="Angry Onion.png" quality="3" devilprice="2" name="Angry Onion" />
 
 
 
@@ -30,4 +39,5 @@
 	<trinket gfx="Absolute Zero.png" name="Absolute Zero" />
 	<trinket gfx="Bloody Bandage.png" name="Bloody Bandage" />
 	<trinket gfx="Eden's Snake.png" name="Eden's Snake" />
+	<trinket gfx="Electronic Penny.png" name="Electronic Penny" />
 </items>
