@@ -124,28 +124,47 @@ end
 
 ---@param pillEffect PillEffect
 ---@param position Vector
+---@return EntityPickup
 function Astro:SpawnPill(pillEffect, position)
     local currentRoom = Game():GetLevel():GetCurrentRoom()
     local itemPool = Game():GetItemPool()
     local pillColor = itemPool:ForceAddPillEffect(pillEffect)
 
-    Isaac.Spawn(
+    return Isaac.Spawn(
         EntityType.ENTITY_PICKUP,
         PickupVariant.PICKUP_PILL,
         pillColor,
         currentRoom:FindFreePickupSpawnPosition(position, 40, true),
         Vector.Zero,
         nil
-    )
+    ):ToPickup()
+end
+
+---@param cardType Card
+---@param position Vector
+---@return EntityPickup
+function Astro:SpawnCard(cardType, position)
+    local currentRoom = Game():GetLevel():GetCurrentRoom()
+
+    return Isaac.Spawn(
+        EntityType.ENTITY_PICKUP,
+        PickupVariant.PICKUP_TAROTCARD,
+        cardType,
+        currentRoom:FindFreePickupSpawnPosition(position, 40, true),
+        Vector.Zero,
+        nil
+    ):ToPickup()
 end
 
 ---@param collectibleType CollectibleType
 ---@param position Vector
 ---@param optionsPickupIndex integer?
+---@return EntityPickup
 function Astro:SpawnCollectible(collectibleType, position, optionsPickupIndex)
     local currentRoom = Game():GetLevel():GetCurrentRoom()
 
-    local pickup = Isaac.Spawn(
+    local pickup =
+        Isaac.Spawn(
         EntityType.ENTITY_PICKUP,
         PickupVariant.PICKUP_COLLECTIBLE,
         collectibleType,
@@ -157,19 +176,22 @@ function Astro:SpawnCollectible(collectibleType, position, optionsPickupIndex)
     if optionsPickupIndex then
         pickup.OptionsPickupIndex = optionsPickupIndex
     end
+
+    return pickup
 end
 
 ---@param trinketType TrinketType
 ---@param position Vector
+---@return EntityPickup
 function Astro:SpawnTrinket(trinketType, position)
     local currentRoom = Game():GetLevel():GetCurrentRoom()
 
-    Isaac.Spawn(
+    return Isaac.Spawn(
         EntityType.ENTITY_PICKUP,
         PickupVariant.PICKUP_TRINKET,
         trinketType,
         currentRoom:FindFreePickupSpawnPosition(position, 40, true),
         Vector.Zero,
         nil
-    )
+    ):ToPickup()
 end
