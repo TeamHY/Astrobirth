@@ -9239,14 +9239,8 @@
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
-		<spawn x="5" y="3">
-			<entity type="212" variant="2" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="6" y="3">
 			<entity type="78" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="7" y="3">
-			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="1091" name="It Lives!" type="5" subtype="25" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -9254,14 +9248,8 @@
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
-		<spawn x="5" y="3">
-			<entity type="212" variant="2" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="6" y="3">
 			<entity type="78" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="7" y="3">
-			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="1092" name="It Lives!" type="5" subtype="25" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -9269,14 +9257,8 @@
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
-		<spawn x="5" y="3">
-			<entity type="212" variant="2" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="6" y="3">
 			<entity type="78" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="7" y="3">
-			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="1093" name="It Lives!" type="5" subtype="25" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -9284,14 +9266,8 @@
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
-		<spawn x="5" y="3">
-			<entity type="212" variant="2" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="6" y="3">
 			<entity type="78" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="7" y="3">
-			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="1094" name="It Lives!" type="5" subtype="25" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -9299,14 +9275,8 @@
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
-		<spawn x="5" y="3">
-			<entity type="212" variant="2" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="6" y="3">
 			<entity type="78" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="7" y="3">
-			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="1097" name="Dingle 2" type="5" subtype="58" shape="1" width="13" height="7" difficulty="1" weight="1.0">
