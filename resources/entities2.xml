@@ -1492,19 +1492,19 @@
         <preload-snd id="69"/>
     	<devolve id="29.0.0" weight="1" />
 	</entity>
-    <entity anm2path="055.000_Leech.anm2" baseHP="25" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" gridCollision="walls" id="55" name="#LEECH" numGridCollisionPoints="12" portrait="43" reroll="true" shadowSize="17" stageHP="0" variant="0">
+    <entity anm2path="055.000_Leech.anm2" baseHP="25" boss="0" champion="0" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" gridCollision="walls" id="55" name="#LEECH" numGridCollisionPoints="12" portrait="43" reroll="true" shadowSize="17" stageHP="0" variant="0">
         <bestiary anim="Hori" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0"/>
         <preload-snd id="221"/>
     	<devolve id="23.0.0" weight="1" />
 	</entity>
-    <entity anm2path="055.001_Kamikaze Leech.anm2" baseHP="25" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" gridCollision="walls" id="55" name="#KAMIKAZE_LEECH" numGridCollisionPoints="12" portrait="44" reroll="true" shadowSize="17" stageHP="0" tags="explosive_soul" variant="1">
+    <entity anm2path="055.001_Kamikaze Leech.anm2" baseHP="25" boss="0" champion="0" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" gridCollision="walls" id="55" name="#KAMIKAZE_LEECH" numGridCollisionPoints="12" portrait="44" reroll="true" shadowSize="17" stageHP="0" tags="explosive_soul" variant="1">
         <bestiary anim="Hori" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0"/>
         <preload-snd id="221"/>
     	<devolve id="55.0.0" weight="1" />
 	</entity>
-    <entity anm2path="055.002_Holy Leech.anm2" baseHP="25" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" gridCollision="walls" id="55" name="#HOLY_LEECH" numGridCollisionPoints="12" portrait="44" reroll="true" shadowSize="17" stageHP="0" tags="explosive_soul" variant="2">
+    <entity anm2path="055.002_Holy Leech.anm2" baseHP="25" boss="0" champion="0" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" gridCollision="walls" id="55" name="#HOLY_LEECH" numGridCollisionPoints="12" portrait="44" reroll="true" shadowSize="17" stageHP="0" tags="explosive_soul" variant="2">
         <bestiary anim="Hori" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0"/>
         <preload-snd id="221"/>
@@ -1876,7 +1876,7 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     	<devolve id="884.0.0" weight="1" />
 	</entity>
-    <entity anm2path="086.000_Keeper.anm2" baseHP="36" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="86" name="#KEEPER" numGridCollisionPoints="12" portrait="54" reroll="true" shadowSize="17" stageHP="0" variant="0">
+    <entity anm2path="086.000_Keeper.anm2" baseHP="36" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="86" name="#KEEPER" numGridCollisionPoints="12" portrait="54" reroll="true" shadowSize="17" stageHP="0" variant="0">
         <bestiary anim="JumpDown" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1"/>
     	<devolve id="29.0.0" weight="1" />
@@ -2777,12 +2777,12 @@
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0"/>
     	<devolve id="10.0.0" weight="1" />
 	</entity>
-    <entity anm2path="298.000_Blue Boil.anm2" baseHP="20" boss="0" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="298" name="#BLUE_BOIL" numGridCollisionPoints="12" portrait="195" shadowSize="17" stageHP="0" variant="0">
+    <entity anm2path="298.000_Blue Boil.anm2" baseHP="20" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="298" name="#BLUE_BOIL" numGridCollisionPoints="12" portrait="195" shadowSize="17" stageHP="0" variant="0">
         <bestiary anim="Shoot" transform="0,0,1"/>
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0"/>
     	<devolve id="30.0.0" weight="1" />
 	</entity>
-    <entity anm2path="299.000_GreedGaper.anm2" baseHP="500" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1" id="299" name="#GREED_GAPER" numGridCollisionPoints="12" portrait="197" shadowSize="14" stageHP="0" variant="0">
+    <entity anm2path="299.000_GreedGaper.anm2" baseHP="500" boss="0" champion="0" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1" id="299" name="#GREED_GAPER" numGridCollisionPoints="12" portrait="197" shadowSize="14" stageHP="0" variant="0">
         <bestiary anim="WalkVert" overlay="Head2" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0"/>
     	<devolve id="10.1.0" weight="1" />
