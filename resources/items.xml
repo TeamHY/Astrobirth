@@ -378,7 +378,7 @@
 	<passive description="#CURSE_OF_THE_TOWER_DESCRIPTION" gfx="Collectibles_371_CurseOfTheTower.png" id="371" name="#CURSE_OF_THE_TOWER_NAME" />
 	<familiar description="#CHARGED_BABY_DESCRIPTION" gfx="Collectibles_372_ChargedBaby.png" id="372" name="#CHARGED_BABY_NAME" />
 	<passive description="#DEAD_EYE_DESCRIPTION" devilprice="2" gfx="Collectibles_373_DeadEye.png" id="373" name="#DEAD_EYE_NAME" cache="damage" />
-	<passive description="#HOLY_LIGHT_DESCRIPTION" devilprice="2" gfx="Collectibles_374_HolyLight.png" id="374" name="#HOLY_LIGHT_NAME" />
+	<passive description="#HOLY_LIGHT_DESCRIPTION" devilprice="2" gfx="Collectibles_374_HolyLight.png" id="374" cache="luck" name="#HOLY_LIGHT_NAME" />
 	<passive description="#HOST_HAT_DESCRIPTION" gfx="Collectibles_375_HostHat.png" id="375" name="#HOST_HAT_NAME" />
 	<passive description="#RESTOCK_DESCRIPTION" gfx="Collectibles_376_Restock.png" id="376" shopprice="20" name="#RESTOCK_NAME" />
 	<passive description="#BURSTING_SACK_DESCRIPTION" gfx="Collectibles_377_BurstingSack.png" id="377" name="#BURSTING_SACK_NAME" />

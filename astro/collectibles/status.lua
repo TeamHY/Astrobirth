@@ -30,6 +30,8 @@ if EID then
                 EID:appendToDescription(descObj, "#↓ {{LuckSmall}}행운 -3")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LODESTONE then
                 EID:appendToDescription(descObj, "#↓ {{LuckSmall}}행운 -2")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_HOLY_LIGHT then
+                EID:appendToDescription(descObj, "#↓ {{LuckSmall}}행운 -1")
             end
 
             return descObj
@@ -94,10 +96,13 @@ Astro:AddCallback(
             if player:HasCollectible(CollectibleType.COLLECTIBLE_LODESTONE) then
                 player.Luck = player.Luck - 2
             end
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_HOLY_LIGHT) then
+                player.Luck = player.Luck - 1
+            end
         elseif cacheFlag == CacheFlag.CACHE_SPEED then
             if player:HasCollectible(CollectibleType.COLLECTIBLE_MERCURIUS) then
-                if player.MoveSpeed > 1.4 then
-                    player.MoveSpeed = 1.4
+                if player.MoveSpeed > 1.6 then
+                    player.MoveSpeed = 1.6
                 end
             end
         end

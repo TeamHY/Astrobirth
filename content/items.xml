@@ -28,6 +28,7 @@
 	<passive gfx="Solar System.png" quality="4" devilprice="2" name="Solar System" />
 	<passive gfx="Ptolemaeus.png" quality="4" devilprice="2" name="Ptolemaeus" />
 	<passive gfx="Angry Onion.png" quality="3" devilprice="2" name="Angry Onion" />
+	<active gfx="Deep Of Abyss.png" quality="3" devilprice="2" maxcharges="4" name="Deep Of Abyss" />
 
 
 
