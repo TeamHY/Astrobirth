@@ -107,7 +107,7 @@
           nameimage="PlayerName_15_Apollyon.png" 
           portrait="PlayerPortrait_Apollyon.png" skinColor="5" costumeSuffix="apollyon"
 		  birthright="#APOLLYON_BIRTHRIGHT" />
-	<player card="51" id="16" name="#THE_FORGOTTEN_NAME" skin="Character_017_TheForgotten.png" costume="44" hp="4" keys="1" bombs="2" achievement="390"
+	<player card="51" id="16" name="#THE_FORGOTTEN_NAME" skin="Character_017_TheForgotten.png" items="619" costume="44" hp="4" keys="1" bombs="2" achievement="390"
           nameimage="PlayerName_16_TheForgotten.png" 
           portrait="PlayerPortrait_TheForgotten.png" skinColor="5" costumeSuffix="forgotten"
 		  birthright="#THE_FORGOTTEN_BIRTHRIGHT" />
