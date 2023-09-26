@@ -103,7 +103,7 @@
           nameimage="PlayerName_14_TheKeeper.png" 
           portrait="PlayerPortrait_Keeper.png" skinColor="5" costume="47" costumeSuffix="keeper"
 		  birthright="#KEEPER_BIRTHRIGHT" />
-	<player card="51" id="15" name="#APOLLYON_NAME" skin="Character_016_Apollyon.png" costume="36" hp="4" keys="1" bombs="2" pocketActive="477" achievement="340"
+	<player id="15" name="#APOLLYON_NAME" skin="Character_016_Apollyon.png" items="577" costume="36" hp="4" keys="1" bombs="2" pocketActive="477" achievement="340"
           nameimage="PlayerName_15_Apollyon.png" 
           portrait="PlayerPortrait_Apollyon.png" skinColor="5" costumeSuffix="apollyon"
 		  birthright="#APOLLYON_BIRTHRIGHT" />

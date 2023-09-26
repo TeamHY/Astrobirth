@@ -1850,7 +1850,7 @@
         <bestiary anim="Walk" transform="0,0,1"/>
         <gibs amount="7" blood="1" bone="0" eye="1" gut="1" large="0"/>
     </entity>
-    <entity anm2path="084.000_Satan.anm2" baseHP="1200" boss="1" bossID="24" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="30" friction="1" id="84" name="#SATAN" numGridCollisionPoints="0" portrait="55" shadowSize="33" shieldStrength="70" stageHP="0" variant="0">
+    <entity anm2path="084.000_Satan.anm2" baseHP="1200" boss="1" bossID="24" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="30" friction="1" id="84" name="#SATAN" numGridCollisionPoints="0" portrait="55" shadowSize="33" shieldStrength="40" stageHP="0" variant="0">
         <bestiary anim="Walk" transform="0,15,.7"/>
         <gibs amount="18" blood="1" bone="1" eye="0" gut="1" large="1"/>
         <preload id="84" variant="10"/>
@@ -1867,7 +1867,7 @@
         <preload id="1000" subtype="1" variant="50"/>
         <preload-snd id="211"/>
     </entity>
-    <entity anm2path="084.010_Satan Stomp.anm2" baseHP="1200" boss="1" bossID="24" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="55" friction="1" id="84" name="Satan Stomp" numGridCollisionPoints="0" portrait="55" shadowSize="50" shieldStrength="70" stageHP="0" variant="10">
+    <entity anm2path="084.010_Satan Stomp.anm2" baseHP="1200" boss="1" bossID="24" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="55" friction="1" id="84" name="Satan Stomp" numGridCollisionPoints="0" portrait="55" shadowSize="50" shieldStrength="40" stageHP="0" variant="10">
         <gibs amount="18" blood="1" bone="1" eye="0" gut="1" large="1"/>
         <preload-snd id="52"/>
     </entity>
@@ -1977,7 +1977,7 @@
         <bestiary anim="Idle" transform="0,0,.8"/>
         <gibs amount="20" blood="1" bone="1" eye="1" gut="1" large="1"/>
     </entity>
-    <entity anm2path="102.000_Isaac (final boss).anm2" baseHP="4000" boss="1" bossID="39" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="25" friction="1" id="102" name="#ISAAC" numGridCollisionPoints="12" portrait="62" shadowSize="15" stageHP="0" shieldStrength="70" variant="0">
+    <entity anm2path="102.000_Isaac (final boss).anm2" baseHP="4000" boss="1" bossID="39" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="25" friction="1" id="102" name="#ISAAC" numGridCollisionPoints="12" portrait="62" shadowSize="15" stageHP="0" shieldStrength="40" variant="0">
         <bestiary anim="3Idle" transform="0,0,1"/>
         <gibs amount="10" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <preload-snd id="143"/>

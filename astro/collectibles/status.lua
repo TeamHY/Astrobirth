@@ -32,6 +32,8 @@ if EID then
                 EID:appendToDescription(descObj, "#↓ {{LuckSmall}}행운 -2")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_HOLY_LIGHT then
                 EID:appendToDescription(descObj, "#↓ {{LuckSmall}}행운 -1")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_MERCURIUS then
+                EID:appendToDescription(descObj, "#↓ 최대 이동 속도가 1.6으로 제한이 됩니다")
             end
 
             return descObj

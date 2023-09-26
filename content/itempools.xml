@@ -10,9 +10,24 @@
 		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Comet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pisces EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Gemini EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+
+    <Pool Name="secret">
+		<Item Name="Cygnus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Libra EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cancer EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Virgo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Comet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pisces EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -32,7 +47,6 @@
 		<Item Name="Aries EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Taurus EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Capricorn EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -57,7 +71,6 @@
 		<Item Name="Aries EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Taurus EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Capricorn EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -81,7 +94,6 @@
 		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -104,7 +116,6 @@
 		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
