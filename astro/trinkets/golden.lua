@@ -6,102 +6,81 @@ local GOLDEN_TRINKET_OFFSET = 32768
 local game = Game()
 
 if EID then
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_UMBILICAL_CORD,
-        {"!!! 획득 시 사라지고 {{Collectible100}}Little Steven을 획득합니다."}
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_MISSING_PAGE,
-        {"!!! 획득 시 사라지고 {{Collectible35}}The Necronomicon을 소환합니다."}
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_RED_PATCH,
-        {"!!! 획득 시 사라지고 {{Collectible157}}Bloody Lust을 소환합니다."}
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_SUPER_MAGNET,
-        {"!!! 획득 시 사라지고 {{Collectible617}}Lodestone을 소환합니다."}
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_BROKEN_ANKH,
-        {"!!! 획득 시 사라지고 {{Collectible161}}Ankh을 소환합니다."}
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_FADED_POLAROID,
-        {"!!! 획득 시 사라지고 {{Collectible327}}The Polaroid과 {{Collectible328}}The Negative를 소환합니다. 하나를 선택하면 나머지는 사라집니다."}
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_LOUSE,
-        {
-            "효과 2배#!!! {{ColorGold}}획득 시 사라지고 {{Collectible234}} 소환합니다.",
-            "효과 3배#!!! {{ColorGold}}획득 시 사라지고 {{Collectible234}} 소환합니다."
-        }
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_BROKEN_SYRINGE,
-        {"!!! 획득 시 사라지고 랜덤한 주사기 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다."}
-    )
+    EID:addDescriptionModifier(
+        "AstroTrinketsGolden",
+        function(descObj)
+            if descObj.ObjVariant == PickupVariant.PICKUP_TRINKET then
+                return true
+            end
+        end,
+        function(descObj)
+            if descObj.ObjSubType == TrinketType.TRINKET_UMBILICAL_CORD then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible100}}Little Steven을 획득합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_MISSING_PAGE then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible35}}The Necronomicon을 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_RED_PATCH then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible157}}Bloody Lust을 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_SUPER_MAGNET then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible617}}Lodestone을 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BROKEN_ANKH then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible161}}Ankh을 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_FADED_POLAROID then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible327}}The Polaroid과 {{Collectible328}}The Negative를 소환합니다. 하나를 선택하면 나머지는 사라집니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_LOUSE then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible234}} 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BROKEN_SYRINGE then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 랜덤한 주사기 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_SILVER_DOLLAR then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BLOODY_CROWN then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_HOLY_CROWN then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_WICKED_CROWN then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_NUMBER_MAGNET then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_PURPLE_HEART then
+                EID:appendToDescription(descObj, "#↑ {{ColorGold}}{{DamageSmall}}공격력 x1.2")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_PINKY_EYE then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}100%로 발동합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_PUSH_PIN then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}100%로 발동합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_SUPER_BALL then
+                EID:appendToDescription(descObj, "#{{ColorGold}}25%의 확률로 적용됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BRAIN_WORM then
+                EID:appendToDescription(descObj, "#{{ColorGold}}눈물을 발사할 때 50%의 확률로 유도 효과가 생깁니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 50 이상일 때 100% 확률 (행운 1당 +1%p)")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BLACK_LIPSTICK then
+                EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{BlackHeart}}블랙하트를 하나 드랍합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_RUSTED_KEY then
+                EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{GoldenKey}}황금열쇠를 하나 드랍합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_SAFETY_CAP then
+                EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{Pill1}}Gulp! 알약을 하나 드랍합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_ACE_SPADES then
+                EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{Card}}카드를 하나 생성합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_MATCH_STICK then
+                EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{Bomb}}기가 폭탄을 하나 드랍합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BLOODY_PENNY then
+                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BURNT_PENNY then
+                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_FLAT_PENNY then
+                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_COUNTERFEIT_PENNY then
+                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_ROTTEN_PENNY then
+                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BLESSED_PENNY then
+                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 88 이상일 때 100% 확률 (행운 1당 +1%p)")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BAT_WING then
+                EID:appendToDescription(descObj, "#{{ColorGold}}비행 능력을 얻습니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_TEMPORARY_TATTOO then
+                EID:appendToDescription(descObj, "#{{ColorGold}}{{ChallengeRoom}} 소지 중일 때 도전방/보스도전방에 항상 입장할 수 있습니다.#{{ColorGold}}맵에 {{ChallengeRoom}}도전방/보스도전방의 위치가 표시됩니다.")
+            end
 
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_SILVER_DOLLAR, {"!!! 획득 시 바로 흡수됩니다."})
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_BLOODY_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_HOLY_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_WICKED_CROWN, {"!!! 획득 시 바로 흡수됩니다."})
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_NUMBER_MAGNET, {"!!! 획득 시 바로 흡수됩니다."})
-
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_PURPLE_HEART, {"↑ {{DamageSmall}}공격력 x1.2"})
-
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_PINKY_EYE, "", 10, 10)
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_PUSH_PIN, "", 10, 10)
-
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_SUPER_BALL,
-        "25%의 확률로 적용됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률"
+            return descObj
+        end
     )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_BRAIN_WORM,
-        "눈물을 발사할 때 25%의 확률로 유도 효과가 생깁니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 50 이상일 때 100% 확률"
-    )
-
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_BLACK_LIPSTICK,
-        "스테이지를 넘어갈 때마다 {{BlackHeart}}블랙하트를 하나 드랍합니다."
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_RUSTED_KEY,
-        "스테이지를 넘어갈 때마다 {{GoldenKey}}황금열쇠를 하나 드랍합니다."
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_SAFETY_CAP,
-        "스테이지를 넘어갈 때마다 {{Pill1}}Gulp! 알약을 하나 드랍합니다."
-    )
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_ACE_SPADES, "스테이지를 넘어갈 때마다 {{Card}}카드를 하나 생성합니다.")
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_MATCH_STICK, "스테이지를 넘어갈 때마다 {{Bomb}}기가 폭탄을 하나 드랍합니다.")
-
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_BLOODY_PENNY,
-        "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률"
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_BURNT_PENNY,
-        "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률"
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_FLAT_PENNY,
-        "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률"
-    )
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_COUNTERFEIT_PENNY,
-        "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률"
-    )
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_ROTTEN_PENNY, "효과가 1번 더 발동합니다.")
-    Astro:AddGoldenTrinketDescription(
-        TrinketType.TRINKET_BLESSED_PENNY,
-        "효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 88 이상일 때 100% 확률"
-    )
-
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_BAT_WING, "비행 능력을 얻습니다.")
-
-    Astro:AddGoldenTrinketDescription(TrinketType.TRINKET_TEMPORARY_TATTOO, "{{ChallengeRoom}} 소지 중일 때 도전방/보스도전방에 항상 입장할 수 있습니다.#{{ColorGold}}맵에 {{ChallengeRoom}}도전방/보스도전방의 위치가 표시됩니다.")
 end
 
 ---@param value integer
@@ -308,12 +287,12 @@ Astro:AddCallback(
             local level = game:GetLevel()
             local idx = level:QueryRoomTypeIndex(RoomType.ROOM_CHALLENGE, false, RNG())
             local room = level:GetRoomByIdx(idx)
-    
+
             if room.Data.Type == RoomType.ROOM_CHALLENGE then
                 room.DisplayFlags = room.DisplayFlags | 1 << 2
                 level:UpdateVisibility()
             end
-            
+
             local currentRoom = Game():GetLevel():GetCurrentRoom()
 
             for _, value in pairs(isc:getDoors()) do
