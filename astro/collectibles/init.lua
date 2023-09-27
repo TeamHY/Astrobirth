@@ -2,8 +2,11 @@ local isc = require("astro.lib.isaacscript-common")
 
 Astro.Collectible = {}
 
-require "astro.collectibles.damocles"
 require "astro.collectibles.status"
+
+require "astro.collectibles.vanillas.aquarius"
+require "astro.collectibles.vanillas.damocles"
+require "astro.collectibles.vanillas.luna"
 
 require "astro.collectibles.customs.aquarius-ex"
 require "astro.collectibles.customs.aries-ex"
@@ -18,7 +21,6 @@ require "astro.collectibles.customs.greed"
 require "astro.collectibles.customs.king-baby"
 require "astro.collectibles.customs.leo-ex"
 require "astro.collectibles.customs.libra-ex"
-require "astro.collectibles.customs.luna"
 require "astro.collectibles.customs.pavo"
 require "astro.collectibles.customs.pisces-ex"
 require "astro.collectibles.customs.prometheus"
@@ -42,7 +44,7 @@ if EID then
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LIL_DELIRIUM then
                 EID:appendToDescription(descObj, "#Delirium의 체력이 15% 감소됩니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_MILK then
-                EID:appendToDescription(descObj, "#방 입장 시 {{Collectible486}}Dull Razor를 1회 발동합니다.")
+                EID:appendToDescription(descObj, "#몬스터가 있는 방 입장 시 30% 확률로 {{Collectible486}}Dull Razor를 1회 발동합니다. {{BossRoom}}보스방에서는 항상 발동합니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_ZODIAC then
                 EID:appendToDescription(
                     descObj,
@@ -96,7 +98,11 @@ Astro:AddCallback(
                 local player = Isaac.GetPlayer(i - 1)
     
                 if player:HasCollectible(CollectibleType.COLLECTIBLE_MILK) then
-                    player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR, false, true, false, false)
+                    local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_MILK)
+
+                    if currentRoom:GetType() == RoomType.ROOM_BOSS or rng:RandomFloat() < 0.3 then
+                        player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR, false, true, false, false)
+                    end
                 end
             end
         end
