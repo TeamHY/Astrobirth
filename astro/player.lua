@@ -1,19 +1,19 @@
 local startItem = {
     Collectible = {
-        CollectibleType.COLLECTIBLE_SAD_ONION,
-        CollectibleType.COLLECTIBLE_SAD_ONION
+        -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        -- CollectibleType.COLLECTIBLE_SAD_ONION
     },
     Trinket = {
-        TrinketType.TRINKET_SWALLOWED_PENNY,
-        TrinketType.TRINKET_SWALLOWED_PENNY
+        -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        -- TrinketType.TRINKET_SWALLOWED_PENNY
     },
     Card = {
         Card.CARD_HOLY,
         -- Card.CARD_FOOL
     },
     Pill = {
-        PillEffect.PILLEFFECT_BAD_GAS,
-        PillEffect.PILLEFFECT_BAD_GAS
+        -- PillEffect.PILLEFFECT_BAD_GAS,
+        -- PillEffect.PILLEFFECT_BAD_GAS
     }
 }
 
