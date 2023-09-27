@@ -1,10 +1,7 @@
 -- TODO: 챔피언이 모두 동일한 확률로 등장하게 됨. 희귀 챔피언이 너무 자주 나타날 수 있음.
 
--- 강제 챔피언 등장 제외 리스트
+-- 챔피언 등장 제외 리스트
 local champBanList = {6, 11}
-
--- 강제 챔피언 제외할 엔티티 타입 리스트
-local champBanEntityList = {13, 18, 222, 297, 61, 407, 212, 293, 62, 74, 75, 76, 81}
 
 ---@param stage LevelStage
 ---@return boolean
@@ -86,13 +83,6 @@ Astro:AddCallback(
             repeat
                 champ = entity:GetDropRNG():RandomInt(26)
             until not CheckChampBan(champ)
-
-            for i = 1, #champBanEntityList do
-                if entity.Type == champBanEntityList[i] then
-                    champ = -1
-                    break
-                end
-            end
 
             if entity:IsVulnerableEnemy() then
                 entity:ToNPC():Morph(entity.Type, entity.Variant, entity.SubType, champ)
