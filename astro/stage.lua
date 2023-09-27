@@ -26,12 +26,10 @@ Astro:AddCallback(
                     playerType == PlayerType.PLAYER_THESOUL_B
              then
             elseif playerType == PlayerType.PLAYER_THEFORGOTTEN then
-                player:AddBoneHearts(-player:GetBoneHearts() + 2)
                 player:AddBrokenHearts(4 - player:GetBrokenHearts())
                 player:GetSubPlayer():AddBrokenHearts(2 - player:GetSubPlayer():GetBrokenHearts())
             elseif playerType == PlayerType.PLAYER_THESOUL then
                 player:AddBrokenHearts(2 - player:GetBrokenHearts())
-                player:GetSubPlayer():AddBoneHearts(-player:GetSubPlayer():GetBoneHearts() + 2)
                 player:GetSubPlayer():AddBrokenHearts(4 - player:GetSubPlayer():GetBrokenHearts())
             else
                 if player:GetEffectiveMaxHearts() > 2 then
