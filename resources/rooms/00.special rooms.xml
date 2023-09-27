@@ -156,7 +156,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="2" y="0">
-			<entity type="4000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="12" y="0">
 			<entity type="5000" variant="0" subtype="0" weight="1.0"/>
