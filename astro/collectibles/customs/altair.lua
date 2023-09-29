@@ -1,12 +1,12 @@
 local isc = require("astro.lib.isaacscript-common")
 
-Astro.Collectible.B = Isaac.GetItemIdByName("B")
+Astro.Collectible.ALTAIR = Isaac.GetItemIdByName("Altair")
 
 if EID then
     EID:addCollectible(
-        Astro.Collectible.B,
-        "b - 알타일(Altair) : 획득 시 로스트 장신구와 라자루스 룬 소환, 다음 게임 시작 시 1스테이지 한정 스폰방(센터) 로스트가 되는 하얀불(33.4.0) 소환",
-        "초 물고기자리"
+        Astro.Collectible.ALTAIR,
+        "획득 시 {{Trinket23}}Missing Poster와 {{Card89}}Soul of Lazarus를 소환합니다.#다음 게임 시작 시 하얀불을 소환합니다.",
+        "알타일"
     )
 end
 
@@ -29,10 +29,12 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        Astro:SpawnTrinket(TrinketType.TRINKET_MISSING_POSTER, player.Position)
-        Astro:SpawnCard(Card.CARD_SOUL_LAZARUS, player.Position)
+        if Astro:IsFirstAdded(Astro.Collectible.ALTAIR) then
+            Astro:SpawnTrinket(TrinketType.TRINKET_MISSING_POSTER, player.Position)
+            Astro:SpawnCard(Card.CARD_SOUL_LAZARUS, player.Position)
+        end
 
         Astro.Data.RunAltair = true
     end,
-    Astro.Collectible.B
+    Astro.Collectible.ALTAIR
 )

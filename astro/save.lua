@@ -15,6 +15,10 @@ Astro:AddPriorityCallback(
             local data = Json.decode(raw)
 
             Astro.Data = data or {}
+
+            if Astro.Data.Save == nil or not isContinued then
+                Astro.Data.Save = {}
+            end
             
             hiddenItemManager:LoadData(Astro.Data.HiddenItemData)
         end

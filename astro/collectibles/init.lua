@@ -6,8 +6,11 @@ require "astro.collectibles.status"
 
 require "astro.collectibles.vanillas.aquarius"
 require "astro.collectibles.vanillas.damocles"
+require "astro.collectibles.vanillas.king-baby"
 require "astro.collectibles.vanillas.luna"
 
+require "astro.collectibles.customs.altair"
+require "astro.collectibles.customs.angry-onion"
 require "astro.collectibles.customs.aquarius-ex"
 require "astro.collectibles.customs.aries-ex"
 require "astro.collectibles.customs.cancer-ex"
@@ -15,10 +18,11 @@ require "astro.collectibles.customs.capricorn-ex"
 require "astro.collectibles.customs.casiopea"
 require "astro.collectibles.customs.comet"
 require "astro.collectibles.customs.corvus"
+require "astro.collectibles.customs.cursed-heart"
 require "astro.collectibles.customs.cygnus"
+require "astro.collectibles.customs.deaths-eyes"
 require "astro.collectibles.customs.gemini-ex"
 require "astro.collectibles.customs.greed"
-require "astro.collectibles.customs.king-baby"
 require "astro.collectibles.customs.leo-ex"
 require "astro.collectibles.customs.libra-ex"
 require "astro.collectibles.customs.pavo"
@@ -30,6 +34,7 @@ require "astro.collectibles.customs.scorpio-ex"
 require "astro.collectibles.customs.silver-bullet"
 require "astro.collectibles.customs.super-magneto"
 require "astro.collectibles.customs.taurus-ex"
+require "astro.collectibles.customs.vega"
 require "astro.collectibles.customs.virgo-ex"
 
 if EID then
@@ -141,7 +146,9 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        Astro:SpawnTrinket(Astro.Trinket.BLOODY_BANDAGE, player.Position)
+        if Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_VOODOO_HEAD) then
+            Astro:SpawnTrinket(Astro.Trinket.BLOODY_BANDAGE, player.Position)
+        end
     end,
     CollectibleType.COLLECTIBLE_VOODOO_HEAD
 )

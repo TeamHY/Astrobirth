@@ -3,7 +3,11 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.VIRGO_EX = Isaac.GetItemIdByName("Virgo EX")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.VIRGO_EX, "획득 시 {{Trinket152}}Telescope Lens, {{Pill1}}Gulp!가 소환됩니다.#다음 게임 시작 시 {{Trinket152}}Telescope Lens 또는 {{Collectible194}}Magic 8 Ball 하나 소환합니다.", "초 처녀자리")
+    EID:addCollectible(
+        Astro.Collectible.VIRGO_EX,
+        "획득 시 {{Trinket152}}Telescope Lens, {{Pill1}}Gulp!가 소환됩니다.#다음 게임 시작 시 {{Trinket152}}Telescope Lens 또는 {{Collectible194}}Magic 8 Ball 하나 소환합니다.",
+        "초 처녀자리"
+    )
 end
 
 Astro:AddCallback(
@@ -30,8 +34,10 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        Astro:SpawnPill(PillEffect.PILLEFFECT_GULP, player.Position)
-        Astro:SpawnTrinket(TrinketType.TRINKET_TELESCOPE_LENS, player.Position)
+        if Astro:IsFirstAdded(Astro.Collectible.VIRGO_EX) then
+            Astro:SpawnPill(PillEffect.PILLEFFECT_GULP, player.Position)
+            Astro:SpawnTrinket(TrinketType.TRINKET_TELESCOPE_LENS, player.Position)
+        end
 
         Astro.Data.RunVirgo = true
     end,

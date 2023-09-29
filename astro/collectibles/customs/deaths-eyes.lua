@@ -1,14 +1,12 @@
--- TODO: 갓헤드를 먼저 먹고 사신의 눈을 먹으면 어떻게 되는가?
-
 local isc = require("astro.lib.isaacscript-common")
 
-Astro.Collectible.A = Isaac.GetItemIdByName("A")
+Astro.Collectible.DEATHS_EYES = Isaac.GetItemIdByName("Death's Eyes")
 
 if EID then
     EID:addCollectible(
-        Astro.Collectible.A,
-        "a - 사신의 눈(Death's Eyes) : 공격 시 50%(고정) 확률로 갓헤드 적용(유도까지 포함), 이번 게임에서 갓헤드 배열 제거",
-        "백금 탄환"
+        Astro.Collectible.DEATHS_EYES,
+        "50%의 확률로 눈물에 후광이 생기며 후광에 닿은 적은 프레임당 2의 피해를 입습니다.#!!! 이번 게임에서 {{Collectible331}}Godhead가 등장하지 않습니다.",
+        "사신의 눈"
     )
 end
 
@@ -17,9 +15,9 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_SACRED_HEART)
+        Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_GODHEAD)
     end,
-    Astro.Collectible.E
+    Astro.Collectible.DEATHS_EYES
 )
 
 Astro:AddCallback(
@@ -30,16 +28,20 @@ Astro:AddCallback(
 
         if player ~= nil then
             if
-                player:HasTrinket(Astro.Trinket.EYE_OF_GOD) and
+                player:HasCollectible(Astro.Collectible.DEATHS_EYES) and
                     not player:HasCollectible(CollectibleType.COLLECTIBLE_GODHEAD)
              then
-                local rng = player:GetTrinketRNG(Astro.Trinket.EYE_OF_GOD)
+                local rng = player:GetCollectibleRNG(Astro.Collectible.DEATHS_EYES)
 
                 -- 눈물에 후광을 직접 적용하면 이펙트 오류가 발생한다. 따라서 리페어 모드와 동일한 아래 코드를 사용한다.
                 player.TearFlags = player.TearFlags & ~TearFlags.TEAR_GLOW
 
                 if rng:RandomFloat() < 0.5 then
-                    player.TearFlags = player.TearFlags | TearFlags.TEAR_GLOW | TearFlags.TEAR_HOMING
+                    player.TearFlags = player.TearFlags | TearFlags.TEAR_GLOW
+                end
+
+                if tear.TearFlags & TearFlags.TEAR_GLOW == TearFlags.TEAR_GLOW then
+                    tear.TearFlags = tear.TearFlags | TearFlags.TEAR_HOMING
                 end
             end
         end
