@@ -1745,7 +1745,7 @@
         <preload-snd id="205"/>
     	<devolve id="853.0.0" weight="1" />
 	</entity>
-    <entity anm2path="078.000_Moms Heart.anm2" baseHP="120" boss="1" bossID="8" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="35" friction="1" id="78" name="#MOMS_HEART" numGridCollisionPoints="0" portrait="47" shadowSize="33" stageHP="450" variant="0">
+    <entity anm2path="078.000_Moms Heart.anm2" baseHP="120" boss="1" bossID="8" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="35" friction="1" id="78" name="#MOMS_HEART" numGridCollisionPoints="0" portrait="47" shadowSize="33" stageHP="450" variant="0">
         <bestiary anim="Heartbeat1" transform="0,12,.8"/>
         <gibs amount="20" blood="1" bone="0" eye="0" gut="0" large="1"/>
         <preload-snd id="87"/>
@@ -1762,7 +1762,7 @@
         <preload id="1000" subtype="1" variant="50"/>
         <preload-snd id="5"/>
     </entity>
-    <entity anm2path="078.001_It Lives.anm2" baseHP="120" boss="1" bossID="25" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="35" friction="1" id="78" name="#IT_LIVES" numGridCollisionPoints="0" portrait="48" shadowSize="33" stageHP="450" variant="1">
+    <entity anm2path="078.001_It Lives.anm2" baseHP="120" boss="1" bossID="25" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="35" friction="1" id="78" name="#IT_LIVES" numGridCollisionPoints="0" portrait="48" shadowSize="33" stageHP="450" variant="1">
         <bestiary anim="Heartbeat1" transform="0,12,.8"/>
         <gibs amount="20" blood="1" bone="1" eye="0" gut="1" large="1"/>
         <preload-snd id="87"/>
@@ -3897,7 +3897,7 @@
         <preload-snd id="44"/>
     	<devolve id="38.0.0" weight="1" />
 	</entity>
-    <entity anm2path="060.002_Holy Eye.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" id="60" name="#HOLY_EYE" numGridCollisionPoints="12" portrait="332" reroll="true" shadowSize="14" stageHP="5" variant="2">
+    <entity anm2path="060.002_Holy Eye.anm2" baseHP="20" boss="0" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" id="60" name="#HOLY_EYE" numGridCollisionPoints="12" portrait="332" reroll="true" shadowSize="14" stageHP="5" variant="2">
         <bestiary anim="Idle" transform="0,-8,1"/>
         <gibs amount="6" blood="1" bone="0" eye="0" gut="0" large="0"/>
     	<devolve id="60.0.0" weight="1" />

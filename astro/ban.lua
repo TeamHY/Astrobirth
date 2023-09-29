@@ -32,6 +32,7 @@ function Ban:Init()
         [PlayerType.PLAYER_ISAAC] = function()
         end,
         [PlayerType.PLAYER_MAGDALENE] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
         end,
         [PlayerType.PLAYER_CAIN] = function()
         end,

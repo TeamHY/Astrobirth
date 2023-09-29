@@ -778,6 +778,7 @@
 		<Item Id="199" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="203" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="205" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="212" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="227" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="223" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="241" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -801,7 +802,9 @@
 		<Item Id="376" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="380" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="390" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="392" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="416" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="417" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="419" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="422" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="424" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
@@ -1205,6 +1208,7 @@
 		<Item Id="619" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="621" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="622" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="628" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="633" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="643" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="651" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1269,6 +1273,7 @@
 		<Item Id="619" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="621" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="622" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="628" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="633" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="636" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="651" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1315,7 +1320,7 @@
 		<!--Book of Secrets-->
 		<Item Id="287" Weight="0.2" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<!--Satanic Bible-->
-		<Item Id="292" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
+		<Item Id="292" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<!--Book of the Dead-->
 		<Item Id="545" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<!--Book of Virtues-->
@@ -4314,6 +4319,7 @@
 		<Item Id="619" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="621" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="622" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="628" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="633" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="643" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="651" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -4369,6 +4375,7 @@
 		<Item Id="727" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="planetarium">
+		<Item Id="392" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="588" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="589" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="590" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>

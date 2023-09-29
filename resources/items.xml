@@ -294,7 +294,7 @@
 	<active achievement="137" description="#RED_CANDLE_DESCRIPTION" gfx="collectibles_289_redcandle.png" id="289" maxcharges="75" name="#RED_CANDLE_NAME" chargetype="timed" />
 	<active description="#THE_JAR_DESCRIPTION" gfx="collectibles_290_thejar.png" id="290" maxcharges="0" name="#THE_JAR_NAME" shopprice="10" />
 	<active description="#FLUSH_DESCRIPTION" gfx="collectibles_291_flush.png" id="291" maxcharges="4" name="#FLUSH_NAME" />
-	<active achievement="126" description="#SATANIC_BIBLE_DESCRIPTION" devilprice="2" gfx="collectibles_292_satanicbible.png" id="292" maxcharges="6" name="#SATANIC_BIBLE_NAME" />
+	<active achievement="126" description="#SATANIC_BIBLE_DESCRIPTION" devilprice="2" gfx="collectibles_292_satanicbible.png" id="292" maxcharges="12" name="#SATANIC_BIBLE_NAME" />
 	<active achievement="143" description="#HEAD_OF_KRAMPUS_DESCRIPTION" gfx="collectibles_293_headofkrampus.png" id="293" maxcharges="3" name="#HEAD_OF_KRAMPUS_NAME" />
 	<active achievement="145" description="#BUTTER_BEAN_DESCRIPTION" gfx="collectibles_294_butterbean.png" id="294" maxcharges="90" name="#BUTTER_BEAN_NAME" chargetype="timed" />
 	<active description="#MAGIC_FINGERS_DESCRIPTION" gfx="collectibles_295_magicfingers.png" id="295" maxcharges="0" name="#MAGIC_FINGERS_NAME" shopprice="10" />
@@ -396,7 +396,7 @@
 	<familiar achievement="218" description="#RUNE_BAG_DESCRIPTION" gfx="Collectibles_389_RuneBag.png" id="389" name="#RUNE_BAG_NAME" />
 	<familiar description="#SERAPHIM_DESCRIPTION" gfx="Collectibles_390_Seraphim.png" id="390" name="#SERAPHIM_NAME" />
 	<passive achievement="182" description="#BETRAYAL_DESCRIPTION" gfx="Collectibles_391_Betrayal.png" id="391" name="#BETRAYAL_NAME" />
-	<passive achievement="202" description="#ZODIAC_DESCRIPTION" gfx="Collectibles_392_Zodiac.png" id="392" name="#ZODIAC_NAME" />
+	<passive achievement="202" description="#ZODIAC_DESCRIPTION" gfx="Collectibles_392_Zodiac.png" shopprice="20" id="392" name="#ZODIAC_NAME" />
 	<passive achievement="220" description="#SERPENTS_KISS_DESCRIPTION" gfx="Collectibles_393_SerpentsKiss.png" id="393" name="#SERPENTS_KISS_NAME" />
 	<passive description="#MARKED_DESCRIPTION" gfx="Collectibles_394_Marked.png" id="394" name="#MARKED_NAME" cache="firedelay range" />
 	<passive description="#TECH_X_DESCRIPTION" gfx="Collectibles_395_TechX.png" id="395" devilprice="2" name="#TECH_X_NAME" cache="all" />
@@ -530,7 +530,7 @@
 	<passive achievement="354" name="#BROKEN_MODEM_NAME" description="#BROKEN_MODEM_DESCRIPTION" id="514" gfx="Collectibles_514_BrokenModem.png" />
 	<active achievement="350" description="#MYSTERY_GIFT_DESCRIPTION" id="515" gfx="Collectibles_515_MysteryGift.png" name="#MYSTERY_GIFT_NAME" />
 	<active achievement="351" cache="familiars" name="#SPRINKLER_NAME" gfx="Collectibles_516_Sprinkler.png" description="#SPRINKLER_DESCRIPTION" id="516" maxcharges="4" />
-	<passive achievement="356" name="#FAST_BOMBS_NAME" gfx="Collectibles_517_FastBombs.png" description="#FAST_BOMBS_DESCRIPTION" id="517" bombs="7" />
+	<passive achievement="356" name="#FAST_BOMBS_NAME" gfx="Collectibles_517_FastBombs.png" shopprice="5" description="#FAST_BOMBS_DESCRIPTION" id="517" bombs="7" />
 	<familiar achievement="355" description="#BUDDY_IN_A_BOX_DESCRIPTION" gfx="Collectibles_518_BuddyBox.png" id="518" name="#BUDDY_IN_A_BOX_NAME" />
 	<familiar achievement="357" description="#LIL_DELIRIUM_DESCRIPTION" gfx="Collectibles_519_LilDelirium.png" id="519" shopprice="5" name="#LIL_DELIRIUM_NAME" />
 	
@@ -653,7 +653,7 @@
 	<active		id="625"	achievement="547" gfx="Collectibles_625_MegaMush.png" name="#MEGA_MUSH_NAME" description="#MEGA_MUSH_DESCRIPTION" maxcharges="50" cooldown="900" persistent="true" cache="all" />
 	<familiar	id="626"	gfx="Collectibles_626_KnifePiece1.png" name="#KNIFE_PIECE_1_NAME" description="#KNIFE_PIECE_1_DESCRIPTION" />
 	<familiar	id="627"	gfx="Collectibles_627_KnifePiece2.png" name="#KNIFE_PIECE_2_NAME" description="#KNIFE_PIECE_2_DESCRIPTION" />
-	<active		id="628"	achievement="636" gfx="Collectibles_628_DeathCertificate.png" name="#DEATH_CERTIFICATE_NAME" description="#DEATH_CERTIFICATE_DESCRIPTION" maxcharges="0" />
+	<active		id="628"	achievement="636" gfx="Collectibles_628_DeathCertificate.png" name="#DEATH_CERTIFICATE_NAME" description="#DEATH_CERTIFICATE_DESCRIPTION" initcharge="0" maxcharges="12" />
 	<familiar	id="629"	gfx="Collectibles_629_BotFly.png" name="#BOT_FLY_NAME" description="#BOT_FLY_DESCRIPTION" />
 	
 	<active		id="631"	achievement="440" gfx="Collectibles_631_MeatCleaver.png" name="#MEAT_CLEAVER_NAME" description="#MEAT_CLEAVER_DESCRIPTION" maxcharges="2" />
