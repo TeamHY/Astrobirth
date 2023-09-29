@@ -1,10 +1,10 @@
 local isc = require("astro.lib.isaacscript-common")
 
-Astro.Collectible.Greed = Isaac.GetItemIdByName("Greed")
+Astro.Collectible.GREED = Isaac.GetItemIdByName("Greed")
 
 if EID then
     EID:addCollectible(
-        Astro.Collectible.Greed,
+        Astro.Collectible.GREED,
         "!!! 획득 시 사라지고 에러방으로 이동합니다.#!!! {{Collectible223}}Pyromaniac과 {{Collectible375}}Host Hat을 제거합니다.",
         "탐욕"
     )
@@ -17,12 +17,12 @@ Astro:AddCallbackCustom(
     function(_, player, collectibleType)
         Isaac.ExecuteCommand("goto s.error.0")
 
-        player:RemoveCollectible(Astro.Collectible.Greed)
+        player:RemoveCollectible(Astro.Collectible.GREED)
 
         Astro:RemoveAllCollectible(player, CollectibleType.COLLECTIBLE_PYROMANIAC)
         Astro:RemoveAllCollectible(player, CollectibleType.COLLECTIBLE_HOST_HAT)
     end,
-    Astro.Collectible.Greed
+    Astro.Collectible.GREED
 )
 
 Astro:AddCallback(

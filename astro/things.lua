@@ -389,7 +389,7 @@ Astro:AddCallback(
 				Isaac.Spawn(
 					EntityType.ENTITY_PICKUP,
 					PickupVariant.PICKUP_COLLECTIBLE,
-					Astro.Collectible.Greed,
+					Astro.Collectible.GREED,
 					currentRoom:GetTopLeftPos() + Vector(20, 20),
 					Vector.Zero,
 					nil
