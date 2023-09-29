@@ -1,9 +1,13 @@
 local isc = require("astro.lib.isaacscript-common")
 
-Astro.Collectible.E = Isaac.GetItemIdByName("E")
+Astro.Collectible.CURSED_HEART = Isaac.GetItemIdByName("Cursed Heart")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.E, "e - 저주받은 심장(Cursed Heart) : 배수 1.15배 + 유도 효과 적용 이번 게임에서 불심 배열 제거", "백금 탄환")
+    EID:addCollectible(
+        Astro.Collectible.CURSED_HEART,
+        "↑ {{DamageSmall}}공격력 배율 x1.25#공격에 유도 효과가 생깁니다.#!!! 이번 게임에서 {{Collectible182}}Sacred Heart가 등장하지 않습니다.",
+        "저주받은 심장"
+    )
 end
 
 Astro:AddCallbackCustom(
@@ -13,7 +17,7 @@ Astro:AddCallbackCustom(
     function(_, player, collectibleType)
         Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_SACRED_HEART)
     end,
-    Astro.Collectible.E
+    Astro.Collectible.CURSED_HEART
 )
 
 Astro:AddCallback(
@@ -21,7 +25,7 @@ Astro:AddCallback(
     ---@param player EntityPlayer
     ---@param cacheFlag CacheFlag
     function(_, player, cacheFlag)
-        if player:HasCollectible(Astro.Collectible.E) then
+        if player:HasCollectible(Astro.Collectible.CURSED_HEART) then
             if cacheFlag == CacheFlag.CACHE_DAMAGE then
                 player.Damage = player.Damage * 1.15
             elseif cacheFlag == CacheFlag.CACHE_TEARFLAG then

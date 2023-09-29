@@ -23,11 +23,11 @@
 	<passive gfx="Altair.png" quality="3" devilprice="2" name="Altair" />
 	<passive gfx="Deneb.png" quality="3" devilprice="2" name="Deneb" />
 	<passive gfx="Vega.png" quality="4" devilprice="2" name="Vega" />
-	<passive gfx="Cursed Heart.png" quality="4" devilprice="2" name="Cursed Heart" />
+	<passive cache="damage tearflag tearcolor" gfx="Cursed Heart.png" quality="4" devilprice="2" name="Cursed Heart" />
 	<passive gfx="Super Magneto.png" quality="4" devilprice="2" shopprice="21" name="Super Magneto" />
 	<passive gfx="Solar System.png" quality="4" devilprice="2" name="Solar System" />
 	<passive gfx="Ptolemaeus.png" quality="4" devilprice="2" name="Ptolemaeus" />
-	<passive gfx="Angry Onion.png" quality="3" devilprice="2" name="Angry Onion" />
+	<passive cache="firedelay" gfx="Angry Onion.png" quality="3" devilprice="2" name="Angry Onion" />
 	<active gfx="Deep Of Abyss.png" quality="3" devilprice="2" maxcharges="4" name="Deep Of Abyss" />
 
 

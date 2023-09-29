@@ -1,14 +1,11 @@
 local isc = require("astro.lib.isaacscript-common")
 
-Astro.Trinket.J = Isaac.GetTrinketIdByName("J")
-
--- 황금 효과 : 기본 확률이 5% -> 10% 증가
--- 럭1당 1%p 증가
+Astro.Trinket.ELECTRONIC_PENNY = Isaac.GetTrinketIdByName("Electronic Penny")
 
 if EID then
-    EID:addTrinket(Astro.Trinket.J, "일레트로닉 페니 : 동전 획득 시 (종류 상관 x) 5% 확률로 마이크로퀵 소환", "피의 붕대")
+    EID:addTrinket(Astro.Trinket.ELECTRONIC_PENNY, "동전 획득 시 5% 확률로 {{Battery}}소형 배터리를 소환합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 95 이상일 때 100% 확률 (행운 1당 +1%p)", "일레트로닉 페니")
 
-    Astro:AddGoldenTrinketDescription(Astro.Trinket.J, "맵에 {{CursedRoom}}저주방의 위치가 표시됩니다.")
+    Astro:AddGoldenTrinketDescription(Astro.Trinket.ELECTRONIC_PENNY, "", 5)
 end
 
 Astro:AddCallbackCustom(
@@ -19,10 +16,10 @@ Astro:AddCallbackCustom(
         if pickup.Variant == PickupVariant.PICKUP_COIN then
             local currentRoom = Game():GetLevel():GetCurrentRoom()
 
-            if player:HasTrinket(Astro.Trinket.J) then
-                local rng = player:GetTrinketRNG(Astro.Trinket.J)
+            if player:HasTrinket(Astro.Trinket.ELECTRONIC_PENNY) then
+                local rng = player:GetTrinketRNG(Astro.Trinket.ELECTRONIC_PENNY)
 
-                if rng:RandomFloat() < 0.05 * player:GetTrinketMultiplier(Astro.Trinket.J) + player.Luck / 100 then
+                if rng:RandomFloat() < 0.05 * player:GetTrinketMultiplier(Astro.Trinket.ELECTRONIC_PENNY) + player.Luck / 100 then
                     Isaac.Spawn(
                         EntityType.ENTITY_PICKUP,
                         PickupVariant.PICKUP_LIL_BATTERY,
