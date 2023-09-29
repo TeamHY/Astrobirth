@@ -25,11 +25,11 @@
 	<passive gfx="Vega.png" quality="4" devilprice="2" name="Vega" />
 	<passive cache="damage tearflag tearcolor" gfx="Cursed Heart.png" quality="4" devilprice="2" name="Cursed Heart" />
 	<passive gfx="Super Magneto.png" quality="4" devilprice="2" shopprice="21" name="Super Magneto" />
-	<passive gfx="Solar System.png" quality="4" devilprice="2" name="Solar System" />
+	<passive gfx="Solar System.png" quality="4" devilprice="1" name="Solar System" />
 	<passive gfx="Ptolemaeus.png" quality="4" devilprice="2" shopprice="40" name="Ptolemaeus" />
 	<passive cache="firedelay" gfx="Angry Onion.png" quality="3" devilprice="2" name="Angry Onion" />
-	<active gfx="Deep Of Abyss.png" quality="3" devilprice="2" maxcharges="4" name="Deep Of Abyss" />
-	<passive gfx="Greed.png" quality="3" devilprice="2" name="Go Home!" />
+	<active gfx="Deep Of Abyss.png" quality="3" devilprice="1" maxcharges="4" name="Oblivion" />
+	<passive gfx="collectibles_668_dadsnote.png" quality="3" devilprice="2" name="Go Home!" />
 
 
 

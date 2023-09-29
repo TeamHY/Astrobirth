@@ -1,10 +1,10 @@
-Astro.Collectible.DEEP_OF_ABYSS = Isaac.GetItemIdByName("Deep Of Abyss")
+Astro.Collectible.Oblivion = Isaac.GetItemIdByName("Oblivion")
 
 if EID then
     EID:addCollectible(
-        Astro.Collectible.DEEP_OF_ABYSS,
+        Astro.Collectible.Oblivion,
         "사용 시 {{Card41}}Black Rune 효과를 발동합니다.",
-        "깊은 심연"
+        "망각"
     )
 end
 
@@ -20,5 +20,5 @@ Astro:AddCallback(
         playerWhoUsedItem:UseCard(Card.RUNE_BLACK, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)
         return true
     end,
-    Astro.Collectible.DEEP_OF_ABYSS
+    Astro.Collectible.Oblivion
 )

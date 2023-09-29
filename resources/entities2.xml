@@ -260,7 +260,7 @@
     <entity anm2path="003.269_HeadlessBaby.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Headless Baby" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="55">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="003.056_Leech.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1.5" collisionInterval="14" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Leech" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="56">
+    <entity anm2path="003.056_Leech.anm2" baseHP="0" boss="0" champion="0" collisionDamage="3" collisionInterval="14" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Leech" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="56">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="003.271_mysterysack.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Mystery Sack" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="57">
@@ -284,7 +284,7 @@
     <entity anm2path="003.276_Isaacs Heart.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="10" friction="1" id="3" name="Isaac&apos;s Heart" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="62">
         <gibs amount="4" blood="1" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="003.277_lilhaunt.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionInterval="14" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Lil&apos; Haunt" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="63">
+    <entity anm2path="003.277_lilhaunt.anm2" baseHP="0" boss="0" champion="0" collisionDamage="4" collisionInterval="14" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Lil&apos; Haunt" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="63">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="003.278_darkbum.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Dark Bum" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="64">

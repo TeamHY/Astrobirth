@@ -37,7 +37,8 @@ local planetariumList = {
     Astro.Collectible.GEMINI_EX,
     Astro.Collectible.PTOLEMAEUS,
     Astro.Collectible.ALTAIR,
-    Astro.Collectible.VEGA
+    Astro.Collectible.VEGA,
+    Astro.Collectible.SOLAR_SYSTEM
 }
 
 if EID then

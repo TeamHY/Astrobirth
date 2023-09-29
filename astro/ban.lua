@@ -28,6 +28,7 @@ function Ban:Init()
             self.BanTrinket(TrinketType.TRINKET_FOUND_SOUL)
             self.BanTrinket(TrinketType.TRINKET_MYOSOTIS)
             self.BanTrinket(TrinketType.TRINKET_HOLLOW_HEART)
+            self.BanTrinket(TrinketType.TRINKET_GOLDEN_HORSE_SHOE)
         end,
         [PlayerType.PLAYER_ISAAC] = function()
         end,
@@ -137,6 +138,8 @@ function Ban:Init()
             self.BanTrinket(TrinketType.TRINKET_MISSING_POSTER)
         end,
         [PlayerType.PLAYER_APOLLYON_B] = function()
+            self.BanCollectible(CollectibleType.COLLECTIBLE_HIVE_MIND)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_BFFS)
         end,
         [PlayerType.PLAYER_THEFORGOTTEN_B] = function()
             self.BanCollectible(CollectibleType.COLLECTIBLE_ANKH)
