@@ -102,12 +102,21 @@ function Astro:GetRandomCollectibles(collectibles, rng, count, ignoreCollectible
     return result
 end
 
+---해당 아이템을 모두 제거합니다. 제거한 아이템의 수를 반환합니다.
 ---@param player EntityPlayer
 ---@param type CollectibleType
+---@return integer
 function Astro:RemoveAllCollectible(player, type)
-    for _ = 1, player:GetCollectibleNum(type) do
-        player:RemoveCollectible(type)
+    local count = 0
+
+    if player:HasCollectible(type) then
+        for _ = 1, player:GetCollectibleNum(type) do
+            player:RemoveCollectible(type)
+            count = count + 1
+        end
     end
+
+    return count
 end
 
 ---@param player EntityPlayer
@@ -221,4 +230,13 @@ function Astro:IsFirstAdded(collectibleType)
     end
 
     return count == 1
+end
+
+--- Retribution Mod
+function Astro:AddTears(baseFiredelay, tearsUp)
+    local currentTears = 30 / (baseFiredelay + 1)
+    local newTears = currentTears + tearsUp
+    local newFiredelay = math.max((30 / newTears) - 1, -0.75)
+
+    return newFiredelay
 end
