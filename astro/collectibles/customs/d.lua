@@ -29,9 +29,11 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_SCHOOLBAG, player.Position + Vector(40 * -2, -40), Astro.Collectible.D)
-        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BELLY_BUTTON, player.Position + Vector(40 * -2, -40), Astro.Collectible.D)
-        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_POLYDACTYLY, player.Position + Vector(40 * -2, -40), Astro.Collectible.D)
+        if Astro:IsFirstAdded(Astro.Collectible.D) then
+            Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_SCHOOLBAG, player.Position + Vector(40 * -2, -40), Astro.Collectible.D)
+            Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BELLY_BUTTON, player.Position + Vector(40 * -2, -40), Astro.Collectible.D)
+            Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_POLYDACTYLY, player.Position + Vector(40 * -2, -40), Astro.Collectible.D)
+        end
 
         Astro.Data.RunVega = true
     end,

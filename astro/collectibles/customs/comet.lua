@@ -68,16 +68,9 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        local currentRoom = Game():GetLevel():GetCurrentRoom()
-
-        Isaac.Spawn(
-            EntityType.ENTITY_PICKUP,
-            PickupVariant.PICKUP_TAROTCARD,
-            Card.CARD_CRACKED_KEY,
-            currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
-            Vector.Zero,
-            nil
-        )
+        if Astro:IsFirstAdded(Astro.Collectible.COMET) then
+            Astro:SpawnCard(Card.CARD_CRACKED_KEY, player.Position)
+        end
 
         displayUltraSecretRoom()
 

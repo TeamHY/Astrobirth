@@ -141,7 +141,9 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        Astro:SpawnTrinket(Astro.Trinket.BLOODY_BANDAGE, player.Position)
+        if Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_VOODOO_HEAD) then
+            Astro:SpawnTrinket(Astro.Trinket.BLOODY_BANDAGE, player.Position)
+        end
     end,
     CollectibleType.COLLECTIBLE_VOODOO_HEAD
 )

@@ -31,24 +31,26 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        local level = Game():GetLevel()
-        local currentRoom = level:GetCurrentRoom()
-        local rng = player:GetCollectibleRNG(Astro.Collectible.GEMINI_EX)
-        local inventory = Astro:getPlayerInventory(player, false)
+        if Astro:IsFirstAdded(Astro.Collectible.GEMINI_EX) then
+            local level = Game():GetLevel()
+            local currentRoom = level:GetCurrentRoom()
+            local rng = player:GetCollectibleRNG(Astro.Collectible.GEMINI_EX)
+            local inventory = Astro:getPlayerInventory(player, false)
 
-        local listToSpawn = Astro:GetRandomCollectibles(inventory, rng, 5, Astro.Collectible.GEMINI_EX, true)
+            local listToSpawn = Astro:GetRandomCollectibles(inventory, rng, 5, Astro.Collectible.GEMINI_EX, true)
 
-        for key, value in ipairs(listToSpawn) do
-            Isaac.Spawn(
-                    EntityType.ENTITY_PICKUP,
-                    PickupVariant.PICKUP_COLLECTIBLE,
-                    value,
-                    currentRoom:FindFreePickupSpawnPosition(
-                        player.Position + Vector(GRID_SIZE * (-3 + key), -GRID_SIZE)
-                    ),
-                    Vector.Zero,
-                    nil
-                ):ToPickup().OptionsPickupIndex = Astro.Collectible.GEMINI_EX
+            for key, value in ipairs(listToSpawn) do
+                Isaac.Spawn(
+                        EntityType.ENTITY_PICKUP,
+                        PickupVariant.PICKUP_COLLECTIBLE,
+                        value,
+                        currentRoom:FindFreePickupSpawnPosition(
+                            player.Position + Vector(GRID_SIZE * (-3 + key), -GRID_SIZE)
+                        ),
+                        Vector.Zero,
+                        nil
+                    ):ToPickup().OptionsPickupIndex = Astro.Collectible.GEMINI_EX
+            end
         end
 
         Astro.Data.RunGeminiEX = true

@@ -29,8 +29,10 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        Astro:SpawnTrinket(TrinketType.TRINKET_MISSING_POSTER, player.Position)
-        Astro:SpawnCard(Card.CARD_SOUL_LAZARUS, player.Position)
+        if Astro:IsFirstAdded(Astro.Collectible.B) then
+            Astro:SpawnTrinket(TrinketType.TRINKET_MISSING_POSTER, player.Position)
+            Astro:SpawnCard(Card.CARD_SOUL_LAZARUS, player.Position)
+        end
 
         Astro.Data.RunAltair = true
     end,

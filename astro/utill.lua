@@ -195,3 +195,30 @@ function Astro:SpawnTrinket(trinketType, position)
         nil
     ):ToPickup()
 end
+
+---아이템 최초 획득 시를 체크한다.
+---TODO: 추후에 여러번 획득해도 동작하도록 변경할 예정이기 때문에 카운트를 저장한다.
+---@param collectibleType CollectibleType
+---@return boolean
+function Astro:IsFirstAdded(collectibleType)
+    if Astro.Data.Save.CollectibleCount == nil then
+        Astro.Data.Save.CollectibleCount = {}
+    end
+
+    local count = 0
+
+    for index, value in ipairs(Astro.Data.Save.CollectibleCount) do
+        if value.id == collectibleType then
+            count = value.count + 1
+            Astro.Data.Save.CollectibleCount[index].count = count
+            break
+        end
+    end
+
+    if count == 0 then
+        table.insert(Astro.Data.Save.CollectibleCount, {id = collectibleType, count = 1})
+        count = 1
+    end
+
+    return count == 1
+end

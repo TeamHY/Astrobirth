@@ -1,5 +1,3 @@
--- TODO: 갓헤드를 먼저 먹고 사신의 눈을 먹으면 어떻게 되는가?
-
 local isc = require("astro.lib.isaacscript-common")
 
 Astro.Collectible.A = Isaac.GetItemIdByName("A")
@@ -17,9 +15,9 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_SACRED_HEART)
+        Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_GODHEAD)
     end,
-    Astro.Collectible.E
+    Astro.Collectible.A
 )
 
 Astro:AddCallback(
