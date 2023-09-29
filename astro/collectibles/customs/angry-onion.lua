@@ -9,7 +9,6 @@ Astro:AddCallback(
     ---@param player EntityPlayer
     ---@param cacheFlag CacheFlag
     function(_, player, cacheFlag)
-        print("asdsd")
         if player:HasCollectible(Astro.Collectible.ANGRY_ONION) then
             if cacheFlag == CacheFlag.CACHE_FIREDELAY then
                 player.MaxFireDelay = player.MaxFireDelay - 0.7
