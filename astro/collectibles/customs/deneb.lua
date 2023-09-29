@@ -5,7 +5,7 @@ Astro.Collectible.DENEB = Isaac.GetItemIdByName("Deneb")
 if EID then
     EID:addCollectible(
         Astro.Collectible.DENEB,
-        "다음 게임 시작 시 애프터버스 추가 변종 스테이지 (Burning Basement, Flooded Caves, Dank Depths, Scarred Womb)가 등장하지 않습니다.",
+        "다음 게임에서 애프터버스 변종 스테이지 (Burning Basement, Flooded Caves, Dank Depths, Scarred Womb) 등장하지 않습니다.",
         "데네브"
     )
 end

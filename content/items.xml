@@ -20,9 +20,9 @@
 	<passive gfx="Pure White Heart.png" quality="3" devilprice="2" shopprice="20" name="Pure White Heart" />
 	<passive cache="damage" gfx="Silver Bullet.png" quality="3" devilprice="2" name="Silver Bullet" />
 	<passive gfx="Death's Eyes.png" quality="4" devilprice="2" name="Death's Eyes" />
-	<passive gfx="Altair.png" quality="3" devilprice="2" name="Altair" />
-	<passive gfx="Deneb.png" quality="3" devilprice="2" name="Deneb" />
-	<passive gfx="Vega.png" quality="4" devilprice="2" name="Vega" />
+	<passive gfx="Altair.png" quality="3" devilprice="2" shopprice="30" name="Altair" />
+	<passive gfx="Deneb.png" quality="3" devilprice="2" shopprice="30" name="Deneb" />
+	<passive gfx="Vega.png" quality="4" devilprice="2" shopprice="30" name="Vega" />
 	<passive cache="damage tearflag tearcolor" gfx="Cursed Heart.png" quality="4" devilprice="2" name="Cursed Heart" />
 	<passive gfx="Super Magneto.png" quality="4" devilprice="2" shopprice="21" name="Super Magneto" />
 	<passive gfx="Solar System.png" quality="4" devilprice="1" name="Solar System" />

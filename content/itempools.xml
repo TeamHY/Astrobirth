@@ -19,21 +19,19 @@
 		<Item Name="Ptolemaeus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
     <Pool Name="secret">
 		<Item Name="Cygnus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Libra EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Cancer EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Scorpio EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Virgo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Comet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pisces EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -42,6 +40,7 @@
 		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Solar System" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -71,6 +70,7 @@
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Cursed Heart" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -100,6 +100,7 @@
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Cursed Heart" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="curse">
@@ -127,6 +128,7 @@
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Cursed Heart" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -155,6 +157,7 @@
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="angel">
@@ -182,6 +185,7 @@
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -206,6 +210,7 @@
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -234,6 +239,7 @@
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
