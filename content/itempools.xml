@@ -17,24 +17,30 @@
 		<Item Name="Pisces EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Gemini EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
     <Pool Name="secret">
 		<Item Name="Cygnus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Libra EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Cancer EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Scorpio EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Capricorn EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Virgo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Comet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pisces EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Gemini EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Super Magneto" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -60,6 +66,10 @@
 		<Item Name="Pure White Heart" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Silver Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cursed Heart" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Death's Eyes" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -85,6 +95,37 @@
 		<Item Name="Pure White Heart" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Silver Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cursed Heart" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Death's Eyes" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+
+	<Pool Name="curse">
+		<Item Name="Cygnus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Libra EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cancer EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Scorpio EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Capricorn EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Virgo EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Leo EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Aries EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Taurus EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Aquarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Casiopea" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Corvus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Comet" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pisces EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Gemini EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Prometheus" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pure White Heart" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Silver Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cursed Heart" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Death's Eyes" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -109,6 +150,10 @@
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Death's Eyes" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="angel">
@@ -132,6 +177,10 @@
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Death's Eyes" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -154,10 +203,13 @@
 		<Item Name="Pisces EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Gemini EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Super Magneto" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Angry Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="craneGame">
@@ -178,10 +230,13 @@
 		<Item Name="Pisces EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Gemini EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Super Magneto" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Angry Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
