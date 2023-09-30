@@ -365,6 +365,7 @@ Astro:AddCallback(
 	function(_)
 		local level = Game():GetLevel()
 		local currentRoom = level:GetCurrentRoom()
+		local currentRoomDesc = level:GetRoomByIdx(level:GetCurrentRoomIndex())
 
 		if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
 			local roomType = currentRoom:GetType()
@@ -385,22 +386,29 @@ Astro:AddCallback(
 			-- 	local beggar = Isaac.Spawn(EntityType.ENTITY_SLOT, 4, 0, currentRoom:GetCenterPos(), Vector.Zero, nil)
 
 			-- 	beggar:Kill()
-			elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 70 then -- Delirium
+			elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 55 then -- Mega Satan
 				Isaac.Spawn(
 					EntityType.ENTITY_PICKUP,
 					PickupVariant.PICKUP_COLLECTIBLE,
 					Astro.Collectible.GREED,
-					currentRoom:GetTopLeftPos() + Vector(20, 20),
+					currentRoom:GetTopLeftPos() - Vector(-80, -80),
+					Vector.Zero,
+					nil
+				)
+			elseif currentRoomDesc.Data.Name == "Mom" and currentRoomDesc.Data.Subtype == 89 then
+				Isaac.Spawn(
+					EntityType.ENTITY_PICKUP,
+					PickupVariant.PICKUP_COLLECTIBLE,
+					Astro.Collectible.GO_HOME,
+					currentRoom:GetCenterPos(),
 					Vector.Zero,
 					nil
 				)
 			end
 		end
 
-		local roomDesc = level:GetRoomByIdx(level:GetCurrentRoomIndex())
-
-		if roomDesc.Data.Name:sub(1, 6) == "[MIST]" then
-			roomDesc.Flags = roomDesc.Flags | RoomDescriptor.FLAG_CURSED_MIST
+		if currentRoomDesc.Data.Name:sub(1, 6) == "[MIST]" then
+			currentRoomDesc.Flags = currentRoomDesc.Flags | RoomDescriptor.FLAG_CURSED_MIST
 		end
 	end
 )
