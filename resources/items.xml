@@ -848,7 +848,7 @@
 	
 	<trinket achievement="249" description="#STORE_KEY_DESCRIPTION" gfx="trinket_083_storekey.png" id="83" name="#STORE_KEY_NAME" />
 	<trinket achievement="204" description="#RIB_OF_GREED_DESCRIPTION" gfx="trinket_084_ribofgreed.png" id="84" name="#RIB_OF_GREED_NAME" />
-	<trinket achievement="239" description="#KARMA_DESCRIPTION" gfx="trinket_085_karma.png" id="85" name="#KARMA_NAME" />
+	<trinket cache="luck" achievement="239" description="#KARMA_DESCRIPTION" gfx="trinket_085_karma.png" id="85" name="#KARMA_NAME" />
 	
 	<trinket description="#LIL_LARVA_DESCRIPTION" gfx="Trinket_086_LilLarva.png" id="86" name="#LIL_LARVA_NAME" />
 	<trinket description="#MOMS_LOCKET_DESCRIPTION" gfx="Trinket_087_MomsLocket.png" id="87" name="#MOMS_LOCKET_NAME" />

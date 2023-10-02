@@ -17,7 +17,10 @@ if EID then
             if descObj.ObjSubType == TrinketType.TRINKET_UMBILICAL_CORD then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible100}}Little Steven을 획득합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_MISSING_PAGE then
-                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible35}}The Necronomicon을 소환합니다.")
+                EID:appendToDescription(
+                    descObj,
+                    "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible35}}The Necronomicon을 소환합니다."
+                )
             elseif descObj.ObjSubType == TrinketType.TRINKET_RED_PATCH then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible157}}Bloody Lust을 소환합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_SUPER_MAGNET then
@@ -25,11 +28,30 @@ if EID then
             elseif descObj.ObjSubType == TrinketType.TRINKET_BROKEN_ANKH then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible161}}Ankh을 소환합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_FADED_POLAROID then
-                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible327}}The Polaroid과 {{Collectible328}}The Negative를 소환합니다. 하나를 선택하면 나머지는 사라집니다.")
+                EID:appendToDescription(
+                    descObj,
+                    "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible327}}The Polaroid과 {{Collectible328}}The Negative를 소환합니다. 하나를 선택하면 나머지는 사라집니다."
+                )
             elseif descObj.ObjSubType == TrinketType.TRINKET_LOUSE then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible234}} 소환합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_BROKEN_SYRINGE then
-                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 랜덤한 주사기 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다.")
+                EID:appendToDescription(
+                    descObj,
+                    "#!!! {{ColorGold}}획득 시 사라지고 랜덤한 주사기 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다."
+                )
+            elseif descObj.ObjSubType == TrinketType.TRINKET_LIBERTY_CAP then
+                EID:appendToDescription(
+                    descObj,
+                    "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible12}}Magic Mushroom 또는 {{Collectible71}}Mini Mush를 소환합니다."
+                )
+            elseif descObj.ObjSubType == TrinketType.TRINKET_RAINBOW_WORM then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible418}}Fruit Cake를 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_USED_DIAPER then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible9}}Skatole을 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_POKER_CHIP then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible199}}Mom's Key를 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_TORN_POCKET then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible416}}Deep Pockets을 소환합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_SILVER_DOLLAR then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_BLOODY_CROWN then
@@ -47,9 +69,15 @@ if EID then
             elseif descObj.ObjSubType == TrinketType.TRINKET_PUSH_PIN then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}100%로 발동합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_SUPER_BALL then
-                EID:appendToDescription(descObj, "#{{ColorGold}}25%의 확률로 적용됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)")
+                EID:appendToDescription(
+                    descObj,
+                    "#{{ColorGold}}25%의 확률로 적용됩니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)"
+                )
             elseif descObj.ObjSubType == TrinketType.TRINKET_BRAIN_WORM then
-                EID:appendToDescription(descObj, "#{{ColorGold}}눈물을 발사할 때 50%의 확률로 유도 효과가 생깁니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 50 이상일 때 100% 확률 (행운 1당 +1%p)")
+                EID:appendToDescription(
+                    descObj,
+                    "#{{ColorGold}}눈물을 발사할 때 50%의 확률로 유도 효과가 생깁니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 50 이상일 때 100% 확률 (행운 1당 +1%p)"
+                )
             elseif descObj.ObjSubType == TrinketType.TRINKET_BLACK_LIPSTICK then
                 EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{BlackHeart}}블랙하트를 하나 드랍합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_RUSTED_KEY then
@@ -60,28 +88,78 @@ if EID then
                 EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{Card}}카드를 하나 생성합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_MATCH_STICK then
                 EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{Bomb}}기가 폭탄을 하나 드랍합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_THE_TWINS then
+                EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{Card92}}Soul of Lilith를 하나 드랍합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_STUD_FINDER then
+                EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{LadderRoom}}사다리방으로 가는 다락문을 생성합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_BLOODY_PENNY then
-                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)")
+                EID:appendToDescription(
+                    descObj,
+                    "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)"
+                )
             elseif descObj.ObjSubType == TrinketType.TRINKET_BURNT_PENNY then
-                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)")
+                EID:appendToDescription(
+                    descObj,
+                    "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)"
+                )
             elseif descObj.ObjSubType == TrinketType.TRINKET_FLAT_PENNY then
-                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)")
+                EID:appendToDescription(
+                    descObj,
+                    "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)"
+                )
             elseif descObj.ObjSubType == TrinketType.TRINKET_COUNTERFEIT_PENNY then
-                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)")
+                EID:appendToDescription(
+                    descObj,
+                    "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 75 이상일 때 100% 확률 (행운 1당 +1%p)"
+                )
             elseif descObj.ObjSubType == TrinketType.TRINKET_ROTTEN_PENNY then
                 EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_BLESSED_PENNY then
-                EID:appendToDescription(descObj, "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 88 이상일 때 100% 확률 (행운 1당 +1%p)")
+                EID:appendToDescription(
+                    descObj,
+                    "#{{ColorGold}}효과가 1번 더 발동합니다. 동전 가치를 반영하지 않습니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 88 이상일 때 100% 확률 (행운 1당 +1%p)"
+                )
             elseif descObj.ObjSubType == TrinketType.TRINKET_BAT_WING then
                 EID:appendToDescription(descObj, "#{{ColorGold}}비행 능력을 얻습니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_TEMPORARY_TATTOO then
-                EID:appendToDescription(descObj, "#{{ColorGold}}{{ChallengeRoom}} 소지 중일 때 도전방/보스도전방에 항상 입장할 수 있습니다.#{{ColorGold}}맵에 {{ChallengeRoom}}도전방/보스도전방의 위치가 표시됩니다.")
+                EID:appendToDescription(
+                    descObj,
+                    "#{{ColorGold}}{{ChallengeRoom}} 소지 중일 때 도전방/보스도전방에 항상 입장할 수 있습니다.#{{ColorGold}}맵에 {{ChallengeRoom}}도전방/보스도전방의 위치가 표시됩니다."
+                )
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BROKEN_PADLOCK then
+                EID:appendToDescription(descObj, "#{{ColorGold}}방 클리어 시 마다 {{Collectible175}}Dad's Key 효과를 발동합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_ADOPTION_PAPERS then
+                EID:appendToDescription(descObj, "#{{ColorGold}}상점에 {{Card92}}Soul of Lilith를 하나 생성합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_SIGIL_OF_BAPHOMET then
+                EID:appendToDescription(
+                    descObj,
+                    "#{{ColorGold}}클리어 되지않은 방 입장 시 30% 확률로 {{Collectible58}}Book of Shadows 효과를 발동합니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)"
+                )
             end
 
             return descObj
         end
     )
 end
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    ---@param isContinued boolean
+    function(_, isContinued)
+        if not isContinued then
+            Astro.Data.KarmaLuck = 0
+        else
+            for i = 1, Game():GetNumPlayers() do
+                local player = Isaac.GetPlayer(i - 1)
+
+                if player:GetTrinketMultiplier(TrinketType.TRINKET_KARMA) > 1 then
+                    player:AddCacheFlags(CacheFlag.CACHE_LUCK)
+                    player:EvaluateItems()
+                end
+            end
+        end
+    end
+)
 
 ---@param value integer
 ---@param trinket TrinketType
@@ -231,6 +309,28 @@ local function RunEffect(player, type)
                 nil
             ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
         return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_LIBERTY_CAP) then
+        local rng = player:GetTrinketRNG(TrinketType.TRINKET_LIBERTY_CAP)
+
+        local mushrooms = {
+            CollectibleType.COLLECTIBLE_MAGIC_MUSHROOM,
+            CollectibleType.COLLECTIBLE_MINI_MUSH
+        }
+
+        Astro:SpawnCollectible(mushrooms[rng:RandomInt(#mushrooms) + 1], player.Position)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_RAINBOW_WORM) then
+        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_FRUIT_CAKE, player.Position)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_USED_DIAPER) then
+        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_SKATOLE, player.Position)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_POKER_CHIP) then
+        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_MOMS_KEY, player.Position)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_TORN_POCKET) then
+        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_DEEP_POCKETS, player.Position)
+        return true
     elseif CheckTrinket(type, TrinketType.TRINKET_SILVER_DOLLAR) then
         isc:smeltTrinket(player, TrinketType.TRINKET_SILVER_DOLLAR + GOLDEN_TRINKET_OFFSET)
         return true
@@ -314,6 +414,10 @@ Astro:AddCallback(
         if cacheFlag == CacheFlag.CACHE_DAMAGE then
             if player:GetTrinketMultiplier(TrinketType.TRINKET_PURPLE_HEART) > 1 then
                 player.Damage = player.Damage * 1.2
+            end
+        elseif cacheFlag == CacheFlag.CACHE_LUCK then
+            if player:GetTrinketMultiplier(TrinketType.TRINKET_KARMA) > 1 then
+                player.Luck = player.Luck + Astro.Data.KarmaLuck
             end
         elseif cacheFlag == CacheFlag.CACHE_FLYING then
             if player:GetTrinketMultiplier(TrinketType.TRINKET_BAT_WING) > 1 then
@@ -437,6 +541,23 @@ Astro:AddCallback(
                     nil
                 )
             end
+
+            if player:GetTrinketMultiplier(TrinketType.TRINKET_THE_TWINS) > 1 then
+                Astro:SpawnCard(Card.CARD_SOUL_LILITH, player.Position)
+            end
+
+            if player:GetTrinketMultiplier(TrinketType.TRINKET_STUD_FINDER) > 1 then
+                local currentRoom = game:GetLevel():GetCurrentRoom()
+
+                Isaac.GridSpawn(GridEntityType.GRID_STAIRS, 0, Vector(560, 400), true)
+            end
+
+            if player:GetTrinketMultiplier(TrinketType.TRINKET_KARMA) > 1 then
+                Astro.Data.KarmaLuck = Astro.Data.KarmaLuck + 1
+
+                player:AddCacheFlags(CacheFlag.CACHE_LUCK)
+                player:EvaluateItems()
+            end
         end
     end
 )
@@ -532,6 +653,53 @@ Astro:AddCallbackCustom(
                         Vector.Zero,
                         nil
                     )
+                end
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
+    ---@param rng RNG
+    ---@param spawnPosition Vector
+    function(rng, spawnPosition)
+        for i = 1, game:GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
+
+            if player:GetTrinketMultiplier(TrinketType.TRINKET_BROKEN_PADLOCK) > 1 then
+                player:UseActiveItem(CollectibleType.COLLECTIBLE_DADS_KEY, false, true, false, false)
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_ROOM,
+    function(_)
+        local level = Game():GetLevel()
+        local currentRoom = level:GetCurrentRoom()
+
+        if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
+            local roomType = currentRoom:GetType()
+
+            for i = 1, game:GetNumPlayers() do
+                local player = Isaac.GetPlayer(i - 1)
+
+                if player:GetTrinketMultiplier(TrinketType.TRINKET_ADOPTION_PAPERS) > 1 then
+                    if roomType == RoomType.ROOM_SHOP then
+                        Astro:SpawnCard(Card.CARD_SOUL_LILITH, currentRoom:GetCenterPos())
+                    end
+                end
+
+                if player:GetTrinketMultiplier(TrinketType.TRINKET_SIGIL_OF_BAPHOMET) > 1 then
+                    if not currentRoom:IsClear() then
+                        local rng = player:GetTrinketRNG(TrinketType.TRINKET_SIGIL_OF_BAPHOMET)
+
+                        if rng:RandomFloat() < 0.3 + player.Luck / 100 then
+                            player:UseActiveItem(CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS, false, true, false, false)
+                        end
+                    end
                 end
             end
         end

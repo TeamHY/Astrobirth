@@ -22,6 +22,7 @@ Astro:AddCallback(
     function(_, isContinued)
         if not isContinued then
             local player = Isaac.GetPlayer()
+            local playerType = player:GetPlayerType()
             local position = player.Position
 
             for _, value in ipairs(startItem.Collectible) do
@@ -38,6 +39,12 @@ Astro:AddCallback(
 
             for _, value in ipairs(startItem.Pill) do
                 Astro:SpawnPill(value, position)
+            end
+
+            if playerType == PlayerType.PLAYER_ISAAC then
+                player:RemoveCollectible(CollectibleType.COLLECTIBLE_D6)
+            elseif playerType == PlayerType.PLAYER_EVE then
+                player:RemoveCollectible(CollectibleType.COLLECTIBLE_RAZOR_BLADE)
             end
         end
     end

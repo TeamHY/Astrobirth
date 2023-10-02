@@ -1,7 +1,9 @@
+local isc = require("astro.lib.isaacscript-common")
+
 Astro.Collectible.LEO_EX = Isaac.GetItemIdByName("Leo EX")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.LEO_EX, "방 입장 시 모든 몬스터가 5초간 {{Freezing}}빙결 상태가 됩니다 ({{Trinket188}} 만럭 효과와 동일)", "초 사자자리")
+    EID:addCollectible(Astro.Collectible.LEO_EX, "방 입장 시 모든 몬스터가 5초간 {{Freezing}}빙결 상태가 됩니다 ({{Trinket188}} 만럭 효과와 동일)#다음 게임 시작 시 {{Collectible302}}Leo를 가지고 시작합니다.", "초 사자자리")
 end
 
 --- 지속 시간
@@ -11,6 +13,30 @@ local freezeDuration = 5 * 30
 local freezeEntities = {}
 
 local freezeDurationTime = 0
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    ---@param isContinued boolean
+    function(_, isContinued)
+        if not isContinued and Astro.Data.RunLeoEx then
+            local player = Isaac.GetPlayer()
+
+            player:AddCollectible(CollectibleType.COLLECTIBLE_LEO)
+
+            Astro.Data.RunLeoEx = false
+        end
+    end
+)
+
+Astro:AddCallbackCustom(
+    isc.ModCallbackCustom.POST_PLAYER_COLLECTIBLE_ADDED,
+    ---@param player EntityPlayer
+    ---@param collectibleType CollectibleType
+    function(_, player, collectibleType)
+        Astro.Data.RunLeoEx = true
+    end,
+    Astro.Collectible.LEO_EX
+)
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
