@@ -92,6 +92,8 @@ if EID then
                 EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{Card92}}Soul of Lilith를 하나 드랍합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_STUD_FINDER then
                 EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{LadderRoom}}사다리방으로 가는 다락문을 생성합니다.")
+                elseif descObj.ObjSubType == TrinketType.TRINKET_KARMA then
+                EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 행운이 1 증가합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_BLOODY_PENNY then
                 EID:appendToDescription(
                     descObj,

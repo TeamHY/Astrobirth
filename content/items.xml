@@ -18,7 +18,7 @@
 	<passive gfx="Greed.png" quality="3" devilprice="2" tags="noeden" name="Greed" />
 	<passive cache="damage" gfx="Prometheus.png" quality="3" devilprice="2" name="Prometheus" />
 	<passive gfx="Pure White Heart.png" quality="3" devilprice="2" shopprice="20" name="Pure White Heart" />
-	<passive cache="damage" gfx="Platinum Bullet.png" quality="3" devilprice="2" name="Platinum Bullet" />
+	<passive cache="damage firedelay" gfx="Platinum Bullet.png" quality="3" devilprice="2" name="Platinum Bullet" />
 	<passive gfx="Death's Eyes.png" quality="4" devilprice="2" name="Death's Eyes" />
 	<passive gfx="Altair.png" quality="3" devilprice="2" shopprice="30" name="Altair" />
 	<passive gfx="Deneb.png" quality="3" devilprice="2" shopprice="30" name="Deneb" />

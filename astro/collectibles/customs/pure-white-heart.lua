@@ -25,28 +25,23 @@ Astro:AddCallback(
                 local itemPool = Game():GetItemPool()
 
                 local listToRemove =
-                    Astro:GetRandomCollectibles(inventory, rng, 3, Astro.Collectible.PURE_WHITE_HEART, true)
+                    Astro:GetRandomCollectibles(inventory, rng, 2, Astro.Collectible.PURE_WHITE_HEART, true)
 
                 for _, value in ipairs(listToRemove) do
                     player:RemoveCollectible(value)
+                    Astro:SpawnCollectible(value, player.Position, Astro.Collectible.PURE_WHITE_HEART)
                 end
 
-                Isaac.Spawn(
-                        EntityType.ENTITY_PICKUP,
-                        PickupVariant.PICKUP_COLLECTIBLE,
-                        itemPool:GetCollectible(ItemPoolType.POOL_ANGEL, true, currentRoom:GetSpawnSeed()),
-                        currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(-GRID_SIZE, 0)),
-                        Vector.Zero,
-                        nil
-                    ):ToPickup().OptionsPickupIndex = Astro.Collectible.PURE_WHITE_HEART
-                Isaac.Spawn(
-                        EntityType.ENTITY_PICKUP,
-                        PickupVariant.PICKUP_COLLECTIBLE,
-                        itemPool:GetCollectible(ItemPoolType.POOL_ANGEL, true, currentRoom:GetSpawnSeed()),
-                        currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(GRID_SIZE, 0)),
-                        Vector.Zero,
-                        nil
-                    ):ToPickup().OptionsPickupIndex = Astro.Collectible.PURE_WHITE_HEART
+                Astro:SpawnCollectible(
+                    itemPool:GetCollectible(ItemPoolType.POOL_ANGEL, true, currentRoom:GetSpawnSeed()),
+                    player.Position,
+                    Astro.Collectible.PURE_WHITE_HEART
+                )
+                Astro:SpawnCollectible(
+                    itemPool:GetCollectible(ItemPoolType.POOL_ANGEL, true, currentRoom:GetSpawnSeed()),
+                    player.Position,
+                    Astro.Collectible.PURE_WHITE_HEART
+                )
 
                 player:RemoveCollectible(Astro.Collectible.PURE_WHITE_HEART)
             end
