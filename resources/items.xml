@@ -100,7 +100,7 @@
 	<familiar achievement="23" description="#LITTLE_GISH_DESCRIPTION" gfx="Collectibles_099_LittleGish.png" id="99" name="#LITTLE_GISH_NAME" />
 	<familiar achievement="24" description="#LITTLE_STEVEN_DESCRIPTION" gfx="Collectibles_100_LittleSteve.png" shopprice="8" id="100" name="#LITTLE_STEVEN_NAME" />
 	<passive achievement="27" cache="damage firedelay range speed" description="#THE_HALO_DESCRIPTION" gfx="Collectibles_101_TheHalo.png" hearts="4" id="101" maxhearts="2" name="#THE_HALO_NAME" />
-	<active description="#MOMS_BOTTLE_OF_PILLS_DESCRIPTION" gfx="Collectibles_102_MomsBottleOfPills.png" id="102" maxcharges="6" name="#MOMS_BOTTLE_OF_PILLS_NAME" shopprice="10" />
+	<active description="#MOMS_BOTTLE_OF_PILLS_DESCRIPTION" gfx="Collectibles_102_MomsBottleOfPills.png" id="102" maxcharges="12" name="#MOMS_BOTTLE_OF_PILLS_NAME" shopprice="10" />
 	<passive cache="tearcolor tearflag" description="#THE_COMMON_COLD_DESCRIPTION" gfx="Collectibles_103_TheCommonCold.png" id="103" name="#THE_COMMON_COLD_NAME" />
 	<passive achievement="31" cache="tearcolor tearflag" description="#THE_PARASITE_DESCRIPTION" gfx="Collectibles_104_TheParasite.png" id="104" name="#THE_PARASITE_NAME" />
 	<active achievement="29" description="#THE_D6_DESCRIPTION" gfx="Collectibles_105_Dice.png" id="105" maxcharges="6" name="#THE_D6_NAME" special="true" />

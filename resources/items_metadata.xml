@@ -278,7 +278,7 @@
     <item id="280" quality="1" tags="summonable spider monstermanual offensive"/>
     <item id="281" quality="1" tags="summonable"/>
     <item id="282" quality="1" tags="book"/>
-    <item id="283" quality="3" tags="offensive nocantrip"/>
+    <item id="283" quality="3" tags="noeden offensive nocantrip"/>
     <item id="284" quality="2" tags="offensive nocantrip"/>
     <item id="285" quality="1" tags="offensive"/>
     <item id="286" quality="2" tags="offensive nocantrip"/>
@@ -477,7 +477,7 @@
     <item id="479" quality="2" tags="offensive"/>
     <item id="480" quality="1" tags="offensive"/>
     <item id="481" quality="0" tags="offensive"/>
-    <item id="482" quality="0" tags="nolostbr nochallenge nodaily"/>
+    <item id="482" quality="0" tags="noeden nolostbr nochallenge nodaily"/>
     <item id="483" quality="3" tags="offensive"/>
     <item id="484" quality="1" tags="offensive"/>
     <item id="485" quality="2" tags="offensive"/>

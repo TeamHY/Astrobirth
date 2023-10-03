@@ -15,7 +15,7 @@
 	<passive gfx="Comet.png" quality="3" devilprice="2" shopprice="30" name="Comet" />
 	<passive gfx="Pisces.png" quality="3" devilprice="2" shopprice="30" name="Pisces EX" />
 	<passive gfx="Gemini.png" quality="3" devilprice="2" shopprice="30" name="Gemini EX" />
-	<passive gfx="Greed.png" quality="3" devilprice="2" name="Greed" />
+	<passive gfx="Greed.png" quality="3" devilprice="2" tags="noeden" name="Greed" />
 	<passive cache="damage" gfx="Prometheus.png" quality="3" devilprice="2" name="Prometheus" />
 	<passive gfx="Pure White Heart.png" quality="3" devilprice="2" shopprice="20" name="Pure White Heart" />
 	<passive cache="damage" gfx="Platinum Bullet.png" quality="3" devilprice="2" name="Platinum Bullet" />
@@ -29,7 +29,7 @@
 	<passive gfx="Ptolemaeus.png" quality="4" devilprice="2" shopprice="40" name="Ptolemaeus" />
 	<passive cache="firedelay" gfx="Angry Onion.png" quality="3" devilprice="2" name="Angry Onion" />
 	<active gfx="Deep Of Abyss.png" quality="3" devilprice="1" maxcharges="4" name="Oblivion" />
-	<passive gfx="collectibles_668_dadsnote.png" quality="3" devilprice="2" name="Go Home!" />
+	<passive gfx="collectibles_668_dadsnote.png" quality="3" devilprice="2" tags="noeden" name="Go Home!" />
 
 
 
