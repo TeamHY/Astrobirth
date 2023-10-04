@@ -294,7 +294,7 @@
 	<active achievement="137" description="#RED_CANDLE_DESCRIPTION" gfx="collectibles_289_redcandle.png" id="289" maxcharges="75" name="#RED_CANDLE_NAME" chargetype="timed" />
 	<active description="#THE_JAR_DESCRIPTION" gfx="collectibles_290_thejar.png" id="290" maxcharges="0" name="#THE_JAR_NAME" shopprice="10" />
 	<active description="#FLUSH_DESCRIPTION" gfx="collectibles_291_flush.png" id="291" maxcharges="4" name="#FLUSH_NAME" />
-	<active achievement="126" description="#SATANIC_BIBLE_DESCRIPTION" devilprice="2" gfx="collectibles_292_satanicbible.png" id="292" maxcharges="12" name="#SATANIC_BIBLE_NAME" />
+	<active achievement="126" description="#SATANIC_BIBLE_DESCRIPTION" devilprice="2" gfx="collectibles_292_satanicbible.png" id="292" maxcharges="18" name="#SATANIC_BIBLE_NAME" />
 	<active achievement="143" description="#HEAD_OF_KRAMPUS_DESCRIPTION" gfx="collectibles_293_headofkrampus.png" id="293" maxcharges="3" name="#HEAD_OF_KRAMPUS_NAME" />
 	<active achievement="145" description="#BUTTER_BEAN_DESCRIPTION" gfx="collectibles_294_butterbean.png" id="294" maxcharges="90" name="#BUTTER_BEAN_NAME" chargetype="timed" />
 	<active description="#MAGIC_FINGERS_DESCRIPTION" gfx="collectibles_295_magicfingers.png" id="295" maxcharges="0" name="#MAGIC_FINGERS_NAME" shopprice="10" />
@@ -480,8 +480,8 @@
 	<familiar achievement="315" description="#HUSHY_DESCRIPTION" gfx="Collectibles_470_Hushy.png" id="470" shopprice="5" name="#HUSHY_NAME" />
 	<familiar description="#LIL_MONSTRO_DESCRIPTION" gfx="Collectibles_471_LilMonstro.png" id="471" name="#LIL_MONSTRO_NAME" />
 	<familiar achievement="286" description="#KING_BABY_DESCRIPTION" gfx="Collectibles_472_KingBaby.png" id="472" devilprice="2" name="#KING_BABY_NAME" />
-	<familiar description="#BIG_CHUBBY_DESCRIPTION" gfx="Collectibles_473_BigChubby.png" id="473" name="#BIG_CHUBBY_NAME" />
-	<active description="#BROKEN_GLASS_CANNON_DESCRIPTION" gfx="Collectibles_474_BrokenGlassCannon.png" id="474" name="#BROKEN_GLASS_CANNON_NAME" maxcharges="4" initcharge="0" />
+	<familiar description="#BIG_CHUBBY_DESCRIPTION" gfx="Collectibles_473_BigChubby.png" id="473" shopprice="5" name="#BIG_CHUBBY_NAME" />
+	<active description="#BROKEN_GLASS_CANNON_DESCRIPTION" gfx="Collectibles_474_BrokenGlassCannon.png" id="474" shopprice="10" name="#BROKEN_GLASS_CANNON_NAME" maxcharges="4" initcharge="0" />
 	<active achievement="305" description="#PLAN_C_DESCRIPTION" gfx="Collectibles_475_PlanC.png" id="475" name="#PLAN_C_NAME" maxcharges="0" />
 	<active achievement="296" description="#D1_DESCRIPTION" gfx="Collectibles_476_D1.png" id="476" name="#D1_NAME" maxcharges="4" />
 	<active achievement="295" description="#VOID_DESCRIPTION" gfx="Collectibles_477_Void.png" id="477" name="#VOID_NAME" maxcharges="4" />
@@ -556,7 +556,7 @@
 	<passive achievement="379" description="#SCHOOLBAG_DESCRIPTION" gfx="collectibles_534_Schoolbag.png" shopprice="20" name="#SCHOOLBAG_NAME" id="534" />
 	
 	<!-- Booster Pack #5 -->
-	<passive achievement="385" name="#BLANKET_NAME" description="#BLANKET_DESCRIPTION" gfx="Collectibles_535_Blanket.png" shopprice="13" id="535" hearts="2" soulhearts="2" />
+	<passive achievement="385" name="#BLANKET_NAME" description="#BLANKET_DESCRIPTION" gfx="Collectibles_535_Blanket.png" shopprice="11" id="535" hearts="2" soulhearts="2" />
 	<active achievement="383" description="#SACRIFICIAL_ALTAR_DESCRIPTION" gfx="Collectibles_536_SacrificialAltar.png" name="#SACRIFICIAL_ALTAR_NAME" id="536" maxcharges="0" />
 	<familiar achievement="384" name="#LIL_SPEWER_NAME" description="#LIL_SPEWER_DESCRIPTION" gfx="Collectibles_537_LilSpewer.png" id="537" />
 	<passive achievement="386" cache="luck" description="#MARBLES_DESCRIPTION" gfx="Collectibles_538_Marbles.png" name="#MARBLES_NAME" id="538" />
@@ -737,7 +737,7 @@
 	<active		id="709"	achievement="437" gfx="Collectibles_709_Suplex.png" name="#SUPLEX_NAME" description="#SUPLEX_DESCRIPTION" maxcharges="200" chargetype="timed" />
 	<active		id="710"	achievement="586" gfx="Collectibles_710_BagOfCrafting.png" name="#BAG_OF_CRAFTING_NAME" description="#BAG_OF_CRAFTING_DESCRIPTION" />
 	<active		id="711"	achievement="592" gfx="Collectibles_711_Flip.png" name="#FLIP_NAME" description="#FLIP_DESCRIPTION" maxcharges="6" />
-	<active		id="712"	achievement="599" gfx="Collectibles_712_Lemegeton.png" name="#LEMEGETON_NAME" description="#LEMEGETON_DESCRIPTION" maxcharges="12" />
+	<active		id="712"	achievement="599" gfx="Collectibles_712_Lemegeton.png" name="#LEMEGETON_NAME" description="#LEMEGETON_DESCRIPTION" maxcharges="18" />
 	<active		id="713"	achievement="589" gfx="Collectibles_713_Sumptorium.png" name="#SUMPTORIUM_NAME" description="#SUMPTORIUM_DESCRIPTION" maxcharges="300" chargetype="timed" cooldown="60" />
 	<active		id="714"	gfx="Collectibles_714_Recall.png" name="#RECALL_NAME" description="#RECALL_DESCRIPTION" maxcharges="1" chargetype="timed" cache="flying" cooldown="45" hidden="true" />
 	<active		id="715"	gfx="Collectibles_715_Hold.png" name="#HOLD_NAME" description="#HOLD_DESCRIPTION" maxcharges="0" hidden="true" />
@@ -747,7 +747,7 @@
 	<active		id="719"	achievement="465" gfx="Collectibles_719_KeepersBox.png" name="#KEEPERS_BOX_NAME" description="#KEEPERS_BOX_DESCRIPTION" maxcharges="4" />
 	<active		id="720"	achievement="459" gfx="Collectibles_720_EverythingJar.png" name="#EVERYTHING_JAR_NAME" description="#EVERYTHING_JAR_DESCRIPTION" maxcharges="12" initcharge="1" />
 	<passive	id="721"	achievement="500" gfx="Collectibles_721_TMTRAINER.png" name="#TMTRAINER_NAME" description="#TMTRAINER_DESCRIPTION" />
-	<active		id="722"	achievement="600" gfx="Collectibles_722_AnimaSola.png" name="#ANIMA_SOLA_NAME" description="#ANIMA_SOLA_DESCRIPTION" maxcharges="450" chargetype="timed" />
+	<active		id="722"	achievement="600" gfx="Collectibles_722_AnimaSola.png" name="#ANIMA_SOLA_NAME" description="#ANIMA_SOLA_DESCRIPTION" maxcharges="390" chargetype="timed" />
 	<active		id="723"	achievement="584" gfx="Collectibles_723_SpindownDice.png" name="#SPINDOWN_DICE_NAME" description="#SPINDOWN_DICE_DESCRIPTION" maxcharges="6" />
 	<passive	id="724"	achievement="585" gfx="Collectibles_724_Hypercoagulation.png" name="#HYPERCOAGULATION_NAME" description="#HYPERCOAGULATION_DESCRIPTION" />
 	<passive	id="725"	achievement="588" gfx="Collectibles_725_IBS.png" name="#IBS_NAME" description="#IBS_DESCRIPTION" />

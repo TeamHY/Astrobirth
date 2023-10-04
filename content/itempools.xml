@@ -39,7 +39,6 @@
 		<Item Name="Ptolemaeus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Solar System" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 

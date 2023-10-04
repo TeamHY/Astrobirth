@@ -5,7 +5,7 @@ Astro.Collectible.ALTAIR = Isaac.GetItemIdByName("Altair")
 if EID then
     EID:addCollectible(
         Astro.Collectible.ALTAIR,
-        "획득 시 {{Trinket23}}Missing Poster와 {{Card89}}Soul of Lazarus를 소환합니다.#다음 게임 시작 시 하얀불을 소환합니다.",
+        "획득 시 {{Trinket23}}Missing Poster 를 소환합니다.#다음 게임 시작 시 하얀불을 소환합니다.",
         "알타일"
     )
 end
@@ -31,7 +31,6 @@ Astro:AddCallbackCustom(
     function(_, player, collectibleType)
         if Astro:IsFirstAdded(Astro.Collectible.ALTAIR) then
             Astro:SpawnTrinket(TrinketType.TRINKET_MISSING_POSTER, player.Position)
-            Astro:SpawnCard(Card.CARD_SOUL_LAZARUS, player.Position)
         end
 
         Astro.Data.RunAltair = true

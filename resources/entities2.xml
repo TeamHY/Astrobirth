@@ -407,7 +407,7 @@
     <entity anm2path="003.103_Tonsil.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Tonsil" numGridCollisionPoints="12" shadowSize="8" stageHP="0" variant="103">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="003.104_BigChubby.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2.7" collisionInterval="2" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Big Chubby" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="104">
+    <entity anm2path="003.104_BigChubby.anm2" baseHP="0" boss="0" champion="0" collisionDamage="5.4" collisionInterval="2" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Big Chubby" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="104">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="003.105_Depression.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Depression" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="105">

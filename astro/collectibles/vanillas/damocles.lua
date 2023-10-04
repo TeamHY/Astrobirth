@@ -11,7 +11,8 @@ local collectibles = {
     CollectibleType.COLLECTIBLE_INNER_CHILD, --688
     CollectibleType.COLLECTIBLE_ESAU_JR, --703
     CollectibleType.COLLECTIBLE_GENESIS, --622
-    CollectibleType.COLLECTIBLE_HOLY_MANTLE --313
+    CollectibleType.COLLECTIBLE_HOLY_MANTLE, --313
+    Astro.Collectible.ALTAIR
 }
 
 local trinkets = {
@@ -28,7 +29,7 @@ if EID then
             end
         end,
         function(descObj)
-            EID:appendToDescription(descObj, "#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible332}}, {{Collectible81}}, {{Collectible422}}, {{Collectible161}}, {{Collectible210}}, {{Collectible313}}, {{Collectible311}}, {{Collectible688}}, {{Collectible703}}, {{Collectible622}}, {{Trinket28}}, {{Trinket23}}")
+            EID:appendToDescription(descObj, "#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible754}}, {{Collectible332}}, {{Collectible81}}, {{Collectible422}}, {{Collectible161}}, {{Collectible210}}, {{Collectible313}}, {{Collectible311}}, {{Collectible688}}, {{Collectible703}}, {{Collectible622}}, {{Trinket28}}, {{Trinket23}}")
 
             return descObj
         end
