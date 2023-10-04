@@ -1372,7 +1372,7 @@
         <gibs amount="4" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" rock="1"/>
     	<devolve id="44.1.0" weight="1" />
 	</entity>
-    <entity anm2path="045.000_Mom.anm2" baseHP="1500" boss="1" bossID="6" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="35" friction="1" id="45" name="#MOM" numGridCollisionPoints="0" portrait="9" shadowSize="33" stageHP="0" variant="0">
+    <entity anm2path="045.000_Mom.anm2" baseHP="1500" boss="1" bossID="6" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="35" friction="1" id="45" name="#MOM" numGridCollisionPoints="0" portrait="9" shadowSize="33" stageHP="0" tags="nodelirium" variant="0">
         <bestiary anim="Eye" transform="0,0,1"/>
         <gibs amount="20" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <preload-snd id="97"/>
@@ -1835,7 +1835,7 @@
         <preload id="1000" subtype="1" variant="50"/>
         <preload-snd id="5"/>
     </entity>
-    <entity anm2path="081.001_Krampus.anm2" baseHP="0" boss="1" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="20" friction="1" id="81" name="#KRAMPUS" numGridCollisionPoints="0" portrait="53" shadowSize="24" stageHP="75" variant="1">
+    <entity anm2path="081.001_Krampus.anm2" baseHP="0" boss="1" tags="nodelirium" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="20" friction="1" id="81" name="#KRAMPUS" numGridCollisionPoints="0" portrait="53" shadowSize="24" stageHP="75" variant="1">
         <bestiary anim="Walk" transform="0,0,1"/>
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="1"/>
     </entity>
@@ -2560,7 +2560,7 @@
         <preload id="1000" subtype="1" variant="50"/>
         <preload-snd id="5"/>
     </entity>
-    <entity anm2path="268.000_Dark One 2.anm2" baseHP="520" boss="1" bossID="51" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" gridCollision="walls" id="268" name="#THE_ADVERSARY" numGridCollisionPoints="12" portrait="72" shadowSize="22" stageHP="0" variant="0">
+    <entity anm2path="268.000_Dark One 2.anm2" baseHP="520" boss="1" bossID="51" champion="0" collisionDamage="1" collisionMass="75" tags="nodelirium" collisionRadius="20" friction="1" gridCollision="walls" id="268" name="#THE_ADVERSARY" numGridCollisionPoints="12" portrait="72" shadowSize="22" stageHP="0" variant="0">
         <bestiary anim="Walk" transform="0,8,1"/>
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1"/>
         <preload-snd id="118"/>
@@ -2646,7 +2646,7 @@
     <entity anm2path="274.001_MegaSatanHand.anm2" baseHP="1200" boss="1" bossID="55" champion="0" collisionDamage="2" collisionMass="400" collisionRadius="45" friction="1" gridCollision="walls" id="274" name="Mega Satan&apos;s Left Hand" numGridCollisionPoints="12" portrait="77" shadowSize="60" shieldStrength="15" tags="nodelirium" variant="2">
         <gibs amount="18" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="275.000_MegaSatan2Head.anm2" baseHP="10000" boss="1" bossID="55" champion="0" collisionDamage="2" collisionMass="400" collisionRadius="50" friction="1" gridCollision="walls" id="275" name="#MEGA_SATAN_2" numGridCollisionPoints="12" portrait="78" shadowSize="0" shieldStrength="140" tags="nodelirium" variant="0">
+    <entity anm2path="275.000_MegaSatan2Head.anm2" baseHP="10000" boss="1" bossID="55" champion="0" collisionDamage="2" collisionMass="400" collisionRadius="50" friction="1" gridCollision="walls" id="275" name="#MEGA_SATAN_2" numGridCollisionPoints="12" portrait="78" shadowSize="0" shieldStrength="100" tags="nodelirium" variant="0">
         <bestiary anim="Idle1" transform="0,6,.5"/>
         <gibs amount="18" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
@@ -2914,7 +2914,7 @@
         <bestiary anim="Tantrum" transform="0,10,.7"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="407.000_Hush.anm2" baseHP="15000" boss="1" bossID="63" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="100" friction="1" id="407" name="#HUSH" numGridCollisionPoints="40" portrait="85" shadowSize="0" shieldStrength="140" stageHP="0" variant="0">
+    <entity anm2path="407.000_Hush.anm2" baseHP="15000" boss="1" bossID="63" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="100" friction="1" id="407" name="#HUSH" numGridCollisionPoints="40" portrait="85" shadowSize="0" shieldStrength="100" stageHP="0" variant="0">
         <bestiary anim="AttackLoopDown" transform="0,-16,.4"/>
         <gibs amount="24" blood="1" bone="0" eye="0" gut="1" large="1"/>
     </entity>
