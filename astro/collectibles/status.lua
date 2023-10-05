@@ -20,6 +20,8 @@ if EID then
                 EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.5#↓ {{LuckSmall}}행운 -5")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_C_SECTION then
                 EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.75")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_HOLY_MANTLE then
+                EID:appendToDescription(descObj, "#↓ {{DamageSmall}}공격력 배율 x0.9")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_PARASITOID then
                 EID:appendToDescription(descObj, "#↓ {{LuckSmall}}행운 -2")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_TOUGH_LOVE then
@@ -49,6 +51,10 @@ Astro:AddCallback(
         if cacheFlag == CacheFlag.CACHE_DAMAGE then
             if player:HasCollectible(CollectibleType.COLLECTIBLE_LITTLE_HORN) then
                 player.Damage = player.Damage * 0.75
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_HOLY_MANTLE) then
+                player.Damage = player.Damage * 0.9
             end
 
             if player:HasCollectible(CollectibleType.COLLECTIBLE_EUTHANASIA) then

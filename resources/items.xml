@@ -315,7 +315,7 @@
 	<passive achievement="112" cache="shotspeed damage tearcolor firedelay" description="#EVES_MASCARA_DESCRIPTION" gfx="collectibles_310_evesmascara.png" id="310" devilprice="2" name="#EVES_MASCARA_NAME" />
 	<passive achievement="108" description="#JUDAS_SHADOW_DESCRIPTION" devilprice="2" gfx="collectibles_311_judasshadow.png" id="311" name="#JUDAS_SHADOW_NAME" addcostumeonpickup="false" />
 	<passive achievement="109" description="#MAGGYS_BOW_DESCRIPTION" gfx="collectibles_312_maggysbow.png" hearts="4" id="312" maxhearts="2" name="#MAGGYS_BOW_NAME" />
-	<passive description="#HOLY_MANTLE_DESCRIPTION" gfx="collectibles_313_holymantle.png" id="313" name="#HOLY_MANTLE_NAME" addcostumeonpickup="false" devilprice="2" />
+	<passive description="#HOLY_MANTLE_DESCRIPTION" gfx="collectibles_313_holymantle.png" cache="damage" id="313" name="#HOLY_MANTLE_NAME" addcostumeonpickup="false" devilprice="2" />
 	<passive cache="speed" description="#THUNDER_THIGHS_DESCRIPTION" gfx="collectibles_314_thunderthighs.png" hearts="4" id="314" maxhearts="2" name="#THUNDER_THIGHS_NAME" />
 	<passive cache="tearflag tearcolor" description="#STRANGE_ATTRACTOR_DESCRIPTION" gfx="collectibles_315_strangeattractor.png" id="315" name="#STRANGE_ATTRACTOR_NAME" />
 	<passive cache="all" description="#CURSED_EYE_DESCRIPTION" gfx="collectibles_316_cursedeye.png" id="316" name="#CURSED_EYE_NAME" />

@@ -20,7 +20,7 @@
 	<passive gfx="Pure White Heart.png" quality="3" devilprice="2" shopprice="20" name="Pure White Heart" />
 	<passive cache="damage firedelay" gfx="Platinum Bullet.png" quality="3" devilprice="2" name="Platinum Bullet" />
 	<passive gfx="Death's Eyes.png" quality="4" devilprice="2" name="Death's Eyes" />
-	<passive gfx="Altair.png" quality="3" devilprice="2" shopprice="30" name="Altair" />
+	<passive gfx="Altair.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Altair" />
 	<passive gfx="Deneb.png" quality="3" devilprice="2" shopprice="30" name="Deneb" />
 	<passive gfx="Vega.png" quality="4" devilprice="2" shopprice="30" name="Vega" />
 	<passive cache="damage tearflag tearcolor" gfx="Cursed Heart.png" quality="4" devilprice="2" name="Cursed Heart" />
@@ -28,7 +28,7 @@
 	<passive gfx="Solar System.png" quality="4" devilprice="1" name="Solar System" />
 	<passive gfx="Ptolemaeus.png" quality="4" devilprice="2" shopprice="40" name="Ptolemaeus" />
 	<passive cache="firedelay" gfx="Angry Onion.png" quality="3" devilprice="2" name="Angry Onion" />
-	<active gfx="Deep Of Abyss.png" quality="3" devilprice="1" maxcharges="4" name="Oblivion" />
+	<active gfx="Deep Of Abyss.png" quality="3" devilprice="1" maxcharges="10" name="Oblivion" />
 	<passive gfx="collectibles_668_dadsnote.png" quality="3" devilprice="2" tags="noeden" name="Go Home!" />
 
 

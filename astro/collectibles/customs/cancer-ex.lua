@@ -1,7 +1,7 @@
 Astro.Collectible.CANCER_EX = Isaac.GetItemIdByName("Cancer EX")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.CANCER_EX, "몬스터에게 준 피해의 1/4 만큼 방안에 모든 몬스터들에게 대미지를 입힙니다", "초 게자리")
+    EID:addCollectible(Astro.Collectible.CANCER_EX, "몬스터에게 준 피해의 1/10 만큼 방안에 모든 몬스터들에게 대미지를 입힙니다", "초 게자리")
 end
 
 Astro:AddCallback(
@@ -26,7 +26,7 @@ Astro:AddCallback(
              then
                 for i = 1, #entities do
                     if entities[i]:IsVulnerableEnemy() and entities[i].Type ~= EntityType.ENTITY_FIREPLACE and not (entities[i].Type == EntityType.ENTITY_MAMA_GURDY and entities[i].Variant > 0) then
-                        entities[i]:TakeDamage(amount / 5, 0, EntityRef(player), 1)
+                        entities[i]:TakeDamage(amount / 10, 0, EntityRef(player), 1)
                     end
                 end
             end

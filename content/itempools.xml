@@ -256,7 +256,7 @@
 
 	<Pool Name="boss">
 
-		<Item Name="Angry Onion" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Angry Onion" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 </ItemPools>

@@ -308,7 +308,7 @@
     <item id="310" quality="3" tags="summonable offensive"/>
     <item id="311" quality="3" tags="nolostbr nocantrip nochallenge"/>
     <item id="312" quality="2" tags="nolostbr summonable"/>
-    <item id="313" quality="4" tags="summonable angel"/>
+    <item id="313" quality="4" tags="noeden summonable angel"/>
     <item id="314" quality="1" tags="nolostbr summonable"/>
     <item id="315" quality="0" tags="summonable offensive"/>
     <item id="316" quality="0" tags="summonable offensive"/>
@@ -417,7 +417,7 @@
     <item id="419" quality="3" tags="offensive"/>
     <item id="420" quality="1" tags="summonable offensive"/>
     <item id="421" quality="1" tags="offensive"/>
-    <item id="422" quality="3" craftquality="-1" tags="offensive nocantrip"/>
+    <item id="422" quality="3" craftquality="-1" tags="noeden offensive nocantrip"/>
     <item id="423" quality="2" tags="summonable"/>
     <item id="424" quality="3" tags="summonable offensive"/>
     <item id="425" quality="1" tags="summonable"/>

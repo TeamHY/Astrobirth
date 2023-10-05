@@ -77,6 +77,7 @@ function Ban:Init()
             self.BanTrinket(TrinketType.TRINKET_BROKEN_ANKH)
         end,
         [PlayerType.PLAYER_APOLLYON] = function()
+            self.BanCollectible(CollectibleType.COLLECTIBLE_MEGA_MUSH)
         end,
         [PlayerType.PLAYER_THEFORGOTTEN] = function()
         end,
