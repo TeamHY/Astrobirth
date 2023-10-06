@@ -92,7 +92,7 @@ if EID then
                 EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{Card92}}Soul of Lilith를 하나 드랍합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_STUD_FINDER then
                 EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{LadderRoom}}사다리방으로 가는 다락문을 생성합니다.")
-                elseif descObj.ObjSubType == TrinketType.TRINKET_KARMA then
+            elseif descObj.ObjSubType == TrinketType.TRINKET_KARMA then
                 EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 행운이 1 증가합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_BLOODY_PENNY then
                 EID:appendToDescription(
@@ -681,26 +681,27 @@ Astro:AddCallback(
     function(_)
         local level = Game():GetLevel()
         local currentRoom = level:GetCurrentRoom()
+        local roomType = currentRoom:GetType()
 
-        if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
-            local roomType = currentRoom:GetType()
+        for i = 1, game:GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
 
-            for i = 1, game:GetNumPlayers() do
-                local player = Isaac.GetPlayer(i - 1)
-
-                if player:GetTrinketMultiplier(TrinketType.TRINKET_ADOPTION_PAPERS) > 1 then
-                    if roomType == RoomType.ROOM_SHOP then
-                        Astro:SpawnCard(Card.CARD_SOUL_LILITH, currentRoom:GetCenterPos())
-                    end
+            if
+                player:GetTrinketMultiplier(TrinketType.TRINKET_ADOPTION_PAPERS) > 1 and
+                    currentRoom:GetFrameCount() <= 0 and
+                    currentRoom:IsFirstVisit()
+             then
+                if roomType == RoomType.ROOM_SHOP then
+                    Astro:SpawnCard(Card.CARD_SOUL_LILITH, currentRoom:GetCenterPos())
                 end
+            end
 
-                if player:GetTrinketMultiplier(TrinketType.TRINKET_SIGIL_OF_BAPHOMET) > 1 then
-                    if not currentRoom:IsClear() then
-                        local rng = player:GetTrinketRNG(TrinketType.TRINKET_SIGIL_OF_BAPHOMET)
+            if player:GetTrinketMultiplier(TrinketType.TRINKET_SIGIL_OF_BAPHOMET) > 1 then
+                if not currentRoom:IsClear() then
+                    local rng = player:GetTrinketRNG(TrinketType.TRINKET_SIGIL_OF_BAPHOMET)
 
-                        if rng:RandomFloat() < 0.3 + player.Luck / 100 then
-                            player:UseActiveItem(CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS, false, true, false, false)
-                        end
+                    if rng:RandomFloat() < 0.3 + player.Luck / 100 then
+                        player:UseActiveItem(CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS, false)
                     end
                 end
             end
