@@ -143,7 +143,7 @@ function Astro:SpawnPill(pillEffect, position)
         EntityType.ENTITY_PICKUP,
         PickupVariant.PICKUP_PILL,
         pillColor,
-        currentRoom:FindFreePickupSpawnPosition(position, 40, true),
+        currentRoom:FindFreePickupSpawnPosition(position, 0, true),
         Vector.Zero,
         nil
     ):ToPickup()
@@ -159,7 +159,7 @@ function Astro:SpawnCard(cardType, position)
         EntityType.ENTITY_PICKUP,
         PickupVariant.PICKUP_TAROTCARD,
         cardType,
-        currentRoom:FindFreePickupSpawnPosition(position, 40, true),
+        currentRoom:FindFreePickupSpawnPosition(position, 0, true),
         Vector.Zero,
         nil
     ):ToPickup()
@@ -177,7 +177,7 @@ function Astro:SpawnCollectible(collectibleType, position, optionsPickupIndex)
         EntityType.ENTITY_PICKUP,
         PickupVariant.PICKUP_COLLECTIBLE,
         collectibleType,
-        currentRoom:FindFreePickupSpawnPosition(position, 40, true),
+        currentRoom:FindFreePickupSpawnPosition(position, 0, true),
         Vector.Zero,
         nil
     ):ToPickup()
@@ -199,7 +199,7 @@ function Astro:SpawnTrinket(trinketType, position)
         EntityType.ENTITY_PICKUP,
         PickupVariant.PICKUP_TRINKET,
         trinketType,
-        currentRoom:FindFreePickupSpawnPosition(position, 40, true),
+        currentRoom:FindFreePickupSpawnPosition(position, 0, true),
         Vector.Zero,
         nil
     ):ToPickup()
