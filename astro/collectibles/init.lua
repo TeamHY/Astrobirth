@@ -6,6 +6,7 @@ require "astro.collectibles.status"
 
 require "astro.collectibles.vanillas.aquarius"
 require "astro.collectibles.vanillas.damocles"
+require "astro.collectibles.vanillas.depression"
 require "astro.collectibles.vanillas.king-baby"
 require "astro.collectibles.vanillas.luna"
 
@@ -55,7 +56,10 @@ if EID then
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LIL_DELIRIUM then
                 EID:appendToDescription(descObj, "#Delirium의 체력이 15% 감소됩니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_MILK then
-                EID:appendToDescription(descObj, "#몬스터가 있는 방 입장 시 30% 확률로 {{Collectible486}}Dull Razor를 1회 발동합니다. {{BossRoom}}보스방에서는 항상 발동합니다.")
+                EID:appendToDescription(
+                    descObj,
+                    "#몬스터가 있는 방 입장 시 30% 확률로 {{Collectible486}}Dull Razor를 1회 발동합니다. {{BossRoom}}보스방에서는 항상 발동합니다."
+                )
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_ZODIAC then
                 EID:appendToDescription(
                     descObj,
@@ -66,6 +70,8 @@ if EID then
                     descObj,
                     "#획득 시 {{Trinket" .. Astro.Trinket.BLOODY_BANDAGE .. "}}Bloody Bandage를 1개 소환합니다."
                 )
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_INFESTATION then
+                EID:appendToDescription(descObj, "#획득 시 {{Trinket70}}Louse를 1개 소환합니다.")
             end
 
             return descObj
@@ -107,7 +113,7 @@ Astro:AddCallback(
         if not currentRoom:IsClear() then
             for i = 1, Game():GetNumPlayers() do
                 local player = Isaac.GetPlayer(i - 1)
-    
+
                 if player:HasCollectible(CollectibleType.COLLECTIBLE_MILK) then
                     local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_MILK)
 
@@ -150,9 +156,10 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        if Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_VOODOO_HEAD) then
+        if collectibleType == CollectibleType.COLLECTIBLE_VOODOO_HEAD and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_VOODOO_HEAD) then
             Astro:SpawnTrinket(Astro.Trinket.BLOODY_BANDAGE, player.Position)
+         elseif collectibleType == CollectibleType.COLLECTIBLE_INFESTATION and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_INFESTATION) then
+            Astro:SpawnTrinket(TrinketType.TRINKET_LOUSE, player.Position)
         end
-    end,
-    CollectibleType.COLLECTIBLE_VOODOO_HEAD
+    end
 )

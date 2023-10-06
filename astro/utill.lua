@@ -168,16 +168,19 @@ end
 ---@param collectibleType CollectibleType
 ---@param position Vector
 ---@param optionsPickupIndex integer?
+---@param isExactPosition boolean?
 ---@return EntityPickup
-function Astro:SpawnCollectible(collectibleType, position, optionsPickupIndex)
+function Astro:SpawnCollectible(collectibleType, position, optionsPickupIndex, isExactPosition)
     local currentRoom = Game():GetLevel():GetCurrentRoom()
+
+    local step = isExactPosition and 0 or 40
 
     local pickup =
         Isaac.Spawn(
         EntityType.ENTITY_PICKUP,
         PickupVariant.PICKUP_COLLECTIBLE,
         collectibleType,
-        currentRoom:FindFreePickupSpawnPosition(position, 0, true),
+        currentRoom:FindFreePickupSpawnPosition(position, step, true),
         Vector.Zero,
         nil
     ):ToPickup()
@@ -205,27 +208,33 @@ function Astro:SpawnTrinket(trinketType, position)
     ):ToPickup()
 end
 
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    ---@param isContinued boolean
+    function(_, isContinued)
+        if not isContinued then
+            Astro.Data.CollectibleCount = {}
+        end
+    end
+)
+
 ---아이템 최초 획득 시를 체크한다.
 ---TODO: 추후에 여러번 획득해도 동작하도록 변경할 예정이기 때문에 카운트를 저장한다.
 ---@param collectibleType CollectibleType
 ---@return boolean
 function Astro:IsFirstAdded(collectibleType)
-    if Astro.Data.Save.CollectibleCount == nil then
-        Astro.Data.Save.CollectibleCount = {}
-    end
-
     local count = 0
 
-    for index, value in ipairs(Astro.Data.Save.CollectibleCount) do
+    for index, value in ipairs(Astro.Data.CollectibleCount) do
         if value.id == collectibleType then
             count = value.count + 1
-            Astro.Data.Save.CollectibleCount[index].count = count
+            Astro.Data.CollectibleCount[index].count = count
             break
         end
     end
 
     if count == 0 then
-        table.insert(Astro.Data.Save.CollectibleCount, {id = collectibleType, count = 1})
+        table.insert(Astro.Data.CollectibleCount, {id = collectibleType, count = 1})
         count = 1
     end
 

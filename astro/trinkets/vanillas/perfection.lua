@@ -79,30 +79,36 @@ Astro:AddCallback(
                     if stage == LevelStage.STAGE1_2 then
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_MAGIC_8_BALL,
-                            currentRoom:GetCenterPos() + Vector(0, GRID_SIZE)
+                            currentRoom:GetCenterPos() + Vector(0, GRID_SIZE),
+                            nil,
+                            true
                         )
                         Astro:SpawnCard(Card.RUNE_ANSUZ, player.Position)
                     elseif stage == LevelStage.STAGE2_2 then
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_MOMS_PURSE,
                             currentRoom:GetCenterPos() + Vector(-GRID_SIZE, 0),
-                            OPTIONS_PICKUP_INDEX
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_POLYDACTYLY,
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE, 0),
-                            OPTIONS_PICKUP_INDEX
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                     elseif stage == LevelStage.STAGE3_1 then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(-GRID_SIZE, 0),
-                            OPTIONS_PICKUP_INDEX
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE, 0),
-                            OPTIONS_PICKUP_INDEX
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                     elseif stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then
                         player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
@@ -112,17 +118,20 @@ Astro:AddCallback(
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, 0),
-                            OPTIONS_PICKUP_INDEX
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos(),
-                            OPTIONS_PICKUP_INDEX
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, 0),
-                            OPTIONS_PICKUP_INDEX
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                     elseif
                         stage == LevelStage.STAGE4_2 or (stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 8)
@@ -130,17 +139,20 @@ Astro:AddCallback(
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, GRID_SIZE * 2),
-                            OPTIONS_PICKUP_INDEX
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(0, GRID_SIZE * 2),
-                            OPTIONS_PICKUP_INDEX
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, GRID_SIZE * 2),
-                            OPTIONS_PICKUP_INDEX
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                     elseif stage == LevelStage.STAGE4_3 then
                         Isaac.Spawn(

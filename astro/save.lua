@@ -1,8 +1,6 @@
 local hiddenItemManager = require("astro.lib.hidden_item_manager")
 
-Astro.Data = {
-    Save = {}
-}
+Astro.Data = {}
 
 -- Load Data
 Astro:AddPriorityCallback(
@@ -16,10 +14,6 @@ Astro:AddPriorityCallback(
 
             Astro.Data = data or {}
 
-            if Astro.Data.Save == nil or not isContinued then
-                Astro.Data.Save = {}
-            end
-            
             hiddenItemManager:LoadData(Astro.Data.HiddenItemData)
         end
     end
