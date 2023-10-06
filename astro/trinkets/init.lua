@@ -2,6 +2,8 @@ Astro.Trinket = {}
 
 require "astro.trinkets.golden"
 
+require "astro.trinkets.vanillas.perfection"
+
 require "astro.trinkets.customs.absolute-zero"
 require "astro.trinkets.customs.bloody-bandage"
 require "astro.trinkets.customs.edens-snake"
