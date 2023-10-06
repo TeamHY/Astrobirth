@@ -159,7 +159,7 @@ function Astro:SpawnCard(cardType, position)
         EntityType.ENTITY_PICKUP,
         PickupVariant.PICKUP_TAROTCARD,
         cardType,
-        currentRoom:FindFreePickupSpawnPosition(position, 0, true),
+        currentRoom:FindFreePickupSpawnPosition(position, 40, true),
         Vector.Zero,
         nil
     ):ToPickup()

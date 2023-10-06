@@ -63,7 +63,7 @@ Astro:AddCallback(
                         EntityType.ENTITY_PICKUP,
                         PickupVariant.PICKUP_BOMB,
                         2,
-                        currentRoom:FindFreePickupSpawnPosition(player.Position, 0, true),
+                        currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
                         Vector.Zero,
                         nil
                     )
@@ -71,7 +71,7 @@ Astro:AddCallback(
                         EntityType.ENTITY_PICKUP,
                         PickupVariant.PICKUP_KEY,
                         3,
-                        currentRoom:FindFreePickupSpawnPosition(player.Position, 0, true),
+                        currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
                         Vector.Zero,
                         nil
                     )
