@@ -52,6 +52,16 @@ if EID then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible199}}Mom's Key를 소환합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_TORN_POCKET then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible416}}Deep Pockets을 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_AZAZELS_STUMP then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible118}}Brimstone을 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_CRICKET_LEG then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible248}}Hive Mind를 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_STRANGE_KEY then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible297}}Pandora's Box를 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_SHORT_FUSE then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible517}}Fast Bombs을 소환합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_WISH_BONE then
+                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible515}}Mystery Gift를 소환합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_SILVER_DOLLAR then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_BLOODY_CROWN then
@@ -94,6 +104,8 @@ if EID then
                 EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{LadderRoom}}사다리방으로 가는 다락문을 생성합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_KARMA then
                 EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 행운이 1 증가합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_MONKEY_PAW then
+                EID:appendToDescription(descObj, "#{{ColorGold}}스테이지를 넘어갈 때마다 {{BlackHeart}}블랙하트를 셋 드랍합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_BLOODY_PENNY then
                 EID:appendToDescription(
                     descObj,
@@ -131,12 +143,16 @@ if EID then
             elseif descObj.ObjSubType == TrinketType.TRINKET_BROKEN_PADLOCK then
                 EID:appendToDescription(descObj, "#{{ColorGold}}방 클리어 시 마다 {{Collectible175}}Dad's Key 효과를 발동합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_ADOPTION_PAPERS then
-                EID:appendToDescription(descObj, "#{{ColorGold}}상점에 {{Card92}}Soul of Lilith를 하나 생성합니다.")
+                EID:appendToDescription(descObj, "#{{ColorGold}}{{Shop}}상점에 {{Card92}}Soul of Lilith를 하나 생성합니다.")
+            elseif descObj.ObjSubType == TrinketType.TRINKET_GOLDEN_HORSE_SHOE then
+                EID:appendToDescription(descObj, "#{{ColorGold}}{{TreasureRoom}}보물방에 보상을 하나 추가로 생성합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_SIGIL_OF_BAPHOMET then
                 EID:appendToDescription(
                     descObj,
                     "#{{ColorGold}}클리어 되지않은 방 입장 시 30% 확률로 {{Collectible58}}Book of Shadows 효과를 발동합니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)"
                 )
+            elseif descObj.ObjSubType == TrinketType.TRINKET_BLACK_FEATHER then
+                EID:appendToDescription(descObj, "#{{ColorGold}}{{DevilRoom}}악마방 입장 시 공격력 +2 증가합니다.")
             end
 
             return descObj
@@ -150,14 +166,20 @@ Astro:AddCallback(
     function(_, isContinued)
         if not isContinued then
             Astro.Data.KarmaLuck = 0
+            Astro.Data.BlackFeatherDamage = 0
         else
             for i = 1, Game():GetNumPlayers() do
                 local player = Isaac.GetPlayer(i - 1)
 
                 if player:GetTrinketMultiplier(TrinketType.TRINKET_KARMA) > 1 then
                     player:AddCacheFlags(CacheFlag.CACHE_LUCK)
-                    player:EvaluateItems()
                 end
+
+                if player:GetTrinketMultiplier(TrinketType.TRINKET_BLACK_FEATHER) > 1 then
+                    player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
+                end
+
+                player:EvaluateItems()
             end
         end
     end
@@ -333,6 +355,21 @@ local function RunEffect(player, type)
     elseif CheckTrinket(type, TrinketType.TRINKET_TORN_POCKET) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_DEEP_POCKETS, player.Position)
         return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_AZAZELS_STUMP) then
+        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BRIMSTONE, player.Position)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_CRICKET_LEG) then
+        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_HIVE_MIND, player.Position)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_STRANGE_KEY) then
+        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BLUE_BOX, player.Position)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_SHORT_FUSE) then
+        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_FAST_BOMBS, player.Position)
+        return true
+    elseif CheckTrinket(type, TrinketType.TRINKET_WISH_BONE) then
+        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_MYSTERY_GIFT, player.Position)
+        return true
     elseif CheckTrinket(type, TrinketType.TRINKET_SILVER_DOLLAR) then
         isc:smeltTrinket(player, TrinketType.TRINKET_SILVER_DOLLAR + GOLDEN_TRINKET_OFFSET)
         return true
@@ -417,8 +454,12 @@ Astro:AddCallback(
             if player:GetTrinketMultiplier(TrinketType.TRINKET_PURPLE_HEART) > 1 then
                 player.Damage = player.Damage * 1.2
             end
+
+            if player:GetTrinketMultiplier(TrinketType.TRINKET_BLACK_FEATHER) > 1 and Astro.Data.BlackFeatherDamage ~= nil then
+                player.Damage = player.Damage + Astro.Data.BlackFeatherDamage
+            end
         elseif cacheFlag == CacheFlag.CACHE_LUCK then
-            if player:GetTrinketMultiplier(TrinketType.TRINKET_KARMA) > 1 then
+            if player:GetTrinketMultiplier(TrinketType.TRINKET_KARMA) > 1 and Astro.Data.KarmaLuck ~= nil then
                 player.Luck = player.Luck + Astro.Data.KarmaLuck
             end
         elseif cacheFlag == CacheFlag.CACHE_FLYING then
@@ -549,8 +590,6 @@ Astro:AddCallback(
             end
 
             if player:GetTrinketMultiplier(TrinketType.TRINKET_STUD_FINDER) > 1 then
-                local currentRoom = game:GetLevel():GetCurrentRoom()
-
                 Isaac.GridSpawn(GridEntityType.GRID_STAIRS, 0, Vector(560, 400), true)
             end
 
@@ -559,6 +598,33 @@ Astro:AddCallback(
 
                 player:AddCacheFlags(CacheFlag.CACHE_LUCK)
                 player:EvaluateItems()
+            end
+
+            if player:GetTrinketMultiplier(TrinketType.TRINKET_MONKEY_PAW) > 1 then
+                Isaac.Spawn(
+                    EntityType.ENTITY_PICKUP,
+                    PickupVariant.PICKUP_HEART,
+                    HeartSubType.HEART_BLACK,
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                    Vector.Zero,
+                    nil
+                )
+                Isaac.Spawn(
+                    EntityType.ENTITY_PICKUP,
+                    PickupVariant.PICKUP_HEART,
+                    HeartSubType.HEART_BLACK,
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                    Vector.Zero,
+                    nil
+                )
+                Isaac.Spawn(
+                    EntityType.ENTITY_PICKUP,
+                    PickupVariant.PICKUP_HEART,
+                    HeartSubType.HEART_BLACK,
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                    Vector.Zero,
+                    nil
+                )
             end
         end
     end
@@ -686,13 +752,25 @@ Astro:AddCallback(
         for i = 1, game:GetNumPlayers() do
             local player = Isaac.GetPlayer(i - 1)
 
-            if
-                player:GetTrinketMultiplier(TrinketType.TRINKET_ADOPTION_PAPERS) > 1 and
-                    currentRoom:GetFrameCount() <= 0 and
-                    currentRoom:IsFirstVisit()
-             then
-                if roomType == RoomType.ROOM_SHOP then
+            if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
+                if
+                    player:GetTrinketMultiplier(TrinketType.TRINKET_ADOPTION_PAPERS) > 1 and
+                        roomType == RoomType.ROOM_SHOP
+                 then
                     Astro:SpawnCard(Card.CARD_SOUL_LILITH, currentRoom:GetCenterPos())
+                elseif
+                    player:GetTrinketMultiplier(TrinketType.TRINKET_GOLDEN_HORSE_SHOE) > 1 and
+                        roomType == RoomType.ROOM_TREASURE
+                 then
+                    Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_NULL, currentRoom:GetCenterPos())
+                elseif
+                    player:GetTrinketMultiplier(TrinketType.TRINKET_BLACK_FEATHER) > 1 and
+                        roomType == RoomType.ROOM_DEVIL
+                 then
+                    Astro.Data.BlackFeatherDamage = Astro.Data.BlackFeatherDamage + 2
+
+                    player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
+                    player:EvaluateItems()
                 end
             end
 
