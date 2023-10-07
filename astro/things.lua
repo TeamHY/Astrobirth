@@ -17,14 +17,6 @@ function Astro:OnRoomClear()
 	if currentRoom:GetType() == RoomType.ROOM_BOSS then
 		if stage == LevelStage.STAGE1_1 or stage == LevelStage.STAGE1_2 then
 			Isaac.Spawn(EntityType.ENTITY_SLOT, 10, 0, currentRoom:GetCenterPos(), Vector(0, 0), nil) -- Shop Restock Machine
-
-			if currentRoom:IsMirrorWorld() then
-				if not firstPlayer:HasCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1) then
-					firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1)
-				end
-
-				firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
-			end
 		elseif
 			stage == LevelStage.STAGE3_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE and
 				currentRoom:GetBossID() == 6
