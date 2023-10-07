@@ -25,6 +25,17 @@ function Astro:OnRoomClear()
 
 				firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
 			end
+		elseif
+			stage == LevelStage.STAGE3_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE and
+				currentRoom:GetBossID() == 6
+		 then
+			if not firstPlayer:HasCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1) then
+				firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1)
+			end
+
+			if not firstPlayer:HasCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2) then
+				firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
+			end
 		elseif stage == LevelStage.STAGE6 then
 			if not firstPlayer:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1, true) then
 				firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1)
