@@ -161,3 +161,19 @@ Astro:AddCallback(
 		end
 	end
 )
+
+Astro:AddCallback(
+	ModCallbacks.MC_POST_NPC_INIT,
+	---@param entityNPC EntityNPC
+	function(_, entityNPC)
+		if entityNPC.Type == EntityType.ENTITY_DOGMA and entityNPC.Variant == 1 then
+			local currentRoom = Game():GetLevel():GetCurrentRoom()
+			local rng = entityNPC:GetDropRNG()
+
+			Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, 0, 0, currentRoom:GetGridPosition(106), Vector.Zero, nil) -- Death's Head
+			Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, rng:RandomInt(2) * 2, 0, currentRoom:GetGridPosition(118), Vector.Zero, nil) -- Death's Head or Cursed Death's Head
+			Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, rng:RandomInt(2) * 2, 0, currentRoom:GetGridPosition(121), Vector.Zero, nil)
+			Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, 0, 0, currentRoom:GetGridPosition(133), Vector.Zero, nil)
+		end
+	end
+)
