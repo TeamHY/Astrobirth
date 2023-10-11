@@ -249,8 +249,8 @@
 
 	<Pool Name="shop">
 
-		<Item Name="Pure White Heart" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Super Magneto" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Super Magneto" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Oblivion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
