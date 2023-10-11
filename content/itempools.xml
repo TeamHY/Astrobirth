@@ -63,7 +63,7 @@
 		<Item Name="Gemini EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Prometheus" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pure White Heart" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Silver Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Platinum Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -93,7 +93,7 @@
 		<Item Name="Gemini EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Prometheus" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pure White Heart" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Silver Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Platinum Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -121,7 +121,7 @@
 		<Item Name="Gemini EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Prometheus" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pure White Heart" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Silver Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Platinum Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -150,7 +150,7 @@
 		<Item Name="Gemini EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Prometheus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Platinum Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -178,7 +178,7 @@
 		<Item Name="Gemini EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Prometheus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Platinum Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -212,7 +212,7 @@
 		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Platinum Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Super Magneto" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Angry Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Oblivion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -241,7 +241,7 @@
 		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Silver Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Platinum Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Super Magneto" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Angry Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Oblivion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
