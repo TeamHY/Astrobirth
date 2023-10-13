@@ -115,6 +115,14 @@ Astro:AddCallback(
 					Vector.Zero,
 					nil
 				)
+			elseif roomType == RoomType.ROOM_SUPERSECRET then
+				local entities = Isaac.GetRoomEntities()
+
+				for i = 1, #entities do
+					if entities[i].Type == EntityType.ENTITY_SHOPKEEPER then
+						entities[i]:Kill()
+					end
+				end
 			elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 55 then -- Mega Satan
 				Isaac.Spawn(
 					EntityType.ENTITY_PICKUP,
