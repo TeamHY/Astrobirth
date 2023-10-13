@@ -9,6 +9,7 @@ local function CheckHeartLimitStage(stage)
     local level = Game():GetLevel()
 
     return stage >= LevelStage.STAGE4_3 or
+        (stage == LevelStage.STAGE4_1 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE) or
         (stage == LevelStage.STAGE4_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE)
 end
 
@@ -127,7 +128,10 @@ Astro:AddCallback(
             -- TODO: 더 추가될 경우 보기 쉽게 변경해야 함
             if
                 isaacsRoom.Data.Type == RoomType.ROOM_ISAACS or barrenRoom.Data.Type == RoomType.ROOM_BARREN or
-                (sacrificeRoom.Data.Type ~= RoomType.ROOM_SACRIFICE and Isaac.GetPlayer():GetPlayerType() == PlayerType.PLAYER_MAGDALENE and level:GetStage() == LevelStage.STAGE1_1 and level:GetStageType() <= StageType.STAGETYPE_AFTERBIRTH)
+                    (sacrificeRoom.Data.Type ~= RoomType.ROOM_SACRIFICE and
+                        Isaac.GetPlayer():GetPlayerType() == PlayerType.PLAYER_MAGDALENE and
+                        level:GetStage() == LevelStage.STAGE1_1 and
+                        level:GetStageType() <= StageType.STAGETYPE_AFTERBIRTH)
              then
                 tryCount = tryCount + 1
                 Isaac.ExecuteCommand("reseed")
