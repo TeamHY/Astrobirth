@@ -25,7 +25,7 @@ Astro:AddCallback(
     
                         player:AddCoins(-1)
     
-                        if (data.count >= 7 or rng:RandomFloat() < 0.25) then -- 동전 소모 개수만큼 25% 독립시행 확률
+                        if (data.count >= 7 or rng:RandomFloat() < 0.1) then -- 동전 소모 개수만큼 10% 독립시행 확률
                             entityPickup:TryOpenChest(player)
                             break
                         else
@@ -48,7 +48,7 @@ Astro:AddCallback(
     
                         player:AddKeys(-1)
     
-                        if (data.count >= 7 or rng:RandomFloat() < 0.25) then -- 열쇠 소모 개수만큼 25% 독립시행 확률
+                        if (data.count >= 7 or rng:RandomFloat() < 0.1) then -- 열쇠 소모 개수만큼 10% 독립시행 확률
                             entityPickup:TryOpenChest(player)
                             break
                         else
