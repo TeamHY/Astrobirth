@@ -2910,7 +2910,7 @@
         <bestiary anim="SlotSpinningFast" transform="0,10,.7"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="406.001_UltraGreedier.anm2" baseHP="10000" shieldStrength="180" boss="1" bossID="71" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="25" friction="1" id="406" name="#ULTRA_GREEDIER" numGridCollisionPoints="40" portrait="84" shadowSize="60" stageHP="0" variant="1">
+    <entity anm2path="406.001_UltraGreedier.anm2" baseHP="12000" shieldStrength="180" boss="1" bossID="71" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="25" friction="1" id="406" name="#ULTRA_GREEDIER" numGridCollisionPoints="40" portrait="84" shadowSize="60" stageHP="0" variant="1">
         <bestiary anim="Tantrum" transform="0,10,.7"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
