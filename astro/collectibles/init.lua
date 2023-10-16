@@ -2,6 +2,7 @@ local isc = require("astro.lib.isaacscript-common")
 
 Astro.Collectible = {}
 
+require "astro.collectibles.active"
 require "astro.collectibles.status"
 
 require "astro.collectibles.vanillas.aquarius"
