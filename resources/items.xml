@@ -156,7 +156,7 @@
 	<familiar description="#THE_PEEPER_DESCRIPTION" gfx="Collectibles_155_ThePeeper.png" id="155" name="#THE_PEEPER_NAME" />
 	<passive description="#HABIT_DESCRIPTION" gfx="Collectibles_156_Habit.png" id="156" name="#HABIT_NAME" />
 	<passive achievement="54" cache="damage color" description="#BLOODY_LUST_DESCRIPTION" gfx="Collectibles_157_BloodyLust.png" id="157" name="#BLOODY_LUST_NAME" />
-	<active description="#CRYSTAL_BALL_DESCRIPTION" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="6" name="#CRYSTAL_BALL_NAME" />
+	<active description="#CRYSTAL_BALL_DESCRIPTION" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="122" name="#CRYSTAL_BALL_NAME" />
 	<passive cache="flying tearflag tearcolor" description="#SPIRIT_OF_THE_NIGHT_DESCRIPTION" devilprice="2" gfx="Collectibles_159_SpiritOfTheNight.png" id="159" name="#SPIRIT_OF_THE_NIGHT_NAME" />
 	<active cooldown="60" description="#CRACK_THE_SKY_DESCRIPTION" persistent="false" gfx="Collectibles_160_CrackTheSky.png" id="160" maxcharges="3" name="#CRACK_THE_SKY_NAME" />
 	<passive description="#ANKH_DESCRIPTION" gfx="Collectibles_161_Ankh.png" id="161" name="#ANKH_NAME" />
@@ -527,7 +527,7 @@
 	<familiar achievement="352" description="#ANGRY_FLY_DESCRIPTION" gfx="Collectibles_511_AngryFly.png" id="511" name="#ANGRY_FLY_NAME" />
 	<active achievement="349" description="#BLACK_HOLE_DESCRIPTION" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="3" name="#BLACK_HOLE_NAME" />
 	<passive achievement="353" cache="damage" name="#BOZO_NAME" description="#BOZO_DESCRIPTION" soulhearts="2" id="513" gfx="Collectibles_513_Bozo.png" />
-	<passive achievement="354" name="#BROKEN_MODEM_NAME" description="#BROKEN_MODEM_DESCRIPTION" id="514" gfx="Collectibles_514_BrokenModem.png" />
+	<passive achievement="354" name="#BROKEN_MODEM_NAME" description="#BROKEN_MODEM_DESCRIPTION" devilprice="2" shopprice="35" id="514" gfx="Collectibles_514_BrokenModem.png" />
 	<active achievement="350" description="#MYSTERY_GIFT_DESCRIPTION" id="515" gfx="Collectibles_515_MysteryGift.png" name="#MYSTERY_GIFT_NAME" />
 	<active achievement="351" cache="familiars" name="#SPRINKLER_NAME" gfx="Collectibles_516_Sprinkler.png" description="#SPRINKLER_DESCRIPTION" id="516" maxcharges="4" />
 	<passive achievement="356" name="#FAST_BOMBS_NAME" gfx="Collectibles_517_FastBombs.png" shopprice="5" description="#FAST_BOMBS_DESCRIPTION" id="517" bombs="7" />
@@ -606,7 +606,7 @@
 	<active		id="578"	gfx="Collectibles_578_FreeLemonade.png" name="#FREE_LEMONADE_NAME" description="#FREE_LEMONADE_DESCRIPTION" maxcharges="3" />
 	<passive	id="579"	achievement="520" gfx="Collectibles_579_SpiritSword.png" name="#SPIRIT_SWORD_NAME" description="#SPIRIT_SWORD_DESCRIPTION" cache="weapon damage firedelay" special="true" devilprice="2" />
 	<active		id="580"	achievement="415" gfx="Collectibles_580_SecretKey.png" name="#RED_KEY_NAME" description="#RED_KEY_DESCRIPTION" maxcharges="4" />
-	<familiar	id="581"	gfx="Collectibles_581_PsyFly.png" devilprice="2" name="#PSY_FLY_NAME" description="#PSY_FLY_DESCRIPTION" />
+	<familiar	id="581"	gfx="Collectibles_581_PsyFly.png" devilprice="2" name="#PSY_FLY_NAME" shopprice="35" description="#PSY_FLY_DESCRIPTION" />
 	<active		id="582"	gfx="Collectibles_582_WavyCap.png" name="#WAVY_CAP_NAME" description="#WAVY_CAP_DESCRIPTION" maxcharges="900" chargetype="timed" cache="firedelay damage speed" />
 	<passive	id="583"	gfx="Collectibles_583_RocketInAJar.png" name="#ROCKET_IN_A_JAR_NAME" description="#ROCKET_IN_A_JAR_DESCRIPTION" bombs="5" />
 	<passive	id="584"	achievement="417" gfx="Collectibles_584_BookOfVirtues.png" name="#BOOK_OF_VIRTUES_NAME" description="#BOOK_OF_VIRTUES_DESCRIPTION" maxcharges="4" />
