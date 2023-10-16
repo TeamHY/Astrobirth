@@ -1,7 +1,7 @@
 Astro.Collectible.PAVO = Isaac.GetItemIdByName("Pavo")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.PAVO, "Mega Satan 1 페이즈을 제외한 모든 몬스터들의 체력이 25% 감소됩니다.#Mega Satan 1 페이즈의 체력이 20% 감소됩니다.", "공작자리")
+    EID:addCollectible(Astro.Collectible.PAVO, "Mega Satan 1 페이즈을 제외한 모든 몬스터들의 체력이 18% 감소됩니다.#Mega Satan 1 페이즈의 체력이 20% 감소됩니다.", "공작자리")
 end
 
 Astro:AddCallback(
@@ -16,7 +16,7 @@ Astro:AddCallback(
                     if entity.Type == EntityType.ENTITY_MEGA_SATAN then
                         entity.HitPoints = entity.HitPoints - entity.MaxHitPoints * 0.2
                     else
-                        entity.HitPoints = entity.HitPoints - entity.MaxHitPoints * 0.25
+                        entity.HitPoints = entity.HitPoints - entity.MaxHitPoints * 0.18
                     end
                 end
 
