@@ -20,6 +20,7 @@
 		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Solar System" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
     <Pool Name="secret">
@@ -216,6 +217,7 @@
 		<Item Name="Super Magneto" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Angry Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Oblivion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Solar System" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="craneGame">
@@ -245,6 +247,7 @@
 		<Item Name="Super Magneto" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Angry Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Oblivion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Solar System" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">

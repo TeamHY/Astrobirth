@@ -156,7 +156,7 @@
 	<familiar description="#THE_PEEPER_DESCRIPTION" gfx="Collectibles_155_ThePeeper.png" id="155" name="#THE_PEEPER_NAME" />
 	<passive description="#HABIT_DESCRIPTION" gfx="Collectibles_156_Habit.png" id="156" name="#HABIT_NAME" />
 	<passive achievement="54" cache="damage color" description="#BLOODY_LUST_DESCRIPTION" gfx="Collectibles_157_BloodyLust.png" id="157" name="#BLOODY_LUST_NAME" />
-	<active description="#CRYSTAL_BALL_DESCRIPTION" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="122" name="#CRYSTAL_BALL_NAME" />
+	<active description="#CRYSTAL_BALL_DESCRIPTION" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="12" name="#CRYSTAL_BALL_NAME" />
 	<passive cache="flying tearflag tearcolor" description="#SPIRIT_OF_THE_NIGHT_DESCRIPTION" devilprice="2" gfx="Collectibles_159_SpiritOfTheNight.png" id="159" name="#SPIRIT_OF_THE_NIGHT_NAME" />
 	<active cooldown="60" description="#CRACK_THE_SKY_DESCRIPTION" persistent="false" gfx="Collectibles_160_CrackTheSky.png" id="160" maxcharges="3" name="#CRACK_THE_SKY_NAME" />
 	<passive description="#ANKH_DESCRIPTION" gfx="Collectibles_161_Ankh.png" id="161" name="#ANKH_NAME" />
