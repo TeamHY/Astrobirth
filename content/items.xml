@@ -30,6 +30,7 @@
 	<passive cache="firedelay" gfx="Angry Onion.png" quality="3" devilprice="2" name="Angry Onion" />
 	<active gfx="Deep Of Abyss.png" quality="3" devilprice="1" maxcharges="10" name="Oblivion" />
 	<passive gfx="collectibles_668_dadsnote.png" quality="3" devilprice="2" tags="noeden" name="Go Home!" />
+	<passive gfx="Cleaner.png" name="Cleaner" />
 
 
 
