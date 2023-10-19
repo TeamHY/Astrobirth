@@ -67205,7 +67205,7 @@
 			<entity type="33" variant="4" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="0" name="Planetarium" type="24" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="0.009999999776482582">
+	<room variant="0" name="Laniakea Supercluster Room" type="24" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="0.009999999776482582">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>

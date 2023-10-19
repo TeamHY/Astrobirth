@@ -33,7 +33,7 @@
 	<passive gfx="Fallen Orb.png" quality="4" devilprice="2" name="Fallen Orb" />
 	<passive gfx="Trinity.png" quality="3" devilprice="1" name="Trinity" />
 	<passive gfx="Blood Of Hatred.png" quality="3" devilprice="1" name="Blood Of Hatred" />
-	<passive gfx="Spectrum Tears.png" quality="4" devilprice="2" name="Spectrum Tears" />
+	<passive gfx="Divine Light.png" quality="4" devilprice="2" name="Divine Light" />
 	<passive gfx="Omega 321.png" quality="2" devilprice="1" name="Omega 321" />
 	<passive gfx="Reincarnation.png" quality="3" devilprice="1" name="Reincarnation" />
 	<passive gfx="Acute Sinusitis.png" quality="4" devilprice="2" name="Acute Sinusitis" />
@@ -56,5 +56,5 @@
 	<trinket gfx="Bloody Bandage.png" name="Bloody Bandage" />
 	<trinket gfx="Eden's Snake.png" name="Eden's Snake" />
 	<trinket gfx="Electronic Penny.png" name="Electronic Penny" />
-	<trinket gfx="Mirror.png" name="Mirror" />
+	<trinket gfx="Black Mirror.png" name="Black Mirror" />
 </items>
