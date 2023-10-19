@@ -37,12 +37,13 @@
 	<passive gfx="Omega 321.png" quality="2" devilprice="1" name="Omega 321" />
 	<passive gfx="Reincarnation.png" quality="3" devilprice="1" name="Reincarnation" />
 	<passive gfx="Acute Sinusitis.png" quality="4" devilprice="2" name="Acute Sinusitis" />
-	<passive gfx="Laniakea Supercluster.png" quality="4" devilprice="2" name="Laniakea Supercluster" />
+	<active gfx="Laniakea Supercluster.png" quality="4" devilprice="2" maxcharges="0" name="Laniakea Supercluster" />
 	<passive gfx="Cleaner.png" quality="0" devilprice="1" name="Cleaner" />
 	<passive gfx="Clover.png" quality="3" devilprice="2" name="Clover" />
 	<passive gfx="Galactic Medal Of Valor.png" quality="4" devilprice="2" name="Galactic Medal Of Valor" />
 	<passive gfx="Pirate Map.png" quality="2" devilprice="1" name="Pirate Map" />
 	<passive gfx="Morphine.png" quality="2" devilprice="1" name="Morphine" />
+	<passive gfx="Quasar.png" quality="4" devilprice="2" name="Quasar" />
 
 
 
