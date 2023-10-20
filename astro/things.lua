@@ -132,6 +132,15 @@ Astro:AddCallback(
 					Vector.Zero,
 					nil
 				)
+			elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 70 then -- Delirium
+				Isaac.Spawn(
+					EntityType.ENTITY_PICKUP,
+					PickupVariant.PICKUP_COLLECTIBLE,
+					Astro.Collectible.GO_HOME,
+					currentRoom:GetTopLeftPos() - Vector(20, 20),
+					Vector.Zero,
+					nil
+				)
 			elseif currentRoomDesc.Data.Name == "Mom" and currentRoomDesc.Data.Subtype == 89 then
 				Isaac.Spawn(
 					EntityType.ENTITY_PICKUP,
