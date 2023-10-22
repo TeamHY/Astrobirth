@@ -13,14 +13,14 @@ if EID then
 end
 
 -- https://steamcommunity.com/sharedfiles/filedetails/?id=2557887449
-local function displayUltraSecretRoom()
+local function DisplayUltraSecretRoom()
     local level = Game():GetLevel()
 
     for i = 0, 169 do
         local room = level:GetRoomByIdx(i)
 
         if room.Data and room.Data.Type == RoomType.ROOM_ULTRASECRET then
-            room.DisplayFlags = room.DisplayFlags | 1 << 2
+            room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
             level:UpdateVisibility()
             return
         end
@@ -56,7 +56,7 @@ Astro:AddCallback(
             local player = Isaac.GetPlayer(i - 1)
 
             if player:HasCollectible(Astro.Collectible.COMET) then
-                displayUltraSecretRoom()
+                DisplayUltraSecretRoom()
                 break
             end
         end
@@ -72,7 +72,7 @@ Astro:AddCallbackCustom(
             Astro:SpawnCard(Card.CARD_CRACKED_KEY, player.Position)
         end
 
-        displayUltraSecretRoom()
+        DisplayUltraSecretRoom()
 
         Astro.Data.RunComet = true
     end,

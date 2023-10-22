@@ -36,7 +36,7 @@ Astro:AddCallback(
             local room = level:GetRoomByIdx(idx)
 
             if room.Data.Type == RoomType.ROOM_CURSE then
-                room.DisplayFlags = room.DisplayFlags | 1 << 2
+                room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
                 level:UpdateVisibility()
             end
         end

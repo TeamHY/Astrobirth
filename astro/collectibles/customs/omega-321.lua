@@ -15,9 +15,9 @@ Astro:AddCallback(
 
                 if player:HasCollectible(Astro.Collectible.OMEGA_321) then
                     player:UseActiveItem(CollectibleType.COLLECTIBLE_HOURGLASS, false, true, false, false)
+                    
+                    break
                 end
-
-                break
             end
         end
     end

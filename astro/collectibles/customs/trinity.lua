@@ -54,10 +54,10 @@ Astro:AddCallback(
                 local inventory = Astro:getPlayerInventory(player, false)
                 local rng = player:GetCollectibleRNG(Astro.Collectible.TRINITY)
 
-                local hadCollectable = Astro:GetRandomCollectibles(inventory, rng, 1, nil, true)
+                local hadCollectable = Astro:GetRandomCollectibles(inventory, rng, 1, Astro.Collectible.TRINITY, true)
 
-                if hadCollectable[0] ~= nil then
-                    Astro:SpawnCollectible(hadCollectable[0], player.Position, Astro.Collectible.TRINITY)
+                if hadCollectable[1] ~= nil then
+                    Astro:SpawnCollectible(hadCollectable[1], player.Position, Astro.Collectible.TRINITY)
                 end
 
 

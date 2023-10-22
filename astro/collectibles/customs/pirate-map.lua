@@ -1,29 +1,66 @@
+local isc = require("astro.lib.isaacscript-common")
+
 Astro.Collectible.PIRATE_MAP = Isaac.GetItemIdByName("Pirate Map")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.PIRATE_MAP, "", "해적 지도")
+    EID:addCollectible(Astro.Collectible.PIRATE_MAP, "현재 스테이지에서 랜덤한 방 위치 2개를 보여주며, 럭 2당 1개의 방을 추가적으로 보여줍니다.", "해적 지도")
 end
 
--- 현재 스테이지에서 랜덤한 방 위치 2개를 보여주며, 럭 2당 1개의 방을 추가적으로 보여줍니다
+---@param count integer
+---@param rng RNG
+local function DisplayRandomRoom(count, rng)
+    local level = Game():GetLevel()
+
+    local rooms = {}
+
+    for i = 0, 169 do
+        local room = level:GetRoomByIdx(i)
+
+        if room.Flags & RoomDescriptor.FLAG_RED_ROOM ~= RoomDescriptor.FLAG_RED_ROOM and room.DisplayFlags & RoomDescriptor.DISPLAY_BOX ~= RoomDescriptor.DISPLAY_BOX then
+            table.insert(rooms, room)
+        end
+    end
+
+    for _ = 1, count do
+        if #rooms == 0 then
+            break
+        end
+
+        local room = rooms[rng:RandomInt(#rooms) + 1]
+
+        room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
+    end
+
+    level:UpdateVisibility()
+end
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_LEVEL,
     function(_)
         for i = 1, Game():GetNumPlayers() do
             local player = Isaac.GetPlayer(i - 1)
-        
-            if player:HasCollectible(Astro.Collectible.PIRATE_MAP) then
-                local level = Game():GetLevel()
-                local rooms = Game():GetLevel():GetRooms()
-    
-                for i = 0, rooms.Size - 1 do
-                    local room = rooms:Get(i)
-                    
-                    print(room.Clear)
-                end
-            end
 
-            break
+            if player:HasCollectible(Astro.Collectible.PIRATE_MAP) then
+                local rng = player:GetCollectibleRNG(Astro.Collectible.PIRATE_MAP)
+
+                DisplayRandomRoom(math.floor(2 + player.Luck / 2), rng)
+
+                break
+            end
         end
     end
+)
+
+Astro:AddCallbackCustom(
+    isc.ModCallbackCustom.POST_PLAYER_COLLECTIBLE_ADDED,
+    ---@param player EntityPlayer
+    ---@param collectibleType CollectibleType
+    function(_, player, collectibleType)
+        if Astro:IsFirstAdded(Astro.Collectible.PIRATE_MAP) then
+            local rng = player:GetCollectibleRNG(Astro.Collectible.PIRATE_MAP)
+
+            DisplayRandomRoom(math.floor(2 + player.Luck / 2), rng)
+        end
+    end,
+    Astro.Collectible.PIRATE_MAP
 )
