@@ -188,7 +188,7 @@ Astro:AddCallback(
 ---@param value integer
 ---@param trinket TrinketType
 ---@return boolean
-local function CheckTrinket(value, trinket)
+function Astro:CheckTrinket(value, trinket)
     if value == trinket or value - GOLDEN_TRINKET_OFFSET == trinket then
         return true
     end
@@ -200,10 +200,10 @@ end
 ---@param type integer
 ---@return boolean
 local function RunEffect(player, type)
-    if CheckTrinket(type, TrinketType.TRINKET_UMBILICAL_CORD) then
+    if Astro:CheckTrinket(type, TrinketType.TRINKET_UMBILICAL_CORD) then
         player:AddCollectible(CollectibleType.COLLECTIBLE_LITTLE_STEVEN)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_MISSING_PAGE) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_MISSING_PAGE) then
         local currentRoom = game:GetLevel():GetCurrentRoom()
         Isaac.Spawn(
             EntityType.ENTITY_PICKUP,
@@ -214,7 +214,7 @@ local function RunEffect(player, type)
             nil
         )
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_RED_PATCH) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_RED_PATCH) then
         local currentRoom = game:GetLevel():GetCurrentRoom()
         Isaac.Spawn(
             EntityType.ENTITY_PICKUP,
@@ -225,7 +225,7 @@ local function RunEffect(player, type)
             nil
         )
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_SUPER_MAGNET) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_SUPER_MAGNET) then
         local currentRoom = game:GetLevel():GetCurrentRoom()
         Isaac.Spawn(
             EntityType.ENTITY_PICKUP,
@@ -236,7 +236,7 @@ local function RunEffect(player, type)
             nil
         )
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_BROKEN_ANKH) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_BROKEN_ANKH) then
         local currentRoom = game:GetLevel():GetCurrentRoom()
         Isaac.Spawn(
             EntityType.ENTITY_PICKUP,
@@ -247,7 +247,7 @@ local function RunEffect(player, type)
             nil
         )
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_FADED_POLAROID) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_FADED_POLAROID) then
         local currentRoom = game:GetLevel():GetCurrentRoom()
         Isaac.Spawn(
                 EntityType.ENTITY_PICKUP,
@@ -274,7 +274,7 @@ local function RunEffect(player, type)
                 nil
             ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_LOUSE) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LOUSE) then
         local currentRoom = game:GetLevel():GetCurrentRoom()
         Isaac.Spawn(
             EntityType.ENTITY_PICKUP,
@@ -285,7 +285,7 @@ local function RunEffect(player, type)
             nil
         )
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_BROKEN_SYRINGE) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_BROKEN_SYRINGE) then
         local currentRoom = game:GetLevel():GetCurrentRoom()
         local rng = player:GetTrinketRNG(TrinketType.TRINKET_BROKEN_SYRINGE)
 
@@ -333,7 +333,7 @@ local function RunEffect(player, type)
                 nil
             ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_LIBERTY_CAP) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LIBERTY_CAP) then
         local rng = player:GetTrinketRNG(TrinketType.TRINKET_LIBERTY_CAP)
 
         local mushrooms = {
@@ -343,58 +343,58 @@ local function RunEffect(player, type)
 
         Astro:SpawnCollectible(mushrooms[rng:RandomInt(#mushrooms) + 1], player.Position)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_RAINBOW_WORM) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_RAINBOW_WORM) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_FRUIT_CAKE, player.Position)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_USED_DIAPER) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_USED_DIAPER) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_SKATOLE, player.Position)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_POKER_CHIP) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_POKER_CHIP) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_MOMS_KEY, player.Position)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_TORN_POCKET) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_TORN_POCKET) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_DEEP_POCKETS, player.Position)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_AZAZELS_STUMP) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_AZAZELS_STUMP) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BRIMSTONE, player.Position)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_CRICKET_LEG) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_CRICKET_LEG) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_HIVE_MIND, player.Position)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_STRANGE_KEY) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_STRANGE_KEY) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BLUE_BOX, player.Position)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_SHORT_FUSE) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_SHORT_FUSE) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_FAST_BOMBS, player.Position)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_WISH_BONE) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_WISH_BONE) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_MYSTERY_GIFT, player.Position)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_SILVER_DOLLAR) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_SILVER_DOLLAR) then
         isc:smeltTrinket(player, TrinketType.TRINKET_SILVER_DOLLAR + GOLDEN_TRINKET_OFFSET)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_BLOODY_CROWN) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_BLOODY_CROWN) then
         isc:smeltTrinket(player, TrinketType.TRINKET_BLOODY_CROWN + GOLDEN_TRINKET_OFFSET)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_HOLY_CROWN) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_HOLY_CROWN) then
         isc:smeltTrinket(player, TrinketType.TRINKET_HOLY_CROWN + GOLDEN_TRINKET_OFFSET)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_WICKED_CROWN) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_WICKED_CROWN) then
         isc:smeltTrinket(player, TrinketType.TRINKET_WICKED_CROWN + GOLDEN_TRINKET_OFFSET)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_NUMBER_MAGNET) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_NUMBER_MAGNET) then
         isc:smeltTrinket(player, TrinketType.TRINKET_NUMBER_MAGNET + GOLDEN_TRINKET_OFFSET)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_PESTILENCE) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_PESTILENCE) then
         isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_PESTILENCE + GOLDEN_TRINKET_OFFSET)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_FAMINE) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_FAMINE) then
         isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_FAMINE + GOLDEN_TRINKET_OFFSET)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_DEATH) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_DEATH) then
         isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_DEATH + GOLDEN_TRINKET_OFFSET)
         return true
-    elseif CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_CONQUEST) then
+    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_CONQUEST) then
         isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_CONQUEST + GOLDEN_TRINKET_OFFSET)
         return true
     end
