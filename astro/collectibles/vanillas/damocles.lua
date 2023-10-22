@@ -12,12 +12,25 @@ local collectibles = {
     CollectibleType.COLLECTIBLE_ESAU_JR, --703
     CollectibleType.COLLECTIBLE_GENESIS, --622
     CollectibleType.COLLECTIBLE_HOLY_MANTLE, --313
-    Astro.Collectible.ALTAIR
+    Astro.Collectible.ALTAIR,
+    CollectibleType.COLLECTIBLE_PSY_FLY,
+    CollectibleType.COLLECTIBLE_GENESIS,
+    CollectibleType.COLLECTIBLE_LOST_CONTACT,
+    CollectibleType.COLLECTIBLE_LIL_DUMPY,
+    CollectibleType.COLLECTIBLE_CENSER,
+    CollectibleType.COLLECTIBLE_BLANKET,
+    CollectibleType.COLLECTIBLE_SWARM,
+    CollectibleType.COLLECTIBLE_SOUL,
+    Astro.Collectible.PISCES_EX,
+    CollectibleType.COLLECTIBLE_STOP_WATCH,
+    Astro.Collectible.LEO_EX,
+    CollectibleType.COLLECTIBLE_URANUS
 }
 
 local trinkets = {
     TrinketType.TRINKET_BROKEN_ANKH,
-    TrinketType.TRINKET_MISSING_POSTER
+    TrinketType.TRINKET_MISSING_POSTER,
+    TrinketType.TRINKET_SIGIL_OF_BAPHOMET
 }
 
 if EID then
@@ -29,7 +42,7 @@ if EID then
             end
         end,
         function(descObj)
-            EID:appendToDescription(descObj, "#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible754}}, {{Collectible332}}, {{Collectible81}}, {{Collectible422}}, {{Collectible161}}, {{Collectible210}}, {{Collectible313}}, {{Collectible311}}, {{Collectible688}}, {{Collectible703}}, {{Collectible622}}, {{Trinket28}}, {{Trinket23}}")
+            EID:appendToDescription(descObj, "#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible596}}, {{Collectible739}}, {{Collectible232}}, {{Collectible747}}, {{Collectible335}}, {{Collectible693}}, {{Collectible535}}, {{Collectible387}}, {{Collectible615}}, {{Collectible213}}, {{Collectible622}}, {{Collectible581}}, {{Collectible754}}, {{Collectible332}}, {{Collectible81}}, {{Collectible422}}, {{Collectible161}}, {{Collectible210}}, {{Collectible313}}, {{Collectible311}}, {{Collectible688}}, {{Collectible703}}, {{Collectible622}}, {{Trinket28}}, {{Trinket189}}, {{Trinket23}}")
 
             return descObj
         end
