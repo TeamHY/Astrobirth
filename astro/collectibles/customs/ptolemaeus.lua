@@ -15,34 +15,8 @@ Astro:AddCallback(
         local player = Astro:GetPlayerFromEntity(tear)
         local tearData = tear:GetData()
 
-        if player ~= nil and tear.BaseDamage >= player.Damage  then -- 메인 눈물 초기화
-            if player:HasCollectible(Astro.Collectible.PTOLEMAEUS) then
-                local subTears = {}
-
-                for _ = 1, player:GetCollectibleNum(Astro.Collectible.PTOLEMAEUS) do
-                    local subTear =
-                        player:FireTear(tear.Position, tear.Velocity, false, true, false, tear, subDamageMultiplier)
-
-                    subTear.Scale = tear.Scale * subScale
-                    subTear.TearFlags = subTear.TearFlags & ~TearFlags.TEAR_SPLIT & ~TearFlags.TEAR_BONE
-                    subTear:GetData().Ptolemaeus = {
-                        MainTear = tear,
-                        IsSub = true
-                    }
-
-                    if tear.TearFlags & TearFlags.TEAR_LUDOVICO == TearFlags.TEAR_LUDOVICO then
-                        subTear.TearFlags = subTear.TearFlags | TearFlags.TEAR_LUDOVICO
-                        subTear.Height = tear.Height
-                    end
-
-                    table.insert(subTears, subTear)
-                end
-
-                tearData.Ptolemaeus = {
-                    SubTears = subTears,
-                    StartAngle = tear.Velocity:GetAngleDegrees()
-                }
-            end
+        if player ~= nil and player:HasCollectible(Astro.Collectible.PTOLEMAEUS) then
+            tearData.Ptolemaeus = {}
         end
     end
 )
@@ -54,14 +28,38 @@ Astro:AddCallback(
         local player = Astro:GetPlayerFromEntity(tear)
         local tearData = tear:GetData()
 
-        if tearData.Ptolemaeus ~= nil then
-            if player ~= nil and not tearData.Ptolemaeus.IsSub then -- 메인 눈물 업데이트 (서브 눈물 위치 계산)
-                local subTears = tearData.Ptolemaeus.SubTears
+        if player ~= nil and tearData.Ptolemaeus ~= nil then
+            if not tearData.Ptolemaeus.IsSub then -- 메인 눈물 업데이트 (서브 눈물 위치 계산)
+                if tear.FrameCount == 1 then
+                    local subTears = {}
 
-                for index, value in ipairs(subTears) do
+                    for _ = 1, player:GetCollectibleNum(Astro.Collectible.PTOLEMAEUS) do
+                        local subTear =
+                            player:FireTear(tear.Position, tear.Velocity, false, true, false, tear, subDamageMultiplier)
+
+                        subTear.Scale = tear.Scale * subScale
+                        subTear.TearFlags = subTear.TearFlags & ~TearFlags.TEAR_SPLIT & ~TearFlags.TEAR_BONE
+                        subTear:GetData().Ptolemaeus = {
+                            MainTear = tear,
+                            IsSub = true
+                        }
+
+                        if tear.TearFlags & TearFlags.TEAR_LUDOVICO == TearFlags.TEAR_LUDOVICO then
+                            subTear.TearFlags = subTear.TearFlags | TearFlags.TEAR_LUDOVICO
+                            subTear.Height = tear.Height
+                        end
+
+                        table.insert(subTears, subTear)
+                    end
+
+                    tearData.Ptolemaeus.SubTears = subTears
+                    tearData.Ptolemaeus.StartAngle = tear.Velocity:GetAngleDegrees()
+                end
+
+                for index, value in ipairs(tearData.Ptolemaeus.SubTears) do
                     local angle =
                         math.rad(
-                            tearData.Ptolemaeus.StartAngle + (360 * index / #subTears) +
+                            tearData.Ptolemaeus.StartAngle + (360 * index / #tearData.Ptolemaeus.SubTears) +
                             (360 * player.ShotSpeed * tear.FrameCount / 30)
                         )
 
@@ -76,7 +74,7 @@ Astro:AddCallback(
                         value.Velocity = tear.Position - value.Position + Vector(x, y)
                     end
                 end
-            elseif tearData.Ptolemaeus.IsSub then -- 서브 눈물 업데이트
+            else -- 서브 눈물 업데이트
                 if
                     tear.TearFlags & TearFlags.TEAR_LUDOVICO == TearFlags.TEAR_LUDOVICO and
                     not tearData.Ptolemaeus.MainTear:Exists()
