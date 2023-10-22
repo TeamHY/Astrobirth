@@ -6,6 +6,7 @@ require "astro.collectibles.active"
 require "astro.collectibles.status"
 
 require "astro.collectibles.vanillas.aquarius"
+require "astro.collectibles.vanillas.dads-lost-coin"
 require "astro.collectibles.vanillas.damocles"
 require "astro.collectibles.vanillas.depression"
 require "astro.collectibles.vanillas.king-baby"
