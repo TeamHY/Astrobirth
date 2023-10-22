@@ -19,12 +19,18 @@ end
 ---@param count integer
 ---@param position Vector
 local function spawnLuckyPenny(count, position)
+    if count <= 0 then
+        return
+    end
+
+    local currentRoom = Game():GetLevel():GetCurrentRoom()
+
     for _ = 1, count do
         Isaac.Spawn(
             EntityType.ENTITY_PICKUP,
             PickupVariant.PICKUP_COIN,
             5,
-            position,
+            currentRoom:FindFreePickupSpawnPosition(position, 40, true),
             Vector.Zero,
             nil
         )
@@ -36,12 +42,10 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        local currentRoom = Game():GetLevel():GetCurrentRoom()
-
         if Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_DADS_LOST_COIN) then
             local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_DADS_LOST_COIN)
 
-            spawnLuckyPenny(rng:RandomInt(4), currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true))
+            spawnLuckyPenny(rng:RandomInt(4), player.Position)
         end
     end,
     CollectibleType.COLLECTIBLE_DADS_LOST_COIN
