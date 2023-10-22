@@ -230,3 +230,12 @@ function Ban:OnPostGameStarted(newstart)
 end
 
 Astro:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Ban.OnPostGameStarted)
+
+Astro:AddCallback(ModCallbacks.MC_GET_PILL_EFFECT,
+---@param selectedPillEffect PillEffect
+---@param pillColor PillColor
+function(_, selectedPillEffect, pillColor)
+	if selectedPillEffect == PillEffect.PILLEFFECT_SMALLER then
+		return PillEffect.PILLEFFECT_GULP
+	end
+end)
