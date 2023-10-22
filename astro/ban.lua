@@ -31,6 +31,7 @@ function Ban:Init()
             self.BanTrinket(TrinketType.TRINKET_FOUND_SOUL)
             self.BanTrinket(TrinketType.TRINKET_MYOSOTIS)
             self.BanTrinket(TrinketType.TRINKET_HOLLOW_HEART)
+            self.BanCollectible(Astro.Collectible.PTOLEMAEUS) --프톨레 졷버그로 일단 임시 
         end,
         [PlayerType.PLAYER_ISAAC] = function()
         end,
