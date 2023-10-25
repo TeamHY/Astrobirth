@@ -135,7 +135,7 @@ Astro:AddCallback(
                         )
                     elseif
                         stage == LevelStage.STAGE4_2 or (stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 8)
-                     then
+                    then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, GRID_SIZE * 2),
@@ -165,21 +165,21 @@ Astro:AddCallback(
                         )
                     elseif stage == LevelStage.STAGE5 then
                         Isaac.Spawn(
-                                EntityType.ENTITY_PICKUP,
-                                PickupVariant.PICKUP_COLLECTIBLE,
-                                itemPool:GetCollectible(ItemPoolType.POOL_DEVIL, true, currentRoom:GetSpawnSeed()),
-                                currentRoom:GetCenterPos() + Vector(-GRID_SIZE, GRID_SIZE * 2),
-                                Vector.Zero,
-                                nil
-                            ):ToPickup().OptionsPickupIndex = OPTIONS_PICKUP_INDEX
+                            EntityType.ENTITY_PICKUP,
+                            PickupVariant.PICKUP_COLLECTIBLE,
+                            itemPool:GetCollectible(ItemPoolType.POOL_DEVIL, true, currentRoom:GetSpawnSeed()),
+                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE, GRID_SIZE * 2),
+                            Vector.Zero,
+                            nil
+                        ):ToPickup().OptionsPickupIndex = OPTIONS_PICKUP_INDEX
                         Isaac.Spawn(
-                                EntityType.ENTITY_PICKUP,
-                                PickupVariant.PICKUP_COLLECTIBLE,
-                                itemPool:GetCollectible(ItemPoolType.POOL_DEVIL, true, currentRoom:GetSpawnSeed()),
-                                currentRoom:GetCenterPos() + Vector(GRID_SIZE, GRID_SIZE * 2),
-                                Vector.Zero,
-                                nil
-                            ):ToPickup().OptionsPickupIndex = OPTIONS_PICKUP_INDEX
+                            EntityType.ENTITY_PICKUP,
+                            PickupVariant.PICKUP_COLLECTIBLE,
+                            itemPool:GetCollectible(ItemPoolType.POOL_DEVIL, true, currentRoom:GetSpawnSeed()),
+                            currentRoom:GetCenterPos() + Vector(GRID_SIZE, GRID_SIZE * 2),
+                            Vector.Zero,
+                            nil
+                        ):ToPickup().OptionsPickupIndex = OPTIONS_PICKUP_INDEX
                     elseif stage == LevelStage.STAGE6 then
                         Isaac.Spawn(
                             EntityType.ENTITY_PICKUP,
@@ -190,6 +190,14 @@ Astro:AddCallback(
                             nil
                         )
                     end
+                end
+            end
+        elseif currentRoom:GetType() == RoomType.ROOM_BOSSRUSH then
+            for i = 1, Game():GetNumPlayers() do
+                local player = Isaac.GetPlayer(i - 1)
+
+                if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+                    Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_DEATH_CERTIFICATE, currentRoom:GetCenterPos())
                 end
             end
         end
