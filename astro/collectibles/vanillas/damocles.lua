@@ -12,7 +12,7 @@ local collectibles = {
     CollectibleType.COLLECTIBLE_ESAU_JR, --703
     CollectibleType.COLLECTIBLE_GENESIS, --622
     CollectibleType.COLLECTIBLE_HOLY_MANTLE, --313
-    Astro.Collectible.ALTAIR,
+    Astro.Collectible.ALTAIR,  --여기 알타일부터 아래 우라노스까지는 배열 안지워지고 그대로 나옴
     CollectibleType.COLLECTIBLE_PSY_FLY,
     CollectibleType.COLLECTIBLE_GENESIS,
     CollectibleType.COLLECTIBLE_LOST_CONTACT,

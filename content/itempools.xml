@@ -21,6 +21,8 @@
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Solar System" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
     <Pool Name="secret">
@@ -41,6 +43,11 @@
 		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Divine Light" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Acute Sinusitis" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Galactic Medal Of Valor" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -71,6 +78,11 @@
 		<Item Name="Cursed Heart" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Divine Light" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Acute Sinusitis" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Quasar" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -101,6 +113,11 @@
 		<Item Name="Cursed Heart" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Divine Light" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Acute Sinusitis" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Quasar" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="curse">
@@ -129,6 +146,11 @@
 		<Item Name="Cursed Heart" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Divine Light" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Acute Sinusitis" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Quasar" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -158,6 +180,11 @@
 		<Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Divine Light" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Acute Sinusitis" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Galactic Medal Of Valor" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="angel">
@@ -186,6 +213,11 @@
 		<Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Divine Light" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Acute Sinusitis" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Galactic Medal Of Valor" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -211,6 +243,12 @@
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Divine Light" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Acute Sinusitis" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Galactic Medal Of Valor" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pirate Map" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Quasar" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Platinum Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -218,6 +256,11 @@
 		<Item Name="Angry Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Oblivion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Solar System" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Blood Of Hatred" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Omega 321" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Reincarnation" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Clover" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
 	</Pool>
 
 	<Pool Name="craneGame">
@@ -241,6 +284,12 @@
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Divine Light" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Acute Sinusitis" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Galactic Medal Of Valor" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pirate Map" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Quasar" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Platinum Bullet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -248,18 +297,27 @@
 		<Item Name="Angry Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Oblivion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Solar System" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Blood Of Hatred" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Omega 321" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Reincarnation" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Clover" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
-
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Super Magneto" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Oblivion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pirate Map" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Reincarnation" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Omega 321" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Blood Of Hatred" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="boss">
 
-		<Item Name="Angry Onion" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Angry Onion" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Clover" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 </ItemPools>
