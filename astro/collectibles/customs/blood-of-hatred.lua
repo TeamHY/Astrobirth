@@ -1,5 +1,3 @@
-local isc = require("astro.lib.isaacscript-common")
-
 Astro.Collectible.BLOOD_OF_HATRED = Isaac.GetItemIdByName("Blood Of Hatred")
 
 if EID then
@@ -17,10 +15,36 @@ Astro:AddCallback(
 
                 for _, entity in ipairs(entities) do
                     if entity:IsVulnerableEnemy() and entity.Type ~= EntityType.ENTITY_FIREPLACE then
-                        entity:AddEntityFlags(EntityFlag.FLAG_BLEED_OUT)
+                        local rng = player:GetCollectibleRNG(Astro.Collectible.BLOOD_OF_HATRED)
+
+                        if rng:RandomFloat() < 0.25 + player.Luck / 40 then
+                            entity:GetData().BloodOfHatred = {
+                                DurationTime = entity.FrameCount + 150 -- 5초
+                            }
+    
+                            entity:AddEntityFlags(EntityFlag.FLAG_BLEED_OUT)
+                        end
                     end
                 end
-                break
+
+                -- 여러 플레이어가 가지고 있으면 각각 발동한다
+            end
+        end
+    end
+)
+
+-- TODO: Aquarius EX와 로직 통합하기
+Astro:AddCallback(
+    ModCallbacks.MC_POST_UPDATE,
+    function()
+        local entities = Isaac.GetRoomEntities()
+
+        for _, entity in ipairs(entities) do
+            local data = entity:GetData().BloodOfHatred
+
+            if data ~= nil and data.DurationTime <= entity.FrameCount then
+                entity:ClearEntityFlags(EntityFlag.FLAG_BLEED_OUT)
+                entity:GetData().BloodOfHatred = nil
             end
         end
     end

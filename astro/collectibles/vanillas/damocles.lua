@@ -10,15 +10,15 @@ Astro:AddCallback(
         collectibles = {
             CollectibleType.COLLECTIBLE_1UP,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
-            CollectibleType.COLLECTIBLE_DEAD_CAT,           --81
+            CollectibleType.COLLECTIBLE_DEAD_CAT, --81
             CollectibleType.COLLECTIBLE_GLOWING_HOUR_GLASS, --422
-            CollectibleType.COLLECTIBLE_ANKH,               --161
-            CollectibleType.COLLECTIBLE_GNAWED_LEAF,        --210
-            CollectibleType.COLLECTIBLE_JUDAS_SHADOW,       --311
-            CollectibleType.COLLECTIBLE_INNER_CHILD,        --688
-            CollectibleType.COLLECTIBLE_ESAU_JR,            --703
-            CollectibleType.COLLECTIBLE_GENESIS,            --622
-            CollectibleType.COLLECTIBLE_HOLY_MANTLE,        --313
+            CollectibleType.COLLECTIBLE_ANKH, --161
+            CollectibleType.COLLECTIBLE_GNAWED_LEAF, --210
+            CollectibleType.COLLECTIBLE_JUDAS_SHADOW, --311
+            CollectibleType.COLLECTIBLE_INNER_CHILD, --688
+            CollectibleType.COLLECTIBLE_ESAU_JR, --703
+            CollectibleType.COLLECTIBLE_GENESIS, --622
+            CollectibleType.COLLECTIBLE_HOLY_MANTLE, --313
             Astro.Collectible.ALTAIR,
             CollectibleType.COLLECTIBLE_PSY_FLY,
             CollectibleType.COLLECTIBLE_GENESIS,
