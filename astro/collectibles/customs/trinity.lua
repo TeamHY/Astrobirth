@@ -57,13 +57,19 @@ Astro:AddCallback(
                 local hadCollectable = Astro:GetRandomCollectibles(inventory, rng, 1, Astro.Collectible.TRINITY, true)
 
                 if hadCollectable[1] ~= nil then
+                    player:RemoveCollectible(hadCollectable[1])
                     Astro:SpawnCollectible(hadCollectable[1], player.Position, Astro.Collectible.TRINITY)
                 end
 
+                local random = rng:RandomInt(3)
 
-                Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_MIND, player.Position, Astro.Collectible.TRINITY)
-                Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BODY, player.Position, Astro.Collectible.TRINITY)
-                Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_SOUL, player.Position, Astro.Collectible.TRINITY)
+                if random == 0 then
+                    Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_MIND, player.Position, Astro.Collectible.TRINITY)
+                elseif random == 1 then
+                    Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BODY, player.Position, Astro.Collectible.TRINITY)
+                else
+                    Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_SOUL, player.Position, Astro.Collectible.TRINITY)
+                end
             end
         end
     end

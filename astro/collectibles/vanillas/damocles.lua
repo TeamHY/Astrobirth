@@ -1,37 +1,46 @@
 local isc = require("astro.lib.isaacscript-common")
 
-local collectibles = {
-    CollectibleType.COLLECTIBLE_1UP,
-    CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
-    CollectibleType.COLLECTIBLE_DEAD_CAT, --81
-    CollectibleType.COLLECTIBLE_GLOWING_HOUR_GLASS, --422
-    CollectibleType.COLLECTIBLE_ANKH, --161
-    CollectibleType.COLLECTIBLE_GNAWED_LEAF, --210
-    CollectibleType.COLLECTIBLE_JUDAS_SHADOW, --311
-    CollectibleType.COLLECTIBLE_INNER_CHILD, --688
-    CollectibleType.COLLECTIBLE_ESAU_JR, --703
-    CollectibleType.COLLECTIBLE_GENESIS, --622
-    CollectibleType.COLLECTIBLE_HOLY_MANTLE, --313
-    Astro.Collectible.ALTAIR,
-    CollectibleType.COLLECTIBLE_PSY_FLY,
-    CollectibleType.COLLECTIBLE_GENESIS,
-    CollectibleType.COLLECTIBLE_LOST_CONTACT,
-    CollectibleType.COLLECTIBLE_LIL_DUMPY,
-    CollectibleType.COLLECTIBLE_CENSER,
-    CollectibleType.COLLECTIBLE_BLANKET,
-    CollectibleType.COLLECTIBLE_SWARM,
-    CollectibleType.COLLECTIBLE_SOUL,
-    Astro.Collectible.PISCES_EX,
-    CollectibleType.COLLECTIBLE_STOP_WATCH,
-    Astro.Collectible.LEO_EX,
-    CollectibleType.COLLECTIBLE_URANUS
-}
+local collectibles = {}
 
-local trinkets = {
-    TrinketType.TRINKET_BROKEN_ANKH,
-    TrinketType.TRINKET_MISSING_POSTER,
-    TrinketType.TRINKET_SIGIL_OF_BAPHOMET
-}
+local trinkets = {}
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    function(_, isContinued)
+        collectibles = {
+            CollectibleType.COLLECTIBLE_1UP,
+            CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
+            CollectibleType.COLLECTIBLE_DEAD_CAT,           --81
+            CollectibleType.COLLECTIBLE_GLOWING_HOUR_GLASS, --422
+            CollectibleType.COLLECTIBLE_ANKH,               --161
+            CollectibleType.COLLECTIBLE_GNAWED_LEAF,        --210
+            CollectibleType.COLLECTIBLE_JUDAS_SHADOW,       --311
+            CollectibleType.COLLECTIBLE_INNER_CHILD,        --688
+            CollectibleType.COLLECTIBLE_ESAU_JR,            --703
+            CollectibleType.COLLECTIBLE_GENESIS,            --622
+            CollectibleType.COLLECTIBLE_HOLY_MANTLE,        --313
+            Astro.Collectible.ALTAIR,
+            CollectibleType.COLLECTIBLE_PSY_FLY,
+            CollectibleType.COLLECTIBLE_GENESIS,
+            CollectibleType.COLLECTIBLE_LOST_CONTACT,
+            CollectibleType.COLLECTIBLE_LIL_DUMPY,
+            CollectibleType.COLLECTIBLE_CENSER,
+            CollectibleType.COLLECTIBLE_BLANKET,
+            CollectibleType.COLLECTIBLE_SWARM,
+            CollectibleType.COLLECTIBLE_SOUL,
+            Astro.Collectible.PISCES_EX,
+            CollectibleType.COLLECTIBLE_STOP_WATCH,
+            Astro.Collectible.LEO_EX,
+            CollectibleType.COLLECTIBLE_URANUS
+        }
+
+        trinkets = {
+            TrinketType.TRINKET_BROKEN_ANKH,
+            TrinketType.TRINKET_MISSING_POSTER,
+            TrinketType.TRINKET_SIGIL_OF_BAPHOMET
+        }
+    end
+)
 
 if EID then
     EID:addDescriptionModifier(
