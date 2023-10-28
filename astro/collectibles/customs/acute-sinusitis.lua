@@ -1,10 +1,8 @@
 Astro.Collectible.ACUTE_SINUSITIS = Isaac.GetItemIdByName("Acute Sinusitis")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.ACUTE_SINUSITIS, "", "급성 부비동염")
+    EID:addCollectible(Astro.Collectible.ACUTE_SINUSITIS, "10%의 확률로 접착 눈물이 나갑니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 45 이상일 때 100% 확률 ({{LuckSmall}}행운 1 당 +2%p)", "급성 부비동염")
 end
-
--- 공격 시 확률적으로 접착 눈물이 나갑니다 (기본 10%, 럭1당 2%p 증가)
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_FIRE_TEAR,

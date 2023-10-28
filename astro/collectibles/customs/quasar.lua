@@ -1,10 +1,8 @@
 Astro.Collectible.QUASAR = Isaac.GetItemIdByName("Quasar")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.QUASAR, "", "퀘이사")
+    EID:addCollectible(Astro.Collectible.QUASAR, "방 마다 처음으로 죽은 적 위치에 블랙홀을 소환합니다.", "퀘이사")
 end
-
--- 방 입장 시 처음으로 죽은 몬스터 위치에 #BLACK_HOLE(c512) 효과 발동
 
 local isNewRoom = true
 

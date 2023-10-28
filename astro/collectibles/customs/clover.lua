@@ -1,10 +1,8 @@
 Astro.Collectible.CLOVER = Isaac.GetItemIdByName("Clover")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.CLOVER, "", "클로버")
+    EID:addCollectible(Astro.Collectible.CLOVER, "↑ 행운 +1#{{LuckSmall}}행운 1당 {{DamageSmall}}공격력 +2%p 증가합니다.#", "클로버")
 end
-
--- 럭 수치에 비례하여 공격력이 증가됩니다 (럭1당 공격력 2%p 증가), 소지 시 럭 1 증가
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_PLAYER_UPDATE,
