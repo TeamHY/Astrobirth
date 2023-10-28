@@ -2,10 +2,17 @@ local isc = require("astro.lib.isaacscript-common")
 
 Astro.Collectible.CLEANER = Isaac.GetItemIdByName("Cleaner")
 
-local collectibles = {
-    CollectibleType.COLLECTIBLE_MOMS_KNIFE,
-    CollectibleType.COLLECTIBLE_BRIMSTONE
-}
+local collectibles = {}
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    function(_, isContinued)
+        collectibles = {
+            CollectibleType.COLLECTIBLE_MOMS_KNIFE,
+            CollectibleType.COLLECTIBLE_BRIMSTONE
+        }
+    end
+)
 
 if EID then
     EID:addCollectible(
