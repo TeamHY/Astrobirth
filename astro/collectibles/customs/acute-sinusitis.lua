@@ -15,7 +15,8 @@ Astro:AddCallback(
                 local rng = player:GetCollectibleRNG(Astro.Collectible.ACUTE_SINUSITIS)
 
                 if rng:RandomFloat() < 0.1 + player.Luck / 50 then
-                    tear.TearFlags = tear.TearFlags | TearFlags.TEAR_STICKY
+                    tear:ChangeVariant(TearVariant.BOOGER)
+                    tear.TearFlags = tear.TearFlags | TearFlags.TEAR_BOOGER
                     tear.Color = Color(0.4, 0.97, 0.5, 1, 0, 0, 0)
                 end
             end
