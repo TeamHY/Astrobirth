@@ -4,17 +4,17 @@
 	<passive gfx="Cancer.png" quality="3" devilprice="2" shopprice="30" name="Cancer EX" />
 	<passive gfx="Scorpio.png" quality="3" shopprice="30" name="Scorpio EX" />
 	<passive gfx="Capricorn.png" quality="2" devilprice="2" shopprice="30" name="Capricorn EX" />
-	<passive gfx="Virgo.png" quality="4" devilprice="2" shopprice="30" name="Virgo EX" />
-	<passive gfx="Leo.png" quality="3" devilprice="2" shopprice="30" name="Leo EX" />
+	<passive gfx="Virgo.png" quality="4" devilprice="2" shopprice="30" tags="noeden" name="Virgo EX" />
+	<passive gfx="Leo.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Leo EX" />
 	<passive gfx="Aries.png" quality="4" devilprice="2" shopprice="30" name="Aries EX" />
 	<passive cache="firedelay speed" gfx="Taurus.png" quality="2" devilprice="2" shopprice="15" name="Taurus EX" />
 	<passive gfx="Aquarius.png" quality="3" devilprice="2" shopprice="30" name="Aquarius EX" />
-	<passive gfx="Casiopea.png" quality="3" devilprice="2" shopprice="30" name="Casiopea" />
-	<passive gfx="Corvus.png" quality="3" devilprice="2" shopprice="30" name="Corvus" />
+	<passive gfx="Casiopea.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Casiopea" />
+	<passive gfx="Corvus.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Corvus" />
 	<passive gfx="Pavo.png" quality="4" devilprice="2" shopprice="30" name="Pavo" />
-	<passive gfx="Comet.png" quality="3" devilprice="2" shopprice="30" name="Comet" />
+	<passive gfx="Comet.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Comet" />
 	<passive gfx="Pisces.png" quality="3" devilprice="2" shopprice="30" name="Pisces EX" />
-	<passive gfx="Gemini.png" quality="3" devilprice="2" shopprice="30" name="Gemini EX" />
+	<passive gfx="Gemini.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Gemini EX" />
 	<passive gfx="Greed.png" quality="3" devilprice="2" tags="noeden" name="Greed" />
 	<passive cache="damage" gfx="Prometheus.png" quality="3" devilprice="2" name="Prometheus" />
 	<passive gfx="Pure White Heart.png" quality="3" devilprice="2" shopprice="20" name="Pure White Heart" />
@@ -32,13 +32,13 @@
 	<passive gfx="collectibles_668_dadsnote.png" quality="3" devilprice="2" tags="noeden" name="Go Home!" />
 	<passive gfx="Fallen Orb.png" quality="4" devilprice="2" name="Fallen Orb" />
 	<passive gfx="Trinity.png" quality="3" devilprice="1" name="Trinity" />
-	<passive gfx="Blood Of Hatred.png" quality="3" devilprice="1" name="Blood Of Hatred" />
+	<passive gfx="Blood Of Hatred.png" quality="3" devilprice="1" shopprice="5" tags="devil" name="Blood Of Hatred" />
 	<passive gfx="Divine Light.png" quality="4" devilprice="2" name="Divine Light" />
 	<passive gfx="Omega 321.png" quality="2" devilprice="1" name="Omega 321" />
-	<passive gfx="Reincarnation.png" quality="3" devilprice="1" name="Reincarnation" />
+	<passive gfx="Reincarnation.png" quality="3" devilprice="1" shopprice="10" tags="noeden" name="Reincarnation" />
 	<passive gfx="Acute Sinusitis.png" quality="4" devilprice="2" name="Acute Sinusitis" />
 	<active gfx="Laniakea Supercluster.png" quality="4" devilprice="2" maxcharges="100" name="Laniakea Supercluster" />
-	<passive gfx="Cleaner.png" quality="0" devilprice="1" name="Cleaner" />
+	<passive gfx="Cleaner.png" quality="0" devilprice="1" tags="noeden" name="Cleaner" />
 	<passive cache="damage luck" gfx="Clover.png" quality="3" devilprice="2" name="Clover" />
 	<passive gfx="Galactic Medal Of Valor.png" quality="4" devilprice="2" name="Galactic Medal Of Valor" />
 	<passive gfx="Pirate Map.png" quality="2" devilprice="1" name="Pirate Map" />

@@ -21,8 +21,8 @@
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Solar System" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Quasar" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Laniakea Supercluster" Weight="0.2" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
     <Pool Name="secret">
@@ -48,6 +48,8 @@
 		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Trinity" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -83,6 +85,7 @@
 		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -118,6 +121,7 @@
 		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="curse">
@@ -151,6 +155,7 @@
 		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -185,6 +190,8 @@
 		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Trinity" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="angel">
@@ -218,6 +225,8 @@
 		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Trinity" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -260,6 +269,9 @@
 		<Item Name="Omega 321" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Reincarnation" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Clover" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Morphine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Trinity" Weight="0.35" DecreaseBy="1" RemoveOn="0.1"/>
 
 	</Pool>
 
@@ -301,6 +313,9 @@
 		<Item Name="Omega 321" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Reincarnation" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Clover" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Morphine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Trinity" Weight="0.35" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
@@ -311,6 +326,7 @@
 		<Item Name="Reincarnation" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Omega 321" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Blood Of Hatred" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Morphine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="boss">

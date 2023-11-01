@@ -376,7 +376,7 @@
     <item id="378" quality="2" tags="poop summonable offensive"/>
     <item id="379" quality="2" tags="summonable offensive"/>
     <item id="380" quality="2" tags="summonable offensive nocantrip lazarussharedglobal"/>
-    <item id="381" quality="3" tags="summonable tearsup offensive nocantrip"/>
+    <item id="381" quality="3" tags="noeden summonable tearsup offensive nocantrip"/>
     <item id="382" quality="1" tags="offensive nocantrip"/>
     <item id="383" quality="1" tags="offensive"/>
     <item id="384" quality="2" tags="summonable monstermanual offensive"/>
