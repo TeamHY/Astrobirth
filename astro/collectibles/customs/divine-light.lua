@@ -1,7 +1,7 @@
 Astro.Collectible.DIVINE_LIGHT = Isaac.GetItemIdByName("Divine Light")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.DIVINE_LIGHT, "공격 시 10%의 확률로 빛줄기를 소환합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 19 이상일 때 100% 확률 ({{LuckSmall}}행운 1 당 +10%p)", "신의 조명")
+    EID:addCollectible(Astro.Collectible.DIVINE_LIGHT, "공격 시 10%의 확률로 빛줄기를 소환합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 18 이상일 때 100% 확률 ({{LuckSmall}}행운 1 당 +5%p)", "신의 조명")
 end
 
 Astro:AddCallback(
