@@ -6,7 +6,6 @@ Astro:AddCallbackCustom(
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
         if Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_LUNA) then
-            Astro:SpawnPill(PillEffect.PILLEFFECT_GULP, player.Position)
             Astro:SpawnTrinket(TrinketType.TRINKET_FRAGMENTED_CARD, player.Position)
         end
     end,
