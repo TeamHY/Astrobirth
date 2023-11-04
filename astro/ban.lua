@@ -35,7 +35,7 @@ function Ban:Init()
         [PlayerType.PLAYER_ISAAC] = function()
         end,
         [PlayerType.PLAYER_MAGDALENE] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
         end,
         [PlayerType.PLAYER_CAIN] = function()
         end,
@@ -70,7 +70,7 @@ function Ban:Init()
         [PlayerType.PLAYER_BLACKJUDAS] = function()
         end,
         [PlayerType.PLAYER_LILITH] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_TWISTED_PAIR)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_TWISTED_PAIR)
         end,
         [PlayerType.PLAYER_KEEPER] = function()
             self.BanCollectible(CollectibleType.COLLECTIBLE_GREEDS_GULLET)
@@ -231,10 +231,11 @@ end
 Astro:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Ban.OnPostGameStarted)
 
 Astro:AddCallback(ModCallbacks.MC_GET_PILL_EFFECT,
----@param selectedPillEffect PillEffect
----@param pillColor PillColor
-function(_, selectedPillEffect, pillColor)
-	if selectedPillEffect == PillEffect.PILLEFFECT_SMALLER then
-		return PillEffect.PILLEFFECT_GULP
-	end
-end)
+    ---@param selectedPillEffect PillEffect
+    ---@param pillColor PillColor
+    function(_, selectedPillEffect, pillColor)
+        if selectedPillEffect == PillEffect.PILLEFFECT_SMALLER or selectedPillEffect == PillEffect.PILLEFFECT_AMNESIA or selectedPillEffect == PillEffect.PILLEFFECT_BAD_TRIP then
+            return PillEffect.PILLEFFECT_GULP
+        end
+    end
+)
