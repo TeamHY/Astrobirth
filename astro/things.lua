@@ -73,6 +73,8 @@ function Astro:AutoWasting(player)
 		WasteCard(player, Card.CARD_REVERSE_MAGICIAN, 0)
 	elseif player:GetCard(0) == Card.RUNE_BERKANO then
 		WasteCard(player, Card.RUNE_BERKANO, 0)
+	elseif player:GetCard(0) == Card.CARD_HOLY and player:GetPlayerType() == PlayerType.PLAYER_JUDAS then
+		WasteCard(player, Card.CARD_HOLY, 0)
 	else
 		local pillColor = player:GetPill(0)
 
