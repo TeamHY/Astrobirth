@@ -297,7 +297,8 @@ local function RunEffect(player, type)
             CollectibleType.COLLECTIBLE_EXPERIMENTAL_TREATMENT,
             CollectibleType.COLLECTIBLE_SYNTHOIL,
             CollectibleType.COLLECTIBLE_ADRENALINE,
-            CollectibleType.COLLECTIBLE_EUTHANASIA
+            CollectibleType.COLLECTIBLE_EUTHANASIA,
+            Astro.Collectible.MORPHINE
         }
 
         local count = #syringes

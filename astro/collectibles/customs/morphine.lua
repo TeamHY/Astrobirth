@@ -1,11 +1,8 @@
 Astro.Collectible.MORPHINE = Isaac.GetItemIdByName("Morphine")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.MORPHINE, "무적 상태 적에게 x0.25 피해를 줄 수 있게 됩니다.", "모르핀")
+    EID:addCollectible(Astro.Collectible.MORPHINE, "적에게 준 피해의 1/10 만큼 보스가 아닌 모든 적들에게 피해를 입힙니다. Death's Head를 제외한 무적 상태의 적에게도 피해를 입힙니다.", "모르핀")
 end
-
--- 완전 무적 몬스터에게만 동작합니다. 특정 상황에 무적인 몬스터일 경우 별도 처리해야하므로 목록이 필요합니다.
--- https://github.com/TeamHY/Redrawn_Hard/issues/26 에서 추적합니다. 누락된 몬스터가 있을 경우 댓글로 추가해주세요.
 
 Astro:AddCallback(
     ModCallbacks.MC_ENTITY_TAKE_DMG,
@@ -17,14 +14,22 @@ Astro:AddCallback(
     function(_, entity, amount, damageFlags, source, countdownFrames)
         local player = Astro:GetPlayerFromEntity(source.Entity)
 
-        if player ~= nil and player:HasCollectible(Astro.Collectible.MORPHINE) then
-            if source.Type == EntityType.ENTITY_TEAR or damageFlags & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or source.Type == EntityType.ENTITY_KNIFE then
-                if entity:IsInvincible() and entity.Type ~= EntityType.ENTITY_DEATHS_HEAD then
-                    entity.HitPoints = entity.HitPoints - amount * 0.25
-                    entity:SetColor(Color(1, 1, 1, 1, 255, 0, 0), 1, 10, false, false)
+        if player ~= nil and player:HasCollectible(Astro.Collectible.MORPHINE) and entity:IsVulnerableEnemy() and entity.Type ~= EntityType.ENTITY_FIREPLACE then
+            if
+                source.Type == EntityType.ENTITY_TEAR or
+                damageFlags & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or
+                source.Type == EntityType.ENTITY_KNIFE
+            then
+                local entities = Isaac.GetRoomEntities()
 
-                    if entity.HitPoints <= 0 then
-                        entity:Kill()
+                for i = 1, #entities do
+                    if entities[i]:IsInvincible() and (not entities[i]:IsBoss()) and entities[i].Type ~= EntityType.ENTITY_DEATHS_HEAD then
+                        entities[i].HitPoints = entities[i].HitPoints - amount / 10
+                        entities[i]:SetColor(Color(1, 1, 1, 1, 255, 0, 0), 1, 10, false, false)
+
+                        if entities[i].HitPoints <= 0 then
+                            entities[i]:Kill()
+                        end
                     end
                 end
             end
