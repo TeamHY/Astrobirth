@@ -332,7 +332,7 @@
 	<Pool Name="boss">
 
 		<Item Name="Angry Onion" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Clover" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Clover" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
