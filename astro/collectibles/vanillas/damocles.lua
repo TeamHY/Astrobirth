@@ -31,7 +31,8 @@ Astro:AddCallback(
             Astro.Collectible.PISCES_EX,
             CollectibleType.COLLECTIBLE_STOP_WATCH,
             Astro.Collectible.LEO_EX,
-            CollectibleType.COLLECTIBLE_URANUS
+            CollectibleType.COLLECTIBLE_URANUS,
+            Astro.Collectible.ARIES_EX
         }
 
         trinkets = {
@@ -51,7 +52,7 @@ if EID then
             end
         end,
         function(descObj)
-            EID:appendToDescription(descObj, "#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible596}}, {{Collectible739}}, {{Collectible232}}, {{Collectible747}}, {{Collectible335}}, {{Collectible693}}, {{Collectible535}}, {{Collectible387}}, {{Collectible615}}, {{Collectible213}}, {{Collectible622}}, {{Collectible581}}, {{Collectible754}}, {{Collectible332}}, {{Collectible81}}, {{Collectible422}}, {{Collectible161}}, {{Collectible210}}, {{Collectible313}}, {{Collectible311}}, {{Collectible688}}, {{Collectible703}}, {{Collectible622}}, {{Trinket28}}, {{Trinket189}}, {{Trinket23}}")
+            EID:appendToDescription(descObj, "#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible740}}, {{Collectible596}}, {{Collectible739}}, {{Collectible232}}, {{Collectible747}}, {{Collectible335}}, {{Collectible693}}, {{Collectible535}}, {{Collectible387}}, {{Collectible615}}, {{Collectible213}}, {{Collectible622}}, {{Collectible581}}, {{Collectible754}}, {{Collectible332}}, {{Collectible81}}, {{Collectible422}}, {{Collectible161}}, {{Collectible210}}, {{Collectible313}}, {{Collectible311}}, {{Collectible688}}, {{Collectible703}}, {{Collectible622}}, {{Trinket28}}, {{Trinket189}}, {{Trinket23}}")
 
             return descObj
         end
