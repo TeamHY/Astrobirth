@@ -84,13 +84,8 @@ Astro:AddCallback(
                             true
                         )
                         Astro:SpawnCard(Card.RUNE_ANSUZ, player.Position)
-                    elseif stage == LevelStage.STAGE2_1 then
-                        Astro:SpawnCollectible(
-                            CollectibleType.COLLECTIBLE_REDEMPTION,
-                            currentRoom:GetCenterPos() + Vector(0, GRID_SIZE),
-                            nil,
-                            true
-                        )
+
+                        player:AddCollectible(CollectibleType.COLLECTIBLE_REDEMPTION)
                     elseif stage == LevelStage.STAGE2_2 then
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_MOMS_PURSE,
@@ -161,6 +156,8 @@ Astro:AddCallback(
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
+
+                        player:AddCollectible(CollectibleType.COLLECTIBLE_EVIL_CHARM)
                     elseif stage == LevelStage.STAGE4_3 then
                         Isaac.Spawn(
                             EntityType.ENTITY_PICKUP,
