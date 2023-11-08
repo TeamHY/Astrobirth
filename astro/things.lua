@@ -103,20 +103,10 @@ Astro:AddCallback(
 			local roomType = currentRoom:GetType()
 
 			if roomType == RoomType.ROOM_DICE then
-				-- elseif currentRoom:GetType() == RoomType.ROOM_SUPERSECRET then
-				-- 	local beggar = Isaac.Spawn(EntityType.ENTITY_SLOT, 4, 0, currentRoom:GetCenterPos(), Vector.Zero, nil)
-				-- 	beggar:Kill()
 				local itemPool = Game():GetItemPool()
-				local collectible = itemPool:GetCollectible(ItemPoolType.POOL_KEY_MASTER, true, currentRoom:GetSpawnSeed())
 
-				Isaac.Spawn(
-					EntityType.ENTITY_PICKUP,
-					PickupVariant.PICKUP_COLLECTIBLE,
-					collectible,
-					currentRoom:GetTopLeftPos() + Vector(80, 20),
-					Vector.Zero,
-					nil
-				)
+				Astro:SpawnCollectible(itemPool:GetCollectible(ItemPoolType.POOL_KEY_MASTER, true, currentRoom:GetSpawnSeed()), currentRoom:GetGridPosition(17), 1, true)
+				Astro:SpawnCollectible(itemPool:GetCollectible(ItemPoolType.POOL_KEY_MASTER, true, currentRoom:GetSpawnSeed()), currentRoom:GetGridPosition(117), 1, true)
 			elseif roomType == RoomType.ROOM_SUPERSECRET then
 				local entities = Isaac.GetRoomEntities()
 
