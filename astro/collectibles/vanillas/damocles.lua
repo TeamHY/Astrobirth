@@ -32,13 +32,19 @@ Astro:AddCallback(
             CollectibleType.COLLECTIBLE_STOP_WATCH,
             Astro.Collectible.LEO_EX,
             CollectibleType.COLLECTIBLE_URANUS,
-            Astro.Collectible.ARIES_EX
+            Astro.Collectible.ARIES_EX,
+            Astro.Collectible.SOLAR_SYSTEM,
+            Astro.Collectible.GEMINI_EX,
+            Astro.Collectible.LANIAKEA_SUPERCLUSTER,
+            Astro.Collectible.TRINITY,
+            Astro.Collectible.VEGA
         }
 
         trinkets = {
             TrinketType.TRINKET_BROKEN_ANKH,
             TrinketType.TRINKET_MISSING_POSTER,
-            TrinketType.TRINKET_SIGIL_OF_BAPHOMET
+            TrinketType.TRINKET_SIGIL_OF_BAPHOMET,
+            TrinketType.TRINKET_WOODEN_CROSS
         }
     end
 )

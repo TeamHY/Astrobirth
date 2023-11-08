@@ -9,7 +9,16 @@ Astro:AddCallback(
     function(_, isContinued)
         collectibles = {
             CollectibleType.COLLECTIBLE_MOMS_KNIFE,
-            CollectibleType.COLLECTIBLE_BRIMSTONE
+            CollectibleType.COLLECTIBLE_BRIMSTONE,
+            CollectibleType.COLLECTIBLE_IPECAC,
+            CollectibleType.COLLECTIBLE_EPIC_FETUS,
+            CollectibleType.COLLECTIBLE_DR_FETUS,
+            CollectibleType.COLLECTIBLE_TECH_X,
+            CollectibleType.COLLECTIBLE_TECHNOLOGY,
+            CollectibleType.COLLECTIBLE_TECHNOLOGY_2,
+            Astro.Collectible.SCORPIO_EX,
+            CollectibleType.COLLECTIBLE_SPIRIT_SWORD,
+            CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE
         }
     end
 )
@@ -17,7 +26,7 @@ Astro:AddCallback(
 if EID then
     EID:addCollectible(
         Astro.Collectible.CLEANER,
-        "!!! 효과가 발동한 뒤 사라집니다.#!!! 획득 시 아래 아이템이 제거됩니다.#{{Collectible114}}, {{Collectible118}}",
+        "!!! 효과가 발동한 뒤 사라집니다.#!!! 획득 시 아래 아이템이 제거됩니다.#{{Collectible114}}, {{Collectible329}}, {{Collectible579}}, {{Collectible736}}, {{Collectible152}}, {{Collectible68}}, {{Collectible395}}, {{Collectible52}}, {{Collectible168}}, {{Collectible149}}, {{Collectible118}}",
         "클리너"
     )
 end
