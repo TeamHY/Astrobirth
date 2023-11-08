@@ -53,6 +53,10 @@ Astro:AddCallback(
                         TryChangeToGoldenTrinket(player)
                     end
 
+                    if player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) and not player:HasCollectible(CollectibleType.COLLECTIBLE_HOST_HAT) then
+                        player:AddCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR)
+                    end
+
                     if isSpawnd then
                         break
                     end
@@ -203,6 +207,24 @@ Astro:AddCallback(
                 if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
                     Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_DEATH_CERTIFICATE, currentRoom:GetCenterPos())
                 end
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_ENTITY_TAKE_DMG,
+    ---@param entity Entity
+    ---@param amount number
+    ---@param damageFlags number
+    ---@param source EntityRef
+    ---@param countdownFrames number
+    function(_, entity, amount, damageFlags, source, countdownFrames)
+        local player = entity:ToPlayer()
+
+        if player ~= nil and player:HasTrinket(TrinketType.TRINKET_PERFECTION) and player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) then
+            if damageFlags & DamageFlag.DAMAGE_EXPLOSION ~= 0 then
+                return false
             end
         end
     end
