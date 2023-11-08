@@ -78,12 +78,25 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_NPC_INIT,
     ---@param entity Entity
     function(_, entity)
-        if CheckHeartLimitStage(Game():GetLevel():GetStage()) then
+        local level = Game():GetLevel()
+        local stage = level:GetStage()
+
+        if stage >= LevelStage.STAGE4_1 then
+            local playerType = Isaac.GetPlayer():GetPlayerType()
+
             local champ = 0
 
-            repeat
-                champ = entity:GetDropRNG():RandomInt(26)
-            until not CheckChampBan(champ)
+            if
+                playerType == PlayerType.PLAYER_JUDAS
+                -- or playerType == PlayerType.PLAYER_ISAAC -- 이렇게 추가 가능합니다.
+                -- or playerType == PlayerType.PLAYER_MAGDALENE
+            then
+                champ = 19
+            else
+                repeat
+                    champ = entity:GetDropRNG():RandomInt(26)
+                until not CheckChampBan(champ)
+            end
 
             if entity:IsVulnerableEnemy() then
                 entity:ToNPC():Morph(entity.Type, entity.Variant, entity.SubType, champ)
