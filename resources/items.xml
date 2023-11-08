@@ -585,7 +585,7 @@
 	<active		id="557"	gfx="Collectibles_557_FortuneCookie.png" name="#FORTUNE_COOKIE_NAME" description="#FORTUNE_COOKIE_DESCRIPTION" maxcharges="2" />
 	<passive	id="558"	gfx="Collectibles_558_EyeSore.png" name="#EYE_SORE_NAME" description="#EYE_SORE_DESCRIPTION" />
 	<passive	id="559"	gfx="Collectibles_559_120Volt.png" name="#120_VOLT_NAME" description="#120_VOLT_DESCRIPTION" />
-	<passive	id="560"	gfx="Collectibles_560_ItHurts.png" name="#IT_HURTS_NAME" description="#IT_HURTS_DESCRIPTION" />
+	<passive	id="560"	gfx="Collectibles_560_ItHurts.png" name="#IT_HURTS_NAME" description="#IT_HURTS_DESCRIPTION" cache="damage" />
 	<passive	id="561"	gfx="Collectibles_561_AlmondMilk.png" name="#ALMOND_MILK_NAME" description="#ALMOND_MILK_DESCRIPTION" cache="damage firedelay tearcolor" />
 	<passive	id="562"	achievement="433" gfx="Collectibles_562_RockBottom.png" name="#ROCK_BOTTOM_NAME" description="#ROCK_BOTTOM_DESCRIPTION" cache="all" />
 	<passive	id="563"	gfx="Collectibles_563_EnigmaBombs.png" name="#NANCY_BOMBS_NAME" description="#NANCY_BOMBS_DESCRIPTION" bombs="5" />
@@ -594,7 +594,7 @@
 	<passive	id="566"	gfx="Collectibles_566_DreamCatcher.png" name="#DREAM_CATCHER_NAME" description="#DREAM_CATCHER_DESCRIPTION" />
 	<familiar	id="567"	gfx="Collectibles_567_PaschalCandle.png" name="#PASCHAL_CANDLE_NAME" description="#PASCHAL_CANDLE_DESCRIPTION" cache="firedelay" devilprice="2" />
 	<passive	id="568"	achievement="423" gfx="Collectibles_568_DivineIntervention.png" shopprice="10" name="#DIVINE_INTERVENTION_NAME" description="#DIVINE_INTERVENTION_DESCRIPTION" />
-	<familiar	id="569"	gfx="Collectibles_569_BloodOath.png" name="#BLOOD_OATH_NAME" description="#BLOOD_OATH_DESCRIPTION" />
+	<familiar	id="569"	gfx="Collectibles_569_BloodOath.png" name="#BLOOD_OATH_NAME" description="#BLOOD_OATH_DESCRIPTION" cache="damage" />
 	<passive	id="570"	gfx="Collectibles_570_PlaydohCookie.png" name="#PLAYDOUGH_COOKIE_NAME" description="#PLAYDOUGH_COOKIE_DESCRIPTION" cache="tearflag" />
 	<passive	id="571"	gfx="Collectibles_571_Socks.png" name="#ORPHAN_SOCKS_NAME" shopprice="13" description="#ORPHAN_SOCKS_DESCRIPTION" cache="speed" soulhearts="4" />
 	<passive	id="572"	gfx="Collectibles_572_OccultEye.png" name="#EYE_OF_THE_OCCULT_NAME" description="#EYE_OF_THE_OCCULT_DESCRIPTION" cache="damage range shotspeed tearcolor tearflag" devilprice="2" />
@@ -602,7 +602,7 @@
 	<passive	id="574"	gfx="Collectibles_574_Monstrance.png" name="#MONSTRANCE_NAME" description="#MONSTRANCE_DESCRIPTION" />
 	<familiar	id="575"	gfx="Collectibles_575_TheIntruder.png" name="#THE_INTRUDER_NAME" description="#THE_INTRUDER_DESCRIPTION" />
 	<passive	id="576"	achievement="517" gfx="Collectibles_576_DirtyMind.png" name="#DIRTY_MIND_NAME" description="#DIRTY_MIND_DESCRIPTION" />
-	<active		id="577"	achievement="432" gfx="Collectibles_577_Damocles.png" name="#DAMOCLES_NAME" devilprice="2" description="#DAMOCLES_DESCRIPTION" maxcharges="0" devilprice="2" cache="familiars" />
+	<active		id="577"	achievement="432" gfx="Collectibles_577_Damocles.png" name="#DAMOCLES_NAME" description="#DAMOCLES_DESCRIPTION" maxcharges="0" devilprice="2" cache="familiars" />
 	<active		id="578"	gfx="Collectibles_578_FreeLemonade.png" name="#FREE_LEMONADE_NAME" description="#FREE_LEMONADE_DESCRIPTION" maxcharges="3" />
 	<passive	id="579"	achievement="520" gfx="Collectibles_579_SpiritSword.png" name="#SPIRIT_SWORD_NAME" description="#SPIRIT_SWORD_DESCRIPTION" cache="weapon damage firedelay" special="true" devilprice="2" />
 	<active		id="580"	achievement="415" gfx="Collectibles_580_SecretKey.png" name="#RED_KEY_NAME" description="#RED_KEY_DESCRIPTION" maxcharges="4" />
