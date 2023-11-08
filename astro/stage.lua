@@ -1,7 +1,7 @@
 -- TODO: 챔피언이 모두 동일한 확률로 등장하게 됨. 희귀 챔피언이 너무 자주 나타날 수 있음.
 
 -- 챔피언 등장 제외 리스트
-local champBanList = {6, 11, 14, 22, 25}
+local champBanList = { 6, 11, 14, 22, 25 }
 
 ---@param stage LevelStage
 ---@return boolean
@@ -30,8 +30,8 @@ Astro:AddCallback(
         elseif CheckHeartLimitStage(stage) or playerType == PlayerType.PLAYER_JUDAS then
             if
                 playerType == PlayerType.PLAYER_KEEPER or playerType == PlayerType.PLAYER_KEEPER_B or
-                    playerType == PlayerType.PLAYER_THESOUL_B
-             then
+                playerType == PlayerType.PLAYER_THESOUL_B
+            then
             else
                 if player:GetEffectiveMaxHearts() > 2 then
                     if player:GetMaxHearts() >= 2 then
@@ -120,19 +120,11 @@ Astro:AddCallback(
 
         if tryCount < LIMIT and not hasMissingNo then
             local level = Game():GetLevel()
-            local isaacsRoom = level:GetRoomByIdx(level:QueryRoomTypeIndex(RoomType.ROOM_ISAACS, false, RNG()))
-            local barrenRoom = level:GetRoomByIdx(level:QueryRoomTypeIndex(RoomType.ROOM_BARREN, false, RNG()))
             local sacrificeRoom = level:GetRoomByIdx(level:QueryRoomTypeIndex(RoomType.ROOM_SACRIFICE, false, RNG()))
 
             -- 막달레나일 경우 케이스 추가
             -- TODO: 더 추가될 경우 보기 쉽게 변경해야 함
-            if
-                isaacsRoom.Data.Type == RoomType.ROOM_ISAACS or barrenRoom.Data.Type == RoomType.ROOM_BARREN or
-                    (sacrificeRoom.Data.Type ~= RoomType.ROOM_SACRIFICE and
-                        Isaac.GetPlayer():GetPlayerType() == PlayerType.PLAYER_MAGDALENE and
-                        level:GetStage() == LevelStage.STAGE1_1 and
-                        level:GetStageType() <= StageType.STAGETYPE_AFTERBIRTH)
-             then
+            if sacrificeRoom.Data.Type ~= RoomType.ROOM_SACRIFICE and Isaac.GetPlayer():GetPlayerType() == PlayerType.PLAYER_MAGDALENE and level:GetStage() == LevelStage.STAGE1_1 and level:GetStageType() <= StageType.STAGETYPE_AFTERBIRTH then
                 tryCount = tryCount + 1
                 Isaac.ExecuteCommand("reseed")
                 Isaac.DebugString("Run reseed: " .. tryCount)
