@@ -2,18 +2,67 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     function(_, isContinued)
         if not isContinued then
-            -- 깨끗한 침대방
+            -- 깨끗한 침대방(세트룸)
             Astro.Data.IsaacPool = {
-                CollectibleType.COLLECTIBLE_SAD_ONION,
-                CollectibleType.COLLECTIBLE_1UP,
-                CollectibleType.COLLECTIBLE_BATTERY,
+                --악마
+                CollectibleType.COLLECTIBLE_PENTAGRAM,
+                CollectibleType.COLLECTIBLE_MARK,
+                CollectibleType.COLLECTIBLE_PACT,
+                CollectibleType.COLLECTIBLE_LORD_OF_THE_PIT,
+                CollectibleType.COLLECTIBLE_BRIMSTONE,
+                CollectibleType.COLLECTIBLE_SPIRIT_OF_THE_NIGHT,
+                CollectibleType.COLLECTIBLE_ABADDON,
+                CollectibleType.COLLECTIBLE_MAW_OF_THE_VOID,
+                CollectibleType.COLLECTIBLE_SULFUR,
+                CollectibleType.COLLECTIBLE_EYE_OF_THE_OCCULT,
+                --천사
+                CollectibleType.COLLECTIBLE_BIBLE,
+                CollectibleType.COLLECTIBLE_ROSARY,
+                CollectibleType.COLLECTIBLE_HALO,
+                CollectibleType.COLLECTIBLE_SCAPULAR,
+                CollectibleType.COLLECTIBLE_CELTIC_CROSS,
+                CollectibleType.COLLECTIBLE_MITRE,
+                CollectibleType.COLLECTIBLE_SACRED_HEART,
+                CollectibleType.COLLECTIBLE_HOLY_GRAIL,
+                CollectibleType.COLLECTIBLE_DEAD_DOVE,
+                CollectibleType.COLLECTIBLE_HOLY_MANTLE,
+                CollectibleType.COLLECTIBLE_GODHEAD,
+                CollectibleType.COLLECTIBLE_HOLY_LIGHT,
+                CollectibleType.COLLECTIBLE_DIVINE_INTERVENTION,
+                CollectibleType.COLLECTIBLE_IMMACULATE_HEART,
+                CollectibleType.COLLECTIBLE_REVELATION,
+                CollectibleType.COLLECTIBLE_SACRED_ORB,
+                CollectibleType.COLLECTIBLE_SALVATION,
+                --구피
+                CollectibleType.COLLECTIBLE_DEAD_CAT,
+                CollectibleType.COLLECTIBLE_GUPPYS_PAW,
+                CollectibleType.COLLECTIBLE_GUPPYS_TAIL,
+                CollectibleType.COLLECTIBLE_GUPPYS_HEAD,
+                CollectibleType.COLLECTIBLE_GUPPYS_HAIRBALL,
+                CollectibleType.COLLECTIBLE_GUPPYS_COLLAR,
+                CollectibleType.COLLECTIBLE_GUPPYS_EYE
             }
 
-            -- 더러운 침대방
+            -- 더러운 침대방(클로버룸)
             Astro.Data.BarrenPool = {
-                CollectibleType.COLLECTIBLE_ADDERLINE,
-                CollectibleType.COLLECTIBLE_CHARM_VAMPIRE,
-                CollectibleType.COLLECTIBLE_DR_FETUS,
+                CollectibleType.COLLECTIBLE_MY_REFLECTION,
+                CollectibleType.COLLECTIBLE_LUCKY_FOOT,
+                CollectibleType.COLLECTIBLE_TOUGH_LOVE,
+                CollectibleType.COLLECTIBLE_MAGIC_SCAB,
+                CollectibleType.COLLECTIBLE_LATCH_KEY,
+                CollectibleType.COLLECTIBLE_MOMS_PEARLS,
+                CollectibleType.COLLECTIBLE_HOLY_LIGHT,
+                CollectibleType.COLLECTIBLE_ATHAME,
+                CollectibleType.COLLECTIBLE_APPLE,
+                CollectibleType.COLLECTIBLE_PARASITOID,
+                CollectibleType.COLLECTIBLE_YO_LISTEN,
+                CollectibleType.COLLECTIBLE_GHOST_PEPPER,
+                CollectibleType.COLLECTIBLE_BIRDS_EYE,
+                CollectibleType.COLLECTIBLE_LODESTONE,
+                CollectibleType.COLLECTIBLE_EVIL_CHARM,
+                CollectibleType.COLLECTIBLE_GLASS_EYE,
+                Astro.Collectible.CLOVER,
+                CollectibleType.COLLECTIBLE_DADS_LOST_COIN
             }
         end
     end
