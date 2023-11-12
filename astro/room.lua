@@ -91,6 +91,14 @@ Astro:AddCallback(
                         entities[i]:Kill()
                     end
                 end
+            elseif roomType == RoomType.ROOM_MINIBOSS then
+                local entities = Isaac.GetRoomEntities()
+
+                for i = 1, #entities do
+                    if entities[i].Type == EntityType.ENTITY_PICKUP and entities[i].Variant == PickupVariant.PICKUP_COLLECTIBLE then
+                        entities[i]:ToPickup().OptionsPickupIndex = 1
+                    end
+                end
             elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 55 then -- Mega Satan
                 Isaac.Spawn(
                     EntityType.ENTITY_PICKUP,
