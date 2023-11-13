@@ -78,6 +78,17 @@ Astro:AddCallback(
         if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
             local roomType = currentRoom:GetType()
 
+            if roomType == RoomType.ROOM_MINIBOSS or roomType == RoomType.ROOM_TREASURE or roomType == RoomType.ROOM_DICE or roomType == RoomType.ROOM_SECRET or roomType == RoomType.ROOM_SUPERSECRET or roomType == RoomType.ROOM_CURSE then
+                local entities = Isaac.GetRoomEntities()
+
+                for i = 1, #entities do
+                    if entities[i].Type == EntityType.ENTITY_PICKUP and entities[i].Variant == PickupVariant.PICKUP_COLLECTIBLE then
+                        entities[i]:ToPickup().OptionsPickupIndex = 1
+                    end
+                end
+            end
+
+
             if roomType == RoomType.ROOM_DICE then
                 local itemPool = Game():GetItemPool()
 
@@ -89,14 +100,6 @@ Astro:AddCallback(
                 for i = 1, #entities do
                     if entities[i].Type == EntityType.ENTITY_SHOPKEEPER then
                         entities[i]:Kill()
-                    end
-                end
-            elseif roomType == RoomType.ROOM_MINIBOSS then
-                local entities = Isaac.GetRoomEntities()
-
-                for i = 1, #entities do
-                    if entities[i].Type == EntityType.ENTITY_PICKUP and entities[i].Variant == PickupVariant.PICKUP_COLLECTIBLE then
-                        entities[i]:ToPickup().OptionsPickupIndex = 1
                     end
                 end
             elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 55 then -- Mega Satan
