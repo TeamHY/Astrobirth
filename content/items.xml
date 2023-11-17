@@ -44,6 +44,7 @@
 	<passive gfx="Pirate Map.png" quality="2" devilprice="1" name="Pirate Map" />
 	<passive tags="syringe" gfx="Morphine.png" quality="2" devilprice="1" name="Morphine" />
 	<passive gfx="Quasar.png" quality="4" devilprice="2" name="Quasar" />
+	<active gfx="Chaos Dice.png" quality="6" devilprice="2" initcharge="2" maxcharges="6" name="Chaos Dice" />
 
 
 
