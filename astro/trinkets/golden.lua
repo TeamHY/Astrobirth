@@ -250,29 +250,29 @@ local function RunEffect(player, type)
     elseif Astro:CheckTrinket(type, TrinketType.TRINKET_FADED_POLAROID) then
         local currentRoom = game:GetLevel():GetCurrentRoom()
         Isaac.Spawn(
-                EntityType.ENTITY_PICKUP,
-                PickupVariant.PICKUP_COLLECTIBLE,
-                CollectibleType.COLLECTIBLE_POLAROID,
-                currentRoom:FindFreePickupSpawnPosition(
-                    player.Position + Vector(-GRID_SIZE, -GRID_SIZE),
-                    GRID_SIZE,
-                    true
-                ),
-                Vector.Zero,
-                nil
-            ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            CollectibleType.COLLECTIBLE_POLAROID,
+            currentRoom:FindFreePickupSpawnPosition(
+                player.Position + Vector(-GRID_SIZE, -GRID_SIZE),
+                GRID_SIZE,
+                true
+            ),
+            Vector.Zero,
+            nil
+        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
         Isaac.Spawn(
-                EntityType.ENTITY_PICKUP,
-                PickupVariant.PICKUP_COLLECTIBLE,
-                CollectibleType.COLLECTIBLE_NEGATIVE,
-                currentRoom:FindFreePickupSpawnPosition(
-                    player.Position + Vector(GRID_SIZE, -GRID_SIZE),
-                    GRID_SIZE,
-                    true
-                ),
-                Vector.Zero,
-                nil
-            ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            CollectibleType.COLLECTIBLE_NEGATIVE,
+            currentRoom:FindFreePickupSpawnPosition(
+                player.Position + Vector(GRID_SIZE, -GRID_SIZE),
+                GRID_SIZE,
+                true
+            ),
+            Vector.Zero,
+            nil
+        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_FADED_POLAROID
         return true
     elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LOUSE) then
         local currentRoom = game:GetLevel():GetCurrentRoom()
@@ -307,32 +307,32 @@ local function RunEffect(player, type)
         local secondIndex = rng:RandomInt(count - 1) + 1
 
         Isaac.Spawn(
-                EntityType.ENTITY_PICKUP,
-                PickupVariant.PICKUP_COLLECTIBLE,
-                syringes[firstIndex],
-                currentRoom:FindFreePickupSpawnPosition(
-                    player.Position + Vector(-GRID_SIZE, -GRID_SIZE),
-                    GRID_SIZE,
-                    true
-                ),
-                Vector.Zero,
-                nil
-            ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            syringes[firstIndex],
+            currentRoom:FindFreePickupSpawnPosition(
+                player.Position + Vector(-GRID_SIZE, -GRID_SIZE),
+                GRID_SIZE,
+                true
+            ),
+            Vector.Zero,
+            nil
+        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
 
         table.remove(syringes, firstIndex)
 
         Isaac.Spawn(
-                EntityType.ENTITY_PICKUP,
-                PickupVariant.PICKUP_COLLECTIBLE,
-                syringes[secondIndex],
-                currentRoom:FindFreePickupSpawnPosition(
-                    player.Position + Vector(GRID_SIZE, -GRID_SIZE),
-                    GRID_SIZE,
-                    true
-                ),
-                Vector.Zero,
-                nil
-            ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            syringes[secondIndex],
+            currentRoom:FindFreePickupSpawnPosition(
+                player.Position + Vector(GRID_SIZE, -GRID_SIZE),
+                GRID_SIZE,
+                true
+            ),
+            Vector.Zero,
+            nil
+        ):ToPickup().OptionsPickupIndex = TrinketType.TRINKET_BROKEN_SYRINGE
         return true
     elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LIBERTY_CAP) then
         local rng = player:GetTrinketRNG(TrinketType.TRINKET_LIBERTY_CAP)
@@ -408,19 +408,22 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_PEFFECT_UPDATE,
     ---@param player EntityPlayer
     function(_, player)
-        local trinket0 = player:GetTrinket(0)
-        local trinket1 = player:GetTrinket(1)
+        for i = 0, 1 do -- TrinketIndex 0 ~ 1
+            local trinket = player:GetTrinket(i)
 
-        if
-            (player:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX) or isc:isGoldenTrinketType(trinket0)) and
-                RunEffect(player, trinket0)
-         then
-            player:TryRemoveTrinket(trinket0)
-        elseif
-            (player:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX) or isc:isGoldenTrinketType(trinket1)) and
-                RunEffect(player, trinket1)
-         then
-            player:TryRemoveTrinket(trinket1)
+            if trinket == TrinketType.TRINKET_NULL then
+                break
+            end
+
+            if
+                (player:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX) or isc:isGoldenTrinketType(trinket)) and
+                RunEffect(player, trinket)
+            then
+                player:TryRemoveTrinket(trinket)
+                break;
+            end
+
+            Astro:UpdateLavaHandEffect(player, trinket)
         end
 
         if player:GetTrinketMultiplier(TrinketType.TRINKET_TEMPORARY_TATTOO) > 1 then
@@ -514,7 +517,7 @@ Astro:AddCallback(
 
                 if rng:RandomFloat() < 0.5 + player.Luck / 100 then
                     tear.TearFlags = tear.TearFlags | TearFlags.TEAR_HOMING
-                -- tear.Color = Color(0.4, 0.15, 0.38, 1, 0.27843, 0, 0.4549)
+                    -- tear.Color = Color(0.4, 0.15, 0.38, 1, 0.27843, 0, 0.4549)
                 end
             end
         end
@@ -756,18 +759,18 @@ Astro:AddCallback(
             if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
                 if
                     player:GetTrinketMultiplier(TrinketType.TRINKET_ADOPTION_PAPERS) > 1 and
-                        roomType == RoomType.ROOM_SHOP
-                 then
+                    roomType == RoomType.ROOM_SHOP
+                then
                     Astro:SpawnCard(Card.CARD_SOUL_LILITH, currentRoom:GetCenterPos())
                 elseif
                     player:GetTrinketMultiplier(TrinketType.TRINKET_GOLDEN_HORSE_SHOE) > 1 and
-                        roomType == RoomType.ROOM_TREASURE
-                 then
+                    roomType == RoomType.ROOM_TREASURE
+                then
                     Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_NULL, currentRoom:GetCenterPos())
                 elseif
                     player:GetTrinketMultiplier(TrinketType.TRINKET_BLACK_FEATHER) > 1 and
-                        roomType == RoomType.ROOM_DEVIL
-                 then
+                    roomType == RoomType.ROOM_DEVIL
+                then
                     Astro.Data.BlackFeatherDamage = Astro.Data.BlackFeatherDamage + 2
 
                     player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
