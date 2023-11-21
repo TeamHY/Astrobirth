@@ -222,7 +222,9 @@ Astro:AddCallback(
     function(_, entity, amount, damageFlags, source, countdownFrames)
         local player = entity:ToPlayer()
 
-        if player ~= nil and player:HasTrinket(TrinketType.TRINKET_PERFECTION) and player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) then
+        local hasItems = player:HasCollectible(CollectibleType.COLLECTIBLE_IPECAC) or player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) or player:HasCollectible(CollectibleType.COLLECTIBLE_EPIC_FETUS)
+
+        if player ~= nil and player:HasTrinket(TrinketType.TRINKET_PERFECTION) and hasItems then
             if damageFlags & DamageFlag.DAMAGE_EXPLOSION ~= 0 then
                 return false
             end
