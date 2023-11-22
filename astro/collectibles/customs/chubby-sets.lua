@@ -4,7 +4,7 @@ Astro.Collectible.CHUBBYS_TAIL = Isaac.GetItemIdByName("Chubby's Tail")
 
 if EID then
     EID:addCollectible(Astro.Collectible.CHUBBYS_HEAD, "↑ {{DamageSmall}}공격력(고정) +3.5", "처비의 머리")
-    EID:addCollectible(Astro.Collectible.SLEEPING_PUPPY, "9번째 방 클리어 시 공격력, 연사, 사거리, 속도, 행운중 한가지의 스텟이 0.35(고정) 증가됩니다.", "잠자는 강아지")
+    EID:addCollectible(Astro.Collectible.SLEEPING_PUPPY, "9개 방을 클리어할 때 마다 공격력, 연사, 사거리, 속도, 행운 중 한 가지의 스텟이 0.35(고정) 증가됩니다.", "잠자는 강아지")
     EID:addCollectible(Astro.Collectible.CHUBBYS_TAIL, "{{Chest}} 갈색 상자가 등장 시 33% 확률로 갈색 상자가 한 개 더 드랍 됩니다.", "처비의 꼬리")
 end
 

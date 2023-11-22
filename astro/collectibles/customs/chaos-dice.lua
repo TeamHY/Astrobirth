@@ -1,7 +1,7 @@
 Astro.Collectible.CHAOS_DICE = Isaac.GetItemIdByName("Chaos Dice")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.CHAOS_DICE, "", "혼돈의 주사위")
+    EID:addCollectible(Astro.Collectible.CHAOS_DICE, "방 안의 모든 아이템과 픽업을 다른 아이템으로 바꿉니다.#바뀐 아이템의 배열은 랜덤으로 결정됩니다.", "혼돈의 주사위")
 end
 
 Astro:AddCallback(
