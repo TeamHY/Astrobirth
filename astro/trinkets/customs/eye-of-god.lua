@@ -3,7 +3,7 @@ Astro.Trinket.EYE_OF_GOD = Isaac.GetTrinketIdByName("Eye Of God")
 if EID then
     EID:addTrinket(
         Astro.Trinket.EYE_OF_GOD,
-        "#10%의 확률로 눈물에 후광이 생기며 후광에 닿은 적은 프레임당 2의 피해를 입습니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 45 이상일 때 100% 확률 ({{LuckSmall}}행운 1 당 +2%p)",
+        "#10%의 확률로 눈물에 후광이 생기며 후광에 닿은 적은 프레임당 2의 피해를 입습니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 45 이상일 때 100% 확률 ({{LuckSmall}}행운 1당 +2%p)",
         "신의 눈"
     )
 

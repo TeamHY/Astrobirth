@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.TRINITY = Isaac.GetItemIdByName("Trinity")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.TRINITY, "{{BossRoom}}보스방 클리어 시 {{Collectible333}}The Mind, {{Collectible334}}The Body, {{Collectible335}}The Soul을 제거합니다.#스테이지를 넘어갈 때마다 소지된 아이템 중 하나를 제거합니다. 제거된 아이템과 {{Collectible333}}The Mind, {{Collectible334}}The Body, {{Collectible335}}The Soul 중 하나를 소환합니다. 하나를 선택하면 나머지는 사라집니다.", "삼위일체")
+    EID:addCollectible(Astro.Collectible.TRINITY, "{{BossRoom}}보스방 클리어 시 {{Collectible333}}The Mind, {{Collectible334}}The Body, {{Collectible335}}The Soul을 제거합니다.#스테이지를 넘어갈 때마다 소지된 아이템 중 하나를 제거합니다. 제거된 아이템과 {{Collectible333}}The Mind, {{Collectible334}}The Body, {{Collectible335}}The Soul 중 하나를 소환합니다. 하나를 선택하면 나머지는 사라집니다.#!!! 이번 게임에서 {{Collectible333}}The Mind, {{Collectible334}}The Body, {{Collectible335}}The Soul이 등장하지 않습니다.", "삼위일체")
 end
 
 Astro:AddCallbackCustom(

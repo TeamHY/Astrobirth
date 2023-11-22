@@ -1,7 +1,7 @@
 Astro.Collectible.GALACTIC_MEDAL_OF_VALOR = Isaac.GetItemIdByName("Galactic Medal Of Valor")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.GALACTIC_MEDAL_OF_VALOR, "보스 몬스터 직접 공격 시 30% 추가 피해가 적용됩니다.", "은하 용맹 훈장")
+    EID:addCollectible(Astro.Collectible.GALACTIC_MEDAL_OF_VALOR, "보스 몬스터 직접 공격 시 30% 추가 피해를 입힙니다.", "은하 용맹 훈장")
 end
 
 Astro:AddCallback(
