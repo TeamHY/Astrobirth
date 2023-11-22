@@ -14,6 +14,8 @@ Astro:AddCallback(
     ---@param varData integer
     function(_, collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
         playerWhoUsedItem:UseCard(Card.CARD_SOUL_EDEN, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)
+
+        return true
     end,
     Astro.Collectible.CHAOS_DICE
 )

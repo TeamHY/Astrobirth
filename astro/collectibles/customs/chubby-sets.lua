@@ -10,8 +10,83 @@ end
 
 local CHUBBYS_HEAD_DAMAGE = 3.5
 
+local SLEEPING_PUPPY_INCREMENT = 0.35
+
 local CHUBBYS_TAIL_SUBTYPE = 1000
 local CHUBBYS_TAIL_CHANCE = 0.33
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    ---@param isContinued boolean
+    function(_, isContinued)
+        if not isContinued then
+            Astro.Data.SleepingPuppy = {
+                RoomClearCount = 0,
+                Damage = 0,
+                FireDelay = 0,
+                Range = 0,
+                Speed = 0,
+                Luck = 0
+            }
+        else
+            for i = 1, Game():GetNumPlayers() do
+                local player = Isaac.GetPlayer(i - 1)
+    
+                if player:HasCollectible(Astro.Collectible.SLEEPING_PUPPY) then
+                    player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
+                    player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
+                    player:AddCacheFlags(CacheFlag.CACHE_RANGE)
+                    player:AddCacheFlags(CacheFlag.CACHE_SPEED)
+                    player:AddCacheFlags(CacheFlag.CACHE_LUCK)
+                    player:EvaluateItems()
+                end
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
+    function()
+        local isRun = false
+
+        for i = 1, Game():GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
+
+            if Astro.Data.SleepingPuppy ~= nil and player:HasCollectible(Astro.Collectible.SLEEPING_PUPPY) then
+                if not isRun then
+                    Astro.Data.SleepingPuppy.RoomClearCount = Astro.Data.SleepingPuppy.RoomClearCount + 1
+
+                    if Astro.Data.SleepingPuppy.RoomClearCount % 9 == 0 then
+                        local rng = player:GetCollectibleRNG(Astro.Collectible.SLEEPING_PUPPY)
+                        local random = rng:RandomInt(5)
+
+                        if random == 0 then
+                            Astro.Data.SleepingPuppy.Damage = Astro.Data.SleepingPuppy.Damage + SLEEPING_PUPPY_INCREMENT
+                        elseif random == 1 then
+                            Astro.Data.SleepingPuppy.FireDelay = Astro.Data.SleepingPuppy.FireDelay + SLEEPING_PUPPY_INCREMENT
+                        elseif random == 2 then
+                            Astro.Data.SleepingPuppy.Range = Astro.Data.SleepingPuppy.Range + SLEEPING_PUPPY_INCREMENT
+                        elseif random == 3 then
+                            Astro.Data.SleepingPuppy.Speed = Astro.Data.SleepingPuppy.Speed + SLEEPING_PUPPY_INCREMENT
+                        elseif random == 4 then
+                            Astro.Data.SleepingPuppy.Luck = Astro.Data.SleepingPuppy.Luck + SLEEPING_PUPPY_INCREMENT
+                        end
+                    end
+
+                    isRun = true
+                end
+
+                player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
+                player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
+                player:AddCacheFlags(CacheFlag.CACHE_RANGE)
+                player:AddCacheFlags(CacheFlag.CACHE_SPEED)
+                player:AddCacheFlags(CacheFlag.CACHE_LUCK)
+                player:EvaluateItems()
+            end
+        end
+    end
+)
 
 Astro:AddCallback(
     ModCallbacks.MC_EVALUATE_CACHE,
@@ -21,6 +96,20 @@ Astro:AddCallback(
         if player:HasCollectible(Astro.Collectible.CHUBBYS_HEAD) then
             if cacheFlag == CacheFlag.CACHE_DAMAGE then
                 player.Damage = player.Damage + CHUBBYS_HEAD_DAMAGE
+            end
+        end
+        
+        if player:HasCollectible(Astro.Collectible.SLEEPING_PUPPY) and Astro.Data.SleepingPuppy ~= nil then
+            if cacheFlag == CacheFlag.CACHE_DAMAGE then
+                player.Damage = player.Damage + Astro.Data.SleepingPuppy.Damage
+            elseif cacheFlag == CacheFlag.CACHE_FIREDELAY then
+                player.MaxFireDelay = Astro:AddTears(player.MaxFireDelay, Astro.Data.SleepingPuppy.FireDelay)
+            elseif cacheFlag == CacheFlag.CACHE_RANGE then
+                player.TearRange = player.TearRange + Astro.Data.SleepingPuppy.Range
+            elseif cacheFlag == CacheFlag.CACHE_SPEED then
+                player.MoveSpeed = player.MoveSpeed + Astro.Data.SleepingPuppy.Speed
+            elseif cacheFlag == CacheFlag.CACHE_LUCK then
+                player.Luck = player.Luck + Astro.Data.SleepingPuppy.Luck
             end
         end
     end
@@ -34,8 +123,8 @@ Astro:AddCallback(
             for i = 1, Game():GetNumPlayers() do
                 local player = Isaac.GetPlayer(i - 1)
 
-                if player:HasTrinket(Astro.Collectible.CHUBBYS_TAIL) then
-                    local rng = player:GetTrinketRNG(Astro.Collectible.CHUBBYS_TAIL)
+                if player:HasCollectible(Astro.Collectible.CHUBBYS_TAIL) then
+                    local rng = player:GetCollectibleRNG(Astro.Collectible.CHUBBYS_TAIL)
 
                     if rng:RandomFloat() < CHUBBYS_TAIL_CHANCE then
                         local currentRoom = Game():GetLevel():GetCurrentRoom()

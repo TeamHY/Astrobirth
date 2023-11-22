@@ -51,7 +51,7 @@
 	<passive cache="damage" gfx="Chubby's Head.png" quality="3" devilprice="2" name="Chubby's Head" />
 	<passive cache="damage firedelay range speed luck" gfx="Sleeping Puppy.png" quality="3" devilprice="2" name="Sleeping Puppy" />
 	<passive gfx="Chubby's Tail.png" quality="3" devilprice="2" name="Chubby's Tail" />
-	<passive gfx="Happy Onion.png" quality="3" devilprice="2" name="Happy Onion" />
+	<passive cache="damage firedelay range speed luck" gfx="Happy Onion.png" quality="3" devilprice="2" name="Happy Onion" />
 	<passive gfx="Key Is Power.png" quality="3" devilprice="2" name="Key Is Power" />
 	<passive gfx="Bomb Is Power.png" quality="3" devilprice="2" name="Bomb Is Power" />
 	<active gfx="Fortune Coin.png" quality="3" devilprice="1" initcharge="0" maxcharges="1" name="Fortune Coin" />
