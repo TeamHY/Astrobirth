@@ -50,6 +50,12 @@
 		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Fallen Orb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Trinity" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chaos Dice" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Duality - Light and Darkness" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sagittarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Ward" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fortune Coin" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -86,6 +92,13 @@
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<Item Name="Fallen Orb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sagittarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Head" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sleeping Puppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Key Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Happy Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -122,6 +135,13 @@
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<Item Name="Fallen Orb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sagittarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Head" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sleeping Puppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Key Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Happy Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="curse">
@@ -156,6 +176,13 @@
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<Item Name="Fallen Orb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sagittarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Head" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sleeping Puppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Key Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Happy Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -192,6 +219,16 @@
 		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Fallen Orb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Trinity" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chaos Dice" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Duality - Light and Darkness" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sagittarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Ward" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Head" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sleeping Puppy" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Tail" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Happy Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Key Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="angel">
@@ -227,6 +264,16 @@
 		<Item Name="Quasar" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Fallen Orb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Trinity" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chaos Dice" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Duality - Light and Darkness" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sagittarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Ward" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Head" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sleeping Puppy" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Tail" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Happy Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Key Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -273,6 +320,20 @@
 		<Item Name="Morphine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Trinity" Weight="0.35" DecreaseBy="1" RemoveOn="0.1"/>
 
+		<Item Name="Chaos Dice" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Duality - Light and Darkness" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sagittarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Ward" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Head" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sleeping Puppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Happy Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Key Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fortune Coin" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+
+
 	</Pool>
 
 	<Pool Name="craneGame">
@@ -316,6 +377,18 @@
 		<Item Name="Fallen Orb" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Morphine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Trinity" Weight="0.35" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Chaos Dice" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Duality - Light and Darkness" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sagittarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Ward" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Head" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sleeping Puppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Happy Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Key Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fortune Coin" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
@@ -334,6 +407,9 @@
 		<Item Name="Angry Onion" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Clover" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Key Is Power" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bomb Is Power" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Happy Onion" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 </ItemPools>

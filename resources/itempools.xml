@@ -528,7 +528,7 @@
 		<Item Id="529" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="530" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="531" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="532" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="532" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="533" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="534" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="535" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -1212,7 +1212,7 @@
 		<Item Id="514" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="524" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="531" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="532" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="532" Weight="0.25" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="533" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="549" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="553" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1659,7 +1659,7 @@
 		<Item Id="514" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="524" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="531" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="532" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="532" Weight="0.25" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="533" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="549" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="553" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1788,7 +1788,7 @@
 		<Item Id="514" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="524" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="531" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="532" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="532" Weight="0.25" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="533" Weight="0.1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="549" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="553" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -4047,7 +4047,7 @@
 		<Item Id="529" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="530" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="531" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="532" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="532" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="533" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="534" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="535" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -4345,7 +4345,7 @@
 		<Item Id="514" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="524" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="531" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-		<Item Id="532" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="532" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="533" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="549" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="553" Weight="1" DecreaseBy="1" RemoveOn="0"/>
