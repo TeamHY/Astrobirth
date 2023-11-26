@@ -1,7 +1,7 @@
 Astro.Collectible.FORTUNE_COIN = Isaac.GetItemIdByName("Fortune Coin")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.FORTUNE_COIN, "사용 시 30% 확률(행운 1 = 1%p 증가)로 그 방이 아이템 소환됩니다. 실패 시 깨진 하트가 3칸 추가됩니다.#!!! 일회용 아이템", "포츈 코인")
+    EID:addCollectible(Astro.Collectible.FORTUNE_COIN, "사용 시 30% 확률(행운 1 = 1%p 증가)로 현재 방 배열 아이템이 소환됩니다. 실패 시 깨진 하트가 3칸 추가됩니다.#!!! 일회용 아이템", "포츈 코인")
 end
 
 Astro:AddCallback(
