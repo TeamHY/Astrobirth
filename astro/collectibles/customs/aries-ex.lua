@@ -1,11 +1,11 @@
 Astro.Collectible.ARIES_EX = Isaac.GetItemIdByName("Aries EX")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.ARIES_EX, "피격 시 무효화 처리되며, 5초간 무적이 됩니다. 해당 아이템 소지 시 모든 방어막 계열 아이템이 발동되지 않습니다.{{Timer}}쿨타임 25초", "초 양자리")
+    EID:addCollectible(Astro.Collectible.ARIES_EX, "피격 시 무효화 처리되며, 5초간 무적이 됩니다. 해당 아이템 소지 시 모든 방어막 계열 아이템이 발동되지 않습니다.{{Timer}}쿨타임 60초", "초 양자리")
 end
 
 --- 쿨타임
-local cooldown = 25 * 30
+local cooldown = 60 * 30
 
 --- 지속 시간
 local duration = 5 * 30

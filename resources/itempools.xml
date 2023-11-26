@@ -581,7 +581,7 @@
 		<Item Id="585" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="586" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="587" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="588" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="588" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="589" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="590" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="591" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -4100,7 +4100,7 @@
 		<Item Id="585" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="586" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="587" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="588" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="588" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="589" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="590" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="591" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -4422,7 +4422,7 @@
 	<Pool Name="planetarium">
 		<Item Id="158" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="392" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="588" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="588" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="589" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="590" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="591" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

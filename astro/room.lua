@@ -40,7 +40,32 @@ Astro:AddCallback(
                 CollectibleType.COLLECTIBLE_GUPPYS_HEAD,
                 CollectibleType.COLLECTIBLE_GUPPYS_HAIRBALL,
                 CollectibleType.COLLECTIBLE_GUPPYS_COLLAR,
-                CollectibleType.COLLECTIBLE_GUPPYS_EYE
+                CollectibleType.COLLECTIBLE_GUPPYS_EYE,
+                --파리셋
+                CollectibleType.COLLECTIBLE_SKATOLE,
+                CollectibleType.COLLECTIBLE_HALO_OF_FLIES,
+                CollectibleType.COLLECTIBLE_DISTANT_ADMIRATION,
+                CollectibleType.COLLECTIBLE_FOREVER_ALONE,
+                CollectibleType.COLLECTIBLE_MULLIGAN,
+                CollectibleType.COLLECTIBLE_HIVE_MIND,
+                CollectibleType.COLLECTIBLE_SMART_FLY,
+                CollectibleType.COLLECTIBLE_BBF,
+                CollectibleType.COLLECTIBLE_BEST_BUD,
+                CollectibleType.COLLECTIBLE_BIG_FAN,
+                CollectibleType.COLLECTIBLE_BLUE_BABYS_ONLY_FRIEND,
+                CollectibleType.COLLECTIBLE_FRIEND_ZONE,
+                CollectibleType.COLLECTIBLE_LOST_FLY,
+                CollectibleType.COLLECTIBLE_OBSESSED_FAN,
+                CollectibleType.COLLECTIBLE_PAPA_FLY,
+                CollectibleType.COLLECTIBLE_JAR_OF_FLIES,
+                CollectibleType.COLLECTIBLE_PARASITOID,
+                CollectibleType.COLLECTIBLE_YO_LISTEN,
+                CollectibleType.COLLECTIBLE_ANGRY_FLY,
+                CollectibleType.COLLECTIBLE_PSY_FLY,
+                CollectibleType.COLLECTIBLE_BOT_FLY,
+                CollectibleType.COLLECTIBLE_FRUITY_PLUM,
+                CollectibleType.COLLECTIBLE_PLUM_FLUTE,
+                CollectibleType.COLLECTIBLE_SWARM
             }
 
             -- 더러운 침대방(클로버룸)
@@ -62,7 +87,12 @@ Astro:AddCallback(
                 CollectibleType.COLLECTIBLE_EVIL_CHARM,
                 CollectibleType.COLLECTIBLE_GLASS_EYE,
                 Astro.Collectible.CLOVER,
-                CollectibleType.COLLECTIBLE_DADS_LOST_COIN
+                CollectibleType.COLLECTIBLE_DADS_LOST_COIN,
+                Astro.Collectible.FORTUNE_COIN,
+                Astro.Collectible.PIRATE_MAP,
+                Astro.Collectible.DIVINE_LIGHT,
+                Astro.Collectible.BLOOD_OF_HATRED,
+                Astro.Collectible.ACUTE_SINUSITIS
             }
         end
     end
