@@ -37,7 +37,12 @@ Astro:AddCallback(
             Astro.Collectible.GEMINI_EX,
             Astro.Collectible.LANIAKEA_SUPERCLUSTER,
             Astro.Collectible.TRINITY,
-            Astro.Collectible.VEGA
+            Astro.Collectible.VEGA,
+            CollectibleType.COLLECTIBLE_DRY_BABY,
+            CollectibleType.COLLECTIBLE_NIGHT_LIGHT,
+            CollectibleType.COLLECTIBLE_BROKEN_MODEM,
+            CollectibleType.COLLECTIBLE_HALO_OF_FLIES,
+            CollectibleType.COLLECTIBLE_FARTING_BABY
         }
 
         trinkets = {
