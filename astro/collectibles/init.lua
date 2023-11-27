@@ -7,6 +7,7 @@ require "astro.collectibles.status"
 
 require "astro.collectibles.vanillas.aquarius"
 require "astro.collectibles.vanillas.blood-oath"
+require "astro.collectibles.vanillas.crickets-body"
 require "astro.collectibles.vanillas.dads-lost-coin"
 require "astro.collectibles.vanillas.damocles"
 require "astro.collectibles.vanillas.depression"
