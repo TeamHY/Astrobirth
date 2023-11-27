@@ -22,11 +22,17 @@ Astro:AddCallback(
         local playerType = player:GetPlayerType()
 
         if playerType == PlayerType.PLAYER_THEFORGOTTEN then
-            player:AddBrokenHearts(4 - player:GetBrokenHearts())
-            player:GetSubPlayer():AddBrokenHearts(3 - player:GetSubPlayer():GetBrokenHearts())
+            if CheckHeartLimitStage(stage) then
+                player:AddBrokenHearts(4 - player:GetBrokenHearts())
+            end
+
+            player:GetSubPlayer():AddBrokenHearts(6 - player:GetSubPlayer():GetBrokenHearts())
         elseif playerType == PlayerType.PLAYER_THESOUL then
-            player:AddBrokenHearts(3 - player:GetBrokenHearts())
-            player:GetSubPlayer():AddBrokenHearts(4 - player:GetSubPlayer():GetBrokenHearts())
+            player:AddBrokenHearts(6 - player:GetBrokenHearts())
+
+            if CheckHeartLimitStage(stage) then
+                player:GetSubPlayer():AddBrokenHearts(4 - player:GetSubPlayer():GetBrokenHearts())
+            end
         elseif CheckHeartLimitStage(stage) or playerType == PlayerType.PLAYER_JUDAS then
             if
                 playerType == PlayerType.PLAYER_KEEPER or playerType == PlayerType.PLAYER_KEEPER_B or
