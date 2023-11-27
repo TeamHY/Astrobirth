@@ -99,7 +99,10 @@ Astro:AddCallback(
             end
 
             if entity:IsVulnerableEnemy() then
-                entity:ToNPC():Morph(entity.Type, entity.Variant, entity.SubType, champ)
+                local npc = entity:ToNPC()
+
+                npc:Morph(entity.Type, entity.Variant, entity.SubType, champ)
+                npc.HitPoints = npc.MaxHitPoints
             end
         end
     end
