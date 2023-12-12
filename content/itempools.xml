@@ -323,7 +323,7 @@
 		<Item Name="Chaos Dice" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Duality - Light and Darkness" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sagittarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Ward" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Ward" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Head" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sleeping Puppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -381,7 +381,7 @@
 		<Item Name="Chaos Dice" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Duality - Light and Darkness" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sagittarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Ward" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Ward" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Head" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sleeping Puppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -400,7 +400,7 @@
 		<Item Name="Omega 321" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Blood Of Hatred" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Morphine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Ward" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Ward" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Fortune Coin" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
