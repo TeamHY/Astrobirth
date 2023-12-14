@@ -819,7 +819,7 @@
 	<trinket achievement="72" description="#JUDAS_TONGUE_DESCRIPTION" gfx="trinket_056_judastongue.png" id="56" name="#JUDAS_TONGUE_NAME" />
 	<trinket achievement="73" cache="familiars" description="#S_SOUL_DESCRIPTION" gfx="trinket_057_qmarkssoul.png" id="57" name="#S_SOUL_NAME" />
 	<trinket achievement="74" cache="damage" description="#SAMSONS_LOCK_DESCRIPTION" gfx="trinket_058_samsonslock.png" id="58" name="#SAMSONS_LOCK_NAME" />
-	<trinket achievement="75" description="#CAINS_EYE_DESCRIPTION" gfx="trinket_059_cainseye.png" id="59" name="#CAINS_EYE_NAME" />
+	<trinket achievement="75" cache="luck" description="#CAINS_EYE_DESCRIPTION" gfx="trinket_059_cainseye.png" id="59" name="#CAINS_EYE_NAME" />
 	<trinket achievement="76" cache="familiars" description="#EVES_BIRD_FOOT_DESCRIPTION" gfx="trinket_060_evesbirdfoot.png" id="60" name="#EVES_BIRD_FOOT_NAME" />
 	<trinket achievement="77" description="#THE_LEFT_HAND_DESCRIPTION" gfx="trinket_061_thelefthand.png" id="61" name="#THE_LEFT_HAND_NAME" />
 	
