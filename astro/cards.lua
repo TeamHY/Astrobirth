@@ -17,7 +17,7 @@ if EID then
     EID:addCard(Astro.Card.ETERNITY, "사용 시 이터널 하트가 1~4개 소환됩니다.", "V - Eternity")
     EID:addCard(Astro.Card.CORRUPTION, "사용 시 에러방으로 이동합니다.", "VI - Corruption")
     EID:addCard(Astro.Card.IMMOLATION, "사용 시 희생방으로 이동합니다.", "VII - Immolation")
-    EID:addCard(Astro.Card.WORSHIP, "사용 시 50% 확률로 현재 방 배열 아이템이 소환됩니다.#아이템 소환에 실패 시 캐릭터에게 배드 트립 알약을 1회 적용시킵니다.", "VIII - Worship")
+    EID:addCard(Astro.Card.WORSHIP, "사용 시 30% 확률로 현재 방 배열 아이템이 소환됩니다.#아이템 소환에 실패 시 캐릭터에게 배드 트립 알약을 1회 적용시킵니다.", "VIII - Worship")
 end
 
 Astro:AddCallback(
@@ -66,7 +66,7 @@ Astro:AddCallback(
         elseif cardID == Astro.Card.WORSHIP then
             local rng = playerWhoUsedItem:GetCardRNG(cardID)
 
-            if rng:RandomFloat() < 0.5 then
+            if rng:RandomFloat() < 0.3 then
                 Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_NULL, playerWhoUsedItem.Position)
             else
                 playerWhoUsedItem:UsePill(PillEffect.PILLEFFECT_BAD_TRIP, PillColor.PILL_NULL, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)

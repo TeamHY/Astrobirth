@@ -40573,7 +40573,7 @@
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="11" y="0">
-			<entity type="3000" variant="0" subtype="0" weight="0.33"/>
+			<entity type="3000" variant="0" subtype="0" weight="0.33000001311302185"/>
 		</spawn>
 		<spawn x="12" y="0">
 			<entity type="1490" variant="0" subtype="0" weight="1.0"/>
@@ -67716,7 +67716,7 @@
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="7" name="Planetarium (copy)" type="24" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="0.1">
+	<room variant="7" name="Planetarium (copy)" type="24" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="0.10000000149011612">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
