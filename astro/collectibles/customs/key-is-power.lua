@@ -1,3 +1,5 @@
+local isc = require("astro.lib.isaacscript-common")
+
 Astro.Collectible.KEY_IS_POWER = Isaac.GetItemIdByName("Key Is Power")
 
 if EID then
@@ -34,6 +36,17 @@ Astro:AddCallback(
     end
 )
 
+Astro:AddCallbackCustom(
+    isc.ModCallbackCustom.POST_PLAYER_COLLECTIBLE_ADDED,
+    ---@param player EntityPlayer
+    ---@param collectibleType CollectibleType
+    function(_, player, collectibleType)
+        player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
+        player:EvaluateItems()
+    end,
+    Astro.Collectible.KEY_IS_POWER
+)
+
 Astro:AddCallback(
     ModCallbacks.MC_EVALUATE_CACHE,
     ---@param player EntityPlayer
@@ -41,7 +54,7 @@ Astro:AddCallback(
     function(_, player, cacheFlag)
         if player:HasCollectible(Astro.Collectible.KEY_IS_POWER) then
             if cacheFlag == CacheFlag.CACHE_DAMAGE then
-                player.Damage = player.Damage + player:GetNumKeys() * KEY_IS_POWER_INCREMENT
+                player.Damage = player.Damage + player:GetNumKeys() * player:GetCollectibleNum(Astro.Collectible.KEY_IS_POWER) * KEY_IS_POWER_INCREMENT
             end
         end
     end

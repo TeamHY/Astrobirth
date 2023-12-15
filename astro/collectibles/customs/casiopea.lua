@@ -10,7 +10,7 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     ---@param isContinued boolean
     function(_, isContinued)
-        if not isContinued and Astro.Data.CasiopeaCount ~= nil and Astro.Data.CasiopeaCount >= 1 then
+        if not isContinued and Astro.Data.CasiopeaCount ~= nil and Astro.Data.CasiopeaCount > 0 then
             local player = Isaac.GetPlayer()
             local game = Game()
             local currentRoom = game:GetLevel():GetCurrentRoom()

@@ -1,7 +1,7 @@
 Astro.Collectible.HAPPY_ONION = Isaac.GetItemIdByName("Happy Onion")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.HAPPY_ONION, "방 클리어 시 공격력, 연사, 사거리, 속도, 행운 중 한 가지의 스텟이 0.7(고정) 증가됩니다.#스테이지 입장 시 증가된 스텟은 초기화되며, 최대 10번까지만 누적됩니다.", "행복한 양파")
+    EID:addCollectible(Astro.Collectible.HAPPY_ONION, "방 클리어 시 공격력, 연사, 사거리, 속도, 행운 중 한 가지의 스텟이 0.7(고정) 증가됩니다.#스테이지 입장 시 증가된 스텟은 초기화되며, 최대 10번까지만 누적됩니다.#중첩 시 다음 증가량부터 적용됩니다.", "행복한 양파")
 end
 
 local HAPPY_ONION_INCREMENT = 0.7
@@ -78,17 +78,18 @@ Astro:AddCallback(
                     if Astro.Data.HappyOnion.StageRoomClearCount <= 10 then
                         local rng = player:GetCollectibleRNG(Astro.Collectible.HAPPY_ONION)
                         local random = rng:RandomInt(5)
+                        local statusIncrement = HAPPY_ONION_INCREMENT * player:GetCollectibleNum(Astro.Collectible.HAPPY_ONION)
 
                         if random == 0 then
-                            Astro.Data.HappyOnion.Damage = Astro.Data.HappyOnion.Damage + HAPPY_ONION_INCREMENT
+                            Astro.Data.HappyOnion.Damage = Astro.Data.HappyOnion.Damage + statusIncrement
                         elseif random == 1 then
-                            Astro.Data.HappyOnion.FireDelay = Astro.Data.HappyOnion.FireDelay + HAPPY_ONION_INCREMENT
+                            Astro.Data.HappyOnion.FireDelay = Astro.Data.HappyOnion.FireDelay + statusIncrement
                         elseif random == 2 then
-                            Astro.Data.HappyOnion.Range = Astro.Data.HappyOnion.Range + HAPPY_ONION_INCREMENT
+                            Astro.Data.HappyOnion.Range = Astro.Data.HappyOnion.Range + statusIncrement
                         elseif random == 3 then
-                            Astro.Data.HappyOnion.Speed = Astro.Data.HappyOnion.Speed + HAPPY_ONION_INCREMENT
+                            Astro.Data.HappyOnion.Speed = Astro.Data.HappyOnion.Speed + statusIncrement
                         elseif random == 4 then
-                            Astro.Data.HappyOnion.Luck = Astro.Data.HappyOnion.Luck + HAPPY_ONION_INCREMENT
+                            Astro.Data.HappyOnion.Luck = Astro.Data.HappyOnion.Luck + statusIncrement
                         end
                     end
 

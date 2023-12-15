@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.PROMETHEUS = Isaac.GetItemIdByName("Prometheus")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.PROMETHEUS, "항상 다크니스 저주가 활성화됩니다.#↑ {{DamageSmall}}공격력 x1.25", "프로메테우스")
+    EID:addCollectible(Astro.Collectible.PROMETHEUS, "항상 다크니스 저주가 활성화됩니다.#↑ {{DamageSmall}}공격력 x1.25#중첩이 가능합니다.", "프로메테우스")
 end
 
 -- !!! astro/init.lua로 이동
@@ -53,7 +53,7 @@ Astro:AddCallback(
     function(_, player, cacheFlag)
         if player:HasCollectible(Astro.Collectible.PROMETHEUS) then
             if cacheFlag == CacheFlag.CACHE_DAMAGE then
-                player.Damage = player.Damage * 1.25
+                player.Damage = player.Damage * 1.25 ^ player:GetCollectibleNum(Astro.Collectible.PROMETHEUS)
             end
         end
     end

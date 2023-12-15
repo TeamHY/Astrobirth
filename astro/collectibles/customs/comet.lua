@@ -7,7 +7,7 @@ Astro.Collectible.COMET = Isaac.GetItemIdByName("Comet")
 if EID then
     EID:addCollectible(
         Astro.Collectible.COMET,
-        "획득 시 {{Card78}}Cracked Key가 하나 드랍됩니다.#다음 게임 시작 시 {{Card78}}Cracked Key을 하나 소환합니다.#맵에 {{UltraSecretRoom}}특급 비밀방의 위치가 표시됩니다.",
+        "획득 시 {{Card78}}Cracked Key가 하나 드랍됩니다.#다음 게임 시작 시 {{Card78}}Cracked Key을 하나 소환합니다.#중첩이 가능합니다.#맵에 {{UltraSecretRoom}}특급 비밀방의 위치가 표시됩니다.",
         "혜성"
     )
 end
@@ -31,20 +31,22 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     ---@param isContinued boolean
     function(_, isContinued)
-        if not isContinued and Astro.Data.RunComet then
+        if not isContinued and Astro.Data.CometCount ~= nil and Astro.Data.CometCount > 0 then
             local player = Isaac.GetPlayer()
             local currentRoom = Game():GetLevel():GetCurrentRoom()
 
-            Isaac.Spawn(
-                EntityType.ENTITY_PICKUP,
-                PickupVariant.PICKUP_TAROTCARD,
-                Card.CARD_CRACKED_KEY,
-                currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
-                Vector.Zero,
-                nil
-            )
+            for _ = 1, Astro.Data.CometCount do
+                Isaac.Spawn(
+                    EntityType.ENTITY_PICKUP,
+                    PickupVariant.PICKUP_TAROTCARD,
+                    Card.CARD_CRACKED_KEY,
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, 40, true),
+                    Vector.Zero,
+                    nil
+                )
+            end
 
-            Astro.Data.RunComet = false
+            Astro.Data.CometCount = 0
         end
     end
 )
@@ -74,7 +76,7 @@ Astro:AddCallbackCustom(
 
         DisplayUltraSecretRoom()
 
-        Astro.Data.RunComet = true
+        Astro.Data.CometCount = player:GetCollectibleNum(Astro.Collectible.COMET)
     end,
     Astro.Collectible.COMET
 )

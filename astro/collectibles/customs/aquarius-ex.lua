@@ -22,7 +22,7 @@ Astro:AddCallback(
              then
                 entity:GetData().Aquarius = {
                     Source = player,
-                    Delay = 7 --몬스터에게 나오는 눈물 설정하는 곳
+                    Delay = math.floor(7 / player:GetCollectibleNum(Astro.Collectible.AQUARIUS_EX)) --몬스터에게 나오는 눈물 설정하는 곳
                 }
             end
         end

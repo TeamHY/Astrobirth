@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.PIRATE_MAP = Isaac.GetItemIdByName("Pirate Map")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.PIRATE_MAP, "현재 스테이지에서 랜덤한 방 위치 2개를 보여주며, 행운 2당 1개의 방을 추가적으로 보여줍니다.", "해적 지도")
+    EID:addCollectible(Astro.Collectible.PIRATE_MAP, "현재 스테이지에서 랜덤한 방 위치 2개를 보여주며, 행운 2당 1개의 방을 추가로 보여줍니다.#중첩 시마다 2개의 방을 추가로 보여줍니다.", "해적 지도")
 end
 
 ---@param count integer
@@ -43,7 +43,7 @@ Astro:AddCallback(
             if player:HasCollectible(Astro.Collectible.PIRATE_MAP) then
                 local rng = player:GetCollectibleRNG(Astro.Collectible.PIRATE_MAP)
 
-                DisplayRandomRoom(math.floor(2 + player.Luck / 2), rng)
+                DisplayRandomRoom(math.floor(2 * player:GetCollectibleNum(Astro.Collectible.PIRATE_MAP) + player.Luck / 2), rng)
 
                 break
             end
