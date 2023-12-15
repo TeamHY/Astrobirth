@@ -1,3 +1,5 @@
+local isc = require("astro.lib.isaacscript-common")
+
 Astro.Collectible.BOMB_IS_POWER = Isaac.GetItemIdByName("Bomb Is Power")
 
 if EID then
@@ -32,6 +34,17 @@ Astro:AddCallback(
             end
         end
     end
+)
+
+Astro:AddCallbackCustom(
+    isc.ModCallbackCustom.POST_PLAYER_COLLECTIBLE_ADDED,
+    ---@param player EntityPlayer
+    ---@param collectibleType CollectibleType
+    function(_, player, collectibleType)
+        player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
+        player:EvaluateItems()
+    end,
+    Astro.Collectible.BOMB_IS_POWER
 )
 
 Astro:AddCallback(

@@ -22,7 +22,7 @@ Astro:AddCallback(
     ---@param cacheFlag CacheFlag
     function(_, player, cacheFlag)
         if cacheFlag == CacheFlag.CACHE_LUCK then
-            if player:HasCollectible(CollectibleType.TRINKET_CAINS_EYE) then
+            if player:HasTrinket(TrinketType.TRINKET_CAINS_EYE) then
                 player.Luck = player.Luck - 3
             end
         end

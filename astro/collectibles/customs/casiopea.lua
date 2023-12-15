@@ -46,7 +46,7 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        Astro.Data.CasiopeaCount = 0
+        Astro.Data.CasiopeaCount = player:GetCollectibleNum(Astro.Collectible.CASIOPEA)
     end,
     Astro.Collectible.CASIOPEA
 )
