@@ -179,7 +179,7 @@
 	<familiar description="#HOLY_WATER_DESCRIPTION" gfx="Collectibles_178_HolyWater.png" shopprice="9" id="178" name="#HOLY_WATER_NAME" />
 	<passive achievement="113" cache="flying" description="#FATE_DESCRIPTION" gfx="Collectibles_179_Fate.png" id="179" name="#FATE_NAME" />
 	<passive description="#THE_BLACK_BEAN_DESCRIPTION" gfx="Collectibles_180_BlackBean.png" id="180" name="#THE_BLACK_BEAN_NAME" cooldown="30" />
-	<active cache="flying speed" description="#WHITE_PONY_DESCRIPTION" gfx="Collectibles_181_WhitePony.png" id="181" maxcharges="2" name="#WHITE_PONY_NAME" passivecache="true" addcostumeonpickup="true" />
+	<active cache="flying speed" description="#WHITE_PONY_DESCRIPTION" gfx="Collectibles_181_WhitePony.png" id="181" maxcharges="3" name="#WHITE_PONY_NAME" passivecache="true" addcostumeonpickup="true" />
 	<passive cache="damage firedelay range shotspeed tearcolor tearflag" description="#SACRED_HEART_DESCRIPTION" gfx="Collectibles_182_SacredHeart.png" hearts="99" id="182" maxhearts="2" name="#SACRED_HEART_NAME" special="true" devilprice="2" />
 	<passive cache="shotspeed firedelay" description="#TOOTH_PICKS_DESCRIPTION" gfx="Collectibles_183_ToothPicks.png" id="183" name="#TOOTH_PICKS_NAME" />
 	<passive cache="flying" description="#HOLY_GRAIL_DESCRIPTION" gfx="Collectibles_184_HolyGrail.png" hearts="4" id="184" maxhearts="2" name="#HOLY_GRAIL_NAME" devilprice="2" />
@@ -489,7 +489,7 @@
 	<active achievement="318" description="#SMELTER_DESCRIPTION" gfx="Collectibles_479_Smelter.png" id="479" name="#SMELTER_NAME" maxcharges="6" />
 	<active description="#COMPOST_DESCRIPTION" gfx="Collectibles_480_Compost.png" id="480" name="#COMPOST_NAME" shopprice="10" maxcharges="2" />
 	<active description="#DATAMINER_DESCRIPTION" gfx="Collectibles_481_Dataminer.png" id="481" name="#DATAMINER_NAME" maxcharges="4" />
-	<active description="#CLICKER_DESCRIPTION" gfx="Collectibles_482_Clicker.png" id="482" name="#CLICKER_NAME" maxcharges="6" />
+	<active description="#CLICKER_DESCRIPTION" gfx="Collectibles_482_Clicker.png" id="482" name="#CLICKER_NAME" maxcharges="3" />
 	<active description="#MAMA_MEGA_DESCRIPTION" gfx="Collectibles_483_MaMaMega.png" id="483" name="#MAMA_MEGA_NAME" />
 	<active description="#WAIT_WHAT_DESCRIPTION" gfx="Collectibles_484_WaitWhat.png" id="484" name="#WAIT_WHAT_NAME" maxcharges="300" chargetype="timed" />
 	

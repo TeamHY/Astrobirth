@@ -43,6 +43,7 @@ function Ban:Init()
         [PlayerType.PLAYER_JUDAS] = function()
         end,
         [PlayerType.PLAYER_BLUEBABY] = function()
+        self.BanCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
         end,
         [PlayerType.PLAYER_EVE] = function()
         end,
@@ -64,14 +65,15 @@ function Ban:Init()
             self.BanCollectible(CollectibleType.COLLECTIBLE_TOUGH_LOVE)
             self.BanCollectible(CollectibleType.COLLECTIBLE_APPLE)
             self.BanCollectible(CollectibleType.COLLECTIBLE_GHOST_PEPPER)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_D6)
             self.BanTrinket(TrinketType.TRINKET_BROKEN_ANKH)
+            self.BanTrinket(TrinketType.TRINKET_JAW_BREAKER)
         end,
         [PlayerType.PLAYER_LAZARUS2] = function()
         end,
         [PlayerType.PLAYER_BLACKJUDAS] = function()
         end,
         [PlayerType.PLAYER_LILITH] = function()
-            self.BanCollectible(CollectibleType.COLLECTIBLE_TWISTED_PAIR)
         end,
         [PlayerType.PLAYER_KEEPER] = function()
             self.BanCollectible(CollectibleType.COLLECTIBLE_GREEDS_GULLET)
@@ -96,6 +98,7 @@ function Ban:Init()
             self.BanCollectible(CollectibleType.COLLECTIBLE_HOLY_MANTLE)
             self.BanCollectible(Astro.Collectible.ALTAIR)
             self.BanCollectible(Astro.Collectible.COMET)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
             self.BanTrinket(TrinketType.TRINKET_BROKEN_ANKH)
         end,
         [PlayerType.PLAYER_JACOB] = function()
