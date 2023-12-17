@@ -103,6 +103,8 @@ if EID then
                 EID:appendToDescription(descObj, "#!!! 이번 게임에서 {{Collectible698}}Twisted Pair가 등장하지 않습니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_TWISTED_PAIR then
                 EID:appendToDescription(descObj, "#!!! 이번 게임에서 {{Collectible360}}Incubus가 등장하지 않습니다.")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LUCKY_FOOT then
+                EID:appendToDescription(descObj, "#맵에 행운방의 위치가 표시됩니다.")
             end
 
             return descObj
@@ -157,6 +159,28 @@ Astro:AddCallback(
     end
 )
 
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_LEVEL,
+    function(_)
+        for i = 1, Game():GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_LUCKY_FOOT) then
+                local level = Game():GetLevel()
+                local idx = level:QueryRoomTypeIndex(RoomType.ROOM_BARREN, false, RNG())
+                local room = level:GetRoomByIdx(idx)
+
+                if room.Data.Type == RoomType.ROOM_BARREN then
+                    room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
+                    level:UpdateVisibility()
+                end
+
+                break
+            end
+        end
+    end
+)
+
 Astro:AddCallbackCustom(
     isc.ModCallbackCustom.POST_PLAYER_COLLECTIBLE_ADDED,
     ---@param player EntityPlayer
@@ -195,6 +219,15 @@ Astro:AddCallbackCustom(
             Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_TWISTED_PAIR)
         elseif collectibleType == CollectibleType.COLLECTIBLE_TWISTED_PAIR and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_TWISTED_PAIR) then
             Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_INCUBUS)
+        elseif collectibleType == CollectibleType.COLLECTIBLE_LUCKY_FOOT then
+            local level = Game():GetLevel()
+            local idx = level:QueryRoomTypeIndex(RoomType.ROOM_BARREN, false, RNG())
+            local room = level:GetRoomByIdx(idx)
+
+            if room.Data.Type == RoomType.ROOM_BARREN then
+                room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
+                level:UpdateVisibility()
+            end
         end
     end
 )
