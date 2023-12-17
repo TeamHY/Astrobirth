@@ -94,6 +94,11 @@ Astro:AddCallback(
                 Astro.Collectible.BLOOD_OF_HATRED,
                 Astro.Collectible.ACUTE_SINUSITIS
             }
+
+            -- 아케이드방
+            Astro.Data.ArcadePool = {
+                CollectibleType.COLLECTIBLE_MY_REFLECTION,
+            }
         end
     end
 )
@@ -189,6 +194,26 @@ Astro:AddCallback(
                     end
 
                     Astro:SpawnCollectible(collectables[1], currentRoom:GetGridPosition(81 + i * 2), 1, true)
+                end
+            elseif roomType == RoomType.ROOM_ARCADE then
+                -- TODO: RNG 교체해야 함
+                local rng = Isaac.GetPlayer():GetCollectibleRNG(CollectibleType.COLLECTIBLE_INNER_EYE)
+
+                for i = 0, 1 do
+                    local collectables = Astro:GetRandomCollectibles(Astro.Data.ArcadePool, rng, 1)
+
+                    if collectables[1] == nil then
+                        collectables[1] = CollectibleType.COLLECTIBLE_BREAKFAST
+                    else
+                        for index, value in ipairs(Astro.Data.ArcadePool) do
+                            if value == collectables[1] then
+                                table.remove(Astro.Data.ArcadePool, index)
+                                break
+                            end
+                        end
+                    end
+
+                    Astro:SpawnCollectible(collectables[1], currentRoom:GetGridPosition(66 + i * 2), 1, true)
                 end
             elseif currentRoomDesc.Data.Name == "Mom" and currentRoomDesc.Data.Subtype == 89 then
                 Isaac.Spawn(
