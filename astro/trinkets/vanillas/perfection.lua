@@ -53,8 +53,9 @@ Astro:AddCallback(
                         TryChangeToGoldenTrinket(player)
                     end
 
-                    if player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) and not player:HasCollectible(CollectibleType.COLLECTIBLE_HOST_HAT) then
+                    if player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) and not player:HasCollectible(CollectibleType.COLLECTIBLE_HOST_HAT) and not player:HasCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR) then
                         player:AddCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR)
+                        itemPool:RemoveCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR)
                     end
 
                     if isSpawnd then
@@ -89,7 +90,9 @@ Astro:AddCallback(
                         )
                         Astro:SpawnCard(Card.RUNE_ANSUZ, player.Position)
 
-                        player:AddCollectible(CollectibleType.COLLECTIBLE_REDEMPTION)
+                        if not player:HasCollectible(CollectibleType.COLLECTIBLE_REDEMPTION) then
+                            player:AddCollectible(CollectibleType.COLLECTIBLE_REDEMPTION)
+                        end
                     elseif stage == LevelStage.STAGE2_2 then
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_MOMS_PURSE,
@@ -111,7 +114,7 @@ Astro:AddCallback(
                             true
                         )
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
+                            CollectibleType.COLLECTIBLE_CONSOLATION_PRIZE,
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
@@ -127,12 +130,18 @@ Astro:AddCallback(
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
+
+                        player:AddCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
+
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
+                            CollectibleType.COLLECTIBLE_NULL,
                             currentRoom:GetCenterPos(),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
+
+                        player:RemoveCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
+
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, 0),
@@ -148,12 +157,18 @@ Astro:AddCallback(
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
+
+                        player:AddCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
+
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
+                            CollectibleType.COLLECTIBLE_NULL,
                             currentRoom:GetCenterPos() + Vector(0, GRID_SIZE * 2),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
+
+                        player:RemoveCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
+
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, GRID_SIZE * 2),
