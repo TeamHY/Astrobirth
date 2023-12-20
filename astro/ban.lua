@@ -4,7 +4,7 @@ local Ban = Astro.Ban
 
 function Ban:Init()
     local banTable = {
-        all = function()
+        common = function()
             self.BanCollectible(CollectibleType.COLLECTIBLE_DADS_NOTE)
             self.BanCollectible(CollectibleType.COLLECTIBLE_CANCER)
             self.BanCollectible(CollectibleType.COLLECTIBLE_FRIEND_FINDER)
@@ -212,7 +212,7 @@ function Ban:Init()
 
     local player = Isaac.GetPlayer(0)
 
-    banTable["all"]()
+    banTable["common"]()
     banTable[player:GetPlayerType()]()
 end
 
