@@ -33,7 +33,7 @@ Astro:AddCallback(
             if CheckHeartLimitStage(stage) then
                 player:GetSubPlayer():AddBrokenHearts(4 - player:GetSubPlayer():GetBrokenHearts())
             end
-        elseif CheckHeartLimitStage(stage) or playerType == PlayerType.PLAYER_JUDAS then
+        elseif CheckHeartLimitStage(stage) or player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
             if
                 playerType == PlayerType.PLAYER_KEEPER or playerType == PlayerType.PLAYER_KEEPER_B or
                 playerType == PlayerType.PLAYER_THESOUL_B
@@ -92,17 +92,9 @@ Astro:AddCallback(
 
             local champ = 0
 
-            if
-                playerType == PlayerType.PLAYER_JUDAS
-                -- or playerType == PlayerType.PLAYER_ISAAC -- 이렇게 추가 가능합니다.
-                -- or playerType == PlayerType.PLAYER_MAGDALENE
-            then
-                champ = 19
-            else
-                repeat
-                    champ = entity:GetDropRNG():RandomInt(26)
-                until not CheckChampBan(champ)
-            end
+            repeat
+                champ = entity:GetDropRNG():RandomInt(26)
+            until not CheckChampBan(champ)
 
             if entity:IsVulnerableEnemy() then
                 local npc = entity:ToNPC()

@@ -122,3 +122,41 @@ Astro:AddCallbackCustom(
         end
     end
 )
+
+Astro:AddCallback(
+    ModCallbacks.MC_ENTITY_TAKE_DMG,
+    ---@param entity Entity
+    ---@param amount number
+    ---@param damageFlags number
+    ---@param source EntityRef
+    ---@param countdownFrames number
+    function(_, entity, amount, damageFlags, source, countdownFrames)
+        local player = entity:ToPlayer()
+
+        if player ~= nil then
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
+                if damageFlags & DamageFlag.DAMAGE_NO_PENALTIES ~= DamageFlag.DAMAGE_NO_PENALTIES then
+                    local inventory = Astro:getPlayerInventory(player, false)
+
+                    for index, item in ipairs(inventory) do
+                        if item == CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE then
+                            table.remove(inventory, index)
+                            break
+                        end
+                    end
+
+                    local firstItem = inventory[1]
+                    local lastItem = inventory[#inventory]
+
+                    if firstItem ~= nil then
+                        player:RemoveCollectible(firstItem, true)
+                    end
+
+                    if lastItem ~= nil then
+                        player:RemoveCollectible(lastItem, true)
+                    end
+                end
+            end
+        end
+    end
+)
