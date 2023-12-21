@@ -97,7 +97,7 @@ Astro:AddCallback(
 
             -- 아케이드방
             Astro.Data.ArcadePool = {
-                CollectibleType.COLLECTIBLE_MY_REFLECTION,
+                CollectibleType.COLLECTIBLE_DINNER,
             }
         end
     end

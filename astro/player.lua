@@ -16,7 +16,7 @@ local startItem = {
     [PlayerType.PLAYER_ISAAC] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
-            Astro.Collectible.CHUBBYS_TAIL,
+            -- Astro.Collectible.CHUBBYS_TAIL,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
