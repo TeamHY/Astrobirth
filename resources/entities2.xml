@@ -161,7 +161,7 @@
     <entity anm2path="003.013_Blue Baby Soul.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Blue Baby Soul" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="13">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="003.014_Dead Bird.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionInterval="14" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Dead Bird" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="14">
+    <entity anm2path="003.014_Dead Bird.anm2" baseHP="0" boss="0" champion="0" collisionDamage="3.3" collisionInterval="14" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Dead Bird" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="14">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="003.015_Eves Bird Foot.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionInterval="14" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Eves Bird Foot" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="15">

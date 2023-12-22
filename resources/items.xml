@@ -103,7 +103,7 @@
 	<active description="#MOMS_BOTTLE_OF_PILLS_DESCRIPTION" gfx="Collectibles_102_MomsBottleOfPills.png" id="102" maxcharges="12" name="#MOMS_BOTTLE_OF_PILLS_NAME" shopprice="10" />
 	<passive cache="tearcolor tearflag" description="#THE_COMMON_COLD_DESCRIPTION" gfx="Collectibles_103_TheCommonCold.png" id="103" name="#THE_COMMON_COLD_NAME" />
 	<passive achievement="31" cache="tearcolor tearflag" description="#THE_PARASITE_DESCRIPTION" gfx="Collectibles_104_TheParasite.png" id="104" name="#THE_PARASITE_NAME" />
-	<active achievement="29" description="#THE_D6_DESCRIPTION" gfx="Collectibles_105_Dice.png" id="105" initcharge="0" maxcharges="12" name="#THE_D6_NAME" special="true" />
+	<active achievement="29" description="#THE_D6_DESCRIPTION" gfx="Collectibles_105_Dice.png" id="105" maxcharges="12" name="#THE_D6_NAME" special="true" />
 	<passive achievement="28" bombs="5" description="#MR_MEGA_DESCRIPTION" gfx="Collectibles_106_MrMega.png" id="106" name="#MR_MEGA_NAME" />
     <active cache="familiars" description="#THE_PINKING_SHEARS_DESCRIPTION" gfx="Collectibles_107_PinkingShears.png" id="107" maxcharges="4" name="#THE_PINKING_SHEARS_NAME" />
 	<passive description="#THE_WAFER_DESCRIPTION" gfx="Collectibles_108_TheWafer.png" id="108" name="#THE_WAFER_NAME" devilprice="2" />

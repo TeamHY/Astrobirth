@@ -120,7 +120,7 @@
           nameimage="PlayerName_01x_Bethany.png" 
           portrait="PlayerPortrait_Bethany.png" skinColor="-1"
 		  birthright="#BETHANY_BIRTHRIGHT" />
-	<player id="19" name="#JACOB_NAME" skin="Character_002x_Jacob.png" costume="52" hp="6" keys="1" bombs="2" achievement="405"
+	<player id="19" name="#JACOB_NAME" skin="Character_002x_Jacob.png" costume="52" hp="6" keys="1" items="249" bombs="2" achievement="405"
           nameimage="PlayerName_02x_Jacob_Esau.png" 
           portrait="PlayerPortrait_Jacob.png" skinColor="-1"
 		  birthright="#JACOB_BIRTHRIGHT" />
