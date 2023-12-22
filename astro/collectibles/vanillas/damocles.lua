@@ -145,15 +145,13 @@ Astro:AddCallback(
                         end
                     end
 
-                    local firstItem = inventory[1]
-                    local lastItem = inventory[#inventory]
+                    for _ = 1, 4 do
+                        local item = inventory[#inventory]
 
-                    if firstItem ~= nil then
-                        player:RemoveCollectible(firstItem, true)
-                    end
-
-                    if lastItem ~= nil then
-                        player:RemoveCollectible(lastItem, true)
+                        if item ~= nil then
+                            player:RemoveCollectible(item, true)
+                            table.remove(inventory, #inventory)
+                        end
                     end
                 end
             end
