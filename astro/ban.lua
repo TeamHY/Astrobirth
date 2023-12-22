@@ -21,7 +21,6 @@ function Ban:Init()
             self.BanCollectible(CollectibleType.COLLECTIBLE_GLITCHED_CROWN)
             self.BanCollectible(CollectibleType.COLLECTIBLE_POUND_OF_FLESH)
             self.BanCollectible(CollectibleType.COLLECTIBLE_MONTEZUMAS_REVENGE)
-            self.BanCollectible(Astro.Collectible.CYGNUS) --시그너스 임시 밴
             self.BanTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
             self.BanTrinket(TrinketType.TRINKET_CARTRIDGE)
             self.BanTrinket(TrinketType.TRINKET_MOMS_TOENAIL)

@@ -55,6 +55,7 @@
 	<passive gfx="Key Is Power.png" quality="3" devilprice="1" name="Key Is Power" />
 	<passive gfx="Bomb Is Power.png" quality="3" devilprice="1" name="Bomb Is Power" />
 	<active gfx="Fortune Coin.png" quality="3" devilprice="1" maxcharges="1" shopprice="10" name="Fortune Coin" />
+	<passive gfx="Master's Degree.png" quality="3" devilprice="1" name="Master's Degree" />
 
 
 
