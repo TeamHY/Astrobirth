@@ -9,15 +9,15 @@
           nameimage="PlayerName_02_Magdalene.png"
           portrait="PlayerPortrait_Magdalene.png" skinColor="-1"
 		  birthright="#MAGDALENE_BIRTHRIGHT" />
-	<player id="2" name="#CAIN_NAME" skin="Character_003_Cain.png" costume="8" hp="4" keys="1" armor="1" bombs="2" items="46" pocketActive="102" achievement="2"
+	<player id="2" name="#CAIN_NAME" skin="Character_003_Cain.png" costume="8" hp="4" keys="1" armor="1" bombs="2" items="46,654" achievement="2"
           nameimage="PlayerName_03_Cain.png" 
           portrait="PlayerPortrait_Cain.png" skinColor="-1"
 		  birthright="#CAIN_BIRTHRIGHT" />
-	<player id="3" name="#JUDAS_NAME" skin="Character_004_Judas.png" costume="9" hp="0" keys="1" bombs="2" armor="1" items="577" coins="3" trinket="56" pocketActive="34" achievement="3"
+	<player id="3" name="#JUDAS_NAME" skin="Character_004_Judas.png" costume="9" hp="0" keys="1" bombs="2" armor="1" items="577,654" coins="3" trinket="56" pocketActive="34" achievement="3"
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_Judas.png" skinColor="-1"
 		  birthright="#JUDAS_BIRTHRIGHT" />
-	<player id="4" name="#BLUEBABY_NAME" skin="Character_006_Bluebaby.png" hp="0" armor="7" keys="1" bombs="2" items="36" trinket="86" pocketActive="479" achievement="32"
+	<player id="4" name="#BLUEBABY_NAME" skin="Character_006_Bluebaby.png" hp="0" armor="7" keys="1" bombs="2" items="36,538" trinket="86" pocketActive="479" achievement="32"
           nameimage="PlayerName_06_BlueBaby.png" 
           portrait="PlayerPortrait_Bluebaby.png" skinColor="2" costumeSuffix="bluebaby"
 		  birthright="#BLUEBABY_BIRTHRIGHT" />

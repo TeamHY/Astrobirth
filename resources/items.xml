@@ -679,7 +679,7 @@
 	<familiar	id="651"	achievement="425" devilprice="2" gfx="Collectibles_651_StarOfBethlehem.png" name="#STAR_OF_BETHLEHEM_NAME" description="#STAR_OF_BETHLEHEM_DESCRIPTION" />
 	<familiar	id="652"	gfx="Collectibles_652_CubeBaby.png" name="#CUBE_BABY_NAME" description="#CUBE_BABY_DESCRIPTION" />
 	<active		id="653"	achievement="424" gfx="Collectibles_653_VadeRetro.png" name="#VADE_RETRO_NAME" description="#VADE_RETRO_DESCRIPTION" />
-	<passive	id="654"	gfx="Collectibles_654_FalsePhd.png" name="#FALSE_PHD_NAME" shopprice="25" description="#FALSE_PHD_DESCRIPTION" cache="damage" blackhearts="2" />
+	<passive	id="654"	gfx="Collectibles_654_FalsePhd.png" name="#FALSE_PHD_NAME" shopprice="14" description="#FALSE_PHD_DESCRIPTION" cache="damage" blackhearts="2" />
 	<active		id="655"	gfx="Collectibles_655_SpinToWin.png" name="#SPIN_TO_WIN_NAME" description="#SPIN_TO_WIN_DESCRIPTION" maxcharges="90" cache="familiars" chargetype="timed" passivecache="true" />
 	<familiar	id="656"	achievement="432" gfx="Collectibles_577_Damocles.png" name="#DAMOCLES_NAME" description="#DAMOCLES_DESCRIPTION" devilprice="2" cache="familiars damage" hidden="true" />
 	<passive	id="657"	gfx="Collectibles_657_Vasculitis.png" name="#VASCULITIS_NAME" description="#VASCULITIS_DESCRIPTION" />
