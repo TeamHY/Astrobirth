@@ -10,7 +10,7 @@ Astro:AddCallback(
     ---@param player EntityPlayer
     function(_, player)
         if player:HasCollectible(Astro.Collectible.CYGNUS) then
-            if Game():GetFrameCount() % math.floor(450 / player:GetCollectibleNum(Astro.Collectible.CORVUS)) == 0 then
+            if Game():GetFrameCount() % math.floor(450 / player:GetCollectibleNum(Astro.Collectible.CYGNUS)) == 0 then
                 player:UseActiveItem(160, false, true, false, false)
                 player:UseActiveItem(160, false, true, false, false)
             end
