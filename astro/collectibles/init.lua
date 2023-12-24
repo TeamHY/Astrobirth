@@ -3,6 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible = {}
 
 require "astro.collectibles.active"
+-- require "astro.collectibles.golden"
 require "astro.collectibles.status"
 
 require "astro.collectibles.vanillas.aquarius"
@@ -47,6 +48,7 @@ require "astro.collectibles.customs.key-is-power"
 require "astro.collectibles.customs.laniakea-supercluster"
 require "astro.collectibles.customs.leo-ex"
 require "astro.collectibles.customs.libra-ex"
+require "astro.collectibles.customs.masters-degree"
 require "astro.collectibles.customs.morphine"
 require "astro.collectibles.customs.oblivion"
 require "astro.collectibles.customs.omega-321"
