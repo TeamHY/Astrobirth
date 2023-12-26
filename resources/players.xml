@@ -13,7 +13,7 @@
           nameimage="PlayerName_03_Cain.png" 
           portrait="PlayerPortrait_Cain.png" skinColor="-1"
 		  birthright="#CAIN_BIRTHRIGHT" />
-	<player id="3" name="#JUDAS_NAME" skin="Character_004_Judas.png" costume="9" hp="0" keys="1" bombs="2" armor="1" items="577,654" coins="3" trinket="56" pocketActive="34" achievement="3"
+	<player id="3" name="#JUDAS_NAME" skin="Character_004_Judas.png" costume="9" hp="0" keys="1" bombs="2" armor="1" items="577" coins="3" trinket="56" pocketActive="34" achievement="3"
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_Judas.png" skinColor="-1"
 		  birthright="#JUDAS_BIRTHRIGHT" />
