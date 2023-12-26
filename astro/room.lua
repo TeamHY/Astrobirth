@@ -107,6 +107,7 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
     function(_)
         local level = Game():GetLevel()
+        local stage = level:GetAbsoluteStage()
         local currentRoom = level:GetCurrentRoom()
         local currentRoomDesc = level:GetRoomByIdx(level:GetCurrentRoomIndex())
 
@@ -215,6 +216,15 @@ Astro:AddCallback(
 
                     Astro:SpawnCollectible(collectables[1], currentRoom:GetGridPosition(66 + i * 2), 1, true)
                 end
+            elseif roomType == RoomType.ROOM_SHOP and stage <= LevelStage.STAGE2_1 then
+                Isaac.Spawn(
+                    EntityType.ENTITY_SLOT,
+                    10,
+                    0,
+                    currentRoom:GetCenterPos(),
+                    Vector.Zero,
+                    nil
+                )
             elseif currentRoomDesc.Data.Name == "Mom" and currentRoomDesc.Data.Subtype == 89 then
                 Isaac.Spawn(
                     EntityType.ENTITY_PICKUP,
