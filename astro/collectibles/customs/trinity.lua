@@ -24,7 +24,7 @@ Astro:AddCallback(
     ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
     ---@param rng RNG
     ---@param spawnPosition Vector
-    function(rng, spawnPosition)
+    function(_, rng, spawnPosition)
         local level = Game():GetLevel()
         local currentRoom = level:GetCurrentRoom()
 

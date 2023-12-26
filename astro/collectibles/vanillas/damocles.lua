@@ -65,7 +65,7 @@ if EID then
             end
         end,
         function(descObj)
-            EID:appendToDescription(descObj, "#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible740}}, {{Collectible596}}, {{Collectible739}}, {{Collectible232}}, {{Collectible747}}, {{Collectible335}}, {{Collectible693}}, {{Collectible535}}, {{Collectible387}}, {{Collectible615}}, {{Collectible213}}, {{Collectible622}}, {{Collectible581}}, {{Collectible754}}, {{Collectible332}}, {{Collectible81}}, {{Collectible422}}, {{Collectible161}}, {{Collectible210}}, {{Collectible313}}, {{Collectible311}}, {{Collectible688}}, {{Collectible703}}, {{Collectible622}}, {{Trinket28}}, {{Trinket189}}, {{Trinket23}}")
+            EID:appendToDescription(descObj, "#피격 시 최근에 획득한 아이템 4개가 사라집니다.#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible740}}, {{Collectible596}}, {{Collectible739}}, {{Collectible232}}, {{Collectible747}}, {{Collectible335}}, {{Collectible693}}, {{Collectible535}}, {{Collectible387}}, {{Collectible615}}, {{Collectible213}}, {{Collectible622}}, {{Collectible581}}, {{Collectible754}}, {{Collectible332}}, {{Collectible81}}, {{Collectible422}}, {{Collectible161}}, {{Collectible210}}, {{Collectible313}}, {{Collectible311}}, {{Collectible688}}, {{Collectible703}}, {{Collectible622}}, {{Trinket28}}, {{Trinket189}}, {{Trinket23}}")
 
             return descObj
         end
@@ -135,7 +135,7 @@ Astro:AddCallback(
 
         if player ~= nil then
             if player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
-                if damageFlags & DamageFlag.DAMAGE_NO_PENALTIES ~= DamageFlag.DAMAGE_NO_PENALTIES then
+                if damageFlags & (DamageFlag.DAMAGE_NO_PENALTIES | DamageFlag.DAMAGE_RED_HEARTS) == 0 then
                     local inventory = Astro:getPlayerInventory(player, false)
 
                     for index, item in ipairs(inventory) do

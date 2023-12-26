@@ -735,7 +735,7 @@ Astro:AddCallback(
     ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
     ---@param rng RNG
     ---@param spawnPosition Vector
-    function(rng, spawnPosition)
+    function(_, rng, spawnPosition)
         for i = 1, game:GetNumPlayers() do
             local player = Isaac.GetPlayer(i - 1)
 
