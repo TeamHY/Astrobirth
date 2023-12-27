@@ -1,5 +1,3 @@
--- Comet(혜성) : 획득 시 레드 키 조각이 1개 떨어지며, 다음 게임 시작 시 레드 키 조각이 한개 떨어집니다 + 해당 아이템 소지 시 게임 끝날때까지 스테이지에 레드방 위치를 표시
-
 local isc = require("astro.lib.isaacscript-common")
 
 Astro.Collectible.COMET = Isaac.GetItemIdByName("Comet")

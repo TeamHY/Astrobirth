@@ -2,6 +2,22 @@ local OPTIONS_PICKUP_INDEX = 145
 local GRID_SIZE = 40
 local GOLDEN_TRINKET_OFFSET = 32768
 
+local blessings = {
+    CollectibleType.COLLECTIBLE_EDENS_BLESSING,
+    Astro.Collectible.ALTAIR,
+    Astro.Collectible.CASIOPEA,
+    Astro.Collectible.COMET,
+    Astro.Collectible.CORVUS,
+    Astro.Collectible.DENEB,
+    Astro.Collectible.GEMINI_EX,
+    Astro.Collectible.LEO_EX,
+    Astro.Collectible.PISCES_EX,
+    Astro.Collectible.REINCARNATION,
+    Astro.Collectible.SAGITTARIUS_EX,
+    Astro.Collectible.VEGA,
+    Astro.Collectible.VIRGO_EX
+}
+
 ---@param player EntityPlayer
 local function TryChangeToGoldenTrinket(player)
     local trinket0 = player:GetTrinket(0)
@@ -178,13 +194,17 @@ Astro:AddCallback(
 
                         player:AddCollectible(CollectibleType.COLLECTIBLE_EVIL_CHARM)
                     elseif stage == LevelStage.STAGE4_3 then
-                        Isaac.Spawn(
-                            EntityType.ENTITY_PICKUP,
-                            PickupVariant.PICKUP_COLLECTIBLE,
-                            CollectibleType.COLLECTIBLE_EDENS_BLESSING,
-                            currentRoom:GetCenterPos(),
-                            Vector.Zero,
-                            nil
+                        Astro:SpawnCollectible(
+                            blessings[rng:RandomInt(#blessings) + 1],
+                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE, 0),
+                            OPTIONS_PICKUP_INDEX,
+                            true
+                        )
+                        Astro:SpawnCollectible(
+                            itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
+                            currentRoom:GetCenterPos() + Vector(GRID_SIZE, 0),
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                     elseif stage == LevelStage.STAGE5 then
                         Isaac.Spawn(
