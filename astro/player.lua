@@ -601,6 +601,10 @@ Astro:AddCallback(
                 local position = player.Position
 
                 for _, itemTable in ipairs({ startItem.common, startItem[playerType] }) do
+                    if itemTable == nil then
+                        break
+                    end
+
                     for _, value in ipairs(itemTable.collectible) do
                         Astro:SpawnCollectible(value, position)
                     end

@@ -43,7 +43,7 @@ function Ban:Init()
         [PlayerType.PLAYER_JUDAS] = function()
         end,
         [PlayerType.PLAYER_BLUEBABY] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
         end,
         [PlayerType.PLAYER_EVE] = function()
         end,
@@ -210,10 +210,13 @@ function Ban:Init()
         end
     }
 
-    local player = Isaac.GetPlayer(0)
+    local playerType = Isaac.GetPlayer(0):GetPlayerType()
 
     banTable["common"]()
-    banTable[player:GetPlayerType()]()
+
+    if banTable[playerType] ~= nil then
+        banTable[playerType]()
+    end
 end
 
 ---comment
