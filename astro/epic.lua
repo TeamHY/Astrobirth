@@ -3,13 +3,13 @@ local isc = require("astro.lib.isaacscript-common")
 local soundId = Isaac.GetSoundIdByName("Epic")
 
 -- 투명도 설정
-local alpha = 1
+local alpha = 1 -- (0.1 ~ 1) 까지 편하신대로 설정 하시면 됩니다 0일 경우 출력 안됨
 
 -- 볼륨 설정
-local volume = 0.7
+local volume = 0.7 -- (0.1 ~ 1) 까지 편하신대로 설정 하시면 됩니다 0일 경우 출력 안됨
 
 -- 지속 프레임
-local duration = 10 * 30 -- 10초
+local duration = 2.5 * 30 -- 오른쪽 30 은 건들지 마시고, 왼쪽 숫자만 건드시면 됩니다 2.5 * 30 -> 2.5초동안 에픽 애니메이션 출력
 
 local epics = {
     [RoomType.ROOM_TREASURE] = {
@@ -17,6 +17,23 @@ local epics = {
     },
     [RoomType.ROOM_SHOP] = {
         CollectibleType.COLLECTIBLE_TREASURE_MAP,
+    },
+    [RoomType.ROOM_BOSS] = {
+        CollectibleType.COLLECTIBLE_LIL_BRIMSTONE,
+        CollectibleType.COLLECTIBLE_SCORPIO,
+        CollectibleType.COLLECTIBLE_EDENS_BLESSING,
+        CollectibleType.COLLECTIBLE_SERAPHIM,
+        CollectibleType.COLLECTIBLE_SUCCUBUS,
+        CollectibleType.COLLECTIBLE_BROKEN_GLASS_CANNON,
+        CollectibleType.COLLECTIBLE_DOGMA,
+        CollectibleType.COLLECTIBLE_R_KEY,
+        CollectibleType.COLLECTIBLE_SAUSAGE,
+        CollectibleType.COLLECTIBLE_PASCHAL_CANDLE,
+        CollectibleType.COLLECTIBLE_VIRGO,
+        CollectibleType.COLLECTIBLE_ROTTEN_BABY,
+        Astro.Collectible.ANGRY_ONION,
+        Astro.Collectible.HAPPY_ONION,
+        Astro.Collectible.GALACTIC_MEDAL_OF_VALOR,
     },
 }
 

@@ -661,11 +661,11 @@
     <item id="670" quality="2" tags="summonable offensive nogreed"/>
     <item id="671" quality="1" tags="nolostbr summonable"/>
     <item id="672" quality="1" tags="noeden summonable nokeeper nogreed"/>
-    <item id="673" quality="2" tags="summonable offensive lazarusshared"/>
+    <item id="673" quality="2" tags="noeden summonable offensive lazarusshared"/>
     <item id="674" quality="2" tags=""/>
     <item id="675" quality="1" tags="nolostbr summonable"/>
     <item id="676" quality="1" tags="nolostbr summonable"/>
-    <item id="677" quality="2" tags="nolostbr summonable"/>
+    <item id="677" quality="2" tags="noeden nolostbr summonable"/>
     <item id="678" quality="4" tags="summonable offensive"/>
     <item id="679" quality="2" tags="summonable baby monstermanual offensive"/>
     <item id="680" quality="2" tags="noeden poop summonable offensive"/>
