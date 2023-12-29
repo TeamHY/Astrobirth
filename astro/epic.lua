@@ -11,6 +11,9 @@ local volume = 0.7 -- (0.1 ~ 1) 까지 편하신대로 설정 하시면 됩니�
 -- 지속 프레임
 local duration = 2.5 * 30 -- 오른쪽 30 은 건들지 마시고, 왼쪽 숫자만 건드시면 됩니다 2.5 * 30 -> 2.5초동안 에픽 애니메이션 출력
 
+-- 장면당 프레임 (숫자가 낮을수록 빠름)
+local speed = 1.5
+
 local epics = {
     [RoomType.ROOM_TREASURE] = {
         CollectibleType.COLLECTIBLE_D6,
@@ -37,14 +40,19 @@ local epics = {
     },
 }
 
----@type {pickup: EntityPickup, sprite: Sprite, endFrame: integer}[]
+---@type {pickup: EntityPickup, sprite: Sprite, prevFrame: integer, endFrame: integer}[]
 local targets = {}
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_UPDATE,
     function(_)
-        for i, target in ipairs(targets) do
-            target.sprite:Update()
+        for _, target in ipairs(targets) do
+            local frameCount = Game():GetFrameCount()
+
+            if target.prevFrame + speed < frameCount then
+                target.sprite:Update()
+                target.prevFrame = frameCount
+            end
         end
     end
 )
@@ -52,18 +60,18 @@ Astro:AddCallback(
 Astro:AddCallback(
     ModCallbacks.MC_POST_RENDER,
     function(_)
-        local removeList = {}
+        local removeIndexs = {}
 
         for i, target in ipairs(targets) do
             if target.pickup:Exists() and target.pickup.SubType ~= 0 and Game():GetFrameCount() < target.endFrame then
                 target.sprite:Render(Isaac.WorldToRenderPosition(target.pickup.Position + Vector(0, -40)), Vector(0, 0), Vector(0, 0))
             else
-                table.insert(removeList, i)
+                table.insert(removeIndexs, i)
             end
         end
 
-        for i, _ in ipairs(removeList) do
-            table.remove(targets, i)
+        for _, value in ipairs(removeIndexs) do
+            table.remove(targets, value)
         end
     end
 )
@@ -83,7 +91,8 @@ Astro:AddCallback(
                         sprite.Color = Color(1, 1, 1, alpha, 0, 0, 0)
                         sprite:Play("Play", true)
 
-                        table.insert(targets, { pickup = pickup, sprite = sprite, endFrame = Game():GetFrameCount() + duration })
+                        local frameCount = Game():GetFrameCount()
+                        table.insert(targets, { pickup = pickup, sprite = sprite, prevFrame = frameCount, endFrame = frameCount + duration })
 
                         SFXManager():Play(soundId, volume)
                         break
