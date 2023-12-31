@@ -9,13 +9,16 @@ local alpha = 1 -- (0.1 ~ 1) 까지 편하신대로 설정 하시면 됩니다 0
 local volume = 0.7 -- (0.1 ~ 1) 까지 편하신대로 설정 하시면 됩니다 0일 경우 출력 안됨
 
 -- 지속 프레임
-local duration = 2.5 * 30 -- 오른쪽 30 은 건들지 마시고, 왼쪽 숫자만 건드시면 됩니다 2.5 * 30 -> 2.5초동안 에픽 애니메이션 출력
+local duration = 5 * 30 -- 오른쪽 30 은 건들지 마시고, 왼쪽 숫자만 건드시면 됩니다 10 * 30 -> 10초동안 에픽 애니메이션 출력
 
 -- 장면당 프레임 (숫자가 낮을수록 빠름)
-local speed = 1.5
+local speed = 1.1
 
 local epics = {
     [RoomType.ROOM_TREASURE] = {
+        CollectibleType.COLLECTIBLE_D6,
+    },
+    [RoomType.ROOM_DEFAULT] = {
         CollectibleType.COLLECTIBLE_D6,
     },
     [RoomType.ROOM_SHOP] = {
