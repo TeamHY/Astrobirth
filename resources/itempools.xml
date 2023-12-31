@@ -803,6 +803,7 @@
 		<Item Id="380" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="390" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="392" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="404" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="416" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="417" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="419" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -832,6 +833,7 @@
 		<Item Id="609" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="617" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="623" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="629" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="639" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="654" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="660" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>

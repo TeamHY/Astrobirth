@@ -408,7 +408,7 @@
 	<passive description="#EXPLOSIVO_DESCRIPTION" gfx="Collectibles_401_Explosivo.png" id="401" name="#EXPLOSIVO_NAME" cache="tearflag tearcolor" />
 	<passive description="#CHAOS_DESCRIPTION" gfx="Collectibles_402_Chaos.png" id="402" name="#CHAOS_NAME" />
 	<familiar description="#SPIDER_MOD_DESCRIPTION" gfx="Collectibles_403_SpiderMod.png" id="403" name="#SPIDER_MOD_NAME" />
-	<familiar achievement="179" description="#FARTING_BABY_DESCRIPTION" gfx="collectibles_404_fartbaby.png" id="404" name="#FARTING_BABY_NAME" />
+	<familiar achievement="179" description="#FARTING_BABY_DESCRIPTION" gfx="collectibles_404_fartbaby.png" id="404" shopprice="10" name="#FARTING_BABY_NAME" />
 	<familiar achievement="201" description="#GB_BUG_DESCRIPTION" gfx="Collectibles_405_GBBug.png" id="405" name="#GB_BUG_NAME" />
 	<active achievement="231" description="#D8_DESCRIPTION" gfx="Collectibles_406_D8.png" id="406" name="#D8_NAME" maxcharges="4" />
 	<passive achievement="180" description="#PURITY_DESCRIPTION" gfx="Collectibles_407_Purity.png" id="407" name="#PURITY_NAME" cache="damage firedelay speed range" />
@@ -654,7 +654,7 @@
 	<familiar	id="626"	gfx="Collectibles_626_KnifePiece1.png" name="#KNIFE_PIECE_1_NAME" description="#KNIFE_PIECE_1_DESCRIPTION" />
 	<familiar	id="627"	gfx="Collectibles_627_KnifePiece2.png" name="#KNIFE_PIECE_2_NAME" description="#KNIFE_PIECE_2_DESCRIPTION" />
 	<active		id="628"	achievement="636" gfx="Collectibles_628_DeathCertificate.png" name="#DEATH_CERTIFICATE_NAME" description="#DEATH_CERTIFICATE_DESCRIPTION" initcharge="0" maxcharges="12" />
-	<familiar	id="629"	gfx="Collectibles_629_BotFly.png" name="#BOT_FLY_NAME" description="#BOT_FLY_DESCRIPTION" />
+	<familiar	id="629"	gfx="Collectibles_629_BotFly.png" name="#BOT_FLY_NAME" shopprice="10" description="#BOT_FLY_DESCRIPTION" />
 	
 	<active		id="631"	achievement="440" gfx="Collectibles_631_MeatCleaver.png" name="#MEAT_CLEAVER_NAME" description="#MEAT_CLEAVER_DESCRIPTION" maxcharges="2" />
 	<passive	id="632"	gfx="Collectibles_632_EvilCharm.png" name="#EVIL_CHARM_NAME" shopprice="10" description="#EVIL_CHARM_DESCRIPTION" cache="luck" />
