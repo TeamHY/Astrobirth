@@ -1,0 +1,10 @@
+<players root="gfx/characters/costumes/"
+    portraitroot="gfx/ui/stage/"
+    nameimageroot="gfx/ui/boss/">
+    <player name="Leah" skin="character_leah.png" hp="4"
+        black="4" pocketActive="712" items="" keys="3"
+        nameimage="playername_leah.png"
+        portrait="playerportrait_leah.png"
+        skinColor="-1"
+        birthright="What?" />
+</players>

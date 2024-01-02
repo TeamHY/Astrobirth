@@ -3,10 +3,10 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.KEY_IS_POWER = Isaac.GetItemIdByName("Key Is Power")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.KEY_IS_POWER, "소지한 열쇠 하나당 공격력(고정) 0.04 증가합니다.", "폭탄 = 힘")
+    EID:addCollectible(Astro.Collectible.KEY_IS_POWER, "소지한 열쇠 하나당 공격력(고정) 0.16 증가합니다.", "열쇠 = 힘")
 end
 
-local KEY_IS_POWER_INCREMENT = 0.04
+local KEY_IS_POWER_INCREMENT = 0.16
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_PLAYER_UPDATE,

@@ -21,6 +21,8 @@ function Ban:Init()
             self.BanCollectible(CollectibleType.COLLECTIBLE_GLITCHED_CROWN)
             self.BanCollectible(CollectibleType.COLLECTIBLE_POUND_OF_FLESH)
             self.BanCollectible(CollectibleType.COLLECTIBLE_MONTEZUMAS_REVENGE)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_REDEMPTION)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_ASTRAL_PROJECTION)
             self.BanTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
             self.BanTrinket(TrinketType.TRINKET_CARTRIDGE)
             self.BanTrinket(TrinketType.TRINKET_MOMS_TOENAIL)
@@ -43,7 +45,7 @@ function Ban:Init()
         [PlayerType.PLAYER_JUDAS] = function()
         end,
         [PlayerType.PLAYER_BLUEBABY] = function()
-        self.BanCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
+            self.BanCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
         end,
         [PlayerType.PLAYER_EVE] = function()
         end,
@@ -210,10 +212,13 @@ function Ban:Init()
         end
     }
 
-    local player = Isaac.GetPlayer(0)
+    local playerType = Isaac.GetPlayer(0):GetPlayerType()
 
     banTable["common"]()
-    banTable[player:GetPlayerType()]()
+
+    if banTable[playerType] ~= nil then
+        banTable[playerType]()
+    end
 end
 
 ---comment

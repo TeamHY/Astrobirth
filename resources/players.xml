@@ -37,7 +37,7 @@
           nameimage="PlayerName_10_Lazarus.png" 
           portrait="PlayerPortrait_Lazarus.png" costume="32" skinColor="-1"
 		  birthright="#LAZARUS_BIRTHRIGHT" />
-	<player id="9" name="#EDEN_NAME" skin="Character_009_Eden.png" costume="12" keys="1" bombs="2" achievement="81"
+	<player id="9" name="#EDEN_NAME" skin="Character_009_Eden.png" costume="12" items="100" keys="1" bombs="2" achievement="81"
           nameimage="PlayerName_09_Eden.png" 
           portrait="PlayerPortrait_Eden.png" skinColor="-1"
 		  birthright="#EDEN_BIRTHRIGHT">

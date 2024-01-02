@@ -331,6 +331,7 @@
 		<Item Name="Key Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Fortune Coin" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Master's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
 
 
@@ -389,19 +390,21 @@
 		<Item Name="Key Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Fortune Coin" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Master's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
 		<Item Name="Pure White Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Super Magneto" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Oblivion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Pirate Map" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pirate Map" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Reincarnation" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Omega 321" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Blood Of Hatred" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Morphine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ward" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Fortune Coin" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Master's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="boss">
@@ -412,6 +415,13 @@
 		<Item Name="Key Is Power" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Bomb Is Power" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Happy Onion" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+
+	</Pool>
+	<Pool Name="redChest">
+		<Item Name="Chubby's Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sleeping Puppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 </ItemPools>

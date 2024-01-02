@@ -1,7 +1,7 @@
 -- TODO: 챔피언이 모두 동일한 확률로 등장하게 됨. 희귀 챔피언이 너무 자주 나타날 수 있음.
 
 -- 챔피언 등장 제외 리스트
-local champBanList = { 6, 11, 14, 22, 25 }
+local champBanList = { 2, 3, 4, 6, 7, 8, 11, 14, 18, 23, 24 }
 
 ---@param stage LevelStage
 ---@return boolean

@@ -7,7 +7,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            Card.CARD_HOLY,
+            -- Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -22,7 +22,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -36,7 +36,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -50,7 +50,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -78,7 +78,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -92,7 +92,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -106,7 +106,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -120,7 +120,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -134,7 +134,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -148,7 +148,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -204,7 +204,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -218,7 +218,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -232,7 +232,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -246,7 +246,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -274,7 +274,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -288,7 +288,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -302,7 +302,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -316,7 +316,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -330,7 +330,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -344,7 +344,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -358,7 +358,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -372,7 +372,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -386,7 +386,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -400,7 +400,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -414,7 +414,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -428,7 +428,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -442,7 +442,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -470,7 +470,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -484,7 +484,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -498,7 +498,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -512,7 +512,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -526,7 +526,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -540,7 +540,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -554,7 +554,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            -- Card.CARD_FOOL,
+                Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
@@ -601,6 +601,10 @@ Astro:AddCallback(
                 local position = player.Position
 
                 for _, itemTable in ipairs({ startItem.common, startItem[playerType] }) do
+                    if itemTable == nil then
+                        break
+                    end
+
                     for _, value in ipairs(itemTable.collectible) do
                         Astro:SpawnCollectible(value, position)
                     end
