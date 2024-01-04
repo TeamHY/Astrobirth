@@ -24,8 +24,6 @@ Astro:AddCallbackCustom(
                 590,
                 591,
                 592,
-                593,
-                594,
                 595,
                 596,
                 597,
@@ -49,7 +47,8 @@ Astro:AddCallbackCustom(
                 Astro.Collectible.PTOLEMAEUS,
                 Astro.Collectible.ALTAIR,
                 Astro.Collectible.VEGA,
-                Astro.Collectible.SOLAR_SYSTEM
+                Astro.Collectible.LANIAKEA_SUPERCLUSTER,
+                Astro.Collectible.SAGITTARIUS_EX,
             }
 
             local count = 0

@@ -63,6 +63,9 @@ local banItem = {
             CollectibleType.COLLECTIBLE_NUMBER_TWO,
             CollectibleType.COLLECTIBLE_LINGER_BEAN,
             CollectibleType.COLLECTIBLE_POKE_GO,
+            CollectibleType.COLLECTIBLE_JUPITER,
+            CollectibleType.COLLECTIBLE_BUMBO,
+            CollectibleType.COLLECTIBLE_GREEDS_GULLET,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
@@ -78,12 +81,14 @@ local banItem = {
             TrinketType.TRINKET_HOLLOW_HEART,
         },
         card = {
-            -- Card.CARD_FOOL,
+            Card.CARD_REVERSE_HIGH_PRIESTESS,
         },
         pill = {
             PillEffect.PILLEFFECT_BAD_TRIP,
             PillEffect.PILLEFFECT_AMNESIA,
             PillEffect.PILLEFFECT_SMALLER,
+            PillEffect.PILLEFFECT_EXPLOSIVE_DIARRHEA,
+            PillEffect.PILLEFFECT_HORF,
         }
     },
     [PlayerType.PLAYER_ISAAC] = {
@@ -200,6 +205,7 @@ local banItem = {
             CollectibleType.COLLECTIBLE_APPLE,
             CollectibleType.COLLECTIBLE_GHOST_PEPPER,
             CollectibleType.COLLECTIBLE_D6,
+            CollectibleType.COLLECTIBLE_STARTER_DECK,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
@@ -242,7 +248,6 @@ local banItem = {
     },
     [PlayerType.PLAYER_KEEPER] = {
         collectible = {
-            CollectibleType.COLLECTIBLE_GREEDS_GULLET,
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
@@ -457,6 +462,7 @@ local banItem = {
     [PlayerType.PLAYER_THELOST_B] = {
         collectible = {
             CollectibleType.COLLECTIBLE_DAMOCLES,
+            CollectibleType.COLLECTIBLE_STARTER_DECK,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,

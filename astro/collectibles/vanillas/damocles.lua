@@ -45,7 +45,11 @@ Astro:AddCallback(
             CollectibleType.COLLECTIBLE_FARTING_BABY,
             CollectibleType.COLLECTIBLE_GUPPYS_COLLAR,
             Astro.Collectible.OMEGA_321,
-            CollectibleType.COLLECTIBLE_DARK_ARTS
+            CollectibleType.COLLECTIBLE_DARK_ARTS,
+            CollectibleType.COLLECTIBLE_SATURNUS,
+            CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS,
+            CollectibleType.COLLECTIBLE_BONE_SPURS,
+            CollectibleType.COLLECTIBLE_BROKEN_WATCH
         }
 
         trinkets = {

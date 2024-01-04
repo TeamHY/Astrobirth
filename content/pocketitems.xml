@@ -1,10 +1,10 @@
 <pocketitems>
-	<card hud="I - The Cold" type="tarot" pickup="124" description="" name="I - The Cold" announcerdelay="60" mimiccharge="2" />
-	<card hud="II - The Servant" type="tarot" pickup="124" description="" name="II - The Servant" announcerdelay="60" mimiccharge="2" />
-	<card hud="III - Wisdom" type="tarot" pickup="124" description="" name="III - Wisdom" announcerdelay="60" mimiccharge="2" />
-	<card hud="IV - Repentance" type="tarot" pickup="124" description="" name="IV - Repentance" announcerdelay="60" mimiccharge="2" />
-	<card hud="V - Eternity" type="tarot" pickup="124" description="" name="V - Eternity" announcerdelay="60" mimiccharge="2" />
-	<card hud="VI - Corruption" type="tarot" pickup="124" description="" name="VI - Corruption" announcerdelay="60" mimiccharge="2" />
-	<card hud="VII - Immolation" type="tarot" pickup="124" description="" name="VII - Immolation" announcerdelay="60" mimiccharge="2" />
-	<card hud="VIII - Worship" type="tarot" pickup="124" description="" name="VIII - Worship" announcerdelay="60" mimiccharge="2" />
+	<card hud="I - The Cold" type="tarot" pickup="124" description="" name="I - The Cold" announcerdelay="60" mimiccharge="3" />
+	<card hud="II - The Servant" type="tarot" pickup="124" description="" name="II - The Servant" announcerdelay="60" mimiccharge="4" />
+	<card hud="III - Wisdom" type="tarot" pickup="124" description="" name="III - Wisdom" announcerdelay="60" mimiccharge="4" />
+	<card hud="IV - Repentance" type="tarot" pickup="124" description="" name="IV - Repentance" announcerdelay="60" mimiccharge="6" />
+	<card hud="V - Eternity" type="tarot" pickup="124" description="" name="V - Eternity" announcerdelay="60" mimiccharge="12" />
+	<card hud="VI - Corruption" type="tarot" pickup="124" description="" name="VI - Corruption" announcerdelay="60" mimiccharge="12" />
+	<card hud="VII - Immolation" type="tarot" pickup="124" description="" name="VII - Immolation" announcerdelay="60" mimiccharge="3" />
+	<card hud="VIII - Worship" type="tarot" pickup="124" description="" name="VIII - Worship" announcerdelay="60" mimiccharge="6" />
 </pocketitems>

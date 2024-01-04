@@ -396,7 +396,7 @@
 	<familiar achievement="218" description="#RUNE_BAG_DESCRIPTION" gfx="Collectibles_389_RuneBag.png" id="389" name="#RUNE_BAG_NAME" />
 	<familiar description="#SERAPHIM_DESCRIPTION" gfx="Collectibles_390_Seraphim.png" id="390" name="#SERAPHIM_NAME" />
 	<passive achievement="182" description="#BETRAYAL_DESCRIPTION" gfx="Collectibles_391_Betrayal.png" id="391" name="#BETRAYAL_NAME" />
-	<passive achievement="202" description="#ZODIAC_DESCRIPTION" gfx="Collectibles_392_Zodiac.png" shopprice="20" id="392" name="#ZODIAC_NAME" />
+	<passive achievement="202" description="#ZODIAC_DESCRIPTION" gfx="Collectibles_392_Zodiac.png" shopprice="25" id="392" name="#ZODIAC_NAME" />
 	<passive achievement="220" description="#SERPENTS_KISS_DESCRIPTION" gfx="Collectibles_393_SerpentsKiss.png" id="393" name="#SERPENTS_KISS_NAME" />
 	<passive description="#MARKED_DESCRIPTION" gfx="Collectibles_394_Marked.png" id="394" name="#MARKED_NAME" cache="firedelay range" />
 	<passive description="#TECH_X_DESCRIPTION" gfx="Collectibles_395_TechX.png" id="395" devilprice="2" name="#TECH_X_NAME" cache="all" />
@@ -493,7 +493,7 @@
 	<active description="#MAMA_MEGA_DESCRIPTION" gfx="Collectibles_483_MaMaMega.png" id="483" name="#MAMA_MEGA_NAME" />
 	<active description="#WAIT_WHAT_DESCRIPTION" gfx="Collectibles_484_WaitWhat.png" id="484" name="#WAIT_WHAT_NAME" maxcharges="300" chargetype="timed" />
 	
-	<active achievement="294" description="#CROOKED_PENNY_DESCRIPTION" gfx="collectibles_485_crookedpenny.png" id="485" name="#CROOKED_PENNY_NAME" maxcharges="4" />
+	<active achievement="294" description="#CROOKED_PENNY_DESCRIPTION" gfx="collectibles_485_crookedpenny.png" id="485" name="#CROOKED_PENNY_NAME" maxcharges="6" />
 	<active achievement="288" description="#DULL_RAZOR_DESCRIPTION" gfx="collectibles_486_dullrazor.png" id="486" name="#DULL_RAZOR_NAME" shopprice="10" maxcharges="2" />
 	<active description="#POTATO_PEELER_DESCRIPTION" gfx="collectibles_487_potatopeeler.png" id="487" name="#POTATO_PEELER_NAME" />
 	<active achievement="303" description="#METRONOME_DESCRIPTION" gfx="collectibles_488_metronome.png" id="488" name="#METRONOME_NAME" maxcharges="2" cache="all" />
@@ -634,7 +634,7 @@
 	<passive	id="606"	gfx="Collectibles_606_OculusRift.png" name="#OCULAR_RIFT_NAME" description="#OCULAR_RIFT_DESCRIPTION" devilprice="2" />
 	<familiar	id="607"	gfx="Collectibles_607_BoiledBaby.png" name="#BOILED_BABY_NAME" description="#BOILED_BABY_DESCRIPTION" />
 	<familiar	id="608"	gfx="Collectibles_608_FreezerBaby.png" name="#FREEZER_BABY_NAME" description="#FREEZER_BABY_DESCRIPTION" />
-	<active		id="609"	achievement="448" gfx="Collectibles_609_FloriansD6.png" name="#ETERNAL_D6_NAME" description="#ETERNAL_D6_DESCRIPTION" maxcharges="4" />
+	<active		id="609"	achievement="448" gfx="Collectibles_609_FloriansD6.png" name="#ETERNAL_D6_NAME" description="#ETERNAL_D6_DESCRIPTION" maxcharges="6" />
 	<familiar	id="610"	achievement="450" gfx="Collectibles_610_BirdCage.png" name="#BIRD_CAGE_NAME" description="#BIRD_CAGE_DESCRIPTION" />
 	<active		id="611"	achievement="497" gfx="Collectibles_611_Larynx.png" name="#LARYNX_NAME" description="#LARYNX_DESCRIPTION" maxcharges="12" initcharge="1" cooldown="12" />
 	<familiar	id="612"	achievement="460" gfx="Collectibles_612_LostSoul.png" name="#LOST_SOUL_NAME" description="#LOST_SOUL_DESCRIPTION" />

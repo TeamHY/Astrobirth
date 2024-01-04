@@ -72,7 +72,7 @@ local startItem = {
     },
     [PlayerType.PLAYER_BLUEBABY] = {
         collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+            CollectibleType.COLLECTIBLE_MARBLES,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
@@ -142,7 +142,7 @@ local startItem = {
     },
     [PlayerType.PLAYER_EDEN] = {
         collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+            CollectibleType.COLLECTIBLE_LITTLE_STEVEN,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
@@ -212,7 +212,7 @@ local startItem = {
     },
     [PlayerType.PLAYER_KEEPER] = {
         collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+                CollectibleType.COLLECTIBLE_DEEP_POCKETS,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,

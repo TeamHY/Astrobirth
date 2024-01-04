@@ -17,7 +17,7 @@
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_Judas.png" skinColor="-1"
 		  birthright="#JUDAS_BIRTHRIGHT" />
-	<player id="4" name="#BLUEBABY_NAME" skin="Character_006_Bluebaby.png" hp="0" armor="7" keys="1" bombs="2" items="36,538" trinket="86" pocketActive="479" achievement="32"
+	<player id="4" name="#BLUEBABY_NAME" skin="Character_006_Bluebaby.png" hp="0" armor="7" keys="1" bombs="2" items="36" trinket="86" pocketActive="479" achievement="32"
           nameimage="PlayerName_06_BlueBaby.png" 
           portrait="PlayerPortrait_Bluebaby.png" skinColor="2" costumeSuffix="bluebaby"
 		  birthright="#BLUEBABY_BIRTHRIGHT" />
@@ -37,7 +37,7 @@
           nameimage="PlayerName_10_Lazarus.png" 
           portrait="PlayerPortrait_Lazarus.png" costume="32" skinColor="-1"
 		  birthright="#LAZARUS_BIRTHRIGHT" />
-	<player id="9" name="#EDEN_NAME" skin="Character_009_Eden.png" costume="12" items="100" keys="1" bombs="2" achievement="81"
+	<player id="9" name="#EDEN_NAME" skin="Character_009_Eden.png" costume="12" keys="1" bombs="2" achievement="81"
           nameimage="PlayerName_09_Eden.png" 
           portrait="PlayerPortrait_Eden.png" skinColor="-1"
 		  birthright="#EDEN_BIRTHRIGHT">

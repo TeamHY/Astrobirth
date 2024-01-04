@@ -42,7 +42,6 @@
 		<Item Name="Ptolemaeus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Divine Light" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Acute Sinusitis" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -71,27 +70,25 @@
 		<Item Name="Aries EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Taurus EX" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Casiopea" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Comet" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pisces EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Gemini EX" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Prometheus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Gemini EX" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Prometheus" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pure White Heart" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Platinum Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Cursed Heart" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Death's Eyes" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cursed Heart" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Death's Eyes" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Divine Light" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Acute Sinusitis" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="0.5" DecreaseBy="0.1" RemoveOn="0.1"/>
-		<Item Name="Fallen Orb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sagittarius EX" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Head" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -114,27 +111,25 @@
 		<Item Name="Aries EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Taurus EX" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Casiopea" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Comet" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pisces EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Gemini EX" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Prometheus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Prometheus" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pure White Heart" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Platinum Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Cursed Heart" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Death's Eyes" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cursed Heart" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Death's Eyes" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Divine Light" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Acute Sinusitis" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="0.5" DecreaseBy="0.1" RemoveOn="0.1"/>
-		<Item Name="Fallen Orb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sagittarius EX" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Head" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -155,27 +150,25 @@
 		<Item Name="Aries EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Taurus EX" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Casiopea" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Comet" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pisces EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Gemini EX" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Prometheus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Gemini EX" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Prometheus" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pure White Heart" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Platinum Bullet" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Cursed Heart" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Death's Eyes" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Deneb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Cursed Heart" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Death's Eyes" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Divine Light" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Acute Sinusitis" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Laniakea Supercluster" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Galactic Medal Of Valor" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Quasar" Weight="0.5" DecreaseBy="0.1" RemoveOn="0.1"/>
-		<Item Name="Fallen Orb" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Fallen Orb" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sagittarius EX" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Head" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -197,7 +190,6 @@
 		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Comet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -211,7 +203,6 @@
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Divine Light" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Acute Sinusitis" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -242,7 +233,6 @@
 		<Item Name="Aries EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Casiopea" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Corvus" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pavo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Comet" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -256,7 +246,6 @@
 		<Item Name="Vega" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Cursed Heart" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Death's Eyes" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Divine Light" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Acute Sinusitis" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Laniakea Supercluster" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -294,7 +283,7 @@
 		<Item Name="Pavo" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Comet" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pisces EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Gemini EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Gemini EX" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -353,7 +342,7 @@
 		<Item Name="Pavo" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Comet" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pisces EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Gemini EX" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Gemini EX" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ptolemaeus" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Altair" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Vega" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -405,6 +394,8 @@
 		<Item Name="Ward" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Fortune Coin" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Master's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Casiopea" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="boss">
