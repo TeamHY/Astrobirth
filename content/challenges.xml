@@ -1,0 +1,6 @@
+<challenges version="1">
+    <challenge playertype="10" name="Cygnus" endstage="8" startingitems="" difficulty="1" secretpath="true" />
+    <challenge playertype="10" name="Libra EX" endstage="11" startingitems="" difficulty="1" megasatan="true" />
+    <challenge playertype="10" name="Cancer EX" endstage="11" startingitems="" difficulty="1" altpath="true" />
+    <challenge playertype="10" name="Scorpio EX" endstage="11" startingitems="" difficulty="1" />
+</challenges>
