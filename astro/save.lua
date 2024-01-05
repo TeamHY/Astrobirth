@@ -29,3 +29,16 @@ Astro:AddPriorityCallback(
         Astro:SaveData(Json.encode(Astro.Data))
     end
 )
+
+---@param playerId integer
+function Astro:GetPlayerSaveData(playerId)
+    if Astro.Data.Players == nil then
+        Astro.Data.Players = {}
+    end
+
+    if Astro.Data.Players[playerId] == nil then
+        Astro.Data.Players[playerId] = {}
+    end
+
+    return Astro.Data.Players[playerId]
+end

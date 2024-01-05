@@ -89,6 +89,8 @@ if EID then
                     descObj,
                     "#몬스터가 있는 방 입장 시 30% 확률로 {{Collectible486}}Dull Razor를 1회 발동합니다. {{BossRoom}}보스방에서는 항상 발동합니다."
                 )
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_BLOODY_LUST or descObj.ObjSubType == CollectibleType.COLLECTIBLE_BLOODY_GUST then
+                EID:appendToDescription(descObj, "#방 클리어 시 30% 확률로 {{Collectible486}}Dull Razor를 1회 발동합니다.#한 스테이지에서 최대 6번 발동될 수 있습니다.##!!! {{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_ZODIAC then
                 EID:appendToDescription(
                     descObj,
@@ -176,8 +178,12 @@ Astro:AddCallback(
                     room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
                     level:UpdateVisibility()
                 end
+            end
 
-                break
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_BLOODY_LUST) or player:HasCollectible(CollectibleType.COLLECTIBLE_BLOODY_GUST) then
+                Astro:GetPlayerSaveData(player.Index).BloodyLust = {
+                    Count = 0
+                }
             end
         end
     end
@@ -229,6 +235,29 @@ Astro:AddCallbackCustom(
             if room.Data.Type == RoomType.ROOM_BARREN then
                 room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
                 level:UpdateVisibility()
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
+    function()
+        for i = 1, Game():GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_BLOODY_LUST) or player:HasCollectible(CollectibleType.COLLECTIBLE_BLOODY_GUST) then
+                local data = Astro:GetPlayerSaveData(player.Index).BloodyLust
+
+                if data.Count < 6 then
+                    local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_BLOODY_LUST)
+
+                    if rng:RandomFloat() < 0.3 + player.Luck / 100 then
+                        player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR, false, true, false, false)
+                    end
+
+                    data.Count = data.Count + 1
+                end
             end
         end
     end
