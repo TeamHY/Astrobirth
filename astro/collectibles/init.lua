@@ -247,7 +247,13 @@ Astro:AddCallback(
             local player = Isaac.GetPlayer(i - 1)
 
             if player:HasCollectible(CollectibleType.COLLECTIBLE_BLOODY_LUST) or player:HasCollectible(CollectibleType.COLLECTIBLE_BLOODY_GUST) then
-                local data = Astro:GetPlayerSaveData(player.Index).BloodyLust
+                local data = Astro:GetPlayerSaveData(player.Index)
+
+                if data.BloodyLust == nil then
+                    data.BloodyLust = {
+                        Count = 0
+                    }
+                end
 
                 if data.Count < 6 then
                     local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_BLOODY_LUST)
