@@ -8,49 +8,83 @@ Astro.Challenge = {
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     function(_, isContinued)
-        if not isContinued then
-            if Astro.Data.Unlock == nil then
-                Astro.Data.Unlock = {
-                    ChallengeCygnus = false,
-                    ChallengeLibraEX = false,
-                    ChallengeCancerEX = false,
-                    ChallengeScorpioEX = false,
-                }
-            end
+        if Astro.Data.Unlock == nil then
+            Astro.Data.Unlock = {
+                ChallengeCygnus = false,
+                ChallengeLibraEX = false,
+                ChallengeCancerEX = false,
+                ChallengeScorpioEX = false,
+            }
+        end
 
-            local itemPool = Game():GetItemPool()
-    
-            if Astro.Data.Unlock.ChallengeCygnus ~= true then
-                Astro.Data.Unlock.ChallengeCygnus = false
+        local itemPool = Game():GetItemPool()
 
-                itemPool:RemoveCollectible(Astro.Collectible.CYGNUS)
-            end
+        print("")
+        print("Checking challenges...")
 
-            if Astro.Data.Unlock.ChallengeLibraEX ~= true then
-                Astro.Data.Unlock.ChallengeLibraEX = false
+        if Astro.Data.Unlock.ChallengeCygnus ~= true then
+            Astro.Data.Unlock.ChallengeCygnus = false
 
-                itemPool:RemoveCollectible(Astro.Collectible.LIBRA_EX)
-            end
+            itemPool:RemoveCollectible(Astro.Collectible.CYGNUS)
+            print("Cygnus is not unlocked.")
+        end
 
-            if Astro.Data.Unlock.ChallengeCancerEX ~= true then
-                Astro.Data.Unlock.ChallengeCancerEX = false
+        if Astro.Data.Unlock.ChallengeLibraEX ~= true then
+            Astro.Data.Unlock.ChallengeLibraEX = false
 
-                itemPool:RemoveCollectible(Astro.Collectible.CANCER_EX)
-            end
+            itemPool:RemoveCollectible(Astro.Collectible.LIBRA_EX)
+            print("Libra EX is not unlocked.")
+        end
 
-            if Astro.Data.Unlock.ChallengeScorpioEX ~= true then
-                Astro.Data.Unlock.ChallengeScorpioEX = false
+        if Astro.Data.Unlock.ChallengeCancerEX ~= true then
+            Astro.Data.Unlock.ChallengeCancerEX = false
 
-                itemPool:RemoveCollectible(Astro.Collectible.SCORPIO_EX)
-            end
+            itemPool:RemoveCollectible(Astro.Collectible.CANCER_EX)
+            print("Cancer EX is not unlocked.")
+        end
+
+        if Astro.Data.Unlock.ChallengeScorpioEX ~= true then
+            Astro.Data.Unlock.ChallengeScorpioEX = false
+
+            itemPool:RemoveCollectible(Astro.Collectible.SCORPIO_EX)
+            print("Scorpio EX is not unlocked.")
+        end
+
+        if Astro.Data.Unlock.ChallengeCygnus == true and Astro.Data.Unlock.ChallengeLibraEX == true and Astro.Data.Unlock.ChallengeCancerEX == true and Astro.Data.Unlock.ChallengeScorpioEX == true then
+            print("All challenges are unlocked.")
         end
     end
 )
 
 Astro:AddCallback(
+    ModCallbacks.MC_PRE_PICKUP_COLLISION,
+    ---@param entityPickup EntityPickup
+    ---@param collider Entity
+    ---@param low boolean
+    function(_, entityPickup, collider, low)
+        if entityPickup.Type == EntityType.ENTITY_PICKUP and entityPickup.Variant == PickupVariant.PICKUP_TROPHY then
+            local challengeId = Isaac.GetChallenge()
+
+            if challengeId == Astro.Challenge.CYGNUS then
+                Astro.Data.Unlock.ChallengeCygnus = true
+            elseif challengeId == Astro.Challenge.LIBRA_EX then
+                Astro.Data.Unlock.ChallengeLibraEX = true
+            elseif challengeId == Astro.Challenge.CANCER_EX then
+                Astro.Data.Unlock.ChallengeCancerEX = true
+            elseif challengeId == Astro.Challenge.SCORPIO_EX then
+                Astro.Data.Unlock.ChallengeScorpioEX = true
+            end
+        end
+    end
+)
+
+
+Astro:AddCallback(
     ModCallbacks.MC_POST_UPDATE,
     function()
-        if Isaac.GetChallenge then
+        local challengeId = Isaac.GetChallenge()
+
+        if challengeId == Astro.Challenge.CYGNUS or challengeId == Astro.Challenge.LIBRA_EX or challengeId == Astro.Challenge.CANCER_EX or challengeId == Astro.Challenge.SCORPIO_EX then
             if Game().TimeCounter >= 18 * 30 * 60 then
                 for i = 1, Game():GetNumPlayers() do
                     Isaac.GetPlayer(i - 1):Die()
