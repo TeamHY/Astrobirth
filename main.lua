@@ -1,7 +1,7 @@
 local hiddenItemManager = require("astro.lib.hidden_item_manager")
 local isc = require("astro.lib.isaacscript-common")
 
-local mod = RegisterMod("Redrawn_Mod", 1)
+local mod = RegisterMod("Astrobirth", 1)
 
 hiddenItemManager:Init(mod)
 
