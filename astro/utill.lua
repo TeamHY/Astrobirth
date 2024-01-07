@@ -57,7 +57,7 @@ function Astro:AddGoldenTrinketDescription(id, appendText, numbersToMultiply, ma
     end
 
     if maxMultiplier and maxMultiplier > 4 then
-        EID.GoldenTrinketData[id].mults = {maxMultiplier, maxMultiplier}
+        EID.GoldenTrinketData[id].mults = { maxMultiplier, maxMultiplier }
     end
 end
 
@@ -76,8 +76,8 @@ function Astro:GetRandomCollectibles(collectibles, rng, count, ignoreCollectible
         for key, value in pairs(collectibles) do
             if
                 value ~= ignoreCollectible and
-                    itemConfig:GetCollectible(value).Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST
-             then
+                itemConfig:GetCollectible(value).Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST
+            then
                 table.insert(list, value)
             end
         end
@@ -177,13 +177,13 @@ function Astro:SpawnCollectible(collectibleType, position, optionsPickupIndex, i
 
     local pickup =
         Isaac.Spawn(
-        EntityType.ENTITY_PICKUP,
-        PickupVariant.PICKUP_COLLECTIBLE,
-        collectibleType,
-        currentRoom:FindFreePickupSpawnPosition(position, step, true),
-        Vector.Zero,
-        nil
-    ):ToPickup()
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            collectibleType,
+            currentRoom:FindFreePickupSpawnPosition(position, step, true),
+            Vector.Zero,
+            nil
+        ):ToPickup()
 
     if optionsPickupIndex then
         pickup.OptionsPickupIndex = optionsPickupIndex
@@ -234,7 +234,7 @@ function Astro:IsFirstAdded(collectibleType)
     end
 
     if count == 0 then
-        table.insert(Astro.Data.CollectibleCount, {id = collectibleType, count = 1})
+        table.insert(Astro.Data.CollectibleCount, { id = collectibleType, count = 1 })
         count = 1
     end
 
@@ -248,4 +248,16 @@ function Astro:AddTears(baseFiredelay, tearsUp)
     local newFiredelay = math.max((30 / newTears) - 1, -0.75)
 
     return newFiredelay
+end
+
+---@param roomType RoomType
+function Astro:DisplayRoom(roomType)
+    local level = Game():GetLevel()
+    local idx = level:QueryRoomTypeIndex(roomType, false, RNG())
+    local room = level:GetRoomByIdx(idx)
+
+    if room.Data.Type == roomType then
+        room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
+        level:UpdateVisibility()
+    end
 end
