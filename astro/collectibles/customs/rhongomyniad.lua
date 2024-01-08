@@ -2,9 +2,35 @@ Astro.Collectible.RHONGOMYNIAD = Isaac.GetItemIdByName("Rhongomyniad")
 
 -- 소유 중인 공격 아이템을 중복으로 소환하지 않습니다.
 
-if EID then
-    EID:addCollectible(Astro.Collectible.RHONGOMYNIAD, "스테이지를 넘어갈 때마다 소지된 아이템 중 하나를 제거합니다. 제거된 아이템과 " .. Astro.CleanerEIDString .. " 중 하나를 소환합니다. 하나를 선택하면 나머지는 사라집니다.", "론고미니아드")
-end
+local collectibles = {}
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    function(_, isContinued)
+        collectibles = {
+            CollectibleType.COLLECTIBLE_MOMS_KNIFE,
+            CollectibleType.COLLECTIBLE_BRIMSTONE,
+            CollectibleType.COLLECTIBLE_IPECAC,
+            CollectibleType.COLLECTIBLE_EPIC_FETUS,
+            CollectibleType.COLLECTIBLE_DR_FETUS,
+            CollectibleType.COLLECTIBLE_TECH_X,
+            CollectibleType.COLLECTIBLE_TECHNOLOGY,
+            CollectibleType.COLLECTIBLE_TECHNOLOGY_2,
+            CollectibleType.COLLECTIBLE_SPIRIT_SWORD,
+            CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE
+        }
+
+        if EID then
+            local rhongomyniadEIDString = ""
+        
+            for _, collectible in ipairs(collectibles) do
+                rhongomyniadEIDString = rhongomyniadEIDString .. "{{Collectible" .. collectible .. "}} "
+            end
+        
+            EID:addCollectible(Astro.Collectible.RHONGOMYNIAD, "스테이지를 넘어갈 때마다 소지된 아이템 중 하나를 제거합니다. 제거된 아이템과 " .. rhongomyniadEIDString .. " 중 하나를 소환합니다. 하나를 선택하면 나머지는 사라집니다.", "론고미니아드")
+        end
+    end
+)
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_LEVEL,

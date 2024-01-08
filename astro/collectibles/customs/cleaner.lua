@@ -2,37 +2,35 @@ local isc = require("astro.lib.isaacscript-common")
 
 Astro.Collectible.CLEANER = Isaac.GetItemIdByName("Cleaner")
 
-Astro.CleanerList = {
-    CollectibleType.COLLECTIBLE_MOMS_KNIFE,
-    CollectibleType.COLLECTIBLE_BRIMSTONE,
-    CollectibleType.COLLECTIBLE_IPECAC,
-    CollectibleType.COLLECTIBLE_EPIC_FETUS,
-    CollectibleType.COLLECTIBLE_DR_FETUS,
-    CollectibleType.COLLECTIBLE_TECH_X,
-    CollectibleType.COLLECTIBLE_TECHNOLOGY,
-    CollectibleType.COLLECTIBLE_TECHNOLOGY_2,
-    CollectibleType.COLLECTIBLE_SPIRIT_SWORD,
-    CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE
-}
-
-if EID then
-    Astro.CleanerEIDString = ""
-
-    for _, collectible in ipairs(Astro.CleanerList) do
-        Astro.CleanerEIDString = Astro.CleanerEIDString .. "{{Collectible" .. collectible .. "}} "
-    end
-
-    EID:addCollectible(
-        Astro.Collectible.CLEANER,
-        "!!! 효과가 발동한 뒤 사라집니다.#!!! 획득 시 아래 아이템이 제거됩니다.#" .. Astro.CleanerEIDString,
-        "클리너"
-    )
-end
-
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     function(_, isContinued)
-
+        Astro.CleanerList = {
+            CollectibleType.COLLECTIBLE_MOMS_KNIFE,
+            CollectibleType.COLLECTIBLE_BRIMSTONE,
+            CollectibleType.COLLECTIBLE_IPECAC,
+            CollectibleType.COLLECTIBLE_EPIC_FETUS,
+            CollectibleType.COLLECTIBLE_DR_FETUS,
+            CollectibleType.COLLECTIBLE_TECH_X,
+            CollectibleType.COLLECTIBLE_TECHNOLOGY,
+            CollectibleType.COLLECTIBLE_TECHNOLOGY_2,
+            CollectibleType.COLLECTIBLE_SPIRIT_SWORD,
+            CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE
+        }
+        
+        if EID then
+            Astro.CleanerEIDString = ""
+        
+            for _, collectible in ipairs(Astro.CleanerList) do
+                Astro.CleanerEIDString = Astro.CleanerEIDString .. "{{Collectible" .. collectible .. "}} "
+            end
+        
+            EID:addCollectible(
+                Astro.Collectible.CLEANER,
+                "!!! 효과가 발동한 뒤 사라집니다.#!!! 획득 시 아래 아이템이 제거됩니다.#" .. Astro.CleanerEIDString,
+                "클리너"
+            )
+        end
     end
 )
 
