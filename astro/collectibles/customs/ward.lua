@@ -47,9 +47,7 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        if Astro:IsFirstAdded(Astro.Collectible.WARD) then
-            DisplayWardRoom()
-        end
+        DisplayWardRoom()
     end,
     Astro.Collectible.WARD
 )

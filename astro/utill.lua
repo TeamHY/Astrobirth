@@ -61,10 +61,22 @@ function Astro:AddGoldenTrinketDescription(id, appendText, numbersToMultiply, ma
     end
 end
 
+---@param list CollectibleType[]
+---@param target CollectibleType
+function Astro:ContainCollectible(list, target)
+    for _, value in ipairs(list) do
+        if value == target then
+            return true
+        end
+    end
+
+    return false
+end
+
 ---@param collectibles CollectibleType[]
 ---@param rng RNG
 ---@param count integer
----@param ignoreCollectible CollectibleType?
+---@param ignoreCollectible CollectibleType | CollectibleType[]?
 ---@param ignoreQuest boolean?
 function Astro:GetRandomCollectibles(collectibles, rng, count, ignoreCollectible, ignoreQuest)
     ---@type CollectibleType[]
@@ -74,10 +86,13 @@ function Astro:GetRandomCollectibles(collectibles, rng, count, ignoreCollectible
         local itemConfig = Isaac.GetItemConfig()
 
         for key, value in pairs(collectibles) do
-            if
-                value ~= ignoreCollectible and
-                itemConfig:GetCollectible(value).Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST
-            then
+            local isIgnore = value == ignoreCollectible
+
+            if type(ignoreCollectible) == "table" then
+                isIgnore = Astro:ContainCollectible(ignoreCollectible, value)
+            end
+
+            if not isIgnore and itemConfig:GetCollectible(value).Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST then
                 table.insert(list, value)
             end
         end
