@@ -59,6 +59,7 @@
 	<passive gfx="Bachelor's Degree.png" quality="3" devilprice="1" shopprice="20" name="Bachelor's Degree" />
 	<passive gfx="Pink Ward.png" quality="3" devilprice="1" shopprice="20" name="Pink Ward" />
 	<passive gfx="Rhongomyniad.png" quality="4" devilprice="1" shopprice="20" name="Rhongomyniad" />
+	<passive gfx="Artifact Sanctum.png" quality="4" devilprice="1" shopprice="20" name="Artifact Sanctum" />
 
 
 
