@@ -16,6 +16,11 @@ Astro:AddPriorityCallback(
 
             hiddenItemManager:LoadData(Astro.Data.HiddenItemData)
         end
+
+        if not isContinued then
+            Astro.Data.PersistentPlayerData = {}
+            Astro.Data.PersistentPickupData = {}
+        end
     end
 )
 
@@ -30,15 +35,32 @@ Astro:AddPriorityCallback(
     end
 )
 
----@param playerId integer
-function Astro:GetPlayerSaveData(playerId)
-    if Astro.Data.Players == nil then
-        Astro.Data.Players = {}
-    end
+--- Credit to Xalum(Retribution)
+---@param player EntityPlayer
+function Astro:GetPersistentPlayerData(player)
+	if Astro.Data and Astro.Data.PersistentPlayerData then
+		local seedReference = CollectibleType.COLLECTIBLE_SKELETON_KEY
+		local playerType = player:GetPlayerType()
 
-    if Astro.Data.Players[playerId] == nil then
-        Astro.Data.Players[playerId] = {}
-    end
+		if playerType == PlayerType.PLAYER_LAZARUS2_B then
+			seedReference = CollectibleType.COLLECTIBLE_DOLLAR
+		elseif playerType ~= PlayerType.PLAYER_ESAU then
+			player = player:GetMainTwin()
+		end
 
-    return Astro.Data.Players[playerId]
+		local tableIndex = tostring(player:GetCollectibleRNG(seedReference):GetSeed())
+
+		Astro.Data.PersistentPlayerData[tableIndex] = Astro.Data.PersistentPlayerData[tableIndex] or {}
+		return Astro.Data.PersistentPlayerData[tableIndex]
+	end
+end
+
+--- Credit to Xalum(Retribution)
+---@param pickup EntityPickup
+function Astro:GetPersistentPickupData(pickup)
+	if Astro.Data and Astro.Data.PersistentPickupData then
+		local tableIndex = tostring(pickup.InitSeed)
+		Astro.Data.PersistentPickupData[tableIndex] = Astro.Data.PersistentPickupData[tableIndex] or {}
+		return Astro.Data.PersistentPickupData[tableIndex]
+	end
 end

@@ -83,6 +83,34 @@ local banItem = {
         },
         card = {
             Card.CARD_REVERSE_HIGH_PRIESTESS,
+            Astro.Card.DAMAGE_CAPSULE,
+            Astro.Card.HEALTH_CAPSULE,
+            Astro.Card.FIREDELAY_CAPSULE,
+            Astro.Card.RANGE_CAPSULE,
+            Astro.Card.SHOTSPEED_CAPSULE,
+            Astro.Card.SPEED_CAPSULE,
+            Astro.Card.LUCK_CAPSULE,
+            Astro.Card.HEALTH_DAMAGE_CAPSULE,
+            Astro.Card.LUCK_DAMAGE_CAPSULE,
+            Astro.Card.RANGE_DAMAGE_CAPSULE,
+            Astro.Card.SHOTSPEED_DAMAGE_CAPSULE,
+            Astro.Card.SPEED_DAMAGE_CAPSULE,
+            Astro.Card.FIREDELAY_DAMAGE_CAPSULE,
+            Astro.Card.HEALTH_LUCK_CAPSULE,
+            Astro.Card.HEALTH_RANGE_CAPSULE,
+            Astro.Card.HEALTH_SHOTSPEED_CAPSULE,
+            Astro.Card.HEALTH_SPEED_CAPSULE,
+            Astro.Card.HEALTH_FIREDELAY_CAPSULE,
+            Astro.Card.LUCK_RANGE_CAPSULE,
+            Astro.Card.LUCK_SHOTSPEED_CAPSULE,
+            Astro.Card.LUCK_SPEED_CAPSULE,
+            Astro.Card.LUCK_FIREDELAY_CAPSULE,
+            Astro.Card.RANGE_SHOTSPEED_CAPSULE,
+            Astro.Card.RANGE_SPEED_CAPSULE,
+            Astro.Card.RANGE_FIREDELAY_CAPSULE,
+            Astro.Card.SHOTSPEED_SPEED_CAPSULE,
+            Astro.Card.SHOTSPEED_FIREDELAY_CAPSULE,
+            Astro.Card.SPEED_FIREDELAY_CAPSULE,
         },
         pill = {
             PillEffect.PILLEFFECT_BAD_TRIP,
@@ -635,38 +663,86 @@ Astro:AddCallback(
     end
 )
 
+--- @param card Card
+function Astro:IsCardBlacklisted(card)
+    for _, banTable in ipairs(GetBanTables()) do
+        for _, value in ipairs(banTable.card) do
+            if card == value then
+                return true
+            end
+        end
+    end
+
+    return false
+end
+
+--- @param pillEffect PillEffect
+function Astro:IsPillBlacklisted(pillEffect)
+    for _, banTable in ipairs(GetBanTables()) do
+        for _, value in ipairs(banTable.pill) do
+            if pillEffect == value then
+                return true
+            end
+        end
+    end
+
+    return false
+end
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_PICKUP_INIT,
     ---@param pickup EntityPickup
     function(_, pickup)
-        if pickup.Variant == PickupVariant.PICKUP_TAROTCARD then
-            local card = pickup.SubType
-
-            for _, banTable in ipairs(GetBanTables()) do
-                for _, value in ipairs(banTable.card) do
-                    if card == value then
-                        local newCard = Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_TAROTCARD, Card.CARD_NULL, pickup.Position, pickup.Velocity, pickup.SpawnerEntity):ToPickup()
-                        newCard.Price = pickup.Price
-
-                        pickup:Remove()
-                        return
-                    end
-                end
-            end
-        elseif pickup.Variant == PickupVariant.PICKUP_PILL then
+        if pickup.Variant == PickupVariant.PICKUP_PILL then
             local pillEffect = Game():GetItemPool():GetPillEffect(pickup.SubType)
 
-            for _, banTable in ipairs(GetBanTables()) do
-                for _, value in ipairs(banTable.pill) do
-                    if pillEffect == value then
-                        local newPill = Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_PILL, PillColor.PILL_NULL, pickup.Position, pickup.Velocity, pickup.SpawnerEntity):ToPickup()
-                        newPill.Price = pickup.Price
+            if Astro:IsPillBlacklisted(pillEffect) then
+                local newPill = Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_PILL, PillColor.PILL_NULL, pickup.Position, pickup.Velocity, pickup.SpawnerEntity):ToPickup()
+                newPill.Price = pickup.Price
 
-                        pickup:Remove()
-                        return
-                    end
+                pickup:Remove()
+            end
+        end
+    end
+)
+
+--- Credit to Xalum(Retribution)
+local recursing
+local rng
+local function initialiseCardRNG()
+    if Astro.Data.cardRngSeed ~= Game():GetSeeds():GetStartSeed() then
+        Astro.Data.cardRngSeed = Astro.Data.cardRngSeed or Game():GetSeeds():GetStartSeed()
+        rng = RNG()
+        rng:SetSeed(Astro.Data.cardRngSeed, 35)
+    elseif not rng then
+        rng = RNG()
+        rng:SetSeed(Astro.Data.cardRngSeed, 35)
+    end
+end
+
+--- Credit to Xalum(Retribution)
+Astro:AddCallback(
+    ModCallbacks.MC_GET_CARD,
+    function(_, _, card, canSuit, canRune, forceRune)
+        initialiseCardRNG()
+
+        if Astro:IsCardBlacklisted(card) and not recursing then
+            recursing = true
+
+            local itempool = Game():GetItemPool()
+            local new
+
+            for i = 1, 32 do
+                new = itempool:GetCard(rng:Next(), canSuit, canRune, forceRune)
+
+                if not Astro:IsCardBlacklisted(new) then
+                    break
                 end
             end
+
+            recursing = false
+
+            return new
         end
     end
 )

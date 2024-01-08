@@ -1,5 +1,7 @@
 Astro.Card = {}
 
+require "astro.cards.capsules"
+
 Astro.Card.THE_COLD = Isaac.GetCardIdByName("I - The Cold")
 Astro.Card.THE_SERVANT = Isaac.GetCardIdByName("II - The Servant")
 Astro.Card.WISDOM = Isaac.GetCardIdByName("III - Wisdom")

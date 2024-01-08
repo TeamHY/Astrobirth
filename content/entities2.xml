@@ -2,5 +2,93 @@
     <entity anm2path="005.300.124_lost card.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Rune Shard" numGridCollisionPoints="24" shadowSize="16" stageHP="0" subtype="124" variant="300">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
         <preload-snd id="8"/>
-    </entity>    
+    </entity>
+    
+    <entity anm2path="items/pick ups/capsules/damage.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Damage Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="854">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/health.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Health Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="855">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/luck.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Luck Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="856">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/range.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Range Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="857">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/shotspeed.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Shotspeed Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="858">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/speed.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Speed Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="859">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/tears.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Tears Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="860">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+
+    <entity anm2path="items/pick ups/capsules/health_damage.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="HD Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="861">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/luck_damage.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="LD Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="862">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/range_damage.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="RD Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="863">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/shotspeed_damage.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="SD Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="864">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/speed_damage.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="MD Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="865">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/tears_damage.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="TD Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="866">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/health_luck.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="HL Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="867">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+
+    <entity anm2path="items/pick ups/capsules/health_range.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="HR Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="868">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/health_shotspeed.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="HS Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="869">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/health_speed.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="HM Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="870">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/health_tears.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="HT Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="871">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/luck_range.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="LR Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="872">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/luck_shotspeed.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="LS Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="873">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/luck_speed.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="LM Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="874">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+
+    <entity anm2path="items/pick ups/capsules/luck_tears.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="LT Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="875">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/range_shotspeed.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="RS Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="876">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/range_speed.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="RM Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="877">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/range_tears.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="RT Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="878">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/shotspeed_speed.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="SM Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="879">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/shotspeed_tears.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="ST Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="880">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="items/pick ups/capsules/speed_tears.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="MT Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="881">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
 </entities>

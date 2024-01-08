@@ -182,7 +182,7 @@ Astro:AddCallback(
             end
 
             if player:HasCollectible(CollectibleType.COLLECTIBLE_BLOODY_LUST) or player:HasCollectible(CollectibleType.COLLECTIBLE_BLOODY_GUST) then
-                Astro:GetPlayerSaveData(player.Index).BloodyLust = {
+                Astro:GetPersistentPlayerData(player).BloodyLust = {
                     Count = 0
                 }
             end
@@ -248,7 +248,7 @@ Astro:AddCallback(
             local player = Isaac.GetPlayer(i - 1)
 
             if player:HasCollectible(CollectibleType.COLLECTIBLE_BLOODY_LUST) or player:HasCollectible(CollectibleType.COLLECTIBLE_BLOODY_GUST) then
-                local data = Astro:GetPlayerSaveData(player.Index)
+                local data = Astro:GetPersistentPlayerData(player)
 
                 if data.BloodyLust == nil then
                     data.BloodyLust = {

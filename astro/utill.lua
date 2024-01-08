@@ -241,7 +241,7 @@ function Astro:IsFirstAdded(collectibleType)
     return count == 1
 end
 
---- Retribution Mod
+--- Credit to Xalum(Retribution), _Kilburn and DeadInfinity
 function Astro:AddTears(baseFiredelay, tearsUp)
     local currentTears = 30 / (baseFiredelay + 1)
     local newTears = currentTears + tearsUp
