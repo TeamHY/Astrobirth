@@ -1,3 +1,5 @@
+local isc = require("astro.lib.isaacscript-common")
+
 Astro.Collectible.PINK_WARD = Isaac.GetItemIdByName("Pink Ward")
 
 if EID then
@@ -18,9 +20,7 @@ local function DisplayPinkWardRoom()
     for _, value in ipairs(roomIndexs) do
         local room = level:GetRoomByIdx(value)
 
-        if room.DisplayFlags & RoomDescriptor.DISPLAY_BOX ~= RoomDescriptor.DISPLAY_BOX then
-            room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
-        end
+        room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
     end
 
     level:UpdateVisibility()
@@ -45,9 +45,9 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        if Astro:IsFirstAdded(Astro.Collectible.PINK_WARD) then
-            DisplayPinkWardRoom()
-        end
+        Game():GetItemPool():RemoveCollectible(Astro.Collectible.WARD)
+
+        DisplayPinkWardRoom()
     end,
     Astro.Collectible.PINK_WARD
 )
