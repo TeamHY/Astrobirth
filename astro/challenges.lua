@@ -85,7 +85,7 @@ Astro:AddCallback(
         local challengeId = Isaac.GetChallenge()
 
         if challengeId == Astro.Challenge.CYGNUS or challengeId == Astro.Challenge.LIBRA_EX or challengeId == Astro.Challenge.CANCER_EX or challengeId == Astro.Challenge.SCORPIO_EX then
-            if Game().TimeCounter >= 18 * 30 * 60 then
+            if Game().TimeCounter >= 15 * 30 * 60 then
                 for i = 1, Game():GetNumPlayers() do
                     Isaac.GetPlayer(i - 1):Die()
                 end

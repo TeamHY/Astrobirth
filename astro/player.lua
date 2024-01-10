@@ -100,7 +100,7 @@ local startItem = {
     },
     [PlayerType.PLAYER_SAMSON] = {
         collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+            Astro.Collectible.RHONGOMYNIAD,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,

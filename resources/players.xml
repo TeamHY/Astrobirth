@@ -25,7 +25,7 @@
           nameimage="PlayerName_05_Eve.png" 
           portrait="PlayerPortrait_Eve.png" skinColor="-1"
 		  birthright="#EVE_BIRTHRIGHT" />
-	<player id="6" name="#SAMSON_NAME" skin="Character_007_Samson.png" costume="13" hp="6" keys="1" bombs="2" pocketActive="486" items="157,304,734" achievement="67"
+	<player id="6" name="#SAMSON_NAME" skin="Character_007_Samson.png" costume="13" hp="6" keys="1" bombs="2" items="157" achievement="67"
           nameimage="PlayerName_07_Samson.png" 
           portrait="PlayerPortrait_Samson.png" skinColor="-1"
 		  birthright="#SAMSON_BIRTHRIGHT" />

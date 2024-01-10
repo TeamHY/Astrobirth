@@ -56,7 +56,6 @@ local banItem = {
             CollectibleType.COLLECTIBLE_FRIEND_ZONE,
             CollectibleType.COLLECTIBLE_SHARD_OF_GLASS,
             CollectibleType.COLLECTIBLE_BLACK_BEAN,
-            Astro.Collectible.SCORPIO_EX,
             CollectibleType.COLLECTIBLE_LADDER,
             CollectibleType.COLLECTIBLE_KIDNEY_STONE,
             CollectibleType.COLLECTIBLE_SPIRIT_SHACKLES,
