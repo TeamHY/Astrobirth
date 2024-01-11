@@ -259,14 +259,14 @@ Astro:AddCallback(
                     }
                 end
 
-                if data.Count < 6 then
+                if data.BloodyLust.Count < 6 then
                     local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_BLOODY_LUST)
 
                     if rng:RandomFloat() < 0.3 + player.Luck / 100 then
                         player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR, false, true, false, false)
                     end
 
-                    data.Count = data.Count + 1
+                    data.BloodyLust.Count = data.BloodyLust.Count + 1
                 end
             end
         end
