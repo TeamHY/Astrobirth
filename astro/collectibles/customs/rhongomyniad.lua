@@ -1,7 +1,5 @@
 Astro.Collectible.RHONGOMYNIAD = Isaac.GetItemIdByName("Rhongomyniad")
 
--- 소유 중인 공격 아이템을 중복으로 소환하지 않습니다.
-
 local collectibles = {}
 
 Astro:AddCallback(
@@ -48,7 +46,7 @@ Astro:AddCallback(
                 local list = {}
 
                 for _, collectible in ipairs(Astro.CleanerList) do
-                    if collectible ~= hadCollectable and not player:HasCollectible(collectible) then
+                    if collectible ~= hadCollectable then
                         table.insert(list, collectible)
                     end
                 end
