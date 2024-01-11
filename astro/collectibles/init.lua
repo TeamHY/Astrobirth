@@ -302,12 +302,12 @@ Astro:AddCallbackCustom(
                 Astro:SpawnCollectible(hadCollectable, player.Position, optionsPickupIndex)
             end
 
-            for _ = 1, 2 do
-                local random = rng:RandomInt(#list) + 1
+            -- for _ = 1, 2 do
+            local random = rng:RandomInt(#list) + 1
 
-                Astro:SpawnCollectible(list[random], player.Position, optionsPickupIndex)
-                table.remove(list, random)
-            end
+            Astro:SpawnCollectible(list[random], player.Position, optionsPickupIndex)
+            table.remove(list, random)
+            -- end
         end
     end,
     PlayerForm.PLAYERFORM_MOM
