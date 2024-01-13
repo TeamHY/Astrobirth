@@ -135,10 +135,11 @@ Astro:AddCallback(
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
-                    elseif stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then
+                    elseif stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then -- 엄마 발
                         player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
 
                         Astro:SpawnCard(Card.CARD_GET_OUT_OF_JAIL, player.Position)
+                        Astro:SpawnTrinket(Astro.Trinket.BLACK_MIRROR, currentRoom:GetCenterPos())
                     elseif stage == LevelStage.STAGE4_1 then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
@@ -164,9 +165,7 @@ Astro:AddCallback(
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
-                    elseif
-                        stage == LevelStage.STAGE4_2 or (stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 8)
-                    then
+                    elseif stage == LevelStage.STAGE4_2 or (stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 8) then -- 심장
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, GRID_SIZE * 2),
