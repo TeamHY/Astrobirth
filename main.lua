@@ -9,6 +9,7 @@ Astro = isc:upgradeMod(mod, {isc.ISCFeature.PLAYER_INVENTORY})
 
 Json = require "json"
 
+require "astro.constants"
 require "astro.init"
 require "astro.save"
 require "astro.stage"

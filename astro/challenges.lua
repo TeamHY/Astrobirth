@@ -1,8 +1,8 @@
 Astro.Challenge = {
-    CYGNUS = Isaac.GetChallengeIdByName("Cygnus"),
-    LIBRA_EX = Isaac.GetChallengeIdByName("Libra EX"),
-    CANCER_EX = Isaac.GetChallengeIdByName("Cancer EX"),
-    SCORPIO_EX = Isaac.GetChallengeIdByName("Scorpio EX"),
+    CYGNUS = Isaac.GetChallengeIdByName("Cygnus [15m limited]"),
+    LIBRA_EX = Isaac.GetChallengeIdByName("Libra EX [15m limited]"),
+    CANCER_EX = Isaac.GetChallengeIdByName("Cancer EX [15m limited]"),
+    SCORPIO_EX = Isaac.GetChallengeIdByName("Scorpio EX [15m limited]"),
 }
 
 Astro:AddCallback(
@@ -78,17 +78,27 @@ Astro:AddCallback(
     end
 )
 
-
 Astro:AddCallback(
     ModCallbacks.MC_POST_UPDATE,
     function()
         local challengeId = Isaac.GetChallenge()
+        local timeCounter = Game().TimeCounter
 
-        if challengeId == Astro.Challenge.CYGNUS or challengeId == Astro.Challenge.LIBRA_EX or challengeId == Astro.Challenge.CANCER_EX or challengeId == Astro.Challenge.SCORPIO_EX then
-            if Game().TimeCounter >= 15 * 30 * 60 then
-                for i = 1, Game():GetNumPlayers() do
-                    Isaac.GetPlayer(i - 1):Die()
-                end
+        if challengeId == Astro.Challenge.CYGNUS and timeCounter >= 15 * Astro.MINUTE then
+            for i = 1, Game():GetNumPlayers() do
+                Isaac.GetPlayer(i - 1):Die()
+            end
+        elseif challengeId == Astro.Challenge.LIBRA_EX and timeCounter >= 15 * Astro.MINUTE then
+            for i = 1, Game():GetNumPlayers() do
+                Isaac.GetPlayer(i - 1):Die()
+            end
+        elseif challengeId == Astro.Challenge.CANCER_EX and timeCounter >= 15 * Astro.MINUTE then
+            for i = 1, Game():GetNumPlayers() do
+                Isaac.GetPlayer(i - 1):Die()
+            end
+        elseif challengeId == Astro.Challenge.SCORPIO_EX and timeCounter >= 15 * Astro.MINUTE then
+            for i = 1, Game():GetNumPlayers() do
+                Isaac.GetPlayer(i - 1):Die()
             end
         end
     end
