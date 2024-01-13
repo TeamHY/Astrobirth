@@ -5,6 +5,25 @@ Astro.Challenge = {
     SCORPIO_EX = Isaac.GetChallengeIdByName("Scorpio EX [15m limited]"),
 }
 
+local itemTable = {
+    collectible = {
+        -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        -- CollectibleType.COLLECTIBLE_SAD_ONION,
+    },
+    trinket = {
+        -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        -- TrinketType.TRINKET_SWALLOWED_PENNY,
+    },
+    card = {
+        -- Card.CARD_HOLY,
+        -- Card.CARD_HOLY,
+    },
+    pill = {
+        -- PillEffect.PILLEFFECT_BAD_GAS,
+        -- PillEffect.PILLEFFECT_BAD_GAS,
+    }
+}
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     function(_, isContinued)
@@ -17,7 +36,7 @@ Astro:AddCallback(
             }
         end
 
-        local itemPool = Game():GetItemPool()
+        -- local itemPool = Game():GetItemPool()
 
         print("")
         print("Checking challenges...")
@@ -25,33 +44,53 @@ Astro:AddCallback(
         if Astro.Data.Unlock.ChallengeCygnus ~= true then
             Astro.Data.Unlock.ChallengeCygnus = false
 
-            itemPool:RemoveCollectible(Astro.Collectible.CYGNUS)
+            -- itemPool:RemoveCollectible(Astro.Collectible.CYGNUS)
             print("Cygnus is not unlocked.")
         end
 
         if Astro.Data.Unlock.ChallengeLibraEX ~= true then
             Astro.Data.Unlock.ChallengeLibraEX = false
 
-            itemPool:RemoveCollectible(Astro.Collectible.LIBRA_EX)
+            -- itemPool:RemoveCollectible(Astro.Collectible.LIBRA_EX)
             print("Libra EX is not unlocked.")
         end
 
         if Astro.Data.Unlock.ChallengeCancerEX ~= true then
             Astro.Data.Unlock.ChallengeCancerEX = false
 
-            itemPool:RemoveCollectible(Astro.Collectible.CANCER_EX)
+            -- itemPool:RemoveCollectible(Astro.Collectible.CANCER_EX)
             print("Cancer EX is not unlocked.")
         end
 
         if Astro.Data.Unlock.ChallengeScorpioEX ~= true then
             Astro.Data.Unlock.ChallengeScorpioEX = false
 
-            itemPool:RemoveCollectible(Astro.Collectible.SCORPIO_EX)
+            -- itemPool:RemoveCollectible(Astro.Collectible.SCORPIO_EX)
             print("Scorpio EX is not unlocked.")
         end
 
         if Astro.Data.Unlock.ChallengeCygnus == true and Astro.Data.Unlock.ChallengeLibraEX == true and Astro.Data.Unlock.ChallengeCancerEX == true and Astro.Data.Unlock.ChallengeScorpioEX == true then
             print("All challenges are unlocked.")
+
+            if not isContinued then
+                local position = Isaac.GetPlayer().Position
+
+                for _, value in ipairs(itemTable.collectible) do
+                    Astro:SpawnCollectible(value, position)
+                end
+
+                for _, value in ipairs(itemTable.trinket) do
+                    Astro:SpawnTrinket(value, position)
+                end
+
+                for _, value in ipairs(itemTable.card) do
+                    Astro:SpawnCard(value, position)
+                end
+
+                for _, value in ipairs(itemTable.pill) do
+                    Astro:SpawnPill(value, position)
+                end
+            end
         end
     end
 )
