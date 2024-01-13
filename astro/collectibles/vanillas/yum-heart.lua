@@ -2,7 +2,7 @@ local isc = require("astro.lib.isaacscript-common")
 
 if EID then
     EID:addDescriptionModifier(
-        "AstroCollectiblesCricketsBody",
+        "AstroCollectiblesYumHeart",
         function(descObj)
             if descObj.ObjType == EntityType.ENTITY_PICKUP and descObj.ObjVariant == PickupVariant.PICKUP_COLLECTIBLE and descObj.ObjSubType == CollectibleType.COLLECTIBLE_YUM_HEART then
                 return true
