@@ -4,6 +4,9 @@ local collectibles = {}
 
 local trinkets = {}
 
+-- 사망 확률
+local killChance = 0.5
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     function(_, isContinued)
@@ -80,12 +83,22 @@ if EID then
             end
         end,
         function(descObj)
-            EID:appendToDescription(descObj, "#피격 시 최근에 획득한 아이템 4개가 사라집니다.#!!! 아래 아이템이 금지됩니다.#" .. damoclesEIDString)
+            EID:appendToDescription(descObj, "#피격 시 최근에 획득한 아이템 4개가 사라지고 50% 확률로 즉사합니다.#!!! 아래 아이템이 금지됩니다.#" .. damoclesEIDString)
 
             return descObj
         end
     )
 end
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    ---@param isContinued boolean
+    function(_, isContinued)
+        if not isContinued then
+            Astro.Data.DamoclesKill = false
+        end
+    end
+)
 
 Astro:AddCallback(
     ModCallbacks.MC_USE_ITEM,
@@ -168,7 +181,24 @@ Astro:AddCallback(
                             table.remove(inventory, #inventory)
                         end
                     end
+
+                    local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE)
+
+                    if rng:RandomFloat() < killChance then
+                        Astro.Data.DamoclesKill = true
+                    end
                 end
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_UPDATE,
+    function()
+        if Astro.Data.DamoclesKill then
+            for i = 1, Game():GetNumPlayers() do
+                Isaac.GetPlayer(i - 1):Die()
             end
         end
     end
