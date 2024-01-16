@@ -59,9 +59,17 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_NPC_INIT,
     ---@param entityNPC EntityNPC
     function(_, entityNPC)
-        if entityNPC.Type == EntityType.ENTITY_NEEDLE or entityNPC.Type == EntityType.ENTITY_WIZOOB or entityNPC.Type == EntityType.ENTITY_RED_GHOST or entityNPC.Type == EntityType.ENTITY_POLTY then
-            entityNPC:AddEntityFlags(EntityFlag.FLAG_CHARM)
-            entityNPC:AddEntityFlags(EntityFlag.FLAG_FRIENDLY)
+        for i = 1, Game():GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
+        
+            if player:HasCollectible(Astro.Collectible.PINK_WARD) then
+                if entityNPC.Type == EntityType.ENTITY_NEEDLE or entityNPC.Type == EntityType.ENTITY_WIZOOB or entityNPC.Type == EntityType.ENTITY_RED_GHOST or entityNPC.Type == EntityType.ENTITY_POLTY then
+                    entityNPC:AddEntityFlags(EntityFlag.FLAG_CHARM)
+                    entityNPC:AddEntityFlags(EntityFlag.FLAG_FRIENDLY)
+                end
+            end
+
+            break
         end
     end
 )
