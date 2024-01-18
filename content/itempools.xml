@@ -99,6 +99,7 @@
 		<Item Name="Happy Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rhongomyniad" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Amplifying Mind" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -142,6 +143,7 @@
 		<Item Name="Happy Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rhongomyniad" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Amplifying Mind" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="curse">
@@ -183,6 +185,7 @@
 		<Item Name="Happy Onion" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rhongomyniad" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Amplifying Mind" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -229,6 +232,7 @@
 		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rhongomyniad" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Amplifying Mind" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="angel">
@@ -274,6 +278,7 @@
 		<Item Name="Bomb Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rhongomyniad" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Amplifying Mind" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -334,6 +339,9 @@
 		<Item Name="Master's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rhongomyniad" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bachelor's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pink Ward" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Amplifying Mind" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 
 
 
@@ -395,6 +403,9 @@
 		<Item Name="Master's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rhongomyniad" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bachelor's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pink Ward" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Amplifying Mind" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
@@ -406,11 +417,13 @@
 		<Item Name="Omega 321" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Blood Of Hatred" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Morphine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Ward" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Ward" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Fortune Coin" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Master's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Bachelor's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Pink Ward" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="boss">

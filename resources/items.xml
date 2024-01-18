@@ -667,7 +667,7 @@
 	<active		id="639"	achievement="442" gfx="Collectibles_639_YuckHeart.png" name="#YUCK_HEART_NAME" shopprice="9" description="#YUCK_HEART_DESCRIPTION" maxcharges="4" />
 	<active		id="640"	achievement="418" gfx="Collectibles_640_UrnOfSouls.png" name="#URN_OF_SOULS_NAME" description="#URN_OF_SOULS_DESCRIPTION" maxcharges="0" persistent="false" />
 	<passive	id="641"	achievement="446" gfx="Collectibles_641_Akeldama.png" name="#AKELDAMA_NAME" description="#AKELDAMA_DESCRIPTION" />
-	<active		id="642"	achievement="472" gfx="Collectibles_642_MagicSkin.png" name="#MAGIC_SKIN_NAME" description="#MAGIC_SKIN_DESCRIPTION" maxcharges="6" />
+	<active		id="642"	achievement="472" gfx="Collectibles_642_MagicSkin.png" name="#MAGIC_SKIN_NAME" description="#MAGIC_SKIN_DESCRIPTION" maxcharges="12" />
 	<passive	id="643"	achievement="470" gfx="Collectibles_643_Revelation.png" name="#REVELATION_NAME" description="#REVELATION_DESCRIPTION" cache="flying" soulhearts="4" devilprice="2" />
 	<passive	id="644"	gfx="Collectibles_644_ConsolationPrize.png" name="#CONSOLATION_PRIZE_NAME" shopprice="7" description="#CONSOLATION_PRIZE_DESCRIPTION" />
 	<familiar	id="645"	achievement="456" gfx="Collectibles_645_Tinytoma.png" name="#TINYTOMA_NAME" description="#TINYTOMA_DESCRIPTION" />

@@ -1,7 +1,7 @@
 Astro.Collectible.AMPLIFYING_MIND = Isaac.GetItemIdByName("Amplifying Mind")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.AMPLIFYING_MIND, "1초 마다 공격력이 0.01 증가합니다.#피격 시 60초 동안 증가 효과가 중단됩니다.#중첩 시 다음 증가량부터 적용됩니다.", "증폭하는 마음")
+    EID:addCollectible(Astro.Collectible.AMPLIFYING_MIND, "1초 마다 공격력이 0.005 증가합니다.#피격 시 60초 동안 증가 효과가 중단됩니다.#중첩 시 다음 증가량부터 적용됩니다.", "증폭하는 마음")
 end
 
 Astro:AddCallback(
@@ -42,7 +42,7 @@ Astro:AddCallback(
                 local frame = Game():GetFrameCount()
     
                 if frame % 30 == 0 and cooldown < frame then
-                    data.AmplifyingMindDamage = data.AmplifyingMindDamage + 0.01 * player:GetCollectibleNum(Astro.Collectible.AMPLIFYING_MIND)
+                    data.AmplifyingMindDamage = data.AmplifyingMindDamage + 0.005 * player:GetCollectibleNum(Astro.Collectible.AMPLIFYING_MIND)
     
                     player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
                     player:EvaluateItems()

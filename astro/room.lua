@@ -98,6 +98,7 @@ Astro:AddCallback(
             -- 아케이드방
             Astro.Data.ArcadePool = {
                 CollectibleType.COLLECTIBLE_DINNER,
+                Astro.Collectible.FORTUNE_COIN,
             }
         end
     end
