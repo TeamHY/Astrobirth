@@ -19,6 +19,7 @@ require "astro.collectibles.vanillas.yum-heart"
 
 require "astro.collectibles.customs.acute-sinusitis"
 require "astro.collectibles.customs.altair"
+require "astro.collectibles.customs.amplifying-mind"
 require "astro.collectibles.customs.angry-onion"
 require "astro.collectibles.customs.aquarius-ex"
 require "astro.collectibles.customs.aries-ex"

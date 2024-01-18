@@ -60,6 +60,7 @@
 	<passive gfx="Pink Ward.png" quality="3" devilprice="1" shopprice="20" name="Pink Ward" />
 	<passive gfx="Rhongomyniad.png" quality="4" devilprice="1" shopprice="20" name="Rhongomyniad" />
 	<passive gfx="Artifact Sanctum.png" quality="4" devilprice="1" shopprice="20" name="Artifact Sanctum" />
+	<passive cache="damage" gfx="Amplifying Mind.png" quality="3" devilprice="2" shopprice="15" name="Amplifying Mind" />
 
 
 
