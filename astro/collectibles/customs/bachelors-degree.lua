@@ -4,25 +4,27 @@ if EID then
     EID:addCollectible(Astro.Collectible.BACHELORS_DEGREE, "{{Pill1}}Gulp!와 스탯 관련 알약만 등장합니다.", "학사학위")
 end
 
+local whitelist = {
+    -- PillEffect.PILLEFFECT_HEALTH_DOWN,
+    -- PillEffect.PILLEFFECT_HEALTH_UP,
+    PillEffect.PILLEFFECT_RANGE_DOWN,
+    PillEffect.PILLEFFECT_RANGE_UP,
+    PillEffect.PILLEFFECT_SPEED_DOWN,
+    PillEffect.PILLEFFECT_SPEED_UP,
+    PillEffect.PILLEFFECT_TEARS_DOWN,
+    PillEffect.PILLEFFECT_TEARS_UP,
+    PillEffect.PILLEFFECT_LUCK_DOWN,
+    PillEffect.PILLEFFECT_LUCK_UP,
+    PillEffect.PILLEFFECT_GULP,
+    PillEffect.PILLEFFECT_SHOT_SPEED_DOWN,
+    PillEffect.PILLEFFECT_SHOT_SPEED_UP,
+}
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     function(_, isContinued)
         if not isContinued then
-            Astro.Data.StatusPillWhitelist = {
-                -- PillEffect.PILLEFFECT_HEALTH_DOWN,
-                -- PillEffect.PILLEFFECT_HEALTH_UP,
-                PillEffect.PILLEFFECT_RANGE_DOWN,
-                PillEffect.PILLEFFECT_RANGE_UP,
-                PillEffect.PILLEFFECT_SPEED_DOWN,
-                PillEffect.PILLEFFECT_SPEED_UP,
-                PillEffect.PILLEFFECT_TEARS_DOWN,
-                PillEffect.PILLEFFECT_TEARS_UP,
-                PillEffect.PILLEFFECT_LUCK_DOWN,
-                PillEffect.PILLEFFECT_LUCK_UP,
-                PillEffect.PILLEFFECT_GULP,
-                PillEffect.PILLEFFECT_SHOT_SPEED_DOWN,
-                PillEffect.PILLEFFECT_SHOT_SPEED_UP,
-            }
+            Astro.Data.Pills = {}
         end
     end
 )
@@ -30,7 +32,7 @@ Astro:AddCallback(
 ---@param pillEffect PillEffect
 ---@return boolean
 local function CheckWhitelist(pillEffect)
-    for _, value in ipairs(Astro.Data.StatusPillWhitelist) do
+    for _, value in ipairs(whitelist) do
         if value == pillEffect then
             return true
         end
@@ -44,27 +46,29 @@ Astro:AddCallback(
     ---@param selectedPillEffect PillEffect
     ---@param pillColor PillColor
     function(_, selectedPillEffect, pillColor)
+        if not Astro.Data.Pills then
+            return selectedPillEffect
+        end
+
+        if Astro.Data.Pills[pillColor] then
+            return Astro.Data.Pills[pillColor]
+        end
+
         for i = 1, Game():GetNumPlayers() do
             local player = Isaac.GetPlayer(i - 1)
 
-            if player:HasCollectible(Astro.Collectible.BACHELORS_DEGREE) and not CheckWhitelist(selectedPillEffect) then
-                local rng = player:GetCollectibleRNG(Astro.Collectible.BACHELORS_DEGREE)
-                local index = rng:RandomInt(#Astro.Data.StatusPillWhitelist) + 1
-                local newPillEffect = Astro.Data.StatusPillWhitelist[index]
-
-                -- table.remove(Astro.Data.StatusPillWhitelist, index)
-
-                return newPillEffect
-            end
-        end
-
-        if CheckWhitelist(selectedPillEffect) then
-            for index, value in ipairs(Astro.Data.StatusPillWhitelist) do
-                if value == selectedPillEffect then
-                    table.remove(Astro.Data.StatusPillWhitelist, index)
-                    
-                    return selectedPillEffect
+            if player:HasCollectible(Astro.Collectible.BACHELORS_DEGREE) then
+                if CheckWhitelist(selectedPillEffect) then
+                    Astro.Data.Pills[pillColor] = selectedPillEffect
+                else
+                    local rng = player:GetCollectibleRNG(Astro.Collectible.BACHELORS_DEGREE)
+                    local index = rng:RandomInt(#whitelist) + 1
+                    local newPillEffect = whitelist[index]
+    
+                    Astro.Data.Pills[pillColor] = newPillEffect
                 end
+
+                return Astro.Data.Pills[pillColor]
             end
         end
     end

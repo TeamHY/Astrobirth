@@ -24,6 +24,7 @@ require "astro.collectibles.customs.angry-onion"
 require "astro.collectibles.customs.aquarius-ex"
 require "astro.collectibles.customs.aries-ex"
 require "astro.collectibles.customs.artifact-sanctum"
+require "astro.collectibles.customs.bachelors-degree"
 require "astro.collectibles.customs.blood-of-hatred"
 require "astro.collectibles.customs.bomb-is-power"
 require "astro.collectibles.customs.cancer-ex"
@@ -289,7 +290,7 @@ Astro:AddCallbackCustom(
                 CollectibleType.COLLECTIBLE_PHD,
                 CollectibleType.COLLECTIBLE_FALSE_PHD,
                 Astro.Collectible.MASTERS_DEGREE,
-                -- TODO: 학사 학위
+                Astro.Collectible.BACHELORS_DEGREE,
             }
 
             local inventory = Astro:getPlayerInventory(player, false)
