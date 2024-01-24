@@ -276,3 +276,31 @@ function Astro:DisplayRoom(roomType)
         level:UpdateVisibility()
     end
 end
+
+---@param collectible CollectibleType
+function Astro:CheckCollectible(collectible)
+    for i = 1, Game():GetNumPlayers() do
+        local player = Isaac.GetPlayer(i - 1)
+    
+        if player:HasCollectible(collectible) then
+            return true
+        end
+    end
+
+    return false
+end
+
+---@param collectible CollectibleType
+function Astro:CheckCollectibleNum(collectible)
+    local count = 0
+
+    for i = 1, Game():GetNumPlayers() do
+        local player = Isaac.GetPlayer(i - 1)
+    
+        if player:HasCollectible(collectible) then
+            count = count + 1
+        end
+    end
+
+    return count
+end

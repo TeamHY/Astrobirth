@@ -28,7 +28,7 @@ Astro:AddCallback(
 
 ---@param player EntityPlayer
 ---@return number
-local function computeMultiplier(player)
+local function ComputeMultiplier(player)
     local result = player:GetCollectibleNum(Astro.Collectible.AMPLIFYING_MIND)
 
     if player:GetPlayerType() == Astro.Players.LEAH then
@@ -54,7 +54,7 @@ Astro:AddCallback(
                 local frame = Game():GetFrameCount()
     
                 if frame % 30 == 0 and cooldown < frame then
-                    data.AmplifyingMindDamage = data.AmplifyingMindDamage + 0.005 * computeMultiplier(player)
+                    data.AmplifyingMindDamage = data.AmplifyingMindDamage + 0.005 * ComputeMultiplier(player)
     
                     player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
                     player:EvaluateItems()
