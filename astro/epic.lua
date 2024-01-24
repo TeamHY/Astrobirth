@@ -155,7 +155,7 @@ Astro:AddCallback(
         if pickup.Variant == PickupVariant.PICKUP_COLLECTIBLE then
             local roomType = Game():GetLevel():GetCurrentRoom():GetType()
 
-            if Astro.Data.Epics[roomType] then
+            if Astro.Data.Epics and Astro.Data.Epics[roomType] then
                 for index, epic in ipairs(Astro.Data.Epics[roomType]) do
                     if pickup.SubType == epic then
                         local sprite = Sprite()

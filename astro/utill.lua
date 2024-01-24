@@ -304,3 +304,8 @@ function Astro:CheckCollectibleNum(collectible)
 
     return count
 end
+
+---@param currentRoom Room
+function Astro:CheckFirstVisitFrame(currentRoom)
+    return currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit()
+end

@@ -61,6 +61,7 @@
 	<passive gfx="Rhongomyniad.png" quality="4" devilprice="1" shopprice="20" name="Rhongomyniad" />
 	<passive gfx="Artifact Sanctum.png" quality="4" devilprice="1" shopprice="20" name="Artifact Sanctum" />
 	<passive cache="damage" gfx="Amplifying Mind.png" quality="3" devilprice="2" shopprice="15" name="Amplifying Mind" />
+	<passive gfx="EZ Mode.png" quality="1" devilprice="2" shopprice="15" tags="noeden quest" name="EZ Mode" />
 
 
 
@@ -75,4 +76,5 @@
 	<trinket gfx="Electronic Penny.png" name="Electronic Penny" />
 	<trinket gfx="Black Mirror.png" name="Black Mirror" />
 	<trinket gfx="Lava Hand.png" name="Lava Hand" />
+	<trinket gfx="Nostalgia.png" name="Nostalgia" />
 </items>
