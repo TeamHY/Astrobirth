@@ -374,6 +374,16 @@ local banItem = {
         pill = {
         }
     },
+    [Astro.Players.LEAH] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
     [PlayerType.PLAYER_ISAAC_B] = {
         collectible = {
         },

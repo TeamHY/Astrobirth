@@ -2,7 +2,7 @@
     portraitroot="gfx/ui/stage/"
     nameimageroot="gfx/ui/boss/">
     <player name="Leah" skin="character_leah.png" hp="2"
-        black="4" pocketActive="" card="51" items="794,591" keys="1"
+        black="4" pocketActive="" items="794,591" keys="1"
         nameimage="playername_leah.png"
         portrait="playerportrait_leah.png"
         skinColor="-1"

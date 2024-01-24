@@ -1,3 +1,7 @@
+Astro.Players = {
+    LEAH = Isaac.GetPlayerTypeByName("Leah"),
+}
+
 local startItem = {
     common = {
         collectible = {
@@ -308,6 +312,20 @@ local startItem = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
         }
     },
+    [Astro.Players.LEAH] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
     [PlayerType.PLAYER_ISAAC_B] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
@@ -587,7 +605,7 @@ local startItem = {
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
         }
-    }
+    },
 }
 
 Astro:AddCallback(
