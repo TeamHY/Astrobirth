@@ -97,13 +97,15 @@ function Astro:GetRandomCollectibles(collectibles, rng, count, ignoreCollectible
             end
         end
     else
-        list = collectibles
+        for _, value in ipairs(collectibles) do
+            table.insert(list, value)
+        end
     end
 
     ---@type CollectibleType[]
     local result = {}
 
-    for i = 1, count do
+    for _ = 1, count do
         if #list == 0 then
             break
         end
