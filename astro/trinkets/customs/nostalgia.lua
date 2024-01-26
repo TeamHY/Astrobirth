@@ -240,7 +240,7 @@ Astro:AddCallback(
                 local items = Astro:GetRandomCollectibles(wolItemList, rng, 2)
 
                 for _, value in ipairs(items) do
-                    Astro:SpawnCollectible(value, player.Position)
+                    Astro:SpawnCollectible(value, player.Position, Astro.Trinket.NOSTALGIA)
                 end
 
                 player:TryRemoveTrinket(Astro.Trinket.NOSTALGIA)
