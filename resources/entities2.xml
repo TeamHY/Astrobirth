@@ -4957,7 +4957,7 @@
     <entity anm2path="951.031_ultra war bomb.anm2" baseHP="200" boss="0" champion="0" collisionDamage="1" collisionMass="300" collisionRadius="34" friction="1" gridCollision="none" id="951" name="Ultra War Bomb" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="31">
         <gibs amount="4" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" poop="0" rock="1"/>
     </entity>
-    <entity anm2path="951.040_ultra death.anm2" baseHP="2000" boss="1" champion="0" collisionDamage="1" collisionMass="500" collisionRadius="70" friction="1" gridCollision="none" id="951" name="#ULTRA_DEATH" numGridCollisionPoints="12" portrait="135" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="40">
+    <entity anm2path="951.040_ultra death.anm2" baseHP="5000" boss="1" champion="0" collisionDamage="1" collisionMass="500" collisionRadius="70" friction="1" gridCollision="none" id="951" name="#ULTRA_DEATH" numGridCollisionPoints="12" portrait="135" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="40">
         <bestiary anim="Idle" transform="0,-20,0.75"/>
         <gibs amount="40" blood="0" bone="1" dust="1" eye="0" gut="0" huge="1" large="0" poop="0"/>
     </entity>
