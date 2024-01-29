@@ -384,6 +384,36 @@ local banItem = {
         pill = {
         }
     },
+    [Astro.Players.SUBJECT_ALPHA] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
+    [Astro.Players.SUBJECT_BETA] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
+    [Astro.Players.SUBJECT_GAMMA] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
     [PlayerType.PLAYER_ISAAC_B] = {
         collectible = {
         },

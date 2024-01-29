@@ -1,5 +1,8 @@
 Astro.Players = {
     LEAH = Isaac.GetPlayerTypeByName("Leah"),
+    SUBJECT_ALPHA = Isaac.GetPlayerTypeByName("Subject Alpha"),
+    SUBJECT_BETA = Isaac.GetPlayerTypeByName("Subject Beta"),
+    SUBJECT_GAMMA = Isaac.GetPlayerTypeByName("Subject Gamma"),
 }
 
 local startItem = {
@@ -313,6 +316,48 @@ local startItem = {
         }
     },
     [Astro.Players.LEAH] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.SUBJECT_ALPHA] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.SUBJECT_BETA] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.SUBJECT_GAMMA] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
         },

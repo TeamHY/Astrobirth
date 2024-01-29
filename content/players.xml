@@ -7,4 +7,19 @@
         portrait="playerportrait_leah.png"
         skinColor="-1"
         birthright="What?" />
+    <player name="Subject Alpha" skin="character_subject_alpha.png" hp="6" pocketActive="" items="" keys="1"
+        nameimage="playername_subject_alpha.png"
+        portrait="playerportrait_subject_alpha.png"
+        skinColor="0"
+        birthright="" />
+    <player name="Subject Beta" skin="character_subject_beta.png" hp="6" pocketActive="" items="" keys="1"
+        nameimage="playername_subject_beta.png"
+        portrait="playerportrait_subject_beta.png"
+        skinColor="0"
+        birthright="" />
+    <player name="Subject Gamma" skin="character_subject_gamma.png" hp="6" pocketActive="" items="" keys="1"
+        nameimage="playername_subject_gamma.png"
+        portrait="playerportrait_subject_gamma.png"
+        skinColor="0"
+        birthright="" />
 </players>
