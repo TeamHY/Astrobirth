@@ -62,6 +62,7 @@
 	<passive gfx="Artifact Sanctum.png" quality="4" devilprice="1" shopprice="20" name="Artifact Sanctum" />
 	<passive cache="damage" gfx="Amplifying Mind.png" quality="3" devilprice="2" shopprice="15" name="Amplifying Mind" />
 	<passive gfx="EZ Mode.png" quality="1" devilprice="2" shopprice="15" tags="noeden quest" name="EZ Mode" />
+	<passive gfx="Birthright - Eden.png" quality="1" devilprice="2" shopprice="15" name="Birthright - Eden" />
 
 
 
