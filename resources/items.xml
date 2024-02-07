@@ -96,7 +96,7 @@
 	<familiar description="#ROBOBABY_DESCRIPTION" gfx="Collectibles_095_RoboBaby.png" id="95" name="#ROBOBABY_NAME" />
 	<familiar achievement="25" description="#LITTLE_CHAD_DESCRIPTION" gfx="Collectibles_096_LittleChad.png" id="96" name="#LITTLE_CHAD_NAME" />
 	<active achievement="22" description="#THE_BOOK_OF_SIN_DESCRIPTION" gfx="Collectibles_097_BookOfSin.png" id="97" maxcharges="4" name="#THE_BOOK_OF_SIN_NAME" />
-	<familiar achievement="20" description="#THE_RELIC_DESCRIPTION" gfx="Collectibles_098_TheRelic.png" id="98" name="#THE_RELIC_NAME" shopprice="30" devilprice="2" />
+	<familiar achievement="20" description="#THE_RELIC_DESCRIPTION" gfx="Collectibles_098_TheRelic.png" id="98" name="#THE_RELIC_NAME" shopprice="15" devilprice="1" />
 	<familiar achievement="23" description="#LITTLE_GISH_DESCRIPTION" gfx="Collectibles_099_LittleGish.png" id="99" name="#LITTLE_GISH_NAME" />
 	<familiar achievement="24" description="#LITTLE_STEVEN_DESCRIPTION" gfx="Collectibles_100_LittleSteve.png" shopprice="8" id="100" name="#LITTLE_STEVEN_NAME" />
 	<passive achievement="27" cache="damage firedelay range speed" description="#THE_HALO_DESCRIPTION" gfx="Collectibles_101_TheHalo.png" hearts="4" id="101" maxhearts="2" name="#THE_HALO_NAME" />
@@ -200,7 +200,7 @@
 	
 	<passive description="#MOMS_KEY_DESCRIPTION" gfx="collectibles_199_momskey.png" id="199" shopprice="30" keys="2" name="#MOMS_KEY_NAME" cache="pickupvision" />
 	<passive cache="tearcolor" description="#MOMS_EYESHADOW_DESCRIPTION" gfx="collectibles_200_momseyeshadow.png" id="200" name="#MOMS_EYESHADOW_NAME" />
-	<passive cache="damage" description="#IRON_BAR_DESCRIPTION" gfx="collectibles_201_ironbar.png" id="201" name="#IRON_BAR_NAME" />
+	<passive cache="damage" description="#IRON_BAR_DESCRIPTION" gfx="collectibles_201_ironbar.png" id="201" shopprice="4" name="#IRON_BAR_NAME" />
 	<passive description="#MIDAS_TOUCH_DESCRIPTION" gfx="collectibles_202_midastouch.png" id="202" name="#MIDAS_TOUCH_NAME" />
 	<passive description="#HUMBLEING_BUNDLE_DESCRIPTION" shopprice="30" gfx="collectibles_203_humblingbundle.png" id="203" name="#HUMBLEING_BUNDLE_NAME" />
 	<passive description="#FANNY_PACK_DESCRIPTION" gfx="collectibles_204_fannypack.png" id="204" name="#FANNY_PACK_NAME" />

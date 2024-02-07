@@ -2051,7 +2051,7 @@
         <preload-snd id="5"/>
     	<devolve id="202.0.0" weight="1" />
 	</entity>
-    <entity anm2path="204.000_Mobile Host.anm2" baseHP="14" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="204" name="#MOBILE_HOST" numGridCollisionPoints="12" portrait="72" reroll="true" shadowSize="14" stageHP="0" variant="0">
+    <entity anm2path="204.000_Mobile Host.anm2" baseHP="14" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="204" name="#MOBILE_HOST" numGridCollisionPoints="12" portrait="72" reroll="true" shadowSize="14" stageHP="0" variant="0">
         <bestiary anim="WalkVert" overlay="Shoot" transform="0,0,1"/>
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0"/>
     	<devolve id="226.1.0" weight="1" />
@@ -3843,7 +3843,7 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     	<devolve id="25.0.0" weight="1" />
 	</entity>
-    <entity anm2path="027.003_hard host.anm2" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="15" collisionRadius="13" friction="1" id="27" name="#HARD_HOST" numGridCollisionPoints="12" portrait="247" shadowSize="25" stageHP="0" variant="3">
+    <entity anm2path="027.003_hard host.anm2" baseHP="15" boss="0" champion="0" collisionDamage="1" collisionMass="15" collisionRadius="13" friction="1" id="27" name="#HARD_HOST" numGridCollisionPoints="12" portrait="247" shadowSize="25" stageHP="0" variant="3">
         <bestiary anim="Shoot" transform="0,0,1"/>
         <gibs amount="9" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" rock="1"/>
     	<devolve id="27.0.0" weight="1" />

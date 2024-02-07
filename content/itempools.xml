@@ -56,6 +56,7 @@
 		<Item Name="Chubby's Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rhongomyniad" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - Eden" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -343,6 +344,8 @@
 		<Item Name="Pink Ward" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amplifying Mind" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 
+		<Item Name="Birthright - Eden" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
 
 
 	</Pool>
@@ -406,6 +409,8 @@
 		<Item Name="Bachelor's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pink Ward" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amplifying Mind" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Birthright - Eden" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
@@ -424,6 +429,8 @@
 		<Item Name="Casiopea" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Bachelor's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Pink Ward" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Birthright - Eden" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="boss">
@@ -435,8 +442,6 @@
 		<Item Name="Bomb Is Power" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Happy Onion" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Blood Of Hatred" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-	</Pool>
-
 	</Pool>
 	<Pool Name="redChest">
 		<Item Name="Chubby's Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

@@ -67,7 +67,7 @@ Astro:AddCallbackCustom(
         local itemPool = Game():GetItemPool()
 
         for _, config in ipairs(collectableConfigs) do
-            if config.Quality == 0 or config.Quality == 4 then
+            if config.Quality == 0 or config.Quality == 1 or config.Quality == 4 then
                 itemPool:RemoveCollectible(config.ID)
             end
         end
