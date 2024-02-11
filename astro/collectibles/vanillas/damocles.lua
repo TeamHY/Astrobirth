@@ -83,7 +83,7 @@ if EID then
             end
         end,
         function(descObj)
-            EID:appendToDescription(descObj, "#피격 시 최근에 획득한 아이템 4개가 사라지고 50% 확률로 즉사합니다.#!!! 아래 아이템이 금지됩니다.#" .. damoclesEIDString)
+            EID:appendToDescription(descObj, "#7 스테이지 이상에서 피격 시 최근에 획득한 아이템 4개가 사라지고 50% 확률로 즉사합니다.#!!! 아래 아이템이 금지됩니다.#" .. damoclesEIDString)
 
             return descObj
         end
@@ -160,9 +160,10 @@ Astro:AddCallback(
     ---@param countdownFrames number
     function(_, entity, amount, damageFlags, source, countdownFrames)
         local player = entity:ToPlayer()
+        local stage = Game():GetLevel():GetAbsoluteStage()
 
         if player ~= nil then
-            if player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) and stage >= LevelStage.STAGE4_1 then
                 if damageFlags & (DamageFlag.DAMAGE_NO_PENALTIES | DamageFlag.DAMAGE_RED_HEARTS) == 0 then
                     local inventory = Astro:getPlayerInventory(player, false)
 
