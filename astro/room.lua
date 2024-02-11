@@ -248,14 +248,20 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_NPC_INIT,
     ---@param entityNPC EntityNPC
     function(_, entityNPC)
+        local currentRoom = Game():GetLevel():GetCurrentRoom()
+        local roomType = currentRoom:GetType()
+
         if entityNPC.Type == EntityType.ENTITY_DOGMA and entityNPC.Variant == 1 then
-            local currentRoom = Game():GetLevel():GetCurrentRoom()
             local rng = entityNPC:GetDropRNG()
 
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, 0, 0, currentRoom:GetGridPosition(106), Vector.Zero, nil)                    -- Death's Head
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, rng:RandomInt(2) * 2, 0, currentRoom:GetGridPosition(118), Vector.Zero, nil) -- Death's Head or Cursed Death's Head
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, rng:RandomInt(2) * 2, 0, currentRoom:GetGridPosition(121), Vector.Zero, nil)
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, 0, 0, currentRoom:GetGridPosition(133), Vector.Zero, nil)
+        elseif entityNPC.Type == EntityType.ENTITY_SPIDER then
+            if roomType == RoomType.ROOM_SECRET or roomType == RoomType.ROOM_SUPERSECRET or roomType == RoomType.ROOM_ARCADE then
+                entityNPC:Remove()
+            end
         end
     end
 )
@@ -271,13 +277,13 @@ Astro:AddCallback(
         local player = entity:ToPlayer()
 
         if player ~= nil then
-                if damageFlags & (DamageFlag.DAMAGE_NO_PENALTIES | DamageFlag.DAMAGE_RED_HEARTS) == 0 then
-                    local currentRoomDesc = Game():GetLevel():GetCurrentRoomDesc()
+            if damageFlags & (DamageFlag.DAMAGE_NO_PENALTIES | DamageFlag.DAMAGE_RED_HEARTS) == 0 then
+                local currentRoomDesc = Game():GetLevel():GetCurrentRoomDesc()
 
-                    if currentRoomDesc.Data.Name == "Beast Room" then
-                        Astro.Data.DamoclesKill = true
-                    end
+                if currentRoomDesc.Data.Name == "Beast Room" then
+                    Astro.Data.DamoclesKill = true
                 end
+            end
         end
     end
 )
