@@ -119,6 +119,8 @@ if EID then
                 EID:appendToDescription(descObj, "#!!! 이번 게임에서 {{Collectible360}}Incubus가 등장하지 않습니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LUCKY_FOOT then
                 EID:appendToDescription(descObj, "#맵에 행운방의 위치가 표시됩니다.")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_BONE_SPURS then
+                EID:appendToDescription(descObj, "#!!! The Beast 보스방에서 사라집니다.")
             end
 
             return descObj
@@ -155,7 +157,9 @@ Astro:AddCallback(
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
     function(_)
-        local currentRoom = Game():GetLevel():GetCurrentRoom()
+        local level = Game():GetLevel()
+        local currentRoom = level:GetCurrentRoom()
+        local currentRoomDesc = level:GetRoomByIdx(level:GetCurrentRoomIndex())
 
         if not currentRoom:IsClear() then
             for i = 1, Game():GetNumPlayers() do
@@ -167,6 +171,16 @@ Astro:AddCallback(
                     if currentRoom:GetType() == RoomType.ROOM_BOSS or rng:RandomFloat() < 0.3 then
                         player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR, false, true, false, false)
                     end
+                end
+            end
+        end
+
+        if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
+            if currentRoomDesc.Data.Name == "Beast Room" then
+                for i = 1, Game():GetNumPlayers() do
+                    local player = Isaac.GetPlayer(i - 1)
+                
+                    Astro:RemoveAllCollectible(player, CollectibleType.COLLECTIBLE_BONE_SPURS)
                 end
             end
         end
