@@ -111,6 +111,8 @@ if EID then
                 )
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_INFESTATION then
                 EID:appendToDescription(descObj, "#획득 시 {{Trinket70}}Louse를 1개 소환합니다.")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_D20 then
+                EID:appendToDescription(descObj, "#획득 시 {{Card49}}Dice Shard를 1개 소환합니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_INCUBUS then
                 EID:appendToDescription(descObj, "#!!! 이번 게임에서 {{Collectible698}}Twisted Pair가 등장하지 않습니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_TWISTED_PAIR then
@@ -231,6 +233,8 @@ Astro:AddCallbackCustom(
             Astro:SpawnTrinket(Astro.Trinket.BLOODY_BANDAGE, player.Position)
         elseif collectibleType == CollectibleType.COLLECTIBLE_INFESTATION and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_INFESTATION) then
             Astro:SpawnTrinket(TrinketType.TRINKET_LOUSE, player.Position)
+        elseif collectibleType == CollectibleType.COLLECTIBLE_D20 and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_D20) then
+            Astro:SpawnCard(Card.CARD_DICE_SHARD, player.Position)
         elseif collectibleType == CollectibleType.COLLECTIBLE_INCUBUS and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_INCUBUS) then
             Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_TWISTED_PAIR)
         elseif collectibleType == CollectibleType.COLLECTIBLE_TWISTED_PAIR and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_TWISTED_PAIR) then
