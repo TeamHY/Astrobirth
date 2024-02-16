@@ -311,3 +311,16 @@ end
 function Astro:CheckFirstVisitFrame(currentRoom)
     return currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit()
 end
+
+---@param list any[]
+---@param value any
+---@return integer
+function Astro:FindIndex(list, value)
+    for i, v in ipairs(list) do
+        if v == value then
+            return i
+        end
+    end
+
+    return -1
+end

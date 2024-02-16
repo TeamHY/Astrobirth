@@ -17,6 +17,10 @@ Astro:AddCallback(
     function(_, isContinued)
         if not isContinued or Astro.Data.Epice == nil then
             Astro.Data.Epics = {
+                common = {
+                    CollectibleType.COLLECTIBLE_SACRED_HEART,
+                    CollectibleType.COLLECTIBLE_ROCK_BOTTOM,
+                },
                 [RoomType.ROOM_TREASURE] = {
                     CollectibleType.COLLECTIBLE_SPOON_BENDER,
                     CollectibleType.COLLECTIBLE_CRICKETS_HEAD,
@@ -320,22 +324,27 @@ Astro:AddCallback(
         if pickup.Variant == PickupVariant.PICKUP_COLLECTIBLE then
             local roomType = Game():GetLevel():GetCurrentRoom():GetType()
 
-            if Astro.Data.Epics and Astro.Data.Epics[roomType] then
-                for index, epic in ipairs(Astro.Data.Epics[roomType]) do
-                    if pickup.SubType == epic then
-                        local sprite = Sprite()
-                        sprite:Load("gfx/effects/epic.anm2", true)
-                        sprite.Color = Color(1, 1, 1, alpha, 0, 0, 0)
-                        sprite:Play("Play", true)
+            if Astro.Data.Epics then
+                local index = Astro:FindIndex(Astro.Data.Epics.common, pickup.SubType)
+                local targetList = Astro.Data.Epics.common
 
-                        local frameCount = Game():GetFrameCount()
-                        table.insert(targets, { pickup = pickup, sprite = sprite, prevFrame = frameCount, endFrame = frameCount + duration })
+                if index == -1 and Astro.Data.Epics[roomType] then
+                    index = Astro:FindIndex(Astro.Data.Epics[roomType], pickup.SubType)
+                    targetList = Astro.Data.Epics[roomType]
+                end
 
-                        SFXManager():Play(soundId, volume)
+                if index ~= -1 then
+                    local sprite = Sprite()
+                    sprite:Load("gfx/effects/epic.anm2", true)
+                    sprite.Color = Color(1, 1, 1, alpha, 0, 0, 0)
+                    sprite:Play("Play", true)
 
-                        table.remove(Astro.Data.Epics[roomType], index)
-                        break
-                    end
+                    local frameCount = Game():GetFrameCount()
+                    table.insert(targets, { pickup = pickup, sprite = sprite, prevFrame = frameCount, endFrame = frameCount + duration })
+
+                    SFXManager():Play(soundId, volume)
+
+                    table.remove(targetList, index)
                 end
             end
         end
