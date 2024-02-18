@@ -74,6 +74,16 @@ Astro:AddCallback(
                         itemPool:RemoveCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR)
                     end
 
+                    if player:GetPlayerType() == PlayerType.PLAYER_AZAZEL then
+                        if not player:HasCollectible(CollectibleType.COLLECTIBLE_EYE_OF_THE_OCCULT) then
+                            Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_EYE_OF_THE_OCCULT, player.Position)
+                        end
+
+                        if not player:HasCollectible(CollectibleType.COLLECTIBLE_BRIMSTONE) then
+                            Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BRIMSTONE, player.Position)
+                        end
+                    end
+
                     if isSpawnd then
                         break
                     end
