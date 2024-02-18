@@ -204,14 +204,20 @@ Astro:AddCallback(
                         player:AddCollectible(CollectibleType.COLLECTIBLE_EVIL_CHARM)
                     elseif stage == LevelStage.STAGE4_3 then
                         Astro:SpawnCollectible(
-                            blessings[rng:RandomInt(#blessings) + 1],
-                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE, 0),
+                            itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
+                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(GRID_SIZE, 0),
+                            blessings[rng:RandomInt(#blessings) + 1],
+                            currentRoom:GetCenterPos(),
+                            OPTIONS_PICKUP_INDEX,
+                            true
+                        )
+                        Astro:SpawnCollectible(
+                            Astro.Collectible.GEMINI_EX,
+                            currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
