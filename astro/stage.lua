@@ -87,7 +87,7 @@ Astro:AddCallback(
         local level = Game():GetLevel()
         local stage = level:GetStage()
 
-        if stage >= LevelStage.STAGE4_1 then
+        if stage >= LevelStage.STAGE2_2 then
             local playerType = Isaac.GetPlayer():GetPlayerType()
 
             local champ = 0
