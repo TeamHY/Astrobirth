@@ -57,6 +57,7 @@
 		<Item Name="Rhongomyniad" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - Eden" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - Isaac" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -345,6 +346,7 @@
 		<Item Name="Amplifying Mind" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Birthright - Eden" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - Isaac" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
 
 
@@ -411,6 +413,7 @@
 		<Item Name="Amplifying Mind" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Birthright - Eden" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - Isaac" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
@@ -431,6 +434,7 @@
 		<Item Name="Pink Ward" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Birthright - Eden" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - Isaac" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="boss">
