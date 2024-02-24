@@ -144,16 +144,15 @@ Astro:AddCallback(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_COLLECTIBLE,
                     Astro.Collectible.GREED,
-                    currentRoom:GetTopLeftPos() - Vector(-80, -80),
+                    currentRoom:GetGridPosition(91),
                     Vector.Zero,
                     nil
                 )
-            elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 70 then -- Delirium
                 Isaac.Spawn(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_COLLECTIBLE,
                     Astro.Collectible.GO_HOME,
-                    currentRoom:GetTopLeftPos() - Vector(20, 20),
+                    currentRoom:GetGridPosition(103),
                     Vector.Zero,
                     nil
                 )
