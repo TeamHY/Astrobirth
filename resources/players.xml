@@ -116,7 +116,7 @@
           portrait="PlayerPortrait_TheForgotten.png" skinColor="2" costumeSuffix="forgottensoul"
 		  birthright="#THE_SOUL_BIRTHRIGHT" />
 <!-- REPENTANCE BEGIN -->
-	<player id="18" name="#BETHANY_NAME" skin="Character_001x_Bethany.png" costume="51" keys="1" bombs="2" items="601,535,390" pocketActive="580" hp="8" armor="4" achievement="404"
+	<player id="18" name="#BETHANY_NAME" skin="Character_001x_Bethany.png" costume="51" keys="1" bombs="2" items="601,390" pocketActive="580" hp="8" armor="4" achievement="404"
           nameimage="PlayerName_01x_Bethany.png" 
           portrait="PlayerPortrait_Bethany.png" skinColor="-1"
 		  birthright="#BETHANY_BIRTHRIGHT" />

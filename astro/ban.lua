@@ -331,6 +331,7 @@ local banItem = {
             CollectibleType.COLLECTIBLE_BIRTHRIGHT,
             Astro.Collectible.ALTAIR,
             Astro.Collectible.COMET,
+            Astro.Collectible.ARIES_EX,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,

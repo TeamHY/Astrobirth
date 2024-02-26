@@ -1,6 +1,6 @@
 --- Credit to Xalum(Retribution)
 
-local CAPSULE_SPAWN_CHANCE             = 1 / 128
+local CAPSULE_SPAWN_CHANCE             = 1 / 32
 
 Astro.Card.DAMAGE_CAPSULE              = Isaac.GetCardIdByName("Sword Capsule")
 Astro.Card.HEALTH_CAPSULE              = Isaac.GetCardIdByName("Heart Capsule")
