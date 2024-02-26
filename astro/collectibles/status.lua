@@ -75,7 +75,7 @@ Astro:AddCallback(
             end
 
             if player:HasCollectible(CollectibleType.COLLECTIBLE_IT_HURTS) then
-                player.Damage = player.Damage * 1.3
+                player.Damage = player.Damage * (1.3 ^ player:GetCollectibleNum(CollectibleType.COLLECTIBLE_IT_HURTS))
             end
         elseif cacheFlag == CacheFlag.CACHE_LUCK then
             if player:HasCollectible(CollectibleType.COLLECTIBLE_GHOST_PEPPER) then
