@@ -35,7 +35,7 @@ Astro:AddPriorityCallback(
                 local data = Astro:GetPersistentPlayerData(player)
 
                 if data then
-                    if player.Luck > (data.peakLuck or 0) then
+                    if player.Luck > (data.peakLuck or -10000) then
                         data.peakLuck = player.Luck
                     end
 

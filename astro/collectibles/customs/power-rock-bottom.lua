@@ -35,7 +35,7 @@ Astro:AddPriorityCallback(
                 local data = Astro:GetPersistentPlayerData(player)
 
                 if data then
-                    if player.Damage > (data.peakDamage or 0) then
+                    if player.Damage > (data.peakDamage or -10000) then
                         data.peakDamage = player.Damage
                     end
 
