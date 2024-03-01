@@ -64,6 +64,9 @@
 	<passive gfx="EZ Mode.png" quality="1" devilprice="2" shopprice="15" tags="noeden quest" name="EZ Mode" />
 	<passive gfx="Birthright - Eden.png" quality="3" devilprice="2" shopprice="15" name="Birthright - Eden" />
 	<passive gfx="Birthright - Isaac.png" quality="4" devilprice="2" shopprice="40" name="Birthright - Isaac" />
+	<passive cache="damage" gfx="Power Rock Bottom.png" quality="3" devilprice="2" shopprice="15" name="Power Rock Bottom" />
+	<passive cache="firedelay" gfx="Rapid Rock Bottom.png" quality="3" devilprice="2" shopprice="15" name="Rapid Rock Bottom" />
+	<passive cache="luck" gfx="Lucky Rock Bottom.png" quality="3" devilprice="2" shopprice="15" name="Lucky Rock Bottom" />
 
 
 
