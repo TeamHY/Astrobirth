@@ -25,7 +25,7 @@ Astro:AddCallback(
                 rhongomyniadEIDString = rhongomyniadEIDString .. "{{Collectible" .. collectible .. "}} "
             end
         
-            EID:addCollectible(Astro.Collectible.RHONGOMYNIAD, "스테이지를 넘어갈 때마다 소지된 아이템 중 하나를 제거합니다. 제거된 아이템과 " .. rhongomyniadEIDString .. " 중 하나를 소환합니다. 하나를 선택하면 나머지는 사라집니다.", "론고미니아드")
+            Astro:AddEIDCollectible(Astro.Collectible.RHONGOMYNIAD, "론고미니아드", "...", "스테이지를 넘어갈 때마다 소지된 아이템 중 하나를 제거합니다. 제거된 아이템과 " .. rhongomyniadEIDString .. " 중 하나를 소환합니다. 하나를 선택하면 나머지는 사라집니다.")
         end
     end
 )

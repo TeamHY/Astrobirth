@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.CASIOPEA = Isaac.GetItemIdByName("Casiopea")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.CASIOPEA, "#획득 시 랜덤 황금 장신구와 {{Pill1}}Gulp!가 소환됩니다.#다음 게임 시작 시 랜덤 황금 장신구가 소환됩니다.#중첩이 가능합니다.", "카시오페아")
+    Astro:AddEIDCollectible(Astro.Collectible.CASIOPEA, "카시오페아", "...", "#획득 시 랜덤 황금 장신구와 {{Pill1}}Gulp!가 소환됩니다.#다음 게임 시작 시 랜덤 황금 장신구가 소환됩니다.#중첩이 가능합니다.")
 end
 
 Astro:AddCallback(

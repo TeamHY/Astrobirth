@@ -8,7 +8,7 @@ Astro.Collectible.ARTIFACT_SANCTUM = Isaac.GetItemIdByName("Artifact Sanctum")
 -- -아티팩트 신지로 획득한 서큐버스는 제거되지 않음
 
 if EID then
-    EID:addCollectible(Astro.Collectible.ARTIFACT_SANCTUM, "스테이지를 넘어갈 때마다 소지된 아이템 중 하나를 제거합니다. 제거된 아이템과 {{Collectible417}}Succubus를 소환합니다. 하나를 선택하면 나머지는 사라집니다.#!!! 소지한 {{Collectible417}}Succubus가 4개 이상일 경우 이 아이템은 제거됩니다.", "아티팩트 신지")
+    Astro:AddEIDCollectible(Astro.Collectible.ARTIFACT_SANCTUM, "아티팩트 신지", "...", "스테이지를 넘어갈 때마다 소지된 아이템 중 하나를 제거합니다. 제거된 아이템과 {{Collectible417}}Succubus를 소환합니다. 하나를 선택하면 나머지는 사라집니다.#!!! 소지한 {{Collectible417}}Succubus가 4개 이상일 경우 이 아이템은 제거됩니다.")
 end
 
 Astro:AddCallback(

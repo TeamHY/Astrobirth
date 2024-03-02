@@ -17,18 +17,19 @@ Astro:AddCallback(
             CollectibleType.COLLECTIBLE_SPIRIT_SWORD,
             CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE
         }
-        
+
         if EID then
             Astro.CleanerEIDString = ""
-        
+
             for _, collectible in ipairs(Astro.CleanerList) do
                 Astro.CleanerEIDString = Astro.CleanerEIDString .. "{{Collectible" .. collectible .. "}} "
             end
-        
-            EID:addCollectible(
+
+            Astro:AddEIDCollectible(
                 Astro.Collectible.CLEANER,
-                "!!! 효과가 발동한 뒤 사라집니다.#!!! 획득 시 아래 아이템이 제거됩니다.#" .. Astro.CleanerEIDString,
-                "클리너"
+                "클리너",
+                "...",
+                "!!! 효과가 발동한 뒤 사라집니다.#!!! 획득 시 아래 아이템이 제거됩니다.#" .. Astro.CleanerEIDString
             )
         end
     end

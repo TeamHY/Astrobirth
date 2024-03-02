@@ -1,7 +1,7 @@
 Astro.Collectible.RAPID_ROCK_BOTTOM = Isaac.GetItemIdByName("Rapid Rock Bottom")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.RAPID_ROCK_BOTTOM, "연사를 항상 가장 높았던 값으로 고정합니다.", "재빠른 밑바닥")
+    Astro:AddEIDCollectible(Astro.Collectible.RAPID_ROCK_BOTTOM, "재빠른 밑바닥", "...", "연사를 항상 가장 높았던 값으로 고정합니다.")
 end
 
 Astro:AddCallback(

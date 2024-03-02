@@ -1,7 +1,7 @@
 Astro.Collectible.EZ_MODE = Isaac.GetItemIdByName("EZ Mode")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.EZ_MODE, "스테이지를 넘어갈 때마다 {{Card51}}Holy Card를 하나 드랍합니다.#피격 페널티가 발생하지 않습니다.", "이지 모드")
+    Astro:AddEIDCollectible(Astro.Collectible.EZ_MODE, "이지 모드", "...", "스테이지를 넘어갈 때마다 {{Card51}}Holy Card를 하나 드랍합니다.#피격 페널티가 발생하지 않습니다.")
 end
 
 Astro:AddCallback(

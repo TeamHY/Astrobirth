@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.MASTERS_DEGREE = Isaac.GetItemIdByName("Master's Degree")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.MASTERS_DEGREE, "모든 알약이 거대 알약으로 변경됩니다.#알약의 효과를 알 수 있게 됩니다", "석사 학위")
+    Astro:AddEIDCollectible(Astro.Collectible.MASTERS_DEGREE, "석사 학위", "...", "모든 알약이 거대 알약으로 변경됩니다.#알약의 효과를 알 수 있게 됩니다")
 end
 
 local HORSE_PILL_OFFSET = 1 << 11

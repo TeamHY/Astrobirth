@@ -3,10 +3,11 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.COMET = Isaac.GetItemIdByName("Comet")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.COMET,
-        "획득 시 {{Card78}}Cracked Key가 하나 드랍됩니다.#다음 게임 시작 시 {{Card78}}Cracked Key을 하나 소환합니다.#중첩이 가능합니다.#맵에 {{UltraSecretRoom}}특급 비밀방의 위치가 표시됩니다.",
-        "혜성"
+        "혜성",
+        "...",
+        "획득  {{Card78}}Cracked Key가 하나 드랍됩니다.#다음 게임 시작 시 {{Card78}}Cracked Key을 하나 소환합니다.#중첩이 가능합니다.#맵에 {{UltraSecretRoom}}특급 비밀방의 위치가 표시됩니다."
     )
 end
 

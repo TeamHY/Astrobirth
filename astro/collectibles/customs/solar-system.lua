@@ -3,10 +3,11 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.SOLAR_SYSTEM = Isaac.GetItemIdByName("Solar System")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.SOLAR_SYSTEM,
-        "획득 시 소지 중인 {{Planetarium}}천체관 아이템이 모두 제거됩니다. 제거한 수 만큼 {{Planetarium}}천체관 아이템을 소환합니다.",
-        "태양계"
+        "태양계",
+        "...",
+        "획득 시 소지 중인 {{Planetarium}}천체관 아이템이 모두 제거됩니다. 제거한 수 만큼 {{Planetarium}}천체관 아이템을 소환합니다."
     )
 end
 

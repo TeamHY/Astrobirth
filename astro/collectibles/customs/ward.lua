@@ -4,8 +4,8 @@ Astro.Collectible.WARD = Isaac.GetItemIdByName("Ward")
 Astro.Collectible.PINK_WARD = Isaac.GetItemIdByName("Pink Ward")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.WARD, "스테이지 중심 5x5의 방을 보여줍니다.", "와드")
-    EID:addCollectible(Astro.Collectible.PINK_WARD, "스테이지 중심 5x5의 방을 보여줍니다.#숨어 있는 적을 아군으로 만듭니다.", "핑크 와드")
+    Astro:AddEIDCollectible(Astro.Collectible.WARD, "와드", "...", "스테이지 중심 5x5의 방을 보여줍니다.")
+    Astro:AddEIDCollectible(Astro.Collectible.PINK_WARD, "핑크 와드", "...", "스테이지 중심 5x5의 방을 보여줍니다.#숨어 있는 적을 아군으로 만듭니다.")
 end
 
 local function DisplayWardRoom()

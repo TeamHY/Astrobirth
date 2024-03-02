@@ -4,7 +4,7 @@ Astro.Collectible.CORVUS = Isaac.GetItemIdByName("Corvus")
 
 if EID then
     -- 20초 -> 10초 -> 6.66초
-    EID:addCollectible(Astro.Collectible.CORVUS, "게임 시간 10초마다 {{Card86}}Soul of Eve가 발동됩니다.#중첩 시 발동 간격이 줄어듭니다.#다음 게임 시작 시 {{Card86}}Soul of Eve을 하나 소환합니다.#중첩이 가능합니다.", "까마귀자리")
+    Astro:AddEIDCollectible(Astro.Collectible.CORVUS, "까마귀자리", "...", "게임 시간 10초마다 {{Card86}}Soul of Eve가 발동됩니다.#중첩 시 발동 간격이 줄어듭니다.#다음 게임 시작 시 {{Card86}}Soul of Eve을 하나 소환합니다.#중첩이 가능합니다.")
 end
 
 Astro:AddCallback(

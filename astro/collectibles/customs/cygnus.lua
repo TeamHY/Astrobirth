@@ -2,7 +2,7 @@ Astro.Collectible.CYGNUS = Isaac.GetItemIdByName("Cygnus")
 
 if EID then
     -- 15초 -> 7.5초 -> 5초
-    EID:addCollectible(Astro.Collectible.CYGNUS, "게임 시간 15초마다 2번 빛줄기를 소환합니다.#중첩 시 발동 간격이 줄어듭니다.", "백조자리")
+    Astro:AddEIDCollectible(Astro.Collectible.CYGNUS, "백조자리", "...", "게임 시간 15초마다 2번 빛줄기를 소환합니다.#중첩 시 발동 간격이 줄어듭니다.")
 end
 
 Astro:AddCallback(

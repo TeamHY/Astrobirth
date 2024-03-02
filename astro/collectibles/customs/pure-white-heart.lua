@@ -1,10 +1,11 @@
 Astro.Collectible.PURE_WHITE_HEART = Isaac.GetItemIdByName("Pure White Heart")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.PURE_WHITE_HEART,
-        "!!! 효과가 발동한 뒤 사라집니다.#소지한 상태에서 {{BossRoom}}보스방 클리어 시 현재 소지중인 아이템 2개(랜덤) + , {{AngelRoom}}천사방 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다.",
-        "순백의 심장"
+        "순백의 심장",
+        "...",
+        "!!! 효과가 발동한 뒤 사라집니다.#소지한 상태에서 {{BossRoom}}보스방 클리어 시 현재 소지중인 아이템 2개(랜덤) + , {{AngelRoom}}천사방 아이템 2개를 소환합니다. 하나를 선택하면 나머지는 사라집니다."
     )
 end
 

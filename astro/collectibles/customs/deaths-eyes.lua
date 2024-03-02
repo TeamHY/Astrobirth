@@ -3,10 +3,11 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.DEATHS_EYES = Isaac.GetItemIdByName("Death's Eyes")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.DEATHS_EYES,
-        "25%의 확률로 눈물에 후광이 생기며 후광에 닿은 적은 프레임당 2의 피해를 입습니다.#중첩 시 확률이 합 연산으로 증가합니다.#!!! 이번 게임에서 {{Collectible331}}Godhead가 등장하지 않습니다.",
-        "사신의 눈"
+        "사신의 눈",
+        "...",
+        "25%의 확률로 눈물에 후광이 생기며 후광에 닿은 적은 프레임당 2의 피해를 입습니다.#중첩 시 확률이 합 연산으로 증가합니다.#!!! 이번 게임에서 {{Collectible331}}Godhead가 등장하지 않습니다."
     )
 end
 

@@ -1,7 +1,7 @@
 Astro.Collectible.SCORPIO_EX = Isaac.GetItemIdByName("Scorpio EX")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.SCORPIO_EX, "공격 시 30%의 확률로 {{Poison}}독 파리를 소환합니다.#중첩이 가능합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 14 이상일 때 100% 확률 ({{LuckSmall}}행운 1당 +5%p)", "초 전갈자리")
+    Astro:AddEIDCollectible(Astro.Collectible.SCORPIO_EX, "초 전갈자리", "...", "공격 시 30%의 확률로 {{Poison}}독 파리를 소환합니다.#중첩이 가능합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 14 이상일 때 100% 확률 ({{LuckSmall}}행운 1당 +5%p)")
 end
 
 Astro:AddCallback(

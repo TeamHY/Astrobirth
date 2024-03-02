@@ -1,7 +1,7 @@
 Astro.Collectible.AQUARIUS_EX = Isaac.GetItemIdByName("Aquarius EX")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.AQUARIUS_EX, "공격 당한 몬스터에서 눈물이 뿜어져 나옵니다.", "초 물병자리")
+    Astro:AddEIDCollectible(Astro.Collectible.AQUARIUS_EX, "초 물병자리", "...", "공격 당한 몬스터에서 눈물이 뿜어져 나옵니다.")
 end
 
 Astro:AddCallback(

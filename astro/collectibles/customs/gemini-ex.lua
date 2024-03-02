@@ -3,10 +3,11 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.GEMINI_EX = Isaac.GetItemIdByName("Gemini EX")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.GEMINI_EX,
-        "현재 소지중인 아이템에서 랜덤하게 5개를 소환합니다. 하나를 선택하면 나머지는 사라집니다.",
-        "초 쌍둥이자리"
+        "초 쌍둥이자리",
+        "...",
+        "현재 소지중인 아이템에서 랜덤하게 5개를 소환합니다. 하나를 선택하면 나머지는 사라집니다."
     )
 end
 

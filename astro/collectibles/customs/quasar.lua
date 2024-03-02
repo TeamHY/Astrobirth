@@ -1,7 +1,7 @@
 Astro.Collectible.QUASAR = Isaac.GetItemIdByName("Quasar")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.QUASAR, "방 마다 처음으로 죽은 적 위치에 블랙홀을 소환합니다.#중첩이 가능합니다.", "퀘이사")
+    Astro:AddEIDCollectible(Astro.Collectible.QUASAR, "퀘이사", "...", "방 마다 처음으로 죽은 적 위치에 블랙홀을 소환합니다.#중첩이 가능합니다.")
 end
 
 local remaining = 0

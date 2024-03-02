@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.FALLEN_ORB = Isaac.GetItemIdByName("Fallen Orb")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.FALLEN_ORB, "{{Quality0}}/{{Quality4}}등급인 아이템이 등장하지 않습니다.#{{Quality2}}등급 아이템이 20% 확률로 다른 아이템으로 변경됩니다.", "타락한 오브")
+    Astro:AddEIDCollectible(Astro.Collectible.FALLEN_ORB, "타락한 오브", "...", "{{Quality0}}/{{Quality4}}등급인 아이템이 등장하지 않습니다.#{{Quality2}}등급 아이템이 20% 확률로 다른 아이템으로 변경됩니다.")
 end
 
 ---@type ItemConfig_Item[]

@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.BIRTHRIGHT_EDEN = Isaac.GetItemIdByName("Birthright - Eden")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.BIRTHRIGHT_EDEN, "!!! 효과가 발동한 뒤 사라집니다.#{{TreasureRoom}}황금방 아이템 3개를 소환합니다. 하나를 선택하면 나머지는 사라집니다.", "생득권 - 에덴")
+    Astro:AddEIDCollectible(Astro.Collectible.BIRTHRIGHT_EDEN, "생득권 - 에덴", "...", "!!! 효과가 발동한 뒤 사라집니다.#{{TreasureRoom}}황금방 아이템 3개를 소환합니다. 하나를 선택하면 나머지는 사라집니다.")
 end
 
 Astro:AddCallbackCustom(

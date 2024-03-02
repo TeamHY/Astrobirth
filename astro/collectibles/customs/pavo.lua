@@ -1,7 +1,7 @@
 Astro.Collectible.PAVO = Isaac.GetItemIdByName("Pavo")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.PAVO, "Mega Satan 1 페이즈의 체력이 10% 감소됩니다.#Mega Satan 1 페이즈를 제외한 모든 몬스터들의 체력이 15% 감소됩니다.#중첩 시 체력 감소 효과가 곱 연산으로 적용됩니다. Mega Satan 1 페이즈는 제외합니다.", "공작자리")
+    Astro:AddEIDCollectible(Astro.Collectible.PAVO, "공작자리", "...", "Mega Satan 1 페이즈의 체력이 10% 감소됩니다.#Mega Satan 1 페이즈를 제외한 모든 몬스터들의 체력이 15% 감소됩니다.#중첩 시 체력 감소 효과가 곱 연산으로 적용됩니다. Mega Satan 1 페이즈는 제외합니다.")
 end
 
 Astro:AddCallback(

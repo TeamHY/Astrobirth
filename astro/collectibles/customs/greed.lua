@@ -3,10 +3,11 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.GREED = Isaac.GetItemIdByName("Greed")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.GREED,
-        "!!! 획득 시 사라지고 에러방으로 이동합니다.#!!! {{Collectible223}}Pyromaniac과 {{Collectible375}}Host Hat을 제거합니다.",
-        "탐욕"
+        "탐욕",
+        "...",
+        "!!! 획득 시 사라지고 에러방으로 이동합니다.#!!! {{Collectible223}}Pyromaniac과 {{Collectible375}}Host Hat을 제거합니다."
     )
 end
 

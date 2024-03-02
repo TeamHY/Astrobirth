@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.GO_HOME = Isaac.GetItemIdByName("Go Home!")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.GO_HOME, "!!! 획득 시 사라지고 Home으로 이동합니다.", "집으로!")
+    Astro:AddEIDCollectible(Astro.Collectible.GO_HOME, "집으로!", "...", "!!! 획득 시 사라지고 Home으로 이동합니다.")
 end
 
 Astro:AddCallbackCustom(

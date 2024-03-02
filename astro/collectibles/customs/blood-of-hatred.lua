@@ -1,7 +1,7 @@
 Astro.Collectible.BLOOD_OF_HATRED = Isaac.GetItemIdByName("Blood Of Hatred")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.BLOOD_OF_HATRED, "방 입장 시 25%의 확률로 적을 출혈시킵니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 30 이상일 때 100% 확률 ({{LuckSmall}}행운 1당 +2.5%p)", "증오의 피")
+    Astro:AddEIDCollectible(Astro.Collectible.BLOOD_OF_HATRED, "증오의 피", "...", "방 입장 시 25%의 확률로 적을 출혈시킵니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 30 이상일 때 100% 확률 ({{LuckSmall}}행운 1당 +2.5%p)")
 end
 
 Astro:AddCallback(

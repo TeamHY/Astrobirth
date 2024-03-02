@@ -3,10 +3,11 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.DENEB = Isaac.GetItemIdByName("Deneb")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.DENEB,
-        "다음 게임에서 애프터버스 변종 스테이지 (Burning Basement, Flooded Caves, Dank Depths, Scarred Womb) 등장하지 않습니다.",
-        "데네브"
+        "데네브",
+        "...",
+        "다음 게임에서 애프터버스 변종 스테이지 (Burning Basement, Flooded Caves, Dank Depths, Scarred Womb) 등장하지 않습니다."
     )
 end
 

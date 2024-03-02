@@ -1,10 +1,11 @@
 Astro.Collectible.TAURUS_EX = Isaac.GetItemIdByName("Taurus EX")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.TAURUS_EX,
-        "중첩이 가능합니다.#방 입장 시 아래 효과 중 한가지가 적용됩니다.#{{Tears}}연사(상한+2) 증가됩니다.#{{Damage}}공격력이 +2 증가됩니다. ({{Collectible34}} 액티브와 동일) #{{Speed}}이동 속도가 최대로 고정됩니다. 이미 최대일 경우 이 효과가 선택되지 않습니다.#유도 특성이 적용됩니다. ({{Collectible192}} 액티브와 동일)",
-        "초 황소자리"
+        "초 황소자리",
+        "...",
+        "중첩이 가능합니다.#방 입장 시 아래 효과 중 한가지가 적용됩니다.#{{Tears}}연사(상한+2) 증가됩니다.#{{Damage}}공격력이 +2 증가됩니다. ({{Collectible34}} 액티브와 동일) #{{Speed}}이동 속도가 최대로 고정됩니다. 이미 최대일 경우 이 효과가 선택되지 않습니다.#유도 특성이 적용됩니다. ({{Collectible192}} 액티브와 동일)"
     )
 end
 
