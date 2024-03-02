@@ -27,7 +27,7 @@ Astro:AddCallback(
 
 function Astro:CurseRemove(curse) -- 입장 전 저주 제거
 	local hasPrometheus = false
-	local hasPerfection = false
+	local hasCurseCleaner = false
 
 	for i = 1, Game():GetNumPlayers() do
 		local player = Isaac.GetPlayer(i - 1)
@@ -36,16 +36,16 @@ function Astro:CurseRemove(curse) -- 입장 전 저주 제거
 			hasPrometheus = true
 		end
 
-		if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
-			hasPerfection = true
+		if player:HasTrinket(TrinketType.TRINKET_PERFECTION) or player:HasTrinket(Astro.Trinket.DOCTRINE) then
+			hasCurseCleaner = true
 		end
 	end
 
-	if hasPrometheus and not hasPerfection then
+	if hasPrometheus and not hasCurseCleaner then
 		return curse | LevelCurse.CURSE_OF_DARKNESS
 	end
 
-	if (Game():GetLevel():GetStage() <= 3 and curse ~= 0) or hasPerfection then
+	if (Game():GetLevel():GetStage() <= 3 and curse ~= 0) or hasCurseCleaner then
 		return 0
 	end
 end
