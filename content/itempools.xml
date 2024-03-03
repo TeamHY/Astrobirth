@@ -58,6 +58,9 @@
 		<Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - Eden" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - Isaac" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Power Rock Bottom" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Rapid Rock Bottom" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Lucky Rock Bottom" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -348,6 +351,10 @@
 		<Item Name="Birthright - Eden" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - Isaac" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
+		<Item Name="Power Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Rapid Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Lucky Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+
 
 
 	</Pool>
@@ -414,6 +421,10 @@
 
 		<Item Name="Birthright - Eden" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - Isaac" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Power Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Rapid Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Lucky Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
