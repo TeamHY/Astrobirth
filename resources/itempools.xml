@@ -740,6 +740,7 @@
 		<Item Id="10" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="18" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="19" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="20" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="21" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="28" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="29" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
