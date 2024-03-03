@@ -14,6 +14,7 @@ require "astro.collectibles.vanillas.damocles"
 require "astro.collectibles.vanillas.depression"
 require "astro.collectibles.vanillas.king-baby"
 require "astro.collectibles.vanillas.luna"
+require "astro.collectibles.vanillas.marbles"
 require "astro.collectibles.vanillas.neptunus"
 require "astro.collectibles.vanillas.yum-heart"
 
