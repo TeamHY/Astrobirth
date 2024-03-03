@@ -30,6 +30,8 @@ Astro:AddCallback(
                 else
                     Astro:SpawnCollectible(itemPool:GetCollectible(ItemPoolType.POOL_PLANETARIUM, true, currentRoom:GetSpawnSeed()), player.Position)
                 end
+
+                player:TryRemoveTrinket(Astro.Trinket.PLANETARIUM_CROWN)
             end
         end
     end
