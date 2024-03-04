@@ -67,6 +67,7 @@
 	<passive cache="damage" gfx="Power Rock Bottom.png" quality="3" devilprice="2" shopprice="15" name="Power Rock Bottom" />
 	<passive cache="firedelay" gfx="Rapid Rock Bottom.png" quality="3" devilprice="2" shopprice="15" name="Rapid Rock Bottom" />
 	<passive cache="luck" gfx="Lucky Rock Bottom.png" quality="3" devilprice="2" shopprice="15" name="Lucky Rock Bottom" />
+	<passive gfx="Sinful Spoils of Subversion - Snake Eye.png" quality="3" devilprice="2" shopprice="15" name="Sinful Spoils of Subversion - Snake Eye" />
 
 
 
