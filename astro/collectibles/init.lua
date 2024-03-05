@@ -296,6 +296,8 @@ Astro:AddCallback(
 
                     if rng:RandomFloat() < 0.3 + player.Luck / 100 then
                         player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR, false, true, false, false)
+                        print(SFXManager():IsPlaying(SoundEffect.SOUND_ISAAC_HURT_GRUNT))
+                        SFXManager():Stop(SoundEffect.SOUND_ISAAC_HURT_GRUNT)
                     end
 
                     data.BloodyLust.Count = data.BloodyLust.Count + 1
