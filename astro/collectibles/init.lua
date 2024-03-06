@@ -47,6 +47,7 @@ require "astro.collectibles.customs.divine-light"
 require "astro.collectibles.customs.ez-mode"
 require "astro.collectibles.customs.fallen-orb"
 require "astro.collectibles.customs.duality-light-and-darkness" -- fallen orb보다 아래 있어야 함
+require "astro.collectibles.customs.firecrackerFlower"
 require "astro.collectibles.customs.fortune-coin"
 require "astro.collectibles.customs.galactic-medal-of-valor"
 require "astro.collectibles.customs.gemini-ex"

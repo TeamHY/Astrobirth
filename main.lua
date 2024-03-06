@@ -5,7 +5,7 @@ local mod = RegisterMod("Astrobirth", 1)
 
 hiddenItemManager:Init(mod)
 
-Astro = isc:upgradeMod(mod, {isc.ISCFeature.PLAYER_INVENTORY})
+Astro = isc:upgradeMod(mod, { isc.ISCFeature.PLAYER_INVENTORY, isc.ISCFeature.ROOM_HISTORY })
 
 Json = require "json"
 
