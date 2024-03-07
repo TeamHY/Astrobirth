@@ -358,7 +358,7 @@ local banItem = {
         pill = {
         }
     },
-    [Astro.Players.SUBJECT_ALPHA] = {
+    [Astro.Players.DIABELLSTAR] = {
         collectible = {
         },
         trinket = {

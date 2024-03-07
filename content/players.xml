@@ -7,10 +7,10 @@
         portrait="playerportrait_leah.png"
         skinColor="-1"
         birthright="What?" />
-    <player name="Subject Alpha" skin="character_subject_alpha.png" hp="6" pocketActive="" items="" keys="1"
-        nameimage="playername_subject_alpha.png"
-        portrait="playerportrait_subject_alpha.png"
-        skinColor="0"
+    <player name="Diabellstar" skin="character_diabellstar.png" hp="6" pocketActive="" items="" keys="1"
+        nameimage="playername_diabellstar.png"
+        portrait="playerportrait_diabellstar.png"
+        skinColor="-1"
         birthright="" />
     <player name="Subject Beta" skin="character_subject_beta.png" hp="6" pocketActive="" items="" keys="1"
         nameimage="playername_subject_beta.png"

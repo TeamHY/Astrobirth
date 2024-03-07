@@ -1,9 +1,11 @@
 Astro.Players = {
     LEAH = Isaac.GetPlayerTypeByName("Leah"),
-    SUBJECT_ALPHA = Isaac.GetPlayerTypeByName("Subject Alpha"),
+    DIABELLSTAR = Isaac.GetPlayerTypeByName("Diabellstar"),
     SUBJECT_BETA = Isaac.GetPlayerTypeByName("Subject Beta"),
     SUBJECT_GAMMA = Isaac.GetPlayerTypeByName("Subject Gamma"),
 }
+
+local DIABELLSTAR_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_diabellstarhair.anm2")
 
 local startItem = {
     common = {
@@ -329,7 +331,7 @@ local startItem = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
         }
     },
-    [Astro.Players.SUBJECT_ALPHA] = {
+    [Astro.Players.DIABELLSTAR] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
         },
@@ -691,6 +693,16 @@ Astro:AddCallback(
                     player:RemoveCollectible(CollectibleType.COLLECTIBLE_RAZOR_BLADE)
                 end
             end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_PLAYER_UPDATE,
+    ---@param player EntityPlayer
+    function(_, player)
+        if player:GetPlayerType() == Astro.Players.DIABELLSTAR and not player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR) then
+            player:GetEffects():AddNullEffect(DIABELLSTAR_HAIR, true)
         end
     end
 )
