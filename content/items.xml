@@ -69,6 +69,8 @@
 	<passive cache="luck" gfx="Lucky Rock Bottom.png" quality="3" devilprice="2" shopprice="15" name="Lucky Rock Bottom" />
 	<passive gfx="Sinful Spoils of Subversion - Snake Eye.png" quality="3" devilprice="2" shopprice="15" name="Sinful Spoils of Subversion - Snake Eye" />
 	<passive id="1" gfx="Firecracker Flower.png" quality="3" devilprice="2" shopprice="15" tags="offensive summonable" name="Firecracker Flower" description="Bloom and Doom" />
+	<passive tags="guppy" gfx="Absolut Guppy.png" quality="3" devilprice="2" shopprice="15" name="Absolut Guppy" />
+	<passive tags="guppy" gfx="Delirium Guppy.png" quality="3" devilprice="2" shopprice="15" name="Delirium Guppy" />
 
 
 
