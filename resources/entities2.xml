@@ -161,7 +161,7 @@
     <entity anm2path="003.013_Blue Baby Soul.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Blue Baby Soul" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="13">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="003.014_Dead Bird.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionInterval="14" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Dead Bird" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="14">
+    <entity anm2path="003.014_Dead Bird.anm2" baseHP="0" boss="0" champion="0" collisionDamage="3.3" collisionInterval="14" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Dead Bird" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="14">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="003.015_Eves Bird Foot.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionInterval="14" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Eves Bird Foot" numGridCollisionPoints="12" shadowSize="11" stageHP="0" tags="cansacrifice" variant="15">
@@ -2051,7 +2051,7 @@
         <preload-snd id="5"/>
     	<devolve id="202.0.0" weight="1" />
 	</entity>
-    <entity anm2path="204.000_Mobile Host.anm2" baseHP="14" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="204" name="#MOBILE_HOST" numGridCollisionPoints="12" portrait="72" reroll="true" shadowSize="14" stageHP="0" variant="0">
+    <entity anm2path="204.000_Mobile Host.anm2" baseHP="14" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="204" name="#MOBILE_HOST" numGridCollisionPoints="12" portrait="72" reroll="true" shadowSize="14" stageHP="0" variant="0">
         <bestiary anim="WalkVert" overlay="Shoot" transform="0,0,1"/>
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0"/>
     	<devolve id="226.1.0" weight="1" />
@@ -3814,7 +3814,7 @@
         <gibs amount="4" blood="1" bone="1" eye="0" gut="0" large="0"/>
     	<devolve id="23.0.0" weight="1" />
 	</entity>
-    <entity anm2path="024.003_cursed globin.anm2" baseHP="33" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" hasFloorAlts="1" id="24" name="#CURSED_GLOBIN" numGridCollisionPoints="12" portrait="220" shadowSize="14" stageHP="0" variant="3">
+    <entity anm2path="024.003_cursed globin.anm2" baseHP="33" boss="0" champion="0" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" hasFloorAlts="1" id="24" name="#CURSED_GLOBIN" numGridCollisionPoints="12" portrait="220" shadowSize="14" stageHP="0" variant="3">
         <bestiary anim="WalkVert" overlay="HeadWalk" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" colorblood="1" eye="0" gut="1" large="0" worm="1"/>
     	<devolve id="24.1.0" weight="1" />
@@ -3843,7 +3843,7 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     	<devolve id="25.0.0" weight="1" />
 	</entity>
-    <entity anm2path="027.003_hard host.anm2" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="15" collisionRadius="13" friction="1" id="27" name="#HARD_HOST" numGridCollisionPoints="12" portrait="247" shadowSize="25" stageHP="0" variant="3">
+    <entity anm2path="027.003_hard host.anm2" baseHP="15" boss="0" champion="0" collisionDamage="1" collisionMass="15" collisionRadius="13" friction="1" id="27" name="#HARD_HOST" numGridCollisionPoints="12" portrait="247" shadowSize="25" stageHP="0" variant="3">
         <bestiary anim="Shoot" transform="0,0,1"/>
         <gibs amount="9" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" rock="1"/>
     	<devolve id="27.0.0" weight="1" />
@@ -4840,11 +4840,11 @@
     <entity anm2path="911.002_rotgut heart.anm2" baseHP="600" boss="1" bossID="87" champion="0" collisionDamage="1" collisionMass="80" collisionRadius="70" friction="1" gridCollision="none" id="911" name="Rotgut (heart)" numGridCollisionPoints="12" portrait="118" shadowSize="0" stageHP="0" tags="nodelirium" variant="2">
         <gibs amount="20" blood="1" bone="0" colorblood="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="912.000_witness.anm2" baseHP="12500" boss="1" bossID="88" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="90" friction="1" gridCollision="none" id="912" name="#MOTHER" numGridCollisionPoints="12" portrait="119" shadowSize="0" shieldStrength="140" stageHP="0" tags="nodelirium" variant="0">
+    <entity anm2path="912.000_witness.anm2" baseHP="12000" boss="1" bossID="88" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="90" friction="1" gridCollision="none" id="912" name="#MOTHER" numGridCollisionPoints="12" portrait="119" shadowSize="0" shieldStrength="140" stageHP="0" tags="nodelirium" variant="0">
         <bestiary anim="Idle" transform="0,-20,0.5"/>
         <gibs amount="20" blood="1" bone="0" colorblood="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="912.010_witness 2.anm2" baseHP="12500" boss="1" bossID="88" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="110" collisionRadiusYMulti="0.7" friction="1" gridCollision="walls" id="912" name="Mother 2" numGridCollisionPoints="12" portrait="120" shadowSize="140" shieldStrength="140" stageHP="0" tags="nodelirium" variant="10">
+    <entity anm2path="912.010_witness 2.anm2" baseHP="12000" boss="1" bossID="88" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="110" collisionRadiusYMulti="0.7" friction="1" gridCollision="walls" id="912" name="Mother 2" numGridCollisionPoints="12" portrait="120" shadowSize="140" shieldStrength="140" stageHP="0" tags="nodelirium" variant="10">
         <gibs amount="20" blood="1" bone="0" colorblood="1" eye="0" gut="1" large="1"/>
     </entity>
     <entity anm2path="912.020_witness gaper.anm2" baseHP="1000" boss="0" champion="0" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1" id="912" name="#DEAD_ISAAC" numGridCollisionPoints="12" portrait="201" shadowSize="14" stageHP="0" variant="20">
@@ -4921,7 +4921,7 @@
     <entity anm2path="950.010_dogma angel baby.anm2" baseHP="30" boss="0" bossID="99" champion="0" collisionDamage="1" collisionMass="200" collisionRadius="12" friction="1" gridCollision="none" id="950" name="Dogma Angel Baby" numGridCollisionPoints="8" portrait="0" shadowSize="0" stageHP="0" variant="10">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="0" sound_baby="1"/>
     </entity>
-    <entity anm2path="951.001_beast stalactite.anm2" baseHP="100" boss="0" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="220" collisionRadiusXMulti="0.1" friction="1" gridCollision="none" id="951" name="Stalactite" numGridCollisionPoints="12" portrait="373" shadowSize="0" shutdoors="false" stageHP="0" tags="noreroll" variant="1">
+    <entity anm2path="951.001_beast stalactite.anm2" baseHP="10000" boss="0" champion="0" collisionDamage="1" collisionMass="1000" collisionRadius="220" collisionRadiusXMulti="0.1" friction="1" gridCollision="none" id="951" name="Stalactite" numGridCollisionPoints="12" portrait="373" shadowSize="0" shutdoors="false" stageHP="0" tags="noreroll" variant="1">
         <gibs amount="10" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" poop="0" rock="1"/>
     </entity>
     <entity anm2path="951.002_beast rock.anm2" baseHP="2.5" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="5" friction="1" gridCollision="none" id="951" name="Beast Rock Projectile" numGridCollisionPoints="8" shadowSize="0" shutdoors="false" stageHP="0" tags="noreroll" variant="2">
@@ -4930,14 +4930,14 @@
     <entity anm2path="951.003_beast soul.anm2" baseHP="100" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="8" friction="1" gridCollision="none" id="951" name="Beast Soul" numGridCollisionPoints="8" portrait="374" shadowSize="0" shutdoors="false" stageHP="0" tags="noreroll" variant="3">
         <gibs amount="0" blood="0" bone="0" dust="0" eye="0" gut="0" large="0" poop="0"/>
     </entity>
-    <entity anm2path="951.010_ultra famine.anm2" baseHP="2000" boss="1" champion="0" collisionDamage="1" collisionMass="500" collisionRadius="70" friction="1" gridCollision="none" id="951" name="#ULTRA_FAMINE" numGridCollisionPoints="12" portrait="132" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="10">
+    <entity anm2path="951.010_ultra famine.anm2" baseHP="5000" boss="1" champion="0" collisionDamage="1" collisionMass="500" collisionRadius="70" friction="1" gridCollision="none" id="951" name="#ULTRA_FAMINE" numGridCollisionPoints="12" portrait="132" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="10">
         <bestiary anim="Idle" transform="0,-20,0.75"/>
         <gibs amount="40" blood="1" bone="0" eye="0" gut="0" huge="1" large="0" poop="0"/>
     </entity>
     <entity anm2path="951.011_ultra famine fly.anm2" baseHP="10" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="10" friction="1" gridCollision="none" id="951" name="Ultra Famine Fly" numGridCollisionPoints="4" portrait="5" shadowSize="0" stageHP="0" tags="fly" variant="11">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="0"/>
     </entity>
-    <entity anm2path="951.020_ultra pestilence.anm2" baseHP="1800" boss="1" champion="0" collisionDamage="1" collisionMass="500" collisionRadius="70" friction="1" gridCollision="none" id="951" name="#ULTRA_PESTILENCE" numGridCollisionPoints="12" portrait="133" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="20">
+    <entity anm2path="951.020_ultra pestilence.anm2" baseHP="5000" boss="1" champion="0" collisionDamage="1" collisionMass="500" collisionRadius="70" friction="1" gridCollision="none" id="951" name="#ULTRA_PESTILENCE" numGridCollisionPoints="12" portrait="133" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="20">
         <bestiary anim="Idle" transform="0,-20,0.75"/>
         <gibs amount="40" blood="1" bone="0" eye="0" gut="0" huge="1" large="0" poop="0"/>
     </entity>
@@ -4950,14 +4950,14 @@
     <entity anm2path="951.023_ultra pestilence fly ball.anm2" baseHP="200" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="28" friction="1" gridCollision="none" id="951" name="Ultra Pestilence Fly Ball" numGridCollisionPoints="4" portrait="5" shadowSize="0" stageHP="0" tags="fly" variant="23">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="0"/>
     </entity>
-    <entity anm2path="951.030_ultra war.anm2" baseHP="2000" boss="1" champion="0" collisionDamage="1" collisionMass="500" collisionRadius="70" friction="1" gridCollision="none" id="951" name="#ULTRA_WAR" numGridCollisionPoints="12" portrait="134" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="30">
+    <entity anm2path="951.030_ultra war.anm2" baseHP="5000" boss="1" champion="0" collisionDamage="1" collisionMass="500" collisionRadius="70" friction="1" gridCollision="none" id="951" name="#ULTRA_WAR" numGridCollisionPoints="12" portrait="134" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="30">
         <bestiary anim="Idle" transform="0,-20,0.75"/>
         <gibs amount="40" blood="1" bone="0" eye="0" gut="0" huge="1" large="0" poop="0"/>
     </entity>
     <entity anm2path="951.031_ultra war bomb.anm2" baseHP="200" boss="0" champion="0" collisionDamage="1" collisionMass="300" collisionRadius="34" friction="1" gridCollision="none" id="951" name="Ultra War Bomb" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="31">
         <gibs amount="4" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" poop="0" rock="1"/>
     </entity>
-    <entity anm2path="951.040_ultra death.anm2" baseHP="2000" boss="1" champion="0" collisionDamage="1" collisionMass="500" collisionRadius="70" friction="1" gridCollision="none" id="951" name="#ULTRA_DEATH" numGridCollisionPoints="12" portrait="135" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="40">
+    <entity anm2path="951.040_ultra death.anm2" baseHP="5000" boss="1" champion="0" collisionDamage="1" collisionMass="500" collisionRadius="70" friction="1" gridCollision="none" id="951" name="#ULTRA_DEATH" numGridCollisionPoints="12" portrait="135" shadowSize="0" shieldStrength="30" stageHP="0" tags="nodelirium" variant="40">
         <bestiary anim="Idle" transform="0,-20,0.75"/>
         <gibs amount="40" blood="0" bone="1" dust="1" eye="0" gut="0" huge="1" large="0" poop="0"/>
     </entity>

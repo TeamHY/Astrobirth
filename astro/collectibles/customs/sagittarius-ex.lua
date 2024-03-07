@@ -3,10 +3,11 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.SAGITTARIUS_EX = Isaac.GetItemIdByName("Sagittarius EX")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.SAGITTARIUS_EX,
-        "공격이 적을 관통합니다.#보스를 제외한 적에게 기본 20% + {{LuckSmall}}행운 1당 1% 추가 피해를 입힙니다.#다음 게임 시작 시 {{Collectible48}}Cupid's Arrow를 가지고 시작합니다.",
-        "초 사수자리"
+        "초 사수자리",
+        "...",
+        "공격이 적을 관통합니다.#보스를 제외한 적에게 기본 20% + {{LuckSmall}}행운 1당 1% 추가 피해를 입힙니다.#중첩 시 추가 피해가 곱 연산으로 증가합니다.#다음 게임 시작 시 {{Collectible48}}Cupid's Arrow를 가지고 시작합니다."
     )
 end
 
@@ -22,7 +23,7 @@ Astro:AddCallback(
 
         if player ~= nil and player:HasCollectible(Astro.Collectible.SAGITTARIUS_EX) then
             if (not entity:IsBoss()) and entity:IsVulnerableEnemy() and entity.Type ~= EntityType.ENTITY_FIREPLACE and (source.Type == EntityType.ENTITY_TEAR or damageFlags & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or source.Type == EntityType.ENTITY_KNIFE) then
-                entity:TakeDamage(amount * (0.2 + player.Luck / 100), 0, EntityRef(player), 0)
+                entity:TakeDamage(amount * (0.2 + player.Luck / 100) ^ player:GetCollectibleNum(Astro.Collectible.SAGITTARIUS_EX), 0, EntityRef(player), 0)
             end
         end
     end

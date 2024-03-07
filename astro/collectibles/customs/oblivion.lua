@@ -1,10 +1,11 @@
 Astro.Collectible.Oblivion = Isaac.GetItemIdByName("Oblivion")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.Oblivion,
-        "사용 시 {{Card41}}Black Rune 효과를 발동합니다.",
-        "망각"
+        "망각",
+        "...",
+        "사용 시 {{Card41}}Black Rune 효과를 발동합니다."
     )
 end
 

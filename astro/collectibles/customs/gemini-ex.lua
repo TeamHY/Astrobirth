@@ -3,28 +3,13 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.GEMINI_EX = Isaac.GetItemIdByName("Gemini EX")
 
 if EID then
-    EID:addCollectible(
+    Astro:AddEIDCollectible(
         Astro.Collectible.GEMINI_EX,
-        "현재 소지중인 아이템에서 랜덤하게 5개를 소환합니다. 하나를 선택하면 나머지는 사라집니다.#다음 게임 시작 시 {{Collectible318}}Gemini를 가지고 시작합니다.",
-        "초 쌍둥이자리"
+        "초 쌍둥이자리",
+        "...",
+        "현재 소지중인 아이템에서 랜덤하게 5개를 소환합니다. 하나를 선택하면 나머지는 사라집니다."
     )
 end
-
-local GRID_SIZE = 40
-
-Astro:AddCallback(
-    ModCallbacks.MC_POST_GAME_STARTED,
-    ---@param isContinued boolean
-    function(_, isContinued)
-        if not isContinued and Astro.Data.RunGeminiEX then
-            local player = Isaac.GetPlayer()
-
-            player:AddCollectible(CollectibleType.COLLECTIBLE_GEMINI)
-
-            Astro.Data.RunGeminiEX = false
-        end
-    end
-)
 
 Astro:AddCallbackCustom(
     isc.ModCallbackCustom.POST_PLAYER_COLLECTIBLE_ADDED,
@@ -40,20 +25,9 @@ Astro:AddCallbackCustom(
             local listToSpawn = Astro:GetRandomCollectibles(inventory, rng, 5, Astro.Collectible.GEMINI_EX, true)
 
             for key, value in ipairs(listToSpawn) do
-                Isaac.Spawn(
-                        EntityType.ENTITY_PICKUP,
-                        PickupVariant.PICKUP_COLLECTIBLE,
-                        value,
-                        currentRoom:FindFreePickupSpawnPosition(
-                            player.Position + Vector(GRID_SIZE * (-3 + key), -GRID_SIZE)
-                        ),
-                        Vector.Zero,
-                        nil
-                    ):ToPickup().OptionsPickupIndex = Astro.Collectible.GEMINI_EX
+                Astro:SpawnCollectible(value, player.Position + Vector(Astro.GRID_SIZE * (-3 + key), -Astro.GRID_SIZE), Astro.Collectible.GEMINI_EX)
             end
         end
-
-        Astro.Data.RunGeminiEX = true
     end,
     Astro.Collectible.GEMINI_EX
 )

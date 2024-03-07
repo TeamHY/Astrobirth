@@ -2,6 +2,22 @@ local OPTIONS_PICKUP_INDEX = 145
 local GRID_SIZE = 40
 local GOLDEN_TRINKET_OFFSET = 32768
 
+local blessings = {
+    CollectibleType.COLLECTIBLE_EDENS_BLESSING,
+    Astro.Collectible.ALTAIR,
+    Astro.Collectible.CASIOPEA,
+    Astro.Collectible.COMET,
+    Astro.Collectible.CORVUS,
+    Astro.Collectible.DENEB,
+    Astro.Collectible.GEMINI_EX,
+    Astro.Collectible.LEO_EX,
+    Astro.Collectible.PISCES_EX,
+    Astro.Collectible.REINCARNATION,
+    Astro.Collectible.SAGITTARIUS_EX,
+    Astro.Collectible.VEGA,
+    Astro.Collectible.VIRGO_EX
+}
+
 ---@param player EntityPlayer
 local function TryChangeToGoldenTrinket(player)
     local trinket0 = player:GetTrinket(0)
@@ -36,7 +52,7 @@ Astro:AddCallback(
     ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
     ---@param rng RNG
     ---@param spawnPosition Vector
-    function(rng, spawnPosition)
+    function(_, rng, spawnPosition)
         local level = Game():GetLevel()
         local stage = level:GetAbsoluteStage()
         local currentRoom = level:GetCurrentRoom()
@@ -53,8 +69,15 @@ Astro:AddCallback(
                         TryChangeToGoldenTrinket(player)
                     end
 
-                    if player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) and not player:HasCollectible(CollectibleType.COLLECTIBLE_HOST_HAT) then
+                    if player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) and not player:HasCollectible(CollectibleType.COLLECTIBLE_HOST_HAT) and not player:HasCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR) then
                         player:AddCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR)
+                        itemPool:RemoveCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR)
+                    end
+
+                    if player:GetPlayerType() == PlayerType.PLAYER_AZAZEL then
+                        if not player:HasCollectible(CollectibleType.COLLECTIBLE_EYE_OF_THE_OCCULT) then
+                            Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_EYE_OF_THE_OCCULT, player.Position)
+                        end
                     end
 
                     if isSpawnd then
@@ -89,7 +112,9 @@ Astro:AddCallback(
                         )
                         Astro:SpawnCard(Card.RUNE_ANSUZ, player.Position)
 
-                        player:AddCollectible(CollectibleType.COLLECTIBLE_REDEMPTION)
+                        if not player:HasCollectible(CollectibleType.COLLECTIBLE_REDEMPTION) then
+                            player:AddCollectible(CollectibleType.COLLECTIBLE_REDEMPTION)
+                        end
                     elseif stage == LevelStage.STAGE2_2 then
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_MOMS_PURSE,
@@ -111,15 +136,16 @@ Astro:AddCallback(
                             true
                         )
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
+                            CollectibleType.COLLECTIBLE_CONSOLATION_PRIZE,
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
-                    elseif stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then
+                    elseif stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then -- 엄마 발
                         player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
 
                         Astro:SpawnCard(Card.CARD_GET_OUT_OF_JAIL, player.Position)
+                        Astro:SpawnTrinket(Astro.Trinket.BLACK_MIRROR, currentRoom:GetCenterPos())
                     elseif stage == LevelStage.STAGE4_1 then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
@@ -127,33 +153,43 @@ Astro:AddCallback(
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
+
+                        player:AddCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
+
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
+                            CollectibleType.COLLECTIBLE_NULL,
                             currentRoom:GetCenterPos(),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
+
+                        player:RemoveCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
+
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
-                    elseif
-                        stage == LevelStage.STAGE4_2 or (stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 8)
-                    then
+                    elseif stage == LevelStage.STAGE4_2 or (stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 8) then -- 심장
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, GRID_SIZE * 2),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
+
+                        player:AddCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
+
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
+                            CollectibleType.COLLECTIBLE_NULL,
                             currentRoom:GetCenterPos() + Vector(0, GRID_SIZE * 2),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
+
+                        player:RemoveCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
+
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, GRID_SIZE * 2),
@@ -163,13 +199,23 @@ Astro:AddCallback(
 
                         player:AddCollectible(CollectibleType.COLLECTIBLE_EVIL_CHARM)
                     elseif stage == LevelStage.STAGE4_3 then
-                        Isaac.Spawn(
-                            EntityType.ENTITY_PICKUP,
-                            PickupVariant.PICKUP_COLLECTIBLE,
-                            CollectibleType.COLLECTIBLE_EDENS_BLESSING,
+                        Astro:SpawnCollectible(
+                            itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
+                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, 0),
+                            OPTIONS_PICKUP_INDEX,
+                            true
+                        )
+                        Astro:SpawnCollectible(
+                            blessings[rng:RandomInt(#blessings) + 1],
                             currentRoom:GetCenterPos(),
-                            Vector.Zero,
-                            nil
+                            OPTIONS_PICKUP_INDEX,
+                            true
+                        )
+                        Astro:SpawnCollectible(
+                            Astro.Collectible.GEMINI_EX,
+                            currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, 0),
+                            OPTIONS_PICKUP_INDEX,
+                            true
                         )
                     elseif stage == LevelStage.STAGE5 then
                         Isaac.Spawn(

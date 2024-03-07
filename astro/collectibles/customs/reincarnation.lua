@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.REINCARNATION = Isaac.GetItemIdByName("Reincarnation")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.REINCARNATION, "다음 게임 시작 시 {{Collectible482}}Clicker가 소환됩니다.", "리인카네이션")
+    Astro:AddEIDCollectible(Astro.Collectible.REINCARNATION, "리인카네이션", "...", "다음 게임 시작 시 {{Collectible482}}Clicker가 소환됩니다.")
 end
 
 Astro:AddCallback(

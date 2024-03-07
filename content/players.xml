@@ -1,0 +1,25 @@
+<players root="gfx/characters/costumes/"
+    portraitroot="gfx/ui/stage/"
+    nameimageroot="gfx/ui/boss/">
+    <player name="Leah" skin="character_leah.png" hp="2"
+        black="4" pocketActive="" items="794,591" keys="1"
+        nameimage="playername_leah.png"
+        portrait="playerportrait_leah.png"
+        skinColor="-1"
+        birthright="What?" />
+    <player name="Diabellstar" skin="character_diabellstar.png" hp="6" pocketActive="" items="" keys="1"
+        nameimage="playername_diabellstar.png"
+        portrait="playerportrait_diabellstar.png"
+        skinColor="-1"
+        birthright="" />
+    <player name="Subject Beta" skin="character_subject_beta.png" hp="6" pocketActive="" items="" keys="1"
+        nameimage="playername_subject_beta.png"
+        portrait="playerportrait_subject_beta.png"
+        skinColor="0"
+        birthright="" />
+    <player name="Subject Gamma" skin="character_subject_gamma.png" hp="6" pocketActive="" items="" keys="1"
+        nameimage="playername_subject_gamma.png"
+        portrait="playerportrait_subject_gamma.png"
+        skinColor="0"
+        birthright="" />
+</players>

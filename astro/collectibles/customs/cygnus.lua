@@ -1,15 +1,16 @@
 Astro.Collectible.CYGNUS = Isaac.GetItemIdByName("Cygnus")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.CYGNUS, "게임 시간 15초마다 하늘에서 깃털이 떨어져 몬스터를 처치해줍니다 ({{Collectible160}} 액티브와 동일)", "백조자리")
+    -- 15초 -> 7.5초 -> 5초
+    Astro:AddEIDCollectible(Astro.Collectible.CYGNUS, "백조자리", "...", "게임 시간 15초마다 2번 빛줄기를 소환합니다.#중첩 시 발동 간격이 줄어듭니다.")
 end
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_PEFFECT_UPDATE,
     ---@param player EntityPlayer
     function(_, player)
-        if Game():GetFrameCount() % 450 == 0 then
-            if player:HasCollectible(Astro.Collectible.CYGNUS) then
+        if player:HasCollectible(Astro.Collectible.CYGNUS) then
+            if Game():GetFrameCount() % math.floor(450 / player:GetCollectibleNum(Astro.Collectible.CYGNUS)) == 0 then
                 player:UseActiveItem(160, false, true, false, false)
                 player:UseActiveItem(160, false, true, false, false)
             end

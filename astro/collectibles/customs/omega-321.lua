@@ -1,7 +1,7 @@
 Astro.Collectible.OMEGA_321 = Isaac.GetItemIdByName("Omega 321")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.OMEGA_321, "방 입장 시 모든 적들을 8초간 둔화시킵니다.", "오메가 321")
+    Astro:AddEIDCollectible(Astro.Collectible.OMEGA_321, "오메가 321", "...", "방 입장 시 모든 적들을 8초간 둔화시킵니다.#중첩이 가능합니다.")
 end
 
 Astro:AddCallback(
@@ -14,8 +14,10 @@ Astro:AddCallback(
                 local player = Isaac.GetPlayer(i - 1)
 
                 if player:HasCollectible(Astro.Collectible.OMEGA_321) then
-                    player:UseActiveItem(CollectibleType.COLLECTIBLE_HOURGLASS, false, true, false, false)
-                    
+                    for _ = 1, player:GetCollectibleNum(Astro.Collectible.OMEGA_321) do
+                        player:UseActiveItem(CollectibleType.COLLECTIBLE_HOURGLASS, false, true, false, false)
+                    end
+
                     break
                 end
             end

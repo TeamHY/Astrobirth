@@ -4,6 +4,9 @@ local collectibles = {}
 
 local trinkets = {}
 
+-- 사망 확률
+local killChance = 0.5
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     function(_, isContinued)
@@ -37,7 +40,19 @@ Astro:AddCallback(
             Astro.Collectible.GEMINI_EX,
             Astro.Collectible.LANIAKEA_SUPERCLUSTER,
             Astro.Collectible.TRINITY,
-            Astro.Collectible.VEGA
+            Astro.Collectible.VEGA,
+            CollectibleType.COLLECTIBLE_DRY_BABY,
+            CollectibleType.COLLECTIBLE_NIGHT_LIGHT,
+            CollectibleType.COLLECTIBLE_BROKEN_MODEM,
+            CollectibleType.COLLECTIBLE_HALO_OF_FLIES,
+            CollectibleType.COLLECTIBLE_FARTING_BABY,
+            CollectibleType.COLLECTIBLE_GUPPYS_COLLAR,
+            Astro.Collectible.OMEGA_321,
+            CollectibleType.COLLECTIBLE_DARK_ARTS,
+            CollectibleType.COLLECTIBLE_SATURNUS,
+            CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS,
+            CollectibleType.COLLECTIBLE_BONE_SPURS,
+            CollectibleType.COLLECTIBLE_BROKEN_WATCH
         }
 
         trinkets = {
@@ -50,6 +65,16 @@ Astro:AddCallback(
 )
 
 if EID then
+    local damoclesEIDString = ""
+
+    for _, collectible in ipairs(collectibles) do
+        damoclesEIDString = damoclesEIDString .. "{{Collectible" .. collectible .. "}} "
+    end
+
+    for _, trinket in ipairs(trinkets) do
+        damoclesEIDString = damoclesEIDString .. "{{Trinket" .. trinket .. "}} "
+    end
+
     EID:addDescriptionModifier(
         "AstroCollectiblesDamocles",
         function(descObj)
@@ -58,12 +83,22 @@ if EID then
             end
         end,
         function(descObj)
-            EID:appendToDescription(descObj, "#!!! 아래 아이템이 금지됩니다.#{{Collectible11}}, {{Collectible740}}, {{Collectible596}}, {{Collectible739}}, {{Collectible232}}, {{Collectible747}}, {{Collectible335}}, {{Collectible693}}, {{Collectible535}}, {{Collectible387}}, {{Collectible615}}, {{Collectible213}}, {{Collectible622}}, {{Collectible581}}, {{Collectible754}}, {{Collectible332}}, {{Collectible81}}, {{Collectible422}}, {{Collectible161}}, {{Collectible210}}, {{Collectible313}}, {{Collectible311}}, {{Collectible688}}, {{Collectible703}}, {{Collectible622}}, {{Trinket28}}, {{Trinket189}}, {{Trinket23}}")
+            EID:appendToDescription(descObj, "#7 스테이지 이상에서 피격 시 최근에 획득한 아이템 4개가 사라지고 50% 확률로 즉사합니다.#!!! 아래 아이템이 금지됩니다.#" .. damoclesEIDString)
 
             return descObj
         end
     )
 end
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    ---@param isContinued boolean
+    function(_, isContinued)
+        if not isContinued then
+            Astro.Data.DamoclesKill = false
+        end
+    end
+)
 
 Astro:AddCallback(
     ModCallbacks.MC_USE_ITEM,
@@ -111,6 +146,60 @@ Astro:AddCallbackCustom(
                         break
                     end
                 end
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_ENTITY_TAKE_DMG,
+    ---@param entity Entity
+    ---@param amount number
+    ---@param damageFlags number
+    ---@param source EntityRef
+    ---@param countdownFrames number
+    function(_, entity, amount, damageFlags, source, countdownFrames)
+        local player = entity:ToPlayer()
+        local stage = Game():GetLevel():GetAbsoluteStage()
+
+        if player ~= nil then
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) and stage >= LevelStage.STAGE4_1 then
+                if damageFlags & (DamageFlag.DAMAGE_NO_PENALTIES | DamageFlag.DAMAGE_RED_HEARTS) == 0 then
+                    local inventory = Astro:getPlayerInventory(player, false)
+
+                    for index, item in ipairs(inventory) do
+                        if item == CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE then
+                            table.remove(inventory, index)
+                            break
+                        end
+                    end
+
+                    for _ = 1, 4 do
+                        local item = inventory[#inventory]
+
+                        if item ~= nil then
+                            player:RemoveCollectible(item, true)
+                            table.remove(inventory, #inventory)
+                        end
+                    end
+
+                    local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE)
+
+                    if rng:RandomFloat() < killChance then
+                        Astro.Data.DamoclesKill = true
+                    end
+                end
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_UPDATE,
+    function()
+        if Astro.Data.DamoclesKill then
+            for i = 1, Game():GetNumPlayers() do
+                Isaac.GetPlayer(i - 1):Die()
             end
         end
     end

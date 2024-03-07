@@ -4,13 +4,13 @@
 	<passive gfx="Cancer.png" quality="3" devilprice="2" shopprice="30" name="Cancer EX" />
 	<passive gfx="Scorpio.png" quality="3" shopprice="30" name="Scorpio EX" />
 	<passive gfx="Capricorn.png" quality="2" devilprice="2" shopprice="30" name="Capricorn EX" />
-	<passive gfx="Virgo.png" quality="4" devilprice="2" shopprice="30" tags="noeden" name="Virgo EX" />
+	<passive gfx="Virgo.png" quality="4" devilprice="1" shopprice="20" tags="noeden" name="Virgo EX" />
 	<passive gfx="Leo.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Leo EX" />
 	<passive gfx="Aries.png" quality="4" devilprice="2" shopprice="30" name="Aries EX" />
 	<passive cache="firedelay speed" gfx="Taurus.png" quality="2" devilprice="2" shopprice="15" name="Taurus EX" />
 	<passive gfx="Aquarius.png" quality="3" devilprice="2" shopprice="30" name="Aquarius EX" />
 	<passive gfx="Casiopea.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Casiopea" />
-	<passive gfx="Corvus.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Corvus" />
+	<passive gfx="Corvus.png" quality="3" devilprice="1" shopprice="20" tags="noeden" name="Corvus" />
 	<passive gfx="Pavo.png" quality="4" devilprice="2" shopprice="30" name="Pavo" />
 	<passive gfx="Comet.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Comet" />
 	<passive gfx="Pisces.png" quality="3" devilprice="2" shopprice="30" name="Pisces EX" />
@@ -19,11 +19,11 @@
 	<passive cache="damage" gfx="Prometheus.png" quality="3" devilprice="2" name="Prometheus" />
 	<passive gfx="Pure White Heart.png" quality="3" devilprice="2" shopprice="20" name="Pure White Heart" />
 	<passive cache="damage firedelay" gfx="Platinum Bullet.png" quality="3" devilprice="2" name="Platinum Bullet" />
-	<passive tags="devil" gfx="Death's Eyes.png" quality="4" devilprice="2" name="Death's Eyes" />
+	<passive tags="devil" gfx="Death's Eyes.png" quality="3" devilprice="2" name="Death's Eyes" />
 	<passive gfx="Altair.png" quality="3" devilprice="2" shopprice="30" tags="noeden" name="Altair" />
-	<passive gfx="Deneb.png" quality="3" devilprice="2" shopprice="30" name="Deneb" />
+	<passive gfx="Deneb.png" quality="3" devilprice="1" shopprice="20" name="Deneb" />
 	<passive gfx="Vega.png" quality="4" devilprice="2" shopprice="30" name="Vega" />
-	<passive tags="devil" cache="damage tearflag tearcolor" gfx="Cursed Heart.png" quality="4" devilprice="2" name="Cursed Heart" />
+	<passive tags="devil" cache="damage tearflag tearcolor" gfx="Cursed Heart.png" quality="3" devilprice="2" name="Cursed Heart" />
 	<passive gfx="Super Magneto.png" quality="4" devilprice="2" shopprice="21" name="Super Magneto" />
 	<passive gfx="Solar System.png" quality="4" devilprice="1" name="Solar System" />
 	<passive gfx="Ptolemaeus.png" quality="4" devilprice="2" shopprice="40" name="Ptolemaeus" />
@@ -32,10 +32,10 @@
 	<passive gfx="collectibles_668_dadsnote.png" quality="3" devilprice="2" tags="noeden" name="Go Home!" />
 	<passive gfx="Fallen Orb.png" quality="4" devilprice="2" name="Fallen Orb" />
 	<passive gfx="Trinity.png" quality="3" devilprice="1" name="Trinity" />
-	<passive gfx="Blood Of Hatred.png" quality="3" devilprice="1" shopprice="5" tags="devil" name="Blood Of Hatred" />
-	<passive gfx="Divine Light.png" quality="4" devilprice="2" name="Divine Light" />
+	<passive gfx="Blood Of Hatred.png" quality="2" devilprice="1" shopprice="5" tags="devil" blackhearts="4" name="Blood Of Hatred" />
+	<passive gfx="Divine Light.png" quality="3" devilprice="2" name="Divine Light" />
 	<passive gfx="Omega 321.png" quality="2" devilprice="1" name="Omega 321" />
-	<passive gfx="Reincarnation.png" quality="3" devilprice="1" shopprice="10" tags="noeden" name="Reincarnation" />
+	<passive gfx="Reincarnation.png" quality="3" devilprice="1" shopprice="20" tags="noeden" name="Reincarnation" />
 	<passive gfx="Acute Sinusitis.png" quality="4" devilprice="2" name="Acute Sinusitis" />
 	<active gfx="Laniakea Supercluster.png" quality="4" devilprice="2" initcharge="0" maxcharges="6" name="Laniakea Supercluster" />
 	<passive gfx="Cleaner.png" quality="0" devilprice="1" tags="noeden" name="Cleaner" />
@@ -47,16 +47,28 @@
 	<active gfx="Chaos Dice.png" quality="3" devilprice="2" initcharge="2" maxcharges="6" name="Chaos Dice" />
 	<passive gfx="Duality - Light and Darkness.png" quality="3" devilprice="2" name="Duality - Light and Darkness" />
 	<passive cache="tearflag" gfx="Sagittarius EX.png" quality="3" devilprice="2" name="Sagittarius EX" />
-	<passive gfx="Ward.png" quality="2" devilprice="2" name="Ward" />
+	<passive gfx="Ward.png" quality="2" devilprice="2" shopprice="20" name="Ward" />
 	<passive cache="damage" gfx="Chubby's Head.png" quality="3" devilprice="2" name="Chubby's Head" />
-	<passive cache="damage firedelay range speed luck" gfx="Sleeping Puppy.png" quality="3" devilprice="2" name="Sleeping Puppy" />
-	<passive gfx="Chubby's Tail.png" quality="3" devilprice="2" name="Chubby's Tail" />
+	<passive cache="damage firedelay range speed luck" gfx="Sleeping Puppy.png" quality="3" devilprice="1" name="Sleeping Puppy" />
+	<passive gfx="Chubby's Tail.png" quality="3" devilprice="1" name="Chubby's Tail" />
 	<passive cache="damage firedelay range speed luck" gfx="Happy Onion.png" quality="3" devilprice="2" name="Happy Onion" />
-	<passive gfx="Key Is Power.png" quality="3" devilprice="2" name="Key Is Power" />
-	<passive gfx="Bomb Is Power.png" quality="3" devilprice="2" name="Bomb Is Power" />
-	<active gfx="Fortune Coin.png" quality="3" devilprice="1" initcharge="0" maxcharges="1" name="Fortune Coin" />
-	<passive tags="guppy" gfx="Absolut Guppy.png" quality="3" devilprice="2" shopprice="15" name="Absolut Guppy" />
-	<passive tags="guppy" gfx="Delirium Guppy.png" quality="3" devilprice="2" shopprice="15" name="Delirium Guppy" />
+	<passive gfx="Key Is Power.png" quality="3" devilprice="1" name="Key Is Power" />
+	<passive gfx="Bomb Is Power.png" quality="3" devilprice="1" name="Bomb Is Power" />
+	<active gfx="Fortune Coin.png" quality="3" devilprice="1" maxcharges="1" shopprice="10" name="Fortune Coin" />
+	<passive gfx="Master's Degree.png" quality="3" devilprice="1" shopprice="30" name="Master's Degree" />
+	<passive gfx="Bachelor's Degree.png" quality="3" devilprice="1" shopprice="20" name="Bachelor's Degree" />
+	<passive gfx="Pink Ward.png" quality="3" devilprice="1" shopprice="20" name="Pink Ward" />
+	<passive gfx="Rhongomyniad.png" quality="4" devilprice="1" shopprice="20" name="Rhongomyniad" />
+	<passive gfx="Artifact Sanctum.png" quality="4" devilprice="1" shopprice="20" name="Artifact Sanctum" />
+	<passive cache="damage" gfx="Amplifying Mind.png" quality="3" devilprice="2" shopprice="15" name="Amplifying Mind" />
+	<passive gfx="EZ Mode.png" quality="1" devilprice="2" shopprice="15" tags="noeden quest" name="EZ Mode" />
+	<passive gfx="Birthright - Eden.png" quality="3" devilprice="2" shopprice="15" name="Birthright - Eden" />
+	<passive gfx="Birthright - Isaac.png" quality="4" devilprice="2" shopprice="40" name="Birthright - Isaac" />
+	<passive cache="damage" gfx="Power Rock Bottom.png" quality="3" devilprice="2" shopprice="15" name="Power Rock Bottom" />
+	<passive cache="firedelay" gfx="Rapid Rock Bottom.png" quality="3" devilprice="2" shopprice="15" name="Rapid Rock Bottom" />
+	<passive cache="luck" gfx="Lucky Rock Bottom.png" quality="3" devilprice="2" shopprice="15" name="Lucky Rock Bottom" />
+	<passive gfx="Sinful Spoils of Subversion - Snake Eye.png" quality="3" devilprice="2" shopprice="15" name="Sinful Spoils of Subversion - Snake Eye" />
+	<passive id="1" gfx="Firecracker Flower.png" quality="3" devilprice="2" shopprice="15" tags="offensive summonable" name="Firecracker Flower" description="Bloom and Doom" />
 
 
 
@@ -71,4 +83,8 @@
 	<trinket gfx="Electronic Penny.png" name="Electronic Penny" />
 	<trinket gfx="Black Mirror.png" name="Black Mirror" />
 	<trinket gfx="Lava Hand.png" name="Lava Hand" />
+	<trinket gfx="Nostalgia.png" name="Nostalgia" />
+	<trinket gfx="Doctrine.png" name="Doctrine" />
+	<trinket gfx="Mosi's Eyes.png" name="Mosi's Eyes" />
+	<trinket gfx="Planetarium Crown.png" name="Planetarium Crown" />
 </items>

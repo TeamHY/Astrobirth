@@ -140,6 +140,8 @@ if EID then
                     descObj,
                     "#{{ColorGold}}{{ChallengeRoom}} 소지 중일 때 도전방/보스도전방에 항상 입장할 수 있습니다.#{{ColorGold}}맵에 {{ChallengeRoom}}도전방/보스도전방의 위치가 표시됩니다."
                 )
+            elseif descObj.ObjSubType == TrinketType.TRINKET_FRAGMENTED_CARD then
+                EID:appendToDescription(descObj, "#{{ColorGold}}맵에 비밀방/일급비밀방의 위치가 표시됩니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_BROKEN_PADLOCK then
                 EID:appendToDescription(descObj, "#{{ColorGold}}방 클리어 시 마다 {{Collectible175}}Dad's Key 효과를 발동합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_ADOPTION_PAPERS then
@@ -427,16 +429,9 @@ Astro:AddCallback(
         end
 
         if player:GetTrinketMultiplier(TrinketType.TRINKET_TEMPORARY_TATTOO) > 1 then
-            local level = game:GetLevel()
-            local idx = level:QueryRoomTypeIndex(RoomType.ROOM_CHALLENGE, false, RNG())
-            local room = level:GetRoomByIdx(idx)
+            Astro:DisplayRoom(RoomType.ROOM_CHALLENGE)
 
-            if room.Data.Type == RoomType.ROOM_CHALLENGE then
-                room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
-                level:UpdateVisibility()
-            end
-
-            local currentRoom = Game():GetLevel():GetCurrentRoom()
+            local currentRoom = game:GetLevel():GetCurrentRoom()
 
             for _, value in pairs(isc:getDoors()) do
                 local door = value ---@type GridEntityDoor
@@ -445,6 +440,9 @@ Astro:AddCallback(
                     door:TryUnlock(Isaac.GetPlayer(), true)
                 end
             end
+        elseif player:GetTrinketMultiplier(TrinketType.TRINKET_FRAGMENTED_CARD) > 1 then
+            Astro:DisplayRoom(RoomType.ROOM_SECRET)
+            Astro:DisplayRoom(RoomType.ROOM_SUPERSECRET)
         end
     end
 )
@@ -735,7 +733,7 @@ Astro:AddCallback(
     ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
     ---@param rng RNG
     ---@param spawnPosition Vector
-    function(rng, spawnPosition)
+    function(_, rng, spawnPosition)
         for i = 1, game:GetNumPlayers() do
             local player = Isaac.GetPlayer(i - 1)
 

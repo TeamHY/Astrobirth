@@ -1,7 +1,7 @@
 -- TODO: 챔피언이 모두 동일한 확률로 등장하게 됨. 희귀 챔피언이 너무 자주 나타날 수 있음.
 
 -- 챔피언 등장 제외 리스트
-local champBanList = { 6, 11, 14, 22, 25 }
+local champBanList = { 2, 3, 4, 6, 7, 8, 11, 14, 18, 23, 24, 25 }
 
 ---@param stage LevelStage
 ---@return boolean
@@ -22,12 +22,18 @@ Astro:AddCallback(
         local playerType = player:GetPlayerType()
 
         if playerType == PlayerType.PLAYER_THEFORGOTTEN then
-            player:AddBrokenHearts(4 - player:GetBrokenHearts())
-            player:GetSubPlayer():AddBrokenHearts(3 - player:GetSubPlayer():GetBrokenHearts())
+            if CheckHeartLimitStage(stage) then
+                player:AddBrokenHearts(4 - player:GetBrokenHearts())
+            end
+
+            player:GetSubPlayer():AddBrokenHearts(6 - player:GetSubPlayer():GetBrokenHearts())
         elseif playerType == PlayerType.PLAYER_THESOUL then
-            player:AddBrokenHearts(3 - player:GetBrokenHearts())
-            player:GetSubPlayer():AddBrokenHearts(4 - player:GetSubPlayer():GetBrokenHearts())
-        elseif CheckHeartLimitStage(stage) or playerType == PlayerType.PLAYER_JUDAS then
+            player:AddBrokenHearts(6 - player:GetBrokenHearts())
+
+            if CheckHeartLimitStage(stage) then
+                player:GetSubPlayer():AddBrokenHearts(4 - player:GetSubPlayer():GetBrokenHearts())
+            end
+        elseif CheckHeartLimitStage(stage) or player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
             if
                 playerType == PlayerType.PLAYER_KEEPER or playerType == PlayerType.PLAYER_KEEPER_B or
                 playerType == PlayerType.PLAYER_THESOUL_B
@@ -46,8 +52,8 @@ Astro:AddCallback(
                     player:AddSoulHearts(6 - player:GetSoulHearts())
                 end
 
-                if player:GetBrokenHearts() < 8 then
-                    player:AddBrokenHearts(8 - player:GetBrokenHearts())
+                if player:GetBrokenHearts() < 9 then
+                    player:AddBrokenHearts(9 - player:GetBrokenHearts())
                 end
             end
         end
@@ -81,25 +87,20 @@ Astro:AddCallback(
         local level = Game():GetLevel()
         local stage = level:GetStage()
 
-        if stage >= LevelStage.STAGE4_1 then
+        if stage >= LevelStage.STAGE2_2 then
             local playerType = Isaac.GetPlayer():GetPlayerType()
 
             local champ = 0
 
-            if
-                playerType == PlayerType.PLAYER_JUDAS
-                -- or playerType == PlayerType.PLAYER_ISAAC -- 이렇게 추가 가능합니다.
-                -- or playerType == PlayerType.PLAYER_MAGDALENE
-            then
-                champ = 19
-            else
-                repeat
-                    champ = entity:GetDropRNG():RandomInt(26)
-                until not CheckChampBan(champ)
-            end
+            repeat
+                champ = entity:GetDropRNG():RandomInt(26)
+            until not CheckChampBan(champ)
 
             if entity:IsVulnerableEnemy() then
-                entity:ToNPC():Morph(entity.Type, entity.Variant, entity.SubType, champ)
+                local npc = entity:ToNPC()
+
+                npc:Morph(entity.Type, entity.Variant, entity.SubType, champ)
+                npc.HitPoints = npc.MaxHitPoints
             end
         end
     end

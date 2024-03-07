@@ -1,19 +1,35 @@
+local isc = require("astro.lib.isaacscript-common")
+
 Astro.Collectible.CHUBBYS_HEAD = Isaac.GetItemIdByName("Chubby's Head")
 Astro.Collectible.SLEEPING_PUPPY = Isaac.GetItemIdByName("Sleeping Puppy")
 Astro.Collectible.CHUBBYS_TAIL = Isaac.GetItemIdByName("Chubby's Tail")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.CHUBBYS_HEAD, "↑ {{DamageSmall}}공격력(고정) +3.5", "처비의 머리")
-    EID:addCollectible(Astro.Collectible.SLEEPING_PUPPY, "9번째 방 클리어 시 공격력, 연사, 사거리, 속도, 행운중 한가지의 스텟이 0.35(고정) 증가됩니다.", "잠자는 강아지")
-    EID:addCollectible(Astro.Collectible.CHUBBYS_TAIL, "{{Chest}} 갈색 상자가 등장 시 33% 확률로 갈색 상자가 한 개 더 드랍 됩니다.", "처비의 꼬리")
+    EID:createTransformation("Chubby", "처비")
+
+    EID:assignTransformation("collectible", Astro.Collectible.CHUBBYS_HEAD, "Chubby")
+    EID:assignTransformation("collectible", Astro.Collectible.SLEEPING_PUPPY, "Chubby")
+    EID:assignTransformation("collectible", Astro.Collectible.CHUBBYS_TAIL, "Chubby")
+
+    Astro:AddEIDCollectible(Astro.Collectible.CHUBBYS_HEAD, "처비의 머리", "...", "↑ {{DamageSmall}}공격력(고정) +3.5#중첩이 가능합니다.")
+    Astro:AddEIDCollectible(Astro.Collectible.SLEEPING_PUPPY, "잠자는 강아지", "...", "9개 방을 클리어할 때 마다 공격력, 연사, 사거리, 속도, 행운 중 한 가지의 스텟이 0.35(고정) 증가됩니다.#중첩 시 다음 증가량부터 적용됩니다.")
+    Astro:AddEIDCollectible(Astro.Collectible.CHUBBYS_TAIL, "처비의 꼬리", "...", "{{Chest}} 갈색 상자가 등장 시 33% 확률로 갈색 상자가 한 개 더 드랍 됩니다.#중첩 시 확률이 합 연산으로 증가합니다.")
 end
 
+-- 눈물 발사 시 효과 발동 확률
+local CHUBBY_SET_CHANCE = 0.5
+local CHUBBY_SET_BIG_CHUBBY_CHANCE = 0.25
+
+-- 처비의 머리
 local CHUBBYS_HEAD_DAMAGE = 3.5
 
+-- 잠자는 강아지
 local SLEEPING_PUPPY_INCREMENT = 0.35
 
+-- 처비의 꼬리
 local CHUBBYS_TAIL_SUBTYPE = 1000
 local CHUBBYS_TAIL_CHANCE = 0.33
+
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
@@ -28,6 +44,8 @@ Astro:AddCallback(
                 Speed = 0,
                 Luck = 0
             }
+
+            Astro.Data.ChubbySet = 0
         else
             for i = 1, Game():GetNumPlayers() do
                 local player = Isaac.GetPlayer(i - 1)
@@ -40,6 +58,49 @@ Astro:AddCallback(
                     player:AddCacheFlags(CacheFlag.CACHE_LUCK)
                     player:EvaluateItems()
                 end
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_FIRE_TEAR,
+    ---@param tear EntityTear
+    function(_, tear)
+        local player = Astro:GetPlayerFromEntity(tear)
+
+        if player ~= nil and Astro.Data.ChubbySet >= 3 then
+            local rng = player:GetCollectibleRNG(Astro.Collectible.CHUBBYS_HEAD)
+
+            if rng:RandomFloat() < CHUBBY_SET_CHANCE then
+                ---@type EntityFamiliar
+                local fmailiar
+
+                if rng:RandomFloat() < CHUBBY_SET_BIG_CHUBBY_CHANCE then
+                    fmailiar = Isaac.Spawn(EntityType.ENTITY_FAMILIAR, FamiliarVariant.BIG_CHUBBY, 10, tear.Position, Vector.Zero, nil):ToFamiliar()
+                else
+                    fmailiar = Isaac.Spawn(EntityType.ENTITY_FAMILIAR, FamiliarVariant.LITTLE_CHUBBY, 10, tear.Position, Vector.Zero, nil):ToFamiliar()
+                end
+
+                fmailiar:GetData().IsChubbySets = true
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_FAMILIAR_UPDATE,
+    ---@param familiar EntityFamiliar
+    function(_, familiar)
+        local data = familiar:GetData()
+
+        if data.IsChubbySets == true and (familiar.Variant == FamiliarVariant.LITTLE_CHUBBY or familiar.Variant == FamiliarVariant.BIG_CHUBBY) then
+            local isShooting = string.find(familiar:GetSprite():GetAnimation(), "Shoot") ~= nil
+
+            if isShooting then
+                data.IsDisposable = true
+            elseif not isShooting and data.IsDisposable == true then
+                familiar:Remove()
             end
         end
     end
@@ -60,17 +121,18 @@ Astro:AddCallback(
                     if Astro.Data.SleepingPuppy.RoomClearCount % 9 == 0 then
                         local rng = player:GetCollectibleRNG(Astro.Collectible.SLEEPING_PUPPY)
                         local random = rng:RandomInt(5)
+                        local statusIncrement = SLEEPING_PUPPY_INCREMENT * player:GetCollectibleNum(Astro.Collectible.SLEEPING_PUPPY)
 
                         if random == 0 then
-                            Astro.Data.SleepingPuppy.Damage = Astro.Data.SleepingPuppy.Damage + SLEEPING_PUPPY_INCREMENT
+                            Astro.Data.SleepingPuppy.Damage = Astro.Data.SleepingPuppy.Damage + statusIncrement
                         elseif random == 1 then
-                            Astro.Data.SleepingPuppy.FireDelay = Astro.Data.SleepingPuppy.FireDelay + SLEEPING_PUPPY_INCREMENT
+                            Astro.Data.SleepingPuppy.FireDelay = Astro.Data.SleepingPuppy.FireDelay + statusIncrement
                         elseif random == 2 then
-                            Astro.Data.SleepingPuppy.Range = Astro.Data.SleepingPuppy.Range + SLEEPING_PUPPY_INCREMENT
+                            Astro.Data.SleepingPuppy.Range = Astro.Data.SleepingPuppy.Range + statusIncrement
                         elseif random == 3 then
-                            Astro.Data.SleepingPuppy.Speed = Astro.Data.SleepingPuppy.Speed + SLEEPING_PUPPY_INCREMENT
+                            Astro.Data.SleepingPuppy.Speed = Astro.Data.SleepingPuppy.Speed + statusIncrement
                         elseif random == 4 then
-                            Astro.Data.SleepingPuppy.Luck = Astro.Data.SleepingPuppy.Luck + SLEEPING_PUPPY_INCREMENT
+                            Astro.Data.SleepingPuppy.Luck = Astro.Data.SleepingPuppy.Luck + statusIncrement
                         end
                     end
 
@@ -95,7 +157,7 @@ Astro:AddCallback(
     function(_, player, cacheFlag)
         if player:HasCollectible(Astro.Collectible.CHUBBYS_HEAD) then
             if cacheFlag == CacheFlag.CACHE_DAMAGE then
-                player.Damage = player.Damage + CHUBBYS_HEAD_DAMAGE
+                player.Damage = player.Damage + CHUBBYS_HEAD_DAMAGE * player:GetCollectibleNum(Astro.Collectible.CHUBBYS_HEAD)
             end
         end
         
@@ -126,7 +188,7 @@ Astro:AddCallback(
                 if player:HasCollectible(Astro.Collectible.CHUBBYS_TAIL) then
                     local rng = player:GetCollectibleRNG(Astro.Collectible.CHUBBYS_TAIL)
 
-                    if rng:RandomFloat() < CHUBBYS_TAIL_CHANCE then
+                    if rng:RandomFloat() < CHUBBYS_TAIL_CHANCE * player:GetCollectibleNum(Astro.Collectible.CHUBBYS_TAIL) then
                         local currentRoom = Game():GetLevel():GetCurrentRoom()
 
                         Isaac.Spawn(
@@ -144,6 +206,17 @@ Astro:AddCallback(
             end
 
             pickup.SubType = CHUBBYS_TAIL_SUBTYPE
+        end
+    end
+)
+
+Astro:AddCallbackCustom(
+    isc.ModCallbackCustom.POST_PLAYER_COLLECTIBLE_ADDED,
+    ---@param player EntityPlayer
+    ---@param collectibleType CollectibleType
+    function(_, player, collectibleType)
+        if (collectibleType == Astro.Collectible.CHUBBYS_HEAD or collectibleType == Astro.Collectible.SLEEPING_PUPPY or collectibleType == Astro.Collectible.CHUBBYS_TAIL) and Astro:IsFirstAdded(collectibleType) then
+            Astro.Data.ChubbySet = Astro.Data.ChubbySet + 1
         end
     end
 )

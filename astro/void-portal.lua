@@ -4,19 +4,30 @@ Astro:AddCallback(
     function(_, npc)
         local currentRoom = Game():GetLevel():GetCurrentRoom()
 
-        Isaac.Spawn(
-            EntityType.ENTITY_PICKUP,
-            PickupVariant.PICKUP_BIGCHEST,
-            0,
-            currentRoom:GetCenterPos(),
-            Vector(0, 0),
-            nil
-        )
+        if Isaac.GetChallenge() == Astro.Challenge.LIBRA_EX then
+            Isaac.Spawn(
+                EntityType.ENTITY_PICKUP,
+                PickupVariant.PICKUP_TROPHY,
+                0,
+                currentRoom:GetCenterPos(),
+                Vector(0, 0),
+                nil
+            )
+        else
+            Isaac.Spawn(
+                EntityType.ENTITY_PICKUP,
+                PickupVariant.PICKUP_BIGCHEST,
+                0,
+                currentRoom:GetCenterPos(),
+                Vector(0, 0),
+                nil
+            )
 
-        local portal = Isaac.GridSpawn(GridEntityType.GRID_TRAPDOOR, 17, currentRoom:GetGridPosition(142), true)
-        portal.VarData = 1
+            local portal = Isaac.GridSpawn(GridEntityType.GRID_TRAPDOOR, 17, currentRoom:GetGridPosition(142), true)
+            portal.VarData = 1
 
-        portal:GetSprite():Load("gfx/grid/voidtrapdoor.anm2", true)
+            portal:GetSprite():Load("gfx/grid/voidtrapdoor.anm2", true)
+        end
 
         currentRoom:SetClear(true)
     end,

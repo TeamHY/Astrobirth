@@ -57,14 +57,26 @@ function Astro:AddGoldenTrinketDescription(id, appendText, numbersToMultiply, ma
     end
 
     if maxMultiplier and maxMultiplier > 4 then
-        EID.GoldenTrinketData[id].mults = {maxMultiplier, maxMultiplier}
+        EID.GoldenTrinketData[id].mults = { maxMultiplier, maxMultiplier }
     end
+end
+
+---@param list CollectibleType[]
+---@param target CollectibleType
+function Astro:ContainCollectible(list, target)
+    for _, value in ipairs(list) do
+        if value == target then
+            return true
+        end
+    end
+
+    return false
 end
 
 ---@param collectibles CollectibleType[]
 ---@param rng RNG
 ---@param count integer
----@param ignoreCollectible CollectibleType?
+---@param ignoreCollectible CollectibleType | CollectibleType[]?
 ---@param ignoreQuest boolean?
 function Astro:GetRandomCollectibles(collectibles, rng, count, ignoreCollectible, ignoreQuest)
     ---@type CollectibleType[]
@@ -74,21 +86,26 @@ function Astro:GetRandomCollectibles(collectibles, rng, count, ignoreCollectible
         local itemConfig = Isaac.GetItemConfig()
 
         for key, value in pairs(collectibles) do
-            if
-                value ~= ignoreCollectible and
-                    itemConfig:GetCollectible(value).Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST
-             then
+            local isIgnore = value == ignoreCollectible
+
+            if type(ignoreCollectible) == "table" then
+                isIgnore = Astro:ContainCollectible(ignoreCollectible, value)
+            end
+
+            if not isIgnore and itemConfig:GetCollectible(value).Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST then
                 table.insert(list, value)
             end
         end
     else
-        list = collectibles
+        for _, value in ipairs(collectibles) do
+            table.insert(list, value)
+        end
     end
 
     ---@type CollectibleType[]
     local result = {}
 
-    for i = 1, count do
+    for _ = 1, count do
         if #list == 0 then
             break
         end
@@ -177,13 +194,13 @@ function Astro:SpawnCollectible(collectibleType, position, optionsPickupIndex, i
 
     local pickup =
         Isaac.Spawn(
-        EntityType.ENTITY_PICKUP,
-        PickupVariant.PICKUP_COLLECTIBLE,
-        collectibleType,
-        currentRoom:FindFreePickupSpawnPosition(position, step, true),
-        Vector.Zero,
-        nil
-    ):ToPickup()
+            EntityType.ENTITY_PICKUP,
+            PickupVariant.PICKUP_COLLECTIBLE,
+            collectibleType,
+            currentRoom:FindFreePickupSpawnPosition(position, step, true),
+            Vector.Zero,
+            nil
+        ):ToPickup()
 
     if optionsPickupIndex then
         pickup.OptionsPickupIndex = optionsPickupIndex
@@ -234,14 +251,14 @@ function Astro:IsFirstAdded(collectibleType)
     end
 
     if count == 0 then
-        table.insert(Astro.Data.CollectibleCount, {id = collectibleType, count = 1})
+        table.insert(Astro.Data.CollectibleCount, { id = collectibleType, count = 1 })
         count = 1
     end
 
     return count == 1
 end
 
---- Retribution Mod
+--- Credit to Xalum(Retribution), _Kilburn and DeadInfinity
 function Astro:AddTears(baseFiredelay, tearsUp)
     local currentTears = 30 / (baseFiredelay + 1)
     local newTears = currentTears + tearsUp
@@ -250,8 +267,20 @@ function Astro:AddTears(baseFiredelay, tearsUp)
     return newFiredelay
 end
 
+---@param roomType RoomType
+function Astro:DisplayRoom(roomType)
+    local level = Game():GetLevel()
+    local idx = level:QueryRoomTypeIndex(roomType, false, RNG())
+    local room = level:GetRoomByIdx(idx)
+
+    if room.Data.Type == roomType then
+        room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
+        level:UpdateVisibility()
+    end
+end
+
 ---@param collectible CollectibleType
-function Astro:HasCollectibleAny(collectible)
+function Astro:CheckCollectible(collectible)
     for i = 1, Game():GetNumPlayers() do
         local player = Isaac.GetPlayer(i - 1)
     
@@ -261,4 +290,37 @@ function Astro:HasCollectibleAny(collectible)
     end
 
     return false
+end
+
+---@param collectible CollectibleType
+function Astro:CheckCollectibleNum(collectible)
+    local count = 0
+
+    for i = 1, Game():GetNumPlayers() do
+        local player = Isaac.GetPlayer(i - 1)
+    
+        if player:HasCollectible(collectible) then
+            count = count + 1
+        end
+    end
+
+    return count
+end
+
+---@param currentRoom Room
+function Astro:CheckFirstVisitFrame(currentRoom)
+    return currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit()
+end
+
+---@param list any[]
+---@param value any
+---@return integer
+function Astro:FindIndex(list, value)
+    for i, v in ipairs(list) do
+        if v == value then
+            return i
+        end
+    end
+
+    return -1
 end

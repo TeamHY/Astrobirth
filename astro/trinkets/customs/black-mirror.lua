@@ -33,7 +33,7 @@ Astro:AddCallbackCustom(
         if player:HasTrinket(Astro.Trinket.BLACK_MIRROR) then
             local itemConfigItem = Isaac.GetItemConfig():GetCollectible(collectibleType)
 
-            if itemConfigItem.Type == ItemType.ITEM_PASSIVE then
+            if itemConfigItem.Type ~= ItemType.ITEM_ACTIVE then
                 player:AddCollectible(collectibleType)
                 player:TryRemoveTrinket(Astro.Trinket.BLACK_MIRROR)
             end

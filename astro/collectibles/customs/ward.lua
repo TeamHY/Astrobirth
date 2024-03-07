@@ -1,9 +1,11 @@
 local isc = require("astro.lib.isaacscript-common")
 
 Astro.Collectible.WARD = Isaac.GetItemIdByName("Ward")
+Astro.Collectible.PINK_WARD = Isaac.GetItemIdByName("Pink Ward")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.WARD, "스테이지 중심 5x5의 방을 보여줍니다.", "와드")
+    Astro:AddEIDCollectible(Astro.Collectible.WARD, "와드", "...", "스테이지 중심 5x5의 방을 보여줍니다.")
+    Astro:AddEIDCollectible(Astro.Collectible.PINK_WARD, "핑크 와드", "...", "스테이지 중심 5x5의 방을 보여줍니다.#숨어 있는 적을 아군으로 만듭니다.")
 end
 
 local function DisplayWardRoom()
@@ -34,7 +36,7 @@ Astro:AddCallback(
         for i = 1, Game():GetNumPlayers() do
             local player = Isaac.GetPlayer(i - 1)
 
-            if player:HasCollectible(Astro.Collectible.WARD) then
+            if player:HasCollectible(Astro.Collectible.WARD) or player:HasCollectible(Astro.Collectible.PINK_WARD) then
                 DisplayWardRoom()
                 break
             end
@@ -47,9 +49,28 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        if Astro:IsFirstAdded(Astro.Collectible.WARD) then
+        if collectibleType == Astro.Collectible.WARD or collectibleType == Astro.Collectible.PINK_WARD then
             DisplayWardRoom()
         end
-    end,
-    Astro.Collectible.WARD
+    end
 )
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NPC_INIT,
+    ---@param entityNPC EntityNPC
+    function(_, entityNPC)
+        for i = 1, Game():GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
+        
+            if player:HasCollectible(Astro.Collectible.PINK_WARD) then
+                if entityNPC.Type == EntityType.ENTITY_NEEDLE or entityNPC.Type == EntityType.ENTITY_WIZOOB or entityNPC.Type == EntityType.ENTITY_RED_GHOST or entityNPC.Type == EntityType.ENTITY_POLTY then
+                    entityNPC:AddEntityFlags(EntityFlag.FLAG_CHARM)
+                    entityNPC:AddEntityFlags(EntityFlag.FLAG_FRIENDLY)
+                end
+            end
+
+            break
+        end
+    end
+)
+

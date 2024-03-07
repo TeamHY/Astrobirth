@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.LEO_EX = Isaac.GetItemIdByName("Leo EX")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.LEO_EX, "방 입장 시 모든 몬스터가 5초간 {{Freezing}}빙결 상태가 됩니다 ({{Trinket188}} 만럭 효과와 동일)#다음 게임 시작 시 {{Collectible302}}Leo를 가지고 시작합니다.", "초 사자자리")
+    Astro:AddEIDCollectible(Astro.Collectible.LEO_EX, "초 사자자리", "...", "방 입장 시 모든 몬스터가 5초간 {{Freezing}}빙결 상태가 됩니다 ({{Trinket188}} 만럭 효과와 동일)#다음 게임 시작 시 {{Collectible302}}Leo를 가지고 시작합니다.")
 end
 
 --- 지속 시간

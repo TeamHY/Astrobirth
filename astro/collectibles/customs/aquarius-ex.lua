@@ -1,7 +1,7 @@
 Astro.Collectible.AQUARIUS_EX = Isaac.GetItemIdByName("Aquarius EX")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.AQUARIUS_EX, "공격 당한 몬스터에서 눈물이 뿜어져 나옵니다.", "초 물병자리")
+    Astro:AddEIDCollectible(Astro.Collectible.AQUARIUS_EX, "초 물병자리", "...", "공격 당한 몬스터에서 눈물이 뿜어져 나옵니다.")
 end
 
 Astro:AddCallback(
@@ -22,7 +22,7 @@ Astro:AddCallback(
              then
                 entity:GetData().Aquarius = {
                     Source = player,
-                    Delay = 7 --몬스터에게 나오는 눈물 설정하는 곳
+                    Delay = math.floor(7 / player:GetCollectibleNum(Astro.Collectible.AQUARIUS_EX)) --몬스터에게 나오는 눈물 설정하는 곳
                 }
             end
         end

@@ -1,7 +1,7 @@
 Astro.Collectible.PLATINUM_BULLET = Isaac.GetItemIdByName("Platinum Bullet")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.PLATINUM_BULLET, "방을 클리어 할 때마다 공격력과 연사가 0.01씩 증가합니다.#해당 아이템은 연사 배수 아이템 상관없이 항상 고정적인 수치가 증가됩니다.", "백금 탄환")
+    Astro:AddEIDCollectible(Astro.Collectible.PLATINUM_BULLET, "백금 탄환", "...", "방을 클리어 할 때마다 공격력과 연사가 0.01씩 증가합니다.#해당 아이템은 연사 배수 아이템 상관없이 항상 고정적인 수치가 증가됩니다.#중첩 시 다음 증가량부터 적용됩니다.")
 end
 
 Astro:AddCallback(
@@ -34,7 +34,7 @@ Astro:AddCallback(
 
             if player:HasCollectible(Astro.Collectible.PLATINUM_BULLET) then
                 if not isRun then
-                    Astro.Data.PlatinumBulletStatus = Astro.Data.PlatinumBulletStatus + 0.01
+                    Astro.Data.PlatinumBulletStatus = Astro.Data.PlatinumBulletStatus + 0.01 * player:GetCollectibleNum(Astro.Collectible.PLATINUM_BULLET)
 
                     isRun = true
                 end

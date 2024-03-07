@@ -1,7 +1,7 @@
 Astro.Collectible.GALACTIC_MEDAL_OF_VALOR = Isaac.GetItemIdByName("Galactic Medal Of Valor")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.GALACTIC_MEDAL_OF_VALOR, "보스 몬스터 직접 공격 시 30% 추가 피해를 입힙니다.", "은하 용맹 훈장")
+    Astro:AddEIDCollectible(Astro.Collectible.GALACTIC_MEDAL_OF_VALOR, "은하 용맹 훈장", "...", "보스 몬스터 직접 공격 시 30% 추가 피해를 입힙니다.#중첩 시 추가 피해가 곱 연산으로 증가합니다.")
 end
 
 Astro:AddCallback(
@@ -16,7 +16,7 @@ Astro:AddCallback(
 
         if player ~= nil and player:HasCollectible(Astro.Collectible.GALACTIC_MEDAL_OF_VALOR) then
             if entity:IsBoss() and (source.Type == EntityType.ENTITY_TEAR or damageFlags & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or source.Type == EntityType.ENTITY_KNIFE) then
-                entity:TakeDamage(amount * 0.3, 0, EntityRef(player), 0)
+                entity:TakeDamage(amount * 0.3 ^ player:GetCollectibleNum(Astro.Collectible.GALACTIC_MEDAL_OF_VALOR), 0, EntityRef(player), 0)
             end
         end
     end

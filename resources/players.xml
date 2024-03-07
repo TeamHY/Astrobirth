@@ -5,11 +5,11 @@
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_Isaac.png" skinColor="-1"
 		  birthright="#ISAAC_BIRTHRIGHT" />
-	<player id="1" name="#MAGDALENE_NAME" skin="Character_002_Magdalene.png" costume="7" keys="1" bombs="2" hp="14" pocketActive="45" achievement="1"
+	<player id="1" name="#MAGDALENE_NAME" skin="Character_002_Magdalene.png" costume="7" keys="1" bombs="2" hp="8" pocketActive="45" achievement="1"
           nameimage="PlayerName_02_Magdalene.png"
           portrait="PlayerPortrait_Magdalene.png" skinColor="-1"
 		  birthright="#MAGDALENE_BIRTHRIGHT" />
-	<player id="2" name="#CAIN_NAME" skin="Character_003_Cain.png" costume="8" hp="4" keys="1" armor="1" bombs="2" items="46" pocketActive="102" achievement="2"
+	<player id="2" name="#CAIN_NAME" skin="Character_003_Cain.png" costume="8" hp="4" keys="1" armor="1" bombs="2" items="46,654" achievement="2"
           nameimage="PlayerName_03_Cain.png" 
           portrait="PlayerPortrait_Cain.png" skinColor="-1"
 		  birthright="#CAIN_BIRTHRIGHT" />
@@ -25,7 +25,7 @@
           nameimage="PlayerName_05_Eve.png" 
           portrait="PlayerPortrait_Eve.png" skinColor="-1"
 		  birthright="#EVE_BIRTHRIGHT" />
-	<player id="6" name="#SAMSON_NAME" skin="Character_007_Samson.png" costume="13" hp="6" keys="1" bombs="2" pocketActive="486" items="157,304,734" achievement="67"
+	<player id="6" name="#SAMSON_NAME" skin="Character_007_Samson.png" costume="13" hp="6" keys="1" bombs="2" items="157" achievement="67"
           nameimage="PlayerName_07_Samson.png" 
           portrait="PlayerPortrait_Samson.png" skinColor="-1"
 		  birthright="#SAMSON_BIRTHRIGHT" />
@@ -116,11 +116,11 @@
           portrait="PlayerPortrait_TheForgotten.png" skinColor="2" costumeSuffix="forgottensoul"
 		  birthright="#THE_SOUL_BIRTHRIGHT" />
 <!-- REPENTANCE BEGIN -->
-	<player id="18" name="#BETHANY_NAME" skin="Character_001x_Bethany.png" costume="51" keys="1" bombs="2" items="601,535,390" pocketActive="580" hp="8" armor="4" achievement="404"
+	<player id="18" name="#BETHANY_NAME" skin="Character_001x_Bethany.png" costume="51" keys="1" bombs="2" items="601,390" pocketActive="580" hp="8" armor="4" achievement="404"
           nameimage="PlayerName_01x_Bethany.png" 
           portrait="PlayerPortrait_Bethany.png" skinColor="-1"
 		  birthright="#BETHANY_BIRTHRIGHT" />
-	<player id="19" name="#JACOB_NAME" skin="Character_002x_Jacob.png" costume="52" hp="6" keys="1" bombs="2" achievement="405"
+	<player id="19" name="#JACOB_NAME" skin="Character_002x_Jacob.png" costume="52" hp="6" keys="1" items="249" bombs="2" achievement="405"
           nameimage="PlayerName_02x_Jacob_Esau.png" 
           portrait="PlayerPortrait_Jacob.png" skinColor="-1"
 		  birthright="#JACOB_BIRTHRIGHT" />

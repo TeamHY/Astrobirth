@@ -40,7 +40,7 @@ Astro:AddCallback(
     function(_, player, cacheFlag)
         if cacheFlag == CacheFlag.CACHE_DAMAGE then
             if player:HasCollectible(CollectibleType.COLLECTIBLE_BLOOD_OATH) then
-                player.Damage = player.Damage + 1.8 - (player:GetHearts() + player:GetSoulHearts()) * 0.09
+                player.Damage = player.Damage + (1.8 ^ player:GetCollectibleNum(CollectibleType.COLLECTIBLE_BLOOD_OATH)) - (player:GetHearts() + player:GetSoulHearts()) * 0.09
             end
         end
     end

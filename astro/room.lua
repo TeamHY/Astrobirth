@@ -40,7 +40,32 @@ Astro:AddCallback(
                 CollectibleType.COLLECTIBLE_GUPPYS_HEAD,
                 CollectibleType.COLLECTIBLE_GUPPYS_HAIRBALL,
                 CollectibleType.COLLECTIBLE_GUPPYS_COLLAR,
-                CollectibleType.COLLECTIBLE_GUPPYS_EYE
+                CollectibleType.COLLECTIBLE_GUPPYS_EYE,
+                --파리셋
+                CollectibleType.COLLECTIBLE_SKATOLE,
+                CollectibleType.COLLECTIBLE_HALO_OF_FLIES,
+                CollectibleType.COLLECTIBLE_DISTANT_ADMIRATION,
+                CollectibleType.COLLECTIBLE_FOREVER_ALONE,
+                CollectibleType.COLLECTIBLE_MULLIGAN,
+                CollectibleType.COLLECTIBLE_HIVE_MIND,
+                CollectibleType.COLLECTIBLE_SMART_FLY,
+                CollectibleType.COLLECTIBLE_BBF,
+                CollectibleType.COLLECTIBLE_BEST_BUD,
+                CollectibleType.COLLECTIBLE_BIG_FAN,
+                CollectibleType.COLLECTIBLE_BLUE_BABYS_ONLY_FRIEND,
+                CollectibleType.COLLECTIBLE_FRIEND_ZONE,
+                CollectibleType.COLLECTIBLE_LOST_FLY,
+                CollectibleType.COLLECTIBLE_OBSESSED_FAN,
+                CollectibleType.COLLECTIBLE_PAPA_FLY,
+                CollectibleType.COLLECTIBLE_JAR_OF_FLIES,
+                CollectibleType.COLLECTIBLE_PARASITOID,
+                CollectibleType.COLLECTIBLE_YO_LISTEN,
+                CollectibleType.COLLECTIBLE_ANGRY_FLY,
+                CollectibleType.COLLECTIBLE_PSY_FLY,
+                CollectibleType.COLLECTIBLE_BOT_FLY,
+                CollectibleType.COLLECTIBLE_FRUITY_PLUM,
+                CollectibleType.COLLECTIBLE_PLUM_FLUTE,
+                CollectibleType.COLLECTIBLE_SWARM
             }
 
             -- 더러운 침대방(클로버룸)
@@ -62,7 +87,18 @@ Astro:AddCallback(
                 CollectibleType.COLLECTIBLE_EVIL_CHARM,
                 CollectibleType.COLLECTIBLE_GLASS_EYE,
                 Astro.Collectible.CLOVER,
-                CollectibleType.COLLECTIBLE_DADS_LOST_COIN
+                CollectibleType.COLLECTIBLE_DADS_LOST_COIN,
+                Astro.Collectible.FORTUNE_COIN,
+                Astro.Collectible.PIRATE_MAP,
+                Astro.Collectible.DIVINE_LIGHT,
+                Astro.Collectible.BLOOD_OF_HATRED,
+                Astro.Collectible.ACUTE_SINUSITIS
+            }
+
+            -- 아케이드방
+            Astro.Data.ArcadePool = {
+                CollectibleType.COLLECTIBLE_DINNER,
+                Astro.Collectible.FORTUNE_COIN,
             }
         end
     end
@@ -72,6 +108,7 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
     function(_)
         local level = Game():GetLevel()
+        local stage = level:GetAbsoluteStage()
         local currentRoom = level:GetCurrentRoom()
         local currentRoomDesc = level:GetRoomByIdx(level:GetCurrentRoomIndex())
 
@@ -102,21 +139,20 @@ Astro:AddCallback(
                         entities[i]:Kill()
                     end
                 end
-            elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 55 then -- Mega Satan
+            elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 55 and Isaac.GetChallenge() ~= Astro.Challenge.LIBRA_EX then -- Mega Satan
                 Isaac.Spawn(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_COLLECTIBLE,
                     Astro.Collectible.GREED,
-                    currentRoom:GetTopLeftPos() - Vector(-80, -80),
+                    currentRoom:GetGridPosition(91),
                     Vector.Zero,
                     nil
                 )
-            elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 70 then -- Delirium
                 Isaac.Spawn(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_COLLECTIBLE,
                     Astro.Collectible.GO_HOME,
-                    currentRoom:GetTopLeftPos() - Vector(20, 20),
+                    currentRoom:GetGridPosition(103),
                     Vector.Zero,
                     nil
                 )
@@ -160,6 +196,35 @@ Astro:AddCallback(
 
                     Astro:SpawnCollectible(collectables[1], currentRoom:GetGridPosition(81 + i * 2), 1, true)
                 end
+            elseif roomType == RoomType.ROOM_ARCADE then
+                -- TODO: RNG 교체해야 함
+                local rng = Isaac.GetPlayer():GetCollectibleRNG(CollectibleType.COLLECTIBLE_INNER_EYE)
+
+                for i = 0, 1 do
+                    local collectables = Astro:GetRandomCollectibles(Astro.Data.ArcadePool, rng, 1)
+
+                    if collectables[1] == nil then
+                        collectables[1] = CollectibleType.COLLECTIBLE_BREAKFAST
+                    else
+                        for index, value in ipairs(Astro.Data.ArcadePool) do
+                            if value == collectables[1] then
+                                table.remove(Astro.Data.ArcadePool, index)
+                                break
+                            end
+                        end
+                    end
+
+                    Astro:SpawnCollectible(collectables[1], currentRoom:GetGridPosition(66 + i * 2), 1, true)
+                end
+            elseif roomType == RoomType.ROOM_SHOP and stage <= LevelStage.STAGE2_1 then
+                Isaac.Spawn(
+                    EntityType.ENTITY_SLOT,
+                    10,
+                    0,
+                    currentRoom:GetCenterPos(),
+                    Vector.Zero,
+                    nil
+                )
             elseif currentRoomDesc.Data.Name == "Mom" and currentRoomDesc.Data.Subtype == 89 then
                 Isaac.Spawn(
                     EntityType.ENTITY_PICKUP,
@@ -182,14 +247,42 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_NPC_INIT,
     ---@param entityNPC EntityNPC
     function(_, entityNPC)
+        local currentRoom = Game():GetLevel():GetCurrentRoom()
+        local roomType = currentRoom:GetType()
+
         if entityNPC.Type == EntityType.ENTITY_DOGMA and entityNPC.Variant == 1 then
-            local currentRoom = Game():GetLevel():GetCurrentRoom()
             local rng = entityNPC:GetDropRNG()
 
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, 0, 0, currentRoom:GetGridPosition(106), Vector.Zero, nil)                    -- Death's Head
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, rng:RandomInt(2) * 2, 0, currentRoom:GetGridPosition(118), Vector.Zero, nil) -- Death's Head or Cursed Death's Head
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, rng:RandomInt(2) * 2, 0, currentRoom:GetGridPosition(121), Vector.Zero, nil)
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, 0, 0, currentRoom:GetGridPosition(133), Vector.Zero, nil)
+        elseif entityNPC.Type == EntityType.ENTITY_SPIDER then
+            if roomType == RoomType.ROOM_SECRET or roomType == RoomType.ROOM_SUPERSECRET or roomType == RoomType.ROOM_ARCADE then
+                entityNPC:Remove()
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_ENTITY_TAKE_DMG,
+    ---@param entity Entity
+    ---@param amount number
+    ---@param damageFlags number
+    ---@param source EntityRef
+    ---@param countdownFrames number
+    function(_, entity, amount, damageFlags, source, countdownFrames)
+        local player = entity:ToPlayer()
+
+        if player ~= nil then
+            if damageFlags & (DamageFlag.DAMAGE_NO_PENALTIES | DamageFlag.DAMAGE_RED_HEARTS) == 0 then
+                local currentRoomDesc = Game():GetLevel():GetCurrentRoomDesc()
+
+                if currentRoomDesc.Data.Name == "Beast Room" then
+                    Astro.Data.DamoclesKill = true
+                end
+            end
         end
     end
 )

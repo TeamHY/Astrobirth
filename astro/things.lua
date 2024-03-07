@@ -73,7 +73,9 @@ function Astro:AutoWasting(player)
 		WasteCard(player, Card.CARD_REVERSE_MAGICIAN, 0)
 	elseif player:GetCard(0) == Card.RUNE_BERKANO then
 		WasteCard(player, Card.RUNE_BERKANO, 0)
-	elseif player:GetCard(0) == Card.CARD_HOLY and player:GetPlayerType() == PlayerType.PLAYER_JUDAS then
+	elseif player:GetCard(0) == Astro.Card.ETERNITY then
+		WasteCard(player, Astro.Card.ETERNITY, 0)
+	elseif player:GetCard(0) == Card.CARD_HOLY and player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
 		player:SetCard(0, 0) -- 획득 시 삭제
 	else
 		local pillColor = player:GetPill(0)
