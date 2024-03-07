@@ -61,6 +61,8 @@
 		<Item Name="Power Rock Bottom" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rapid Rock Bottom" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Lucky Rock Bottom" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Firecracker Flower" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -105,6 +107,8 @@
 		<Item Name="Rhongomyniad" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amplifying Mind" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Firecracker Flower" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -149,6 +153,8 @@
 		<Item Name="Rhongomyniad" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amplifying Mind" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Firecracker Flower" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="curse">
@@ -191,6 +197,8 @@
 		<Item Name="Rhongomyniad" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amplifying Mind" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Firecracker Flower" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -238,6 +246,8 @@
 		<Item Name="Rhongomyniad" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amplifying Mind" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Firecracker Flower" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="angel">
@@ -284,6 +294,8 @@
 		<Item Name="Rhongomyniad" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amplifying Mind" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Firecracker Flower" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -355,6 +367,9 @@
 		<Item Name="Rapid Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Lucky Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 
+		<Item Name="Firecracker Flower" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
+
 
 
 	</Pool>
@@ -425,6 +440,9 @@
 		<Item Name="Power Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rapid Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Lucky Rock Bottom" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Firecracker Flower" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
