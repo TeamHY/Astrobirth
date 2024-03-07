@@ -249,3 +249,16 @@ function Astro:AddTears(baseFiredelay, tearsUp)
 
     return newFiredelay
 end
+
+---@param collectible CollectibleType
+function Astro:HasCollectibleAny(collectible)
+    for i = 1, Game():GetNumPlayers() do
+        local player = Isaac.GetPlayer(i - 1)
+    
+        if player:HasCollectible(collectible) then
+            return true
+        end
+    end
+
+    return false
+end
