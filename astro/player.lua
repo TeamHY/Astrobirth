@@ -1,3 +1,5 @@
+local hiddenItemManager = require("astro.lib.hidden_item_manager")
+
 Astro.Players = {
     LEAH = Isaac.GetPlayerTypeByName("Leah"),
     DIABELLSTAR = Isaac.GetPlayerTypeByName("Diabellstar"),
@@ -221,7 +223,7 @@ local startItem = {
     },
     [PlayerType.PLAYER_KEEPER] = {
         collectible = {
-                CollectibleType.COLLECTIBLE_DEEP_POCKETS,
+            CollectibleType.COLLECTIBLE_DEEP_POCKETS,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
@@ -691,6 +693,8 @@ Astro:AddCallback(
                     player:RemoveCollectible(CollectibleType.COLLECTIBLE_D6)
                 elseif playerType == PlayerType.PLAYER_EVE then
                     player:RemoveCollectible(CollectibleType.COLLECTIBLE_RAZOR_BLADE)
+                elseif playerType == Astro.Players.DIABELLSTAR then
+                    player:AddCollectible(Astro.Collectible.SNAKE_EYE)
                 end
             end
         end
@@ -698,11 +702,44 @@ Astro:AddCallback(
 )
 
 Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    function(_, isContinued)
+        local player = Isaac.GetPlayer()
+
+        if not isContinued then
+            hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_MORE_OPTIONS)
+
+            if
+                player:GetPlayerType() == PlayerType.PLAYER_CAIN_B or player:GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN_B or
+                player:GetPlayerType() == PlayerType.PLAYER_THESOUL_B or
+                player:GetPlayerType() == PlayerType.PLAYER_LAZARUS_B or
+                player:GetPlayerType() == PlayerType.PLAYER_BLUEBABY_B
+            then
+                hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_BIRTHRIGHT)
+            end
+        end
+
+        local itemConfig = Isaac.GetItemConfig()
+        local itemConfigItem = itemConfig:GetCollectible(CollectibleType.COLLECTIBLE_MORE_OPTIONS)
+
+        player:RemoveCostume(itemConfigItem)
+    end
+)
+
+Astro:AddCallback(
     ModCallbacks.MC_POST_PLAYER_UPDATE,
     ---@param player EntityPlayer
     function(_, player)
-        if player:GetPlayerType() == Astro.Players.DIABELLSTAR and not player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR) then
-            player:GetEffects():AddNullEffect(DIABELLSTAR_HAIR, true)
+        if player:GetPlayerType() == Astro.Players.DIABELLSTAR then
+            if not player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR) then
+                player:GetEffects():AddNullEffect(DIABELLSTAR_HAIR, true)
+                hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
+            end
+        else
+            if player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR) then
+                player:GetEffects():RemoveNullEffect(DIABELLSTAR_HAIR)
+                hiddenItemManager:Remove(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
+            end
         end
     end
 )
