@@ -24,7 +24,16 @@ Astro:AddCallback(
                 )
             end
 
-            familiar.SubType = subType
+            familiar:Remove()
+
+            Isaac.Spawn(
+                    EntityType.ENTITY_FAMILIAR,
+                    FamiliarVariant.BLUE_FLY,
+                    subType,
+                    familiar.Position,
+                    Vector.Zero,
+                    familiar.SpawnerEntity
+                )
         end
     end
 )
