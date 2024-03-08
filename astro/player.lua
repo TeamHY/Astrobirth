@@ -733,12 +733,12 @@ Astro:AddCallback(
         if player:GetPlayerType() == Astro.Players.DIABELLSTAR then
             if not player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR) then
                 player:GetEffects():AddNullEffect(DIABELLSTAR_HAIR, true)
-                hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
+                -- hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
             end
         else
             if player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR) then
                 player:GetEffects():RemoveNullEffect(DIABELLSTAR_HAIR)
-                hiddenItemManager:Remove(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
+                -- hiddenItemManager:Remove(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
             end
         end
     end
