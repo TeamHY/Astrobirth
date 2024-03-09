@@ -17,8 +17,8 @@ if EID then
 end
 
 -- 눈물 발사 시 효과 발동 확률
-local CHUBBY_SET_CHANCE = 0.5
-local CHUBBY_SET_BIG_CHUBBY_CHANCE = 0.25
+local CHUBBY_SET_CHANCE = 0.25
+local CHUBBY_SET_BIG_CHUBBY_CHANCE = 0.15
 
 -- 처비의 머리
 local CHUBBYS_HEAD_DAMAGE = 3.5
