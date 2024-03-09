@@ -80,7 +80,6 @@ local banItem = {
             TrinketType.TRINKET_FOUND_SOUL,
             TrinketType.TRINKET_MYOSOTIS,
             TrinketType.TRINKET_HOLLOW_HEART,
-            Astro.Trinket.PLANETARIUM_CROWN,
         },
         card = {
             Card.CARD_REVERSE_HIGH_PRIESTESS,
