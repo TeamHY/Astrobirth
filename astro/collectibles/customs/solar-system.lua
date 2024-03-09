@@ -50,6 +50,7 @@ Astro:AddCallbackCustom(
                 Astro.Collectible.VEGA,
                 Astro.Collectible.LANIAKEA_SUPERCLUSTER,
                 Astro.Collectible.SAGITTARIUS_EX,
+                Astro.Collectible.SOLAR_SYSTEM,
             }
 
             local count = 0
