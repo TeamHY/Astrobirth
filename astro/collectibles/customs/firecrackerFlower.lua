@@ -80,7 +80,7 @@ local function AddCrackered(npc, player)
     CrackerSeedSprites[colliderPtr] = seedSprite
 
     crackeredEnemies[colliderPtr] = {
-        timer = 30 * 4,
+        timer = 30 * 2,
         source = isc:getPlayerIndex(player)
     }
 end
@@ -123,7 +123,7 @@ local function OnTearInit(_, tear)
 
     local rng = player:GetCollectibleRNG(Astro.Collectible.FIRECRACKER_FLOWER)
     local randomChance = isc:getRandomFloat(0, 1, rng)
-    local luckThershold = isc:clamp(0.10 + 0.02 * player.Luck, 0.05, 0.3)
+    local luckThershold = isc:clamp(0.10 + 0.02 * player.Luck, 0.05, 0.3) --[눈물 확률 건드는 부분]
     if randomChance >= luckThershold then return end
 
     MakeTearFirecrackerSeed(tear)
