@@ -2,7 +2,23 @@ local isc = require("astro.lib.isaacscript-common")
 
 Astro.Collectible.FIRECRACKER_FLOWER = Isaac.GetItemIdByName("Firecracker Flower")
 
-Astro:AddEIDCollectible(Astro.Collectible.FIRECRACKER_FLOWER, "폭죽 꽃", "...", "{{Burning}} 30%의 확률로 적에게 달라붙는 씨앗 공격이 나갑니다.#{{LuckSmall}} 행운 20+ 이상일 때 50% 확률#적에게 달라붙은 씨앗은 4초 후 공격력 x6 +35의 폭발 피해를 줍니다. (자해 없음)")
+Astro:AddEIDCollectible(Astro.Collectible.FIRECRACKER_FLOWER, "폭죽 꽃", "...", "{{Burning}} 30%의 확률로 적에게 달라붙는 씨앗 공격이 나갑니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)#적에게 달라붙은 씨앗은 2초 후 공격력 x6 +35의 폭발 피해를 줍니다. (자해 없음)")
+
+local tearChance = 0.3
+
+local tearLuckMultiplier = 1 / 100
+
+local laserChance = 0.1
+
+local laserLuckMultiplier = 1 / 100
+
+local knifeChance = 0.05
+
+local knifeLuckMultiplier = 1 / 100
+
+local swingChance = 0.15
+
+local swingLuckMultiplier = 1 / 100
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
@@ -122,9 +138,7 @@ local function OnTearInit(_, tear)
     if not player:HasCollectible(Astro.Collectible.FIRECRACKER_FLOWER) then return end
 
     local rng = player:GetCollectibleRNG(Astro.Collectible.FIRECRACKER_FLOWER)
-    local randomChance = isc:getRandomFloat(0, 1, rng)
-    local luckThershold = isc:clamp(0.10 + 0.02 * player.Luck, 0.05, 0.3) --[눈물 확률 건드는 부분]
-    if randomChance >= luckThershold then return end
+    if rng:RandomFloat() >= tearChance + player.Luck * tearLuckMultiplier then return end
 
     MakeTearFirecrackerSeed(tear)
 end
@@ -322,11 +336,7 @@ function CheckForFirecrackerLaser(npc, source)
     if not player:HasCollectible(Astro.Collectible.FIRECRACKER_FLOWER) then return end
 
     local rng = player:GetCollectibleRNG(Astro.Collectible.FIRECRACKER_FLOWER)
-
-    local randomChance = isc:getRandomFloat(0, 1, rng)
-    local luckThershold = isc:clamp(0.10 + 0.02 * player.Luck, 0.05, 0.3)
-
-    if randomChance >= luckThershold then return end
+    if rng:RandomFloat() >= laserChance + player.Luck * laserLuckMultiplier then return end
 
     AddCrackered(npc, player)
 end
@@ -342,11 +352,7 @@ function CheckForFirecrackerKnife(npc, source)
     if not player:HasCollectible(Astro.Collectible.FIRECRACKER_FLOWER) then return end
 
     local rng = player:GetCollectibleRNG(Astro.Collectible.FIRECRACKER_FLOWER)
-
-    local randomChance = isc:getRandomFloat(0, 1, rng)
-    local luckThershold = isc:clamp(0.05 + 0.01 * player.Luck, 0.01, 0.2)
-
-    if randomChance >= luckThershold then return end
+    if rng:RandomFloat() >= knifeChance + player.Luck * knifeLuckMultiplier then return end
 
     AddCrackered(npc, player)
 end
@@ -380,9 +386,7 @@ local function OnBoneSwing(_, bone)
     if not player:HasCollectible(Astro.Collectible.FIRECRACKER_FLOWER) then return end
 
     local rng = player:GetCollectibleRNG(Astro.Collectible.FIRECRACKER_FLOWER)
-    local randomChance = isc:getRandomFloat(0, 1, rng)
-    local luckThershold = isc:clamp(0.15 + 0.025 * player.Luck, 0.05, 0.4)
-    if randomChance >= luckThershold then return end
+    if rng:RandomFloat() >= swingChance + player.Luck * swingLuckMultiplier then return end
 
     local tearVelocity = isc:directionToVector(player:GetFireDirection())
     tearVelocity = tearVelocity * 7 * player.ShotSpeed
