@@ -1,3 +1,5 @@
+local isc = require("astro.lib.isaacscript-common")
+
 local soundId = Isaac.GetSoundIdByName("Epic")
 
 -- 투명도 설정
@@ -265,7 +267,7 @@ Astro:AddCallback(
         if pickup.Variant == PickupVariant.PICKUP_COLLECTIBLE then
             local roomType = Game():GetLevel():GetCurrentRoom():GetType()
 
-            if Astro.Data.Epics then
+            if Astro.Data.Epics and Game():GetLevel():GetCurses() & LevelCurse.CURSE_OF_BLIND == 0 then
                 local index = Astro:FindIndex(Astro.Data.Epics.common, pickup.SubType)
                 local targetList = Astro.Data.Epics.common
 
@@ -275,19 +277,38 @@ Astro:AddCallback(
                 end
 
                 if index ~= -1 then
-                    local sprite = Sprite()
-                    sprite:Load("gfx/effects/epic.anm2", true)
-                    sprite.Color = Color(1, 1, 1, alpha, 0, 0, 0)
-                    sprite:Play("Play", true)
-
-                    local frameCount = Game():GetFrameCount()
-                    table.insert(targets, { pickup = pickup, sprite = sprite, prevFrame = frameCount, endFrame = frameCount + duration })
-
-                    SFXManager():Play(soundId, volume)
-
+                pickup:GetData().ShowEpic = true
                     table.remove(targetList, index)
                 end
             end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_PICKUP_RENDER,
+    ---@param pickup EntityPickup
+    ---@param renderOffset Vector
+    function(_, pickup, renderOffset)
+        local data = pickup:GetData()
+
+        if data.ShowEpic then
+            local roomType = Game():GetLevel():GetCurrentRoom():GetType()
+            local stageType = Game():GetLevel():GetStageType()
+
+            if not (roomType == RoomType.ROOM_TREASURE and (stageType == StageType.STAGETYPE_REPENTANCE or stageType == StageType.STAGETYPE_REPENTANCE_B) and isc:isBlindCollectible(pickup)) then
+                local sprite = Sprite()
+                sprite:Load("gfx/effects/epic.anm2", true)
+                sprite.Color = Color(1, 1, 1, alpha, 0, 0, 0)
+                sprite:Play("Play", true)
+
+                local frameCount = Game():GetFrameCount()
+                table.insert(targets, { pickup = pickup, sprite = sprite, prevFrame = frameCount, endFrame = frameCount + duration })
+
+                SFXManager():Play(soundId, volume)
+            end
+
+            data.ShowEpic = false
         end
     end
 )
