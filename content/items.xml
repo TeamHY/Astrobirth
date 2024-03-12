@@ -87,6 +87,6 @@
 	<trinket gfx="Lava Hand.png" name="Lava Hand" />
 	<trinket gfx="Nostalgia.png" name="Nostalgia" />
 	<trinket gfx="Doctrine.png" name="Doctrine" />
-	<trinket gfx="Mosi's Eyes.png" name="Mosi's Eyes" />
+	<trinket tags="luck" gfx="Mosi's Eyes.png" name="Mosi's Eyes" />
 	<trinket gfx="Planetarium Crown.png" name="Planetarium Crown" />
 </items>

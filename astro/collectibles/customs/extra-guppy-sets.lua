@@ -11,9 +11,9 @@ Astro:AddCallback(
     ---@param familiar EntityFamiliar
     function(_, familiar)
         if familiar.Variant == FamiliarVariant.BLUE_FLY and familiar.SubType == 0 then
-            local subType = Astro:CheckCollectible(Astro.Collectible.DELIRIUM_GUPPY) and 5 or ABSOLUT_GUPPY_SUBTYPE
+            local subType = Astro:HasCollectible(Astro.Collectible.DELIRIUM_GUPPY) and 5 or ABSOLUT_GUPPY_SUBTYPE
 
-            if Astro:CheckCollectible(Astro.Collectible.ABSOLUT_GUPPY) then
+            if Astro:HasCollectible(Astro.Collectible.ABSOLUT_GUPPY) then
                 Isaac.Spawn(
                     EntityType.ENTITY_FAMILIAR,
                     FamiliarVariant.BLUE_FLY,

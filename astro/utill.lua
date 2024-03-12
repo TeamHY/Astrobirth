@@ -280,10 +280,10 @@ function Astro:DisplayRoom(roomType)
 end
 
 ---@param collectible CollectibleType
-function Astro:CheckCollectible(collectible)
+function Astro:HasCollectible(collectible)
     for i = 1, Game():GetNumPlayers() do
         local player = Isaac.GetPlayer(i - 1)
-    
+
         if player:HasCollectible(collectible) then
             return true
         end
@@ -293,18 +293,31 @@ function Astro:CheckCollectible(collectible)
 end
 
 ---@param collectible CollectibleType
-function Astro:CheckCollectibleNum(collectible)
+function Astro:GetCollectibleNum(collectible)
     local count = 0
 
     for i = 1, Game():GetNumPlayers() do
         local player = Isaac.GetPlayer(i - 1)
-    
+
         if player:HasCollectible(collectible) then
             count = count + 1
         end
     end
 
     return count
+end
+
+---@param trinket TrinketType
+function Astro:HasTrinket(trinket)
+    for i = 1, Game():GetNumPlayers() do
+        local player = Isaac.GetPlayer(i - 1)
+
+        if player:HasTrinket(trinket) then
+            return true
+        end
+    end
+
+    return false
 end
 
 ---@param currentRoom Room
@@ -323,4 +336,19 @@ function Astro:FindIndex(list, value)
     end
 
     return -1
+end
+
+function Astro:ConvertRoomIndexToPosition(index)
+    local x = index % 13
+    local y = math.floor(index / 13)
+
+    return Vector(x, y)
+end
+
+function Astro:ConvertRoomPositionToIndex(position)
+    if position.X < 0 or position.X > 12 or position.Y < 0 or position.Y > 12 then
+        return -1
+    end
+
+    return position.Y * 13 + position.X
 end

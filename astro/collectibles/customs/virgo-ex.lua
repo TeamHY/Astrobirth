@@ -33,7 +33,7 @@ Astro:AddCallback(
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_LEVEL,
     function(_)
-        if Astro:CheckCollectible(Astro.Collectible.VIRGO_EX) then
+        if Astro:HasCollectible(Astro.Collectible.VIRGO_EX) then
             Astro:DisplayRoom(RoomType.ROOM_PLANETARIUM)
         end
     end
