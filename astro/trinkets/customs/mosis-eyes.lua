@@ -81,7 +81,6 @@ Astro:AddCallbackCustom(
         if pickingUpItem.itemType == ItemType.ITEM_TRINKET and pickingUpItem.subType == Astro.Trinket.MOSIS_EYES then
             DisplayNeighborRoom()
             TryRemoveBlind()
-            print("asd")
         end
     end
 )
@@ -90,18 +89,33 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_PICKUP_INIT,
     ---@param pickup EntityPickup
     function(_, pickup)
-        if Astro:HasCollectible(Astro.Trinket.MOSIS_EYES) then
+        if Astro:HasTrinket(Astro.Trinket.MOSIS_EYES) then
             if pickup.Variant == PickupVariant.PICKUP_COLLECTIBLE then
                 local game = Game()
                 local roomType = game:GetRoom():GetType()
                 local stageType = game:GetLevel():GetStageType()
 
                 if roomType == RoomType.ROOM_TREASURE and stageType == StageType.STAGETYPE_REPENTANCE or stageType == StageType.STAGETYPE_REPENTANCE_B then
-                    local sprite = pickup:GetSprite()
-                    sprite:ReplaceSpritesheet(1, Isaac.GetItemConfig():GetCollectible(pickup.SubType).GfxFileName)
-                    sprite:LoadGraphics()
+                    pickup:GetData().ShowBlind = true
                 end
             end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_PICKUP_RENDER,
+    ---@param pickup EntityPickup
+    ---@param renderOffset Vector
+    function(_, pickup, renderOffset)
+        local data = pickup:GetData()
+
+        if data.ShowBlind then
+            local sprite = pickup:GetSprite()
+            sprite:ReplaceSpritesheet(1, Isaac.GetItemConfig():GetCollectible(pickup.SubType).GfxFileName)
+            sprite:LoadGraphics()
+
+            data.ShowBlind = false
         end
     end
 )
