@@ -67,6 +67,7 @@ local banItem = {
             CollectibleType.COLLECTIBLE_GREEDS_GULLET,
             CollectibleType.COLLECTIBLE_BIRDS_EYE,
             CollectibleType.COLLECTIBLE_GODS_FLESH,
+            CollectibleType.COLLECTIBLE_NEPTUNUS,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
