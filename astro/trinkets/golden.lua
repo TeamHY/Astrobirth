@@ -151,7 +151,7 @@ if EID then
             elseif descObj.ObjSubType == TrinketType.TRINKET_SIGIL_OF_BAPHOMET then
                 EID:appendToDescription(
                     descObj,
-                    "#{{ColorGold}}클리어 되지않은 방 입장 시 30% 확률로 {{Collectible58}}Book of Shadows 효과를 발동합니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)"
+                    "#{{ColorGold}}클리어 되지않은 방 입장 시 10% 확률로 {{Collectible58}}Book of Shadows 효과를 발동합니다.#!!! {{ColorGold}}{{LuckSmall}}행운 수치 비례: 행운 90 이상일 때 100% 확률 (행운 1당 +1%p)"
                 )
             elseif descObj.ObjSubType == TrinketType.TRINKET_BLACK_FEATHER then
                 EID:appendToDescription(descObj, "#{{ColorGold}}{{DevilRoom}}악마방 입장 시 공격력 +2 증가합니다.")
@@ -780,7 +780,7 @@ Astro:AddCallback(
                 if not currentRoom:IsClear() then
                     local rng = player:GetTrinketRNG(TrinketType.TRINKET_SIGIL_OF_BAPHOMET)
 
-                    if rng:RandomFloat() < 0.3 + player.Luck / 100 then
+                    if rng:RandomFloat() < 0.1 + player.Luck / 100 then
                         player:UseActiveItem(CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS, false)
                     end
                 end
