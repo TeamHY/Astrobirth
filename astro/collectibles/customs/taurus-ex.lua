@@ -94,7 +94,7 @@ Astro:AddCallback(
                         end
                     end
                 elseif cacheFlag == CacheFlag.CACHE_FIREDELAY and data.Taurus.Key == 3 then
-                    player.MaxFireDelay = player.MaxFireDelay - 2 * player:GetCollectibleNum(Astro.Collectible.TAURUS_EX)
+                    player.MaxFireDelay = Astro:AddTears(player.MaxFireDelay, 2 * player:GetCollectibleNum(Astro.Collectible.TAURUS_EX))
                 end
             end
         end
