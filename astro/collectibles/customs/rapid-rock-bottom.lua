@@ -35,11 +35,11 @@ Astro:AddPriorityCallback(
                 local data = Astro:GetPersistentPlayerData(player)
 
                 if data then
-                    if player.FireDelay > (data.peakFireDelay or -10000) then
-                        data.peakFireDelay = player.FireDelay
+                    if player.MaxFireDelay < (data.peakFireDelay or 10000) then
+                        data.peakFireDelay = player.MaxFireDelay
                     end
 
-                    player.FireDelay = data.peakFireDelay
+                    player.MaxFireDelay = data.peakFireDelay
                 end
             end
         end
