@@ -267,7 +267,7 @@ Astro:AddCallback(
         if pickup.Variant == PickupVariant.PICKUP_COLLECTIBLE then
             local roomType = Game():GetLevel():GetCurrentRoom():GetType()
 
-            if Astro.Data.Epics and Game():GetLevel():GetCurses() & LevelCurse.CURSE_OF_BLIND == 0 then
+            if Astro.Data.Epics and Game():GetLevel():GetCurses() & LevelCurse.CURSE_OF_BLIND == 0 and not Astro:IsDeathCertificateRoom() then
                 local index = Astro:FindIndex(Astro.Data.Epics.common, pickup.SubType)
                 local targetList = Astro.Data.Epics.common
 

@@ -352,3 +352,14 @@ function Astro:ConvertRoomPositionToIndex(position)
 
     return position.Y * 13 + position.X
 end
+
+function Astro:IsDeathCertificateRoom()
+    local level = Game():GetLevel()
+    local roomName = level:GetCurrentRoomDesc().Data.Name
+    
+    if roomName == "Death Certificate" then
+        return true
+    end
+
+    return false
+end
