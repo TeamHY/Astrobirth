@@ -53,3 +53,14 @@ Astro:AddCallback(
         end
     end
 )
+
+-- For Card Reading, replace boss portal to random portal
+Astro:AddCallback(
+    ModCallbacks.MC_PRE_ENTITY_SPAWN,
+    ---@param type EntityType
+    function(_, type, variant, subtype)
+        if (type == EntityType.ENTITY_EFFECT and variant == EffectVariant.PORTAL_TELEPORT and subtype == 1) then
+            return {type, variant, 3, seed}
+        end
+    end
+)
