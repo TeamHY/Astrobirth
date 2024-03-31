@@ -16,7 +16,10 @@ if EID then
     Astro:AddEIDCollectible(Astro.Collectible.CHUBBYS_TAIL, "처비의 꼬리", "...", "{{Chest}} 갈색 상자가 등장 시 33% 확률로 갈색 상자가 한 개 더 드랍 됩니다.#중첩 시 확률이 합 연산으로 증가합니다.")
 end
 
--- 눈물 발사 시 효과 발동 확률
+-- 처비셋 쿨타임
+local CHUBBY_SET_COOLDOWN_TIME = 30 -- 30 프레임 당 하나
+
+-- 처비셋 눈물 발사 시 효과 발동 확률
 local CHUBBY_SET_CHANCE = 0.25
 local CHUBBY_SET_BIG_CHUBBY_CHANCE = 0.15
 
@@ -29,7 +32,6 @@ local SLEEPING_PUPPY_INCREMENT = 0.35
 -- 처비의 꼬리
 local CHUBBYS_TAIL_SUBTYPE = 1000
 local CHUBBYS_TAIL_CHANCE = 0.33
-
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
@@ -69,20 +71,26 @@ Astro:AddCallback(
     function(_, tear)
         local player = Astro:GetPlayerFromEntity(tear)
 
-        if player ~= nil and Astro.Data.ChubbySet >= 3 then
-            local rng = player:GetCollectibleRNG(Astro.Collectible.CHUBBYS_HEAD)
+        if player ~= nil then
+            local data = player:GetData()
 
-            if rng:RandomFloat() < CHUBBY_SET_CHANCE then
-                ---@type EntityFamiliar
-                local fmailiar
+            if (data["chubbySetCooldown"] == nil or data["chubbySetCooldown"] < Game():GetFrameCount()) and Astro.Data.ChubbySet >= 3 then
+                local rng = player:GetCollectibleRNG(Astro.Collectible.CHUBBYS_HEAD)
 
-                if rng:RandomFloat() < CHUBBY_SET_BIG_CHUBBY_CHANCE then
-                    fmailiar = Isaac.Spawn(EntityType.ENTITY_FAMILIAR, FamiliarVariant.BIG_CHUBBY, 10, tear.Position, Vector.Zero, nil):ToFamiliar()
-                else
-                    fmailiar = Isaac.Spawn(EntityType.ENTITY_FAMILIAR, FamiliarVariant.LITTLE_CHUBBY, 10, tear.Position, Vector.Zero, nil):ToFamiliar()
+                if rng:RandomFloat() < CHUBBY_SET_CHANCE then
+                    ---@type EntityFamiliar
+                    local fmailiar
+
+                    if rng:RandomFloat() < CHUBBY_SET_BIG_CHUBBY_CHANCE then
+                        fmailiar = Isaac.Spawn(EntityType.ENTITY_FAMILIAR, FamiliarVariant.BIG_CHUBBY, 10, tear.Position, Vector.Zero, nil):ToFamiliar()
+                    else
+                        fmailiar = Isaac.Spawn(EntityType.ENTITY_FAMILIAR, FamiliarVariant.LITTLE_CHUBBY, 10, tear.Position, Vector.Zero, nil):ToFamiliar()
+                    end
+
+                    fmailiar:GetData().IsChubbySets = true
+
+                    data["chubbySetCooldown"] = Game():GetFrameCount() + CHUBBY_SET_COOLDOWN_TIME
                 end
-
-                fmailiar:GetData().IsChubbySets = true
             end
         end
     end
