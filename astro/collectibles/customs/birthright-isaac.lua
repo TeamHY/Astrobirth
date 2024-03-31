@@ -10,7 +10,7 @@ Astro:AddCallback(
         local level = Game():GetLevel()
         local currentRoom = level:GetCurrentRoom()
 
-        if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
+        if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() and not Astro:IsDeathCertificateRoom() then
             for i = 1, Game():GetNumPlayers() do
                 local player = Isaac.GetPlayer(i - 1)
             
