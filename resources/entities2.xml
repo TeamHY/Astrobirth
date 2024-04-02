@@ -1126,7 +1126,7 @@
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0"/>
     	<devolve id="26.0.0" weight="1" />
 	</entity>
-    <entity anm2path="027.000_Host.anm2" baseHP="14" boss="0" champion="1" collisionDamage="0" collisionMass="15" collisionRadius="13" friction="1" id="27" name="#HOST" numGridCollisionPoints="12" portrait="24" reroll="true" shadowSize="25" stageHP="0" variant="0">
+    <entity anm2path="027.000_Host.anm2" baseHP="14" boss="0" champion="0" collisionDamage="0" collisionMass="15" collisionRadius="13" friction="1" id="27" name="#HOST" numGridCollisionPoints="12" portrait="24" reroll="true" shadowSize="25" stageHP="0" variant="0">
         <bestiary anim="Shoot" transform="0,0,1"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1"/>
         <preload-snd id="166"/>
