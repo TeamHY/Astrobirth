@@ -444,7 +444,7 @@
 	<familiar description="#MILK_DESCRIPTION" gfx="Collectibles_436_Milk.png" id="436" name="#MILK_NAME" persistent="false" cache="firedelay" />
 	<active description="#D7_DESCRIPTION" gfx="Collectibles_437_D7.png" id="437" name="#D7_NAME" maxcharges="3" />
 	<passive description="#BINKY_DESCRIPTION" gfx="Collectibles_438_Binky.png" id="438" name="#BINKY_NAME" cache="firedelay size" soulhearts="2" />
-	<active description="#MOMS_BOX_DESCRIPTION" gfx="Collectibles_439_MomsBox.png" id="439" name="#MOMS_BOX_NAME" maxcharges="6" cache="all" passivecache="true" />
+	<active description="#MOMS_BOX_DESCRIPTION" gfx="Collectibles_439_MomsBox.png" id="439" name="#MOMS_BOX_NAME" maxcharges="12" cache="all" passivecache="true" />
 	<passive achievement="232" description="#KIDNEY_STONE_DESCRIPTION" gfx="Collectibles_440_KidneyStone.png" id="440" name="#KIDNEY_STONE_NAME" cache="range speed firedelay" />
 	<active achievement="276" description="#MEGA_BLAST_DESCRIPTION" gfx="collectibles_441_megasatansbreath.png" id="441" name="#MEGA_BLAST_NAME" maxcharges="12" />
 	
