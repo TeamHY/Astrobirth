@@ -90,6 +90,9 @@ local banItem = {
             PillEffect.PILLEFFECT_SMALLER,
             PillEffect.PILLEFFECT_EXPLOSIVE_DIARRHEA,
             PillEffect.PILLEFFECT_HORF,
+            PillEffect.PILLEFFECT_IM_EXCITED,
+            PillEffect.PILLEFFECT_RETRO_VISION,
+            PillEffect.PILLEFFECT_SPEED_DOWN,
         }
     },
     [PlayerType.PLAYER_ISAAC] = {
