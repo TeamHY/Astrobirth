@@ -2204,7 +2204,7 @@
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" poop="1"/>
     	<devolve id="220.0.0" weight="1" />
 	</entity>
-    <entity anm2path="220.000_Cod Worm.anm2" baseHP="20" boss="0" champion="1" collisionDamage="2" collisionMass="100" collisionRadius="16" friction="1" id="221" name="#COD_WORM" numGridCollisionPoints="12" portrait="88" reroll="true" shadowSize="30" stageHP="0" variant="0">
+    <entity anm2path="220.000_Cod Worm.anm2" baseHP="20" boss="0" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="16" friction="1" id="221" name="#COD_WORM" numGridCollisionPoints="12" portrait="88" reroll="true" shadowSize="30" stageHP="0" variant="0">
         <bestiary anim="DigOut" transform="0,0,1"/>
         <gibs amount="8" blood="1" bone="0" eye="0" gut="1" large="0"/>
         <preload-snd id="2"/>
