@@ -99,6 +99,8 @@ if EID then
                 EID:appendToDescription(descObj, "#Hush의 체력이 15% 감소됩니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LIL_DELIRIUM then
                 EID:appendToDescription(descObj, "#Delirium의 체력이 15% 감소됩니다.")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_DARK_BUM then
+                EID:appendToDescription(descObj, "#빨간 거미가 등장하지 않습니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_MILK then
                 EID:appendToDescription(
                     descObj,
@@ -159,6 +161,8 @@ Astro:AddCallback(
                     break
                 end
             end
+        elseif entity.Type == EntityType.ENTITY_SPIDER and Astro:HasCollectible(CollectibleType.COLLECTIBLE_DARK_BUM) then
+            entity:Remove()
         end
     end
 )
