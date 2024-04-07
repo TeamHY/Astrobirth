@@ -2,7 +2,7 @@
 	<Info CreatedBy="trtv" CreatedOn="05.07.2019 16:05:57" Fps="30" Version="2" />
 	<Content>
 		<Spritesheets>
-			<Spritesheet Id="0" Path="costumes/character_diabellstarhair.png" />
+			<Spritesheet Id="0" Path="costumes/character_water_enchantress_hair.png" />
 		</Spritesheets>
 		<Layers>
 			<Layer Id="0" Name="head0" SpritesheetId="0" />

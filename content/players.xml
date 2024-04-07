@@ -10,12 +10,12 @@
     <player name="Diabellstar" skin="character_diabellstar.png" hp="6" pocketActive="" items="" keys="1"
         nameimage="playername_diabellstar.png"
         portrait="playerportrait_diabellstar.png"
-        skinColor="-1"
-        birthright="" />
-    <player name="Subject Beta" skin="character_subject_beta.png" hp="6" pocketActive="" items="" keys="1"
-        nameimage="playername_subject_beta.png"
-        portrait="playerportrait_subject_beta.png"
         skinColor="0"
+        birthright="" />
+    <player name="Water Enchantress" skin="character_water_enchantress.png" hp="6" pocketActive="" items="" keys="1"
+        nameimage="playername_water_enchantress.png"
+        portrait="playerportrait_water_enchantress.png"
+        skinColor="-1"
         birthright="" />
     <player name="Subject Gamma" skin="character_subject_gamma.png" hp="6" pocketActive="" items="" keys="1"
         nameimage="playername_subject_gamma.png"

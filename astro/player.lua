@@ -3,11 +3,12 @@ local hiddenItemManager = require("astro.lib.hidden_item_manager")
 Astro.Players = {
     LEAH = Isaac.GetPlayerTypeByName("Leah"),
     DIABELLSTAR = Isaac.GetPlayerTypeByName("Diabellstar"),
-    SUBJECT_BETA = Isaac.GetPlayerTypeByName("Subject Beta"),
+    WATER_ENCHANTRESS = Isaac.GetPlayerTypeByName("Water Enchantress"),
     SUBJECT_GAMMA = Isaac.GetPlayerTypeByName("Subject Gamma"),
 }
 
-local DIABELLSTAR_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_diabellstarhair.anm2")
+local DIABELLSTAR_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_diabellstar_hair.anm2")
+local WATER_ENCHANTRESS_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_water_enchantress_hair.anm2")
 
 local startItem = {
     common = {
@@ -347,7 +348,7 @@ local startItem = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
         }
     },
-    [Astro.Players.SUBJECT_BETA] = {
+    [Astro.Players.WATER_ENCHANTRESS] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
         },
@@ -739,6 +740,16 @@ Astro:AddCallback(
             if player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR) then
                 player:GetEffects():RemoveNullEffect(DIABELLSTAR_HAIR)
                 -- hiddenItemManager:Remove(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
+            end
+        end
+
+        if player:GetPlayerType() == Astro.Players.WATER_ENCHANTRESS then
+            if not player:GetEffects():HasNullEffect(WATER_ENCHANTRESS_HAIR) then
+                player:GetEffects():AddNullEffect(WATER_ENCHANTRESS_HAIR, true)
+            end
+        else
+            if player:GetEffects():HasNullEffect(WATER_ENCHANTRESS_HAIR) then
+                player:GetEffects():RemoveNullEffect(WATER_ENCHANTRESS_HAIR)
             end
         end
     end

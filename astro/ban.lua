@@ -370,7 +370,7 @@ local banItem = {
         pill = {
         }
     },
-    [Astro.Players.SUBJECT_BETA] = {
+    [Astro.Players.WATER_ENCHANTRESS] = {
         collectible = {
         },
         trinket = {

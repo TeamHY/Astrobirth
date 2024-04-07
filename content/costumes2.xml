@@ -1,4 +1,5 @@
 <costumes anm2root="gfx/characters/">
-	<costume anm2path="character_diabellstarhair.anm2" type="none" priority="99" />
+	<costume anm2path="character_diabellstar_hair.anm2" type="none" priority="99" />
+	<costume anm2path="character_water_enchantress_hair.anm2" type="none" priority="99" />
 	<costume id="1" anm2path="firecrackerrose.anm2" type="passive" hasSkinAlt="false" />
 </costumes>
