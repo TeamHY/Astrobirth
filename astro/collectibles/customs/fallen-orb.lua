@@ -6,8 +6,8 @@ if EID then
     Astro:AddEIDCollectible(Astro.Collectible.FALLEN_ORB, "타락한 오브", "...", "{{Quality0}}/{{Quality1}}등급인 아이템이 등장하지 않습니다.")
 end
 
----@type ItemConfig_Item[]
-local collectableConfigs = {}
+---@type ItemConfigItem[]
+Astro.CollectableConfigs = {}
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
@@ -24,7 +24,7 @@ Astro:AddCallback(
             end
 
             if itemConfigItem ~= nil then
-                table.insert(collectableConfigs, itemConfigItem)
+                table.insert(Astro.CollectableConfigs, itemConfigItem)
             end
 
             id = id + 1
@@ -66,7 +66,7 @@ Astro:AddCallbackCustom(
     function(_, player, collectibleType)
         local itemPool = Game():GetItemPool()
 
-        for _, config in ipairs(collectableConfigs) do
+        for _, config in ipairs(Astro.CollectableConfigs) do
             if config.Quality == 0 or config.Quality == 1 then
                 itemPool:RemoveCollectible(config.ID)
             end
