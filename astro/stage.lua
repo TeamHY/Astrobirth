@@ -48,9 +48,9 @@ Astro:AddCallback(
                     end
                 end
 
-                if player:GetSoulHearts() > 2 then
-                    player:AddSoulHearts(2 - player:GetSoulHearts())
-                end
+                -- if player:GetSoulHearts() > 2 then
+                --     player:AddSoulHearts(2 - player:GetSoulHearts())
+                -- end
 
                 if player:GetBrokenHearts() < 10 then
                     player:AddBrokenHearts(10 - player:GetBrokenHearts())
