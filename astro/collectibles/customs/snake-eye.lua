@@ -1,14 +1,14 @@
 Astro.Collectible.SNAKE_EYE = Isaac.GetItemIdByName("Sinful Spoils of Subversion - Snake Eye")
 
 if EID then
-    EID:addCollectible(Astro.Collectible.SNAKE_EYE, "공격 시 20%의 확률로 연옥의 유령을 소환합니다.#중첩 시 기본 확률이 합 연산으로 증가합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 80 이상일 때 100% 확률 (행운 1당 +1%p)", "반역의 죄보 - 스네이크아이")
+    EID:addCollectible(Astro.Collectible.SNAKE_EYE, "공격 시 10%의 확률로 연옥의 유령을 소환합니다.#중첩 시 기본 확률이 합 연산으로 증가합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 30 이상일 때 100% 확률 (행운 1당 +3%p)", "반역의 죄보 - 스네이크아이")
 end
 
-local spawnChance = 0.2
+local spawnChance = 0.1
 
-local luckMultiply = 1 / 100
+local luckMultiply = 3 / 100
 
-local cooldownTime = 30 -- 30 프레임 당 하나
+local cooldownTime = 45 -- 30 프레임 당 하나
 
 Astro:AddCallback(
     ModCallbacks.MC_ENTITY_TAKE_DMG,
