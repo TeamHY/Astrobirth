@@ -109,6 +109,10 @@
 		<Item Name="Amplifying Mind" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Firecracker Flower" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -155,6 +159,10 @@
 		<Item Name="Amplifying Mind" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Firecracker Flower" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="curse">
@@ -199,6 +207,10 @@
 		<Item Name="Amplifying Mind" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Firecracker Flower" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -248,6 +260,10 @@
 		<Item Name="Amplifying Mind" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Firecracker Flower" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="angel">
@@ -296,6 +312,10 @@
 		<Item Name="Amplifying Mind" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Firecracker Flower" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -370,6 +390,11 @@
 		<Item Name="Firecracker Flower" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
 
+		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - Judas" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
 
 
 	</Pool>
@@ -443,6 +468,11 @@
 
 		<Item Name="Firecracker Flower" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="0.85" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - Judas" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
@@ -466,6 +496,9 @@
 		<Item Name="Birthright - Isaac" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Lucky Rock Bottom" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Birthright - Judas" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Birthright - The Lost" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="boss">
@@ -482,6 +515,9 @@
 		<Item Name="Chubby's Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sleeping Puppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Chubby's Tail" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 </ItemPools>
