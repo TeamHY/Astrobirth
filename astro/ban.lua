@@ -68,6 +68,7 @@ local banItem = {
             CollectibleType.COLLECTIBLE_BIRDS_EYE,
             CollectibleType.COLLECTIBLE_GODS_FLESH,
             Astro.Collectible.BIRTHRIGHT_JUDAS,
+            Astro.Collectible.REINCARNATION,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
@@ -81,6 +82,7 @@ local banItem = {
             TrinketType.TRINKET_FOUND_SOUL,
             TrinketType.TRINKET_MYOSOTIS,
             TrinketType.TRINKET_HOLLOW_HEART,
+            TrinketType.TRINKET_MISSING_POSTER,
         },
         card = {
             Card.CARD_REVERSE_HIGH_PRIESTESS,
