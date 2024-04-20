@@ -748,7 +748,7 @@
 	<active		id="720"	achievement="459" gfx="Collectibles_720_EverythingJar.png" name="#EVERYTHING_JAR_NAME" description="#EVERYTHING_JAR_DESCRIPTION" maxcharges="12" initcharge="1" />
 	<passive	id="721"	achievement="500" gfx="Collectibles_721_TMTRAINER.png" name="#TMTRAINER_NAME" description="#TMTRAINER_DESCRIPTION" />
 	<active		id="722"	achievement="600" gfx="Collectibles_722_AnimaSola.png" name="#ANIMA_SOLA_NAME" description="#ANIMA_SOLA_DESCRIPTION" maxcharges="345" chargetype="timed" />
-	<active		id="723"	achievement="584" gfx="Collectibles_723_SpindownDice.png" shopprice="35" name="#SPINDOWN_DICE_NAME" description="#SPINDOWN_DICE_DESCRIPTION" maxcharges="6" />
+	<active		id="723"	achievement="584" gfx="Collectibles_723_SpindownDice.png" shopprice="35" name="#SPINDOWN_DICE_NAME" description="#SPINDOWN_DICE_DESCRIPTION" maxcharges="12" />
 	<passive	id="724"	achievement="585" gfx="Collectibles_724_Hypercoagulation.png" name="#HYPERCOAGULATION_NAME" description="#HYPERCOAGULATION_DESCRIPTION" />
 	<passive	id="725"	achievement="588" gfx="Collectibles_725_IBS.png" name="#IBS_NAME" description="#IBS_DESCRIPTION" />
 	<passive	id="726"	achievement="591" gfx="Collectibles_726_Hemoptysis.png" name="#HEMOPTYSIS_NAME" description="#HEMOPTYSIS_DESCRIPTION" cooldown="30" />

@@ -8,7 +8,7 @@ local spawnChance = 0.1
 
 local luckMultiply = 3 / 100
 
-local cooldownTime = 60 -- 30 프레임 = 1초
+local cooldownTime = 75 -- 30 프레임 = 1초
 
 Astro:AddCallback(
     ModCallbacks.MC_ENTITY_TAKE_DMG,
