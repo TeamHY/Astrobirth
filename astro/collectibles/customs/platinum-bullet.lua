@@ -34,7 +34,7 @@ Astro:AddCallback(
 
             if player:HasCollectible(Astro.Collectible.PLATINUM_BULLET) then
                 if not isRun then
-                    Astro.Data.PlatinumBulletStatus = Astro.Data.PlatinumBulletStatus + 0.01 * player:GetCollectibleNum(Astro.Collectible.PLATINUM_BULLET)
+                    Astro.Data.PlatinumBulletStatus = Astro.Data.PlatinumBulletStatus + 0.02 * player:GetCollectibleNum(Astro.Collectible.PLATINUM_BULLET)
 
                     isRun = true
                 end
