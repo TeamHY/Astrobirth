@@ -310,6 +310,8 @@ local banItem = {
             Astro.Collectible.ALTAIR,
             Astro.Collectible.COMET,
             Astro.Collectible.ARIES_EX,
+            Astro.Collectible.WARD,
+            Astro.Collectible.PINK_WARD,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
