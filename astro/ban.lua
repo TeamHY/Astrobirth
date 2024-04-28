@@ -375,6 +375,16 @@ local banItem = {
         pill = {
         }
     },
+    [Astro.Players.DIABELLSTAR_B] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
     [Astro.Players.WATER_ENCHANTRESS] = {
         collectible = {
         },

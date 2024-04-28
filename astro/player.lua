@@ -3,11 +3,13 @@ local hiddenItemManager = require("astro.lib.hidden_item_manager")
 Astro.Players = {
     LEAH = Isaac.GetPlayerTypeByName("Leah"),
     DIABELLSTAR = Isaac.GetPlayerTypeByName("Diabellstar"),
+    DIABELLSTAR_B = Isaac.GetPlayerTypeByName("Diabellstar", true),
     WATER_ENCHANTRESS = Isaac.GetPlayerTypeByName("Water Enchantress"),
     SUBJECT_GAMMA = Isaac.GetPlayerTypeByName("Subject Gamma"),
 }
 
 local DIABELLSTAR_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_diabellstar_hair.anm2")
+local DIABELLSTAR_HAIR_B = Isaac.GetCostumeIdByPath("gfx/characters/character_diabellstar_hairb.anm2")
 local WATER_ENCHANTRESS_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_water_enchantress_hair.anm2")
 
 local startItem = {
@@ -335,6 +337,20 @@ local startItem = {
         }
     },
     [Astro.Players.DIABELLSTAR] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.DIABELLSTAR_B] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
         },
@@ -739,6 +755,18 @@ Astro:AddCallback(
         else
             if player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR) then
                 player:GetEffects():RemoveNullEffect(DIABELLSTAR_HAIR)
+                -- hiddenItemManager:Remove(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
+            end
+        end
+
+        if player:GetPlayerType() == Astro.Players.DIABELLSTAR_B then
+            if not player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR_B) then
+                player:GetEffects():AddNullEffect(DIABELLSTAR_HAIR_B, true)
+                -- hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
+            end
+        else
+            if player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR_B) then
+                player:GetEffects():RemoveNullEffect(DIABELLSTAR_HAIR_B)
                 -- hiddenItemManager:Remove(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
             end
         end
