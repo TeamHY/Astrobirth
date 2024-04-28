@@ -51,6 +51,24 @@ Astro:AddCallback(
 )
 
 Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_ROOM,
+    function(_)
+        for i = 1, Game():GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
+        
+            if player:HasCollectible(Astro.Collectible.BIRTHRIGHT_JUDAS) then
+                local data = Astro:GetPersistentPlayerData(player)
+    
+                data.birthrightJudasDamage = 0
+                
+                player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
+                player:EvaluateItems()
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
     ModCallbacks.MC_EVALUATE_CACHE,
     ---@param player EntityPlayer
     ---@param cacheFlag CacheFlag
