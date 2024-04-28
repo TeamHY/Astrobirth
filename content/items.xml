@@ -73,6 +73,7 @@
 	<passive tags="guppy" gfx="Delirium Guppy.png" quality="3" devilprice="2" shopprice="15" name="Delirium Guppy" />
 	<passive cache="damage" gfx="Birthright - Judas.png" quality="2" devilprice="1" shopprice="10" name="Birthright - Judas" />
 	<passive gfx="Birthright - The Lost.png" quality="3" devilprice="2" shopprice="20" name="Birthright - The Lost" />
+	<passive gfx="Amazing Chaos Scroll.png" quality="4" devilprice="2" shopprice="30" name="Amazing Chaos Scroll" />
 
 
 
@@ -91,4 +92,6 @@
 	<trinket gfx="Doctrine.png" name="Doctrine" />
 	<trinket tags="luck" gfx="Mosi's Eyes.png" name="Mosi's Eyes" />
 	<trinket gfx="Planetarium Crown.png" name="Planetarium Crown" />
+	<trinket gfx="Flunk.png" name="Flunk" />
+	<trinket gfx="Magic Conch Shell.png" name="Magic Conch Shell" />
 </items>

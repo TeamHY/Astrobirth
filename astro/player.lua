@@ -154,7 +154,7 @@ local startItem = {
     },
     [PlayerType.PLAYER_EDEN] = {
         collectible = {
-            CollectibleType.COLLECTIBLE_LITTLE_STEVEN,
+            CollectibleType.COLLECTIBLE_BROTHER_BOBBY,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
