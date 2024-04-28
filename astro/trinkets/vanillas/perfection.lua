@@ -19,6 +19,29 @@ local blessings = {
 }
 
 ---@param player EntityPlayer
+function Astro:HasPerfectionEffect(player)
+    return player:HasTrinket(TrinketType.TRINKET_PERFECTION) or player:HasTrinket(Astro.Trinket.FLUNK)
+end
+
+Astro:AddCallback(
+    ModCallbacks.MC_ENTITY_TAKE_DMG,
+    ---@param entity Entity
+    ---@param amount number
+    ---@param damageFlags number
+    ---@param source EntityRef
+    ---@param countdownFrames number
+    function(_, entity, amount, damageFlags, source, countdownFrames)
+        local player = entity:ToPlayer()
+
+        if player ~= nil and player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+            if damageFlags & (DamageFlag.DAMAGE_NO_PENALTIES | DamageFlag.DAMAGE_RED_HEARTS) == 0 then
+                Astro:SpawnTrinket(Astro.Trinket.FLUNK, player.Position)
+            end
+        end
+    end
+)
+
+---@param player EntityPlayer
 local function TryChangeToGoldenTrinket(player)
     local trinket0 = player:GetTrinket(0)
     local trinket1 = player:GetTrinket(1)
@@ -64,7 +87,7 @@ Astro:AddCallback(
             for i = 1, Game():GetNumPlayers() do
                 local player = Isaac.GetPlayer(i - 1)
 
-                if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+                if Astro:HasPerfectionEffect(player) then
                     if stage >= LevelStage.STAGE2_2 then
                         TryChangeToGoldenTrinket(player)
                     end
@@ -250,7 +273,7 @@ Astro:AddCallback(
             for i = 1, Game():GetNumPlayers() do
                 local player = Isaac.GetPlayer(i - 1)
 
-                if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+                if Astro:HasPerfectionEffect(player) then
                     Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_DEATH_CERTIFICATE, currentRoom:GetCenterPos())
                 end
             end
@@ -271,7 +294,7 @@ Astro:AddCallback(
         if player ~= nil then
             local hasItems = player:HasCollectible(CollectibleType.COLLECTIBLE_IPECAC) or player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) or player:HasCollectible(CollectibleType.COLLECTIBLE_EPIC_FETUS)
 
-            if player:HasTrinket(TrinketType.TRINKET_PERFECTION) and hasItems then
+            if Astro:HasPerfectionEffect(player) and hasItems then
                 if damageFlags & DamageFlag.DAMAGE_EXPLOSION ~= 0 then
                     return false
                 end

@@ -9,7 +9,7 @@ function Astro:CurseRemove(curse) -- 입장 전 저주 제거
 			hasPrometheus = true
 		end
 
-		if player:HasTrinket(TrinketType.TRINKET_PERFECTION) or player:HasTrinket(Astro.Trinket.DOCTRINE) then
+		if Astro:HasPerfectionEffect(player) or player:HasTrinket(Astro.Trinket.DOCTRINE) then
 			hasCurseCleaner = true
 		end
 	end

@@ -21,7 +21,7 @@ end
 --                 hasPrometheus = true
 --             end
 
---             if player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+--             if Astro:HasPerfectionEffect(player) then
 --                 return curses
 --             end
 --         end
@@ -39,7 +39,7 @@ Astro:AddCallbackCustom(
     function(_, player, collectibleType)
         local level = Game():GetLevel()
 
-        if not player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+        if not Astro:HasPerfectionEffect(player) then
             level:AddCurse(LevelCurse.CURSE_OF_DARKNESS, true)
         end
     end,
