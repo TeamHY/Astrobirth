@@ -109,7 +109,11 @@ if EID then
                     "#몬스터가 있는 방 입장 시 30% 확률로 {{Collectible486}}Dull Razor를 1회 발동합니다. {{BossRoom}}보스방에서는 항상 발동합니다."
                 )
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_BLOODY_LUST or descObj.ObjSubType == CollectibleType.COLLECTIBLE_BLOODY_GUST then
-                EID:appendToDescription(descObj, "#방 클리어 시 30% 확률로 {{Collectible486}}Dull Razor를 1회 발동합니다.#한 스테이지에서 최대 6번 발동될 수 있습니다.##!!! {{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)")
+                EID:appendToDescription(descObj, "#방 클리어 시 30% 확률로 {{Collectible486}}Dull Razor를 1회 발동합니다.#한 스테이지에서 최대 6번 발동될 수 있습니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_CRACKED_ORB then
+                EID:appendToDescription(descObj, "#방 클리어 시 10% 확률로 {{Collectible486}}Dull Razor를 1회 발동합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 90 이상일 때 100% 확률 (행운 1당 +1%p)")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_SALVATION then
+                EID:appendToDescription(descObj, "#방 클리어 시 10% 확률로 {{Collectible486}}Dull Razor를 1회 발동합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 90 이상일 때 100% 확률 (행운 1당 +1%p)")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_ZODIAC then
                 EID:appendToDescription(
                     descObj,
@@ -308,6 +312,24 @@ Astro:AddCallback(
                     end
 
                     data.BloodyLust.Count = data.BloodyLust.Count + 1
+                end
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_CRACKED_ORB) then
+                local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_CRACKED_ORB)
+
+                if rng:RandomFloat() < 0.1 + player.Luck / 100 then
+                    player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR, false, true, false, false)
+                    SFXManager():Stop(SoundEffect.SOUND_ISAAC_HURT_GRUNT)
+                end
+            end
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_SALVATION) then
+                local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_SALVATION)
+
+                if rng:RandomFloat() < 0.1 + player.Luck / 100 then
+                    player:UseActiveItem(CollectibleType.COLLECTIBLE_DULL_RAZOR, false, true, false, false)
+                    SFXManager():Stop(SoundEffect.SOUND_ISAAC_HURT_GRUNT)
                 end
             end
         end
