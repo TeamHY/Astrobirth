@@ -13781,21 +13781,17 @@
 		<door exists="True" x="13" y="10"/>
 		<spawn x="0" y="0">
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="12" y="0">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="6">
 			<entity type="102" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="13">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="12" y="13">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
@@ -13808,21 +13804,17 @@
 		<door exists="True" x="26" y="3"/>
 		<spawn x="13" y="2">
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="15" y="2">
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="14" y="3">
 			<entity type="102" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="13" y="4">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="15" y="4">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
@@ -14794,11 +14786,9 @@
 			<entity type="84" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="5" y="3">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
@@ -24714,7 +24704,6 @@
 		</spawn>
 		<spawn x="1" y="5">
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="2" y="5">
 			<entity type="274" variant="1" subtype="0" weight="1.0"/>
@@ -24732,14 +24721,13 @@
 			<entity type="274" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="11" y="5">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
+			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="6">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
+			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="12" y="6">
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="5010" name="Haunt" type="5" subtype="43" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -26721,14 +26709,12 @@
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
 		<spawn x="5" y="3">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="273" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
-			<entity type="212" variant="0" subtype="0" weight="1.0"/>
 			<entity type="212" variant="2" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
