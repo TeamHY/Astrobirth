@@ -29,7 +29,7 @@
           nameimage="PlayerName_07_Samson.png" 
           portrait="PlayerPortrait_Samson.png" skinColor="-1"
 		  birthright="#SAMSON_BIRTHRIGHT" />
-	<player id="7" name="#AZAZEL_NAME" skin="Character_008_Azazel.png" costume="11" items="530" hp="0" keys="1" bombs="2" black="7" achievement="79"
+	<player id="7" name="#AZAZEL_NAME" skin="Character_008_Azazel.png" costume="11" items="114" hp="0" keys="1" bombs="2" black="7" achievement="79"
           nameimage="PlayerName_08_Azazel.png" 
           portrait="PlayerPortrait_Azazel.png" skinColor="1"
 		  birthright="#AZAZEL_BIRTHRIGHT" />
