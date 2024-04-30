@@ -181,8 +181,19 @@ local banItem = {
     },
     [PlayerType.PLAYER_LAZARUS] = {
         collectible = {
+            CollectibleType.COLLECTIBLE_COMPASS,
+            CollectibleType.COLLECTIBLE_TREASURE_MAP,
+            CollectibleType.COLLECTIBLE_MIND,
+            CollectibleType.COLLECTIBLE_BLUE_MAP,
+            CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
+            CollectibleType.COLLECTIBLE_CRYSTAL_BALL,
+            Astro.Collectible.DUALITY_LIGHT_AND_DARKNESS,
+
         },
         trinket = {
+            TrinketType.TRINKET_CAINS_EYE
+            TrinketType.TRINKET_FRAGMENTED_CARD
+            Astro.Trinket.MOSIS_EYES
         },
         card = {
         },
