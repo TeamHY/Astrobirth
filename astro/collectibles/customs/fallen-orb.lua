@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Collectible.FALLEN_ORB = Isaac.GetItemIdByName("Fallen Orb")
 
 if EID then
-    Astro:AddEIDCollectible(Astro.Collectible.FALLEN_ORB, "타락한 오브", "...", "{{Quality0}}/{{Quality1}}등급인 아이템이 등장하지 않습니다.")
+    Astro:AddEIDCollectible(Astro.Collectible.FALLEN_ORB, "타락한 오브", "...", "{{Quality0}}/{{Quality1}}등급인 아이템이 등장하지 않습니다. #!!!해당 아이템이 사라지더라도 배열은 복구되지 않습니다.")
 end
 
 ---@type ItemConfigItem[]
