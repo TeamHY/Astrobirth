@@ -223,12 +223,16 @@ local banItem = {
             CollectibleType.COLLECTIBLE_GHOST_PEPPER,
             CollectibleType.COLLECTIBLE_D6,
             CollectibleType.COLLECTIBLE_STARTER_DECK,
+            CollectibleType.COLLECTIBLE_SOUL,
+            Astro.Collectible.ARIES_EX,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
             TrinketType.TRINKET_JAW_BREAKER,
+            TrinketType.TRINKET_SIGIL_OF_BAPHOMET,
         },
         card = {
+            Card.CARD_HOLY,
         },
         pill = {
         }
