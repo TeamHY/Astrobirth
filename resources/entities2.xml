@@ -1823,7 +1823,7 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     	<devolve id="18.0.0" weight="1" />
 	</entity>
-    <entity anm2path="081.000_The Fallen.anm2" baseHP="60" boss="1" bossID="23" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="20" friction="1" id="81" name="#THE_FALLEN" numGridCollisionPoints="0" portrait="52" shadowSize="24" stageHP="45" variant="0">
+    <entity anm2path="081.000_The Fallen.anm2" baseHP="200" boss="1" bossID="23" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="20" friction="1" id="81" name="#THE_FALLEN" numGridCollisionPoints="0" portrait="52" shadowSize="24" stageHP="45" shieldStrength="40" variant="0">
         <bestiary anim="Walk" transform="0,0,1"/>
         <gibs amount="16" blood="1" bone="1" eye="0" gut="1" large="1"/>
         <preload-snd id="117"/>
