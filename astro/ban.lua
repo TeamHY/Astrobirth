@@ -191,9 +191,9 @@ local banItem = {
 
         },
         trinket = {
-            TrinketType.TRINKET_CAINS_EYE
-            TrinketType.TRINKET_FRAGMENTED_CARD
-            Astro.Trinket.MOSIS_EYES
+            TrinketType.TRINKET_CAINS_EYE,
+            TrinketType.TRINKET_FRAGMENTED_CARD,
+            Astro.Trinket.MOSIS_EYES,
         },
         card = {
         },
