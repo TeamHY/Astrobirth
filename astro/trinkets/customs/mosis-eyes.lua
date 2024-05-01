@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 Astro.Trinket.MOSIS_EYES = Isaac.GetTrinketIdByName("Mosi's Eyes")
 
 if EID then
-    EID:addTrinket(Astro.Trinket.MOSIS_EYES, "↓ {{LuckSmall}}행운 -3#캐릭터가 있는 방에서 2칸 이내에 있는 스테이지 구조를 맵에 표시합니다.#가려진 아이템을 알 수 있게 됩니다.", "모시의 눈")
+    EID:addTrinket(Astro.Trinket.MOSIS_EYES, "↓ {{LuckSmall}}행운 -5#캐릭터가 있는 방에서 2칸 이내에 있는 스테이지 구조를 맵에 표시합니다.#가려진 아이템을 알 수 있게 됩니다.", "모시의 눈")
 
     -- Astro:AddGoldenTrinketDescription(Astro.Trinket.MOSIS_EYES, "", 1)
 end
@@ -67,7 +67,7 @@ Astro:AddCallback(
     ---@param cacheFlag CacheFlag
     function(_, player, cacheFlag)
         if player:HasTrinket(Astro.Trinket.MOSIS_EYES) then
-            player.Luck = player.Luck - 3
+            player.Luck = player.Luck - 5
         end
     end,
     CacheFlag.CACHE_LUCK
