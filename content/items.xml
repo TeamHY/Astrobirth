@@ -76,7 +76,7 @@
 	<passive gfx="Amazing Chaos Scroll.png" quality="4" devilprice="2" shopprice="30" name="Amazing Chaos Scroll" />
 	<passive gfx="Magic Conch Shell.png" quality="4" devilprice="2" shopprice="30" name="Magic Conch Shell" />
 	<passive gfx="Super Nova.png" quality="4" devilprice="2" shopprice="40" name="Super Nova" />
-	<active gfx="Quasar.png" quality="3" devilprice="2" maxcharges="50" shopprice="15" name="Rite of Aramesir" />
+	<active gfx="Rite of Aramesir.png" quality="3" devilprice="2" maxcharges="50" shopprice="15" name="Rite of Aramesir" />
 
 
 

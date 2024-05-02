@@ -19,7 +19,7 @@
         portrait="playerportrait_diabellstar.png"
         skinColor="0"
         birthright="" />
-    <player name="Water Enchantress" skin="character_water_enchantress.png" hp="6" pocketActive=""
+    <player name="Water Enchantress" skin="character_water_enchantress.png" hp="6" pocketActive="810"
         items="" keys="1"
         nameimage="playername_water_enchantress.png"
         portrait="playerportrait_water_enchantress.png"
