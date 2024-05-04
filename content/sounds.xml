@@ -3,4 +3,10 @@
     <sound name="Epic">
         <sample weight="1" path="feedback/epic.wav" />
     </sound>
+    <sound name="Destroyed">
+        <sample weight="1" path="destroyed.wav" />
+    </sound>
+    <sound name="Specialsummon">
+        <sample weight="1" path="specialsummon.wav" />
+    </sound>
 </sounds>

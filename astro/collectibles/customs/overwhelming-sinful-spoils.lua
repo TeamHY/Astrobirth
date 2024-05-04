@@ -1,5 +1,8 @@
 Astro.Collectible.OVERWHELMING_SINFUL_SPOILS = Isaac.GetItemIdByName("Overwhelming Sinful Spoils")
 
+local useSound = Isaac.GetSoundIdByName('Specialsummon')
+local useSoundVoulme = 1 -- 0 ~ 1
+
 if EID then
     Astro:AddEIDCollectible(Astro.Collectible.OVERWHELMING_SINFUL_SPOILS, "폭주하는 죄보", "...", "적 처치 시 영혼을 흡수합니다. 사용 시 영혼을 소모해 여러 유령을 소환합니다.#최대 50개까지 저장할 수 있습니다.")
 end
@@ -25,7 +28,7 @@ Astro:AddCallback(
     ---@param activeSlot ActiveSlot
     ---@param varData integer
     function(_, collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
-        if collectibleID == Astro.Collectible.OVERWHELMING_SINFUL_SPOILS then
+        if Astro.Data.OverwhelmingSinfulSpoils.Souls > 0 then
             for _ = 1, Astro.Data.OverwhelmingSinfulSpoils.Souls do
                 local rng = playerWhoUsedItem:GetCollectibleRNG(Astro.Collectible.OVERWHELMING_SINFUL_SPOILS)
                 local random = rng:RandomInt(3)
@@ -55,6 +58,8 @@ Astro:AddCallback(
             end
 
             Astro.Data.OverwhelmingSinfulSpoils.Souls = 0
+
+            SFXManager():Play(useSound, useSoundVoulme)
 
             return true
         end

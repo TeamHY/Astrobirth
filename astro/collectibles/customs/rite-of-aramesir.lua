@@ -1,5 +1,8 @@
 Astro.Collectible.RITE_OF_ARAMESIR = Isaac.GetItemIdByName("Rite of Aramesir")
 
+local useSound = Isaac.GetSoundIdByName('Specialsummon')
+local useSoundVoulme = 1 -- 0 ~ 1
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     function(_, isContinued)
@@ -35,6 +38,8 @@ Astro:AddCallback(
     ---@param varData integer
     function(_, collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
         Astro:SpawnTrinket(Astro.Trinket.BLACK_MIRROR, playerWhoUsedItem.Position)
+
+        SFXManager():Play(useSound, useSoundVoulme)
 
         return {
             Discharge = true,
