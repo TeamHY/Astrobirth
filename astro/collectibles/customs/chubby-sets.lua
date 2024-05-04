@@ -74,7 +74,7 @@ Astro:AddCallback(
         if player ~= nil then
             local data = player:GetData()
 
-            if (data["chubbySetCooldown"] == nil or data["chubbySetCooldown"] < Game():GetFrameCount()) and Astro.Data.ChubbySet >= 3 then
+            if (not data["chubbySetCooldown"] or data["chubbySetCooldown"] < Game():GetFrameCount()) and Astro.Data.ChubbySet >= 3 then
                 local rng = player:GetCollectibleRNG(Astro.Collectible.CHUBBYS_HEAD)
 
                 if rng:RandomFloat() < CHUBBY_SET_CHANCE then
