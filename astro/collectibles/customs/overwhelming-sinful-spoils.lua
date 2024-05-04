@@ -1,7 +1,7 @@
 Astro.Collectible.OVERWHELMING_SINFUL_SPOILS = Isaac.GetItemIdByName("Overwhelming Sinful Spoils")
 
 if EID then
-    Astro:AddEIDCollectible(Astro.Collectible.OVERWHELMING_SINFUL_SPOILS, "폭주하는 죄보", "...", "")
+    Astro:AddEIDCollectible(Astro.Collectible.OVERWHELMING_SINFUL_SPOILS, "폭주하는 죄보", "...", "적 처치 시 영혼을 흡수합니다. 사용 시 영혼을 소모해 여러 유령을 소환합니다.#최대 50개까지 저장할 수 있습니다.")
 end
 
 Astro:AddCallback(
@@ -71,11 +71,14 @@ Astro:AddCallback(
         
             if player:HasCollectible(Astro.Collectible.OVERWHELMING_SINFUL_SPOILS) then
                 local soul = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.ENEMY_SOUL, 0, npc.Position, Vector.Zero, player)
-                local data = soul:GetData()
 
+                local data = soul:GetData()
                 data.OverwhelmingSinfulSpoils = {
                     player = player,
                 }
+
+                -- local rng = player:GetCollectibleRNG(Astro.Collectible.OVERWHELMING_SINFUL_SPOILS)
+                -- soul:AddVelocity(Vector.One.FromAngle(rng:RandomInt(360)):Resized(200))
 
                 break
             end
@@ -92,7 +95,7 @@ Astro:AddCallback(
         if data.OverwhelmingSinfulSpoils then
             local player = data.OverwhelmingSinfulSpoils.player
 
-            effect:AddVelocity((player.Position - effect.Position):Resized(10))
+            effect:AddVelocity((player.Position - effect.Position):Resized(20))
 
             if effect.Position:Distance(player.Position) < 10 then
                 Astro.Data.OverwhelmingSinfulSpoils.Souls = Astro.Data.OverwhelmingSinfulSpoils.Souls + 1
@@ -107,7 +110,7 @@ Astro:AddCallback(
     end
 )
 
-Astro.AddCallback(
+Astro:AddCallback(
     ModCallbacks.MC_POST_RENDER,
     function(_)
         for i = 1, Game():GetNumPlayers() do
@@ -119,11 +122,11 @@ Astro.AddCallback(
                 Isaac.RenderText(
                     "x" .. souls,
                     Isaac.WorldToScreen(player.Position).X,
-                    Isaac.WorldToScreen(player.Position).Y - 10,
-                    255,
-                    255,
-                    255,
-                    255
+                    Isaac.WorldToScreen(player.Position).Y - 40,
+                    1,
+                    1,
+                    1,
+                    1
                 )
 
                 break
