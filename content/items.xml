@@ -79,7 +79,7 @@
 	<passive gfx="Super Nova.png" quality="4" devilprice="2" shopprice="40" name="Super Nova" />
 	<active gfx="Rite of Aramesir.png" quality="3" devilprice="2" maxcharges="50" shopprice="15" name="Rite of Aramesir" />
 	<active gfx="Overwhelming Sinful Spoils.png" quality="3" devilprice="2" shopprice="15" name="Overwhelming Sinful Spoils" />
-
+	<passive id="2" cache="firedelay" gfx="Technology Omicron.png" quality="3" tags="offensive summonable tech" name="Technology Omicron" description="Laser aura tears"/>
 
 
 
