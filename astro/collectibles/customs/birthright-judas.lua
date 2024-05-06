@@ -8,6 +8,8 @@ end
 
 local damageIncrement = 0.7
 
+local damageMaxinum = 15
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     ---@param isContinued boolean
@@ -43,6 +45,10 @@ Astro:AddCallback(
             end
 
             data.birthrightJudasDamage = data.birthrightJudasDamage + maxCharges * damageIncrement * playerWhoUsedItem:GetCollectibleNum(Astro.Collectible.BIRTHRIGHT_JUDAS)
+
+            if data.birthrightJudasDamage > damageMaxinum then
+                data.birthrightJudasDamage = damageMaxinum
+            end
 
             playerWhoUsedItem:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
             playerWhoUsedItem:EvaluateItems()
