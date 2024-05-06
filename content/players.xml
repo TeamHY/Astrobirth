@@ -13,7 +13,7 @@
         portrait="playerportrait_diabellstar.png"
         skinColor="0"
         birthright="" />
-    <player name="Diabellstar" bSkinParent="Diabellstar" skin="character_diabellstarb.png" hp="6"
+    <player name="Tainted Diabellstar" bSkinParent="Diabellstar" skin="character_diabellstarb.png" hp="6"
         pocketActive="" items="" keys="1"
         nameimage="playername_diabellstar.png"
         portrait="playerportrait_diabellstar.png"

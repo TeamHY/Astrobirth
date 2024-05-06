@@ -3,7 +3,7 @@ local hiddenItemManager = require("astro.lib.hidden_item_manager")
 Astro.Players = {
     LEAH = Isaac.GetPlayerTypeByName("Leah"),
     DIABELLSTAR = Isaac.GetPlayerTypeByName("Diabellstar"),
-    DIABELLSTAR_B = Isaac.GetPlayerTypeByName("Diabellstar", true),
+    DIABELLSTAR_B = Isaac.GetPlayerTypeByName("Tainted Diabellstar", true),
     WATER_ENCHANTRESS = Isaac.GetPlayerTypeByName("Water Enchantress"),
     SUBJECT_GAMMA = Isaac.GetPlayerTypeByName("Subject Gamma"),
 }
