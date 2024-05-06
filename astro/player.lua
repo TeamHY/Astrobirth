@@ -711,7 +711,7 @@ Astro:AddCallback(
                 elseif playerType == PlayerType.PLAYER_EVE then
                     player:RemoveCollectible(CollectibleType.COLLECTIBLE_RAZOR_BLADE)
                 elseif playerType == Astro.Players.DIABELLSTAR then
-                    player:AddCollectible(Astro.Collectible.SNAKE_EYE)
+                    player:AddCollectible(Astro.Collectible.SINFUL_SPOILS_OF_SUBVERSION_SNAKE_EYE)
                 end
             end
         end
