@@ -74,7 +74,7 @@
 	<passive tags="guppy" gfx="Delirium Guppy.png" quality="3" devilprice="2" shopprice="15" name="Delirium Guppy" />
 	<passive cache="damage" gfx="Birthright - Judas.png" quality="2" devilprice="1" shopprice="10" name="Birthright - Judas" />
 	<passive gfx="Birthright - The Lost.png" quality="3" devilprice="2" shopprice="20" name="Birthright - The Lost" />
-	<passive gfx="Amazing Chaos Scroll.png" quality="4" devilprice="2" shopprice="30" name="Amazing Chaos Scroll" />
+	<passive cache="all" gfx="Amazing Chaos Scroll.png" quality="4" devilprice="2" shopprice="30" name="Amazing Chaos Scroll" tags="offensive summonable tearsup" />
 	<passive gfx="Magic Conch Shell.png" quality="4" devilprice="2" shopprice="30" name="Magic Conch Shell" />
 	<passive gfx="Super Nova.png" quality="4" devilprice="2" shopprice="40" name="Super Nova" />
 	<active gfx="Rite of Aramesir.png" quality="3" devilprice="2" maxcharges="50" shopprice="15" name="Rite of Aramesir" />
