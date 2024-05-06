@@ -3,11 +3,11 @@ Astro.Trinket.FLUNK = Isaac.GetTrinketIdByName("Flunk")
 if EID then
     EID:addTrinket(
         Astro.Trinket.FLUNK,
-        "이 아이템은 {{Trinket145}}Perfection로 취급됩니다.",
+        "이 아이템은 {{Trinket145}}Perfection로 취급됩니다.#↓ 행운 -5",
         "낙제"
     )
 
-    -- Astro:AddGoldenTrinketDescription(Astro.Trinket.FLUNK, "", 10)
+    Astro:AddGoldenTrinketDescription(Astro.Trinket.FLUNK, "↑ 행운 +3", 10)
 end
 
 Astro:AddCallback(
@@ -26,4 +26,20 @@ Astro:AddCallback(
             end
         end
     end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_EVALUATE_CACHE,
+    ---@param player EntityPlayer
+    ---@param cacheFlag CacheFlag
+    function(_, player, cacheFlag)
+        if player:HasTrinket(Astro.Trinket.FLUNK) then
+            player.Luck = player.Luck - 5
+
+            if player:GetTrinketMultiplier(Astro.Trinket.FLUNK) > 1 then
+                player.Luck = player.Luck + 3
+            end
+        end
+    end,
+    CacheFlag.CACHE_LUCK
 )

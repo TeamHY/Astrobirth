@@ -97,5 +97,5 @@
 	<trinket gfx="Doctrine.png" name="Doctrine" />
 	<trinket tags="luck" gfx="Mosi's Eyes.png" name="Mosi's Eyes" />
 	<trinket gfx="Planetarium Crown.png" name="Planetarium Crown" />
-	<trinket gfx="Flunk.png" name="Flunk" />
+	<trinket cache="luck" gfx="Flunk.png" name="Flunk" />
 </items>
