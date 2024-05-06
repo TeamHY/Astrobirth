@@ -63,6 +63,7 @@
 		<Item Name="Lucky Rock Bottom" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Firecracker Flower" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Sinful Spoils of Subversion - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -113,6 +114,8 @@
 		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -163,6 +166,8 @@
 		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="curse">
@@ -211,6 +216,8 @@
 		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -264,6 +271,8 @@
 		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="angel">
@@ -316,6 +325,8 @@
 		<Item Name="Absolut Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -395,6 +406,8 @@
 		<Item Name="Birthright - Judas" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
 
 
 	</Pool>
@@ -473,6 +486,8 @@
 		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - Judas" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
