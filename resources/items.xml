@@ -73,7 +73,7 @@
 	<passive description="#ROSARY_DESCRIPTION" gfx="Collectibles_072_Rosary.png" id="72" name="#ROSARY_NAME" shopprice="11" soulhearts="6" cache="firedelay" />
 	<familiar achievement="6" description="#CUBE_OF_MEAT_DESCRIPTION" gfx="Collectibles_073_CubeOfMeat.png" id="73" shopprice="5" name="#CUBE_OF_MEAT_NAME" />
 	<passive achievement="10" coins="25" description="#A_QUARTER_DESCRIPTION" gfx="Collectibles_074_AQuarter.png" id="74" name="#A_QUARTER_NAME" />
-	<passive description="#PHD_DESCRIPTION" gfx="Collectibles_075_PHD.png" hearts="4" shopprice="20" id="75" name="#PHD_NAME" />
+	<passive description="#PHD_DESCRIPTION" gfx="Collectibles_075_PHD.png" hearts="4" shopprice="15" id="75" name="#PHD_NAME" />
 	<passive description="#XRAY_VISION_DESCRIPTION" gfx="Collectibles_076_XrayVision.png" id="76" shopprice="30" name="#XRAY_VISION_NAME" />
 	<active cache="speed" cooldown="180" description="#MY_LITTLE_UNICORN_DESCRIPTION" gfx="Collectibles_077_MyLittleUnicorn.png" id="77" maxcharges="4" name="#MY_LITTLE_UNICORN_NAME" />
 	<active achievement="7" description="#BOOK_OF_REVELATIONS_DESCRIPTION" shopprice="10" gfx="Collectibles_078_BookOfRevelations.png" id="78" maxcharges="6" name="#BOOK_OF_REVELATIONS_NAME" />
