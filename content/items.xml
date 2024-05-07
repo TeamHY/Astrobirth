@@ -45,7 +45,7 @@
 	<passive tags="syringe" gfx="Morphine.png" quality="2" devilprice="1" name="Morphine" />
 	<passive gfx="Quasar.png" quality="4" devilprice="2" name="Quasar" />
 	<active gfx="Chaos Dice.png" quality="3" devilprice="2" initcharge="2" maxcharges="6" name="Chaos Dice" />
-	<passive gfx="Duality - Light and Darkness.png" quality="3" devilprice="2" name="Duality - Light and Darkness" />
+	<passive gfx="Duality - Light and Darkness.png" quality="3" devilprice="1" shopprice="20" name="Duality - Light and Darkness" />
 	<passive cache="tearflag" gfx="Sagittarius EX.png" quality="3" devilprice="2" name="Sagittarius EX" />
 	<passive gfx="Ward.png" quality="2" devilprice="2" shopprice="20" name="Ward" />
 	<passive cache="damage" gfx="Chubby's Head.png" quality="3" devilprice="2" name="Chubby's Head" />
@@ -77,7 +77,7 @@
 	<passive cache="all" gfx="Amazing Chaos Scroll.png" quality="4" devilprice="2" shopprice="30" name="Amazing Chaos Scroll" tags="offensive summonable tearsup" />
 	<passive gfx="Magic Conch Shell.png" quality="4" devilprice="2" shopprice="30" name="Magic Conch Shell" />
 	<passive gfx="Super Nova.png" quality="4" devilprice="2" shopprice="40" name="Super Nova" />
-	<active gfx="Rite of Aramesir.png" quality="3" devilprice="2" maxcharges="50" shopprice="15" name="Rite of Aramesir" />
+	<active gfx="Rite of Aramesir.png" quality="4" devilprice="2" maxcharges="50" shopprice="35" name="Rite of Aramesir" />
 	<active gfx="Overwhelming Sinful Spoils.png" quality="3" devilprice="2" shopprice="15" name="Overwhelming Sinful Spoils" />
 	<passive id="2" cache="firedelay" gfx="Technology Omicron.png" quality="3" tags="offensive summonable tech" name="Technology Omicron" description="Laser aura tears"/>
 
