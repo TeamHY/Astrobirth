@@ -722,7 +722,7 @@
 	<passive	id="694"	achievement="496" gfx="Collectibles_694_Heartbreak.png" name="#HEARTBREAK_NAME" description="#HEARTBREAK_DESCRIPTION" cache="damage" />
 	<passive	id="695"	achievement="452" gfx="Collectibles_695_BloodyGust.png" name="#BLOODY_GUST_NAME" description="#BLOODY_GUST_DESCRIPTION" cache="speed firedelay color" />
 	<passive	id="696"	achievement="499" gfx="Collectibles_696_Salvation.png" name="#SALVATION_NAME" description="#SALVATION_DESCRIPTION" persistent="true" />
-	<familiar	id="697"	achievement="435" gfx="Collectibles_697_VanishingTwin.png" shopprice="10" name="#VANISHING_TWIN_NAME" description="#VANISHING_TWIN_DESCRIPTION" />
+	<familiar	id="697"	achievement="435" gfx="Collectibles_697_VanishingTwin.png" shopprice="7" name="#VANISHING_TWIN_NAME" description="#VANISHING_TWIN_DESCRIPTION" />
 	<familiar	id="698"	achievement="502" gfx="Collectibles_698_TwistedPair.png" name="#TWISTED_PAIR_NAME" description="#TWISTED_PAIR_DESCRIPTION" devilprice="2" />
 	<passive	id="699"	achievement="498" gfx="Collectibles_699_AzazelsRage.png" name="#AZAZELS_RAGE_NAME" description="#AZAZELS_RAGE_DESCRIPTION" persistent="true" />
 	<passive	id="700"	achievement="504" gfx="Collectibles_700_EchoChamber.png" name="#ECHO_CHAMBER_NAME" description="#ECHO_CHAMBER_DESCRIPTION" />
