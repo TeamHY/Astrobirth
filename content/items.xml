@@ -42,7 +42,7 @@
 	<passive cache="damage luck" gfx="Clover.png" quality="3" devilprice="2" name="Clover" />
 	<passive gfx="Galactic Medal Of Valor.png" quality="4" devilprice="2" name="Galactic Medal Of Valor" />
 	<passive gfx="Pirate Map.png" quality="2" devilprice="1" name="Pirate Map" />
-	<passive tags="syringe" gfx="Morphine.png" quality="2" devilprice="1" name="Morphine" />
+	<passive tags="syringe" gfx="Morphine.png" quality="2" devilprice="1" shopprice="5" name="Morphine" />
 	<passive gfx="Quasar.png" quality="4" devilprice="2" name="Quasar" />
 	<active gfx="Chaos Dice.png" quality="3" devilprice="2" initcharge="2" maxcharges="6" name="Chaos Dice" />
 	<passive gfx="Duality - Light and Darkness.png" quality="3" devilprice="1" shopprice="20" name="Duality - Light and Darkness" />
