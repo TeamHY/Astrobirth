@@ -500,7 +500,6 @@
 		<Item Name="Blood Of Hatred" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Morphine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Ward" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Fortune Coin" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Master's Degree" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Deneb" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Casiopea" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
@@ -514,6 +513,8 @@
 
 		<Item Name="Birthright - Judas" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<Item Name="Duality - Light and Darkness" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="boss">
