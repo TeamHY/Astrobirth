@@ -115,7 +115,8 @@
 		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
-		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -167,7 +168,8 @@
 		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
-		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="curse">
@@ -217,7 +219,8 @@
 		<Item Name="Delirium Guppy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
-		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Original Sinful Spoils - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -274,6 +277,7 @@
 
 		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rite of Aramesir" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="angel">
@@ -329,6 +333,7 @@
 
 		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rite of Aramesir" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 
@@ -410,6 +415,7 @@
 
 		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rite of Aramesir" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 
 
 
@@ -492,6 +498,7 @@
 
 		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rite of Aramesir" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
