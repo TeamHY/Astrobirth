@@ -380,7 +380,7 @@
 	<passive description="#DEAD_EYE_DESCRIPTION" devilprice="2" gfx="Collectibles_373_DeadEye.png" id="373" name="#DEAD_EYE_NAME" cache="damage" />
 	<passive description="#HOLY_LIGHT_DESCRIPTION" devilprice="2" gfx="Collectibles_374_HolyLight.png" id="374" cache="luck" name="#HOLY_LIGHT_NAME" />
 	<passive description="#HOST_HAT_DESCRIPTION" gfx="Collectibles_375_HostHat.png" id="375" name="#HOST_HAT_NAME" />
-	<passive description="#RESTOCK_DESCRIPTION" gfx="Collectibles_376_Restock.png" id="376" shopprice="20" name="#RESTOCK_NAME" />
+	<passive description="#RESTOCK_DESCRIPTION" gfx="Collectibles_376_Restock.png" id="376" shopprice="13" name="#RESTOCK_NAME" />
 	<passive description="#BURSTING_SACK_DESCRIPTION" gfx="Collectibles_377_BurstingSack.png" id="377" name="#BURSTING_SACK_NAME" />
 	<passive description="#NUMBER_TWO_DESCRIPTION" gfx="Collectibles_378_NumberTwo.png" id="378" name="#NUMBER_TWO_NAME" />
 	<passive description="#PUPULA_DUPLEX_DESCRIPTION" gfx="Collectibles_379_PupulaDuplex.png" id="379" name="#PUPULA_DUPLEX_NAME" cache="tearflag" />
