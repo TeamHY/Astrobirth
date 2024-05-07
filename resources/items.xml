@@ -31,7 +31,7 @@
 	<passive cache="range" description="#MOMS_HEELS_DESCRIPTION" gfx="Collectibles_030_MomsHeels.png" id="30" name="#MOMS_HEELS_NAME" />
 	<passive cache="range" description="#MOMS_LIPSTICK_DESCRIPTION" gfx="Collectibles_031_MomsLipstick.png" id="31" name="#MOMS_LIPSTICK_NAME" />
 	<passive achievement="139" cache="firedelay" description="#WIRE_COAT_HANGER_DESCRIPTION" gfx="Collectibles_032_WireCoatHanger.png" shopprice="7" id="32" name="#WIRE_COAT_HANGER_NAME" />
-	<active cache="flying" description="#THE_BIBLE_DESCRIPTION" persistent="true" gfx="Collectibles_033_TheBible.png" id="33" maxcharges="12" initcharge="0" name="#THE_BIBLE_NAME" />
+	<active cache="flying" description="#THE_BIBLE_DESCRIPTION" persistent="true" gfx="Collectibles_033_TheBible.png" id="33" shopprice="5" maxcharges="12" initcharge="0" name="#THE_BIBLE_NAME" />
 	<active cache="damage" description="#THE_BOOK_OF_BELIAL_DESCRIPTION" gfx="Collectibles_034_TheBookOfBelial.png" id="34" maxcharges="3" shopprice="10" name="#THE_BOOK_OF_BELIAL_NAME" />
 	<active achievement="36" description="#THE_NECRONOMICON_DESCRIPTION" gfx="Collectibles_035_TheNecronomicon.png" id="35" maxcharges="4" name="#THE_NECRONOMICON_NAME" />
 	<active description="#THE_POOP_DESCRIPTION" gfx="Collectibles_036_ThePoop.png" id="36" maxcharges="1" name="#THE_POOP_NAME" />
