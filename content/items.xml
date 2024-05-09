@@ -56,7 +56,7 @@
 	<passive gfx="Bomb Is Power.png" quality="3" devilprice="1" name="Bomb Is Power" />
 	<active gfx="Fortune Coin.png" quality="3" devilprice="1" maxcharges="1" shopprice="10" name="Fortune Coin" />
 	<passive gfx="Master's Degree.png" quality="3" devilprice="1" shopprice="30" name="Master's Degree" />
-	<passive gfx="Bachelor's Degree.png" quality="3" devilprice="1" shopprice="20" name="Bachelor's Degree" />
+	<passive gfx="Bachelor's Degree.png" quality="2" devilprice="1" shopprice="10" name="Bachelor's Degree" />
 	<passive gfx="Pink Ward.png" quality="3" devilprice="1" shopprice="22" name="Pink Ward" />
 	<passive gfx="Rhongomyniad.png" quality="4" devilprice="1" shopprice="20" name="Rhongomyniad" />
 	<passive gfx="Artifact Sanctum.png" quality="4" devilprice="1" shopprice="20" name="Artifact Sanctum" />
