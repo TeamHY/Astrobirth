@@ -125,7 +125,7 @@
 	<active description="#DEAD_SEA_SCROLLS_DESCRIPTION" gfx="Collectibles_124_DeadSeaScrolls.png" id="124" maxcharges="2" name="#DEAD_SEA_SCROLLS_NAME" />
 	<passive bombs="5" description="#BOBBYBOMB_DESCRIPTION" gfx="Collectibles_125_BobbyBomb.png" id="125" name="#BOBBYBOMB_NAME" />
 	<active achievement="44" cache="damage" description="#RAZOR_BLADE_DESCRIPTION" gfx="Collectibles_126_RazorBlade.png" id="126" maxcharges="0" name="#RAZOR_BLADE_NAME" />
-	<active achievement="48" description="#FORGET_ME_NOW_DESCRIPTION" gfx="Collectibles_127_ForgetMeNow.png" id="127" maxcharges="0" name="#FORGET_ME_NOW_NAME" />
+	<active achievement="48" description="#FORGET_ME_NOW_DESCRIPTION" gfx="Collectibles_127_ForgetMeNow.png" id="127" maxcharges="0" shopprice="10" name="#FORGET_ME_NOW_NAME" />
 	<familiar description="#FOREVER_ALONE_DESCRIPTION" gfx="Collectibles_128_ForeverAlone.png" id="128" name="#FOREVER_ALONE_NAME" />
 	<passive cache="speed" description="#BUCKET_OF_LARD_DESCRIPTION" gfx="Collectibles_129_BucketofLard.png" hearts="4" id="129" maxhearts="4" name="#BUCKET_OF_LARD_NAME" />
 	<active cache="flying speed" description="#A_PONY_DESCRIPTION" gfx="Collectibles_130_APony.png" id="130" maxcharges="2" name="#A_PONY_NAME" passivecache="true" addcostumeonpickup="true" />
