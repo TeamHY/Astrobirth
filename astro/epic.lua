@@ -80,6 +80,11 @@ Astro:AddCallback(
                     Astro.Collectible.BIRTHRIGHT_ISAAC,
                     Astro.Collectible.LANIAKEA_SUPERCLUSTER,
                     Astro.Collectible.PTOLEMAEUS,
+                    Astro.Collectible.SINFUL_SPOILS_OF_SUBVERSION_SNAKE_EYE,
+                    Astro.Collectible.TECHNOLOGY_OMICRON,
+                    Astro.Collectible.ORIGINAL_SINFUL_SPOILS_SNAKE_EYE,
+                    Astro.Collectible.RITE_OF_ARAMESIR,
+                    Astro.Collectible.CHUBBYS_HEAD,
                 },
                 [RoomType.ROOM_DEVIL] = {
                     CollectibleType.COLLECTIBLE_SPOON_BENDER,

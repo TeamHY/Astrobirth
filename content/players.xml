@@ -7,14 +7,14 @@
         portrait="playerportrait_leah.png"
         skinColor="-1"
         birthright="What?" />
-    <player name="Diabellstar" skin="character_diabellstar.png" hp="6" pocketActive="" items=""
+    <player name="Diabellstar" skin="character_diabellstar.png" hp="6" pocketActive="" bombs="2" items=""
         keys="1"
         nameimage="playername_diabellstar.png"
         portrait="playerportrait_diabellstar.png"
         skinColor="0"
         birthright="" />
     <player name="Tainted Diabellstar" bSkinParent="Diabellstar" skin="character_diabellstarb.png" hp="6"
-        pocketActive="" items="" keys="1"
+        pocketActive="812" items="802" bombs="2" keys="1"
         nameimage="playername_diabellstar.png"
         portrait="playerportrait_diabellstar.png"
         skinColor="0"
