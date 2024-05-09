@@ -222,7 +222,7 @@
 	<passive bombs="5" description="#SAD_BOMBS_DESCRIPTION" gfx="collectibles_220_sadbombs.png" id="220" name="#SAD_BOMBS_NAME" />
 	<passive achievement="150" cache="tearcolor tearflag" description="#RUBBER_CEMENT_DESCRIPTION" gfx="collectibles_221_rubbercement.png" id="221" devilprice="2" name="#RUBBER_CEMENT_NAME" />
 	<passive cache="firedelay tearflag color" description="#ANTIGRAVITY_DESCRIPTION" gfx="collectibles_222_antigravity.png" id="222" name="#ANTIGRAVITY_NAME" />
-	<passive bombs="5" description="#PYROMANIAC_DESCRIPTION" shopprice="20" gfx="collectibles_223_pyromaniac.png" id="223" name="#PYROMANIAC_NAME" special="true" />
+	<passive bombs="5" description="#PYROMANIAC_DESCRIPTION" shopprice="10" gfx="collectibles_223_pyromaniac.png" id="223" name="#PYROMANIAC_NAME" special="true" />
 	<passive cache="firedelay range tearflag" description="#CRICKETS_BODY_DESCRIPTION" devilprice="2" gfx="collectibles_224_cricketsbody.png" id="224" name="#CRICKETS_BODY_NAME" />
 	<passive description="#GIMPY_DESCRIPTION" gfx="collectibles_225_gimpy.png" id="225" name="#GIMPY_NAME" />
 	<passive blackhearts="2" description="#BLACK_LOTUS_DESCRIPTION" gfx="collectibles_226_blacklotus.png" hearts="4" id="226" maxhearts="2" name="#BLACK_LOTUS_NAME" soulhearts="2" />
