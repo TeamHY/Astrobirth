@@ -85,6 +85,7 @@ Astro:AddCallback(
                     Astro.Collectible.ORIGINAL_SINFUL_SPOILS_SNAKE_EYE,
                     Astro.Collectible.RITE_OF_ARAMESIR,
                     Astro.Collectible.CHUBBYS_HEAD,
+                    Astro.Collectible.AMAZING_CHAOS_SCROLL,
                 },
                 [RoomType.ROOM_DEVIL] = {
                     CollectibleType.COLLECTIBLE_SPOON_BENDER,
