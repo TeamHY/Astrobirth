@@ -225,6 +225,7 @@ local banItem = {
             CollectibleType.COLLECTIBLE_D6,
             CollectibleType.COLLECTIBLE_STARTER_DECK,
             CollectibleType.COLLECTIBLE_SOUL,
+            CollectibleType.COLLECTIBLE_HEARTBREAK,
             Astro.Collectible.ARIES_EX,
         },
         trinket = {
@@ -544,6 +545,7 @@ local banItem = {
         collectible = {
             CollectibleType.COLLECTIBLE_DAMOCLES,
             CollectibleType.COLLECTIBLE_STARTER_DECK,
+            CollectibleType.COLLECTIBLE_HEARTBREAK,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
