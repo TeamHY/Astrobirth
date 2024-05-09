@@ -86,6 +86,7 @@ local banItem = {
         },
         card = {
             Card.CARD_REVERSE_HIGH_PRIESTESS,
+            Card.CARD_EMPEROR,
         },
         pill = {
             PillEffect.PILLEFFECT_BAD_TRIP,
