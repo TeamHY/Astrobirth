@@ -695,7 +695,7 @@
 	<familiar	id="667"	achievement="503" gfx="Collectibles_667_Strawman.png" name="#STRAWMAN_NAME" description="#STRAWMAN_DESCRIPTION" bombs="1" persistent="true" />
 	<passive	id="668"	gfx="Collectibles_668_DadsNote.png" name="#DADS_NOTE_NAME" description="#DADS_NOTE_DESCRIPTION" />
 	<passive	id="669"	gfx="Collectibles_669_Sausage.png" name="#SAUSAGE_NAME" shopprice="25" description="#SAUSAGE_DESCRIPTION" maxhearts="2" hearts="99" cache="all"  />
-	<passive	id="670"	achievement="441" gfx="Collectibles_670_Options.png" shopprice="23" name="#OPTIONS_NAME" description="#OPTIONS_DESCRIPTION" />
+	<passive	id="670"	achievement="441" gfx="Collectibles_670_Options.png" shopprice="20" name="#OPTIONS_NAME" description="#OPTIONS_DESCRIPTION" />
 	<passive	id="671"	achievement="443" gfx="Collectibles_671_CandyHeart.png" name="#CANDY_HEART_NAME" description="#CANDY_HEART_DESCRIPTION" />
 	<passive	id="672"	achievement="445" gfx="Collectibles_672_PoundOfFlesh.png" name="#A_POUND_OF_FLESH_NAME" description="#A_POUND_OF_FLESH_DESCRIPTION" />
 	<passive	id="673"	achievement="447" gfx="Collectibles_673_Redemption.png" name="#REDEMPTION_NAME" shopprice="5" description="#REDEMPTION_DESCRIPTION" persistent="true" />
