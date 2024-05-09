@@ -608,7 +608,7 @@
 	<active		id="580"	achievement="415" gfx="Collectibles_580_SecretKey.png" name="#RED_KEY_NAME" shopprice="25" description="#RED_KEY_DESCRIPTION" maxcharges="6" />
 	<familiar	id="581"	gfx="Collectibles_581_PsyFly.png" devilprice="2" name="#PSY_FLY_NAME" shopprice="35" description="#PSY_FLY_DESCRIPTION" />
 	<active		id="582"	gfx="Collectibles_582_WavyCap.png" name="#WAVY_CAP_NAME" description="#WAVY_CAP_DESCRIPTION" maxcharges="900" chargetype="timed" cache="firedelay damage speed" />
-	<passive	id="583"	gfx="Collectibles_583_RocketInAJar.png" name="#ROCKET_IN_A_JAR_NAME" description="#ROCKET_IN_A_JAR_DESCRIPTION" bombs="5" />
+	<passive	id="583"	gfx="Collectibles_583_RocketInAJar.png" shopprice="7" name="#ROCKET_IN_A_JAR_NAME" description="#ROCKET_IN_A_JAR_DESCRIPTION" bombs="5" />
 	<passive	id="584"	achievement="417" gfx="Collectibles_584_BookOfVirtues.png" name="#BOOK_OF_VIRTUES_NAME" description="#BOOK_OF_VIRTUES_DESCRIPTION" maxcharges="4" />
 	<active		id="585"	achievement="420" gfx="Collectibles_585_AlabasterBox.png" name="#ALABASTER_BOX_NAME" description="#ALABASTER_BOX_DESCRIPTION" maxcharges="12" chargetype="special" initcharge="0" />
 	<passive	id="586"	achievement="429" gfx="Collectibles_586_JacobsLadder.png" name="#THE_STAIRWAY_NAME" shopprice="35" description="#THE_STAIRWAY_DESCRIPTION" />
