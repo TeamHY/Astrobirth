@@ -9,7 +9,7 @@
 	<familiar description="#BROTHER_BOBBY_DESCRIPTION" gfx="Collectibles_008_BrotherBobby.png" id="8" name="#BROTHER_BOBBY_NAME" />
 	<passive description="#SKATOLE_DESCRIPTION" gfx="Collectibles_009_Skatole.png" id="9" name="#SKATOLE_NAME" />
 	<familiar description="#HALO_OF_FLIES_DESCRIPTION" gfx="Collectibles_010_HaloOfFlies.png" id="10" name="#HALO_OF_FLIES_NAME" />
-	<familiar description="#1UP_DESCRIPTION" gfx="Collectibles_011_1Up.png" id="11" name="#1UP_NAME" />
+	<familiar description="#1UP_DESCRIPTION" gfx="Collectibles_011_1Up.png" id="11" shopprice="5" name="#1UP_NAME" />
 	<passive cache="damage range speed size" description="#MAGIC_MUSHROOM_DESCRIPTION" gfx="Collectibles_012_MagicMushroom.png" hearts="100" id="12" maxhearts="2" name="#MAGIC_MUSHROOM_NAME" />
 	<passive cache="speed color" description="#THE_VIRUS_DESCRIPTION" shopprice="5" gfx="Collectibles_013_TheVirus.png" id="13" name="#THE_VIRUS_NAME" />
 	<passive cache="range speed" description="#ROID_RAGE_DESCRIPTION" gfx="Collectibles_014_RoidRage.png" id="14" name="#ROID_RAGE_NAME" />
