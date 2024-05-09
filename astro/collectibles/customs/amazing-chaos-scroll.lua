@@ -14,6 +14,7 @@ if EID then
         "#{{ArrowUp}} {{RangeSmall}}사거리 배율 x1.1~1.5" ..
         "#{{ArrowUp}} {{ShotspeedSmall}}탄속 배율 x1.1~1.5" ..
         "#{{ArrowUp}} {{LuckSmall}}행운 배율 x1.1~1.5"
+        "#!!! 해당 아이템의 체력은 즉시 들어오지 않으며, 거래 후 체력이 없을경우 사망합니다"
     )
 end
 
