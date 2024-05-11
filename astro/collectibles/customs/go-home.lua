@@ -11,7 +11,7 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        Isaac.ExecuteCommand("stage 13a")
+        Isaac.ExecuteCommand("stage 13")
 
         player:RemoveCollectible(Astro.Collectible.GO_HOME)
     end,
