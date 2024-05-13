@@ -68,7 +68,6 @@ local banItem = {
             CollectibleType.COLLECTIBLE_BIRDS_EYE,
             CollectibleType.COLLECTIBLE_GODS_FLESH,
             Astro.Collectible.REINCARNATION,
-            Astro.Collectible.BIRTHRIGHT_JUDAS,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
