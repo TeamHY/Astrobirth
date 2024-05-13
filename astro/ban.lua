@@ -409,12 +409,15 @@ local banItem = {
     },
     [Astro.Players.WATER_ENCHANTRESS] = {
         collectible = {
+            CollectibleType.COLLECTIBLE_CAR_BATTERY,
+            CollectibleType.COLLECTIBLE_SOL,
         },
         trinket = {
         },
         card = {
         },
         pill = {
+            PillEffect.PILLEFFECT_48HOUR_ENERGY,
         }
     },
     [Astro.Players.SUBJECT_GAMMA] = {
