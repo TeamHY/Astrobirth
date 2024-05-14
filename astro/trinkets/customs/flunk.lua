@@ -3,11 +3,11 @@ Astro.Trinket.FLUNK = Isaac.GetTrinketIdByName("Flunk")
 if EID then
     EID:addTrinket(
         Astro.Trinket.FLUNK,
-        "이 아이템은 {{Trinket145}}Perfection로 취급됩니다.#↓ 행운 -5",
+        "이 아이템은 {{Trinket145}}Perfection로 취급됩니다.#↓ 행운 -5#{{ColorGold}}↑ 행운 +3",
         "낙제"
     )
 
-    Astro:AddGoldenTrinketDescription(Astro.Trinket.FLUNK, "↑ 행운 +3", 10)
+    -- Astro:AddGoldenTrinketDescription(Astro.Trinket.FLUNK, "")
 end
 
 Astro:AddCallback(

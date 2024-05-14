@@ -1,9 +1,9 @@
 Astro.Trinket.BLOODY_BANDAGE = Isaac.GetTrinketIdByName("Bloody Bandage")
 
 if EID then
-    EID:addTrinket(Astro.Trinket.BLOODY_BANDAGE, "{{CursedRoom}}저주방 대미지를 입지 않습니다.", "피의 붕대")
+    EID:addTrinket(Astro.Trinket.BLOODY_BANDAGE, "{{CursedRoom}}저주방 대미지를 입지 않습니다.#{{ColorGold}}맵에 {{CursedRoom}}저주방의 위치가 표시됩니다.", "피의 붕대")
 
-    Astro:AddGoldenTrinketDescription(Astro.Trinket.BLOODY_BANDAGE, "맵에 {{CursedRoom}}저주방의 위치가 표시됩니다.")
+    -- Astro:AddGoldenTrinketDescription(Astro.Trinket.BLOODY_BANDAGE, "")
 end
 
 Astro:AddCallback(
