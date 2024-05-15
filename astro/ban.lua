@@ -1,4 +1,10 @@
-local banItem = {
+local isc = require("astro.lib.isaacscript-common")
+
+local nextRunBanItems = {
+    CollectibleType.COLLECTIBLE_1UP,
+}
+
+local banItems = {
     common = {
         collectible = {
             CollectibleType.COLLECTIBLE_DADS_NOTE,
@@ -687,17 +693,24 @@ local banItem = {
 }
 
 local function GetBanTables()
-    local banTables = { banItem.common }
+    local banTables = { banItems.common }
 
     for i = 1, Game():GetNumPlayers() do
         local player = Isaac.GetPlayer(i - 1)
         local playerType = player:GetPlayerType()
 
-        table.insert(banTables, banItem[playerType])
+        table.insert(banTables, banItems[playerType])
     end
 
     return banTables
 end
+
+local banAnimationList = {}
+
+local banAnimationSprite = Sprite()
+banAnimationSprite:Load("gfx/ban_collectible.anm2", true)
+banAnimationSprite:Play("Idle", true)
+banAnimationSprite:SetLastFrame()
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
@@ -719,6 +732,41 @@ Astro:AddCallback(
                     itemPool:RemoveTrinket(value)
                 end
             end
+
+            banAnimationList = Astro.Data.NextBanItems or {}
+            Astro.Data.NextBanItems = {}
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_RENDER,
+    function(_)
+        if banAnimationSprite:IsFinished("Idle") then
+            if #banAnimationList >= 1 then
+                local collectible = table.remove(banAnimationList, 1)
+                local config = Isaac.GetItemConfig():GetCollectible(collectible)
+
+                banAnimationSprite:Play("Idle", true)
+                banAnimationSprite:ReplaceSpritesheet(0, config.GfxFileName)
+                banAnimationSprite:LoadGraphics()
+                banAnimationSprite:Update()
+                banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer() + Vector(0, -40)), Vector(0, 0), Vector(0, 0))
+            end
+        else
+            banAnimationSprite:Update()
+            banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer() + Vector(0, -40)), Vector(0, 0), Vector(0, 0))
+        end
+    end
+)
+
+Astro:AddCallbackCustom(
+    isc.ModCallbackCustom.POST_PLAYER_COLLECTIBLE_ADDED,
+    ---@param player EntityPlayer
+    ---@param collectibleType CollectibleType
+    function(_, player, collectibleType)
+        if Astro:ContainCollectible(nextRunBanItems, collectibleType) then
+            table.insert(Astro.Data.NextBanItems, collectibleType)
         end
     end
 )
