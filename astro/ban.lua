@@ -742,20 +742,22 @@ Astro:AddCallback(
 Astro:AddCallback(
     ModCallbacks.MC_POST_RENDER,
     function(_)
-        if banAnimationSprite:IsFinished("Idle") then
+        if banAnimationSprite:IsFinished("Idle") and Game():GetFrameCount() > 15 then
             if #banAnimationList >= 1 then
                 local collectible = table.remove(banAnimationList, 1)
                 local config = Isaac.GetItemConfig():GetCollectible(collectible)
+
+                Game():GetItemPool():RemoveCollectible(collectible)
 
                 banAnimationSprite:Play("Idle", true)
                 banAnimationSprite:ReplaceSpritesheet(0, config.GfxFileName)
                 banAnimationSprite:LoadGraphics()
                 banAnimationSprite:Update()
-                banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer() + Vector(0, -40)), Vector(0, 0), Vector(0, 0))
+                banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(0, -60)), Vector(0, 0), Vector(0, 0))
             end
         else
             banAnimationSprite:Update()
-            banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer() + Vector(0, -40)), Vector(0, 0), Vector(0, 0))
+            banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(0, -60)), Vector(0, 0), Vector(0, 0))
         end
     end
 )
