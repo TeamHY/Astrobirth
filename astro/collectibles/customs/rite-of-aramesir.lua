@@ -20,7 +20,13 @@ Astro:AddCallback(
 
             for j = 0, ActiveSlot.SLOT_POCKET2 do
                 if player:GetActiveItem(j) == Astro.Collectible.RITE_OF_ARAMESIR then
-                    player:SetActiveCharge(50, j)
+                    if player:GetPlayerType() == Astro.Players.WATER_ENCHANTRESS and player:HasCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT) then
+                        player:AddCollectible(CollectibleType.COLLECTIBLE_BATTERY)
+                        player:SetActiveCharge(100, j)
+                        player:RemoveCollectible(CollectibleType.COLLECTIBLE_BATTERY)
+                    else
+                        player:SetActiveCharge(50, j)
+                    end
                 end
             end
         end
