@@ -1,7 +1,12 @@
 local isc = require("astro.lib.isaacscript-common")
 
 local nextRunBanItems = {
-    CollectibleType.COLLECTIBLE_1UP,
+    CollectibleType.COLLECTIBLE_SACRED_HEART,
+    Astro.Collectible.AMAZING_CHAOS_SCROLL,
+    CollectibleType.COLLECTIBLE_C_SECTION,
+    CollectibleType.COLLECTIBLE_SACRED_ORB,
+    CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
+    CollectibleType.COLLECTIBLE_PSY_FLY,
 }
 
 local banItems = {

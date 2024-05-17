@@ -62,7 +62,6 @@ Astro:AddCallback(
                     CollectibleType.COLLECTIBLE_SACRED_HEART,
                     CollectibleType.COLLECTIBLE_GODHEAD,
                     CollectibleType.COLLECTIBLE_PSY_FLY,
-                    CollectibleType.COLLECTIBLE_C_SECTION,
                     CollectibleType.COLLECTIBLE_SACRED_ORB,
                     CollectibleType.COLLECTIBLE_POLYPHEMUS,
                     CollectibleType.COLLECTIBLE_EYE_OF_BELIAL,
