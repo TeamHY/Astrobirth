@@ -419,7 +419,6 @@ local banItems = {
         collectible = {
             CollectibleType.COLLECTIBLE_CAR_BATTERY,
             CollectibleType.COLLECTIBLE_SOL,
-            CollectibleType.COLLECTIBLE_BIRTHRIGHT,
         },
         trinket = {
         },
