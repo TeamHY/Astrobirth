@@ -158,7 +158,7 @@ Astro:AddCallback(
                 )
             elseif roomType == RoomType.ROOM_ISAACS then
                 -- TODO: RNG 교체해야 함
-                local rng = Isaac.GetPlayer():GetCollectibleRNG(CollectibleType.COLLECTIBLE_INNER_EYE)
+                local rng = Isaac.GetPlayer():GetCollectibleRNG(Astro.Collectible.ALTAIR)
 
                 for i = 0, 2 do
                     local collectables = Astro:GetRandomCollectibles(Astro.Data.IsaacPool, rng, 1)
@@ -178,7 +178,7 @@ Astro:AddCallback(
                 end
             elseif roomType == RoomType.ROOM_BARREN then
                 -- TODO: RNG 교체해야 함
-                local rng = Isaac.GetPlayer():GetCollectibleRNG(CollectibleType.COLLECTIBLE_INNER_EYE)
+                local rng = Isaac.GetPlayer():GetCollectibleRNG(Astro.Collectible.ALTAIR)
 
                 for i = 0, 1 do
                     local collectables = Astro:GetRandomCollectibles(Astro.Data.BarrenPool, rng, 1)
@@ -198,7 +198,7 @@ Astro:AddCallback(
                 end
             elseif roomType == RoomType.ROOM_ARCADE then
                 -- TODO: RNG 교체해야 함
-                local rng = Isaac.GetPlayer():GetCollectibleRNG(CollectibleType.COLLECTIBLE_INNER_EYE)
+                local rng = Isaac.GetPlayer():GetCollectibleRNG(Astro.Collectible.ALTAIR)
 
                 for i = 0, 1 do
                     local collectables = Astro:GetRandomCollectibles(Astro.Data.ArcadePool, rng, 1)
