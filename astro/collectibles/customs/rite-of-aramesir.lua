@@ -7,7 +7,7 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     function(_, isContinued)
         if EID then
-            Astro:AddEIDCollectible(Astro.Collectible.RITE_OF_ARAMESIR, "아라메시아의 의", "...", "사용 시 {{Trinket" .. Astro.Trinket.BLACK_MIRROR .. "}}Black Mirror를 소환합니다.#스테이지 진입 시 쿨타임이 채워집니다.")
+            Astro:AddEIDCollectible(Astro.Collectible.RITE_OF_ARAMESIR, "아라메시아의 의", "당신은 오랜 맹약의 의식에 의해 이 세계에 내려왔습니다. ", "사용 시 {{Trinket" .. Astro.Trinket.BLACK_MIRROR .. "}}Black Mirror를 소환합니다.#스테이지 진입 시 쿨타임이 채워집니다.")
         end
     end
 )

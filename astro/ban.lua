@@ -426,7 +426,6 @@ local banItems = {
     },
     [Astro.Players.DIABELLSTAR_B] = {
         collectible = {
-        collectible = {
         },
         trinket = {
         },
