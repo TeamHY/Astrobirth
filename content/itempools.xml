@@ -422,6 +422,7 @@
 		<Item Name="Rite of Aramesir" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Technology Omicron" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amazing Chaos Scroll" Weight="0.3" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Overwhelming Sinful Spoils" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
 
 
@@ -506,6 +507,7 @@
 		<Item Name="Rite of Aramesir" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Technology Omicron" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amazing Chaos Scroll" Weight="0.3" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Overwhelming Sinful Spoils" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="shop">
@@ -535,6 +537,7 @@
 		<Item Name="Duality - Light and Darkness" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rite of Aramesir" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amazing Chaos Scroll" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Overwhelming Sinful Spoils" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
 	<Pool Name="boss">
