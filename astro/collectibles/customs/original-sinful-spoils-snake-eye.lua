@@ -1,7 +1,7 @@
 Astro.Collectible.ORIGINAL_SINFUL_SPOILS_SNAKE_EYE = Isaac.GetItemIdByName("Original Sinful Spoils - Snake Eye")
 
 if EID then
-    Astro:AddEIDCollectible(Astro.Collectible.ORIGINAL_SINFUL_SPOILS_SNAKE_EYE, "원죄보 - 스네이크아이", "...", "공격 시 10%의 확률로 여러 유령을 소환합니다.#중첩 시 기본 확률이 합 연산으로 증가합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 90 이상일 때 100% 확률 (행운 1당 +1%p)")
+    Astro:AddEIDCollectible(Astro.Collectible.ORIGINAL_SINFUL_SPOILS_SNAKE_EYE, "원죄보 - 스네이크아이", "...", "공격 시 10%의 확률로 여러 유령을 소환합니다.#중첩 시 기본 확률이 합 연산으로 증가하고 쿨타임이 줄어듭니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 90 이상일 때 100% 확률 (행운 1당 +1%p)")
 end
 
 local spawnChance = 0.1
@@ -9,6 +9,18 @@ local spawnChance = 0.1
 local luckMultiply = 1 / 100
 
 local cooldownTime = 75 -- 30 프레임 = 1초
+
+---@param player EntityPlayer
+---@return number
+local function ComputeMultiplier(player)
+    local result = player:GetCollectibleNum(Astro.Collectible.ORIGINAL_SINFUL_SPOILS_SNAKE_EYE)
+
+    if player:GetPlayerType() == Astro.Players.DIABELLSTAR_B then
+        result = result + player:GetCollectibleNum(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
+    end
+
+    return result
+end
 
 Astro:AddCallback(
     ModCallbacks.MC_ENTITY_TAKE_DMG,
@@ -26,7 +38,7 @@ Astro:AddCallback(
             if (data["ossSnakeEyeCooldown"] == nil or data["ossSnakeEyeCooldown"] < Game():GetFrameCount()) and player:HasCollectible(Astro.Collectible.ORIGINAL_SINFUL_SPOILS_SNAKE_EYE) and entity:IsVulnerableEnemy() then
                 if source.Type == EntityType.ENTITY_TEAR or damageFlags & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or source.Type == EntityType.ENTITY_KNIFE then
                     local rng = player:GetCollectibleRNG(Astro.Collectible.ORIGINAL_SINFUL_SPOILS_SNAKE_EYE)
-                    local baseChance = spawnChance * player:GetCollectibleNum(Astro.Collectible.ORIGINAL_SINFUL_SPOILS_SNAKE_EYE);
+                    local baseChance = spawnChance * ComputeMultiplier(player);
 
                     if rng:RandomFloat() < baseChance + player.Luck * luckMultiply then
                         local random = rng:RandomInt(3)
@@ -54,7 +66,7 @@ Astro:AddCallback(
                             data.Astro.KillFrame = Game():GetFrameCount() + 10 * 30
                         end
 
-                        data["ossSnakeEyeCooldown"] = Game():GetFrameCount() + cooldownTime
+                        data["ossSnakeEyeCooldown"] = Game():GetFrameCount() + cooldownTime / ComputeMultiplier(player)
                     end
                 end
             end
