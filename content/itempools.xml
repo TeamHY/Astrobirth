@@ -116,7 +116,7 @@
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Original Sinful Spoils - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Technology Omicron" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amazing Chaos Scroll" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
@@ -170,7 +170,7 @@
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Original Sinful Spoils - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Technology Omicron" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amazing Chaos Scroll" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
@@ -222,7 +222,7 @@
 		<Item Name="Birthright - The Lost" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 
 		<Item Name="Original Sinful Spoils - Snake Eye" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Technology Omicron" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amazing Chaos Scroll" Weight="0.7" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
@@ -420,7 +420,7 @@
 
 		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rite of Aramesir" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Technology Omicron" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amazing Chaos Scroll" Weight="0.3" DecreaseBy="1" RemoveOn="0.1"/>
 
 
@@ -504,7 +504,7 @@
 
 		<Item Name="Original Sinful Spoils - Snake Eye" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Rite of Aramesir" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Technology Omicron" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Technology Omicron" Weight="0.4" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Name="Amazing Chaos Scroll" Weight="0.3" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 
