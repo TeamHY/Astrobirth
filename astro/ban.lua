@@ -8,6 +8,7 @@ local nextRunBanItems = {
     CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
     CollectibleType.COLLECTIBLE_PSY_FLY,
     CollectibleType.COLLECTIBLE_GLOWING_HOUR_GLASS,
+    Astro.Collectible.TECHNOLOGY_OMICRON,
 }
 
 if EID then
