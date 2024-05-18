@@ -9,6 +9,22 @@ local nextRunBanItems = {
     CollectibleType.COLLECTIBLE_PSY_FLY,
 }
 
+if EID then
+    EID:addDescriptionModifier(
+        "AstroBan",
+        function(descObj)
+            if descObj.ObjVariant == PickupVariant.PICKUP_COLLECTIBLE and Astro:ContainCollectible(nextRunBanItems, descObj.ObjSubType) then
+                return true
+            end
+        end,
+        function(descObj)
+            EID:appendToDescription(descObj, "#!!! 주의: 해당 아이템을 획득했을 경우, 다음 판 배열에서 제거됩니다. (리셋하면 재사용 가능)")
+
+            return descObj
+        end
+    )
+end
+
 local banItems = {
     common = {
         collectible = {
