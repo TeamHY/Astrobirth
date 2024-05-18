@@ -65,6 +65,7 @@ Astro:AddCallback(
                     CollectibleType.COLLECTIBLE_SACRED_ORB,
                     CollectibleType.COLLECTIBLE_POLYPHEMUS,
                     CollectibleType.COLLECTIBLE_EYE_OF_BELIAL,
+                    CollectibleType.COLLECTIBLE_SOL,
                     Astro.Collectible.CYGNUS,
                     Astro.Collectible.ARIES_EX,
                     Astro.Collectible.AQUARIUS_EX,
