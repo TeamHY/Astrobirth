@@ -744,24 +744,38 @@ Astro:AddCallback(
 )
 
 Astro:AddCallback(
+    ModCallbacks.MC_POST_UPDATE,
+    function(_)
+        if not banAnimationSprite:IsFinished("Idle") then
+            banAnimationSprite:Update()
+        end
+    end
+)
+
+Astro:AddCallback(
     ModCallbacks.MC_POST_RENDER,
     function(_)
-        if banAnimationSprite:IsFinished("Idle") and Game():GetFrameCount() > 15 then
-            if #banAnimationList >= 1 then
-                local collectible = table.remove(banAnimationList, 1)
-                local config = Isaac.GetItemConfig():GetCollectible(collectible)
+        local level = Game():GetLevel()
+        local currentRoom = level:GetCurrentRoom()
 
-                Game():GetItemPool():RemoveCollectible(collectible)
-
-                banAnimationSprite:Play("Idle", true)
-                banAnimationSprite:ReplaceSpritesheet(0, config.GfxFileName)
-                banAnimationSprite:LoadGraphics()
-                banAnimationSprite:Update()
+        if level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetCurrentRoomIndex() == 84 and currentRoom:IsFirstVisit() and Game():GetFrameCount() > 15 then
+            if banAnimationSprite:IsFinished("Idle") then
+                if #banAnimationList >= 1 then
+                    local collectible = table.remove(banAnimationList, 1)
+                    local config = Isaac.GetItemConfig():GetCollectible(collectible)
+    
+                    Game():GetItemPool():RemoveCollectible(collectible)
+    
+                    banAnimationSprite:Play("Idle", true)
+                    banAnimationSprite:ReplaceSpritesheet(0, config.GfxFileName)
+                    banAnimationSprite:LoadGraphics()
+                    banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(0, -60)), Vector(0, 0), Vector(0, 0))
+    
+                    table.insert(banAnimationList, collectible)
+                end
+            else
                 banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(0, -60)), Vector(0, 0), Vector(0, 0))
             end
-        else
-            banAnimationSprite:Update()
-            banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(0, -60)), Vector(0, 0), Vector(0, 0))
         end
     end
 )
