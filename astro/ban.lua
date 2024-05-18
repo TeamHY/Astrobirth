@@ -416,7 +416,6 @@ local banItems = {
     },
     [Astro.Players.DIABELLSTAR] = {
         collectible = {
-            CollectibleType.COLLECTIBLE_BIRTHRIGHT,
         },
         trinket = {
         },
@@ -427,7 +426,7 @@ local banItems = {
     },
     [Astro.Players.DIABELLSTAR_B] = {
         collectible = {
-            CollectibleType.COLLECTIBLE_BIRTHRIGHT,
+        collectible = {
         },
         trinket = {
         },
