@@ -322,76 +322,6 @@ local startItem = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
         }
     },
-    [Astro.Players.LEAH] = {
-        collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
-        },
-        trinket = {
-            -- TrinketType.TRINKET_SWALLOWED_PENNY,
-        },
-        card = {
-            Card.CARD_HOLY,
-        },
-        pill = {
-            -- PillEffect.PILLEFFECT_BAD_GAS,
-        }
-    },
-    [Astro.Players.DIABELLSTAR] = {
-        collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
-        },
-        trinket = {
-            -- TrinketType.TRINKET_SWALLOWED_PENNY,
-        },
-        card = {
-            Card.CARD_HOLY,
-        },
-        pill = {
-            -- PillEffect.PILLEFFECT_BAD_GAS,
-        }
-    },
-    [Astro.Players.DIABELLSTAR_B] = {
-        collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
-        },
-        trinket = {
-            -- TrinketType.TRINKET_SWALLOWED_PENNY,
-        },
-        card = {
-            Card.CARD_HOLY,
-        },
-        pill = {
-            -- PillEffect.PILLEFFECT_BAD_GAS,
-        }
-    },
-    [Astro.Players.WATER_ENCHANTRESS] = {
-        collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
-        },
-        trinket = {
-            -- TrinketType.TRINKET_SWALLOWED_PENNY,
-        },
-        card = {
-            Card.CARD_HOLY,
-        },
-        pill = {
-            -- PillEffect.PILLEFFECT_BAD_GAS,
-        }
-    },
-    [Astro.Players.SUBJECT_GAMMA] = {
-        collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
-        },
-        trinket = {
-            -- TrinketType.TRINKET_SWALLOWED_PENNY,
-        },
-        card = {
-            Card.CARD_HOLY,
-        },
-        pill = {
-            -- PillEffect.PILLEFFECT_BAD_GAS,
-        }
-    },
     [PlayerType.PLAYER_ISAAC_B] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
@@ -667,6 +597,76 @@ local startItem = {
         },
         card = {
             -- Card.CARD_FOOL,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.LEAH] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.DIABELLSTAR] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.DIABELLSTAR_B] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.WATER_ENCHANTRESS] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.SUBJECT_GAMMA] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,

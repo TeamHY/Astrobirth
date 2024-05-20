@@ -406,59 +406,6 @@ local banItems = {
         pill = {
         }
     },
-    [Astro.Players.LEAH] = {
-        collectible = {
-        },
-        trinket = {
-        },
-        card = {
-        },
-        pill = {
-        }
-    },
-    [Astro.Players.DIABELLSTAR] = {
-        collectible = {
-        },
-        trinket = {
-        },
-        card = {
-        },
-        pill = {
-        }
-    },
-    [Astro.Players.DIABELLSTAR_B] = {
-        collectible = {
-        },
-        trinket = {
-        },
-        card = {
-        },
-        pill = {
-        }
-    },
-    [Astro.Players.WATER_ENCHANTRESS] = {
-        collectible = {
-            CollectibleType.COLLECTIBLE_CAR_BATTERY,
-            CollectibleType.COLLECTIBLE_SOL,
-        },
-        trinket = {
-        },
-        card = {
-        },
-        pill = {
-            PillEffect.PILLEFFECT_48HOUR_ENERGY,
-        }
-    },
-    [Astro.Players.SUBJECT_GAMMA] = {
-        collectible = {
-        },
-        trinket = {
-        },
-        card = {
-        },
-        pill = {
-        }
-    },
     [PlayerType.PLAYER_ISAAC_B] = {
         collectible = {
         },
@@ -709,7 +656,60 @@ local banItems = {
         },
         pill = {
         }
-    }
+    },
+    [Astro.Players.LEAH] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
+    [Astro.Players.DIABELLSTAR] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
+    [Astro.Players.DIABELLSTAR_B] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
+    [Astro.Players.WATER_ENCHANTRESS] = {
+        collectible = {
+            CollectibleType.COLLECTIBLE_CAR_BATTERY,
+            CollectibleType.COLLECTIBLE_SOL,
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+            PillEffect.PILLEFFECT_48HOUR_ENERGY,
+        }
+    },
+    [Astro.Players.SUBJECT_GAMMA] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
 }
 
 local function GetBanTables()
