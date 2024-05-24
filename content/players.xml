@@ -20,15 +20,21 @@
         skinColor="0"
         birthright="" />
     <player name="Water Enchantress" skin="character_water_enchantress.png" hp="6" bombs="2" keys="1" pocketActive="811"
-        items="" keys="1"
+        items=""
         nameimage="playername_water_enchantress.png"
         portrait="playerportrait_water_enchantress.png"
         skinColor="-1"
         birthright="" />
-    <player name="Subject Gamma" skin="character_subject_gamma.png" hp="6" pocketActive="" items=""
+    <player name="David Martinez" skin="character_david_martinez.png" hp="6" pocketActive="" items=""
         keys="1"
         nameimage="playername_subject_gamma.png"
         portrait="playerportrait_subject_gamma.png"
-        skinColor="0"
+        skinColor="-1"
+        birthright="" />
+    <player name="Tainted David Martinez" bSkinParent="David Martinez" skin="character_david_martinezb.png" hp="6" pocketActive="" items=""
+        keys="1"
+        nameimage="playername_subject_gamma.png"
+        portrait="playerportrait_subject_gamma.png"
+        skinColor="-1"
         birthright="" />
 </players>

@@ -714,7 +714,17 @@ local banItems = {
             PillEffect.PILLEFFECT_48HOUR_ENERGY,
         }
     },
-    [Astro.Players.SUBJECT_GAMMA] = {
+    [Astro.Players.DAVID_MARTINEZ] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
+    [Astro.Players.DAVID_MARTINEZ_B] = {
         collectible = {
         },
         trinket = {

@@ -5,12 +5,15 @@ Astro.Players = {
     DIABELLSTAR = Isaac.GetPlayerTypeByName("Diabellstar"),
     DIABELLSTAR_B = Isaac.GetPlayerTypeByName("Tainted Diabellstar", true),
     WATER_ENCHANTRESS = Isaac.GetPlayerTypeByName("Water Enchantress"),
-    SUBJECT_GAMMA = Isaac.GetPlayerTypeByName("Subject Gamma"),
+    DAVID_MARTINEZ = Isaac.GetPlayerTypeByName("David Martinez"),
+    DAVID_MARTINEZ_B = Isaac.GetPlayerTypeByName("Tainted David Martinez", true),
 }
 
 local DIABELLSTAR_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_diabellstar_hair.anm2")
-local DIABELLSTAR_HAIR_B = Isaac.GetCostumeIdByPath("gfx/characters/character_diabellstar_hairb.anm2")
+local DIABELLSTAR_B_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_diabellstarb_hair.anm2")
 local WATER_ENCHANTRESS_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_water_enchantress_hair.anm2")
+local DAVID_MARTINEZ_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_david_martinez_hair.anm2")
+local DAVID_MARTINEZ_B_HAIR = Isaac.GetCostumeIdByPath("gfx/characters/character_david_martinezb_hair.anm2")
 
 local startItem = {
     common = {
@@ -658,7 +661,21 @@ local startItem = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
         }
     },
-    [Astro.Players.SUBJECT_GAMMA] = {
+    [Astro.Players.DAVID_MARTINEZ] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.DAVID_MARTINEZ_B] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
         },
@@ -760,13 +777,13 @@ Astro:AddCallback(
         end
 
         if player:GetPlayerType() == Astro.Players.DIABELLSTAR_B then
-            if not player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR_B) then
-                player:GetEffects():AddNullEffect(DIABELLSTAR_HAIR_B, true)
+            if not player:GetEffects():HasNullEffect(DIABELLSTAR_B_HAIR) then
+                player:GetEffects():AddNullEffect(DIABELLSTAR_B_HAIR, true)
                 -- hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
             end
         else
-            if player:GetEffects():HasNullEffect(DIABELLSTAR_HAIR_B) then
-                player:GetEffects():RemoveNullEffect(DIABELLSTAR_HAIR_B)
+            if player:GetEffects():HasNullEffect(DIABELLSTAR_B_HAIR) then
+                player:GetEffects():RemoveNullEffect(DIABELLSTAR_B_HAIR)
                 -- hiddenItemManager:Remove(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
             end
         end
@@ -778,6 +795,30 @@ Astro:AddCallback(
         else
             if player:GetEffects():HasNullEffect(WATER_ENCHANTRESS_HAIR) then
                 player:GetEffects():RemoveNullEffect(WATER_ENCHANTRESS_HAIR)
+            end
+        end
+
+        if player:GetPlayerType() == Astro.Players.DAVID_MARTINEZ then
+            if not player:GetEffects():HasNullEffect(DAVID_MARTINEZ_HAIR) then
+                player:GetEffects():AddNullEffect(DAVID_MARTINEZ_HAIR, true)
+                -- hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
+            end
+        else
+            if player:GetEffects():HasNullEffect(DAVID_MARTINEZ_HAIR) then
+                player:GetEffects():RemoveNullEffect(DAVID_MARTINEZ_HAIR)
+                -- hiddenItemManager:Remove(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
+            end
+        end
+
+        if player:GetPlayerType() == Astro.Players.DAVID_MARTINEZ_B then
+            if not player:GetEffects():HasNullEffect(DAVID_MARTINEZ_B_HAIR) then
+                player:GetEffects():AddNullEffect(DAVID_MARTINEZ_B_HAIR, true)
+                -- hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
+            end
+        else
+            if player:GetEffects():HasNullEffect(DAVID_MARTINEZ_B_HAIR) then
+                player:GetEffects():RemoveNullEffect(DAVID_MARTINEZ_B_HAIR)
+                -- hiddenItemManager:Remove(player, CollectibleType.COLLECTIBLE_SNAKE_EYE)
             end
         end
     end

@@ -2,7 +2,7 @@
 	<Info CreatedBy="robot" CreatedOn="3/04/2024 6:51:31 pm" Version="120" Fps="30"/>
 	<Content>
 		<Spritesheets>
-			<Spritesheet Id="0" Path="costumes/character_diabellstar_hairb.png" />
+			<Spritesheet Id="0" Path="costumes/character_diabellstarb_hair.png" />
 		</Spritesheets>
 		<Layers>
 			<Layer Name="head0" Id="0" SpritesheetId="0"/>
