@@ -2,13 +2,27 @@ local isc = require("astro.lib.isaacscript-common")
 
 local nextRunBanItems = {
     CollectibleType.COLLECTIBLE_SACRED_HEART,
-    Astro.Collectible.AMAZING_CHAOS_SCROLL,
+    CollectibleType.COLLECTIBLE_GODHEAD,
+    CollectibleType.COLLECTIBLE_SOL,
     CollectibleType.COLLECTIBLE_C_SECTION,
+    CollectibleType.COLLECTIBLE_GOAT_HEAD,
+    CollectibleType.COLLECTIBLE_DAMOCLES,
+    CollectibleType.COLLECTIBLE_SPINDOWN_DICE,
+    CollectibleType.COLLECTIBLE_DEATH_CERTIFICATE,
     CollectibleType.COLLECTIBLE_SACRED_ORB,
+    CollectibleType.COLLECTIBLE_COMPASS,
     CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
     CollectibleType.COLLECTIBLE_PSY_FLY,
+    CollectibleType.COLLECTIBLE_TREASURE_MAP,
+    CollectibleType.COLLECTIBLE_MIND,
+    CollectibleType.COLLECTIBLE_DEAD_CAT,
     CollectibleType.COLLECTIBLE_GLOWING_HOUR_GLASS,
+    CollectibleType.COLLECTIBLE_HOLY_MANTLE,
+    CollectibleType.COLLECTIBLE_SPELUNKER_HAT
+    CollectibleType.COLLECTIBLE_CRYSTAL_BALL,
     Astro.Collectible.TECHNOLOGY_OMICRON,
+    Astro.Collectible.AMAZING_CHAOS_SCROLL,
+    Astro.Collectible.ARIES_EX,
 }
 
 if EID then
