@@ -18,7 +18,7 @@ local nextRunBanItems = {
     CollectibleType.COLLECTIBLE_DEAD_CAT,
     CollectibleType.COLLECTIBLE_GLOWING_HOUR_GLASS,
     CollectibleType.COLLECTIBLE_HOLY_MANTLE,
-    CollectibleType.COLLECTIBLE_SPELUNKER_HAT
+    CollectibleType.COLLECTIBLE_SPELUNKER_HAT,
     CollectibleType.COLLECTIBLE_CRYSTAL_BALL,
     Astro.Collectible.TECHNOLOGY_OMICRON,
     Astro.Collectible.AMAZING_CHAOS_SCROLL,
