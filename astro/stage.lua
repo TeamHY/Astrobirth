@@ -3,9 +3,14 @@
 -- 챔피언 등장 제외 리스트
 local champBanList = { 2, 3, 4, 6, 7, 8, 11, 14, 18, 23, 24, 25 }
 
+---@param player EntityPlayer
 ---@param stage LevelStage
 ---@return boolean
-local function CheckHeartLimitStage(stage)
+local function CheckHeartLimit(player, stage)
+    if player:HasCollectible(Astro.Collectible.VERY_EZ_MODE) then
+        return false
+    end
+
     local level = Game():GetLevel()
 
     return stage >= LevelStage.STAGE4_3 or
@@ -22,7 +27,7 @@ Astro:AddCallback(
         local playerType = player:GetPlayerType()
 
         if playerType == PlayerType.PLAYER_THEFORGOTTEN then
-            if CheckHeartLimitStage(stage) then
+            if CheckHeartLimit(player, stage) then
                 player:AddBrokenHearts(4 - player:GetBrokenHearts())
             end
 
@@ -30,10 +35,10 @@ Astro:AddCallback(
         elseif playerType == PlayerType.PLAYER_THESOUL then
             player:AddBrokenHearts(6 - player:GetBrokenHearts())
 
-            if CheckHeartLimitStage(stage) then
+            if CheckHeartLimit(player, stage) then
                 player:GetSubPlayer():AddBrokenHearts(4 - player:GetSubPlayer():GetBrokenHearts())
             end
-        elseif CheckHeartLimitStage(stage) or player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
+        elseif CheckHeartLimit(player, stage) or player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
             if
                 playerType == PlayerType.PLAYER_KEEPER or playerType == PlayerType.PLAYER_KEEPER_B or
                 playerType == PlayerType.PLAYER_THESOUL_B

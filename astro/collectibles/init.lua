@@ -90,6 +90,7 @@ require "astro.collectibles.customs.taurus-ex"
 require "astro.collectibles.customs.technology-omicron"
 require "astro.collectibles.customs.trinity"
 require "astro.collectibles.customs.vega"
+require "astro.collectibles.customs.very-ez-mode"
 require "astro.collectibles.customs.virgo-ex"
 require "astro.collectibles.customs.ward"
 

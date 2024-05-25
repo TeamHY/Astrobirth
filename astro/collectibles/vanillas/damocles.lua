@@ -52,7 +52,8 @@ Astro:AddCallback(
             CollectibleType.COLLECTIBLE_SATURNUS,
             CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS,
             CollectibleType.COLLECTIBLE_BONE_SPURS,
-            CollectibleType.COLLECTIBLE_BROKEN_WATCH
+            CollectibleType.COLLECTIBLE_BROKEN_WATCH,
+            Astro.Collectible.VERY_EZ_MODE
         }
 
         trinkets = {

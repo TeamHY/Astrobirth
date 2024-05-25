@@ -1,7 +1,7 @@
 Astro.Collectible.EZ_MODE = Isaac.GetItemIdByName("EZ Mode")
 
 if EID then
-    Astro:AddEIDCollectible(Astro.Collectible.EZ_MODE, "이지 모드", "...", "피격 페널티가 발생하지 않습니다.")
+    Astro:AddEIDCollectible(Astro.Collectible.EZ_MODE, "쉬운 모드", "...", "피격 페널티가 발생하지 않습니다.")
 end
 
 Astro:AddCallback(
@@ -12,7 +12,7 @@ Astro:AddCallback(
 
         if Astro:CheckFirstVisitFrame(currentRoom) then
             if level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetCurrentRoomIndex() == 84 then
-                Astro:SpawnCollectible(Astro.Collectible.EZ_MODE, currentRoom:GetGridPosition(16), nil, true)
+                Astro:SpawnCollectible(Astro.Collectible.EZ_MODE, currentRoom:GetGridPosition(33), nil, true)
             end
         end
     end
