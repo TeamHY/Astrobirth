@@ -509,9 +509,18 @@ wakaba.descriptions["ko_kr"].playernotes = {
 		.. "#..."
 		.. "",
     },
-    [Astro.Players.SUBJECT_GAMMA] = {
+    [Astro.Players.DAVID_MARTINEZ] = {
         -- icon = "",
-		name = "실험체 감마",
+		name = "데이비드",
+		description = "..."
+		.. "#..."
+		.. "#..."
+		.. "#..."
+		.. "",
+    },
+	[Astro.Players.DAVID_MARTINEZ_B] = {
+        -- icon = "",
+		name = "루시",
 		description = "..."
 		.. "#..."
 		.. "#..."
