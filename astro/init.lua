@@ -24,3 +24,16 @@ function Astro:CurseRemove(curse) -- 입장 전 저주 제거
 end
 
 Astro:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, Astro.CurseRemove)
+
+Astro:AddCallback(
+	ModCallbacks.MC_POST_RENDER,
+	function(_)
+		if not Astro:IsCollectibleUnlocked(CollectibleType.COLLECTIBLE_DEATH_CERTIFICATE) then
+			local player = Isaac.GetPlayer()
+			local position = Isaac.WorldToRenderPosition(player.Position)
+
+
+			Isaac.RenderText("Death Certificate is not unlocked", position.X - 100, position.Y, 255, 0, 0, 255)
+		end
+	end
+)

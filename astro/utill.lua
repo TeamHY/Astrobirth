@@ -363,3 +363,26 @@ function Astro:IsDeathCertificateRoom()
 
     return false
 end
+
+--- Credit to EID
+function Astro:IsCollectibleUnlocked(collectibleType)
+    local itemConfig = Isaac.GetItemConfig()
+	local item = itemConfig:GetCollectible(collectibleType)
+	if item == nil then return false end
+
+    local result = false
+
+    if item.AchievementID == -1 or (item.Tags and item.Tags & ItemConfig.TAG_QUEST == ItemConfig.TAG_QUEST) then
+        result = true
+        return true
+    end
+
+    if item.Hidden then
+        result = false
+        return false
+    end
+    
+    if item.IsAvailable then result = item:IsAvailable()
+    else result = true end
+    return result
+end
