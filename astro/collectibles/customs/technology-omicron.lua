@@ -13,7 +13,7 @@ local spawnChance = 0.1
 
 local luckMultiply = 1 / 100
 
-local cooldownTime = 75 -- 30 프레임 = 1초
+local cooldownTime = 60 -- 30 프레임 = 1초
 
 ---@param player EntityPlayer
 ---@return boolean
