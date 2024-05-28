@@ -462,7 +462,7 @@
 	<passive description="#VARICOSE_VEINS_DESCRIPTION" gfx="Collectibles_452_VaricoseVeins.png" id="452" name="#VARICOSE_VEINS_NAME" />
 	<passive achievement="291" description="#COMPOUND_FRACTURE_DESCRIPTION" devilprice="2" gfx="Collectibles_453_CompoundFracture.png" id="453" name="#COMPOUND_FRACTURE_NAME" cache="range tearflag" />
 	<passive description="#POLYDACTYLY_DESCRIPTION" gfx="Collectibles_454_Polydactyly.png" shopprice="12" id="454" name="#POLYDACTYLY_NAME" />
-	<passive achievement="307" description="#DADS_LOST_COIN_DESCRIPTION" gfx="Collectibles_455_DadsLostCoin.png" id="455" name="#DADS_LOST_COIN_NAME" cache="range" />
+	<passive achievement="307" description="#DADS_LOST_COIN_DESCRIPTION" gfx="Collectibles_455_DadsLostCoin.png" id="455" shopprice="4" name="#DADS_LOST_COIN_NAME" cache="range" />
 	<passive description="#MIDNIGHT_SNACK_DESCRIPTION" gfx="Collectibles_456_MoldyBread.png" id="456" name="#MIDNIGHT_SNACK_NAME" hearts="4" maxhearts="2" />
 	<passive description="#CONE_HEAD_DESCRIPTION" gfx="Collectibles_457_Conehead.png" id="457" name="#CONE_HEAD_NAME" soulhearts="2" />
 	<passive description="#BELLY_BUTTON_DESCRIPTION" gfx="Collectibles_458_BellyButton.png" id="458" shopprice="10" name="#BELLY_BUTTON_NAME" />
