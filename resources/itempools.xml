@@ -3537,730 +3537,158 @@
 		<Item Id="723" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="craneGame">
-		<Item Id="1" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="2" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="3" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="4" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="5" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="6" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="8" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="9" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="3" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="10" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="11" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="12" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="13" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="14" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="15" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="16" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="17" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="18" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="10" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="18" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="19" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="20" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="21" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="22" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="23" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="24" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="25" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="26" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="27" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="21" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="28" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="29" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="30" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="31" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="32" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="33" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="34" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="35" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="36" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="37" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="38" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="39" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="40" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="41" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="42" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="43" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="44" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="45" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="46" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="47" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="48" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="49" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="50" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="51" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="52" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="53" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="54" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="55" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="56" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="57" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="58" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="59" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="60" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="61" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="62" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="54" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="63" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="64" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="65" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="66" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="67" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="68" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="69" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="70" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="71" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="72" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="73" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="74" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="75" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="76" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="77" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="76" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="78" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="79" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="80" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="81" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="82" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="83" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="84" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="84" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="85" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="86" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="87" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="88" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="89" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="90" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="91" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="92" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="93" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="94" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="95" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="96" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="97" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="98" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="99" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="100" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="101" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="98" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="100" Weight="3" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="102" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="103" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="104" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="105" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="106" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="107" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="108" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="109" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="110" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="111" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="112" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="113" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="114" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="115" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="116" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="117" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="118" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="119" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="120" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="121" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="122" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="123" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="124" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="125" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="126" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="127" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="128" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="129" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="130" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="131" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="132" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="133" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="134" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="135" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="136" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="137" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="138" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-
-		<Item Id="140" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="141" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="142" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="143" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="144" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="145" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="146" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="147" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="148" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="149" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="150" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="151" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="152" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="153" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="154" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="155" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="156" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="157" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="158" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="159" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="160" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="161" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="162" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="163" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="164" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="165" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="166" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="167" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="168" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="169" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="170" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="171" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="172" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="173" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="174" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="175" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="176" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="177" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="178" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="179" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="180" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="181" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="182" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="183" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="184" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="185" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="186" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="187" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="188" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="189" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="190" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="191" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="192" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="193" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="194" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="195" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="196" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="197" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="198" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="199" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="200" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="201" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="202" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="203" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="204" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="205" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="206" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="203" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="205" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="207" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="208" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="209" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="210" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="211" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="212" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="213" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="214" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="215" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="216" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="217" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="218" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="219" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="220" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="221" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="222" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="223" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="224" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="225" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="226" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="227" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="228" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="229" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="230" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="231" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="232" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="233" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="234" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="235" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="236" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="237" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="240" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="223" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="241" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="242" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="243" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="244" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="245" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="246" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="247" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="248" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="249" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="250" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="251" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="252" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="253" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="254" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="255" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="256" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="257" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="258" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="259" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="260" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="261" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="262" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="263" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="264" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="265" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="266" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="267" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="268" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="269" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="270" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="271" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="272" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="273" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="274" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="275" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="276" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="277" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="268" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="278" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="279" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="280" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="281" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="282" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="284" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="285" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="286" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="287" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="288" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="286" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="287" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="289" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="290" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="291" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="292" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="293" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="294" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="295" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="296" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="297" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="298" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="299" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="300" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		
-		<Item Id="302" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="303" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="304" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="305" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="306" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="308" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="309" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="310" Weight="0.2" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="311" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="312" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="313" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="314" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="315" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="316" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="317" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="318" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="319" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="320" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="321" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="322" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="323" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="324" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="325" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="326" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="327" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="328" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="329" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="330" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="331" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="332" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="333" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="334" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="335" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="336" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="337" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="338" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="339" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="340" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="341" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="342" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="343" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="344" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="345" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="346" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="347" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="348" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="349" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="350" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="352" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="353" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="354" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="355" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="356" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="357" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="358" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="359" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="360" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="361" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="362" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="363" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="364" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="365" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="366" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="367" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="368" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="369" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="370" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="371" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="372" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="373" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="374" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="375" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="376" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="377" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="378" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="379" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="380" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="381" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="382" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="383" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="384" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="385" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="386" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="387" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="388" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="389" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="390" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="391" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="392" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="393" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="392" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="394" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="395" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="396" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="397" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="398" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="399" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="400" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="401" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="402" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="403" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="404" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="405" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="406" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="407" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="408" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="409" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="410" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="411" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="412" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="413" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="414" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="415" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="416" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="417" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="418" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="419" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="420" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="421" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="422" Weight="0.35" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="423" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="424" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="425" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="426" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="427" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="428" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="429" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="430" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="431" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="432" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="433" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="434" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="435" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="436" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="437" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="438" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="422" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="424" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="439" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="440" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="441" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="442" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="443" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="444" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="445" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="446" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="447" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="448" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="449" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="450" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="451" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="452" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="453" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="454" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="455" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="456" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="457" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="458" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="459" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="460" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="461" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="462" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="463" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="464" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="465" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="466" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="467" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="468" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="469" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="470" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="471" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="472" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="473" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="474" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="475" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="476" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="477" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="478" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="479" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="480" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="481" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="482" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="483" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="484" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="485" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="486" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="487" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="488" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="489" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="490" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="491" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="492" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="493" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="494" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="495" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="496" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="497" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="498" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="499" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="490" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="500" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="501" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="502" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="503" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="504" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="505" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="506" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="507" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="508" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="509" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="510" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="511" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="512" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="513" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="514" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="515" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="516" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="517" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="518" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="519" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="520" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="521" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="522" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="523" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="524" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="525" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="526" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="527" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="528" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="529" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="530" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="531" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="532" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="533" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="514" Weight="0.2" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="517" Weight="2" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="534" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="535" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="536" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="537" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="538" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="539" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="540" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="541" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="542" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="543" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="544" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="545" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="546" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="547" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="548" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="549" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="553" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="554" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="555" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="556" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="557" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="558" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="559" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="560" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="561" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="562" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="563" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="564" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="565" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="566" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="567" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="568" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="569" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="570" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="571" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="572" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="573" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="574" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="575" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="576" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="577" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="578" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="579" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="580" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="580" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="581" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="582" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="583" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="584" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="585" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="586" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="587" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="588" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="589" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="590" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="591" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="592" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="593" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="594" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="595" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="596" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="597" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="598" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="599" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="600" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="601" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="602" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="603" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="604" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="605" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="606" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="607" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="608" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="609" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="610" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="611" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="612" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="613" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="614" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="615" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="616" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="615" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="617" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="618" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="619" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="620" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="621" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="622" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="623" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="624" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="625" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-
-		<Item Id="628" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="629" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="630" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="631" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="632" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="633" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="634" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="635" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="636" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="637" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="638" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="639" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="640" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="641" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="642" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="643" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="644" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="645" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="646" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="647" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="648" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="649" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="650" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="651" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="652" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="653" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="654" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-
-		<Item Id="656" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="657" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="658" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="659" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="660" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="661" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="662" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="633" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="663" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="664" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="665" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="666" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="667" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="669" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="670" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="671" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="672" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="673" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="674" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="675" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="676" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="677" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="678" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="679" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="680" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="681" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="682" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="683" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="684" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="685" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="686" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-
-		<Item Id="688" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="689" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="690" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="691" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="692" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="693" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="694" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="695" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="696" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="697" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="698" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="699" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="700" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="701" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="702" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="703" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="704" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="705" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="706" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="707" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="708" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="709" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="710" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="711" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="712" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="713" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="714" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="715" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="716" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="717" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="718" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="719" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="720" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="721" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="722" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="723" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="724" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="725" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="726" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="727" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="728" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="729" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="730" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="731" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="732" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<!-- 2차 추가 배열 상점 아이템들 -->
+
+		<Item Id="33" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="217" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="249" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="273" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="347" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="445" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="586" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="619" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="632" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="690" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="693" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<!-- 2차 추가 배열 상점 아이템들 -->
+
+		<Item Id="470" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="519" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+
+		<!-- 3차 추가 배열 상점 아이템들 -->
+
+		<Item Id="208" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="644" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="ultraSecret">
 		<Item Id="3" Weight="1" DecreaseBy="1" RemoveOn="0"/>
