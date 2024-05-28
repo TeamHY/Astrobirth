@@ -81,6 +81,7 @@
 	<active gfx="Overwhelming Sinful Spoils.png" quality="2" devilprice="1" shopprice="15" maxcharges="300" chargetype="timed" name="Overwhelming Sinful Spoils" />
 	<passive id="2" cache="firedelay" gfx="Technology Omicron.png" quality="3" tags="offensive summonable tech" name="Technology Omicron" description="Laser aura tears"/>
 	<passive gfx="Very EZ Mode.png" quality="4" devilprice="2" shopprice="40" tags="uniquefamiliar offensive lazarusshared noeden nocantrip quest" name="Very EZ Mode" />
+	<active gfx="Curse of Aramatir.png" quality="3" devilprice="2" maxcharges="50" shopprice="25" name="Curse of Aramatir" />
 
 
 
