@@ -20,6 +20,7 @@ local nextRunBanItems = {
     CollectibleType.COLLECTIBLE_HOLY_MANTLE,
     CollectibleType.COLLECTIBLE_SPELUNKER_HAT,
     CollectibleType.COLLECTIBLE_CRYSTAL_BALL,
+    CollectibleType.COLLECTIBLE_LACHRYPHAGY,
     Astro.Collectible.TECHNOLOGY_OMICRON,
     Astro.Collectible.AMAZING_CHAOS_SCROLL,
     Astro.Collectible.ARIES_EX,
