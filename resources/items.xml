@@ -614,7 +614,7 @@
 	<passive	id="586"	achievement="429" gfx="Collectibles_586_JacobsLadder.png" name="#THE_STAIRWAY_NAME" shopprice="35" description="#THE_STAIRWAY_DESCRIPTION" />
 	
 	<passive	id="588"	gfx="Collectibles_588_Sol.png" name="#SOL_NAME" devilprice="2" description="#SOL_DESCRIPTION" />
-	<passive	id="589"	gfx="Collectibles_589_Luna.png" shopprice="20" devilprice="2" name="#LUNA_NAME" description="#LUNA_DESCRIPTION" />
+	<passive	id="589"	gfx="Collectibles_589_Luna.png" shopprice="18" devilprice="1" name="#LUNA_NAME" description="#LUNA_DESCRIPTION" />
 	<passive	id="590"	gfx="Collectibles_590_Mercurius.png" name="#MERCURIUS_NAME" description="#MERCURIUS_DESCRIPTION" cache="speed" />
 	<passive	id="591"	gfx="Collectibles_591_Venus.png" name="#VENUS_NAME" description="#VENUS_DESCRIPTION" maxhearts="2" hearts="4" />
 	<passive	id="592"	gfx="Collectibles_592_Terra.png" name="#TERRA_NAME" description="#TERRA_DESCRIPTION" cache="damage tearflag" />
