@@ -137,6 +137,11 @@ local banItems = {
             Card.RUNE_HAGALAZ,
             Card.RUNE_BLANK,
             Card.CARD_EMERGENCY_CONTACT,
+            Card.CARD_REVERSE_HANGED_MAN,
+            Card.CARD_SOUL_MAGDALENE,
+            Card.CARD_SOUL_BLUEBABY,
+            Card.CARD_SOUL_SAMSON,
+            Card.CARD_SOUL_JACOB,
         },
         pill = {
             PillEffect.PILLEFFECT_BAD_TRIP,
@@ -147,11 +152,6 @@ local banItems = {
             PillEffect.PILLEFFECT_IM_EXCITED,
             PillEffect.PILLEFFECT_RETRO_VISION,
             PillEffect.PILLEFFECT_SPEED_DOWN,
-            Card.CARD_REVERSE_HANGED_MAN,
-            Card.CARD_SOUL_MAGDALENE,
-            Card.CARD_SOUL_BLUEBABY,
-            Card.CARD_SOUL_SAMSON,
-            Card.CARD_SOUL_JACOB,
         }
     },
     [PlayerType.PLAYER_ISAAC] = {
