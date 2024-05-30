@@ -83,6 +83,7 @@
 	<passive gfx="Very EZ Mode.png" quality="4" devilprice="2" shopprice="40" tags="uniquefamiliar offensive lazarusshared noeden nocantrip quest" name="Very EZ Mode" />
 	<active gfx="Curse of Aramatir.png" quality="3" devilprice="2" maxcharges="50" shopprice="25" name="Curse of Aramatir" />
 	<active gfx="Cain's Secret Bag.png" quality="3" devilprice="2" maxcharges="50" shopprice="25" name="Cain's Secret Bag" />
+	<active gfx="The Holy Blood and the Holy Grail.png" quality="4" devilprice="2" initcharge="0" maxcharges="12" shopprice="45" name="The Holy Blood and the Holy Grail" />
 
 
 
