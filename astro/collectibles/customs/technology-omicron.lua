@@ -5,15 +5,15 @@ if EID then
 		Astro.Collectible.TECHNOLOGY_OMICRON,
 		"",
 		"...",
-		"↑ {{Tears}} 연사 x0.8#공격 시 10%의 확률로 눈물 주변에 레이저가 생깁니다.#중첩 시 기본 확률이 합 연산으로 증가하고 쿨타임이 줄어듭니다.#소환 쿨타임 : 2초#!!! {{LuckSmall}}행운 수치 비례: 행운 90 이상일 때 100% 확률 (행운 1당 +1%p)"
+		"↑ {{Tears}} 연사 x0.8#공격 시 10%의 확률로 눈물 주변에 레이저가 생깁니다.#중첩 시 기본 확률이 합 연산으로 증가하고 쿨타임이 줄어듭니다.#소환 쿨타임 : 1초#!!! {{LuckSmall}}행운 수치 비례: 행운 18 이상일 때 100% 확률 (행운 1당 +5%p)"
 	)
 end
 
 local spawnChance = 0.1
 
-local luckMultiply = 1 / 100
+local luckMultiply = 5 / 100
 
-local cooldownTime = 60 -- 30 프레임 = 1초
+local cooldownTime = 30 -- 30 프레임 = 1초
 
 ---@param player EntityPlayer
 ---@return boolean
