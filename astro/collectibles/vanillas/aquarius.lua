@@ -28,7 +28,7 @@ Astro:AddCallback(
         local player = Astro:GetPlayerFromEntity(source.Entity)
 
         if
-            player ~= nil and not player:HasCollectible(Astro.Collectible.AQUARIUS_EX) and
+            player ~= nil and not player:HasCollectible(AstroItems.Collectible.AQUARIUS_EX) and
                 player:HasCollectible(CollectibleType.COLLECTIBLE_AQUARIUS) and
                 entity:IsVulnerableEnemy()
          then

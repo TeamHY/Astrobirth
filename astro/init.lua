@@ -5,11 +5,11 @@ function Astro:CurseRemove(curse) -- 입장 전 저주 제거
 	for i = 1, Game():GetNumPlayers() do
 		local player = Isaac.GetPlayer(i - 1)
 
-		if player:HasCollectible(Astro.Collectible.PROMETHEUS) then
+		if player:HasCollectible(AstroItems.Collectible.PROMETHEUS) then
 			hasPrometheus = true
 		end
 
-		if Astro:HasPerfectionEffect(player) or player:HasTrinket(Astro.Trinket.DOCTRINE) then
+		if Astro:HasPerfectionEffect(player) or player:HasTrinket(AstroItems.Trinket.DOCTRINE) then
 			hasCurseCleaner = true
 		end
 	end

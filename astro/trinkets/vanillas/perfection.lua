@@ -4,23 +4,23 @@ local GOLDEN_TRINKET_OFFSET = 32768
 
 local blessings = {
     CollectibleType.COLLECTIBLE_EDENS_BLESSING,
-    Astro.Collectible.ALTAIR,
-    Astro.Collectible.CASIOPEA,
-    Astro.Collectible.COMET,
-    Astro.Collectible.CORVUS,
-    Astro.Collectible.DENEB,
-    Astro.Collectible.GEMINI_EX,
-    Astro.Collectible.LEO_EX,
-    Astro.Collectible.PISCES_EX,
-    Astro.Collectible.REINCARNATION,
-    Astro.Collectible.SAGITTARIUS_EX,
-    Astro.Collectible.VEGA,
-    Astro.Collectible.VIRGO_EX
+    AstroItems.Collectible.ALTAIR,
+    AstroItems.Collectible.CASIOPEA,
+    AstroItems.Collectible.COMET,
+    AstroItems.Collectible.CORVUS,
+    AstroItems.Collectible.DENEB,
+    AstroItems.Collectible.GEMINI_EX,
+    AstroItems.Collectible.LEO_EX,
+    AstroItems.Collectible.PISCES_EX,
+    AstroItems.Collectible.REINCARNATION,
+    AstroItems.Collectible.SAGITTARIUS_EX,
+    AstroItems.Collectible.VEGA,
+    AstroItems.Collectible.VIRGO_EX
 }
 
 ---@param player EntityPlayer
 function Astro:HasPerfectionEffect(player)
-    return player:HasTrinket(TrinketType.TRINKET_PERFECTION) or player:HasTrinket(Astro.Trinket.FLUNK)
+    return player:HasTrinket(TrinketType.TRINKET_PERFECTION) or player:HasTrinket(AstroItems.Trinket.FLUNK)
 end
 
 Astro:AddCallback(
@@ -35,7 +35,7 @@ Astro:AddCallback(
 
         if player ~= nil and player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
             if damageFlags & (DamageFlag.DAMAGE_NO_PENALTIES | DamageFlag.DAMAGE_RED_HEARTS) == 0 then
-                Astro:SpawnTrinket(Astro.Trinket.FLUNK, player.Position)
+                Astro:SpawnTrinket(AstroItems.Trinket.FLUNK, player.Position)
             end
         end
     end
@@ -168,7 +168,7 @@ Astro:AddCallback(
                         player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
 
                         Astro:SpawnCard(Card.CARD_GET_OUT_OF_JAIL, player.Position)
-                        Astro:SpawnTrinket(Astro.Trinket.BLACK_MIRROR, currentRoom:GetCenterPos())
+                        Astro:SpawnTrinket(AstroItems.Trinket.BLACK_MIRROR, currentRoom:GetCenterPos())
                     elseif stage == LevelStage.STAGE4_1 then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
@@ -235,7 +235,7 @@ Astro:AddCallback(
                             true
                         )
                         Astro:SpawnCollectible(
-                            Astro.Collectible.GEMINI_EX,
+                            AstroItems.Collectible.GEMINI_EX,
                             currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true

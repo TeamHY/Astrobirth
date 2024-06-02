@@ -21,9 +21,9 @@ local nextRunBanItems = {
     CollectibleType.COLLECTIBLE_SPELUNKER_HAT,
     CollectibleType.COLLECTIBLE_CRYSTAL_BALL,
     CollectibleType.COLLECTIBLE_LACHRYPHAGY,
-    Astro.Collectible.TECHNOLOGY_OMICRON,
-    Astro.Collectible.AMAZING_CHAOS_SCROLL,
-    Astro.Collectible.ARIES_EX,
+    AstroItems.Collectible.TECHNOLOGY_OMICRON,
+    AstroItems.Collectible.AMAZING_CHAOS_SCROLL,
+    AstroItems.Collectible.ARIES_EX,
 }
 
 if EID then
@@ -111,7 +111,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_GREEDS_GULLET,
             CollectibleType.COLLECTIBLE_BIRDS_EYE,
             CollectibleType.COLLECTIBLE_GODS_FLESH,
-            Astro.Collectible.REINCARNATION,
+            AstroItems.Collectible.REINCARNATION,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
@@ -244,13 +244,13 @@ local banItems = {
             CollectibleType.COLLECTIBLE_BLUE_MAP,
             CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
             CollectibleType.COLLECTIBLE_CRYSTAL_BALL,
-            Astro.Collectible.DUALITY_LIGHT_AND_DARKNESS,
+            AstroItems.Collectible.DUALITY_LIGHT_AND_DARKNESS,
 
         },
         trinket = {
             TrinketType.TRINKET_CAINS_EYE,
             TrinketType.TRINKET_FRAGMENTED_CARD,
-            Astro.Trinket.MOSIS_EYES,
+            AstroItems.Trinket.MOSIS_EYES,
         },
         card = {
         },
@@ -282,7 +282,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_STARTER_DECK,
             CollectibleType.COLLECTIBLE_SOUL,
             CollectibleType.COLLECTIBLE_HEARTBREAK,
-            Astro.Collectible.ARIES_EX,
+            AstroItems.Collectible.ARIES_EX,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
@@ -336,7 +336,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -385,11 +385,11 @@ local banItems = {
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             CollectibleType.COLLECTIBLE_HOLY_MANTLE,
             CollectibleType.COLLECTIBLE_BIRTHRIGHT,
-            Astro.Collectible.ALTAIR,
-            Astro.Collectible.COMET,
-            Astro.Collectible.ARIES_EX,
-            Astro.Collectible.WARD,
-            Astro.Collectible.PINK_WARD,
+            AstroItems.Collectible.ALTAIR,
+            AstroItems.Collectible.COMET,
+            AstroItems.Collectible.ARIES_EX,
+            AstroItems.Collectible.WARD,
+            AstroItems.Collectible.PINK_WARD,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
@@ -405,7 +405,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             CollectibleType.COLLECTIBLE_SCHOOLBAG,
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -422,7 +422,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -458,7 +458,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -524,7 +524,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -577,7 +577,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -605,7 +605,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -631,7 +631,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -647,7 +647,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -663,7 +663,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -684,7 +684,7 @@ local banItems = {
         pill = {
         }
     },
-    [Astro.Players.LEAH] = {
+    [AstroItems.Players.LEAH] = {
         collectible = {
         },
         trinket = {
@@ -694,7 +694,7 @@ local banItems = {
         pill = {
         }
     },
-    [Astro.Players.DIABELLSTAR] = {
+    [AstroItems.Players.DIABELLSTAR] = {
         collectible = {
         },
         trinket = {
@@ -704,7 +704,7 @@ local banItems = {
         pill = {
         }
     },
-    [Astro.Players.DIABELLSTAR_B] = {
+    [AstroItems.Players.DIABELLSTAR_B] = {
         collectible = {
         },
         trinket = {
@@ -714,7 +714,7 @@ local banItems = {
         pill = {
         }
     },
-    [Astro.Players.WATER_ENCHANTRESS] = {
+    [AstroItems.Players.WATER_ENCHANTRESS] = {
         collectible = {
             CollectibleType.COLLECTIBLE_CAR_BATTERY,
             CollectibleType.COLLECTIBLE_SOL,
@@ -727,7 +727,7 @@ local banItems = {
             PillEffect.PILLEFFECT_48HOUR_ENERGY,
         }
     },
-    [Astro.Players.DAVID_MARTINEZ] = {
+    [AstroItems.Players.DAVID_MARTINEZ] = {
         collectible = {
         },
         trinket = {
@@ -737,7 +737,7 @@ local banItems = {
         pill = {
         }
     },
-    [Astro.Players.DAVID_MARTINEZ_B] = {
+    [AstroItems.Players.DAVID_MARTINEZ_B] = {
         collectible = {
         },
         trinket = {

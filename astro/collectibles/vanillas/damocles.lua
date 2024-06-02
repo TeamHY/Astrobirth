@@ -22,7 +22,7 @@ Astro:AddCallback(
             CollectibleType.COLLECTIBLE_ESAU_JR, --703
             CollectibleType.COLLECTIBLE_GENESIS, --622
             CollectibleType.COLLECTIBLE_HOLY_MANTLE, --313
-            Astro.Collectible.ALTAIR,
+            AstroItems.Collectible.ALTAIR,
             CollectibleType.COLLECTIBLE_PSY_FLY,
             CollectibleType.COLLECTIBLE_GENESIS,
             CollectibleType.COLLECTIBLE_LOST_CONTACT,
@@ -31,29 +31,29 @@ Astro:AddCallback(
             CollectibleType.COLLECTIBLE_BLANKET,
             CollectibleType.COLLECTIBLE_SWARM,
             CollectibleType.COLLECTIBLE_SOUL,
-            Astro.Collectible.PISCES_EX,
+            AstroItems.Collectible.PISCES_EX,
             CollectibleType.COLLECTIBLE_STOP_WATCH,
-            Astro.Collectible.LEO_EX,
+            AstroItems.Collectible.LEO_EX,
             CollectibleType.COLLECTIBLE_URANUS,
-            Astro.Collectible.ARIES_EX,
-            Astro.Collectible.SOLAR_SYSTEM,
-            Astro.Collectible.GEMINI_EX,
-            Astro.Collectible.LANIAKEA_SUPERCLUSTER,
-            Astro.Collectible.TRINITY,
-            Astro.Collectible.VEGA,
+            AstroItems.Collectible.ARIES_EX,
+            AstroItems.Collectible.SOLAR_SYSTEM,
+            AstroItems.Collectible.GEMINI_EX,
+            AstroItems.Collectible.LANIAKEA_SUPERCLUSTER,
+            AstroItems.Collectible.TRINITY,
+            AstroItems.Collectible.VEGA,
             CollectibleType.COLLECTIBLE_DRY_BABY,
             CollectibleType.COLLECTIBLE_NIGHT_LIGHT,
             CollectibleType.COLLECTIBLE_BROKEN_MODEM,
             CollectibleType.COLLECTIBLE_HALO_OF_FLIES,
             CollectibleType.COLLECTIBLE_FARTING_BABY,
             CollectibleType.COLLECTIBLE_GUPPYS_COLLAR,
-            Astro.Collectible.OMEGA_321,
+            AstroItems.Collectible.OMEGA_321,
             CollectibleType.COLLECTIBLE_DARK_ARTS,
             CollectibleType.COLLECTIBLE_SATURNUS,
             CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS,
             CollectibleType.COLLECTIBLE_BONE_SPURS,
             CollectibleType.COLLECTIBLE_BROKEN_WATCH,
-            Astro.Collectible.VERY_EZ_MODE
+            AstroItems.Collectible.VERY_EZ_MODE
         }
 
         trinkets = {

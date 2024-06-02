@@ -44,28 +44,28 @@ Astro:AddCallback(
         if Astro.Data.Unlock.ChallengeCygnus ~= true then
             Astro.Data.Unlock.ChallengeCygnus = false
 
-            -- itemPool:RemoveCollectible(Astro.Collectible.CYGNUS)
+            -- itemPool:RemoveCollectible(AstroItems.Collectible.CYGNUS)
             print("Cygnus is not unlocked.")
         end
 
         if Astro.Data.Unlock.ChallengeLibraEX ~= true then
             Astro.Data.Unlock.ChallengeLibraEX = false
 
-            -- itemPool:RemoveCollectible(Astro.Collectible.LIBRA_EX)
+            -- itemPool:RemoveCollectible(AstroItems.Collectible.LIBRA_EX)
             print("Libra EX is not unlocked.")
         end
 
         if Astro.Data.Unlock.ChallengeCancerEX ~= true then
             Astro.Data.Unlock.ChallengeCancerEX = false
 
-            -- itemPool:RemoveCollectible(Astro.Collectible.CANCER_EX)
+            -- itemPool:RemoveCollectible(AstroItems.Collectible.CANCER_EX)
             print("Cancer EX is not unlocked.")
         end
 
         if Astro.Data.Unlock.ChallengeScorpioEX ~= true then
             Astro.Data.Unlock.ChallengeScorpioEX = false
 
-            -- itemPool:RemoveCollectible(Astro.Collectible.SCORPIO_EX)
+            -- itemPool:RemoveCollectible(AstroItems.Collectible.SCORPIO_EX)
             print("Scorpio EX is not unlocked.")
         end
 

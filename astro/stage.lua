@@ -7,7 +7,7 @@ local champBanList = { 2, 3, 4, 6, 7, 8, 11, 14, 18, 23, 24, 25 }
 ---@param stage LevelStage
 ---@return boolean
 local function CheckHeartLimit(player, stage)
-    if player:HasCollectible(Astro.Collectible.VERY_EZ_MODE) then
+    if player:HasCollectible(AstroItems.Collectible.VERY_EZ_MODE) then
         return false
     end
 

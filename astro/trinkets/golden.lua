@@ -300,7 +300,7 @@ local function RunEffect(player, type)
             CollectibleType.COLLECTIBLE_SYNTHOIL,
             CollectibleType.COLLECTIBLE_ADRENALINE,
             CollectibleType.COLLECTIBLE_EUTHANASIA,
-            Astro.Collectible.MORPHINE
+            AstroItems.Collectible.MORPHINE
         }
 
         local count = #syringes

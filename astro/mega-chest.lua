@@ -11,7 +11,7 @@ Astro:AddCallback(
 			if collider.Type == EntityType.ENTITY_PLAYER then
 				local player = collider:ToPlayer()
                 -- TODO: RNG 교체해야 함
-                local rng = player:GetCollectibleRNG(Astro.Collectible.ANGRY_ONION)
+                local rng = player:GetCollectibleRNG(AstroItems.Collectible.ANGRY_ONION)
 
                 local data = entityPickup:GetData()
 
