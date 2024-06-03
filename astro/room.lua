@@ -19,7 +19,6 @@ Astro:AddCallback(
                 end
             end
 
-
             if roomType == RoomType.ROOM_DICE then
                 local itemPool = Game():GetItemPool()
 
@@ -128,6 +127,9 @@ Astro:AddCallback(
                     Vector.Zero,
                     nil
                 )
+            elseif level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetCurrentRoomIndex() == 84 then
+                Astro:SpawnCollectible(AstroItems.Collectible.EZ_MODE, currentRoom:GetGridPosition(33), nil, true)
+                Astro:SpawnCollectible(AstroItems.Collectible.VERY_EZ_MODE, currentRoom:GetGridPosition(41), nil, true)
             end
         end
 
