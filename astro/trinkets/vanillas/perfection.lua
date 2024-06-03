@@ -88,6 +88,10 @@ Astro:AddCallback(
                 local player = Isaac.GetPlayer(i - 1)
 
                 if Astro:HasPerfectionEffect(player) then
+                    if stage >= LevelStage.STAGE2_2 and stage <= LevelStage.STAGE4_1 then
+                        Isaac.Spawn(EntityType.ENTITY_SLOT, 16, 0, currentRoom:GetCenterPos(), Vector(0, 0), nil) -- Crane Game
+                    end
+
                     if stage >= LevelStage.STAGE2_2 then
                         TryChangeToGoldenTrinket(player)
                     end
@@ -141,26 +145,26 @@ Astro:AddCallback(
                     elseif stage == LevelStage.STAGE2_2 then
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_MOMS_PURSE,
-                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE, 0),
+                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_POLYDACTYLY,
-                            currentRoom:GetCenterPos() + Vector(GRID_SIZE, 0),
+                            currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
                     elseif stage == LevelStage.STAGE3_1 then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE, 0),
+                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_CONSOLATION_PRIZE,
-                            currentRoom:GetCenterPos() + Vector(GRID_SIZE, 0),
+                            currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
