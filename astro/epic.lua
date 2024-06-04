@@ -87,6 +87,9 @@ Astro:AddCallback(
                     AstroItems.Collectible.RITE_OF_ARAMESIR,
                     AstroItems.Collectible.CHUBBYS_HEAD,
                     AstroItems.Collectible.AMAZING_CHAOS_SCROLL,
+                    AstroItems.Collectible.THE_HOLY_BLOOD_AND_THE_HOLY_GRAIL,
+                    AstroItems.Collectible.CAINS_SECRET_BAG,
+                    AstroItems.Collectible.CURSE_OF_ARAMATIR,
                 },
                 [RoomType.ROOM_DEVIL] = {
                     CollectibleType.COLLECTIBLE_SPOON_BENDER,
