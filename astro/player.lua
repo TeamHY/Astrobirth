@@ -32,7 +32,7 @@ local startItem = {
     },
     [PlayerType.PLAYER_MAGDALENE] = {
         collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+            AstroItems.Collectible.THE_HOLY_BLOOD_AND_THE_HOLY_GRAIL,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
