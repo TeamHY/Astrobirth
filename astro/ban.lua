@@ -5,6 +5,7 @@ local nextRunBanItems = {
     CollectibleType.COLLECTIBLE_GODHEAD,
     CollectibleType.COLLECTIBLE_SOL,
     CollectibleType.COLLECTIBLE_C_SECTION,
+    CollectibleType.COLLECTIBLE_FLIP,
     CollectibleType.COLLECTIBLE_GOAT_HEAD,
     CollectibleType.COLLECTIBLE_DAMOCLES,
     CollectibleType.COLLECTIBLE_SPINDOWN_DICE,
@@ -24,6 +25,7 @@ local nextRunBanItems = {
     AstroItems.Collectible.TECHNOLOGY_OMICRON,
     AstroItems.Collectible.AMAZING_CHAOS_SCROLL,
     AstroItems.Collectible.ARIES_EX,
+    AstroItems.Collectible.BIRTHRIGHT_THE_LOST,
 }
 
 if EID then
