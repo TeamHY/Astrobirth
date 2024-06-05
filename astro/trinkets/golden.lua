@@ -425,7 +425,7 @@ Astro:AddCallback(
                 break;
             end
 
-            AstroItems:UpdateLavaHandEffect(player, trinket)
+            Astro:UpdateLavaHandEffect(player, trinket)
         end
 
         if player:GetTrinketMultiplier(TrinketType.TRINKET_TEMPORARY_TATTOO) > 1 then
