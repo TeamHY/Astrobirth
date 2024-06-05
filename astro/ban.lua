@@ -729,6 +729,16 @@ local banItems = {
             PillEffect.PILLEFFECT_48HOUR_ENERGY,
         }
     },
+    [AstroItems.Players.WATER_ENCHANTRESS_B] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
     [AstroItems.Players.DAVID_MARTINEZ] = {
         collectible = {
         },

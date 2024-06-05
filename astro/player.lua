@@ -646,6 +646,20 @@ local startItem = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
         }
     },
+    [AstroItems.Players.WATER_ENCHANTRESS_B] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
     [AstroItems.Players.DAVID_MARTINEZ] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
