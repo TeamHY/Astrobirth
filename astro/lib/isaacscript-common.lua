@@ -28239,7 +28239,7 @@ function PostNewRoomEarly.prototype.____constructor(self)
         self:checkRoomChanged()
     end
     self.preEntitySpawn = function()
-        self:checkRoomChanged()
+        -- self:checkRoomChanged()
         return nil
     end
     self.callbacksUsed = {{ModCallback.POST_NEW_ROOM, self.postNewRoom}, {ModCallback.PRE_ENTITY_SPAWN, self.preEntitySpawn}}
