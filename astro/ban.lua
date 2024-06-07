@@ -554,6 +554,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_DAMOCLES,
             CollectibleType.COLLECTIBLE_STARTER_DECK,
             CollectibleType.COLLECTIBLE_HEARTBREAK,
+            CollectibleType.COLLECTIBLE_BLANK_CARD,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
