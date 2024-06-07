@@ -173,7 +173,7 @@
 	<familiar achievement="53" description="#SACRIFICIAL_DAGGER_DESCRIPTION" gfx="Collectibles_172_SacrificialDagger.png" id="172" name="#SACRIFICIAL_DAGGER_NAME" />
 	<passive description="#MITRE_DESCRIPTION" gfx="Collectibles_173_Mitre.png" id="173" name="#MITRE_NAME" />
 	<familiar description="#RAINBOW_BABY_DESCRIPTION" gfx="Collectibles_174_RainbowBaby.png" id="174" name="#RAINBOW_BABY_NAME" />
-	<active achievement="58" description="#DADS_KEY_DESCRIPTION" gfx="Collectibles_175_DadsKey.png" id="175" shopprice="10" maxcharges="2" name="#DADS_KEY_NAME" />
+	<active achievement="58" description="#DADS_KEY_DESCRIPTION" gfx="Collectibles_175_DadsKey.png" id="175" shopprice="10" maxcharges="3" name="#DADS_KEY_NAME" />
 	<passive cache="shotspeed" description="#STEM_CELLS_DESCRIPTION" gfx="Collectibles_176_StemCells.png" hearts="4" id="176" maxhearts="2" name="#STEM_CELLS_NAME" />
 	<active cooldown="0" description="#PORTABLE_SLOT_DESCRIPTION" gfx="Collectibles_177_PortableSlot.png" id="177" maxcharges="0" name="#PORTABLE_SLOT_NAME" shopprice="10" />
 	<familiar description="#HOLY_WATER_DESCRIPTION" gfx="Collectibles_178_HolyWater.png" shopprice="9" id="178" name="#HOLY_WATER_NAME" />
