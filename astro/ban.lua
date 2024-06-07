@@ -731,12 +731,15 @@ local banItems = {
     },
     [AstroItems.Players.WATER_ENCHANTRESS_B] = {
         collectible = {
+            CollectibleType.COLLECTIBLE_CAR_BATTERY,
+            CollectibleType.COLLECTIBLE_SOL,
         },
         trinket = {
         },
         card = {
         },
         pill = {
+            PillEffect.PILLEFFECT_48HOUR_ENERGY,
         }
     },
     [AstroItems.Players.DAVID_MARTINEZ] = {
