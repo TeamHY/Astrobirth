@@ -173,7 +173,7 @@
 	<familiar achievement="53" description="#SACRIFICIAL_DAGGER_DESCRIPTION" gfx="Collectibles_172_SacrificialDagger.png" id="172" name="#SACRIFICIAL_DAGGER_NAME" />
 	<passive description="#MITRE_DESCRIPTION" gfx="Collectibles_173_Mitre.png" id="173" name="#MITRE_NAME" />
 	<familiar description="#RAINBOW_BABY_DESCRIPTION" gfx="Collectibles_174_RainbowBaby.png" id="174" name="#RAINBOW_BABY_NAME" />
-	<active achievement="58" description="#DADS_KEY_DESCRIPTION" gfx="Collectibles_175_DadsKey.png" id="175" shopprice="10" maxcharges="2" name="#DADS_KEY_NAME" />
+	<active achievement="58" description="#DADS_KEY_DESCRIPTION" gfx="Collectibles_175_DadsKey.png" id="175" shopprice="10" maxcharges="3" name="#DADS_KEY_NAME" />
 	<passive cache="shotspeed" description="#STEM_CELLS_DESCRIPTION" gfx="Collectibles_176_StemCells.png" hearts="4" id="176" maxhearts="2" name="#STEM_CELLS_NAME" />
 	<active cooldown="0" description="#PORTABLE_SLOT_DESCRIPTION" gfx="Collectibles_177_PortableSlot.png" id="177" maxcharges="0" name="#PORTABLE_SLOT_NAME" shopprice="10" />
 	<familiar description="#HOLY_WATER_DESCRIPTION" gfx="Collectibles_178_HolyWater.png" shopprice="9" id="178" name="#HOLY_WATER_NAME" />
@@ -736,7 +736,7 @@
 	<passive	id="708"	gfx="Collectibles_708_Stapler.png" name="#STAPLER_NAME" description="#STAPLER_DESCRIPTION" cache="damage" />
 	<active		id="709"	achievement="437" gfx="Collectibles_709_Suplex.png" name="#SUPLEX_NAME" description="#SUPLEX_DESCRIPTION" maxcharges="200" chargetype="timed" />
 	<active		id="710"	achievement="586" gfx="Collectibles_710_BagOfCrafting.png" name="#BAG_OF_CRAFTING_NAME" description="#BAG_OF_CRAFTING_DESCRIPTION" />
-	<active		id="711"	achievement="592" gfx="Collectibles_711_Flip.png" name="#FLIP_NAME" description="#FLIP_DESCRIPTION" maxcharges="6" />
+	<active		id="711"	achievement="592" gfx="Collectibles_711_Flip.png" name="#FLIP_NAME" description="#FLIP_DESCRIPTION" maxcharges="8" />
 	<active		id="712"	achievement="599" gfx="Collectibles_712_Lemegeton.png" name="#LEMEGETON_NAME" description="#LEMEGETON_DESCRIPTION" maxcharges="18" />
 	<active		id="713"	achievement="589" gfx="Collectibles_713_Sumptorium.png" name="#SUMPTORIUM_NAME" description="#SUMPTORIUM_DESCRIPTION" maxcharges="300" chargetype="timed" cooldown="60" />
 	<active		id="714"	gfx="Collectibles_714_Recall.png" name="#RECALL_NAME" description="#RECALL_DESCRIPTION" maxcharges="1" chargetype="timed" cache="flying" cooldown="45" hidden="true" />

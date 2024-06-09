@@ -1,0 +1,40 @@
+<pocketitems>
+	<card hud="I - The Cold" type="tarot" pickup="124" description="" name="I - The Cold" announcerdelay="60" mimiccharge="3" />
+	<card hud="II - The Servant" type="tarot" pickup="124" description="" name="II - The Servant" announcerdelay="60" mimiccharge="4" />
+	<card hud="III - Wisdom" type="tarot" pickup="124" description="" name="III - Wisdom" announcerdelay="60" mimiccharge="4" />
+	<card hud="IV - Repentance" type="tarot" pickup="124" description="" name="IV - Repentance" announcerdelay="60" mimiccharge="6" />
+	<card hud="V - Eternity" type="tarot" pickup="124" description="" name="V - Eternity" announcerdelay="60" mimiccharge="12" />
+	<card hud="VI - Corruption" type="tarot" pickup="124" description="" name="VI - Corruption" announcerdelay="60" mimiccharge="12" />
+	<card hud="VII - Immolation" type="tarot" pickup="124" description="" name="VII - Immolation" announcerdelay="60" mimiccharge="3" />
+	<card hud="VIII - Worship" type="tarot" pickup="124" description="" name="VIII - Worship" announcerdelay="60" mimiccharge="6" />
+
+	<card type="object" name="Sword Capsule"  pickup="854" hud="Sword Capsule"	description="Damage up"  />
+	<card type="object" name="Heart Capsule"  pickup="855" hud="Heart Capsule" 	description="Health up"  />
+	<card type="object" name="Tear Capsule"	  pickup="860" hud="Tear Capsule"	description="Tears up"  />
+	<card type="object" name="Bow Capsule"	  pickup="857" hud="Bow Capsule"	description="Range up"  />
+	<card type="object" name="Fling Capsule"  pickup="858" hud="Fling Capsule"	description="Shotspeed up"  />
+	<card type="object" name="Boot Capsule"	  pickup="859" hud="Boot Capsule"	description="Speed up"  />
+	<card type="object" name="Clover Capsule" pickup="856" hud="Clover Capsule"	description="Luck up"  />
+
+	<card type="object" name="Combo Capsule" pickup="861" hud="Combo Capsule" description="Health and damage up" />
+	<card type="object" name="Combo Capsule" pickup="862" hud=" Combo Capsule" description="Luck and damage up" />
+	<card type="object" name="Combo Capsule" pickup="863" hud="  Combo Capsule" description="Range and damage up" />
+	<card type="object" name="Combo Capsule" pickup="864" hud="   Combo Capsule" description="Shotspeed and damage up" />
+	<card type="object" name="Combo Capsule" pickup="865" hud="    Combo Capsule" description="Speed and damage up" />
+	<card type="object" name="Combo Capsule" pickup="866" hud="     Combo Capsule" description="Tears and damage up" />
+	<card type="object" name="Combo Capsule" pickup="867" hud="      Combo Capsule" description="Health and luck up" />
+	<card type="object" name="Combo Capsule" pickup="868" hud="       Combo Capsule" description="Health and range up" />
+	<card type="object" name="Combo Capsule" pickup="869" hud="        Combo Capsule" description="Health and shotspeed up" />
+	<card type="object" name="Combo Capsule" pickup="870" hud="         Combo Capsule" description="Health and speed up" />
+	<card type="object" name="Combo Capsule" pickup="871" hud="          Combo Capsule" description="Health and tears up" />
+	<card type="object" name="Combo Capsule" pickup="872" hud="           Combo Capsule" description="Luck and range up" />
+	<card type="object" name="Combo Capsule" pickup="873" hud="            Combo Capsule" description="Luck and shotspeed up" />
+	<card type="object" name="Combo Capsule" pickup="874" hud="             Combo Capsule" description="Luck and speed up" />
+	<card type="object" name="Combo Capsule" pickup="875" hud="              Combo Capsule" description="Luck and tears up" />
+	<card type="object" name="Combo Capsule" pickup="876" hud="               Combo Capsule" description="Range and shotspeed up" />
+	<card type="object" name="Combo Capsule" pickup="877" hud="                Combo Capsule" description="Range and speed up" />
+	<card type="object" name="Combo Capsule" pickup="878" hud="                 Combo Capsule" description="Range and firedelay up" />
+	<card type="object" name="Combo Capsule" pickup="879" hud="                  Combo Capsule" description="Shotspeed and speed up" />
+	<card type="object" name="Combo Capsule" pickup="880" hud="                   Combo Capsule" description="Shotspeed and tears up" />
+	<card type="object" name="Combo Capsule" pickup="881" hud="                    Combo Capsule" description="Speed and tears up" />
+</pocketitems>

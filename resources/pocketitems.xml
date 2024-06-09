@@ -64,7 +64,7 @@
 	<card type="tarot_reverse" pickup="14" achievement="527" announcer="515" announcerdelay="70" description="#THE_EMPRESS_R_DESCRIPTION" id="59" name="#THE_EMPRESS_R_NAME" mimiccharge="4" />
 	<card type="tarot_reverse" pickup="14" achievement="528" announcer="516" announcerdelay="30" description="#THE_EMPEROR_R_DESCRIPTION" id="60" name="#THE_EMPEROR_R_NAME" greedmode="false" mimiccharge="2" />
 	<card type="tarot_reverse" pickup="14" achievement="529" announcer="517" announcerdelay="70" description="#THE_HIEROPHANT_R_DESCRIPTION" id="61" name="#THE_HIEROPHANT_R_NAME" mimiccharge="12" />
-	<card type="tarot_reverse" pickup="14" achievement="530" announcer="518" announcerdelay="60" description="#THE_LOVERS_R_DESCRIPTION" id="62" name="#THE_LOVERS_R_NAME" mimiccharge="4" />
+	<card type="tarot_reverse" pickup="14" achievement="530" announcer="518" announcerdelay="60" description="#THE_LOVERS_R_DESCRIPTION" id="62" name="#THE_LOVERS_R_NAME" mimiccharge="12" />
 	<card type="tarot_reverse" pickup="14" achievement="531" announcer="519" announcerdelay="0" description="#THE_CHARIOT_R_DESCRIPTION" id="63" name="#THE_CHARIOT_R_NAME" mimiccharge="2" />
 	<card type="tarot_reverse" pickup="14" achievement="532" announcer="520" announcerdelay="0" description="#JUSTICE_R_DESCRIPTION" id="64" name="#JUSTICE_R_NAME" mimiccharge="12" />
 	<card type="tarot_reverse" pickup="14" achievement="533" announcer="521" announcerdelay="60" description="#THE_HERMIT_R_DESCRIPTION" id="65" name="#THE_HERMIT_R_NAME" mimiccharge="2" />

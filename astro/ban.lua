@@ -5,6 +5,7 @@ local nextRunBanItems = {
     CollectibleType.COLLECTIBLE_GODHEAD,
     CollectibleType.COLLECTIBLE_SOL,
     CollectibleType.COLLECTIBLE_C_SECTION,
+    CollectibleType.COLLECTIBLE_FLIP,
     CollectibleType.COLLECTIBLE_GOAT_HEAD,
     CollectibleType.COLLECTIBLE_DAMOCLES,
     CollectibleType.COLLECTIBLE_SPINDOWN_DICE,
@@ -24,6 +25,7 @@ local nextRunBanItems = {
     AstroItems.Collectible.TECHNOLOGY_OMICRON,
     AstroItems.Collectible.AMAZING_CHAOS_SCROLL,
     AstroItems.Collectible.ARIES_EX,
+    AstroItems.Collectible.BIRTHRIGHT_THE_LOST,
 }
 
 if EID then
@@ -552,6 +554,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_DAMOCLES,
             CollectibleType.COLLECTIBLE_STARTER_DECK,
             CollectibleType.COLLECTIBLE_HEARTBREAK,
+            CollectibleType.COLLECTIBLE_BLANK_CARD,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
@@ -715,6 +718,19 @@ local banItems = {
         }
     },
     [AstroItems.Players.WATER_ENCHANTRESS] = {
+        collectible = {
+            CollectibleType.COLLECTIBLE_CAR_BATTERY,
+            CollectibleType.COLLECTIBLE_SOL,
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+            PillEffect.PILLEFFECT_48HOUR_ENERGY,
+        }
+    },
+    [AstroItems.Players.WATER_ENCHANTRESS_B] = {
         collectible = {
             CollectibleType.COLLECTIBLE_CAR_BATTERY,
             CollectibleType.COLLECTIBLE_SOL,
@@ -927,3 +943,54 @@ Astro:AddCallback(
         end
     end
 )
+
+---@param player EntityPlayer
+---@param cardID Card
+---@param slotId integer
+local function WasteCard(player, cardID, slotId)
+	player:SetCard(slotId, 0)
+	player:UseCard(cardID)
+end
+
+---@param player EntityPlayer
+function Astro:AutoWasting(player)
+	if player:GetCard(0) == Card.RUNE_ANSUZ then
+		WasteCard(player, Card.RUNE_ANSUZ, 0)
+	elseif player:GetCard(0) == Card.CARD_WORLD then
+		WasteCard(player, Card.CARD_WORLD, 0)
+	elseif player:GetCard(0) == Card.CARD_SUN then
+		WasteCard(player, Card.CARD_SUN, 0)
+	elseif player:GetCard(0) == Card.CARD_JUSTICE then
+		WasteCard(player, Card.CARD_JUSTICE, 0)
+	elseif player:GetCard(0) == Card.CARD_HIEROPHANT then
+		WasteCard(player, Card.CARD_HIEROPHANT, 0)
+	elseif player:GetCard(0) == Card.CARD_REVERSE_HIEROPHANT then
+		WasteCard(player, Card.CARD_REVERSE_HIEROPHANT, 0)
+	elseif player:GetCard(0) == Card.CARD_RULES then
+		WasteCard(player, Card.CARD_RULES, 0)
+	elseif player:GetCard(0) == Card.CARD_ANCIENT_RECALL then
+		WasteCard(player, Card.CARD_ANCIENT_RECALL, 0)
+	elseif player:GetCard(0) == Card.CARD_REVERSE_MAGICIAN then
+		WasteCard(player, Card.CARD_REVERSE_MAGICIAN, 0)
+	elseif player:GetCard(0) == Card.RUNE_BERKANO then
+		WasteCard(player, Card.RUNE_BERKANO, 0)
+	elseif player:GetCard(0) == Astro.Card.ETERNITY then
+		WasteCard(player, Astro.Card.ETERNITY, 0)
+	elseif player:GetCard(0) == Card.CARD_HOLY and player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
+		player:SetCard(0, 0) -- 획득 시 삭제
+	else
+		local pillColor = player:GetPill(0)
+
+		if pillColor then
+			local itemPool = Game():GetItemPool()
+			local pillEffect = itemPool:GetPillEffect(pillColor)
+
+			if pillEffect == PillEffect.PILLEFFECT_BALLS_OF_STEEL then
+				player:SetPill(0, PillColor.PILL_NULL)
+				player:UsePill(PillEffect.PILLEFFECT_BALLS_OF_STEEL, pillColor)
+			end
+		end
+	end
+end
+
+Astro:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astro.AutoWasting)

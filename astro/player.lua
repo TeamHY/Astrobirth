@@ -32,7 +32,7 @@ local startItem = {
     },
     [PlayerType.PLAYER_MAGDALENE] = {
         collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+            AstroItems.Collectible.THE_HOLY_BLOOD_AND_THE_HOLY_GRAIL,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
@@ -633,6 +633,20 @@ local startItem = {
         }
     },
     [AstroItems.Players.WATER_ENCHANTRESS] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [AstroItems.Players.WATER_ENCHANTRESS_B] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
         },
