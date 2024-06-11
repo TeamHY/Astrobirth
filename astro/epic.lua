@@ -3,7 +3,7 @@ local isc = require("astro.lib.isaacscript-common")
 local soundId = Isaac.GetSoundIdByName("Epic")
 
 -- 투명도 설정
-local alpha = 1 -- (0.1 ~ 1) 까지 편하신대로 설정 하시면 됩니다 0일 경우 출력 안됨
+local alpha = 0.5 -- (0.1 ~ 1) 까지 편하신대로 설정 하시면 됩니다 0일 경우 출력 안됨
 
 -- 볼륨 설정
 local volume = 0.5 -- (0.1 ~ 1) 까지 편하신대로 설정 하시면 됩니다 0일 경우 출력 안됨
