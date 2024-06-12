@@ -28,12 +28,16 @@ Astro:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, Astro.CurseRemove)
 Astro:AddCallback(
 	ModCallbacks.MC_POST_RENDER,
 	function(_)
-		if not Astro:IsCollectibleUnlocked(CollectibleType.COLLECTIBLE_DEATH_CERTIFICATE) then
-			local player = Isaac.GetPlayer()
-			local position = Isaac.WorldToRenderPosition(player.Position)
+		local level = Game():GetLevel()
 
-
-			Isaac.RenderText("Death Certificate is not unlocked", position.X - 100, position.Y, 255, 0, 0, 255)
+		if level:GetCurrentRoomIndex() == 84 then
+			if not Astro:IsCollectibleUnlocked(CollectibleType.COLLECTIBLE_DEATH_CERTIFICATE) then
+				local player = Isaac.GetPlayer()
+				local position = Isaac.WorldToRenderPosition(player.Position)
+	
+	
+				Isaac.RenderText("Death Certificate is not unlocked", position.X - 100, position.Y, 255, 0, 0, 255)
+			end
 		end
 	end
 )
