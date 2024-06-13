@@ -134,6 +134,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_BIRDS_EYE,
             CollectibleType.COLLECTIBLE_GODS_FLESH,
             AstroItems.Collectible.REINCARNATION,
+            AstroItems.Collectible.PAVO,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
