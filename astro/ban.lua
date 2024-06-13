@@ -801,10 +801,14 @@ end
 
 local banAnimationList = {}
 
-local banAnimationSprite = Sprite()
-banAnimationSprite:Load("gfx/ban_collectible.anm2", true)
-banAnimationSprite:Play("Idle", true)
-banAnimationSprite:SetLastFrame()
+local function CreateBanAnimationSprite()
+    local banAnimationSprite = Sprite()
+    banAnimationSprite:Load("gfx/ban_collectible.anm2", true)
+    banAnimationSprite:Play("Idle", true)
+    banAnimationSprite:SetLastFrame()
+
+    return banAnimationSprite
+end
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
@@ -827,7 +831,12 @@ Astro:AddCallback(
                 end
             end
 
-            banAnimationList = Astro.Data.NextBanItems or {}
+            banAnimationList = {}
+
+            for _, value in ipairs(Astro.Data.NextBanItems) do
+                table.insert(banAnimationList, { value, CreateBanAnimationSprite(), 0 })
+            end
+
             Astro.Data.NextBanItems = {}
         end
     end
@@ -836,8 +845,12 @@ Astro:AddCallback(
 Astro:AddCallback(
     ModCallbacks.MC_POST_UPDATE,
     function(_)
-        if not banAnimationSprite:IsFinished("Idle") then
-            banAnimationSprite:Update()
+        for _, value in ipairs(banAnimationList) do
+            local banAnimationSprite = value[2]
+
+            if not banAnimationSprite:IsFinished("Idle") then
+                banAnimationSprite:Update()
+            end
         end
     end
 )
@@ -849,22 +862,26 @@ Astro:AddCallback(
         local currentRoom = level:GetCurrentRoom()
 
         if level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetCurrentRoomIndex() == 84 and currentRoom:IsFirstVisit() and Game():GetFrameCount() > 15 then
-            if banAnimationSprite:IsFinished("Idle") then
-                if #banAnimationList >= 1 then
-                    local collectible = table.remove(banAnimationList, 1)
-                    local config = Isaac.GetItemConfig():GetCollectible(collectible)
-    
-                    Game():GetItemPool():RemoveCollectible(collectible)
-    
-                    banAnimationSprite:Play("Idle", true)
-                    banAnimationSprite:ReplaceSpritesheet(0, config.GfxFileName)
-                    banAnimationSprite:LoadGraphics()
-                    banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(0, -60)), Vector(0, 0), Vector(0, 0))
-    
-                    table.insert(banAnimationList, collectible)
+            for i, value in ipairs(banAnimationList) do
+                local collectible = value[1]
+                local banAnimationSprite = value[2]
+
+                local xOffset = (i - 0.5 - #banAnimationList / 2) * 50
+
+                if banAnimationSprite:IsFinished("Idle") then
+                    if #banAnimationList >= 1 then
+                        local config = Isaac.GetItemConfig():GetCollectible(collectible)
+        
+                        Game():GetItemPool():RemoveCollectible(collectible)
+        
+                        banAnimationSprite:Play("Idle", true)
+                        banAnimationSprite:ReplaceSpritesheet(0, config.GfxFileName)
+                        banAnimationSprite:LoadGraphics()
+                        banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(xOffset, -60)), Vector(0, 0), Vector(0, 0))
+                    end
+                else
+                    banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(xOffset, -60)), Vector(0, 0), Vector(0, 0))
                 end
-            else
-                banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(0, -60)), Vector(0, 0), Vector(0, 0))
             end
         end
     end
