@@ -82,7 +82,7 @@ Astro:AddCallback(
                     AstroItems.Collectible.LANIAKEA_SUPERCLUSTER,
                     AstroItems.Collectible.PTOLEMAEUS,
                     AstroItems.Collectible.SINFUL_SPOILS_OF_SUBVERSION_SNAKE_EYE,
-                    AstroItems.Collectible.TECHNOLOGY_OMICRON,
+                    AstroItems.Collectible.TECHNOLOGY_OMICRON_EX,
                     AstroItems.Collectible.ORIGINAL_SINFUL_SPOILS_SNAKE_EYE,
                     AstroItems.Collectible.RITE_OF_ARAMESIR,
                     AstroItems.Collectible.CHUBBYS_HEAD,

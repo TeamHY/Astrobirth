@@ -38,7 +38,7 @@ local nextRunBanItems = {
     CollectibleType.COLLECTIBLE_SPELUNKER_HAT,
     CollectibleType.COLLECTIBLE_CRYSTAL_BALL,
     CollectibleType.COLLECTIBLE_LACHRYPHAGY,
-    AstroItems.Collectible.TECHNOLOGY_OMICRON,
+    AstroItems.Collectible.TECHNOLOGY_OMICRON_EX,
     AstroItems.Collectible.AMAZING_CHAOS_SCROLL,
     AstroItems.Collectible.ARIES_EX,
     AstroItems.Collectible.BIRTHRIGHT_THE_LOST,
