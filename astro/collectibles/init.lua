@@ -5,6 +5,7 @@ require "astro.collectibles.active"
 require "astro.collectibles.status"
 
 require "astro.collectibles.vanillas.aquarius"
+require "astro.collectibles.vanillas.birthright"
 require "astro.collectibles.vanillas.blood-oath"
 require "astro.collectibles.vanillas.crickets-body"
 require "astro.collectibles.vanillas.dads-lost-coin"
