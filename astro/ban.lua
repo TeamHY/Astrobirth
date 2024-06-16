@@ -859,9 +859,8 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_RENDER,
     function(_)
         local level = Game():GetLevel()
-        local currentRoom = level:GetCurrentRoom()
 
-        if level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetCurrentRoomIndex() == 84 and currentRoom:IsFirstVisit() and Game():GetFrameCount() > 15 then
+        if level:GetAbsoluteStage() ~= LevelStage.STAGE4_3 and level:GetCurrentRoomIndex() == 84 and Game():GetFrameCount() > 15 then
             for i, value in ipairs(banAnimationList) do
                 local collectible = value[1]
                 local banAnimationSprite = value[2]
