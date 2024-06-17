@@ -833,6 +833,10 @@ Astro:AddCallback(
 
             banAnimationList = {}
 
+            if Astro.Data.NextBanItems == nil then
+                Astro.Data.NextBanItems = {}
+            end
+
             for _, value in ipairs(Astro.Data.NextBanItems) do
                 table.insert(banAnimationList, { value, CreateBanAnimationSprite(), 0 })
             end
