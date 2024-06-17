@@ -552,7 +552,7 @@
 	<passive achievement="376" description="#DEATHS_LIST_DESCRIPTION" gfx="Collectibles_530_DeathsList.png" shopprice="5" name="#DEATHS_LIST_NAME" id="530" />
 	<passive achievement="377" cache="weapon firedelay damage tearcolor range" description="#HAEMOLACRIA_DESCRIPTION" gfx="Collectibles_531_Haemolacria.png" devilprice="2" name="#HAEMOLACRIA_NAME" id="531" />
 	<passive achievement="378" cache="tearflag" description="#LACHRYPHAGY_DESCRIPTION" devilprice="2" gfx="Collectibles_532_Lachryphagy.png" name="#LACHRYPHAGY_NAME" id="532" />
-	<passive achievement="380" cache="tearflag" description="#TRISAGION_DESCRIPTION" devilprice="2" gfx="Collectibles_533_Trisagion.png" name="#TRISAGION_NAME" id="533" />
+	<passive achievement="380" cache="tearflag shotspeed" description="#TRISAGION_DESCRIPTION" devilprice="2" gfx="Collectibles_533_Trisagion.png" name="#TRISAGION_NAME" id="533" />
 	<passive achievement="379" description="#SCHOOLBAG_DESCRIPTION" gfx="collectibles_534_Schoolbag.png" shopprice="20" name="#SCHOOLBAG_NAME" id="534" />
 	
 	<!-- Booster Pack #5 -->

@@ -37,6 +37,10 @@ if EID then
                 EID:appendToDescription(descObj, "#↓ 최대 이동 속도가 1.6으로 제한이 됩니다")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE then
                 EID:appendToDescription(descObj, "#↑ {{ShotspeedSmall}}탄속 +0.5")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_TRISAGION then
+                EID:appendToDescription(descObj, "#↓ {{ShotspeedSmall}}탄속 x0.5")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_TECH_X then
+                EID:appendToDescription(descObj, "#↓ {{ShotspeedSmall}}탄속 x0.5")
             end
 
             return descObj
@@ -117,6 +121,12 @@ Astro:AddCallback(
         elseif cacheFlag == CacheFlag.CACHE_SHOTSPEED then
             if player:HasCollectible(CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE) then
                 player.ShotSpeed = player.ShotSpeed + 0.5
+            end
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_TRISAGION) then
+                player.ShotSpeed = player.ShotSpeed * 0.5
+            end
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_TECH_X) then
+                player.ShotSpeed = player.ShotSpeed * 0.5
             end
         end
     end
