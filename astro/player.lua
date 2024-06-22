@@ -740,7 +740,7 @@ Astro:AddCallback(
         local player = Isaac.GetPlayer()
 
         if not isContinued then
-            hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_MORE_OPTIONS)
+            -- hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_MORE_OPTIONS)
 
             if
                 player:GetPlayerType() == PlayerType.PLAYER_CAIN_B or player:GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN_B or
@@ -752,9 +752,9 @@ Astro:AddCallback(
             end
         end
 
-        local itemConfig = Isaac.GetItemConfig()
-        local itemConfigItem = itemConfig:GetCollectible(CollectibleType.COLLECTIBLE_MORE_OPTIONS)
+        -- local itemConfig = Isaac.GetItemConfig()
+        -- local itemConfigItem = itemConfig:GetCollectible(CollectibleType.COLLECTIBLE_MORE_OPTIONS)
 
-        player:RemoveCostume(itemConfigItem)
+        -- player:RemoveCostume(itemConfigItem)
     end
 )
