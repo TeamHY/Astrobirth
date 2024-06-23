@@ -153,7 +153,7 @@
 	<passive cache="weapon firedelay" description="#TECHNOLOGY_2_DESCRIPTION" gfx="Collectibles_152_Technology2.png" id="152" name="#TECHNOLOGY_2_NAME" />
 	<passive cache="firedelay damage" description="#MUTANT_SPIDER_DESCRIPTION" gfx="Collectibles_153_MutantSpider.png" id="153" devilprice="2" name="#MUTANT_SPIDER_NAME" special="true" />
 	<passive cache="damage" description="#CHEMICAL_PEEL_DESCRIPTION" gfx="Collectibles_154_ChemicalPeel.png" id="154" name="#CHEMICAL_PEEL_NAME" />
-	<familiar description="#THE_PEEPER_DESCRIPTION" gfx="Collectibles_155_ThePeeper.png" id="155" name="#THE_PEEPER_NAME" />
+	<familiar description="#THE_PEEPER_DESCRIPTION" gfx="Collectibles_155_ThePeeper.png" id="155" shopprice="5" name="#THE_PEEPER_NAME" />
 	<passive description="#HABIT_DESCRIPTION" gfx="Collectibles_156_Habit.png" id="156" shopprice="9" name="#HABIT_NAME" />
 	<passive achievement="54" cache="damage color" description="#BLOODY_LUST_DESCRIPTION" gfx="Collectibles_157_BloodyLust.png" id="157" name="#BLOODY_LUST_NAME" />
 	<active description="#CRYSTAL_BALL_DESCRIPTION" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="12" name="#CRYSTAL_BALL_NAME" />
@@ -494,7 +494,7 @@
 	<active description="#WAIT_WHAT_DESCRIPTION" gfx="Collectibles_484_WaitWhat.png" id="484" name="#WAIT_WHAT_NAME" maxcharges="300" chargetype="timed" />
 	
 	<active achievement="294" description="#CROOKED_PENNY_DESCRIPTION" gfx="collectibles_485_crookedpenny.png" id="485" name="#CROOKED_PENNY_NAME" maxcharges="6" />
-	<active achievement="288" description="#DULL_RAZOR_DESCRIPTION" gfx="collectibles_486_dullrazor.png" id="486" name="#DULL_RAZOR_NAME" shopprice="10" maxcharges="2" />
+	<active achievement="288" description="#DULL_RAZOR_DESCRIPTION" gfx="collectibles_486_dullrazor.png" id="486" name="#DULL_RAZOR_NAME" shopprice="4" maxcharges="2" />
 	<active description="#POTATO_PEELER_DESCRIPTION" gfx="collectibles_487_potatopeeler.png" id="487" name="#POTATO_PEELER_NAME" />
 	<active achievement="303" description="#METRONOME_DESCRIPTION" gfx="collectibles_488_metronome.png" id="488" name="#METRONOME_NAME" maxcharges="2" cache="all" />
 	<active achievement="282" description="#D_INFINITY_DESCRIPTION" gfx="collectibles_489_dinfinity.png" id="489" name="#D_INFINITY_NAME" maxcharges="2" />
@@ -747,7 +747,7 @@
 	<active		id="719"	achievement="465" gfx="Collectibles_719_KeepersBox.png" name="#KEEPERS_BOX_NAME" description="#KEEPERS_BOX_DESCRIPTION" maxcharges="4" />
 	<active		id="720"	achievement="459" gfx="Collectibles_720_EverythingJar.png" name="#EVERYTHING_JAR_NAME" description="#EVERYTHING_JAR_DESCRIPTION" maxcharges="12" initcharge="1" />
 	<passive	id="721"	achievement="500" gfx="Collectibles_721_TMTRAINER.png" name="#TMTRAINER_NAME" description="#TMTRAINER_DESCRIPTION" />
-	<active		id="722"	achievement="600" gfx="Collectibles_722_AnimaSola.png" name="#ANIMA_SOLA_NAME" description="#ANIMA_SOLA_DESCRIPTION" maxcharges="345" chargetype="timed" />
+	<active		id="722"	achievement="600" gfx="Collectibles_722_AnimaSola.png" name="#ANIMA_SOLA_NAME" shopprice="5" description="#ANIMA_SOLA_DESCRIPTION" maxcharges="345" chargetype="timed" />
 	<active		id="723"	achievement="584" gfx="Collectibles_723_SpindownDice.png" shopprice="35" name="#SPINDOWN_DICE_NAME" description="#SPINDOWN_DICE_DESCRIPTION" maxcharges="12" />
 	<passive	id="724"	achievement="585" gfx="Collectibles_724_Hypercoagulation.png" name="#HYPERCOAGULATION_NAME" description="#HYPERCOAGULATION_DESCRIPTION" />
 	<passive	id="725"	achievement="588" gfx="Collectibles_725_IBS.png" name="#IBS_NAME" description="#IBS_DESCRIPTION" />
