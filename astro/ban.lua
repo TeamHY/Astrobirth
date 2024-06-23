@@ -38,6 +38,7 @@ local nextRunBanItems = {
     CollectibleType.COLLECTIBLE_SPELUNKER_HAT,
     CollectibleType.COLLECTIBLE_CRYSTAL_BALL,
     CollectibleType.COLLECTIBLE_LACHRYPHAGY,
+    CollectibleType.COLLECTIBLE_BIRTHRIGHT,
     AstroItems.Collectible.TECHNOLOGY_OMICRON_EX,
     AstroItems.Collectible.AMAZING_CHAOS_SCROLL,
     AstroItems.Collectible.ARIES_EX,
@@ -80,6 +81,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_MORE_OPTIONS,
             CollectibleType.COLLECTIBLE_PARASITE,
             CollectibleType.COLLECTIBLE_MARS,
+            CollectibleType.COLLECTIBLE_DAMOCLES,
             CollectibleType.COLLECTIBLE_GLITCHED_CROWN,
             CollectibleType.COLLECTIBLE_POUND_OF_FLESH,
             CollectibleType.COLLECTIBLE_MONTEZUMAS_REVENGE,
@@ -133,8 +135,9 @@ local banItems = {
             CollectibleType.COLLECTIBLE_GREEDS_GULLET,
             CollectibleType.COLLECTIBLE_BIRDS_EYE,
             CollectibleType.COLLECTIBLE_GODS_FLESH,
+            CollectibleType.COLLECTIBLE_BIRTHRIGHT,
             AstroItems.Collectible.REINCARNATION,
-            AstroItems.Collectible.PAVO,
+
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
