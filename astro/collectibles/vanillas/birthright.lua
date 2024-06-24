@@ -24,7 +24,7 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        if Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_BIRTHRIGHT) then
+        if player:GetPlayerType() == PlayerType.PLAYER_AZAZEL and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_BIRTHRIGHT) then
             local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_BIRTHRIGHT)
 
             local items = Astro:GetRandomCollectibles(collectibles, rng, 2)
