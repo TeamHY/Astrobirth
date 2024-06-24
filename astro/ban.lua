@@ -898,7 +898,8 @@ Astro:AddCallbackCustom(
     ---@param player EntityPlayer
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
-        if Astro:ContainCollectible(nextRunBanItems, collectibleType) then
+        -- 밴 목록에는 있지만 밴 적용 목록에 없는 경우 추가
+        if Astro:ContainCollectible(nextRunBanItems, collectibleType) and not Astro:ContainCollectible(Astro.Data.NextBanItems, collectibleType) then
             table.insert(Astro.Data.NextBanItems, collectibleType)
         end
     end
