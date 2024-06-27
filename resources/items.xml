@@ -18,7 +18,7 @@
 	<passive description="#SKELETON_KEY_DESCRIPTION" gfx="Collectibles_017_SkeletonKey.png" id="17" keys="99" name="#SKELETON_KEY_NAME" />
 	<passive coins="100" description="#A_DOLLAR_DESCRIPTION" gfx="Collectibles_018_ADollar.png" id="18" shopprice="90" name="#A_DOLLAR_NAME" />
 	<passive bombs="10" description="#BOOM_DESCRIPTION" gfx="Collectibles_019_Boom.png" id="19" name="#BOOM_NAME" />
-	<passive achievement="8" cache="flying" description="#TRANSCENDENCE_DESCRIPTION" gfx="Collectibles_020_Transcendence.png" id="20" name="#TRANSCENDENCE_NAME" />
+	<passive achievement="8" cache="flying" description="#TRANSCENDENCE_DESCRIPTION" shopprice="14" gfx="Collectibles_020_Transcendence.png" id="20" name="#TRANSCENDENCE_NAME" />
 	<passive description="#THE_COMPASS_DESCRIPTION" gfx="Collectibles_021_TheCompass.png" id="21" shopprice="35" name="#THE_COMPASS_NAME" />
 	<passive description="#LUNCH_DESCRIPTION" gfx="Collectibles_022_Lunch.png" hearts="4" id="22" maxhearts="2" name="#LUNCH_NAME" />
 	<passive description="#DINNER_DESCRIPTION" gfx="Collectibles_023_Dinner.png" hearts="4" id="23" maxhearts="2" name="#DINNER_NAME" />
@@ -171,7 +171,7 @@
 	<familiar description="#DADDY_LONGLEGS_DESCRIPTION" gfx="Collectibles_170_DaddyLonglegs.png" id="170" name="#DADDY_LONGLEGS_NAME" />
 	<active cooldown="120" description="#SPIDER_BUTT_DESCRIPTION" gfx="Collectibles_171_SpiderButt.png" shopprice="10" id="171" maxcharges="2" name="#SPIDER_BUTT_NAME" />
 	<familiar achievement="53" description="#SACRIFICIAL_DAGGER_DESCRIPTION" gfx="Collectibles_172_SacrificialDagger.png" id="172" name="#SACRIFICIAL_DAGGER_NAME" />
-	<passive description="#MITRE_DESCRIPTION" gfx="Collectibles_173_Mitre.png" id="173" name="#MITRE_NAME" />
+	<passive description="#MITRE_DESCRIPTION" gfx="Collectibles_173_Mitre.png" id="173" shopprice="6" name="#MITRE_NAME" />
 	<familiar description="#RAINBOW_BABY_DESCRIPTION" gfx="Collectibles_174_RainbowBaby.png" id="174" name="#RAINBOW_BABY_NAME" />
 	<active achievement="58" description="#DADS_KEY_DESCRIPTION" gfx="Collectibles_175_DadsKey.png" id="175" shopprice="10" maxcharges="3" name="#DADS_KEY_NAME" />
 	<passive cache="shotspeed" description="#STEM_CELLS_DESCRIPTION" gfx="Collectibles_176_StemCells.png" hearts="4" id="176" maxhearts="2" name="#STEM_CELLS_NAME" />
@@ -315,7 +315,7 @@
 	<passive achievement="112" cache="shotspeed damage tearcolor firedelay" description="#EVES_MASCARA_DESCRIPTION" gfx="collectibles_310_evesmascara.png" id="310" devilprice="2" name="#EVES_MASCARA_NAME" />
 	<passive achievement="108" description="#JUDAS_SHADOW_DESCRIPTION" devilprice="2" gfx="collectibles_311_judasshadow.png" id="311" name="#JUDAS_SHADOW_NAME" addcostumeonpickup="false" />
 	<passive achievement="109" description="#MAGGYS_BOW_DESCRIPTION" gfx="collectibles_312_maggysbow.png" hearts="4" id="312" maxhearts="2" name="#MAGGYS_BOW_NAME" />
-	<passive description="#HOLY_MANTLE_DESCRIPTION" gfx="collectibles_313_holymantle.png" cache="damage" id="313" name="#HOLY_MANTLE_NAME" addcostumeonpickup="false" devilprice="2" />
+	<passive description="#HOLY_MANTLE_DESCRIPTION" gfx="collectibles_313_holymantle.png" cache="damage" shopprice="65" id="313" name="#HOLY_MANTLE_NAME" addcostumeonpickup="false" devilprice="2" />
 	<passive cache="speed" description="#THUNDER_THIGHS_DESCRIPTION" gfx="collectibles_314_thunderthighs.png" hearts="4" id="314" maxhearts="2" name="#THUNDER_THIGHS_NAME" />
 	<passive cache="tearflag tearcolor" description="#STRANGE_ATTRACTOR_DESCRIPTION" gfx="collectibles_315_strangeattractor.png" id="315" name="#STRANGE_ATTRACTOR_NAME" />
 	<passive cache="all" description="#CURSED_EYE_DESCRIPTION" gfx="collectibles_316_cursedeye.png" id="316" name="#CURSED_EYE_NAME" />
@@ -464,7 +464,7 @@
 	<passive description="#POLYDACTYLY_DESCRIPTION" gfx="Collectibles_454_Polydactyly.png" shopprice="12" id="454" name="#POLYDACTYLY_NAME" />
 	<passive achievement="307" description="#DADS_LOST_COIN_DESCRIPTION" gfx="Collectibles_455_DadsLostCoin.png" id="455" shopprice="4" name="#DADS_LOST_COIN_NAME" cache="range" />
 	<passive description="#MIDNIGHT_SNACK_DESCRIPTION" gfx="Collectibles_456_MoldyBread.png" id="456" name="#MIDNIGHT_SNACK_NAME" hearts="4" maxhearts="2" />
-	<passive description="#CONE_HEAD_DESCRIPTION" gfx="Collectibles_457_Conehead.png" id="457" name="#CONE_HEAD_NAME" soulhearts="2" />
+	<passive description="#CONE_HEAD_DESCRIPTION" gfx="Collectibles_457_Conehead.png" id="457" shopprice="5" name="#CONE_HEAD_NAME" soulhearts="2" />
 	<passive description="#BELLY_BUTTON_DESCRIPTION" gfx="Collectibles_458_BellyButton.png" id="458" shopprice="10" name="#BELLY_BUTTON_NAME" />
 	<passive description="#SINUS_INFECTION_DESCRIPTION" devilprice="2" gfx="Collectibles_459_SinusInfection.png" id="459" name="#SINUS_INFECTION_NAME" cache="tearcolor" />
 	<passive description="#GLAUCOMA_DESCRIPTION" gfx="Collectibles_460_Glaucoma.png" id="460" name="#GLAUCOMA_NAME" />
