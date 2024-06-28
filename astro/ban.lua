@@ -179,6 +179,28 @@ local banItems = {
             PillEffect.PILLEFFECT_SPEED_DOWN,
         }
     },
+    -- 노말, 하드 밴 목록
+    original = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
+    -- 그리드, 그리디어 밴 목록
+    greed = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
     [PlayerType.PLAYER_ISAAC] = {
         collectible = {
         },
@@ -790,6 +812,12 @@ local banItems = {
 
 local function GetBanTables()
     local banTables = { banItems.common }
+
+    if Game():IsGreedMode() then
+        table.insert(banTables, banItems.greed)
+    else
+        table.insert(banTables, banItems.original)
+    end
 
     for i = 1, Game():GetNumPlayers() do
         local player = Isaac.GetPlayer(i - 1)
