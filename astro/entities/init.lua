@@ -1,3 +1,8 @@
+Astro.Entities = {}
+
+require "astro.entities.mega-chest"
+require "astro.entities.restock-machine"
+
 Astro:AddCallback(
 	ModCallbacks.MC_PRE_TEAR_COLLISION,
 	---@param entityTear EntityTear

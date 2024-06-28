@@ -91,4 +91,7 @@
     <entity anm2path="items/pick ups/capsules/speed_tears.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="MT Capsule" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="881">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
+    <entity anm2path="restockmachine.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Shop Restock Machine" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="3001">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
+    </entity>
 </entities>
