@@ -10,6 +10,7 @@ Astro = isc:upgradeMod(mod, { isc.ISCFeature.PLAYER_INVENTORY, isc.ISCFeature.RO
 Json = require "json"
 
 require "astro.constants"
+require "astro.callback"
 require "astro.init"
 require "astro.save"
 require "astro.eid"
@@ -25,3 +26,5 @@ require "astro.room"
 require "astro.epic"
 require "astro.challenges"
 require "astro.void-portal"
+
+require "astro-greedier.award"

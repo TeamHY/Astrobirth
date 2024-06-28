@@ -40,38 +40,23 @@ Astro:AddCallback(
 )
 
 -- Slot Callbacks
-wakaba:AddCallback(ModCallbacks.MC_POST_UPDATE, function()
-	for _, slot in pairs(Isaac.FindByType(6)) do
-		local data = slot:GetData()
-		if not data.wakaba_SlotDoneInit then
-			data.wakaba_SlotDoneInit = true
-			Isaac.RunCallbackWithParam(wakaba.Callback.SLOT_INIT, slot.Variant, slot)
-		end
+-- wakaba:AddCallback(ModCallbacks.MC_POST_UPDATE, function()
+-- 	for _, slot in pairs(Isaac.FindByType(6)) do
+-- 		local data = slot:GetData()
+-- 		if not data.wakaba_SlotDoneInit then
+-- 			data.wakaba_SlotDoneInit = true
+-- 			Isaac.RunCallbackWithParam(wakaba.Callback.SLOT_INIT, slot.Variant, slot)
+-- 		end
 
-		Isaac.RunCallbackWithParam(wakaba.Callback.SLOT_UPDATE, slot.Variant, slot)
+-- 		Isaac.RunCallbackWithParam(wakaba.Callback.SLOT_UPDATE, slot.Variant, slot)
 
-		wakaba:ForAllPlayers(function(player)
-			if wakaba:DoEntitiesOverlap(player, slot) and not player:IsDead() then
-				Isaac.RunCallbackWithParam(wakaba.Callback.SLOT_COLLISION, slot.Variant, slot, player)
-			end
-		end)
-	end
-end)
-
-
-
-Astro:AddCallback(
-    ModCallbacks.MC_POST_UPDATE,
-    ---@param bomb EntityBomb
-    ---@param collider Entity
-    ---@param low boolean
-    function(_, bomb, collider, low)
-        if collider.Type == EntityType.ENTITY_SLOT and collider.Variant == 3001 then
-            print("bomb!")
-            return false
-        end
-    end
-)
+-- 		wakaba:ForAllPlayers(function(player)
+-- 			if wakaba:DoEntitiesOverlap(player, slot) and not player:IsDead() then
+-- 				Isaac.RunCallbackWithParam(wakaba.Callback.SLOT_COLLISION, slot.Variant, slot, player)
+-- 			end
+-- 		end)
+-- 	end
+-- end)
 
 local function DoEntitiesOverlap(entity1, entity2)
 	return entity1.Position:Distance(entity2.Position) <= entity1.Size + entity2.Size
