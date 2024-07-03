@@ -1,3 +1,105 @@
+-- Backdrop Start
+
+local BACKDROP_VARIANT = Isaac.GetEntityVariantByName("Backdrop")
+local GFX_ROOT = "gfx/backdrop/"
+
+local LAYER_TYPE = {
+    WALLS = 0,
+    FLOOR = 1
+}
+
+local LAYER = {
+    [0] = LAYER_TYPE.WALLS,
+    [1] = LAYER_TYPE.WALLS,
+    [2] = LAYER_TYPE.WALLS,
+    [3] = LAYER_TYPE.WALLS,
+    [4] = LAYER_TYPE.WALLS,
+    [5] = LAYER_TYPE.WALLS,
+    [6] = LAYER_TYPE.WALLS,
+    [7] = LAYER_TYPE.WALLS,
+    [8] = LAYER_TYPE.WALLS,
+    [9] = LAYER_TYPE.WALLS,
+    [10] = LAYER_TYPE.WALLS,
+    [11] = LAYER_TYPE.WALLS,
+    [12] = LAYER_TYPE.WALLS,
+    [13] = LAYER_TYPE.WALLS,
+    [14] = LAYER_TYPE.WALLS,
+    [15] = LAYER_TYPE.WALLS,
+    [16] = LAYER_TYPE.WALLS,
+    [17] = LAYER_TYPE.WALLS,
+    [18] = LAYER_TYPE.WALLS,
+    [19] = LAYER_TYPE.WALLS,
+    [20] = LAYER_TYPE.WALLS,
+    [21] = LAYER_TYPE.WALLS,
+    [22] = LAYER_TYPE.WALLS,
+    [23] = LAYER_TYPE.FLOOR,
+    [24] = LAYER_TYPE.FLOOR
+}
+
+---@param bgSpriteSheet table
+local function SpawnBackdrop(bgSpriteSheet)
+    local room = Game():GetRoom()
+
+    local wall = Isaac.Spawn(EntityType.ENTITY_EFFECT, BACKDROP_VARIANT, 0, room:GetTopLeftPos(), Vector.Zero, nil)
+    local wallSprite = wall:GetSprite()
+
+    for i = 0, #LAYER - 1, 1 do
+        local string = bgSpriteSheet[LAYER[i]]
+        wallSprite:ReplaceSpritesheet(i, GFX_ROOT .. string .. ".png")
+    end
+
+    wallSprite:Play(room:GetRoomShape(), true)
+    wallSprite:LoadGraphics()
+
+    wall.DepthOffset = -9999
+    wall:AddEntityFlags(EntityFlag.FLAG_RENDER_WALL)
+
+    local floor = Isaac.Spawn(EntityType.ENTITY_EFFECT, BACKDROP_VARIANT, 0, room:GetTopLeftPos(), Vector.Zero, nil)
+    local floorSprite = floor:GetSprite()
+
+    for i = 0, #LAYER - 1, 1 do
+        local string = bgSpriteSheet[LAYER[i]]
+        floorSprite:ReplaceSpritesheet(i, GFX_ROOT .. string .. ".png")
+    end
+    floorSprite:Play(room:GetRoomShape(), true)
+    floorSprite:LoadGraphics()
+
+    floor.DepthOffset = -9999
+    floor:AddEntityFlags(EntityFlag.FLAG_RENDER_FLOOR)
+end
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_ROOM,
+    function(_)
+        local level = Game():GetLevel()
+        local currentRoomDesc = level:GetCurrentRoomDesc()
+        local roomName = currentRoomDesc.Data.Name
+        local bgName = ""
+
+        if roomName:sub(1, 1) == "[" then
+            local index = 2
+
+            while roomName:sub(index, index) ~= "]" do
+                bgName = bgName .. roomName:sub(index, index)
+                index = index + 1
+            end
+        end
+
+        bgName = "test1"
+
+        if bgName ~= "" then
+            SpawnBackdrop(
+                {
+                    [LAYER_TYPE.WALLS] = bgName .. "_walls",
+                    [LAYER_TYPE.FLOOR] = bgName .. "_floor"
+                }
+            )
+        end
+    end
+)
+
+-- Backdrop End
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
     function(_)
@@ -133,9 +235,9 @@ Astro:AddCallback(
             end
         end
 
-        if currentRoomDesc.Data.Name:sub(1, 6) == "[MIST]" then
-            currentRoomDesc.Flags = currentRoomDesc.Flags | RoomDescriptor.FLAG_CURSED_MIST
-        end
+        -- if currentRoomDesc.Data.Name:sub(1, 6) == "[MIST]" then
+        --     currentRoomDesc.Flags = currentRoomDesc.Flags | RoomDescriptor.FLAG_CURSED_MIST
+        -- end
     end
 )
 
