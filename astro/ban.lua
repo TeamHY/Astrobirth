@@ -47,6 +47,9 @@ local nextRunBanItems = {
     AstroItems.Collectible.THE_HOLY_BLOOD_AND_THE_HOLY_GRAIL,
     AstroItems.Collectible.CAINS_SECRET_BAG,
     AstroItems.Collectible.CURSE_OF_ARAMATIR,
+    AstroItems.Collectible.OMEGA_321,
+    AstroItems.Collectible.FALLEN_ORB,
+    AstroItems.Collectible.MY_MOON_MY_MAN,
 }
 
 if EID then
