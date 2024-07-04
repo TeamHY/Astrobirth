@@ -85,8 +85,6 @@ Astro:AddCallback(
             end
         end
 
-        bgName = "test1"
-
         if bgName ~= "" then
             SpawnBackdrop(
                 {
