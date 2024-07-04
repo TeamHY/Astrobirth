@@ -38,7 +38,7 @@
 	<active description="#MR_BOOM_DESCRIPTION" gfx="Collectibles_037_MrBoom.png" id="37" maxcharges="2" name="#MR_BOOM_NAME" />
 	<active description="#TAMMYS_HEAD_DESCRIPTION" gfx="Collectibles_038_TammysHead.png" id="38" maxcharges="1" name="#TAMMYS_HEAD_NAME" />
 	<active cooldown="220" description="#MOMS_BRA_DESCRIPTION" gfx="Collectibles_039_MomsBra.png" id="39" maxcharges="3" name="#MOMS_BRA_NAME" />
-	<active cooldown="30" description="#KAMIKAZE_DESCRIPTION" gfx="Collectibles_040_Kamikaze.png" id="40" maxcharges="0" name="#KAMIKAZE_NAME" addcostumeonpickup="true" />
+	<active cooldown="30" description="#KAMIKAZE_DESCRIPTION" gfx="Collectibles_040_Kamikaze.png" id="40" shopprice="5" maxcharges="0" name="#KAMIKAZE_NAME" addcostumeonpickup="true" />
 	<active cooldown="450" description="#MOMS_PAD_DESCRIPTION" gfx="Collectibles_041_MomsPad.png" id="41" maxcharges="1" name="#MOMS_PAD_NAME" />
 	<active description="#BOBS_ROTTEN_HEAD_DESCRIPTION" gfx="Collectibles_042_BobsRottenHead.png" id="42" shopprice="3" maxcharges="2" name="#BOBS_ROTTEN_HEAD_NAME" />
 	<!-- <active description="#PILLS_HERE_DESCRIPTION" id="43" name="#PILLS_HERE_NAME" /> -->
@@ -439,7 +439,7 @@
 	<familiar description="#MULTIDIMENSIONAL_BABY_DESCRIPTION" gfx="Collectibles_431_MultidimensionalBaby.png" id="431" name="#MULTIDIMENSIONAL_BABY_NAME" />
 	<passive description="#GLITTER_BOMBS_DESCRIPTION" gfx="Collectibles_432_GlitterBombs.png" id="432" name="#GLITTER_BOMBS_NAME" bombs="5" />
 	<familiar achievement="195" description="#MY_SHADOW_DESCRIPTION" gfx="Collectibles_433_MyShadow.png" id="433" name="#MY_SHADOW_NAME" />
-	<active description="#JAR_OF_FLIES_DESCRIPTION" gfx="Collectibles_434_JarOfFlies.png" id="434" name="#JAR_OF_FLIES_NAME" maxcharges="0" />
+	<active description="#JAR_OF_FLIES_DESCRIPTION" shopprice="3" gfx="Collectibles_434_JarOfFlies.png" id="434" name="#JAR_OF_FLIES_NAME" maxcharges="0" />
 	<familiar description="#LIL_LOKI_DESCRIPTION" gfx="Collectibles_435_LilLoki.png" id="435" name="#LIL_LOKI_NAME" />
 	<familiar description="#MILK_DESCRIPTION" gfx="Collectibles_436_Milk.png" id="436" name="#MILK_NAME" persistent="false" cache="firedelay" />
 	<active description="#D7_DESCRIPTION" gfx="Collectibles_437_D7.png" id="437" name="#D7_NAME" maxcharges="3" />
@@ -603,7 +603,7 @@
 	<familiar	id="575"	gfx="Collectibles_575_TheIntruder.png" name="#THE_INTRUDER_NAME" description="#THE_INTRUDER_DESCRIPTION" />
 	<passive	id="576"	achievement="517" gfx="Collectibles_576_DirtyMind.png" name="#DIRTY_MIND_NAME" description="#DIRTY_MIND_DESCRIPTION" />
 	<active		id="577"	achievement="432" gfx="Collectibles_577_Damocles.png" name="#DAMOCLES_NAME" description="#DAMOCLES_DESCRIPTION" maxcharges="0" devilprice="2" cache="familiars" />
-	<active		id="578"	gfx="Collectibles_578_FreeLemonade.png" name="#FREE_LEMONADE_NAME" description="#FREE_LEMONADE_DESCRIPTION" maxcharges="3" />
+	<active		id="578"	gfx="Collectibles_578_FreeLemonade.png" name="#FREE_LEMONADE_NAME" shopprice="5" description="#FREE_LEMONADE_DESCRIPTION" maxcharges="3" />
 	<passive	id="579"	achievement="520" gfx="Collectibles_579_SpiritSword.png" name="#SPIRIT_SWORD_NAME" description="#SPIRIT_SWORD_DESCRIPTION" cache="weapon damage firedelay" special="true" devilprice="2" />
 	<active		id="580"	achievement="415" gfx="Collectibles_580_SecretKey.png" name="#RED_KEY_NAME" shopprice="25" description="#RED_KEY_DESCRIPTION" maxcharges="6" />
 	<familiar	id="581"	gfx="Collectibles_581_PsyFly.png" devilprice="2" name="#PSY_FLY_NAME" shopprice="35" description="#PSY_FLY_DESCRIPTION" />
