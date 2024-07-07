@@ -1,7 +1,7 @@
 <players root="gfx/characters/costumes/" 
          portraitroot="gfx/ui/stage/" 
          nameimageroot="gfx/ui/boss/">
-	<player id="0" name="#ISAAC_NAME" skin="Character_001_Isaac.png" hp="6" pocketActive="105" keys="1" bombs="2"
+	<player id="0" name="#ISAAC_NAME" skin="Character_001_Isaac.png" hp="6" items="723" pocketActive="828" keys="1" bombs="2"
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_Isaac.png" skinColor="-1"
 		  birthright="#ISAAC_BIRTHRIGHT" />
