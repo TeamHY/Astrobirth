@@ -15,7 +15,8 @@ local blessings = {
     AstroItems.Collectible.REINCARNATION,
     AstroItems.Collectible.SAGITTARIUS_EX,
     AstroItems.Collectible.VEGA,
-    AstroItems.Collectible.VIRGO_EX
+    AstroItems.Collectible.VIRGO_EX,
+    AstroItems.Collectible.AKASHIC_RECORDS,
 }
 
 ---@param player EntityPlayer
