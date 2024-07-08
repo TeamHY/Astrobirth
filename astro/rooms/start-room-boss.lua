@@ -13,14 +13,20 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_LEVEL,
     function(_)
         local level = Game():GetLevel()
+        local stage = level:GetAbsoluteStage()
         local currentRoom = level:GetCurrentRoom()
 
         if IsRunStage() then
             local position = currentRoom:GetCenterPos()
             position.Y = position.Y - 120
 
+            if stage == LevelStage.STAGE4_1 then
+                Isaac.Spawn(20, 0, 0, position, Vector(0, 0), nil)
+            elseif stage == LevelStage.STAGE4_2 then
+                Isaac.Spawn(20, 0, 0, position, Vector(0, 0), nil)
+            end
+
             currentRoom:SetClear(false)
-            Isaac.Spawn(20, 0, 0, position, Vector(0, 0), nil)
             SFXManager():Play(SoundEffect.SOUND_SUMMONSOUND, 1, 0, false, 1)
             SFXManager():Play(SoundEffect.SOUND_CASTLEPORTCULLIS, 1, 0, false, 1)
         end
