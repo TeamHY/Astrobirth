@@ -1,3 +1,6 @@
+require "astro.rooms.start-room-boss"
+require "astro.rooms.void-portal"
+
 -- Backdrop Start
 
 local BACKDROP_VARIANT = Isaac.GetEntityVariantByName("Backdrop")
