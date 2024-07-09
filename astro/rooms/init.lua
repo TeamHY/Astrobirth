@@ -210,7 +210,7 @@ Astro:AddCallback(
                         end
                     end
 
-                    Astro:SpawnCollectible(collectables[1], currentRoom:GetGridPosition(66 + i * 2), 1, true)
+                    Astro:SpawnCollectible(collectables[1], currentRoom:GetGridPosition(65 + i * 4), 1, true)
                 end
             elseif roomType == RoomType.ROOM_SHOP and stage <= LevelStage.STAGE2_1 then
                 Isaac.Spawn(
