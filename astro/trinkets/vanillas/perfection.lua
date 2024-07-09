@@ -1,6 +1,4 @@
 local OPTIONS_PICKUP_INDEX = 145
-local GRID_SIZE = 40
-local GOLDEN_TRINKET_OFFSET = 32768
 
 local blessings = {
     CollectibleType.COLLECTIBLE_EDENS_BLESSING,
@@ -56,16 +54,16 @@ local function TryChangeToGoldenTrinket(player)
     end
 
     if trinket0 ~= 0 then
-        if trinket0 < GOLDEN_TRINKET_OFFSET then
-            player:AddTrinket(trinket0 + GOLDEN_TRINKET_OFFSET)
+        if trinket0 < Astro.GOLDEN_TRINKET_OFFSET then
+            player:AddTrinket(trinket0 + Astro.GOLDEN_TRINKET_OFFSET)
         else
             player:AddTrinket(trinket0)
         end
     end
 
     if trinket1 ~= 0 then
-        if trinket1 < GOLDEN_TRINKET_OFFSET then
-            player:AddTrinket(trinket1 + GOLDEN_TRINKET_OFFSET)
+        if trinket1 < Astro.GOLDEN_TRINKET_OFFSET then
+            player:AddTrinket(trinket1 + Astro.GOLDEN_TRINKET_OFFSET)
         else
             player:AddTrinket(trinket1)
         end
@@ -114,7 +112,7 @@ Astro:AddCallback(
                         EntityType.ENTITY_PICKUP,
                         PickupVariant.PICKUP_BOMB,
                         2,
-                        currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                        currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                         Vector.Zero,
                         nil
                     )
@@ -122,7 +120,7 @@ Astro:AddCallback(
                         EntityType.ENTITY_PICKUP,
                         PickupVariant.PICKUP_KEY,
                         3,
-                        currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                        currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                         Vector.Zero,
                         nil
                     )
@@ -130,7 +128,7 @@ Astro:AddCallback(
                     if stage == LevelStage.STAGE1_2 then
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_MAGIC_8_BALL,
-                            currentRoom:GetCenterPos() + Vector(0, GRID_SIZE),
+                            currentRoom:GetCenterPos() + Vector(0, Astro.GRID_SIZE),
                             nil,
                             true
                         )
@@ -142,26 +140,26 @@ Astro:AddCallback(
                     elseif stage == LevelStage.STAGE2_2 then
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_MOMS_PURSE,
-                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE, 0),
+                            currentRoom:GetCenterPos() + Vector(-Astro.GRID_SIZE, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_POLYDACTYLY,
-                            currentRoom:GetCenterPos() + Vector(GRID_SIZE, 0),
+                            currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
                     elseif stage == LevelStage.STAGE3_1 then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE, 0),
+                            currentRoom:GetCenterPos() + Vector(-Astro.GRID_SIZE, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_CONSOLATION_PRIZE,
-                            currentRoom:GetCenterPos() + Vector(GRID_SIZE, 0),
+                            currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
@@ -173,7 +171,7 @@ Astro:AddCallback(
                     elseif stage == LevelStage.STAGE4_1 then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, 0),
+                            currentRoom:GetCenterPos() + Vector(-Astro.GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
@@ -191,14 +189,14 @@ Astro:AddCallback(
 
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, 0),
+                            currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
                     elseif stage == LevelStage.STAGE4_2 or (stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 8) then -- 심장
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, GRID_SIZE * 2),
+                            currentRoom:GetCenterPos() + Vector(-Astro.GRID_SIZE * 2, Astro.GRID_SIZE * 2),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
@@ -207,7 +205,7 @@ Astro:AddCallback(
 
                         Astro:SpawnCollectible(
                             CollectibleType.COLLECTIBLE_NULL,
-                            currentRoom:GetCenterPos() + Vector(0, GRID_SIZE * 2),
+                            currentRoom:GetCenterPos() + Vector(0, Astro.GRID_SIZE * 2),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
@@ -216,7 +214,7 @@ Astro:AddCallback(
 
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, GRID_SIZE * 2),
+                            currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE * 2, Astro.GRID_SIZE * 2),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
@@ -225,7 +223,7 @@ Astro:AddCallback(
                     elseif stage == LevelStage.STAGE4_3 then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE * 2, 0),
+                            currentRoom:GetCenterPos() + Vector(-Astro.GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
@@ -237,7 +235,7 @@ Astro:AddCallback(
                         )
                         Astro:SpawnCollectible(
                             AstroItems.Collectible.GEMINI_EX,
-                            currentRoom:GetCenterPos() + Vector(GRID_SIZE * 2, 0),
+                            currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
@@ -246,7 +244,7 @@ Astro:AddCallback(
                             EntityType.ENTITY_PICKUP,
                             PickupVariant.PICKUP_COLLECTIBLE,
                             itemPool:GetCollectible(ItemPoolType.POOL_DEVIL, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(-GRID_SIZE, GRID_SIZE * 2),
+                            currentRoom:GetCenterPos() + Vector(-Astro.GRID_SIZE, Astro.GRID_SIZE * 2),
                             Vector.Zero,
                             nil
                         ):ToPickup().OptionsPickupIndex = OPTIONS_PICKUP_INDEX
@@ -254,7 +252,7 @@ Astro:AddCallback(
                             EntityType.ENTITY_PICKUP,
                             PickupVariant.PICKUP_COLLECTIBLE,
                             itemPool:GetCollectible(ItemPoolType.POOL_DEVIL, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(GRID_SIZE, GRID_SIZE * 2),
+                            currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE, Astro.GRID_SIZE * 2),
                             Vector.Zero,
                             nil
                         ):ToPickup().OptionsPickupIndex = OPTIONS_PICKUP_INDEX
@@ -263,7 +261,7 @@ Astro:AddCallback(
                             EntityType.ENTITY_PICKUP,
                             PickupVariant.PICKUP_TAROTCARD,
                             Card.CARD_FOOL,
-                            currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                            currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                             Vector.Zero,
                             nil
                         )

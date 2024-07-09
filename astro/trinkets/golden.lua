@@ -1,8 +1,5 @@
 local isc = require("astro.lib.isaacscript-common")
 
-local GRID_SIZE = 40
-local GOLDEN_TRINKET_OFFSET = 32768
-
 local game = Game()
 
 if EID then
@@ -62,16 +59,6 @@ if EID then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible517}}Fast Bombs을 소환합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_WISH_BONE then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible515}}Mystery Gift를 소환합니다.")
-            elseif descObj.ObjSubType == TrinketType.TRINKET_SILVER_DOLLAR then
-                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
-            elseif descObj.ObjSubType == TrinketType.TRINKET_BLOODY_CROWN then
-                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
-            elseif descObj.ObjSubType == TrinketType.TRINKET_HOLY_CROWN then
-                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
-            elseif descObj.ObjSubType == TrinketType.TRINKET_WICKED_CROWN then
-                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
-            elseif descObj.ObjSubType == TrinketType.TRINKET_NUMBER_MAGNET then
-                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 바로 흡수됩니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_PURPLE_HEART then
                 EID:appendToDescription(descObj, "#↑ {{ColorGold}}{{DamageSmall}}공격력 x1.2")
             elseif descObj.ObjSubType == TrinketType.TRINKET_PINKY_EYE then
@@ -191,7 +178,7 @@ Astro:AddCallback(
 ---@param trinket TrinketType
 ---@return boolean
 function Astro:CheckTrinket(value, trinket)
-    if value == trinket or value - GOLDEN_TRINKET_OFFSET == trinket then
+    if value == trinket or value - Astro.GOLDEN_TRINKET_OFFSET == trinket then
         return true
     end
 
@@ -202,6 +189,11 @@ end
 ---@param type integer
 ---@return boolean
 local function RunEffect(player, type)
+    -- TODO: 구조 변경 필요 함
+    if Astro:RunAutoSmelter(player, type) then
+        return true
+    end
+
     if Astro:CheckTrinket(type, TrinketType.TRINKET_UMBILICAL_CORD) then
         player:AddCollectible(CollectibleType.COLLECTIBLE_LITTLE_STEVEN)
         return true
@@ -211,7 +203,7 @@ local function RunEffect(player, type)
             EntityType.ENTITY_PICKUP,
             PickupVariant.PICKUP_COLLECTIBLE,
             CollectibleType.COLLECTIBLE_NECRONOMICON,
-            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -Astro.GRID_SIZE), Astro.GRID_SIZE, true),
             Vector.Zero,
             nil
         )
@@ -222,7 +214,7 @@ local function RunEffect(player, type)
             EntityType.ENTITY_PICKUP,
             PickupVariant.PICKUP_COLLECTIBLE,
             CollectibleType.COLLECTIBLE_BLOODY_LUST,
-            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -Astro.GRID_SIZE), Astro.GRID_SIZE, true),
             Vector.Zero,
             nil
         )
@@ -233,7 +225,7 @@ local function RunEffect(player, type)
             EntityType.ENTITY_PICKUP,
             PickupVariant.PICKUP_COLLECTIBLE,
             CollectibleType.COLLECTIBLE_LODESTONE,
-            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -Astro.GRID_SIZE), Astro.GRID_SIZE, true),
             Vector.Zero,
             nil
         )
@@ -244,7 +236,7 @@ local function RunEffect(player, type)
             EntityType.ENTITY_PICKUP,
             PickupVariant.PICKUP_COLLECTIBLE,
             CollectibleType.COLLECTIBLE_ANKH,
-            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -Astro.GRID_SIZE), Astro.GRID_SIZE, true),
             Vector.Zero,
             nil
         )
@@ -256,8 +248,8 @@ local function RunEffect(player, type)
             PickupVariant.PICKUP_COLLECTIBLE,
             CollectibleType.COLLECTIBLE_POLAROID,
             currentRoom:FindFreePickupSpawnPosition(
-                player.Position + Vector(-GRID_SIZE, -GRID_SIZE),
-                GRID_SIZE,
+                player.Position + Vector(-Astro.GRID_SIZE, -Astro.GRID_SIZE),
+                Astro.GRID_SIZE,
                 true
             ),
             Vector.Zero,
@@ -268,8 +260,8 @@ local function RunEffect(player, type)
             PickupVariant.PICKUP_COLLECTIBLE,
             CollectibleType.COLLECTIBLE_NEGATIVE,
             currentRoom:FindFreePickupSpawnPosition(
-                player.Position + Vector(GRID_SIZE, -GRID_SIZE),
-                GRID_SIZE,
+                player.Position + Vector(Astro.GRID_SIZE, -Astro.GRID_SIZE),
+                Astro.GRID_SIZE,
                 true
             ),
             Vector.Zero,
@@ -282,7 +274,7 @@ local function RunEffect(player, type)
             EntityType.ENTITY_PICKUP,
             PickupVariant.PICKUP_COLLECTIBLE,
             CollectibleType.COLLECTIBLE_INFESTATION_2,
-            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -GRID_SIZE), GRID_SIZE, true),
+            currentRoom:FindFreePickupSpawnPosition(player.Position + Vector(0, -Astro.GRID_SIZE), Astro.GRID_SIZE, true),
             Vector.Zero,
             nil
         )
@@ -313,8 +305,8 @@ local function RunEffect(player, type)
             PickupVariant.PICKUP_COLLECTIBLE,
             syringes[firstIndex],
             currentRoom:FindFreePickupSpawnPosition(
-                player.Position + Vector(-GRID_SIZE, -GRID_SIZE),
-                GRID_SIZE,
+                player.Position + Vector(-Astro.GRID_SIZE, -Astro.GRID_SIZE),
+                Astro.GRID_SIZE,
                 true
             ),
             Vector.Zero,
@@ -328,8 +320,8 @@ local function RunEffect(player, type)
             PickupVariant.PICKUP_COLLECTIBLE,
             syringes[secondIndex],
             currentRoom:FindFreePickupSpawnPosition(
-                player.Position + Vector(GRID_SIZE, -GRID_SIZE),
-                GRID_SIZE,
+                player.Position + Vector(Astro.GRID_SIZE, -Astro.GRID_SIZE),
+                Astro.GRID_SIZE,
                 true
             ),
             Vector.Zero,
@@ -372,33 +364,6 @@ local function RunEffect(player, type)
         return true
     elseif Astro:CheckTrinket(type, TrinketType.TRINKET_WISH_BONE) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_MYSTERY_GIFT, player.Position)
-        return true
-    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_SILVER_DOLLAR) then
-        isc:smeltTrinket(player, TrinketType.TRINKET_SILVER_DOLLAR + GOLDEN_TRINKET_OFFSET)
-        return true
-    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_BLOODY_CROWN) then
-        isc:smeltTrinket(player, TrinketType.TRINKET_BLOODY_CROWN + GOLDEN_TRINKET_OFFSET)
-        return true
-    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_HOLY_CROWN) then
-        isc:smeltTrinket(player, TrinketType.TRINKET_HOLY_CROWN + GOLDEN_TRINKET_OFFSET)
-        return true
-    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_WICKED_CROWN) then
-        isc:smeltTrinket(player, TrinketType.TRINKET_WICKED_CROWN + GOLDEN_TRINKET_OFFSET)
-        return true
-    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_NUMBER_MAGNET) then
-        isc:smeltTrinket(player, TrinketType.TRINKET_NUMBER_MAGNET + GOLDEN_TRINKET_OFFSET)
-        return true
-    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_PESTILENCE) then
-        isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_PESTILENCE + GOLDEN_TRINKET_OFFSET)
-        return true
-    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_FAMINE) then
-        isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_FAMINE + GOLDEN_TRINKET_OFFSET)
-        return true
-    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_DEATH) then
-        isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_DEATH + GOLDEN_TRINKET_OFFSET)
-        return true
-    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_LOCUST_OF_CONQUEST) then
-        isc:smeltTrinket(player, TrinketType.TRINKET_LOCUST_OF_CONQUEST + GOLDEN_TRINKET_OFFSET)
         return true
     end
 
@@ -534,7 +499,7 @@ Astro:AddCallback(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_HEART,
                     HeartSubType.HEART_BLACK,
-                    currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                     Vector.Zero,
                     nil
                 )
@@ -545,7 +510,7 @@ Astro:AddCallback(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_KEY,
                     KeySubType.KEY_GOLDEN,
-                    currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                     Vector.Zero,
                     nil
                 )
@@ -570,7 +535,7 @@ Astro:AddCallback(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_TAROTCARD,
                     0,
-                    currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                     Vector.Zero,
                     nil
                 )
@@ -581,7 +546,7 @@ Astro:AddCallback(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_BOMB,
                     BombSubType.BOMB_GIGA,
-                    currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                     Vector.Zero,
                     nil
                 )
@@ -607,7 +572,7 @@ Astro:AddCallback(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_HEART,
                     HeartSubType.HEART_BLACK,
-                    currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                     Vector.Zero,
                     nil
                 )
@@ -615,7 +580,7 @@ Astro:AddCallback(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_HEART,
                     HeartSubType.HEART_BLACK,
-                    currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                     Vector.Zero,
                     nil
                 )
@@ -623,7 +588,7 @@ Astro:AddCallback(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_HEART,
                     HeartSubType.HEART_BLACK,
-                    currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                    currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                     Vector.Zero,
                     nil
                 )
@@ -648,7 +613,7 @@ Astro:AddCallbackCustom(
                         EntityType.ENTITY_PICKUP,
                         PickupVariant.PICKUP_HEART,
                         2,
-                        currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                        currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                         Vector.Zero,
                         nil
                     )
@@ -663,7 +628,7 @@ Astro:AddCallbackCustom(
                         EntityType.ENTITY_PICKUP,
                         PickupVariant.PICKUP_BOMB,
                         0,
-                        currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                        currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                         Vector.Zero,
                         nil
                     )
@@ -678,7 +643,7 @@ Astro:AddCallbackCustom(
                         EntityType.ENTITY_PICKUP,
                         PickupVariant.PICKUP_KEY,
                         0,
-                        currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                        currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                         Vector.Zero,
                         nil
                     )
@@ -693,7 +658,7 @@ Astro:AddCallbackCustom(
                         EntityType.ENTITY_PICKUP,
                         PickupVariant.PICKUP_COIN,
                         0,
-                        currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                        currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                         Vector.Zero,
                         nil
                     )
@@ -719,7 +684,7 @@ Astro:AddCallbackCustom(
                         EntityType.ENTITY_PICKUP,
                         PickupVariant.PICKUP_HEART,
                         HeartSubType.HEART_HALF_SOUL,
-                        currentRoom:FindFreePickupSpawnPosition(player.Position, GRID_SIZE, true),
+                        currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
                         Vector.Zero,
                         nil
                     )
