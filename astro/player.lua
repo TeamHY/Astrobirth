@@ -723,7 +723,6 @@ Astro:AddCallback(
 
                 if playerType == PlayerType.PLAYER_ISAAC then
                     player:RemoveCollectible(CollectibleType.COLLECTIBLE_D6)
-                    player:AddCollectible(CollectibleType.COLLECTIBLE_SPINDOWN_DICE)
                 elseif playerType == PlayerType.PLAYER_EVE then
                     player:RemoveCollectible(CollectibleType.COLLECTIBLE_RAZOR_BLADE)
                 elseif playerType == AstroItems.Players.DIABELLSTAR then
