@@ -2,6 +2,7 @@ Astro.Entities = {}
 
 require "astro.entities.mega-chest"
 require "astro.entities.restock-machine"
+require "astro.entities.shortcut-portal"
 
 Astro:AddCallback(
 	ModCallbacks.MC_PRE_TEAR_COLLISION,
