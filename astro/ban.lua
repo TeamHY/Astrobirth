@@ -1,3 +1,9 @@
+---
+
+local MAX_ROW_NUM = 10
+
+---
+
 local isc = require("astro.lib.isaacscript-common")
 
 local nextRunBanItems = {
@@ -847,34 +853,38 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     ---@param isContinued boolean
     function(_, isContinued)
+        Astro.Data.currentRunItems = Astro.Data.currentRunItems or {}
+        Astro.Data.previousRunItems = Astro.Data.previousRunItems or {}
+        Astro.Data.currentBanItems = Astro.Data.currentBanItems or {}
+
+        banAnimationList = {}
+
         if not isContinued then
-            local itemPool = Game():GetItemPool()
-
-            for _, banTable in ipairs(GetBanTables()) do
-                if banTable == nil then
-                    break
-                end
-
-                for _, value in ipairs(banTable.collectible) do
-                    itemPool:RemoveCollectible(value)
-                end
-
-                for _, value in ipairs(banTable.trinket) do
-                    itemPool:RemoveTrinket(value)
-                end
+            if #Astro.Data.previousRunItems == 0 then
+                Astro.Data.previousRunItems = Astro.Data.currentRunItems
+                Astro.Data.currentBanItems = Astro.Data.previousRunItems
             end
 
-            banAnimationList = {}
+            Astro.Data.currentRunItems = {}
+        end
 
-            if Astro.Data.NextBanItems == nil then
-                Astro.Data.NextBanItems = {}
-            end
+        local itemPool = Game():GetItemPool()
 
-            for _, value in ipairs(Astro.Data.NextBanItems) do
-                table.insert(banAnimationList, { value, CreateBanAnimationSprite(), 0 })
-            end
+        for _, value in ipairs(Astro.Data.currentBanItems) do
+            print("NextBan: "..value)
+            itemPool:RemoveCollectible(value)
+            table.insert(banAnimationList, {value, CreateBanAnimationSprite(), 0})
+        end
+    end
+)
 
-            Astro.Data.NextBanItems = {}
+Astro:AddCallback(
+    ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
+    ---@param rng RNG
+    ---@param spawnPosition Vector
+    function(_, rng, spawnPosition)
+        if #Astro.Data.previousRunItems > 0 and Game():GetRoom():GetType() == RoomType.ROOM_BOSS then
+            Astro.Data.previousRunItems = {}
         end
     end
 )
@@ -902,21 +912,28 @@ Astro:AddCallback(
                 local collectible = value[1]
                 local banAnimationSprite = value[2]
 
-                local xOffset = (i - 0.5 - #banAnimationList / 2) * 50
+                local rowNum = math.floor((i - 1) / MAX_ROW_NUM) == math.floor(#banAnimationList / MAX_ROW_NUM) and #banAnimationList % MAX_ROW_NUM or MAX_ROW_NUM
+                local xOffset = (((i - 1) % MAX_ROW_NUM) + 0.5 - rowNum / 2) * 50
+                local yOffset = -((math.floor((i - 1) / MAX_ROW_NUM) * 50) + 60)
+                local position = Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(xOffset, yOffset))
+
+                if Game():GetRoom():IsMirrorWorld() then
+                    position.X = Isaac.GetScreenWidth() - position.X
+                end
 
                 if banAnimationSprite:IsFinished("Idle") then
                     if #banAnimationList >= 1 then
                         local config = Isaac.GetItemConfig():GetCollectible(collectible)
-        
+
                         Game():GetItemPool():RemoveCollectible(collectible)
-        
+
                         banAnimationSprite:Play("Idle", true)
                         banAnimationSprite:ReplaceSpritesheet(0, config.GfxFileName)
                         banAnimationSprite:LoadGraphics()
-                        banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(xOffset, -60)), Vector(0, 0), Vector(0, 0))
+                        banAnimationSprite:Render(position, Vector(0, 0), Vector(0, 0))
                     end
                 else
-                    banAnimationSprite:Render(Isaac.WorldToRenderPosition(Isaac.GetPlayer().Position + Vector(xOffset, -60)), Vector(0, 0), Vector(0, 0))
+                    banAnimationSprite:Render(position, Vector(0, 0), Vector(0, 0))
                 end
             end
         end
@@ -929,8 +946,8 @@ Astro:AddCallbackCustom(
     ---@param collectibleType CollectibleType
     function(_, player, collectibleType)
         -- 밴 목록에는 있지만 밴 적용 목록에 없는 경우 추가
-        if Astro:ContainCollectible(nextRunBanItems, collectibleType) and not Astro:ContainCollectible(Astro.Data.NextBanItems, collectibleType) then
-            table.insert(Astro.Data.NextBanItems, collectibleType)
+        if Astro:ContainCollectible(nextRunBanItems, collectibleType) and not Astro:ContainCollectible(Astro.Data.currentRunItems, collectibleType) then
+            table.insert(Astro.Data.currentRunItems, collectibleType)
         end
     end
 )
