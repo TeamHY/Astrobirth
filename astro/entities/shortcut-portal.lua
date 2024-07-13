@@ -1,3 +1,5 @@
+Astro.Entities.SHORTCUT_PORTAL = Isaac.GetEntityVariantByName("Shortcut Portal")
+
 ---@param a Entity
 ---@param b Entity
 ---@return boolean
@@ -34,5 +36,21 @@ Astro:AddCallback(
             end
         end
     end,
-    3001
+    Astro.Entities.SHORTCUT_PORTAL
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_ROOM,
+    function(_)
+        local room = Game():GetRoom()
+        local roomType = room:GetType()
+
+        if roomType == RoomType.ROOM_TREASURE then
+            local portal = Isaac.Spawn(EntityType.ENTITY_EFFECT, Astro.Entities.SHORTCUT_PORTAL, 1, room:GetCenterPos(), Vector(0, 0), nil)
+        elseif roomType == RoomType.ROOM_SHOP then
+            local portal = Isaac.Spawn(EntityType.ENTITY_EFFECT, Astro.Entities.SHORTCUT_PORTAL, 2, room:GetCenterPos(), Vector(0, 0), nil)
+        elseif roomType == RoomType.ROOM_BOSS then
+            local portal = Isaac.Spawn(EntityType.ENTITY_EFFECT, Astro.Entities.SHORTCUT_PORTAL, 3, room:GetCenterPos(), Vector(0, 0), nil)
+        end
+    end
 )
