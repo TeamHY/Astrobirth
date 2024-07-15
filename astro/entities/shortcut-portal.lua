@@ -87,15 +87,24 @@ local function SpawnShortcutPortal()
     end
 end
 
+local function HasMirrorDimension()
+    local level = Game():GetLevel()
+
+    if level:GetStage() == LevelStage.STAGE1_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE then
+        return true
+    end
+
+    return false
+end
+
 Astro:AddCallback(
     ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
     ---@param rng RNG
     ---@param spawnPosition Vector
     function(_, rng, spawnPosition)
-        local level = Game():GetLevel()
         local room = Game():GetRoom()
 
-        if level:HasMirrorDimension() and room:GetType() == RoomType.ROOM_BOSS then
+        if HasMirrorDimension() and room:GetType() == RoomType.ROOM_BOSS then
             if room:IsMirrorWorld() then
                 Astro.Data.IsEnabledMirrorShortcutPortals = true
                 SpawnShortcutPortal()
@@ -110,10 +119,9 @@ Astro:AddCallback(
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
     function(_)
-        local level = Game():GetLevel()
         local room = Game():GetRoom()
         
-        if level:HasMirrorDimension() then
+        if HasMirrorDimension() then
             if room:IsMirrorWorld() then
                 if Astro.Data.IsEnabledMirrorShortcutPortals then
                     SpawnShortcutPortal()
