@@ -163,10 +163,8 @@ Astro:AddCallback(
         if HasMirrorDimension() and room:GetType() == RoomType.ROOM_BOSS then
             if room:IsMirrorWorld() then
                 Astro.Data.IsEnabledMirrorShortcutPortals = true
-                SpawnShortcutPortal()
             else
                 Astro.Data.IsEnabledShortcutPortals = true
-                SpawnShortcutPortal()
             end
         end
     end
