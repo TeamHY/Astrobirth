@@ -6,6 +6,32 @@ Astro.Enums.ShortcutPortalSubType = {
     BOSS = 3
 }
 
+if EID then
+    EID:addEntity(
+        EntityType.ENTITY_EFFECT,
+        Astro.Entities.SHORTCUT_PORTAL,
+        Astro.Enums.ShortcutPortalSubType.TREASURE,
+        "보물방 포탈",
+        "{{TreasureRoom}}보물방으로 즉시 이동합니다."
+    )
+
+    EID:addEntity(
+        EntityType.ENTITY_EFFECT,
+        Astro.Entities.SHORTCUT_PORTAL,
+        Astro.Enums.ShortcutPortalSubType.SHOP,
+        "상점 포탈",
+        "{{Shop}}상점으로 즉시 이동합니다."
+    )
+
+    EID:addEntity(
+        EntityType.ENTITY_EFFECT,
+        Astro.Entities.SHORTCUT_PORTAL,
+        Astro.Enums.ShortcutPortalSubType.BOSS,
+        "보스방 포탈",
+        "{{BossRoom}}보스방으로 즉시 이동합니다."
+    )
+end
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     ---@param isContinued boolean
@@ -76,14 +102,44 @@ local function SpawnShortcutPortal()
     local roomType = room:GetType()
 
     if roomType == RoomType.ROOM_TREASURE then
-        Astro:Spawn(EntityType.ENTITY_EFFECT, Astro.Entities.SHORTCUT_PORTAL, Astro.Enums.ShortcutPortalSubType.SHOP, room:GetGridPosition(106))
-        Astro:Spawn(EntityType.ENTITY_EFFECT, Astro.Entities.SHORTCUT_PORTAL, Astro.Enums.ShortcutPortalSubType.BOSS, room:GetGridPosition(118))
+        Astro:Spawn(
+            EntityType.ENTITY_EFFECT,
+            Astro.Entities.SHORTCUT_PORTAL,
+            Astro.Enums.ShortcutPortalSubType.SHOP,
+            room:GetGridPosition(106)
+        )
+        Astro:Spawn(
+            EntityType.ENTITY_EFFECT,
+            Astro.Entities.SHORTCUT_PORTAL,
+            Astro.Enums.ShortcutPortalSubType.BOSS,
+            room:GetGridPosition(118)
+        )
     elseif roomType == RoomType.ROOM_SHOP then
-        Astro:Spawn(EntityType.ENTITY_EFFECT, Astro.Entities.SHORTCUT_PORTAL, Astro.Enums.ShortcutPortalSubType.TREASURE, room:GetGridPosition(106))
-        Astro:Spawn(EntityType.ENTITY_EFFECT, Astro.Entities.SHORTCUT_PORTAL, Astro.Enums.ShortcutPortalSubType.BOSS, room:GetGridPosition(118))
+        Astro:Spawn(
+            EntityType.ENTITY_EFFECT,
+            Astro.Entities.SHORTCUT_PORTAL,
+            Astro.Enums.ShortcutPortalSubType.TREASURE,
+            room:GetGridPosition(106)
+        )
+        Astro:Spawn(
+            EntityType.ENTITY_EFFECT,
+            Astro.Entities.SHORTCUT_PORTAL,
+            Astro.Enums.ShortcutPortalSubType.BOSS,
+            room:GetGridPosition(118)
+        )
     elseif roomType == RoomType.ROOM_BOSS then
-        Astro:Spawn(EntityType.ENTITY_EFFECT, Astro.Entities.SHORTCUT_PORTAL, Astro.Enums.ShortcutPortalSubType.TREASURE, room:GetGridPosition(106))
-        Astro:Spawn(EntityType.ENTITY_EFFECT, Astro.Entities.SHORTCUT_PORTAL, Astro.Enums.ShortcutPortalSubType.SHOP, room:GetGridPosition(118))
+        Astro:Spawn(
+            EntityType.ENTITY_EFFECT,
+            Astro.Entities.SHORTCUT_PORTAL,
+            Astro.Enums.ShortcutPortalSubType.TREASURE,
+            room:GetGridPosition(106)
+        )
+        Astro:Spawn(
+            EntityType.ENTITY_EFFECT,
+            Astro.Entities.SHORTCUT_PORTAL,
+            Astro.Enums.ShortcutPortalSubType.SHOP,
+            room:GetGridPosition(118)
+        )
     end
 end
 
@@ -120,7 +176,7 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
     function(_)
         local room = Game():GetRoom()
-        
+
         if HasMirrorDimension() then
             if room:IsMirrorWorld() then
                 if Astro.Data.IsEnabledMirrorShortcutPortals then
