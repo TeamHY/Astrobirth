@@ -1,4 +1,4 @@
-require "astro.rooms.start-room-boss"
+require "astro.rooms.room-boss"
 require "astro.rooms.void-portal"
 
 -- Backdrop Start
