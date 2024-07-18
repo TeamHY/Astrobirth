@@ -39,7 +39,7 @@ Astro:AddCallback(
         local level = Game():GetLevel()
         local currentRoom = level:GetCurrentRoom()
 
-        if not currentRoom:IsClear() and IsRunStage() then
+        if not currentRoom:IsClear() and IsRunStage() and level:GetCurrentRoomIndex() == 84 then
             for i = 1, 4 do
                 if currentRoom:GetDoor(i) then
                     currentRoom:GetDoor(i):Close()
