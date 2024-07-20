@@ -775,10 +775,6 @@ Astro:AddCallback(
             local player = Isaac.GetPlayer(i - 1)
 
             if player:GetPlayerType() == PlayerType.PLAYER_ISAAC then
-                for _, dice in ipairs(diceList) do
-                    player:RemoveCollectible(dice)
-                end
-
                 local rng = player:GetCollectibleRNG(AstroItems.Collectible.SPINUP_DICE)
                 local room = Game():GetRoom()
 
@@ -787,6 +783,8 @@ Astro:AddCallback(
 
                     Astro:SpawnCollectible(dice, position, AstroItems.Collectible.SPINUP_DICE * 1000, true)
                 end
+
+                player:RemoveCollectible(player:GetActiveItem(ActiveSlot.SLOT_PRIMARY))
 
                 break;
             end
