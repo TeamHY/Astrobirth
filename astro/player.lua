@@ -757,3 +757,39 @@ Astro:AddCallback(
         -- player:RemoveCostume(itemConfigItem)
     end
 )
+
+--------------------------------------------------
+-- 아이작 컨셉 효과
+--------------------------------------------------
+
+local diceList = {
+    CollectibleType.COLLECTIBLE_SPINDOWN_DICE,
+    AstroItems.Collectible.SPINUP_DICE,
+    AstroItems.Collectible.MIRROR_DICE,
+}
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_LEVEL,
+    function()
+        for i = 1, Game():GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
+
+            if player:GetPlayerType() == PlayerType.PLAYER_ISAAC then
+                for _, dice in ipairs(diceList) do
+                    player:RemoveCollectible(dice)
+                end
+
+                local rng = player:GetCollectibleRNG(AstroItems.Collectible.SPINUP_DICE)
+                local room = Game():GetRoom()
+
+                for j, dice in ipairs(Astro:GetRandomCollectibles(diceList, rng, 2)) do
+                    local position = room:GetGridPosition(49 + j * 2)
+
+                    Astro:SpawnCollectible(dice, position, AstroItems.Collectible.SPINUP_DICE * 1000, true)
+                end
+
+                break;
+            end
+        end
+    end
+)
