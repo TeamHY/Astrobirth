@@ -21,6 +21,7 @@ require "astro.trinkets.init"
 require "astro.cards.init"
 require "astro.player"
 require "astro.ban"
+require "astro.next-ban"
 require "astro.rooms.init"
 -- require "astro.challenges"
 
