@@ -22,7 +22,6 @@ require "astro.cards.init"
 require "astro.player"
 require "astro.ban"
 require "astro.rooms.init"
-require "astro.epic"
 -- require "astro.challenges"
 
 require "astro-greedier.award"
