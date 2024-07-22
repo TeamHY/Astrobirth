@@ -762,6 +762,30 @@ local function GetBanTables()
     return banTables
 end
 
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    ---@param isContinued boolean
+    function(_, isContinued)
+        if not isContinued then
+            local itemPool = Game():GetItemPool()
+
+            for _, banTable in ipairs(GetBanTables()) do
+                if banTable == nil then
+                    break
+                end
+
+                for _, value in ipairs(banTable.collectible) do
+                    itemPool:RemoveCollectible(value)
+                end
+
+                for _, value in ipairs(banTable.trinket) do
+                    itemPool:RemoveTrinket(value)
+                end
+            end
+        end
+    end
+)
+
 --- @param card Card
 function Astro:IsCardBlacklisted(card)
     for _, banTable in ipairs(GetBanTables()) do
