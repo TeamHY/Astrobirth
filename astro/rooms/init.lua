@@ -135,7 +135,7 @@ Astro:AddCallback(
                         entities[i]:Kill()
                     end
                 end
-            elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 55 and Isaac.GetChallenge() ~= Astro.Challenge.LIBRA_EX then -- Mega Satan
+            elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 55 then -- Mega Satan
                 Isaac.Spawn(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_COLLECTIBLE,
