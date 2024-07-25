@@ -39,11 +39,7 @@ Astro:AddCallback(
                 player:GetSubPlayer():AddBrokenHearts(4 - player:GetSubPlayer():GetBrokenHearts())
             end
         elseif CheckHeartLimit(player, stage) or player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
-            if
-                playerType == PlayerType.PLAYER_KEEPER or playerType == PlayerType.PLAYER_KEEPER_B or
-                playerType == PlayerType.PLAYER_THESOUL_B
-            then
-            else
+            if playerType ~= PlayerType.PLAYER_KEEPER and playerType ~= PlayerType.PLAYER_KEEPER_B and playerType ~= PlayerType.PLAYER_THESOUL_B then
                 if player:GetEffectiveMaxHearts() > 2 then
                     if player:GetMaxHearts() >= 2 then
                         player:AddMaxHearts(2 - player:GetMaxHearts(), true)
@@ -59,6 +55,14 @@ Astro:AddCallback(
 
                 if player:GetBrokenHearts() < 10 then
                     player:AddBrokenHearts(10 - player:GetBrokenHearts())
+                end
+            end
+        elseif player:HasCollectible(AstroItems.Collectible.VERY_EZ_MODE) and (stage >= LevelStage.STAGE4_3 or
+            (stage == LevelStage.STAGE4_1 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE) or
+            (stage == LevelStage.STAGE4_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE)) then
+            if playerType ~= PlayerType.PLAYER_KEEPER and playerType ~= PlayerType.PLAYER_KEEPER_B and playerType ~= PlayerType.PLAYER_THESOUL_B then
+                if player:GetBrokenHearts() < 6 then
+                    player:AddBrokenHearts(6 - player:GetBrokenHearts())
                 end
             end
         end
