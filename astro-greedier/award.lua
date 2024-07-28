@@ -7,20 +7,17 @@ local function RunAward(wave)
 
     if not Astro.Data["greedierPenalty"] then
         if wave == 3 then
-            Isaac.ExecuteCommand("spawn 5.20.5")
+            Isaac.ExecuteCommand("spawn 5.20.3")
         elseif wave == 6 then
-            Isaac.ExecuteCommand("spawn 5.20.5")
+            Isaac.ExecuteCommand("spawn 5.20.3")
         elseif wave == 9 then
-            Isaac.ExecuteCommand("spawn 5.20.5")
+            Isaac.ExecuteCommand("spawn 5.20.3")
         elseif wave == 10 then
-            Isaac.ExecuteCommand("spawn 5.20.1")
-            Isaac.ExecuteCommand("spawn 5.20.1")
+            Isaac.ExecuteCommand("spawn 5.20.7")
         elseif wave == 11 then
-            Isaac.ExecuteCommand("spawn 5.20.1")
-            Isaac.ExecuteCommand("spawn 5.20.1")
+            Isaac.ExecuteCommand("spawn 5.20.7")
         elseif wave == 12 then
-            Isaac.ExecuteCommand("spawn 5.20.1")
-            Isaac.ExecuteCommand("spawn 5.20.1")
+            Isaac.ExecuteCommand("spawn 5.20.7")
         end
     end
 end
