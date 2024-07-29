@@ -317,3 +317,30 @@ Astro:AddCallback(
         end
     end
 )
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GET_COLLECTIBLE,
+    ---@param selectedCollectible CollectibleType
+    ---@param itemPoolType ItemPoolType
+    ---@param decrease boolean
+    ---@param seed integer
+    function(_, selectedCollectible, itemPoolType, decrease, seed)
+        local room = Game():GetRoom()
+
+        if room:GetType() == RoomType.ROOM_CURSE then
+            local itemPool = Game():GetItemPool()
+            local itemConfig = Isaac.GetItemConfig()
+            local itemConfigitem = itemConfig:GetCollectible(selectedCollectible)
+
+            local rng = RNG()
+            rng:SetSeed(seed, 35)
+
+            if itemConfigitem:HasTags(ItemConfig.TAG_QUEST) == false and selectedCollectible ~= CollectibleType.COLLECTIBLE_BREAKFAST and itemConfigitem.Quality == 4 then
+                local newCollectable = itemPool:GetCollectible(itemPoolType, decrease, rng:Next())
+                print("Curse Room: " .. selectedCollectible .. " -> " .. newCollectable)
+
+                return newCollectable
+            end
+        end
+    end
+)
