@@ -85,11 +85,11 @@ Astro:AddCallback(
 
             if CheckOverlap(player, effect) then
                 if effect.SubType == Astro.Enums.ShortcutPortalSubType.TREASURE then
-                    MoveRoom(RoomType.ROOM_TREASURE)
+                    player:UseCard(Card.CARD_STARS, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)
                 elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.SHOP then
-                    MoveRoom(RoomType.ROOM_SHOP)
+                    player:UseCard(Card.CARD_HERMIT, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)
                 elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.BOSS then
-                    MoveRoom(RoomType.ROOM_BOSS)
+                    player:UseCard(Card.CARD_EMPEROR, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)
                 end
             end
         end
