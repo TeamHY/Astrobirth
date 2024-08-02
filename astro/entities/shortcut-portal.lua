@@ -2,7 +2,7 @@ Astro.Entities.SHORTCUT_PORTAL = 3001
 
 Astro.Enums.ShortcutPortalSubType = {
     TREASURE = 1,
-    SHOP = 2,
+    MIRROR = 2,
     BOSS = 3
 }
 
@@ -18,9 +18,9 @@ if EID then
     EID:addEntity(
         EntityType.ENTITY_EFFECT,
         Astro.Entities.SHORTCUT_PORTAL,
-        Astro.Enums.ShortcutPortalSubType.SHOP,
-        "상점 포탈",
-        "{{Shop}}상점으로 즉시 이동합니다."
+        Astro.Enums.ShortcutPortalSubType.MIRROR,
+        "거울방 포탈",
+        "거울방으로 즉시 이동합니다."
     )
 
     EID:addEntity(
@@ -53,11 +53,29 @@ end
 ---@param roomType RoomType
 local function MoveRoom(roomType)
     local level = Game():GetLevel()
-    local idx = level:QueryRoomTypeIndex(roomType, true, RNG())
-    local room = level:GetRoomByIdx(idx)
 
-    if room.Data.Type == roomType then
-        Game():ChangeRoom(idx)
+    for i = 0, 169 do
+        local room = level:GetRoomByIdx(i)
+
+        if room.Data then
+            if room.Data.Type == roomType then
+                Game():ChangeRoom(i)
+            end
+        end
+    end
+end
+
+local function MoveMirrorRoom()
+    local level = Game():GetLevel()
+
+    for i = 0, 169 do
+        local room = level:GetRoomByIdx(i)
+
+        if room.Data then
+            if room.Data.Name == "Mirror Room" then
+                Game():ChangeRoom(i)
+            end
+        end
     end
 end
 
@@ -67,7 +85,7 @@ Astro:AddCallback(
     function(_, effect)
         if effect.SubType == Astro.Enums.ShortcutPortalSubType.TREASURE then
             effect.Color = Color(1, 1, 1, 1, 0.7, 0.7, 0)
-        elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.SHOP then
+        elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.MIRROR then
             effect.Color = Color(1, 1, 1, 1, 0, 0.7, 0)
         elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.BOSS then
             effect.Color = Color(1, 1, 1, 1, 0.7, 0, 0)
@@ -86,8 +104,8 @@ Astro:AddCallback(
             if CheckOverlap(player, effect) then
                 if effect.SubType == Astro.Enums.ShortcutPortalSubType.TREASURE then
                     MoveRoom(RoomType.ROOM_TREASURE)
-                elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.SHOP then
-                    MoveRoom(RoomType.ROOM_SHOP)
+                elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.MIRROR then
+                    MoveMirrorRoom()
                 elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.BOSS then
                     MoveRoom(RoomType.ROOM_BOSS)
                 end
@@ -100,12 +118,13 @@ Astro:AddCallback(
 local function SpawnShortcutPortal()
     local room = Game():GetRoom()
     local roomType = room:GetType()
+    local roomDesc = Game():GetLevel():GetCurrentRoomDesc()
 
     if roomType == RoomType.ROOM_TREASURE then
         Astro:Spawn(
             EntityType.ENTITY_EFFECT,
             Astro.Entities.SHORTCUT_PORTAL,
-            Astro.Enums.ShortcutPortalSubType.SHOP,
+            Astro.Enums.ShortcutPortalSubType.MIRROR,
             room:GetGridPosition(106)
         )
         Astro:Spawn(
@@ -114,7 +133,7 @@ local function SpawnShortcutPortal()
             Astro.Enums.ShortcutPortalSubType.BOSS,
             room:GetGridPosition(118)
         )
-    elseif roomType == RoomType.ROOM_SHOP then
+    elseif roomDesc.Data.Name == "Mirror Room" then
         Astro:Spawn(
             EntityType.ENTITY_EFFECT,
             Astro.Entities.SHORTCUT_PORTAL,
@@ -137,7 +156,7 @@ local function SpawnShortcutPortal()
         Astro:Spawn(
             EntityType.ENTITY_EFFECT,
             Astro.Entities.SHORTCUT_PORTAL,
-            Astro.Enums.ShortcutPortalSubType.SHOP,
+            Astro.Enums.ShortcutPortalSubType.MIRROR,
             room:GetGridPosition(118)
         )
     end
