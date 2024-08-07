@@ -236,9 +236,9 @@ Astro:AddCallback(
             end
         end
 
-        -- if currentRoomDesc.Data.Name:sub(1, 6) == "[MIST]" then
-        --     currentRoomDesc.Flags = currentRoomDesc.Flags | RoomDescriptor.FLAG_CURSED_MIST
-        -- end
+        if currentRoomDesc.Data.Name:sub(1, 6) == "[MIST]" then
+            currentRoomDesc.Flags = currentRoomDesc.Flags | RoomDescriptor.FLAG_CURSED_MIST
+        end
     end
 )
 
