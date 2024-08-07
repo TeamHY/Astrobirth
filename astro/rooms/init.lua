@@ -1,3 +1,4 @@
+require "astro.rooms.chest-room"
 require "astro.rooms.room-boss"
 require "astro.rooms.void-portal"
 

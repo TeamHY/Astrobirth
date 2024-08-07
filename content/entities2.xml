@@ -100,4 +100,7 @@
     <entity name="ShortcutPortal" id="1000" variant="3001" subtype="0" anm2path="shortcut_portal.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="12" friction="1" numGridCollisionPoints="24" shadowSize="0" stageHP="0">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
+    <entity anm2path="" baseHP="300" boss="1" bossID="1" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="0" friction="1" id="17" name="Timer" numGridCollisionPoints="12" portrait="2" shadowSize="0" stageHP="0" variant="3000">
+        <gibs amount="18" blood="1" bone="0" eye="1" gut="1" large="1"/>
+    </entity>
 </entities>
