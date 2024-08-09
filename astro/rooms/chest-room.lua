@@ -4,13 +4,18 @@ local TIME = 300
 
 ---
 
-local function RemoveGoldenPennies()
+local function RemovePickup()
     local entities = Isaac.GetRoomEntities()
 
     for _, entity in ipairs(entities) do
-        if entity.Type == EntityType.ENTITY_PICKUP and entity.Variant == PickupVariant.PICKUP_COIN and entity.SubType == 7 then
+        if entity.Type == EntityType.ENTITY_PICKUP then
+            if entity.Variant == PickupVariant.PICKUP_COLLECTIBLE then
+                goto continue
+            end
+            
             entity:Remove()
         end
+        ::continue::
     end
 end
 
@@ -25,8 +30,12 @@ Astro:AddCallback(
             if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
                 Isaac.Spawn(EntityType.ENTITY_SHOPKEEPER, 3000, 0, currentRoom:GetCenterPos(), Vector(0, 0), nil)
             elseif not currentRoom:IsFirstVisit() then
-                RemoveGoldenPennies()
+                RemovePickup()
             end
+
+            QP_OVERWRITE.isDisable = true
+        else
+            QP_OVERWRITE.isDisable = false
         end
     end
 )
@@ -44,7 +53,7 @@ Astro:AddCallback(
             npc.HitPoints = npc.HitPoints - 1
 
             if npc.HitPoints <= 0 then
-                RemoveGoldenPennies()
+                RemovePickup()
                 npc:Remove()
             end
         end
