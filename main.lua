@@ -7,6 +7,14 @@ hiddenItemManager:Init(mod)
 
 Astro = isc:upgradeMod(mod, { isc.ISCFeature.PLAYER_INVENTORY, isc.ISCFeature.ROOM_HISTORY })
 
+Astro.IsFight = true
+
+QP_OVERWRITE = {
+    isInfinity = false,
+    range = 80,
+    isDisable = false
+}
+
 Json = require "json"
 
 require "astro.constants"

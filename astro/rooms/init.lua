@@ -1,10 +1,11 @@
+require "astro.rooms.chest-room"
 require "astro.rooms.room-boss"
 require "astro.rooms.void-portal"
 
 -- Backdrop Start
 
 local BACKDROP_VARIANT = Isaac.GetEntityVariantByName("Backdrop")
-local GFX_ROOT = "gfx/backdrop/"
+local GFX_ROOT = "gfx/backdrop/test_wall"
 
 local LAYER_TYPE = {
     WALLS = 0,
