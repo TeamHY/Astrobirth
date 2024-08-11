@@ -158,7 +158,7 @@ Astro:AddCallbackCustom(
         local itemConfig = Isaac.GetItemConfig()
         local item = itemConfig:GetCollectible(collectibleType)
 
-        if item.Quality > 2 and not Astro:ContainCollectible(Astro.Data.currentRunItems, collectibleType) and Game():GetFrameCount() > 1 then
+        if item.Quality > 2 and Astro.Data.currentRunItems and not Astro:ContainCollectible(Astro.Data.currentRunItems, collectibleType) and Game():GetFrameCount() > 1 then
             table.insert(Astro.Data.currentRunItems, collectibleType)
         end
     end
