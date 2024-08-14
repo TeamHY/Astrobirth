@@ -764,8 +764,12 @@ Astro:AddCallback(
 
 local diceList = {
     CollectibleType.COLLECTIBLE_SPINDOWN_DICE,
+    CollectibleType.COLLECTIBLE_D6,
+    CollectibleType.COLLECTIBLE_D4,
     AstroItems.Collectible.SPINUP_DICE,
     AstroItems.Collectible.MIRROR_DICE,
+    AstroItems.Collectible.SACRED_DICE,
+    AstroItems.Collectible.RESTOCK_DICE,
 }
 
 Astro:AddCallback(
