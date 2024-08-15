@@ -71,6 +71,7 @@ local banItems = {
             AstroItems.Collectible.REINCARNATION,
             AstroItems.Collectible.FORBIDDEN_DICE,
             AstroItems.Collectible.DADS_BOX,
+            AstroItems.Collectible.BONFIRE,
 
         },
         trinket = {
