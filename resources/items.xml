@@ -59,7 +59,7 @@
 	<active cooldown="300" description="#BOOK_OF_SHADOWS_DESCRIPTION" gfx="Collectibles_058_BookOfShadows.png" id="58" maxcharges="3" persistent="false" name="#BOOK_OF_SHADOWS_NAME" />
 	<passive cache="damage" description="#THE_BOOK_OF_BELIAL_DESCRIPTION" gfx="Collectibles_034_TheBookOfBelial.png" id="59" maxcharges="3" name="#THE_BOOK_OF_BELIAL_NAME" hidden="true" />
 	<passive cache="tearflag" description="#THE_LADDER_DESCRIPTION" gfx="Collectibles_060_TheLadder.png" id="60" name="#THE_LADDER_NAME" />
-	<!-- <passive description="#TAROT_CARD_DESCRIPTION" id="61" name="#TAROT_CARD_NAME" /> -->
+	<passive description="#TAROT_CARD_DESCRIPTION" id="61" name="#TAROT_CARD_NAME" />
 	<passive description="#CHARM_OF_THE_VAMPIRE_DESCRIPTION" gfx="Collectibles_062_CharmOfTheVampire.png" id="62" name="#CHARM_OF_THE_VAMPIRE_NAME" cache="damage" />
 	<passive description="#THE_BATTERY_DESCRIPTION" gfx="Collectibles_063_TheBattery.png" id="63" name="#THE_BATTERY_NAME" />
 	<passive description="#STEAM_SALE_DESCRIPTION" gfx="Collectibles_064_SteamSale.png" id="64" name="#STEAM_SALE_NAME" />
