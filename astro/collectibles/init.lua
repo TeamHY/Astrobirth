@@ -16,6 +16,7 @@ require "astro.collectibles.vanillas.king-baby"
 require "astro.collectibles.vanillas.luna"
 require "astro.collectibles.vanillas.marbles"
 require "astro.collectibles.vanillas.the-black-bean"
+require "astro.collectibles.vanillas.the-wiz"
 require "astro.collectibles.vanillas.yum-heart"
 
 if EID then
