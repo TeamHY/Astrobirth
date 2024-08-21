@@ -9,12 +9,6 @@ Astro = isc:upgradeMod(mod, { isc.ISCFeature.PLAYER_INVENTORY, isc.ISCFeature.RO
 
 Astro.IsFight = true
 
-QP_OVERWRITE = {
-    isInfinity = false,
-    range = 80,
-    isDisable = false
-}
-
 Json = require "json"
 
 require "astro.constants"
