@@ -45,7 +45,7 @@ Astro:AddCallback(
 Astro:AddCallback(
 	ModCallbacks.MC_POST_GAME_STARTED,
 	function(_, isContinued)
-		if not isContinued then
+		if not QP_OVERWRITE or not isContinued then
 			QP_OVERWRITE = {
 				isInfinity = false,
 				range = 80,
