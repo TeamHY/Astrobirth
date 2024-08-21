@@ -249,27 +249,38 @@ Astro:AddCallback(
         local level = Game():GetLevel()
         local stage = level:GetAbsoluteStage()
         local currentRoom = level:GetCurrentRoom()
-        local firstPlayer = Isaac.GetPlayer()
+        local player = Isaac.GetPlayer()
 
         if currentRoom:GetType() == RoomType.ROOM_BOSS then
             if stage == LevelStage.STAGE1_1 or stage == LevelStage.STAGE1_2 then
                 Isaac.Spawn(EntityType.ENTITY_SLOT, 10, 0, currentRoom:GetCenterPos(), Vector(0, 0), nil) -- Shop Restock Machine
             elseif stage == LevelStage.STAGE3_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE and currentRoom:GetBossID() == 6 then
-                if not firstPlayer:HasCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1) then
-                    firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1)
+                if not player:HasCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1) then
+                    player:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1)
                 end
 
-                if not firstPlayer:HasCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2) then
-                    firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
+                if not player:HasCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2) then
+                    player:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
+                end
+            elseif stage == LevelStage.STAGE5 then
+                if level:GetStageType() == StageType.STAGETYPE_ORIGINAL then
+                    if not player:HasCollectible(CollectibleType.COLLECTIBLE_NEGATIVE, true) then
+                        player:AddCollectible(CollectibleType.COLLECTIBLE_NEGATIVE)
+                    end
+                else
+                    if not player:HasCollectible(CollectibleType.COLLECTIBLE_POLAROID, true) then
+                        player:AddCollectible(CollectibleType.COLLECTIBLE_POLAROID)
+                    end
                 end
             elseif stage == LevelStage.STAGE6 then
-                if not firstPlayer:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1, true) then
-                    firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1)
+                if not player:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1, true) then
+                    player:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1)
                 end
 
-                if not firstPlayer:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2, true) then
-                    firstPlayer:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2)
+                if not player:HasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2, true) then
+                    player:AddCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2)
                 end
+                        
             end
         end
     end
