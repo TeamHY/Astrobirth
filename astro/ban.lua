@@ -744,6 +744,26 @@ local banItems = {
         pill = {
         }
     },
+    [AstroItems.Players.STELLAR] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
+    [AstroItems.Players.STELLAR_B] = {
+        collectible = {
+        },
+        trinket = {
+        },
+        card = {
+        },
+        pill = {
+        }
+    },
 }
 
 local function GetBanTables()
