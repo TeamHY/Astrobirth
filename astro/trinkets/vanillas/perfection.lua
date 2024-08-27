@@ -280,24 +280,24 @@ Astro:AddCallback(
     end
 )
 
-Astro:AddCallback(
-    ModCallbacks.MC_ENTITY_TAKE_DMG,
-    ---@param entity Entity
-    ---@param amount number
-    ---@param damageFlags number
-    ---@param source EntityRef
-    ---@param countdownFrames number
-    function(_, entity, amount, damageFlags, source, countdownFrames)
-        local player = entity:ToPlayer()
+-- Astro:AddCallback(
+--     ModCallbacks.MC_ENTITY_TAKE_DMG,
+--     ---@param entity Entity
+--     ---@param amount number
+--     ---@param damageFlags number
+--     ---@param source EntityRef
+--     ---@param countdownFrames number
+--     function(_, entity, amount, damageFlags, source, countdownFrames)
+--         local player = entity:ToPlayer()
 
-        if player ~= nil then
-            local hasItems = player:HasCollectible(CollectibleType.COLLECTIBLE_IPECAC) or player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) or player:HasCollectible(CollectibleType.COLLECTIBLE_EPIC_FETUS)
+--         if player ~= nil then
+--             local hasItems = player:HasCollectible(CollectibleType.COLLECTIBLE_IPECAC) or player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) or player:HasCollectible(CollectibleType.COLLECTIBLE_EPIC_FETUS)
 
-            if Astro:HasPerfectionEffect(player) and hasItems then
-                if damageFlags & DamageFlag.DAMAGE_EXPLOSION ~= 0 then
-                    return false
-                end
-            end
-        end
-    end
-)
+--             if Astro:HasPerfectionEffect(player) and hasItems then
+--                 if damageFlags & DamageFlag.DAMAGE_EXPLOSION ~= 0 then
+--                     return false
+--                 end
+--             end
+--         end
+--     end
+-- )
