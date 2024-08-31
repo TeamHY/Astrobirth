@@ -33,13 +33,10 @@ if EID then
 end
 
 Astro:AddCallback(
-    ModCallbacks.MC_POST_GAME_STARTED,
-    ---@param isContinued boolean
-    function(_, isContinued)
-        if not isContinued then
-            Astro.Data.IsEnabledShortcutPortals = false
-            Astro.Data.IsEnabledMirrorShortcutPortals = false
-        end
+    ModCallbacks.MC_POST_NEW_LEVEL,
+    function(_)
+        Astro.Data.IsEnabledShortcutPortals = false
+        Astro.Data.IsEnabledMirrorShortcutPortals = false
     end
 )
 
@@ -143,24 +140,25 @@ local function SpawnShortcutPortal()
     end
 end
 
-local function HasMirrorDimension()
-    local level = Game():GetLevel()
+-- local function HasMirrorDimension()
+--     local level = Game():GetLevel()
 
-    if level:GetStage() == LevelStage.STAGE1_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE then
-        return true
-    end
+--     if level:GetStage() == LevelStage.STAGE1_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE then
+--         return true
+--     end
 
-    return false
-end
+--     return false
+-- end
 
 Astro:AddCallback(
     ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
     ---@param rng RNG
     ---@param spawnPosition Vector
     function(_, rng, spawnPosition)
+        local level = Game():GetLevel()
         local room = Game():GetRoom()
 
-        if HasMirrorDimension() and room:GetType() == RoomType.ROOM_BOSS then
+        if level:GetStage() <= LevelStage.STAGE1_2 and room:GetType() == RoomType.ROOM_BOSS then
             if room:IsMirrorWorld() then
                 Astro.Data.IsEnabledMirrorShortcutPortals = true
             else
@@ -173,9 +171,10 @@ Astro:AddCallback(
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
     function(_)
+        local level = Game():GetLevel()
         local room = Game():GetRoom()
 
-        if HasMirrorDimension() then
+        if level:GetStage() <= LevelStage.STAGE1_2 then
             if room:IsMirrorWorld() then
                 if Astro.Data.IsEnabledMirrorShortcutPortals then
                     SpawnShortcutPortal()
