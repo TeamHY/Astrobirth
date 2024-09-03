@@ -62,6 +62,8 @@ if EID then
                 EID:appendToDescription(descObj, "#획득 시 {{Trinket35}}Curved Horn을 1개 소환합니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_D20 then
                 EID:appendToDescription(descObj, "#획득 시 {{Card49}}Dice Shard를 1개 소환합니다.")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_BOX then
+                EID:appendToDescription(descObj, "#획득 시 {{{Pill1}}Gulp!를 1개 소환합니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_INCUBUS then
                 EID:appendToDescription(descObj, "#!!! 이번 게임에서 {{Collectible698}}Twisted Pair가 등장하지 않습니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_TWISTED_PAIR then
@@ -205,6 +207,8 @@ Astro:AddCallbackCustom(
             Astro:SpawnTrinket(TrinketType.TRINKET_CURVED_HORN, player.Position)
         elseif collectibleType == CollectibleType.COLLECTIBLE_D20 and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_D20) then
             Astro:SpawnCard(Card.CARD_DICE_SHARD, player.Position)
+        elseif collectibleType == CollectibleType.COLLECTIBLE_BOX and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_BOX) then
+            Astro:SpawnPill(PillEffect.PILLEFFECT_GULP, player.Position)
         elseif collectibleType == CollectibleType.COLLECTIBLE_INCUBUS and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_INCUBUS) then
             Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_TWISTED_PAIR)
         elseif collectibleType == CollectibleType.COLLECTIBLE_TWISTED_PAIR and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_TWISTED_PAIR) then
