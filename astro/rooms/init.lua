@@ -252,6 +252,16 @@ Astro:AddCallback(
         local player = Isaac.GetPlayer()
 
         if currentRoom:GetType() == RoomType.ROOM_BOSS then
+            if stage == LevelStage.STAGE1_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE then
+                for i = 1, Game():GetNumPlayers() do
+                    local player = Isaac.GetPlayer(i - 1)
+                
+                    if not Astro:HasPerfectionEffect(player) then
+                        player:UseActiveItem(CollectibleType.COLLECTIBLE_SMELTER, false, true, false, false)
+                    end
+                end
+            end
+
             if stage == LevelStage.STAGE1_1 or stage == LevelStage.STAGE1_2 then
                 Isaac.Spawn(EntityType.ENTITY_SLOT, 10, 0, currentRoom:GetCenterPos(), Vector(0, 0), nil) -- Shop Restock Machine
             elseif stage == LevelStage.STAGE3_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE and currentRoom:GetBossID() == 6 then
