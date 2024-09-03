@@ -40,6 +40,15 @@ Astro:AddCallback(
     end
 )
 
+Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_STARTED,
+    ---@param isContinued boolean
+    function(_, isContinued)
+        Astro.Data.IsEnabledShortcutPortals = false
+        Astro.Data.IsEnabledMirrorShortcutPortals = false
+    end
+)
+
 ---@param a Entity
 ---@param b Entity
 ---@return boolean
