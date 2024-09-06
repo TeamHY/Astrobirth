@@ -603,6 +603,20 @@ local startItem = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
         }
     },
+    [AstroItems.Players.LEAH_B] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
     [AstroItems.Players.DIABELLSTAR] = {
         collectible = {
             -- CollectibleType.COLLECTIBLE_SAD_ONION,
@@ -798,6 +812,7 @@ local diceList = {
     AstroItems.Collectible.MIRROR_DICE,
     AstroItems.Collectible.SACRED_DICE,
     AstroItems.Collectible.RESTOCK_DICE,
+    AstroItems.Collectible.FORBIDDEN_DICE,
 }
 
 Astro:AddCallback(
