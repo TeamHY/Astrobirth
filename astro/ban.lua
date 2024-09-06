@@ -69,8 +69,6 @@ local banItems = {
             CollectibleType.COLLECTIBLE_BIRDS_EYE,
             CollectibleType.COLLECTIBLE_GODS_FLESH,
             AstroItems.Collectible.REINCARNATION,
-            AstroItems.Collectible.FORBIDDEN_DICE,
-            AstroItems.Collectible.DADS_BOX,
             AstroItems.Collectible.BONFIRE,
 
         },
