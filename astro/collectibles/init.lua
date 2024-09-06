@@ -4,6 +4,7 @@ local hiddenItemManager = require("astro.lib.hidden_item_manager")
 require "astro.collectibles.active"
 -- require "AstroItems.Collectibles.golden"
 require "astro.collectibles.status"
+require "astro.collectibles.transformation"
 
 require "astro.collectibles.vanillas.aquarius"
 require "astro.collectibles.vanillas.birthright"
@@ -276,44 +277,4 @@ Astro:AddCallback(
             end
         end
     end
-)
-
-Astro:AddCallbackCustom(
-    isc.ModCallbackCustom.POST_TRANSFORMATION,
-    ---@param player EntityPlayer
-    ---@param playerForm PlayerForm
-    ---@param hasForm boolean
-    function(_, player, playerForm, hasForm)
-        local data = Astro:GetPersistentPlayerData(player)
-
-        if not data.RunMomForm and hasForm then
-            data.RunMomForm = true
-
-            local list = {
-                CollectibleType.COLLECTIBLE_PHD,
-                CollectibleType.COLLECTIBLE_FALSE_PHD,
-                AstroItems.Collectible.MASTERS_DEGREE,
-                AstroItems.Collectible.BACHELORS_DEGREE,
-            }
-
-            local inventory = Astro:getPlayerInventory(player, false)
-            local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_MOMS_HEELS)
-            local optionsPickupIndex = CollectibleType.COLLECTIBLE_MOMS_HEELS + player.Index * 10000
-
-            local hadCollectable = Astro:GetRandomCollectibles(inventory, rng, 1, nil, true)[1]
-
-            if hadCollectable ~= nil then
-                player:RemoveCollectible(hadCollectable)
-                Astro:SpawnCollectible(hadCollectable, player.Position, optionsPickupIndex)
-            end
-
-            -- for _ = 1, 2 do
-            local random = rng:RandomInt(#list) + 1
-
-            Astro:SpawnCollectible(list[random], player.Position, optionsPickupIndex)
-            table.remove(list, random)
-            -- end
-        end
-    end,
-    PlayerForm.PLAYERFORM_MOM
 )
