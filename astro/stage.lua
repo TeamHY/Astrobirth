@@ -61,8 +61,8 @@ Astro:AddCallback(
             (stage == LevelStage.STAGE4_1 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE) or
             (stage == LevelStage.STAGE4_2 and level:GetStageType() == StageType.STAGETYPE_REPENTANCE)) then
             if playerType ~= PlayerType.PLAYER_KEEPER and playerType ~= PlayerType.PLAYER_KEEPER_B and playerType ~= PlayerType.PLAYER_THESOUL_B then
-                if player:GetBrokenHearts() < 6 then
-                    player:AddBrokenHearts(6 - player:GetBrokenHearts())
+                if player:GetBrokenHearts() < 3 then
+                    player:AddBrokenHearts(3 - player:GetBrokenHearts())
                 end
             end
         end
