@@ -38,3 +38,14 @@ Astro:AddCallback(
         end
     end
 )
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_UPDATE,
+    function(_)
+        for _, entity in ipairs(Isaac.FindByType(EntityType.ENTITY_FAMILIAR)) do
+            if entity.Variant == FamiliarVariant.BLUE_FLY or entity.Variant == FamiliarVariant.BLUE_SPIDER then
+                entity:Update()
+            end
+        end
+    end
+)
