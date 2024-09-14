@@ -80,10 +80,15 @@ Astro:AddCallback(
 
         local itemPool = Game():GetItemPool()
 
-        for _, value in ipairs(Astro.Data.currentBanItems) do
-            print("NextBan: "..value)
-            itemPool:RemoveCollectible(value)
-            table.insert(banAnimationList, {value, CreateBanAnimationSprite(), 0})
+
+        if Astro.Data.disableNextBan then
+            Astro.Data.disableNextBan = false
+        else
+            for _, value in ipairs(Astro.Data.currentBanItems) do
+                print("NextBan: "..value)
+                itemPool:RemoveCollectible(value)
+                table.insert(banAnimationList, {value, CreateBanAnimationSprite(), 0})
+            end
         end
     end
 )
@@ -160,6 +165,10 @@ Astro:AddCallbackCustom(
 
         if item.Quality > 2 and Astro.Data.currentRunItems and not Astro:ContainCollectible(Astro.Data.currentRunItems, collectibleType) and Game():GetFrameCount() > 1 then
             table.insert(Astro.Data.currentRunItems, collectibleType)
+        end
+
+        if collectibleType == AstroItems.Collectible.SAMSARA then
+            Astro.Data.disableNextBan = true
         end
     end
 )
