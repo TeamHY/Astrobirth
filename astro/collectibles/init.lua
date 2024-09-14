@@ -71,7 +71,7 @@ if EID then
                 EID:appendToDescription(descObj, "#!!! 이번 게임에서 {{Collectible360}}Incubus가 등장하지 않습니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LUCKY_FOOT then
                 EID:appendToDescription(descObj, "#맵에 행운방의 위치가 표시됩니다.")
-            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_IPECAC or descObj.ObjSubType == CollectibleType.COLLECTIBLE_DR_FETUS or descObj.ObjSubType == CollectibleType.COLLECTIBLE_EPIC_FETUS then
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_IPECAC or descObj.ObjSubType == CollectibleType.COLLECTIBLE_DR_FETUS or descObj.ObjSubType == CollectibleType.COLLECTIBLE_EPIC_FETUS or descObj.ObjSubType == CollectibleType.COLLECTIBLE_FRUIT_CAKE then
                 EID:appendToDescription(descObj, "#{{Collectible375}}Host Hat 효과가 적용됩니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_BONE_SPURS then
                 EID:appendToDescription(descObj, "#!!! The Beast 보스방에서 사라집니다.")
@@ -223,7 +223,7 @@ Astro:AddCallbackCustom(
                 room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
                 level:UpdateVisibility()
             end
-        elseif collectibleType == CollectibleType.COLLECTIBLE_IPECAC or collectibleType == CollectibleType.COLLECTIBLE_DR_FETUS or collectibleType == CollectibleType.COLLECTIBLE_EPIC_FETUS then
+        elseif collectibleType == CollectibleType.COLLECTIBLE_IPECAC or collectibleType == CollectibleType.COLLECTIBLE_DR_FETUS or collectibleType == CollectibleType.COLLECTIBLE_EPIC_FETUS or collectibleType == CollectibleType.COLLECTIBLE_FRUIT_CAKE then
             if not hiddenItemManager:Has(player, CollectibleType.COLLECTIBLE_HOST_HAT) then
                 hiddenItemManager:Add(player, CollectibleType.COLLECTIBLE_HOST_HAT)
             end
