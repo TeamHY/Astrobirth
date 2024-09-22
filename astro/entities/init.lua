@@ -1,7 +1,3 @@
----
-local BLUE_SPEED_MULTIPLIER = 2
----
-
 Astro.Entities = {}
 
 require "astro.entities.dark-esau"
@@ -38,19 +34,6 @@ Astro:AddCallback(
         if data.Astro then
             if data.Astro.KillFrame and data.Astro.KillFrame <= Game():GetFrameCount() then
                 effect:Die()
-            end
-        end
-    end
-)
-
-Astro:AddCallback(
-    ModCallbacks.MC_POST_UPDATE,
-    function(_)
-        for _, entity in ipairs(Isaac.FindByType(EntityType.ENTITY_FAMILIAR)) do
-            if entity.Variant == FamiliarVariant.BLUE_FLY or entity.Variant == FamiliarVariant.BLUE_SPIDER then
-                for _ = 1, BLUE_SPEED_MULTIPLIER - 1 do
-                    entity:Update()
-                end
             end
         end
     end
