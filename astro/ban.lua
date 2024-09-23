@@ -304,6 +304,8 @@ local banItems = {
     },
     [PlayerType.PLAYER_LILITH] = {
         collectible = {
+            CollectibleType.COLLECTIBLE_TWISTED_PAIR,
+            CollectibleType.COLLECTIBLE_INCUBUS,
         },
         trinket = {
         },
