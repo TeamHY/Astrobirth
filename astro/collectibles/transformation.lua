@@ -1,7 +1,7 @@
 ---
 local MOM_SOUND_VOLUME = 1
 
-local MOM_FORM_COOLDOWN = 60 * 30
+local MOM_FORM_COOLDOWN = 36000 * 30
 
 local MOM_FORM_NUM = 1
 ---
