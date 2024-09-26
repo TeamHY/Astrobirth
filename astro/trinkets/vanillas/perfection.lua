@@ -91,7 +91,7 @@ Astro:AddCallback(
                         TryChangeToGoldenTrinket(player)
                     end
 
-                    if player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) and not player:HasCollectible(CollectibleType.COLLECTIBLE_HOST_HAT) and not player:HasCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR) then
+                    if player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) and not player:HasCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR) then
                         player:AddCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR)
                         itemPool:RemoveCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR)
                     end
