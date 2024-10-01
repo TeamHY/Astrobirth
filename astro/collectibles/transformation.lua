@@ -1,7 +1,7 @@
 ---
-local MOM_SOUND_VOLUME = 1
+local MOM_SOUND_VOLUME = 0.7
 
-local MOM_FORM_COOLDOWN = 36000 * 30 --왼쪽이 게임 시간
+local MOM_FORM_COOLDOWN = 30 * 30 --왼쪽이 게임 시간
 
 local MOM_FORM_NUM = 1
 ---
