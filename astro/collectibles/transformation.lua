@@ -32,3 +32,21 @@ Astro:AddCallback(
         end
     end
 )
+
+Astro:AddCallback(
+    ModCallbacks.MC_ENTITY_TAKE_DMG,
+    ---@param entity Entity
+    ---@param amount number
+    ---@param damageFlags number
+    ---@param source EntityRef
+    ---@param countdownFrames number
+    function(_, entity, amount, damageFlags, source, countdownFrames)
+        local player = entity:ToPlayer()
+
+        if player ~= nil and player:HasPlayerForm(PlayerForm.PLAYERFORM_MOM) then
+            if source.Type == EntityType.ENTITY_EFFECT and source.Variant == EffectVariant.MOM_FOOT_STOMP then
+                return false
+            end
+        end
+    end
+)
