@@ -1,22 +1,5 @@
 local OPTIONS_PICKUP_INDEX = 145
 
-local blessings = {
-    CollectibleType.COLLECTIBLE_EDENS_BLESSING,
-    AstroItems.Collectible.ALTAIR,
-    AstroItems.Collectible.CASIOPEA,
-    AstroItems.Collectible.COMET,
-    AstroItems.Collectible.CORVUS,
-    AstroItems.Collectible.DENEB,
-    AstroItems.Collectible.GEMINI_EX,
-    AstroItems.Collectible.LEO_EX,
-    AstroItems.Collectible.PISCES_EX,
-    AstroItems.Collectible.REINCARNATION,
-    AstroItems.Collectible.SAGITTARIUS_EX,
-    AstroItems.Collectible.VEGA,
-    AstroItems.Collectible.VIRGO_EX,
-    AstroItems.Collectible.AKASHIC_RECORDS,
-}
-
 ---@param player EntityPlayer
 function Astro:HasPerfectionEffect(player)
     return player:HasTrinket(TrinketType.TRINKET_PERFECTION) or player:HasTrinket(AstroItems.Trinket.FLUNK)
@@ -222,20 +205,8 @@ Astro:AddCallback(
                         player:AddCollectible(CollectibleType.COLLECTIBLE_EVIL_CHARM)
                     elseif stage == LevelStage.STAGE4_3 then
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
-                            currentRoom:GetCenterPos() + Vector(-Astro.GRID_SIZE * 2, 0),
-                            OPTIONS_PICKUP_INDEX,
-                            true
-                        )
-                        Astro:SpawnCollectible(
-                            blessings[rng:RandomInt(#blessings) + 1],
+                            CollectibleType.COLLECTIBLE_EDENS_BLESSING,
                             currentRoom:GetCenterPos(),
-                            OPTIONS_PICKUP_INDEX,
-                            true
-                        )
-                        Astro:SpawnCollectible(
-                            AstroItems.Collectible.GEMINI_EX,
-                            currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
