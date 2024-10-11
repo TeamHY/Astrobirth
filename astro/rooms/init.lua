@@ -153,7 +153,7 @@ Astro:AddCallback(
                     Vector.Zero,
                     nil
                 )
-            elseif roomType == RoomType.ROOM_ISAACS then
+            elseif roomType == RoomType.ROOM_ISAACS and currentRoomDesc.Data.Name ~= "Genesis Room" then
                 -- TODO: RNG 교체해야 함
                 local rng = Isaac.GetPlayer():GetCollectibleRNG(AstroItems.Collectible.ALTAIR)
 
