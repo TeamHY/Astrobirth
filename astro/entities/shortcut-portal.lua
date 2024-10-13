@@ -3,7 +3,8 @@ Astro.Entities.SHORTCUT_PORTAL = 3001
 Astro.Enums.ShortcutPortalSubType = {
     TREASURE = 1,
     SHOP = 2,
-    BOSS = 3
+    BOSS = 3,
+    MOTHER = 4,
 }
 
 if EID then
@@ -29,6 +30,14 @@ if EID then
         Astro.Enums.ShortcutPortalSubType.BOSS,
         "보스방 포탈",
         "{{BossRoom}}보스방으로 즉시 이동합니다."
+    )
+
+    EID:addEntity(
+        EntityType.ENTITY_EFFECT,
+        Astro.Entities.SHORTCUT_PORTAL,
+        Astro.Enums.ShortcutPortalSubType.MOTHER,
+        "마더루트 포탈",
+        "스테이지 6c로 즉시 이동합니다."
     )
 end
 
@@ -77,6 +86,8 @@ Astro:AddCallback(
             effect.Color = Color(1, 1, 1, 1, 0, 0.7, 0)
         elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.BOSS then
             effect.Color = Color(1, 1, 1, 1, 0.7, 0, 0)
+        elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.MOTHER then
+            effect.Color = Color(1, 1, 1, 1, 0.7, 0, 0.7)
         end
     end,
     Astro.Entities.SHORTCUT_PORTAL
@@ -96,6 +107,8 @@ Astro:AddCallback(
                     player:UseCard(Card.CARD_HERMIT, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)
                 elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.BOSS then
                     player:UseCard(Card.CARD_EMPEROR, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)
+                elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.MOTHER then
+                    Isaac.ExecuteCommand("stage 6c")
                 end
             end
         end
@@ -181,7 +194,8 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
     function(_)
         local level = Game():GetLevel()
-        local room = Game():GetRoom()
+        local room = level:GetCurrentRoom()
+        local roomDesc = level:GetCurrentRoomDesc()
 
         if level:GetStage() <= LevelStage.STAGE1_2 then
             if room:IsMirrorWorld() then
@@ -193,6 +207,13 @@ Astro:AddCallback(
                     SpawnShortcutPortal()
                 end
             end
+        elseif level:GetAbsoluteStage() == LevelStage.STAGE4_3 and roomDesc.Data.Name == "Entrance Room" then
+            Astro:Spawn(
+                EntityType.ENTITY_EFFECT,
+                Astro.Entities.SHORTCUT_PORTAL,
+                Astro.Enums.ShortcutPortalSubType.MOTHER,
+                room:GetGridPosition(28)
+            )
         end
     end
 )
