@@ -1,5 +1,5 @@
 -- SETTING
-local BAN_COUNT = 20
+local BAN_COUNT = 10
 
 local MAX_ROW_NUM = 10
 
