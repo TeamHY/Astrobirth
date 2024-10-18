@@ -68,6 +68,8 @@ local banItems = {
             CollectibleType.COLLECTIBLE_GREEDS_GULLET,
             CollectibleType.COLLECTIBLE_BIRDS_EYE,
             CollectibleType.COLLECTIBLE_GODS_FLESH,
+            CollectibleType.COLLECTIBLE_FRUIT_CAKE,
+            CollectibleType.COLLECTIBLE_SPIRIT_SWORD,
             AstroItems.Collectible.REINCARNATION,
             AstroItems.Collectible.BONFIRE,
 
