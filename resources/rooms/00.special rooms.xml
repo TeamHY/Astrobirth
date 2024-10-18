@@ -62478,12 +62478,6 @@
 		<spawn x="7" y="4">
 			<entity type="5" variant="20" subtype="7" weight="1.0"/>
 		</spawn>
-		<spawn x="8" y="5">
-			<entity type="5" variant="20" subtype="7" weight="1.0"/>
-		</spawn>
-		<spawn x="0" y="6">
-			<entity type="5" variant="20" subtype="7" weight="1.0"/>
-		</spawn>
 	</room>
 	<room variant="0" name="The Dice Room (Placeholder)" type="21" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
