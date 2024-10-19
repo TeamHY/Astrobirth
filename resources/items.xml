@@ -362,7 +362,7 @@
 	<passive description="#MOMS_PEARLS_DESCRIPTION" gfx="Collectibles_355_MomsPearls.png" id="355" name="#MOMS_PEARLS_NAME" cache="luck range" soulhearts="2" />
 	<passive description="#CAR_BATTERY_DESCRIPTION" gfx="Collectibles_356_CarBattery.png" id="356" shopprice="10" name="#CAR_BATTERY_NAME" />
 	<active achievement="203" description="#BOX_OF_FRIENDS_DESCRIPTION" gfx="Collectibles_357_PandorasBox.png" id="357" name="#BOX_OF_FRIENDS_NAME" shopprice="10" maxcharges="3" cache="familiars" />
-	<passive description="#THE_WIZ_DESCRIPTION" gfx="Collectibles_358_TheWiz.png" id="358" name="#THE_WIZ_NAME" cache="tearflag" />
+	<passive description="#THE_WIZ_DESCRIPTION" gfx="Collectibles_358_TheWiz.png" id="358" shopprice="60" name="#THE_WIZ_NAME" cache="tearflag" />
 	<passive description="#8_INCH_NAILS_DESCRIPTION" gfx="Collectibles_359_8InchNails.png" id="359" name="#8_INCH_NAILS_NAME" cache="damage tearflag" />
 	<familiar achievement="190" description="#INCUBUS_DESCRIPTION" gfx="Collectibles_360_Incubus.png" id="360" name="#INCUBUS_NAME" devilprice="2" />
 	<familiar achievement="183" description="#FATES_REWARD_DESCRIPTION" gfx="Collectibles_361_FatesReward.png" id="361" name="#FATES_REWARD_NAME" />
