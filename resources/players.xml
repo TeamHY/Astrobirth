@@ -33,7 +33,7 @@
           nameimage="PlayerName_08_Azazel.png" 
           portrait="PlayerPortrait_Azazel.png" skinColor="1"
 		  birthright="#AZAZEL_BIRTHRIGHT" />
-	<player id="8" name="#LAZARUS_NAME" skin="Character_009_Lazarus.png" hp="6" keys="1" bombs="2" items="402" pill="1" achievement="80"
+	<player id="8" name="#LAZARUS_NAME" skin="Character_009_Lazarus.png" hp="6" keys="1" bombs="2" items="402,100" pill="1" achievement="80"
           nameimage="PlayerName_10_Lazarus.png" 
           portrait="PlayerPortrait_Lazarus.png" costume="32" skinColor="-1"
 		  birthright="#LAZARUS_BIRTHRIGHT" />
