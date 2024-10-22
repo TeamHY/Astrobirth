@@ -207,7 +207,7 @@ Astro:AddCallback(
                     SpawnShortcutPortal()
                 end
             end
-        elseif level:GetAbsoluteStage() == LevelStage.STAGE4_3 and roomDesc.Data.Name == "Entrance Room" then
+        elseif level:GetAbsoluteStage() == LevelStage.STAGE4_2 and roomDesc.Data.Name == "Entrance Room" then
             Astro:Spawn(
                 EntityType.ENTITY_EFFECT,
                 Astro.Entities.SHORTCUT_PORTAL,
