@@ -1,3 +1,9 @@
+---
+
+local EZ_MODE_DELETED_FRAME = 10 * 30
+
+---
+
 require "astro.rooms.chest-room"
 require "astro.rooms.room-boss"
 require "astro.rooms.void-portal"
@@ -101,6 +107,22 @@ Astro:AddCallback(
 )
 
 -- Backdrop End
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_UPDATE,
+    function(_)
+        local level = Game():GetLevel()
+        if level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetCurrentRoomIndex() == 84 and Game():GetFrameCount() > EZ_MODE_DELETED_FRAME then
+            for _, entity in ipairs(Isaac.GetRoomEntities()) do
+                if entity.Type == EntityType.ENTITY_PICKUP and entity.Variant == PickupVariant.PICKUP_COLLECTIBLE then
+                    if entity.SubType == AstroItems.Collectible.EZ_MODE or entity.SubType == AstroItems.Collectible.VERY_EZ_MODE then
+                        entity:Remove()
+                    end
+                end
+            end
+        end
+    end
+)
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_ROOM,
