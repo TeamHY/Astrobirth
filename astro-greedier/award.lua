@@ -23,7 +23,7 @@ local function RunAward(wave)
 end
 
 Astro:AddCallback(
-    AstroItems.Callbacks.POST_NEW_GREED_WAVE,
+    Astro.Callbacks.POST_NEW_GREED_WAVE,
     ---@param wave integer
     function(_, wave)
         RunAward(wave - 1)
@@ -44,7 +44,7 @@ Astro:AddCallback(
 )
 
 Astro:AddCallback(
-    AstroItems.Callbacks.POST_NEW_STAGE,
+    Astro.Callbacks.POST_NEW_STAGE,
     ---@param stage LevelStage
     function(_, stage)
         Astro.Data["greedierPenalty"] = false
@@ -52,7 +52,7 @@ Astro:AddCallback(
 )
 
 Astro:AddCallback(
-    AstroItems.Callbacks.PLAYER_TAKE_PENALTY,
+    Astro.Callbacks.PLAYER_TAKE_PENALTY,
     ---@param player EntityPlayer
     function(_, player)
         Astro.Data["greedierPenalty"] = true
