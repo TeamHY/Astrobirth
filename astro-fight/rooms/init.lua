@@ -2,6 +2,8 @@
 
 local EZ_MODE_DELETED_FRAME = 10 * 30
 
+local GO_HOME_DELETED_FRAME = 20 * 30
+
 ---
 
 require "astro-fight.rooms.chest-room"
@@ -159,7 +161,9 @@ Astro:AddCallback(
                     end
                 end
             elseif roomType == RoomType.ROOM_BOSS and currentRoom:GetBossID() == 55 then -- Mega Satan
-                Isaac.Spawn(
+                local killFrame = Game():GetFrameCount() + GO_HOME_DELETED_FRAME
+            
+                local greed = Isaac.Spawn(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_COLLECTIBLE,
                     Astro.Collectible.GREED,
@@ -167,7 +171,7 @@ Astro:AddCallback(
                     Vector.Zero,
                     nil
                 )
-                Isaac.Spawn(
+                local goHome = Isaac.Spawn(
                     EntityType.ENTITY_PICKUP,
                     PickupVariant.PICKUP_COLLECTIBLE,
                     Astro.Collectible.GO_HOME,
@@ -175,6 +179,14 @@ Astro:AddCallback(
                     Vector.Zero,
                     nil
                 )
+
+                greed:GetData().Astro = {
+                    KillFrame = killFrame
+                }
+
+                goHome:GetData().Astro = {
+                    KillFrame = killFrame
+                }
             elseif roomType == RoomType.ROOM_ISAACS and currentRoomDesc.Data.Name ~= "Genesis Room" then
                 -- TODO: RNG 교체해야 함
                 local rng = Isaac.GetPlayer():GetCollectibleRNG(Astro.Collectible.ALTAIR)

@@ -38,3 +38,18 @@ Astro:AddCallback(
         end
     end
 )
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_PICKUP_UPDATE,
+    ---@param pickup EntityPickup
+    function(_, pickup)
+        local data = pickup:GetData()
+
+        if data.Astro then
+            if data.Astro.KillFrame and data.Astro.KillFrame <= Game():GetFrameCount() then
+                print("test")
+                pickup:Remove()
+            end
+        end
+    end
+)
