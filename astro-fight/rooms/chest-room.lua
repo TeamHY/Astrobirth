@@ -28,7 +28,13 @@ Astro:AddCallback(
 
         if roomType == RoomType.ROOM_CHEST then
             if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
-                Isaac.Spawn(EntityType.ENTITY_SHOPKEEPER, 3000, 0, currentRoom:GetCenterPos(), Vector(0, 0), nil)
+                -- Isaac.Spawn(EntityType.ENTITY_SHOPKEEPER, 3000, 0, currentRoom:GetCenterPos(), Vector(0, 0), nil)
+                Astro:ScheduleForUpdate(
+                    function()
+                        RemovePickup()
+                    end,
+                    TIME
+                )
             elseif not currentRoom:IsFirstVisit() then
                 RemovePickup()
             end
@@ -40,23 +46,23 @@ Astro:AddCallback(
     end
 )
 
-Astro:AddCallback(
-    ModCallbacks.MC_NPC_UPDATE,
-    ---@param npc EntityNPC
-    function(_, npc)
-        if npc.Variant == 3000 then
-            if npc.FrameCount == 0 then
-                npc.MaxHitPoints = TIME
-                npc.HitPoints = TIME
-            end
+-- Astro:AddCallback(
+--     ModCallbacks.MC_NPC_UPDATE,
+--     ---@param npc EntityNPC
+--     function(_, npc)
+--         if npc.Variant == 3000 then
+--             if npc.FrameCount == 0 then
+--                 npc.MaxHitPoints = TIME
+--                 npc.HitPoints = TIME
+--             end
     
-            npc.HitPoints = npc.HitPoints - 1
+--             npc.HitPoints = npc.HitPoints - 1
 
-            if npc.HitPoints <= 0 then
-                RemovePickup()
-                npc:Remove()
-            end
-        end
-    end,
-    EntityType.ENTITY_SHOPKEEPER
-)
+--             if npc.HitPoints <= 0 then
+--                 RemovePickup()
+--                 npc:Remove()
+--             end
+--         end
+--     end,
+--     EntityType.ENTITY_SHOPKEEPER
+-- )
