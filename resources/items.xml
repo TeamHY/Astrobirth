@@ -664,7 +664,7 @@
 	<active		id="636"	gfx="Collectibles_636_RKey.png" name="#R_KEY_NAME" description="#R_KEY_DESCRIPTION" shopprice="99" devilprice="2" />
 	<passive	id="637"	gfx="Collectibles_637_KnockoutDrops.png" name="#KNOCKOUT_DROPS_NAME" description="#KNOCKOUT_DROPS_DESCRIPTION" />
 	<active		id="638"	gfx="Collectibles_638_Eraser.png" name="#ERASER_NAME" description="#ERASER_DESCRIPTION" maxcharges="1" chargetype="special" />
-	<active		id="639"	achievement="442" gfx="Collectibles_639_YuckHeart.png" name="#YUCK_HEART_NAME" shopprice="9" description="#YUCK_HEART_DESCRIPTION" maxcharges="4" />
+	<active		id="639"	achievement="442" gfx="Collectibles_639_YuckHeart.png" name="#YUCK_HEART_NAME" shopprice="3" description="#YUCK_HEART_DESCRIPTION" maxcharges="4" />
 	<active		id="640"	achievement="418" gfx="Collectibles_640_UrnOfSouls.png" name="#URN_OF_SOULS_NAME" description="#URN_OF_SOULS_DESCRIPTION" maxcharges="0" persistent="false" />
 	<passive	id="641"	achievement="446" gfx="Collectibles_641_Akeldama.png" name="#AKELDAMA_NAME" description="#AKELDAMA_DESCRIPTION" />
 	<active		id="642"	achievement="472" gfx="Collectibles_642_MagicSkin.png" name="#MAGIC_SKIN_NAME" description="#MAGIC_SKIN_DESCRIPTION" maxcharges="12" />
