@@ -154,7 +154,7 @@
 	<passive cache="firedelay damage" description="#MUTANT_SPIDER_DESCRIPTION" gfx="Collectibles_153_MutantSpider.png" id="153" devilprice="2" name="#MUTANT_SPIDER_NAME" special="true" />
 	<passive cache="damage" description="#CHEMICAL_PEEL_DESCRIPTION" gfx="Collectibles_154_ChemicalPeel.png" id="154" name="#CHEMICAL_PEEL_NAME" />
 	<familiar description="#THE_PEEPER_DESCRIPTION" gfx="Collectibles_155_ThePeeper.png" id="155" shopprice="5" name="#THE_PEEPER_NAME" />
-	<passive description="#HABIT_DESCRIPTION" gfx="Collectibles_156_Habit.png" id="156" shopprice="9" name="#HABIT_NAME" />
+	<passive description="#HABIT_DESCRIPTION" gfx="Collectibles_156_Habit.png" id="156" shopprice="4" name="#HABIT_NAME" />
 	<passive achievement="54" cache="damage color" description="#BLOODY_LUST_DESCRIPTION" gfx="Collectibles_157_BloodyLust.png" id="157" name="#BLOODY_LUST_NAME" />
 	<active description="#CRYSTAL_BALL_DESCRIPTION" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="12" name="#CRYSTAL_BALL_NAME" />
 	<passive cache="flying tearflag tearcolor" description="#SPIRIT_OF_THE_NIGHT_DESCRIPTION" devilprice="2" gfx="Collectibles_159_SpiritOfTheNight.png" id="159" name="#SPIRIT_OF_THE_NIGHT_NAME" />
