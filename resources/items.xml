@@ -145,7 +145,7 @@
 	<familiar description="#BUM_FRIEND_DESCRIPTION" gfx="Collectibles_144_BumFriend.png" id="144" name="#BUM_FRIEND_NAME" />
 	<active description="#GUPPYS_HEAD_DESCRIPTION" gfx="Collectibles_145_GuppysHead.png" id="145" maxcharges="1" name="#GUPPYS_HEAD_NAME" />
 	<active description="#PRAYER_CARD_DESCRIPTION" gfx="Collectibles_146_PrayerCard.png" id="146" maxcharges="6" name="#PRAYER_CARD_NAME" devilprice="2" />
-	<active description="#NOTCHED_AXE_DESCRIPTION" gfx="Collectibles_147_NotchedAxe.png" id="147" maxcharges="64" chargetype="special" shopprice="10" name="#NOTCHED_AXE_NAME" persistent="false" />
+	<active description="#NOTCHED_AXE_DESCRIPTION" gfx="Collectibles_147_NotchedAxe.png" id="147" maxcharges="64" chargetype="special" shopprice="5" name="#NOTCHED_AXE_NAME" persistent="false" />
 	<passive description="#INFESTATION_DESCRIPTION" gfx="Collectibles_148_Infestation.png" id="148" name="#INFESTATION_NAME" />
 	<passive achievement="140" cache="all" description="#IPECAC_DESCRIPTION" gfx="Collectibles_149_Ipecac.png" id="149" name="#IPECAC_NAME" />
 	<passive description="#TOUGH_LOVE_DESCRIPTION" gfx="Collectibles_150_ToughLove.png" cache="luck" devilprice="2" id="150" name="#TOUGH_LOVE_NAME" />
