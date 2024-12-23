@@ -734,6 +734,7 @@
 	</Pool>
 	<Pool Name="shop">
 		<Item Id="3" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="9" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="10" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="11" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="13" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
