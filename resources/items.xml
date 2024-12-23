@@ -283,7 +283,7 @@
 	<familiar description="#DARK_BUM_DESCRIPTION" gfx="collectibles_278_darkbum.png" id="278" shopprice="5" name="#DARK_BUM_NAME" />
 	<familiar description="#BIG_FAN_DESCRIPTION" gfx="collectibles_279_bigfan.png" id="279" name="#BIG_FAN_NAME" />
 	<familiar description="#SISSY_LONGLEGS_DESCRIPTION" gfx="collectibles_280_sissylonglegs.png" id="280" name="#SISSY_LONGLEGS_NAME" />
-	<familiar description="#PUNCHING_BAG_DESCRIPTION" gfx="collectibles_281_punchingbag.png" id="281" shopprice="7" name="#PUNCHING_BAG_NAME" />
+	<familiar description="#PUNCHING_BAG_DESCRIPTION" gfx="collectibles_281_punchingbag.png" id="281" shopprice="4" name="#PUNCHING_BAG_NAME" />
 	<active cooldown="14" description="#HOW_TO_JUMP_DESCRIPTION" gfx="collectibles_282_howtojump.png" id="282" maxcharges="0" name="#HOW_TO_JUMP_NAME" />
 	<active achievement="133" description="#D100_DESCRIPTION" gfx="collectibles_283_d100.png" id="283" maxcharges="6" name="#D100_NAME" special="true" />
 	<active achievement="148" description="#D4_DESCRIPTION" gfx="collectibles_284_d4.png" id="284" maxcharges="12" name="#D4_NAME" />
