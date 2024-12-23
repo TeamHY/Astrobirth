@@ -169,7 +169,7 @@
 	<passive achievement="62" cache="all" description="#EPIC_FETUS_DESCRIPTION" gfx="Collectibles_168_EpicFetus.png" id="168" name="#EPIC_FETUS_NAME" special="true" />
 	<passive cache="damage firedelay tearflag" description="#POLYPHEMUS_DESCRIPTION" devilprice="2" gfx="Collectibles_169_Polyphemus.png" id="169" name="#POLYPHEMUS_NAME" special="true" />
 	<familiar description="#DADDY_LONGLEGS_DESCRIPTION" gfx="Collectibles_170_DaddyLonglegs.png" id="170" name="#DADDY_LONGLEGS_NAME" />
-	<active cooldown="120" description="#SPIDER_BUTT_DESCRIPTION" gfx="Collectibles_171_SpiderButt.png" shopprice="10" id="171" maxcharges="2" name="#SPIDER_BUTT_NAME" />
+	<active cooldown="120" description="#SPIDER_BUTT_DESCRIPTION" gfx="Collectibles_171_SpiderButt.png" shopprice="5" id="171" maxcharges="2" name="#SPIDER_BUTT_NAME" />
 	<familiar achievement="53" description="#SACRIFICIAL_DAGGER_DESCRIPTION" gfx="Collectibles_172_SacrificialDagger.png" id="172" name="#SACRIFICIAL_DAGGER_NAME" />
 	<passive description="#MITRE_DESCRIPTION" gfx="Collectibles_173_Mitre.png" id="173" shopprice="6" name="#MITRE_NAME" />
 	<familiar description="#RAINBOW_BABY_DESCRIPTION" gfx="Collectibles_174_RainbowBaby.png" id="174" name="#RAINBOW_BABY_NAME" />
