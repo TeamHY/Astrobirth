@@ -424,7 +424,7 @@
 	<familiar achievement="221" description="#SUCCUBUS_DESCRIPTION" gfx="Collectibles_417_Succubus.png" id="417" name="#SUCCUBUS_NAME" devilprice="2" />
 	
 	<passive description="#FRUIT_CAKE_DESCRIPTION" devilprice="2" gfx="Collectibles_418_FruitCake.png" id="418" name="#FRUIT_CAKE_NAME" />
-	<active description="#TELEPORT_20_DESCRIPTION" gfx="Collectibles_419_Teleport20.png" id="419" shopprice="10" name="#TELEPORT_20_NAME" maxcharges="3" />
+	<active description="#TELEPORT_20_DESCRIPTION" gfx="Collectibles_419_Teleport20.png" id="419" shopprice="7" name="#TELEPORT_20_NAME" maxcharges="3" />
 	<passive description="#BLACK_POWDER_DESCRIPTION" gfx="Collectibles_420_BlackPowder.png" id="420" name="#BLACK_POWDER_NAME" />
 	<active description="#KIDNEY_BEAN_DESCRIPTION" gfx="Collectibles_421_KidneyBean.png" id="421" name="#KIDNEY_BEAN_NAME" maxcharges="1" />
 	<active description="#GLOWING_HOUR_GLASS_DESCRIPTION" gfx="Collectibles_422_GlowingHourGlass.png" id="422" shopprice="35" name="#GLOWING_HOUR_GLASS_NAME" maxcharges="2" />
