@@ -259,7 +259,7 @@
 	<passive cache="tearflag tearcolor" description="#FIRE_MIND_DESCRIPTION" gfx="collectibles_257_firemind.png" id="257" name="#FIRE_MIND_NAME" />
 	<passive achievement="105" cache="all" description="#MISSING_NO_DESCRIPTION" gfx="collectibles_258_missingno.png" id="258" name="#MISSING_NO_NAME" />
 	<passive cache="damage tearcolor tearflag" description="#DARK_MATTER_DESCRIPTION" gfx="collectibles_259_darkmatter.png" devilprice="1" id="259" name="#DARK_MATTER_NAME" />
-	<passive cache="damage pickupvision" achievement="136" blackhearts="2" description="#BLACK_CANDLE_DESCRIPTION" shopprice="10" gfx="collectibles_260_blackcandle.png" id="260" name="#BLACK_CANDLE_NAME" />
+	<passive cache="damage pickupvision" achievement="136" blackhearts="2" description="#BLACK_CANDLE_DESCRIPTION" shopprice="7" gfx="collectibles_260_blackcandle.png" id="260" name="#BLACK_CANDLE_NAME" />
 	<passive cache="tearflag damage" description="#PROPTOSIS_DESCRIPTION" gfx="collectibles_261_proptosis.png" id="261" name="#PROPTOSIS_NAME" />
 	<passive cache="damage" blackhearts="2" description="#MISSING_PAGE_2_DESCRIPTION" gfx="collectibles_262_missingpage2.png" id="262" name="#MISSING_PAGE_2_NAME" />
 	
