@@ -527,7 +527,7 @@
 	<familiar achievement="352" description="#ANGRY_FLY_DESCRIPTION" gfx="Collectibles_511_AngryFly.png" id="511" name="#ANGRY_FLY_NAME" />
 	<active achievement="349" description="#BLACK_HOLE_DESCRIPTION" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="3" name="#BLACK_HOLE_NAME" />
 	<passive achievement="353" cache="damage" name="#BOZO_NAME" description="#BOZO_DESCRIPTION" soulhearts="2" id="513" gfx="Collectibles_513_Bozo.png" />
-	<passive achievement="354" name="#BROKEN_MODEM_NAME" description="#BROKEN_MODEM_DESCRIPTION" devilprice="2" shopprice="35" id="514" gfx="Collectibles_514_BrokenModem.png" />
+	<passive achievement="354" name="#BROKEN_MODEM_NAME" description="#BROKEN_MODEM_DESCRIPTION" devilprice="2" shopprice="25" id="514" gfx="Collectibles_514_BrokenModem.png" />
 	<active achievement="350" description="#MYSTERY_GIFT_DESCRIPTION" id="515" gfx="Collectibles_515_MysteryGift.png" name="#MYSTERY_GIFT_NAME" />
 	<active achievement="351" cache="familiars" name="#SPRINKLER_NAME" gfx="Collectibles_516_Sprinkler.png" description="#SPRINKLER_DESCRIPTION" id="516" maxcharges="4" />
 	<passive achievement="356" name="#FAST_BOMBS_NAME" gfx="Collectibles_517_FastBombs.png" shopprice="5" description="#FAST_BOMBS_DESCRIPTION" id="517" bombs="7" />
