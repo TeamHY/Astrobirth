@@ -429,7 +429,7 @@
 	<active description="#KIDNEY_BEAN_DESCRIPTION" gfx="Collectibles_421_KidneyBean.png" id="421" name="#KIDNEY_BEAN_NAME" maxcharges="1" />
 	<active description="#GLOWING_HOUR_GLASS_DESCRIPTION" gfx="Collectibles_422_GlowingHourGlass.png" id="422" shopprice="35" name="#GLOWING_HOUR_GLASS_NAME" maxcharges="2" />
 	<passive description="#CIRCLE_OF_PROTECTION_DESCRIPTION" gfx="Collectibles_423_CircleOfProtection.png" id="423" name="#CIRCLE_OF_PROTECTION_NAME" />
-	<passive description="#SACK_HEAD_DESCRIPTION" gfx="Collectibles_424_SackHead.png" id="424" shopprice="33" name="#SACK_HEAD_NAME" />
+	<passive description="#SACK_HEAD_DESCRIPTION" gfx="Collectibles_424_SackHead.png" id="424" shopprice="25" name="#SACK_HEAD_NAME" />
 	<passive description="#NIGHT_LIGHT_DESCRIPTION" devilprice="2" gfx="Collectibles_425_NightLight.png" id="425" name="#NIGHT_LIGHT_NAME" />
 	<familiar description="#OBSESSED_FAN_DESCRIPTION" gfx="Collectibles_426_ObsessedFan.png" id="426" name="#OBSESSED_FAN_NAME" />
 	<active description="#MINE_CRAFTER_DESCRIPTION" gfx="Collectibles_427_MineCrafter.png" id="427" name="#MINE_CRAFTER_NAME" maxcharges="1" />
