@@ -140,8 +140,15 @@ local banItems = {
     },
     [PlayerType.PLAYER_ISAAC] = {
         collectible = {
+            CollectibleType.COLLECTIBLE_ANKH,
+            CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
+            CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
+            Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
+            TrinketType.TRINKET_MISSING_POSTER,
+            TrinketType.TRINKET_BROKEN_ANKH,
         },
         card = {
         },
@@ -267,6 +274,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_SOUL,
             CollectibleType.COLLECTIBLE_HEARTBREAK,
             Astro.Collectible.ARIES_EX,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
@@ -323,6 +331,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -376,6 +385,7 @@ local banItems = {
             Astro.Collectible.ARIES_EX,
             Astro.Collectible.WARD,
             Astro.Collectible.PINK_WARD,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
@@ -392,6 +402,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             CollectibleType.COLLECTIBLE_SCHOOLBAG,
             Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -409,6 +420,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -445,6 +457,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -511,6 +524,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -565,6 +579,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -593,6 +608,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -619,6 +635,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -635,6 +652,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
@@ -651,6 +669,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
