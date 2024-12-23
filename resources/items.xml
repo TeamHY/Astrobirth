@@ -27,7 +27,7 @@
 	<passive description="#ROTTEN_MEAT_DESCRIPTION" gfx="Collectibles_026_RottenMeat.png" hearts="4" id="26" maxhearts="2" name="#ROTTEN_MEAT_NAME" />
 	<passive cache="speed" description="#WOODEN_SPOON_DESCRIPTION" gfx="Collectibles_027_WoodenSpoon.png" id="27" name="#WOODEN_SPOON_NAME" />
 	<passive cache="speed" description="#THE_BELT_DESCRIPTION" gfx="Collectibles_028_TheBelt.png" id="28" shopprice="6" name="#THE_BELT_NAME" />
-	<passive cache="range" description="#MOMS_UNDERWEAR_DESCRIPTION" shopprice="10" gfx="Collectibles_029_MomsUnderwear.png" id="29" name="#MOMS_UNDERWEAR_NAME" />
+	<passive cache="range" description="#MOMS_UNDERWEAR_DESCRIPTION" shopprice="2" gfx="Collectibles_029_MomsUnderwear.png" id="29" name="#MOMS_UNDERWEAR_NAME" />
 	<passive cache="range" description="#MOMS_HEELS_DESCRIPTION" gfx="Collectibles_030_MomsHeels.png" id="30" name="#MOMS_HEELS_NAME" />
 	<passive cache="range" description="#MOMS_LIPSTICK_DESCRIPTION" gfx="Collectibles_031_MomsLipstick.png" id="31" name="#MOMS_LIPSTICK_NAME" />
 	<passive achievement="139" cache="firedelay" description="#WIRE_COAT_HANGER_DESCRIPTION" gfx="Collectibles_032_WireCoatHanger.png" shopprice="7" id="32" name="#WIRE_COAT_HANGER_NAME" />
