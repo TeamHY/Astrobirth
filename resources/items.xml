@@ -559,7 +559,7 @@
 	<passive achievement="385" name="#BLANKET_NAME" description="#BLANKET_DESCRIPTION" gfx="Collectibles_535_Blanket.png" shopprice="11" id="535" hearts="2" soulhearts="2" />
 	<active achievement="383" description="#SACRIFICIAL_ALTAR_DESCRIPTION" gfx="Collectibles_536_SacrificialAltar.png" name="#SACRIFICIAL_ALTAR_NAME" id="536" maxcharges="0" />
 	<familiar achievement="384" name="#LIL_SPEWER_NAME" description="#LIL_SPEWER_DESCRIPTION" gfx="Collectibles_537_LilSpewer.png" id="537" />
-	<passive achievement="386" cache="luck" description="#MARBLES_DESCRIPTION" gfx="Collectibles_538_Marbles.png" name="#MARBLES_NAME" id="538" />
+	<passive achievement="386" cache="luck" description="#MARBLES_DESCRIPTION" gfx="Collectibles_538_Marbles.png" shopprice="10" name="#MARBLES_NAME" id="538" />
 	<familiar achievement="387" name="#MYSTERY_EGG_NAME" description="#MYSTERY_EGG_DESCRIPTION" gfx="Collectibles_539_MysteryEgg.png" id="539" />
 	<passive achievement="382" cache="tearflag damage firedelay range" name="#FLAT_STONE_NAME" gfx="Collectibles_540_FlatStone.png" description="#FLAT_STONE_DESCRIPTION" id="540" />
 	
