@@ -96,7 +96,7 @@
 	<familiar description="#ROBOBABY_DESCRIPTION" gfx="Collectibles_095_RoboBaby.png" id="95" name="#ROBOBABY_NAME" />
 	<familiar achievement="25" description="#LITTLE_CHAD_DESCRIPTION" gfx="Collectibles_096_LittleChad.png" id="96" name="#LITTLE_CHAD_NAME" />
 	<active achievement="22" description="#THE_BOOK_OF_SIN_DESCRIPTION" gfx="Collectibles_097_BookOfSin.png" id="97" maxcharges="4" name="#THE_BOOK_OF_SIN_NAME" />
-	<familiar achievement="20" description="#THE_RELIC_DESCRIPTION" gfx="Collectibles_098_TheRelic.png" id="98" name="#THE_RELIC_NAME" shopprice="15" devilprice="1" />
+	<familiar achievement="20" description="#THE_RELIC_DESCRIPTION" gfx="Collectibles_098_TheRelic.png" id="98" name="#THE_RELIC_NAME" shopprice="9" devilprice="1" />
 	<familiar achievement="23" description="#LITTLE_GISH_DESCRIPTION" gfx="Collectibles_099_LittleGish.png" id="99" name="#LITTLE_GISH_NAME" />
 	<familiar achievement="24" description="#LITTLE_STEVEN_DESCRIPTION" gfx="Collectibles_100_LittleSteve.png" shopprice="8" id="100" name="#LITTLE_STEVEN_NAME" />
 	<passive achievement="27" cache="damage firedelay range speed" description="#THE_HALO_DESCRIPTION" gfx="Collectibles_101_TheHalo.png" hearts="4" id="101" maxhearts="2" name="#THE_HALO_NAME" />
