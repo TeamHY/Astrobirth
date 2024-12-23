@@ -654,7 +654,7 @@
 	<familiar	id="626"	gfx="Collectibles_626_KnifePiece1.png" name="#KNIFE_PIECE_1_NAME" description="#KNIFE_PIECE_1_DESCRIPTION" />
 	<familiar	id="627"	gfx="Collectibles_627_KnifePiece2.png" name="#KNIFE_PIECE_2_NAME" description="#KNIFE_PIECE_2_DESCRIPTION" />
 	<active		id="628"	achievement="636" gfx="Collectibles_628_DeathCertificate.png" name="#DEATH_CERTIFICATE_NAME" description="#DEATH_CERTIFICATE_DESCRIPTION" initcharge="0" maxcharges="12" />
-	<familiar	id="629"	gfx="Collectibles_629_BotFly.png" name="#BOT_FLY_NAME" shopprice="10" description="#BOT_FLY_DESCRIPTION" />
+	<familiar	id="629"	gfx="Collectibles_629_BotFly.png" name="#BOT_FLY_NAME" shopprice="5" description="#BOT_FLY_DESCRIPTION" />
 	
 	<active		id="631"	achievement="440" gfx="Collectibles_631_MeatCleaver.png" name="#MEAT_CLEAVER_NAME" description="#MEAT_CLEAVER_DESCRIPTION" maxcharges="2" />
 	<passive	id="632"	gfx="Collectibles_632_EvilCharm.png" name="#EVIL_CHARM_NAME" shopprice="10" description="#EVIL_CHARM_DESCRIPTION" cache="luck" />
