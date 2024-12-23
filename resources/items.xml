@@ -741,7 +741,7 @@
 	<active		id="713"	achievement="589" gfx="Collectibles_713_Sumptorium.png" name="#SUMPTORIUM_NAME" description="#SUMPTORIUM_DESCRIPTION" maxcharges="300" chargetype="timed" cooldown="60" />
 	<active		id="714"	gfx="Collectibles_714_Recall.png" name="#RECALL_NAME" description="#RECALL_DESCRIPTION" maxcharges="1" chargetype="timed" cache="flying" cooldown="45" hidden="true" />
 	<active		id="715"	gfx="Collectibles_715_Hold.png" name="#HOLD_NAME" description="#HOLD_DESCRIPTION" maxcharges="0" hidden="true" />
-	<passive	id="716"	achievement="464" gfx="Collectibles_716_KeepersSack.png" shopprice="23" name="#KEEPERS_SACK_NAME" description="#KEEPERS_SACK_DESCRIPTION" cache="damage speed range" />
+	<passive	id="716"	achievement="464" gfx="Collectibles_716_KeepersSack.png" shopprice="14" name="#KEEPERS_SACK_NAME" description="#KEEPERS_SACK_DESCRIPTION" cache="damage speed range" />
 	<passive	id="717"	achievement="596" gfx="Collectibles_717_KeepersKin.png" name="#KEEPERS_KIN_NAME" shopprice="23" description="#KEEPERS_KIN_DESCRIPTION" />
 	
 	<active		id="719"	achievement="465" gfx="Collectibles_719_KeepersBox.png" name="#KEEPERS_BOX_NAME" description="#KEEPERS_BOX_DESCRIPTION" maxcharges="4" />
