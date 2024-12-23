@@ -593,7 +593,7 @@
 	<familiar	id="565"	achievement="462" gfx="Collectibles_565_BloodPuppy.png" name="#BLOOD_PUPPY_NAME" description="#BLOOD_PUPPY_DESCRIPTION" />
 	<passive	id="566"	gfx="Collectibles_566_DreamCatcher.png" name="#DREAM_CATCHER_NAME" description="#DREAM_CATCHER_DESCRIPTION" />
 	<familiar	id="567"	gfx="Collectibles_567_PaschalCandle.png" name="#PASCHAL_CANDLE_NAME" description="#PASCHAL_CANDLE_DESCRIPTION" cache="firedelay" devilprice="2" />
-	<passive	id="568"	achievement="423" gfx="Collectibles_568_DivineIntervention.png" shopprice="10" name="#DIVINE_INTERVENTION_NAME" description="#DIVINE_INTERVENTION_DESCRIPTION" />
+	<passive	id="568"	achievement="423" gfx="Collectibles_568_DivineIntervention.png" shopprice="5" name="#DIVINE_INTERVENTION_NAME" description="#DIVINE_INTERVENTION_DESCRIPTION" />
 	<familiar	id="569"	gfx="Collectibles_569_BloodOath.png" name="#BLOOD_OATH_NAME" description="#BLOOD_OATH_DESCRIPTION" cache="damage" />
 	<passive	id="570"	gfx="Collectibles_570_PlaydohCookie.png" name="#PLAYDOUGH_COOKIE_NAME" description="#PLAYDOUGH_COOKIE_DESCRIPTION" cache="tearflag" />
 	<passive	id="571"	gfx="Collectibles_571_Socks.png" name="#ORPHAN_SOCKS_NAME" shopprice="13" description="#ORPHAN_SOCKS_DESCRIPTION" cache="speed" soulhearts="4" />
