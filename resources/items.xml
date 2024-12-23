@@ -477,7 +477,7 @@
 	<familiar description="#FINGER_DESCRIPTION" gfx="Collectibles_467_Finger.png" id="467" name="#FINGER_NAME" />
 	<familiar achievement="285" description="#SHADE_DESCRIPTION" gfx="Collectibles_468_Shade.png" id="468" name="#SHADE_NAME" />
 	<familiar description="#DEPRESSION_DESCRIPTION" gfx="Collectibles_469_Depression.png" id="469" name="#DEPRESSION_NAME" />
-	<familiar achievement="315" description="#HUSHY_DESCRIPTION" gfx="Collectibles_470_Hushy.png" id="470" shopprice="5" name="#HUSHY_NAME" />
+	<familiar achievement="315" description="#HUSHY_DESCRIPTION" gfx="Collectibles_470_Hushy.png" id="470" shopprice="2" name="#HUSHY_NAME" />
 	<familiar description="#LIL_MONSTRO_DESCRIPTION" gfx="Collectibles_471_LilMonstro.png" id="471" name="#LIL_MONSTRO_NAME" />
 	<familiar achievement="286" description="#KING_BABY_DESCRIPTION" gfx="Collectibles_472_KingBaby.png" id="472" devilprice="2" name="#KING_BABY_NAME" />
 	<familiar description="#BIG_CHUBBY_DESCRIPTION" gfx="Collectibles_473_BigChubby.png" id="473" shopprice="5" name="#BIG_CHUBBY_NAME" />
