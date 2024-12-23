@@ -44,7 +44,7 @@
 	<!-- <active description="#PILLS_HERE_DESCRIPTION" id="43" name="#PILLS_HERE_NAME" /> -->
 	<active cooldown="30" description="#TELEPORT_DESCRIPTION" gfx="Collectibles_044_Teleport.png" id="44" shopprice="6" maxcharges="2" name="#TELEPORT_NAME" />
 	<active description="#YUM_HEART_DESCRIPTION" gfx="Collectibles_045_YumHeart.png" id="45" maxcharges="4" name="#YUM_HEART_NAME" />
-	<passive cache="luck" description="#LUCKY_FOOT_DESCRIPTION" gfx="Collectibles_046_LuckyFoot.png" id="46" shopprice="15" name="#LUCKY_FOOT_NAME" />
+	<passive cache="luck" description="#LUCKY_FOOT_DESCRIPTION" gfx="Collectibles_046_LuckyFoot.png" id="46" shopprice="11" name="#LUCKY_FOOT_NAME" />
 	<active description="#DOCTORS_REMOTE_DESCRIPTION" gfx="Collectibles_047_DoctorsRemote.png" id="47" maxcharges="2" name="#DOCTORS_REMOTE_NAME" />
 	<passive cache="tearflag" description="#CUPIDS_ARROW_DESCRIPTION" gfx="Collectibles_048_CupidsArrow.png" id="48" name="#CUPIDS_ARROW_NAME" />
 	<active description="#SHOOP_DA_WHOOP_DESCRIPTION" gfx="Collectibles_049_ShoopDaWhoop.png" id="49" maxcharges="2" name="#SHOOP_DA_WHOOP_NAME" />
