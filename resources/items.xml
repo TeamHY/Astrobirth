@@ -206,7 +206,7 @@
 	<passive description="#FANNY_PACK_DESCRIPTION" gfx="collectibles_204_fannypack.png" id="204" name="#FANNY_PACK_NAME" />
 	<passive description="#SHARP_PLUG_DESCRIPTION" gfx="collectibles_205_sharpplug.png" id="205" name="#SHARP_PLUG_NAME" />
 	<familiar achievement="107" cache="damage firedelay" description="#GUILLOTINE_DESCRIPTION" gfx="collectibles_206_guillotine.png" id="206" name="#GUILLOTINE_NAME" />
-	<familiar achievement="6" description="#BALL_OF_BANDAGES_DESCRIPTION" gfx="collectibles_207_ballofbandages.png" id="207" shopprice="5" name="#BALL_OF_BANDAGES_NAME" />
+	<familiar achievement="6" description="#BALL_OF_BANDAGES_DESCRIPTION" gfx="collectibles_207_ballofbandages.png" id="207" shopprice="3" name="#BALL_OF_BANDAGES_NAME" />
 	<passive cache="damage" description="#CHAMPION_BELT_DESCRIPTION" gfx="collectibles_208_championbelt.png" id="208" shopprice="5" name="#CHAMPION_BELT_NAME" />
 	<passive bombs="5" description="#BUTT_BOMBS_DESCRIPTION" gfx="collectibles_209_buttbombs.png" id="209" name="#BUTT_BOMBS_NAME" />
 	<passive description="#GNAWED_LEAF_DESCRIPTION" gfx="Collectibles_210_GnawedLeaf.png" id="210" name="#GNAWED_LEAF_NAME" />
