@@ -626,7 +626,7 @@
 	<passive	id="598"	gfx="Collectibles_598_Pluto.png" name="#PLUTO_NAME" description="#PLUTO_DESCRIPTION" cache="range firedelay speed size" />
 	<passive	id="599"	gfx="Collectibles_599_VoodooHead.png" name="#VOODOO_HEAD_NAME" description="#VOODOO_HEAD_DESCRIPTION" />
 	<passive	id="600"	gfx="Collectibles_600_EyeDrops.png" name="#EYE_DROPS_NAME" description="#EYE_DROPS_DESCRIPTION" cache="firedelay" />
-	<passive	id="601"	gfx="Collectibles_601_ActOfContrition.png" shopprice="21" name="#ACT_OF_CONTRITION_NAME" description="#ACT_OF_CONTRITION_DESCRIPTION" cache="firedelay" />
+	<passive	id="601"	gfx="Collectibles_601_ActOfContrition.png" shopprice="19" name="#ACT_OF_CONTRITION_NAME" description="#ACT_OF_CONTRITION_DESCRIPTION" cache="firedelay" />
 	<passive	id="602"	achievement="582" gfx="Collectibles_602_MemberCard.png" name="#MEMBER_CARD_NAME" description="#MEMBER_CARD_DESCRIPTION" />
 	<passive	id="603"	gfx="Collectibles_603_BatteryPack.png" name="#BATTERY_PACK_NAME" description="#BATTERY_PACK_DESCRIPTION" />
 	<active		id="604"	gfx="Collectibles_604_MomsBracelet.png" name="#MOMS_BRACELET_NAME" description="#MOMS_BRACELET_DESCRIPTION" shopprice="10" maxcharges="30" chargetype="timed" />
