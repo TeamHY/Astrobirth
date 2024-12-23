@@ -685,7 +685,7 @@
 	<passive	id="657"	gfx="Collectibles_657_Vasculitis.png" name="#VASCULITIS_NAME" description="#VASCULITIS_DESCRIPTION" />
 	<passive	id="658"	gfx="Collectibles_658_GiantCell.png" name="#GIANT_CELL_NAME" description="#GIANT_CELL_DESCRIPTION" />
 	<passive	id="659"	gfx="Collectibles_659_Tropicamide.png" name="#TROPICAMIDE_NAME" description="#TROPICAMIDE_DESCRIPTION" cache="range" />
-	<passive	id="660"	gfx="Collectibles_660_CardReading.png" shopprice="35" name="#CARD_READING_NAME" description="#CARD_READING_DESCRIPTION" />
+	<passive	id="660"	gfx="Collectibles_660_CardReading.png" shopprice="25" name="#CARD_READING_NAME" description="#CARD_READING_DESCRIPTION" />
 	<passive	id="661"	gfx="Collectibles_661_Quints.png" name="#QUINTS_NAME" description="#QUINTS_DESCRIPTION" />
 	
 	<passive	id="663"	gfx="Collectibles_663_ToothAndNail.png" name="#TOOTH_AND_NAIL_NAME" shopprice="5" description="#TOOTH_AND_NAIL_DESCRIPTION" />
