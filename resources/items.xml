@@ -280,7 +280,7 @@
 	<familiar description="#LIL_BRIMSTONE_DESCRIPTION" gfx="collectibles_275_lilbrimstone.png" devilprice="1" id="275" name="#LIL_BRIMSTONE_NAME" />
 	<familiar achievement="129" description="#ISAACS_HEART_DESCRIPTION" gfx="collectibles_276_isaacsheart.png" id="276" name="#ISAACS_HEART_NAME" />
 	<familiar description="#LIL_HAUNT_DESCRIPTION" gfx="collectibles_277_lilhaunt.png" id="277" name="#LIL_HAUNT_NAME" />
-	<familiar description="#DARK_BUM_DESCRIPTION" gfx="collectibles_278_darkbum.png" id="278" shopprice="10" name="#DARK_BUM_NAME" />
+	<familiar description="#DARK_BUM_DESCRIPTION" gfx="collectibles_278_darkbum.png" id="278" shopprice="5" name="#DARK_BUM_NAME" />
 	<familiar description="#BIG_FAN_DESCRIPTION" gfx="collectibles_279_bigfan.png" id="279" name="#BIG_FAN_NAME" />
 	<familiar description="#SISSY_LONGLEGS_DESCRIPTION" gfx="collectibles_280_sissylonglegs.png" id="280" name="#SISSY_LONGLEGS_NAME" />
 	<familiar description="#PUNCHING_BAG_DESCRIPTION" gfx="collectibles_281_punchingbag.png" id="281" shopprice="7" name="#PUNCHING_BAG_NAME" />
