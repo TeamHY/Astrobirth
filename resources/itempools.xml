@@ -861,12 +861,13 @@
 		<Item Id="617" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="623" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="629" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="633" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="639" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="653" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="654" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="660" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Id="633" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="663" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="669" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="670" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="675" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="683" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
