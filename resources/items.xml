@@ -268,7 +268,7 @@
 	
 	<familiar description="#SMART_FLY_DESCRIPTION" gfx="collectibles_264_smartfly.png" id="264" name="#SMART_FLY_NAME" />
 	<familiar description="#DRY_BABY_DESCRIPTION" gfx="collectibles_265_drybaby.png" id="265" name="#DRY_BABY_NAME" />
-	<familiar description="#JUICY_SACK_DESCRIPTION" gfx="collectibles_266_juicysack.png" id="266" name="#JUICY_SACK_NAME" />
+	<familiar description="#JUICY_SACK_DESCRIPTION" gfx="collectibles_266_juicysack.png" id="266" shopprice="5" name="#JUICY_SACK_NAME" />
 	<familiar achievement="102" description="#ROBOBABY_20_DESCRIPTION" gfx="collectibles_267_robobaby2.png" id="267" name="#ROBOBABY_20_NAME" />
 	<familiar description="#ROTTEN_BABY_DESCRIPTION" gfx="collectibles_268_rottenbaby.png" id="268" shopprice="15" name="#ROTTEN_BABY_NAME" />
 	<familiar description="#HEADLESS_BABY_DESCRIPTION" gfx="collectibles_269_headlessbaby.png" id="269" name="#HEADLESS_BABY_NAME" />
