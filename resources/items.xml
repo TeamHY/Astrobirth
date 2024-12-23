@@ -54,7 +54,7 @@
 	<passive description="#MAGNETO_DESCRIPTION" gfx="Collectibles_053_Magneto.png" id="53" name="#MAGNETO_NAME" />
 	<passive description="#TREASURE_MAP_DESCRIPTION" gfx="Collectibles_054_TreasureMap.png" id="54" shopprice="35" name="#TREASURE_MAP_NAME" />
 	<passive description="#MOMS_EYE_DESCRIPTION" gfx="Collectibles_055_MomsEye.png" id="55" name="#MOMS_EYE_NAME" />
-	<active description="#LEMON_MISHAP_DESCRIPTION" gfx="Collectibles_056_LemonMishap.png" id="56" maxcharges="2" name="#LEMON_MISHAP_NAME" />
+	<active description="#LEMON_MISHAP_DESCRIPTION" gfx="Collectibles_056_LemonMishap.png" id="56" maxcharges="1" shopprice="2" name="#LEMON_MISHAP_NAME" />
 	<familiar description="#DISTANT_ADMIRATION_DESCRIPTION" gfx="Collectibles_057_DistantAdmiration.png" id="57" name="#DISTANT_ADMIRATION_NAME" />
 	<active cooldown="300" description="#BOOK_OF_SHADOWS_DESCRIPTION" gfx="Collectibles_058_BookOfShadows.png" id="58" maxcharges="3" persistent="false" name="#BOOK_OF_SHADOWS_NAME" />
 	<passive cache="damage" description="#THE_BOOK_OF_BELIAL_DESCRIPTION" gfx="Collectibles_034_TheBookOfBelial.png" id="59" maxcharges="3" name="#THE_BOOK_OF_BELIAL_NAME" hidden="true" />
