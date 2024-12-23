@@ -211,7 +211,7 @@
 	<passive bombs="5" description="#BUTT_BOMBS_DESCRIPTION" gfx="collectibles_209_buttbombs.png" id="209" name="#BUTT_BOMBS_NAME" />
 	<passive description="#GNAWED_LEAF_DESCRIPTION" gfx="Collectibles_210_GnawedLeaf.png" id="210" name="#GNAWED_LEAF_NAME" />
 	<passive description="#SPIDERBABY_DESCRIPTION" gfx="collectibles_211_spiderbaby.png" id="211" name="#SPIDERBABY_NAME" />
-	<passive description="#GUPPYS_COLLAR_DESCRIPTION" gfx="Collectibles_212_GuppysCollar.png" id="212" name="#GUPPYS_COLLAR_NAME" />
+	<passive description="#GUPPYS_COLLAR_DESCRIPTION" gfx="Collectibles_212_GuppysCollar.png" id="212" shopprice="10" name="#GUPPYS_COLLAR_NAME" />
 	<passive cache="shotspeed tearflag damage" description="#LOST_CONTACT_DESCRIPTION" gfx="collectibles_213_lostcontact.png" id="213" name="#LOST_CONTACT_NAME" />
 	<passive cache="range" description="#ANEMIC_DESCRIPTION" gfx="collectibles_214_anemic.png" id="214" name="#ANEMIC_NAME" />
 	<passive cache="damage" description="#GOAT_HEAD_DESCRIPTION" devilprice="2" gfx="collectibles_215_goathead.png" id="215" name="#GOAT_HEAD_NAME" />
