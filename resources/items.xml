@@ -83,7 +83,7 @@
 	<passive cache="flying speed" description="#LORD_OF_THE_PIT_DESCRIPTION" devilprice="2" gfx="Collectibles_082_LordOfThePit.png" id="82" name="#LORD_OF_THE_PIT_NAME" />
 	<active achievement="9" cache="speed damage" description="#THE_NAIL_DESCRIPTION" gfx="Collectibles_083_TheNail.png" id="83" maxcharges="6" name="#THE_NAIL_NAME" />
 	<active description="#WE_NEED_TO_GO_DEEPER_DESCRIPTION" gfx="Collectibles_084_WeNeedToGoDeeper.png" id="84" maxcharges="6" name="#WE_NEED_TO_GO_DEEPER_NAME" />
-	<active description="#DECK_OF_CARDS_DESCRIPTION" gfx="Collectibles_085_DeckOfCards.png" id="85" maxcharges="4" name="#DECK_OF_CARDS_NAME" />
+	<active description="#DECK_OF_CARDS_DESCRIPTION" gfx="Collectibles_085_DeckOfCards.png" id="85" shopprice="7" maxcharges="4" name="#DECK_OF_CARDS_NAME" />
 	<active achievement="13" description="#MONSTROS_TOOTH_DESCRIPTION" gfx="Collectibles_086_MonstrosTooth.png" id="86" maxcharges="3" name="#MONSTROS_TOOTH_NAME" addcostumeonpickup="true" />
 	<passive achievement="15" description="#LOKIS_HORNS_DESCRIPTION" gfx="Collectibles_087_LokisHorns.png" id="87" name="#LOKIS_HORNS_NAME" />
 	<familiar achievement="14" description="#LITTLE_CHUBBY_DESCRIPTION" gfx="Collectibles_088_LittleChubby.png" id="88" name="#LITTLE_CHUBBY_NAME" />
