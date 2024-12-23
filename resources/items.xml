@@ -76,7 +76,7 @@
 	<passive description="#PHD_DESCRIPTION" gfx="Collectibles_075_PHD.png" hearts="4" shopprice="15" id="75" name="#PHD_NAME" />
 	<passive description="#XRAY_VISION_DESCRIPTION" gfx="Collectibles_076_XrayVision.png" id="76" shopprice="30" name="#XRAY_VISION_NAME" />
 	<active cache="speed" cooldown="180" description="#MY_LITTLE_UNICORN_DESCRIPTION" gfx="Collectibles_077_MyLittleUnicorn.png" id="77" maxcharges="4" name="#MY_LITTLE_UNICORN_NAME" />
-	<active achievement="7" description="#BOOK_OF_REVELATIONS_DESCRIPTION" shopprice="10" gfx="Collectibles_078_BookOfRevelations.png" id="78" maxcharges="6" name="#BOOK_OF_REVELATIONS_NAME" />
+	<active achievement="7" description="#BOOK_OF_REVELATIONS_DESCRIPTION" shopprice="5" gfx="Collectibles_078_BookOfRevelations.png" id="78" maxcharges="6" name="#BOOK_OF_REVELATIONS_NAME" />
 	<passive cache="damage speed" description="#THE_MARK_DESCRIPTION" gfx="Collectibles_079_TheMark.png" devilprice="1" id="79" name="#THE_MARK_NAME" blackhearts="2" />
 	<passive cache="damage firedelay" description="#THE_PACT_DESCRIPTION" devilprice="2" gfx="Collectibles_080_ThePact.png" id="80" name="#THE_PACT_NAME" blackhearts="4" />
 	<familiar description="#DEAD_CAT_DESCRIPTION" gfx="Collectibles_081_DeadCat.png" id="81" name="#DEAD_CAT_NAME" devilprice="2" />
