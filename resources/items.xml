@@ -164,7 +164,7 @@
 	<familiar description="#GHOST_BABY_DESCRIPTION" gfx="Collectibles_163_GhostBaby.png" id="163" name="#GHOST_BABY_NAME" />
 	<active achievement="59" description="#THE_CANDLE_DESCRIPTION" gfx="Collectibles_164_BlueCandle.png" id="164" maxcharges="110" name="#THE_CANDLE_NAME" chargetype="timed" />
 	<passive cache="shotspeed damage" description="#CATONINETAILS_DESCRIPTION" gfx="Collectibles_165_CatONineTails.png" id="165" name="#CATONINETAILS_NAME" />
-	<active achievement="49" description="#D20_DESCRIPTION" gfx="Collectibles_166_D20.png" id="166" maxcharges="3" name="#D20_NAME" />
+	<active achievement="49" description="#D20_DESCRIPTION" gfx="Collectibles_166_D20.png" id="166" maxcharges="3" shopprice="5" name="#D20_NAME" />
 	<familiar description="#HARLEQUIN_BABY_DESCRIPTION" gfx="Collectibles_167_HarlequinBaby.png" id="167" name="#HARLEQUIN_BABY_NAME" />
 	<passive achievement="62" cache="all" description="#EPIC_FETUS_DESCRIPTION" gfx="Collectibles_168_EpicFetus.png" id="168" name="#EPIC_FETUS_NAME" special="true" />
 	<passive cache="damage firedelay tearflag" description="#POLYPHEMUS_DESCRIPTION" devilprice="2" gfx="Collectibles_169_Polyphemus.png" id="169" name="#POLYPHEMUS_NAME" special="true" />
