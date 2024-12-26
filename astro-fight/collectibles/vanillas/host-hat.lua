@@ -5,6 +5,7 @@ local ITEM_LIST = {
     CollectibleType.COLLECTIBLE_EPIC_FETUS,
     CollectibleType.COLLECTIBLE_FRUIT_CAKE,
     CollectibleType.COLLECTIBLE_FIRE_MIND,
+    CollectibleType.COLLECTIBLE_BBF,
 }
 ---
 
