@@ -5,8 +5,6 @@ require "astro-fight.collectibles.active"
 require "astro-fight.collectibles.status"
 require "astro-fight.collectibles.transformation"
 
-require "astro-fight.collectibles.customs.ez-mode"
-
 require "astro-fight.collectibles.vanillas.aquarius"
 require "astro-fight.collectibles.vanillas.birthright"
 require "astro-fight.collectibles.vanillas.blood-oath"

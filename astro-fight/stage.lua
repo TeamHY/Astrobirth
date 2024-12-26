@@ -137,9 +137,31 @@ Astro:AddPriorityCallback(
     end
 )
 
+local function DisplayCurseRoom()
+    local level = Game():GetLevel()
+
+    for i = 0, 169 do
+        local room = level:GetRoomByIdx(i)
+
+        if room.Data then
+            if room.Data.Type == RoomType.ROOM_CURSE then
+                room.DisplayFlags = room.DisplayFlags | RoomDescriptor.DISPLAY_BOX | RoomDescriptor.DISPLAY_ICON
+            end
+        end
+    end
+
+    level:UpdateVisibility()
+end
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_LEVEL,
     function(_)
+        local level = Game():GetLevel()
+
+        if level:GetAbsoluteStage() == LevelStage.STAGE1_1 then
+            DisplayCurseRoom()
+        end
+
         local hasMissingNo = false
 
         for i = 1, Game():GetNumPlayers() do
@@ -151,7 +173,6 @@ Astro:AddCallback(
         end
 
         if tryCount < LIMIT and not hasMissingNo then
-            local level = Game():GetLevel()
             local sacrificeRoom = level:GetRoomByIdx(level:QueryRoomTypeIndex(RoomType.ROOM_SACRIFICE, false, RNG()))
 
             -- 막달레나일 경우 케이스 추가
