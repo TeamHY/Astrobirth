@@ -622,7 +622,7 @@
 	<passive	id="594"	gfx="Collectibles_594_Jupiter.png" name="#JUPITER_NAME" description="#JUPITER_DESCRIPTION" maxhearts="4" hearts="1" cache="speed range" />
 	<passive	id="595"	gfx="Collectibles_595_Saturnus.png" name="#SATURNUS_NAME" description="#SATURNUS_DESCRIPTION" />
 	<passive	id="596"	gfx="Collectibles_596_Uranus.png" name="#URANUS_NAME" devilprice="2" description="#URANUS_DESCRIPTION" cache="tearflag tearcolor" />
-	<passive	id="597"	gfx="Collectibles_597_Neptunus.png" name="#NEPTUNUS_NAME" description="#NEPTUNUS_DESCRIPTION" />
+	<passive	id="597"	gfx="Collectibles_597_Neptunus.png" name="#NEPTUNUS_NAME" description="#NEPTUNUS_DESCRIPTION" cache="firedelay" />
 	<passive	id="598"	gfx="Collectibles_598_Pluto.png" name="#PLUTO_NAME" description="#PLUTO_DESCRIPTION" cache="range firedelay speed size" />
 	<passive	id="599"	gfx="Collectibles_599_VoodooHead.png" name="#VOODOO_HEAD_NAME" description="#VOODOO_HEAD_DESCRIPTION" />
 	<passive	id="600"	gfx="Collectibles_600_EyeDrops.png" name="#EYE_DROPS_NAME" description="#EYE_DROPS_DESCRIPTION" cache="firedelay" />
