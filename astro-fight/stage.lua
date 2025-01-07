@@ -8,7 +8,9 @@ local champBanList = { 2, 3, 4, 6, 7, 8, 11, 14, 18, 23, 24, 25 }
 ---@return boolean
 local function CheckHeartLimit(player, stage)
     if player:HasCollectible(Astro.Collectible.VERY_EZ_MODE) then
-        return false
+        if player:GetPlayerType() ~= PlayerType.PLAYER_THEFORGOTTEN and player:GetPlayerType() ~= PlayerType.PLAYER_THESOUL then
+            return false
+        end
     end
 
     local level = Game():GetLevel()
@@ -28,7 +30,7 @@ Astro:AddCallback(
 
         if playerType == PlayerType.PLAYER_THEFORGOTTEN then
             if CheckHeartLimit(player, stage) then
-                player:AddBrokenHearts(4 - player:GetBrokenHearts())
+                player:AddBrokenHearts(5 - player:GetBrokenHearts())
             end
 
             player:GetSubPlayer():AddBrokenHearts(6 - player:GetSubPlayer():GetBrokenHearts())
@@ -36,7 +38,7 @@ Astro:AddCallback(
             player:AddBrokenHearts(6 - player:GetBrokenHearts())
 
             if CheckHeartLimit(player, stage) then
-                player:GetSubPlayer():AddBrokenHearts(4 - player:GetSubPlayer():GetBrokenHearts())
+                player:GetSubPlayer():AddBrokenHearts(5 - player:GetSubPlayer():GetBrokenHearts())
             end
         elseif CheckHeartLimit(player, stage) or player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
             if playerType ~= PlayerType.PLAYER_KEEPER and playerType ~= PlayerType.PLAYER_KEEPER_B and playerType ~= PlayerType.PLAYER_THESOUL_B then
