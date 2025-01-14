@@ -1,3 +1,11 @@
+local latterStageBanItems = {
+    collectible = {
+        Astro.Collectible.EZ_MODE,
+    },
+    trinket = {
+    }
+}
+
 local banItems = {
     common = {
         collectible = {
@@ -966,3 +974,58 @@ function Astro:AutoWasting(player)
 end
 
 Astro:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astro.AutoWasting)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_LEVEL,
+    function(_)
+        if Astro:IsLatterStage() then
+            local itemPool = Game():GetItemPool()
+
+            for _, collectible in ipairs(latterStageBanItems.collectible) do
+                for i = 1, Game():GetNumPlayers() do
+                    local player = Isaac.GetPlayer(i - 1)
+                
+                    Astro:RemoveAllCollectible(player, collectible)
+                end
+
+                itemPool:RemoveCollectible(collectible)
+            end
+
+            for _, trinket in ipairs(latterStageBanItems.trinket) do
+                for i = 1, Game():GetNumPlayers() do
+                    local player = Isaac.GetPlayer(i - 1)
+                
+                    Astro:RemoveAllTrinket(player, trinket)
+                end
+
+                itemPool:RemoveTrinket(trinket)
+            end
+        end
+    end
+)
+
+
+Astro:AddCallback(
+    Astro.Callbacks.POST_ITEM_PICKUP,
+    ---@param player EntityPlayer
+    ---@param pickingUpItem { itemType: ItemType, subType: CollectibleType | TrinketType }
+    function(_, player, pickingUpItem)
+        if Astro:IsLatterStage() then
+            if pickingUpItem.itemType ~= ItemType.ITEM_TRINKET then
+                for _, collectible in ipairs(latterStageBanItems.collectible) do
+                    if collectible == pickingUpItem.subType then
+                        Astro:RemoveAllCollectible(player, collectible)
+                        break
+                    end
+                end
+            else
+                for _, trinket in ipairs(latterStageBanItems.trinket) do
+                    if trinket == pickingUpItem.subType then
+                        Astro:RemoveAllTrinket(player, trinket)
+                        break
+                    end
+                end
+            end
+        end
+    end
+)
