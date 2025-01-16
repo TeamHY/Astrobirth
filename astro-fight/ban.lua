@@ -81,7 +81,6 @@ local banItems = {
             CollectibleType.COLLECTIBLE_SPIRIT_SWORD,
             Astro.Collectible.REINCARNATION,
             Astro.Collectible.BONFIRE,
-            Astro.Collectible.SANDEVISTAN,
 
         },
         trinket = {
