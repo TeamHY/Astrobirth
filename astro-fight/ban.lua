@@ -796,6 +796,36 @@ local banItems = {
     },
 }
 
+if EID then
+    EID:addDescriptionModifier(
+        "AstroLatterStageBan",
+        function(descObj)
+            if descObj.ObjType == EntityType.ENTITY_PICKUP and (descObj.ObjVariant == PickupVariant.PICKUP_COLLECTIBLE or descObj.ObjVariant == PickupVariant.PICKUP_TRINKET) then
+                return true
+            end
+        end,
+        function(descObj)
+            if descObj.ObjVariant == PickupVariant.PICKUP_COLLECTIBLE then
+                for _, collectible in ipairs(latterStageBanItems.collectible) do
+                    if descObj.ObjSubType == collectible then
+                        EID:appendToDescription(descObj, "#!!! {{ColorRed}}9 스테이지 이후 아이템이 제거됩니다.")
+                        break
+                    end
+                end
+            elseif descObj.ObjVariant == PickupVariant.PICKUP_TRINKET then
+                for _, trinket in ipairs(latterStageBanItems.trinket) do
+                    if descObj.ObjSubType == trinket then
+                        EID:appendToDescription(descObj, "#!!! {{ColorRed}}9 스테이지 이후 아이템이 제거됩니다.")
+                        break
+                    end
+                end
+            end
+
+            return descObj
+        end
+    )
+end
+
 local function GetBanTables()
     local banTables = { banItems.common }
 
