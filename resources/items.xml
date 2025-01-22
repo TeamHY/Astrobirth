@@ -716,7 +716,7 @@
 	<passive	id="688"	achievement="434" gfx="Collectibles_688_InnerChild.png" name="#INNER_CHILD_NAME" description="#INNER_CHILD_DESCRIPTION" persistent="true" cache="range firedelay speed size" addcostumeonpickup="false" />
 	<passive	id="689"	achievement="491" gfx="Collectibles_689_GlitchedCrown.png" name="#GLITCHED_CROWN_NAME" description="#GLITCHED_CROWN_DESCRIPTION" />
 	<passive	id="690"	achievement="492" gfx="Collectibles_690_BellyJelly.png" name="#BELLY_JELLY_NAME" shopprice="20" description="#BELLY_JELLY_DESCRIPTION" />
-	<passive	id="691"	achievement="501" gfx="Collectibles_691_SacredOrb.png" name="#SACRED_ORB_NAME" description="#SACRED_ORB_DESCRIPTION" devilprice="2" />
+	<passive	id="691"	achievement="501" gfx="Collectibles_691_SacredOrb.png" name="#SACRED_ORB_NAME" shopprice="30" description="#SACRED_ORB_DESCRIPTION" devilprice="2" />
 	<passive	id="692"	achievement="494" gfx="Collectibles_692_SanguineBond.png" name="#SANGUINE_BOND_NAME" description="#SANGUINE_BOND_DESCRIPTION" persistent="true" cache="damage" />
 	<passive	id="693"	achievement="495" gfx="Collectibles_693_TheSwarm.png" name="#THE_SWARM_NAME" shopprice="22" description="#THE_SWARM_DESCRIPTION" />
 	<passive	id="694"	achievement="496" gfx="Collectibles_694_Heartbreak.png" name="#HEARTBREAK_NAME" description="#HEARTBREAK_DESCRIPTION" cache="damage" />
