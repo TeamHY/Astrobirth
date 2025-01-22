@@ -1,6 +1,12 @@
 local latterStageBanItems = {
     collectible = {
         Astro.Collectible.EZ_MODE,
+        Astro.Collectible.SOL_EX,
+        CollectibleType.COLLECTIBLE_SOY_MILK,
+        CollectibleType.COLLECTIBLE_SOL,
+        CollectibleType.COLLECTIBLE_FRUIT_CAKE,
+        CollectibleType.COLLECTIBLE_GHOST_PEPPER,
+        CollectibleType.COLLECTIBLE_BIRDS_EYE,
     },
     trinket = {
     }
@@ -10,7 +16,6 @@ local banItems = {
     common = {
         collectible = {
             CollectibleType.COLLECTIBLE_DADS_NOTE,
-            CollectibleType.COLLECTIBLE_CANCER,
             CollectibleType.COLLECTIBLE_FRIEND_FINDER,
             CollectibleType.COLLECTIBLE_SPIN_TO_WIN,
             CollectibleType.COLLECTIBLE_MEGA_BEAN,
@@ -64,7 +69,6 @@ local banItems = {
             CollectibleType.COLLECTIBLE_OBSESSED_FAN,
             CollectibleType.COLLECTIBLE_FRIEND_ZONE,
             CollectibleType.COLLECTIBLE_SHARD_OF_GLASS,
-            CollectibleType.COLLECTIBLE_BLACK_BEAN,
             CollectibleType.COLLECTIBLE_LADDER,
             CollectibleType.COLLECTIBLE_KIDNEY_STONE,
             CollectibleType.COLLECTIBLE_SPIRIT_SHACKLES,
@@ -74,9 +78,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_JUPITER,
             CollectibleType.COLLECTIBLE_BUMBO,
             CollectibleType.COLLECTIBLE_GREEDS_GULLET,
-            CollectibleType.COLLECTIBLE_BIRDS_EYE,
             CollectibleType.COLLECTIBLE_GODS_FLESH,
-            CollectibleType.COLLECTIBLE_FRUIT_CAKE,
             CollectibleType.COLLECTIBLE_WHORE_OF_BABYLON,
             CollectibleType.COLLECTIBLE_SPIRIT_SWORD,
             Astro.Collectible.REINCARNATION,
