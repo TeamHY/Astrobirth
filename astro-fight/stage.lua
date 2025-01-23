@@ -31,6 +31,10 @@ Astro:AddCallback(
         if playerType == PlayerType.PLAYER_THEFORGOTTEN then
             if CheckHeartLimit(player, stage) then
                 player:AddBrokenHearts(5 - player:GetBrokenHearts())
+                
+                if player:GetBoneHearts() > 1 then
+                    player:AddBoneHearts(-1)
+                end
             end
 
             player:GetSubPlayer():AddBrokenHearts(6 - player:GetSubPlayer():GetBrokenHearts())
@@ -39,6 +43,10 @@ Astro:AddCallback(
 
             if CheckHeartLimit(player, stage) then
                 player:GetSubPlayer():AddBrokenHearts(5 - player:GetSubPlayer():GetBrokenHearts())
+
+                if player:GetSubPlayer():GetBoneHearts() > 1 then
+                    player:GetSubPlayer():AddBoneHearts(-1)
+                end
             end
         elseif CheckHeartLimit(player, stage) or player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
             if playerType ~= PlayerType.PLAYER_KEEPER and playerType ~= PlayerType.PLAYER_KEEPER_B and playerType ~= PlayerType.PLAYER_THESOUL_B then
