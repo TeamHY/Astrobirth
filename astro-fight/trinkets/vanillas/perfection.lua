@@ -6,10 +6,20 @@ function Astro:HasPerfectionEffect(player)
 end
 
 Astro:AddCallback(
-    Astro.Callbacks.REMOVED_PERFECTION,
-    ---@param position Vector
-    function(_, position)
-        Astro:SpawnTrinket(Astro.Trinket.FLUNK, position)
+    ModCallbacks.MC_ENTITY_TAKE_DMG,
+    ---@param entity Entity
+    ---@param amount number
+    ---@param damageFlags number
+    ---@param source EntityRef
+    ---@param countdownFrames number
+    function(_, entity, amount, damageFlags, source, countdownFrames)
+        local player = entity:ToPlayer()
+
+        if player ~= nil and player:HasTrinket(TrinketType.TRINKET_PERFECTION) then
+            if damageFlags & (DamageFlag.DAMAGE_NO_PENALTIES | DamageFlag.DAMAGE_RED_HEARTS) == 0 then
+                Astro:SpawnTrinket(Astro.Trinket.FLUNK, player.Position)
+            end
+        end
     end
 )
 
