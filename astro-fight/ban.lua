@@ -7,6 +7,7 @@ local latterStageBanItems = {
         CollectibleType.COLLECTIBLE_FRUIT_CAKE,
         CollectibleType.COLLECTIBLE_GHOST_PEPPER,
         CollectibleType.COLLECTIBLE_BIRDS_EYE,
+        CollectibleType.COLLECTIBLE_PARASITE,
     },
     trinket = {
     }
@@ -18,14 +19,12 @@ local banItems = {
             CollectibleType.COLLECTIBLE_DADS_NOTE,
             CollectibleType.COLLECTIBLE_FRIEND_FINDER,
             CollectibleType.COLLECTIBLE_SPIN_TO_WIN,
-            CollectibleType.COLLECTIBLE_MEGA_BEAN,
             CollectibleType.COLLECTIBLE_MOMS_PURSE,
             CollectibleType.COLLECTIBLE_KNIFE_PIECE_1,
             CollectibleType.COLLECTIBLE_KNIFE_PIECE_2,
             CollectibleType.COLLECTIBLE_CLICKER,
             CollectibleType.COLLECTIBLE_D100,
             CollectibleType.COLLECTIBLE_MORE_OPTIONS,
-            CollectibleType.COLLECTIBLE_PARASITE,
             CollectibleType.COLLECTIBLE_MARS,
             CollectibleType.COLLECTIBLE_DAMOCLES,
             CollectibleType.COLLECTIBLE_GLITCHED_CROWN,
