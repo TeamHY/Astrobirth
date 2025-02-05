@@ -169,7 +169,7 @@
           nameimage="PlayerName_09_Eden.png" 
           portrait="PlayerPortrait_Eden_b.png" extraportrait="eden_b_head.anm2" skinColor="-1"
 		  birthright="#EDEN_B_BIRTHRIGHT" />
-	<player id="31" name="#THE_LOST_NAME" skin="Character_012b_TheLost.png" trinket="23" costume="89" hp="0" armor="1" keys="1" bombs="2" coins="1" achievement="484"
+	<player id="31" name="#THE_LOST_NAME" skin="Character_012b_TheLost.png" trinket="23" items="313" costume="89" hp="0" armor="1" keys="1" bombs="2" coins="1" achievement="484"
           nameimage="PlayerName_12_TheLost.png" 
           portrait="PlayerPortrait_TheLost_b.png" skinColor="5"
 		  birthright="#THE_LOST_B_BIRTHRIGHT" />
