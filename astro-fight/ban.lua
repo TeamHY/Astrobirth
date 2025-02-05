@@ -53,7 +53,6 @@ local banItems = {
             CollectibleType.COLLECTIBLE_SUMPTORIUM,
             CollectibleType.COLLECTIBLE_WAIT_WHAT,
             CollectibleType.COLLECTIBLE_FRIEND_BALL,
-            CollectibleType.COLLECTIBLE_MEGA_BEAN,
             CollectibleType.COLLECTIBLE_BOOMERANG,
             CollectibleType.COLLECTIBLE_BREATH_OF_LIFE,
             CollectibleType.COLLECTIBLE_GLAUCOMA,
@@ -82,6 +81,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_SPIRIT_SWORD,
             Astro.Collectible.REINCARNATION,
             Astro.Collectible.BONFIRE,
+            Astro.Collectible.DELIRIUM_GUPPY,
 
         },
         trinket = {
@@ -269,6 +269,7 @@ local banItems = {
     },
     [PlayerType.PLAYER_THELOST] = {
         collectible = {
+            CollectibleType.COLLECTIBLE_LEO,
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
@@ -281,9 +282,17 @@ local banItems = {
             CollectibleType.COLLECTIBLE_D6,
             CollectibleType.COLLECTIBLE_STARTER_DECK,
             CollectibleType.COLLECTIBLE_SOUL,
+            CollectibleType.COLLECTIBLE_SATURNUS,
             CollectibleType.COLLECTIBLE_HEARTBREAK,
+            CollectibleType.COLLECTIBLE_LOST_CONTACT,
             Astro.Collectible.ARIES_EX,
             Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
+            Astro.Collectible.OMEGA_321,
+            Astro.Collectible.SNAKE_EYES_POPLAR,
+            Astro.Collectible.SINFUL_SPOILS_OF_SUBVERSION_SNAKE_EYE,
+            Astro.Collectible.QUASAR,
+            Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
+            Astro.Collectible.SAMSARA,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
