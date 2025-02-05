@@ -198,7 +198,7 @@
 	<passive cache="damage range" description="#JESUS_JUICE_DESCRIPTION" gfx="Collectibles_197_JesusJuice.png" id="197" name="#JESUS_JUICE_NAME" />
 	<passive description="#BOX_DESCRIPTION" gfx="Collectibles_198_Box.png" id="198" name="#BOX_NAME" />
 	
-	<passive description="#MOMS_KEY_DESCRIPTION" gfx="collectibles_199_momskey.png" id="199" shopprice="25" keys="2" name="#MOMS_KEY_NAME" cache="pickupvision" />
+	<passive description="#MOMS_KEY_DESCRIPTION" gfx="collectibles_199_momskey.png" id="199" shopprice="21" keys="2" name="#MOMS_KEY_NAME" cache="pickupvision" />
 	<passive cache="tearcolor" description="#MOMS_EYESHADOW_DESCRIPTION" gfx="collectibles_200_momseyeshadow.png" id="200" name="#MOMS_EYESHADOW_NAME" />
 	<passive cache="damage" description="#IRON_BAR_DESCRIPTION" gfx="collectibles_201_ironbar.png" id="201" shopprice="4" name="#IRON_BAR_NAME" />
 	<passive description="#MIDAS_TOUCH_DESCRIPTION" gfx="collectibles_202_midastouch.png" id="202" name="#MIDAS_TOUCH_NAME" />
@@ -722,7 +722,7 @@
 	<passive	id="694"	achievement="496" gfx="Collectibles_694_Heartbreak.png" name="#HEARTBREAK_NAME" description="#HEARTBREAK_DESCRIPTION" cache="damage" />
 	<passive	id="695"	achievement="452" gfx="Collectibles_695_BloodyGust.png" name="#BLOODY_GUST_NAME" description="#BLOODY_GUST_DESCRIPTION" cache="speed firedelay color" />
 	<passive	id="696"	achievement="499" gfx="Collectibles_696_Salvation.png" name="#SALVATION_NAME" description="#SALVATION_DESCRIPTION" persistent="true" />
-	<familiar	id="697"	achievement="435" gfx="Collectibles_697_VanishingTwin.png" shopprice="11" name="#VANISHING_TWIN_NAME" description="#VANISHING_TWIN_DESCRIPTION" />
+	<familiar	id="697"	achievement="435" gfx="Collectibles_697_VanishingTwin.png" shopprice="15" name="#VANISHING_TWIN_NAME" description="#VANISHING_TWIN_DESCRIPTION" />
 	<familiar	id="698"	achievement="502" gfx="Collectibles_698_TwistedPair.png" name="#TWISTED_PAIR_NAME" description="#TWISTED_PAIR_DESCRIPTION" devilprice="2" />
 	<passive	id="699"	achievement="498" gfx="Collectibles_699_AzazelsRage.png" name="#AZAZELS_RAGE_NAME" description="#AZAZELS_RAGE_DESCRIPTION" persistent="true" />
 	<passive	id="700"	achievement="504" gfx="Collectibles_700_EchoChamber.png" name="#ECHO_CHAMBER_NAME" description="#ECHO_CHAMBER_DESCRIPTION" />
