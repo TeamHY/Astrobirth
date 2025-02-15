@@ -42,7 +42,9 @@ Astro:AddPriorityCallback(
     ---@param player EntityPlayer
     ---@param cacheFlag CacheFlag
     function (_, player, cacheFlag)
-        player.MaxFireDelay = ((player.MaxFireDelay + 1) / TEARS_MULTIPLY) - 1
+        if player:HasCollectible(CollectibleType.COLLECTIBLE_NEPTUNUS) then
+            player.MaxFireDelay = ((player.MaxFireDelay + 1) / TEARS_MULTIPLY) - 1
+        end
     end,
     CacheFlag.CACHE_FIREDELAY
 )
