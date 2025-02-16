@@ -268,6 +268,8 @@ Astro:AddCallback(
             elseif level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetCurrentRoomIndex() == 84 and not Game():IsGreedMode() then
                 Astro:SpawnCollectible(Astro.Collectible.EZ_MODE, currentRoom:GetGridPosition(33), nil, true)
                 Astro:SpawnCollectible(Astro.Collectible.VERY_EZ_MODE, currentRoom:GetGridPosition(41), nil, true)
+            elseif currentRoom:GetType() == RoomType.ROOM_DEVIL and Astro:IsLatterStage() then
+                Astro:Spawn(EntityType.ENTITY_FIREPLACE, 4, 0, currentRoom:GetCenterPos())
             end
         end
 
