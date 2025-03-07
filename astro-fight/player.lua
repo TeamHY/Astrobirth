@@ -729,6 +729,34 @@ local startItem = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
         }
     },
+    [Astro.Players.AINZ_OOAL_GOWN] = {
+        collectible = {
+            Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
+    [Astro.Players.AINZ_OOAL_GOWN_B] = {
+        collectible = {
+            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+        },
+        trinket = {
+            -- TrinketType.TRINKET_SWALLOWED_PENNY,
+        },
+        card = {
+            Card.CARD_HOLY,
+        },
+        pill = {
+            -- PillEffect.PILLEFFECT_BAD_GAS,
+        }
+    },
 }
 
 Astro:AddCallback(
