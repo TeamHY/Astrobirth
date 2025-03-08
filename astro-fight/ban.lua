@@ -24,7 +24,6 @@ local banItems = {
             CollectibleType.COLLECTIBLE_KNIFE_PIECE_2,
             CollectibleType.COLLECTIBLE_CLICKER,
             CollectibleType.COLLECTIBLE_D100,
-            CollectibleType.COLLECTIBLE_MORE_OPTIONS,
             CollectibleType.COLLECTIBLE_MARS,
             CollectibleType.COLLECTIBLE_DAMOCLES,
             CollectibleType.COLLECTIBLE_GLITCHED_CROWN,
