@@ -400,6 +400,20 @@ Astro:AddCallback(
 
                 return newCollectable
             end
+        elseif room:GetType() == RoomType.ROOM_ULTRASECRET then
+            local itemPool = Game():GetItemPool()
+            local itemConfig = Isaac.GetItemConfig()
+            local itemConfigitem = itemConfig:GetCollectible(selectedCollectible)
+
+            local rng = RNG()
+            rng:SetSeed(seed, 35)
+
+            if itemConfigitem:HasTags(ItemConfig.TAG_QUEST) == false and selectedCollectible ~= CollectibleType.COLLECTIBLE_BREAKFAST and itemConfigitem.Quality <= 2 then
+                local newCollectable = itemPool:GetCollectible(itemPoolType, decrease, rng:Next())
+                print("Ultra Secret Room: " .. selectedCollectible .. " -> " .. newCollectable)
+
+                return newCollectable
+            end
         elseif room:GetType() == RoomType.ROOM_TREASURE and level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetStageType() < StageType.STAGETYPE_REPENTANCE then
             local itemPool = Game():GetItemPool()
             local itemConfig = Isaac.GetItemConfig()
