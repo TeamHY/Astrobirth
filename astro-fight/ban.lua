@@ -8,6 +8,7 @@ local latterStageBanItems = {
         CollectibleType.COLLECTIBLE_GHOST_PEPPER,
         CollectibleType.COLLECTIBLE_BIRDS_EYE,
         CollectibleType.COLLECTIBLE_PARASITE,
+        Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
     },
     trinket = {
     }
