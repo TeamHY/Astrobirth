@@ -22,7 +22,7 @@ Astro:AddCallback(
     ---@param player EntityPlayer
     ---@param cacheFlag CacheFlag
     function(_, player, cacheFlag)
-        if cacheFlag == CacheFlag.CACHE_SPEED then
+        if player:HasCollectible(CollectibleType.COLLECTIBLE_BROKEN_WATCH) and cacheFlag == CacheFlag.CACHE_SPEED then
             player.MoveSpeed = player.MoveSpeed + 0.3
         end
     end,
