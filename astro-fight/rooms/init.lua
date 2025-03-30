@@ -1,6 +1,6 @@
 ---
 
-local EZ_MODE_DELETED_FRAME = 10 * 30
+local EZ_MODE_DELETED_FRAME = 20 * 30
 
 local GO_HOME_DELETED_FRAME = 20 * 30
 
