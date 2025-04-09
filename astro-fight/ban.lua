@@ -10,6 +10,9 @@ local latterStageBanItems = {
         CollectibleType.COLLECTIBLE_PARASITE,
         Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
         CollectibleType.COLLECTIBLE_ISAACS_HEART,
+        Astro.Collectible.STRAWBERRY_MILK,
+        Astro.Collectible.UNHOLY_MANTLE,
+        Astro.Collectible.ENTOMA_VASILISSA_ZETA,
     },
     trinket = {
     }
