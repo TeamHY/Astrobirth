@@ -45,7 +45,27 @@ Astro:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL,
 	end
 )
 
--- 데드갓 체크
+local function GetCurrentModPath()
+	if debug then
+		return string.sub(debug.getinfo(GetCurrentModPath).source, 2) .. "/../"
+	end
+	--use some very hacky trickery to get the path to this mod
+	local _, err = pcall(require, "")
+	local _, basePathStart = string.find(err, "no file '", 1)
+	local _, modPathStart = string.find(err, "no file '", basePathStart)
+	local modPathEnd, _ = string.find(err, ".lua'", modPathStart)
+	local modPath = string.sub(err, modPathStart + 1, modPathEnd - 1)
+	modPath = string.gsub(modPath, "\\", "/")
+	modPath = string.gsub(modPath, "//", "/")
+	modPath = string.gsub(modPath, ":/", ":\\")
+
+	return modPath
+end
+
+local modPath = GetCurrentModPath()
+local font = Font()
+font:Load(modPath .. "resources/font/eid_korean_soyanon.fnt")
+
 Astro:AddCallback(
 	ModCallbacks.MC_POST_RENDER,
 	function(_)
@@ -56,8 +76,8 @@ Astro:AddCallback(
 				local player = Isaac.GetPlayer()
 				local position = Isaac.WorldToRenderPosition(player.Position)
 	
-	
-				Isaac.RenderText("Death Certificate is not unlocked", position.X - 100, position.Y, 255, 0, 0, 255)
+				font:DrawStringUTF8("대결 모드의 경우 데드갓 상태에서 원활한 게임을 지원합니다.", position.X - 100, position.Y, KColor(1, 1, 1, 1), 200, true)
+				font:DrawStringUTF8("※세이브 파일은 헌영 카페에서 다운로드 가능※", position.X - 100, position.Y + 16, KColor(1, 0, 0, 1), 200, true)
 			end
 		end
 	end
