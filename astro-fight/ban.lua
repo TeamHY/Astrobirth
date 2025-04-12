@@ -10,6 +10,11 @@ local latterStageBanItems = {
         CollectibleType.COLLECTIBLE_PARASITE,
         Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
         CollectibleType.COLLECTIBLE_ISAACS_HEART,
+        Astro.Collectible.STRAWBERRY_MILK,
+        Astro.Collectible.UNHOLY_MANTLE,
+        Astro.Collectible.ENTOMA_VASILISSA_ZETA,
+        CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
+        Astro.Collectible.CAINS_SECRET_BAG,
     },
     trinket = {
     }
@@ -286,6 +291,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_SATURNUS,
             CollectibleType.COLLECTIBLE_HEARTBREAK,
             CollectibleType.COLLECTIBLE_LOST_CONTACT,
+            CollectibleType.COLLECTIBLE_ATHAME,
             Astro.Collectible.ARIES_EX,
             Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
             Astro.Collectible.OMEGA_321,

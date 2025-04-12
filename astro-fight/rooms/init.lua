@@ -1,6 +1,6 @@
 ---
 
-local EZ_MODE_DELETED_FRAME = 10 * 30
+local EZ_MODE_DELETED_FRAME = 20 * 30
 
 local GO_HOME_DELETED_FRAME = 20 * 30
 
@@ -137,7 +137,7 @@ Astro:AddCallback(
         if currentRoom:GetFrameCount() <= 0 and currentRoom:IsFirstVisit() then
             local roomType = currentRoom:GetType()
 
-            if roomType == RoomType.ROOM_MINIBOSS or roomType == RoomType.ROOM_DEVIL or roomType == RoomType.ROOM_PLANETARIUM or roomType == RoomType.ROOM_CHALLENGE or roomType == RoomType.ROOM_TREASURE or roomType == RoomType.ROOM_DICE or roomType == RoomType.ROOM_SECRET or roomType == RoomType.ROOM_SUPERSECRET or roomType == RoomType.ROOM_CURSE then
+            if roomType == RoomType.ROOM_MINIBOSS or roomType == RoomType.ROOM_BLACK_MARKET or roomType == RoomType.ROOM_ULTRASECRET or roomType == RoomType.ROOM_DEVIL or roomType == RoomType.ROOM_PLANETARIUM or roomType == RoomType.ROOM_CHALLENGE or roomType == RoomType.ROOM_TREASURE or roomType == RoomType.ROOM_DICE or roomType == RoomType.ROOM_SECRET or roomType == RoomType.ROOM_SUPERSECRET or roomType == RoomType.ROOM_CURSE then
                 local entities = Isaac.GetRoomEntities()
 
                 for i = 1, #entities do
