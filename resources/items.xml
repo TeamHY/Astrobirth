@@ -656,7 +656,7 @@
 	<active		id="628"	achievement="636" gfx="Collectibles_628_DeathCertificate.png" name="#DEATH_CERTIFICATE_NAME" description="#DEATH_CERTIFICATE_DESCRIPTION" initcharge="0" maxcharges="12" />
 	<familiar	id="629"	gfx="Collectibles_629_BotFly.png" name="#BOT_FLY_NAME" shopprice="5" description="#BOT_FLY_DESCRIPTION" />
 	
-	<active		id="631"	achievement="440" gfx="Collectibles_631_MeatCleaver.png" name="#MEAT_CLEAVER_NAME" description="#MEAT_CLEAVER_DESCRIPTION" maxcharges="2" />
+	<active		id="631"	achievement="440" gfx="Collectibles_631_MeatCleaver.png" name="#MEAT_CLEAVER_NAME" description="#MEAT_CLEAVER_DESCRIPTION" maxcharges="1" />
 	<passive	id="632"	gfx="Collectibles_632_EvilCharm.png" name="#EVIL_CHARM_NAME" shopprice="3" description="#EVIL_CHARM_DESCRIPTION" cache="luck" />
 	<passive	id="633"	gfx="Collectibles_633_Dogma.png" name="#DOGMA_NAME" devilprice="2" shopprice="22" description="#DOGMA_DESCRIPTION" cache="damage flying speed" />
 	<passive	id="634"	achievement="519" gfx="Collectibles_634_Purgatory.png" name="#PURGATORY_NAME" description="#PURGATORY_DESCRIPTION" />
