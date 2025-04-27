@@ -2906,11 +2906,11 @@
     <entity anm2path="405.001_Ragman_Rolling_Head.anm2" baseHP="15" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="20" friction="1" id="405" name="Rag Man&apos;s Head" numGridCollisionPoints="12" portrait="83" shadowSize="16" stageHP="0" variant="1">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="406.000_UltraGreed.anm2" baseHP="10000" shieldStrength="180" boss="1" bossID="62" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="25" friction="1" id="406" name="#ULTRA_GREED" numGridCollisionPoints="40" portrait="84" shadowSize="60" stageHP="0" variant="0">
+    <entity anm2path="406.000_UltraGreed.anm2" baseHP="10000" shieldStrength="180" boss="1" bossID="62" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="25" tags="nodelirium" friction="1" id="406" name="#ULTRA_GREED" numGridCollisionPoints="40" portrait="84" shadowSize="60" stageHP="0" variant="0">
         <bestiary anim="SlotSpinningFast" transform="0,10,.7"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
-    <entity anm2path="406.001_UltraGreedier.anm2" baseHP="12000" shieldStrength="180" boss="1" bossID="71" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="25" friction="1" id="406" name="#ULTRA_GREEDIER" numGridCollisionPoints="40" portrait="84" shadowSize="60" stageHP="0" variant="1">
+    <entity anm2path="406.001_UltraGreedier.anm2" baseHP="12000" shieldStrength="180" boss="1" bossID="71" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="25" tags="nodelirium" friction="1" id="406" name="#ULTRA_GREEDIER" numGridCollisionPoints="40" portrait="84" shadowSize="60" stageHP="0" variant="1">
         <bestiary anim="Tantrum" transform="0,10,.7"/>
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1"/>
     </entity>
