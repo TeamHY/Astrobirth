@@ -86,7 +86,6 @@ local banItems = {
             Astro.Collectible.REINCARNATION,
             Astro.Collectible.BONFIRE,
             Astro.Collectible.DELIRIUM_GUPPY,
-            Astro.Collectible.WARD,
 
         },
         trinket = {
