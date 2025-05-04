@@ -16,6 +16,7 @@ local latterStageBanItems = {
         Astro.Collectible.CAINS_SECRET_BAG,
     },
     trinket = {
+        Astro.Trinket.NOSTALGIA,
     }
 }
 
