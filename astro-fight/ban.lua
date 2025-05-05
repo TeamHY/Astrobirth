@@ -17,6 +17,8 @@ local latterStageBanItems = {
     },
     trinket = {
         Astro.Trinket.NOSTALGIA,
+        Astro.Trinket.BLACK_MIRROR,
+        Astro.Trinket.LAVA_HAND,
     }
 }
 
