@@ -5336,4 +5336,23 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
 <!-- REPENTANCE END -->
+
+<!-- REPENTANCE+ Start -->
+    <entity anm2path="006.019_ReviveMachine.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Revive Machine" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="19">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
+    </entity>
+    <entity anm2path="" baseHP="0" boss="0" champion="0" collisionDamage="100" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="Mega Bean Explosion" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="202">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
+    </entity>
+
+    <entity anm2path="1000.203_spawn pentagram.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="Spawn Pentagram" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="203">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
+    </entity>
+    <entity anm2path="1000.203_spawn pentagram.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="Spawn Pentagram Boss" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="204">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
+    </entity>
+    <entity anm2path="1000.022_Creep (Red).anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="0" collisionRadius="1" friction="1" id="1000" name="Player Creep (Yellow)" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="204">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
+    </entity>
+<!-- REPENTANCE+ End -->
 </entities>
