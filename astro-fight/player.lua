@@ -703,7 +703,7 @@ local startItem = {
     },
     [Astro.Players.STELLAR] = {
         collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+            Astro.Collectible.VIRGO_EX,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
