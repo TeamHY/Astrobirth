@@ -5,7 +5,7 @@
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_Isaac.png" skinColor="-1"
 		  birthright="#ISAAC_BIRTHRIGHT" />
-	<player id="1" name="#MAGDALENE_NAME" skin="Character_002_Magdalene.png" costume="7" keys="1" bombs="2" hp="8" pocketActive="45" achievement="1"
+	<player id="1" name="#MAGDALENE_NAME" skin="Character_002_Magdalene.png" costume="7" keys="1" bombs="2" hp="14" pocketActive="45" achievement="1"
           nameimage="PlayerName_02_Magdalene.png"
           portrait="PlayerPortrait_Magdalene.png" skinColor="-1"
 		  birthright="#MAGDALENE_BIRTHRIGHT" />
