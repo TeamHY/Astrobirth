@@ -140,7 +140,7 @@ Astro:AddCallback(
                         player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
 
                         Astro:SpawnCard(Card.CARD_GET_OUT_OF_JAIL, player.Position)
-                        -- Astro:SpawnTrinket(Astro.Trinket.BLACK_MIRROR, currentRoom:GetCenterPos())
+                        Astro:SpawnTrinket(Astro.Trinket.BLACK_MIRROR, currentRoom:GetCenterPos())
                     elseif stage == LevelStage.STAGE4_1 then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
