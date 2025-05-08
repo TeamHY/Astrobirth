@@ -89,7 +89,11 @@ local banItems = {
             Astro.Collectible.REINCARNATION,
             Astro.Collectible.BONFIRE,
             Astro.Collectible.DELIRIUM_GUPPY,
-
+            Astro.Collectible.COPERNICUS,
+            Astro.Collectible.TECHNOLOGY_OMICRON_EX,
+            Astro.Collectible.AMAZING_CHAOS_SCROLL,
+            Astro.Collectible.AMAZING_CHAOS_SCROLL_OF_GOODNESS,
+            Astro.Collectible.SACRED_DICE,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
