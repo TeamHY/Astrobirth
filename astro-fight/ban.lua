@@ -284,7 +284,6 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
-            CollectibleType.COLLECTIBLE_LOST_CONTACT,
             CollectibleType.COLLECTIBLE_PSY_FLY,
             CollectibleType.COLLECTIBLE_DAMOCLES,
             CollectibleType.COLLECTIBLE_TOUGH_LOVE,
