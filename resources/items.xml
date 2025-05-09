@@ -398,7 +398,7 @@
 	<passive achievement="182" description="#BETRAYAL_DESCRIPTION" gfx="Collectibles_391_Betrayal.png" id="391" name="#BETRAYAL_NAME" />
 	<passive achievement="202" description="#ZODIAC_DESCRIPTION" gfx="Collectibles_392_Zodiac.png" shopprice="25" id="392" name="#ZODIAC_NAME" />
 	<passive achievement="220" description="#SERPENTS_KISS_DESCRIPTION" gfx="Collectibles_393_SerpentsKiss.png" id="393" name="#SERPENTS_KISS_NAME" />
-	<passive description="#MARKED_DESCRIPTION" gfx="Collectibles_394_Marked.png" id="394" name="#MARKED_NAME" cache="firedelay range" />
+	<passive description="#MARKED_DESCRIPTION" gfx="Collectibles_394_Marked.png" id="394" shopprice="10" name="#MARKED_NAME" cache="firedelay range" />
 	<passive description="#TECH_X_DESCRIPTION" gfx="Collectibles_395_TechX.png" id="395" devilprice="2" name="#TECH_X_NAME" cache="all" />
 	<active description="#VENTRICLE_RAZOR_DESCRIPTION" gfx="Collectibles_396_VentricleRazor.png" id="396" name="#VENTRICLE_RAZOR_NAME" shopprice="10" />
 	<passive description="#TRACTOR_BEAM_DESCRIPTION" gfx="Collectibles_397_TractorBeam.png" id="397" name="#TRACTOR_BEAM_NAME" cache="firedelay tearflag range shotspeed" />
