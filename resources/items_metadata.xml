@@ -572,7 +572,7 @@
     <item id="574" quality="2" tags="summonable offensive"/>
     <item id="575" quality="2" tags="summonable spider offensive"/>
     <item id="576" quality="1" tags="poop summonable offensive"/>
-    <item id="577" quality="2" tags="offensive nocantrip"/>
+    <item id="577" quality="4" tags="offensive nocantrip noeden"/>
     <item id="578" quality="1" tags="offensive"/>
     <item id="579" quality="3" tags="summonable offensive"/>
     <item id="580" quality="3" tags="offensive nogreed"/>
@@ -646,7 +646,7 @@
     <item id="653" quality="4" tags="offensive nocantrip"/>
     <item id="654" quality="3" tags="summonable offensive nocantrip"/>
     <item id="655" quality="1" tags="noeden nocantrip"/>
-    <item id="656" quality="2" tags="offensive nocantrip"/>
+    <item id="656" quality="4" tags="offensive nocantrip noeden"/>
     <item id="657" quality="1" tags="summonable offensive"/>
     <item id="658" quality="1" tags="nolostbr summonable"/>
     <item id="659" quality="1" tags="summonable offensive"/>
