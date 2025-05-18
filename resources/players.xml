@@ -183,7 +183,7 @@
 		  birthright="#KEEPER_B_BIRTHRIGHT" />
 	<player id="34" name="#APOLLYON_NAME" skin="Character_016b_Apollyon.png" items="619" trinket="186" costume="92" armor="1" hp="4" keys="1" bombs="2" achievement="487"
           nameimage="PlayerName_15_Apollyon.png" 
-          portrait="PlayerPortrait_Apollyon_b.png" skinColor="5" costumeSuffix="apollyon" pocketActive="706"
+          portrait="PlayerPortrait_Apollyon_b.png" skinColor="5" costumeSuffix="apollyon" bombs="2" key="1" pocketActive="706"
 		  birthright="#APOLLYON_B_BIRTHRIGHT" />
 	<player id="35" name="#THE_FORGOTTEN_NAME" skin="Character_016b_TheForgotten.png" costume="93" keys="1" bombs="2" armor="7" achievement="488"
           nameimage="PlayerName_16_TheForgotten.png" 
