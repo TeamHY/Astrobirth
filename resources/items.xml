@@ -40,7 +40,7 @@
 	<active cooldown="220" description="#MOMS_BRA_DESCRIPTION" gfx="Collectibles_039_MomsBra.png" id="39" maxcharges="3" name="#MOMS_BRA_NAME" />
 	<active cooldown="30" description="#KAMIKAZE_DESCRIPTION" gfx="Collectibles_040_Kamikaze.png" id="40" shopprice="5" maxcharges="0" name="#KAMIKAZE_NAME" addcostumeonpickup="true" />
 	<active cooldown="450" description="#MOMS_PAD_DESCRIPTION" gfx="Collectibles_041_MomsPad.png" id="41" maxcharges="1" name="#MOMS_PAD_NAME" />
-	<active description="#BOBS_ROTTEN_HEAD_DESCRIPTION" gfx="Collectibles_042_BobsRottenHead.png" id="42" shopprice="3" maxcharges="2" name="#BOBS_ROTTEN_HEAD_NAME" />
+	<active description="#BOBS_ROTTEN_HEAD_DESCRIPTION" gfx="Collectibles_042_BobsRottenHead.png" id="42" shopprice="3" maxcharges="1" name="#BOBS_ROTTEN_HEAD_NAME" />
 	<!-- <active description="#PILLS_HERE_DESCRIPTION" id="43" name="#PILLS_HERE_NAME" /> -->
 	<active cooldown="30" description="#TELEPORT_DESCRIPTION" gfx="Collectibles_044_Teleport.png" id="44" shopprice="6" maxcharges="2" name="#TELEPORT_NAME" />
 	<active description="#YUM_HEART_DESCRIPTION" gfx="Collectibles_045_YumHeart.png" id="45" maxcharges="4" name="#YUM_HEART_NAME" />
