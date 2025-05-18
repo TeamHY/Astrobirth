@@ -842,6 +842,7 @@ local diceList = {
     Astro.Collectible.RESTOCK_DICE,
     Astro.Collectible.FORBIDDEN_DICE,
     Astro.Collectible.QUBIT_DICE,
+    Astro.Collectible.PUZZLE_DICE,
 }
 
 Astro:AddCallback(

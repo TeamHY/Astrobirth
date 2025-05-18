@@ -129,7 +129,7 @@
           portrait="PlayerPortrait_Jacob.png" skinColor="3"
 		  birthright="#ESAU_BIRTHRIGHT" />
 		  
-	<player id="21" name="#ISAAC_NAME" skin="Character_001b_Isaac.png" costume="79" hp="6" keys="1" bombs="2" achievement="474"
+	<player id="21" name="#ISAAC_NAME" skin="Character_001b_Isaac.png" costume="79" hp="6" keys="1" items="689,619" bombs="2" achievement="474"
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_Isaac_b.png" skinColor="-1"
 		  birthright="#ISAAC_B_BIRTHRIGHT" />
