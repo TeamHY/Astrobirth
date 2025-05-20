@@ -28,7 +28,7 @@ local function CheckEnableRoom()
         return false
     end
 
-    if stage == LevelStage.STAGE3_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE and currentRoom:GetBossID() == 6 then
+    if stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then
         return false -- 엄마 발
     elseif stage == LevelStage.STAGE4_3 then
         return false -- 허쉬
