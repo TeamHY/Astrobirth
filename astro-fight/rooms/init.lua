@@ -376,58 +376,36 @@ Astro:AddCallback(
     end
 )
 
+
 Astro:AddCallback(
-    ModCallbacks.MC_POST_GET_COLLECTIBLE,
-    ---@param selectedCollectible CollectibleType
-    ---@param itemPoolType ItemPoolType
-    ---@param decrease boolean
-    ---@param seed integer
-    function(_, selectedCollectible, itemPoolType, decrease, seed)
-        local room = Game():GetRoom()
-        local level = Game():GetLevel()
+    Astro.Callbacks.MOD_INIT,
+    function()
+        Astro:AddRerollCondition(
+            function(selectedCollectible)
+                local room = Game():GetRoom()
+                local level = Game():GetLevel()
+                local itemConfig = Isaac.GetItemConfig()
+                local itemConfigitem = itemConfig:GetCollectible(selectedCollectible)
 
-        if room:GetType() == RoomType.ROOM_CURSE then
-            local itemPool = Game():GetItemPool()
-            local itemConfig = Isaac.GetItemConfig()
-            local itemConfigitem = itemConfig:GetCollectible(selectedCollectible)
+                if room:GetType() == RoomType.ROOM_CURSE and itemConfigitem.Quality == 4 then
+                    return {
+                        reroll = true,
+                        modifierName = "Curse Room"
+                    }
+                elseif room:GetType() == RoomType.ROOM_ULTRASECRET and itemConfigitem.Quality <= 2 then
+                    return {
+                        reroll = true,
+                        modifierName = "Ultra Secret Room"
+                    }
+                elseif room:GetType() == RoomType.ROOM_TREASURE and level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetStageType() < StageType.STAGETYPE_REPENTANCE and itemConfigitem.Quality <= 1 then
+                    return {
+                        reroll = true,
+                        modifierName = "Treasure Room"
+                    }
+                end
 
-            local rng = RNG()
-            rng:SetSeed(seed, 35)
-
-            if itemConfigitem:HasTags(ItemConfig.TAG_QUEST) == false and selectedCollectible ~= CollectibleType.COLLECTIBLE_BREAKFAST and itemConfigitem.Quality == 4 then
-                local newCollectable = itemPool:GetCollectible(itemPoolType, decrease, rng:Next())
-                print("Curse Room: " .. selectedCollectible .. " -> " .. newCollectable)
-
-                return newCollectable
+                return false
             end
-        elseif room:GetType() == RoomType.ROOM_ULTRASECRET then
-            local itemPool = Game():GetItemPool()
-            local itemConfig = Isaac.GetItemConfig()
-            local itemConfigitem = itemConfig:GetCollectible(selectedCollectible)
-
-            local rng = RNG()
-            rng:SetSeed(seed, 35)
-
-            if itemConfigitem:HasTags(ItemConfig.TAG_QUEST) == false and selectedCollectible ~= CollectibleType.COLLECTIBLE_BREAKFAST and itemConfigitem.Quality <= 2 then
-                local newCollectable = itemPool:GetCollectible(itemPoolType, decrease, rng:Next())
-                print("Ultra Secret Room: " .. selectedCollectible .. " -> " .. newCollectable)
-
-                return newCollectable
-            end
-        elseif room:GetType() == RoomType.ROOM_TREASURE and level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetStageType() < StageType.STAGETYPE_REPENTANCE then
-            local itemPool = Game():GetItemPool()
-            local itemConfig = Isaac.GetItemConfig()
-            local itemConfigitem = itemConfig:GetCollectible(selectedCollectible)
-
-            local rng = RNG()
-            rng:SetSeed(seed, 35)
-
-            if itemConfigitem:HasTags(ItemConfig.TAG_QUEST) == false and selectedCollectible ~= CollectibleType.COLLECTIBLE_BREAKFAST and itemConfigitem.Quality <= 1 then
-                local newCollectable = itemPool:GetCollectible(itemPoolType, decrease, rng:Next())
-                print("Treasure Room: " .. selectedCollectible .. " -> " .. newCollectable)
-
-                return newCollectable
-            end
-        end
+        )
     end
 )
