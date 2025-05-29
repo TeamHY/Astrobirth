@@ -832,18 +832,42 @@ Astro:AddCallback(
 -- 아이작 컨셉 효과
 --------------------------------------------------
 
-local diceList = {
-    CollectibleType.COLLECTIBLE_SPINDOWN_DICE,
-    CollectibleType.COLLECTIBLE_D6,
-    CollectibleType.COLLECTIBLE_D4,
-    Astro.Collectible.SPINUP_DICE,
-    Astro.Collectible.MIRROR_DICE,
-    Astro.Collectible.SACRED_DICE,
-    Astro.Collectible.RESTOCK_DICE,
-    Astro.Collectible.FORBIDDEN_DICE,
-    Astro.Collectible.QUBIT_DICE,
-    Astro.Collectible.PUZZLE_DICE,
+local diceData = {
+    [CollectibleType.COLLECTIBLE_SPINDOWN_DICE] = 1,
+    [CollectibleType.COLLECTIBLE_D6] = 1,
+    [CollectibleType.COLLECTIBLE_D4] = 1,
+    [Astro.Collectible.SPINUP_DICE] = 1,
+    [Astro.Collectible.MIRROR_DICE] = 1,
+    [Astro.Collectible.SACRED_DICE] = 1,
+    [Astro.Collectible.RESTOCK_DICE] = 1,
+    [Astro.Collectible.FORBIDDEN_DICE] = 1,
+    [Astro.Collectible.QUBIT_DICE] = 1,
+    [Astro.Collectible.PUZZLE_DICE] = 1,
 }
+
+Astro:AddCallback(
+    ModCallbacks.MC_USE_ITEM,
+    ---@param collectibleID CollectibleType
+    ---@param rngObj RNG
+    ---@param playerWhoUsedItem EntityPlayer
+    ---@param useFlags integer
+    ---@param activeSlot ActiveSlot
+    ---@param varData integer
+    function(_, collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
+        Astro:ScheduleForUpdate(
+            function()
+                local bonusCharge = diceData[collectibleID]
+
+                if bonusCharge then
+                    if playerWhoUsedItem:GetActiveCharge(activeSlot) == 0 then
+                        playerWhoUsedItem:SetActiveCharge(bonusCharge, activeSlot)
+                    end
+                end
+            end,
+            1
+        )
+    end
+)
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_NEW_LEVEL,
@@ -854,6 +878,11 @@ Astro:AddCallback(
             if player:GetPlayerType() == PlayerType.PLAYER_ISAAC then
                 local rng = player:GetCollectibleRNG(Astro.Collectible.SPINUP_DICE)
                 local room = Game():GetRoom()
+                local diceList = {}
+
+                for key, _ in pairs(diceData) do
+                    table.insert(diceList, key)
+                end
 
                 for j, dice in ipairs(Astro:GetRandomCollectibles(diceList, rng, 2)) do
                     local position = room:GetGridPosition(49 + j * 2)
