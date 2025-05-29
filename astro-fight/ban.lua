@@ -461,8 +461,15 @@ local banItems = {
     },
     [PlayerType.PLAYER_ISAAC_B] = {
         collectible = {
+            CollectibleType.COLLECTIBLE_ANKH,
+            CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
+            CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
+            Astro.Collectible.ALTAIR,
+            Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
         },
         trinket = {
+            TrinketType.TRINKET_MISSING_POSTER,
+            TrinketType.TRINKET_BROKEN_ANKH,
         },
         card = {
         },
