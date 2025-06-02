@@ -854,18 +854,20 @@ Astro:AddCallback(
     ---@param activeSlot ActiveSlot
     ---@param varData integer
     function(_, collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
-        Astro:ScheduleForUpdate(
-            function()
-                local bonusCharge = diceData[collectibleID]
+        if playerWhoUsedItem:GetPlayerType() == PlayerType.PLAYER_ISAAC then
+            Astro:ScheduleForUpdate(
+                function()
+                    local bonusCharge = diceData[collectibleID]
 
-                if bonusCharge then
-                    if playerWhoUsedItem:GetActiveCharge(activeSlot) == 0 then
-                        playerWhoUsedItem:SetActiveCharge(bonusCharge, activeSlot)
+                    if bonusCharge then
+                        if playerWhoUsedItem:GetActiveItem(activeSlot) == collectibleID and playerWhoUsedItem:GetActiveCharge(activeSlot) == 0 then
+                            playerWhoUsedItem:SetActiveCharge(bonusCharge, activeSlot)
+                        end
                     end
-                end
-            end,
-            1
-        )
+                end,
+                1
+            )
+        end
     end
 )
 
