@@ -19,6 +19,8 @@ local latterStageBanItems = {
         Astro.Trinket.NOSTALGIA,
         Astro.Trinket.BLACK_MIRROR,
         Astro.Trinket.LAVA_HAND,
+        TrinketType.TRINKET_CAINS_EYE,
+        TrinketType.TRINKET_JAW_BREAKER,
     }
 }
 
@@ -44,7 +46,6 @@ local banItems = {
             CollectibleType.COLLECTIBLE_MONSTROS_TOOTH,
             CollectibleType.COLLECTIBLE_BEAN,
             CollectibleType.COLLECTIBLE_DEAD_SEA_SCROLLS,
-            CollectibleType.COLLECTIBLE_KIDNEY_BEAN,
             CollectibleType.COLLECTIBLE_MOMS_BRACELET,
             CollectibleType.COLLECTIBLE_THE_JAR,
             CollectibleType.COLLECTIBLE_BUTTER_BEAN,
@@ -75,7 +76,6 @@ local banItems = {
             CollectibleType.COLLECTIBLE_FRIEND_ZONE,
             CollectibleType.COLLECTIBLE_SHARD_OF_GLASS,
             CollectibleType.COLLECTIBLE_LADDER,
-            CollectibleType.COLLECTIBLE_KIDNEY_STONE,
             CollectibleType.COLLECTIBLE_SPIRIT_SHACKLES,
             CollectibleType.COLLECTIBLE_NUMBER_TWO,
             CollectibleType.COLLECTIBLE_LINGER_BEAN,
@@ -89,6 +89,7 @@ local banItems = {
             Astro.Collectible.REINCARNATION,
             Astro.Collectible.BONFIRE,
             Astro.Collectible.DELIRIUM_GUPPY,
+            Astro.Collectible.ENTOMA_VASILISSA_ZETA,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
