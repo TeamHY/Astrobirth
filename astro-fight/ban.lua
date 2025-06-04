@@ -296,6 +296,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_LOST_CONTACT,
             CollectibleType.COLLECTIBLE_ATHAME,
             CollectibleType.COLLECTIBLE_DARK_ARTS,
+            CollectibleType.COLLECTIBLE_BLANKET,
             Astro.Collectible.ARIES_EX,
             Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
             Astro.Collectible.OMEGA_321,
