@@ -55,7 +55,8 @@ Astro:AddCallback(
             data["isaacsHeartStatus"].shotSpeed = data["isaacsHeartStatus"].shotSpeed + SHOT_SPEED_DECREMENT
             data["isaacsHeartStatus"].luck = data["isaacsHeartStatus"].luck + LUCK_DECREMENT
 
-            player:AddCacheFlags(CacheFlag.CACHE_ALL, true)
+            player:AddCacheFlags(CacheFlag.CACHE_ALL)
+            player:EvaluateItems()
 
             return false
         end
