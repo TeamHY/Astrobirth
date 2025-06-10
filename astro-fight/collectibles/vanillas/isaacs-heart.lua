@@ -68,21 +68,23 @@ Astro:AddCallback(
     ---@param player EntityPlayer
     ---@param cacheFlag CacheFlag
     function(_, player, cacheFlag)
-        local data = Astro:GetPersistentPlayerData(player)
+        if player:HasCollectible(CollectibleType.COLLECTIBLE_ISAACS_HEART) then
+            local data = Astro:GetPersistentPlayerData(player)
 
-        if data and data["isaacsHeartStatus"] then
-            if cacheFlag == CacheFlag.CACHE_SPEED then
-                player.MoveSpeed = player.MoveSpeed + data["isaacsHeartStatus"].speed
-            elseif cacheFlag == CacheFlag.CACHE_FIREDELAY then
-                player.MaxFireDelay = Astro:AddTears(player.MaxFireDelay, data["isaacsHeartStatus"].tears)
-            elseif cacheFlag == CacheFlag.CACHE_DAMAGE then
-                player.Damage = player.Damage + data["isaacsHeartStatus"].damage
-            elseif cacheFlag == CacheFlag.CACHE_RANGE then
-                player.TearRange = player.TearRange + data["isaacsHeartStatus"].range
-            elseif cacheFlag == CacheFlag.CACHE_SHOTSPEED then
-                player.ShotSpeed = player.ShotSpeed + data["isaacsHeartStatus"].shotSpeed
-            elseif cacheFlag == CacheFlag.CACHE_LUCK then
-                player.Luck = player.Luck + data["isaacsHeartStatus"].luck
+            if data and data["isaacsHeartStatus"] then
+                if cacheFlag == CacheFlag.CACHE_SPEED then
+                    player.MoveSpeed = player.MoveSpeed + data["isaacsHeartStatus"].speed
+                elseif cacheFlag == CacheFlag.CACHE_FIREDELAY then
+                    player.MaxFireDelay = Astro:AddTears(player.MaxFireDelay, data["isaacsHeartStatus"].tears)
+                elseif cacheFlag == CacheFlag.CACHE_DAMAGE then
+                    player.Damage = player.Damage + data["isaacsHeartStatus"].damage
+                elseif cacheFlag == CacheFlag.CACHE_RANGE then
+                    player.TearRange = player.TearRange + data["isaacsHeartStatus"].range
+                elseif cacheFlag == CacheFlag.CACHE_SHOTSPEED then
+                    player.ShotSpeed = player.ShotSpeed + data["isaacsHeartStatus"].shotSpeed
+                elseif cacheFlag == CacheFlag.CACHE_LUCK then
+                    player.Luck = player.Luck + data["isaacsHeartStatus"].luck
+                end
             end
         end
     end

@@ -278,7 +278,7 @@
 	<familiar description="#BOBS_BRAIN_DESCRIPTION" gfx="collectibles_273_bobsbrain.png" id="273" shopprice="5" name="#BOBS_BRAIN_NAME" />
 	<familiar description="#BEST_BUD_DESCRIPTION" gfx="collectibles_274_bestbud.png" id="274" name="#BEST_BUD_NAME" />
 	<familiar description="#LIL_BRIMSTONE_DESCRIPTION" gfx="collectibles_275_lilbrimstone.png" devilprice="1" id="275" name="#LIL_BRIMSTONE_NAME" />
-	<familiar achievement="129" description="#ISAACS_HEART_DESCRIPTION" gfx="collectibles_276_isaacsheart.png" id="276" name="#ISAACS_HEART_NAME" />
+	<familiar cache="all" achievement="129" description="#ISAACS_HEART_DESCRIPTION" gfx="collectibles_276_isaacsheart.png" id="276" name="#ISAACS_HEART_NAME" />
 	<familiar description="#LIL_HAUNT_DESCRIPTION" gfx="collectibles_277_lilhaunt.png" id="277" name="#LIL_HAUNT_NAME" />
 	<familiar description="#DARK_BUM_DESCRIPTION" gfx="collectibles_278_darkbum.png" id="278" shopprice="5" name="#DARK_BUM_NAME" />
 	<familiar description="#BIG_FAN_DESCRIPTION" gfx="collectibles_279_bigfan.png" id="279" name="#BIG_FAN_NAME" />
