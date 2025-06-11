@@ -4077,11 +4077,11 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     	<devolve id="222.0.0" weight="1" />
 	</entity>
-    <entity anm2path="802.000_blood puppy lv2.anm2" baseHP="20" boss="0" champion="0" collisionDamage="1" collisionMass="12" collisionRadius="13" friction="1" id="802" name="#BLOOD_PUPPY" numGridCollisionPoints="12" portrait="357" shadowSize="18" shieldStrength="90" shutdoors="false" stageHP="0" variant="0">
+    <entity anm2path="802.000_blood puppy lv2.anm2" baseHP="1" boss="0" champion="0" collisionDamage="1" collisionMass="12" collisionRadius="13" friction="1" id="802" name="#BLOOD_PUPPY" numGridCollisionPoints="12" portrait="357" shadowSize="18" shieldStrength="0" shutdoors="false" stageHP="0" variant="0">
         <bestiary anim="Idle Hori" transform="0,0,1"/>
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0"/>
     </entity>
-    <entity anm2path="802.001_blood puppy lv3.anm2" baseHP="50" boss="0" champion="0" collisionDamage="2" collisionMass="24" collisionRadius="16" friction="1" id="802" name="#BLOOD_PUPPY" numGridCollisionPoints="12" portrait="357" shadowSize="22" shieldStrength="90" shutdoors="false" stageHP="0" variant="1">
+    <entity anm2path="802.001_blood puppy lv3.anm2" baseHP="1" boss="0" champion="0" collisionDamage="2" collisionMass="24" collisionRadius="16" friction="1" id="802" name="#BLOOD_PUPPY" numGridCollisionPoints="12" portrait="357" shadowSize="22" shieldStrength="0" shutdoors="false" stageHP="0" variant="1">
         <gibs amount="10" blood="1" bone="0" eye="0" gut="0" large="1"/>
     </entity>
     <entity anm2path="803.000_blindbat.anm2" baseHP="18" boss="0" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" gridCollision="walls" id="803" name="Blind Bat" numGridCollisionPoints="12" portrait="206" shadowSize="18" stageHP="0" variant="0">
