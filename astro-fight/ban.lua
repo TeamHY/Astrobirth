@@ -16,11 +16,8 @@ local latterStageBanItems = {
         Astro.Collectible.CAINS_SECRET_BAG,
     },
     trinket = {
-        Astro.Trinket.NOSTALGIA,
-        Astro.Trinket.BLACK_MIRROR,
-        Astro.Trinket.LAVA_HAND,
         TrinketType.TRINKET_CAINS_EYE,
-        TrinketType.TRINKET_JAW_BREAKER,
+        TrinketType.TRINKET_SIGIL_OF_BAPHOMET,
     }
 }
 
@@ -297,6 +294,8 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ATHAME,
             CollectibleType.COLLECTIBLE_DARK_ARTS,
             CollectibleType.COLLECTIBLE_BLANKET,
+            CollectibleType.COLLECTIBLE_DRY_BABY,
+            CollectibleType.COLLECTIBLE_PLUTO,
             Astro.Collectible.ARIES_EX,
             Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
             Astro.Collectible.OMEGA_321,
