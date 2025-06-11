@@ -15,6 +15,7 @@ local latterStageBanItems = {
         Astro.Collectible.ENTOMA_VASILISSA_ZETA,
         CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
         Astro.Collectible.CAINS_SECRET_BAG,
+        Astro.Collectible.ASTRO_STAR_OF_BETHLEHEM,
     },
     trinket = {
         TrinketType.TRINKET_CAINS_EYE,
