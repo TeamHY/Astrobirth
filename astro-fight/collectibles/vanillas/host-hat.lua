@@ -8,6 +8,7 @@ local ITEM_LIST = {
     CollectibleType.COLLECTIBLE_BBF,
     Astro.Collectible.COIN_DETONATOR,
     CollectibleType.COLLECTIBLE_EXPLOSIVO,
+    CollectibleType.COLLECTIBLE_CURSE_OF_THE_TOWER,
 }
 ---
 
