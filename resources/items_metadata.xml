@@ -78,7 +78,7 @@
     <item id="79" quality="2" tags="devil summonable offensive"/>
     <item id="80" quality="2" tags="devil summonable tearsup offensive"/>
     <item id="81" quality="3" tags="uniquefamiliar dead guppy nocantrip"/>
-    <item id="82" quality="3" tags="devil nolostbr summonable"/>
+    <item id="82" quality="2" tags="devil nolostbr summonable"/>
     <item id="83" quality="2" tags="devil"/>
     <item id="84" quality="2" tags="offensive"/>
     <item id="85" quality="2" tags="offensive nocantrip stars"/>
@@ -467,7 +467,7 @@
     <item id="469" quality="2" tags="summonable offensive"/>
     <item id="470" quality="0" tags="summonable monstermanual offensive"/>
     <item id="471" quality="2" tags="summonable monstermanual offensive"/>
-    <item id="472" quality="1" tags="summonable baby offensive"/>
+    <item id="472" quality="4" tags="summonable baby offensive"/>
     <item id="473" quality="1" tags="summonable monstermanual offensive"/>
     <item id="474" quality="0" tags=""/>
     <item id="475" quality="0" tags="offensive"/>
@@ -509,7 +509,7 @@
     <item id="511" quality="1" tags="summonable monstermanual offensive fly"/>
     <item id="512" quality="3" tags="offensive"/>
     <item id="513" quality="2" tags="nolostbr summonable"/>
-    <item id="514" quality="3" tags="summonable"/>
+    <item id="514" quality="2" tags="summonable"/>
     <item id="515" quality="3" tags="offensive nocantrip"/>
     <item id="516" quality="2" tags="offensive"/>
     <item id="517" quality="1" tags="summonable offensive"/>
