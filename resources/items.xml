@@ -121,7 +121,7 @@
 	<passive cache="damage firedelay speed size" description="#ODD_MUSHROOM_THIN_DESCRIPTION" gfx="Collectibles_120_OddMushroomThin.png" id="120" name="#ODD_MUSHROOM_THIN_NAME" />
 	<passive cache="damage speed range size" description="#ODD_MUSHROOM_LARGE_DESCRIPTION" gfx="Collectibles_121_OddMushroomLarge.png" id="121" hearts="2" maxhearts="2" name="#ODD_MUSHROOM_LARGE_NAME" />
 	<passive cache="damage speed" description="#WHORE_OF_BABYLON_DESCRIPTION" gfx="Collectibles_122_WhoreOFBabylon.png" id="122" name="#WHORE_OF_BABYLON_NAME" addcostumeonpickup="false" />
-	<active description="#MONSTER_MANUAL_DESCRIPTION" gfx="Collectibles_123_MonsterManual.png" id="123" maxcharges="6" name="#MONSTER_MANUAL_NAME" />
+	<active description="#MONSTER_MANUAL_DESCRIPTION" gfx="Collectibles_123_MonsterManual.png" id="123" maxcharges="4" name="#MONSTER_MANUAL_NAME" />
 	<active description="#DEAD_SEA_SCROLLS_DESCRIPTION" gfx="Collectibles_124_DeadSeaScrolls.png" id="124" maxcharges="2" name="#DEAD_SEA_SCROLLS_NAME" />
 	<passive bombs="5" description="#BOBBYBOMB_DESCRIPTION" gfx="Collectibles_125_BobbyBomb.png" id="125" name="#BOBBYBOMB_NAME" />
 	<active achievement="44" cache="damage" description="#RAZOR_BLADE_DESCRIPTION" gfx="Collectibles_126_RazorBlade.png" id="126" maxcharges="0" name="#RAZOR_BLADE_NAME" />
@@ -410,7 +410,7 @@
 	<familiar description="#SPIDER_MOD_DESCRIPTION" gfx="Collectibles_403_SpiderMod.png" id="403" name="#SPIDER_MOD_NAME" />
 	<familiar achievement="179" description="#FARTING_BABY_DESCRIPTION" gfx="collectibles_404_fartbaby.png" id="404" shopprice="10" name="#FARTING_BABY_NAME" />
 	<familiar achievement="201" description="#GB_BUG_DESCRIPTION" gfx="Collectibles_405_GBBug.png" id="405" name="#GB_BUG_NAME" />
-	<active achievement="231" description="#D8_DESCRIPTION" gfx="Collectibles_406_D8.png" id="406" name="#D8_NAME" maxcharges="4" />
+	<active achievement="231" description="#D8_DESCRIPTION" gfx="Collectibles_406_D8.png" id="406" name="#D8_NAME" maxcharges="1" />
 	<passive achievement="180" description="#PURITY_DESCRIPTION" gfx="Collectibles_407_Purity.png" id="407" name="#PURITY_NAME" cache="damage firedelay speed range" />
 	<passive achievement="184" description="#ATHAME_DESCRIPTION" gfx="Collectibles_408_Athame.png" id="408" devilprice="2" cache="luck" name="#ATHAME_NAME" />
 	<passive achievement="187" description="#EMPTY_VESSEL_DESCRIPTION" gfx="Collectibles_409_EmptyVessel.png" id="409" name="#EMPTY_VESSEL_NAME" cache="flying" blackhearts="4" />
@@ -514,7 +514,7 @@
 
 	<passive description="#LARGE_ZIT_DESCRIPTION" gfx="Collectibles_502_LargeZit.png" id="502" name="#LARGE_ZIT_NAME" />
 	<passive cache="damage" description="#LITTLE_HORN_DESCRIPTION" gfx="Collectibles_503_LittleHorn.png" devilprice="2" id="503" name="#LITTLE_HORN_NAME" />
-	<active achievement="316" description="#BROWN_NUGGET_DESCRIPTION" gfx="Collectibles_504_BrownNugget.png" id="504" name="#BROWN_NUGGET_NAME" cache="familiars" maxcharges="250" chargetype="timed" />
+	<active achievement="316" description="#BROWN_NUGGET_DESCRIPTION" gfx="Collectibles_504_BrownNugget.png" id="504" name="#BROWN_NUGGET_NAME" cache="familiars" maxcharges="125" chargetype="timed" />
 	<passive description="#POKE_GO_DESCRIPTION" gfx="Collectibles_505_PokeGo.png" id="505" name="#POKE_GO_NAME" />
 	<passive description="#BACKSTABBER_DESCRIPTION" devilprice="2" gfx="Collectibles_506_Backstabber.png" id="506" name="#BACKSTABBER_NAME" cache="tearflag" />
 	<active description="#SHARP_STRAW_DESCRIPTION" gfx="Collectibles_507_SharpStraw.png" id="507" name="#SHARP_STRAW_NAME" maxcharges="300" chargetype="timed"/>
@@ -525,7 +525,7 @@
 	
 	<!-- Booster Pack #1 -->
 	<familiar achievement="352" description="#ANGRY_FLY_DESCRIPTION" gfx="Collectibles_511_AngryFly.png" id="511" name="#ANGRY_FLY_NAME" />
-	<active achievement="349" description="#BLACK_HOLE_DESCRIPTION" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="3" name="#BLACK_HOLE_NAME" />
+	<active achievement="349" description="#BLACK_HOLE_DESCRIPTION" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="2" name="#BLACK_HOLE_NAME" />
 	<passive achievement="353" cache="damage" name="#BOZO_NAME" description="#BOZO_DESCRIPTION" soulhearts="2" id="513" gfx="Collectibles_513_Bozo.png" />
 	<passive achievement="354" name="#BROKEN_MODEM_NAME" description="#BROKEN_MODEM_DESCRIPTION" devilprice="2" shopprice="25" id="514" gfx="Collectibles_514_BrokenModem.png" />
 	<active achievement="350" description="#MYSTERY_GIFT_DESCRIPTION" id="515" gfx="Collectibles_515_MysteryGift.png" name="#MYSTERY_GIFT_NAME" />
@@ -630,7 +630,7 @@
 	<passive	id="602"	achievement="582" gfx="Collectibles_602_MemberCard.png" name="#MEMBER_CARD_NAME" description="#MEMBER_CARD_DESCRIPTION" />
 	<passive	id="603"	gfx="Collectibles_603_BatteryPack.png" name="#BATTERY_PACK_NAME" description="#BATTERY_PACK_DESCRIPTION" />
 	<active		id="604"	gfx="Collectibles_604_MomsBracelet.png" name="#MOMS_BRACELET_NAME" description="#MOMS_BRACELET_DESCRIPTION" shopprice="10" maxcharges="30" chargetype="timed" />
-	<active		id="605"	gfx="Collectibles_605_TheScooper.png" name="#THE_SCOOPER_NAME" description="#THE_SCOOPER_DESCRIPTION" maxcharges="2" cache="familiars" />
+	<active		id="605"	gfx="Collectibles_605_TheScooper.png" name="#THE_SCOOPER_NAME" description="#THE_SCOOPER_DESCRIPTION" maxcharges="1" cache="familiars" />
 	<passive	id="606"	gfx="Collectibles_606_OculusRift.png" name="#OCULAR_RIFT_NAME" description="#OCULAR_RIFT_DESCRIPTION" devilprice="2" />
 	<familiar	id="607"	gfx="Collectibles_607_BoiledBaby.png" name="#BOILED_BABY_NAME" description="#BOILED_BABY_DESCRIPTION" />
 	<familiar	id="608"	gfx="Collectibles_608_FreezerBaby.png" name="#FREEZER_BABY_NAME" description="#FREEZER_BABY_DESCRIPTION" />
