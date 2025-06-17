@@ -1,7 +1,6 @@
 Astro.Entities = {}
 
 require "astro-fight.entities.dark-esau"
-require "astro-fight.entities.mega-chest"
 require "astro-fight.entities.restock-machine"
 require "astro-fight.entities.shortcut-portal"
 
