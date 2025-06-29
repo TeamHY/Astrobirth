@@ -190,7 +190,7 @@
 	<passive achievement="63" cache="firedelay damage speed range" description="#SMB_SUPER_FAN_DESCRIPTION" gfx="Collectibles_189_SMBSuperFan.png" shopprice="7" hearts="99" id="189" maxhearts="2" name="#SMB_SUPER_FAN_NAME" />
 	<passive bombs="99" description="#PYRO_DESCRIPTION" gfx="Collectibles_190_Pyro.png" id="190" name="#PYRO_NAME" />
 	<passive cache="all" description="#3_DOLLAR_BILL_DESCRIPTION" gfx="Collectibles_191_3DollarBill.png" id="191" name="#3_DOLLAR_BILL_NAME" />
-	<active cache="tearflag tearcolor range" description="#TELEPATHY_FOR_DUMMIES_DESCRIPTION" gfx="Collectibles_192_TelepathyForDummies.png" id="192" maxcharges="4" name="#TELEPATHY_FOR_DUMMIES_NAME" />
+	<active cache="tearflag tearcolor range" description="#TELEPATHY_FOR_DUMMIES_DESCRIPTION" gfx="Collectibles_192_TelepathyForDummies.png" id="192" maxcharges="3" name="#TELEPATHY_FOR_DUMMIES_NAME" />
 	<passive cache="damage" description="#MEAT_DESCRIPTION" gfx="Collectibles_193_Meat.png" hearts="4" id="193" maxhearts="2" name="#MEAT_NAME" />
 	<passive cache="shotspeed" description="#MAGIC_8_BALL_DESCRIPTION" gfx="Collectibles_194_Magic8Ball.png" id="194" shopprice="9" name="#MAGIC_8_BALL_NAME" />
 	<passive description="#MOMS_COIN_PURSE_DESCRIPTION" gfx="Collectibles_195_MomsCoinPurse.png" id="195" name="#MOMS_COIN_PURSE_NAME" />
