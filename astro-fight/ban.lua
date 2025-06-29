@@ -16,6 +16,7 @@ local latterStageBanItems = {
         CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
         Astro.Collectible.CAINS_SECRET_BAG,
         Astro.Collectible.ASTRO_STAR_OF_BETHLEHEM,
+        Astro.Collectible.BOOK_OF_SUN,
     },
     trinket = {
         TrinketType.TRINKET_CAINS_EYE,
