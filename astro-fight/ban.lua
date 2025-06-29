@@ -92,6 +92,7 @@ local banItems = {
             Astro.Collectible.DELIRIUM_GUPPY,
             Astro.Collectible.ENTOMA_VASILISSA_ZETA,
             CollectibleType.COLLECTIBLE_SOL,
+            Astro.Collectible.BOOK_OF_LUNAR_ECLIPSE,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
