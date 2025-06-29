@@ -123,40 +123,40 @@ local function SpawnShortcutPortal()
     if roomType == RoomType.ROOM_TREASURE then
         Astro:Spawn(
             EntityType.ENTITY_EFFECT,
-            Astro.Entities.SHORTCUT_PORTAL,
-            Astro.Enums.ShortcutPortalSubType.SHOP,
+            EffectVariant.PORTAL_TELEPORT,
+            3,
             room:GetGridPosition(106)
         )
         Astro:Spawn(
             EntityType.ENTITY_EFFECT,
-            Astro.Entities.SHORTCUT_PORTAL,
-            Astro.Enums.ShortcutPortalSubType.BOSS,
+            EffectVariant.PORTAL_TELEPORT,
+            1,
             room:GetGridPosition(118)
         )
     elseif roomType == RoomType.ROOM_SHOP then
         Astro:Spawn(
             EntityType.ENTITY_EFFECT,
-            Astro.Entities.SHORTCUT_PORTAL,
-            Astro.Enums.ShortcutPortalSubType.TREASURE,
+            EffectVariant.PORTAL_TELEPORT,
+            0,
             room:GetGridPosition(106)
         )
         Astro:Spawn(
             EntityType.ENTITY_EFFECT,
-            Astro.Entities.SHORTCUT_PORTAL,
-            Astro.Enums.ShortcutPortalSubType.BOSS,
+            EffectVariant.PORTAL_TELEPORT,
+            1,
             room:GetGridPosition(118)
         )
     elseif roomType == RoomType.ROOM_BOSS then
         Astro:Spawn(
             EntityType.ENTITY_EFFECT,
-            Astro.Entities.SHORTCUT_PORTAL,
-            Astro.Enums.ShortcutPortalSubType.TREASURE,
+            EffectVariant.PORTAL_TELEPORT,
+            0,
             room:GetGridPosition(106)
         )
         Astro:Spawn(
             EntityType.ENTITY_EFFECT,
-            Astro.Entities.SHORTCUT_PORTAL,
-            Astro.Enums.ShortcutPortalSubType.SHOP,
+            EffectVariant.PORTAL_TELEPORT,
+            3,
             room:GetGridPosition(118)
         )
     end

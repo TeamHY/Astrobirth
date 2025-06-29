@@ -47,9 +47,13 @@ Astro:AddCallback(
 Astro:AddCallback(
     ModCallbacks.MC_PRE_ENTITY_SPAWN,
     ---@param type EntityType
-    function(_, type, variant, subtype)
-        if (type == EntityType.ENTITY_EFFECT and variant == EffectVariant.PORTAL_TELEPORT and subtype == 1) then
-            return {type, variant, 3, seed}
+    function(_, type, variant, subtype, position, velocity, spawner, seed)
+        local level = Game():GetLevel()
+
+        if level:GetCurrentRoomIndex() == level:GetStartingRoomIndex() then
+            if (type == EntityType.ENTITY_EFFECT and variant == EffectVariant.PORTAL_TELEPORT and subtype == 1) then
+                return {type, variant, 4, seed}
+            end
         end
     end
 )
