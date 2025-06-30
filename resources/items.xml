@@ -587,7 +587,7 @@
 	<passive	id="559"	gfx="Collectibles_559_120Volt.png" name="#120_VOLT_NAME" description="#120_VOLT_DESCRIPTION" />
 	<passive	id="560"	gfx="Collectibles_560_ItHurts.png" devilprice="2" name="#IT_HURTS_NAME" description="#IT_HURTS_DESCRIPTION" cache="damage" />
 	<passive	id="561"	gfx="Collectibles_561_AlmondMilk.png" name="#ALMOND_MILK_NAME" description="#ALMOND_MILK_DESCRIPTION" cache="damage firedelay tearcolor" />
-	<passive	id="562"	achievement="433" gfx="Collectibles_562_RockBottom.png" name="#ROCK_BOTTOM_NAME" description="#ROCK_BOTTOM_DESCRIPTION" cache="all" />
+	<passive	id="562"	achievement="433" gfx="Collectibles_562_RockBottom.png" shopprice="37" name="#ROCK_BOTTOM_NAME" description="#ROCK_BOTTOM_DESCRIPTION" cache="all" />
 	<passive	id="563"	gfx="Collectibles_563_EnigmaBombs.png" name="#NANCY_BOMBS_NAME" description="#NANCY_BOMBS_DESCRIPTION" bombs="5" />
 	<passive	id="564"	gfx="Collectibles_564_BarOfSoap.png" name="#A_BAR_OF_SOAP_NAME" description="#A_BAR_OF_SOAP_DESCRIPTION" cache="firedelay shotspeed" />
 	<familiar	id="565"	achievement="462" gfx="Collectibles_565_BloodPuppy.png" name="#BLOOD_PUPPY_NAME" description="#BLOOD_PUPPY_DESCRIPTION" />
