@@ -114,6 +114,8 @@ Astro:AddCallback(
                         if player:GetPlayerType() == PlayerType.PLAYER_KEEPER_B then
                             Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_MAGNETO, currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE * -2, Astro.GRID_SIZE), OPTIONS_PICKUP_INDEX, true)
                             Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT, currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE * 2, Astro.GRID_SIZE), OPTIONS_PICKUP_INDEX, true)
+                        elseif player:GetPlayerType() == PlayerType.PLAYER_APOLLYON_B and not player:HasCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT) then
+                            Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT, currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE * 2, Astro.GRID_SIZE), OPTIONS_PICKUP_INDEX, true)
                         end
                     elseif stage == LevelStage.STAGE2_2 then
                         Astro:SpawnCollectible(
