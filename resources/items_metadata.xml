@@ -355,7 +355,7 @@
     <item id="357" quality="1" tags="offensive"/>
     <item id="358" quality="4" craftquality="1" tags="summonable offensive"/>
     <item id="359" quality="2" tags="summonable offensive"/>
-    <item id="360" quality="4" tags="summonable baby monstermanual offensive"/>
+    <item id="360" quality="4" tags="summonable monstermanual offensive"/>
     <item id="361" quality="2" tags="summonable monstermanual offensive"/>
     <item id="362" quality="2" tags="summonable offensive"/>
     <item id="363" quality="2" tags="summonable baby monstermanual"/>
@@ -686,7 +686,7 @@
     <item id="695" quality="3" tags="nolostbr summonable"/>
     <item id="696" quality="1" tags="summonable offensive angel"/>
     <item id="697" quality="4" tags="uniquefamiliar offensive lazarusshared nogreed"/>
-    <item id="698" quality="4" tags="summonable baby monstermanual offensive"/>
+    <item id="698" quality="4" tags="summonable monstermanual offensive"/>
     <item id="699" quality="1" tags="summonable offensive"/>
     <item id="700" quality="2" tags="summonable offensive nocantrip stars"/>
     <item id="701" quality="2" tags="summonable offensive"/>
