@@ -241,7 +241,7 @@
     <item id="243" quality="2" tags="summonable"/>
     <item id="244" quality="2" tags="summonable tech offensive"/>
     <item id="245" quality="4" tags="summonable offensive"/>
-    <item id="246" quality="4" tags="summonable offensive lazarussharedglobal"/>
+    <item id="246" quality="4" tags="noeden summonable offensive lazarussharedglobal"/>
     <item id="247" quality="2" tags="summonable offensive"/>
     <item id="248" quality="2" tags="summonable spider offensive fly"/>
     <item id="249" quality="2" tags="summonable offensive nocantrip lazarussharedglobal nogreed"/>
