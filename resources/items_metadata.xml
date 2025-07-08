@@ -87,7 +87,7 @@
     <item id="88" quality="2" tags="summonable monstermanual offensive"/>
     <item id="89" quality="2" tags="summonable spider offensive"/>
     <item id="90" quality="3" tags="summonable tearsup offensive"/>
-    <item id="91" quality="4" tags="summonable offensive"/>
+    <item id="91" quality="4" tags="noeden summonable offensive"/>
     <item id="92" quality="2" tags="nolostbr"/>
     <item id="93" quality="1" tags="offensive"/>
     <item id="94" quality="1" tags="summonable offensive nocantrip"/>
