@@ -150,7 +150,7 @@ Astro:AddCallback(
                         --Astro:SpawnTrinket(Astro.Trinket.BLACK_MIRROR, currentRoom:GetCenterPos())
                     elseif stage == LevelStage.STAGE4_1 then
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
+                            itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(-Astro.GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
@@ -168,14 +168,14 @@ Astro:AddCallback(
                         player:RemoveCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
 
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
+                            itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE * 2, 0),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
                     elseif stage == LevelStage.STAGE4_2 or (stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 8) then -- 심장
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
+                            itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(-Astro.GRID_SIZE * 2, Astro.GRID_SIZE * 2),
                             OPTIONS_PICKUP_INDEX,
                             true
@@ -193,7 +193,7 @@ Astro:AddCallback(
                         player:RemoveCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
 
                         Astro:SpawnCollectible(
-                            itemPool:GetCollectible(ItemPoolType.POOL_TREASURE, true, currentRoom:GetSpawnSeed()),
+                            itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE * 2, Astro.GRID_SIZE * 2),
                             OPTIONS_PICKUP_INDEX,
                             true
@@ -211,7 +211,7 @@ Astro:AddCallback(
                         Isaac.Spawn(
                             EntityType.ENTITY_PICKUP,
                             PickupVariant.PICKUP_COLLECTIBLE,
-                            itemPool:GetCollectible(ItemPoolType.POOL_DEVIL, true, currentRoom:GetSpawnSeed()),
+                            itemPool:GetCollectible(ItemPoolType.POOL_SHOP, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(-Astro.GRID_SIZE, Astro.GRID_SIZE * 2),
                             Vector.Zero,
                             nil
