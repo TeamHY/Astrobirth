@@ -164,8 +164,10 @@ local banItems = {
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
+            CollectibleType.COLLECTIBLE_SCHOOLBAG,
             Astro.Collectible.ALTAIR,
             Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
+            Astro.Collectible.MY_MOON_MY_MAN,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
