@@ -108,7 +108,6 @@ local banItems = {
             TrinketType.TRINKET_MISSING_POSTER,
             Astro.Trinket.NOSTALGIA,
             Astro.Trinket.BLACK_MIRROR,
-            Astro.Trinket.LAVA_HAND,
         },
         card = {
             Card.CARD_REVERSE_HIGH_PRIESTESS,
