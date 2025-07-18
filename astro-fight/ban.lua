@@ -92,6 +92,7 @@ local banItems = {
             Astro.Collectible.BONFIRE,
             Astro.Collectible.DELIRIUM_GUPPY,
             Astro.Collectible.ENTOMA_VASILISSA_ZETA,
+            Astro.Collectible.SOLAR_SYSTEM,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_REMOTE,
