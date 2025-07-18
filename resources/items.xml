@@ -590,7 +590,7 @@
 	<passive	id="562"	achievement="433" gfx="Collectibles_562_RockBottom.png" shopprice="37" name="#ROCK_BOTTOM_NAME" description="#ROCK_BOTTOM_DESCRIPTION" cache="all" />
 	<passive	id="563"	gfx="Collectibles_563_EnigmaBombs.png" name="#NANCY_BOMBS_NAME" description="#NANCY_BOMBS_DESCRIPTION" bombs="5" />
 	<passive	id="564"	gfx="Collectibles_564_BarOfSoap.png" name="#A_BAR_OF_SOAP_NAME" description="#A_BAR_OF_SOAP_DESCRIPTION" cache="firedelay shotspeed" />
-	<familiar	id="565"	achievement="462" gfx="Collectibles_565_BloodPuppy.png" name="#BLOOD_PUPPY_NAME" description="#BLOOD_PUPPY_DESCRIPTION" />
+	<familiar	id="565"	achievement="462" gfx="Collectibles_565_BloodPuppy.png" name="#BLOOD_PUPPY_NAME" shopprice="7" description="#BLOOD_PUPPY_DESCRIPTION" />
 	<passive	id="566"	gfx="Collectibles_566_DreamCatcher.png" name="#DREAM_CATCHER_NAME" description="#DREAM_CATCHER_DESCRIPTION" />
 	<familiar	id="567"	gfx="Collectibles_567_PaschalCandle.png" name="#PASCHAL_CANDLE_NAME" description="#PASCHAL_CANDLE_DESCRIPTION" cache="firedelay" devilprice="2" />
 	<passive	id="568"	achievement="423" gfx="Collectibles_568_DivineIntervention.png" shopprice="5" name="#DIVINE_INTERVENTION_NAME" description="#DIVINE_INTERVENTION_DESCRIPTION" />
