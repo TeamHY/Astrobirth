@@ -382,7 +382,7 @@
 	<passive description="#HOST_HAT_DESCRIPTION" gfx="Collectibles_375_HostHat.png" id="375" name="#HOST_HAT_NAME" />
 	<passive description="#RESTOCK_DESCRIPTION" gfx="Collectibles_376_Restock.png" id="376" shopprice="13" name="#RESTOCK_NAME" />
 	<passive description="#BURSTING_SACK_DESCRIPTION" gfx="Collectibles_377_BurstingSack.png" id="377" name="#BURSTING_SACK_NAME" />
-	<passive description="#NUMBER_TWO_DESCRIPTION" gfx="Collectibles_378_NumberTwo.png" id="378" name="#NUMBER_TWO_NAME" />
+	<passive description="#NUMBER_TWO_DESCRIPTION" gfx="Collectibles_378_NumberTwo.png" id="378" shopprice="4" name="#NUMBER_TWO_NAME" />
 	<passive description="#PUPULA_DUPLEX_DESCRIPTION" gfx="Collectibles_379_PupulaDuplex.png" id="379" shopprice="5" name="#PUPULA_DUPLEX_NAME" cache="tearflag" />
 	<passive description="#PAY_TO_PLAY_DESCRIPTION" gfx="Collectibles_380_PayToPlay.png" id="380" shopprice="10" name="#PAY_TO_PLAY_NAME" coins="5" />
 	<passive achievement="188" description="#EDENS_BLESSING_DESCRIPTION" devilprice="1" gfx="Collectibles_381_EdensBlessing.png" id="381" name="#EDENS_BLESSING_NAME" cache="firedelay" />
