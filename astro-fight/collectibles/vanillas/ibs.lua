@@ -2,7 +2,7 @@
 
 local COOLDOWN_TIME = 300
 
-local MIN_COOLDOWN_TIME = 30
+local MIN_COOLDOWN_TIME = 300
 
 ---
 
