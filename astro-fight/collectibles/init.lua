@@ -77,6 +77,8 @@ if EID then
                 EID:appendToDescription(descObj, "#!!! 이번 게임에서 {{Collectible698}}Twisted Pair가 등장하지 않습니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_TWISTED_PAIR then
                 EID:appendToDescription(descObj, "#!!! 이번 게임에서 {{Collectible360}}Incubus가 등장하지 않습니다.")
+            elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_MONSTER_MANUAL then
+                EID:appendToDescription(descObj, "#획득 시 {{Card92}}Soul of Lilith를 1개 소환합니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_LUCKY_FOOT then
                 EID:appendToDescription(descObj, "#맵에 행운방의 위치가 표시됩니다.")
             elseif descObj.ObjSubType == CollectibleType.COLLECTIBLE_IPECAC or descObj.ObjSubType == CollectibleType.COLLECTIBLE_DR_FETUS or descObj.ObjSubType == CollectibleType.COLLECTIBLE_EPIC_FETUS or descObj.ObjSubType == CollectibleType.COLLECTIBLE_FRUIT_CAKE then
@@ -222,6 +224,8 @@ Astro:AddCallback(
             Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_TWISTED_PAIR)
         elseif collectibleType == CollectibleType.COLLECTIBLE_TWISTED_PAIR and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_TWISTED_PAIR) then
             Game():GetItemPool():RemoveCollectible(CollectibleType.COLLECTIBLE_INCUBUS)
+        elseif collectibleType == CollectibleType.COLLECTIBLE_MONSTER_MANUAL and Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_MONSTER_MANUAL) then
+            Astro:SpawnCard(Card.CARD_SOUL_LILITH, player.Position)
         elseif collectibleType == CollectibleType.COLLECTIBLE_LUCKY_FOOT then
             local level = Game():GetLevel()
             local idx = level:QueryRoomTypeIndex(RoomType.ROOM_BARREN, false, RNG())
