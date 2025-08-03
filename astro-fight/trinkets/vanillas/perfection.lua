@@ -105,7 +105,7 @@ Astro:AddCallback(
                             nil,
                             true
                         )
-                        Astro:SpawnCard(Card.RUNE_ANSUZ, player.Position)
+                        player:UseCard(Card.RUNE_ANSUZ, UseFlag.USE_NOANIM)
 
                         if not player:HasCollectible(CollectibleType.COLLECTIBLE_REDEMPTION) then
                             player:AddCollectible(CollectibleType.COLLECTIBLE_REDEMPTION)
