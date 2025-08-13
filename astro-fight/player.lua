@@ -854,7 +854,7 @@ Astro:AddCallback(
     ---@param activeSlot ActiveSlot
     ---@param varData integer
     function(_, collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
-        if playerWhoUsedItem:GetPlayerType() == PlayerType.PLAYER_ISAAC then
+        if playerWhoUsedItem:GetPlayerType() == PlayerType.PLAYER_ISAAC and not activeSlot == -1 then
             Astro:ScheduleForUpdate(
                 function()
                     local bonusCharge = diceData[collectibleID]
