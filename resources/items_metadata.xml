@@ -1,7 +1,7 @@
 <items>
     <item id="1" quality="2" tags="summonable tearsup offensive"/>
     <item id="2" quality="3" tags="summonable offensive"/>
-    <item id="3" quality="3" tags="summonable offensive"/>
+    <item id="3" quality="4" tags="summonable offensive"/>
     <item id="4" quality="4" tags="summonable dead offensive"/>
     <item id="5" quality="2" tags="summonable offensive"/>
     <item id="6" quality="2" tags="summonable tearsup offensive"/>
@@ -178,7 +178,7 @@
     <item id="179" quality="2" tags="nolostbr summonable"/>
     <item id="180" quality="2" tags="nolostbr summonable"/>
     <item id="181" quality="2" tags="offensive"/>
-    <item id="182" quality="4" tags="summonable offensive angel"/>
+    <item id="182" quality="5" tags="summonable offensive angel"/>
     <item id="183" quality="2" tags="summonable tearsup offensive"/>
     <item id="184" quality="2" tags="nolostbr summonable angel"/>
     <item id="185" quality="2" tags="nolostbr summonable angel"/>
@@ -368,7 +368,7 @@
     <item id="370" quality="2" tags="summonable tearsup offensive"/>
     <item id="371" quality="0" tags="nolostbr summonable"/>
     <item id="372" quality="0" tags="summonable offensive nocantrip"/>
-    <item id="373" quality="3" tags="summonable offensive"/>
+    <item id="373" quality="4" tags="summonable offensive"/>
     <item id="374" quality="4" tags="summonable offensive angel"/>
     <item id="375" quality="2" tags="summonable"/>
     <item id="376" quality="2" tags="summonable offensive nogreed"/>
@@ -620,7 +620,7 @@
     <item id="625" quality="4" tags="mushroom offensive"/>
     <item id="626" quality="0" tags="uniquefamiliar lazarusshared noeden quest"/>
     <item id="627" quality="0" tags="uniquefamiliar lazarusshared noeden quest"/>
-    <item id="628" quality="4" tags="offensive nocantrip"/>
+    <item id="628" quality="5" tags="offensive nocantrip"/>
     <item id="629" quality="2" tags="summonable monstermanual fly"/>
     <item id="631" quality="1" tags="offensive"/>
     <item id="632" quality="2" tags="summonable offensive"/>
