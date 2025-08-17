@@ -843,6 +843,7 @@ local diceData = {
     [Astro.Collectible.FORBIDDEN_DICE] = 1,
     [Astro.Collectible.QUBIT_DICE] = 1,
     [Astro.Collectible.PUZZLE_DICE] = 1,
+    [Astro.Collectible.GLITCHED_D6] = 1,
 }
 
 Astro:AddCallback(
