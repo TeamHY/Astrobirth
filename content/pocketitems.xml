@@ -1,12 +1,12 @@
 <pocketitems>
-	<card hud="I - The Cold" type="tarot" pickup="124" description="" name="I - The Cold" announcerdelay="60" mimiccharge="3" />
-	<card hud="II - The Servant" type="tarot" pickup="124" description="" name="II - The Servant" announcerdelay="60" mimiccharge="4" />
-	<card hud="III - Wisdom" type="tarot" pickup="124" description="" name="III - Wisdom" announcerdelay="60" mimiccharge="4" />
-	<card hud="IV - Repentance" type="tarot" pickup="124" description="" name="IV - Repentance" announcerdelay="60" mimiccharge="6" />
-	<card hud="V - Eternity" type="tarot" pickup="124" description="" name="V - Eternity" announcerdelay="60" mimiccharge="12" />
-	<card hud="VI - Corruption" type="tarot" pickup="124" description="" name="VI - Corruption" announcerdelay="60" mimiccharge="12" />
-	<card hud="VII - Immolation" type="tarot" pickup="124" description="" name="VII - Immolation" announcerdelay="60" mimiccharge="3" />
-	<card hud="VIII - Worship" type="tarot" pickup="124" description="" name="VIII - Worship" announcerdelay="60" mimiccharge="6" />
+	<card hud="I - The Cold" type="tarot" pickup="124" description="Be like snow, frigid and silent" name="I - The Cold" announcerdelay="60" mimiccharge="3" />
+	<card hud="II - The Servant" type="tarot" pickup="124" description="Your wish, their command" name="II - The Servant" announcerdelay="60" mimiccharge="4" />
+	<card hud="III - Wisdom" type="tarot" pickup="124" description="May your knowledge bring fortitude" name="III - Wisdom" announcerdelay="60" mimiccharge="4" />
+	<card hud="IV - Repentance" type="tarot" pickup="124" description="Never forget" name="IV - Repentance" announcerdelay="60" mimiccharge="6" />
+	<card hud="V - Eternity" type="tarot" pickup="124" description="Blessed be for eternity" name="V - Eternity" announcerdelay="60" mimiccharge="12" />
+	<card hud="VI - Corruption" type="tarot" pickup="124" description="Enter the unknown..." name="VI - Corruption" announcerdelay="60" mimiccharge="12" />
+	<card hud="VII - Immolation" type="tarot" pickup="124" description="A sacrifice to our Lord" name="VII - Immolation" announcerdelay="60" mimiccharge="3" />
+	<card hud="VIII - Worship" type="tarot" pickup="124" description="Purity in one's heart of hearts" name="VIII - Worship" announcerdelay="60" mimiccharge="6" />
 
 	<card type="object" name="Sword Capsule"  pickup="854" hud="Sword Capsule"	description="Damage up"  />
 	<card type="object" name="Heart Capsule"  pickup="855" hud="Heart Capsule" 	description="Health up"  />
