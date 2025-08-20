@@ -40,7 +40,7 @@ if EID then
 
     Astro:AddEIDCard(
         Astro.Card.WISDOM,
-        "{{UltraSecretRoom}} 사용 시 일급비밀방으로 이동합니다.",
+        "{{SuperSecretRoom}} 사용 시 일급비밀방으로 이동합니다.",
         "III - 지혜", "당신의 지식이 강인함을 가져오리라"
     )
 
