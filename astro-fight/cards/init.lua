@@ -1,4 +1,5 @@
 Astro.Card = {}
+Astro.EIDCard = {}
 
 Astro.Card.THE_COLD = Isaac.GetCardIdByName("I - The Cold")
 Astro.Card.THE_SERVANT = Isaac.GetCardIdByName("II - The Servant")
@@ -9,15 +10,75 @@ Astro.Card.CORRUPTION = Isaac.GetCardIdByName("VI - Corruption")
 Astro.Card.IMMOLATION = Isaac.GetCardIdByName("VII - Immolation")
 Astro.Card.WORSHIP = Isaac.GetCardIdByName("VIII - Worship")
 
+---@param id Card
+---@param eidDescription string
+---@param name string
+---@param description string
+function Astro:AddEIDCard(id, eidDescription, name, description)
+    if EID then
+        EID:addCard(id, eidDescription, name, "ko_kr")
+    end
+
+    Astro.EIDCard[id] = {
+        name = name,
+        description = description
+    }
+end
+
 if EID then
-    EID:addCard(Astro.Card.THE_COLD, "사용 시 모든 적이 둔화됩니다.", "I - The Cold")
-    EID:addCard(Astro.Card.THE_SERVANT, "사용 시 랜덤한 패밀리어 한마리가 소환됩니다.", "II - The Servant")
-    EID:addCard(Astro.Card.WISDOM, "사용 시 일급 비밀방으로 이동합니다.", "III - Wisdom")
-    EID:addCard(Astro.Card.REPENTANCE, "사용 시 30% 확률로 해당 방 안의 아이템을 변경합니다.#실패 시 깨진 하트 2개를 추가합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)", "IV - Repentance")
-    EID:addCard(Astro.Card.ETERNITY, "사용 시 이터널 하트가 1~4개 소환됩니다.", "V - Eternity")
-    EID:addCard(Astro.Card.CORRUPTION, "사용 시 30% 확률로 에러방으로 이동합니다.#실패 시 깨진 하트 2개를 추가합니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)", "VI - Corruption")
-    EID:addCard(Astro.Card.IMMOLATION, "사용 시 희생방으로 이동합니다.", "VII - Immolation")
-    EID:addCard(Astro.Card.WORSHIP, "사용 시 30% 확률로 현재 방 배열 아이템이 소환됩니다.#실패 시 배드 트립 알약을 1회 적용시킵니다.#!!! {{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)", "VIII - Worship")
+    Astro:AddEIDCard(
+        Astro.Card.THE_COLD,
+        "{{Slow}} 그 방의 적이 둔화됩니다.",
+        "I - 냉기", "눈처럼 차갑고 고요하리라"
+    )
+
+    Astro:AddEIDCard(
+        Astro.Card.THE_SERVANT,
+        "{{Collectible123}} 사용 시 그 스테이지에서 랜덤 패밀리어를 하나 소환합니다.",
+        "II - 종신", "당신의 명령을 기다리리라"
+    )
+
+    Astro:AddEIDCard(
+        Astro.Card.WISDOM,
+        "{{UltraSecretRoom}} 사용 시 일급비밀방으로 이동합니다.",
+        "III - 지혜", "당신의 지식이 강인함을 가져오리라"
+    )
+
+    Astro:AddEIDCard(
+        Astro.Card.REPENTANCE,
+        "사용 시 30% 확률로 해당 방 안의 아이템을 변경하거나;" ..
+        "#실패 시 {{BrokenHeart}}소지 불가능 체력 2칸을 추가합니다." ..
+        "#!!! {{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)",
+        "IV - 회개", "반드시 기억하리라"
+    )
+
+    Astro:AddEIDCard(
+        Astro.Card.ETERNITY,
+        "{{EternalHeart}} 이터널하트를 1~4개 드랍합니다.",
+        "V - 영원", "영원히 축복받으리라"
+    )
+
+    Astro:AddEIDCard(
+        Astro.Card.CORRUPTION,
+        "{{ErrorRoom}} 사용 시 30% 확률로 오류방으로 이동하거나;" ..
+        "#실패 시 {{BrokenHeart}}소지 불가능 체력 2칸을 추가합니다." ..
+        "#!!! {{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)",
+        "VI - 부패", "미지로 이끌어가리라..."
+    )
+
+    Astro:AddEIDCard(
+        Astro.Card.IMMOLATION,
+        "{{SacrificeRoom}} 사용 시 희생방으로 이동합니다.",
+        "VII - 희생", "주를 향한 희생"
+    )
+
+    Astro:AddEIDCard(
+        Astro.Card.WORSHIP,
+        "사용 시 30% 확률로 현재 방 배열 아이템이 소환하거나;" ..
+        "#실패 시 {{Pill1}}Bad Trip 알약을 발동합니다." ..
+        "#!!! {{LuckSmall}}행운 수치 비례: 행운 70 이상일 때 100% 확률 (행운 1당 +1%p)",
+        "VIII - 숭배", "육체와 영혼을 바치리라"
+    )
 end
 
 Astro:AddCallback(
