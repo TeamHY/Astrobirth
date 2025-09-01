@@ -26,6 +26,17 @@ function Astro:AddEIDCard(id, eidDescription, name, description)
 end
 
 if EID then
+    local nonongRemixCard = Sprite()
+    nonongRemixCard:Load("gfx/ui/cards/lostcards.anm2", true)
+    EID:addIcon("Card" .. Astro.Card.THE_COLD, "I - The Cold", 0, 9, 9, 4, 7, nonongRemixCard)
+    EID:addIcon("Card" .. Astro.Card.THE_SERVANT, "II - The Servant", 0, 9, 9, 4, 7, nonongRemixCard)
+    EID:addIcon("Card" .. Astro.Card.WISDOM, "III - Wisdom", 0, 9, 9, 4, 7, nonongRemixCard)
+    EID:addIcon("Card" .. Astro.Card.REPENTANCE, "IV - Repentance", 0, 9, 9, 4, 7, nonongRemixCard)
+    EID:addIcon("Card" .. Astro.Card.ETERNITY, "V - Eternity", 0, 9, 9, 4, 7, nonongRemixCard)
+    EID:addIcon("Card" .. Astro.Card.CORRUPTION, "VI - Corruption", 0, 9, 9, 4, 7, nonongRemixCard)
+    EID:addIcon("Card" .. Astro.Card.IMMOLATION, "VII - Immolation", 0, 9, 9, 4, 7, nonongRemixCard)
+    EID:addIcon("Card" .. Astro.Card.WORSHIP, "VIII - Worship", 0, 9, 9, 4, 7, nonongRemixCard)
+
     Astro:AddEIDCard(
         Astro.Card.THE_COLD,
         "{{Slow}} 그 방의 적이 둔화됩니다.",
