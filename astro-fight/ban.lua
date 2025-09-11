@@ -979,43 +979,49 @@ end
 
 ---@param player EntityPlayer
 function Astro:AutoWasting(player)
-	if player:GetCard(0) == Card.RUNE_ANSUZ then
-		WasteCard(player, Card.RUNE_ANSUZ, 0)
-	elseif player:GetCard(0) == Card.CARD_WORLD then
-		WasteCard(player, Card.CARD_WORLD, 0)
-	elseif player:GetCard(0) == Card.CARD_SUN then
-		WasteCard(player, Card.CARD_SUN, 0)
-	elseif player:GetCard(0) == Card.CARD_JUSTICE then
-		WasteCard(player, Card.CARD_JUSTICE, 0)
-	elseif player:GetCard(0) == Card.CARD_HIEROPHANT then
-		WasteCard(player, Card.CARD_HIEROPHANT, 0)
-	elseif player:GetCard(0) == Card.CARD_REVERSE_HIEROPHANT then
-		WasteCard(player, Card.CARD_REVERSE_HIEROPHANT, 0)
-	elseif player:GetCard(0) == Card.CARD_RULES then
-		WasteCard(player, Card.CARD_RULES, 0)
-	elseif player:GetCard(0) == Card.CARD_ANCIENT_RECALL then
-		WasteCard(player, Card.CARD_ANCIENT_RECALL, 0)
-	elseif player:GetCard(0) == Card.CARD_REVERSE_MAGICIAN then
-		WasteCard(player, Card.CARD_REVERSE_MAGICIAN, 0)
-	elseif player:GetCard(0) == Card.RUNE_BERKANO then
-		WasteCard(player, Card.RUNE_BERKANO, 0)
-	elseif player:GetCard(0) == Astro.Card.ETERNITY then
-		WasteCard(player, Astro.Card.ETERNITY, 0)
-	elseif player:GetCard(0) == Card.CARD_HOLY and player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
-		player:SetCard(0, 0) -- 획득 시 삭제
-	else
-		local pillColor = player:GetPill(0)
+    for slotId = 0, 3 do
+        local cardID = player:GetCard(slotId)
+        
+        if cardID == Card.RUNE_ANSUZ then
+            WasteCard(player, Card.RUNE_ANSUZ, slotId)
+        elseif cardID == Card.CARD_WORLD then
+            WasteCard(player, Card.CARD_WORLD, slotId)
+        elseif cardID == Card.CARD_SUN then
+            WasteCard(player, Card.CARD_SUN, slotId)
+        elseif cardID == Card.CARD_JUSTICE then
+            WasteCard(player, Card.CARD_JUSTICE, slotId)
+        elseif cardID == Card.CARD_HIEROPHANT then
+            WasteCard(player, Card.CARD_HIEROPHANT, slotId)
+        elseif cardID == Card.CARD_REVERSE_HIEROPHANT then
+            WasteCard(player, Card.CARD_REVERSE_HIEROPHANT, slotId)
+        elseif cardID == Card.CARD_RULES then
+            WasteCard(player, Card.CARD_RULES, slotId)
+        elseif cardID == Card.CARD_ANCIENT_RECALL then
+            WasteCard(player, Card.CARD_ANCIENT_RECALL, slotId)
+        elseif cardID == Card.CARD_REVERSE_MAGICIAN then
+            WasteCard(player, Card.CARD_REVERSE_MAGICIAN, slotId)
+        elseif cardID == Card.RUNE_BERKANO then
+            WasteCard(player, Card.RUNE_BERKANO, slotId)
+        elseif cardID == Astro.Card.ETERNITY then
+            WasteCard(player, Astro.Card.ETERNITY, slotId)
+        elseif cardID == Card.CARD_HOLY and player:HasCollectible(CollectibleType.COLLECTIBLE_DAMOCLES_PASSIVE) then
+            player:SetCard(slotId, 0) -- 획득 시 삭제
+        end
+    end
+    
+    for slotId = 0, 3 do
+        local pillColor = player:GetPill(slotId)
 
-		if pillColor then
-			local itemPool = Game():GetItemPool()
-			local pillEffect = itemPool:GetPillEffect(pillColor)
+        if pillColor then
+            local itemPool = Game():GetItemPool()
+            local pillEffect = itemPool:GetPillEffect(pillColor)
 
-			if pillEffect == PillEffect.PILLEFFECT_BALLS_OF_STEEL then
-				player:SetPill(0, PillColor.PILL_NULL)
-				player:UsePill(PillEffect.PILLEFFECT_BALLS_OF_STEEL, pillColor)
-			end
-		end
-	end
+            if pillEffect == PillEffect.PILLEFFECT_BALLS_OF_STEEL then
+                player:SetPill(slotId, PillColor.PILL_NULL)
+                player:UsePill(PillEffect.PILLEFFECT_BALLS_OF_STEEL, pillColor)
+            end
+        end
+    end
 end
 
 Astro:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Astro.AutoWasting)
