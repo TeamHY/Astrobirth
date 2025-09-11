@@ -1019,6 +1019,9 @@ function Astro:AutoWasting(player)
             if pillEffect == PillEffect.PILLEFFECT_BALLS_OF_STEEL then
                 player:SetPill(slotId, PillColor.PILL_NULL)
                 player:UsePill(PillEffect.PILLEFFECT_BALLS_OF_STEEL, pillColor)
+            elseif pillEffect == PillEffect.PILLEFFECT_SHOT_SPEED_DOWN and player:HasCollectible(CollectibleType.COLLECTIBLE_FALSE_PHD) then
+                player:SetPill(slotId, PillColor.PILL_NULL)
+                player:UsePill(PillEffect.PILLEFFECT_SHOT_SPEED_DOWN, pillColor)
             end
         end
     end
