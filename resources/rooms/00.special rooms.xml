@@ -58809,6 +58809,9 @@
 		<spawn x="9" y="5">
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
 		</spawn>
+		<spawn x="12" y="6">
+			<entity type="5" variant="100" subtype="479" weight="1.0"/>
+		</spawn>
 	</room>
 	<room variant="0" name="Isaac's Room" type="18" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
