@@ -451,7 +451,7 @@ local startItem = {
     },
     [PlayerType.PLAYER_THELOST_B] = {
         collectible = {
-            -- CollectibleType.COLLECTIBLE_SAD_ONION,
+            Astro.Collectible.UNHOLY_MANTLE,
         },
         trinket = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,

@@ -602,6 +602,13 @@ local banItems = {
             TrinketType.TRINKET_BROKEN_ANKH,
         },
         card = {
+            Card.CARD_HOLY,
+            Card.CARD_ERA_WALK,
+            Card.CARD_REVERSE_MAGICIAN,
+            Card.CARD_SOUL_LAZARUS,
+            Card.CARD_SOUL_LOST,
+            Card.RUNE_ALGIZ,
+            Card.CARD_CHAOS,
         },
         pill = {
         }
