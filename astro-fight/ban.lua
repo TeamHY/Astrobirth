@@ -107,8 +107,6 @@ local banItems = {
             TrinketType.TRINKET_MYOSOTIS,
             TrinketType.TRINKET_HOLLOW_HEART,
             TrinketType.TRINKET_MISSING_POSTER,
-            Astro.Trinket.NOSTALGIA,
-            Astro.Trinket.BLACK_MIRROR,
         },
         card = {
             Card.CARD_REVERSE_HIGH_PRIESTESS,
