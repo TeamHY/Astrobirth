@@ -7,7 +7,7 @@ if EID then
             end
         end,
         function(descObj)
-            EID:appendToDescription(descObj, "#↑ {{DamageSmall}}공격력 +1.8#↓ 현재 체력 한 칸당 {{DamageSmall}}공격력 -0.18")
+            EID:appendToDescription(descObj, "#↑ {{DamageSmall}}공격력 +1.8#↓ 현재 체력 한 칸당 {{DamageSmall}}공격력 -0.18#스테이지 진입 시 {{Heart}}빨간 하트를 하나 소환합니다.")
 
             return descObj
         end
@@ -41,6 +41,19 @@ Astro:AddCallback(
         if cacheFlag == CacheFlag.CACHE_DAMAGE then
             if player:HasCollectible(CollectibleType.COLLECTIBLE_BLOOD_OATH) then
                 player.Damage = player.Damage + (1.8 ^ player:GetCollectibleNum(CollectibleType.COLLECTIBLE_BLOOD_OATH)) - (player:GetHearts() + player:GetSoulHearts()) * 0.09
+            end
+        end
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_LEVEL,
+    function(_)
+        for i = 1, Game():GetNumPlayers() do
+            local player = Isaac.GetPlayer(i - 1)
+
+            if player:HasCollectible(CollectibleType.COLLECTIBLE_BLOOD_OATH) then
+                Astro:Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_HEART, 1, player.Position)
             end
         end
     end
