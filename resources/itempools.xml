@@ -1511,6 +1511,7 @@
 		
 	</Pool>
 	<Pool Name="redChest">
+		<Item Id="81" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="133" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="145" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="187" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
