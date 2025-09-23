@@ -6,7 +6,7 @@ local bossRoomResetList = {
 
 if EID then
     EID:addDescriptionModifier(
-        "AstroCollectiblesActive",
+        "AstroCollectiblesBossActive",
         function(descObj)
             if descObj.ObjVariant == PickupVariant.PICKUP_COLLECTIBLE then
                 return true
@@ -25,7 +25,6 @@ if EID then
     )
 end
 
----해당 슬롯에 있는 아이템이 list에 존재할 경우 쿨타임 게이지를 초기화합니다.
 ---@param player EntityPlayer
 ---@param activeSlot ActiveSlot
 ---@param list CollectibleType[]
