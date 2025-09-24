@@ -9,6 +9,11 @@ local latterStageBanItems = {
         CollectibleType.COLLECTIBLE_GHOST_PEPPER,
         CollectibleType.COLLECTIBLE_BIRDS_EYE,
         CollectibleType.COLLECTIBLE_PARASITE,
+        CollectibleType.COLLECTIBLE_COMPASS,
+        CollectibleType.COLLECTIBLE_TREASURE_MAP,
+        CollectibleType.COLLECTIBLE_BLUE_MAP,
+        CollectibleType.COLLECTIBLE_CRYSTAL_BALL,
+        CollectibleType.COLLECTIBLE_SPELUNKER_HAT,
         Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
         CollectibleType.COLLECTIBLE_ISAACS_HEART,
         Astro.Collectible.UNHOLY_MANTLE,
@@ -17,6 +22,8 @@ local latterStageBanItems = {
         Astro.Collectible.CAINS_SECRET_BAG,
         Astro.Collectible.ASTRO_STAR_OF_BETHLEHEM,
         Astro.Collectible.BOOK_OF_SUN,
+
+
     },
     trinket = {
         TrinketType.TRINKET_CAINS_EYE,
