@@ -130,6 +130,8 @@ local banItems = {
             Card.CARD_SOUL_BLUEBABY,
             Card.CARD_SOUL_SAMSON,
             Card.CARD_SOUL_JACOB,
+            Card.CARD_REVERSE_STARS,
+            Card.CARD_REVERSE_LOVERS,
         },
         pill = {
             PillEffect.PILLEFFECT_BAD_TRIP,
