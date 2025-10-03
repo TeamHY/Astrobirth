@@ -714,7 +714,7 @@
 	<passive	id="686"	achievement="422" gfx="Collectibles_686_SoulLocket.png" name="#SOUL_LOCKET_NAME" description="#SOUL_LOCKET_DESCRIPTION" />
 	<active		id="687"	achievement="473" gfx="Collectibles_687_FriendFinder.png" name="#FRIEND_FINDER_NAME" description="#FRIEND_FINDER_DESCRIPTION" maxcharges="4" />
 	<passive	id="688"	achievement="434" gfx="Collectibles_688_InnerChild.png" name="#INNER_CHILD_NAME" description="#INNER_CHILD_DESCRIPTION" persistent="true" cache="range firedelay speed size" addcostumeonpickup="false" />
-	<passive	id="689"	achievement="491" gfx="Collectibles_689_GlitchedCrown.png" name="#GLITCHED_CROWN_NAME" description="#GLITCHED_CROWN_DESCRIPTION" />
+	<passive	id="689"	achievement="491" gfx="Collectibles_689_GlitchedCrown.png" shopprice="35" name="#GLITCHED_CROWN_NAME" description="#GLITCHED_CROWN_DESCRIPTION" />
 	<passive	id="690"	achievement="492" gfx="Collectibles_690_BellyJelly.png" name="#BELLY_JELLY_NAME" shopprice="20" description="#BELLY_JELLY_DESCRIPTION" />
 	<passive	id="691"	achievement="501" gfx="Collectibles_691_SacredOrb.png" name="#SACRED_ORB_NAME" shopprice="30" description="#SACRED_ORB_DESCRIPTION" devilprice="2" />
 	<passive	id="692"	achievement="494" gfx="Collectibles_692_SanguineBond.png" name="#SANGUINE_BOND_NAME" description="#SANGUINE_BOND_DESCRIPTION" persistent="true" cache="damage" />
