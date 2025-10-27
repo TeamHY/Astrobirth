@@ -53,8 +53,10 @@ Astro:AddCallback(
     ModCallbacks.MC_POST_GAME_STARTED,
     ---@param isContinued boolean
     function(_, isContinued)
-        Astro.Data.IsEnabledShortcutPortals = false
-        Astro.Data.IsEnabledMirrorShortcutPortals = false
+        if not isContinued then
+            Astro.Data.IsEnabledShortcutPortals = false
+            Astro.Data.IsEnabledMirrorShortcutPortals = false
+        end
     end
 )
 
@@ -197,17 +199,17 @@ Astro:AddCallback(
         local room = level:GetCurrentRoom()
         local roomDesc = level:GetCurrentRoomDesc()
 
-        if level:GetStage() <= LevelStage.STAGE1_2 then
-            if room:IsMirrorWorld() then
-                if Astro.Data.IsEnabledMirrorShortcutPortals then
-                    SpawnShortcutPortal()
-                end
-            else
-                if Astro.Data.IsEnabledShortcutPortals then
-                    SpawnShortcutPortal()
-                end
+        if room:IsMirrorWorld() then
+            if Astro.Data.IsEnabledMirrorShortcutPortals then
+                SpawnShortcutPortal()
             end
-        elseif level:GetAbsoluteStage() == LevelStage.STAGE4_2 and roomDesc.Data.Name == "Entrance Room" then
+        else
+            if Astro.Data.IsEnabledShortcutPortals then
+                SpawnShortcutPortal()
+            end
+        end
+
+        if level:GetAbsoluteStage() == LevelStage.STAGE4_2 and roomDesc.Data.Name == "Entrance Room" then
             Astro:Spawn(
                 EntityType.ENTITY_EFFECT,
                 Astro.Entities.SHORTCUT_PORTAL,
