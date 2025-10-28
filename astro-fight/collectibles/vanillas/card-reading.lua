@@ -25,7 +25,7 @@ Astro:AddCallback(
         local level = Game():GetLevel()
         local room = Game():GetRoom()
 
-        if level:GetStage() > LevelStage.STAGE1_2 and room:GetType() == RoomType.ROOM_BOSS then
+        if Astro:GetCollectibleNum(CollectibleType.COLLECTIBLE_CARD_READING) >= 2 and level:GetStage() > LevelStage.STAGE1_2 and room:GetType() == RoomType.ROOM_BOSS then
             Astro.Data.IsEnabledShortcutPortals = true
         end
     end
