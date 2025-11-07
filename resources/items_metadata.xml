@@ -64,7 +64,7 @@
     <item id="65" quality="1" tags="book offensive"/>
     <item id="66" quality="1" tags="offensive"/>
     <item id="67" quality="1" tags="summonable baby monstermanual offensive"/>
-    <item id="68" quality="3" tags="summonable tech offensive"/>
+    <item id="68" quality="2" tags="summonable tech offensive"/>
     <item id="69" quality="2" tags="summonable offensive"/>
     <item id="70" quality="2" tags="summonable syringe offensive"/>
     <item id="71" quality="2" tags="summonable mushroom offensive"/>
@@ -148,7 +148,7 @@
     <item id="149" quality="2" tags="bob summonable offensive"/>
     <item id="150" quality="4" tags="summonable offensive"/>
     <item id="151" quality="3" tags="summonable offensive fly"/>
-    <item id="152" quality="2" tags="summonable tech offensive"/>
+    <item id="152" quality="4" tags="summonable tech offensive"/>
     <item id="153" quality="3" tags="summonable spider offensive"/>
     <item id="154" quality="2" tags="summonable offensive"/>
     <item id="155" quality="2" tags="summonable monstermanual offensive"/>
