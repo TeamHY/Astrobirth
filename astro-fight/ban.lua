@@ -315,6 +315,7 @@ local banItems = {
             Astro.Collectible.QUASAR,
             Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
             Astro.Collectible.SAMSARA,
+            Astro.Collectible.LIFE_SUSTAINING_TREATMENT,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
@@ -633,6 +634,7 @@ local banItems = {
             Astro.Collectible.QUASAR,
             Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
             Astro.Collectible.SAMSARA,
+            Astro.Collectible.LIFE_SUSTAINING_TREATMENT,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
