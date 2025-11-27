@@ -366,7 +366,7 @@
 	<passive description="#8_INCH_NAILS_DESCRIPTION" gfx="Collectibles_359_8InchNails.png" id="359" name="#8_INCH_NAILS_NAME" cache="damage tearflag" />
 	<familiar achievement="190" description="#INCUBUS_DESCRIPTION" gfx="Collectibles_360_Incubus.png" id="360" name="#INCUBUS_NAME" devilprice="2" />
 	<familiar achievement="183" description="#FATES_REWARD_DESCRIPTION" gfx="Collectibles_361_FatesReward.png" id="361" name="#FATES_REWARD_NAME" />
-	<familiar achievement="192" description="#LIL_CHEST_DESCRIPTION" gfx="Collectibles_362_LilChest.png" shopprice="8" id="362" name="#LIL_CHEST_NAME" />
+	<familiar achievement="192" description="#LIL_CHEST_DESCRIPTION" gfx="Collectibles_362_LilChest.png" hidden="true" shopprice="8" id="362" name="#LIL_CHEST_NAME" />
 	<familiar achievement="189" description="#SWORN_PROTECTOR_DESCRIPTION" gfx="Collectibles_363_SwornProtector.png" id="363" name="#SWORN_PROTECTOR_NAME" />
 	<familiar description="#FRIEND_ZONE_DESCRIPTION" gfx="Collectibles_364_FriendZone.png" id="364" name="#FRIEND_ZONE_NAME" />
 	<familiar description="#LOST_FLY_DESCRIPTION" gfx="Collectibles_365_LostFly.png" id="365" name="#LOST_FLY_NAME" />
