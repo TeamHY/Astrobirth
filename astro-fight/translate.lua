@@ -112,8 +112,10 @@ Astro.Fight:AddCallback(ModCallbacks.MC_POST_UPDATE, function()
                         if c == cardID and Astro.EIDCard[cardID] then
                             local cardNames = Astro.EIDCard[cardID].name
                             local cardDescs = Astro.EIDCard[cardID].description
-
-                            Game():GetHUD():ShowItemText(cardNames or "", cardDescs or "...")
+                            
+                            if Options.Language == "kr" or REPKOR then
+                                Game():GetHUD():ShowItemText(cardNames or "", cardDescs or "...")
+                            end
                         end
                     end
                 end
@@ -182,7 +184,7 @@ local font = Font()
 font:Load(Astro.Fight.modPath .. "resources/font/for translate/luaminioutlined.fnt")
 
 local function RenderPocketItemName()
-    if not REPKOR then return end
+    if Options.Language ~= "kr" or not REPKOR then return end
     if not Game():GetHUD():IsVisible() then return end
     if Game():GetNumPlayers() > 1 then return end    -- 멀티 유기
 
