@@ -349,10 +349,12 @@ Astro:AddCallback(
         if entityNPC.Type == EntityType.ENTITY_DOGMA and entityNPC.Variant == 1 then
             local rng = entityNPC:GetDropRNG()
 
+            Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, 2, 0, currentRoom:GetGridPosition(106), Vector.Zero, nil)                    -- Cursed Death's Head
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, 0, 0, currentRoom:GetGridPosition(106), Vector.Zero, nil)                    -- Death's Head
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, rng:RandomInt(2) * 2, 0, currentRoom:GetGridPosition(118), Vector.Zero, nil) -- Death's Head or Cursed Death's Head
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, rng:RandomInt(2) * 2, 0, currentRoom:GetGridPosition(121), Vector.Zero, nil)
             Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, 0, 0, currentRoom:GetGridPosition(133), Vector.Zero, nil)
+            Isaac.Spawn(EntityType.ENTITY_DEATHS_HEAD, 2, 0, currentRoom:GetGridPosition(148), Vector.Zero, nil)
         elseif entityNPC.Type == EntityType.ENTITY_SPIDER then
             if roomType == RoomType.ROOM_SECRET or roomType == RoomType.ROOM_SUPERSECRET or roomType == RoomType.ROOM_ARCADE then
                 entityNPC:Remove()
