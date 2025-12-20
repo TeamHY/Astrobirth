@@ -47,17 +47,20 @@ Astro:AddCallback(
     ---@param activeSlot ActiveSlot
     ---@param varData integer
     function(_, collectibleType, rng, playerWhoUsedItem, useFlags, activeSlot, varData)
-        if playerWhoUsedItem:GetPlayerType() == PlayerType.PLAYER_THELOST then
-            local data = Astro:GetPersistentPlayerData(playerWhoUsedItem)
-            local stage = game:GetLevel():GetStage()
-            data.eternalD6Available[tostring(stage)] = data.eternalD6Available[tostring(stage)] or 1
+        local data = Astro:GetPersistentPlayerData(playerWhoUsedItem)
+        local stage = game:GetLevel():GetStage()
+        data.eternalD6Available[tostring(stage)] = data.eternalD6Available[tostring(stage)] or 1
 
-            if data.eternalD6Available[tostring(stage)] == 1 then
-                data.eternalD6Available[tostring(stage)] = 0
+        if collectibleType == CollectibleType.COLLECTIBLE_ETERNAL_D6 then
+            if playerWhoUsedItem:GetPlayerType() == PlayerType.PLAYER_THELOST then
+                if data.eternalD6Available[tostring(stage)] == 1 then
+                    data.eternalD6Available[tostring(stage)] = 0
+                end
             end
+        elseif collectibleType == (CollectibleType.COLLECTIBLE_FORGET_ME_NOW or CollectibleType.COLLECTIBLE_R_KEY) then
+            data.eternalD6Available = {}
         end
-    end,
-    CollectibleType.COLLECTIBLE_ETERNAL_D6
+    end
 )
 
 Astro:AddCallback(
