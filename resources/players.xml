@@ -83,7 +83,7 @@
 		<hair gfx="Character_009_EdenHair40.png" />
 	</player>
 	<!-- starting item was D4 (284), now Eternal D6 (609) -->
-	<player id="10" name="#THE_LOST_NAME" skin="Character_012_TheLost.png" hp="0" armor="1" coins="0" keys="1" bombs="2" pocketActive="609" achievement="82"
+	<player id="10" name="#THE_LOST_NAME" skin="Character_012_TheLost.png" hp="0" armor="1" coins="0" keys="1" bombs="2" pocketActive="" achievement="82"
           nameimage="PlayerName_12_TheLost.png" 
           portrait="PlayerPortrait_TheLost.png" skinColor="0"
 		  birthright="#THE_LOST_BIRTHRIGHT" />
