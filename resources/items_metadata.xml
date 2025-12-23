@@ -135,7 +135,7 @@
     <item id="136" quality="1" tags="offensive"/>
     <item id="137" quality="1" tags="offensive nocantrip"/>
     <item id="138" quality="2" tags="summonable"/>
-    <item id="139" quality="2" tags="summonable mom offensive nocantrip"/>
+    <item id="139" quality="2" tags="quest summonable mom offensive nocantrip"/>
     <item id="140" quality="1" tags="bob summonable offensive"/>
     <item id="141" quality="0" tags="offensive"/>
     <item id="142" quality="2" tags="nolostbr summonable angel"/>
@@ -449,7 +449,7 @@
     <item id="451" quality="2" tags="summonable offensive stars"/>
     <item id="452" quality="1" tags="nolostbr summonable"/>
     <item id="453" quality="3" tags="summonable offensive"/>
-    <item id="454" quality="3" tags="summonable offensive"/>
+    <item id="454" quality="3" tags="quest summonable offensive"/>
     <item id="455" quality="1" craftquality="2" tags="summonable offensive"/>
     <item id="456" quality="1" tags="nolostbr food"/>
     <item id="457" quality="2" tags="summonable"/>
@@ -529,7 +529,7 @@
     <item id="531" quality="4" tags="summonable offensive"/>
     <item id="532" quality="4" tags="summonable offensive"/>
     <item id="533" quality="3" tags="summonable offensive"/>
-    <item id="534" quality="3" tags="summonable offensive nocantrip"/>
+    <item id="534" quality="3" tags="quest summonable offensive nocantrip"/>
     <item id="535" quality="2" tags="summonable"/>
     <item id="536" quality="2" tags="offensive nocantrip"/>
     <item id="537" quality="1" tags="summonable monstermanual offensive"/>
