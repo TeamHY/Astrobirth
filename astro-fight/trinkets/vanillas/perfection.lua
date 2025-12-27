@@ -146,8 +146,7 @@ Astro:AddCallback(
                     elseif stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then -- 엄마 발
                         player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
 
-                        Astro:SpawnCard(Card.CARD_GET_OUT_OF_JAIL, player.Position)
-                        --Astro:SpawnTrinket(Astro.Trinket.BLACK_MIRROR, currentRoom:GetCenterPos())
+                        currentRoom:TrySpawnBossRushDoor(true)
                     elseif stage == LevelStage.STAGE4_1 then
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
