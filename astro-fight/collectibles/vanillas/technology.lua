@@ -9,7 +9,7 @@ if EID then
         CollectibleType.COLLECTIBLE_TECHNOLOGY,
         "↑ {{TearsSmall}}연사(+상한) +" .. TECHNOLOGY_TEARS ..
         "#공격이 레이저 공격으로 변경됩니다." ..
-        "#레이저는 사거리 제한이 없으며 적과 장애물을 관통합니다." ..
+        "#레이저는 사거리 제한이 없으며 적과 장애물을 관통합니다.",
         "기계장치",
         "ko_kr"
     )
