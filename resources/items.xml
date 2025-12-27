@@ -634,7 +634,7 @@
 	<passive	id="606"	gfx="Collectibles_606_OculusRift.png" name="#OCULAR_RIFT_NAME" description="#OCULAR_RIFT_DESCRIPTION" devilprice="2" />
 	<familiar	id="607"	gfx="Collectibles_607_BoiledBaby.png" name="#BOILED_BABY_NAME" description="#BOILED_BABY_DESCRIPTION" />
 	<familiar	id="608"	gfx="Collectibles_608_FreezerBaby.png" name="#FREEZER_BABY_NAME" description="#FREEZER_BABY_DESCRIPTION" />
-	<active		id="609"	achievement="448" gfx="Collectibles_609_FloriansD6.png" name="#ETERNAL_D6_NAME" description="#ETERNAL_D6_DESCRIPTION" maxcharges="6" />
+	<active		id="609"	achievement="448" gfx="Collectibles_609_FloriansD6.png" name="#ETERNAL_D6_NAME" hidden="true" description="#ETERNAL_D6_DESCRIPTION" maxcharges="2" />
 	<familiar	id="610"	achievement="450" gfx="Collectibles_610_BirdCage.png" name="#BIRD_CAGE_NAME" description="#BIRD_CAGE_DESCRIPTION" />
 	<active		id="611"	achievement="497" gfx="Collectibles_611_Larynx.png" name="#LARYNX_NAME" description="#LARYNX_DESCRIPTION" maxcharges="12" initcharge="1" cooldown="12" />
 	<familiar	id="612"	achievement="460" gfx="Collectibles_612_LostSoul.png" name="#LOST_SOUL_NAME" description="#LOST_SOUL_DESCRIPTION" />
