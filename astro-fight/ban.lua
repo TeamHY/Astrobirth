@@ -1,7 +1,5 @@
 local latterStageBanItems = {
     collectible = {
-        Astro.Collectible.EZ_MODE,
-        Astro.Collectible.SOL_EX,
         CollectibleType.COLLECTIBLE_SOY_MILK,
         CollectibleType.COLLECTIBLE_ALMOND_MILK,
         CollectibleType.COLLECTIBLE_SOL,
@@ -15,14 +13,18 @@ local latterStageBanItems = {
         CollectibleType.COLLECTIBLE_BLUE_MAP,
         CollectibleType.COLLECTIBLE_CRYSTAL_BALL,
         CollectibleType.COLLECTIBLE_SPELUNKER_HAT,
-        Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
+        CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
+        CollectibleType.COLLECTIBLE_MERCURIUS,
         CollectibleType.COLLECTIBLE_ISAACS_HEART,
         Astro.Collectible.UNHOLY_MANTLE,
+        Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
         Astro.Collectible.ENTOMA_VASILISSA_ZETA,
-        CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
         Astro.Collectible.CAINS_SECRET_BAG,
         Astro.Collectible.ASTRO_STAR_OF_BETHLEHEM,
         Astro.Collectible.BOOK_OF_SUN,
+        Astro.Collectible.MERCURIUS_EX,
+        Astro.Collectible.EZ_MODE,
+        Astro.Collectible.SOL_EX,
 
 
     },
