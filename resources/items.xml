@@ -162,7 +162,7 @@
 	<passive description="#ANKH_DESCRIPTION" gfx="Collectibles_161_Ankh.png" id="161" name="#ANKH_NAME" />
 	<passive achievement="50" cooldown="200" description="#CELTIC_CROSS_DESCRIPTION" gfx="Collectibles_162_CelticCross.png" id="162" name="#CELTIC_CROSS_NAME" />
 	<familiar description="#GHOST_BABY_DESCRIPTION" gfx="Collectibles_163_GhostBaby.png" id="163" name="#GHOST_BABY_NAME" />
-	<active achievement="59" description="#THE_CANDLE_DESCRIPTION" gfx="Collectibles_164_BlueCandle.png" id="164" maxcharges="110" name="#THE_CANDLE_NAME" chargetype="timed" />
+	<active achievement="59" description="#THE_CANDLE_DESCRIPTION" shopprice="6" gfx="Collectibles_164_BlueCandle.png" id="164" maxcharges="110" name="#THE_CANDLE_NAME" chargetype="timed" />
 	<passive cache="shotspeed damage" description="#CATONINETAILS_DESCRIPTION" gfx="Collectibles_165_CatONineTails.png" id="165" name="#CATONINETAILS_NAME" />
 	<active achievement="49" description="#D20_DESCRIPTION" gfx="Collectibles_166_D20.png" id="166" maxcharges="3" shopprice="5" name="#D20_NAME" />
 	<familiar description="#HARLEQUIN_BABY_DESCRIPTION" gfx="Collectibles_167_HarlequinBaby.png" id="167" name="#HARLEQUIN_BABY_NAME" />
