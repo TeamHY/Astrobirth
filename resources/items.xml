@@ -291,7 +291,7 @@
 	<active achievement="121" description="#BLANK_CARD_DESCRIPTION" gfx="collectibles_286_blankcard.png" id="286" maxcharges="4" name="#BLANK_CARD_NAME" />
 	<active achievement="122" description="#BOOK_OF_SECRETS_DESCRIPTION" shopprice="25" gfx="collectibles_287_bookofsecrets.png" id="287" maxcharges="12" name="#BOOK_OF_SECRETS_NAME" />
 	<active description="#BOX_OF_SPIDERS_DESCRIPTION" gfx="collectibles_288_boxofspiders.png" id="288" maxcharges="2" name="#BOX_OF_SPIDERS_NAME" />
-	<active achievement="137" description="#RED_CANDLE_DESCRIPTION" gfx="collectibles_289_redcandle.png" id="289" maxcharges="75" name="#RED_CANDLE_NAME" chargetype="timed" />
+	<active achievement="137" description="#RED_CANDLE_DESCRIPTION" gfx="collectibles_289_redcandle.png" shopprice="6" id="289" maxcharges="75" name="#RED_CANDLE_NAME" chargetype="timed" />
 	<active description="#THE_JAR_DESCRIPTION" gfx="collectibles_290_thejar.png" id="290" maxcharges="0" name="#THE_JAR_NAME" shopprice="10" />
 	<active description="#FLUSH_DESCRIPTION" gfx="collectibles_291_flush.png" id="291" maxcharges="3" name="#FLUSH_NAME" />
 	<active achievement="126" description="#SATANIC_BIBLE_DESCRIPTION" devilprice="2" gfx="collectibles_292_satanicbible.png" id="292" maxcharges="18" name="#SATANIC_BIBLE_NAME" />
