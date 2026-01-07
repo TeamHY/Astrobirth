@@ -31,6 +31,7 @@ local latterStageBanItems = {
     trinket = {
         TrinketType.TRINKET_CAINS_EYE,
         TrinketType.TRINKET_SIGIL_OF_BAPHOMET,
+        TrinketType.TRINKET_WOODEN_CROSS,
     }
 }
 
