@@ -486,6 +486,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_JUDAS_SHADOW,
             Astro.Collectible.ALTAIR,
             Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
+            Astro.Collectible.BIRTHRIGHT_ISAAC,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
