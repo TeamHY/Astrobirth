@@ -396,7 +396,7 @@ Astro:AddCallback(
                 local itemConfig = Isaac.GetItemConfig()
                 local itemConfigitem = itemConfig:GetCollectible(selectedCollectible)
 
-                if room:GetType() == RoomType.ROOM_CURSE and itemConfigitem.Quality == 4 then
+                if room:GetType() == RoomType.ROOM_CURSE and itemConfigitem.Quality >= 4 then
                     return {
                         reroll = true,
                         modifierName = "Curse Room"
