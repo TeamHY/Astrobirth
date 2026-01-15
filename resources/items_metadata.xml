@@ -77,7 +77,7 @@
     <item id="78" quality="1" tags="nolostbr book lazarussharedglobal"/>
     <item id="79" quality="2" tags="devil summonable offensive"/>
     <item id="80" quality="2" tags="devil summonable tearsup offensive"/>
-    <item id="81" quality="3" tags="uniquefamiliar dead guppy nocantrip"/>
+    <item id="81" quality="3" tags="quest uniquefamiliar dead guppy nocantrip"/>
     <item id="82" quality="2" tags="devil nolostbr summonable"/>
     <item id="83" quality="2" tags="devil"/>
     <item id="84" quality="2" tags="offensive"/>
@@ -130,7 +130,7 @@
     <item id="131" quality="2" tags="summonable offensive nocantrip"/>
     <item id="132" quality="2" tags="summonable offensive"/>
     <item id="133" quality="2" tags="nolostbr dead guppy"/>
-    <item id="134" quality="3" tags="summonable dead guppy offensive"/>
+    <item id="134" quality="3" tags="quest summonable dead guppy offensive"/>
     <item id="135" quality="2" tags="nolostbr"/>
     <item id="136" quality="1" tags="offensive"/>
     <item id="137" quality="1" tags="offensive nocantrip"/>
@@ -183,7 +183,7 @@
     <item id="184" quality="2" tags="nolostbr summonable angel"/>
     <item id="185" quality="2" tags="nolostbr summonable angel"/>
     <item id="186" quality="2" tags="nolostbr"/>
-    <item id="187" quality="1" tags="summonable guppy offensive"/>
+    <item id="187" quality="1" tags="quest summonable guppy offensive"/>
     <item id="188" quality="0" tags="summonable baby offensive"/>
     <item id="189" quality="2" tags="summonable offensive"/>
     <item id="190" quality="3" tags="offensive nocantrip"/>
@@ -208,7 +208,7 @@
     <item id="209" quality="2" tags="poop summonable offensive"/>
     <item id="210" quality="1" tags="summonable"/>
     <item id="211" quality="0" tags="nolostbr summonable spider"/>
-    <item id="212" quality="1" tags="guppy"/>
+    <item id="212" quality="1" tags="quest guppy"/>
     <item id="213" quality="3" tags="summonable offensive"/>
     <item id="214" quality="1" tags="nolostbr summonable"/>
     <item id="215" quality="4" tags="noeden summonable offensive lazarussharedglobal"/>
@@ -654,7 +654,7 @@
     <item id="661" quality="2" tags="summonable baby offensive"/>
     <item id="663" quality="2" tags="summonable offensive"/>
     <item id="664" quality="4" tags="nolostbr"/>
-    <item id="665" quality="2" tags="guppy offensive"/>
+    <item id="665" quality="2" tags="quest guppy offensive"/>
     <item id="667" quality="2" tags="dead offensive"/>
     <item id="668" quality="0" tags="lazarusshared noeden quest"/>
     <item id="669" quality="3" tags="summonable offensive lazarussharedglobal"/>
