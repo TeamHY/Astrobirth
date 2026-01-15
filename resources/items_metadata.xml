@@ -253,7 +253,7 @@
     <item id="255" quality="1" tags="summonable tearsup offensive"/>
     <item id="256" quality="1" tags="summonable offensive"/>
     <item id="257" quality="4" tags="summonable offensive"/>
-    <item id="258" quality="0" tags="summonable offensive nocantrip"/>
+    <item id="258" quality="0" tags="noeden summonable offensive nocantrip"/>
     <item id="259" quality="2" tags="summonable offensive"/>
     <item id="260" quality="2" tags="summonable offensive lazarussharedglobal"/>
     <item id="261" quality="3" tags="summonable offensive"/>
