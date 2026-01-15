@@ -35,7 +35,7 @@ local function TryAutoActivate(player, activeSlot, list)
             local charge = player:GetActiveCharge(activeSlot)
 
             if charge >= itemConfigItem.MaxCharges then
-                player:UseActiveItem(collectible, true, true, true, true, activeSlot)
+                player:UseActiveItem(collectible, UseFlag.USE_NOANIM, activeSlot)    -- 액티브 사용 애니메이션으로 인한 시간 손실이 발생함으로 인해 NOANIM 플래그 추가
                 player:SetActiveCharge(charge - itemConfigItem.MaxCharges, activeSlot)
             end
             break
