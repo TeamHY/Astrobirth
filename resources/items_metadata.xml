@@ -613,7 +613,7 @@
     <item id="617" quality="3" tags="summonable offensive"/>
     <item id="618" quality="2" tags="summonable offensive"/>
     <item id="619" quality="3" tags="summonable offensive nocantrip"/>
-    <item id="621" quality="2" tags="offensive"/>
+    <item id="621" quality="2" tags="quest offensive"/>
     <item id="622" quality="3" tags="offensive nocantrip"/>
     <item id="623" quality="1" tags="offensive"/>
     <item id="624" quality="1" tags="offensive"/>
@@ -635,7 +635,7 @@
     <item id="641" quality="2" tags="summonable offensive"/>
     <item id="642" quality="4" tags="offensive nocantrip"/>
     <item id="643" quality="4" tags="summonable offensive angel"/>
-    <item id="644" quality="2" tags="tearsup offensive"/>
+    <item id="644" quality="2" tags="quest tearsup offensive"/>
     <item id="645" quality="1" tags="summonable monstermanual"/>
     <item id="646" quality="2" tags="summonable offensive"/>
     <item id="647" quality="2" tags="battery summonable offensive nocantrip"/>
