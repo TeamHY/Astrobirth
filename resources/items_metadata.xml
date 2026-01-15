@@ -708,7 +708,7 @@
     <item id="717" quality="2" tags="summonable spider offensive"/>
     <item id="719" quality="2" tags="offensive"/>
     <item id="720" quality="2" tags="offensive"/>
-    <item id="721" quality="0" tags="offensive nocantrip"/>
+    <item id="721" quality="0" tags="noeden offensive nocantrip"/>
     <item id="722" quality="1" tags="offensive"/>
     <item id="723" quality="4" tags="offensive nocantrip"/>
     <item id="724" quality="4" tags="nolostbr summonable"/>
