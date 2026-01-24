@@ -134,7 +134,7 @@
 	<active description="#GUPPYS_PAW_DESCRIPTION" gfx="Collectibles_133_GuppysPaw.png" id="133" maxcharges="0" name="#GUPPYS_PAW_NAME" />
 	<passive description="#GUPPYS_TAIL_DESCRIPTION" gfx="Collectibles_134_GuppysTail.png" id="134" name="#GUPPYS_TAIL_NAME" />
 	<active cooldown="15" description="#IV_BAG_DESCRIPTION" gfx="Collectibles_135_IVBag.png" id="135" maxcharges="0" name="#IV_BAG_NAME" />
-	<active description="#BEST_FRIEND_DESCRIPTION" gfx="Collectibles_136_BestFriend.png" id="136" maxcharges="3" name="#BEST_FRIEND_NAME" />
+	<active description="#BEST_FRIEND_DESCRIPTION" gfx="Collectibles_136_BestFriend.png" id="136" maxcharges="1" name="#BEST_FRIEND_NAME" />
 	<active bombs="5" cooldown="2" description="#REMOTE_DETONATOR_DESCRIPTION" gfx="Collectibles_137_RemoteDetonator.png" id="137" maxcharges="0" name="#REMOTE_DETONATOR_NAME" />
 	<passive cache="damage" description="#STIGMATA_DESCRIPTION" gfx="Collectibles_138_Stigmata.png" shopprice="5" hearts="4" id="138" maxhearts="2" name="#STIGMATA_NAME" />
 	<passive description="#MOMS_PURSE_DESCRIPTION" gfx="Collectibles_139_MomsPurse.png" id="139" name="#MOMS_PURSE_NAME" />
