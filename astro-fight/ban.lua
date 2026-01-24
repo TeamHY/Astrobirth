@@ -26,6 +26,9 @@ local latterStageBanItems = {
         Astro.Collectible.MERCURIUS_EX,
         Astro.Collectible.EZ_MODE,
         Astro.Collectible.SOL_EX,
+        Astro.Collectible.BIRTHRIGHT_THE_LOST,
+        Astro.Collectible.BIRTHRIGHT_TAINTED_LOST,
+
 
 
     },
