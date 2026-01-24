@@ -1,7 +1,7 @@
 -- SETTING
-local BAN_COUNT = 10
+local BAN_COUNT = 5
 
-local MAX_ROW_NUM = 10
+local MAX_ROW_NUM = 5
 
 local IGNORE_LIST = {
     CollectibleType.COLLECTIBLE_DADS_NOTE,
