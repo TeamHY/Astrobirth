@@ -418,7 +418,7 @@
 	<passive achievement="198" description="#LUSTY_BLOOD_DESCRIPTION" gfx="Collectibles_411_LustyBlood.png" id="411" name="#LUSTY_BLOOD_NAME" cache="damage color" devilprice="2" />
 	<passive achievement="219" description="#CAMBION_CONCEPTION_DESCRIPTION" gfx="Collectibles_412_CambionConception.png" id="412" name="#CAMBION_CONCEPTION_NAME" />
 	<passive achievement="222" description="#IMMACULATE_CONCEPTION_DESCRIPTION" gfx="Collectibles_413_ImmaculateConception.png" id="413" name="#IMMACULATE_CONCEPTION_NAME" />
-	<passive achievement="135" description="#MORE_OPTIONS_DESCRIPTION" gfx="Collectibles_414_MoreOptions.png" id="414" name="#MORE_OPTIONS_NAME" />
+	<passive achievement="135" description="#MORE_OPTIONS_DESCRIPTION" coins="5" gfx="Collectibles_414_MoreOptions.png" id="414" name="#MORE_OPTIONS_NAME" />
 	<passive description="#CROWN_OF_LIGHT_DESCRIPTION" gfx="Collectibles_415_CrownOfLight.png" id="415" name="#CROWN_OF_LIGHT_NAME" soulhearts="4" cache="damage shotspeed" devilprice="2" />
 	<passive achievement="238" description="#DEEP_POCKETS_DESCRIPTION" gfx="Collectibles_416_deeppockets.png" shopprice="7" id="416" name="#DEEP_POCKETS_NAME" />
 	<familiar achievement="221" description="#SUCCUBUS_DESCRIPTION" gfx="Collectibles_417_Succubus.png" id="417" name="#SUCCUBUS_NAME" devilprice="2" />
