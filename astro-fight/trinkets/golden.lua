@@ -39,8 +39,6 @@ if EID then
                     descObj,
                     "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible12}}Magic Mushroom 또는 {{Collectible71}}Mini Mush를 소환합니다."
                 )
-            elseif descObj.ObjSubType == TrinketType.TRINKET_RAINBOW_WORM then
-                EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible418}}Fruit Cake를 소환합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_USED_DIAPER then
                 EID:appendToDescription(descObj, "#!!! {{ColorGold}}획득 시 사라지고 {{Collectible9}}Skatole을 소환합니다.")
             elseif descObj.ObjSubType == TrinketType.TRINKET_POKER_CHIP then
@@ -335,9 +333,6 @@ local function RunEffect(player, type)
         }
 
         Astro:SpawnCollectible(mushrooms[rng:RandomInt(#mushrooms) + 1], player.Position)
-        return true
-    elseif Astro:CheckTrinket(type, TrinketType.TRINKET_RAINBOW_WORM) then
-        Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_FRUIT_CAKE, player.Position)
         return true
     elseif Astro:CheckTrinket(type, TrinketType.TRINKET_USED_DIAPER) then
         Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_SKATOLE, player.Position)
