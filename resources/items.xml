@@ -1,7 +1,7 @@
 <items gfxroot="gfx/items/" version="1">
 	<passive cache="firedelay" description="#THE_SAD_ONION_DESCRIPTION" gfx="Collectibles_001_TheSadOnion.png" id="1" name="#THE_SAD_ONION_NAME" />
 	<passive cache="firedelay damage" description="#THE_INNER_EYE_DESCRIPTION" gfx="Collectibles_002_TheInnerEye.png" id="2" name="#THE_INNER_EYE_NAME" />
-	<passive cache="speed tearcolor tearflag" description="#SPOON_BENDER_DESCRIPTION" devilprice="2" gfx="Collectibles_003_SpoonBender.png" id="3" shopprice="60" name="#SPOON_BENDER_NAME" />
+	<passive cache="speed tearcolor tearflag" description="#SPOON_BENDER_DESCRIPTION" devilprice="2" gfx="Collectibles_003_SpoonBender.png" id="3" shopprice="30" name="#SPOON_BENDER_NAME" />
 	<passive cache="damage shotspeed" description="#CRICKETS_HEAD_DESCRIPTION" devilprice="2" gfx="Collectibles_004_CricketsHead.png" id="4" name="#CRICKETS_HEAD_NAME" />
 	<passive cache="damage luck tearflag shotspeed range" description="#MY_REFLECTION_DESCRIPTION" gfx="Collectibles_005_MyReflection.png" id="5" name="#MY_REFLECTION_NAME" />
 	<passive cache="firedelay range tearcolor" description="#NUMBER_ONE_DESCRIPTION" gfx="Collectibles_006_NumberOne.png" id="6" name="#NUMBER_ONE_NAME" />
