@@ -47272,51 +47272,548 @@
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
-		<spawn x="4" y="3">
+		<spawn x="5" y="3">
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="8" y="3">
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		<spawn x="7" y="3">
 			<entity type="6" variant="10" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
-	<room variant="2" name=" (copy) (1)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="0.5">
+	<room variant="2" name=" (copy) (1)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
 		<door exists="True" x="-1" y="3"/>
 		<door exists="True" x="6" y="-1"/>
 		<door exists="True" x="6" y="7"/>
 		<door exists="True" x="13" y="3"/>
-		<spawn x="3" y="2">
-			<entity type="4000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="9" y="2">
-			<entity type="4000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="2" y="3">
-			<entity type="4000" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="3" y="3">
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
 		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="3">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="3" name=" (copy) (2)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="0" y="0">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="0">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="2">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="2">
+			<entity type="6" variant="10" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="2">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
 		<spawn x="4" y="3">
-			<entity type="4000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="4">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="4">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="4">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="0" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="4" name=" (copy) (3)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="0" y="0">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="0">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="2">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="2">
+			<entity type="6" variant="10" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="2">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="4">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="4">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="4">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="0" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="5" name=" (copy) (4)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="0" y="0">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="0">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="2">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="2">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="2">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="2">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="2">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="4">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="4">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="0" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="6" name=" (copy) (5)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="3" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="1">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="1">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="2">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="2">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="3">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="4">
+			<entity type="6" variant="10" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="5">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="5">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="6">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="6">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="7" name=" (copy) (6)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="3" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="1">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="1">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="2">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="2">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="3">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="4">
+			<entity type="6" variant="10" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="5">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="5">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="6">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="6">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="8" name=" (copy) (7)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="0" y="0">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="1">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="1">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="2">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="5">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="5">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="6">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="6">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="6">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="9" name=" (copy) (8)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="3" y="0">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="0">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="1">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="1">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="2">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="3">
+			<entity type="1300" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="40" subtype="1" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="3">
+			<entity type="1300" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="4">
+			<entity type="6" variant="10" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="5">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="5">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="6">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="6">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="10" name=" (copy) (9)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="3" y="0">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="0">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="1">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="1">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="3">
+			<entity type="1300" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="3">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="40" subtype="1" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="3">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="3">
+			<entity type="1300" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="5">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="5">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="6">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="6">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="11" name=" (copy) (10)" type="29" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="0" y="0">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="0">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="0">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="1">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="1">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="3">
+			<entity type="1300" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
-			<entity type="4000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="9" y="3">
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="10" y="3">
-			<entity type="4000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1300" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="3" y="4">
-			<entity type="4000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="4">
+			<entity type="5" variant="40" subtype="1" weight="1.0"/>
 		</spawn>
 		<spawn x="9" y="4">
-			<entity type="4000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="5">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="5">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="6">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="6">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="6">
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="0" name="" type="9" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -47900,26 +48397,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -47961,26 +48461,29 @@
 			<entity type="33" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
 			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="18" variant="0" subtype="0" weight="1.0"/>
@@ -48004,37 +48507,40 @@
 			<entity type="33" variant="0" subtype="0" weight="1.0"/>
 			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
+		<spawn x="12" y="0">
+			<entity type="208" variant="1" subtype="0" weight="1.0"/>
+			<entity type="85" variant="0" subtype="0" weight="1.0"/>
+			<entity type="970" variant="0" subtype="0" weight="1.0"/>
+			<entity type="22" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
 		<spawn x="0" y="1">
 			<entity type="33" variant="0" subtype="0" weight="1.0"/>
 			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="208" variant="1" subtype="0" weight="1.0"/>
-			<entity type="22" variant="0" subtype="0" weight="1.0"/>
-			<entity type="85" variant="0" subtype="0" weight="1.0"/>
-			<entity type="970" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="11" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="5">
 			<entity type="33" variant="0" subtype="0" weight="1.0"/>
@@ -48066,26 +48572,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
 			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="13" variant="0" subtype="0" weight="1.0"/>
@@ -48127,26 +48636,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
 			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -48201,26 +48713,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
 			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -48290,26 +48805,29 @@
 			<entity type="33" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
 			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="4">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
@@ -48366,9 +48884,6 @@
 			<entity type="404" variant="0" subtype="0" weight="1.0"/>
 			<entity type="916" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="6" y="0">
-			<entity type="4500" variant="9" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="10" y="0">
 			<entity type="268" variant="0" subtype="0" weight="1.0"/>
 			<entity type="404" variant="0" subtype="0" weight="1.0"/>
@@ -48392,63 +48907,42 @@
 		<spawn x="12" y="1">
 			<entity type="4500" variant="9" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="5" y="2">
-			<entity type="272" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="6" y="2">
-			<entity type="272" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="7" y="2">
-			<entity type="272" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="0" y="3">
 			<entity type="4500" variant="9" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="5" y="3">
-			<entity type="272" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="6" y="3">
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
 			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-		</spawn>
-		<spawn x="7" y="3">
-			<entity type="272" variant="1" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="12" y="3">
 			<entity type="4500" variant="9" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="5" y="4">
-			<entity type="272" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="6" y="4">
-			<entity type="272" variant="1" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="7" y="4">
-			<entity type="272" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="5">
 			<entity type="4500" variant="9" subtype="0" weight="1.0"/>
@@ -48520,26 +49014,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
 			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -48592,26 +49089,29 @@
 			<entity type="33" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
 			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="33" variant="0" subtype="0" weight="1.0"/>
@@ -48685,26 +49185,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -48775,26 +49278,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -48857,26 +49363,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -48921,26 +49430,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -48994,26 +49506,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -49082,26 +49597,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -49182,26 +49700,29 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
@@ -49266,26 +49787,29 @@
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -49358,10 +49882,6 @@
 			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
 			<entity type="0" variant="10" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="6" y="2">
-			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
-			<entity type="0" variant="10" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="7" y="2">
 			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
 			<entity type="0" variant="10" subtype="0" weight="1.0"/>
@@ -49386,26 +49906,29 @@
 			<entity type="0" variant="10" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
@@ -49427,10 +49950,6 @@
 			<entity type="0" variant="10" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="5" y="4">
-			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
-			<entity type="0" variant="10" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="6" y="4">
 			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
 			<entity type="0" variant="10" subtype="0" weight="1.0"/>
 		</spawn>
@@ -49475,26 +49994,29 @@
 			<entity type="0" variant="20" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
 			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="1931" variant="0" subtype="0" weight="1.0"/>
@@ -49534,25 +50056,28 @@
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="812" variant="0" subtype="0" weight="1.0"/>
@@ -49588,25 +50113,28 @@
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="302" variant="0" subtype="0" weight="1.0"/>
@@ -49652,25 +50180,28 @@
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="12" y="5">
 			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
@@ -49740,25 +50271,28 @@
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -49849,11 +50383,6 @@
 			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
 			<entity type="1931" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="6" y="2">
-			<entity type="1931" variant="0" subtype="0" weight="1.0"/>
-			<entity type="1931" variant="0" subtype="0" weight="1.0"/>
-			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
 		<spawn x="10" y="2">
 			<entity type="1931" variant="0" subtype="0" weight="1.0"/>
 			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
@@ -49865,36 +50394,34 @@
 			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
 			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
 			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="0" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="1931" variant="0" subtype="0" weight="1.0"/>
 			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
 			<entity type="1931" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="6" y="4">
-			<entity type="1931" variant="0" subtype="0" weight="1.0"/>
-			<entity type="1931" variant="0" subtype="0" weight="1.0"/>
-			<entity type="1930" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="26" name=" (copy) (24)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -49937,25 +50464,28 @@
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -49986,25 +50516,28 @@
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -50051,25 +50584,28 @@
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -50115,25 +50651,28 @@
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
 			<entity type="5" variant="350" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
 			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
 			<entity type="5" variant="301" subtype="0" weight="1.0"/>
 			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="8" y="3">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
@@ -50147,41 +50686,44 @@
 		<spawn x="0" y="0">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="12" y="0">
-			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-			<entity type="5" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="55" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="100" subtype="0" weight="1.0"/>
-			<entity type="5" variant="300" subtype="22" weight="1.0"/>
-			<entity type="5" variant="300" subtype="0" weight="1.0"/>
-			<entity type="5" variant="350" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="3" weight="1.0"/>
-			<entity type="5" variant="360" subtype="0" weight="1.0"/>
-			<entity type="5" variant="40" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
-			<entity type="5" variant="301" subtype="0" weight="1.0"/>
-			<entity type="5" variant="10" subtype="11" weight="1.0"/>
-		</spawn>
-		<spawn x="6" y="2">
-			<entity type="1010" variant="0" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="5" y="3">
+		<spawn x="8" y="2">
 			<entity type="1010" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
-			<entity type="61" variant="2" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="7" y="3">
 			<entity type="1010" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="6" y="4">
+		<spawn x="8" y="3">
+			<entity type="61" variant="2" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="3">
+			<entity type="1010" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="4">
 			<entity type="1010" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="6">
@@ -50189,6 +50731,718 @@
 		</spawn>
 		<spawn x="12" y="6">
 			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="31" name=" (copy) (29)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="5" y="2">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="2">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="4">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="4">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="32" name=" (copy) (30)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="10" y="0">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="1">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="1">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="2">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="2">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="4">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="5">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="5">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="33" name=" (copy) (31)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="3" y="1">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="1">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="1">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="1">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="2">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="5">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="5">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="5">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="5">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="34" name=" (copy) (32)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="3" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="3">
+			<entity type="1300" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="3">
+			<entity type="5" variant="40" subtype="3" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="3">
+			<entity type="5" variant="40" subtype="3" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="3">
+			<entity type="1300" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="4">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="4">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="4">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="4">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="35" name=" (copy) (33)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="8" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="2">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="2">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="4">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="4">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="5">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="36" name=" (copy) (34)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="0" y="0">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="2" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="0">
+			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="0">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="0" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="2" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="6">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="37" name=" (copy) (35)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="4" y="3">
+			<entity type="10" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="10" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="38" name=" (copy) (36)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="3" y="1">
+			<entity type="13" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="1">
+			<entity type="13" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="13" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="13" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="13" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="5">
+			<entity type="13" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="5">
+			<entity type="13" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="39" name=" (copy) (37)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="2" y="0">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="0">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="1">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="1">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="2">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="2">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="2">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="2">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="3">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="3">
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="4">
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="4">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="2" y="5">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="5">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="5">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="5">
+			<entity type="3000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="5">
+			<entity type="1500" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="40" name=" (copy) (38)" type="10" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="True" x="13" y="3"/>
+		<spawn x="10" y="0">
+			<entity type="0" variant="30" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="1">
+			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="2">
+			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="2">
+			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="2" y="3">
+			<entity type="0" variant="30" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="3" weight="1.0"/>
+			<entity type="5" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="350" subtype="0" weight="1.0"/>
+			<entity type="5" variant="40" subtype="0" weight="1.0"/>
+			<entity type="5" variant="150" subtype="0" weight="1.0"/>
+			<entity type="5" variant="301" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="22" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="0" subtype="0" weight="1.0"/>
+			<entity type="5" variant="100" subtype="0" weight="1.0"/>
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+			<entity type="5" variant="300" subtype="0" weight="1.0"/>
+			<entity type="5" variant="10" subtype="11" weight="1.0"/>
+			<entity type="5" variant="70" subtype="2059" weight="1.0"/>
+			<entity type="5" variant="300" subtype="6" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="4500" variant="1" subtype="0" weight="1.0"/>
+			<entity type="9100" variant="0" subtype="0" weight="1.0"/>
+			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="3">
+			<entity type="5" variant="360" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="4">
+			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="5">
+			<entity type="0" variant="30" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="5">
+			<entity type="1940" variant="0" subtype="0" weight="1.0"/>
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+			<entity type="33" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="1000" name="(voodoo head)" type="10" subtype="1" shape="1" width="13" height="7" difficulty="1" weight="1.0">
