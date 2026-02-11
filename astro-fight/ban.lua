@@ -311,6 +311,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_PLUTO,
             CollectibleType.COLLECTIBLE_EUTHANASIA,
             CollectibleType.COLLECTIBLE_EMPTY_VESSEL,
+            CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS,
             Astro.Collectible.SCHRODINGERS_CAT,
             Astro.Collectible.VIRGO_EX,
             Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
