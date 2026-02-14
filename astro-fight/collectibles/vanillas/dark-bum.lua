@@ -23,6 +23,10 @@ Astro:AddCallback(
     Astro.Callbacks.POST_SLOT_INIT,
     ---@param slot Entity
     function(_, slot)
+        if not Astro:HasCollectible(CollectibleType.COLLECTIBLE_DARK_BUM) then
+            return
+        end
+
         if slot.Variant == 4 or slot.Variant == 7 or slot.Variant == 9 or slot.Variant == 13 or slot.Variant == 18 or slot.Variant == Astro.Entity.LAVA_BEGGAR.Variant or slot.Variant == Astro.Entity.PLANETARIUM_BEGGAR.Variant then
             Isaac.Spawn(EntityType.ENTITY_SLOT, 5, 0, slot.Position, Vector(0, 0), nil)
             slot:Remove()
