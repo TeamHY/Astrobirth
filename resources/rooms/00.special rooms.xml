@@ -449,6 +449,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -473,11 +474,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="1" name="Shop L2" type="2" subtype="1" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -487,6 +483,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -511,11 +508,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="2" name="Shop L3" type="2" subtype="2" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -525,6 +517,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -549,11 +542,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="3" name="Shop L4" type="2" subtype="3" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -563,6 +551,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -587,11 +576,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="4" name="Shop L5" type="2" subtype="4" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -601,6 +585,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -625,11 +610,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="5" name="Rare Shop (good)" type="2" subtype="10" shape="1" width="13" height="7" difficulty="1" weight="0.25">
@@ -639,6 +619,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -663,11 +644,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="6" name="Rare Shop (bad)" type="2" subtype="11" shape="1" width="13" height="7" difficulty="1" weight="0.10000000149011612">
@@ -677,6 +653,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -701,11 +678,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="7" name="Keeper Shop L1" type="2" subtype="100" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -715,6 +687,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -739,11 +712,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="8" name="Keeper Shop L2" type="2" subtype="101" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -753,6 +721,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -777,11 +746,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="9" name="Keeper Shop L3" type="2" subtype="102" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -791,6 +755,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -815,11 +780,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="10" name="Keeper Shop L4" type="2" subtype="103" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -829,6 +789,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -853,11 +814,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="11" name="Keeper Shop L5" type="2" subtype="104" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -867,6 +823,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -891,11 +848,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="12" name="Keeper Shop (good)" type="2" subtype="110" shape="1" width="13" height="7" difficulty="1" weight="0.25">
@@ -905,6 +857,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -929,11 +882,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="13" name="Keeper Shop (bad)" type="2" subtype="111" shape="1" width="13" height="7" difficulty="1" weight="0.10000000149011612">
@@ -943,6 +891,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -967,11 +916,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="14" name="Crain Shop L2" type="2" subtype="1" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -981,6 +925,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -1005,11 +950,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="15" name="Crain Shop Shop L3" type="2" subtype="2" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -1019,6 +959,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -1043,11 +984,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="16" name="Crain Shop Shop L4" type="2" subtype="3" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -1057,6 +993,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -1081,11 +1018,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="17" name="Crain Shop Shop L5" type="2" subtype="4" shape="1" width="13" height="7" difficulty="1" weight="1.0">
@@ -1095,6 +1027,7 @@
 		<door exists="True" x="13" y="3"/>
 		<spawn x="11" y="0">
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="4" y="1">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
@@ -1119,11 +1052,6 @@
 		</spawn>
 		<spawn x="8" y="5">
 			<entity type="5" variant="150" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="1" y="6">
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-			<entity type="6" variant="12" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
 	<room variant="0" name="Greed Room" type="3" subtype="0" shape="4" width="13" height="14" difficulty="1" weight="0.009999999776482582">
