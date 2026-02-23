@@ -47802,17 +47802,13 @@
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="2" y="1">
-			<entity type="6" variant="16" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="11" y="1">
 			<entity type="6" variant="2" subtype="0" weight="1.0"/>
 			<entity type="6" variant="17" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="6" y="3">
-			<entity type="6" variant="15" subtype="0" weight="1.0"/>
-			<entity type="6" variant="6" subtype="0" weight="1.0"/>
+		<spawn x="10" y="1">
+			<entity type="6" variant="16" subtype="0" weight="1.0"/>
 		</spawn>
-		<spawn x="6" y="4">
+		<spawn x="6" y="3">
 			<entity type="5" variant="300" subtype="78" weight="1.0"/>
 		</spawn>
 		<spawn x="2" y="5">
