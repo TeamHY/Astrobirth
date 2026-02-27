@@ -6,7 +6,6 @@ local latterStageBanItems = {
         CollectibleType.COLLECTIBLE_FRUIT_CAKE,
         CollectibleType.COLLECTIBLE_GHOST_PEPPER,
         CollectibleType.COLLECTIBLE_BIRDS_EYE,
-        CollectibleType.COLLECTIBLE_PARASITE,
         CollectibleType.COLLECTIBLE_COMPASS,
         CollectibleType.COLLECTIBLE_GLITCHED_CROWN,
         CollectibleType.COLLECTIBLE_TREASURE_MAP,
