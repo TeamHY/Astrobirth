@@ -326,6 +326,7 @@ local banItems = {
             TrinketType.TRINKET_BROKEN_ANKH,
             TrinketType.TRINKET_JAW_BREAKER,
             TrinketType.TRINKET_SIGIL_OF_BAPHOMET,
+            TrinketType.TRINKET_DOOR_STOP,
         },
         card = {
             Card.CARD_HOLY,
@@ -646,6 +647,7 @@ local banItems = {
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
+            TrinketType.TRINKET_DOOR_STOP,
         },
         card = {
             Card.CARD_HOLY,
