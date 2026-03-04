@@ -404,7 +404,7 @@
 	<passive description="#TRACTOR_BEAM_DESCRIPTION" gfx="Collectibles_397_TractorBeam.png" id="397" name="#TRACTOR_BEAM_NAME" cache="firedelay tearflag range shotspeed" />
 	<passive description="#GODS_FLESH_DESCRIPTION" gfx="Collectibles_398_GodsFlesh.png" id="398" name="#GODS_FLESH_NAME" cache="tearcolor" />
 	<passive achievement="186" description="#MAW_OF_THE_VOID_DESCRIPTION" gfx="Collectibles_399_MawOfTheVoid.png" id="399" name="#MAW_OF_THE_VOID_NAME" cache="tearcolor" devilprice="2" />
-	<passive description="#SPEAR_OF_DESTINY_DESCRIPTION" gfx="Collectibles_400_SpearOfDestiny.png" id="400" name="#SPEAR_OF_DESTINY_NAME" />
+	<passive description="#SPEAR_OF_DESTINY_DESCRIPTION" gfx="Collectibles_400_SpearOfDestiny.png" id="400" shopprice="5" name="#SPEAR_OF_DESTINY_NAME" />
 	<passive description="#EXPLOSIVO_DESCRIPTION" gfx="Collectibles_401_Explosivo.png" id="401" name="#EXPLOSIVO_NAME" cache="tearflag tearcolor" />
 	<passive description="#CHAOS_DESCRIPTION" gfx="Collectibles_402_Chaos.png" id="402" name="#CHAOS_NAME" />
 	<familiar description="#SPIDER_MOD_DESCRIPTION" gfx="Collectibles_403_SpiderMod.png" id="403" name="#SPIDER_MOD_NAME" />
