@@ -924,6 +924,7 @@
 	</Pool>
 	<Pool Name="boss">
 		<Item Id="1" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="6" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="8" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="13" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
