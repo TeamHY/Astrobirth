@@ -878,6 +878,7 @@
 		<Item Id="629" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="633" Weight="0.75" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="639" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="640" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="653" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="654" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="660" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>

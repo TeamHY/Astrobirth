@@ -665,7 +665,7 @@
 	<passive	id="637"	gfx="Collectibles_637_KnockoutDrops.png" name="#KNOCKOUT_DROPS_NAME" description="#KNOCKOUT_DROPS_DESCRIPTION" />
 	<active		id="638"	gfx="Collectibles_638_Eraser.png" name="#ERASER_NAME" description="#ERASER_DESCRIPTION" maxcharges="1" chargetype="special" />
 	<active		id="639"	achievement="442" gfx="Collectibles_639_YuckHeart.png" name="#YUCK_HEART_NAME" shopprice="3" description="#YUCK_HEART_DESCRIPTION" maxcharges="4" />
-	<active		id="640"	achievement="418" gfx="Collectibles_640_UrnOfSouls.png" name="#URN_OF_SOULS_NAME" description="#URN_OF_SOULS_DESCRIPTION" maxcharges="0" persistent="false" />
+	<active		id="640"	achievement="418" gfx="Collectibles_640_UrnOfSouls.png" shopprice="3" name="#URN_OF_SOULS_NAME" description="#URN_OF_SOULS_DESCRIPTION" maxcharges="0" persistent="false" />
 	<passive	id="641"	achievement="446" gfx="Collectibles_641_Akeldama.png" name="#AKELDAMA_NAME" description="#AKELDAMA_DESCRIPTION" />
 	<active		id="642"	achievement="472" gfx="Collectibles_642_MagicSkin.png" name="#MAGIC_SKIN_NAME" description="#MAGIC_SKIN_DESCRIPTION" maxcharges="12" />
 	<passive	id="643"	achievement="470" gfx="Collectibles_643_Revelation.png" name="#REVELATION_NAME" description="#REVELATION_DESCRIPTION" cache="flying" soulhearts="4" devilprice="2" />
