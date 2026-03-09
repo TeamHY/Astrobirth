@@ -9,7 +9,7 @@ if EID then
         function(descObj)
             EID:appendToDescription(
                 descObj,
-                "#획득 시 {{Card92}}Soul of Lilith, {{Pill1}}Gulp!, {{Trinket127}}Baby Bender, {{Trinket141}}Forgotten Lullaby가 소환됩니다."
+                "#획득 시 {{Card92}}Soul of Lilith가 소환되며, {{Trinket127}}Baby Bender와 {{Trinket141}}Forgotten Lullaby를 흡수 획득합니다."
             )
 
             return descObj
@@ -24,9 +24,8 @@ Astro:AddCallback(
     function(_, player, collectibleType)
         if Astro:IsFirstAdded(CollectibleType.COLLECTIBLE_KING_BABY) then
             Astro:SpawnCard(Card.CARD_SOUL_LILITH, player.Position)
-            Astro:SpawnPill(PillEffect.PILLEFFECT_GULP, player.Position)
-            Astro:SpawnTrinket(TrinketType.TRINKET_BABY_BENDER, player.Position)
-            Astro:SpawnTrinket(TrinketType.TRINKET_FORGOTTEN_LULLABY, player.Position)
+            Astro:SmeltTrinket(player, TrinketType.TRINKET_BABY_BENDER)
+            Astro:SmeltTrinket(player, TrinketType.TRINKET_FORGOTTEN_LULLABY)
         end
     end,
     CollectibleType.COLLECTIBLE_KING_BABY
