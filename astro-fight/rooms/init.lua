@@ -259,7 +259,7 @@ Astro:AddCallback(
                     EntityType.ENTITY_SLOT,
                     10,
                     0,
-                    currentRoom:GetCenterPos(),
+                    currentRoom:GetCenterPos() + Vector(0, 40),
                     Vector.Zero,
                     nil
                 )
