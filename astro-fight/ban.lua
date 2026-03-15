@@ -93,6 +93,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_GODS_FLESH,
             CollectibleType.COLLECTIBLE_WHORE_OF_BABYLON,
             CollectibleType.COLLECTIBLE_SPIRIT_SWORD,
+            CollectibleType.COLLECTIBLE_HEARTBREAK,
             Astro.Collectible.REINCARNATION,
             Astro.Collectible.BONFIRE,
             Astro.Collectible.DELIRIUM_GUPPY,
