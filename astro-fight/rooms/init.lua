@@ -418,3 +418,42 @@ Astro:AddCallback(
         )
     end
 )
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_ROOM,
+    function()
+        local level = Game():GetLevel()
+        local room = Game():GetRoom()
+        local roomDesc = level:GetCurrentRoomDesc()
+        local roomType = roomDesc.Data.Type
+        local roomSubType = roomDesc.Data.Subtype
+        local centerPos = room:GetCenterPos()
+
+        if roomType == RoomType.ROOM_MINIBOSS then
+            if roomSubType == 0 or roomSubType == 7 then
+                Astro:SpawnEntity(Astro.Entity.SLOTH_STATUE, centerPos)
+            elseif roomSubType == 1 or roomSubType == 8 then
+                Astro:SpawnEntity(Astro.Entity.LUST_STATUE, centerPos)
+            elseif roomSubType == 2 or roomSubType == 9 then
+                Astro:SpawnEntity(Astro.Entity.WRATH_STATUE, centerPos)
+            elseif roomSubType == 3 or roomSubType == 10 then
+                Astro:SpawnEntity(Astro.Entity.GLUTTONY_STATUE, centerPos)
+            elseif roomSubType == 4 or roomSubType == 11 then
+                -- 그리드 동상은 금고방에 생성
+                -- Astro:SpawnEntity(Astro.Entity.GREED_STATUE, centerPos)
+            elseif roomSubType == 5 or roomSubType == 12 then
+                Astro:SpawnEntity(Astro.Entity.ENVY_STATUE, centerPos)
+            elseif roomSubType == 6 or roomSubType == 13 or roomSubType == 14 then -- Ultra Pride도 일단 포함
+                Astro:SpawnEntity(Astro.Entity.PRIDE_STATUE, centerPos)
+            end
+        elseif roomType == RoomType.ROOM_CHEST then
+            Astro:SpawnEntity(Astro.Entity.GREED_STATUE, centerPos)
+        elseif roomType == RoomType.ROOM_SHOP then
+            Astro:SpawnEntity(Astro.Entity.GREEDIER_STATUE, centerPos)
+        elseif roomType == RoomType.ROOM_TREASURE then
+            Astro:SpawnEntity(Astro.Entity.TREASURE_STATUE, centerPos)
+        elseif roomType == RoomType.ROOM_PLANETARIUM then
+            Astro:SpawnEntity(Astro.Entity.PLANETARIUM_STATUE, centerPos)
+        end
+    end
+)
