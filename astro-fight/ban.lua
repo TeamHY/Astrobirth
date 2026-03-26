@@ -538,6 +538,8 @@ local banItems = {
     },
     [PlayerType.PLAYER_JUDAS_B] = {
         collectible = {
+            CollectibleType.COLLECTIBLE_9_VOLT,
+            CollectibleType.COLLECTIBLE_BATTERY,
         },
         trinket = {
         },
