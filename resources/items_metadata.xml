@@ -328,7 +328,7 @@
     <item id="330" quality="2" tags="summonable tearsup offensive"/>
     <item id="331" quality="4" tags="summonable offensive angel"/>
     <item id="332" quality="1" tags="nolostbr nocantrip nochallenge"/>
-    <item id="333" quality="4" tags="summonable offensive lazarussharedglobal"/>
+    <item id="333" quality="4" tags="noeden summonable offensive lazarussharedglobal"/>
     <item id="334" quality="2" tags="nolostbr"/>
     <item id="335" quality="3" tags="summonable"/>
     <item id="336" quality="2" tags="summonable dead offensive"/>
