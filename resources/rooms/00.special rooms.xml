@@ -47271,18 +47271,11 @@
 		</spawn>
 		<spawn x="10" y="1">
 			<entity type="6" variant="16" subtype="0" weight="1.0"/>
+			<entity type="6" variant="5" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="3">
 			<entity type="5" variant="300" subtype="78" weight="1.0"/>
-		</spawn>
-		<spawn x="2" y="5">
-			<entity type="6" variant="5" subtype="0" weight="1.0"/>
-			<entity type="6" variant="4" subtype="0" weight="1.0"/>
-			<entity type="6" variant="7" subtype="0" weight="1.0"/>
-		</spawn>
-		<spawn x="10" y="5">
 			<entity type="6" variant="1" subtype="0" weight="1.0"/>
-			<entity type="6" variant="3" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="6">
 			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
