@@ -1,7 +1,8 @@
 QP_OVERWRITE = {
 	isInfinity = false,
 	range = 80,
-	isDisable = false
+	isDisable = false,
+	disableAutoMod = true
 }
 
 Astro:AddCallback(
@@ -11,7 +12,8 @@ Astro:AddCallback(
 			QP_OVERWRITE = {
 				isInfinity = false,
 				range = 80,
-				isDisable = false
+				isDisable = false,
+				disableAutoMod = true
 			}
 		end
 	end
