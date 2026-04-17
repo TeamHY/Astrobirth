@@ -15,6 +15,7 @@ local latterStageBanItems = {
         CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM,
         CollectibleType.COLLECTIBLE_MERCURIUS,
         CollectibleType.COLLECTIBLE_ISAACS_HEART,
+        CollectibleType.COLLECTIBLE_GLOWING_HOUR_GLASS,
         Astro.Collectible.BIRTHRIGHT_ISAAC,
         Astro.Collectible.UNHOLY_MANTLE,
         Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
