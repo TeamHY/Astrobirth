@@ -602,7 +602,7 @@
 	<passive	id="574"	gfx="Collectibles_574_Monstrance.png" name="#MONSTRANCE_NAME" description="#MONSTRANCE_DESCRIPTION" />
 	<familiar	id="575"	gfx="Collectibles_575_TheIntruder.png" name="#THE_INTRUDER_NAME" description="#THE_INTRUDER_DESCRIPTION" />
 	<passive	id="576"	achievement="517" gfx="Collectibles_576_DirtyMind.png" name="#DIRTY_MIND_NAME" description="#DIRTY_MIND_DESCRIPTION" />
-	<active		id="577"	achievement="432" gfx="Collectibles_577_Damocles.png" name="#DAMOCLES_NAME" description="#DAMOCLES_DESCRIPTION" maxcharges="0" devilprice="2" cache="familiars" />
+	<active		id="577"	achievement="432" gfx="Collectibles_577_Damocles.png" hidden="true" name="#DAMOCLES_NAME" description="#DAMOCLES_DESCRIPTION" maxcharges="0" devilprice="2" cache="familiars" />
 	<active		id="578"	gfx="Collectibles_578_FreeLemonade.png" name="#FREE_LEMONADE_NAME" shopprice="5" description="#FREE_LEMONADE_DESCRIPTION" maxcharges="3" />
 	<passive	id="579"	achievement="520" gfx="Collectibles_579_SpiritSword.png" name="#SPIRIT_SWORD_NAME" description="#SPIRIT_SWORD_DESCRIPTION" cache="weapon damage firedelay" special="true" devilprice="2" />
 	<active		id="580"	achievement="415" gfx="Collectibles_580_SecretKey.png" name="#RED_KEY_NAME" shopprice="25" description="#RED_KEY_DESCRIPTION" maxcharges="6" />
