@@ -457,7 +457,7 @@ local startItem = {
             -- TrinketType.TRINKET_SWALLOWED_PENNY,
         },
         card = {
-            Card.CARD_HOLY,
+            --Card.CARD_HOLY,
         },
         pill = {
             -- PillEffect.PILLEFFECT_BAD_GAS,
