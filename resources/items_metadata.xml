@@ -194,7 +194,7 @@
     <item id="195" quality="1" tags="mom offensive nocantrip"/>
     <item id="196" quality="2" tags="summonable tearsup offensive"/>
     <item id="197" quality="2" tags="summonable offensive"/>
-    <item id="198" quality="2" craftquality="1" tags="offensive"/>
+    <item id="198" quality="2" craftquality="1" tags="noeden offensive"/>
     <item id="199" quality="2" tags="summonable mom offensive"/>
     <item id="200" quality="1" tags="summonable mom offensive"/>
     <item id="201" quality="2" tags="summonable offensive"/>
@@ -339,7 +339,7 @@
     <item id="341" quality="2" tags="summonable tearsup offensive"/>
     <item id="342" quality="2" tags="summonable mushroom tearsup offensive"/>
     <item id="343" quality="1" craftquality="2" tags="summonable offensive"/>
-    <item id="344" quality="1" tags="offensive"/>
+    <item id="344" quality="1" tags="noeden offensive"/>
     <item id="345" quality="2" tags="summonable syringe offensive"/>
     <item id="346" quality="1" tags="nolostbr food"/>
     <item id="347" quality="4" tags="offensive"/>
