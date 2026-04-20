@@ -650,7 +650,7 @@
 	<active		id="622"	achievement="436" devilprice="2" gfx="Collectibles_622_Genesis.png" name="#GENESIS_NAME" description="#GENESIS_DESCRIPTION" />
 	<active		id="623"	gfx="Collectibles_623_SharpKey.png" name="#SHARP_KEY_NAME" description="#SHARP_KEY_DESCRIPTION" keys="5" shopprice="5" maxcharges="0" />
 	<passive	id="624"	gfx="Collectibles_624_BoosterPack.png" name="#BOOSTER_PACK_NAME" description="#BOOSTER_PACK_DESCRIPTION" />
-	<active		id="625"	achievement="547" gfx="Collectibles_625_MegaMush.png" name="#MEGA_MUSH_NAME" description="#MEGA_MUSH_DESCRIPTION" maxcharges="50" cooldown="900" persistent="true" cache="all" />
+	<active		id="625"	achievement="547" gfx="Collectibles_625_MegaMush.png" chargetype="special" name="#MEGA_MUSH_NAME" description="#MEGA_MUSH_DESCRIPTION" maxcharges="50" cooldown="900" persistent="true" cache="all" />
 	<familiar	id="626"	gfx="Collectibles_626_KnifePiece1.png" name="#KNIFE_PIECE_1_NAME" description="#KNIFE_PIECE_1_DESCRIPTION" />
 	<familiar	id="627"	gfx="Collectibles_627_KnifePiece2.png" name="#KNIFE_PIECE_2_NAME" description="#KNIFE_PIECE_2_DESCRIPTION" />
 	<active		id="628"	achievement="636" gfx="Collectibles_628_DeathCertificate.png" name="#DEATH_CERTIFICATE_NAME" description="#DEATH_CERTIFICATE_DESCRIPTION" initcharge="0" maxcharges="12" />
