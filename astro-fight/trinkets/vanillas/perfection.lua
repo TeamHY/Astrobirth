@@ -146,6 +146,13 @@ Astro:AddCallback(
                     elseif stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then -- 엄마 발
                         player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
 
+                        Astro:SpawnCollectible(
+                            Astro.Collectible.CLEANER,
+                            currentRoom:GetGridPosition(97),
+                            nil,
+                            true
+                        )
+
                         currentRoom:TrySpawnBossRushDoor(true)
                     elseif stage == LevelStage.STAGE4_1 then
                         Astro:SpawnCollectible(
@@ -154,18 +161,12 @@ Astro:AddCallback(
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
-
-                        player:AddCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
-
                         Astro:SpawnCollectible(
-                            CollectibleType.COLLECTIBLE_NULL,
+                            Astro.Collectible.CLEANER,
                             currentRoom:GetCenterPos(),
                             OPTIONS_PICKUP_INDEX,
                             true
                         )
-
-                        player:RemoveCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
-
                         Astro:SpawnCollectible(
                             itemPool:GetCollectible(ItemPoolType.POOL_BOSS, true, currentRoom:GetSpawnSeed()),
                             currentRoom:GetCenterPos() + Vector(Astro.GRID_SIZE * 2, 0),
@@ -240,7 +241,7 @@ Astro:AddCallback(
                 local player = Isaac.GetPlayer(i - 1)
 
                 if Astro:HasPerfectionEffect(player) then
-                    Astro:SpawnCollectible(CollectibleType.COLLECTIBLE_DEATH_CERTIFICATE, currentRoom:GetCenterPos())
+                    Astro:SpawnCollectible(Astro.Collectible.BIRTH_CERTIFICATE, currentRoom:GetCenterPos())
                 end
             end
         end
