@@ -319,6 +319,7 @@ local banItems = {
             CollectibleType.COLLECTIBLE_BOOK_OF_SHADOWS,
             CollectibleType.COLLECTIBLE_SACRED_ORB,
             CollectibleType.COLLECTIBLE_GLOWING_HOUR_GLASS,
+            CollectibleType.COLLECTIBLE_BROKEN_MODEM,
             Astro.Collectible.SCHRODINGERS_CAT,
             Astro.Collectible.VIRGO_EX,
             Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
@@ -329,6 +330,7 @@ local banItems = {
             Astro.Collectible.STAFF_OF_AINZ_OOAL_GOWN,
             Astro.Collectible.SAMSARA,
             Astro.Collectible.LIFE_SUSTAINING_TREATMENT,
+            Astro.Collectible.CAINS_SECRET_BAG,
         },
         trinket = {
             TrinketType.TRINKET_BROKEN_ANKH,
