@@ -11,8 +11,8 @@
     <item id="10" quality="2" tags="summonable monstermanual fly"/>
     <item id="11" quality="2" tags="mushroom"/>
     <item id="12" quality="4" tags="summonable mushroom offensive"/>
-    <item id="13" quality="2" tags="nolostbr summonable syringe"/>
-    <item id="14" quality="2" tags="summonable syringe offensive"/>
+    <item id="13" quality="2" tags="quest nolostbr summonable syringe"/>
+    <item id="14" quality="2" tags="quest summonable syringe offensive"/>
     <item id="15" quality="2" tags="nolostbr"/>
     <item id="16" quality="2" tags="nolostbr"/>
     <item id="17" quality="2" tags="offensive nocantrip"/>
@@ -66,7 +66,7 @@
     <item id="67" quality="1" tags="summonable baby monstermanual offensive"/>
     <item id="68" quality="2" tags="summonable tech offensive"/>
     <item id="69" quality="2" tags="summonable offensive"/>
-    <item id="70" quality="2" tags="summonable syringe offensive"/>
+    <item id="70" quality="2" tags="quest summonable syringe offensive"/>
     <item id="71" quality="2" tags="summonable mushroom offensive"/>
     <item id="72" quality="2" tags="nolostbr nocantrip angel"/>
     <item id="73" quality="2" tags="summonable monstermanual"/>
@@ -139,7 +139,7 @@
     <item id="140" quality="1" tags="bob summonable offensive"/>
     <item id="141" quality="0" tags="offensive"/>
     <item id="142" quality="2" tags="nolostbr summonable angel"/>
-    <item id="143" quality="2" tags="summonable syringe offensive"/>
+    <item id="143" quality="2" tags="quest summonable syringe offensive"/>
     <item id="144" quality="1" tags="summonable offensive"/>
     <item id="145" quality="2" tags="dead guppy offensive"/>
     <item id="146" quality="2" tags="nolostbr"/>
@@ -235,7 +235,7 @@
     <item id="237" quality="2" tags="summonable offensive"/>
     <item id="238" quality="0" tags="uniquefamiliar offensive lazarusshared noeden nocantrip quest"/>
     <item id="239" quality="0" tags="uniquefamiliar offensive lazarusshared noeden nocantrip quest"/>
-    <item id="240" quality="1" tags="syringe offensive"/>
+    <item id="240" quality="1" tags="quest syringe offensive"/>
     <item id="241" quality="2" tags="summonable offensive nogreed"/>
     <item id="242" quality="2" tags="summonable"/>
     <item id="243" quality="2" tags="summonable"/>
@@ -340,7 +340,7 @@
     <item id="342" quality="2" tags="summonable mushroom tearsup offensive"/>
     <item id="343" quality="1" craftquality="2" tags="summonable offensive"/>
     <item id="344" quality="1" tags="noeden offensive"/>
-    <item id="345" quality="2" tags="summonable syringe offensive"/>
+    <item id="345" quality="2" tags="quest summonable syringe offensive"/>
     <item id="346" quality="1" tags="nolostbr food"/>
     <item id="347" quality="4" tags="offensive"/>
     <item id="348" quality="2" tags="offensive nocantrip"/>
@@ -488,10 +488,10 @@
     <item id="490" quality="3" tags="offensive"/>
     <item id="491" quality="2" tags="summonable baby offensive"/>
     <item id="492" quality="2" tags="summonable offensive fly"/>
-    <item id="493" quality="2" tags="nolostbr summonable syringe"/>
+    <item id="493" quality="2" tags="quest nolostbr summonable syringe"/>
     <item id="494" quality="4" tags="summonable offensive"/>
     <item id="495" quality="3" tags="summonable offensive"/>
-    <item id="496" quality="3" tags="summonable syringe offensive"/>
+    <item id="496" quality="3" tags="quest summonable syringe offensive"/>
     <item id="497" quality="3" tags="summonable offensive"/>
     <item id="498" quality="3" tags="angel devil summonable offensive lazarussharedglobal"/>
     <item id="499" quality="3" tags="noeden summonable offensive lazarussharedglobal"/>
