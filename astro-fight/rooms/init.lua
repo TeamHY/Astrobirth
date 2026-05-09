@@ -411,6 +411,16 @@ Astro:AddCallback(
                         reroll = true,
                         modifierName = "Treasure Room"
                     }
+                elseif room:GetType() == RoomType.ROOM_DEVIL and level:GetAbsoluteStage() == LevelStage.STAGE1_1 and itemConfigitem.Quality >= 4 then
+                    return {
+                        reroll = true,
+                        modifierName = "Devil Room"
+                    }
+                elseif room:GetType() == RoomType.ROOM_SECRET and level:GetAbsoluteStage() == LevelStage.STAGE1_1 and itemConfigitem.Quality >= 4 then
+                    return {
+                        reroll = true,
+                        modifierName = "Secret Room"
+                    }
                 end
 
                 return false
