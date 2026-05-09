@@ -306,7 +306,7 @@ Astro:AddCallback(
             end
 
             if stage == LevelStage.STAGE1_1 or stage == LevelStage.STAGE1_2 then
-                Isaac.Spawn(EntityType.ENTITY_SLOT, 10, 0, currentRoom:GetCenterPos(), Vector(0, 0), nil) -- Shop Restock Machine
+                Astro:SpawnEntity(Astro.Entity.SemiGlitchedMachine, currentRoom:GetCenterPos())
             elseif stage == LevelStage.STAGE3_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE and currentRoom:GetBossID() == 6 then
                 if not player:HasCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1) then
                     player:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_1)
