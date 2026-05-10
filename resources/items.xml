@@ -192,7 +192,7 @@
 	<passive cache="all" description="#3_DOLLAR_BILL_DESCRIPTION" gfx="Collectibles_191_3DollarBill.png" id="191" name="#3_DOLLAR_BILL_NAME" />
 	<active cache="tearflag tearcolor range" description="#TELEPATHY_FOR_DUMMIES_DESCRIPTION" gfx="Collectibles_192_TelepathyForDummies.png" id="192" maxcharges="3" name="#TELEPATHY_FOR_DUMMIES_NAME" />
 	<passive cache="damage" description="#MEAT_DESCRIPTION" gfx="Collectibles_193_Meat.png" hearts="4" id="193" maxhearts="2" name="#MEAT_NAME" />
-	<passive cache="shotspeed" description="#MAGIC_8_BALL_DESCRIPTION" gfx="Collectibles_194_Magic8Ball.png" id="194" shopprice="9" name="#MAGIC_8_BALL_NAME" />
+	<passive cache="shotspeed" description="#MAGIC_8_BALL_DESCRIPTION" gfx="Collectibles_194_Magic8Ball.png" hidden="true" id="194" shopprice="9" name="#MAGIC_8_BALL_NAME" />
 	<passive description="#MOMS_COIN_PURSE_DESCRIPTION" gfx="Collectibles_195_MomsCoinPurse.png" id="195" name="#MOMS_COIN_PURSE_NAME" />
 	<passive cache="firedelay" description="#SQUEEZY_DESCRIPTION" gfx="Collectibles_196_Squeezy.png" id="196" name="#SQUEEZY_NAME" />
 	<passive cache="damage range" description="#JESUS_JUICE_DESCRIPTION" gfx="Collectibles_197_JesusJuice.png" id="197" name="#JESUS_JUICE_NAME" />
