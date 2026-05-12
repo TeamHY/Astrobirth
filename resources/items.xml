@@ -50,7 +50,7 @@
 	<active description="#SHOOP_DA_WHOOP_DESCRIPTION" gfx="Collectibles_049_ShoopDaWhoop.png" id="49" maxcharges="2" name="#SHOOP_DA_WHOOP_NAME" />
 	<passive cache="damage" description="#STEVEN_DESCRIPTION" gfx="Collectibles_050_Steven.png" id="50" name="#STEVEN_NAME" />
 	<passive cache="damage" description="#PENTAGRAM_DESCRIPTION" gfx="Collectibles_051_Pentagram.png" id="51" name="#PENTAGRAM_NAME" />
-	<passive achievement="11" cache="all" description="#DR_FETUS_DESCRIPTION" gfx="Collectibles_052_DrFetus.png" id="52" name="#DR_FETUS_NAME" special="true" />
+	<passive achievement="11" cache="all" description="#DR_FETUS_DESCRIPTION" hidden="true" gfx="Collectibles_052_DrFetus.png" id="52" name="#DR_FETUS_NAME" special="true" />
 	<passive description="#MAGNETO_DESCRIPTION" gfx="Collectibles_053_Magneto.png" id="53" name="#MAGNETO_NAME" />
 	<passive description="#TREASURE_MAP_DESCRIPTION" gfx="Collectibles_054_TreasureMap.png" id="54" shopprice="35" name="#TREASURE_MAP_NAME" />
 	<passive description="#MOMS_EYE_DESCRIPTION" gfx="Collectibles_055_MomsEye.png" id="55" name="#MOMS_EYE_NAME" />
