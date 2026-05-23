@@ -295,6 +295,7 @@ local banItems = {
     [PlayerType.PLAYER_THELOST] = {
         collectible = {
             CollectibleType.COLLECTIBLE_BOOK_OF_SECRETS,
+            CollectibleType.COLLECTIBLE_FLIP,
             CollectibleType.COLLECTIBLE_LEO,
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
@@ -627,6 +628,7 @@ local banItems = {
     [PlayerType.PLAYER_THELOST_B] = {
         collectible = {
             CollectibleType.COLLECTIBLE_BOOK_OF_SECRETS,
+            CollectibleType.COLLECTIBLE_FLIP,
             CollectibleType.COLLECTIBLE_LEO,
             CollectibleType.COLLECTIBLE_ANKH,
             CollectibleType.COLLECTIBLE_LAZARUS_RAGS,
