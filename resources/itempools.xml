@@ -1327,6 +1327,7 @@
 		<Item Id="232" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="246" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="251" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="261" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="287" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="311" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="313" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1336,6 +1337,7 @@
 		<Item Id="335" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="347" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="387" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+		<Item Id="395" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="402" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="422" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
 		<Item Id="425" Weight="1" DecreaseBy="1" RemoveOn="0"/>
