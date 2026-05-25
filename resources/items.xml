@@ -67,7 +67,7 @@
 	<active cooldown="240" description="#THE_HOURGLASS_DESCRIPTION" gfx="Collectibles_066_TheHourglass.png" id="66" maxcharges="1" name="#THE_HOURGLASS_NAME" />
 	<familiar description="#SISTER_MAGGY_DESCRIPTION" gfx="Collectibles_067_SisterMaggy.png" id="67" name="#SISTER_MAGGY_NAME" />
 	<passive cache="all" description="#TECHNOLOGY_DESCRIPTION" gfx="Collectibles_068_Technology.png" id="68" name="#TECHNOLOGY_NAME" />
-	<passive cache="all" description="#CHOCOLATE_MILK_DESCRIPTION" gfx="Collectibles_069_ChocolateMilk.png" id="69" name="#CHOCOLATE_MILK_NAME" />
+	<passive cache="all" description="#CHOCOLATE_MILK_DESCRIPTION" gfx="Collectibles_069_ChocolateMilk.png" shopprice="5" id="69" name="#CHOCOLATE_MILK_NAME" />
 	<passive cache="damage speed" description="#GROWTH_HORMONES_DESCRIPTION" gfx="Collectibles_070_GrowthHormones.png" id="70" name="#GROWTH_HORMONES_NAME" />
 	<passive cache="speed range size" description="#MINI_MUSH_DESCRIPTION" gfx="Collectibles_071_MiniMushroom.png" id="71" name="#MINI_MUSH_NAME" />
 	<passive description="#ROSARY_DESCRIPTION" gfx="Collectibles_072_Rosary.png" id="72" name="#ROSARY_NAME" shopprice="11" soulhearts="6" cache="firedelay" />
