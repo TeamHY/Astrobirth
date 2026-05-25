@@ -668,7 +668,7 @@
 	<active		id="640"	achievement="418" gfx="Collectibles_640_UrnOfSouls.png" shopprice="3" name="#URN_OF_SOULS_NAME" description="#URN_OF_SOULS_DESCRIPTION" maxcharges="0" persistent="false" />
 	<passive	id="641"	achievement="446" gfx="Collectibles_641_Akeldama.png" name="#AKELDAMA_NAME" description="#AKELDAMA_DESCRIPTION" />
 	<active		id="642"	achievement="472" gfx="Collectibles_642_MagicSkin.png" name="#MAGIC_SKIN_NAME" description="#MAGIC_SKIN_DESCRIPTION" maxcharges="12" />
-	<passive	id="643"	achievement="470" gfx="Collectibles_643_Revelation.png" name="#REVELATION_NAME" description="#REVELATION_DESCRIPTION" cache="flying" soulhearts="4" devilprice="2" />
+	<passive	id="643"	achievement="470" gfx="Collectibles_643_Revelation.png" shopprice="13" name="#REVELATION_NAME" description="#REVELATION_DESCRIPTION" cache="flying" soulhearts="4" devilprice="2" />
 	<passive	id="644"	gfx="Collectibles_644_ConsolationPrize.png" name="#CONSOLATION_PRIZE_NAME" shopprice="7" description="#CONSOLATION_PRIZE_DESCRIPTION" />
 	<familiar	id="645"	achievement="456" gfx="Collectibles_645_Tinytoma.png" name="#TINYTOMA_NAME" description="#TINYTOMA_DESCRIPTION" />
 	<passive	id="646"	achievement="546" gfx="Collectibles_646_BrimstoneBombs.png" name="#BRIMSTONE_BOMBS_NAME" description="#BRIMSTONE_BOMBS_DESCRIPTION" bombs="5" />
