@@ -318,7 +318,7 @@
 	<passive description="#HOLY_MANTLE_DESCRIPTION" gfx="collectibles_313_holymantle.png" hidden="true" cache="damage" shopprice="65" id="313" name="#HOLY_MANTLE_NAME" addcostumeonpickup="false" devilprice="2" />
 	<passive cache="speed" description="#THUNDER_THIGHS_DESCRIPTION" gfx="collectibles_314_thunderthighs.png" hearts="4" id="314" maxhearts="2" name="#THUNDER_THIGHS_NAME" />
 	<passive cache="tearflag tearcolor" description="#STRANGE_ATTRACTOR_DESCRIPTION" gfx="collectibles_315_strangeattractor.png" id="315" name="#STRANGE_ATTRACTOR_NAME" />
-	<passive cache="all" description="#CURSED_EYE_DESCRIPTION" gfx="collectibles_316_cursedeye.png" id="316" name="#CURSED_EYE_NAME" />
+	<passive cache="all" description="#CURSED_EYE_DESCRIPTION" gfx="collectibles_316_cursedeye.png" shopprice="1" id="316" name="#CURSED_EYE_NAME" />
 	<passive cache="tearflag tearcolor" description="#MYSTERIOUS_LIQUID_DESCRIPTION" gfx="collectibles_317_mysteriousliquid.png" id="317" name="#MYSTERIOUS_LIQUID_NAME" />
 	<familiar description="#GEMINI_DESCRIPTION" gfx="collectibles_318_gemini.png" id="318" name="#GEMINI_NAME" />
 	<familiar achievement="110" description="#CAINS_OTHER_EYE_DESCRIPTION" gfx="collectibles_319_cainseye.png" id="319" name="#CAINS_OTHER_EYE_NAME" />
