@@ -54,6 +54,10 @@ end
 local function ResetPenalty(player)
     local data = Astro:GetPersistentPlayerData(player)
 
+    if data == nil then
+        return
+    end
+
     if (data[PENALTY_COUNT_KEY] or 0) == 0 then
         SyncHolyShieldTracker(player)
         return
@@ -104,6 +108,11 @@ Astro:AddCallback(
         local brokenCount = GetBrokenShieldCount(previousState, currentState)
 
         if brokenCount > 0 then
+            local currentRoomDesc = Game():GetLevel():GetCurrentRoomDesc()
+            if currentRoomDesc.Data.Name == "Beast Room" then
+                player:Kill()
+            end
+
             ApplyPenalty(player, brokenCount)
         end
 

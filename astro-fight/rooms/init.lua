@@ -127,7 +127,7 @@ Astro:AddCallback(
         local currentRoom = level:GetCurrentRoom()
         local currentRoomDesc = level:GetRoomByIdx(level:GetCurrentRoomIndex())
 
-        if currentRoomDesc.Data.Name == "Genesis Room" then
+        if currentRoomDesc.Data.Name == "Genesis Room" or currentRoomDesc.Data.Name == "Beast Room" then
             currentRoom:SetBrokenWatchState(2)
         end
     end
