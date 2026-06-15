@@ -145,3 +145,22 @@ Astro:AddCallback(
         end
     end
 )
+--[[
+Astro:AddCallback(
+    ModCallbacks.MC_INPUT_ACTION,
+    ---@param entity Entity
+    ---@param inputHook InputHook
+    ---@param buttonAction ButtonAction
+    function(_, entity, inputHook, buttonAction)
+        local room = Game():GetRoom()
+        local bossID = roomGetBossID()
+        
+        if bossID == 55 or bossID == 70 or bossID == 71 or bossID == 100 then
+            if inputHook == 0 or inputHook == 1 then
+                if buttonAction == ButtonAction.ACTION_MENUBACK or buttonAction == ButtonAction.ACTION_PAUSE or buttonAction == ButtonAction.ACTION_CONSOLE then
+                    return false
+                end
+            end
+        end
+    end
+)]]
