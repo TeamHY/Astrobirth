@@ -8,6 +8,21 @@ local DAMAGE_DECREMENT = -0.1
 local RANGE_DECREMENT = -1
 local LUCK_DECREMENT = -1
 
+local MAJOR_BOSS_ID = {
+    [6]  =  true,   -- 엄마
+    [24] =  true,   -- 사탄
+    [25] =  true,   -- 핏덩이
+    [39] =  true,   -- 아이작
+    [40] =  true,   -- ???
+    [54] =  true,   -- 어린 양
+    [55] =  true,   -- 메가 사탄
+    [63] =  true,   -- 침묵
+    [70] =  true,   -- 섬망
+    [88] =  true,   -- 어머니
+    [99] =  true,   -- 도그마
+    [100] = true,   -- 짐승
+}
+
 ---
 
 local PENALTY_COUNT_KEY = "holyShieldPenaltyCount"
@@ -145,22 +160,47 @@ Astro:AddCallback(
         end
     end
 )
---[[
+
+local currentStage = 0
+local currentBossID = 0
+local blockedActions = {
+    [ButtonAction.ACTION_MENUBACK] = true,
+    [ButtonAction.ACTION_PAUSE] = true
+}
+
+Astro:AddCallback(
+    ModCallbacks.MC_POST_NEW_ROOM,
+    function()
+        local game = Game()
+        local level = game:GetLevel()
+        local room = level:GetCurrentRoom()
+
+        currentStage = level:GetAbsoluteStage()
+        currentBossID = room:GetBossID()
+    end
+)
+
 Astro:AddCallback(
     ModCallbacks.MC_INPUT_ACTION,
     ---@param entity Entity
     ---@param inputHook InputHook
     ---@param buttonAction ButtonAction
     function(_, entity, inputHook, buttonAction)
-        local room = Game():GetRoom()
-        local bossID = roomGetBossID()
+        if not blockedActions[buttonAction] then
+            return
+        end
+
+        if currentStage == LevelStage.STAGE8 then
+            return false
+        end
         
-        if bossID == 55 or bossID == 70 or bossID == 71 or bossID == 100 then
-            if inputHook == 0 or inputHook == 1 then
-                if buttonAction == ButtonAction.ACTION_MENUBACK or buttonAction == ButtonAction.ACTION_PAUSE or buttonAction == ButtonAction.ACTION_CONSOLE then
-                    return false
-                end
-            end
+        if currentBossID == 0 or not MAJOR_BOSS_ID[currentBossID] then
+            return
+        end
+        
+        if inputHook == 0 or inputHook == 1 then
+            return false
         end
     end
-)]]
+)
+
