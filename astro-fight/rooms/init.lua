@@ -7,6 +7,7 @@ local GO_HOME_DELETED_FRAME = 20 * 30
 ---
 
 require "astro-fight.rooms.chest-room"
+require "astro-fight.rooms.death-certificate-room"
 require "astro-fight.rooms.room-boss"
 require "astro-fight.rooms.void-portal"
 
