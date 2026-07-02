@@ -5,6 +5,7 @@ Astro.Enums.ShortcutPortalSubType = {
     SHOP = 2,
     BOSS = 3,
     MOTHER = 4,
+    SACRIFICE = 5
 }
 
 if EID then
@@ -38,6 +39,14 @@ if EID then
         Astro.Enums.ShortcutPortalSubType.MOTHER,
         "마더루트 포탈",
         "스테이지 6c로 즉시 이동합니다."
+    )
+
+    EID:addEntity(
+        EntityType.ENTITY_EFFECT,
+        Astro.Entities.SHORTCUT_PORTAL,
+        Astro.Enums.ShortcutPortalSubType.SACRIFICE,
+        "희생방 포탈",
+        "{{SacrificeRoom}}희생방으로 즉시 이동합니다."
     )
 end
 
@@ -90,6 +99,8 @@ Astro:AddCallback(
             effect.Color = Color(1, 1, 1, 1, 0.7, 0, 0)
         elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.MOTHER then
             effect.Color = Color(1, 1, 1, 1, 0.7, 0, 0.7)
+        elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.SACRIFICE then
+            effect.Color = Color(1, 1, 1, 1, 0.7, 0, 0)
         end
     end,
     Astro.Entities.SHORTCUT_PORTAL
@@ -111,6 +122,8 @@ Astro:AddCallback(
                     player:UseCard(Card.CARD_EMPEROR, UseFlag.USE_NOANIM | UseFlag.USE_NOANNOUNCER)
                 elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.MOTHER then
                     Isaac.ExecuteCommand("stage 6c")
+                elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.SACRIFICE then
+                    MoveRoom(RoomType.ROOM_SACRIFICE)
                 end
             end
         end
@@ -214,6 +227,13 @@ Astro:AddCallback(
                 EntityType.ENTITY_EFFECT,
                 Astro.Entities.SHORTCUT_PORTAL,
                 Astro.Enums.ShortcutPortalSubType.MOTHER,
+                room:GetGridPosition(28)
+            )
+        elseif level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetCurrentRoomIndex() == 84 and Isaac.GetPlayer():GetPlayerType() == PlayerType.PLAYER_MAGDALENE then
+            Astro:Spawn(
+                EntityType.ENTITY_EFFECT,
+                Astro.Entities.SHORTCUT_PORTAL,
+                Astro.Enums.ShortcutPortalSubType.SACRIFICE,
                 room:GetGridPosition(28)
             )
         end
