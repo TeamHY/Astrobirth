@@ -128,7 +128,9 @@ Astro:AddCallback(
                 player:Kill()
             end
 
-            ApplyPenalty(player, brokenCount)
+            if player:GetPlayerType() == PlayerType.PLAYER_THELOST or player:GetPlayerType() == PlayerType.PLAYER_THELOST_B then
+                ApplyPenalty(player, brokenCount)
+            end
         end
 
         data[SHIELD_TRACKER_KEY] = currentState
