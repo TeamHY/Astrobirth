@@ -703,7 +703,7 @@
 	<passive	id="675"	achievement="451" gfx="Collectibles_675_CrackedOrb.png" name="#CRACKED_ORB_NAME" shopprice="9" description="#CRACKED_ORB_DESCRIPTION" />
 	<passive	id="676"	achievement="453" gfx="Collectibles_676_EmptyHeart.png" name="#EMPTY_HEART_NAME" description="#EMPTY_HEART_DESCRIPTION" />
 	<passive	id="677"	achievement="457" gfx="Collectibles_677_AstralProjection.png" name="#ASTRAL_PROJECTION_NAME" description="#ASTRAL_PROJECTION_DESCRIPTION" addcostumeonpickup="false" cache="flying tearflag tearcolor" />
-	<passive	id="678"	achievement="463" devilprice="2" gfx="Collectibles_678_CSection.png" name="#C_SECTION_NAME" description="#C_SECTION_DESCRIPTION" cache="weapon firedelay damage tearcolor range" />
+	<passive	id="678"	achievement="463" devilprice="2" shopprice="30" gfx="Collectibles_678_CSection.png" name="#C_SECTION_NAME" description="#C_SECTION_DESCRIPTION" cache="weapon firedelay damage tearcolor range" />
 	<familiar	id="679"	achievement="455" gfx="Collectibles_679_LilAbaddon.png" name="#LIL_ABADDON_NAME" description="#LIL_ABADDON_DESCRIPTION" devilprice="1" />
 	<passive	id="680"	achievement="449" gfx="Collectibles_680_MontezumasRevenge.png" name="#MONTEZUMAS_REVENGE_NAME" description="#MONTEZUMAS_REVENGE_DESCRIPTION" />
 	<familiar	id="681"	achievement="466" gfx="Collectibles_681_LilPortal.png" name="#LIL_PORTAL_NAME" description="#LIL_PORTAL_DESCRIPTION" />
