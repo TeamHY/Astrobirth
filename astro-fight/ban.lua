@@ -180,6 +180,8 @@ local banItems = {
             Astro.Collectible.ALTAIR,
             Astro.Collectible.WANTED_SEEKER_OF_SINFUL_SPOIL,
             Astro.Collectible.MY_MOON_MY_MAN,
+            Astro.Collectible.GRADUATION_CERTIFICATE,
+            Astro.Collectible.FALSE_CERTIFICATE,
         },
         trinket = {
             TrinketType.TRINKET_MISSING_POSTER,
