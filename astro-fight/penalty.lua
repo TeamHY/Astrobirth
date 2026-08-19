@@ -1,12 +1,12 @@
 ---
 
-local MAX_PENALTY_COUNT = 3
+local MAX_PENALTY_COUNT = 5
 
-local SPEED_DECREMENT = -0.1
-local TEARS_DECREMENT = -0.1
-local DAMAGE_DECREMENT = -0.1
-local RANGE_DECREMENT = -1
-local LUCK_DECREMENT = -1
+local SPEED_DECREMENT = -0.05
+local TEARS_DECREMENT = -0
+local DAMAGE_DECREMENT = -0.05
+local RANGE_DECREMENT = -0.1
+local LUCK_DECREMENT = -3
 
 local MAJOR_BOSS_ID = {
     [6]  =  true,   -- 엄마
