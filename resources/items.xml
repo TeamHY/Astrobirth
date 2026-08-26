@@ -248,7 +248,7 @@
 	<passive achievement="134" description="#BLUE_MAP_DESCRIPTION" shopprice="35" gfx="collectibles_246_bluemap.png" id="246" name="#BLUE_MAP_NAME" />
 	<passive description="#BFFS_DESCRIPTION" gfx="collectibles_247_bffs.png" id="247" name="#BFFS_NAME" />
 	<passive description="#HIVE_MIND_DESCRIPTION" gfx="collectibles_248_hivemind.png" id="248" shopprice="20" name="#HIVE_MIND_NAME" />
-	<passive achievement="135" description="#THERES_OPTIONS_DESCRIPTION" gfx="collectibles_249_theresoptions.png" id="249" shopprice="10" name="#THERES_OPTIONS_NAME" />
+	<passive achievement="135" description="#THERES_OPTIONS_DESCRIPTION" gfx="collectibles_249_theresoptions.png" id="249" shopprice="5" name="#THERES_OPTIONS_NAME" />
 	<passive description="#BOGO_BOMBS_DESCRIPTION" gfx="collectibles_250_bogobombs.png" id="250" name="#BOGO_BOMBS_NAME" />
 	<passive description="#STARTER_DECK_DESCRIPTION" devilprice="2" gfx="collectibles_251_starterdeck.png" shopprice="32" id="251" name="#STARTER_DECK_NAME" />
 	<passive achievement="146" description="#LITTLE_BAGGY_DESCRIPTION" gfx="collectibles_252_littlebaggy.png" id="252" name="#LITTLE_BAGGY_NAME" />
