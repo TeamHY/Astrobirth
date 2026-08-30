@@ -316,6 +316,13 @@ Astro:AddCallback(
                 if not player:HasCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2) then
                     player:AddCollectible(CollectibleType.COLLECTIBLE_KNIFE_PIECE_2)
                 end
+            elseif stage == LevelStage.STAGE4_3 then
+                Astro:SpawnCollectible(
+                    CollectibleType.COLLECTIBLE_EDENS_BLESSING,
+                    currentRoom:GetCenterPos(),
+                    nil,
+                    true
+                )
             elseif stage == LevelStage.STAGE5 then
                 if level:GetStageType() == StageType.STAGETYPE_ORIGINAL then
                     if not player:HasCollectible(CollectibleType.COLLECTIBLE_NEGATIVE, true) then

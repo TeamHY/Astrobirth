@@ -200,13 +200,6 @@ Astro:AddCallback(
                         )
 
                         player:AddCollectible(CollectibleType.COLLECTIBLE_EVIL_CHARM)
-                    elseif stage == LevelStage.STAGE4_3 then
-                        Astro:SpawnCollectible(
-                            CollectibleType.COLLECTIBLE_EDENS_BLESSING,
-                            currentRoom:GetCenterPos(),
-                            OPTIONS_PICKUP_INDEX,
-                            true
-                        )
                     elseif stage == LevelStage.STAGE5 then
                         Isaac.Spawn(
                             EntityType.ENTITY_PICKUP,
