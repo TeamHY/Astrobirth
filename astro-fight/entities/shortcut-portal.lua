@@ -5,7 +5,8 @@ Astro.Enums.ShortcutPortalSubType = {
     SHOP = 2,
     BOSS = 3,
     MOTHER = 4,
-    SACRIFICE = 5
+    SACRIFICE = 5,
+    STARTING = 6
 }
 
 if EID then
@@ -48,6 +49,14 @@ if EID then
         "희생방 포탈",
         "{{SacrificeRoom}}희생방으로 즉시 이동합니다."
     )
+
+    EID:addEntity(
+        EntityType.ENTITY_EFFECT,
+        Astro.Entities.SHORTCUT_PORTAL,
+        Astro.Enums.ShortcutPortalSubType.STARTING,
+        "시작방 포탈",
+        "시작방으로 즉시 이동합니다."
+    )
 end
 
 Astro:AddCallback(
@@ -55,6 +64,7 @@ Astro:AddCallback(
     function(_)
         Astro.Data.IsEnabledShortcutPortals = false
         Astro.Data.IsEnabledMirrorShortcutPortals = false
+        Astro.Data.IsEnabledStartingRoomPortal = false
     end
 )
 
@@ -65,6 +75,7 @@ Astro:AddCallback(
         if not isContinued then
             Astro.Data.IsEnabledShortcutPortals = false
             Astro.Data.IsEnabledMirrorShortcutPortals = false
+            Astro.Data.IsEnabledStartingRoomPortal = false
         end
     end
 )
@@ -87,6 +98,15 @@ local function MoveRoom(roomType)
     end
 end
 
+local function MoveStartingRoom()
+    local level = Game():GetLevel()
+    local idx = level:GetStartingRoomIndex()
+
+    if level:GetCurrentRoomIndex() ~= idx then
+        Game():ChangeRoom(idx)
+    end
+end
+
 Astro:AddCallback(
     ModCallbacks.MC_POST_EFFECT_INIT,
     ---@param effect EntityEffect
@@ -101,6 +121,8 @@ Astro:AddCallback(
             effect.Color = Color(1, 1, 1, 1, 0.7, 0, 0.7)
         elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.SACRIFICE then
             effect.Color = Color(1, 1, 1, 1, 0.7, 0, 0)
+        elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.STARTING then
+            effect.Color = Color(1, 1, 1, 1, 0, 0.4, 0.7)
         end
     end,
     Astro.Entities.SHORTCUT_PORTAL
@@ -124,6 +146,8 @@ Astro:AddCallback(
                     Isaac.ExecuteCommand("stage 6c")
                 elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.SACRIFICE then
                     MoveRoom(RoomType.ROOM_SACRIFICE)
+                elseif effect.SubType == Astro.Enums.ShortcutPortalSubType.STARTING then
+                    MoveStartingRoom()
                 end
             end
         end
@@ -177,6 +201,17 @@ local function SpawnShortcutPortal()
     end
 end
 
+local function SpawnStartingRoomPortal()
+    local room = Game():GetRoom()
+
+    Astro:Spawn(
+        EntityType.ENTITY_EFFECT,
+        Astro.Entities.SHORTCUT_PORTAL,
+        Astro.Enums.ShortcutPortalSubType.STARTING,
+        room:GetCenterPos() + Vector(0, 40)
+    )
+end
+
 -- local function HasMirrorDimension()
 --     local level = Game():GetLevel()
 
@@ -220,6 +255,10 @@ Astro:AddCallback(
             if Astro.Data.IsEnabledShortcutPortals then
                 SpawnShortcutPortal()
             end
+        end
+
+        if Astro.Data.IsEnabledStartingRoomPortal and room:GetType() == RoomType.ROOM_BOSS and room:GetBossID() ~= 55 then -- Mega Satan
+            SpawnStartingRoomPortal()
         end
 
         if level:GetAbsoluteStage() == LevelStage.STAGE4_2 and roomDesc.Data.Name == "Entrance Room" then

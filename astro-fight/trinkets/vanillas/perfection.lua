@@ -218,14 +218,16 @@ Astro:AddCallback(
                             nil
                         ):ToPickup().OptionsPickupIndex = OPTIONS_PICKUP_INDEX
                     elseif stage == LevelStage.STAGE6 then
-                        Isaac.Spawn(
-                            EntityType.ENTITY_PICKUP,
-                            PickupVariant.PICKUP_TAROTCARD,
-                            Card.CARD_FOOL,
-                            currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
-                            Vector.Zero,
-                            nil
-                        )
+                        -- Isaac.Spawn(
+                        --     EntityType.ENTITY_PICKUP,
+                        --     PickupVariant.PICKUP_TAROTCARD,
+                        --     Card.CARD_FOOL,
+                        --     currentRoom:FindFreePickupSpawnPosition(player.Position, Astro.GRID_SIZE, true),
+                        --     Vector.Zero,
+                        --     nil
+                        -- )
+
+                        Astro.Data.IsEnabledStartingRoomPortal = true
                     end
                 end
             end
