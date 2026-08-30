@@ -192,6 +192,10 @@ Astro:AddCallback(
             return
         end
 
+        if Input.IsButtonPressed(Keyboard.KEY_LEFT_SHIFT, 0) then
+            return
+        end
+
         if currentStage == LevelStage.STAGE8 then
             return false
         end
