@@ -64,6 +64,10 @@ Astro:AddCallback(
                         TryChangeToGoldenTrinket(player)
                     end
 
+                    if currentRoom:IsMirrorWorld() then
+                        Astro:SmeltTrinket(player, TrinketType.TRINKET_RIB_OF_GREED)
+                    end
+
                     if player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) and not player:HasCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR) then
                         player:AddCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR)
                         itemPool:RemoveCollectible(CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR)
