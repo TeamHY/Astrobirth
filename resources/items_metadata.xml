@@ -613,7 +613,7 @@
     <item id="617" quality="3" tags="summonable offensive"/>
     <item id="618" quality="2" tags="summonable offensive"/>
     <item id="619" quality="3" tags="summonable offensive nocantrip"/>
-    <item id="621" quality="2" tags="quest offensive"/>
+    <item id="621" quality="2" tags="noeden quest offensive"/>
     <item id="622" quality="3" tags="offensive nocantrip"/>
     <item id="623" quality="1" tags="offensive"/>
     <item id="624" quality="1" tags="offensive"/>
