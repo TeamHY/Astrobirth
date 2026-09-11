@@ -183,6 +183,25 @@ Astro:AddCallback(
 )
 
 Astro:AddCallback(
+    ModCallbacks.MC_POST_GAME_END,
+    ---@param isGameOver boolean
+    function(_, isGameOver)
+        currentStage = 0
+        currentBossID = 0
+    end
+)
+
+Astro:AddCallback(
+    ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
+    ---@param rng RNG
+    ---@param spawnPos Vector
+    function(_, rng, spawnPos)
+        currentStage = 0
+        currentBossID = 0
+    end
+)
+
+Astro:AddCallback(
     ModCallbacks.MC_INPUT_ACTION,
     ---@param entity Entity
     ---@param inputHook InputHook
