@@ -13727,7 +13727,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="2" y="0">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="2" weight="1.0"/>
 		</spawn>
 		<spawn x="3" y="0">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
@@ -13790,7 +13790,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="23" y="0">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="24" y="0">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
@@ -13799,13 +13799,13 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="1">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="3" weight="1.0"/>
 		</spawn>
 		<spawn x="1" y="1">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="3" weight="1.0"/>
 		</spawn>
 		<spawn x="2" y="1">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="2" weight="1.0"/>
 		</spawn>
 		<spawn x="3" y="1">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
@@ -13868,13 +13868,13 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="23" y="1">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="24" y="1">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="3" weight="1.0"/>
 		</spawn>
 		<spawn x="25" y="1">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="3" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="2">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
@@ -14028,13 +14028,13 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="12">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="1" weight="1.0"/>
 		</spawn>
 		<spawn x="1" y="12">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="1" weight="1.0"/>
 		</spawn>
 		<spawn x="2" y="12">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="2" weight="1.0"/>
 		</spawn>
 		<spawn x="3" y="12">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
@@ -14097,13 +14097,13 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="23" y="12">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="24" y="12">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="1" weight="1.0"/>
 		</spawn>
 		<spawn x="25" y="12">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="1" weight="1.0"/>
 		</spawn>
 		<spawn x="0" y="13">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
@@ -14112,7 +14112,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="2" y="13">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="2" weight="1.0"/>
 		</spawn>
 		<spawn x="3" y="13">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
@@ -14175,7 +14175,7 @@
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="23" y="13">
-			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
+			<entity type="203" variant="0" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="24" y="13">
 			<entity type="1901" variant="0" subtype="0" weight="1.0"/>
