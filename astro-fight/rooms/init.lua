@@ -296,6 +296,12 @@ Astro:AddCallback(
         local player = Isaac.GetPlayer()
 
         if currentRoom:GetType() == RoomType.ROOM_BOSS then
+            if stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then -- 엄마 발
+                for i = 1, Game():GetNumPlayers() do
+                    Isaac.GetPlayer(i - 1):AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+                end
+            end
+
             if stage == LevelStage.STAGE1_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE then
                 for i = 1, Game():GetNumPlayers() do
                     local player = Isaac.GetPlayer(i - 1)

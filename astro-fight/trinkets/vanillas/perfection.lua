@@ -148,8 +148,6 @@ Astro:AddCallback(
                             true
                         )
                     elseif stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then -- 엄마 발
-                        player:AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
-
                         Astro:SpawnCollectible(
                             Astro.Collectible.CLEANER,
                             currentRoom:GetGridPosition(97),
