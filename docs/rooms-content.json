@@ -1,0 +1,1809 @@
+{
+  "schema": 1,
+  "intro": {
+    "title": "방 배치 비교",
+    "body": "익숙한 방이 어떻게 바뀌었는지 직접 비교합니다. 층과 방을 고른 뒤 격자의 표시를 누르면 그 위치의 스폰 후보를 확인할 수 있습니다."
+  },
+  "statistics": {
+    "files": 52,
+    "before": 28733,
+    "after": 21097,
+    "same": 16304,
+    "changed": 4550,
+    "added": 243,
+    "removed": 7879
+  },
+  "floors": [
+    {
+      "id": "normal-00-special-rooms",
+      "title": "특수방",
+      "mode": "normal",
+      "path": "assets/rooms/normal-00-special-rooms.json",
+      "statistics": {
+        "before": 1357,
+        "after": 1156,
+        "same": 468,
+        "changed": 574,
+        "added": 114,
+        "removed": 315
+      },
+      "bytes": 1225844,
+      "metadata": {
+        "sourceFile": "resources/rooms/00.special rooms.stb",
+        "sha256": "5aef479c633277eac0c40df04038ccd728b5d56be1db566f649221c897d8d77f",
+        "sourceIndex": 0,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/00.special rooms.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/00.special rooms.stb"
+          }
+        ],
+        "xmlParity": [
+          {
+            "file": "resources/rooms/00.special rooms.xml",
+            "xmlRooms": 1156,
+            "stbRooms": 1156,
+            "equal": true,
+            "onlyXml": 0,
+            "onlyStb": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "normal-01-basement",
+      "title": "지하실",
+      "mode": "normal",
+      "path": "assets/rooms/normal-01-basement.json",
+      "statistics": {
+        "before": 1220,
+        "after": 796,
+        "same": 423,
+        "changed": 362,
+        "added": 11,
+        "removed": 435
+      },
+      "bytes": 1248461,
+      "metadata": {
+        "sourceFile": "resources/rooms/01.basement.stb",
+        "sha256": "f936bd40d2af73fbe38534030b3d073db48e1161310e1228cb9bf76d404fb0d2",
+        "sourceIndex": 1,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/01.basement.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/01.basement.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-02-cellar",
+      "title": "저장고",
+      "mode": "normal",
+      "path": "assets/rooms/normal-02-cellar.json",
+      "statistics": {
+        "before": 1172,
+        "after": 796,
+        "same": 84,
+        "changed": 655,
+        "added": 57,
+        "removed": 433
+      },
+      "bytes": 1670543,
+      "metadata": {
+        "sourceFile": "resources/rooms/02.cellar.stb",
+        "sha256": "f936bd40d2af73fbe38534030b3d073db48e1161310e1228cb9bf76d404fb0d2",
+        "sourceIndex": 2,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/02.cellar.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/02.cellar.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-03-burning-basement",
+      "title": "불타는 지하실",
+      "mode": "normal",
+      "path": "assets/rooms/normal-03-burning-basement.json",
+      "statistics": {
+        "before": 1355,
+        "after": 796,
+        "same": 185,
+        "changed": 603,
+        "added": 8,
+        "removed": 567
+      },
+      "bytes": 1705859,
+      "metadata": {
+        "sourceFile": "resources/rooms/03.burning basement.stb",
+        "sha256": "f936bd40d2af73fbe38534030b3d073db48e1161310e1228cb9bf76d404fb0d2",
+        "sourceIndex": 3,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/03.burning basement.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/03.burning basement.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-04-caves",
+      "title": "동굴",
+      "mode": "normal",
+      "path": "assets/rooms/normal-04-caves.json",
+      "statistics": {
+        "before": 1125,
+        "after": 1111,
+        "same": 944,
+        "changed": 167,
+        "added": 0,
+        "removed": 14
+      },
+      "bytes": 504046,
+      "metadata": {
+        "sourceFile": "resources/rooms/04.caves.stb",
+        "sha256": "f7f02daf476910a56f07611d24dc905f5ac0ac88f505168658e0aec262f64e40",
+        "sourceIndex": 4,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/04.caves.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/04.caves.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-05-catacombs",
+      "title": "지하 묘지",
+      "mode": "normal",
+      "path": "assets/rooms/normal-05-catacombs.json",
+      "statistics": {
+        "before": 1126,
+        "after": 1125,
+        "same": 978,
+        "changed": 147,
+        "added": 0,
+        "removed": 1
+      },
+      "bytes": 452926,
+      "metadata": {
+        "sourceFile": "resources/rooms/05.catacombs.stb",
+        "sha256": "fc0340aec165f1df718856b80298699b03cd7c053c3c2a6a698b850e0d91b277",
+        "sourceIndex": 5,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/05.catacombs.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/05.catacombs.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-06-flooded-caves",
+      "title": "침수된 동굴",
+      "mode": "normal",
+      "path": "assets/rooms/normal-06-flooded-caves.json",
+      "statistics": {
+        "before": 1300,
+        "after": 1285,
+        "same": 1086,
+        "changed": 199,
+        "added": 0,
+        "removed": 15
+      },
+      "bytes": 604673,
+      "metadata": {
+        "sourceFile": "resources/rooms/06.flooded caves.stb",
+        "sha256": "fdf66f25f51647d42eb590450f80e0c246ccb1e97c087d7cd4e530c955e57ac3",
+        "sourceIndex": 6,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/06.flooded caves.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/06.flooded caves.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-07-depths",
+      "title": "깊은 곳",
+      "mode": "normal",
+      "path": "assets/rooms/normal-07-depths.json",
+      "statistics": {
+        "before": 1183,
+        "after": 1176,
+        "same": 1002,
+        "changed": 174,
+        "added": 0,
+        "removed": 7
+      },
+      "bytes": 447333,
+      "metadata": {
+        "sourceFile": "resources/rooms/07.depths.stb",
+        "sha256": "1745f85e6845971df5088c5f79173e7296fa6415a3ffb635fc71a970176e833a",
+        "sourceIndex": 7,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/07.depths.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/07.depths.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-08-necropolis",
+      "title": "공동묘지",
+      "mode": "normal",
+      "path": "assets/rooms/normal-08-necropolis.json",
+      "statistics": {
+        "before": 1200,
+        "after": 1198,
+        "same": 979,
+        "changed": 219,
+        "added": 0,
+        "removed": 2
+      },
+      "bytes": 536695,
+      "metadata": {
+        "sourceFile": "resources/rooms/08.necropolis.stb",
+        "sha256": "fe8dbac7304d701a8507cca0028991592679e7b6837261d204a358b41ac3dbc3",
+        "sourceIndex": 8,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/08.necropolis.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/08.necropolis.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-09-dank-depths",
+      "title": "침수된 깊은 곳",
+      "mode": "normal",
+      "path": "assets/rooms/normal-09-dank-depths.json",
+      "statistics": {
+        "before": 1451,
+        "after": 1443,
+        "same": 1241,
+        "changed": 202,
+        "added": 0,
+        "removed": 8
+      },
+      "bytes": 513323,
+      "metadata": {
+        "sourceFile": "resources/rooms/09.dank depths.stb",
+        "sha256": "fa5da6163cc71714e2b45d9ddbea6632991b764b85bd43a132286956150ba6df",
+        "sourceIndex": 9,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/09.dank depths.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/09.dank depths.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-10-womb",
+      "title": "자궁",
+      "mode": "normal",
+      "path": "assets/rooms/normal-10-womb.json",
+      "statistics": {
+        "before": 1012,
+        "after": 39,
+        "same": 38,
+        "changed": 1,
+        "added": 0,
+        "removed": 973
+      },
+      "bytes": 1235773,
+      "metadata": {
+        "sourceFile": "resources/rooms/10.womb.stb",
+        "sha256": "e38414b5e88403c50b9f9fa88757f2ebe46949898be5e0d892f012e56570a39a",
+        "sourceIndex": 10,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/10.womb.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/10.womb.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-11-utero",
+      "title": "자궁 속",
+      "mode": "normal",
+      "path": "assets/rooms/normal-11-utero.json",
+      "statistics": {
+        "before": 1225,
+        "after": 43,
+        "same": 42,
+        "changed": 1,
+        "added": 0,
+        "removed": 1182
+      },
+      "bytes": 1392868,
+      "metadata": {
+        "sourceFile": "resources/rooms/11.utero.stb",
+        "sha256": "9076d6cd16a23ee41f37e4ae0f9b4dc3bf589a44e45e45cd5fba8c88a22f4565",
+        "sourceIndex": 11,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/11.utero.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/11.utero.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-12-scarred-womb",
+      "title": "상처 입은 자궁",
+      "mode": "normal",
+      "path": "assets/rooms/normal-12-scarred-womb.json",
+      "statistics": {
+        "before": 1168,
+        "after": 38,
+        "same": 37,
+        "changed": 1,
+        "added": 0,
+        "removed": 1130
+      },
+      "bytes": 1393427,
+      "metadata": {
+        "sourceFile": "resources/rooms/12.scarred womb.stb",
+        "sha256": "464fc9e0bef630121db87949a0726cc504eca56538c511a4a04c7a3a12535b99",
+        "sourceIndex": 12,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/12.scarred womb.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/12.scarred womb.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-13-blue-womb",
+      "title": "푸른 자궁",
+      "mode": "normal",
+      "path": "assets/rooms/normal-13-blue-womb.json",
+      "statistics": {
+        "before": 32,
+        "after": 30,
+        "same": 24,
+        "changed": 6,
+        "added": 0,
+        "removed": 2
+      },
+      "bytes": 12611,
+      "metadata": {
+        "sourceFile": "resources/rooms/13.blue womb.stb",
+        "sha256": "becd7914bf4aee30bef46c387cf780049d7fdac7235374441aa35d45daa2a016",
+        "sourceIndex": 13,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/13.blue womb.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/13.blue womb.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-14-sheol",
+      "title": "지옥",
+      "mode": "normal",
+      "path": "assets/rooms/normal-14-sheol.json",
+      "statistics": {
+        "before": 644,
+        "after": 1,
+        "same": 0,
+        "changed": 1,
+        "added": 0,
+        "removed": 643
+      },
+      "bytes": 587826,
+      "metadata": {
+        "sourceFile": "resources/rooms/14.sheol.stb",
+        "sha256": "25680a53920917e9a04d36aaaeaaf97adbd18a13f9b76639220084bd4550c07f",
+        "sourceIndex": 14,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/14.sheol.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/14.sheol.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-15-cathedral",
+      "title": "성당",
+      "mode": "normal",
+      "path": "assets/rooms/normal-15-cathedral.json",
+      "statistics": {
+        "before": 628,
+        "after": 1,
+        "same": 0,
+        "changed": 1,
+        "added": 0,
+        "removed": 627
+      },
+      "bytes": 560446,
+      "metadata": {
+        "sourceFile": "resources/rooms/15.cathedral.stb",
+        "sha256": "25680a53920917e9a04d36aaaeaaf97adbd18a13f9b76639220084bd4550c07f",
+        "sourceIndex": 15,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/15.cathedral.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/15.cathedral.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-16-dark-room",
+      "title": "다크룸",
+      "mode": "normal",
+      "path": "assets/rooms/normal-16-dark-room.json",
+      "statistics": {
+        "before": 212,
+        "after": 1,
+        "same": 0,
+        "changed": 1,
+        "added": 0,
+        "removed": 211
+      },
+      "bytes": 109843,
+      "metadata": {
+        "sourceFile": "resources/rooms/16.dark room.stb",
+        "sha256": "f1f3392bd28b4e68a39916a1afde3cc88766ecf02b2871ea3af4c1d01ea49d81",
+        "sourceIndex": 16,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/16.dark room.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/16.dark room.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-17-chest",
+      "title": "체스트",
+      "mode": "normal",
+      "path": "assets/rooms/normal-17-chest.json",
+      "statistics": {
+        "before": 207,
+        "after": 1,
+        "same": 0,
+        "changed": 1,
+        "added": 0,
+        "removed": 206
+      },
+      "bytes": 103936,
+      "metadata": {
+        "sourceFile": "resources/rooms/17.chest.stb",
+        "sha256": "60f8906a08a367e8856bca3f30c60ef242ae23217a7bf79bbd6cab6a88145da1",
+        "sourceIndex": 17,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/17.chest.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/17.chest.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-27-downpour",
+      "title": "하수구",
+      "mode": "normal",
+      "path": "assets/rooms/normal-27-downpour.json",
+      "statistics": {
+        "before": 764,
+        "after": 762,
+        "same": 548,
+        "changed": 209,
+        "added": 5,
+        "removed": 7
+      },
+      "bytes": 574829,
+      "metadata": {
+        "sourceFile": "resources/rooms/27.downpour.stb",
+        "sha256": "4d9523fc411bb6ca1c2e1e9c7e77c3b2e503e17dd23c75300cec859acdefe12c",
+        "sourceIndex": 18,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/27.downpour.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/27.downpour.stb"
+          }
+        ],
+        "xmlParity": [
+          {
+            "file": "resources/rooms/27.downpour.xml",
+            "xmlRooms": 762,
+            "stbRooms": 762,
+            "equal": true,
+            "onlyXml": 0,
+            "onlyStb": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "normal-28-dross",
+      "title": "오물실",
+      "mode": "normal",
+      "path": "assets/rooms/normal-28-dross.json",
+      "statistics": {
+        "before": 919,
+        "after": 917,
+        "same": 666,
+        "changed": 246,
+        "added": 5,
+        "removed": 7
+      },
+      "bytes": 763555,
+      "metadata": {
+        "sourceFile": "resources/rooms/28.dross.stb",
+        "sha256": "9e884eaeba91b3cac85d27cbc065dc334131c9e4b2943cfb1a97fd9710c501cd",
+        "sourceIndex": 19,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/28.dross.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/28.dross.stb"
+          }
+        ],
+        "xmlParity": [
+          {
+            "file": "resources/rooms/28.dross.xml",
+            "xmlRooms": 917,
+            "stbRooms": 917,
+            "equal": true,
+            "onlyXml": 0,
+            "onlyStb": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "normal-29-mines",
+      "title": "광산",
+      "mode": "normal",
+      "path": "assets/rooms/normal-29-mines.json",
+      "statistics": {
+        "before": 946,
+        "after": 930,
+        "same": 756,
+        "changed": 169,
+        "added": 5,
+        "removed": 21
+      },
+      "bytes": 715394,
+      "metadata": {
+        "sourceFile": "resources/rooms/29.mines.stb",
+        "sha256": "1e1f7bf9dc4d59a5ef852524797dceb28adc859bfb9ba5629968f24af76e000c",
+        "sourceIndex": 20,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/29.mines.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/29.mines.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-30-ashpit",
+      "title": "잿더미",
+      "mode": "normal",
+      "path": "assets/rooms/normal-30-ashpit.json",
+      "statistics": {
+        "before": 925,
+        "after": 919,
+        "same": 735,
+        "changed": 182,
+        "added": 2,
+        "removed": 8
+      },
+      "bytes": 677221,
+      "metadata": {
+        "sourceFile": "resources/rooms/30.ashpit.stb",
+        "sha256": "d14b7053ef384d3cfc1cff04b18a6d491a522488d4e5f38b7a0ebca6cb0ce2d1",
+        "sourceIndex": 21,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/30.ashpit.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/30.ashpit.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-31-mausoleum",
+      "title": "영묘",
+      "mode": "normal",
+      "path": "assets/rooms/normal-31-mausoleum.json",
+      "statistics": {
+        "before": 748,
+        "after": 739,
+        "same": 583,
+        "changed": 154,
+        "added": 2,
+        "removed": 11
+      },
+      "bytes": 543649,
+      "metadata": {
+        "sourceFile": "resources/rooms/31.mausoleum.stb",
+        "sha256": "7c4efab818a3613f939b029d83e270e7297d0e7ee1014c48c880f30f4ce31e64",
+        "sourceIndex": 22,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/31.mausoleum.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/31.mausoleum.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-32-gehenna",
+      "title": "게헨나",
+      "mode": "normal",
+      "path": "assets/rooms/normal-32-gehenna.json",
+      "statistics": {
+        "before": 897,
+        "after": 892,
+        "same": 697,
+        "changed": 193,
+        "added": 2,
+        "removed": 7
+      },
+      "bytes": 586359,
+      "metadata": {
+        "sourceFile": "resources/rooms/32.gehenna.stb",
+        "sha256": "d8e816532b41a589f849d893a7ebf56cc4d9d95218b4c4156bdcb5f464d55317",
+        "sourceIndex": 23,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/32.gehenna.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/32.gehenna.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-33-corpse",
+      "title": "시체",
+      "mode": "normal",
+      "path": "assets/rooms/normal-33-corpse.json",
+      "statistics": {
+        "before": 645,
+        "after": 65,
+        "same": 64,
+        "changed": 1,
+        "added": 0,
+        "removed": 580
+      },
+      "bytes": 540291,
+      "metadata": {
+        "sourceFile": "resources/rooms/33.corpse.stb",
+        "sha256": "2d41c8e63135d43bbc6c540af2c7a142d9c7ac52cd9cf1b94bfa823a548684be",
+        "sourceIndex": 24,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/33.corpse.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/33.corpse.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-34-mortis",
+      "title": "Mortis",
+      "mode": "normal",
+      "path": "assets/rooms/normal-34-mortis.json",
+      "statistics": {
+        "before": 1,
+        "after": 1,
+        "same": 1,
+        "changed": 0,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 600,
+      "metadata": {
+        "sourceFile": "resources/rooms/34.mortis.stb",
+        "sha256": "dddacc9bf8f05f64e1c0002765badc88d8347c06a8ba03b285467617033d7abf",
+        "sourceIndex": 25,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/34.mortis.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/34.mortis.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-35-home",
+      "title": "집",
+      "mode": "normal",
+      "path": "assets/rooms/normal-35-home.json",
+      "statistics": {
+        "before": 39,
+        "after": 39,
+        "same": 36,
+        "changed": 3,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 5371,
+      "metadata": {
+        "sourceFile": "resources/rooms/35.home.stb",
+        "sha256": "ed5c135fba5d3a44db0399f91bd6b5fe27a5ac18539b89fbef493ffffe93ad83",
+        "sourceIndex": 26,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/35.home.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/35.home.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "normal-36-backwards",
+      "title": "역행 구간",
+      "mode": "normal",
+      "path": "assets/rooms/normal-36-backwards.json",
+      "statistics": {
+        "before": 512,
+        "after": 512,
+        "same": 512,
+        "changed": 0,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 618,
+      "metadata": {
+        "sourceFile": "resources/rooms/36.backwards.stb",
+        "sha256": "6b4b393a02a9bc12dc3ba8680418108be706b71fe210f2edf603b3908cefaf1b",
+        "sourceIndex": 27,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/36.backwards.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/36.backwards.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-00-special-rooms",
+      "title": "특수방",
+      "mode": "greed",
+      "path": "assets/rooms/greed-00-special-rooms.json",
+      "statistics": {
+        "before": 186,
+        "after": 47,
+        "same": 31,
+        "changed": 12,
+        "added": 4,
+        "removed": 143
+      },
+      "bytes": 117447,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/00.special rooms.stb",
+        "sha256": "3f0300556b32688737cd8baa2b2bd590155bc2cb44e23516ddb77afaa1e13e6e",
+        "sourceIndex": 28,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/00.special rooms.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/00.special rooms.stb"
+          }
+        ],
+        "xmlParity": [
+          {
+            "file": "resources/rooms/greed/00.special rooms.xml",
+            "xmlRooms": 47,
+            "stbRooms": 47,
+            "equal": true,
+            "onlyXml": 0,
+            "onlyStb": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "greed-01-basement",
+      "title": "지하실",
+      "mode": "greed",
+      "path": "assets/rooms/greed-01-basement.json",
+      "statistics": {
+        "before": 247,
+        "after": 247,
+        "same": 240,
+        "changed": 1,
+        "added": 6,
+        "removed": 6
+      },
+      "bytes": 6983,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/01.basement.stb",
+        "sha256": "8c932c00aed9246f4bb0866dd752cfedda82cc3995a795c77e2aaedc424d9ea0",
+        "sourceIndex": 29,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/01.basement.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/01.basement.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-02-cellar",
+      "title": "저장고",
+      "mode": "greed",
+      "path": "assets/rooms/greed-02-cellar.json",
+      "statistics": {
+        "before": 212,
+        "after": 212,
+        "same": 203,
+        "changed": 9,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 8558,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/02.cellar.stb",
+        "sha256": "ab63fc71d1bbc3d182d3146db13cb253f438f6b602254e2e4049b43651654f83",
+        "sourceIndex": 30,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/02.cellar.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/02.cellar.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-03-burning-basement",
+      "title": "불타는 지하실",
+      "mode": "greed",
+      "path": "assets/rooms/greed-03-burning-basement.json",
+      "statistics": {
+        "before": 316,
+        "after": 315,
+        "same": 305,
+        "changed": 7,
+        "added": 3,
+        "removed": 4
+      },
+      "bytes": 10480,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/03.burning basement.stb",
+        "sha256": "1a869711682330ca894f9082ee9927cb58f4e677f3f46641a2c3d07921d1a428",
+        "sourceIndex": 31,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/03.burning basement.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/03.burning basement.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-04-caves",
+      "title": "동굴",
+      "mode": "greed",
+      "path": "assets/rooms/greed-04-caves.json",
+      "statistics": {
+        "before": 209,
+        "after": 208,
+        "same": 202,
+        "changed": 3,
+        "added": 3,
+        "removed": 4
+      },
+      "bytes": 6904,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/04.caves.stb",
+        "sha256": "2f7c01025fa8ee0d92a73e606e854ebd3de65b45ba24446eba8219e9878d42c9",
+        "sourceIndex": 32,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/04.caves.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/04.caves.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-05-catacombs",
+      "title": "지하 묘지",
+      "mode": "greed",
+      "path": "assets/rooms/greed-05-catacombs.json",
+      "statistics": {
+        "before": 263,
+        "after": 259,
+        "same": 245,
+        "changed": 6,
+        "added": 8,
+        "removed": 12
+      },
+      "bytes": 14739,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/05.catacombs.stb",
+        "sha256": "dc3198627ea88f43f2d94859e7c126a2c3079c250e3998c45383b1b833ddb19d",
+        "sourceIndex": 33,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/05.catacombs.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/05.catacombs.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-06-flooded-caves",
+      "title": "침수된 동굴",
+      "mode": "greed",
+      "path": "assets/rooms/greed-06-flooded-caves.json",
+      "statistics": {
+        "before": 331,
+        "after": 320,
+        "same": 312,
+        "changed": 3,
+        "added": 5,
+        "removed": 16
+      },
+      "bytes": 15186,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/06.flooded caves.stb",
+        "sha256": "d7a56c40fc28fb39a6aeef4e8235e66bc9ffc89d84f195cc01a3ed931efd38c8",
+        "sourceIndex": 34,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/06.flooded caves.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/06.flooded caves.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-07-depths",
+      "title": "깊은 곳",
+      "mode": "greed",
+      "path": "assets/rooms/greed-07-depths.json",
+      "statistics": {
+        "before": 179,
+        "after": 179,
+        "same": 178,
+        "changed": 1,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 1805,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/07.depths.stb",
+        "sha256": "8eb849836037d037963fca84616616b33d04913f6a25ce9c236a0cf077e5314d",
+        "sourceIndex": 35,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/07.depths.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/07.depths.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-08-necropolis",
+      "title": "공동묘지",
+      "mode": "greed",
+      "path": "assets/rooms/greed-08-necropolis.json",
+      "statistics": {
+        "before": 273,
+        "after": 267,
+        "same": 266,
+        "changed": 1,
+        "added": 0,
+        "removed": 6
+      },
+      "bytes": 4583,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/08.necropolis.stb",
+        "sha256": "f49904f93b42dc1d57901f684fbe43bc433089e017f4d0589006428db7e02e7a",
+        "sourceIndex": 36,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/08.necropolis.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/08.necropolis.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-09-dank-depths",
+      "title": "침수된 깊은 곳",
+      "mode": "greed",
+      "path": "assets/rooms/greed-09-dank-depths.json",
+      "statistics": {
+        "before": 357,
+        "after": 333,
+        "same": 333,
+        "changed": 0,
+        "added": 0,
+        "removed": 24
+      },
+      "bytes": 12106,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/09.dank depths.stb",
+        "sha256": "4cba3388ca9179872fa795149ee4a22ffa8aa05ab933bda4577c5cf55125ef1c",
+        "sourceIndex": 37,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/09.dank depths.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/09.dank depths.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-10-womb",
+      "title": "자궁",
+      "mode": "greed",
+      "path": "assets/rooms/greed-10-womb.json",
+      "statistics": {
+        "before": 216,
+        "after": 180,
+        "same": 169,
+        "changed": 11,
+        "added": 0,
+        "removed": 36
+      },
+      "bytes": 30382,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/10.womb.stb",
+        "sha256": "7a1f020e5f926a890863830a08b2d9a9dae2a8811201647ffa250beaeb51a0cb",
+        "sourceIndex": 38,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/10.womb.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/10.womb.stb"
+          }
+        ],
+        "xmlParity": [
+          {
+            "file": "resources/rooms/greed/10.womb.xml",
+            "xmlRooms": 180,
+            "stbRooms": 180,
+            "equal": true,
+            "onlyXml": 0,
+            "onlyStb": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "greed-11-utero",
+      "title": "자궁 속",
+      "mode": "greed",
+      "path": "assets/rooms/greed-11-utero.json",
+      "statistics": {
+        "before": 270,
+        "after": 248,
+        "same": 243,
+        "changed": 5,
+        "added": 0,
+        "removed": 22
+      },
+      "bytes": 19062,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/11.utero.stb",
+        "sha256": "decc03be5798cf3eac9867b3a03fa2d3056df9ea13ec2b087d5d5a04c4c2da43",
+        "sourceIndex": 39,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/11.utero.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/11.utero.stb"
+          }
+        ],
+        "xmlParity": [
+          {
+            "file": "resources/rooms/greed/11.utero.xml",
+            "xmlRooms": 248,
+            "stbRooms": 248,
+            "equal": true,
+            "onlyXml": 0,
+            "onlyStb": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "greed-12-scarred-womb",
+      "title": "상처 입은 자궁",
+      "mode": "greed",
+      "path": "assets/rooms/greed-12-scarred-womb.json",
+      "statistics": {
+        "before": 357,
+        "after": 331,
+        "same": 320,
+        "changed": 11,
+        "added": 0,
+        "removed": 26
+      },
+      "bytes": 26014,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/12.scarred womb.stb",
+        "sha256": "5cd150c9171abb1b0c52b866064b2b74f8630d3af9464eb2741afaca3744321d",
+        "sourceIndex": 40,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/12.scarred womb.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/12.scarred womb.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-14-sheol",
+      "title": "지옥",
+      "mode": "greed",
+      "path": "assets/rooms/greed-14-sheol.json",
+      "statistics": {
+        "before": 328,
+        "after": 230,
+        "same": 227,
+        "changed": 3,
+        "added": 0,
+        "removed": 98
+      },
+      "bytes": 50444,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/14.sheol.stb",
+        "sha256": "599b961e13d5cb3f7009519aa83f24b6a41816c78eec71dba2f5e4e0aaf8a45e",
+        "sourceIndex": 41,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/14.sheol.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/14.sheol.stb"
+          }
+        ],
+        "xmlParity": [
+          {
+            "file": "resources/rooms/greed/14.sheol.xml",
+            "xmlRooms": 230,
+            "stbRooms": 230,
+            "equal": true,
+            "onlyXml": 0,
+            "onlyStb": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "greed-24-the-shop",
+      "title": "상점",
+      "mode": "greed",
+      "path": "assets/rooms/greed-24-the-shop.json",
+      "statistics": {
+        "before": 262,
+        "after": 195,
+        "same": 188,
+        "changed": 4,
+        "added": 3,
+        "removed": 70
+      },
+      "bytes": 44973,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/24.the shop.stb",
+        "sha256": "3f6a354685539d0787d36b85899f0cd4542773facaf1f7a3f4cf0d103669302c",
+        "sourceIndex": 42,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/24.the shop.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/24.the shop.stb"
+          }
+        ],
+        "xmlParity": [
+          {
+            "file": "resources/rooms/greed/24.the shop.xml",
+            "xmlRooms": 195,
+            "stbRooms": 195,
+            "equal": true,
+            "onlyXml": 0,
+            "onlyStb": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "greed-25-ultra-greed",
+      "title": "울트라 그리드",
+      "mode": "greed",
+      "path": "assets/rooms/greed-25-ultra-greed.json",
+      "statistics": {
+        "before": 13,
+        "after": 13,
+        "same": 12,
+        "changed": 1,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 3225,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/25.ultra greed.stb",
+        "sha256": "6ea9fe51bee2d5b29481c70bf603007f199930d9cfaa4374b1e773d50783ca32",
+        "sourceIndex": 43,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/25.ultra greed.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/25.ultra greed.stb"
+          }
+        ],
+        "xmlParity": [
+          {
+            "file": "resources/rooms/greed/25.ultra greed.xml",
+            "xmlRooms": 13,
+            "stbRooms": 13,
+            "equal": true,
+            "onlyXml": 0,
+            "onlyStb": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "greed-27-downpour",
+      "title": "하수구",
+      "mode": "greed",
+      "path": "assets/rooms/greed-27-downpour.json",
+      "statistics": {
+        "before": 136,
+        "after": 136,
+        "same": 136,
+        "changed": 0,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 746,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/27.downpour.stb",
+        "sha256": "9f02b8a0461f68b430b923c24589e2483fc38713e3e8a0b225bf99c1b02ac258",
+        "sourceIndex": 44,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/27.downpour.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/27.downpour.stb"
+          }
+        ],
+        "xmlParity": [
+          {
+            "file": "resources/rooms/greed/27.downpour.xml",
+            "xmlRooms": 136,
+            "stbRooms": 136,
+            "equal": true,
+            "onlyXml": 0,
+            "onlyStb": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "greed-28-dross",
+      "title": "오물실",
+      "mode": "greed",
+      "path": "assets/rooms/greed-28-dross.json",
+      "statistics": {
+        "before": 137,
+        "after": 137,
+        "same": 137,
+        "changed": 0,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 619,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/28.dross.stb",
+        "sha256": "63a3b30a9eca62e11ef72b9f404786012bd153ac490267e4e4114baf03e9f88b",
+        "sourceIndex": 45,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/28.dross.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/28.dross.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-29-mines",
+      "title": "광산",
+      "mode": "greed",
+      "path": "assets/rooms/greed-29-mines.json",
+      "statistics": {
+        "before": 135,
+        "after": 135,
+        "same": 135,
+        "changed": 0,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 619,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/29.mines.stb",
+        "sha256": "074cc25e7cfda7abfe68d053408c11914cc7b879e72017f0aa4564dfeaa4f36c",
+        "sourceIndex": 46,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/29.mines.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/29.mines.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-30-ashpit",
+      "title": "잿더미",
+      "mode": "greed",
+      "path": "assets/rooms/greed-30-ashpit.json",
+      "statistics": {
+        "before": 135,
+        "after": 135,
+        "same": 135,
+        "changed": 0,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 623,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/30.ashpit.stb",
+        "sha256": "c3d89833566ace218a6926a859882bd4bb9718903683627b1b3ff130d0769a38",
+        "sourceIndex": 47,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/30.ashpit.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/30.ashpit.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-31-mausoleum",
+      "title": "영묘",
+      "mode": "greed",
+      "path": "assets/rooms/greed-31-mausoleum.json",
+      "statistics": {
+        "before": 134,
+        "after": 134,
+        "same": 134,
+        "changed": 0,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 635,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/31.mausoleum.stb",
+        "sha256": "09b4b7ad50ae9f9ae600229ffb3b4b2f3a700ec89b05fa75559bd0992b88a0e1",
+        "sourceIndex": 48,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/31.mausoleum.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/31.mausoleum.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-32-gehenna",
+      "title": "게헨나",
+      "mode": "greed",
+      "path": "assets/rooms/greed-32-gehenna.json",
+      "statistics": {
+        "before": 8,
+        "after": 8,
+        "same": 8,
+        "changed": 0,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 621,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/32.gehenna.stb",
+        "sha256": "2a154570267cfcd3af09ff3d1820b17299a116036bb1b07fea8bea375c2bee82",
+        "sourceIndex": 49,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/32.gehenna.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/32.gehenna.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-33-corpse",
+      "title": "시체",
+      "mode": "greed",
+      "path": "assets/rooms/greed-33-corpse.json",
+      "statistics": {
+        "before": 8,
+        "after": 8,
+        "same": 8,
+        "changed": 0,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 617,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/33.corpse.stb",
+        "sha256": "7176402e21bed3e28010d5ea398afcd2e239ad23d56a70c1ebbd7011568d97dd",
+        "sourceIndex": 50,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/33.corpse.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/33.corpse.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    },
+    {
+      "id": "greed-34-mortis",
+      "title": "Mortis",
+      "mode": "greed",
+      "path": "assets/rooms/greed-34-mortis.json",
+      "statistics": {
+        "before": 8,
+        "after": 8,
+        "same": 8,
+        "changed": 0,
+        "added": 0,
+        "removed": 0
+      },
+      "bytes": 617,
+      "metadata": {
+        "sourceFile": "resources/rooms/greed/34.mortis.stb",
+        "sha256": "ff21a22217e7e0e62e9ff78628ce6075f3d3bddabc734f9dcdbb92327dbaf642",
+        "sourceIndex": 51,
+        "onlyChanged": true,
+        "sources": [
+          {
+            "repository": "Astrobirth",
+            "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+            "path": "resources/rooms/greed/34.mortis.stb",
+            "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/34.mortis.stb"
+          }
+        ],
+        "xmlParity": []
+      }
+    }
+  ],
+  "metadata": {
+    "sources": {
+      "Astrobirth": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "Astro-Items": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    "decoderSource": "https://github.com/Basement-Renovator/basement-renovator/blob/main/src/roomconvert.py",
+    "baselineRoot": "extracted_resources/resources/rooms",
+    "diffSha256": "f53456feb5a3c37d224ece5f05720a7d689a61882cd49e8b3b201a36ac1f5152",
+    "onlyChanged": true,
+    "scope": "52 officially loaded resources/rooms/**/*.stb; resources/rooms/임시 excluded",
+    "comparisonIdentity": [
+      "type",
+      "variant",
+      "subtype"
+    ],
+    "comparedFields": [
+      "type",
+      "variant",
+      "subtype",
+      "difficulty",
+      "name",
+      "weight",
+      "width",
+      "height",
+      "shape",
+      "doors",
+      "spawns"
+    ],
+    "conversion": {
+      "spawns": "[x,y,[[entityType,variant,subtype,weight],...]]; candidates grouped by coordinates, order and duplicate tuples preserved",
+      "delta": "Original changed.delta reconstructs exactly from before/after and changedFields; spawn fields ungrouped to original tuples",
+      "weight": "Original float32 values preserved; relative candidate weights and room-selection weights are different values",
+      "absence": "null is a missing preset; empty spawns is an existing empty room",
+      "unchanged": "unchanged presets omitted; all 52 file summaries retained"
+    },
+    "xmlParity": [
+      {
+        "file": "resources/rooms/28.dross.xml",
+        "xmlRooms": 917,
+        "stbRooms": 917,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      },
+      {
+        "file": "resources/rooms/00.special rooms.xml",
+        "xmlRooms": 1156,
+        "stbRooms": 1156,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      },
+      {
+        "file": "resources/rooms/27.downpour.xml",
+        "xmlRooms": 762,
+        "stbRooms": 762,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      },
+      {
+        "file": "resources/rooms/임시/33.corpse.xml",
+        "xmlRooms": 1,
+        "stbRooms": 1,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      },
+      {
+        "file": "resources/rooms/greed/14.sheol.xml",
+        "xmlRooms": 230,
+        "stbRooms": 230,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      },
+      {
+        "file": "resources/rooms/greed/00.special rooms.xml",
+        "xmlRooms": 47,
+        "stbRooms": 47,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      },
+      {
+        "file": "resources/rooms/greed/24.the shop.xml",
+        "xmlRooms": 195,
+        "stbRooms": 195,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      },
+      {
+        "file": "resources/rooms/greed/25.ultra greed.xml",
+        "xmlRooms": 13,
+        "stbRooms": 13,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      },
+      {
+        "file": "resources/rooms/greed/11.utero.xml",
+        "xmlRooms": 248,
+        "stbRooms": 248,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      },
+      {
+        "file": "resources/rooms/greed/27.downpour.xml",
+        "xmlRooms": 136,
+        "stbRooms": 136,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      },
+      {
+        "file": "resources/rooms/greed/10.womb.xml",
+        "xmlRooms": 180,
+        "stbRooms": 180,
+        "equal": true,
+        "onlyXml": 0,
+        "onlyStb": 0
+      }
+    ],
+    "excludedFiles": [
+      {
+        "file": "임시/33.corpse.stb",
+        "sha256": "1c7702b1690056799d689dedf8fcac37d4437cfef0d678ef8e7d3a4d17e1473c",
+        "reason": "not loaded",
+        "statistics": {
+          "ours": 1,
+          "baseline": 0,
+          "same": 0,
+          "added": 1,
+          "removed": 0,
+          "changed": 0
+        }
+      }
+    ]
+  }
+}

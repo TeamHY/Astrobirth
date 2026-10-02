@@ -44,6 +44,8 @@ main{max-width:1040px;margin:0 auto}
 h1{font-size:clamp(30px,3.5vw,50px);line-height:1.35;letter-spacing:-.045em;margin:0 0 19px;font-weight:750}
 h1 span{color:var(--primary)}
 .hero-copy{max-width:760px;margin:0;color:var(--muted);line-height:1.8}
+.hero-detail-link{font-size:13px;color:var(--primary);margin:15px 0 0}
+.hero-detail-link a{text-decoration:underline;text-underline-offset:4px}
 .guide-toolbar{display:flex;gap:18px;align-items:center;justify-content:space-between;margin-bottom:35px}
 .guide-toolbar h2{font-size:23px;line-height:1.4;letter-spacing:-.03em;margin:0 0 5px}
 .guide-toolbar p{color:var(--muted);font-size:14px;margin:0}
@@ -113,6 +115,9 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 .catalog-note strong{display:block;color:var(--primary);margin-bottom:2px}
 .catalog .guide-toolbar{margin:0 0 19px}
 .catalog-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:23px}
+.change-filters{display:flex;gap:7px;flex-wrap:wrap;margin:-10px 0 23px}
+.change-filters button{border:0;border-bottom:2px solid transparent;border-radius:0;padding:4px 8px;background:transparent;font-size:12px;color:var(--muted)}
+.change-filters button[aria-pressed="true"]{border-color:var(--primary);color:var(--primary);font-weight:650}
 .catalog-filters button{border:1px solid #d4def0;color:#53647f;background:white;border-radius:7px;padding:8px 13px;font-size:13px;line-height:1.7}
 .catalog-filters button span{font-size:11px;opacity:.7;margin-left:5px}
 .catalog-filters button:hover{border-color:#7f9fcf}

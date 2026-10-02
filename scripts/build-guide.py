@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the static Q&A, item catalog and player catalog."""
+"""Generate the viewer guide, detailed rules, catalogs and room comparison."""
 import html
 import json
 from pathlib import Path
@@ -9,6 +9,7 @@ DOCS = ROOT / 'docs'
 data = json.loads((DOCS / 'guide-content.json').read_text(encoding='utf-8'))
 items = json.loads((DOCS / 'items-content.json').read_text(encoding='utf-8'))
 players = json.loads((DOCS / 'players-content.json').read_text(encoding='utf-8'))
+rules = json.loads((DOCS / 'rules-content.json').read_text(encoding='utf-8'))
 layout = (ROOT / 'scripts/guide-layout.html').read_text(encoding='utf-8')
 esc = html.escape
 
@@ -44,8 +45,10 @@ def body(entry, include_body=True):
     groups = ''.join(f'<section class="effect-group"><h3>{esc(group["title"])}</h3><ul class="rule-list">' + ''.join(f'<li>{esc(rule)}</li>' for rule in group['items']) + '</ul></section>' for group in entry.get('effectGroups', []))
     if not entry.get('tableFirst'):
         parts.append(groups)
-    if entry.get('rewardTable'):
-        table = entry['rewardTable']
+    for table_key in ['rewardTable', 'poolTable']:
+        table = entry.get(table_key)
+        if not table:
+            continue
         headers = ''.join(f'<th scope="col">{esc(column)}</th>' for column in table['columns'])
         rows = ''.join('<tr><th scope="row">' + esc(row[0]) + '</th>' + ''.join(f'<td>{esc(cell)}</td>' for cell in row[1:]) + '</tr>' for row in table['rows'])
         parts.append(f'<table class="reward-table"><caption>{esc(table["caption"])}</caption><thead><tr>{headers}</tr></thead><tbody>{rows}</tbody></table>')
@@ -78,11 +81,12 @@ def body(entry, include_body=True):
 def write_page(page, title, description, content, script):
     page_nav = '<nav class="page-nav" aria-label="가이드 페이지">' + ''.join(
         f'<a href="./{key}.html' + ('#overview' if key == 'index' else '') + '"' + (' aria-current="page"' if key == page else '') + f'>{esc(label)}</a>'
-        for key, label in [('index', '입문 Q&A'), ('items', '아이템 변경사항'), ('players', '플레이어 변경사항')]) + '</nav>'
+        for key, label in [('index', '입문 Q&A'), ('rules', '전체 규칙'), ('items', '아이템 변경사항'), ('players', '플레이어 변경사항'), ('rooms', '방 변경사항')]) + '</nav>'
     replacements = {'PAGE_TITLE': esc(title), 'DESCRIPTION': esc(description, quote=True),
-                    'PAGE_NAV': page_nav, 'CONTENT': content,
+                    'PAGE_NAV': page_nav, 'CONTENT': content, 'PAGE_KEY': page,
                     'REVIEWED': data['reviewed'], 'VERSION': data['version'],
-                    'SHA': data['sources']['Astrobirth'], 'SCRIPT': script}
+                    'SHA': data['sources']['Astrobirth'], 'SCRIPT': script,
+                    'EXTRA_STYLES': '<link rel="stylesheet" href="./rooms.css">' if page == 'rooms' else ''}
     output = layout
     for key, value in replacements.items():
         output = output.replace('{{' + key + '}}', value)
@@ -102,9 +106,9 @@ def empty_state(label):
     return f'<div class="empty-state" id="empty-state" hidden><h3>일치하는 설명이 없습니다.</h3><p>{hint}</p><button type="button" id="reset-search">{label}</button></div>'
 
 
-def render_qa():
+def render_sections(section_data):
     seen, sections, count = set(), [], 0
-    for number, section in enumerate(data['sections'], 1):
+    for number, section in enumerate(section_data, 1):
         assert section['id'] not in seen, 'Duplicate section ID'
         seen.add(section['id'])
         entries = []
@@ -115,16 +119,32 @@ def render_qa():
             opened = ' open' if entry.get('open') else ''
             entries.append(f'<details class="entry" id="{entry["id"]}" data-keywords="{esc(entry.get("keywords", ""), quote=True)}"{opened}><summary><span class="entry-title-row"><span class="entry-title">{esc(entry["title"])}</span>{permalink(entry)}</span></summary><div class="entry-body">{body(entry)}</div></details>')
         sections.append(f'<section class="guide-section" id="{section["id"]}" aria-labelledby="heading-{section["id"]}"><div class="section-heading"><span class="section-index">{number:02}</span><h2 id="heading-{section["id"]}">{esc(section["title"])}</h2><p>{esc(section["subtitle"])}</p></div>{"".join(entries)}</section>')
-    chapter_links = ''.join(f'<a href="#{section["id"]}"><span class="nav-number" aria-hidden="true">{number:02}</span>{esc(section["title"])}</a>' for number, section in enumerate(data['sections'], 1))
+    chapter_links = ''.join(f'<a href="#{section["id"]}"><span class="nav-number" aria-hidden="true">{number:02}</span>{esc(section["title"])}</a>' for number, section in enumerate(section_data, 1))
+    return sections, count, chapter_links
+
+
+def render_qa():
+    sections, count, chapter_links = render_sections(data['sections'])
     content = f'''
 <section class="hero" id="overview" aria-labelledby="page-title">
-<p class="eyebrow">Astrobirth 대결</p><h1 id="page-title">입문 Q&amp;A</h1><p class="hero-copy">헌영의 아이작 대결에 사용되는 Astrobirth의 주요 규칙을 설명합니다.<br>노피격으로 에이플을 확보·유지하는 과정과 보상 변화를 중심으로 정리했습니다.</p></section>
+<p class="eyebrow">Astrobirth 대결</p><h1 id="page-title">입문 Q&amp;A</h1><p class="hero-copy">헌영의 아이작 대결에 사용되는 Astrobirth의 주요 규칙을 설명합니다.<br>노피격으로 에이플을 확보·유지하는 과정과 보상 변화를 중심으로 정리했습니다.</p><p class="hero-detail-link"><a href="./rules.html">금지 목록과 세부 조건을 포함한 전체 규칙 ↗</a></p></section>
 <nav class="chapter-toc" aria-label="입문 Q&A 목차"><p class="toc-label">이 페이지 목차</p><div class="section-nav">{chapter_links}</div></nav>
 <section id="guide" aria-labelledby="guide-title"><div class="guide-toolbar"><div><h2 id="guide-title">주요 규칙 Q&A</h2><p id="search-status" role="status" aria-live="polite">전체 {count}개</p></div>{search_box('guide-search','Q&A 검색','에이플, 노피격, 낙제…')}</div>
 <noscript><p class="no-script">목차와 모든 설명을 그대로 읽을 수 있습니다. 검색은 자바스크립트가 활성화된 경우 사용할 수 있습니다.</p></noscript>{empty_state('전체 Q&A 보기')}{''.join(sections)}</section>
 <aside class="scope-note" aria-labelledby="scope-title"><span class="scope-icon" aria-hidden="true">i</span><div><h2 id="scope-title">모드 기능과 경기 운영 규칙</h2><p>Astrobirth와 기반 모드 Astro-Items의 기능을 설명합니다. 경기 목표, 허용 아이템, 보조 모드와 밴 해제 여부는 해당 방송의 공지가 우선입니다. 업데이트 후 실제 게임과 다를 수 있습니다.<br>직접 플레이하는 경우 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3260980911" target="_blank" rel="noopener noreferrer">Astro-Items</a>와 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1630138997" target="_blank" rel="noopener noreferrer">한국어 아이템 설명 모드</a>도 참고할 수 있습니다.</p></div></aside>'''
     write_page('index', '입문 Q&A', '헌영의 아이작 대결을 처음 보는 시청자를 위한 입문 Q&A입니다. 아이템 및 플레이어 변경사항을 함께 설명합니다.', content, 'guide.js')
     print(f'Generated index.html: {len(sections)} sections, {count} entries.')
+
+
+def render_rules():
+    sections, count, chapter_links = render_sections(rules['sections'])
+    intro = rules.get('intro', '금지 목록, 방·층 구성, 피격과 보상, 소비 아이템의 세부 조건을 정리했습니다. 개별 아이템과 캐릭터 변경사항은 해당 페이지에서 확인할 수 있습니다.')
+    content = f'''<section class="hero" id="overview" aria-labelledby="page-title"><p class="eyebrow">Astrobirth 대결</p><h1 id="page-title">전체 규칙</h1><p class="hero-copy">{esc(intro)}</p></section>
+<nav class="chapter-toc" aria-label="전체 규칙 목차"><p class="toc-label">이 페이지 목차</p><div class="section-nav">{chapter_links}</div></nav>
+<section id="guide" aria-labelledby="guide-title"><div class="guide-toolbar"><div><h2 id="guide-title">분야별 세부 규칙</h2><p id="search-status" role="status" aria-live="polite">전체 {count}개</p></div>{search_box('guide-search','전체 규칙 검색','금지, 저주, 보상, 카드…')}</div><noscript><p class="no-script">모든 규칙을 읽을 수 있습니다. 검색은 자바스크립트가 활성화된 경우 사용할 수 있습니다.</p></noscript>{empty_state('전체 규칙 보기')}{''.join(sections)}</section>
+<aside class="catalog-end"><p>설명 기준 Astrobirth v{data['version']} · 확인 {data['reviewed']}</p><a href="./index.html">입문 Q&amp;A로 돌아가기 ↗</a></aside>'''
+    write_page('rules', '전체 규칙', intro, content, 'guide.js')
+    print(f'Generated rules.html: {len(sections)} sections, {count} entries.')
 
 
 def render_catalog(page, catalog, kinds, title, subtitle):
@@ -140,23 +160,36 @@ def render_catalog(page, catalog, kinds, title, subtitle):
             shared = next((qa for section in data['sections'] for qa in section['entries'] if qa['id'] == entry['detailsFrom']), None)
             assert shared is not None, 'Missing shared details: ' + entry['detailsFrom']
             detail_entry = {**shared, **entry}
-        has_details = any(detail_entry.get(key) for key in ['rules', 'effectGroups', 'rewardTable', 'watch', 'caution', 'restrictions', 'restrictionNote', 'related', 'relatedLinks'])
+            for shared_list in ['effectGroups', 'rules']:
+                detail_entry[shared_list] = shared.get(shared_list, []) + entry.get(shared_list, [])
+        has_details = any(detail_entry.get(key) for key in ['rules', 'effectGroups', 'rewardTable', 'poolTable', 'watch', 'caution', 'restrictions', 'restrictionNote', 'related', 'relatedLinks'])
         details = source_comment(detail_entry)
         if has_details:
             details = f'<details class="catalog-details"><summary>{"시작 세팅 및 금지 목록" if is_players else "세부 조건 보기"}</summary><div class="entry-body">{body(detail_entry, False)}</div></details>'
-        cards.append(f'''<article class="catalog-card{' player-card' if is_players else ''}" id="{entry['id']}" data-kind="{entry['kind']}" data-keywords="{esc(entry.get('keywords',''), quote=True)}"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./{esc(entry['image'])}" alt="{esc(entry['title'], quote=True)} {'캐릭터' if is_players else '아이콘'}" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">{esc(tag)}</span><h2 class="catalog-title-row"><span>{esc(entry['title'])}</span>{permalink(entry)}</h2><p class="english-name">{esc(entry['name'])}</p></div></div><p class="catalog-scene">{esc(entry['scene'])}</p><p class="catalog-description">{esc(entry['body'])}</p>{details}</article>''')
+        cards.append(f'''<article class="catalog-card{' player-card' if is_players else ''}" id="{entry['id']}" data-kind="{entry['kind']}" data-changes="{esc(' '.join(entry.get('changeKinds', ['effect'])), quote=True)}" data-keywords="{esc(entry.get('keywords',''), quote=True)}"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./{esc(entry['image'])}" alt="{esc(entry['title'], quote=True)} {'캐릭터' if is_players else '아이콘'}" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">{esc(tag)}</span><h2 class="catalog-title-row"><span>{esc(entry['title'])}</span>{permalink(entry)}</h2><p class="english-name">{esc(entry['name'])}</p></div></div><p class="catalog-scene">{esc(entry['scene'])}</p><p class="catalog-description">{esc(entry['body'])}</p>{details}</article>''')
     buttons = [f'<button type="button" data-kind="all" aria-pressed="true">전체 <span>{len(entries)}</span></button>']
     for key, label in kinds.items():
         count = sum(entry['kind'] == key for entry in entries)
         buttons.append(f'<button type="button" data-kind="{key}" aria-pressed="false">{label} <span>{count}</span></button>')
+    change_filters = '' if is_players else '<div class="change-filters" role="group" aria-label="변경 분야">' + ''.join(f'<button type="button" data-change="{key}" aria-pressed="{str(key == "all").lower()}">{label}</button>' for key, label in [('all', '모든 변경'), ('effect', '효과'), ('config', '가격·품질·충전'), ('pool', '배열')]) + '</div>'
     common = '<div class="player-common"><a href="./index.html#no-hit"><span>핵심 규칙</span><strong>노피격과 에이플 ↗</strong><p>올백·낙제 유지에 따라 추가 보상이 달라집니다.</p></a><a href="./index.html#health-limit"><span>후반 생존</span><strong>체력 상한 제한 ↗</strong><p>일부 캐릭터는 적용 방식과 예외가 다릅니다.</p></a><a href="./index.html#lost-shield"><span>로스트 계열</span><strong>보호막 손실 패널티 ↗</strong><p>보호막만 깨져도 능력치가 내려갑니다.</p></a></div>' if is_players else '<p class="catalog-note"><strong>기본 효과 대비 변경사항을 설명합니다.</strong> 기본 아이템 설명에 더해지는 변경사항입니다. 황금·강화 장신구는 해당 조건을 충족해야 추가 효과가 적용됩니다.</p>'
     content = f'''<section class="hero catalog-hero" id="overview" aria-labelledby="page-title"><div><p class="eyebrow">{'플레이어' if is_players else '아이템'} 변경사항</p><h1 id="page-title">{title}</h1><p class="hero-copy">{esc(catalog['intro'])}</p></div></section>{common}
-<section class="catalog" id="catalog" aria-labelledby="catalog-title"><div class="guide-toolbar"><div><h2 id="catalog-title">{subtitle}</h2><p id="search-status" role="status" aria-live="polite">전체 {len(entries)}개</p></div>{search_box('catalog-search','플레이어 이름·변경사항 검색' if is_players else '아이템 이름·변경 효과 검색','아이작, 로스트, 시작 아이템…' if is_players else '구피, 연사, 황금 장신구…')}</div><div class="catalog-filters" role="group" aria-label="{'플레이어' if is_players else '아이템'} 분류">{''.join(buttons)}</div><noscript><p class="no-script">모든 변경사항을 읽을 수 있습니다. 검색과 분류는 자바스크립트가 활성화된 경우 사용할 수 있습니다.</p></noscript>{empty_state('전체 변경사항 보기')}<div class="catalog-grid">{''.join(cards)}</div></section>
+<section class="catalog" id="catalog" aria-labelledby="catalog-title"><div class="guide-toolbar"><div><h2 id="catalog-title">{subtitle}</h2><p id="search-status" role="status" aria-live="polite">전체 {len(entries)}개</p></div>{search_box('catalog-search','플레이어 이름·변경사항 검색' if is_players else '아이템 이름·변경 효과 검색','아이작, 로스트, 시작 아이템…' if is_players else '구피, 연사, 황금 장신구…')}</div><div class="catalog-filters" role="group" aria-label="{'플레이어' if is_players else '아이템'} 분류">{''.join(buttons)}</div>{change_filters}<noscript><p class="no-script">모든 변경사항을 읽을 수 있습니다. 검색과 분류는 자바스크립트가 활성화된 경우 사용할 수 있습니다.</p></noscript>{empty_state('전체 변경사항 보기')}<div class="catalog-grid">{''.join(cards)}</div></section>
 <aside class="catalog-end"><p>설명 기준 Astrobirth v{data['version']} · 확인 {data['reviewed']}</p><a href="./index.html">입문 Q&amp;A로 돌아가기 ↗</a></aside>'''
     write_page(page, '플레이어 변경사항' if is_players else '아이템 변경사항', catalog['intro'], content, 'catalog.js')
     print(f'Generated {page}.html: {len(entries)} cards.')
 
 
+def render_rooms():
+    content = (ROOT / 'scripts/guide-rooms.html').read_text(encoding='utf-8')
+    room_data = json.loads((DOCS / 'rooms-content.json').read_text(encoding='utf-8'))
+    content = content.replace('{{ROOM_INTRO}}', esc(room_data['intro']['body']))
+    write_page('rooms', '방 변경사항', '기본 게임과 Astrobirth의 방 프리셋을 비교합니다. 위치별 스폰 후보와 문, 가중치, 변경·추가·제거된 방을 확인할 수 있습니다.', content, 'rooms.js')
+    print('Generated rooms.html: 52 room file comparisons.')
+
+
 render_qa()
-render_catalog('items', items, {'passive': '패시브', 'active': '액티브', 'trinket': '장신구'}, '아이템 변경사항', '아이템별 변경사항')
+render_rules()
+render_catalog('items', items, {'passive': '패시브', 'active': '액티브', 'trinket': '장신구', 'card': '카드'}, '아이템 변경사항', '아이템별 변경사항')
 render_catalog('players', players, {'normal': '일반', 'tainted': '더럽혀진', 'custom': '모드 캐릭터'}, '플레이어 변경사항', '플레이어별 변경사항')
+render_rooms()

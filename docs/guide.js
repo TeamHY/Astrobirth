@@ -6,7 +6,7 @@
     technology: 'technology', 'blood-oath': 'blood-oath', 'auto-smelt': 'silver-dollar'
   };
   const oldId = location.hash.slice(1);
-  if (Object.hasOwn(moved, oldId)) {
+  if (document.body.dataset.page === 'index' && Object.hasOwn(moved, oldId)) {
     location.replace('./items.html' + (moved[oldId] ? '#' + moved[oldId] : ''));
     return;
   }

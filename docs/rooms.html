@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101c3c">
+<title>방 변경사항 | Astrobirth 시청자 가이드</title>
+<meta name="description" content="기본 게임과 Astrobirth의 방 프리셋을 비교합니다. 위치별 스폰 후보와 문, 가중치, 변경·추가·제거된 방을 확인할 수 있습니다.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101c3c'/%3E%3Cpath d='M16 4l3.4 8.6L28 16l-8.6 3.4L16 28l-3.4-8.6L4 16l8.6-3.4z' fill='%2383c8ff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./guide.css">
+<link rel="stylesheet" href="./rooms.css">
+<script src="./rooms.js" defer></script>
+</head>
+<body data-page="rooms">
+<a class="skip-link" href="#main">본문으로 이동</a>
+<aside class="sidebar" aria-label="가이드 탐색">
+  <a class="brand" href="./index.html#overview" aria-label="Astrobirth 가이드 처음으로"><span class="brand-mark" aria-hidden="true">✦</span><span><span class="brand-name">Astrobirth</span><span class="brand-caption" style="display:block">시청자 가이드</span></span></a>
+  <p class="sidebar-intro">헌영의 아이작 대결<br>모드 및 규칙 안내</p>
+  <p class="nav-label">가이드</p>
+  <nav class="page-nav" aria-label="가이드 페이지"><a href="./index.html#overview">입문 Q&amp;A</a><a href="./rules.html">전체 규칙</a><a href="./items.html">아이템 변경사항</a><a href="./players.html">플레이어 변경사항</a><a href="./rooms.html" aria-current="page">방 변경사항</a></nav>
+  <div class="sidebar-bottom">
+    <a href="https://www.youtube.com/user/afreecaBJHY/" target="_blank" rel="noopener noreferrer">헌영 유튜브</a>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2492350811" target="_blank" rel="noopener noreferrer">대결 모드 워크숍</a>
+    <div class="version"><strong>Astrobirth v1.385</strong><br>설명 확인 2026-10-03<br>Astro-Items 기반</div>
+  </div>
+</aside>
+<div class="shell">
+  <!-- Agent reference: repository https://github.com/TeamHY/Astrobirth -->
+  <header class="topbar"><span>시청자 가이드 / 방 변경사항</span><span class="topbar-version">v1.385</span></header>
+  <main id="main">
+    <section class="hero" id="overview" aria-labelledby="page-title">
+  <p class="eyebrow">Astrobirth 대결 · 방 변경사항</p>
+  <h1 id="page-title">방 배치 비교</h1>
+  <p class="hero-copy">익숙한 방이 어떻게 바뀌었는지 직접 비교합니다. 층과 방을 고른 뒤 격자의 표시를 누르면 그 위치의 스폰 후보를 확인할 수 있습니다.</p>
+</section>
+<div class="room-viewer" id="room-viewer" data-manifest="./rooms-content.json">
+  <div class="room-toolbar">
+    <div>
+      <label for="room-floor">층 · 방 목록</label>
+      <select id="room-floor" data-room-floor disabled><option>방 목록을 불러오는 중…</option></select>
+    </div>
+    <div>
+      <label for="room-change">변경 종류</label>
+      <select id="room-change" data-room-change><option value="all">전체</option><option value="changed">변경</option><option value="added">추가</option><option value="removed">제거</option></select>
+    </div>
+    <div class="room-search-control">
+      <label for="room-search">선택한 층에서 검색</label>
+      <div class="room-search-wrap"><input id="room-search" data-room-search type="search" placeholder="방 이름, 적·아이템 이름, ID" autocomplete="off"><button type="button" data-room-clear>지우기</button></div>
+    </div>
+  </div>
+  <p class="room-statistics" data-room-statistics></p>
+  <p class="room-floor-summary" data-room-floor-summary></p>
+  <p class="room-status" data-room-status role="status" aria-live="polite">방 목록을 불러오고 있습니다.</p>
+  <button type="button" class="room-retry" data-room-retry hidden>다시 불러오기</button>
+  <div class="room-selector">
+    <div><label for="room-preset">비교할 방</label><select id="room-preset" data-room-preset disabled><option>층을 고르면 표시합니다</option></select><span class="room-selection-count" data-room-selection-count aria-live="polite"></span></div>
+    <div class="room-selector-buttons"><button type="button" data-room-previous disabled aria-label="이전 방">← 이전</button><button type="button" data-room-next disabled aria-label="다음 방">다음 →</button></div>
+  </div>
+  <p class="room-empty" data-room-result role="status"></p>
+  <div data-room-details hidden>
+    <div class="room-detail-head">
+      <div class="room-heading-row"><span data-room-badge class="room-change"></span><h2 data-room-title></h2></div>
+      <p class="room-identifier" data-room-identifier></p>
+      <p class="room-changed-fields" data-room-changed-fields></p>
+    </div>
+    <div class="room-panels" data-room-panels></div>
+    <div class="room-legend" aria-label="격자 표시 범례"><span><i></i>적</span><span><i class="is-pickup"></i>픽업</span><span><i class="is-grid"></i>장애물</span><span><i class="is-change"></i>후보가 달라진 위치</span><span><i class="is-ghost"></i>반대쪽에만 있는 위치</span></div>
+    <p class="room-map-help">표시 안의 숫자는 그 위치의 후보 수입니다. 키보드는 표시를 선택한 뒤 방향키로 이동하고 Enter로 확인합니다.</p>
+    <div class="room-position-control"><label for="room-position">스폰 위치</label><select id="room-position" data-room-position disabled></select></div>
+    <h3 class="room-position-title" data-room-position-title>스폰 후보</h3>
+    <div class="room-candidates" data-room-candidates></div>
+    <p class="room-candidate-note">같은 위치의 여러 기록은 <strong>선택 후보</strong>입니다. 후보가 모두 동시에 생성되는 것은 아닙니다. 후보 가중치는 같은 위치에서 선택할 때의 상대값이며, 동일한 후보의 반복 기록도 그대로 표시합니다.</p>
+    <section class="room-settings" aria-labelledby="room-settings-title">
+      <h3 id="room-settings-title">방 설정</h3>
+      <div class="room-table-wrap"><table class="room-table"><thead><tr><th scope="col">설정</th><th scope="col">기본 게임</th><th scope="col">대결 모드</th></tr></thead><tbody data-room-properties></tbody></table></div>
+      <p class="room-definition"><strong>방 종류</strong>는 보물방·보스방처럼 방의 용도를 구분합니다. <strong>방 모양</strong>과 격자 크기는 배치의 형태를 나타냅니다. <strong>난이도</strong>는 프리셋에 저장된 선택용 값이며 개별 적의 체력이 아닙니다. <strong>방 가중치</strong>는 생성 조건에 맞는 방을 고를 때의 상대값입니다. 가중치가 0인 방도 목록에 남아 있을 수 있으며, 직접 지정해서 불러오는 경우는 별도입니다.</p>
+      <details class="room-door-details"><summary>문 위치와 존재 여부</summary><p class="room-definition">좌표는 왼쪽 위를 (0, 0)으로 셉니다. 테두리 밖과 L자 모서리의 좌표도 문 위치로 쓰입니다. “문 기록 없음”은 문이 없다고 명시한 기록과 구분합니다.</p><div class="room-table-wrap" data-room-doors></div></details>
+    </section>
+  </div>
+  <p class="room-scope-note">방 목록에서 변경·추가·제거된 프리셋을 비교합니다. 층 생성 조건과 진입 후의 보상·적 교체도 실제 플레이에 영향을 줍니다. 대결에서 적용되는 별도 규칙은 <a href="./rules.html">공통 변경사항</a>에서 확인합니다.</p>
+  <noscript><p class="room-status">방 배치를 비교하려면 브라우저에서 JavaScript를 켜야 합니다.</p></noscript>
+</div>
+
+  </main>
+  <!-- Agent reference: reviewed commit https://github.com/TeamHY/Astrobirth/commit/4c02a2072ac3a304072a5c7424efe06792f700d4 -->
+  <footer><span>Astrobirth · 시청자 가이드</span><span>설명 확인 2026-10-03 · <a href="https://github.com/TeamHY/Astrobirth/issues" target="_blank" rel="noopener noreferrer">내용 오류 제보</a></span></footer>
+</div>
+</body>
+</html>

@@ -8,15 +8,16 @@
 <meta name="description" content="시작방에 놓이는 보상, 캐릭터 고유 규칙, 추가 금지 목록을 캐릭터별로 확인할 수 있습니다. 일반·더럽혀진·모드 캐릭터로 구분합니다.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101c3c'/%3E%3Cpath d='M16 4l3.4 8.6L28 16l-8.6 3.4L16 28l-3.4-8.6L4 16l8.6-3.4z' fill='%2383c8ff'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="./guide.css">
+
 <script src="./catalog.js" defer></script>
 </head>
-<body>
+<body data-page="players">
 <a class="skip-link" href="#main">본문으로 이동</a>
 <aside class="sidebar" aria-label="가이드 탐색">
   <a class="brand" href="./index.html#overview" aria-label="Astrobirth 가이드 처음으로"><span class="brand-mark" aria-hidden="true">✦</span><span><span class="brand-name">Astrobirth</span><span class="brand-caption" style="display:block">시청자 가이드</span></span></a>
   <p class="sidebar-intro">헌영의 아이작 대결<br>모드 및 규칙 안내</p>
   <p class="nav-label">가이드</p>
-  <nav class="page-nav" aria-label="가이드 페이지"><a href="./index.html#overview">입문 Q&amp;A</a><a href="./items.html">아이템 변경사항</a><a href="./players.html" aria-current="page">플레이어 변경사항</a></nav>
+  <nav class="page-nav" aria-label="가이드 페이지"><a href="./index.html#overview">입문 Q&amp;A</a><a href="./rules.html">전체 규칙</a><a href="./items.html">아이템 변경사항</a><a href="./players.html" aria-current="page">플레이어 변경사항</a><a href="./rooms.html">방 변경사항</a></nav>
   <div class="sidebar-bottom">
     <a href="https://www.youtube.com/user/afreecaBJHY/" target="_blank" rel="noopener noreferrer">헌영 유튜브</a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2492350811" target="_blank" rel="noopener noreferrer">대결 모드 워크숍</a>
@@ -28,7 +29,7 @@
   <header class="topbar"><span>시청자 가이드 / 플레이어 변경사항</span><span class="topbar-version">v1.385</span></header>
   <main id="main">
     <section class="hero catalog-hero" id="overview" aria-labelledby="page-title"><div><p class="eyebrow">플레이어 변경사항</p><h1 id="page-title">플레이어 변경사항</h1><p class="hero-copy">시작방에 놓이는 보상, 캐릭터 고유 규칙, 추가 금지 목록을 캐릭터별로 확인할 수 있습니다. 일반·더럽혀진·모드 캐릭터로 구분합니다.</p></div></section><div class="player-common"><a href="./index.html#no-hit"><span>핵심 규칙</span><strong>노피격과 에이플 ↗</strong><p>올백·낙제 유지에 따라 추가 보상이 달라집니다.</p></a><a href="./index.html#health-limit"><span>후반 생존</span><strong>체력 상한 제한 ↗</strong><p>일부 캐릭터는 적용 방식과 예외가 다릅니다.</p></a><a href="./index.html#lost-shield"><span>로스트 계열</span><strong>보호막 손실 패널티 ↗</strong><p>보호막만 깨져도 능력치가 내려갑니다.</p></a></div>
-<section class="catalog" id="catalog" aria-labelledby="catalog-title"><div class="guide-toolbar"><div><h2 id="catalog-title">플레이어별 변경사항</h2><p id="search-status" role="status" aria-live="polite">전체 46개</p></div><div class="searchbox"><label for="catalog-search" class="sr-only">플레이어 이름·변경사항 검색</label><span class="search-icon" aria-hidden="true"></span><input type="search" id="catalog-search" placeholder="아이작, 로스트, 시작 아이템…" autocomplete="off"><button id="clear-search" type="button" aria-label="검색어 지우기" hidden>×</button></div></div><div class="catalog-filters" role="group" aria-label="플레이어 분류"><button type="button" data-kind="all" aria-pressed="true">전체 <span>46</span></button><button type="button" data-kind="normal" aria-pressed="false">일반 <span>17</span></button><button type="button" data-kind="tainted" aria-pressed="false">더럽혀진 <span>17</span></button><button type="button" data-kind="custom" aria-pressed="false">모드 캐릭터 <span>12</span></button></div><noscript><p class="no-script">모든 변경사항을 읽을 수 있습니다. 검색과 분류는 자바스크립트가 활성화된 경우 사용할 수 있습니다.</p></noscript><div class="empty-state" id="empty-state" hidden><h3>일치하는 설명이 없습니다.</h3><p>이름이나 효과로 검색할 수 있습니다. 분류를 ‘전체’로 설정하면 모든 항목을 검색할 수 있습니다.</p><button type="button" id="reset-search">전체 변경사항 보기</button></div><div class="catalog-grid"><article class="catalog-card player-card" id="isaac" data-kind="normal" data-keywords="PLAYER ISAAC"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/isaac.svg" alt="아이작 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>아이작</span><a class="permalink" href="#isaac" aria-label="아이작 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Isaac</p></div></div><p class="catalog-scene">주사위 제거 · 새 층마다 주사위 선택</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작할 때 기본 주사위를 제거합니다.</li><li>새 층에 들어가면 지정된 주사위 2개가 선택 아이템으로 등장합니다. 하나를 고르면 다른 하나는 사라집니다.</li><li>새 층에 들어갈 때 주 액티브 슬롯의 기존 아이템을 제거합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 책가방, 글리치 왕관, 알타일, 죄보사냥의 악마, 나의 달 나의 그대</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
+<section class="catalog" id="catalog" aria-labelledby="catalog-title"><div class="guide-toolbar"><div><h2 id="catalog-title">플레이어별 변경사항</h2><p id="search-status" role="status" aria-live="polite">전체 46개</p></div><div class="searchbox"><label for="catalog-search" class="sr-only">플레이어 이름·변경사항 검색</label><span class="search-icon" aria-hidden="true"></span><input type="search" id="catalog-search" placeholder="아이작, 로스트, 시작 아이템…" autocomplete="off"><button id="clear-search" type="button" aria-label="검색어 지우기" hidden>×</button></div></div><div class="catalog-filters" role="group" aria-label="플레이어 분류"><button type="button" data-kind="all" aria-pressed="true">전체 <span>46</span></button><button type="button" data-kind="normal" aria-pressed="false">일반 <span>17</span></button><button type="button" data-kind="tainted" aria-pressed="false">더럽혀진 <span>17</span></button><button type="button" data-kind="custom" aria-pressed="false">모드 캐릭터 <span>12</span></button></div><noscript><p class="no-script">모든 변경사항을 읽을 수 있습니다. 검색과 분류는 자바스크립트가 활성화된 경우 사용할 수 있습니다.</p></noscript><div class="empty-state" id="empty-state" hidden><h3>일치하는 설명이 없습니다.</h3><p>이름이나 효과로 검색할 수 있습니다. 분류를 ‘전체’로 설정하면 모든 항목을 검색할 수 있습니다.</p><button type="button" id="reset-search">전체 변경사항 보기</button></div><div class="catalog-grid"><article class="catalog-card player-card" id="isaac" data-kind="normal" data-changes="effect" data-keywords="PLAYER ISAAC"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/isaac.svg" alt="아이작 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>아이작</span><a class="permalink" href="#isaac" aria-label="아이작 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Isaac</p></div></div><p class="catalog-scene">주사위 제거 · 새 층마다 주사위 선택</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작할 때 기본 주사위를 제거합니다.</li><li>새 층에 들어가면 지정된 주사위 13종 중 2개가 선택 아이템으로 등장합니다. 하나를 고르면 다른 하나는 사라집니다. 멀티플레이에서는 먼저 확인된 일반 아이작 한 명에 대해서만 생성합니다.</li><li>새 층에 들어갈 때 먼저 확인된 일반 아이작의 주 액티브 슬롯 아이템을 제거합니다.</li><li>선택 후보는 스핀다운 주사위·주사위·4면 주사위·스핀업 주사위·거울 주사위·성스러운 주사위·재활용 주사위·금지된 주사위·양자 주사위·퍼즐 주사위·글리치 주사위·혼돈의 주사위·천사빛 주사위입니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 책가방, 글리치 왕관, 알타일, 죄보사냥의 악마, 나의 달 나의 그대</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
 <!-- Agent reference material
 {
   "entry": "isaac",
@@ -44,11 +45,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="magdalene" data-kind="normal" data-keywords="PLAYER MAGDALENE"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/magdalene.svg" alt="막달레나 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>막달레나</span><a class="permalink" href="#magdalene" aria-label="막달레나 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Magdalene</p></div></div><p class="catalog-scene">성혈과 성배 추가 · 첫 층 희생방 보정</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 성혈과 성배, 신성한 카드.</li><li>일반 첫 층에 희생방이 없으면 재시드를 시도합니다. 대체 루트에는 적용하지 않습니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 생득권</p></div>
+</div></details></article><article class="catalog-card player-card" id="magdalene" data-kind="normal" data-changes="effect" data-keywords="PLAYER MAGDALENE"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/magdalene.svg" alt="막달레나 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>막달레나</span><a class="permalink" href="#magdalene" aria-label="막달레나 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Magdalene</p></div></div><p class="catalog-scene">성혈과 성배 추가 · 첫 층 희생방 보정</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 성혈과 성배, 신성한 카드.</li><li>일반 첫 층에 희생방이 없으면 최대 100회 재시드를 시도합니다. 첫 번째 플레이어가 일반 막달레나일 때만 적용하며, 팀에 Missing No. 소지자가 있으면 시도하지 않습니다. 대체 루트에는 적용하지 않습니다.</li><li>시작 빨간 하트는 7칸으로 설정합니다. 맛난 하트는 일반 액티브 대신 카드·알약 슬롯의 고유 액티브로 옮깁니다.</li><li>첫 층 시작방에 희생방 포탈을 추가합니다. 생성 여부는 첫 번째 플레이어가 일반 막달레나인지로 판단합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 생득권</p></div>
 <!-- Agent reference material
 {
   "entry": "magdalene",
@@ -70,11 +77,23 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/stage.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/stage.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/entities/shortcut-portal.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/entities/shortcut-portal.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="cain" data-kind="normal" data-keywords="PLAYER CAIN"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/cain.svg" alt="카인 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>카인</span><a class="permalink" href="#cain" aria-label="카인 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Cain</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="cain" data-kind="normal" data-changes="effect" data-keywords="PLAYER CAIN"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/cain.svg" alt="카인 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>카인</span><a class="permalink" href="#cain" aria-label="카인 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Cain</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작 빨간 하트는 3칸, 소울 하트는 반 칸으로 설정합니다. 행운의 발과 위조 학위를 소지합니다.</li><li>카드·알약 슬롯의 고유 액티브로 카인의 비밀 주머니를 소지합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "cain",
@@ -90,11 +109,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="judas" data-kind="normal" data-keywords="PLAYER JUDAS"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/judas.svg" alt="유다 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>유다</span><a class="permalink" href="#judas" aria-label="유다 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Judas</p></div></div><p class="catalog-scene">별도의 시작방 추가 아이템·카드는 없습니다.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>별도의 시작방 추가 아이템·카드는 없습니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="judas" data-kind="normal" data-changes="effect" data-keywords="PLAYER JUDAS"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/judas.svg" alt="유다 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>유다</span><a class="permalink" href="#judas" aria-label="유다 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Judas</p></div></div><p class="catalog-scene">별도의 시작방 추가 아이템·카드는 없습니다.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>별도의 시작방 추가 아이템·카드는 없습니다.</li><li>빨간 하트 없이 소울 하트 반 칸으로 시작하도록 설정합니다. 다모클레스와 유다의 혀를 소지합니다.</li><li>벨리알의 책은 카드·알약 슬롯의 고유 액티브로 옮깁니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "judas",
@@ -110,11 +135,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="bluebaby" data-kind="normal" data-keywords="PLAYER BLUEBABY"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/bluebaby.svg" alt="??? 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>???</span><a class="permalink" href="#bluebaby" aria-label="??? 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">??? / Blue Baby</p></div></div><p class="catalog-scene">시작방에 추가 등장: 구슬 주머니, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 구슬, 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 생득권</p></div>
+</div></details></article><article class="catalog-card player-card" id="bluebaby" data-kind="normal" data-changes="effect" data-keywords="PLAYER BLUEBABY"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/bluebaby.svg" alt="??? 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>???</span><a class="permalink" href="#bluebaby" aria-label="??? 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">??? / Blue Baby</p></div></div><p class="catalog-scene">시작방에 추가 등장: 구슬, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 구슬, 신성한 카드.</li><li>시작 소울 하트는 4칸 반으로 설정합니다. 꼬마 라바를 소지하며, 카드·알약 슬롯의 고유 액티브로 용광로를 추가합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 생득권</p></div>
 <!-- Agent reference material
 {
   "entry": "bluebaby",
@@ -130,11 +161,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="eve" data-kind="normal" data-keywords="PLAYER EVE"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/eve.svg" alt="이브 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>이브</span><a class="permalink" href="#eve" aria-label="이브 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Eve</p></div></div><p class="catalog-scene">시작 면도날 제거 · 신성한 카드 추가</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작할 때 기본 면도날를 제거합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="eve" data-kind="normal" data-changes="effect" data-keywords="PLAYER EVE"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/eve.svg" alt="이브 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>이브</span><a class="permalink" href="#eve" aria-label="이브 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Eve</p></div></div><p class="catalog-scene">시작 면도날 제거 · 신성한 카드 추가</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작할 때 기본 면도날을 제거하는 처리가 적용됩니다.</li><li>시작 빨간 하트는 3칸, 소울 하트는 반 칸으로 설정합니다. 바빌론의 창녀와 죽은 새를 소지합니다.</li><li>캐릭터 시작 설정에서 면도날을 카드·알약 슬롯의 고유 액티브로 배치합니다. 게임 시작 시 별도의 면도날 제거 처리도 함께 적용됩니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "eve",
@@ -150,11 +187,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="samson" data-kind="normal" data-keywords="PLAYER SAMSON"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/samson.svg" alt="삼손 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>삼손</span><a class="permalink" href="#samson" aria-label="삼손 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Samson</p></div></div><p class="catalog-scene">시작방에 추가 등장: 론고미니아드, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 론고미니아드, 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="samson" data-kind="normal" data-changes="effect" data-keywords="PLAYER SAMSON"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/samson.svg" alt="삼손 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>삼손</span><a class="permalink" href="#samson" aria-label="삼손 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Samson</p></div></div><p class="catalog-scene">시작방에 추가 등장: 론고미니아드, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 론고미니아드, 신성한 카드.</li><li>피의 욕망을 고정 시작 아이템으로 설정합니다.</li><li>론고미니아드를 소지하면 사용 후 아이템이 사라지지 않습니다. 사용 시 쌓인 스택은 초기화합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "samson",
@@ -170,11 +213,23 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/rhongomyniad.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/rhongomyniad.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="azazel" data-kind="normal" data-keywords="PLAYER AZAZEL"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/azazel.svg" alt="아자젤 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>아자젤</span><a class="permalink" href="#azazel" aria-label="아자젤 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Azazel</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>생득권 첫 획득 시 엄마의 식칼·쩌는 태아·유황·기계 X·기계장치 중 2개가 등장하며 하나를 선택합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p><div class="entry-links"><a class="related-link" href="./items.html#birthright">생득권 추가 효과 <span aria-hidden="true">↗</span></a></div>
+</div></details></article><article class="catalog-card player-card" id="azazel" data-kind="normal" data-changes="effect" data-keywords="PLAYER AZAZEL"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/azazel.svg" alt="아자젤 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>아자젤</span><a class="permalink" href="#azazel" aria-label="아자젤 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Azazel</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>생득권 첫 획득 시 엄마의 식칼·쩌는 태아·유황·기계 X·기계장치 중 2개가 등장하며 하나를 선택합니다.</li><li>시작 블랙 하트는 3칸 반으로 설정합니다. 오컬트의 눈을 소지하며, 기본 시작 카드인 0 - 바보는 지급하지 않도록 설정합니다.</li><li>멀티플레이에서는 레아·아자젤을 통틀어 먼저 생득권을 획득한 플레이어에게 해당 캐릭터의 최초 획득 보상을 적용합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p><div class="entry-links"><a class="related-link" href="./items.html#birthright">생득권 추가 효과 <span aria-hidden="true">↗</span></a></div>
 <!-- Agent reference material
 {
   "entry": "azazel",
@@ -196,11 +251,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/collectibles/vanillas/birthright.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/collectibles/vanillas/birthright.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="lazarus" data-kind="normal" data-keywords="PLAYER LAZARUS"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/lazarus.svg" alt="나사로 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>나사로</span><a class="permalink" href="#lazarus" aria-label="나사로 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Lazarus</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 나침반, 보물 지도, 정신, 파란 지도, 베들레헴의 별, 수정구슬, 표리일체</p><p><strong>장신구</strong> 카인의 오른쪽 눈, 조각난 카드, Mosis Eyes</p></div>
+</div></details></article><article class="catalog-card player-card" id="lazarus" data-kind="normal" data-changes="effect" data-keywords="PLAYER LAZARUS"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/lazarus.svg" alt="나사로 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>나사로</span><a class="permalink" href="#lazarus" aria-label="나사로 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Lazarus</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>혼돈과 리틀 스티븐을 고정 시작 아이템으로 추가합니다.</li><li>되살아난 나사로 형태에는 빈혈증과 추가 선택권을 시작 아이템으로 설정합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 나침반, 보물 지도, 정신, 파란 지도, 베들레헴의 별, 수정구슬, 표리일체</p><p><strong>장신구</strong> 카인의 오른쪽 눈, 조각난 카드, 목시의 눈</p></div>
 <!-- Agent reference material
 {
   "entry": "lazarus",
@@ -216,11 +277,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="eden" data-kind="normal" data-keywords="PLAYER EDEN"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/eden.svg" alt="에덴 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>에덴</span><a class="permalink" href="#eden" aria-label="에덴 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Eden</p></div></div><p class="catalog-scene">시작방에 추가 등장: 보비, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 보비, 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="eden" data-kind="normal" data-changes="effect" data-keywords="PLAYER EDEN"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/eden.svg" alt="에덴 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>에덴</span><a class="permalink" href="#eden" aria-label="에덴 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Eden</p></div></div><p class="catalog-scene">시작방에 추가 등장: 보비, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 보비, 신성한 카드.</li><li>머리 모양 후보는 원본의 54종에서 40종으로 줄입니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "eden",
@@ -236,11 +303,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="thelost" data-kind="normal" data-keywords="PLAYER THELOST"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/thelost.svg" alt="로스트 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>로스트</span><a class="permalink" href="#thelost" aria-label="로스트 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">The Lost</p></div></div><p class="catalog-scene">이터널 주사위 사용 제한 · 보호막 패널티</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>별도의 시작방 추가 아이템·카드는 없습니다.</li><li>신성한 망토·신성한 카드 보호막이 깨질 때 이동속도 −0.05, 공격력 −0.05, 사거리 −0.1, 행운 −7이 누적됩니다.</li><li>최대 5회까지 누적되며 새 층에서 초기화됩니다. 연사 감소는 현재 0입니다.</li><li>이터널 주사위는 같은 스테이지·스테이지 종류에서 한 번만 사용합니다.</li><li>비스트방에서 추적 중인 신성한 망토·신성한 카드 보호막이 소모되면 즉사합니다. 이 조건은 캐릭터에 관계없이 적용됩니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 비밀의 책, 뒤집기, 사자자리, 앙크, 나사로의 붕대, 유다의 그림자, 초능력 파리, 다모클레스, 사랑의 매, 고스트 페퍼, 주사위, 스타터 덱, 영혼, 토성, 비탄, 잃어버린 렌즈, 마법 단검, 흑마술, 담요, 마른 아기, 명왕성, 안락사, 빈 그릇, 그림자의 책, 성스러운 오브, 고장난 모뎀, 염소 머리, 성찬, 슈뢰딩거의 고양이, 초 처녀자리, 죄보사냥의 악마, 오메가 321, 스네이크아이즈 포프루스, 반역의 죄보 - 스네이크아이, 퀘이사, 스태프 오브 아인즈 울 고운, 삼사라, 연명치료, 카인의 비밀 주머니</p><p><strong>장신구</strong> 부서진 앙크, Jaw Breaker, 바포메트의 인장, 문 받침대</p><p><strong>카드</strong> 신성한 카드, 시간 여행, Reverse Magician, 영혼 Lazarus, 영혼 Lost, 알기즈, 혼돈</p></div><div class="entry-links"><a class="related-link" href="./index.html#lost-shield">Q&amp;A · 보호막 패널티 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#eternal-d6">이터널 주사위 자세히 <span aria-hidden="true">↗</span></a></div>
+</div></details></article><article class="catalog-card player-card" id="thelost" data-kind="normal" data-changes="effect" data-keywords="PLAYER THELOST"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/thelost.svg" alt="로스트 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>로스트</span><a class="permalink" href="#thelost" aria-label="로스트 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">The Lost</p></div></div><p class="catalog-scene">이터널 주사위 사용 제한 · 보호막 패널티</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>별도의 시작방 추가 아이템·카드는 없습니다.</li><li>신성한 망토·신성한 카드 보호막이 깨질 때 이동속도 −0.05, 공격력 −0.05, 사거리 −0.1, 행운 −7이 누적됩니다.</li><li>최대 5회까지 누적되며 새 층에서 초기화됩니다. 연사 감소는 현재 0입니다.</li><li>이터널 주사위는 같은 스테이지·스테이지 종류에서 한 번만 사용합니다.</li><li>비스트방에서 추적 중인 신성한 망토·신성한 카드 보호막이 소모되면 즉사합니다. 이 조건은 캐릭터에 관계없이 적용됩니다.</li><li>이터널 주사위는 카드·알약 슬롯의 고유 액티브로 옮기며, 시작 코인은 0개로 설정합니다.</li><li>날 잊어 주세요 사용 시 이터널 주사위의 사용 기록을 초기화합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 비밀의 책, 뒤집기, 사자자리, 앙크, 나사로의 붕대, 유다의 그림자, 초능력 파리, 다모클레스, 사랑의 매, 고스트 페퍼, 주사위, 스타터 덱, 영혼, 토성, 비탄, 잃어버린 렌즈, 마법 단검, 흑마술, 담요, 마른 아기, 명왕성, 안락사, 빈 그릇, 그림자의 책, 성스러운 오브, 고장난 모뎀, 염소 머리, 성찬, 슈뢰딩거의 고양이, 초 처녀자리, 죄보사냥의 악마, 오메가 321, 스네이크아이즈 포프루스, 반역의 죄보 - 스네이크아이, 퀘이사, 스태프 오브 아인즈 울 고운, 삼사라, 연명치료, 카인의 비밀 주머니</p><p><strong>장신구</strong> 부서진 앙크, 눈깔사탕, 바포메트의 인장, 문 받침대</p><p><strong>카드</strong> 신성한 카드, 시간 여행, I - 마법사?, 나사로의 영혼, 로스트의 영혼, 알기즈, 혼돈 카드</p></div><div class="entry-links"><a class="related-link" href="./index.html#lost-shield">Q&amp;A · 보호막 패널티 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#eternal-d6">이터널 주사위 자세히 <span aria-hidden="true">↗</span></a></div>
 <!-- Agent reference material
 {
   "entry": "thelost",
@@ -268,11 +341,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/collectibles/vanillas/eternal-d6.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/collectibles/vanillas/eternal-d6.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="lilith" data-kind="normal" data-keywords="PLAYER LILITH"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/lilith.svg" alt="릴리스 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>릴리스</span><a class="permalink" href="#lilith" aria-label="릴리스 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Lilith</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 뒤틀린 한 쌍, 인큐버스</p></div>
+</div></details></article><article class="catalog-card player-card" id="lilith" data-kind="normal" data-changes="effect" data-keywords="PLAYER LILITH"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/lilith.svg" alt="릴리스 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>릴리스</span><a class="permalink" href="#lilith" aria-label="릴리스 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Lilith</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작 빨간 하트는 2칸으로 늘립니다. 친구 상자 대신 몽마의 자식들을 시작 아이템으로 설정합니다.</li><li>아기 초능력자를 소지하며 릴리스의 영혼을 시작 카드로 추가합니다. 시작방의 신성한 카드는 별도로 생성합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 뒤틀린 한 쌍, 인큐버스</p></div>
 <!-- Agent reference material
 {
   "entry": "lilith",
@@ -288,11 +367,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="keeper" data-kind="normal" data-keywords="PLAYER KEEPER"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/keeper.svg" alt="키퍼 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>키퍼</span><a class="permalink" href="#keeper" aria-label="키퍼 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Keeper</p></div></div><p class="catalog-scene">시작방에 추가 등장: 깊은 주머니, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 넓은 가방, 신성한 카드.</li><li>일반 캐릭터의 후반 깨진 하트 제한에서 제외됩니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
+</div></details></article><article class="catalog-card player-card" id="keeper" data-kind="normal" data-changes="effect" data-keywords="PLAYER KEEPER"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/keeper.svg" alt="키퍼 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>키퍼</span><a class="permalink" href="#keeper" aria-label="키퍼 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Keeper</p></div></div><p class="catalog-scene">시작방에 추가 등장: 넓은 가방, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 넓은 가방, 신성한 카드.</li><li>일반 캐릭터의 후반 깨진 하트 제한에서 제외됩니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
 <!-- Agent reference material
 {
   "entry": "keeper",
@@ -314,11 +399,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/stage.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/stage.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="apollyon" data-kind="normal" data-keywords="PLAYER APOLLYON"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/apollyon.svg" alt="아폴리온 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>아폴리온</span><a class="permalink" href="#apollyon" aria-label="아폴리온 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Apollyon</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 거대버섯</p></div>
+</div></details></article><article class="catalog-card player-card" id="apollyon" data-kind="normal" data-changes="effect" data-keywords="PLAYER APOLLYON"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/apollyon.svg" alt="아폴리온 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>아폴리온</span><a class="permalink" href="#apollyon" aria-label="아폴리온 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Apollyon</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>소울 하트 반 칸을 추가하고, 공허와 함께 카드·알약 슬롯의 고유 액티브로 망각을 소지합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 거대버섯</p></div>
 <!-- Agent reference material
 {
   "entry": "apollyon",
@@ -334,11 +425,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="theforgotten" data-kind="normal" data-keywords="PLAYER THEFORGOTTEN"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/theforgotten.svg" alt="포가튼 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>포가튼</span><a class="permalink" href="#theforgotten" aria-label="포가튼 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">The Forgotten</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>몸은 후반 체력 제한 구간에서 깨진 하트 5개를 채우고 뼈 하트를 1칸으로 제한합니다. 소울 쪽 깨진 하트 6개는 초반부터 적용됩니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="theforgotten" data-kind="normal" data-changes="effect" data-keywords="PLAYER THEFORGOTTEN"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/theforgotten.svg" alt="포가튼 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>포가튼</span><a class="permalink" href="#theforgotten" aria-label="포가튼 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">The Forgotten</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>몸은 후반 체력 제한 구간에서 깨진 하트를 5개로 맞추고 뼈 하트를 1칸으로 제한합니다. 소울 쪽 깨진 하트는 초반부터 6개로 맞춥니다.</li><li>생득권과 제왕절개를 고정 시작 아이템으로 추가합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "theforgotten",
@@ -360,11 +457,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/stage.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/stage.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="bethany" data-kind="normal" data-keywords="PLAYER BETHANY"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/bethany.svg" alt="베다니 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>베다니</span><a class="permalink" href="#bethany" aria-label="베다니 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Bethany</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 신성한 망토, 생득권, 깨진 오브, 성스러운 오브, 알타일, 혜성, 초 처녀자리, 와드, 핑크 와드, 죄보사냥의 악마, 해적 지도, 표리일체, 타락한 오브</p><p><strong>장신구</strong> 부서진 앙크</p></div>
+</div></details></article><article class="catalog-card player-card" id="bethany" data-kind="normal" data-changes="effect" data-keywords="PLAYER BETHANY"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/bethany.svg" alt="베다니 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>베다니</span><a class="permalink" href="#bethany" aria-label="베다니 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Bethany</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작 빨간 하트는 4칸으로 설정합니다. 참회의 기도와 세라핌을 고정 시작 아이템으로 추가합니다.</li><li>카드·알약 슬롯의 고유 액티브로 붉은 열쇠를 추가합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 신성한 망토, 생득권, 깨진 오브, 성스러운 오브, 알타일, 혜성, 초 처녀자리, 와드, 핑크 와드, 죄보사냥의 악마, 해적 지도, 표리일체, 타락한 오브</p><p><strong>장신구</strong> 부서진 앙크</p></div>
 <!-- Agent reference material
 {
   "entry": "bethany",
@@ -380,11 +483,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="jacob" data-kind="normal" data-keywords="PLAYER JACOB"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/jacob.svg" alt="야곱과 에사우 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>야곱과 에사우</span><a class="permalink" href="#jacob" aria-label="야곱과 에사우 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Jacob &amp; Esau</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>야곱과 에사우 각각의 시작방에 신성한 카드를 소환합니다.</li><li>에사우에도 야곱과 같은 캐릭터별 금지 아이템·장신구 목록이 적용됩니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 책가방, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
+</div></details></article><article class="catalog-card player-card" id="jacob" data-kind="normal" data-changes="effect" data-keywords="PLAYER JACOB"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/jacob.svg" alt="야곱과 에사우 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">일반</span><h2 class="catalog-title-row"><span>야곱과 에사우</span><a class="permalink" href="#jacob" aria-label="야곱과 에사우 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Jacob &amp; Esau</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>야곱과 에사우 각각의 시작방에 신성한 카드를 소환합니다.</li><li>에사우에도 야곱과 같은 캐릭터별 금지 아이템·장신구 목록이 적용됩니다.</li><li>야곱의 시작 아이템으로 추가 선택권을 설정합니다.</li><li>순애를 소지한 경우 초비밀방에서 품질 3 이상 아이템 2개를 선택 보상으로 생성합니다. 일반적인 소지 아이템 제거와 행운 감소는 적용하지 않습니다. 이 예외는 야곱에게 적용하며 에사우는 포함하지 않습니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 책가방, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
 <!-- Agent reference material
 {
   "entry": "jacob",
@@ -400,11 +509,23 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/pure-love.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/pure-love.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="isaac_b" data-kind="tainted" data-keywords="PLAYER ISAAC B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/isaac_b.svg" alt="더럽혀진 아이작 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 아이작</span><a class="permalink" href="#isaac_b" aria-label="더럽혀진 아이작 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Isaac</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 밑바닥, 강력한 밑바닥, 재빠른 밑바닥, 알타일, 죄보사냥의 악마, 아이작의 액자, 졸업증명서, 위조 증명서</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
+</div></details></article><article class="catalog-card player-card" id="isaac_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER ISAAC B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/isaac_b.svg" alt="더럽혀진 아이작 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 아이작</span><a class="permalink" href="#isaac_b" aria-label="더럽혀진 아이작 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Isaac</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>글리치 왕관과 생득권을 고정 시작 아이템으로 추가합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 밑바닥, 강력한 밑바닥, 재빠른 밑바닥, 알타일, 죄보사냥의 악마, 아이작의 액자, 졸업증명서, 위조 증명서</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
 <!-- Agent reference material
 {
   "entry": "isaac_b",
@@ -420,11 +541,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="magdalene_b" data-kind="tainted" data-keywords="PLAYER MAGDALENE B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/magdalene_b.svg" alt="더럽혀진 막달레나 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 막달레나</span><a class="permalink" href="#magdalene_b" aria-label="더럽혀진 막달레나 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Magdalene</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="magdalene_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER MAGDALENE B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/magdalene_b.svg" alt="더럽혀진 막달레나 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 막달레나</span><a class="permalink" href="#magdalene_b" aria-label="더럽혀진 막달레나 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Magdalene</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>임시 체력을 포함한 시작 빨간 하트는 6칸으로 설정합니다. 신성한 카드를 소지하고 시작하며, 시작방에도 별도의 신성한 카드를 생성합니다.</li><li>매기의 액자를 획득하면 해당 아이템을 제거하고 일반 생득권으로 바꿉니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "magdalene_b",
@@ -440,11 +567,23 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/birthright-maggy.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/birthright-maggy.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="cain_b" data-kind="tainted" data-keywords="PLAYER CAIN B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/cain_b.svg" alt="더럽혀진 카인 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 카인</span><a class="permalink" href="#cain_b" aria-label="더럽혀진 카인 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Cain</p></div></div><p class="catalog-scene">신성한 카드 추가 · 숨겨진 생득권 적용</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>추가로 숨겨진 생득권 효과를 적용합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
+</div></details></article><article class="catalog-card player-card" id="cain_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER CAIN B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/cain_b.svg" alt="더럽혀진 카인 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 카인</span><a class="permalink" href="#cain_b" aria-label="더럽혀진 카인 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Cain</p></div></div><p class="catalog-scene">신성한 카드 추가 · 숨겨진 생득권 적용</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>새 게임에서 첫 번째 플레이어가 이 캐릭터일 때 숨겨진 생득권 효과를 추가합니다. 다른 플레이어에게 일괄 적용하지 않습니다.</li><li>시작 소울 하트 반 칸을 추가합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
 <!-- Agent reference material
 {
   "entry": "cain_b",
@@ -460,11 +599,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="judas_b" data-kind="tainted" data-keywords="PLAYER JUDAS B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/judas_b.svg" alt="더럽혀진 유다 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 유다</span><a class="permalink" href="#judas_b" aria-label="더럽혀진 유다 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Judas</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 9볼트 건전지, 건전지</p></div>
+</div></details></article><article class="catalog-card player-card" id="judas_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER JUDAS B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/judas_b.svg" alt="더럽혀진 유다 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 유다</span><a class="permalink" href="#judas_b" aria-label="더럽혀진 유다 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Judas</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작 블랙 하트는 4칸으로 늘립니다. 흑마술은 카드·알약 슬롯 대신 일반 액티브 슬롯의 시작 아이템으로 배치합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 9볼트 건전지, 건전지</p></div>
 <!-- Agent reference material
 {
   "entry": "judas_b",
@@ -480,11 +625,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="bluebaby_b" data-kind="tainted" data-keywords="PLAYER BLUEBABY B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/bluebaby_b.svg" alt="더럽혀진 ??? 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 ???</span><a class="permalink" href="#bluebaby_b" aria-label="더럽혀진 ??? 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted ??? / Blue Baby</p></div></div><p class="catalog-scene">신성한 카드 추가 · 숨겨진 생득권 적용</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>추가로 숨겨진 생득권 효과를 적용합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="bluebaby_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER BLUEBABY B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/bluebaby_b.svg" alt="더럽혀진 ??? 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 ???</span><a class="permalink" href="#bluebaby_b" aria-label="더럽혀진 ??? 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted ??? / Blue Baby</p></div></div><p class="catalog-scene">신성한 카드 추가 · 숨겨진 생득권 적용</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>새 게임에서 첫 번째 플레이어가 이 캐릭터일 때 숨겨진 생득권 효과를 추가합니다. 다른 플레이어에게 일괄 적용하지 않습니다.</li><li>시작 소울 하트는 3칸 반으로 설정합니다. 로켓 든 병·태아 박사·불폭탄·호스트 모자를 고정 시작 아이템으로 추가합니다.</li><li>카드·알약 슬롯의 고유 액티브는 저장 대신 미스터 붐으로 바꿉니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "bluebaby_b",
@@ -500,11 +651,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="eve_b" data-kind="tainted" data-keywords="PLAYER EVE B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/eve_b.svg" alt="더럽혀진 이브 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 이브</span><a class="permalink" href="#eve_b" aria-label="더럽혀진 이브 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Eve</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="eve_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER EVE B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/eve_b.svg" alt="더럽혀진 이브 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 이브</span><a class="permalink" href="#eve_b" aria-label="더럽혀진 이브 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Eve</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작 소울 하트 반 칸을 추가합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "eve_b",
@@ -520,11 +677,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="samson_b" data-kind="tainted" data-keywords="PLAYER SAMSON B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/samson_b.svg" alt="더럽혀진 삼손 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 삼손</span><a class="permalink" href="#samson_b" aria-label="더럽혀진 삼손 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Samson</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="samson_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER SAMSON B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/samson_b.svg" alt="더럽혀진 삼손 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 삼손</span><a class="permalink" href="#samson_b" aria-label="더럽혀진 삼손 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Samson</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>론고미니아드를 소지하면 사용 후 아이템이 사라지지 않습니다. 사용 시 쌓인 스택은 초기화합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "samson_b",
@@ -540,11 +703,23 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/rhongomyniad.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/rhongomyniad.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="azazel_b" data-kind="tainted" data-keywords="PLAYER AZAZEL B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/azazel_b.svg" alt="더럽혀진 아자젤 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 아자젤</span><a class="permalink" href="#azazel_b" aria-label="더럽혀진 아자젤 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Azazel</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="azazel_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER AZAZEL B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/azazel_b.svg" alt="더럽혀진 아자젤 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 아자젤</span><a class="permalink" href="#azazel_b" aria-label="더럽혀진 아자젤 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Azazel</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작 블랙 하트는 3칸 반으로 설정하며, 기본 시작 카드인 0 - 바보는 지급하지 않도록 설정합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "azazel_b",
@@ -560,11 +735,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="lazarus_b" data-kind="tainted" data-keywords="PLAYER LAZARUS B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/lazarus_b.svg" alt="더럽혀진 나사로 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 나사로</span><a class="permalink" href="#lazarus_b" aria-label="더럽혀진 나사로 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Lazarus</p></div></div><p class="catalog-scene">신성한 카드 추가 · 숨겨진 생득권 적용</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>추가로 숨겨진 생득권 효과를 적용합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
+</div></details></article><article class="catalog-card player-card" id="lazarus_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER LAZARUS B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/lazarus_b.svg" alt="더럽혀진 나사로 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 나사로</span><a class="permalink" href="#lazarus_b" aria-label="더럽혀진 나사로 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Lazarus</p></div></div><p class="catalog-scene">신성한 카드 추가 · 숨겨진 생득권 적용</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>새 게임에서 첫 번째 플레이어가 이 캐릭터일 때 숨겨진 생득권 효과를 추가합니다. 다른 플레이어에게 일괄 적용하지 않습니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
 <!-- Agent reference material
 {
   "entry": "lazarus_b",
@@ -580,11 +761,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="eden_b" data-kind="tainted" data-keywords="PLAYER EDEN B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/eden_b.svg" alt="더럽혀진 에덴 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 에덴</span><a class="permalink" href="#eden_b" aria-label="더럽혀진 에덴 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Eden</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> Missing No., TMTRAINER</p></div>
+</div></details></article><article class="catalog-card player-card" id="eden_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER EDEN B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/eden_b.svg" alt="더럽혀진 에덴 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 에덴</span><a class="permalink" href="#eden_b" aria-label="더럽혀진 에덴 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Eden</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> Missing No., TMTRAINER</p></div>
 <!-- Agent reference material
 {
   "entry": "eden_b",
@@ -600,11 +787,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="thelost_b" data-kind="tainted" data-keywords="PLAYER THELOST B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/thelost_b.svg" alt="더럽혀진 로스트 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 로스트</span><a class="permalink" href="#thelost_b" aria-label="더럽혀진 로스트 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted The Lost</p></div></div><p class="catalog-scene">부정한 망토 추가 · 보호막 패널티</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 불경스런 망토.</li><li>신성한 망토·신성한 카드 보호막이 깨질 때 이동속도 −0.05, 공격력 −0.05, 사거리 −0.1, 행운 −7이 누적됩니다.</li><li>최대 5회까지 누적되며 새 층에서 초기화됩니다. 연사 감소는 현재 0입니다.</li><li>비스트방에서 추적 중인 신성한 망토·신성한 카드 보호막이 소모되면 즉사합니다. 이 조건은 캐릭터에 관계없이 적용됩니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 비밀의 책, 뒤집기, 사자자리, 앙크, 나사로의 붕대, 유다의 그림자, 초능력 파리, 다모클레스, 사랑의 매, 고스트 페퍼, 주사위, 스타터 덱, 영혼, 토성, 비탄, 잃어버린 렌즈, 마법 단검, 흑마술, 담요, 마른 아기, 명왕성, 안락사, 빈 그릇, 그림자의 책, 성스러운 오브, 고장난 모뎀, 염소 머리, 성찬, 슈뢰딩거의 고양이, 초 처녀자리, 죄보사냥의 악마, 오메가 321, 스네이크아이즈 포프루스, 반역의 죄보 - 스네이크아이, 퀘이사, 스태프 오브 아인즈 울 고운, 삼사라, 연명치료, 카인의 비밀 주머니</p><p><strong>장신구</strong> 부서진 앙크, 문 받침대</p><p><strong>카드</strong> 신성한 카드, 시간 여행, Reverse Magician, 영혼 Lazarus, 영혼 Lost, 알기즈, 혼돈</p></div><div class="entry-links"><a class="related-link" href="./index.html#lost-shield">Q&amp;A · 보호막 패널티 <span aria-hidden="true">↗</span></a></div>
+</div></details></article><article class="catalog-card player-card" id="thelost_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER THELOST B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/thelost_b.svg" alt="더럽혀진 로스트 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 로스트</span><a class="permalink" href="#thelost_b" aria-label="더럽혀진 로스트 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted The Lost</p></div></div><p class="catalog-scene">부정한 망토 추가 · 보호막 패널티</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 불경스런 망토.</li><li>신성한 망토·신성한 카드 보호막이 깨질 때 이동속도 −0.05, 공격력 −0.05, 사거리 −0.1, 행운 −7이 누적됩니다.</li><li>최대 5회까지 누적되며 새 층에서 초기화됩니다. 연사 감소는 현재 0입니다.</li><li>비스트방에서 추적 중인 신성한 망토·신성한 카드 보호막이 소모되면 즉사합니다. 이 조건은 캐릭터에 관계없이 적용됩니다.</li><li>실종 포스터를 시작 장신구로 추가하며, 기본 시작 카드인 신성한 카드는 직접 지급하지 않도록 설정합니다.</li><li>불경스런 망토 소지 중에는 방 입장 1프레임 뒤 신성한 카드 효과를 부여합니다. 멀티플레이에서는 소지자 대신 첫 번째 플레이어에게 부여합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 비밀의 책, 뒤집기, 사자자리, 앙크, 나사로의 붕대, 유다의 그림자, 초능력 파리, 다모클레스, 사랑의 매, 고스트 페퍼, 주사위, 스타터 덱, 영혼, 토성, 비탄, 잃어버린 렌즈, 마법 단검, 흑마술, 담요, 마른 아기, 명왕성, 안락사, 빈 그릇, 그림자의 책, 성스러운 오브, 고장난 모뎀, 염소 머리, 성찬, 슈뢰딩거의 고양이, 초 처녀자리, 죄보사냥의 악마, 오메가 321, 스네이크아이즈 포프루스, 반역의 죄보 - 스네이크아이, 퀘이사, 스태프 오브 아인즈 울 고운, 삼사라, 연명치료, 카인의 비밀 주머니</p><p><strong>장신구</strong> 부서진 앙크, 문 받침대</p><p><strong>카드</strong> 신성한 카드, 시간 여행, I - 마법사?, 나사로의 영혼, 로스트의 영혼, 알기즈, 혼돈 카드</p></div><div class="entry-links"><a class="related-link" href="./index.html#lost-shield">Q&amp;A · 보호막 패널티 <span aria-hidden="true">↗</span></a></div>
 <!-- Agent reference material
 {
   "entry": "thelost_b",
@@ -626,11 +819,23 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/penalty.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/penalty.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/unholy-mantle.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/unholy-mantle.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="lilith_b" data-kind="tainted" data-keywords="PLAYER LILITH B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/lilith_b.svg" alt="더럽혀진 릴리스 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 릴리스</span><a class="permalink" href="#lilith_b" aria-label="더럽혀진 릴리스 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Lilith</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="lilith_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER LILITH B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/lilith_b.svg" alt="더럽혀진 릴리스 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 릴리스</span><a class="permalink" href="#lilith_b" aria-label="더럽혀진 릴리스 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Lilith</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "lilith_b",
@@ -646,11 +851,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="keeper_b" data-kind="tainted" data-keywords="PLAYER KEEPER B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/keeper_b.svg" alt="더럽혀진 키퍼 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 키퍼</span><a class="permalink" href="#keeper_b" aria-label="더럽혀진 키퍼 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Keeper</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>일반 캐릭터의 후반 깨진 하트 제한에서 제외됩니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 탐욕의 식도, 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
+</div></details></article><article class="catalog-card player-card" id="keeper_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER KEEPER B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/keeper_b.svg" alt="더럽혀진 키퍼 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 키퍼</span><a class="permalink" href="#keeper_b" aria-label="더럽혀진 키퍼 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Keeper</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>일반 캐릭터의 후반 깨진 하트 제한에서 제외됩니다.</li><li>올백 또는 낙제를 유지한 채 지하실 II 대응 구간 보스방을 클리어하면 자석·생득권 선택 보상을 추가합니다. 기존 생득권 소지 여부로 제외하지 않습니다. 멀티플레이에서는 공통 추가 보상 처리를 받는 첫 소지자일 때 적용합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 탐욕의 식도, 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
 <!-- Agent reference material
 {
   "entry": "keeper_b",
@@ -672,11 +883,23 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/stage.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/stage.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/trinkets/vanillas/perfection.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/trinkets/vanillas/perfection.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="apollyon_b" data-kind="tainted" data-keywords="PLAYER APOLLYON B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/apollyon_b.svg" alt="더럽혀진 아폴리온 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 아폴리온</span><a class="permalink" href="#apollyon_b" aria-label="더럽혀진 아폴리온 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Apollyon</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 군체의식, 베프들!</p></div>
+</div></details></article><article class="catalog-card player-card" id="apollyon_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER APOLLYON B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/apollyon_b.svg" alt="더럽혀진 아폴리온 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 아폴리온</span><a class="permalink" href="#apollyon_b" aria-label="더럽혀진 아폴리온 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Apollyon</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>생득권과 아폴리온의 절친을 고정 시작 장비로 추가하고, 소울 하트 반 칸을 추가합니다.</li><li>올백 또는 낙제를 유지한 채 지하실 II 대응 구간 보스방을 클리어하면 생득권을 소지하지 않은 경우 추가 생득권 받침대를 생성합니다. 멀티플레이에서는 공통 추가 보상 처리를 받는 첫 소지자일 때 적용합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 군체의식, 베프들!</p></div>
 <!-- Agent reference material
 {
   "entry": "apollyon_b",
@@ -692,11 +915,23 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/trinkets/vanillas/perfection.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/trinkets/vanillas/perfection.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="theforgotten_b" data-kind="tainted" data-keywords="PLAYER THEFORGOTTEN B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/theforgotten_b.svg" alt="더럽혀진 포가튼 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 포가튼</span><a class="permalink" href="#theforgotten_b" aria-label="더럽혀진 포가튼 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted The Forgotten</p></div></div><p class="catalog-scene">신성한 카드 추가 · 숨겨진 생득권 적용</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>추가로 숨겨진 생득권 효과를 적용합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
+</div></details></article><article class="catalog-card player-card" id="theforgotten_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER THEFORGOTTEN B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/theforgotten_b.svg" alt="더럽혀진 포가튼 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 포가튼</span><a class="permalink" href="#theforgotten_b" aria-label="더럽혀진 포가튼 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted The Forgotten</p></div></div><p class="catalog-scene">신성한 카드 추가 · 숨겨진 생득권 적용</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>새 게임에서 첫 번째 플레이어가 이 캐릭터일 때 숨겨진 생득권 효과를 추가합니다. 다른 플레이어에게 일괄 적용하지 않습니다.</li><li>시작 소울 하트는 3칸 반으로 설정합니다. 소울 형태에는 더 많은 선택권과 생득권을 시작 아이템으로 설정합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
 <!-- Agent reference material
 {
   "entry": "theforgotten_b",
@@ -712,11 +947,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="bethany_b" data-kind="tainted" data-keywords="PLAYER BETHANY B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/bethany_b.svg" alt="더럽혀진 베다니 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 베다니</span><a class="permalink" href="#bethany_b" aria-label="더럽혀진 베다니 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Bethany</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="bethany_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER BETHANY B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/bethany_b.svg" alt="더럽혀진 베다니 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 베다니</span><a class="permalink" href="#bethany_b" aria-label="더럽혀진 베다니 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Bethany</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작 소울 하트는 3칸 반으로 설정합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "bethany_b",
@@ -732,11 +973,17 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="jacob_b" data-kind="tainted" data-keywords="PLAYER JACOB B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/jacob_b.svg" alt="더럽혀진 야곱과 에사우 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 야곱과 에사우</span><a class="permalink" href="#jacob_b" aria-label="더럽혀진 야곱과 에사우 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Jacob &amp; Esau</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
+</div></details></article><article class="catalog-card player-card" id="jacob_b" data-kind="tainted" data-changes="effect" data-keywords="PLAYER JACOB B"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/jacob_b.svg" alt="더럽혀진 야곱과 에사우 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">더럽혀진</span><h2 class="catalog-title-row"><span>더럽혀진 야곱과 에사우</span><a class="permalink" href="#jacob_b" aria-label="더럽혀진 야곱과 에사우 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Tainted Jacob &amp; Esau</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>어두운 에사우와 플레이어의 접촉 충돌을 무시합니다. 이 충돌 예외는 접촉한 플레이어의 캐릭터 종류를 구분하지 않습니다.</li><li>순애를 소지한 경우 일반 형태와 로스트 형태 모두 초비밀방에서 품질 3 이상 아이템 2개를 선택 보상으로 생성하며, 소지 아이템 제거와 행운 감소는 적용하지 않습니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 앙크, 나사로의 붕대, 유다의 그림자, 알타일, 죄보사냥의 악마</p><p><strong>장신구</strong> 실종 포스터, 부서진 앙크</p></div>
 <!-- Agent reference material
 {
   "entry": "jacob_b",
@@ -752,11 +999,29 @@
       "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
       "path": "astro-fight/ban.lua",
       "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/entities/dark-esau.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/entities/dark-esau.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/pure-love.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/pure-love.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="leah" data-kind="custom" data-keywords="LEAH"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/leah.svg" alt="레아 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>레아</span><a class="permalink" href="#leah" aria-label="레아 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Leah</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="leah" data-kind="custom" data-changes="effect" data-keywords="LEAH"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/leah.svg" alt="레아 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>레아</span><a class="permalink" href="#leah" aria-label="레아 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Leah</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>고유 액티브는 퀀텀 마인드이며 기본 아이템은 초 금성입니다.</li><li>레아가 건전지를 소지하지 않은 상태에서 퀀텀 마인드를 사용하면 해당 액티브 슬롯의 충전량을 6칸으로 남깁니다.</li><li>생득권 첫 적용 시 꼬마 아이작 7마리를 소환합니다. 이 패밀리어들은 방을 이동해도 유지되며 피해를 받지 않습니다.</li><li>순애를 사용하면 초비밀방에서 품질 3 이상 아이템 2개를 선택 보상으로 생성합니다. 소지 아이템 제거와 행운 감소는 적용하지 않습니다.</li><li>기본 시작 체력은 빨간 하트 1칸·블랙 하트 2칸이며 열쇠 1개를 설정합니다. 초 금성의 체력 추가 효과는 별도로 적용됩니다.</li><li>멀티플레이에서는 레아·아자젤을 통틀어 먼저 생득권을 획득한 플레이어에게 해당 캐릭터의 최초 획득 보상을 적용합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "leah",
@@ -778,11 +1043,41 @@
       "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
       "path": "content/players.xml",
       "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/content/players.xml"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/player.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/player.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/mind-series.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/mind-series.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/planetarium/venus-ex.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/planetarium/venus-ex.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/birthright/1-leah.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/birthright/1-leah.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/pure-love.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/pure-love.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="leah_b" data-kind="custom" data-keywords="LEAH B 더럽혀진 레아 Tainted Leah"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/leah_b.svg" alt="라헬 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>라헬</span><a class="permalink" href="#leah_b" aria-label="라헬 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Rachel</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="leah_b" data-kind="custom" data-changes="effect" data-keywords="LEAH B 더럽혀진 레아 Tainted Leah"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/leah_b.svg" alt="라헬 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>라헬</span><a class="permalink" href="#leah_b" aria-label="라헬 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Rachel</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>고유 액티브는 순애입니다. 초비밀방에서 품질 3 이상 아이템 2개를 선택 보상으로 생성하며, 소지 아이템 제거와 행운 감소는 적용하지 않습니다.</li><li>기본 시작 체력은 빨간 하트 1칸·블랙 하트 2칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "leah_b",
@@ -810,11 +1105,17 @@
       "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
       "path": "astro/player.lua",
       "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/player.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/pure-love.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/pure-love.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="diabellstar" data-kind="custom" data-keywords="DIABELLSTAR"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/diabellstar.svg" alt="디아벨스타 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>디아벨스타</span><a class="permalink" href="#diabellstar" aria-label="디아벨스타 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Diabellstar</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작할 때 반역의 죄보 - 스네이크아이를 직접 지급합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="diabellstar" data-kind="custom" data-changes="effect" data-keywords="DIABELLSTAR"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/diabellstar.svg" alt="디아벨스타 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>디아벨스타</span><a class="permalink" href="#diabellstar" aria-label="디아벨스타 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Diabellstar</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>시작할 때 반역의 죄보 - 스네이크아이를 직접 지급합니다.</li><li>기본 아이템은 스네이크아이즈 포프루스이며 공격력에 1.2배 보정을 적용합니다.</li><li>스네이크아이즈 포프루스가 전투 중 150프레임마다 소환하는 유령은 일반 소지자의 1개 대신 2개입니다.</li><li>화톳불을 사용하면 화염 계열 아이템 1개 대신 2개를 선택 보상으로 생성합니다.</li><li>반역의 죄보 - 스네이크아이의 발동 확률과 재사용 간격을 계산할 때 생득권 소지 개수를 아이템 중첩 수에 더합니다.</li><li>폭주하는 죄보를 소지하면 영혼 저장 상한을 일반 소지자의 2개 대신 5개로 적용합니다.</li><li>기본 시작 체력은 빨간 하트 3칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li><li>폭주하는 죄보의 영혼 수는 멀티플레이에서 공유합니다. 영혼을 흡수한 플레이어의 캐릭터에 따라 상한을 적용합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "diabellstar",
@@ -836,11 +1137,41 @@
       "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
       "path": "content/players.xml",
       "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/content/players.xml"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/player.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/player.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/snake-eyes-poplar.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/snake-eyes-poplar.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/bonfire.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/bonfire.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/sinful-spoils-of-subversion-snake-eye.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/sinful-spoils-of-subversion-snake-eye.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/overwhelming-sinful-spoils.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/overwhelming-sinful-spoils.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="diabellstar_b" data-kind="custom" data-keywords="DIABELLSTAR B 더럽혀진 디아벨스타 Tainted Diabellstar"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/diabellstar_b.svg" alt="디아벨제 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>디아벨제</span><a class="permalink" href="#diabellstar_b" aria-label="디아벨제 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Diabellze</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="diabellstar_b" data-kind="custom" data-changes="effect" data-keywords="DIABELLSTAR B 더럽혀진 디아벨스타 Tainted Diabellstar"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/diabellstar_b.svg" alt="디아벨제 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>디아벨제</span><a class="permalink" href="#diabellstar_b" aria-label="디아벨제 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Diabellze</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>고유 액티브는 폭주하는 죄보이며 기본 아이템은 원죄보 - 스네이크아이입니다. 영혼을 최대 5개까지 저장합니다.</li><li>원죄보 - 스네이크아이의 발동 확률과 재사용 간격을 계산할 때 생득권 소지 개수를 아이템 중첩 수에 더합니다.</li><li>스네이크아이즈 포프루스를 소지하면 전투 중 150프레임마다 일반 소지자의 1개 대신 유령 2개를 소환합니다.</li><li>기본 시작 체력은 빨간 하트 3칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li><li>폭주하는 죄보의 영혼 수는 멀티플레이에서 공유합니다. 영혼을 흡수한 플레이어의 캐릭터에 따라 상한을 적용합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "diabellstar_b",
@@ -868,11 +1199,29 @@
       "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
       "path": "astro/player.lua",
       "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/player.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/overwhelming-sinful-spoils.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/overwhelming-sinful-spoils.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/original-sinful-spoils-snake-eye.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/original-sinful-spoils-snake-eye.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/snake-eyes-poplar.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/snake-eyes-poplar.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="water-enchantress" data-kind="custom" data-keywords="WATER ENCHANTRESS 수견사"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/water-enchantress.svg" alt="성전의 수견사 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>성전의 수견사</span><a class="permalink" href="#water-enchantress" aria-label="성전의 수견사 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Water Enchantress</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 자동차 건전지, 태양</p><p><strong>알약</strong> 48 Hour Energy</p></div>
+</div></details></article><article class="catalog-card player-card" id="water-enchantress" data-kind="custom" data-changes="effect" data-keywords="WATER ENCHANTRESS 수견사"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/water-enchantress.svg" alt="성전의 수견사 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>성전의 수견사</span><a class="permalink" href="#water-enchantress" aria-label="성전의 수견사 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Water Enchantress</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>아라메시아의 의를 사용해도 행운 −2 패널티를 적용하지 않습니다.</li><li>금주 아라마티아를 소지한 경우 초비밀방에서 층마다 한 번 사용합니다. 품질 3 이상 소지 아이템이 있어야 성공하며, 사용 후 아이템은 사라지지 않습니다. 새 층에서 사용 제한을 초기화합니다.</li><li>스타리트 파피용·빛의 성검 단넬을 소지하면 각 영혼 상한은 100개이며 방 클리어 때 해당 아이템의 영혼을 10개 감소시킵니다. 일반 소지자는 상한 50개·감소 5개입니다.</li><li>기룡 드라코백을 소지하면 보스방을 제외한 전투방의 적 제거 발동 상한을 층마다 5회로 늘립니다. 공격력·연사·이동속도·사거리·탄속은 1.1배, 양수인 행운도 1.1배로 보정합니다.</li><li>고유 액티브는 아라메시아의 의입니다.</li><li>생득권 소지 중 새 층에 들어가면 아라메시아의 의 충전량을 일반 50칸 대신 100칸으로 설정합니다.</li><li>기본 시작 체력은 빨간 하트 3칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li><li>스타리트 파피용·빛의 성검 단넬의 영혼 수는 멀티플레이에서 공유하며, 방 클리어 시 각 소지자에 대한 영혼 감소를 반복 적용합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 자동차 건전지, 태양</p><p><strong>알약</strong> 48시간 풀충전!</p></div>
 <!-- Agent reference material
 {
   "entry": "water-enchantress",
@@ -900,11 +1249,41 @@
       "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
       "path": "astro/player.lua",
       "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/player.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/rite-of-aramesir.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/rite-of-aramesir.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/curse-of-aramatir.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/curse-of-aramatir.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/starlit-papillon.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/starlit-papillon.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/dunnell-the-noble-arms-of-light.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/dunnell-the-noble-arms-of-light.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/dracoback.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/dracoback.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="water-enchantress_b" data-kind="custom" data-keywords="WATER ENCHANTRESS B 더럽혀진 수견사 Tainted Water Enchantress"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/water-enchantress_b.svg" alt="일리걸 나이트 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>일리걸 나이트</span><a class="permalink" href="#water-enchantress_b" aria-label="일리걸 나이트 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Illegal Knight</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 자동차 건전지, 태양</p><p><strong>알약</strong> 48 Hour Energy</p></div>
+</div></details></article><article class="catalog-card player-card" id="water-enchantress_b" data-kind="custom" data-changes="effect" data-keywords="WATER ENCHANTRESS B 더럽혀진 수견사 Tainted Water Enchantress"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/water-enchantress_b.svg" alt="일리걸 나이트 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>일리걸 나이트</span><a class="permalink" href="#water-enchantress_b" aria-label="일리걸 나이트 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Illegal Knight</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>아라메시아의 의를 사용해도 행운 −2 패널티를 적용하지 않습니다.</li><li>금주 아라마티아를 소지한 경우 초비밀방에서 층마다 한 번 사용합니다. 품질 3 이상 소지 아이템이 있어야 성공하며, 사용 후 아이템은 사라지지 않습니다. 새 층에서 사용 제한을 초기화합니다.</li><li>스타리트 파피용·빛의 성검 단넬을 소지하면 각 영혼 상한은 100개이며 방 클리어 때 해당 아이템의 영혼을 10개 감소시킵니다. 일반 소지자는 상한 50개·감소 5개입니다.</li><li>기룡 드라코백을 소지하면 보스방을 제외한 전투방의 적 제거 발동 상한을 층마다 5회로 늘립니다. 공격력·연사·이동속도·사거리·탄속은 1.1배, 양수인 행운도 1.1배로 보정합니다.</li><li>고유 액티브는 금주 아라마티아입니다.</li><li>기본 시작 체력은 빨간 하트 3칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li><li>스타리트 파피용·빛의 성검 단넬의 영혼 수는 멀티플레이에서 공유하며, 방 클리어 시 각 소지자에 대한 영혼 감소를 반복 적용합니다.</li></ul><div class="restriction-list"><h4>캐릭터별 추가 금지</h4><p><strong>아이템</strong> 자동차 건전지, 태양</p><p><strong>알약</strong> 48시간 풀충전!</p></div>
 <!-- Agent reference material
 {
   "entry": "water-enchantress_b",
@@ -932,11 +1311,41 @@
       "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
       "path": "astro/player.lua",
       "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/player.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/rite-of-aramesir.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/rite-of-aramesir.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/curse-of-aramatir.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/curse-of-aramatir.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/starlit-papillon.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/starlit-papillon.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/dunnell-the-noble-arms-of-light.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/dunnell-the-noble-arms-of-light.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/dracoback.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/dracoback.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="david-martinez" data-kind="custom" data-keywords="DAVID MARTINEZ 데이비드 마르티네즈"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/david-martinez.svg" alt="데이비드 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>데이비드</span><a class="permalink" href="#david-martinez" aria-label="데이비드 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">David Martinez</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="david-martinez" data-kind="custom" data-changes="effect" data-keywords="DAVID MARTINEZ 데이비드 마르티네즈"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/david-martinez.svg" alt="데이비드 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>데이비드</span><a class="permalink" href="#david-martinez" aria-label="데이비드 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">David Martinez</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>산데비스탄을 사용하면 어지러운 버섯 발동 확률 대신 그림자의 책으로 10초 무적과 공격력·연사 강화 효과를 적용합니다.</li><li>나의 달 나의 그대를 소지하면 8 키로 일반 액티브와 카드·알약 슬롯의 액티브를 교환할 수 있으며, 교환 후 아이템을 소모하지 않습니다. 이동할 수 없는 아이템과 캐릭터 변경 시 슬롯 초기화 조건은 적용됩니다.</li><li>고유 액티브는 산데비스탄입니다.</li><li>기본 시작 체력은 빨간 하트 3칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li><li>8 키 교환은 첫 번째 조작기에만 처리합니다. 두 번째 이후 조작기를 사용하는 플레이어에게는 해당 입력을 처리하지 않습니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "david-martinez",
@@ -964,11 +1373,23 @@
       "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
       "path": "astro/player.lua",
       "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/player.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/sandevistan.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/sandevistan.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/my-moon-my-man.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/my-moon-my-man.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="david-martinez_b" data-kind="custom" data-keywords="DAVID MARTINEZ B 더럽혀진 데이비드 마르티네즈 Tainted David Martinez"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/david-martinez_b.svg" alt="루시 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>루시</span><a class="permalink" href="#david-martinez_b" aria-label="루시 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Lucy</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="david-martinez_b" data-kind="custom" data-changes="effect" data-keywords="DAVID MARTINEZ B 더럽혀진 데이비드 마르티네즈 Tainted David Martinez"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/david-martinez_b.svg" alt="루시 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>루시</span><a class="permalink" href="#david-martinez_b" aria-label="루시 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Lucy</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>산데비스탄을 사용하면 어지러운 버섯 발동 확률 대신 그림자의 책으로 10초 무적과 공격력·연사 강화 효과를 적용합니다.</li><li>나의 달 나의 그대를 소지하면 8 키로 일반 액티브와 카드·알약 슬롯의 액티브를 교환할 수 있으며, 교환 후 아이템을 소모하지 않습니다. 이동할 수 없는 아이템과 캐릭터 변경 시 슬롯 초기화 조건은 적용됩니다.</li><li>기본 아이템은 나의 달 나의 그대입니다.</li><li>기본 시작 체력은 빨간 하트 3칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li><li>8 키 교환은 첫 번째 조작기에만 처리합니다. 두 번째 이후 조작기를 사용하는 플레이어에게는 해당 입력을 처리하지 않습니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "david-martinez_b",
@@ -996,11 +1417,23 @@
       "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
       "path": "astro/player.lua",
       "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/player.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/sandevistan.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/sandevistan.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/my-moon-my-man.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/my-moon-my-man.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="stellar" data-kind="custom" data-keywords="STELLAR"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/stellar.svg" alt="스텔라 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>스텔라</span><a class="permalink" href="#stellar" aria-label="스텔라 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Stellar</p></div></div><p class="catalog-scene">시작방에 추가 등장: 처녀자리 EX, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 초 처녀자리, 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="stellar" data-kind="custom" data-changes="effect" data-keywords="STELLAR"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/stellar.svg" alt="스텔라 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>스텔라</span><a class="permalink" href="#stellar" aria-label="스텔라 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Stellar</p></div></div><p class="catalog-scene">시작방에 추가 등장: 초 처녀자리, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 초 처녀자리, 신성한 카드.</li><li>고유 액티브는 알비레오입니다. 방 안의 대상 천체 아이템 받침대를 상위 아이템으로 바꾸며, 사용 후 소모하지 않습니다.</li><li>기본 시작 체력은 빨간 하트 3칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "stellar",
@@ -1022,11 +1455,17 @@
       "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
       "path": "content/players.xml",
       "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/content/players.xml"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/customs/planetarium/albireo.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/customs/planetarium/albireo.lua"
     }
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="stellar_b" data-kind="custom" data-keywords="STELLAR B 더럽혀진 스텔라 Tainted Stellar"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/stellar_b.svg" alt="나유타 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>나유타</span><a class="permalink" href="#stellar_b" aria-label="나유타 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Nayuta</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="stellar_b" data-kind="custom" data-changes="effect" data-keywords="STELLAR B 더럽혀진 스텔라 Tainted Stellar"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/stellar_b.svg" alt="나유타 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>나유타</span><a class="permalink" href="#stellar_b" aria-label="나유타 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Nayuta</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>기본 시작 체력은 빨간 하트 3칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "stellar_b",
@@ -1058,7 +1497,7 @@
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="ainz-ooal-gown" data-kind="custom" data-keywords="AINZ OOAL GOWN 아인즈 울 고운"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/ainz-ooal-gown.svg" alt="아인즈 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>아인즈</span><a class="permalink" href="#ainz-ooal-gown" aria-label="아인즈 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Ainz Ooal Gown</p></div></div><p class="catalog-scene">시작방에 추가 등장: 아인즈 울 고운의 지팡이, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 스태프 오브 아인즈 울 고운, 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="ainz-ooal-gown" data-kind="custom" data-changes="effect" data-keywords="AINZ OOAL GOWN 아인즈 울 고운"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/ainz-ooal-gown.svg" alt="아인즈 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>아인즈</span><a class="permalink" href="#ainz-ooal-gown" aria-label="아인즈 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Ainz Ooal Gown</p></div></div><p class="catalog-scene">시작방에 추가 등장: 스태프 오브 아인즈 울 고운, 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 스태프 오브 아인즈 울 고운, 신성한 카드.</li><li>기본 시작 체력은 빨간 하트 3칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "ainz-ooal-gown",
@@ -1090,7 +1529,7 @@
   ]
 }
 -->
-</div></details></article><article class="catalog-card player-card" id="ainz-ooal-gown_b" data-kind="custom" data-keywords="AINZ OOAL GOWN B 더럽혀진 아인즈 울 고운 Tainted Ainz Ooal Gown"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/ainz-ooal-gown_b.svg" alt="판도라즈 액터 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>판도라즈 액터</span><a class="permalink" href="#ainz-ooal-gown_b" aria-label="판도라즈 액터 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Pandora&#x27;s Actor</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
+</div></details></article><article class="catalog-card player-card" id="ainz-ooal-gown_b" data-kind="custom" data-changes="effect" data-keywords="AINZ OOAL GOWN B 더럽혀진 아인즈 울 고운 Tainted Ainz Ooal Gown"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./assets/players/ainz-ooal-gown_b.svg" alt="판도라즈 액터 캐릭터" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">모드 캐릭터</span><h2 class="catalog-title-row"><span>판도라즈 액터</span><a class="permalink" href="#ainz-ooal-gown_b" aria-label="판도라즈 액터 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></h2><p class="english-name">Pandora&#x27;s Actor</p></div></div><p class="catalog-scene">시작방에 추가 등장: 신성한 카드.</p><p class="catalog-description">캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.</p><details class="catalog-details"><summary>시작 세팅 및 금지 목록</summary><div class="entry-body"><ul class="rule-list"><li>시작방에 추가 등장: 신성한 카드.</li><li>기본 시작 체력은 빨간 하트 3칸이며 폭탄 2개·열쇠 1개를 설정합니다.</li></ul><p class="restriction-note">이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.</p>
 <!-- Agent reference material
 {
   "entry": "ainz-ooal-gown_b",

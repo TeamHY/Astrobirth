@@ -8,23 +8,39 @@
 
 ```sh
 python3 scripts/build-guide.py
+python3 scripts/verify-guide.py
 python3 -m http.server 4173 --directory docs --bind 127.0.0.1
 ```
 
 Node.js나 외부 패키지가 필요하지 않습니다. 자바스크립트를 꺼도 모든 가이드 내용을 읽을 수 있습니다. 검색, 분류와 고유 링크 자동 펼치기는 자바스크립트로 동작합니다.
 
-사이트는 `index.html`(입문 Q&A), `items.html`(아이템 변경사항), `players.html`(플레이어 변경사항)의 세 페이지로 구성합니다. 사이드바는 페이지 이동 메뉴이며, Q&A 챕터 목차는 입문 Q&A 본문에만 표시합니다. 작은 화면에서는 같은 페이지 메뉴를 상단에 표시합니다. 페이지 소개의 장식 이미지와 요약 카드는 사용하지 않습니다. 개별 아이템·플레이어의 원본 이미지는 유지합니다. Q&A의 관련 링크는 해당 아이템·플레이어 카드로 바로 연결됩니다. 기존 아이템 설명의 고유 링크도 아이템 페이지로 이동합니다.
+사이트는 입문 Q&A(`index.html`), 전체 규칙(`rules.html`), 아이템 변경사항(`items.html`), 플레이어 변경사항(`players.html`), 방 배치 변경사항(`rooms.html`)의 다섯 페이지로 구성합니다. 사이드바는 페이지 이동 메뉴이며, 챕터 목차는 해당 페이지 본문에 표시합니다. 작은 화면에서는 같은 페이지 메뉴를 상단에 표시합니다. 페이지 소개의 장식 이미지와 요약 카드는 사용하지 않습니다. 개별 아이템·플레이어의 원본 이미지는 유지합니다. Q&A의 관련 링크는 세부 규칙·아이템·플레이어 설명으로 바로 연결됩니다. 기존 아이템 설명의 고유 링크도 아이템 페이지로 이동합니다.
+
+현재 설명 범위는 입문 Q&A 21개, 아이템·장신구·모드 카드 741개, 플레이어 46종, 정식 방 파일 52개입니다. 아이템 변경은 효과, 가격·품질·충전, 배열을 함께 필터링합니다. 방 페이지는 변경·추가·제거 프리셋의 원본과 대결 구성을 비교하며, 선택한 층의 자료만 불러옵니다. 같은 좌표에 여러 개체가 지정된 경우 동시에 생성되는 개체가 아니라 스폰 후보로 표시합니다. 임시 방 파일은 제외합니다.
 
 ## 내용 수정
 
-1. Q&A는 `guide-content.json`, 아이템은 `items-content.json`, 플레이어는 `players-content.json`에서 설명과 근거 파일 경로를 수정합니다.
+1. Q&A는 `guide-content.json`, 전체 규칙은 `rules-content.json`, 아이템은 `items-content.json`, 플레이어는 `players-content.json`에서 설명과 근거 파일 경로를 수정합니다. 방 요약은 `rooms-content.json`, 프리셋 자료는 `assets/rooms/*.json`에서 관리합니다.
 2. 실제 변경을 확인한 커밋 SHA, 버전과 확인 날짜를 함께 갱신합니다. Astrobirth와 Astro-Items의 근거를 따로 관리합니다.
-3. `python3 scripts/build-guide.py`를 실행해 세 HTML 파일을 갱신합니다. 공통 화면은 `scripts/guide-layout.html`에서 관리합니다.
+3. `python3 scripts/build-guide.py`로 HTML을 갱신하고 `python3 scripts/verify-guide.py`로 항목 수, 고유 링크, 이미지, 표와 근거 자료의 대응을 확인합니다. 공통 화면은 `scripts/guide-layout.html`에서 관리합니다.
 4. 작은 화면과 넓은 화면에서 페이지·목차 이동, 검색·분류, 펼치기, 이미지와 고유 링크를 확인합니다.
 
 입문 Q&A의 첫 챕터는 노피격·올백(방송 명칭 에이플)입니다. 전체 기능과 구간별 추가 보상, 올백과 무관한 공통 보상을 별도로 설명합니다. `effectGroups`는 기능별 목록, `rewardTable`은 조건·보상 표입니다. 아이템 카드의 `detailsFrom`은 같은 ID의 Q&A 상세 내용을 공유하여 조건이 어긋나지 않게 합니다.
 
 아이템·플레이어 카드의 `kind`는 분류 버튼에 대응합니다. `image`는 `docs` 기준 상대 경로이며, `relatedLinks`에 다른 페이지의 카드나 Q&A 링크를 추가할 수 있습니다. HTML과 이미지 경로는 생성 과정에서 중복 ID·이미지 존재 여부를 검사합니다.
+
+`resource-changes.json`에는 기본 게임과 다른 아이템 속성·품질·분류·배열 값을, `entity-changes.json`에는 적의 속성·하위 정의·추가 등록과 외형 자료의 차이를 보존합니다. 같은 배열 이름이 중복 정의된 경우 두 값을 모두 보존합니다. 아이템 정의가 없는 번호는 허구의 아이템 카드를 만들지 않고 전체 규칙에서 따로 설명합니다. 자료에는 확인한 원본 파일 해시를 포함합니다.
+
+추출된 기본 게임 리소스와 설치된 EID 이름 표가 있는 환경에서는 다음 명령으로 아이템 설정을 갱신할 수 있습니다. 기본 게임의 버전을 바꾸면 기존 비교 자료를 그대로 재사용하지 말고 각 차이를 다시 검토해야 합니다.
+
+```sh
+python3 scripts/import-guide-resources.py --baseline ../../extracted_resources/resources --eid '../external item descriptions_836319872'
+python3 scripts/audit-guide-coverage.py --baseline ../../extracted_resources/resources --base-mod ../Astro-Items
+python3 scripts/build-guide.py
+python3 scripts/verify-guide.py
+```
+
+`scripts/guide-coverage.json`은 확인한 커밋의 활성 Lua 58개와 Astro-Items의 대결 분기 22개를 해당 설명에 연결하며, 기능별 검토 항목과 나머지 XML 차이를 기록합니다. 감사 갱신 도구는 저장된 기능별 검토 목록을 유지합니다. 새 검토 자료는 `--feature-review`로 지정할 수 있습니다. 출처 연결이 있다는 사실만으로 설명의 정확성을 보장하지 않습니다. 조건과 수치, EID 이름을 실제 코드와 대조한 뒤 검증해야 합니다. 미커밋 게임 디버깅 변경은 배포 설명의 기준에서 제외합니다.
 
 테마는 Astrobirth 대표 썸네일의 남색·파랑을 기본으로 사용하며, 보라색을 보조 강조색으로 사용합니다.
 

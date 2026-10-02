@@ -1,0 +1,1188 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101c3c">
+<title>전체 규칙 | Astrobirth 시청자 가이드</title>
+<meta name="description" content="금지 목록, 방·층 구성, 피격과 보상, 적의 수치, 소비 아이템과 배열의 세부 변경사항을 정리했습니다. 개별 아이템·플레이어·방 배치는 각 변경사항 페이지에서 확인할 수 있습니다.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101c3c'/%3E%3Cpath d='M16 4l3.4 8.6L28 16l-8.6 3.4L16 28l-3.4-8.6L4 16l8.6-3.4z' fill='%2383c8ff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./guide.css">
+
+<script src="./guide.js" defer></script>
+</head>
+<body data-page="rules">
+<a class="skip-link" href="#main">본문으로 이동</a>
+<aside class="sidebar" aria-label="가이드 탐색">
+  <a class="brand" href="./index.html#overview" aria-label="Astrobirth 가이드 처음으로"><span class="brand-mark" aria-hidden="true">✦</span><span><span class="brand-name">Astrobirth</span><span class="brand-caption" style="display:block">시청자 가이드</span></span></a>
+  <p class="sidebar-intro">헌영의 아이작 대결<br>모드 및 규칙 안내</p>
+  <p class="nav-label">가이드</p>
+  <nav class="page-nav" aria-label="가이드 페이지"><a href="./index.html#overview">입문 Q&amp;A</a><a href="./rules.html" aria-current="page">전체 규칙</a><a href="./items.html">아이템 변경사항</a><a href="./players.html">플레이어 변경사항</a><a href="./rooms.html">방 변경사항</a></nav>
+  <div class="sidebar-bottom">
+    <a href="https://www.youtube.com/user/afreecaBJHY/" target="_blank" rel="noopener noreferrer">헌영 유튜브</a>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2492350811" target="_blank" rel="noopener noreferrer">대결 모드 워크숍</a>
+    <div class="version"><strong>Astrobirth v1.385</strong><br>설명 확인 2026-10-03<br>Astro-Items 기반</div>
+  </div>
+</aside>
+<div class="shell">
+  <!-- Agent reference: repository https://github.com/TeamHY/Astrobirth -->
+  <header class="topbar"><span>시청자 가이드 / 전체 규칙</span><span class="topbar-version">v1.385</span></header>
+  <main id="main">
+    <section class="hero" id="overview" aria-labelledby="page-title"><p class="eyebrow">Astrobirth 대결</p><h1 id="page-title">전체 규칙</h1><p class="hero-copy">금지 목록, 방·층 구성, 피격과 보상, 적의 수치, 소비 아이템과 배열의 세부 변경사항을 정리했습니다. 개별 아이템·플레이어·방 배치는 각 변경사항 페이지에서 확인할 수 있습니다.</p></section>
+<nav class="chapter-toc" aria-label="전체 규칙 목차"><p class="toc-label">이 페이지 목차</p><div class="section-nav"><a href="#ban-rules"><span class="nav-number" aria-hidden="true">01</span>등장 제한과 누적 밴</a><a href="#room-rules"><span class="nav-number" aria-hidden="true">02</span>방의 보상과 기계</a><a href="#stage-rules"><span class="nav-number" aria-hidden="true">03</span>층 진행과 적 배치</a><a href="#combat-rules"><span class="nav-number" aria-hidden="true">04</span>피격과 주요 보스전</a><a href="#consumable-rules"><span class="nav-number" aria-hidden="true">05</span>카드와 알약</a><a href="#room-preset-rules"><span class="nav-number" aria-hidden="true">06</span>방 프리셋 변경</a><a href="#common-player-rules"><span class="nav-number" aria-hidden="true">07</span>플레이어 공통 설정</a><a href="#greed-rules"><span class="nav-number" aria-hidden="true">08</span>탐욕 모드 보상</a><a href="#resource-settings"><span class="nav-number" aria-hidden="true">09</span>수치·배열 설정</a><a href="#display-rules"><span class="nav-number" aria-hidden="true">10</span>표시·연출과 연동</a><a href="#entity-balance"><span class="nav-number" aria-hidden="true">11</span>보스·적·패밀리어 밸런스</a></div></nav>
+<section id="guide" aria-labelledby="guide-title"><div class="guide-toolbar"><div><h2 id="guide-title">분야별 세부 규칙</h2><p id="search-status" role="status" aria-live="polite">전체 44개</p></div><div class="searchbox"><label for="guide-search" class="sr-only">전체 규칙 검색</label><span class="search-icon" aria-hidden="true"></span><input type="search" id="guide-search" placeholder="금지, 저주, 보상, 카드…" autocomplete="off"><button id="clear-search" type="button" aria-label="검색어 지우기" hidden>×</button></div></div><noscript><p class="no-script">모든 규칙을 읽을 수 있습니다. 검색은 자바스크립트가 활성화된 경우 사용할 수 있습니다.</p></noscript><div class="empty-state" id="empty-state" hidden><h3>일치하는 설명이 없습니다.</h3><p>이름이나 효과로 검색할 수 있습니다. 분류를 ‘전체’로 설정하면 모든 항목을 검색할 수 있습니다.</p><button type="button" id="reset-search">전체 규칙 보기</button></div><section class="guide-section" id="ban-rules" aria-labelledby="heading-ban-rules"><div class="section-heading"><span class="section-index">01</span><h2 id="heading-ban-rules">등장 제한과 누적 밴</h2><p>공통 금지 · 후반 제거 · 다음 런</p></div><details class="entry" id="fixed-bans" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">공통 등장 금지 목록</span><a class="permalink" href="#fixed-bans" aria-label="공통 등장 금지 목록 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>아래 항목은 모든 캐릭터에게 적용되는 공통 금지 목록입니다. 아이템과 장신구는 새 게임의 아이템 풀에서 제외하고, 금지된 카드와 알약은 생성 과정에서 다른 후보로 교체합니다.</p><ul class="rule-list"><li>등장 금지는 이미 소지한 항목의 일괄 제거와 다릅니다. 캐릭터의 시작 보상이나 모드의 직접 지급으로 금지 목록의 항목을 얻을 수 있습니다.</li><li>협동 플레이에서는 공통 금지와 참가한 각 캐릭터의 추가 금지 목록을 합쳐 적용합니다. 일반·하드와 그리드·그리디어를 위한 별도 공통 목록은 현재 비어 있습니다.</li><li>금지 카드의 재추첨은 최대 32번까지 진행합니다. 금지 알약은 기존 가격을 유지한 다른 알약으로 교체합니다. 직접 사용되는 카드·알약 효과까지 막는 규칙은 아닙니다.</li></ul><section class="effect-group"><h3>아이템 58종</h3><ul class="rule-list"><li>아빠의 쪽지</li><li>친구 찾기</li><li>룰렛 팽이</li><li>스파이더모드</li><li>엄마의 지갑</li><li>칼 조각 1</li><li>칼 조각 2</li><li>클리커</li><li>100면 주사위</li><li>화성</li><li>다모클레스</li><li>살점 한 덩이</li><li>회개</li><li>유체이탈</li><li>박사의 원격 조종기</li><li>몬스트로의 이빨</li><li>사해사본</li><li>엄마의 팔찌</li><li>유리병</li><li>흰강낭콩</li><li>가위</li><li>퇴비</li><li>도깨비불 든 병</li><li>죽은 이빨</li><li>Missing No.</li><li>최고의 짝꿍</li><li>단두대</li><li>삼손의 쇠사슬</li><li>이상한 알</li><li>섬토리움</li><li>잠깐 뭐야?</li><li>익숙한 공</li><li>부메랑</li><li>녹내장</li><li>탐욕의 눈</li><li>문둥병</li><li>새장</li><li>꼬마 포탈</li><li>턱뼈</li><li>셰이드</li><li>집착하는 추종자</li><li>사랑과 우정 사이</li><li>유리 조각</li><li>사다리</li><li>영혼의 족쇄</li><li>포켓 GO</li><li>목성</li><li>범보</li><li>탐욕의 식도</li><li>신의 살점</li><li>바빌론의 창녀</li><li>영혼검</li><li>비탄</li><li>리인카네이션</li><li>화톳불</li><li>섬망 구피</li><li>엔토마 바실리사 제타</li><li>태양계</li></ul></section><section class="effect-group"><h3>장신구 12종</h3><ul class="rule-list"><li>고장난 조종기</li><li>카트리지</li><li>엄마의 발톱</li><li>신비한 종이</li><li>오류</li><li>세공 깃털</li><li>RC 리모콘</li><li>확장팩</li><li>되찾은 영혼</li><li>물망초</li><li>텅 빈 심장</li><li>실종 포스터</li></ul></section><section class="effect-group"><h3>카드·룬 16종</h3><ul class="rule-list"><li>II - 여교황?</li><li>IV - 황제</li><li>X - 운명의 수레바퀴</li><li>XII - 매달린 남자</li><li>XVI - 탑</li><li>하트 2</li><li>하갈라즈</li><li>비어있는 룬</li><li>비상 연락처</li><li>XII - 매달린 남자?</li><li>막달레나의 영혼</li><li>???의 영혼</li><li>삼손의 영혼</li><li>야곱과 에서의 영혼</li><li>XVII - 별?</li><li>VI - 연인?</li></ul></section><section class="effect-group"><h3>알약 효과 8종</h3><ul class="rule-list"><li>질나쁜 환각</li><li>건망증</li><li>작아지는 알약</li><li>폭탄 설사</li><li>퉤엣!</li><li>완전 신나!!!</li><li>전자오락 시야경</li><li>이동속도 감소</li></ul></section><div class="entry-links"><a class="related-link" href="./index.html#next-ban">입문 Q&amp;A · 누적 밴 <span aria-hidden="true">↗</span></a><a class="related-link" href="./players.html">캐릭터별 추가 금지 목록 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "fixed-bans",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/ban.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="latter-stage-bans" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">후반 구간의 소지품 제거 목록</span><a class="permalink" href="#latter-stage-bans" aria-label="후반 구간의 소지품 제거 목록 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>허쉬 구간부터, 또는 Corpse 계열 구간에서는 아래 아이템과 장신구를 제거합니다. 해당 구간의 새 층에 들어갈 때 이미 가진 아이템을 모두 제거하고 풀에서도 제외합니다. 후반에 다시 획득해도 즉시 제거합니다.</p><ul class="rule-list"><li>엄청 쉬움 모드를 소지해도 이 제거 목록의 적용을 면제하지 않습니다. 체력 제한 완화와는 별도 규칙입니다.</li><li>일반 자궁 I·II는 그 자체만으로 후반 판정에 포함하지 않습니다. Corpse는 해당 층 형태인 경우 자궁 I·II에 대응하는 단계부터 후반으로 판정합니다.</li><li>장신구 제거는 일반·황금·흡수 상태의 소지 여부를 확인해 제거를 시도합니다. 아이템은 같은 종류의 모든 복사본을 제거합니다.</li><li>동일 종류 장신구의 제거는 최대 3번 시도합니다. 여러 번 흡수한 경우를 아이템 복사본의 일괄 제거와 동일하게 보장하는 처리는 아닙니다.</li></ul><section class="effect-group"><h3>아이템 33종</h3><ul class="rule-list"><li>1up!</li><li>두유</li><li>아몬드 우유</li><li>태양</li><li>과일 케이크</li><li>고스트 페퍼</li><li>버즈아이</li><li>나침반</li><li>글리치 왕관</li><li>보물 지도</li><li>파란 지도</li><li>수정구슬</li><li>탐험가 모자</li><li>베들레헴의 별</li><li>수성</li><li>아이작의 심장</li><li>빛나는 모래시계</li><li>지구</li><li>황산</li><li>마법의 피부</li><li>아이작의 액자</li><li>불경스런 망토</li><li>스태프 오브 아인즈 울 고운</li><li>엔토마 바실리사 제타</li><li>카인의 비밀 주머니</li><li>베들레헴의 한별</li><li>태양의 서</li><li>초 수성</li><li>쉬움 모드</li><li>초 태양</li><li>더 로스트의 액자</li><li>더 로스트의 액자?</li><li>혜성</li></ul></section><section class="effect-group"><h3>장신구 3종</h3><ul class="rule-list"><li>카인의 오른쪽 눈</li><li>바포메트의 인장</li><li>나무 십자가</li></ul></section><div class="entry-links"><a class="related-link" href="./index.html#health-limit">입문 Q&amp;A · 체력 상한 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "latter-stage-bans",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/ban.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/ban.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/ban.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/utils/init.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/utils/init.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="next-ban-details" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">누적 밴의 수집과 초기화</span><a class="permalink" href="#next-ban-details" aria-label="누적 밴의 수집과 초기화 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>품질 3·4 아이템을 얻으면 다음 새 게임의 밴 후보로 기록합니다. 한 런에서 같은 종류를 여러 번 획득해도 후보에는 한 번만 기록하며, 이전 밴을 유지한 채 새 후보를 최대 10개 추가합니다.</p><ul class="rule-list"><li>게임 시작 첫 프레임의 초기 소지품은 후보 수집에서 제외합니다. 이후 얻는 시작방 보상은 기록될 수 있습니다.</li><li>이미 밴된 항목, 아빠의 쪽지와 퀘스트 태그가 붙은 아이템은 추가 추첨에서 제외합니다. 제외 후 후보가 10개보다 적으면 남은 후보만 추가합니다.</li><li>이어하기는 새 추첨을 하지 않고 현재 밴을 유지합니다.</li><li>밴 해제 거지는 현재 밴이 있고 해제가 예약되지 않았을 때 시작방에 등장합니다. 허쉬 구간의 시작방에는 등장하지 않습니다. 거지에게 접촉해 확인 문구를 읽고, 떨어졌다가 다시 접촉하면 초기화를 예약합니다.</li><li>밴 해제 예약이나 모드 아이템 삼사라를 획득한 상태에서 다음 새 게임을 시작하면 누적 밴을 비우고 그 게임의 추가 추첨을 건너뜁니다. 공통 금지와 캐릭터별 금지는 그대로 적용합니다.</li></ul><div class="entry-links"><a class="related-link" href="./index.html#next-ban">입문 Q&amp;A · 다음 판의 밴 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "next-ban-details",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/next-ban.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/next-ban.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/entities/ban-beggar.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/entities/ban-beggar.lua"
+    }
+  ]
+}
+-->
+</div></details></section><section class="guide-section" id="room-rules" aria-labelledby="heading-room-rules"><div class="section-heading"><span class="section-index">02</span><h2 id="heading-room-rules">방의 보상과 기계</h2><p>선택 묶음 · 방별 보상 · 거지</p></div><details class="entry" id="choice-details" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">선택 묶음과 등장 품질</span><a class="permalink" href="#choice-details" aria-label="선택 묶음과 등장 품질 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>특정 방에 처음 들어갈 때 바닥에 놓인 아이템을 하나의 선택 묶음으로 바꿉니다. 묶음에서 하나를 획득하면 나머지는 사라집니다. 아이템을 다시 뽑는 과정에는 방 종류와 층에 따른 품질 제한도 적용합니다.</p><ul class="rule-list"><li>선택 묶음 대상은 미니보스방, 블랙마켓, 울트라 비밀방, 악마방, 천체관, 도전방, 보물방, 주사위방, 비밀방, 일급비밀방, 저주방입니다. 처음 입장해 생성된 받침대에 적용합니다.</li><li>주사위방에는 열쇠 거지 배열의 추가 아이템 2개를 같은 선택 묶음으로 생성합니다.</li><li>대체 루트 첫 보물방에는 일반 첫 보물방의 품질 0·1 재추첨을 적용하지 않습니다. 첫 층 악마방·비밀방의 품질 4 재추첨은 루트 형태를 구분하지 않습니다.</li></ul><table class="reward-table"><caption>아이템 품질 재추첨 조건</caption><thead><tr><th scope="col">방·조건</th><th scope="col">다시 뽑는 품질</th></tr></thead><tbody><tr><th scope="row">저주방 · 모든 층</th><td>품질 4</td></tr><tr><th scope="row">울트라 비밀방 · 모든 층</th><td>품질 0·1·2</td></tr><tr><th scope="row">일반 루트 첫 층 보물방</th><td>품질 0·1</td></tr><tr><th scope="row">첫 층 악마방·비밀방</th><td>품질 4</td></tr></tbody></table><div class="entry-links"><a class="related-link" href="./index.html#choice">입문 Q&amp;A · 하나만 획득하는 아이템 <span aria-hidden="true">↗</span></a><a class="related-link" href="./index.html#first-treasure">입문 Q&amp;A · 첫 보물방 보정 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "choice-details",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/init.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="extra-room-items" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">침대방과 오락실의 추가 선택 아이템</span><a class="permalink" href="#extra-room-items" aria-label="침대방과 오락실의 추가 선택 아이템 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>깨끗한 침대방, 더러운 침대방과 오락실에 처음 들어가면 전용 목록의 아이템을 추가로 생성합니다. 각 방의 추가 아이템은 하나의 선택 묶음이며, 해당 런의 전용 목록에서 뽑은 항목은 다음 추첨 후보에서 빠집니다.</p><section class="effect-group"><h3>깨끗한 침대방 후보 56종</h3><ul class="rule-list"><li>오망성</li><li>낙인</li><li>계약</li><li>구덩이의 제왕</li><li>유황</li><li>밤의 영혼</li><li>아바돈</li><li>공허의 구렁텅이</li><li>황</li><li>오컬트의 눈</li><li>성경</li><li>묵주</li><li>광륜</li><li>성의</li><li>켈트 십자가</li><li>주교관</li><li>성스러운 심장</li><li>신성한 성배</li><li>죽은 비둘기</li><li>신</li><li>신성한 빛</li><li>신의 개입</li><li>원죄없는 심장</li><li>계시</li><li>구원</li><li>죽은 고양이</li><li>구피의 발</li><li>구피의 꼬리</li><li>구피의 머리</li><li>구피의 털뭉치</li><li>구피의 목걸이</li><li>구피의 눈</li><li>스카톨</li><li>파리떼</li><li>짝사랑</li><li>영원한 솔로</li><li>물리건</li><li>군체의식</li><li>똑똑한 파리</li><li>베프</li><li>최고의 짝꿍</li><li>왕팬</li><li>???의 하나뿐인 친구</li><li>사랑과 우정 사이</li><li>길잃은 파리</li><li>집착하는 추종자</li><li>파리 아저씨</li><li>파리 담은 병</li><li>기생자</li><li>YO LISTEN!</li><li>성난 파리</li><li>초능력 파리</li><li>로봇 파리</li><li>탱탱한 플럼</li><li>플럼 피리</li><li>파리 군단</li></ul></section><section class="effect-group"><h3>더러운 침대방 후보 22종</h3><ul class="rule-list"><li>나의 모습</li><li>행운의 발</li><li>마법의 딱쟁이</li><li>현관 열쇠</li><li>엄마의 진주목걸이</li><li>신성한 빛</li><li>마법 단검</li><li>기생자</li><li>YO LISTEN!</li><li>고스트 페퍼</li><li>버즈아이</li><li>자철석</li><li>사악한 부적</li><li>의안</li><li>아빠의 잃어버린 동전</li><li>클로버</li><li>포츈 코인</li><li>해적 지도</li><li>신의 조명</li><li>증오의 피</li><li>급성 부비동염</li><li>놀라운 혼돈의 주문서</li></ul></section><table class="reward-table"><caption>방별 추가 선택 보상</caption><thead><tr><th scope="col">방</th><th scope="col">추가 보상</th></tr></thead><tbody><tr><th scope="row">깨끗한 침대방</th><td>아래 세트 아이템 목록에서 3개 중 하나</td></tr><tr><th scope="row">더러운 침대방</th><td>아래 행운 관련 목록에서 2개 중 하나</td></tr><tr><th scope="row">오락실</th><td>저녁밥·포츈 코인 중 하나</td></tr></tbody></table><p class="table-note">전용 목록이 모두 소진되면 아침밥로 대체합니다. 창세기 방은 깨끗한 침대방의 추가 3개 생성 대상에서 제외합니다.</p>
+<!-- Agent reference material
+{
+  "entry": "extra-room-items",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/init.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/room.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/room.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="machines" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">기계의 비용과 작동</span><a class="permalink" href="#machines" aria-label="기계의 비용과 작동 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>기계의 종류에 따라 아이템 전환 방식과 비용이 다릅니다. 초반 보스 보상의 세미 글리치 머신 외에도 기존 슬롯머신과 크레인 게임을 모드 기계로 교체합니다.</p><ul class="rule-list"><li>기존 슬롯머신은 대결 모드에서 글리치 머신으로 교체합니다.</li><li>일반 루트 첫 두 층의 보스방에 있는 기본 재입고 기계는 세미 글리치 머신으로 교체합니다. 대체 루트에는 이 교체를 적용하지 않지만 보스 클리어 보상의 세미 글리치 머신은 별도로 등장합니다.</li><li>Caves I에 대응하는 구간까지 상점에 처음 들어가면 기본 재입고 기계 1개를 추가 생성합니다. 기본 재입고 기계와 커스텀 재입고 기계의 작동 규칙은 다릅니다.</li><li>기존 크레인 게임은 아스트로 크레인 게임으로 교체하며, 표시 보상과 4가지 가격을 생성할 때 결정합니다. 모드의 카인 생득권 효과가 있으면 정해진 확률로 비용을 소비하지 않습니다.</li></ul><table class="reward-table"><caption>기계별 비용과 효과</caption><thead><tr><th scope="col">기계</th><th scope="col">비용</th><th scope="col">효과</th></tr></thead><tbody><tr><th scope="row">세미 글리치 머신</th><td>동전 3개</td><td>그 방의 아이템을 원래 후보와 추가 랜덤 아이템 2개 사이에서 1초마다 전환합니다. 작동 후 기계는 파괴됩니다.</td></tr><tr><th scope="row">글리치 머신</th><td>동전 10개</td><td>그 방의 아이템을 원래 후보와 추가 랜덤 아이템 4개 사이에서 0.2초마다 전환합니다. 작동 후 기계는 파괴됩니다.</td></tr><tr><th scope="row">아스트로 크레인 게임</th><td>동전 10·15·20·25개 중 하나</td><td>기계에 표시된 상점 배열 아이템 1개를 확정 생성합니다. 한 번 지급하면 파괴됩니다.</td></tr><tr><th scope="row">커스텀 재입고 기계</th><td>한 번에 동전 3개</td><td>페트로 룬을 사용해 받침대를 다시 뽑습니다. 사용 간격은 최소 1초이며 5번 작동하면 파괴됩니다.</td></tr></tbody></table><div class="entry-links"><a class="related-link" href="./index.html#machine">입문 Q&amp;A · 세미 글리치 머신 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "machines",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/entities/restock-machine.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/entities/restock-machine.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/init.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/entities/glitched-machine.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/entities/glitched-machine.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/entities/semi-glitched-machine.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/entities/semi-glitched-machine.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/entities/astro-crane-game.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/entities/astro-crane-game.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="custom-beggars" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">용암 거지와 천체관 거지</span><a class="permalink" href="#custom-beggars" aria-label="용암 거지와 천체관 거지 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>천체관과 일반 거지 일부에서 모드 거지가 등장합니다. 대결에서 아이템 악마 거지를 소지한 플레이어가 있으면 이 두 거지로의 교체를 중단하고 아이템 악마 거지의 별도 변경 규칙을 적용합니다.</p><ul class="rule-list"><li>천체관의 일반·악마·열쇠·폭탄·배터리·썩은 거지는 천체관 거지로 교체합니다. 천체관 거지는 동전 1개당 25% 확률로 천체관 아이템 1개를 생성하고 퇴장합니다. 실패하면 다시 이용할 수 있습니다.</li><li>천체관 밖의 일반 거지는 50% 확률로 용암 거지로 바뀝니다. 한 번 교체 여부를 정한 거지는 다시 추첨하지 않습니다.</li><li>용암 거지는 동전 10개를 받을 때마다 들고 있는 장신구를 용광로 효과로 모두 흡수합니다. 지급 성공률은 100%이며 지급 후에도 남아 다시 이용할 수 있습니다.</li></ul><div class="entry-links"><a class="related-link" href="./items.html#dark-bum">아이템 악마 거지의 변경사항 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "custom-beggars",
+  "sources": [
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/entities/planetarium-beggar.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/entities/planetarium-beggar.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/entities/lava-beggar.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/entities/lava-beggar.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="chest-room" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">금고방의 시간 제한</span><a class="permalink" href="#chest-room" aria-label="금고방의 시간 제한 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>금고방에서는 처음 들어온 뒤 10초가 지나면 아이템 받침대를 제외한 바닥 픽업을 제거합니다. 다시 들어왔을 때도 같은 제거를 즉시 적용합니다.</p><ul class="rule-list"><li>제거 대상에는 아직 열지 않은 상자와 동전·하트·폭탄·열쇠·카드·장신구 등 아이템 받침대 외의 픽업이 포함됩니다. 이미 등장한 아이템 받침대는 유지합니다.</li><li>금고방에 있는 동안 외부 픽업 도우미의 자동 수집 기능을 비활성화하도록 설정합니다. 다른 방으로 나가면 이 설정을 다시 해제합니다.</li></ul>
+<!-- Agent reference material
+{
+  "entry": "chest-room",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/chest-room.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/chest-room.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="room-entities" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">방 종류에 따른 추가 오브젝트</span><a class="permalink" href="#room-entities" aria-label="방 종류에 따른 추가 오브젝트 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>여러 방에 동상과 특수 오브젝트를 추가하고 일부 적을 제거합니다.</p><ul class="rule-list"><li>미니보스방의 죄악 종류에 맞춰 나태·색욕·분노·식탐·질투·교만 동상을 생성합니다. 일반·슈퍼 탐욕 미니보스방에는 동상을 생성하지 않고, 울트라 프라이드는 교만 동상 대상으로 포함합니다.</li><li>금고방에는 탐욕 동상, 상점에는 그리디어 동상, 보물방에는 보물 동상, 천체관에는 천체관 동상을 생성합니다. 동상 가까이의 플레이어를 바깥쪽으로 밀어냅니다.</li><li>일급비밀방에 처음 들어갈 때 방의 상점 주인 엔티티를 처치합니다. 비밀방·일급비밀방·오락실에서는 생성되는 일반 거미를 제거합니다.</li><li>후반 판정 구간의 악마방에 처음 들어가면 특수 벽난로를 가운데에 생성합니다.</li><li>창세기 방과 비스트방에서는 고장난 시계의 방 상태를 빠른 상태로 고정합니다.</li></ul>
+<!-- Agent reference material
+{
+  "entry": "room-entities",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/init.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/entities/statue.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/entities/statue.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="portal-details" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">이동 포탈의 활성화와 적용 범위</span><a class="permalink" href="#portal-details" aria-label="이동 포탈의 활성화와 적용 범위 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>포탈은 보스 클리어로 활성화한 뒤 해당 방에 들어갈 때 생성합니다. 거울세계와 일반세계의 활성화 상태는 따로 관리하며 새 층에 들어가면 초기화합니다.</p><ul class="rule-list"><li>첫 두 층의 보스방을 클리어하면 보물방·상점·보스방 사이의 이동 포탈을 활성화합니다. 해당 방 재입장 시 포탈을 생성합니다.</li><li>이후 층에서는 팀 전체의 카드점 소지 개수 합계가 2개 이상이고 보스방을 클리어했을 때 같은 기능을 활성화합니다.</li><li>Womb II에 대응하는 구간의 입구방에서는 소지품 조건 없이 마더 루트 포탈을 생성합니다. 이 포탈은 Corpse II에 해당하는 구간으로 이동합니다.</li><li>일반 막달레나가 첫 플레이어이면 첫 층 시작방에 희생방 포탈을 생성합니다.</li><li>Chest·Dark Room의 시작방 복귀 포탈은 올백·낙제 추가 보상으로 활성화합니다. 활성화 후에는 해당 장신구를 잃어도 같은 층에서 유지됩니다.</li><li>시작방에 생성되는 카드점의 보스방 포탈은 랜덤 방 포탈로 바꿉니다.</li><li>메가 사탄 최종 페이즈를 처치하면 종료 상자와 보이드 입구를 생성합니다. 허쉬 구간과 메가 사탄방 외에서 생성된 보이드 입구는 제거합니다.</li></ul><div class="entry-links"><a class="related-link" href="./index.html#portals">입문 Q&amp;A · 방 사이 이동 <span aria-hidden="true">↗</span></a><a class="related-link" href="./index.html#perfection">올백·낙제 보상 전체 목록 <span aria-hidden="true">↗</span></a><a class="related-link" href="./index.html#void">입문 Q&amp;A · 보이드 입구 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "portal-details",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/entities/shortcut-portal.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/entities/shortcut-portal.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/void-portal.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/void-portal.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/collectibles/vanillas/card-reading.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/collectibles/vanillas/card-reading.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="boss-common-rewards" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">보스 클리어의 공통 보상</span><a class="permalink" href="#boss-common-rewards" aria-label="보스 클리어의 공통 보상 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>엄마 발의 신조, 칼 조각·열쇠 조각·사진과 허쉬의 에덴의 축복은 올백·낙제 여부와 별개인 공통 보상입니다. 보스 처치 전 루트 선택 아이템과 올백·낙제 소지자의 추가 보상은 각각 별도 조건을 적용합니다.</p><ul class="rule-list"><li>일반 루트 첫 두 층의 보스방을 클리어하면 닫힌 문을 한 프레임 뒤에 열거나 잠금 해제하도록 시도합니다. 대체 루트에서는 이 처리를 하지 않습니다.</li><li>일반 루트의 칼 조각 우회가 아니라 대체 루트 엄마 발 처치 시 없는 칼 조각을 직접 지급하는 방식입니다.</li><li>신조는 모든 플레이어에게 지급하고, 칼 조각·사진·열쇠 조각은 첫 플레이어에게만 지급합니다.</li><li>출생증명서로 이동하는 차원에서는 이동속도를 최소 2로 올립니다. 해당 차원에서만 적용하고 방을 바꿀 때 다시 평가합니다.</li></ul><div class="entry-links"><a class="related-link" href="./index.html#route-rewards">공통 보상과 루트 선택 전체 목록 <span aria-hidden="true">↗</span></a><a class="related-link" href="./index.html#perfection">올백·낙제 조건의 보상 전체 목록 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "boss-common-rewards",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/init.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/death-certificate-room.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/death-certificate-room.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/room.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/room.lua"
+    }
+  ]
+}
+-->
+</div></details></section><section class="guide-section" id="stage-rules" aria-labelledby="heading-stage-rules"><div class="section-heading"><span class="section-index">03</span><h2 id="heading-stage-rules">층 진행과 적 배치</h2><p>저주 · 체력 상한 · 챔피언</p></div><details class="entry" id="early-stage-rules" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">초반 위치 표시와 희생방 보정</span><a class="permalink" href="#early-stage-rules" aria-label="초반 위치 표시와 희생방 보정 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>첫 층에서 저주방의 위치를 지도에 표시합니다. 일반 막달레나의 일반 첫 층에는 희생방을 확보하기 위한 재시드 보정을 적용합니다.</p><ul class="rule-list"><li>저주방은 방 칸과 아이콘을 함께 공개합니다. 모든 캐릭터의 첫 층에 적용하며 보물 지도나 올백을 소지할 필요가 없습니다.</li><li>첫 플레이어가 일반 막달레나이고 일반 루트 첫 층에 희생방이 없으면 재시드를 시도합니다. 대체 루트에서는 이 보정을 하지 않습니다.</li><li>재시드 시도는 게임당 최대 100번입니다. Missing No.를 팀 내 플레이어가 소지한 경우에는 재시드를 하지 않습니다.</li></ul><div class="entry-links"><a class="related-link" href="./players.html#magdalene">막달레나 변경사항 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "early-stage-rules",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/stage.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/stage.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="curse-rules" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">층 저주 제거의 우선순위</span><a class="permalink" href="#curse-rules" aria-label="층 저주 제거의 우선순위 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>새 층의 저주 평가에서 초반 구간과 올백·낙제·교리 소지 여부에 따라 저주를 제거합니다. 프로메테우스의 어둠 저주는 제거 조건보다 먼저 판정하는 예외가 있습니다.</p><ul class="rule-list"><li>팀 내에 프로메테우스 소지자가 있고 올백·낙제·교리 소지자가 없다면 기존 저주에 어둠 저주를 더해 유지합니다. 이 조건은 초반 저주 제거보다 우선합니다.</li><li>올백·낙제·교리 소지자가 한 명이라도 있으면 층 전체의 저주를 제거합니다. 프로메테우스의 어둠 저주도 이 평가에서는 제거합니다.</li><li>위 프로메테우스 예외가 없으면 Basement I·II와 Caves I에 대응하는 초반 단계의 저주를 제거합니다.</li><li>획득 효과로 직접 추가하는 경단·프로메테우스의 저주는 층 시작의 저주 평가와 다릅니다. 소지품으로 실시간 저주 면역을 부여하는 규칙은 아닙니다.</li></ul><div class="entry-links"><a class="related-link" href="./index.html#perfection">올백·낙제의 전체 효과 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "curse-rules",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/init.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="health-limit-details" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">체력 상한의 적용 조건과 예외</span><a class="permalink" href="#health-limit-details" aria-label="체력 상한의 적용 조건과 예외 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>일반 캐릭터는 허쉬 구간부터 또는 Corpse 계열 구간에서 깨진 하트를 최소 10개 채워 남은 체력 공간을 2칸으로 제한합니다. 빨간 하트·뼈 하트의 용량도 최대 1칸으로 조정합니다.</p><ul class="rule-list"><li>빨간 하트 용량이 있으면 이를 최대 1칸으로 줄이고 뼈 하트는 모두 제거합니다. 빨간 하트 용량이 없으면 뼈 하트를 최대 1칸으로 조정합니다.</li><li>키퍼·더럽혀진 키퍼·더럽혀진 소울은 일반 캐릭터의 깨진 하트 10개 처리를 적용하지 않습니다.</li><li>발동된 다모클레스의 패시브 효과를 소지하면 후반 단계에 도달하기 전에도 일반 캐릭터의 제한을 적용합니다. 엄청 쉬움 모드보다 우선합니다.</li><li>엄청 쉬움 모드를 가진 일반 캐릭터는 후반 깨진 하트의 최솟값을 9개로 완화하지만 빨간 하트·뼈 하트 용량은 같은 방식으로 조정합니다. 이미 더 많은 깨진 하트가 있으면 줄여 주지 않습니다.</li><li>일반 포가튼과 소울은 별도 규칙입니다. 소울 쪽은 구간에 관계없이 깨진 하트를 정확히 6개로 맞춥니다. 포가튼 몸은 후반에 깨진 하트를 정확히 5개로 맞추고 뼈 하트를 최대 1칸으로 줄입니다.</li><li>엄청 쉬움 모드도 일반 포가튼·소울의 별도 처리를 면제하지 않습니다.</li></ul><div class="entry-links"><a class="related-link" href="./index.html#health-limit">입문 Q&amp;A · 후반 체력 제한 <span aria-hidden="true">↗</span></a><a class="related-link" href="./players.html#theforgotten">포가튼 변경사항 <span aria-hidden="true">↗</span></a><a class="related-link" href="./players.html#keeper">키퍼 변경사항 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "health-limit-details",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/stage.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/stage.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="champion-details" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">챔피언 변환의 후보 목록</span><a class="permalink" href="#champion-details" aria-label="챔피언 변환의 후보 목록 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>Caves II에 대응하는 구간부터 생성되는 공격 가능한 적을 챔피언 형태로 바꾸고 변환된 최대 체력으로 채웁니다. 후보 중 일부 색상과 특수 챔피언은 제외합니다.</p><ul class="rule-list"><li>가능한 챔피언 후보는 빨강·노랑·검정·깜빡임·분홍·짙은 빨강·하늘색·맥동 초록·맥동 회색·파리 보호·거대·맥동 빨강·크기 맥동·왕 형태입니다. 허용된 14가지 중 하나를 동일한 확률로 고릅니다.</li><li>모든 일반 층과 대체 루트에서 단계 조건을 충족하면 적용합니다. 공격 가능한 적인지 확인한 뒤 형태와 체력을 바꿉니다.</li></ul><div class="entry-links"><a class="related-link" href="./index.html#champions">입문 Q&amp;A · 챔피언 적 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "champion-details",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/stage.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/stage.lua"
+    }
+  ],
+  "references": [
+    {
+      "label": "챔피언 번호와 형태",
+      "url": "https://wofsauge.github.io/IsaacDocs/rep/enums/ChampionColor.html"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="latter-room-enemies" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">후반 일반방의 추가 생성 후보</span><a class="permalink" href="#latter-room-enemies" aria-label="후반 일반방의 추가 생성 후보 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>자궁·Utero·Scarred Womb·Corpse의 특정 번호 이후 일반방에 들어가면 추가 적 생성 후보를 하나 선택합니다. 방이 아직 클리어되지 않은 경우에만 적용합니다.</p><ul class="rule-list"><li>자궁은 방 프리셋 번호 974 이상, Utero는 978 이상, Scarred Womb·Corpse는 987 이상이 대상입니다. 자궁 I·II에 대응하는 구간의 일반방에서 적용합니다.</li><li>후보는 파리 공작, 기근, 리틀 혼의 검은 구체와 베이비 플럼 변종입니다. 각 후보의 선택 확률은 25%입니다.</li><li>검은 구체는 보스가 아닙니다. 베이비 플럼 변종은 코드에 생성 대상으로 지정되어 있으나 현재 기본 엔티티 정의에는 해당 변종이 없어 실제 생성 결과는 확인되지 않았습니다.</li><li>처음 방문한 방에만 적용하는 조건은 없습니다. 클리어되지 않은 대상 방에 다시 들어가면 생성 처리를 다시 실행합니다.</li></ul>
+<!-- Agent reference material
+{
+  "entry": "latter-room-enemies",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/room-boss.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/room-boss.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/entities2.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/entities2.xml"
+    }
+  ]
+}
+-->
+</div></details></section><section class="guide-section" id="combat-rules" aria-labelledby="heading-combat-rules"><div class="section-heading"><span class="section-index">04</span><h2 id="heading-combat-rules">피격과 주요 보스전</h2><p>제거 목록 · 보호막 · 입력 제한</p></div><details class="entry" id="penalty-details" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">패널티 피격의 전체 제거 목록</span><a class="permalink" href="#penalty-details" aria-label="패널티 피격의 전체 제거 목록 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>패널티 제외 또는 빨간 하트 전용 피해가 아닌 피격을 받으면 아래 소지품을 제거합니다. 같은 아이템의 복사본을 여러 개 소지한 경우 모두 제거하며, 그림자의 책은 충전량을 따로 차감합니다.</p><ul class="rule-list"><li>그림자의 책을 주 슬롯·보조 슬롯·포켓 슬롯에 소지한 경우 각 해당 슬롯의 차지를 1씩 줄입니다. 차지가 0 미만으로 내려가지는 않습니다.</li><li>클리어되지 않은 지정 보스방에서 패널티 피격을 받으면 일반 Death’s Head 2마리를 확정 생성합니다. 대상은 엄마 발, 허쉬 구간, Sheol·Cathedral 구간, Chest·Dark Room·메가 사탄 구간, 보이드 구간, 마더와 비스트방입니다.</li><li>지정 보스전 피격으로 추가하는 깨진 하트의 값은 현재 0입니다. 후반 체력 제한의 깨진 하트 증가와 구분합니다.</li><li>올백·낙제 소실, 쉬움 모드·아이작의 심장으로 대체되는 패널티, 로스트 보호막 능력치 감소는 각각 별도 처리를 적용합니다.</li><li>동일 종류 장신구의 제거는 최대 3번 시도합니다. 여러 번 흡수한 경우를 아이템 복사본의 일괄 제거와 동일하게 보장하는 처리는 아닙니다.</li></ul><section class="effect-group"><h3>제거 아이템 22종</h3><ul class="rule-list"><li>천칭자리</li><li>죽은 고양이</li><li>황소자리</li><li>나침반</li><li>보물 지도</li><li>파란 지도</li><li>수정구슬</li><li>탐험가 모자</li><li>정신</li><li>염소 머리</li><li>성찬</li><li>태양</li><li>아이작의 액자</li><li>불경스런 망토</li><li>오메가 321</li><li>더 로스트의 액자</li><li>더 로스트의 액자?</li><li>슈뢰딩거의 고양이</li><li>퍼즐 주사위</li><li>강력한 밑바닥</li><li>황금 사과</li><li>금이빨</li></ul></section><section class="effect-group"><h3>제거 장신구 1종</h3><ul class="rule-list"><li>눈깔사탕</li></ul></section><div class="entry-links"><a class="related-link" href="./index.html#damage-penalty">입문 Q&amp;A · 피격 손실 <span aria-hidden="true">↗</span></a><a class="related-link" href="./index.html#perfection-damage">올백 피격 예외 전체 목록 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#isaacs-heart">아이작의 심장 변경사항 <span aria-hidden="true">↗</span></a><a class="related-link" href="./index.html#ez-mode">쉬움 모드 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "penalty-details",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/penalty.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/penalty.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/collectibles/penalty.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/collectibles/penalty.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/callbacks.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/callbacks.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="holy-shield-penalty" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">보호막 손실과 비스트방 즉사</span><a class="permalink" href="#holy-shield-penalty" aria-label="보호막 손실과 비스트방 즉사 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>로스트 계열에서는 신성한 망토 효과 개수 감소와 신성한 카드 효과 소실을 감지해 능력치 패널티를 누적합니다. 비스트방에서는 캐릭터에 관계없이 해당 보호막이 소모되면 즉사합니다.</p><ul class="rule-list"><li>최대 5회까지 누적되며 새 층에서 초기화합니다.</li><li>신성한 망토 효과가 한 번에 여러 개 줄면 줄어든 개수만큼 누적합니다. 신성한 카드 효과도 같은 순간에 사라졌다면 이를 따로 더하지 않고 최소 1회로 계산합니다.</li><li>비스트방의 일반 패널티 피격은 다모클레스 사망 처리를 예약합니다. 보호막 소모로 즉사하는 조건과 별개입니다.</li></ul><table class="reward-table"><caption>로스트 계열의 보호막 손실 1회당 변화</caption><thead><tr><th scope="col">능력치</th><th scope="col">감소량</th></tr></thead><tbody><tr><th scope="row">이동속도</th><td>0.05</td></tr><tr><th scope="row">공격력</th><td>0.05</td></tr><tr><th scope="row">사거리</th><td>0.1</td></tr><tr><th scope="row">행운</th><td>7</td></tr><tr><th scope="row">연사</th><td>0 · 현재 감소 없음</td></tr></tbody></table><div class="entry-links"><a class="related-link" href="./index.html#lost-shield">입문 Q&amp;A · 로스트 보호막 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#damocles">다모클레스 변경사항 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "holy-shield-penalty",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/penalty.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/penalty.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/init.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="skull-collision" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">Death’s Head의 눈물 충돌</span><a class="permalink" href="#skull-collision" aria-label="Death’s Head의 눈물 충돌 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>보스전과 피격 패널티로 등장하는 일부 Death’s Head는 눈물 충돌 시 일반적인 적과 다르게 처리합니다.</p><ul class="rule-list"><li>일반 눈물은 충돌하면 사라지고 해당 Death’s Head와의 충돌 처리를 막습니다. 관통 눈물은 사라지지 않지만 같은 충돌 차단을 적용합니다.</li><li>작은 뿔과 안락사에 해당하는 눈물 속성은 이 충돌 차단에서 제외합니다.</li><li>Bony 계열과 Brimstone 계열 Death’s Head 변종에는 이 추가 처리를 적용하지 않습니다.</li></ul>
+<!-- Agent reference material
+{
+  "entry": "skull-collision",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/entities/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/entities/init.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="dark-esau-collision" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">다크 에사우의 플레이어 충돌</span><a class="permalink" href="#dark-esau-collision" aria-label="다크 에사우의 플레이어 충돌 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>다크 에사우가 플레이어와 충돌하면 해당 충돌 처리를 취소합니다. 더럽혀진 야곱의 기본 시작 보상과 별도로 적용되는 엔티티 규칙입니다.</p><div class="entry-links"><a class="related-link" href="./players.html#jacob_b">더럽혀진 야곱과 에사우 변경사항 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "dark-esau-collision",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/entities/dark-esau.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/entities/dark-esau.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="dogma-transition" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">도그마 등장과 비스트 전환</span><a class="permalink" href="#dogma-transition" aria-label="도그마 등장과 비스트 전환 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>도그마의 첫 엔티티가 생성될 때 Death’s Head 6마리를 추가합니다. 도그마 사망 연출이 시작되면 모든 플레이어에게 알기즈 룬 효과를 자동 사용합니다.</p><ul class="rule-list"><li>추가 해골은 일반 형태 2마리, 저주 형태 2마리와 일반·저주 중 각각 무작위로 정하는 2마리입니다.</li><li>알기즈는 도그마의 사망 애니메이션 동안 방당 한 번 적용합니다.</li></ul>
+<!-- Agent reference material
+{
+  "entry": "dogma-transition",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/rooms/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/rooms/init.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/room.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/room.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="pause-details" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">일시정지와 뒤로 가기 제한</span><a class="permalink" href="#pause-details" aria-label="일시정지와 뒤로 가기 제한 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>주요 보스전과 Home 구간에서 일시정지·뒤로 가기 입력을 제한합니다. 왼쪽 Shift를 누른 상태에서는 제한을 우회할 수 있습니다.</p><ul class="rule-list"><li>주요 보스 대상은 엄마, 사탄, 핏덩이, 아이작, ???, 어린 양, 메가 사탄, 허쉬, 섬망, 마더, 도그마와 비스트입니다.</li><li>방에 들어갈 때 현재 구간과 보스 정보를 기록하고 해당 조건에서 제한합니다. 클리어 보상 처리가 실행되면 기록을 비워 제한을 해제하며, 다음 방에 들어가면 조건을 다시 평가합니다.</li><li>제한 우회 입력을 경기에서 허용하는지는 방송의 대결 규칙에 따릅니다.</li></ul><div class="entry-links"><a class="related-link" href="./index.html#pause">입문 Q&amp;A · 일시정지 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "pause-details",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/penalty.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/penalty.lua"
+    }
+  ]
+}
+-->
+</div></details></section><section class="guide-section" id="consumable-rules" aria-labelledby="heading-consumable-rules"><div class="section-heading"><span class="section-index">05</span><h2 id="heading-consumable-rules">카드와 알약</h2><p>자동 사용 · 소실 · 행운 확률</p></div><details class="entry" id="consumable-auto-use" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">획득한 카드와 알약의 자동 사용</span><a class="permalink" href="#consumable-auto-use" aria-label="획득한 카드와 알약의 자동 사용 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>아래 카드·룬·알약은 소지 슬롯에서 감지하면 별도 입력 없이 사용하고 슬롯을 비웁니다. 주 슬롯만이 아니라 확인 가능한 4개 카드·알약 슬롯에 적용합니다.</p><ul class="rule-list"><li>발동된 다모클레스의 패시브 효과가 있으면 신성한 카드는 사용하지 않고 소지 슬롯에서 삭제합니다.</li><li>전환된 카드의 기본 효과는 그대로 적용합니다. 자동 사용은 공통 금지나 캐릭터별 금지와 별도입니다.</li></ul><section class="effect-group"><h3>자동 사용하는 카드·룬 11종</h3><ul class="rule-list"><li>엔수즈</li><li>XXI - 세계</li><li>XIX - 해</li><li>VIII - 정의</li><li>V - 교황</li><li>V - 교황?</li><li>규칙 카드</li><li>고대의 부름</li><li>I - 마법사?</li><li>벨카노</li><li>V - 영원</li></ul></section><section class="effect-group"><h3>자동 사용하는 알약</h3><ul class="rule-list"><li>강철같은 알약은 항상 자동 사용합니다.</li><li>탄속 감소는 위조 학위를 소지한 경우 자동 사용합니다.</li></ul></section><div class="entry-links"><a class="related-link" href="./items.html#false-phd">위조 학위 변경사항 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#damocles">다모클레스 변경사항 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "consumable-auto-use",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/ban.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/ban.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="card-chances" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">모드 카드의 행운 확률과 실패 비용</span><a class="permalink" href="#card-chances" aria-label="모드 카드의 행운 확률과 실패 비용 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>회개·부패·숭배는 행운 0일 때 성공 확률이 30%이며 행운 1당 1%p씩 증가합니다. 행운 70 이상이면 반드시 성공하고 행운이 −30 이하이면 실패합니다.</p><ul class="rule-list"><li>회개·부패는 실패 시 깨진 하트 2개를 추가합니다. 숭배는 실패 시 질나쁜 환각 알약 효과를 사용합니다. 공통 금지 목록에 있는 알약도 이 직접 사용 효과는 발동합니다.</li><li>깨진 하트 2개는 체력 공간 2칸에 해당합니다. 후반 체력 제한으로 이미 공간이 좁아진 경우 실패 비용에 주의해야 합니다.</li><li>냉기·종신·지혜·영원·희생은 위 성공 확률 추첨을 사용하지 않습니다. 영원은 이터널 하트 1~4개를 생성합니다.</li></ul><div class="entry-links"><a class="related-link" href="./items.html#the-cold">I - 냉기 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#the-servant">II - 종신 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#wisdom">III - 지혜 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#repentance">IV - 회개 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#eternity">V - 영원 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#corruption">VI - 부패 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#immolation">VII - 희생 <span aria-hidden="true">↗</span></a><a class="related-link" href="./items.html#worship">VIII - 숭배 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "card-chances",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/cards/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/cards/init.lua"
+    }
+  ]
+}
+-->
+</div></details></section><section class="guide-section" id="room-preset-rules" aria-labelledby="heading-room-preset-rules"><div class="section-heading"><span class="section-index">06</span><h2 id="heading-room-preset-rules">방 프리셋 변경</h2><p>일반 루트 · 그리드 루트 · 주요 보스 배치</p></div><details class="entry" id="room-layouts" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">일반 루트의 방 구성</span><a class="permalink" href="#room-layouts" aria-label="일반 루트의 방 구성 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>층마다 사용할 방의 프리셋을 교체합니다. 아래 수치는 한 런에서 만나는 방의 수가 아니라, 층 생성에 사용되는 방 후보 정의의 수입니다. 적·장애물·픽업의 배치, 문 위치, 등장 가중치와 난이도 지정의 차이를 함께 반영합니다.</p><ul class="rule-list"><li>Basement·Cellar·Burning Basement는 같은 796개 프리셋을 사용합니다. 층의 배경이 달라도 방 후보 구성은 같습니다.</li><li>자궁·Utero·Scarred Womb은 일반 빈 방 1개와 보물방·도전방 프리셋만 남깁니다. 기존의 적이 있는 일반방 후보는 제거합니다. 후반 특정 번호의 일반방에 추가 적을 생성하는 조건은 별도로 정의하지만 이 빈 방에는 적용하지 않습니다.</li><li>Sheol·Cathedral의 층별 일반방 후보는 빈 방 1개이며, Dark Room·Chest의 일반방 후보는 크레인 게임 2개가 놓인 방 1개입니다. 보스방·특수방은 공통 방 프리셋에서 별도로 생성합니다.</li><li>Corpse는 65개 후보로 제한하고 마더방에 저주 Death’s Head 6마리와 아래쪽 빈 공간을 막는 장애물을 추가합니다.</li><li>표의 추가·제외·수정은 기본 게임의 같은 방 종류·프리셋 번호·하위 분류와 대조한 결과입니다. 문 위치와 후보 가중치만 달라져도 수정으로 계산합니다.</li></ul><table class="reward-table"><caption>기본 게임과 층별 후보 수 비교</caption><thead><tr><th scope="col">층</th><th scope="col">기본 후보</th><th scope="col">모드 후보</th><th scope="col">추가</th><th scope="col">제외</th><th scope="col">수정</th></tr></thead><tbody><tr><th scope="row">special rooms</th><td>1357</td><td>1156</td><td>114</td><td>315</td><td>574</td></tr><tr><th scope="row">basement</th><td>1220</td><td>796</td><td>11</td><td>435</td><td>362</td></tr><tr><th scope="row">cellar</th><td>1172</td><td>796</td><td>57</td><td>433</td><td>655</td></tr><tr><th scope="row">burning basement</th><td>1355</td><td>796</td><td>8</td><td>567</td><td>603</td></tr><tr><th scope="row">caves</th><td>1125</td><td>1111</td><td>0</td><td>14</td><td>167</td></tr><tr><th scope="row">catacombs</th><td>1126</td><td>1125</td><td>0</td><td>1</td><td>147</td></tr><tr><th scope="row">flooded caves</th><td>1300</td><td>1285</td><td>0</td><td>15</td><td>199</td></tr><tr><th scope="row">depths</th><td>1183</td><td>1176</td><td>0</td><td>7</td><td>174</td></tr><tr><th scope="row">necropolis</th><td>1200</td><td>1198</td><td>0</td><td>2</td><td>219</td></tr><tr><th scope="row">dank depths</th><td>1451</td><td>1443</td><td>0</td><td>8</td><td>202</td></tr><tr><th scope="row">womb</th><td>1012</td><td>39</td><td>0</td><td>973</td><td>1</td></tr><tr><th scope="row">utero</th><td>1225</td><td>43</td><td>0</td><td>1182</td><td>1</td></tr><tr><th scope="row">scarred womb</th><td>1168</td><td>38</td><td>0</td><td>1130</td><td>1</td></tr><tr><th scope="row">blue womb</th><td>32</td><td>30</td><td>0</td><td>2</td><td>6</td></tr><tr><th scope="row">sheol</th><td>644</td><td>1</td><td>0</td><td>643</td><td>1</td></tr><tr><th scope="row">cathedral</th><td>628</td><td>1</td><td>0</td><td>627</td><td>1</td></tr><tr><th scope="row">dark room</th><td>212</td><td>1</td><td>0</td><td>211</td><td>1</td></tr><tr><th scope="row">chest</th><td>207</td><td>1</td><td>0</td><td>206</td><td>1</td></tr><tr><th scope="row">downpour</th><td>764</td><td>762</td><td>5</td><td>7</td><td>209</td></tr><tr><th scope="row">dross</th><td>919</td><td>917</td><td>5</td><td>7</td><td>246</td></tr><tr><th scope="row">mines</th><td>946</td><td>930</td><td>5</td><td>21</td><td>169</td></tr><tr><th scope="row">ashpit</th><td>925</td><td>919</td><td>2</td><td>8</td><td>182</td></tr><tr><th scope="row">mausoleum</th><td>748</td><td>739</td><td>2</td><td>11</td><td>154</td></tr><tr><th scope="row">gehenna</th><td>897</td><td>892</td><td>2</td><td>7</td><td>193</td></tr><tr><th scope="row">corpse</th><td>645</td><td>65</td><td>0</td><td>580</td><td>1</td></tr><tr><th scope="row">mortis</th><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><th scope="row">home</th><td>39</td><td>39</td><td>0</td><td>0</td><td>3</td></tr><tr><th scope="row">backwards</th><td>512</td><td>512</td><td>0</td><td>0</td><td>0</td></tr></tbody></table><p class="table-note">Mortis와 역행 구간은 방 정의의 의미가 기본 게임과 동일합니다. 임시 폴더의 테스트용 Corpse 파일은 일반 루트 방 후보에 포함하지 않습니다.</p><div class="entry-links"><a class="related-link" href="#latter-room-enemies">후반 일반방의 추가 적 생성 <span aria-hidden="true">↗</span></a><a class="related-link" href="./rooms.html">원본과 대결 모드의 방 배치 비교 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "room-layouts",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/01.basement.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/01.basement.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/00.special rooms.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/00.special rooms.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/02.cellar.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/02.cellar.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/03.burning basement.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/03.burning basement.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/04.caves.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/04.caves.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/05.catacombs.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/05.catacombs.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/06.flooded caves.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/06.flooded caves.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/07.depths.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/07.depths.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/08.necropolis.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/08.necropolis.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/09.dank depths.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/09.dank depths.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/10.womb.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/10.womb.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/11.utero.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/11.utero.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/12.scarred womb.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/12.scarred womb.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/13.blue womb.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/13.blue womb.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/14.sheol.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/14.sheol.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/15.cathedral.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/15.cathedral.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/16.dark room.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/16.dark room.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/17.chest.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/17.chest.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/27.downpour.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/27.downpour.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/28.dross.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/28.dross.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/29.mines.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/29.mines.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/30.ashpit.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/30.ashpit.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/31.mausoleum.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/31.mausoleum.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/32.gehenna.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/32.gehenna.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/33.corpse.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/33.corpse.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/34.mortis.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/34.mortis.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/35.home.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/35.home.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/36.backwards.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/36.backwards.stb"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="greed-room-layouts" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">그리드 루트의 방 구성</span><a class="permalink" href="#greed-room-layouts" aria-label="그리드 루트의 방 구성 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>그리드·그리디어에서도 층별 방 후보와 공통 특수방을 교체합니다. 그리드 루트용 후보는 일반 루트의 후보와 별도로 관리합니다.</p><ul class="rule-list"><li>그리드 보물방의 기본 프리셋에는 받침대 3개를 배치하며, 추가 프리셋에 따라 2~4개 받침대나 재입고 기계가 함께 등장합니다.</li><li>그리드 상점의 기본 프리셋은 상품 8개와 바닥 픽업·장신구·장애물을 재배치한 구성입니다. 천사방 프리셋에는 기본 재입고 기계를 추가합니다.</li><li>그리드 저주방은 상자 수와 위치를 조정하며, 일부 비밀방은 일반 하트 보상 대신 행운 동전 2개 또는 아이템 받침대를 배치한 후보로 바꿉니다.</li><li>울트라 그리드방에는 네 구석의 저주 Death’s Head 4마리와 가운데 십자 모양의 장애물을 추가하고, 기존 상점 주인 배치는 제거합니다.</li><li>Downpour·Dross·Mines·Ashpit·Mausoleum·Gehenna·Corpse·Mortis의 그리드 후보 정의는 기본 게임과 의미가 같습니다.</li></ul><table class="reward-table"><caption>그리드 층별 후보 수 비교</caption><thead><tr><th scope="col">층</th><th scope="col">기본 후보</th><th scope="col">모드 후보</th><th scope="col">추가</th><th scope="col">제외</th><th scope="col">수정</th></tr></thead><tbody><tr><th scope="row">special rooms</th><td>186</td><td>47</td><td>4</td><td>143</td><td>12</td></tr><tr><th scope="row">basement</th><td>247</td><td>247</td><td>6</td><td>6</td><td>1</td></tr><tr><th scope="row">cellar</th><td>212</td><td>212</td><td>0</td><td>0</td><td>9</td></tr><tr><th scope="row">burning basement</th><td>316</td><td>315</td><td>3</td><td>4</td><td>7</td></tr><tr><th scope="row">caves</th><td>209</td><td>208</td><td>3</td><td>4</td><td>3</td></tr><tr><th scope="row">catacombs</th><td>263</td><td>259</td><td>8</td><td>12</td><td>6</td></tr><tr><th scope="row">flooded caves</th><td>331</td><td>320</td><td>5</td><td>16</td><td>3</td></tr><tr><th scope="row">depths</th><td>179</td><td>179</td><td>0</td><td>0</td><td>1</td></tr><tr><th scope="row">necropolis</th><td>273</td><td>267</td><td>0</td><td>6</td><td>1</td></tr><tr><th scope="row">dank depths</th><td>357</td><td>333</td><td>0</td><td>24</td><td>0</td></tr><tr><th scope="row">womb</th><td>216</td><td>180</td><td>0</td><td>36</td><td>11</td></tr><tr><th scope="row">utero</th><td>270</td><td>248</td><td>0</td><td>22</td><td>5</td></tr><tr><th scope="row">scarred womb</th><td>357</td><td>331</td><td>0</td><td>26</td><td>11</td></tr><tr><th scope="row">sheol</th><td>328</td><td>230</td><td>0</td><td>98</td><td>3</td></tr><tr><th scope="row">the shop</th><td>262</td><td>195</td><td>3</td><td>70</td><td>4</td></tr><tr><th scope="row">ultra greed</th><td>13</td><td>13</td><td>0</td><td>0</td><td>1</td></tr><tr><th scope="row">downpour</th><td>136</td><td>136</td><td>0</td><td>0</td><td>0</td></tr><tr><th scope="row">dross</th><td>137</td><td>137</td><td>0</td><td>0</td><td>0</td></tr><tr><th scope="row">mines</th><td>135</td><td>135</td><td>0</td><td>0</td><td>0</td></tr><tr><th scope="row">ashpit</th><td>135</td><td>135</td><td>0</td><td>0</td><td>0</td></tr><tr><th scope="row">mausoleum</th><td>134</td><td>134</td><td>0</td><td>0</td><td>0</td></tr><tr><th scope="row">gehenna</th><td>8</td><td>8</td><td>0</td><td>0</td><td>0</td></tr><tr><th scope="row">corpse</th><td>8</td><td>8</td><td>0</td><td>0</td><td>0</td></tr><tr><th scope="row">mortis</th><td>8</td><td>8</td><td>0</td><td>0</td><td>0</td></tr></tbody></table><div class="entry-links"><a class="related-link" href="./rooms.html">원본과 대결 모드의 방 배치 비교 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "greed-room-layouts",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/00.special rooms.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/00.special rooms.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/01.basement.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/01.basement.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/02.cellar.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/02.cellar.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/03.burning basement.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/03.burning basement.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/04.caves.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/04.caves.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/05.catacombs.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/05.catacombs.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/06.flooded caves.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/06.flooded caves.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/07.depths.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/07.depths.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/08.necropolis.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/08.necropolis.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/09.dank depths.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/09.dank depths.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/10.womb.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/10.womb.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/11.utero.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/11.utero.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/12.scarred womb.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/12.scarred womb.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/14.sheol.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/14.sheol.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/24.the shop.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/24.the shop.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/25.ultra greed.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/25.ultra greed.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/27.downpour.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/27.downpour.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/28.dross.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/28.dross.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/29.mines.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/29.mines.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/30.ashpit.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/30.ashpit.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/31.mausoleum.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/31.mausoleum.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/32.gehenna.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/32.gehenna.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/33.corpse.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/33.corpse.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/34.mortis.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/34.mortis.stb"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="major-boss-layouts" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">주요 보스방의 추가 배치</span><a class="permalink" href="#major-boss-layouts" aria-label="주요 보스방의 추가 배치 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>보스방 프리셋에 해골·벽난로·추가 적·픽업과 장애물을 배치합니다. 아래는 여러 프리셋에 공통으로 적용되는 주요 보스의 추가 해골 배치입니다. 피격으로 나중에 소환하는 해골과는 별개입니다.</p><ul class="rule-list"><li>일반 특수방 후보에는 품질 선택을 위한 받침대가 많은 보물방·비밀방·저주방·천체관 등 새 프리셋과 수정 프리셋이 포함됩니다. 보스별로 장애물·픽업·추가 적 후보도 달라집니다.</li><li>보스방 프리셋의 같은 위치에 여러 적 후보를 정의한 경우에는 후보 중 하나를 선택하는 묶음입니다. 후보 목록의 모든 보스를 동시에 생성하는 의미는 아닙니다.</li><li>허쉬 구간의 상점은 상품 받침대 7개로 재배치하고, 보물방은 기존 두 아이템 받침대 대신 크레인 게임과 낡은 상자를 배치합니다. 입구방에도 장애물과 파란 벽난로를 추가합니다.</li><li>Home의 아이작 침실에서는 침대와 상자 픽업을 제거합니다. 오른쪽 옷장에는 크레인 게임과 폭발 통을 추가합니다. 도그마 테스트 방에는 일반 2마리와 일반·저주 중 선택되는 2마리의 Death’s Head를 추가합니다.</li></ul><table class="reward-table"><caption>주요 보스 프리셋의 추가 해골</caption><thead><tr><th scope="col">보스</th><th scope="col">추가 배치</th></tr></thead><tbody><tr><th scope="row">엄마의 심장 · 일반·영묘 형태</th><td>저주 Death’s Head 2마리</td></tr><tr><th scope="row">핏덩이</th><td>일반 Death’s Head 2마리와 일반 벽난로 4개</td></tr><tr><th scope="row">블로트</th><td>2마리 · 각 위치에서 일반·저주 형태 중 선택</td></tr><tr><th scope="row">아이작</th><td>저주 4마리</td></tr><tr><th scope="row">???</th><td>4마리 · 각 위치에서 일반·저주 형태 중 선택</td></tr><tr><th scope="row">사탄·어린 양</th><td>각 저주 2마리</td></tr><tr><th scope="row">메가 사탄</th><td>저주 6마리·양쪽 손 엔티티</td></tr><tr><th scope="row">섬망</th><td>저주 4마리와 일반·저주 중 선택되는 4마리 · 추가 장애물·적 후보</td></tr><tr><th scope="row">허쉬</th><td>일반 2마리·저주 6마리</td></tr><tr><th scope="row">마더</th><td>저주 6마리</td></tr></tbody></table><div class="entry-links"><a class="related-link" href="#dogma-transition">도그마 등장 시 추가 해골과 전환 보호 <span aria-hidden="true">↗</span></a><a class="related-link" href="#penalty-details">피격 패널티로 추가되는 해골 <span aria-hidden="true">↗</span></a><a class="related-link" href="./rooms.html">원본과 대결 모드의 방 배치 비교 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "major-boss-layouts",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/00.special rooms.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/00.special rooms.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/13.blue womb.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/13.blue womb.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/33.corpse.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/33.corpse.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/35.home.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/35.home.stb"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/rooms/greed/25.ultra greed.stb",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/rooms/greed/25.ultra greed.stb"
+    }
+  ]
+}
+-->
+</div></details></section><section class="guide-section" id="common-player-rules" aria-labelledby="heading-common-player-rules"><div class="section-heading"><span class="section-index">07</span><h2 id="heading-common-player-rules">플레이어 공통 설정</h2><p>초기 자원 · 숨겨진 효과</p></div><details class="entry" id="starting-resources" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">공통 초기 자원과 숨겨진 생득권</span><a class="permalink" href="#starting-resources" aria-label="공통 초기 자원과 숨겨진 생득권 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>기본 게임 캐릭터의 초기 자원은 열쇠 1개와 폭탄 2개로 변경됩니다. 초기 체력·아이템·포켓 액티브는 캐릭터별로 다릅니다.</p><ul class="rule-list"><li>기본 게임 플레이어 정의 41종에 공통 초기 자원이 지정됩니다. 모드 캐릭터는 별도의 시작 설정을 사용합니다.</li><li>모드 캐릭터 12종은 열쇠 1개로 시작합니다. 레아의 기본 형태는 폭탄이 지정되지 않아 0개로 시작하며, 더럽혀진 레아와 다른 모드 캐릭터 10종은 폭탄 2개로 시작합니다.</li><li>새 게임의 첫 번째 플레이어가 더럽혀진 카인·포가튼·소울·나사로·???인 경우 숨겨진 생득권을 지급합니다. 이어하기에서는 새로 지급하지 않습니다.</li><li>기본 게임 정의와 시작방의 추가 선택 보상을 함께 적용합니다. 각 캐릭터의 최종 시작 구성을 플레이어 페이지에서 확인할 수 있습니다.</li></ul><div class="entry-links"><a class="related-link" href="./players.html">캐릭터별 시작 구성 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "starting-resources",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/players.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/players.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/player.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/player.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "content/players.xml",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/content/players.xml"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="mom-transformation" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">엄마 변신의 알약 식별</span><a class="permalink" href="#mom-transformation" aria-label="엄마 변신의 알약 식별 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>플레이어 중 한 명이라도 엄마 변신 상태이면 새로 생성된 알약의 종류가 공통 알약 배열에서 식별됩니다. 변신 순간에 소지 중인 알약 전체를 일괄 식별하는 처리는 아닙니다.</p>
+<!-- Agent reference material
+{
+  "entry": "mom-transformation",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/collectibles/transformation.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/collectibles/transformation.lua"
+    }
+  ]
+}
+-->
+</div></details></section><section class="guide-section" id="greed-rules" aria-labelledby="heading-greed-rules"><div class="section-heading"><span class="section-index">08</span><h2 id="heading-greed-rules">탐욕 모드 보상</h2><p>구간 노피격 · 웨이브</p></div><details class="entry" id="greed-wave-rewards" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">웨이브 구간별 노피격 보상</span><a class="permalink" href="#greed-wave-rewards" aria-label="웨이브 구간별 노피격 보상 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>탐욕 모드에서 구간이 끝날 때 패널티 피격 기록이 없으면 동전 보상이 생성됩니다. 올백·낙제 소지 여부를 확인하는 보상과는 별개입니다.</p><ul class="rule-list"><li>1~3·4~6·7~9 웨이브는 각각 하나의 피격 기록을 공유합니다. 해당 구간에서 패널티 피격을 받으면 구간 종료 보상이 사라집니다.</li><li>10·11·12 웨이브는 각각 독립적으로 피격 기록을 검사합니다.</li><li>새 게임·새 층과 4·7·10·11·12 웨이브 시작 시 다음 구간의 피격 기록을 초기화합니다.</li><li>같은 웨이브에 대한 보상은 중복 생성하지 않습니다. 일반 피해가 아니라 공통 패널티 피격 판정에 따라 기록합니다.</li></ul><table class="reward-table"><caption>노피격 구간 종료 보상</caption><thead><tr><th scope="col">구간</th><th scope="col">보상</th></tr></thead><tbody><tr><th scope="row">1~3 웨이브</th><td>5센트 동전 1개</td></tr><tr><th scope="row">4~6 웨이브</th><td>5센트 동전 1개</td></tr><tr><th scope="row">7~9 웨이브</th><td>5센트 동전 1개</td></tr><tr><th scope="row">10 웨이브</th><td>황금 동전 1개</td></tr><tr><th scope="row">11 웨이브</th><td>황금 동전 1개</td></tr><tr><th scope="row">12 웨이브</th><td>황금 동전 1개</td></tr></tbody></table>
+<!-- Agent reference material
+{
+  "entry": "greed-wave-rewards",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-greedier/award.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-greedier/award.lua"
+    },
+    {
+      "repository": "Astro-Items",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+      "path": "astro/callbacks.lua",
+      "url": "https://github.com/TeamHY/Astro-Items/blob/b9785699358291b35eb4195dc5fcd8441ca39c52/astro/callbacks.lua"
+    }
+  ]
+}
+-->
+</div></details></section><section class="guide-section" id="resource-settings" aria-labelledby="heading-resource-settings"><div class="section-heading"><span class="section-index">09</span><h2 id="heading-resource-settings">수치·배열 설정</h2><p>품질 · 가격 · 충전 · 구매</p></div><details class="entry" id="item-configurations" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">아이템 수치와 배열의 변경</span><a class="permalink" href="#item-configurations" aria-label="아이템 수치와 배열의 변경 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>아이템의 효과뿐 아니라 상점·악마 거래 가격, 충전 요구량, 품질, 변신·소환 대상 분류, 배열별 등장 가중치가 변경됩니다. 전체 차이는 개별 아이템 카드에서 확인할 수 있습니다.</p><ul class="rule-list"><li>가중치는 같은 배열 안에서의 상대값이며 고정 등장 확률을 뜻하지 않습니다. 배열에서 아이템을 뽑을 때 가중치가 줄어들며, 제외 기준 이하가 되면 더 이상 뽑히지 않습니다.</li><li>가격 설정에는 할인·체력 구성 등 게임의 가격 보정이 별도로 적용됩니다.</li><li>품질 변경은 첫 보물방 보정이나 다음 판 금지 등 품질을 검사하는 규칙에도 영향을 줍니다.</li><li>아이템 카드의 효과·가격·품질·충전·배열 분류를 함께 선택해 변경 내용을 좁혀 볼 수 있습니다.</li></ul><div class="entry-links"><a class="related-link" href="./items.html">전체 아이템 변경사항 <span aria-hidden="true">↗</span></a></div>
+<!-- Agent reference material
+{
+  "entry": "item-configurations",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/items.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/items.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/items_metadata.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/items_metadata.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/itempools.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/itempools.xml"
+    }
+  ],
+  "references": [
+    {
+      "title": "아이템 설정 및 분류",
+      "url": "https://wofsauge.github.io/IsaacDocs/rep/xml/items.html"
+    },
+    {
+      "title": "배열 가중치와 감소",
+      "url": "https://wofsauge.github.io/IsaacDocs/rep/xml/itempools.html"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="unregistered-pool-items" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">아이템 정의가 없는 배열 항목</span><a class="permalink" href="#unregistered-pool-items" aria-label="아이템 정의가 없는 배열 항목 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>배열 설정에는 아이템 정의가 없는 번호도 포함되어 있습니다. 해당 번호에는 설명할 기본 효과와 원본 아이콘이 없어 아이템 카드에 추가하지 않았습니다. 아래 표는 설정에 남아 있는 전체 항목입니다.</p><table class="reward-table"><caption>아이템 정의가 없는 번호</caption><thead><tr><th scope="col">번호</th><th scope="col">배열</th><th scope="col">대결 설정</th></tr></thead><tbody><tr><th scope="row">43</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">61</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">235</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">587</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">613</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">620</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">630</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">648</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">662</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">666</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">718</th><td>보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">43</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">61</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">235</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">587</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">613</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">620</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">630</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">648</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">662</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">666</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr><tr><th scope="row">718</th><td>탐욕 보물방</td><td>가중치 1 · 감소 1 · 제외 기준 0.1</td></tr></tbody></table><p class="detail-caution">아이템 정의가 없는 설정을 실제로 획득할 수 있는 아이템으로 해석하지 않습니다.</p>
+<!-- Agent reference material
+{
+  "entry": "unregistered-pool-items",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/itempools.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/itempools.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/items.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/items.xml"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="pocket-item-settings" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">기존 카드·룬·알약 설정</span><a class="permalink" href="#pocket-item-settings" aria-label="기존 카드·룬·알약 설정 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>일부 기존 카드·룬·알약의 모방 충전량과 탐욕 모드 허용 설정이 변경됩니다. 기본 효과에 더해지는 변경입니다.</p><ul class="rule-list"><li>모방 충전량은 해당 소비 아이템을 모방하는 액티브의 충전 요구량 설정입니다. 일반 카드·알약 슬롯에서 사용하는 횟수를 뜻하지 않습니다.</li></ul><table class="reward-table"><caption>기존 소비 아이템 설정 변경</caption><thead><tr><th scope="col">대상</th><th scope="col">변경사항</th></tr></thead><tbody><tr><th scope="row">VI - 연인?</th><td>모방 충전량 4 → 12</td></tr><tr><th scope="row">XVI - 탑?</th><td>모방 충전량 4 → 3</td></tr><tr><th scope="row">유다의 영혼</th><td>모방 충전량 2 → 3</td></tr><tr><th scope="row">벨카노</th><td>모방 충전량 4 → 2</td></tr><tr><th scope="row">토혈</th><td>모방 충전량 4 → 6</td></tr><tr><th scope="row">건망증</th><td>탐욕 모드 제외 지정을 제거합니다.</td></tr><tr><th scope="row">???</th><td>탐욕 모드 제외 지정을 제거합니다.</td></tr></tbody></table>
+<!-- Agent reference material
+{
+  "entry": "pocket-item-settings",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/pocketitems.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/pocketitems.xml"
+    }
+  ]
+}
+-->
+</div></details></section><section class="guide-section" id="display-rules" aria-labelledby="heading-display-rules"><div class="section-heading"><span class="section-index">10</span><h2 id="heading-display-rules">표시·연출과 연동</h2><p>카드 이름 · 애니메이션 · 빠른 줍기</p></div><details class="entry" id="card-name-display" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">모드 카드의 한국어 표시</span><a class="permalink" href="#card-name-display" aria-label="모드 카드의 한국어 표시 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>한국어 설정이나 한국어 패치를 사용하면 모드 카드 8종의 획득 이름·설명을 한국어로 표시합니다. 포켓 슬롯의 한국어 이름 표시는 한국어 설정과 한국어 패치를 모두 사용하고, HUD가 보이는 1인 플레이에서 적용됩니다.</p><ul class="rule-list"><li>지도 버튼을 누르는 동안 포켓 슬롯에는 카드 이름 대신 설명이 표시됩니다.</li><li>야곱과 에사우에게는 포켓 슬롯의 한국어 이름·설명을 표시하지 않습니다. 획득 시 이름·설명을 표시하는 기능은 별도 조건을 적용합니다.</li><li>제작 가방으로 흡수한 카드는 일반 카드 획득 알림에서 제외하도록 처리합니다.</li><li>획득 이름은 카드의 EID 등록명으로 표시합니다. EID 등록 자료가 없으면 이 모드의 한국어 카드 표시를 사용할 수 없습니다.</li></ul>
+<!-- Agent reference material
+{
+  "entry": "card-name-display",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/translate.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/translate.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/cards/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/cards/init.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="pickup-integration" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">빠른 줍기 모드 연동</span><a class="permalink" href="#pickup-integration" aria-label="빠른 줍기 모드 연동 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>빠른 줍기 모드를 함께 사용하는 경우 자동 실행과 무제한 거리 설정을 사용하지 않습니다. 가까운 픽업을 직접 키 입력으로 선택하는 설정을 적용합니다.</p><ul class="rule-list"><li>허용 거리 설정은 80이며 무제한 거리 모드는 꺼집니다.</li><li>빠른 줍기 기능 자체는 활성화하며 자동 실행 모드는 비활성화합니다. 새 게임에서도 동일한 설정을 다시 적용합니다.</li></ul>
+<!-- Agent reference material
+{
+  "entry": "pickup-integration",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/init.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="presentation-changes" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">그래픽과 큰 연출의 변경</span><a class="permalink" href="#presentation-changes" aria-label="그래픽과 큰 연출의 변경 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>일부 층의 배경·문·적·보스·캐릭터·아이템·포탈·UI 그래픽을 교체합니다. 게임 시작 인트로와 아이템 사용 시 표시하는 큰 연출의 정의도 줄어듭니다.</p><ul class="rule-list"><li>배경과 문은 허쉬·다크룸·집 구간 등의 원본 그래픽을 교체합니다.</li><li>모드 캐릭터의 의상과 시작 화면, 금지 표시·이동 포탈·모드 카드에 전용 그래픽을 사용합니다.</li><li>게임 시작 인트로 컷신의 정의가 제거됩니다. 다른 엔딩 컷신 정의는 기본 게임과 동일합니다.</li><li>화면 중앙에 나타나는 큰 연출 정의는 수면·수면 악몽·슈퍼 거지의 3종만 유지합니다.</li></ul>
+<!-- Agent reference material
+{
+  "entry": "presentation-changes",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/giantbook.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/giantbook.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/cutscenes.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/cutscenes.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "content/entities2.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/content/entities2.xml"
+    }
+  ]
+}
+-->
+</div></details></section><section class="guide-section" id="entity-balance" aria-labelledby="heading-entity-balance"><div class="section-heading"><span class="section-index">11</span><h2 id="heading-entity-balance">보스·적·패밀리어 밸런스</h2><p>체력 · 층 비례 · 피해 보정 · 충돌 분류</p></div><details class="entry" id="major-boss-stats" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">주요 보스의 체력과 피해 보정 설정</span><a class="permalink" href="#major-boss-stats" aria-label="주요 보스의 체력과 피해 보정 설정 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>주요 보스와 전투 부속의 기본 체력 및 피해 보정 강도가 변경됩니다. 아래 수치는 엔티티의 기본 설정이며, 전투 중 실제 체력에는 별도의 아이템 효과나 처리도 적용됩니다.</p><ul class="rule-list"><li>체력 설정은 기준 체력 + 층 번호 × 층당 증가량으로 계산합니다. 층당 증가량이 0인 항목은 기준 체력만 표시합니다.</li><li>피해 보정 강도는 설정값입니다. 숫자를 피해 감소 백분율로 해석하지 않습니다.</li><li>허쉬 패밀리어를 소지하면 Hush의 생성 시 현재 체력에서 최대 체력의 15%를 차감합니다. 꼬마 델리리움을 소지하면 Delirium에도 같은 처리가 적용됩니다.</li></ul><table class="reward-table"><caption>주요 보스의 체력과 피해 보정 설정</caption><thead><tr><th scope="col">보스·부속</th><th scope="col">기존 체력 설정</th><th scope="col">대결 체력 설정</th><th scope="col">피해 보정 강도</th></tr></thead><tbody><tr><th scope="row">Mom</th><td>645</td><td>1500</td><td>변경 없음</td></tr><tr><th scope="row">Satan</th><td>600</td><td>1200</td><td>12 → 80</td></tr><tr><th scope="row">Satan Stomp</th><td>600</td><td>1200</td><td>12 → 80</td></tr><tr><th scope="row">Isaac</th><td>2000</td><td>4000</td><td>20 → 80</td></tr><tr><th scope="row">Bluebaby</th><td>2000</td><td>4000</td><td>25 → 80</td></tr><tr><th scope="row">??? (Alt)</th><td>1000</td><td>4000</td><td>변경 없음</td></tr><tr><th scope="row">Mama Gurdy Left Hand</th><td>1</td><td>100000</td><td>변경 없음</td></tr><tr><th scope="row">Mama Gurdy Right Hand</th><td>1</td><td>100000</td><td>변경 없음</td></tr><tr><th scope="row">The Lamb</th><td>2000</td><td>4000</td><td>25 → 80</td></tr><tr><th scope="row">Lamb Body</th><td>600</td><td>1200</td><td>10 → 80</td></tr><tr><th scope="row">Mega Satan</th><td>3000</td><td>15000</td><td>90 → 180</td></tr><tr><th scope="row">Mega Satan&#x27;s Right Hand</th><td>600</td><td>1200</td><td>변경 없음</td></tr><tr><th scope="row">Mega Satan&#x27;s Left Hand</th><td>600</td><td>1200</td><td>변경 없음</td></tr><tr><th scope="row">Mega Satan 2</th><td>2000</td><td>15000</td><td>90 → 140</td></tr><tr><th scope="row">Mega Satan 2&#x27;s Right Hand</th><td>600</td><td>1200</td><td>변경 없음</td></tr><tr><th scope="row">Mega Satan 2&#x27;s Left Hand</th><td>600</td><td>1200</td><td>변경 없음</td></tr><tr><th scope="row">Ultra Greed</th><td>3500</td><td>10000</td><td>미지정 → 180</td></tr><tr><th scope="row">Ultra Greedier</th><td>2500</td><td>12000</td><td>미지정 → 180</td></tr><tr><th scope="row">Hush</th><td>6666</td><td>15000</td><td>140 → 100</td></tr><tr><th scope="row">Delirium</th><td>10000</td><td>20000</td><td>변경 없음</td></tr><tr><th scope="row">Mother</th><td>2222</td><td>12000</td><td>90 → 140</td></tr><tr><th scope="row">Mother 2</th><td>2000</td><td>12000</td><td>90 → 140</td></tr><tr><th scope="row">Dogma</th><td>1200</td><td>10000</td><td>50 → 140</td></tr><tr><th scope="row">Dogma&#x27;s TV</th><td>1200</td><td>10000</td><td>30 → 140</td></tr><tr><th scope="row">Dogma Angel</th><td>1200</td><td>10000</td><td>변경 없음</td></tr><tr><th scope="row">Ultra Famine</th><td>2000</td><td>7500</td><td>변경 없음</td></tr><tr><th scope="row">Ultra Pestilence</th><td>1800</td><td>7500</td><td>변경 없음</td></tr><tr><th scope="row">Ultra War</th><td>2000</td><td>7500</td><td>변경 없음</td></tr><tr><th scope="row">Ultra Death</th><td>2000</td><td>7500</td><td>변경 없음</td></tr><tr><th scope="row">The Beast</th><td>10000</td><td>40000</td><td>60 → 140</td></tr></tbody></table>
+<!-- Agent reference material
+{
+  "entry": "major-boss-stats",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/entities2.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/entities2.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/collectibles/init.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/collectibles/init.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="scaled-boss-stats" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">일반 보스의 층 비례 체력</span><a class="permalink" href="#scaled-boss-stats" aria-label="일반 보스의 층 비례 체력 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>일반 보스 상당수의 체력이 고정값에서 층 번호에 비례하는 설정으로 변경됩니다. 기준값이 낮아졌더라도 뒤쪽 층에서 등장하면 체력이 증가합니다.</p><ul class="rule-list"><li>층 번호는 게임의 체력 계산에 사용되는 값입니다. 아래 식은 기준 체력과 층당 증가량의 변경을 표시하며, 기준 체력을 최종 체력으로 뜻하지 않습니다.</li></ul><table class="reward-table"><caption>일반 보스의 층 비례 체력</caption><thead><tr><th scope="col">보스·부속</th><th scope="col">기존 체력 설정</th><th scope="col">대결 체력 설정</th><th scope="col">피해 보정 강도</th></tr></thead><tbody><tr><th scope="row">Larry Jr</th><td>22</td><td>11 + 11 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Hollow</th><td>26</td><td>6.5 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Monstro</th><td>250</td><td>125 + 125 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Chub</th><td>350</td><td>87.5 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Chad</th><td>350</td><td>87.5 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Carrion Queen</th><td>350</td><td>87.5 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Gurdy</th><td>595</td><td>148.75 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Monstro Ii</th><td>632.5</td><td>316 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Gish</th><td>632.5</td><td>316 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Pin</th><td>100</td><td>50 + 50 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Frail</th><td>200</td><td>1 + 50 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Famine</th><td>240</td><td>120 + 120 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Pestilence</th><td>280</td><td>70 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">War</th><td>500</td><td>250 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">War without horse</th><td>500</td><td>250 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Duke Of Flies</th><td>110</td><td>110 + 55 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Husk</th><td>150</td><td>37.5 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Peep</th><td>450</td><td>112.5 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Loki</th><td>350</td><td>175 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Fistula</th><td>60</td><td>15 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Fistula Medium</th><td>15</td><td>3.75 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Fistula Small</th><td>8</td><td>2 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Moms Heart</th><td>950</td><td>120 + 450 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">It Lives</th><td>950</td><td>120 + 450 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Gemini</th><td>140</td><td>70 + 70 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Steven</th><td>140</td><td>70 + 70 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Blighted Ovum</th><td>140</td><td>70 + 70 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Gemini Baby</th><td>140</td><td>70 + 70 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Steven Baby</th><td>140</td><td>70 + 70 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Blighted Ovum Baby</th><td>140</td><td>70 + 70 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Fallen</th><td>60 + 45 × 층 번호</td><td>200 + 45 × 층 번호</td><td>미지정 → 40</td></tr><tr><th scope="row">Krampus</th><td>60 + 45 × 층 번호</td><td>75 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Gurdy Jr</th><td>250</td><td>62.5 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Widow</th><td>130</td><td>65 + 65 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Wretched</th><td>215</td><td>53.75 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Gurgling Boss</th><td>60</td><td>30 + 30 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Turdling</th><td>50</td><td>25 + 25 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Haunt</th><td>200</td><td>100 + 100 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Dingle</th><td>300</td><td>150 + 150 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Dangle</th><td>375</td><td>187 + 187 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Mega Maw</th><td>350</td><td>87.5 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Gate</th><td>500</td><td>250 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Mega Fatty</th><td>600</td><td>150 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Cage</th><td>800</td><td>400 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Dark One</th><td>400</td><td>100 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Polycephalus</th><td>200</td><td>50 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Stain</th><td>400</td><td>100 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Brownie</th><td>400</td><td>200 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Forsaken</th><td>220</td><td>55 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Little Horn</th><td>200</td><td>100 + 100 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Rag Man</th><td>200</td><td>100 + 100 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Rag Mega</th><td>120</td><td>30 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Sisters Vis</th><td>350</td><td>175 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Big Horn</th><td>480</td><td>120 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Tuff Twin</th><td>35</td><td>8.75 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Shell</th><td>35</td><td>8.75 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Wormwood</th><td>200</td><td>100 + 100 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Pile</th><td>580</td><td>145 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Reap Creep</th><td>690</td><td>172.5 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Lil Blub</th><td>200</td><td>100 + 100 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Rainmaker</th><td>240</td><td>120 + 120 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Visage</th><td>620</td><td>310 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Visage Mask</th><td>100</td><td>50 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Siren</th><td>666</td><td>333 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">The Heretic</th><td>789</td><td>395 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Hornfel</th><td>240</td><td>60 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Baby Plum</th><td>234</td><td>117 + 117 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Min Min</th><td>280</td><td>140 + 140 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Clog</th><td>420</td><td>210 + 210 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Singe</th><td>444</td><td>111 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Bumbino</th><td>385</td><td>96.25 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Colostomia</th><td>380</td><td>190 + 190 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Turdlet</th><td>190</td><td>95 + 95 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Horny Boys</th><td>707</td><td>350 × 층 번호</td><td>변경 없음</td></tr><tr><th scope="row">Clutch</th><td>500</td><td>125 × 층 번호</td><td>변경 없음</td></tr></tbody></table>
+<!-- Agent reference material
+{
+  "entry": "scaled-boss-stats",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/entities2.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/entities2.xml"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="enemy-entity-stats" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">일반 적과 전투 부속의 체력</span><a class="permalink" href="#enemy-entity-stats" aria-label="일반 적과 전투 부속의 체력 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>일반 적, 보스가 소환하는 부속, 낙하 장애물의 체력과 접촉 피해 설정도 조정됩니다.</p><table class="reward-table"><caption>일반 적과 전투 부속의 체력</caption><thead><tr><th scope="col">적·부속</th><th scope="col">기존 체력 설정</th><th scope="col">대결 체력 설정</th><th scope="col">그 밖의 수치 변경</th></tr></thead><tbody><tr><th scope="row">Wizoob</th><td>20 + 3 × 층 번호</td><td>20 + 4 × 층 번호</td><td>없음</td></tr><tr><th scope="row">Red Ghost</th><td>20 + 3 × 층 번호</td><td>20 + 4 × 층 번호</td><td>없음</td></tr><tr><th scope="row">Flesh Deaths Head</th><td>50</td><td>30</td><td>없음</td></tr><tr><th scope="row">Ultra Greed Coin (Spinner)</th><td>50</td><td>1500</td><td>없음</td></tr><tr><th scope="row">Ultra Greed Coin (Key)</th><td>60</td><td>1500</td><td>접촉 피해 0 → 1</td></tr><tr><th scope="row">Ultra Greed Coin (Bomb)</th><td>50</td><td>1500</td><td>접촉 피해 0 → 1</td></tr><tr><th scope="row">Ultra Greed Coin (Heart)</th><td>40</td><td>1500</td><td>접촉 피해 0 → 1</td></tr><tr><th scope="row">Greed Gaper</th><td>9</td><td>500</td><td>없음</td></tr><tr><th scope="row">Dark Ball</th><td>10</td><td>5</td><td>없음</td></tr><tr><th scope="row">Rag Man&#x27;s Head</th><td>25</td><td>15</td><td>없음</td></tr><tr><th scope="row">핏덩이 강아지 2단계</th><td>20</td><td>1</td><td>피해 보정 강도 90 → 0</td></tr><tr><th scope="row">핏덩이 강아지 3단계</th><td>50</td><td>1</td><td>피해 보정 강도 90 → 0</td></tr><tr><th scope="row">Dead Isaac</th><td>40</td><td>1000</td><td>없음</td></tr><tr><th scope="row">Stalactite</th><td>100</td><td>10000</td><td>없음</td></tr></tbody></table>
+<!-- Agent reference material
+{
+  "entry": "enemy-entity-stats",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/entities2.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/entities2.xml"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="familiar-entity-stats" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">패밀리어의 접촉 피해와 동작</span><a class="permalink" href="#familiar-entity-stats" aria-label="패밀리어의 접촉 피해와 동작 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>일부 패밀리어의 접촉 피해가 높아지며 악마 거지의 마찰, 일부 분류와 파괴 시 잔해도 변경됩니다.</p><ul class="rule-list"><li>접촉 피해는 패밀리어의 기본 설정값입니다. 별도의 피해 배율 효과를 합산한 최종 피해 수치는 아닙니다.</li></ul><table class="reward-table"><caption>패밀리어의 접촉 피해와 동작</caption><thead><tr><th scope="col">패밀리어</th><th scope="col">변경 내용</th></tr></thead><tbody><tr><th scope="row">죽은 새</th><td>접촉 피해 2 → 3.3</td></tr><tr><th scope="row">거머리</th><td>접촉 피해 1.5 → 3</td></tr><tr><th scope="row">꼬마 유령</th><td>접촉 피해 2 → 4</td></tr><tr><th scope="row">악마 거지</th><td>마찰 1 → 1.1</td></tr><tr><th scope="row">샌드백</th><td>파괴될 때 생성하는 잔해 수를 5개에서 0개로 줄이고 피·뼈·눈·내장 잔해를 비활성화합니다.</td></tr><tr><th scope="row">???의 하나뿐인 친구</th><td>파리 분류 태그를 제거합니다. 희생 가능 분류는 유지합니다.</td></tr><tr><th scope="row">커다란 처비</th><td>접촉 피해 2.7 → 5.4</td></tr></tbody></table>
+<!-- Agent reference material
+{
+  "entry": "familiar-entity-stats",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/entities2.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/entities2.xml"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="entity-classification-collision" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">챔피언·분류·충돌 설정</span><a class="permalink" href="#entity-classification-collision" aria-label="챔피언·분류·충돌 설정 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>챔피언 변형을 허용하는 대상과 리롤·섬망 변신에 관한 분류가 조정됩니다. 적 탄환의 충돌 반경과 일부 적의 그림자 크기도 변경됩니다.</p><ul class="rule-list"><li>챔피언 허용 여부는 해당 엔티티의 설정입니다. 실제 출현 확률은 별도 챔피언 생성 처리와 함께 적용됩니다.</li><li>퇴화·리롤 방지 분류를 제거한 것은 해당 분류 설정을 없앤다는 뜻입니다. 다른 무적·변환 제한까지 해제된다는 뜻으로 설명하지 않습니다.</li></ul><table class="reward-table"><caption>챔피언·분류·충돌 설정</caption><thead><tr><th scope="col">대상</th><th scope="col">변경 내용</th></tr></thead><tbody><tr><th scope="row">Tear Projectile</th><td>충돌 반경 5 → 8 · 그림자 크기 10 → 8</td></tr><tr><th scope="row">Larry Jr</th><td>섬망 변신 후보에서 제외하는 분류 추가</td></tr><tr><th scope="row">The Hollow</th><td>섬망 변신 후보에서 제외하는 분류 추가</td></tr><tr><th scope="row">Host</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">Mom</th><td>섬망 변신 후보에서 제외하는 분류 추가</td></tr><tr><th scope="row">Leech</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">Kamikaze Leech</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">Holy Leech</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">Moms Heart</th><td>챔피언 변형 허용 설정: 비허용 → 허용</td></tr><tr><th scope="row">It Lives</th><td>챔피언 변형 허용 설정: 비허용 → 허용</td></tr><tr><th scope="row">Krampus</th><td>섬망 변신 후보에서 제외하는 분류 추가</td></tr><tr><th scope="row">Keeper</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">Eternal Fly</th><td>퇴화·리롤 방지 분류 제거</td></tr><tr><th scope="row">Mobile Host</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">Cod Worm</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">The Adversary</th><td>섬망 변신 후보에서 제외하는 분류 추가</td></tr><tr><th scope="row">Ultra Greed Coin (Spinner)</th><td>챔피언 변형 허용 설정: 비허용 → 허용 · 그림자 크기 28 → 14</td></tr><tr><th scope="row">Ultra Greed Coin (Key)</th><td>챔피언 변형 허용 설정: 비허용 → 허용 · 그림자 크기 28 → 14</td></tr><tr><th scope="row">Ultra Greed Coin (Bomb)</th><td>챔피언 변형 허용 설정: 비허용 → 허용 · 그림자 크기 28 → 14</td></tr><tr><th scope="row">Ultra Greed Coin (Heart)</th><td>챔피언 변형 허용 설정: 비허용 → 허용 · 그림자 크기 28 → 14</td></tr><tr><th scope="row">Blue Boil</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">Greed Gaper</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">Ultra Greed</th><td>섬망 변신 후보에서 제외하는 분류 추가</td></tr><tr><th scope="row">Ultra Greedier</th><td>섬망 변신 후보에서 제외하는 분류 추가</td></tr><tr><th scope="row">Purple Ball</th><td>퇴화·리롤 방지 분류 제거</td></tr><tr><th scope="row">Rag Mega&#x27;s Rebirth Pillar</th><td>퇴화·리롤 방지 분류 제거</td></tr><tr><th scope="row">Cursed Globin</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">Hard Host</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">Holy Eye</th><td>챔피언 변형 허용 설정: 허용 → 비허용</td></tr><tr><th scope="row">핏덩이 강아지 2단계</th><td>퇴화·리롤 방지 분류 제거</td></tr><tr><th scope="row">핏덩이 강아지 3단계</th><td>퇴화·리롤 방지 분류 제거</td></tr><tr><th scope="row">Ultra War Bomb</th><td>퇴화·리롤 방지 분류 제거</td></tr><tr><th scope="row">Ultra Death Head</th><td>퇴화·리롤 방지 분류 제거</td></tr></tbody></table>
+<!-- Agent reference material
+{
+  "entry": "entity-classification-collision",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/entities2.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/entities2.xml"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="entity-devolve-targets" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">퇴화 대상과 부속 설정</span><a class="permalink" href="#entity-devolve-targets" aria-label="퇴화 대상과 부속 설정 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>엔티티의 최상위 수치 외에 하위 퇴화 대상 설정도 변경됩니다. 이 목록은 변경된 대상 설정을 설명합니다.</p><ul class="rule-list"><li>아래 항목에서 삭제된 퇴화 대상 이후에 게임이 선택하는 대체 동작은 이 설정 차이만으로 단정하지 않습니다.</li><li>사운드 사전 로딩 설정에는 기본 게임과의 의미 차이가 없습니다. 파괴 잔해 설정 변경은 패밀리어 항목의 샌드백에 포함했습니다.</li></ul><table class="reward-table"><caption>퇴화 대상과 부속 설정</caption><thead><tr><th scope="col">대상</th><th scope="col">변경 내용</th></tr></thead><tbody><tr><th scope="row">Wall Creep</th><td>퇴화 대상 설정을 Big Spider에서 Blind Creep으로 변경합니다. 선택 가중치는 1로 유지합니다.</td></tr><tr><th scope="row">Ultra Greed Coin (Spinner)</th><td>동전 픽업으로 지정된 퇴화 대상 항목을 삭제합니다.</td></tr><tr><th scope="row">Ultra Greed Coin (Key)</th><td>동전 픽업으로 지정된 퇴화 대상 항목을 삭제합니다.</td></tr><tr><th scope="row">Ultra Greed Coin (Bomb)</th><td>동전 픽업으로 지정된 퇴화 대상 항목을 삭제합니다.</td></tr><tr><th scope="row">Ultra Greed Coin (Heart)</th><td>동전 픽업으로 지정된 퇴화 대상 항목을 삭제합니다.</td></tr></tbody></table>
+<!-- Agent reference material
+{
+  "entry": "entity-devolve-targets",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/entities2.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/entities2.xml"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="entity-custom-registration" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">추가 오브젝트와 효과 등록</span><a class="permalink" href="#entity-custom-registration" aria-label="추가 오브젝트와 효과 등록 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>기본 엔티티의 조정과 별개로 거지·재입고 기계·이동 포탈 등 전용 오브젝트 6종을 등록합니다. 표시와 작동 내용은 각 오브젝트의 별도 설명에서 확인할 수 있습니다.</p><table class="reward-table"><caption>추가 오브젝트와 효과 등록</caption><thead><tr><th scope="col">등록 대상</th><th scope="col">역할</th></tr></thead><tbody><tr><th scope="row">Ban Beggar</th><td>대결에서 사용하는 전용 거지 등록입니다. 금지 아이템 선택 화면과 연결됩니다.</td></tr><tr><th scope="row">Rune Shard</th><td>카드 형태의 전용 애니메이션을 등록합니다. XML 이름만으로 일반 룬 파편의 기능을 바꾸는 것으로 설명하지 않습니다.</td></tr><tr><th scope="row">Shop Restock Machine</th><td>대결용 전용 재입고 기계를 등록합니다.</td></tr><tr><th scope="row">Backdrop</th><td>대결용 배경 효과를 등록합니다.</td></tr><tr><th scope="row">ShortcutPortal</th><td>방 사이 이동에 사용하는 전용 포탈 효과를 등록합니다.</td></tr><tr><th scope="row">Timer</th><td>전용 타이머 엔티티를 등록합니다. 보스 분류·기준 체력 300으로 등록되어 있으며, 이 등록만으로 화면 표시나 사용 여부를 단정하지 않습니다.</td></tr></tbody></table>
+<!-- Agent reference material
+{
+  "entry": "entity-custom-registration",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "content/entities2.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/content/entities2.xml"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/entities/ban-beggar.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/entities/ban-beggar.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/entities/restock-machine.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/entities/restock-machine.lua"
+    },
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "astro-fight/entities/shortcut-portal.lua",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/astro-fight/entities/shortcut-portal.lua"
+    }
+  ]
+}
+-->
+</div></details><details class="entry" id="visual-resource-overrides" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">기본 외형 리소스 교체</span><a class="permalink" href="#visual-resource-overrides" aria-label="기본 외형 리소스 교체 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>보스·적·문·배경·화면 요소의 외형 리소스도 포함되어 있습니다. 같은 경로에 원본 파일이 있는 경우 실제 파일 내용이 바뀐 리소스를 아래에 집계했습니다. 외형 파일을 교체한 사실 자체는 체력·공격 패턴의 변경을 뜻하지 않습니다.</p><ul class="rule-list"><li>원본과 동일한 경로의 파일 75종을 변경합니다. 이 밖에 같은 경로의 원본이 없는 PNG 270종, 애니메이션 50종과 편집·보관용 파일 2종도 포함합니다.</li></ul><table class="reward-table"><caption>기본 외형 리소스 교체</caption><thead><tr><th scope="col">리소스 묶음</th><th scope="col">변경 파일 수</th><th scope="col">구분</th></tr></thead><tbody><tr><th scope="row">backdrop</th><td>27</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">backdrop/hell</th><td>9</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">bosses/afterbirth</th><td>2</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">bosses/classic</th><td>3</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">bosses/rebirth</th><td>5</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">characters/costumes</th><td>2</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">familiar</th><td>1</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">grid</th><td>6</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">items/pick ups</th><td>2</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">monsters/afterbirth</th><td>11</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">ui</th><td>1</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">ui/boss</th><td>4</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr><tr><th scope="row">ui/main menu</th><td>2</td><td>기본 게임의 같은 경로 리소스를 변경합니다.</td></tr></tbody></table>
+<!-- Agent reference material
+{
+  "entry": "visual-resource-overrides",
+  "sources": [
+    {
+      "repository": "Astrobirth",
+      "commit": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+      "path": "resources/entities2.xml",
+      "url": "https://github.com/TeamHY/Astrobirth/blob/4c02a2072ac3a304072a5c7424efe06792f700d4/resources/entities2.xml"
+    }
+  ]
+}
+-->
+</div></details></section></section>
+<aside class="catalog-end"><p>설명 기준 Astrobirth v1.385 · 확인 2026-10-03</p><a href="./index.html">입문 Q&amp;A로 돌아가기 ↗</a></aside>
+  </main>
+  <!-- Agent reference: reviewed commit https://github.com/TeamHY/Astrobirth/commit/4c02a2072ac3a304072a5c7424efe06792f700d4 -->
+  <footer><span>Astrobirth · 시청자 가이드</span><span>설명 확인 2026-10-03 · <a href="https://github.com/TeamHY/Astrobirth/issues" target="_blank" rel="noopener noreferrer">내용 오류 제보</a></span></footer>
+</div>
+</body>
+</html>
