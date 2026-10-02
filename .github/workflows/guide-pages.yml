@@ -2,10 +2,11 @@ name: Publish viewer guide
 
 on:
   push:
-    branches: [main]
+    branches: [gh-pages]
     paths:
       - 'docs/**'
       - 'scripts/build-guide.py'
+      - 'scripts/guide-layout.html'
       - '.github/workflows/guide-pages.yml'
   workflow_dispatch:
 

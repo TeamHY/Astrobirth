@@ -1,0 +1,1886 @@
+{
+  "intro": "기존 아이템에 추가되거나 조정된 대결 모드 효과를 설명합니다. 기본 효과는 생략하며 변경 내용과 발동 조건을 제공합니다.",
+  "entries": [
+    {
+      "id": "guppy-head",
+      "title": "구피의 머리",
+      "name": "Guppy's Head",
+      "number": 145,
+      "kind": "active",
+      "scene": "미클리어 방에 들어가면 자동 사용",
+      "body": "클리어하지 않은 방에 들어갈 때 필요한 차지가 있으면 구피의 머리가 자동으로 사용됩니다. 주 슬롯과 보조 슬롯 모두 확인하며, 사용한 만큼 차지가 소비됩니다.",
+      "tag": "자동 발동",
+      "keywords": "GUPPYS HEAD 145",
+      "source": "astro-fight/collectibles/auto-active.lua",
+      "image": "assets/items/guppy-head.png",
+      "watch": "버튼 입력 없이 파리가 생성될 수 있습니다. 자동 사용에도 차지가 소비됩니다."
+    },
+    {
+      "id": "eternal-d6",
+      "title": "이터널 주사위",
+      "name": "Eternal D6",
+      "number": 609,
+      "kind": "active",
+      "scene": "일반 로스트는 스테이지당 한 번",
+      "body": "일반 로스트가 사용하는 이터널 주사위는 같은 스테이지·스테이지 종류 조합에서 한 번만 사용할 수 있습니다. 차지가 다시 차도 같은 구간에서 두 번째 사용은 막힙니다.",
+      "tag": "사용 제한",
+      "keywords": "ETERNAL D6 609",
+      "source": "astro-fight/collectibles/vanillas/eternal-d6.lua",
+      "image": "assets/items/eternal-d6.png",
+      "rules": [
+        "이 제한은 일반 로스트에 적용됩니다.",
+        "날 잊어 주세요를 사용하면 기록이 초기화됩니다."
+      ],
+      "watch": "리롤 사용 대상을 결정할 때 스테이지별 사용 제한이 적용됩니다.",
+      "relatedLinks": [
+        {
+          "href": "./players.html#thelost",
+          "label": "로스트 변경사항"
+        }
+      ]
+    },
+    {
+      "id": "vanishing-twin",
+      "title": "사라진 쌍둥이",
+      "name": "Vanishing Twin",
+      "number": 697,
+      "kind": "passive",
+      "scene": "일부 미클리어 보스방 입장 시 10초 무적",
+      "body": "적용 대상인 미클리어 보스방에 들어가면 10초 동안 무적이 됩니다. 여러 개를 가지고 있으면 지속시간이 늘어납니다.",
+      "tag": "추가 효과",
+      "keywords": "VANISHING TWIN 697",
+      "source": "astro-fight/collectibles/vanillas/vanishing-twin.lua",
+      "image": "assets/items/vanishing-twin.png",
+      "rules": [
+        "엄마 발, 허쉬 구간, 성당·저승, 체스트·다크룸, 보이드, 마더, 비스트전 등에는 적용되지 않습니다."
+      ],
+      "watch": "무적 효과의 적용 여부는 보스방 조건에 따라 달라집니다. 최종 보스에서는 적용 제외 조건을 확인할 수 있습니다."
+    },
+    {
+      "id": "the-wiz",
+      "title": "법사",
+      "name": "The Wiz",
+      "number": 358,
+      "kind": "passive",
+      "scene": "방 입장 시 The Magician 자동 발동",
+      "body": "방에 들어갈 때 The Magician 카드 효과가 발동합니다. 일반 플레이에서 기억하는 대각선 발사에 더해 유도 효과를 얻는 변경입니다.",
+      "tag": "추가 효과",
+      "keywords": "THE WIZ 358",
+      "source": "astro-fight/collectibles/vanillas/the-wiz.lua",
+      "image": "assets/items/the-wiz.png",
+      "watch": "추가된 유도 효과에 따라 일반 플레이와 아이템의 평가가 달라질 수 있습니다."
+    },
+    {
+      "id": "technology",
+      "title": "기계장치",
+      "name": "Technology",
+      "number": 68,
+      "kind": "passive",
+      "scene": "레이저에 연사 보너스 +1",
+      "body": "기계장치를 가지고 있으면 연사에 +1 보너스가 적용되고 장애물을 관통하는 눈물 속성이 추가됩니다. 같은 아이템을 여러 개 획득해도 이 연사 보너스는 중첩되지 않습니다.",
+      "tag": "능력치 보정",
+      "keywords": "TECHNOLOGY 68",
+      "source": "astro-fight/collectibles/vanillas/technology.lua",
+      "image": "assets/items/technology.png",
+      "watch": "추가 연사 보정에 따라 실제 화력은 일반 플레이와 다를 수 있습니다."
+    },
+    {
+      "id": "blood-oath",
+      "title": "피의 맹세",
+      "name": "Blood Oath",
+      "number": 569,
+      "kind": "passive",
+      "scene": "현재 체력에 따른 추가 공격력 보정",
+      "body": "1개 소지 시 공격력 +1.8에서 현재 빨간 하트·소울하트 한 칸당 0.18을 뺀 추가 보정이 적용됩니다. 새 층에서 빨간 하트 1개도 소환합니다.",
+      "tag": "능력치 보정",
+      "keywords": "BLOOD OATH 569",
+      "source": "astro-fight/collectibles/vanillas/blood-oath.lua",
+      "image": "assets/items/blood-oath.png",
+      "watch": "추가 공격력 보정은 현재 체력에 따라 달라집니다. 이 설명은 모드가 추가한 효과를 다루며 기본 아이템 효과는 생략합니다.",
+      "rules": [
+        "여러 개 소지 시 추가 보정은 1.8의 소지 개수 제곱으로 계산됩니다."
+      ]
+    },
+    {
+      "id": "king-baby",
+      "title": "아기 왕",
+      "name": "King Baby",
+      "number": 472,
+      "kind": "passive",
+      "scene": "첫 획득 시 패밀리어 보상",
+      "body": "릴리스의 영혼를 소환하고 Baby Bender와 잊혀진 자장가를 흡수 획득합니다.",
+      "tag": "추가 효과",
+      "keywords": "KING BABY 472",
+      "source": "astro-fight/collectibles/vanillas/king-baby.lua",
+      "image": "assets/items/king-baby.png"
+    },
+    {
+      "id": "depression",
+      "title": "우울증",
+      "name": "Depression",
+      "number": 469,
+      "kind": "passive",
+      "scene": "주기적으로 하늘의 균열 자동 사용",
+      "body": "15초마다 하늘을 가르다 효과가 발동합니다. 소지 개수가 늘면 발동 간격이 그 개수로 나누어집니다.",
+      "tag": "추가 효과",
+      "keywords": "DEPRESSION 469",
+      "source": "astro-fight/collectibles/vanillas/depression.lua",
+      "image": "assets/items/depression.png"
+    },
+    {
+      "id": "the-black-bean",
+      "title": "검은 콩",
+      "name": "The Black Bean",
+      "number": 180,
+      "kind": "passive",
+      "scene": "방에서 첫 적 처치 시 가짜 피격",
+      "body": "방마다 첫 적 처치 시 무딘 면도칼 효과가 한 번 발동합니다. 벽난로는 대상에서 제외됩니다.",
+      "tag": "추가 효과",
+      "keywords": "THE BLACK BEAN 180",
+      "source": "astro-fight/collectibles/vanillas/the-black-bean.lua",
+      "image": "assets/items/the-black-bean.png"
+    },
+    {
+      "id": "broken-watch",
+      "title": "부서진 시계",
+      "name": "Broken Watch",
+      "number": 337,
+      "kind": "passive",
+      "scene": "이동속도 +0.3",
+      "body": "기본 효과에 이동속도 +0.3 보정이 추가됩니다.",
+      "tag": "추가 효과",
+      "keywords": "BROKEN WATCH 337",
+      "source": "astro-fight/collectibles/vanillas/broken-watch.lua",
+      "image": "assets/items/broken-watch.png"
+    },
+    {
+      "id": "dads-lost-coin",
+      "title": "아빠의 잃어버린 동전",
+      "name": "Dad's Lost Coin",
+      "number": 455,
+      "kind": "passive",
+      "scene": "행운 동전 0~3개 추가",
+      "body": "처음 획득할 때 행운 동전을 무작위로 0~3개 소환합니다.",
+      "tag": "추가 효과",
+      "keywords": "DADS LOST COIN 455",
+      "source": "astro-fight/collectibles/vanillas/dads-lost-coin.lua",
+      "image": "assets/items/dads-lost-coin.png"
+    },
+    {
+      "id": "marbles",
+      "title": "구슬",
+      "name": "Marbles",
+      "number": 538,
+      "kind": "passive",
+      "scene": "첫 획득 시 꿀꺽! 알약",
+      "body": "처음 획득할 때 장신구 흡수용 꿀꺽! 알약을 소환합니다.",
+      "tag": "추가 효과",
+      "keywords": "MARBLES 538",
+      "source": "astro-fight/collectibles/vanillas/marbles.lua",
+      "image": "assets/items/marbles.png"
+    },
+    {
+      "id": "ibs",
+      "title": "IBS",
+      "name": "IBS",
+      "number": 725,
+      "kind": "passive",
+      "scene": "10초마다 공격력·연사 장판",
+      "body": "공격력과 연사를 높이는 장판을 10초마다 생성합니다. 중복 획득할 때마다 간격이 절반으로 줄어듭니다. 호스트 모자 효과도 함께 부여됩니다.",
+      "tag": "추가 효과",
+      "keywords": "IBS 725",
+      "source": "astro-fight/collectibles/vanillas/ibs.lua",
+      "image": "assets/items/ibs.png",
+      "extraSources": [
+        "astro-fight/collectibles/vanillas/host-hat.lua"
+      ]
+    },
+    {
+      "id": "luna",
+      "title": "달",
+      "name": "Luna",
+      "number": 589,
+      "kind": "passive",
+      "scene": "첫 획득 시 조각난 카드",
+      "body": "처음 획득할 때 조각난 카드 장신구를 소환합니다.",
+      "tag": "추가 효과",
+      "keywords": "LUNA 589",
+      "source": "astro-fight/collectibles/vanillas/luna.lua",
+      "image": "assets/items/luna.png"
+    },
+    {
+      "id": "magic-8-ball",
+      "title": "마법의 8번 공",
+      "name": "Magic 8 Ball",
+      "number": 194,
+      "kind": "passive",
+      "scene": "알약 식별 · 천체관 위치 표시",
+      "body": "소지 중 생성되는 알약의 효과를 식별하고, 지도에 천체관 위치를 표시합니다.",
+      "tag": "추가 효과",
+      "keywords": "MAGIC 8 BALL 194",
+      "source": "astro-fight/collectibles/vanillas/magic-8-ball.lua",
+      "image": "assets/items/magic-8-ball.png",
+      "extraSources": [
+        "astro-fight/stage.lua"
+      ]
+    },
+    {
+      "id": "isaacs-heart",
+      "title": "아이작의 심장",
+      "name": "Isaac's Heart",
+      "number": 276,
+      "kind": "passive",
+      "scene": "피격 패널티 대신 능력치 감소",
+      "body": "일반 피격 패널티를 막는 대신 이동속도·연사·공격력·사거리·탄속·행운 감소가 누적됩니다.",
+      "tag": "추가 효과",
+      "keywords": "ISAACS HEART 276",
+      "source": "astro-fight/collectibles/vanillas/isaacs-heart.lua",
+      "image": "assets/items/isaacs-heart.png"
+    },
+    {
+      "id": "aquarius",
+      "title": "물병자리",
+      "name": "Aquarius",
+      "number": 308,
+      "kind": "passive",
+      "scene": "공격당한 적에서 눈물 분출",
+      "body": "눈물·레이저·칼로 공격한 적에서 눈물이 뿜어져 나옵니다. 초 물병자리가 있으면 이 처리는 제외됩니다.",
+      "tag": "추가 효과",
+      "keywords": "AQUARIUS 308",
+      "source": "astro-fight/collectibles/vanillas/aquarius.lua",
+      "image": "assets/items/aquarius.png",
+      "itemSources": [
+        "astro/collectibles/customs/planetarium/aquarius-ex.lua"
+      ]
+    },
+    {
+      "id": "odd-mushroom-large",
+      "title": "이상한 버섯",
+      "name": "Odd Mushroom (Large)",
+      "number": 121,
+      "kind": "passive",
+      "scene": "이동속도 +0.1 또는 +0.2",
+      "body": "개수마다 이동속도 +0.1 또는 +0.2 보정이 추가됩니다.",
+      "tag": "추가 효과",
+      "keywords": "ODD MUSHROOM LARGE 121",
+      "source": "astro-fight/collectibles/vanillas/odd-mushroom-large.lua",
+      "image": "assets/items/odd-mushroom-large.png"
+    },
+    {
+      "id": "the-small-rock",
+      "title": "작은 돌",
+      "name": "The Small Rock",
+      "number": 90,
+      "kind": "passive",
+      "scene": "이동속도 +0.1 또는 +0.2",
+      "body": "개수마다 이동속도 +0.1 또는 +0.2 보정이 추가됩니다.",
+      "tag": "추가 효과",
+      "keywords": "THE SMALL ROCK 90",
+      "source": "astro-fight/collectibles/vanillas/the-small-rock.lua",
+      "image": "assets/items/the-small-rock.png"
+    },
+    {
+      "id": "dark-bum",
+      "title": "악마 거지",
+      "name": "Dark Bum",
+      "number": 278,
+      "kind": "passive",
+      "scene": "거지 변경 · 빨간 거미 제거",
+      "body": "대상 거지들이 악마 거지로 변경되며, 빨간 거미가 생성될 때 제거됩니다.",
+      "tag": "추가 효과",
+      "keywords": "DARK BUM 278",
+      "source": "astro-fight/collectibles/vanillas/dark-bum.lua",
+      "image": "assets/items/dark-bum.png",
+      "extraSources": [
+        "astro-fight/collectibles/init.lua"
+      ],
+      "rules": [
+        "일반·열쇠·폭탄·배터리·썩은 거지와 모드의 용암·천체관 거지가 대상입니다."
+      ]
+    },
+    {
+      "id": "yum-heart",
+      "title": "맛난 하트",
+      "name": "Yum Heart",
+      "number": 45,
+      "kind": "active",
+      "scene": "희생방 위치 표시",
+      "body": "획득 시와 새 층 진입 시 지도에 희생방의 위치를 표시합니다.",
+      "tag": "추가 효과",
+      "keywords": "YUM HEART 45",
+      "source": "astro-fight/collectibles/vanillas/yum-heart.lua",
+      "image": "assets/items/yum-heart.png"
+    },
+    {
+      "id": "false-phd",
+      "title": "위조 학위",
+      "name": "False PHD",
+      "number": 654,
+      "kind": "passive",
+      "scene": "탄속 감소 알약 · 거대 알약 전환",
+      "body": "첫 획득 시 탄속 감소 알약을 소환합니다. 소지 중 생성되는 탄속 감소 알약은 거대 알약으로 바뀝니다.",
+      "tag": "추가 효과",
+      "keywords": "FALSE PHD 654",
+      "source": "astro-fight/collectibles/vanillas/false-phd.lua",
+      "image": "assets/items/false-phd.png"
+    },
+    {
+      "id": "neptunus",
+      "title": "해왕성",
+      "name": "Neptunus",
+      "number": 597,
+      "kind": "passive",
+      "scene": "연사 −0.2 · 연사 배율 ×0.9",
+      "body": "개수마다 연사 −0.2 보정이 적용되고, 소지 중 연사 배율 ×0.9가 적용됩니다.",
+      "tag": "추가 효과",
+      "keywords": "NEPTUNUS 597",
+      "source": "astro-fight/collectibles/vanillas/neptunus.lua",
+      "image": "assets/items/neptunus.png"
+    },
+    {
+      "id": "my-shadow",
+      "title": "내 그림자",
+      "name": "My Shadow",
+      "number": 433,
+      "kind": "passive",
+      "scene": "미클리어 방에서 아군 소환",
+      "body": "미클리어 방에 들어갈 때 검은색 아군 애벌레를 소지 개수만큼 소환합니다.",
+      "tag": "추가 효과",
+      "keywords": "MY SHADOW 433",
+      "source": "astro-fight/collectibles/vanillas/my-shadow.lua",
+      "image": "assets/items/my-shadow.png"
+    },
+    {
+      "id": "card-reading",
+      "title": "카드점",
+      "name": "Card Reading",
+      "number": 660,
+      "kind": "passive",
+      "scene": "2개 이상이면 후반 층에도 포탈",
+      "body": "2개 이상 소지한 상태로 첫 두 층 이후의 보스를 잡으면 방 사이 이동 포탈이 활성화됩니다. 보이드의 시작방 보스 포탈은 랜덤 포탈로 바뀝니다.",
+      "tag": "추가 효과",
+      "keywords": "CARD READING 660",
+      "source": "astro-fight/collectibles/vanillas/card-reading.lua",
+      "image": "assets/items/card-reading.png",
+      "extraSources": [
+        "astro-fight/rooms/void-portal.lua"
+      ],
+      "relatedLinks": [
+        {
+          "href": "./index.html#portals",
+          "label": "Q&A · 이동 포탈"
+        }
+      ]
+    },
+    {
+      "id": "birthright",
+      "title": "생득권",
+      "name": "Birthright",
+      "number": 619,
+      "kind": "passive",
+      "scene": "아자젤에게 추가 선택 아이템",
+      "body": "일반 아자젤이 처음 획득하면 지정 공격 아이템 5종 중 2개가 등장합니다. 하나를 선택하면 나머지는 사라집니다.",
+      "tag": "추가 효과",
+      "keywords": "BIRTHRIGHT 619",
+      "source": "astro-fight/collectibles/vanillas/birthright.lua",
+      "image": "assets/items/birthright.png",
+      "rules": [
+        "후보: 엄마의 식칼, 쩌는 태아, 유황, 기계 X, 기계장치."
+      ],
+      "relatedLinks": [
+        {
+          "href": "./players.html#azazel",
+          "label": "아자젤 변경사항"
+        }
+      ]
+    },
+    {
+      "id": "damocles",
+      "title": "다모클레스",
+      "name": "Damocles",
+      "number": 577,
+      "kind": "active",
+      "scene": "후반 피격 시 아이템 손실·즉사 위험",
+      "body": "발동 후 자궁 I에 해당하는 7번째 구간부터 패널티 피격 시 최근 아이템 최대 4개를 잃고, 50% 확률로 사망합니다.",
+      "tag": "추가 효과",
+      "keywords": "DAMOCLES 577",
+      "source": "astro-fight/collectibles/vanillas/damocles.lua",
+      "image": "assets/items/damocles.png",
+      "extraSources": [
+        "astro-fight/stage.lua",
+        "astro-fight/ban.lua"
+      ],
+      "rules": [
+        "일부 방어·부활 아이템과 장신구를 제거하고 금지합니다. 체력 상한 제한도 즉시 적용될 수 있습니다.",
+        "액티브 다모클레스 자체는 공통 금지 목록에 있습니다. 이 설명은 효과가 적용된 경우의 처리입니다."
+      ]
+    },
+    {
+      "id": "little-horn",
+      "title": "작은 뿔",
+      "name": "Little Horn",
+      "number": 503,
+      "kind": "passive",
+      "scene": "공격력 배율 ×0.75",
+      "body": "기본 효과에 공격력 배율 ×0.75 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "LITTLE HORN 503",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/little-horn.png"
+    },
+    {
+      "id": "euthanasia",
+      "title": "안락사",
+      "name": "Euthanasia",
+      "number": 496,
+      "kind": "passive",
+      "scene": "공격력 배율 ×0.75",
+      "body": "기본 효과에 공격력 배율 ×0.75 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "EUTHANASIA 496",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/euthanasia.png"
+    },
+    {
+      "id": "lost-contact",
+      "title": "잃어버린 렌즈",
+      "name": "Lost Contact",
+      "number": 213,
+      "kind": "passive",
+      "scene": "공격력 배율 ×0.75",
+      "body": "기본 효과에 공격력 배율 ×0.75 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "LOST CONTACT 213",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/lost-contact.png"
+    },
+    {
+      "id": "ghost-pepper",
+      "title": "고스트 페퍼",
+      "name": "Ghost Pepper",
+      "number": 495,
+      "kind": "passive",
+      "scene": "공격력 ×0.9 · 행운 −5",
+      "body": "기본 효과에 공격력 ×0.9 · 행운 −5 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "GHOST PEPPER 495",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/ghost-pepper.png"
+    },
+    {
+      "id": "birds-eye",
+      "title": "버즈아이",
+      "name": "Bird's Eye",
+      "number": 616,
+      "kind": "passive",
+      "scene": "공격력 ×0.9 · 행운 −5",
+      "body": "기본 효과에 공격력 ×0.9 · 행운 −5 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "BIRDS EYE 616",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/birds-eye.png"
+    },
+    {
+      "id": "c-section",
+      "title": "제왕절개",
+      "name": "C Section",
+      "number": 678,
+      "kind": "passive",
+      "scene": "공격력 배율 ×0.95",
+      "body": "기본 효과에 공격력 배율 ×0.95 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "C SECTION 678",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/c-section.png"
+    },
+    {
+      "id": "it-hurts",
+      "title": "너무 아파",
+      "name": "It Hurts",
+      "number": 560,
+      "kind": "passive",
+      "scene": "개수마다 공격력 배율 ×1.3",
+      "body": "기본 효과에 개수마다 공격력 배율 ×1.3 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "IT HURTS 560",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/it-hurts.png"
+    },
+    {
+      "id": "parasitoid",
+      "title": "기생자",
+      "name": "Parasitoid",
+      "number": 461,
+      "kind": "passive",
+      "scene": "행운 −2",
+      "body": "기본 효과에 행운 −2 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "PARASITOID 461",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/parasitoid.png"
+    },
+    {
+      "id": "tough-love",
+      "title": "사랑의 매",
+      "name": "Tough Love",
+      "number": 150,
+      "kind": "passive",
+      "scene": "행운 −3",
+      "body": "기본 효과에 행운 −3 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "TOUGH LOVE 150",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/tough-love.png"
+    },
+    {
+      "id": "apple",
+      "title": "사과!",
+      "name": "Apple!",
+      "number": 443,
+      "kind": "passive",
+      "scene": "행운 −4",
+      "body": "기본 효과에 행운 −4 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "APPLE 443",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/apple.png"
+    },
+    {
+      "id": "athame",
+      "title": "마법 단검",
+      "name": "Athame",
+      "number": 408,
+      "kind": "passive",
+      "scene": "행운 −3",
+      "body": "기본 효과에 행운 −3 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "ATHAME 408",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/athame.png"
+    },
+    {
+      "id": "lodestone",
+      "title": "자철석",
+      "name": "Lodestone",
+      "number": 617,
+      "kind": "passive",
+      "scene": "행운 −2",
+      "body": "기본 효과에 행운 −2 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "LODESTONE 617",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/lodestone.png"
+    },
+    {
+      "id": "holy-light",
+      "title": "신성한 빛",
+      "name": "Holy Light",
+      "number": 374,
+      "kind": "passive",
+      "scene": "행운 −1",
+      "body": "기본 효과에 행운 −1 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "HOLY LIGHT 374",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/holy-light.png"
+    },
+    {
+      "id": "mercurius",
+      "title": "수성",
+      "name": "Mercurius",
+      "number": 590,
+      "kind": "passive",
+      "scene": "이동속도 상한 1.6",
+      "body": "기본 효과에 이동속도 상한 1.6 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "MERCURIUS 590",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/mercurius.png"
+    },
+    {
+      "id": "the-ludovico-technique",
+      "title": "루도비코 요법",
+      "name": "The Ludovico Technique",
+      "number": 329,
+      "kind": "passive",
+      "scene": "탄속 +0.5",
+      "body": "기본 효과에 탄속 +0.5 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "THE LUDOVICO TECHNIQUE 329",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/the-ludovico-technique.png"
+    },
+    {
+      "id": "trisagion",
+      "title": "삼성송",
+      "name": "Trisagion",
+      "number": 533,
+      "kind": "passive",
+      "scene": "탄속 배율 ×0.5",
+      "body": "기본 효과에 탄속 배율 ×0.5 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "TRISAGION 533",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/trisagion.png"
+    },
+    {
+      "id": "tech-x",
+      "title": "기계 X",
+      "name": "Tech X",
+      "number": 395,
+      "kind": "passive",
+      "scene": "탄속 배율 ×0.5",
+      "body": "기본 효과에 탄속 배율 ×0.5 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "TECH X 395",
+      "source": "astro-fight/collectibles/status.lua",
+      "image": "assets/items/tech-x.png"
+    },
+    {
+      "id": "gello",
+      "title": "겔로",
+      "name": "Gello",
+      "number": 728,
+      "kind": "active",
+      "scene": "미클리어 보스방 입장 시 차지 0",
+      "body": "미클리어 보스방에 들어가면 주 슬롯과 보조 슬롯의 차지가 0으로 초기화됩니다.",
+      "tag": "차지 초기화",
+      "keywords": "GELLO 728",
+      "source": "astro-fight/collectibles/boss-active.lua",
+      "image": "assets/items/gello.png"
+    },
+    {
+      "id": "d10",
+      "title": "10면 주사위",
+      "name": "D10",
+      "number": 285,
+      "kind": "active",
+      "scene": "미클리어 보스방 입장 시 차지 0",
+      "body": "미클리어 보스방에 들어가면 주 슬롯과 보조 슬롯의 차지가 0으로 초기화됩니다.",
+      "tag": "차지 초기화",
+      "keywords": "D10 285",
+      "source": "astro-fight/collectibles/boss-active.lua",
+      "image": "assets/items/d10.png"
+    },
+    {
+      "id": "ipecac",
+      "title": "구토제",
+      "name": "Ipecac",
+      "number": 149,
+      "kind": "passive",
+      "scene": "호스트 모자 효과 추가",
+      "body": "소지 중 숨겨진 호스트 모자 효과가 함께 부여됩니다. 대상 아이템을 모두 잃으면 추가 효과도 제거됩니다.",
+      "tag": "추가 방어",
+      "keywords": "IPECAC 149",
+      "source": "astro-fight/collectibles/vanillas/host-hat.lua",
+      "image": "assets/items/ipecac.png"
+    },
+    {
+      "id": "dr-fetus",
+      "title": "태아 박사",
+      "name": "Dr. Fetus",
+      "number": 52,
+      "kind": "passive",
+      "scene": "호스트 모자 효과 추가",
+      "body": "소지 중 숨겨진 호스트 모자 효과가 함께 부여됩니다. 대상 아이템을 모두 잃으면 추가 효과도 제거됩니다.",
+      "tag": "추가 방어",
+      "keywords": "DR FETUS 52",
+      "source": "astro-fight/collectibles/vanillas/host-hat.lua",
+      "image": "assets/items/dr-fetus.png"
+    },
+    {
+      "id": "epic-fetus",
+      "title": "쩌는 태아",
+      "name": "Epic Fetus",
+      "number": 168,
+      "kind": "passive",
+      "scene": "호스트 모자 효과 추가",
+      "body": "소지 중 숨겨진 호스트 모자 효과가 함께 부여됩니다. 대상 아이템을 모두 잃으면 추가 효과도 제거됩니다.",
+      "tag": "추가 방어",
+      "keywords": "EPIC FETUS 168",
+      "source": "astro-fight/collectibles/vanillas/host-hat.lua",
+      "image": "assets/items/epic-fetus.png"
+    },
+    {
+      "id": "fruit-cake",
+      "title": "과일 케이크",
+      "name": "Fruit Cake",
+      "number": 418,
+      "kind": "passive",
+      "scene": "호스트 모자 효과 추가",
+      "body": "소지 중 숨겨진 호스트 모자 효과가 함께 부여됩니다. 대상 아이템을 모두 잃으면 추가 효과도 제거됩니다.",
+      "tag": "추가 방어",
+      "keywords": "FRUIT CAKE 418",
+      "source": "astro-fight/collectibles/vanillas/host-hat.lua",
+      "image": "assets/items/fruit-cake.png"
+    },
+    {
+      "id": "fire-mind",
+      "title": "불타는 마음",
+      "name": "Fire Mind",
+      "number": 257,
+      "kind": "passive",
+      "scene": "호스트 모자 효과 추가",
+      "body": "소지 중 숨겨진 호스트 모자 효과가 함께 부여됩니다. 대상 아이템을 모두 잃으면 추가 효과도 제거됩니다.",
+      "tag": "추가 방어",
+      "keywords": "FIRE MIND 257",
+      "source": "astro-fight/collectibles/vanillas/host-hat.lua",
+      "image": "assets/items/fire-mind.png"
+    },
+    {
+      "id": "bbf",
+      "title": "베프",
+      "name": "BBF",
+      "number": 272,
+      "kind": "passive",
+      "scene": "호스트 모자 효과 추가",
+      "body": "소지 중 숨겨진 호스트 모자 효과가 함께 부여됩니다. 대상 아이템을 모두 잃으면 추가 효과도 제거됩니다.",
+      "tag": "추가 방어",
+      "keywords": "BBF 272",
+      "source": "astro-fight/collectibles/vanillas/host-hat.lua",
+      "image": "assets/items/bbf.png"
+    },
+    {
+      "id": "explosivo",
+      "title": "폭발물",
+      "name": "Explosivo",
+      "number": 401,
+      "kind": "passive",
+      "scene": "호스트 모자 효과 추가",
+      "body": "소지 중 숨겨진 호스트 모자 효과가 함께 부여됩니다. 대상 아이템을 모두 잃으면 추가 효과도 제거됩니다.",
+      "tag": "추가 방어",
+      "keywords": "EXPLOSIVO 401",
+      "source": "astro-fight/collectibles/vanillas/host-hat.lua",
+      "image": "assets/items/explosivo.png"
+    },
+    {
+      "id": "curse-of-the-tower",
+      "title": "탑의 저주",
+      "name": "Curse of the Tower",
+      "number": 371,
+      "kind": "passive",
+      "scene": "호스트 모자 효과 추가",
+      "body": "소지 중 숨겨진 호스트 모자 효과가 함께 부여됩니다. 대상 아이템을 모두 잃으면 추가 효과도 제거됩니다.",
+      "tag": "추가 방어",
+      "keywords": "CURSE OF THE TOWER 371",
+      "source": "astro-fight/collectibles/vanillas/host-hat.lua",
+      "image": "assets/items/curse-of-the-tower.png"
+    },
+    {
+      "id": "hushy",
+      "title": "허쉬",
+      "name": "Hushy",
+      "number": 470,
+      "kind": "passive",
+      "scene": "허쉬 체력 15% 감소",
+      "body": "소지한 플레이어가 있으면 생성되는 허쉬의 최대 체력 대비 15%를 줄입니다.",
+      "tag": "추가 효과",
+      "keywords": "HUSHY 470",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/hushy.png"
+    },
+    {
+      "id": "lil-delirium",
+      "title": "꼬마 델리리움",
+      "name": "Lil Delirium",
+      "number": 519,
+      "kind": "passive",
+      "scene": "섬망 체력 15% 감소",
+      "body": "소지한 플레이어가 있으면 생성되는 섬망의 최대 체력 대비 15%를 줄입니다.",
+      "tag": "추가 효과",
+      "keywords": "LIL DELIRIUM 519",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/lil-delirium.png"
+    },
+    {
+      "id": "milk",
+      "title": "우유!",
+      "name": "Milk!",
+      "number": 436,
+      "kind": "passive",
+      "scene": "방 입장 시 가짜 피격 발동",
+      "body": "미클리어 방 입장 시 30% 확률로 무딘 면도칼가 발동합니다. 보스방에서는 항상 발동합니다.",
+      "tag": "추가 효과",
+      "keywords": "MILK 436",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/milk.png"
+    },
+    {
+      "id": "bloody-lust",
+      "title": "피의 욕망",
+      "name": "Bloody Lust",
+      "number": 157,
+      "kind": "passive",
+      "scene": "층마다 첫 6회 클리어에 발동 판정",
+      "body": "방 클리어 때 무딘 면도칼가 30% + 행운 1당 1%p 확률로 발동합니다. 층마다 첫 6회의 판정 기회가 있습니다.",
+      "tag": "추가 효과",
+      "keywords": "BLOODY LUST 157",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/bloody-lust.png"
+    },
+    {
+      "id": "bloody-gust",
+      "title": "피의 돌풍",
+      "name": "Bloody Gust",
+      "number": 695,
+      "kind": "passive",
+      "scene": "층마다 첫 6회 클리어에 발동 판정",
+      "body": "방 클리어 때 무딘 면도칼가 30% + 행운 1당 1%p 확률로 발동합니다. 층마다 첫 6회의 판정 기회가 있습니다.",
+      "tag": "추가 효과",
+      "keywords": "BLOODY GUST 695",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/bloody-gust.png"
+    },
+    {
+      "id": "cracked-orb",
+      "title": "깨진 오브",
+      "name": "Cracked Orb",
+      "number": 675,
+      "kind": "passive",
+      "scene": "방 클리어 시 가짜 피격",
+      "body": "방 클리어 때 10% + 행운 1당 1%p 확률로 무딘 면도칼 효과가 발동합니다.",
+      "tag": "추가 효과",
+      "keywords": "CRACKED ORB 675",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/cracked-orb.png"
+    },
+    {
+      "id": "salvation",
+      "title": "구원",
+      "name": "Salvation",
+      "number": 696,
+      "kind": "passive",
+      "scene": "방 클리어 시 가짜 피격",
+      "body": "방 클리어 때 10% + 행운 1당 1%p 확률로 무딘 면도칼 효과가 발동합니다.",
+      "tag": "추가 효과",
+      "keywords": "SALVATION 696",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/salvation.png"
+    },
+    {
+      "id": "zodiac",
+      "title": "황도궁",
+      "name": "Zodiac",
+      "number": 392,
+      "kind": "passive",
+      "scene": "천체관 아이템 2개 중 선택",
+      "body": "획득한 황도궁은 제거되고 배열에서도 제외됩니다. 천체관 아이템 2개가 등장하며 하나만 고를 수 있습니다.",
+      "tag": "추가 효과",
+      "keywords": "ZODIAC 392",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/zodiac.png"
+    },
+    {
+      "id": "voodoo-head",
+      "title": "부두 머리",
+      "name": "Voodoo Head",
+      "number": 599,
+      "kind": "passive",
+      "scene": "첫 획득 시 피투성이 붕대",
+      "body": "처음 획득할 때 모드 장신구 피투성이 붕대를 소환합니다.",
+      "tag": "추가 효과",
+      "keywords": "VOODOO HEAD 599",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/voodoo-head.png"
+    },
+    {
+      "id": "infestation",
+      "title": "감염",
+      "name": "Infestation",
+      "number": 148,
+      "kind": "passive",
+      "scene": "첫 획득 시 머릿니",
+      "body": "처음 획득할 때 머릿니 장신구를 소환합니다.",
+      "tag": "추가 효과",
+      "keywords": "INFESTATION 148",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/infestation.png"
+    },
+    {
+      "id": "aries",
+      "title": "양자리",
+      "name": "Aries",
+      "number": 300,
+      "kind": "passive",
+      "scene": "첫 획득 시 휘어진 뿔",
+      "body": "처음 획득할 때 휘어진 뿔 장신구를 소환합니다.",
+      "tag": "추가 효과",
+      "keywords": "ARIES 300",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/aries.png"
+    },
+    {
+      "id": "d20",
+      "title": "20면 주사위",
+      "name": "D20",
+      "number": 166,
+      "kind": "active",
+      "scene": "첫 획득 시 주사위 파편",
+      "body": "처음 획득할 때 주사위 파편를 소환합니다.",
+      "tag": "추가 효과",
+      "keywords": "D20 166",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/d20.png"
+    },
+    {
+      "id": "box",
+      "title": "상자",
+      "name": "Box",
+      "number": 198,
+      "kind": "passive",
+      "scene": "첫 획득 시 꿀꺽!",
+      "body": "처음 획득할 때 꿀꺽! 알약을 추가로 소환합니다.",
+      "tag": "추가 효과",
+      "keywords": "BOX 198",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/box.png"
+    },
+    {
+      "id": "incubus",
+      "title": "인큐버스",
+      "name": "Incubus",
+      "number": 360,
+      "kind": "passive",
+      "scene": "획득하면 뒤틀린 한 쌍 제외",
+      "body": "처음 획득하면 이번 런의 아이템 풀에서 뒤틀린 한 쌍를 제외합니다.",
+      "tag": "추가 효과",
+      "keywords": "INCUBUS 360",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/incubus.png"
+    },
+    {
+      "id": "twisted-pair",
+      "title": "뒤틀린 한 쌍",
+      "name": "Twisted Pair",
+      "number": 698,
+      "kind": "passive",
+      "scene": "획득하면 인큐버스 제외",
+      "body": "처음 획득하면 이번 런의 아이템 풀에서 인큐버스를 제외합니다.",
+      "tag": "추가 효과",
+      "keywords": "TWISTED PAIR 698",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/twisted-pair.png"
+    },
+    {
+      "id": "monster-manual",
+      "title": "몬스터 도감",
+      "name": "Monster Manual",
+      "number": 123,
+      "kind": "active",
+      "scene": "첫 획득 시 릴리스의 영혼",
+      "body": "처음 획득할 때 릴리스의 영혼를 소환합니다.",
+      "tag": "추가 효과",
+      "keywords": "MONSTER MANUAL 123",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/monster-manual.png"
+    },
+    {
+      "id": "lucky-foot",
+      "title": "행운의 발",
+      "name": "Lucky Foot",
+      "number": 46,
+      "kind": "passive",
+      "scene": "행운방 위치 표시",
+      "body": "획득 시와 새 층 진입 시 지도에 행운방 위치를 표시합니다.",
+      "tag": "추가 효과",
+      "keywords": "LUCKY FOOT 46",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/lucky-foot.png"
+    },
+    {
+      "id": "bone-spurs",
+      "title": "골국",
+      "name": "Bone Spurs",
+      "number": 683,
+      "kind": "passive",
+      "scene": "비스트방에서 제거",
+      "body": "Beast Room에 처음 들어갈 때 보유한 골국를 모두 제거합니다.",
+      "tag": "추가 효과",
+      "keywords": "BONE SPURS 683",
+      "source": "astro-fight/collectibles/init.lua",
+      "image": "assets/items/bone-spurs.png"
+    },
+    {
+      "id": "cains-eye",
+      "title": "카인의 오른쪽 눈",
+      "name": "Cain's Eye",
+      "number": 59,
+      "kind": "trinket",
+      "scene": "행운 −3",
+      "body": "소지 중 행운 −3 보정이 추가됩니다.",
+      "tag": "능력치 보정",
+      "keywords": "CAINS EYE 59",
+      "source": "astro-fight/trinkets/status.lua",
+      "image": "assets/items/cains-eye.png"
+    },
+    {
+      "id": "silver-dollar",
+      "title": "은화",
+      "name": "Silver Dollar",
+      "number": 110,
+      "kind": "trinket",
+      "scene": "엄마의 상자와 일반 장신구 → 자동 흡수",
+      "body": "엄마의 상자를 가지고 일반 형태의 이 장신구를 소지하면 황금 장신구 효과로 흡수합니다. 슬롯은 비고 효과는 남습니다.",
+      "tag": "자동 흡수",
+      "keywords": "SILVER DOLLAR 110",
+      "source": "astro-fight/trinkets/auto-smelter.lua",
+      "image": "assets/items/silver-dollar.png",
+      "rules": [
+        "일반 형태의 장신구와 엄마의 상자를 함께 소지하는 조건입니다."
+      ],
+      "extraSources": [
+        "astro-fight/trinkets/golden.lua"
+      ]
+    },
+    {
+      "id": "bloody-crown",
+      "title": "피투성이 왕관",
+      "name": "Bloody Crown",
+      "number": 111,
+      "kind": "trinket",
+      "scene": "엄마의 상자와 일반 장신구 → 자동 흡수",
+      "body": "엄마의 상자를 가지고 일반 형태의 이 장신구를 소지하면 황금 장신구 효과로 흡수합니다. 슬롯은 비고 효과는 남습니다.",
+      "tag": "자동 흡수",
+      "keywords": "BLOODY CROWN 111",
+      "source": "astro-fight/trinkets/auto-smelter.lua",
+      "image": "assets/items/bloody-crown.png",
+      "rules": [
+        "일반 형태의 장신구와 엄마의 상자를 함께 소지하는 조건입니다."
+      ],
+      "extraSources": [
+        "astro-fight/trinkets/golden.lua"
+      ]
+    },
+    {
+      "id": "holy-crown",
+      "title": "신성한 왕관",
+      "name": "Holy Crown",
+      "number": 155,
+      "kind": "trinket",
+      "scene": "엄마의 상자와 일반 장신구 → 자동 흡수",
+      "body": "엄마의 상자를 가지고 일반 형태의 이 장신구를 소지하면 황금 장신구 효과로 흡수합니다. 슬롯은 비고 효과는 남습니다.",
+      "tag": "자동 흡수",
+      "keywords": "HOLY CROWN 155",
+      "source": "astro-fight/trinkets/auto-smelter.lua",
+      "image": "assets/items/holy-crown.png",
+      "rules": [
+        "일반 형태의 장신구와 엄마의 상자를 함께 소지하는 조건입니다."
+      ],
+      "extraSources": [
+        "astro-fight/trinkets/golden.lua"
+      ]
+    },
+    {
+      "id": "wicked-crown",
+      "title": "사악한 왕관",
+      "name": "Wicked Crown",
+      "number": 161,
+      "kind": "trinket",
+      "scene": "엄마의 상자와 일반 장신구 → 자동 흡수",
+      "body": "엄마의 상자를 가지고 일반 형태의 이 장신구를 소지하면 황금 장신구 효과로 흡수합니다. 슬롯은 비고 효과는 남습니다.",
+      "tag": "자동 흡수",
+      "keywords": "WICKED CROWN 161",
+      "source": "astro-fight/trinkets/auto-smelter.lua",
+      "image": "assets/items/wicked-crown.png",
+      "rules": [
+        "일반 형태의 장신구와 엄마의 상자를 함께 소지하는 조건입니다."
+      ],
+      "extraSources": [
+        "astro-fight/trinkets/golden.lua"
+      ]
+    },
+    {
+      "id": "number-magnet",
+      "title": "숫자 자석",
+      "name": "Number Magnet",
+      "number": 174,
+      "kind": "trinket",
+      "scene": "엄마의 상자와 일반 장신구 → 자동 흡수",
+      "body": "엄마의 상자를 가지고 일반 형태의 이 장신구를 소지하면 황금 장신구 효과로 흡수합니다. 슬롯은 비고 효과는 남습니다.",
+      "tag": "자동 흡수",
+      "keywords": "NUMBER MAGNET 174",
+      "source": "astro-fight/trinkets/auto-smelter.lua",
+      "image": "assets/items/number-magnet.png",
+      "rules": [
+        "일반 형태의 장신구와 엄마의 상자를 함께 소지하는 조건입니다."
+      ],
+      "extraSources": [
+        "astro-fight/trinkets/golden.lua"
+      ]
+    },
+    {
+      "id": "locust-of-pestilence",
+      "title": "역병의 메뚜기",
+      "name": "Locust of Pestilence",
+      "number": 114,
+      "kind": "trinket",
+      "scene": "엄마의 상자와 일반 장신구 → 자동 흡수",
+      "body": "엄마의 상자를 가지고 일반 형태의 이 장신구를 소지하면 황금 장신구 효과로 흡수합니다. 슬롯은 비고 효과는 남습니다.",
+      "tag": "자동 흡수",
+      "keywords": "LOCUST OF PESTILENCE 114",
+      "source": "astro-fight/trinkets/auto-smelter.lua",
+      "image": "assets/items/locust-of-pestilence.png",
+      "rules": [
+        "일반 형태의 장신구와 엄마의 상자를 함께 소지하는 조건입니다."
+      ],
+      "extraSources": [
+        "astro-fight/trinkets/golden.lua"
+      ]
+    },
+    {
+      "id": "locust-of-famine",
+      "title": "기근의 메뚜기",
+      "name": "Locust of Famine",
+      "number": 115,
+      "kind": "trinket",
+      "scene": "엄마의 상자와 일반 장신구 → 자동 흡수",
+      "body": "엄마의 상자를 가지고 일반 형태의 이 장신구를 소지하면 황금 장신구 효과로 흡수합니다. 슬롯은 비고 효과는 남습니다.",
+      "tag": "자동 흡수",
+      "keywords": "LOCUST OF FAMINE 115",
+      "source": "astro-fight/trinkets/auto-smelter.lua",
+      "image": "assets/items/locust-of-famine.png",
+      "rules": [
+        "일반 형태의 장신구와 엄마의 상자를 함께 소지하는 조건입니다."
+      ],
+      "extraSources": [
+        "astro-fight/trinkets/golden.lua"
+      ]
+    },
+    {
+      "id": "locust-of-death",
+      "title": "죽음의 메뚜기",
+      "name": "Locust of Death",
+      "number": 116,
+      "kind": "trinket",
+      "scene": "엄마의 상자와 일반 장신구 → 자동 흡수",
+      "body": "엄마의 상자를 가지고 일반 형태의 이 장신구를 소지하면 황금 장신구 효과로 흡수합니다. 슬롯은 비고 효과는 남습니다.",
+      "tag": "자동 흡수",
+      "keywords": "LOCUST OF DEATH 116",
+      "source": "astro-fight/trinkets/auto-smelter.lua",
+      "image": "assets/items/locust-of-death.png",
+      "rules": [
+        "일반 형태의 장신구와 엄마의 상자를 함께 소지하는 조건입니다."
+      ],
+      "extraSources": [
+        "astro-fight/trinkets/golden.lua"
+      ]
+    },
+    {
+      "id": "locust-of-conquest",
+      "title": "정복의 메뚜기",
+      "name": "Locust of Conquest",
+      "number": 117,
+      "kind": "trinket",
+      "scene": "엄마의 상자와 일반 장신구 → 자동 흡수",
+      "body": "엄마의 상자를 가지고 일반 형태의 이 장신구를 소지하면 황금 장신구 효과로 흡수합니다. 슬롯은 비고 효과는 남습니다.",
+      "tag": "자동 흡수",
+      "keywords": "LOCUST OF CONQUEST 117",
+      "source": "astro-fight/trinkets/auto-smelter.lua",
+      "image": "assets/items/locust-of-conquest.png",
+      "rules": [
+        "일반 형태의 장신구와 엄마의 상자를 함께 소지하는 조건입니다."
+      ],
+      "extraSources": [
+        "astro-fight/trinkets/golden.lua"
+      ]
+    },
+    {
+      "id": "perfection",
+      "title": "올백",
+      "name": "Perfection",
+      "number": 145,
+      "kind": "trinket",
+      "scene": "에이플 · 행운 +10 · 추가 보상 조건",
+      "body": "방송에서는 ‘에이플’이라고 부르는 핵심 장신구입니다. 기본 행운 +10에 더해, 대결에서는 보스 추가 보상과 새 층의 저주 제거 조건이 됩니다.",
+      "tag": "노피격 유지",
+      "keywords": "PERFECTION 145 올백 에이플 A+ A플 노피격 낙제 Flunk 완벽",
+      "source": "astro-fight/trinkets/vanillas/perfection.lua",
+      "image": "assets/items/perfection.png",
+      "relatedLinks": [
+        {
+          "href": "./index.html#perfection-basics",
+          "label": "노피격과 에이플의 핵심 역할"
+        },
+        {
+          "href": "./index.html#perfection",
+          "label": "올백의 전체 기능과 추가 보상"
+        },
+        {
+          "href": "./index.html#perfection-loss",
+          "label": "에이플을 잃은 뒤의 낙제"
+        }
+      ],
+      "detailsFrom": "perfection"
+    },
+    {
+      "id": "rainbow-worm",
+      "title": "무지개 벌레",
+      "name": "Rainbow Worm",
+      "number": 64,
+      "kind": "trinket",
+      "scene": "강화 시 적 방향으로 꺾이는 눈물",
+      "body": "장신구 효과 배수가 2 이상이면 눈물에 적을 향해 직각으로 꺾이는 속성이 추가됩니다.",
+      "tag": "강화 장신구",
+      "keywords": "RAINBOW WORM 64",
+      "source": "astro-fight/trinkets/vanillas/rainbow-worm.lua",
+      "image": "assets/items/rainbow-worm.png"
+    },
+    {
+      "id": "umbilical-cord",
+      "title": "탯줄",
+      "name": "Umbilical Cord",
+      "number": 33,
+      "kind": "trinket",
+      "scene": "강화 조건에서 리틀 스티븐 획득",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 리틀 스티븐 획득 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "UMBILICAL CORD 33",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/umbilical-cord.png"
+    },
+    {
+      "id": "missing-page",
+      "title": "찢어진 페이지",
+      "name": "A Missing Page",
+      "number": 48,
+      "kind": "trinket",
+      "scene": "강화 조건에서 네크로노미콘 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 네크로노미콘 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "MISSING PAGE 48",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/missing-page.png"
+    },
+    {
+      "id": "red-patch",
+      "title": "빨간 누더기",
+      "name": "Red Patch",
+      "number": 40,
+      "kind": "trinket",
+      "scene": "강화 조건에서 피의 욕망 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 피의 욕망 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "RED PATCH 40",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/red-patch.png"
+    },
+    {
+      "id": "super-magnet",
+      "title": "네오디뮴 자석",
+      "name": "Super Magnet",
+      "number": 68,
+      "kind": "trinket",
+      "scene": "강화 조건에서 자철석 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 자철석 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "SUPER MAGNET 68",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/super-magnet.png"
+    },
+    {
+      "id": "broken-ankh",
+      "title": "부서진 앙크",
+      "name": "Broken Ankh",
+      "number": 28,
+      "kind": "trinket",
+      "scene": "강화 조건에서 앙크 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 앙크 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "BROKEN ANKH 28",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/broken-ankh.png"
+    },
+    {
+      "id": "faded-polaroid",
+      "title": "흐려진 즉석사진",
+      "name": "Faded Polaroid",
+      "number": 69,
+      "kind": "trinket",
+      "scene": "강화 조건에서 즉석사진 / 반전사진 중 선택",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 즉석사진 / 반전사진 중 선택 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "FADED POLAROID 69",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/faded-polaroid.png",
+      "rules": [
+        "선택 아이템은 한 묶음에서 하나만 고를 수 있습니다."
+      ]
+    },
+    {
+      "id": "louse",
+      "title": "머릿니",
+      "name": "Louse",
+      "number": 70,
+      "kind": "trinket",
+      "scene": "강화 조건에서 감염 2 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 감염 2 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "LOUSE 70",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/louse.png"
+    },
+    {
+      "id": "broken-syringe",
+      "title": "깨진 주사기",
+      "name": "Broken Syringe",
+      "number": 132,
+      "kind": "trinket",
+      "scene": "강화 조건에서 주사기 아이템 2개 중 선택",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 주사기 아이템 2개 중 선택 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "BROKEN SYRINGE 132",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/broken-syringe.png",
+      "rules": [
+        "선택 아이템은 한 묶음에서 하나만 고를 수 있습니다."
+      ]
+    },
+    {
+      "id": "liberty-cap",
+      "title": "환각버섯",
+      "name": "Liberty Cap",
+      "number": 32,
+      "kind": "trinket",
+      "scene": "강화 조건에서 마법의 버섯 또는 미니 버섯 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 마법의 버섯 또는 미니 버섯 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "LIBERTY CAP 32",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/liberty-cap.png"
+    },
+    {
+      "id": "used-diaper",
+      "title": "다 쓴 기저귀",
+      "name": "Used Diaper",
+      "number": 93,
+      "kind": "trinket",
+      "scene": "강화 조건에서 스카톨 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 스카톨 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "USED DIAPER 93",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/used-diaper.png"
+    },
+    {
+      "id": "poker-chip",
+      "title": "포커 칩",
+      "name": "Poker Chip",
+      "number": 76,
+      "kind": "trinket",
+      "scene": "강화 조건에서 엄마의 열쇠 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 엄마의 열쇠 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "POKER CHIP 76",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/poker-chip.png"
+    },
+    {
+      "id": "torn-pocket",
+      "title": "찢어진 주머니",
+      "name": "Torn Pocket",
+      "number": 158,
+      "kind": "trinket",
+      "scene": "강화 조건에서 넓은 가방 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 넓은 가방 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "TORN POCKET 158",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/torn-pocket.png"
+    },
+    {
+      "id": "azazels-stump",
+      "title": "아자젤의 뿔대",
+      "name": "Azazel's Stump",
+      "number": 162,
+      "kind": "trinket",
+      "scene": "강화 조건에서 유황 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 유황 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "AZAZELS STUMP 162",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/azazels-stump.png"
+    },
+    {
+      "id": "cricket-leg",
+      "title": "귀뚜라미 다리",
+      "name": "Cricket Leg",
+      "number": 185,
+      "kind": "trinket",
+      "scene": "강화 조건에서 군체의식 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 군체의식 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "CRICKET LEG 185",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/cricket-leg.png"
+    },
+    {
+      "id": "strange-key",
+      "title": "이상한 열쇠",
+      "name": "Strange Key",
+      "number": 175,
+      "kind": "trinket",
+      "scene": "강화 조건에서 판도라의 상자 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 판도라의 상자 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "STRANGE KEY 175",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/strange-key.png"
+    },
+    {
+      "id": "short-fuse",
+      "title": "짧은 도화선",
+      "name": "Short Fuse",
+      "number": 133,
+      "kind": "trinket",
+      "scene": "강화 조건에서 빠른 폭탄 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 빠른 폭탄 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "SHORT FUSE 133",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/short-fuse.png"
+    },
+    {
+      "id": "wish-bone",
+      "title": "창사골",
+      "name": "Wish Bone",
+      "number": 104,
+      "kind": "trinket",
+      "scene": "강화 조건에서 수수께끼의 선물 소환",
+      "body": "황금 장신구 상태이거나 엄마의 상자를 소지하면 장신구가 사라지고 수수께끼의 선물 소환 효과가 적용됩니다.",
+      "tag": "아이템 전환",
+      "keywords": "WISH BONE 104",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/wish-bone.png"
+    },
+    {
+      "id": "purple-heart",
+      "title": "퍼플 하트 훈장",
+      "name": "Purple Heart",
+      "number": 5,
+      "kind": "trinket",
+      "scene": "강화 시 공격력 배율 ×1.2",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "PURPLE HEART 5",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/purple-heart.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "pinky-eye",
+      "title": "분홍 눈알",
+      "name": "Pinky Eye",
+      "number": 30,
+      "kind": "trinket",
+      "scene": "강화 시 모든 눈물에 독 효과",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "PINKY EYE 30",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/pinky-eye.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "push-pin",
+      "title": "고정핀",
+      "name": "Push Pin",
+      "number": 31,
+      "kind": "trinket",
+      "scene": "강화 시 모든 눈물에 장애물·적 관통",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "PUSH PIN 31",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/push-pin.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "super-ball",
+      "title": "탱탱볼",
+      "name": "Super Ball",
+      "number": 99,
+      "kind": "trinket",
+      "scene": "강화 시 25% + 행운 1당 1%p 확률로 튕김",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "SUPER BALL 99",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/super-ball.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "brain-worm",
+      "title": "두뇌 벌레",
+      "name": "Brain Worm",
+      "number": 144,
+      "kind": "trinket",
+      "scene": "강화 시 50% + 행운 1당 1%p 확률로 유도",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "BRAIN WORM 144",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/brain-worm.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "black-lipstick",
+      "title": "검은 립스틱",
+      "name": "Black Lipstick",
+      "number": 17,
+      "kind": "trinket",
+      "scene": "강화 시 새 층에서 블랙하트 1개 소환",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "BLACK LIPSTICK 17",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/black-lipstick.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "rusted-key",
+      "title": "녹슨 열쇠",
+      "name": "Rusted Key",
+      "number": 36,
+      "kind": "trinket",
+      "scene": "강화 시 새 층에서 황금 열쇠 1개 소환",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "RUSTED KEY 36",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/rusted-key.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "safety-cap",
+      "title": "안전 마개",
+      "name": "Safety Cap",
+      "number": 44,
+      "kind": "trinket",
+      "scene": "강화 시 새 층에서 꿀꺽! 알약 소환",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "SAFETY CAP 44",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/safety-cap.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "ace-of-spades",
+      "title": "스페이드 A",
+      "name": "Ace of Spades",
+      "number": 45,
+      "kind": "trinket",
+      "scene": "강화 시 새 층에서 카드 1개 소환",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "ACE OF SPADES 45",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/ace-of-spades.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "match-stick",
+      "title": "성냥개비",
+      "name": "Match Stick",
+      "number": 41,
+      "kind": "trinket",
+      "scene": "강화 시 새 층에서 기가 폭탄 1개 소환",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "MATCH STICK 41",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/match-stick.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "the-twins",
+      "title": "쌍둥이",
+      "name": "The Twins",
+      "number": 183,
+      "kind": "trinket",
+      "scene": "강화 시 새 층에서 릴리스의 영혼 소환",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "THE TWINS 183",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/the-twins.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "stud-finder",
+      "title": "벽체 탐지기",
+      "name": "Stud Finder",
+      "number": 74,
+      "kind": "trinket",
+      "scene": "강화 시 새 층에서 사다리방 다락문 생성",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "STUD FINDER 74",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/stud-finder.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "karma",
+      "title": "업보",
+      "name": "Karma",
+      "number": 85,
+      "kind": "trinket",
+      "scene": "강화 시 새 층마다 행운 +1 누적",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "KARMA 85",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/karma.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "monkey-paw",
+      "title": "원숭이 손",
+      "name": "Monkey Paw",
+      "number": 20,
+      "kind": "trinket",
+      "scene": "강화 시 새 층에서 블랙하트 3개 소환",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "MONKEY PAW 20",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/monkey-paw.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "bat-wing",
+      "title": "박쥐 날개",
+      "name": "Bat Wing",
+      "number": 118,
+      "kind": "trinket",
+      "scene": "강화 시 비행 능력 획득",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "BAT WING 118",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/bat-wing.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "temporary-tattoo",
+      "title": "스티커 문신",
+      "name": "Temporary Tattoo",
+      "number": 177,
+      "kind": "trinket",
+      "scene": "강화 시 도전방 위치 표시 · 체력 조건과 무관하게 입장",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "TEMPORARY TATTOO 177",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/temporary-tattoo.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "fragmented-card",
+      "title": "조각난 카드",
+      "name": "Fragmented Card",
+      "number": 102,
+      "kind": "trinket",
+      "scene": "강화 시 비밀방·일급비밀방 위치 표시",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "FRAGMENTED CARD 102",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/fragmented-card.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "broken-padlock",
+      "title": "부서진 자물쇠",
+      "name": "Broken Padlock",
+      "number": 136,
+      "kind": "trinket",
+      "scene": "강화 시 방 클리어마다 아빠의 열쇠 발동",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "BROKEN PADLOCK 136",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/broken-padlock.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "adoption-papers",
+      "title": "입양 서류",
+      "name": "Adoption Papers",
+      "number": 184,
+      "kind": "trinket",
+      "scene": "강화 시 상점 첫 방문 시 릴리스의 영혼 소환",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "ADOPTION PAPERS 184",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/adoption-papers.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "golden-horse-shoe",
+      "title": "황금 말발굽",
+      "name": "Golden Horse Shoe",
+      "number": 82,
+      "kind": "trinket",
+      "scene": "강화 시 보물방 첫 방문 시 아이템 추가",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "GOLDEN HORSE SHOE 82",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/golden-horse-shoe.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "black-feather",
+      "title": "검은 깃털",
+      "name": "Black Feather",
+      "number": 80,
+      "kind": "trinket",
+      "scene": "강화 시 악마방 첫 방문 시 공격력 +2 누적",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "BLACK FEATHER 80",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/black-feather.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "sigil-of-baphomet",
+      "title": "바포메트의 인장",
+      "name": "Sigil of Baphomet",
+      "number": 189,
+      "kind": "trinket",
+      "scene": "강화 시 미클리어 방에서 10% + 행운 1당 1%p 확률로 보호막",
+      "body": "장신구 효과 배수가 2 이상일 때 적용됩니다. 황금 장신구나 엄마의 상자 등으로 강화된 상태의 추가 효과입니다.",
+      "tag": "강화 장신구",
+      "keywords": "SIGIL OF BAPHOMET 189",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/sigil-of-baphomet.png",
+      "rules": [
+        "황금 장신구나 엄마의 상자 등으로 장신구 효과가 강화된 경우를 뜻합니다."
+      ]
+    },
+    {
+      "id": "bloody-penny",
+      "title": "피 묻은 동전",
+      "name": "Bloody Penny",
+      "number": 49,
+      "kind": "trinket",
+      "scene": "강화 시 동전 획득에 추가 보상",
+      "body": "장신구 효과 배수가 2 이상이면 동전 획득 시 25% + 행운 1당 1%p 확률로 반 칸 빨간 하트 보상 판정이 한 번 더 적용됩니다. 동전 가치는 반영하지 않습니다.",
+      "tag": "강화 장신구",
+      "keywords": "BLOODY PENNY 49",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/bloody-penny.png"
+    },
+    {
+      "id": "burnt-penny",
+      "title": "타버린 동전",
+      "name": "Burnt Penny",
+      "number": 50,
+      "kind": "trinket",
+      "scene": "강화 시 동전 획득에 추가 보상",
+      "body": "장신구 효과 배수가 2 이상이면 동전 획득 시 25% + 행운 1당 1%p 확률로 폭탄 보상 판정이 한 번 더 적용됩니다. 동전 가치는 반영하지 않습니다.",
+      "tag": "강화 장신구",
+      "keywords": "BURNT PENNY 50",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/burnt-penny.png"
+    },
+    {
+      "id": "flat-penny",
+      "title": "납작한 동전",
+      "name": "Flat Penny",
+      "number": 51,
+      "kind": "trinket",
+      "scene": "강화 시 동전 획득에 추가 보상",
+      "body": "장신구 효과 배수가 2 이상이면 동전 획득 시 25% + 행운 1당 1%p 확률로 열쇠 보상 판정이 한 번 더 적용됩니다. 동전 가치는 반영하지 않습니다.",
+      "tag": "강화 장신구",
+      "keywords": "FLAT PENNY 51",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/flat-penny.png"
+    },
+    {
+      "id": "counterfeit-penny",
+      "title": "가짜 동전",
+      "name": "Counterfeit Penny",
+      "number": 52,
+      "kind": "trinket",
+      "scene": "강화 시 동전 획득에 추가 보상",
+      "body": "장신구 효과 배수가 2 이상이면 동전 획득 시 25% + 행운 1당 1%p 확률로 동전 보상 판정이 한 번 더 적용됩니다. 동전 가치는 반영하지 않습니다.",
+      "tag": "강화 장신구",
+      "keywords": "COUNTERFEIT PENNY 52",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/counterfeit-penny.png"
+    },
+    {
+      "id": "blessed-penny",
+      "title": "축복받은 동전",
+      "name": "Blessed Penny",
+      "number": 131,
+      "kind": "trinket",
+      "scene": "강화 시 동전 획득에 추가 보상",
+      "body": "장신구 효과 배수가 2 이상이면 동전 획득 시 12.5% + 행운 1당 1%p 확률로 반 칸 소울하트 보상 판정이 한 번 더 적용됩니다. 동전 가치는 반영하지 않습니다.",
+      "tag": "강화 장신구",
+      "keywords": "BLESSED PENNY 131",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/blessed-penny.png"
+    },
+    {
+      "id": "rotten-penny",
+      "title": "썩은 동전",
+      "name": "Rotten Penny",
+      "number": 126,
+      "kind": "trinket",
+      "scene": "강화 시 동전 획득에 추가 파리",
+      "body": "장신구 효과 배수가 2 이상이면 동전을 주울 때 아군 파리 1마리를 추가합니다.",
+      "tag": "강화 장신구",
+      "keywords": "ROTTEN PENNY 126",
+      "source": "astro-fight/trinkets/golden.lua",
+      "image": "assets/items/rotten-penny.png"
+    }
+  ]
+}

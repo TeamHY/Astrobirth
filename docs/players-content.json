@@ -1,0 +1,1387 @@
+{
+  "intro": "시작방에 놓이는 보상, 캐릭터 고유 규칙, 추가 금지 목록을 캐릭터별로 확인할 수 있습니다. 일반·더럽혀진·모드 캐릭터로 구분합니다.",
+  "entries": [
+    {
+      "id": "isaac",
+      "title": "아이작",
+      "name": "Isaac",
+      "kind": "normal",
+      "image": "assets/players/isaac.svg",
+      "scene": "주사위 제거 · 새 층마다 주사위 선택",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드.",
+        "시작할 때 기본 주사위를 제거합니다.",
+        "새 층에 들어가면 지정된 주사위 2개가 선택 아이템으로 등장합니다. 하나를 고르면 다른 하나는 사라집니다.",
+        "새 층에 들어갈 때 주 액티브 슬롯의 기존 아이템을 제거합니다."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "책가방",
+            "글리치 왕관",
+            "알타일",
+            "죄보사냥의 악마",
+            "나의 달 나의 그대"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "실종 포스터",
+            "부서진 앙크"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER ISAAC"
+    },
+    {
+      "id": "magdalene",
+      "title": "막달레나",
+      "name": "Magdalene",
+      "kind": "normal",
+      "image": "assets/players/magdalene.svg",
+      "scene": "성혈과 성배 추가 · 첫 층 희생방 보정",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 성혈과 성배, 신성한 카드.",
+        "일반 첫 층에 희생방이 없으면 재시드를 시도합니다. 대체 루트에는 적용하지 않습니다."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "생득권"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua",
+        "astro-fight/stage.lua"
+      ],
+      "keywords": "PLAYER MAGDALENE"
+    },
+    {
+      "id": "cain",
+      "title": "카인",
+      "name": "Cain",
+      "kind": "normal",
+      "image": "assets/players/cain.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER CAIN",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "judas",
+      "title": "유다",
+      "name": "Judas",
+      "kind": "normal",
+      "image": "assets/players/judas.svg",
+      "scene": "별도의 시작방 추가 아이템·카드는 없습니다.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "별도의 시작방 추가 아이템·카드는 없습니다."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER JUDAS",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "bluebaby",
+      "title": "???",
+      "name": "??? / Blue Baby",
+      "kind": "normal",
+      "image": "assets/players/bluebaby.svg",
+      "scene": "시작방에 추가 등장: 구슬 주머니, 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 구슬, 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "생득권"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER BLUEBABY"
+    },
+    {
+      "id": "eve",
+      "title": "이브",
+      "name": "Eve",
+      "kind": "normal",
+      "image": "assets/players/eve.svg",
+      "scene": "시작 면도날 제거 · 신성한 카드 추가",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드.",
+        "시작할 때 기본 면도날를 제거합니다."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER EVE",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "samson",
+      "title": "삼손",
+      "name": "Samson",
+      "kind": "normal",
+      "image": "assets/players/samson.svg",
+      "scene": "시작방에 추가 등장: 론고미니아드, 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 론고미니아드, 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER SAMSON",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "azazel",
+      "title": "아자젤",
+      "name": "Azazel",
+      "kind": "normal",
+      "image": "assets/players/azazel.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드.",
+        "생득권 첫 획득 시 엄마의 식칼·쩌는 태아·유황·기계 X·기계장치 중 2개가 등장하며 하나를 선택합니다."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua",
+        "astro-fight/collectibles/vanillas/birthright.lua"
+      ],
+      "keywords": "PLAYER AZAZEL",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "relatedLinks": [
+        {
+          "href": "./items.html#birthright",
+          "label": "생득권 추가 효과"
+        }
+      ]
+    },
+    {
+      "id": "lazarus",
+      "title": "나사로",
+      "name": "Lazarus",
+      "kind": "normal",
+      "image": "assets/players/lazarus.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "나침반",
+            "보물 지도",
+            "정신",
+            "파란 지도",
+            "베들레헴의 별",
+            "수정구슬",
+            "표리일체"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "카인의 오른쪽 눈",
+            "조각난 카드",
+            "Mosis Eyes"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER LAZARUS"
+    },
+    {
+      "id": "eden",
+      "title": "에덴",
+      "name": "Eden",
+      "kind": "normal",
+      "image": "assets/players/eden.svg",
+      "scene": "시작방에 추가 등장: 보비, 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 보비, 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER EDEN",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "thelost",
+      "title": "로스트",
+      "name": "The Lost",
+      "kind": "normal",
+      "image": "assets/players/thelost.svg",
+      "scene": "이터널 주사위 사용 제한 · 보호막 패널티",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "별도의 시작방 추가 아이템·카드는 없습니다.",
+        "신성한 망토·신성한 카드 보호막이 깨질 때 이동속도 −0.05, 공격력 −0.05, 사거리 −0.1, 행운 −7이 누적됩니다.",
+        "최대 5회까지 누적되며 새 층에서 초기화됩니다. 연사 감소는 현재 0입니다.",
+        "이터널 주사위는 같은 스테이지·스테이지 종류에서 한 번만 사용합니다.",
+        "비스트방에서 추적 중인 신성한 망토·신성한 카드 보호막이 소모되면 즉사합니다. 이 조건은 캐릭터에 관계없이 적용됩니다."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "비밀의 책",
+            "뒤집기",
+            "사자자리",
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "초능력 파리",
+            "다모클레스",
+            "사랑의 매",
+            "고스트 페퍼",
+            "주사위",
+            "스타터 덱",
+            "영혼",
+            "토성",
+            "비탄",
+            "잃어버린 렌즈",
+            "마법 단검",
+            "흑마술",
+            "담요",
+            "마른 아기",
+            "명왕성",
+            "안락사",
+            "빈 그릇",
+            "그림자의 책",
+            "성스러운 오브",
+            "고장난 모뎀",
+            "염소 머리",
+            "성찬",
+            "슈뢰딩거의 고양이",
+            "초 처녀자리",
+            "죄보사냥의 악마",
+            "오메가 321",
+            "스네이크아이즈 포프루스",
+            "반역의 죄보 - 스네이크아이",
+            "퀘이사",
+            "스태프 오브 아인즈 울 고운",
+            "삼사라",
+            "연명치료",
+            "카인의 비밀 주머니"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "부서진 앙크",
+            "Jaw Breaker",
+            "바포메트의 인장",
+            "문 받침대"
+          ]
+        },
+        {
+          "label": "카드",
+          "items": [
+            "신성한 카드",
+            "시간 여행",
+            "Reverse Magician",
+            "영혼 Lazarus",
+            "영혼 Lost",
+            "알기즈",
+            "혼돈"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua",
+        "astro-fight/penalty.lua",
+        "astro-fight/collectibles/vanillas/eternal-d6.lua"
+      ],
+      "keywords": "PLAYER THELOST",
+      "relatedLinks": [
+        {
+          "href": "./index.html#lost-shield",
+          "label": "Q&A · 보호막 패널티"
+        },
+        {
+          "href": "./items.html#eternal-d6",
+          "label": "이터널 주사위 자세히"
+        }
+      ]
+    },
+    {
+      "id": "lilith",
+      "title": "릴리스",
+      "name": "Lilith",
+      "kind": "normal",
+      "image": "assets/players/lilith.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "뒤틀린 한 쌍",
+            "인큐버스"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER LILITH"
+    },
+    {
+      "id": "keeper",
+      "title": "키퍼",
+      "name": "Keeper",
+      "kind": "normal",
+      "image": "assets/players/keeper.svg",
+      "scene": "시작방에 추가 등장: 깊은 주머니, 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 넓은 가방, 신성한 카드.",
+        "일반 캐릭터의 후반 깨진 하트 제한에서 제외됩니다."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "알타일",
+            "죄보사냥의 악마"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "실종 포스터",
+            "부서진 앙크"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua",
+        "astro-fight/stage.lua"
+      ],
+      "keywords": "PLAYER KEEPER"
+    },
+    {
+      "id": "apollyon",
+      "title": "아폴리온",
+      "name": "Apollyon",
+      "kind": "normal",
+      "image": "assets/players/apollyon.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "거대버섯"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER APOLLYON"
+    },
+    {
+      "id": "theforgotten",
+      "title": "포가튼",
+      "name": "The Forgotten",
+      "kind": "normal",
+      "image": "assets/players/theforgotten.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드.",
+        "몸은 후반 체력 제한 구간에서 깨진 하트 5개를 채우고 뼈 하트를 1칸으로 제한합니다. 소울 쪽 깨진 하트 6개는 초반부터 적용됩니다."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua",
+        "astro-fight/stage.lua"
+      ],
+      "keywords": "PLAYER THEFORGOTTEN",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "bethany",
+      "title": "베다니",
+      "name": "Bethany",
+      "kind": "normal",
+      "image": "assets/players/bethany.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "신성한 망토",
+            "생득권",
+            "깨진 오브",
+            "성스러운 오브",
+            "알타일",
+            "혜성",
+            "초 처녀자리",
+            "와드",
+            "핑크 와드",
+            "죄보사냥의 악마",
+            "해적 지도",
+            "표리일체",
+            "타락한 오브"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "부서진 앙크"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER BETHANY"
+    },
+    {
+      "id": "jacob",
+      "title": "야곱과 에사우",
+      "name": "Jacob & Esau",
+      "kind": "normal",
+      "image": "assets/players/jacob.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "야곱과 에사우 각각의 시작방에 신성한 카드를 소환합니다.",
+        "에사우에도 야곱과 같은 캐릭터별 금지 아이템·장신구 목록이 적용됩니다."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "책가방",
+            "알타일",
+            "죄보사냥의 악마"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "실종 포스터",
+            "부서진 앙크"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER JACOB"
+    },
+    {
+      "id": "isaac_b",
+      "title": "더럽혀진 아이작",
+      "name": "Tainted Isaac",
+      "kind": "tainted",
+      "image": "assets/players/isaac_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "밑바닥",
+            "강력한 밑바닥",
+            "재빠른 밑바닥",
+            "알타일",
+            "죄보사냥의 악마",
+            "아이작의 액자",
+            "졸업증명서",
+            "위조 증명서"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "실종 포스터",
+            "부서진 앙크"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER ISAAC B"
+    },
+    {
+      "id": "magdalene_b",
+      "title": "더럽혀진 막달레나",
+      "name": "Tainted Magdalene",
+      "kind": "tainted",
+      "image": "assets/players/magdalene_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER MAGDALENE B",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "cain_b",
+      "title": "더럽혀진 카인",
+      "name": "Tainted Cain",
+      "kind": "tainted",
+      "image": "assets/players/cain_b.svg",
+      "scene": "신성한 카드 추가 · 숨겨진 생득권 적용",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드.",
+        "추가로 숨겨진 생득권 효과를 적용합니다."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "알타일",
+            "죄보사냥의 악마"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "실종 포스터",
+            "부서진 앙크"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER CAIN B"
+    },
+    {
+      "id": "judas_b",
+      "title": "더럽혀진 유다",
+      "name": "Tainted Judas",
+      "kind": "tainted",
+      "image": "assets/players/judas_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "9볼트 건전지",
+            "건전지"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER JUDAS B"
+    },
+    {
+      "id": "bluebaby_b",
+      "title": "더럽혀진 ???",
+      "name": "Tainted ??? / Blue Baby",
+      "kind": "tainted",
+      "image": "assets/players/bluebaby_b.svg",
+      "scene": "신성한 카드 추가 · 숨겨진 생득권 적용",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드.",
+        "추가로 숨겨진 생득권 효과를 적용합니다."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER BLUEBABY B",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "eve_b",
+      "title": "더럽혀진 이브",
+      "name": "Tainted Eve",
+      "kind": "tainted",
+      "image": "assets/players/eve_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER EVE B",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "samson_b",
+      "title": "더럽혀진 삼손",
+      "name": "Tainted Samson",
+      "kind": "tainted",
+      "image": "assets/players/samson_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER SAMSON B",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "azazel_b",
+      "title": "더럽혀진 아자젤",
+      "name": "Tainted Azazel",
+      "kind": "tainted",
+      "image": "assets/players/azazel_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER AZAZEL B",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "lazarus_b",
+      "title": "더럽혀진 나사로",
+      "name": "Tainted Lazarus",
+      "kind": "tainted",
+      "image": "assets/players/lazarus_b.svg",
+      "scene": "신성한 카드 추가 · 숨겨진 생득권 적용",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드.",
+        "추가로 숨겨진 생득권 효과를 적용합니다."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "알타일",
+            "죄보사냥의 악마"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "실종 포스터",
+            "부서진 앙크"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER LAZARUS B"
+    },
+    {
+      "id": "eden_b",
+      "title": "더럽혀진 에덴",
+      "name": "Tainted Eden",
+      "kind": "tainted",
+      "image": "assets/players/eden_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "Missing No.",
+            "TMTRAINER"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER EDEN B"
+    },
+    {
+      "id": "thelost_b",
+      "title": "더럽혀진 로스트",
+      "name": "Tainted The Lost",
+      "kind": "tainted",
+      "image": "assets/players/thelost_b.svg",
+      "scene": "부정한 망토 추가 · 보호막 패널티",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 불경스런 망토.",
+        "신성한 망토·신성한 카드 보호막이 깨질 때 이동속도 −0.05, 공격력 −0.05, 사거리 −0.1, 행운 −7이 누적됩니다.",
+        "최대 5회까지 누적되며 새 층에서 초기화됩니다. 연사 감소는 현재 0입니다.",
+        "비스트방에서 추적 중인 신성한 망토·신성한 카드 보호막이 소모되면 즉사합니다. 이 조건은 캐릭터에 관계없이 적용됩니다."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "비밀의 책",
+            "뒤집기",
+            "사자자리",
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "초능력 파리",
+            "다모클레스",
+            "사랑의 매",
+            "고스트 페퍼",
+            "주사위",
+            "스타터 덱",
+            "영혼",
+            "토성",
+            "비탄",
+            "잃어버린 렌즈",
+            "마법 단검",
+            "흑마술",
+            "담요",
+            "마른 아기",
+            "명왕성",
+            "안락사",
+            "빈 그릇",
+            "그림자의 책",
+            "성스러운 오브",
+            "고장난 모뎀",
+            "염소 머리",
+            "성찬",
+            "슈뢰딩거의 고양이",
+            "초 처녀자리",
+            "죄보사냥의 악마",
+            "오메가 321",
+            "스네이크아이즈 포프루스",
+            "반역의 죄보 - 스네이크아이",
+            "퀘이사",
+            "스태프 오브 아인즈 울 고운",
+            "삼사라",
+            "연명치료",
+            "카인의 비밀 주머니"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "부서진 앙크",
+            "문 받침대"
+          ]
+        },
+        {
+          "label": "카드",
+          "items": [
+            "신성한 카드",
+            "시간 여행",
+            "Reverse Magician",
+            "영혼 Lazarus",
+            "영혼 Lost",
+            "알기즈",
+            "혼돈"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua",
+        "astro-fight/penalty.lua"
+      ],
+      "keywords": "PLAYER THELOST B",
+      "relatedLinks": [
+        {
+          "href": "./index.html#lost-shield",
+          "label": "Q&A · 보호막 패널티"
+        }
+      ]
+    },
+    {
+      "id": "lilith_b",
+      "title": "더럽혀진 릴리스",
+      "name": "Tainted Lilith",
+      "kind": "tainted",
+      "image": "assets/players/lilith_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER LILITH B",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "keeper_b",
+      "title": "더럽혀진 키퍼",
+      "name": "Tainted Keeper",
+      "kind": "tainted",
+      "image": "assets/players/keeper_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드.",
+        "일반 캐릭터의 후반 깨진 하트 제한에서 제외됩니다."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "탐욕의 식도",
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "알타일",
+            "죄보사냥의 악마"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "실종 포스터",
+            "부서진 앙크"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua",
+        "astro-fight/stage.lua"
+      ],
+      "keywords": "PLAYER KEEPER B"
+    },
+    {
+      "id": "apollyon_b",
+      "title": "더럽혀진 아폴리온",
+      "name": "Tainted Apollyon",
+      "kind": "tainted",
+      "image": "assets/players/apollyon_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "군체의식",
+            "베프들!"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER APOLLYON B"
+    },
+    {
+      "id": "theforgotten_b",
+      "title": "더럽혀진 포가튼",
+      "name": "Tainted The Forgotten",
+      "kind": "tainted",
+      "image": "assets/players/theforgotten_b.svg",
+      "scene": "신성한 카드 추가 · 숨겨진 생득권 적용",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드.",
+        "추가로 숨겨진 생득권 효과를 적용합니다."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "알타일",
+            "죄보사냥의 악마"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "실종 포스터",
+            "부서진 앙크"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER THEFORGOTTEN B"
+    },
+    {
+      "id": "bethany_b",
+      "title": "더럽혀진 베다니",
+      "name": "Tainted Bethany",
+      "kind": "tainted",
+      "image": "assets/players/bethany_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER BETHANY B",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+    },
+    {
+      "id": "jacob_b",
+      "title": "더럽혀진 야곱과 에사우",
+      "name": "Tainted Jacob & Esau",
+      "kind": "tainted",
+      "image": "assets/players/jacob_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "앙크",
+            "나사로의 붕대",
+            "유다의 그림자",
+            "알타일",
+            "죄보사냥의 악마"
+          ]
+        },
+        {
+          "label": "장신구",
+          "items": [
+            "실종 포스터",
+            "부서진 앙크"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "PLAYER JACOB B"
+    },
+    {
+      "id": "leah",
+      "title": "레아",
+      "name": "Leah",
+      "kind": "custom",
+      "image": "assets/players/leah.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "LEAH",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "itemSources": [
+        "content/players.xml"
+      ]
+    },
+    {
+      "id": "leah_b",
+      "title": "라헬",
+      "name": "Rachel",
+      "kind": "custom",
+      "image": "assets/players/leah_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "LEAH B 더럽혀진 레아 Tainted Leah",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "itemSources": [
+        "content/players.xml",
+        "astro/player.lua"
+      ]
+    },
+    {
+      "id": "diabellstar",
+      "title": "디아벨스타",
+      "name": "Diabellstar",
+      "kind": "custom",
+      "image": "assets/players/diabellstar.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드.",
+        "시작할 때 반역의 죄보 - 스네이크아이를 직접 지급합니다."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "DIABELLSTAR",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "itemSources": [
+        "content/players.xml"
+      ]
+    },
+    {
+      "id": "diabellstar_b",
+      "title": "디아벨제",
+      "name": "Diabellze",
+      "kind": "custom",
+      "image": "assets/players/diabellstar_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "DIABELLSTAR B 더럽혀진 디아벨스타 Tainted Diabellstar",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "itemSources": [
+        "content/players.xml",
+        "astro/player.lua"
+      ]
+    },
+    {
+      "id": "water-enchantress",
+      "title": "성전의 수견사",
+      "name": "Water Enchantress",
+      "kind": "custom",
+      "image": "assets/players/water-enchantress.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "자동차 건전지",
+            "태양"
+          ]
+        },
+        {
+          "label": "알약",
+          "items": [
+            "48 Hour Energy"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "WATER ENCHANTRESS 수견사",
+      "itemSources": [
+        "content/players.xml",
+        "astro/player.lua"
+      ]
+    },
+    {
+      "id": "water-enchantress_b",
+      "title": "일리걸 나이트",
+      "name": "Illegal Knight",
+      "kind": "custom",
+      "image": "assets/players/water-enchantress_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [
+        {
+          "label": "아이템",
+          "items": [
+            "자동차 건전지",
+            "태양"
+          ]
+        },
+        {
+          "label": "알약",
+          "items": [
+            "48 Hour Energy"
+          ]
+        }
+      ],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "WATER ENCHANTRESS B 더럽혀진 수견사 Tainted Water Enchantress",
+      "itemSources": [
+        "content/players.xml",
+        "astro/player.lua"
+      ]
+    },
+    {
+      "id": "david-martinez",
+      "title": "데이비드",
+      "name": "David Martinez",
+      "kind": "custom",
+      "image": "assets/players/david-martinez.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "DAVID MARTINEZ 데이비드 마르티네즈",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "itemSources": [
+        "content/players.xml",
+        "astro/player.lua"
+      ]
+    },
+    {
+      "id": "david-martinez_b",
+      "title": "루시",
+      "name": "Lucy",
+      "kind": "custom",
+      "image": "assets/players/david-martinez_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "DAVID MARTINEZ B 더럽혀진 데이비드 마르티네즈 Tainted David Martinez",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "itemSources": [
+        "content/players.xml",
+        "astro/player.lua"
+      ]
+    },
+    {
+      "id": "stellar",
+      "title": "스텔라",
+      "name": "Stellar",
+      "kind": "custom",
+      "image": "assets/players/stellar.svg",
+      "scene": "시작방에 추가 등장: 처녀자리 EX, 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 초 처녀자리, 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "STELLAR",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "itemSources": [
+        "content/players.xml"
+      ]
+    },
+    {
+      "id": "stellar_b",
+      "title": "나유타",
+      "name": "Nayuta",
+      "kind": "custom",
+      "image": "assets/players/stellar_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "STELLAR B 더럽혀진 스텔라 Tainted Stellar",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "itemSources": [
+        "content/players.xml",
+        "astro/player.lua"
+      ]
+    },
+    {
+      "id": "ainz-ooal-gown",
+      "title": "아인즈",
+      "name": "Ainz Ooal Gown",
+      "kind": "custom",
+      "image": "assets/players/ainz-ooal-gown.svg",
+      "scene": "시작방에 추가 등장: 아인즈 울 고운의 지팡이, 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 스태프 오브 아인즈 울 고운, 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "AINZ OOAL GOWN 아인즈 울 고운",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "itemSources": [
+        "content/players.xml",
+        "astro/player.lua"
+      ]
+    },
+    {
+      "id": "ainz-ooal-gown_b",
+      "title": "판도라즈 액터",
+      "name": "Pandora's Actor",
+      "kind": "custom",
+      "image": "assets/players/ainz-ooal-gown_b.svg",
+      "scene": "시작방에 추가 등장: 신성한 카드.",
+      "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
+      "rules": [
+        "시작방에 추가 등장: 신성한 카드."
+      ],
+      "restrictions": [],
+      "source": "astro-fight/player.lua",
+      "extraSources": [
+        "astro-fight/ban.lua"
+      ],
+      "keywords": "AINZ OOAL GOWN B 더럽혀진 아인즈 울 고운 Tainted Ainz Ooal Gown",
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "itemSources": [
+        "content/players.xml",
+        "astro/player.lua"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,15 @@
 (() => {
   'use strict';
+  const moved = {
+    items: '', 'guppy-head': 'guppy-head', 'eternal-d6': 'eternal-d6',
+    'vanishing-twin': 'vanishing-twin', 'the-wiz': 'the-wiz',
+    technology: 'technology', 'blood-oath': 'blood-oath', 'auto-smelt': 'silver-dollar'
+  };
+  const oldId = location.hash.slice(1);
+  if (Object.hasOwn(moved, oldId)) {
+    location.replace('./items.html' + (moved[oldId] ? '#' + moved[oldId] : ''));
+    return;
+  }
   const search = document.querySelector('#guide-search');
   const clear = document.querySelector('#clear-search');
   const status = document.querySelector('#search-status');
@@ -8,7 +18,10 @@
   const sections = [...document.querySelectorAll('.guide-section')];
   const navLinks = [...document.querySelectorAll('.section-nav a')];
   const normalize = value => value.normalize('NFKC').toLocaleLowerCase('ko').replace(/\s+/g, ' ').trim();
-  const index = new Map(entries.map(entry => [entry, normalize(entry.textContent + ' ' + (entry.dataset.keywords || ''))]));
+  const index = new Map(entries.map(entry => [entry, normalize(
+    [...entry.querySelectorAll('.entry-title, .entry-body p, .effect-group h3, .rule-list li, .reward-table th, .reward-table td, .watch-note, .entry-links a')]
+      .map(part => part.textContent).join(' ') + ' ' + (entry.dataset.keywords || '')
+  )]));
   let savedOpen = null;
 
   function filter() {
@@ -26,7 +39,7 @@
     for (const section of sections) section.hidden = !section.querySelector('.entry:not([hidden])');
     empty.hidden = count > 0;
     clear.hidden = words.length === 0;
-    status.textContent = words.length ? `검색 결과 ${count}개` : `${entries.length}개의 이야기`;
+    status.textContent = words.length ? `검색 결과 ${count}개` : `전체 ${entries.length}개`;
   }
 
   function resetSearch() {

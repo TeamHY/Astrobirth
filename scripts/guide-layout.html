@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101c3c">
+<title>{{PAGE_TITLE}} | Astrobirth 시청자 가이드</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101c3c'/%3E%3Cpath d='M16 4l3.4 8.6L28 16l-8.6 3.4L16 28l-3.4-8.6L4 16l8.6-3.4z' fill='%2383c8ff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./guide.css">
+<script src="./{{SCRIPT}}" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 이동</a>
+<aside class="sidebar" aria-label="가이드 탐색">
+  <a class="brand" href="./index.html#overview" aria-label="Astrobirth 가이드 처음으로"><span class="brand-mark" aria-hidden="true">✦</span><span><span class="brand-name">Astrobirth</span><span class="brand-caption" style="display:block">VIEWER’S GUIDE</span></span></a>
+  <p class="sidebar-intro">헌영의 아이작 대결<br>모드 및 규칙 안내</p>
+  <p class="nav-label">입문 Q&amp;A 목차</p>
+  <nav class="section-nav" aria-label="주제별 목차">{{NAV}}</nav>
+  <div class="sidebar-bottom">
+    <a href="https://www.youtube.com/user/afreecaBJHY/" target="_blank" rel="noopener noreferrer">헌영 유튜브</a>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2492350811" target="_blank" rel="noopener noreferrer">대결 모드 워크숍</a>
+    <div class="version"><strong>Astrobirth v{{VERSION}}</strong><br>설명 확인 {{REVIEWED}}<br>Astro-Items 기반</div>
+  </div>
+</aside>
+<div class="shell">
+  <!-- Agent reference: repository https://github.com/TeamHY/Astrobirth -->
+  <header class="topbar"><span>헌영의 아이작 대결 / 시청자 가이드</span><span class="topbar-version">v{{VERSION}}</span></header>
+  {{TABS}}
+  <main id="main">
+    {{CONTENT}}
+  </main>
+  <!-- Agent reference: reviewed commit https://github.com/TeamHY/Astrobirth/commit/{{SHA}} -->
+  <footer><span>Astrobirth · 시청자 가이드</span><span>설명 확인 {{REVIEWED}} · <a href="https://github.com/TeamHY/Astrobirth/issues" target="_blank" rel="noopener noreferrer">내용 오류 제보</a></span></footer>
+</div>
+</body>
+</html>
