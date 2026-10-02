@@ -13,10 +13,10 @@
 <body>
 <a class="skip-link" href="#main">본문으로 이동</a>
 <aside class="sidebar" aria-label="가이드 탐색">
-  <a class="brand" href="./index.html#overview" aria-label="Astrobirth 가이드 처음으로"><span class="brand-mark" aria-hidden="true">✦</span><span><span class="brand-name">Astrobirth</span><span class="brand-caption" style="display:block">VIEWER’S GUIDE</span></span></a>
+  <a class="brand" href="./index.html#overview" aria-label="Astrobirth 가이드 처음으로"><span class="brand-mark" aria-hidden="true">✦</span><span><span class="brand-name">Astrobirth</span><span class="brand-caption" style="display:block">시청자 가이드</span></span></a>
   <p class="sidebar-intro">헌영의 아이작 대결<br>모드 및 규칙 안내</p>
-  <p class="nav-label">입문 Q&amp;A 목차</p>
-  <nav class="section-nav" aria-label="주제별 목차">{{NAV}}</nav>
+  <p class="nav-label">가이드</p>
+  {{PAGE_NAV}}
   <div class="sidebar-bottom">
     <a href="https://www.youtube.com/user/afreecaBJHY/" target="_blank" rel="noopener noreferrer">헌영 유튜브</a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2492350811" target="_blank" rel="noopener noreferrer">대결 모드 워크숍</a>
@@ -25,8 +25,7 @@
 </aside>
 <div class="shell">
   <!-- Agent reference: repository https://github.com/TeamHY/Astrobirth -->
-  <header class="topbar"><span>헌영의 아이작 대결 / 시청자 가이드</span><span class="topbar-version">v{{VERSION}}</span></header>
-  {{TABS}}
+  <header class="topbar"><span>시청자 가이드 / {{PAGE_TITLE}}</span><span class="topbar-version">v{{VERSION}}</span></header>
   <main id="main">
     {{CONTENT}}
   </main>
