@@ -1,0 +1,47 @@
+name: Publish viewer guide
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'scripts/build-guide.py'
+      - '.github/workflows/guide-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: guide-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+      - name: Generate guide
+        run: python3 scripts/build-guide.py
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload only the public guide
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy guide
+        id: deployment
+        uses: actions/deploy-pages@v4
