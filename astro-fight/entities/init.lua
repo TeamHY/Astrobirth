@@ -3,6 +3,7 @@ Astro.Entities = {}
 require "astro-fight.entities.dark-esau"
 require "astro-fight.entities.restock-machine"
 require "astro-fight.entities.shortcut-portal"
+require "astro-fight.entities.ban-beggar"
 
 Astro:AddCallback(
     ModCallbacks.MC_PRE_TEAR_COLLISION,

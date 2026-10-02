@@ -36,7 +36,9 @@ local function GetRandomCollectibles(collectibles, rng, count, ignoreCollectible
             isIgnore = Astro:Contain(ignoreCollectible, value)
         end
 
-        if not isIgnore and itemConfig:GetCollectible(value).Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST then
+        local item = itemConfig:GetCollectible(value)
+
+        if item and not isIgnore and item.Tags & ItemConfig.TAG_QUEST ~= ItemConfig.TAG_QUEST then
             table.insert(list, value)
         end
     end
@@ -63,44 +65,43 @@ Astro:AddCallback(
     ---@param isContinued boolean
     function(_, isContinued)
         Astro.Data.currentRunItems = Astro.Data.currentRunItems or {}
-        -- Astro.Data.previousRunItems = Astro.Data.previousRunItems or {}
         Astro.Data.currentBanItems = Astro.Data.currentBanItems or {}
 
         banAnimationList = {}
 
         if not isContinued then
-            local rng = RNG()
-            rng:SetSeed(Game():GetSeeds():GetStartSeed(), 35)
+            if Astro.Data.disableNextBan then
+                Astro.Data.currentBanItems = {}
+                Astro.Data.disableNextBan = false
+            else
+                local rng = RNG()
+                rng:SetSeed(Game():GetSeeds():GetStartSeed(), 35)
 
-            Astro.Data.currentBanItems = GetRandomCollectibles(Astro.Data.currentRunItems, rng, BAN_COUNT, IGNORE_LIST)
+                local ignoreList = {table.unpack(IGNORE_LIST)}
+
+                for _, value in ipairs(Astro.Data.currentBanItems) do
+                    table.insert(ignoreList, value)
+                end
+
+                for _, value in ipairs(GetRandomCollectibles(Astro.Data.currentRunItems, rng, BAN_COUNT, ignoreList)) do
+                    table.insert(Astro.Data.currentBanItems, value)
+                end
+            end
+
             Astro.Data.currentRunItems = {}
         end
 
         local itemPool = Game():GetItemPool()
 
-
-        if Astro.Data.disableNextBan then
-            Astro.Data.disableNextBan = false
-        else
-            for _, value in ipairs(Astro.Data.currentBanItems) do
-                print("NextBan: "..value)
+        for _, value in ipairs(Astro.Data.currentBanItems) do
+            if Isaac.GetItemConfig():GetCollectible(value) then
                 itemPool:RemoveCollectible(value)
                 table.insert(banAnimationList, {value, CreateBanAnimationSprite(), 0})
             end
         end
+
     end
 )
-
--- Astro:AddCallback(
---     ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD,
---     ---@param rng RNG
---     ---@param spawnPosition Vector
---     function(_, rng, spawnPosition)
---         if #Astro.Data.previousRunItems > 0 and Game():GetRoom():GetType() == RoomType.ROOM_BOSS then
---             Astro.Data.previousRunItems = {}
---         end
---     end
--- )
 
 Astro:AddCallback(
     ModCallbacks.MC_POST_UPDATE,
@@ -161,7 +162,7 @@ Astro:AddCallback(
         local itemConfig = Isaac.GetItemConfig()
         local item = itemConfig:GetCollectible(collectibleType)
 
-        if item.Quality > 2 and Astro.Data.currentRunItems and not Astro:Contain(Astro.Data.currentRunItems, collectibleType) and Game():GetFrameCount() > 1 then
+        if item and item.Quality > 2 and Astro.Data.currentRunItems and not Astro:Contain(Astro.Data.currentRunItems, collectibleType) and Game():GetFrameCount() > 1 then
             table.insert(Astro.Data.currentRunItems, collectibleType)
         end
 
