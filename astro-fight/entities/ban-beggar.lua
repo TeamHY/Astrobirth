@@ -2,6 +2,9 @@ local CONFIRM_TEXT = "현재 적용중인 BAN 을 해제하시겠습니까? YES 
 local COMPLETE_TEXT = "다음판에 BAN 시스템이 적용되지 않도록 설정하였습니다."
 local SPAWN_GRID_INDEX = 108
 
+local dialogueFont = Font()
+dialogueFont:Load(Astro.Fight.modPath .. "resources/font/eid_korean_soyakkoma_shadow.fnt")
+
 Astro.Entities.BAN_BEGGAR = Isaac.GetEntityVariantByName("Ban Beggar")
 
 if EID then
@@ -21,7 +24,7 @@ local function SpawnBanBeggar()
         return
     end
 
-    if not Astro.Data.currentBanItems or #Astro.Data.currentBanItems == 0 or Astro.Data.disableNextBan then
+    if Astro.Data.disableNextBan then
         return
     end
 
@@ -79,11 +82,11 @@ Astro:AddCallback(
 
         if data.banBeggarConfirming or Astro.Data.disableNextBan then
             Astro.Data.disableNextBan = true
-            Astro:ShowDialogue(collider, COMPLETE_TEXT)
+            Astro:ShowDialogue(collider, COMPLETE_TEXT, nil, dialogueFont)
             sprite:Play("speak_yes", true)
         else
             data.banBeggarConfirming = true
-            Astro:ShowDialogue(collider, CONFIRM_TEXT)
+            Astro:ShowDialogue(collider, CONFIRM_TEXT, nil, dialogueFont)
             sprite:Play("speak", true)
         end
 
