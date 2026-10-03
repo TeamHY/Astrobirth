@@ -369,6 +369,19 @@ class Verification:
                 self.require(not any(n.attrs.get("data-change") == "pool" for n in page.root.nodes("button")), "아이템 페이지에 배열 필터가 표시됩니다.")
             cards = [n for n in page.root.nodes() if n.has_class("entry") or n.has_class("catalog-card")]
             self.require(Counter(n.attrs.get("id") for n in cards) == Counter(e["id"] for e in entries), f"{page.path.name}: JSON과 생성된 항목 목록이 다릅니다.")
+            if page_name == "items":
+                dialogs = page.ids.get("catalog-detail-dialog", [])
+                self.require(len(dialogs) == 1 and dialogs[0].tag == "dialog", "아이템 세부 조건 팝업이 정확히 하나 있어야 합니다.")
+                if dialogs:
+                    self.require(dialogs[0].attrs.get("aria-labelledby") == "catalog-detail-title", "아이템 세부 조건 팝업에 제목 연결이 없습니다.")
+                for card in cards:
+                    details = [n for n in card.nodes("details") if n.has_class("catalog-details")]
+                    triggers = [n for n in card.nodes("button") if n.has_class("catalog-detail-trigger")]
+                    self.require(len(triggers) == len(details), f"items.html#{card.attrs.get('id')}: 세부 조건 팝업 버튼과 대체 설명이 연결되지 않았습니다.")
+                    for trigger in triggers:
+                        self.require(trigger.attrs.get("aria-haspopup") == "dialog" and trigger.attrs.get("aria-controls") == "catalog-detail-dialog" and "hidden" in trigger.attrs, f"items.html#{card.attrs.get('id')}: 세부 조건 팝업 버튼의 접근성 또는 기본 표시 설정이 잘못되었습니다.")
+            if page_name == "players":
+                self.require(not page.ids.get("catalog-detail-dialog"), "캐릭터 설명에 아이템 세부 조건 팝업이 포함되어 있습니다.")
             for section in data.get("sections", []):
                 nodes = page.ids.get(section["id"], [])
                 self.require(len(nodes) == 1 and normalized(section["title"]) in nodes[0].text(), f"{page.path.name}: 섹션이 없습니다: {section['id']}")
@@ -674,7 +687,9 @@ class Verification:
                 return "".join(literal_text(child) if isinstance(child, Node) else child for child in node.children)
             actual = [normalized(literal_text(node)) for effects in lists for node in effects.nodes("li")]
             expected = [normalized("".join(segment.get("text", segment.get("item", "")) for segment in line)) for line in compact_entry(entry)["eidEffects"]]
-            self.require(actual == expected, f"{label}: EID 효과의 미리보기·상세에 누락 또는 중복이 있습니다.")
+            self.require(actual == expected, f"{label}: EID 기본 효과에 누락 또는 중복이 있습니다.")
+            folded_effects = [node for details in card.nodes("details") for node in details.nodes("ul") if node.has_class("catalog-eid-effects")]
+            self.require(not folded_effects, f"{label}: EID 기본 효과가 세부 조건 안에 있습니다.")
             for line in entry["eidEffects"]:
                 for segment in line:
                     if "item" in segment:

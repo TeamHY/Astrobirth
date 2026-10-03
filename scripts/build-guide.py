@@ -167,7 +167,7 @@ def body(entry, include_body=True, include_facts=True):
 def write_page(page, title, description, content, script):
     page_nav = '<nav class="page-nav" aria-label="가이드 페이지">' + ''.join(
         f'<a href="./{key}.html' + ('#overview' if key == 'index' else '') + '"' + (' aria-current="page"' if key == page else '') + f'>{esc(label)}</a>'
-        for key, label in [('index', '입문 Q&A'), ('rules', '전체 규칙'), ('items', '아이템 변경사항'), ('players', '플레이어 변경사항'), ('rooms', '방 변경사항')]) + '</nav>'
+        for key, label in [('index', '입문 Q&A'), ('rules', '전체 규칙'), ('items', '아이템 가이드'), ('players', '캐릭터 가이드'), ('rooms', '방 변경사항')]) + '</nav>'
     replacements = {'PAGE_TITLE': esc(title), 'DESCRIPTION': esc(description, quote=True),
                     'PAGE_NAV': page_nav, 'CONTENT': content, 'PAGE_KEY': page,
                     'REVIEWED': data['reviewed'], 'VERSION': data['version'],
@@ -187,7 +187,7 @@ def write_page(page, title, description, content, script):
 
 
 def empty_state():
-    return '<div class="empty-state" id="empty-state" hidden><h3>해당 분류에 변경사항이 없습니다.</h3><button type="button" id="reset-filters">전체 변경사항 보기</button></div>'
+    return '<div class="empty-state" id="empty-state" hidden><h3>해당 분류의 항목이 없습니다.</h3><button type="button" id="reset-filters">전체 목록 보기</button></div>'
 
 
 def catalog_details(entry):
@@ -260,13 +260,13 @@ def render_qa():
 <section id="guide" aria-labelledby="guide-title"><div class="guide-toolbar"><div><h2 id="guide-title">주요 규칙 Q&A</h2><p>전체 {count}개</p></div></div>
 {''.join(sections)}</section>
 <aside class="scope-note" aria-labelledby="scope-title"><span class="scope-icon" aria-hidden="true">i</span><div><h2 id="scope-title">모드 기능과 경기 운영 규칙</h2><p>Astrobirth와 기반 모드 Astro-Items의 기능을 설명합니다. 경기 목표, 허용 아이템, 보조 모드와 밴 해제 여부는 해당 방송의 공지가 우선입니다. 업데이트 후 실제 게임과 다를 수 있습니다.<br>직접 플레이하는 경우 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3260980911" target="_blank" rel="noopener noreferrer">Astro-Items</a>와 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1630138997" target="_blank" rel="noopener noreferrer">한국어 아이템 설명 모드</a>도 참고할 수 있습니다.</p></div></aside>'''
-    write_page('index', '입문 Q&A', '헌영의 아이작 대결을 처음 보는 시청자를 위한 입문 Q&A입니다. 아이템 및 플레이어 변경사항을 함께 설명합니다.', content, 'guide.js')
+    write_page('index', '입문 Q&A', '헌영의 아이작 대결을 처음 보는 시청자를 위한 입문 Q&A입니다. 아이템과 캐릭터의 기능 및 대결 변경사항을 함께 설명합니다.', content, 'guide.js')
     print(f'Generated index.html: {len(sections)} sections, {count} entries.')
 
 
 def render_rules():
     sections, count, chapter_links = render_sections(rules['sections'])
-    intro = rules.get('intro', '금지 목록, 방·층 구성, 피격과 보상, 소비 아이템의 세부 조건을 정리했습니다. 개별 아이템과 캐릭터 변경사항은 해당 페이지에서 확인할 수 있습니다.')
+    intro = rules.get('intro', '금지 목록, 방·층 구성, 피격과 보상, 소비 아이템의 세부 조건을 정리했습니다. 개별 아이템과 캐릭터는 아이템 가이드·캐릭터 가이드에서 확인할 수 있습니다.')
     content = f'''<section class="hero" id="overview" aria-labelledby="page-title"><p class="eyebrow">Astrobirth 대결</p><h1 id="page-title">전체 규칙</h1><p class="hero-copy">{esc(intro)}</p></section>
 <nav class="chapter-toc" aria-label="전체 규칙 목차"><p class="toc-label">이 페이지 목차</p><div class="section-nav">{chapter_links}</div></nav>
 <section id="guide" aria-labelledby="guide-title"><div class="guide-toolbar"><div><h2 id="guide-title">분야별 세부 규칙</h2><p>전체 {count}개</p></div></div>{''.join(sections)}</section>
@@ -287,16 +287,20 @@ def render_catalog(page, catalog, kinds, title, subtitle):
         origin_attribute = f' data-origin="{esc(entry.get("origin", "base"), quote=True)}"'
         tag = ({'base': '기본', 'mod': '모드'}[entry['origin']] + ' · ' + kinds[kind]) if is_players else kinds[kind] + ' · ' + entry['tag']
         detail_entry = {**catalog_details(entry)}
-        detail_entry['eidEffects'] = entry.get('eidEffects', [])[3:]
-        has_details = any(detail_entry.get(key) for key in ['eidEffects', 'rules', 'effectGroups', 'rewardTable', 'poolTable', 'watch', 'caution', 'restrictions', 'restrictionNote', 'related', 'relatedLinks'])
+        # Basic EID effects stay visible; details contain additional conditions.
+        detail_entry['eidEffects'] = []
+        has_details = any(detail_entry.get(key) for key in ['rules', 'effectGroups', 'rewardTable', 'poolTable', 'watch', 'caution', 'restrictions', 'restrictionNote', 'related', 'relatedLinks'])
         details = source_comment(detail_entry)
         if has_details:
             details = f'<details class="catalog-details"><summary>{"고유 규칙 및 추가 금지" if is_players else "세부 조건 보기"}</summary><div class="entry-body">{body(detail_entry, False, include_facts=False)}</div></details>'
+            if not is_players:
+                detail_label = esc(entry['title'] + ' 세부 조건 보기', quote=True)
+                details = f'<button type="button" class="catalog-detail-trigger" aria-haspopup="dialog" aria-controls="catalog-detail-dialog" aria-label="{detail_label}" hidden>세부 조건 보기</button>' + details
         scene = f'<p class="catalog-scene">{esc(entry["scene"])}</p>' if entry.get('scene') else ''
         description = f'<p class="catalog-description">{esc(entry["body"])}</p>' if entry.get('body') else ''
-        preview = eid_effects(entry.get('eidEffects', [])[:3], preview=True)
+        effects = eid_effects(entry.get('eidEffects', []), preview=True)
         image_label = entry['title'] + (' 캐릭터' if is_players else ' 원본 이미지 미등록' if entry.get('imagePlaceholder') else ' 아이콘')
-        cards.append(f'''<article class="catalog-card{' player-card' if is_players else ''}" id="{entry['id']}" data-kind="{kind}"{origin_attribute} data-changes="{esc(' '.join(entry.get('changeKinds', ['effect'])), quote=True)}" data-keywords="{esc(entry.get('keywords',''), quote=True)}"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./{esc(entry['image'])}" alt="{esc(image_label, quote=True)}" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">{esc(tag)}</span><h2 class="catalog-title-row"><span>{esc(entry['title'])}</span>{permalink(entry)}</h2><p class="english-name">{esc(entry['name'])}</p></div></div>{scene}{description}{preview}{catalog_facts(entry)}{details}</article>''')
+        cards.append(f'''<article class="catalog-card{' player-card' if is_players else ''}" id="{entry['id']}" data-kind="{kind}"{origin_attribute} data-changes="{esc(' '.join(entry.get('changeKinds', ['effect'])), quote=True)}" data-keywords="{esc(entry.get('keywords',''), quote=True)}"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./{esc(entry['image'])}" alt="{esc(image_label, quote=True)}" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">{esc(tag)}</span><h2 class="catalog-title-row"><span>{esc(entry['title'])}</span>{permalink(entry)}</h2><p class="english-name">{esc(entry['name'])}</p></div></div>{scene}{description}{effects}{catalog_facts(entry)}{details}</article>''')
     buttons = [f'<button type="button" data-kind="all" aria-pressed="true">전체 <span>{len(entries)}</span></button>']
     for key, label in kinds.items():
         count = sum((entry['variant'] if is_players else entry['kind']) == key for entry in entries)
@@ -308,13 +312,14 @@ def render_catalog(page, catalog, kinds, title, subtitle):
     filters = '<div class="item-filters"><div class="item-filter-group" role="group" aria-label="아이템 출처"><span class="item-filter-label">출처</span><div class="catalog-filters">' + origin_buttons + '</div></div><div class="item-filter-group" role="group" aria-label="아이템 분류"><span class="item-filter-label">종류</span><div class="catalog-filters">' + ''.join(buttons) + '</div></div></div>'
     if is_players:
         filters = '<div class="player-filters"><div class="player-filter-group" role="group" aria-label="캐릭터 구분"><span class="player-filter-label">구분</span><div class="catalog-filters">' + origin_buttons + '</div></div><div class="player-filter-group" role="group" aria-label="캐릭터 형태"><span class="player-filter-label">형태</span><div class="catalog-filters">' + ''.join(buttons) + '</div></div></div>'
-    change_filters = '' if is_players else '<div class="change-filters" role="group" aria-label="변경 분야">' + ''.join(f'<button type="button" data-change="{key}" aria-pressed="{str(key == "all").lower()}">{label}</button>' for key, label in [('all', '모든 변경'), ('effect', '효과'), ('config', '가격·퀄리티·충전')]) + '</div>'
+    change_filters = '' if is_players else '<div class="change-filters" role="group" aria-label="변경 분야">' + ''.join(f'<button type="button" data-change="{key}" aria-pressed="{str(key == "all").lower()}">{label}</button>' for key, label in [('all', '전체 안내'), ('effect', '효과'), ('config', '가격·퀄리티·충전')]) + '</div>'
     common = '<div class="player-common"><a href="./index.html#no-hit"><span>핵심 규칙</span><strong>노피격과 에이플 ↗</strong><p>올백·낙제 유지에 따라 추가 보상이 달라집니다.</p></a><a href="./index.html#health-limit"><span>후반 생존</span><strong>체력 상한 제한 ↗</strong><p>일부 캐릭터는 적용 방식과 예외가 다릅니다.</p></a><a href="./index.html#lost-shield"><span>로스트 계열</span><strong>보호막 손실 패널티 ↗</strong><p>보호막만 깨져도 능력치가 내려갑니다.</p></a></div>' if is_players else ''
     common += ''.join('<aside class="catalog-note" id="' + esc(note['id'], quote=True) + '"><strong>' + esc(note['title']) + '</strong><div class="entry-body">' + body(note) + '</div></aside>' for note in catalog.get('sharedNotes', []))
-    content = f'''<section class="hero catalog-hero" id="overview" aria-labelledby="page-title"><div><p class="eyebrow">{'플레이어' if is_players else '아이템'} 변경사항</p><h1 id="page-title">{title}</h1><p class="hero-copy">{esc(catalog['intro'])}</p></div></section>{common}
-<section class="catalog" id="catalog" aria-labelledby="catalog-title"><div class="guide-toolbar"><div><h2 id="catalog-title">{subtitle}</h2><p id="catalog-status" role="status" aria-live="polite">전체 {len(entries)}{unit}</p></div></div>{filters}{change_filters}<noscript><p class="no-script">모든 변경사항을 읽을 수 있습니다. 분류는 자바스크립트가 활성화된 경우 사용할 수 있습니다.</p></noscript>{empty_state()}<div class="catalog-grid">{''.join(cards)}</div></section>
-<aside class="catalog-end"><p>설명 기준 Astrobirth v{data['version']} · 확인 {data['reviewed']}</p><a href="./index.html">입문 Q&amp;A로 돌아가기 ↗</a></aside>'''
-    write_page(page, '플레이어 변경사항' if is_players else '아이템 변경사항', catalog['intro'], content, 'catalog.js')
+    detail_dialog = '' if is_players else '<dialog id="catalog-detail-dialog" class="catalog-detail-dialog" aria-labelledby="catalog-detail-title"><div class="catalog-dialog-heading"><h2 id="catalog-detail-title"></h2><button type="button" class="catalog-dialog-close" aria-label="세부 조건 닫기">×</button></div><div class="catalog-dialog-content"></div></dialog>'
+    content = f'''<section class="hero catalog-hero" id="overview" aria-labelledby="page-title"><div><p class="eyebrow">Astrobirth · {'캐릭터' if is_players else '아이템'}</p><h1 id="page-title">{title}</h1><p class="hero-copy">{esc(catalog['intro'])}</p></div></section>{common}
+<section class="catalog" id="catalog" aria-labelledby="catalog-title"><div class="guide-toolbar"><div><h2 id="catalog-title">{subtitle}</h2><p id="catalog-status" role="status" aria-live="polite">전체 {len(entries)}{unit}</p></div></div>{filters}{change_filters}<noscript><p class="no-script">전체 목록을 읽을 수 있습니다. 분류는 자바스크립트가 활성화된 경우 사용할 수 있습니다.</p></noscript>{empty_state()}<div class="catalog-grid">{''.join(cards)}</div></section>
+<aside class="catalog-end"><p>설명 기준 Astrobirth v{data['version']} · 확인 {data['reviewed']}</p><a href="./index.html">입문 Q&amp;A로 돌아가기 ↗</a></aside>{detail_dialog}'''
+    write_page(page, '캐릭터 가이드' if is_players else '아이템 가이드', catalog['intro'], content, 'catalog.js')
     print(f'Generated {page}.html: {len(entries)} cards.')
 
 
@@ -328,6 +333,6 @@ def render_rooms():
 build_search_index()
 render_qa()
 render_rules()
-render_catalog('items', items, {'passive': '패시브', 'active': '액티브', 'trinket': '장신구', 'card': '카드'}, '아이템 변경사항', '아이템별 변경사항')
-render_catalog('players', players, {'normal': '일반', 'tainted': '더럽혀진'}, '플레이어 변경사항', '플레이어별 변경사항')
+render_catalog('items', items, {'passive': '패시브', 'active': '액티브', 'trinket': '장신구', 'card': '카드'}, '아이템 가이드', '아이템 목록')
+render_catalog('players', players, {'normal': '일반', 'tainted': '더럽혀진'}, '캐릭터 가이드', '캐릭터 목록')
 render_rooms()
