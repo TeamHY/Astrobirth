@@ -68,12 +68,12 @@ h1 span{color:var(--primary)}
 .entry summary:hover{background:#f2f6fd}
 .entry-title{display:block;font-size:16px;font-weight:650;line-height:1.5;letter-spacing:-.015em}
 .entry-title-row{min-width:0}
-.entry-title-row,.catalog-title-row{display:flex;align-items:flex-start;gap:3px}
+.entry-title-row,.catalog-title-row{display:flex;align-items:baseline;gap:3px}
 .entry-title-row>.entry-title,.catalog-title-row>span{min-width:0}
-.permalink{display:inline-flex;align-items:center;justify-content:center;flex:none;width:20px;height:20px;margin-top:2px;border-radius:4px;color:#7286a7;opacity:0}
+.permalink{display:inline-flex;align-items:center;justify-content:center;flex:none;width:20px;height:1em;border-radius:4px;color:#7286a7;opacity:0}
 .entry summary:hover .permalink,.entry summary:focus-visible .permalink,.catalog-card-heading:hover .permalink,.permalink:focus-visible{opacity:1}
 .permalink:hover{color:var(--primary);background:#e7efff}
-.permalink svg{display:block;width:14px;height:14px;pointer-events:none}
+.permalink svg{display:block;width:14px;height:14px;transform:translateY(1px);pointer-events:none}
 .topbar-version{white-space:nowrap;font-size:12px;color:var(--primary)}
 .entry-body{padding:0 23px 23px;max-width:860px}
 .entry-body>p{margin:0 0 15px;color:#495773;font-size:16px;line-height:1.8}

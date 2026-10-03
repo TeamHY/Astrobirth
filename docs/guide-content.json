@@ -673,16 +673,18 @@
         {
           "id": "pause",
           "title": "중요한 보스전에서 일시정지가 제한되는 이유",
-          "keywords": "ESC 이스케이프 Pause 정지 메뉴 Shift 시프트",
-          "body": "주요 보스전과 홈 구간에서는 일시정지·뒤로 가기 입력이 제한됩니다. 왼쪽 Shift를 누른 상태에서는 제한을 우회할 수 있습니다.",
+          "keywords": "ESC 이스케이프 Pause 정지 메뉴",
+          "body": "주요 보스전과 홈 구간에서는 일시정지·뒤로 가기 입력이 제한됩니다.",
           "watch": "플레이어가 보스전 도중 메뉴를 열지 않는 데에는 모드의 입력 제한도 영향을 줍니다.",
-          "caution": "예외 입력 사용을 허용하는지는 해당 방송의 경기 규칙이 우선입니다.",
           "source": "astro-fight/penalty.lua",
           "relatedLinks": [
             {
               "label": "일시정지 제한의 전체 적용 범위",
               "href": "./rules.html#pause-details"
             }
+          ],
+          "agentNotes": [
+            "시청자 가이드에는 일시정지 제한을 우회하는 입력 방법을 안내하지 않습니다."
           ]
         }
       ]

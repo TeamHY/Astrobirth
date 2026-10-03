@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate the viewer guide, detailed rules, catalogs and room comparison."""
 import html
+import hashlib
 import json
 from pathlib import Path
 
@@ -26,6 +27,8 @@ def source_comment(entry):
     if not sources and not references:
         return ''
     material = {'entry': entry['id'], 'sources': sources}
+    if entry.get('agentNotes'):
+        material['agentNotes'] = entry['agentNotes']
     if references:
         material['references'] = references
     reference = json.dumps(material, ensure_ascii=False, indent=2)
@@ -86,6 +89,7 @@ def write_page(page, title, description, content, script):
                     'PAGE_NAV': page_nav, 'CONTENT': content, 'PAGE_KEY': page,
                     'REVIEWED': data['reviewed'], 'VERSION': data['version'],
                     'SHA': data['sources']['Astrobirth'], 'SCRIPT': script,
+                    'STYLE_REVISION': hashlib.sha256((DOCS / 'guide.css').read_bytes()).hexdigest()[:12],
                     'EXTRA_STYLES': '<link rel="stylesheet" href="./rooms.css">' if page == 'rooms' else ''}
     output = layout
     for key, value in replacements.items():
