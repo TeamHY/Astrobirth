@@ -3,9 +3,11 @@
 import html
 import hashlib
 import json
+import re
 from html.parser import HTMLParser
 from pathlib import Path
 from guide_presentation import compact_entry
+from guide_effects import BASE_STATS, EVENT, LUCK_NOTE, effect_text, icon_text, stat_parts, summary_kind
 from guide_upgrades import apply_upgrade_notes, relation_text
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,6 +20,11 @@ players = json.loads((DOCS / 'players-content.json').read_text(encoding='utf-8')
 rules = json.loads((DOCS / 'rules-content.json').read_text(encoding='utf-8'))
 room_data = json.loads((DOCS / 'rooms-content.json').read_text(encoding='utf-8'))
 icons = json.loads((DOCS / 'guide-icons.json').read_text(encoding='utf-8'))
+effect_pickup_icons = {'꿀꺽! 알약': 'Pill', '행운 동전': 'Crafting11', '기가 폭탄': 'Crafting17',
+                       '마이크로 배터리': 'Crafting18', '블랙하트': 'BlackHeart', '소울하트': 'SoulHeart',
+                       '빨간 하트': 'Heart'}
+effect_item_names = '|'.join(re.escape(name) for name in sorted(set(icons['names']) | set(effect_pickup_icons), key=len, reverse=True) if name)
+effect_item_pattern = re.compile(r'(?<![\w가-힣])(?P<name>' + effect_item_names + r')(?P<particle>[을를와과]?)(?=\s+(?:효과|소환|획득|흡수|소지|가지고|장신구|알약|카드|\d)|(?:을|를)\s+(?:소환|획득|흡수|소지|가지고))')
 layout = (ROOT / 'scripts/guide-layout.html').read_text(encoding='utf-8')
 esc = html.escape
 
@@ -48,25 +55,115 @@ def named_items(names):
         for name in names) + '</span>'
 
 
+def render_effect_segments(line):
+    segments = []
+    for index, segment in enumerate(line):
+        if 'text' in segment:
+            segments.append(esc(segment['text']))
+        elif 'item' in segment:
+            segments.append(named_items([segment['item']]))
+        elif 'icon' in segment:
+            key = segment['icon']
+            segments.append(icon_image(key))
+            label = icon_text(line, index, icons)
+            if label:
+                segments.append('<span class="effect-icon-label">' + esc(label) + '</span>')
+    return ''.join(segments)
+
+
+def stat_effect(text, existing_icons=()):
+    stat = stat_parts(text)
+    if not stat:
+        return None
+    image = ''.join(icon_image(key) for key in existing_icons) or icon_image(stat['icon'])
+    label = esc((stat['context'] or '') + stat['label'] + (stat['modifier'] or ''))
+    direction = '<span class="effect-direction">' + esc(stat['direction'] or '') + '</span>'
+    return '<li class="effect-stat" data-effect-template="stat"><span class="effect-stat-label">' + image + direction + '<span>' + label + ' </span></span><strong class="effect-stat-value">' + esc(stat['value']) + '</strong></li>'
+
+
+def split_effect_segments(line, offset):
+    before, after, position = [], [], 0
+    for segment in line:
+        text = segment.get('text', segment.get('item', ''))
+        if position >= offset:
+            after.append(segment)
+        elif position + len(text) <= offset:
+            before.append(segment)
+        elif 'text' in segment:
+            cut = offset - position
+            before.append({'text': text[:cut]})
+            after.append({'text': text[cut:]})
+        else:
+            return None
+        position += len(text)
+    return before, after
+
+
+def effect_row(line):
+    text = ''.join(segment.get('text', segment.get('item', '')) for segment in line)
+    if all('text' in segment or 'icon' in segment for segment in line):
+        stat = stat_effect(text, [segment['icon'] for segment in line if 'icon' in segment])
+        if stat:
+            return stat
+    rendered = render_effect_segments(line)
+    if text.strip().endswith(':'):
+        return '<li class="effect-condition" data-effect-template="condition">' + rendered + '</li>'
+    if LUCK_NOTE.fullmatch(text.strip()):
+        return '<li class="effect-note" data-effect-template="chance">' + icon_image('LuckSmall') + rendered + '</li>'
+    event = EVENT.fullmatch(text)
+    if event:
+        split = split_effect_segments(line, event.start('result'))
+        if split:
+            trigger, result = map(render_effect_segments, split)
+            return '<li class="effect-event" data-effect-template="event"><span class="effect-trigger">' + trigger + '</span><span class="effect-result">' + result + '</span></li>'
+    return '<li>' + rendered + '</li>'
+
+
 def eid_effects(lines, preview=False):
     if not lines:
         return ''
-    rendered = []
-    for line in lines:
-        segments = []
-        for segment in line:
-            if 'text' in segment:
-                segments.append(esc(segment['text']))
-            elif 'item' in segment:
-                segments.append(named_items([segment['item']]))
-            elif 'icon' in segment:
-                segments.append(icon_image(segment['icon']))
-        rendered.append('<li>' + ''.join(segments) + '</li>')
+    rendered = [effect_row(line) for line in lines]
     return '<ul class="catalog-eid-effects' + (' catalog-eid-preview' if preview else '') + '">' + ''.join(rendered) + '</ul>'
 
 
 def eid_text(lines):
-    return ' '.join(''.join(segment.get('text', segment.get('item', '')) for segment in line) for line in lines)
+    return effect_text(lines, icons)
+
+
+def linked_effect_text(text):
+    # Decorate explicit item actions only; ordinary nouns such as 달 or 신
+    # must not be inferred to mean a collectible.
+    cursor, parts = 0, []
+    for match in effect_item_pattern.finditer(text):
+        start, end, name = match.start(), match.end(), match['name']
+        parts.append(esc(text[cursor:start]))
+        image = icon_image(effect_pickup_icons[name]) if name in effect_pickup_icons else icon_image(name, True)
+        parts.append('<span class="named-item">' + image + '<span>' + esc(text[start:end]) + '</span></span>')
+        cursor = end
+    return ''.join(parts) + esc(text[cursor:])
+
+
+def catalog_description(entry):
+    text = entry.get('body', '')
+    if not text:
+        return ''
+    kind = summary_kind(text)
+    if kind == 'stats':
+        match = BASE_STATS.fullmatch(text)
+        rows = []
+        if match['each']:
+            rows.append('<li class="effect-condition">' + esc(match['each']) + '</li>')
+        for part in match['stats'].split(' · '):
+            if rows and rows[-1].startswith('<li class="effect-stat'):
+                rows.append('<li class="effect-source-boilerplate"> · </li>')
+            rows.append(stat_effect(part))
+        return '<div class="catalog-effect-summary"><span class="effect-source-boilerplate">기본 효과에 </span><ul class="catalog-eid-effects">' + ''.join(rows) + '</ul><span class="effect-source-boilerplate"> 보정이 추가됩니다.</span></div>'
+    if kind == 'event':
+        match = EVENT.fullmatch(text)
+        trigger = text[:match.start('result')]
+        result = text[match.start('result'):]
+        return '<div class="catalog-effect-summary"><ul class="catalog-eid-effects"><li class="effect-event" data-effect-template="event"><span class="effect-trigger">' + linked_effect_text(trigger) + '</span><span class="effect-result">' + linked_effect_text(result) + '</span></li></ul></div>'
+    return '<p class="catalog-description">' + esc(text) + '</p>'
 
 
 def catalog_facts(entry):
@@ -135,7 +232,6 @@ def upgrade_notes(entry):
             text = text.replace(name, f'<a href="./items.html#{esc(item["id"], quote=True)}">{name}</a>', 1)
         notes.append('<p class="catalog-upgrade">' + text + ' <a class="upgrade-conditions" href="' + esc(relation['href'], quote=True) + '">확률·조건 보기 ↗</a></p>')
     return ''.join(notes)
-
 
 
 def body(entry, include_body=True, include_facts=True):
@@ -252,7 +348,7 @@ def build_search_index():
             record = {
                 'page': page, 'title': entry['title'], 'href': f"./{page}.html#{entry['id']}",
                 'description': entry['body'] or eid_text(entry.get('eidEffects', [])[:3]) or ' '.join(VisibleText(catalog_facts(entry)).parts), 'name': entry.get('name', ''),
-                'text': ' '.join([text, entry.get('scene', ''), entry.get('tag', '')]),
+                'text': ' '.join([text, entry.get('scene', ''), entry.get('searchScene', ''), entry.get('tag', '')]),
                 'keywords': entry.get('keywords', ''),
             }
             if entry.get('image'):
@@ -327,7 +423,7 @@ def render_catalog(page, catalog, kinds, title, subtitle):
                 detail_label = esc(entry['title'] + ' 세부 조건 보기', quote=True)
                 details = f'<button type="button" class="catalog-detail-trigger" aria-haspopup="dialog" aria-controls="catalog-detail-dialog" aria-label="{detail_label}" hidden>세부 조건 보기</button>' + details
         scene = f'<p class="catalog-scene">{esc(entry["scene"])}</p>' if entry.get('scene') else ''
-        description = f'<p class="catalog-description">{esc(entry["body"])}</p>' if entry.get('body') else ''
+        description = catalog_description(entry) if not is_players else (f'<p class="catalog-description">{esc(entry["body"])}</p>' if entry.get('body') else '')
         effects = eid_effects(entry.get('eidEffects', []), preview=True)
         image_label = entry['title'] + (' 캐릭터' if is_players else ' 원본 이미지 미등록' if entry.get('imagePlaceholder') else ' 아이콘')
         cards.append(f'''<article class="catalog-card{' player-card' if is_players else ''}" id="{entry['id']}" data-kind="{kind}"{origin_attribute} data-changes="{esc(' '.join(entry.get('changeKinds', ['effect'])), quote=True)}" data-keywords="{esc(entry.get('keywords',''), quote=True)}"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./{esc(entry['image'])}" alt="{esc(image_label, quote=True)}" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">{esc(tag)}</span><h2 class="catalog-title-row"><span>{esc(entry['title'])}</span>{permalink(entry)}</h2><p class="english-name">{esc(entry['name'])}</p></div></div>{scene}{description}{upgrade_notes(entry)}{effects}{catalog_facts(entry)}{details}</article>''')
@@ -371,7 +467,6 @@ def render_upgrades():
 {''.join(sections)}'''
     write_page('upgrades', '업그레이드 확률', upgrades['intro'], content, 'guide.js')
     print(f'Generated upgrades.html: {len(upgrades["patterns"])} patterns.')
-
 
 
 build_search_index()

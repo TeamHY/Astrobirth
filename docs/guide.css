@@ -201,7 +201,21 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 .catalog-eid-effects .item-inline-icon{width:24px;height:24px}
 .catalog-eid-effects .named-items{line-height:inherit}
 .catalog-eid-effects .named-item{gap:3px}
+.effect-icon-label{margin-right:3px;vertical-align:middle}
 .catalog-eid-preview{margin-top:14px}
+.catalog-effect-summary{min-width:0;margin:14px 0 17px}
+.catalog-effect-summary>.catalog-eid-effects{margin:0}
+.catalog-eid-effects li.effect-stat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,40%);gap:8px;align-items:baseline;margin:5px 0;line-height:1.7}
+.effect-stat-label{display:flex;align-items:baseline;gap:5px;min-width:0;color:#63738d;font-size:12px;overflow-wrap:anywhere}
+.effect-stat-label .inline-icon{width:17px;height:17px;align-self:center}
+.effect-stat-value{min-width:0;text-align:right;font-size:13px;font-weight:700;color:#244f91;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.catalog-eid-effects li.effect-condition{margin:12px 0 3px;color:var(--primary);font-size:11px;font-weight:650;line-height:1.7}
+.catalog-eid-effects li.effect-condition:first-child{margin-top:0}
+.catalog-eid-effects li.effect-event{margin:8px 0}
+.effect-trigger{display:block;margin-bottom:2px;color:#63738d;font-size:11px;font-weight:600;line-height:1.7}
+.effect-result{display:block;min-width:0;overflow-wrap:anywhere}
+.catalog-eid-effects li.effect-note{margin:5px 0;color:#63738d;font-size:12px;line-height:1.8}
+.effect-direction,.effect-source-boilerplate{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 .catalog-note p{margin:0;font-size:13px;line-height:1.8}
 .catalog-note .rule-list{padding-left:18px;margin:8px 0 0}
 .catalog-note .rule-list li{font-size:12px;line-height:1.8;margin:3px 0}

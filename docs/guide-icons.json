@@ -4331,6 +4331,84 @@
         13
       ],
       "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
+    },
+    "DamageSmall": {
+      "image": "assets/eid/DamageSmall.svg",
+      "sheet": "eid_inline_icons",
+      "animation": "Stats",
+      "frame": 21,
+      "crop": [
+        210,
+        206,
+        9,
+        9
+      ],
+      "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
+    },
+    "SpeedSmall": {
+      "image": "assets/eid/SpeedSmall.svg",
+      "sheet": "eid_inline_icons",
+      "animation": "Stats",
+      "frame": 22,
+      "crop": [
+        228,
+        206,
+        11,
+        9
+      ],
+      "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
+    },
+    "TearsSmall": {
+      "image": "assets/eid/TearsSmall.svg",
+      "sheet": "eid_inline_icons",
+      "animation": "Stats",
+      "frame": 23,
+      "crop": [
+        240,
+        206,
+        12,
+        9
+      ],
+      "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
+    },
+    "RangeSmall": {
+      "image": "assets/eid/RangeSmall.svg",
+      "sheet": "eid_inline_icons",
+      "animation": "Stats",
+      "frame": 24,
+      "crop": [
+        220,
+        193,
+        11,
+        11
+      ],
+      "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
+    },
+    "ShotspeedSmall": {
+      "image": "assets/eid/ShotspeedSmall.svg",
+      "sheet": "eid_inline_icons",
+      "animation": "Stats",
+      "frame": 25,
+      "crop": [
+        203,
+        195,
+        8,
+        8
+      ],
+      "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
+    },
+    "LuckSmall": {
+      "image": "assets/eid/LuckSmall.svg",
+      "sheet": "eid_inline_icons",
+      "animation": "Stats",
+      "frame": 26,
+      "crop": [
+        200,
+        206,
+        9,
+        9
+      ],
+      "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
     }
   },
   "nameSourceSHA256": "7a92b1437c1432999cab4c0331086ae3d544e907972f562852e761f05a53777e"

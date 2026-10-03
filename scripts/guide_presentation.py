@@ -1,6 +1,7 @@
 """Compact catalog presentation; the reviewed source sentences stay intact."""
 from copy import deepcopy
 import re
+from guide_effects import summary_kind
 
 CONFIG_FIELDS = {
     '아이템 퀄리티': ('퀄리티', 'quality', ''),
@@ -80,6 +81,11 @@ def compact_entry(original, players=False):
             entry['configChanges'].append({'label': '충전', 'field': 'maxcharges', 'icon': 'Battery', 'value': mod.get('chargeLabel', mod['maxcharges'] + '칸')})
         if entry.get('resourceOnly'):
             entry['body'] = ''
+            entry['scene'] = ''
+        elif summary_kind(entry.get('body', '')):
+            # The structured effect already states the result; keep the original
+            # scene as a search alias without repeating it above the same effect.
+            entry['searchScene'] = entry.get('scene', '')
             entry['scene'] = ''
         if SHARED_ENHANCED in entry.get('rules', []):
             entry['rules'].remove(SHARED_ENHANCED)

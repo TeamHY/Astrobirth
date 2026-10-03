@@ -20,6 +20,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 from xml.etree import ElementTree
 from guide_presentation import compact_entry
+from guide_effects import effect_text
 from guide_upgrades import apply_upgrade_notes, relation_text
 
 
@@ -694,11 +695,11 @@ class Verification:
             self.require(bool(entry.get("imagePlaceholder")) == record["imagePlaceholder"], f"{label}: 미등록 원본 이미지의 대체 표시가 다릅니다.")
             self.require(entry["eidEffects"] == record["eidEffects"] and bool(entry["eidEffects"]), f"{label}: 추가 아이템 효과가 누락되었습니다.")
             self.require(card.attrs.get("data-origin") == "mod", f"{label}: 추가 아이템 출처 필터가 없습니다.")
-            lists = [node for node in card.nodes("ul") if node.has_class("catalog-eid-effects")]
+            lists = [node for node in card.nodes("ul") if node.has_class("catalog-eid-preview")]
             def literal_text(node):
                 return "".join(literal_text(child) if isinstance(child, Node) else child for child in node.children)
             actual = [normalized(literal_text(node)) for effects in lists for node in effects.nodes("li")]
-            expected = [normalized("".join(segment.get("text", segment.get("item", "")) for segment in line)) for line in compact_entry(entry)["eidEffects"]]
+            expected = [normalized(effect_text([line], icons)) for line in compact_entry(entry)["eidEffects"]]
             self.require(actual == expected, f"{label}: EID 기본 효과에 누락 또는 중복이 있습니다.")
             folded_effects = [node for details in card.nodes("details") for node in details.nodes("ul") if node.has_class("catalog-eid-effects")]
             self.require(not folded_effects, f"{label}: EID 기본 효과가 세부 조건 안에 있습니다.")
@@ -714,6 +715,34 @@ class Verification:
             if record["type"] == "active":
                 self.require(entry["modItem"]["chargeLabel"] == review["chargeLabels"][record["name"]], f"{label}: 검토한 충전 방식과 화면 표기가 다릅니다.")
         self.committed_hashes(data["sources"], guide["sources"])
+
+    def effect_template_checks(self):
+        page = self.pages[(DOCS / "items.html").resolve()]
+        icons = self.load_json(DOCS / "guide-icons.json")
+        for item, row_index, key in [
+            ("astro-black-cube", 0, "Coin"),
+            ("astro-red-cube", 0, "Coin"),
+            ("astro-bonus-potential-cube", 0, "Coin"),
+            ("astro-birth-certificate", 0, "Quality2"),
+            ("astro-love-letter", 0, "Heart"),
+            ("astro-mega-d4", 1, "Quality0"),
+        ]:
+            card = page.ids[item][0]
+            rows = [row for effects in card.nodes("ul") if effects.has_class("catalog-eid-preview") for row in effects.nodes("li")]
+            row = rows[row_index]
+            trigger = next((n for n in row.nodes() if n.has_class("effect-trigger")), None)
+            result = next((n for n in row.nodes() if n.has_class("effect-result")), None)
+            source = "./" + icons["sprites"][key]["image"]
+            self.require(trigger is not None and result is not None and
+                         any(image.attrs.get("src") == source for image in result.nodes("img")) and
+                         not any(image.attrs.get("src") == source for image in trigger.nodes("img")),
+                         f"{item}: 수치·픽업 아이콘이 발동 조건으로 분리되었습니다.")
+        for item, condition, value in [("astro-bicorn", "6초 동안:", "+0.28"),
+                                        ("astro-rite-of-aramesir", "사용 시:", "-2")]:
+            rows = [row for effects in page.ids[item][0].nodes("ul") if effects.has_class("catalog-eid-preview") for row in effects.nodes("li")]
+            self.require(rows[0].has_class("effect-condition") and rows[0].text() == condition and
+                         rows[1].has_class("effect-stat") and any(n.text() == value for n in rows[1].nodes("strong")),
+                         f"{item}: 일시적인 수치가 발동 조건에서 분리되었습니다.")
 
     def search_checks(self):
         path = DOCS / "search-index.json"
@@ -781,6 +810,7 @@ class Verification:
         self.icon_checks()
         self.player_sprite_checks()
         self.added_item_checks()
+        self.effect_template_checks()
         self.search_checks()
         self.upgrade_checks()
         if self.errors:
