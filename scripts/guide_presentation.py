@@ -34,6 +34,13 @@ def compact_entry(original, players=False):
     entry['configChanges'] = []
     entry['loadout'] = []
     if not players:
+        for line in entry.get('eidEffects', []):
+            separated = []
+            for segment in line:
+                if separated and 'item' in separated[-1] and 'item' in segment:
+                    separated.append({'text': ', '})
+                separated.append(segment)
+            line[:] = separated
         groups = []
         for group in entry.get('effectGroups', []):
             if group['title'] not in ('가격·충전·획득 설정', '퀄리티·분류 설정'):

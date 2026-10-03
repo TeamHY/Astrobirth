@@ -248,10 +248,15 @@
         {
           "before": "{{Player900130}} 캐릭터를 Diabellstar로 변경합니다.",
           "after": "캐릭터를 디아벨스타로 변경합니다."
+        },
+        {
+          "before": "그 방의 아이템을 {{Collectible100069}} 또는 {{Collectible100070}}으로 바꿉니다.",
+          "after": "그 방의 아이템을 {{Collectible100069}} 또는 {{Collectible100070}} 중 하나로 바꿉니다."
         }
       ],
       "notes": [
-        "Player900130은 sandbox의 Player:DIABELLSTAR 가상 ID입니다. EID 정식 캐릭터명은 디아벨스타이며 가상번호를 표시하거나 실제 게임 캐릭터 ID로 오인해서는 안 됩니다."
+        "Player900130은 sandbox의 Player:DIABELLSTAR 가상 ID입니다. EID 정식 캐릭터명은 디아벨스타이며 가상번호를 표시하거나 실제 게임 캐릭터 ID로 오인해서는 안 됩니다.",
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ],
       "sources": [
         "astro/collectibles/customs/wanted-seeker-of-sinful-spoil.lua"
@@ -335,6 +340,230 @@
       ],
       "notes": [
         "실제 생성은 작은 배터리 subtype2(마이크로 배터리)이며 EID Crafting18 프레임에 대응합니다."
+      ]
+    },
+    "SnowGrave": {
+      "replace": [
+        {
+          "before": "보스에게는 3초 동안 석화 효과 + 1,800의 피해를 줍니다.",
+          "after": "보스에게는 피해 1,800을 주고 3초 동안 석화시킵니다."
+        },
+        {
+          "before": "{{BossRoom}} 보스방에서 사용 시 D2(6스테이지)의 경우 보스러시가, W2(8스테이지)의 경우 Blue Womb으로 향하는 문이 열립니다.",
+          "after": "사용하면 Depths II(6스테이지)의 보스방에서는 보스러시 문이, Womb II(8스테이지)의 보스방에서는 Blue Womb(허쉬)으로 가는 문이 열립니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Bunny Hop": {
+      "replace": [
+        {
+          "before": "아동속도",
+          "after": "이동속도"
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Black Cube": {
+      "replace": [
+        {
+          "before": "공력력",
+          "after": "공격력"
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Red Cube": {
+      "replace": [
+        {
+          "before": "공력력",
+          "after": "공격력"
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Bonus Potential Cube": {
+      "replace": [
+        {
+          "before": "공력력",
+          "after": "공격력"
+        },
+        {
+          "before": "{{Collectible100100}}Black Cube 및 {{Collectible100101}}Red Cube와",
+          "after": "{{Collectible100100}} 및 {{Collectible100101}}와"
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Cancer EX": {
+      "replace": [
+        {
+          "before": "{{Card57}}I - The Magician?을",
+          "after": "{{Card57}}를"
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Starlit Papillon": {
+      "replace": [
+        {
+          "before": "{{Collectible492}} 방 안에 {{SecretRoom}}{{SuperSecretRoom}}비밀방, 색돌, {{LadderRoom}}사다리방이 있는 위치로 날아가는 YO LISTEN 패밀리어를 얻습니다.",
+          "after": "방 안의 비밀방·일급비밀방·색돌·사다리방 위치로 날아가는 YO LISTEN! 패밀리어를 얻습니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다.",
+        "한국어 EID 이름이 비어 있는 YO LISTEN!은 EID 영문 이름을 표시합니다. 빈 이름으로 잘못된 아이콘이 연결되지 않도록 이 참조 토큰을 표시 문장에서 제외합니다."
+      ]
+    },
+    "Spinup Dice": {
+      "replace": [
+        {
+          "before": "사용 시 그 방의 아이템을 코드 뒷번호의 아이템으로 바꿉니다.",
+          "after": "사용하면 그 방의 아이템을 번호순으로 다음 아이템으로 바꿉니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Steven's Frame": {
+      "replace": [
+        {
+          "before": "{{Collectible100}}Little Steven을",
+          "after": "{{Collectible100}}을"
+        },
+        {
+          "before": "소지중인 Little Steven이 3개 이상일 경우 이 아이템은 제거됩니다.",
+          "after": "리틀 스티븐을 3개 이상 소지하면 스티븐의 액자가 사라집니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Book of Moon": {
+      "replace": [
+        {
+          "before": "{{Card19}}XVIII - The Moon을",
+          "after": "{{Card19}}을"
+        },
+        {
+          "before": "{{Collectible589}} {{ColorGray}}(달빛과 접촉 시 그 스테이지에서 {{HalfSoulHeart}}소울하트 +0.5, {{TearsSmall}}연사(+상한) +0.5){{CR}}",
+          "after": "{{Collectible589}} 효과: 달빛에 닿으면 소울하트를 반 칸 얻고, 그 스테이지에서 {{TearsSmall}}연사(+상한)가 0.5 증가합니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Book of Lunar Eclipse": {
+      "replace": [
+        {
+          "before": "{{Card74}}XVIII - The Moon?을",
+          "after": "{{Card74}}을"
+        },
+        {
+          "before": "{{Collectible589}} {{ColorGray}}(달빛과 접촉 시 그 스테이지에서 {{HalfSoulHeart}}소울하트 +0.5, {{TearsSmall}}연사(+상한) +0.5){{CR}}",
+          "after": "{{Collectible589}} 효과: 달빛에 닿으면 소울하트를 반 칸 얻고, 그 스테이지에서 {{TearsSmall}}연사(+상한)가 0.5 증가합니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Life-Sustaining Treatment": {
+      "replace": [
+        {
+          "before": "확률적으로 공격력 x3의 적을 즉사시키며 눈물이 10방향으로 퍼지는 공격이 나갑니다.",
+          "after": "확률적으로 바늘 공격이 나갑니다. 바늘은 일반 적을 즉사시키고 눈물을 10방향으로 퍼뜨리며, 보스에게는 공격력 ×3의 피해를 줍니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다.",
+        "공격력 ×3은 보스 피해량입니다. 같은 파일의 영문 EID와 바늘 눈물 구현으로 확인했습니다."
+      ]
+    },
+    "IBN 5100": {
+      "replace": [
+        {
+          "before": "머신에 접촉 시 {{Coin}}동전 10개를 소모하여 모든 상태를 이전 방의 시점으로 시간을 되돌립니다.",
+          "after": "효과: 머신에 접촉하면 {{Coin}}동전 10개를 소모하고 모든 상태를 이전 방의 시점으로 되돌립니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Marigold": {
+      "replace": [
+        {
+          "before": "(Ctrl)키를 누르고 있으면 소지중인 장신구를 흡수하며, 그 방의 장신구가 {{ColorGold}}황금{{CR}} 장신구로 바꿉니다.",
+          "after": "(Ctrl) 키를 누르고 있으면 소지 중인 장신구를 흡수하고, 그 방의 장신구를 {{ColorGold}}황금{{CR}} 장신구로 바꿉니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Luxury Rosary": {
+      "replace": [
+        {
+          "before": "Seraphim 세트",
+          "after": "세라핌 변신"
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
+      ]
+    },
+    "Solar System": {
+      "replace": [
+        {
+          "before": " Halo of Flies, Transcendence, Distant Admiration, Forever Alone 효과가 적용됩니다.",
+          "after": " 효과가 적용됩니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 아이템 참조로 한국어 이름이 표시되는 목록 뒤의 중복 영문 이름을 생략합니다. 원문과 효과 조건은 보존합니다."
+      ]
+    },
+    "Sinful Spoils Struggle": {
+      "replace": [
+        {
+          "before": " Hungry Soul, Purgatory, Ghost Bombs 효과가 적용됩니다.",
+          "after": " 효과가 적용됩니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: EID 아이템 참조로 한국어 이름이 표시되는 목록 뒤의 중복 영문 이름을 생략합니다. 원문과 효과 조건은 보존합니다."
+      ]
+    },
+    "Tainted Eden's Frame": {
+      "replace": [
+        {
+          "before": "{{Collectible619}} 사용 시 Birthright를 얻습니다.",
+          "after": "사용하면 {{Collectible619}}를 얻습니다."
+        },
+        {
+          "before": "{{Collectible258}} 획득 시 및 스테이지 진입 시 소지중인 아이템과 능력치를 모두 바꿉니다.",
+          "after": "Missing No. 효과: 획득할 때와 스테이지에 진입할 때 소지한 아이템과 능력치를 모두 바꿉니다."
+        }
+      ],
+      "notes": [
+        "2026-10-04 문장 검토: Birthright의 영문 이름 중복을 생략합니다. 한국어 EID 이름이 비어 있는 Missing No.는 EID 영문 이름을 표시하며, 빈 이름으로 잘못된 아이콘이 연결되지 않도록 해당 참조 토큰을 표시 문장에서 제외합니다. 원문과 효과 조건은 보존합니다."
       ]
     }
   },
