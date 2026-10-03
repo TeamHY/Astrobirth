@@ -6,35 +6,33 @@
   const buttons = [...document.querySelectorAll('.catalog-filters button[data-kind]')];
   const originButtons = [...document.querySelectorAll('.catalog-filters button[data-origin]')];
   const changeButtons = [...document.querySelectorAll('.change-filters button')];
-  const playerCatalog = originButtons.length > 0;
+  const playerCatalog = cards.some(card => card.classList.contains('player-card'));
   let kind = 'all';
   let origin = 'all';
   let change = 'all';
 
+  function matches(card, selectedKind = kind, selectedOrigin = origin, selectedChange = change) {
+    return (selectedKind === 'all' || card.dataset.kind === selectedKind) &&
+      (selectedOrigin === 'all' || card.dataset.origin === selectedOrigin) &&
+      (selectedChange === 'all' || card.dataset.changes.split(' ').includes(selectedChange));
+  }
+
   function filter() {
     let count = 0;
     cards.forEach(card => {
-      const match = (kind === 'all' || card.dataset.kind === kind) &&
-        (origin === 'all' || card.dataset.origin === origin) &&
-        (change === 'all' || card.dataset.changes.split(' ').includes(change));
+      const match = matches(card);
       card.hidden = !match;
       if (match) count++;
     });
     buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.kind === kind)));
     originButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.origin === origin)));
     changeButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.change === change)));
-    if (playerCatalog) {
-      buttons.forEach(button => {
-        button.querySelector('span').textContent = cards.filter(card =>
-          (origin === 'all' || card.dataset.origin === origin) &&
-          (button.dataset.kind === 'all' || card.dataset.kind === button.dataset.kind)).length;
-      });
-      originButtons.forEach(button => {
-        button.querySelector('span').textContent = cards.filter(card =>
-          (kind === 'all' || card.dataset.kind === kind) &&
-          (button.dataset.origin === 'all' || card.dataset.origin === button.dataset.origin)).length;
-      });
-    }
+    buttons.forEach(button => {
+      button.querySelector('span').textContent = cards.filter(card => matches(card, button.dataset.kind)).length;
+    });
+    originButtons.forEach(button => {
+      button.querySelector('span').textContent = cards.filter(card => matches(card, kind, button.dataset.origin)).length;
+    });
     empty.hidden = count > 0;
     if (playerCatalog) {
       const labels = [
@@ -43,7 +41,12 @@
       ].filter(Boolean);
       status.textContent = labels.length ? `${labels.join(' · ')} ${count}명 · 전체 ${cards.length}명` : `전체 ${cards.length}명`;
     } else {
-      status.textContent = kind === 'all' && change === 'all' ? `전체 ${cards.length}개` : `분류된 변경사항 ${count}개 · 전체 ${cards.length}개`;
+      const labels = [
+        {base: '기존 아이템 변경', mod: 'Astro-Items 추가'}[origin],
+        {passive: '패시브', active: '액티브', trinket: '장신구', card: '카드'}[kind],
+        {effect: '효과', config: '가격·퀄리티·충전'}[change]
+      ].filter(Boolean);
+      status.textContent = labels.length ? `${labels.join(' · ')} ${count}개 · 전체 ${cards.length}개` : `전체 ${cards.length}개`;
     }
   }
 
@@ -78,6 +81,7 @@
     target.querySelector('details')?.setAttribute('open', '');
   });
   window.addEventListener('hashchange', openHash);
+  window.addEventListener('pageshow', openHash);
   filter();
   openHash();
 })();

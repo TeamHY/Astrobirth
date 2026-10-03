@@ -15,7 +15,7 @@
     "activeLuaModules": 58,
     "baseFightModules": 22,
     "qa": 21,
-    "items": 741,
+    "items": 989,
     "players": 46,
     "roomFiles": 52
   },
@@ -709,6 +709,7 @@
         "index.html#champions",
         "index.html#ez-mode",
         "index.html#health-limit",
+        "items.html#astro-very-ez-mode",
         "items.html#damocles",
         "items.html#magic-8-ball",
         "players.html#keeper",
@@ -3208,6 +3209,156 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/777.lua",
+      "sha256": "9d96df0308265d7b79ba870d5c4454559129611e747c90d6f633588520b5d0bb",
+      "refs": [
+        "items.html#astro-777"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/abortion.lua",
+      "sha256": "e5412a91e706642adb9407ab82113b72b0818797393bbe1d3339d2cd7cb0a001",
+      "refs": [
+        "items.html#astro-abortion"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/absolut-conjoined.lua",
+      "sha256": "926d63cb46aeaedc89cc739167fed2c281574c01f44781bcf9bfe16d9b60421b",
+      "refs": [
+        "items.html#astro-absolut-conjoined"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/acute-sinusitis.lua",
+      "sha256": "3b87ed2366b86c18bac7409d8e8215ec8e18d07839bdc8c02d3a0cf6ec5488bb",
+      "refs": [
+        "items.html#astro-acute-sinusitis"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/akashic-records.lua",
+      "sha256": "b4755e1d3ca9ca5437786f1e0dc3d478ae268246bf9061a932d3f604350515c8",
+      "refs": [
+        "items.html#astro-akashic-records"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/alcohol-bottle.lua",
+      "sha256": "5c506feaf647767d24199a31ada3404b22393062c0e6c5b8f1d89d8b91d47140",
+      "refs": [
+        "items.html#astro-alcohol-bottle"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/amazing-chaos-scroll-of-goodness.lua",
+      "sha256": "5d9c43403b59b62a0b301ab32c7a980345ae53ae8ab08ecbde59f9ee03dcf89f",
+      "refs": [
+        "items.html#astro-amazing-chaos-scroll-of-goodness"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/amazing-chaos-scroll.lua",
+      "sha256": "60bbefc7c337591fd5cc458fd52e48fc9236521a11a8d1f90f1e4a8c7eb10d4a",
+      "refs": [
+        "items.html#astro-amazing-chaos-scroll"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/angelic-d6.lua",
+      "sha256": "7472f349eb832219bc17bb88d9dbadc9c199511d74e23dd26b11fb5071244626",
+      "refs": [
+        "items.html#astro-angelic-d6"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/angry-onion.lua",
+      "sha256": "d67a2189ce4902cc3ae86cc0a36102aa0b6bbbd6e932ee5a8f4da68cc8f7d4af",
+      "refs": [
+        "items.html#astro-angry-onion"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/anorexia-nervosa.lua",
+      "sha256": "3da4e706437bb963924facdbe1772b1556866315580319e4c64c4519be4cc628",
+      "refs": [
+        "items.html#astro-anorexia-nervosa"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/artifact-ignition.lua",
+      "sha256": "9791271067341b7f46b586023fa989e90df266fd22122933e4e4f93c5119969f",
+      "refs": [
+        "items.html#astro-artifact-ignition"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/artifact-sanctum.lua",
+      "sha256": "41f8f771400d956191b380588b2ded2ee8138a4553ea9bf2b0e7fc84954a65e9",
+      "refs": [
+        "items.html#astro-artifact-sanctum"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/astro-godhead.lua",
+      "sha256": "c9a8aa19b5ea659896ca15e391a49869096c1e7935e72ef5458dd425c0053df8",
+      "refs": [
+        "items.html#astro-astro-godhead"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/astro-sacred-heart.lua",
+      "sha256": "cfc3909d24f497195072cc02867734a5756abdeef7894410348f568049bbd959",
+      "refs": [
+        "items.html#astro-astro-sacred-heart"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/astro-star-of-bethlehem.lua",
       "sha256": "129d8cb5bf8b056600493c31bd582dc3bef73ccc7f675338db0890189b62683b",
       "refs": [
@@ -3218,10 +3369,141 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/astrophage.lua",
+      "sha256": "491fbb9f149b195b8f7119172a57ed9029e3ddd8fefe9b5db0cb8f427207f36e",
+      "refs": [
+        "items.html#astro-astrophage"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/bachelors-degree.lua",
+      "sha256": "b7cb4cb7a8810ee11f2b1edc898ac2b3e3c66117b7f3b1b5dadc279f2037fbae",
+      "refs": [
+        "items.html#astro-bachelor-s-degree"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/bandage-girl.lua",
+      "sha256": "31803afba43eb02c81e069ae740a16da42478bafbd89fe2a4e3f24cd69ff245c",
+      "refs": [
+        "items.html#astro-bandage-girl"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/bicorn.lua",
+      "sha256": "2f4f02f50ac4ff4e05701531b053161c2fc671d084544cd19aa8ae738ffe22c7",
+      "refs": [
+        "items.html#astro-bicorn"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/big-chest.lua",
+      "sha256": "3f06d9cf5eeeb825cdd79e413d2ec24ae11262b881acedab39891d5c33fc83cb",
+      "refs": [
+        "items.html#astro-big-chest"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/birth-certificate.lua",
       "sha256": "a4340f97ce8362c60207276f80007cc83c3a8dd28433116971381fa04eb5927c",
       "refs": [
-        "index.html#perfection"
+        "index.html#perfection",
+        "items.html#astro-birth-certificate"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-apollyon-b.lua",
+      "sha256": "5dbfdbabb3fca52b5cfb2525d0cffdd0abe53066ac5e60f4e3d3c206f9479da5",
+      "refs": [
+        "items.html#astro-apollyon-s-frame"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-blue-baby.lua",
+      "sha256": "6e152ecb3d34441bf3cfbc36a093853b652e7c503dd79e471ee4d72c244d6ea1",
+      "refs": [
+        "items.html#astro-s-frame"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-cain.lua",
+      "sha256": "6842618561ea7ae73cb1e776fb005f80403e8dceaef3054ff5edc7599265ea43",
+      "refs": [
+        "items.html#astro-cain-s-frame"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-eden-b.lua",
+      "sha256": "e7e1ad918e1894b963d780e5ba6487b3a40375229443acea2fb778f24b6526be",
+      "refs": [
+        "items.html#astro-tainted-eden-s-frame"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-eden.lua",
+      "sha256": "78a25e0d7d44c455e0dcee69501bfc0746d5c894aa3eda32cc8099cfbb3fc696",
+      "refs": [
+        "items.html#astro-eden-s-frame"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-eve.lua",
+      "sha256": "76ea19e0d5de205284c3214e3ceac0d876d2a8efd0800c65cd8cae7f245ffaa5",
+      "refs": [
+        "items.html#astro-eve-s-frame"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-isaac.lua",
+      "sha256": "3c548da04f605a25b981d9d9e448b19d759b41e6030c4eb8ad9646cafd30dbe8",
+      "refs": [
+        "items.html#astro-isaac-s-frame"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-judas.lua",
+      "sha256": "0b96d2aaf9b19e9429d10a7cc90da96e5ce2b57b64ea4d3ae49d528ec584588a",
+      "refs": [
+        "items.html#astro-judas-frame"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3231,7 +3513,98 @@
       "file": "astro/collectibles/customs/birthright-maggy.lua",
       "sha256": "6c14d07aee0f844baf6c25f53dc5e63c7dca1b64bd10c8ba9fa99ef3320f38ee",
       "refs": [
+        "items.html#astro-maggy-s-frame",
         "players.html#magdalene_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-steven.lua",
+      "sha256": "d49fd324f37042223ee8ff9269b1a40ca5c2b9bcc3604e9a9fcc076cb2eb0957",
+      "refs": [
+        "items.html#astro-steven-s-frame"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-tainted-lost.lua",
+      "sha256": "fce18d372464284ef89dbcabd028e82f727d6094d1342000bc08ca7f1cef7591",
+      "refs": [
+        "items.html#astro-tainted-lost-s-frame"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/birthright-the-lost.lua",
+      "sha256": "d0af3d8ce1abbdb34f671f06e2f463bf1f6f8899c147455deeda3244d466b12f",
+      "refs": [
+        "items.html#astro-the-lost-s-frame"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/black-list.lua",
+      "sha256": "f39922a1466cd9a52acb4b1a926cf48c4b7bfe9b5c4ef163134bbfc52bab81e7",
+      "refs": [
+        "items.html#astro-black-list"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/blighted-guppy.lua",
+      "sha256": "17eab0ddd8f24eb4d7853f89f49fb20d4200d06115776f190e642c531d5d5451",
+      "refs": [
+        "items.html#astro-blighted-guppy"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/blood-guppy.lua",
+      "sha256": "0c78e89a3b7971af823e25dc9b84d9c031077d5aa08f49e586f50eeaef4d2610",
+      "refs": [
+        "items.html#astro-brimstone-guppy"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/blood-of-hatred.lua",
+      "sha256": "2aae2e818143b44ca99d6d8f0dfa0c7f25d33c86b79fe135713e0cb7bb6cb19f",
+      "refs": [
+        "items.html#astro-blood-of-hatred"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/blood-trail.lua",
+      "sha256": "b09bfde4920ecbadf2bfe056fbbd6cb378255065ca8d7eeb5ee39de27f754d79",
+      "refs": [
+        "items.html#astro-blood-trail"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/bomb-is-power.lua",
+      "sha256": "5757cae65f83b2f64b4b6e7743472d109693cf020b7de5eab68f120049fa7736",
+      "refs": [
+        "items.html#astro-bomb-is-power"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3241,7 +3614,18 @@
       "file": "astro/collectibles/customs/bonfire.lua",
       "sha256": "acee31c9acd311c0481a0efb6a14933675662cbb032b53e1ec339eeb10f1233c",
       "refs": [
+        "items.html#astro-bonfire",
         "players.html#diabellstar"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/book-of-despair.lua",
+      "sha256": "1d8a064369a2a6fea29dda19f6df44f15a1a90323877189abb91a406c3716a91",
+      "refs": [
+        "items.html#astro-book-of-despair"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3258,6 +3642,48 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/book-of-moon.lua",
+      "sha256": "71808ea8f601a69bb9c58c6e56d187648d889a33b188f13da455a968f682cd6b",
+      "refs": [
+        "items.html#astro-book-of-lunar-eclipse",
+        "items.html#astro-book-of-moon"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/book-of-sun.lua",
+      "sha256": "491df0713efb7a77313abf9729e80de6ab3587bf293b5e33b866e35d7cb7dca2",
+      "refs": [
+        "items.html#astro-book-of-eclipse",
+        "items.html#astro-book-of-sun"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/bunny-hop.lua",
+      "sha256": "4081b89cb8f48fd8db18f0466bda8d90891c08874f130a062dd373c2df505249",
+      "refs": [
+        "items.html#astro-bunny-hop"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/cains-secret-bag.lua",
+      "sha256": "894e749033ba98e2579793129f22e027513f36f7ad82ce0e6e229eea4103dc66",
+      "refs": [
+        "items.html#astro-cain-s-secret-bag"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/canned-bread.lua",
       "sha256": "a6c8d0ad8b6b45cb4e06d84170205d6f2cad614f0f65ae156d627d0e5b128445",
       "refs": [
@@ -3265,6 +3691,49 @@
       ],
       "activeModule": false,
       "baseFightBranch": true
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/casey.lua",
+      "sha256": "252c53940e4769e9434eb91f6693d619089daa11c1402e90c74a10ae6780ee6c",
+      "refs": [
+        "items.html#astro-casey"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/chaos-dice.lua",
+      "sha256": "a3a96765ab919b33c79f5fa6d626f4f0cb541c7fe3598e82f10eb1425b918ade",
+      "refs": [
+        "items.html#astro-chaos-dice"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/chronos.lua",
+      "sha256": "d52ce91a67a77e6d4ca175b259fd8c36a22ccdacef9da06bb6b4e3111f70d12e",
+      "refs": [
+        "items.html#astro-chronos"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/chubby-sets.lua",
+      "sha256": "8b73e2c897c709fd9267a164889c3b7eea10d2843d4226571fbc70b18b7f9a3f",
+      "refs": [
+        "items.html#astro-chubby-s-head",
+        "items.html#astro-chubby-s-paw",
+        "items.html#astro-chubby-s-tail",
+        "items.html#astro-sleeping-puppy"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
     },
     {
       "project": "Astro-Items",
@@ -3279,6 +3748,16 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/clover.lua",
+      "sha256": "5f219a09dd13f52d466d90fc9e8e5db355de35720158da7445364aaed3c35089",
+      "refs": [
+        "items.html#astro-clover"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/coin-detonator.lua",
       "sha256": "37404171c29a508354f5f41e70681c34f69ded45737a60dd6243246700276e1d",
       "refs": [
@@ -3289,11 +3768,52 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/copernicus.lua",
+      "sha256": "aee7d9d69cdeaecf10a0e719ba2fc8c6f69ed882368dc6f19c7ca9a7f499d835",
+      "refs": [
+        "items.html#astro-copernicus"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/cracked-bottom.lua",
+      "sha256": "aeaa6f7112db6498111f4068c788a8dbc799f48eea7149af0b3242895c9c1b98",
+      "refs": [
+        "items.html#astro-cracked-bottom"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/curse-of-aramatir.lua",
       "sha256": "19791e7b2b9de969b21f9c08f89e3dd4afd31b7b3d7ea5326baf3146341cb5dd",
       "refs": [
+        "items.html#astro-curse-of-aramatir",
         "players.html#water-enchantress",
         "players.html#water-enchantress_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/cursed-heart.lua",
+      "sha256": "c3434a9507caa7282e82e33ee3c4f3708e01a0c918b5e3b5f2b072d7d113edfb",
+      "refs": [
+        "items.html#astro-cursed-heart"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/dads-box.lua",
+      "sha256": "ea5dc17a6be05732cc93f29076fc9981f23bfb88753a0d8a35f7a28f0f1b4537",
+      "refs": [
+        "items.html#astro-dad-s-box"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3311,11 +3831,92 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/davids-stone.lua",
+      "sha256": "386499d0b757d472a6bf55032393c476bab61a7afac269a338338f0d302d0d30",
+      "refs": [
+        "items.html#astro-david-s-stone"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/deaths-eyes.lua",
+      "sha256": "3901729aea80200e7a3b011b6ecefe3d282fbac44fe16f57e7d621b06f412ab9",
+      "refs": [
+        "items.html#astro-death-s-eyes"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/decisive-strike.lua",
+      "sha256": "559ae91f8340f64e88bf6360a8d6e70dd5205d47a805082fe484eab0f8f46cbe",
+      "refs": [
+        "items.html#astro-decisive-strike"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/deneb.lua",
+      "sha256": "cf8e7362d33876272e556c57c769ad9e2fa5ab762912c1b7f40280312520d46d",
+      "refs": [
+        "items.html#astro-deneb"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/divine-guppy.lua",
+      "sha256": "8c4cd4b97dc3470f6d6ab8e77cfe1826f6361d358ce92648cb83b8a3a003f82a",
+      "refs": [
+        "items.html#astro-divine-guppy"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/divine-light.lua",
+      "sha256": "066ff3308bda94b126f23890c1b816e051dfe96e653f9b5a971f126b9611e0ce",
+      "refs": [
+        "items.html#astro-divine-light"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/dracoback.lua",
       "sha256": "1c71ea2f69f87da5f42a5227cb37f0de6ab3d7d00173404070c42a1f5ee8c0b7",
       "refs": [
+        "items.html#astro-dracoback-the-rideable-dragon",
         "players.html#water-enchantress",
         "players.html#water-enchantress_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/dry-eye-syndrome.lua",
+      "sha256": "394cfec290c1a47fc0a75d4ea98e6e2938b1cb820d122a5b54df71a30c15b36b",
+      "refs": [
+        "items.html#astro-dry-eye-syndrome"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/duality-light-and-darkness.lua",
+      "sha256": "75b49ee2a8425bbddbf3b5555717c79c552069a70795d504c8f5ef8876c13c51",
+      "refs": [
+        "items.html#astro-duality-light-and-darkness"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3325,8 +3926,60 @@
       "file": "astro/collectibles/customs/dunnell-the-noble-arms-of-light.lua",
       "sha256": "540cd1d485e0738d16b9571749c3589362ccab2417d2157663f5674d565dc23d",
       "refs": [
+        "items.html#astro-dunnell-the-noble-arms-of-light",
         "players.html#water-enchantress",
         "players.html#water-enchantress_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/entoma-vasilissa-zeta.lua",
+      "sha256": "c2ac9837ffdb6636bfb61b7d623a6c7659e3c4ddbb522281f623d8983b914113",
+      "refs": [
+        "items.html#astro-entoma-vasilissa-zeta"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/experimental-serum.lua",
+      "sha256": "2baee71afc7def8f32338eaf467e3418a7ddc704d9c3d3cdcee47ae2381044d5",
+      "refs": [
+        "items.html#astro-experimental-serum"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/expired-milk.lua",
+      "sha256": "d9b7ac0aa3361a35e70e7464368c4c412d5f42c52c59ded5eb709b1e4edf9d48",
+      "refs": [
+        "items.html#astro-expired-milk"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/extra-guppy-sets.lua",
+      "sha256": "0c689abdf37bc76c6b6c006c2da8fddde601d38ef1aa7b60cd4a1ebb3bcc79fd",
+      "refs": [
+        "items.html#astro-absolut-guppy",
+        "items.html#astro-delirium-guppy"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/eye-of-michael.lua",
+      "sha256": "99f9462425858bcccdd246467a30020ac469ccd55730a05efec6d302cd98df6e",
+      "refs": [
+        "items.html#astro-eye-of-michael"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3338,7 +3991,18 @@
       "refs": [
         "index.html#ez-mode",
         "index.html#perfection",
-        "index.html#perfection-loss"
+        "index.html#perfection-loss",
+        "items.html#astro-ez-mode"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/fallen-orb.lua",
+      "sha256": "2decc0d2032d941bbbfb66bf2d16643b2772ad9062efbe1b090e28045d6e63d9",
+      "refs": [
+        "items.html#astro-fallen-orb"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3355,10 +4019,141 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/flammes-grimoire.lua",
+      "sha256": "d8f7be9cbe8eca54befcd802274b97ad1d7afc9a1c6c7bdc1ac7ee5329194670",
+      "refs": [
+        "items.html#astro-flamme-s-grimoire"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/forbidden-dice.lua",
+      "sha256": "6750216058950162ac809061da57ee966050bf550899dcca271dd2d76292b908",
+      "refs": [
+        "items.html#astro-forbidden-dice"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/forbidden-fruit.lua",
+      "sha256": "5cfd6a41eee31f10e28572e1c55ca4083d5a0164d22baf3825237cdeba55f5bb",
+      "refs": [
+        "items.html#astro-forbidden-fruit"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/fortune-coin.lua",
+      "sha256": "661d832e9943bfbc38ffb5b190542542b397dd3ada6aa914c20abfa55120e78f",
+      "refs": [
+        "items.html#astro-fortune-coin"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/galactic-medal-of-valor.lua",
+      "sha256": "5721eec8b65e8c4eddbeb2c0568a573a2321879fba889271e204c4dfb719dbc7",
+      "refs": [
+        "items.html#astro-galactic-medal-of-valor"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/giant-marble.lua",
+      "sha256": "5a0f2bed536d176769b846fd513533c743e4ad0647f5a7498f9b97056dcc0c0b",
+      "refs": [
+        "items.html#astro-giant-marble"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/giga-boom.lua",
+      "sha256": "cb5b2c2dfff43bed8a692b31f64975668074b71a4c95077a2b093c3b623a6cf1",
+      "refs": [
+        "items.html#astro-giga-boom"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/glitched-d6.lua",
+      "sha256": "f6865baa0f631bff5202f5251d75aba68d60451a9640e612ee3b81e6b70dbdea",
+      "refs": [
+        "items.html#astro-glitched-d6"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/go-home.lua",
       "sha256": "b772af7d7d8c9f0945d886f4cc33e63fba758ec82035a1ef50f86761defb421a",
       "refs": [
-        "index.html#route-rewards"
+        "index.html#route-rewards",
+        "items.html#astro-go-home"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/godtech.lua",
+      "sha256": "5074896da902409a0dd73113c705ada9d3d7ea62a93da1737245078775f78ebd",
+      "refs": [
+        "items.html#astro-godtech"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/gold-tooth.lua",
+      "sha256": "e63ca84736ca3b611fb705e3c43959d251aaecbd24a6b2d8654af6169c9cba2b",
+      "refs": [
+        "items.html#astro-gold-tooth"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/golden-apple.lua",
+      "sha256": "026344cf9b43f71505d8ffdf433dd49a7803072f155d0bc3067057c79c7ac684",
+      "refs": [
+        "items.html#astro-golden-apple"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/golden-guppy.lua",
+      "sha256": "382f8255f8bbb694817078cf46578028cc5aa4a553454d7ac742c35241991df2",
+      "refs": [
+        "items.html#astro-golden-guppy"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/graduation-certificate.lua",
+      "sha256": "c83c5c39cff22f1c95c2c56e15d9fc19ae98a67b240d44be2918d424b718b64c",
+      "refs": [
+        "items.html#astro-graduation-certificate"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3368,7 +4163,128 @@
       "file": "astro/collectibles/customs/greed.lua",
       "sha256": "3cfcd187fdb9941d5e57d04cf7cfc1abbb45c2a118e811a84fd17f13689dbc09",
       "refs": [
-        "index.html#route-rewards"
+        "index.html#route-rewards",
+        "items.html#astro-greed"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/guppys-name-tag.lua",
+      "sha256": "6d9d28ac5adc9357bc736c7bd7fa387846646b96db4af9f2914e94314607a4be",
+      "refs": [
+        "items.html#astro-guppy-s-name-tag"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/happy-onion.lua",
+      "sha256": "a1ea9fea59f50d5c48920a3bdd542fbcea34bbb32522a9feda345a10f7b1a88f",
+      "refs": [
+        "items.html#astro-happy-onion"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/heart-bloom.lua",
+      "sha256": "e6f6cb9ebcfe4ae35f899dc12fca39a3e73e62f8b7ae48443e1fb0a77a5f662e",
+      "refs": [
+        "items.html#astro-heart-bloom"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/hot-potato.lua",
+      "sha256": "99535575b5d49a552e552f16f9cc72bf7d515ec05daa296e8f55a6838f01654c",
+      "refs": [
+        "items.html#astro-hot-potato"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/ibn-5100.lua",
+      "sha256": "31c6519af405483c25db060aba77695ad1b0417399e59435190fc4e5da7d6bae",
+      "refs": [
+        "items.html#astro-ibn-5100"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/key-is-power.lua",
+      "sha256": "2a81da10298143187b032319b0078c214963f52089b577c0fb117ca7a486fff4",
+      "refs": [
+        "items.html#astro-key-is-power"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/legacy.lua",
+      "sha256": "da451c502ef15390a8c1a96a51f3a3ca04bf46fcd30daa3014b93e7dc58a38d6",
+      "refs": [
+        "items.html#astro-legacy"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/liberation.lua",
+      "sha256": "6091319eeaa5ae32bb1f40e927570192082e986c3a53a288f777eca0efdaa1de",
+      "refs": [
+        "items.html#astro-liberation"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/life-sustaining-treatment.lua",
+      "sha256": "b38210c27a674330d62350c31c5058ede5083f0e98072a180669fa4e16fd4fab",
+      "refs": [
+        "items.html#astro-life-sustaining-treatment"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/love-letter.lua",
+      "sha256": "617ed8820a313c3085f0f83135b00dd7a0cb7a04288f74f009ee212093d03a9b",
+      "refs": [
+        "items.html#astro-love-letter"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/lucky-coin-bundle.lua",
+      "sha256": "d812962bc84f726d1b2015ca38c25d8db2e00621f088f348aad674eaa088dbe2",
+      "refs": [
+        "items.html#astro-lucky-coin-bundle"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/lucky-rock-bottom.lua",
+      "sha256": "752816cc2481b2cc6b616f1a878ecf891646511de3c770cb7a57df82284709d0",
+      "refs": [
+        "items.html#astro-lucky-rock-bottom"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3385,11 +4301,24 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/magic-conch-shell.lua",
+      "sha256": "930326711dc5fa292428c94890a006ea2e0482a04c961ded6d10f81ff2abb151",
+      "refs": [
+        "items.html#astro-magic-conch-shell"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/manapoly-dolls-sets.lua",
       "sha256": "8abc7965ff08912de8df2501985c27fe2d6fffab4b06bc561d8354a283863206",
       "refs": [
         "index.html#perfection",
-        "index.html#perfection-loss"
+        "index.html#perfection-loss",
+        "items.html#astro-kaaen-auto-reloader",
+        "items.html#astro-seeri-the-combat-helper",
+        "items.html#astro-taana-defense-helper"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3399,10 +4328,104 @@
       "file": "astro/collectibles/customs/manyu-sets.lua",
       "sha256": "033273615f4402bc3305ec5b6b78ebae3a2adbc739e5365e5ec1709332b4da5a",
       "refs": [
+        "items.html#astro-matryoshka",
+        "items.html#astro-reincarnation",
         "items.html#samsara"
       ],
       "activeModule": false,
       "baseFightBranch": true
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/maple-cube.lua",
+      "sha256": "93a159958f0af265aa9aac73b307c4cc10f30ba79ae19067309882a6aee46abf",
+      "refs": [
+        "items.html#astro-black-cube",
+        "items.html#astro-bonus-potential-cube",
+        "items.html#astro-red-cube"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/marigold.lua",
+      "sha256": "55c940a60badfcbaa37a0701018e6756b0fa2718c90fbac08ceb4f6a705e5e55",
+      "refs": [
+        "items.html#astro-marigold"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/marker-pocket.lua",
+      "sha256": "e0e9da5edfed71f5a287297815d18b74b4223e644ed0b68768403680d2e4453a",
+      "refs": [
+        "items.html#astro-marker-pocket"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/masters-degree.lua",
+      "sha256": "33ecc658b31aa74aed12581c270ce9fb743f6b22a0a04cae3715577f4a9ac761",
+      "refs": [
+        "items.html#astro-master-s-degree"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/maw-of-the-void-ex.lua",
+      "sha256": "a8158f862f8db473a428f8f4b520c6a7de2fca9262db48d1401d614ef58f58b1",
+      "refs": [
+        "items.html#astro-maw-of-the-void-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/maxs-head.lua",
+      "sha256": "5726a6495b99f6180ff5695502d4e1c7b7acf0dd9935375876a84af6e618a05c",
+      "refs": [
+        "items.html#astro-max-s-head"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/mayushiis-pocket-watch.lua",
+      "sha256": "041484172c130fd6c320166f2df0f17cb0bfe044060fdb8dcaeca24f519fd900",
+      "refs": [
+        "items.html#astro-mayushii-s-pocket-watch"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/mega-d4.lua",
+      "sha256": "67778fcacdfd2a8b425e935241034d6a3b5c8af712569a53a765b7a904b092cd",
+      "refs": [
+        "items.html#astro-mega-d4"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/mega-d6.lua",
+      "sha256": "d29c70d9b7dd70ba224f86b7efd4f9e5aa901b991351dbeccf19fc4d4b4f4b3e",
+      "refs": [
+        "items.html#astro-mega-d6"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
     },
     {
       "project": "Astro-Items",
@@ -3419,7 +4442,33 @@
       "file": "astro/collectibles/customs/mind-series.lua",
       "sha256": "8876aab8e196f6d0879cf9184badc22400928f86a82327813f6a3c26c1f8da99",
       "refs": [
+        "items.html#astro-amplifying-mind",
+        "items.html#astro-blue-mind",
+        "items.html#astro-calm-mind",
+        "items.html#astro-lucky-mind",
+        "items.html#astro-quantum-mind",
+        "items.html#astro-swift-mind",
         "players.html#leah"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/mineral-shard.lua",
+      "sha256": "ef520fdaeb9fcd0e19d089ff0df57b504e82e3a31b4ee3c9396924259b493443",
+      "refs": [
+        "items.html#astro-mineral-shard"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/mirror-dice.lua",
+      "sha256": "2fc605636a28c312f5be287d87a21b1fbb35fa43cb7407dfcacdc8ed04dd1725",
+      "refs": [
+        "items.html#astro-mirror-dice"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3436,11 +4485,42 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/morphine.lua",
+      "sha256": "f4ddc0bfd7fd2ef1b35d74a15c8a9667738d4e81c387502cdd6204119df7be17",
+      "refs": [
+        "items.html#astro-morphine"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/my-moon-my-man.lua",
       "sha256": "5e2b3daa01a2b41ce7bd57b7937395feaa4209072e4c23caaa396c80726ca99f",
       "refs": [
+        "items.html#astro-my-moon-my-man",
         "players.html#david-martinez",
         "players.html#david-martinez_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/oblivion.lua",
+      "sha256": "8a1fca38bbbf2e409555e82234802252aec990c8bb42daefc6018eaa6dbec714",
+      "refs": [
+        "items.html#astro-oblivion"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/omega-321.lua",
+      "sha256": "8bf091bb0d465679a8ad67f217d6138638756453d655a4f425c9cd0c1d7c8b40",
+      "refs": [
+        "items.html#astro-omega-321"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3450,7 +4530,18 @@
       "file": "astro/collectibles/customs/original-sinful-spoils-snake-eye.lua",
       "sha256": "2b576ebf672aa6aa629f34d1b0a21b4a153eff8fa3f54d737ed7a6dbc044557a",
       "refs": [
+        "items.html#astro-original-sinful-spoils-snake-eye",
         "players.html#diabellstar_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/overmind.lua",
+      "sha256": "d5d14d540cbe676727bf3c7952999f126c5b55c233681431a2c57f07ffb725e8",
+      "refs": [
+        "items.html#astro-overmind"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3460,8 +4551,49 @@
       "file": "astro/collectibles/customs/overwhelming-sinful-spoils.lua",
       "sha256": "02b4fae3f606a70b1a720de44ef44d1b58c431f706ce0197daf2805a82ea0431",
       "refs": [
+        "items.html#astro-overwhelming-sinful-spoils",
         "players.html#diabellstar",
         "players.html#diabellstar_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/p-key.lua",
+      "sha256": "4b079729dce697b58c00225487d067f203b91ca657a068006c86ec15ea68aa62",
+      "refs": [
+        "items.html#astro-p-key"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/pillars-of-creation.lua",
+      "sha256": "4690922111dcaec4f1c8c880c9b146c2b45453ff80e0c16c07ab08c2b94971ca",
+      "refs": [
+        "items.html#astro-pillars-of-creation"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/pink-ward.lua",
+      "sha256": "39ab5defaa6f51ea11ed2274433dadab123977cde9737101d0e906927827da39",
+      "refs": [
+        "items.html#astro-pink-ward"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/pirate-map.lua",
+      "sha256": "af4ba09a05792482c605dfd8001f0bfd53a75007637d06d6093225a99eeb21c5",
+      "refs": [
+        "items.html#astro-pirate-map"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3471,7 +4603,18 @@
       "file": "astro/collectibles/customs/planetarium/albireo.lua",
       "sha256": "8492484797449edae1cac07fb026e2259ab5aa84c155b31d8ad705c9cbe81aa7",
       "refs": [
+        "items.html#astro-albireo",
         "players.html#stellar"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/altair.lua",
+      "sha256": "c07174894e1cc4655150e126cfd556ff097cef8e9258f08f831600c47e4e5434",
+      "refs": [
+        "items.html#astro-altair"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3481,7 +4624,298 @@
       "file": "astro/collectibles/customs/planetarium/aquarius-ex.lua",
       "sha256": "2f760becedfa359d7f5a90a1030d9f1193dbe95e06ba371c83841077ba190d7d",
       "refs": [
-        "items.html#aquarius"
+        "items.html#aquarius",
+        "items.html#astro-aquarius-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/aries-ex.lua",
+      "sha256": "e933129fbc78d59a618dcf801ce5b115c4a47e2fd4b3a7e68d817c5d29a2f722",
+      "refs": [
+        "items.html#astro-aries-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/cancer-ex.lua",
+      "sha256": "bdcc6425746b42dbd36c10393130351e2417934d116c829d8ee254098e3cef5e",
+      "refs": [
+        "items.html#astro-cancer-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/capricorn-ex.lua",
+      "sha256": "6ebb8f759088f7d66c40edb319a18657607b477ff7dd9be233c1b1a04807ae34",
+      "refs": [
+        "items.html#astro-capricorn-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/casiopea.lua",
+      "sha256": "3a3b173a13578dc743ac432b5db42fd354bad68929c7cb7e836a3fa0e5be23c2",
+      "refs": [
+        "items.html#astro-casiopea"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/comet.lua",
+      "sha256": "0e8adee9e63b7d7430b9c727b620c86166a914968f8d1a5cc903f038eb12983e",
+      "refs": [
+        "items.html#astro-comet"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/corvus.lua",
+      "sha256": "4032df7e61a7a78a46ec560369b0540871e31d4fa2d932cffed4a6e7c1136a45",
+      "refs": [
+        "items.html#astro-corvus"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/cygnus.lua",
+      "sha256": "9b3a8bf78e8f81707f55b539afc82dae9f157c0c87c3f3127d18b7203d202f87",
+      "refs": [
+        "items.html#astro-cygnus"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/gemini-ex.lua",
+      "sha256": "09ff4e6a21c7c23f05478abc138f1c280cf7c40c0d406c2a18aa72ace2aa4c8c",
+      "refs": [
+        "items.html#astro-gemini-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/jupiter-ex.lua",
+      "sha256": "5a28e0f324e6f19b25edacba4fe67c393b15c36cca36383d1cb50c0c80f9e576",
+      "refs": [
+        "items.html#astro-jupiter-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/laniakea-supercluster.lua",
+      "sha256": "a88e7ba70086f6ba831a08c22696db3eae40f80d00ad252b8c4f5309543d03fc",
+      "refs": [
+        "items.html#astro-laniakea-supercluster"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/leo-ex.lua",
+      "sha256": "3894b3f13d7e71b6da44dde6852b028ca613dcd9cd02d965724ee3156cf62285",
+      "refs": [
+        "items.html#astro-leo-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/libra-ex.lua",
+      "sha256": "01488677423f2246249d3ba8e79cc2c6ff2c9c08b88280c57d25e7ef7581f3e3",
+      "refs": [
+        "items.html#astro-libra-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/luna-ex.lua",
+      "sha256": "5aef276653ea7dd4ac0e3eb8b038693f6cb478311d2f490fdb332616f4660661",
+      "refs": [
+        "items.html#astro-luna-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/mars-ex.lua",
+      "sha256": "64384d74bc775f24b10d812dca7e415c0684af31fd8cafaa8d863bac9d621553",
+      "refs": [
+        "items.html#astro-mars-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/mercurius-ex.lua",
+      "sha256": "0c9d986a0553922604659865e22d8c0034d68d7fb17893b63788b78bddd83010",
+      "refs": [
+        "items.html#astro-mercurius-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/neptunus-ex.lua",
+      "sha256": "a7a9627d926df04d3845cf768a69b6876774ff08e10485c93bfd2781b870375a",
+      "refs": [
+        "items.html#astro-neptunus-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/pavo.lua",
+      "sha256": "cc658bda34c5bf02ece56927bd845271c9172a939327f0980c46ee5791d44f7e",
+      "refs": [
+        "items.html#astro-pavo"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/pisces-ex.lua",
+      "sha256": "65b8e6fe86d30e1756da430064cfc7a81bb101a87342e1f1b012eea6f98f5c1b",
+      "refs": [
+        "items.html#astro-pisces-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/pluto-ex.lua",
+      "sha256": "f63646af90946eda7be7379af3c6b0152fdd439128bb5f092b36869060733251",
+      "refs": [
+        "items.html#astro-pluto-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/ptolemaeus.lua",
+      "sha256": "8b9852ac8d5403a7b09eb3e50a7d70a52e32c0e1cba757edc7e1f05aea343c9a",
+      "refs": [
+        "items.html#astro-ptolemaeus"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/sagittarius-ex.lua",
+      "sha256": "1bc0233ea23c71be093da5b8ef7b7b7f7d57ebc5ec37fee35b36b19c998ff50e",
+      "refs": [
+        "items.html#astro-sagittarius-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/saturnus-ex.lua",
+      "sha256": "55681b464dcb4e0082797cc0377c6adabdd4ae2af3e23ccfe95d8ca0af9b4844",
+      "refs": [
+        "items.html#astro-saturnus-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/scorpio-ex.lua",
+      "sha256": "26f54317248abb0db6dc4c08553acd9783f56b476a003c31cdc290c80efd8300",
+      "refs": [
+        "items.html#astro-scorpio-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/sol-ex.lua",
+      "sha256": "88a1a5d1cb2a36f60b04569d173e71f91e4a61c7f1b870e01ff97864962e130c",
+      "refs": [
+        "items.html#astro-sol-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/solar-system.lua",
+      "sha256": "ed44a33485f1f64a9246fb6fe77e02f11f66ad70606393050b0add916dc332f9",
+      "refs": [
+        "items.html#astro-solar-system"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/taurus-ex.lua",
+      "sha256": "66960a4108ef825b33743b54f3298ecac9ac6396f8cdca64b76ecf8ccb41328e",
+      "refs": [
+        "items.html#astro-taurus-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/terra-ex.lua",
+      "sha256": "0574d1ba02ad31358165ff8d1bd9e64b94d959e412e7213e3e0460a1b2defe30",
+      "refs": [
+        "items.html#astro-terra-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/uranus-ex.lua",
+      "sha256": "3ea4504677311891f831c2e020f6f2cbe7c5d8f39c1a6fa157b65b68f0647076",
+      "refs": [
+        "items.html#astro-uranus-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/vega.lua",
+      "sha256": "64089084cfa6541b3bcfcb72ade9a83c30b1cf053b23d0d960cc1c90d2788cf1",
+      "refs": [
+        "items.html#astro-vega"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3491,7 +4925,48 @@
       "file": "astro/collectibles/customs/planetarium/venus-ex.lua",
       "sha256": "7d5713a6c4fa6738bb32ba40f3f059b263454ee404cce67dddcabb1fdd035be8",
       "refs": [
+        "items.html#astro-venus-ex",
         "players.html#leah"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/planetarium/virgo-ex.lua",
+      "sha256": "c039c44dd72fcb7c38413e64dfe96ea3e498867b20f6c0fbbbe8c7e18692b6f0",
+      "refs": [
+        "items.html#astro-virgo-ex"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/platinum-bullet.lua",
+      "sha256": "d6061208862217fa8a4cb685c8c7f07737b8f7d7dca813030f6216aba5bc8c1f",
+      "refs": [
+        "items.html#astro-platinum-bullet"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/plunger.lua",
+      "sha256": "535163119faecb1a0999da0842b607c9e0a9d98367537e49d734d2c7a2d9c4a0",
+      "refs": [
+        "items.html#astro-plunger"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/power-rock-bottom.lua",
+      "sha256": "ec583eeb3bbcb7796f89cb50ebb6501c5d57c3e326b462590f83a40a9e07579c",
+      "refs": [
+        "items.html#astro-power-rock-bottom"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3509,9 +4984,20 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/pure-gold-copter.lua",
+      "sha256": "e8f5b695f5adf3e66f4175194e3aad75db50244cae68387980a0a2cae134f251",
+      "refs": [
+        "items.html#astro-24k-copter"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/pure-love.lua",
       "sha256": "04622ad9394d98e4696b967fcf55a091e522ec0e6cac2caeb2622c5a3cf033da",
       "refs": [
+        "items.html#astro-pure-love",
         "players.html#jacob",
         "players.html#jacob_b",
         "players.html#leah",
@@ -3522,9 +5008,120 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/pure-white-heart.lua",
+      "sha256": "eefe956229d1710d236733922514b22cfae9f0b7115c46c85038c07900cd47e3",
+      "refs": [
+        "items.html#astro-pure-white-heart"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/purple-candle.lua",
+      "sha256": "dc2cf5bf108f2f49fd0987da191ada43849b63d15a2a6180c7fdd170240758c5",
+      "refs": [
+        "items.html#astro-purple-candle"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/puzzle-dice.lua",
+      "sha256": "2a809f9bc8ba992bd75c04fc8e6373b1c60e79058cde0b2e4703f9a3d5645472",
+      "refs": [
+        "items.html#astro-puzzle-dice"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/quasar.lua",
+      "sha256": "e6c2c0d51b2ae57192522814113a3c9ceabeb47728e1182bf4cd8e8de4d813f8",
+      "refs": [
+        "items.html#astro-quasar"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/qubit-dice.lua",
+      "sha256": "59a0ddbef3ad7207232736c1b245989348b04972e9766efe6587d9363d189c59",
+      "refs": [
+        "items.html#astro-qubit-dice"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/quill-pen.lua",
+      "sha256": "568a5fb24a1cebcd6777067a99634ca1e9d3a5fda2c01e3dffd3cd20a74955f3",
+      "refs": [
+        "items.html#astro-quill-pen"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/rainbow-mushroom.lua",
+      "sha256": "ecf71a9e8dd233ec180166ab41ec8c06519418489bdfc16939e8ad755608841a",
+      "refs": [
+        "items.html#astro-rainbow-mushroom"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/rapid-rock-bottom.lua",
+      "sha256": "37d8ab5de1a0ba2374553873c1f9a93772015a8651b311449f4a77e262ac7d1e",
+      "refs": [
+        "items.html#astro-rapid-rock-bottom"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/restock-dice.lua",
+      "sha256": "8182c8dc1c0db3feb98d26845877e6ef94fd5d21e20d1ff9f5ef95fba6f27daf",
+      "refs": [
+        "items.html#astro-restock-dice"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/retrograde-arcana.lua",
+      "sha256": "a8dd9e18aa4b241275bdff15545f9c9d9f76151ce6169122b9175b1bacc7af3f",
+      "refs": [
+        "items.html#astro-retrograde-arcana"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/rgb.lua",
+      "sha256": "bf2d235e7e382812ab6546e0b01e544411423337e43762435291782824c3fc7f",
+      "refs": [
+        "items.html#astro-rgb"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/rhongomyniad.lua",
       "sha256": "6053712fc6a23f0beaae03fbc54627fa1f492079d45edb15c12e9e0dae370091",
       "refs": [
+        "items.html#astro-rhongomyniad",
         "players.html#samson",
         "players.html#samson_b"
       ],
@@ -3536,8 +5133,29 @@
       "file": "astro/collectibles/customs/rite-of-aramesir.lua",
       "sha256": "dab58dffef3b4e242aeaebe5016acc04547f25e96fa270d5c824598deeb63255",
       "refs": [
+        "items.html#astro-rite-of-aramesir",
         "players.html#water-enchantress",
         "players.html#water-enchantress_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/rocky.lua",
+      "sha256": "d92c9c4d40e978870cae5ec7d798187975e87abaa63e8ee5c6b1ea3598c14a7b",
+      "refs": [
+        "items.html#astro-rocky"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/sacred-dice.lua",
+      "sha256": "6e84946f0d227793977d201ae92c5c749686dc4f0b491d55cc359e7e7c9d8693",
+      "refs": [
+        "items.html#astro-sacred-dice"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3547,8 +5165,30 @@
       "file": "astro/collectibles/customs/sandevistan.lua",
       "sha256": "b871aad6948696181aedacd8cd3e6b1940db2360b697be1ba58c39415a223305",
       "refs": [
+        "items.html#astro-sandevistan",
         "players.html#david-martinez",
         "players.html#david-martinez_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/scales-of-obedience.lua",
+      "sha256": "5e15444aa60859bd3691f0a0f843ac645eb94734012f58567c1435fce55040ac",
+      "refs": [
+        "items.html#astro-scales-of-obedience"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/schrodingers-cat.lua",
+      "sha256": "53710345bc34172f60754e4a454700bca8874f2ff461a69cad6ee91b87f6c34f",
+      "refs": [
+        "items.html#astro-guppy-part",
+        "items.html#astro-schrodinger-s-cat"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3568,7 +5208,28 @@
       "file": "astro/collectibles/customs/sinful-spoils-of-subversion-snake-eye.lua",
       "sha256": "741b25ab2c9dfe5e304672b03db5189907084ecb260a7947ac3a4d6ea4ec6ac1",
       "refs": [
+        "items.html#astro-sinful-spoils-of-subversion-snake-eye",
         "players.html#diabellstar"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/sinful-spoils-struggle.lua",
+      "sha256": "ba302faad0fa02fd70534fce6bc2096b86a08d4dad39147eb30888741df0a5ba",
+      "refs": [
+        "items.html#astro-sinful-spoils-struggle"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/skeleton-guppy.lua",
+      "sha256": "27be44aac6a532fbb3df0eaf1522683fafe144ca1e479d77dd58a3ca6f4512bc",
+      "refs": [
+        "items.html#astro-skeleton-guppy"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3578,6 +5239,7 @@
       "file": "astro/collectibles/customs/snake-eyes-poplar.lua",
       "sha256": "14ac6e875e805da8a451068e05e623c867bbeb7d31780ced1182fea5df30015d",
       "refs": [
+        "items.html#astro-snake-eyes-poplar",
         "players.html#diabellstar",
         "players.html#diabellstar_b"
       ],
@@ -3596,11 +5258,184 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/spinup-dice.lua",
+      "sha256": "87166b8e3b23624d94ea02c4cf2d8b3fe743c5ac7f8158d460c400cf3b3c753b",
+      "refs": [
+        "items.html#astro-spinup-dice"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/staff-of-ainz-ooal-gown.lua",
+      "sha256": "f279144ed3f8528d1f6b657ce2585290d8c9c945f85ed12e4e1c68a4c38e57f0",
+      "refs": [
+        "items.html#astro-staff-of-ainz-ooal-gown"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/stairway-to-hell.lua",
+      "sha256": "f485b52f8b910f0dcdb49d272dc9831d86fc12df06580bf0f7fda7790f14b2c6",
+      "refs": [
+        "items.html#astro-stairway-to-hell"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/starlit-papillon.lua",
       "sha256": "aff503754f0f6ed3b503023664b24155c3aebdeed43977d171dd52aa441d929f",
       "refs": [
+        "items.html#astro-starlit-papillon",
         "players.html#water-enchantress",
         "players.html#water-enchantress_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/steam-bundle.lua",
+      "sha256": "a73561993c67a63fb2fe141b24662d3e357920212eb896945763903c6342c95c",
+      "refs": [
+        "items.html#astro-steam-bundle"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/stew-series.lua",
+      "sha256": "558b7a12a3a82349a9cd23220a759112d12c7409e1a429d1d570f109879f2d61",
+      "refs": [
+        "items.html#astro-blue-stew",
+        "items.html#astro-brown-stew",
+        "items.html#astro-green-stew"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/strawberry-medicine.lua",
+      "sha256": "b585b15d6a507b502a54f071ea3191ed3e47cb646afd128daedd755d867b55ba",
+      "refs": [
+        "items.html#astro-strawberry-medicine"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/strawberry-milk.lua",
+      "sha256": "1c374b0f54bf486bd3a351dc188fd869a018bb41508242a7f42b7e30934a7593",
+      "refs": [
+        "items.html#astro-strawberry-milk"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/super-magneto.lua",
+      "sha256": "91d07f8d2cac603d1b9eec84e5b0d09fdb93337329ff2f977060ec40321e4149",
+      "refs": [
+        "items.html#astro-super-magneto"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/super-nova.lua",
+      "sha256": "9833d9a67e08cbd0d57d5b12f8ec0cb2296d3c8a69e6c7bb1835a6f684af731b",
+      "refs": [
+        "items.html#astro-super-nova"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/super-rocket-in-a-jar.lua",
+      "sha256": "e655791f0a076ac3d0ed0950e9955e0d8c6431991fe4326ee22b9e0bd41af9c1",
+      "refs": [
+        "items.html#astro-super-rocket-in-a-jar"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/techrapod.lua",
+      "sha256": "707096fed75e5695fde918c57a158ea76af4bb1345a4438866a1767cb4b23abd",
+      "refs": [
+        "items.html#astro-techrapod"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/terraspark-boots.lua",
+      "sha256": "60864720a9b10eac7937e3fcedcda54e96bf5a52acfcb93ab7f38559b104d930",
+      "refs": [
+        "items.html#astro-terraspark-boots"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/the-holy-blood-and-the-holy-grail.lua",
+      "sha256": "30594ee18b811ab1087be25511fbf13e499fd4b10bc113f7617eb7ea992e28b0",
+      "refs": [
+        "items.html#astro-the-holy-blood-and-the-holy-grail"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/three-body-problem.lua",
+      "sha256": "e4adc48d3f1e7e9d34ef9c5c4432bc3c2c6cfa1603e411f84e86044789093489",
+      "refs": [
+        "items.html#astro-3-body-problem"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/throw-bomb.lua",
+      "sha256": "10121adddcf6d1649e4ee8370f85f56ff678dcdc16dac04ca08fe694a931dcef",
+      "refs": [
+        "items.html#astro-throw-bomb"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/trinity.lua",
+      "sha256": "8623829484a4609a218f4394cef1aa37f45938d71e8cd8a2c55afa9259cd283e",
+      "refs": [
+        "items.html#astro-trinity"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/tyrants-belt.lua",
+      "sha256": "54baf7de8c92d7146ac003e5b1b97b4184f024ecb452b2d6db4cda65934d33b7",
+      "refs": [
+        "items.html#astro-tyrant-s-belt"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3618,10 +5453,91 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/urinary-incontinence.lua",
+      "sha256": "1abfa25662d2a036f681907ca88fa8761f0086ba2117c117479537c4bd4bed5b",
+      "refs": [
+        "items.html#astro-urinary-incontinence"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/very-ez-mode.lua",
       "sha256": "29c79f72a517203d80a8d4135c73bf7a90f1bb51010371770abe350b0271e28d",
       "refs": [
-        "index.html#ez-mode"
+        "index.html#ez-mode",
+        "items.html#astro-very-ez-mode"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/wanted-seeker-of-sinful-spoil.lua",
+      "sha256": "9025cd23e316e8d0665cea643bf061a2ab09287a24947b31ac3376db0a440a44",
+      "refs": [
+        "items.html#astro-wanted-seeker-of-sinful-spoil"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/ward.lua",
+      "sha256": "1dc3a3ffc241c5223c67e09a75ea86e1f192d1345801333821de95a5e98ffbba",
+      "refs": [
+        "items.html#astro-ward"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/water-balloon.lua",
+      "sha256": "3b191abdf22a28bf3d8dfe1f59a211b983a121b4c816a857c1354fb2db3c546b",
+      "refs": [
+        "items.html#astro-water-balloon"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/we-need-to-go-deeper-astro.lua",
+      "sha256": "90c5b5d98569f5b7459bd026c8b0d6fc4075301698338fe131f2411c123e4276",
+      "refs": [
+        "items.html#astro-we-need-to-go-astro"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/witchcraft.lua",
+      "sha256": "02dff7e14bb0edbe40bd3e4b8ce0e06e35e08ed7c41c0542514f36a2a61386aa",
+      "refs": [
+        "items.html#astro-witchcraft"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/xenonite.lua",
+      "sha256": "ee99f9167d87f26393f0931e756bc0f029ea9d9bbe0ec403ff501bbb2c3b30e0",
+      "refs": [
+        "items.html#astro-xenonite"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/zoltraak.lua",
+      "sha256": "1b51e9c834f49272efbb6cffd09ea4cf6cac55b7acb0147b1ee02e7951965227",
+      "refs": [
+        "items.html#astro-zoltraak"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3745,10 +5661,71 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/trinkets/customs/absolute-zero.lua",
+      "sha256": "4f52ad1c4e62902f79a9abad9f700ffe4400bdbe9416a104fa8a7d2cd660d692",
+      "refs": [
+        "items.html#astro-absolute-zero"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/black-mirror.lua",
+      "sha256": "713bc4bb2e0e7cc1d9102ee956a5a4c734e06734e14126ff3aca1d2e8eb99e43",
+      "refs": [
+        "items.html#astro-black-mirror"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/bloody-bandage.lua",
+      "sha256": "3a4f9631cf0153545043a6af768896c0e15e7b3a3546f5fa81d7b44e5a4447a2",
+      "refs": [
+        "items.html#astro-bloody-bandage"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/trinkets/customs/doctrine.lua",
       "sha256": "58fc58843787fa77ce20023233b8719e36749d589f7d33e3124f4d1273df2810",
       "refs": [
-        "index.html#perfection"
+        "index.html#perfection",
+        "items.html#astro-doctrine"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/edens-snake.lua",
+      "sha256": "e052d74cb359db2369f9edf45a7ef1831c5ff4ad699d031693d7e43306f2024f",
+      "refs": [
+        "items.html#astro-eden-s-snake"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/electronic-penny.lua",
+      "sha256": "1cc4d42f9e5385ce6639391dc568b70ed681776c7d69f93674e5b70796f15ec0",
+      "refs": [
+        "items.html#astro-electronic-penny"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/eye-of-god.lua",
+      "sha256": "d2e1cb0d7a663db72991b15d3c3068f33ce0cff2a58f987bbe4a10fe26707d1d",
+      "refs": [
+        "items.html#astro-eye-of-god"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3762,6 +5739,96 @@
         "index.html#perfection-basics",
         "index.html#perfection-loss",
         "items.html#flunk"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/focus-band.lua",
+      "sha256": "2e45a6306261e404441e41cc6e1d3bad1b35232e1a9b8daef71f0fdc1b10ad74",
+      "refs": [
+        "items.html#astro-focus-band"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/lava-hand.lua",
+      "sha256": "3d177aaf9ef09d376a8380bdae95225aaa896775a9e8f68c8951511a2a657a80",
+      "refs": [
+        "items.html#astro-lava-hand"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/left-foot.lua",
+      "sha256": "ecda66ed7e71c97f331dab8087378a95c966716feda60675d270a0e8034d4644",
+      "refs": [
+        "items.html#astro-the-left-foot"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/mosis-eyes.lua",
+      "sha256": "e836fb3aea6bfc5b15a3991a3ae76399f7ca072dddb9bf7ac575398b35942834",
+      "refs": [
+        "items.html#astro-moxie-s-eyes"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/nostalgia.lua",
+      "sha256": "fd97f1ec2d81d9dbe695a81cf18021962ef27ac363474327f66596581a24d233",
+      "refs": [
+        "items.html#astro-nostalgia"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/obsidian-hand.lua",
+      "sha256": "88249f03cce1f5d00450deb1d0143c52a9f9a671ecd0dd3288865c520f1c32c8",
+      "refs": [
+        "items.html#astro-obsidian-hand"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/planetarium-crown.lua",
+      "sha256": "824091d62a990819bb5797107d2ec595980e9266faaceb66da393036c8e2e93a",
+      "refs": [
+        "items.html#astro-planetarium-crown"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/stomach-medicine.lua",
+      "sha256": "41e925a9b2558930d4dbb3fe8978b7f1d62f0e0ef4f3126f1de0a77dfb11b087",
+      "refs": [
+        "items.html#astro-stomach-medicine"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/trinkets/customs/yes.lua",
+      "sha256": "43905227d9f9c7177cf42dfa44cbb1731055296f9f26476b30daf28ab019603a",
+      "refs": [
+        "items.html#astro-yes"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3788,6 +5855,279 @@
     },
     {
       "project": "Astro-Items",
+      "file": "content/items.xml",
+      "sha256": "77bef70e3172c0c595ada4eb3a9e2fca65ed483ec790fd0f98b4f27498f737d6",
+      "refs": [
+        "items.html#astro-24k-copter",
+        "items.html#astro-3-body-problem",
+        "items.html#astro-777",
+        "items.html#astro-abortion",
+        "items.html#astro-absolut-conjoined",
+        "items.html#astro-absolut-guppy",
+        "items.html#astro-absolute-zero",
+        "items.html#astro-acute-sinusitis",
+        "items.html#astro-akashic-records",
+        "items.html#astro-albireo",
+        "items.html#astro-alcohol-bottle",
+        "items.html#astro-altair",
+        "items.html#astro-amazing-chaos-scroll",
+        "items.html#astro-amazing-chaos-scroll-of-goodness",
+        "items.html#astro-amplifying-mind",
+        "items.html#astro-angelic-d6",
+        "items.html#astro-angry-onion",
+        "items.html#astro-anorexia-nervosa",
+        "items.html#astro-apollyon-s-frame",
+        "items.html#astro-aquarius-ex",
+        "items.html#astro-aries-ex",
+        "items.html#astro-artifact-ignition",
+        "items.html#astro-artifact-sanctum",
+        "items.html#astro-astro-godhead",
+        "items.html#astro-astro-sacred-heart",
+        "items.html#astro-astrophage",
+        "items.html#astro-bachelor-s-degree",
+        "items.html#astro-bandage-girl",
+        "items.html#astro-bicorn",
+        "items.html#astro-big-chest",
+        "items.html#astro-birth-certificate",
+        "items.html#astro-black-cube",
+        "items.html#astro-black-list",
+        "items.html#astro-black-mirror",
+        "items.html#astro-blighted-guppy",
+        "items.html#astro-blood-of-hatred",
+        "items.html#astro-blood-trail",
+        "items.html#astro-bloody-bandage",
+        "items.html#astro-blue-mind",
+        "items.html#astro-blue-stew",
+        "items.html#astro-bomb-is-power",
+        "items.html#astro-bonfire",
+        "items.html#astro-bonus-potential-cube",
+        "items.html#astro-book-of-despair",
+        "items.html#astro-book-of-eclipse",
+        "items.html#astro-book-of-lunar-eclipse",
+        "items.html#astro-book-of-moon",
+        "items.html#astro-book-of-sun",
+        "items.html#astro-brimstone-guppy",
+        "items.html#astro-brown-stew",
+        "items.html#astro-bunny-hop",
+        "items.html#astro-cain-s-frame",
+        "items.html#astro-cain-s-secret-bag",
+        "items.html#astro-calm-mind",
+        "items.html#astro-cancer-ex",
+        "items.html#astro-capricorn-ex",
+        "items.html#astro-casey",
+        "items.html#astro-casiopea",
+        "items.html#astro-chaos-dice",
+        "items.html#astro-chronos",
+        "items.html#astro-chubby-s-head",
+        "items.html#astro-chubby-s-paw",
+        "items.html#astro-chubby-s-tail",
+        "items.html#astro-clover",
+        "items.html#astro-comet",
+        "items.html#astro-copernicus",
+        "items.html#astro-corvus",
+        "items.html#astro-cracked-bottom",
+        "items.html#astro-curse-of-aramatir",
+        "items.html#astro-cursed-heart",
+        "items.html#astro-cygnus",
+        "items.html#astro-dad-s-box",
+        "items.html#astro-david-s-stone",
+        "items.html#astro-death-s-eyes",
+        "items.html#astro-decisive-strike",
+        "items.html#astro-delirium-guppy",
+        "items.html#astro-deneb",
+        "items.html#astro-divine-guppy",
+        "items.html#astro-divine-light",
+        "items.html#astro-doctrine",
+        "items.html#astro-dracoback-the-rideable-dragon",
+        "items.html#astro-dry-eye-syndrome",
+        "items.html#astro-duality-light-and-darkness",
+        "items.html#astro-dunnell-the-noble-arms-of-light",
+        "items.html#astro-eden-s-frame",
+        "items.html#astro-eden-s-snake",
+        "items.html#astro-electronic-penny",
+        "items.html#astro-entoma-vasilissa-zeta",
+        "items.html#astro-eve-s-frame",
+        "items.html#astro-experimental-serum",
+        "items.html#astro-expired-milk",
+        "items.html#astro-eye-of-god",
+        "items.html#astro-eye-of-michael",
+        "items.html#astro-ez-mode",
+        "items.html#astro-fallen-orb",
+        "items.html#astro-flamme-s-grimoire",
+        "items.html#astro-focus-band",
+        "items.html#astro-forbidden-dice",
+        "items.html#astro-forbidden-fruit",
+        "items.html#astro-fortune-coin",
+        "items.html#astro-galactic-medal-of-valor",
+        "items.html#astro-gemini-ex",
+        "items.html#astro-giant-marble",
+        "items.html#astro-giga-boom",
+        "items.html#astro-glitched-d6",
+        "items.html#astro-go-home",
+        "items.html#astro-godtech",
+        "items.html#astro-gold-tooth",
+        "items.html#astro-golden-apple",
+        "items.html#astro-golden-guppy",
+        "items.html#astro-graduation-certificate",
+        "items.html#astro-greed",
+        "items.html#astro-green-stew",
+        "items.html#astro-guppy-part",
+        "items.html#astro-guppy-s-name-tag",
+        "items.html#astro-happy-onion",
+        "items.html#astro-heart-bloom",
+        "items.html#astro-hot-potato",
+        "items.html#astro-ibn-5100",
+        "items.html#astro-isaac-s-frame",
+        "items.html#astro-judas-frame",
+        "items.html#astro-jupiter-ex",
+        "items.html#astro-kaaen-auto-reloader",
+        "items.html#astro-key-is-power",
+        "items.html#astro-laniakea-supercluster",
+        "items.html#astro-lava-hand",
+        "items.html#astro-legacy",
+        "items.html#astro-leo-ex",
+        "items.html#astro-liberation",
+        "items.html#astro-libra-ex",
+        "items.html#astro-life-sustaining-treatment",
+        "items.html#astro-love-letter",
+        "items.html#astro-lucky-coin-bundle",
+        "items.html#astro-lucky-mind",
+        "items.html#astro-lucky-rock-bottom",
+        "items.html#astro-luna-ex",
+        "items.html#astro-maggy-s-frame",
+        "items.html#astro-magic-conch-shell",
+        "items.html#astro-marigold",
+        "items.html#astro-marker-pocket",
+        "items.html#astro-mars-ex",
+        "items.html#astro-master-s-degree",
+        "items.html#astro-matryoshka",
+        "items.html#astro-maw-of-the-void-ex",
+        "items.html#astro-max-s-head",
+        "items.html#astro-mayushii-s-pocket-watch",
+        "items.html#astro-mega-d4",
+        "items.html#astro-mega-d6",
+        "items.html#astro-mercurius-ex",
+        "items.html#astro-mineral-shard",
+        "items.html#astro-mirror-dice",
+        "items.html#astro-morphine",
+        "items.html#astro-moxie-s-eyes",
+        "items.html#astro-my-moon-my-man",
+        "items.html#astro-neptunus-ex",
+        "items.html#astro-nostalgia",
+        "items.html#astro-oblivion",
+        "items.html#astro-obsidian-hand",
+        "items.html#astro-omega-321",
+        "items.html#astro-original-sinful-spoils-snake-eye",
+        "items.html#astro-overmind",
+        "items.html#astro-overwhelming-sinful-spoils",
+        "items.html#astro-p-key",
+        "items.html#astro-pavo",
+        "items.html#astro-pillars-of-creation",
+        "items.html#astro-pink-ward",
+        "items.html#astro-pirate-map",
+        "items.html#astro-pisces-ex",
+        "items.html#astro-planetarium-crown",
+        "items.html#astro-platinum-bullet",
+        "items.html#astro-plunger",
+        "items.html#astro-pluto-ex",
+        "items.html#astro-power-rock-bottom",
+        "items.html#astro-ptolemaeus",
+        "items.html#astro-pure-love",
+        "items.html#astro-pure-white-heart",
+        "items.html#astro-purple-candle",
+        "items.html#astro-puzzle-dice",
+        "items.html#astro-quantum-mind",
+        "items.html#astro-quasar",
+        "items.html#astro-qubit-dice",
+        "items.html#astro-quill-pen",
+        "items.html#astro-rainbow-mushroom",
+        "items.html#astro-rapid-rock-bottom",
+        "items.html#astro-red-cube",
+        "items.html#astro-reincarnation",
+        "items.html#astro-restock-dice",
+        "items.html#astro-retrograde-arcana",
+        "items.html#astro-rgb",
+        "items.html#astro-rhongomyniad",
+        "items.html#astro-rite-of-aramesir",
+        "items.html#astro-rocky",
+        "items.html#astro-s-frame",
+        "items.html#astro-sacred-dice",
+        "items.html#astro-sagittarius-ex",
+        "items.html#astro-sandevistan",
+        "items.html#astro-saturnus-ex",
+        "items.html#astro-scales-of-obedience",
+        "items.html#astro-schrodinger-s-cat",
+        "items.html#astro-scorpio-ex",
+        "items.html#astro-seeri-the-combat-helper",
+        "items.html#astro-sinful-spoils-of-subversion-snake-eye",
+        "items.html#astro-sinful-spoils-struggle",
+        "items.html#astro-skeleton-guppy",
+        "items.html#astro-sleeping-puppy",
+        "items.html#astro-snake-eyes-poplar",
+        "items.html#astro-sol-ex",
+        "items.html#astro-solar-system",
+        "items.html#astro-spinup-dice",
+        "items.html#astro-staff-of-ainz-ooal-gown",
+        "items.html#astro-stairway-to-hell",
+        "items.html#astro-star-of-bethlehem",
+        "items.html#astro-starlit-papillon",
+        "items.html#astro-steam-bundle",
+        "items.html#astro-steven-s-frame",
+        "items.html#astro-stomach-medicine",
+        "items.html#astro-strawberry-medicine",
+        "items.html#astro-strawberry-milk",
+        "items.html#astro-super-magneto",
+        "items.html#astro-super-nova",
+        "items.html#astro-super-rocket-in-a-jar",
+        "items.html#astro-swift-mind",
+        "items.html#astro-taana-defense-helper",
+        "items.html#astro-tainted-eden-s-frame",
+        "items.html#astro-tainted-lost-s-frame",
+        "items.html#astro-taurus-ex",
+        "items.html#astro-techrapod",
+        "items.html#astro-terra-ex",
+        "items.html#astro-terraspark-boots",
+        "items.html#astro-the-holy-blood-and-the-holy-grail",
+        "items.html#astro-the-left-foot",
+        "items.html#astro-the-lost-s-frame",
+        "items.html#astro-throw-bomb",
+        "items.html#astro-trinity",
+        "items.html#astro-tyrant-s-belt",
+        "items.html#astro-uranus-ex",
+        "items.html#astro-urinary-incontinence",
+        "items.html#astro-vega",
+        "items.html#astro-venus-ex",
+        "items.html#astro-very-ez-mode",
+        "items.html#astro-virgo-ex",
+        "items.html#astro-wanted-seeker-of-sinful-spoil",
+        "items.html#astro-ward",
+        "items.html#astro-water-balloon",
+        "items.html#astro-we-need-to-go-astro",
+        "items.html#astro-witchcraft",
+        "items.html#astro-xenonite",
+        "items.html#astro-yes",
+        "items.html#astro-zoltraak",
+        "items.html#book-of-life",
+        "items.html#canned-bread",
+        "items.html#cleaner",
+        "items.html#coin-detonator",
+        "items.html#dango",
+        "items.html#false-certificate",
+        "items.html#flunk",
+        "items.html#luxury-rosary",
+        "items.html#mega-d8",
+        "items.html#money-is-sorrow",
+        "items.html#prometheus",
+        "items.html#samsara",
+        "items.html#serpents-kiss-ex",
+        "items.html#snowgrave",
+        "items.html#unholy-mantle"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "content/players.xml",
       "sha256": "16ed0cd74dd5fd103746e335b460ec70aeec9ef8f8220cfc90a3f0893c30ca5e",
       "refs": [
@@ -3804,6 +6144,126 @@
         "players.html#water-enchantress",
         "players.html#water-enchantress_b",
         "rules.html#starting-resources"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_ainz_ooal_gown.png",
+      "sha256": "a2acda9e88fc03f64c4d3b811c6d9600dd876d16e6e7f0c6ba3e731613d180ec",
+      "refs": [
+        "players.html#ainz-ooal-gown"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_ainz_ooal_gownb.png",
+      "sha256": "32312e9110a1161dc90cfd5dfbfcf0ae6f663a437b436fc10e6b355a2c9ca6a0",
+      "refs": [
+        "players.html#ainz-ooal-gown_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_david_martinez.png",
+      "sha256": "35e6194aebb84a23e53bb2844d28f0527b5e71271d2f9015d2043476a5497c62",
+      "refs": [
+        "players.html#david-martinez"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_david_martinezb.png",
+      "sha256": "c063a4feca650f5dec7a91f93a09895bf7ce2d302d4164f5837190fecbe9fc28",
+      "refs": [
+        "players.html#david-martinez_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_diabellstar.png",
+      "sha256": "9998751da498547231f874eecc6336221b5052c44811a1dfe4642049804fa0c8",
+      "refs": [
+        "players.html#diabellstar"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_diabellstarb.png",
+      "sha256": "e56ea061648a4688cf3e4a840e30dc7bc36d33416acbde1359e7e3be09168ab4",
+      "refs": [
+        "players.html#diabellstar_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_leah.png",
+      "sha256": "62683b2f187a2bf1a16a4eb17207d8a0c55ec22eb286023b0129685792183d5f",
+      "refs": [
+        "players.html#leah"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_leahb.png",
+      "sha256": "5462b7bd1624fbc005a4e033ab43bfd10eb3cf38551336d9fc4663d750dd8d63",
+      "refs": [
+        "players.html#leah_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_stellar.png",
+      "sha256": "02e159d9a856ef179349b1291f6f79b057b67314b68844b6da32c0778fcd8d10",
+      "refs": [
+        "players.html#stellar"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_stellarb.png",
+      "sha256": "25c41d00017a72582aa59afb50142a8bf39c0d55732215f971a10581fd7bc46e",
+      "refs": [
+        "players.html#stellar_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_water_enchantress.png",
+      "sha256": "95771d61529ad3f77f46f1db5a0f5aab158249be80daac973d9c0b34ad814362",
+      "refs": [
+        "players.html#water-enchantress"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_water_enchantressb.png",
+      "sha256": "19a4bae15abe87b1d13c0269b1069f572fd5f7f14466b17d9250eb141828f265",
+      "refs": [
+        "players.html#water-enchantress_b"
       ],
       "activeModule": false,
       "baseFightBranch": false

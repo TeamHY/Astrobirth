@@ -44,6 +44,27 @@ def named_items(names):
         for name in names) + '</span>'
 
 
+def eid_effects(lines, preview=False):
+    if not lines:
+        return ''
+    rendered = []
+    for line in lines:
+        segments = []
+        for segment in line:
+            if 'text' in segment:
+                segments.append(esc(segment['text']))
+            elif 'item' in segment:
+                segments.append(named_items([segment['item']]))
+            elif 'icon' in segment:
+                segments.append(icon_image(segment['icon']))
+        rendered.append('<li>' + ''.join(segments) + '</li>')
+    return '<ul class="catalog-eid-effects' + (' catalog-eid-preview' if preview else '') + '">' + ''.join(rendered) + '</ul>'
+
+
+def eid_text(lines):
+    return ' '.join(''.join(segment.get('text', segment.get('item', '')) for segment in line) for line in lines)
+
+
 def catalog_facts(entry):
     rows = []
     for change in entry.get('configChanges', []):
@@ -56,7 +77,7 @@ def catalog_facts(entry):
                 values.append(f'<span class="fact-{side}">{quality}<span>{esc(value)}</span></span>')
             value = '<span class="fact-arrow" aria-hidden="true">→</span>'.join(values)
         else:
-            value = esc(change['value'])
+            value = (icon_image('Quality' + change['value']) if change.get('field') == 'quality' else '') + esc(change['value'])
         field = esc(change.get('field', ''), quote=True)
         rows.append(f'<div class="fact-row" data-config-field="{field}"><dt>{label}</dt><dd>{value}</dd></div>')
     for loadout in entry.get('loadout', []):
@@ -102,6 +123,7 @@ def permalink(entry):
 
 def body(entry, include_body=True, include_facts=True):
     parts = [f'<p>{esc(entry["body"])}</p>'] if include_body else []
+    parts.append(eid_effects(entry.get('eidEffects', [])))
     if include_facts:
         parts.append(catalog_facts(entry))
     if entry.get('rules'):
@@ -199,7 +221,7 @@ def build_search_index():
             text = ' '.join(' '.join(VisibleText(body(detail)).parts).split())
             record = {
                 'page': page, 'title': entry['title'], 'href': f"./{page}.html#{entry['id']}",
-                'description': entry['body'] or ' '.join(VisibleText(catalog_facts(entry)).parts), 'name': entry.get('name', ''),
+                'description': entry['body'] or eid_text(entry.get('eidEffects', [])[:3]) or ' '.join(VisibleText(catalog_facts(entry)).parts), 'name': entry.get('name', ''),
                 'text': ' '.join([text, entry.get('scene', ''), entry.get('tag', '')]),
                 'keywords': entry.get('keywords', ''),
             }
@@ -262,26 +284,29 @@ def render_catalog(page, catalog, kinds, title, subtitle):
         assert (DOCS / entry['image']).is_file(), 'Missing image: ' + entry['image']
         seen.add(entry['id'])
         kind = entry['variant'] if is_players else entry['kind']
-        origin_attribute = f' data-origin="{entry["origin"]}"' if is_players else ''
+        origin_attribute = f' data-origin="{esc(entry.get("origin", "base"), quote=True)}"'
         tag = ({'base': '기본', 'mod': '모드'}[entry['origin']] + ' · ' + kinds[kind]) if is_players else kinds[kind] + ' · ' + entry['tag']
-        detail_entry = catalog_details(entry)
-        has_details = any(detail_entry.get(key) for key in ['rules', 'effectGroups', 'rewardTable', 'poolTable', 'watch', 'caution', 'restrictions', 'restrictionNote', 'related', 'relatedLinks'])
+        detail_entry = {**catalog_details(entry)}
+        detail_entry['eidEffects'] = entry.get('eidEffects', [])[3:]
+        has_details = any(detail_entry.get(key) for key in ['eidEffects', 'rules', 'effectGroups', 'rewardTable', 'poolTable', 'watch', 'caution', 'restrictions', 'restrictionNote', 'related', 'relatedLinks'])
         details = source_comment(detail_entry)
         if has_details:
             details = f'<details class="catalog-details"><summary>{"고유 규칙 및 추가 금지" if is_players else "세부 조건 보기"}</summary><div class="entry-body">{body(detail_entry, False, include_facts=False)}</div></details>'
         scene = f'<p class="catalog-scene">{esc(entry["scene"])}</p>' if entry.get('scene') else ''
         description = f'<p class="catalog-description">{esc(entry["body"])}</p>' if entry.get('body') else ''
-        cards.append(f'''<article class="catalog-card{' player-card' if is_players else ''}" id="{entry['id']}" data-kind="{kind}"{origin_attribute} data-changes="{esc(' '.join(entry.get('changeKinds', ['effect'])), quote=True)}" data-keywords="{esc(entry.get('keywords',''), quote=True)}"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./{esc(entry['image'])}" alt="{esc(entry['title'], quote=True)} {'캐릭터' if is_players else '아이콘'}" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">{esc(tag)}</span><h2 class="catalog-title-row"><span>{esc(entry['title'])}</span>{permalink(entry)}</h2><p class="english-name">{esc(entry['name'])}</p></div></div>{scene}{description}{catalog_facts(entry)}{details}</article>''')
+        preview = eid_effects(entry.get('eidEffects', [])[:3], preview=True)
+        image_label = entry['title'] + (' 캐릭터' if is_players else ' 원본 이미지 미등록' if entry.get('imagePlaceholder') else ' 아이콘')
+        cards.append(f'''<article class="catalog-card{' player-card' if is_players else ''}" id="{entry['id']}" data-kind="{kind}"{origin_attribute} data-changes="{esc(' '.join(entry.get('changeKinds', ['effect'])), quote=True)}" data-keywords="{esc(entry.get('keywords',''), quote=True)}"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./{esc(entry['image'])}" alt="{esc(image_label, quote=True)}" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">{esc(tag)}</span><h2 class="catalog-title-row"><span>{esc(entry['title'])}</span>{permalink(entry)}</h2><p class="english-name">{esc(entry['name'])}</p></div></div>{scene}{description}{preview}{catalog_facts(entry)}{details}</article>''')
     buttons = [f'<button type="button" data-kind="all" aria-pressed="true">전체 <span>{len(entries)}</span></button>']
     for key, label in kinds.items():
         count = sum((entry['variant'] if is_players else entry['kind']) == key for entry in entries)
         buttons.append(f'<button type="button" data-kind="{key}" aria-pressed="false">{label} <span>{count}</span></button>')
-    filters = '<div class="catalog-filters" role="group" aria-label="아이템 분류">' + ''.join(buttons) + '</div>'
+    origins = [('all', '전체'), ('base', '기본 캐릭터' if is_players else '기존 아이템 변경'), ('mod', '모드 캐릭터' if is_players else 'Astro-Items 추가')]
+    origin_buttons = ''.join(
+        f'<button type="button" data-origin="{key}" aria-pressed="{str(key == "all").lower()}">{label} <span>{sum(key == "all" or entry.get("origin", "base") == key for entry in entries)}</span></button>'
+        for key, label in origins)
+    filters = '<div class="item-filters"><div class="item-filter-group" role="group" aria-label="아이템 출처"><span class="item-filter-label">출처</span><div class="catalog-filters">' + origin_buttons + '</div></div><div class="item-filter-group" role="group" aria-label="아이템 분류"><span class="item-filter-label">종류</span><div class="catalog-filters">' + ''.join(buttons) + '</div></div></div>'
     if is_players:
-        origins = [('all', '전체'), ('base', '기본 캐릭터'), ('mod', '모드 캐릭터')]
-        origin_buttons = ''.join(
-            f'<button type="button" data-origin="{key}" aria-pressed="{str(key == "all").lower()}">{label} <span>{sum(key == "all" or entry["origin"] == key for entry in entries)}</span></button>'
-            for key, label in origins)
         filters = '<div class="player-filters"><div class="player-filter-group" role="group" aria-label="캐릭터 구분"><span class="player-filter-label">구분</span><div class="catalog-filters">' + origin_buttons + '</div></div><div class="player-filter-group" role="group" aria-label="캐릭터 형태"><span class="player-filter-label">형태</span><div class="catalog-filters">' + ''.join(buttons) + '</div></div></div>'
     change_filters = '' if is_players else '<div class="change-filters" role="group" aria-label="변경 분야">' + ''.join(f'<button type="button" data-change="{key}" aria-pressed="{str(key == "all").lower()}">{label}</button>' for key, label in [('all', '모든 변경'), ('effect', '효과'), ('config', '가격·퀄리티·충전')]) + '</div>'
     common = '<div class="player-common"><a href="./index.html#no-hit"><span>핵심 규칙</span><strong>노피격과 에이플 ↗</strong><p>올백·낙제 유지에 따라 추가 보상이 달라집니다.</p></a><a href="./index.html#health-limit"><span>후반 생존</span><strong>체력 상한 제한 ↗</strong><p>일부 캐릭터는 적용 방식과 예외가 다릅니다.</p></a><a href="./index.html#lost-shield"><span>로스트 계열</span><strong>보호막 손실 패널티 ↗</strong><p>보호막만 깨져도 능력치가 내려갑니다.</p></a></div>' if is_players else ''

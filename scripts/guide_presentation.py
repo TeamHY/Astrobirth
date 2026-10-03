@@ -59,6 +59,18 @@ def compact_entry(original, players=False):
             if remaining:
                 groups.append({**group, 'items': remaining})
         entry['effectGroups'] = groups
+        described_items = {segment['item'] for line in entry.get('eidEffects', []) for segment in line if 'item' in segment}
+        def repeats_eid_items(line):
+            match = re.fullmatch(r'정리 대상 (\d+)종: (.+)\.', line)
+            names = match[2].split(', ') if match else []
+            return bool(match and len(names) == int(match[1]) and set(names) <= described_items)
+        entry['rules'] = [line for line in entry.get('rules', []) if not repeats_eid_items(line)]
+        mod = entry.get('modItem', {})
+        fields = {change.get('field') for change in entry['configChanges']}
+        if 'quality' in mod and 'quality' not in fields:
+            entry['configChanges'].append({'label': '퀄리티', 'field': 'quality', 'value': mod['quality']})
+        if mod.get('type') == 'active' and 'maxcharges' in mod and 'maxcharges' not in fields:
+            entry['configChanges'].append({'label': '충전', 'field': 'maxcharges', 'icon': 'Battery', 'value': mod.get('chargeLabel', mod['maxcharges'] + '칸')})
         if entry.get('resourceOnly'):
             entry['body'] = ''
             entry['scene'] = ''

@@ -1,0 +1,428 @@
+{
+  "schema": 1,
+  "reviewed": "2026-10-04",
+  "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+  "conditions": {
+    "Bonfire": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "디아벨스타는 양초와 빨간 양초를 모두 소환합니다. 하나를 선택하면 나머지는 사라집니다. 디아벨제에는 적용되지 않습니다."
+        ]
+      }
+    ],
+    "Curse of Aramatir": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "성전의 수견사와 일리걸 나이트는 사용해도 아이템이 사라지지 않으며, 스테이지마다 한 번 사용할 수 있습니다."
+        ]
+      }
+    ],
+    "Dracoback, the Rideable Dragon": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "성전의 수견사와 일리걸 나이트는 적을 지우는 효과가 스테이지당 최대 5번 발동합니다.",
+          "성전의 수견사와 일리걸 나이트는 소지 중 공격력, 연사, 사거리, 이동속도, 탄속, 행운이 각각 1.1배가 됩니다."
+        ]
+      }
+    ],
+    "Dunnell, the Noble Arms of Light": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "성전의 수견사와 일리걸 나이트는 영혼을 최대 100개까지 저장하며, 방 클리어 시 영혼이 10개 감소합니다."
+        ]
+      }
+    ],
+    "Starlit Papillon": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "성전의 수견사와 일리걸 나이트는 영혼을 최대 100개까지 저장하며, 방 클리어 시 영혼이 10개 감소합니다."
+        ]
+      }
+    ],
+    "Pure Love": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "야곱과 에사우, 더럽혀진 야곱과 에사우, 레아, 라헬은 소지 아이템 대신 퀄리티 3/4 아이템을 2개 소환합니다. 행운 감소 패널티가 없으며, 소지 아이템을 제거하지 않습니다."
+        ]
+      }
+    ],
+    "Rite of Aramesir": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "성전의 수견사와 일리걸 나이트는 사용 시 행운이 감소하지 않습니다."
+        ]
+      }
+    ],
+    "Sandevistan": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "데이비드와 루시는 어지러운 버섯을 발동하는 패널티 대신 순간적으로 높은 공격력과 연사를 얻고 10초 동안 무적이 됩니다."
+        ]
+      }
+    ],
+    "My Moon My Man": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "데이비드와 루시는 효과 발동 후에도 이 아이템이 사라지지 않습니다."
+        ]
+      }
+    ],
+    "Snake-Eyes Poplar": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "디아벨스타와 디아벨제는 5초마다 랜덤 유령을 2마리 소환합니다."
+        ]
+      }
+    ],
+    "Overwhelming Sinful Spoils": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "디아벨스타와 디아벨제는 영혼을 최대 5개까지 흡수합니다."
+        ]
+      }
+    ],
+    "Quantum Mind": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "건전지를 소지하지 않은 레아는 사용 후 충전량을 6칸 보존합니다. 라헬에는 적용되지 않습니다."
+        ]
+      }
+    ],
+    "Rhongomyniad": [
+      {
+        "title": "사용 조건",
+        "items": [
+          "스택은 최대 5개까지 저장합니다. 스택이 없으면 사용할 수 없습니다."
+        ]
+      },
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "삼손과 더럽혀진 삼손은 사용해도 아이템이 사라지지 않습니다."
+        ]
+      }
+    ],
+    "Bicorn": [
+      {
+        "title": "캐릭터별 사용 횟수",
+        "items": [
+          "막달레나, 더럽혀진 막달레나, 이브, 더럽혀진 이브, 베다니, 더럽혀진 베다니, 레아, 라헬, 디아벨스타, 디아벨제, 성전의 수견사, 일리걸 나이트, 스텔라, 나유타는 스테이지당 6번 사용할 수 있습니다.",
+          "그 외 캐릭터는 스테이지당 3번 사용할 수 있습니다."
+        ]
+      }
+    ],
+    "Albireo": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "스텔라는 사용해도 아이템이 사라지지 않습니다. 나유타에는 적용되지 않습니다."
+        ]
+      },
+      {
+        "title": "아이템 조합",
+        "items": [
+          "백조자리와 함께 소지하면 연사, 공격력, 이동속도, 사거리, 탄속, 행운이 각각 1.1배가 됩니다."
+        ]
+      }
+    ],
+    "Matryoshka": [
+      {
+        "title": "아이템 조합",
+        "items": [
+          "처비의 꼬리와 함께 소지하면 작은 상자를 소환할 확률이 40%에서 20%로 감소합니다."
+        ]
+      }
+    ],
+    "Flunk": [
+      {
+        "title": "아이템 조합",
+        "items": [
+          "쉬움 모드를 소지하면 피격을 당해도 낙제가 사라지지 않습니다."
+        ]
+      }
+    ],
+    "Cracked Bottom": [
+      {
+        "title": "다음 게임 보상",
+        "items": [
+          "밑바닥을 2개 이상 획득하면 다음 게임에서 깨진 밑바닥을 소지한 채로 시작합니다."
+        ]
+      }
+    ],
+    "Throw Bomb": [
+      {
+        "title": "아이템 조합",
+        "items": [
+          "로켓 든 병과 함께 소지하면 로켓을 손에 들고 발사합니다."
+        ]
+      }
+    ],
+    "Virgo EX": [
+      {
+        "title": "메가 알약",
+        "items": [
+          "능력치 감소 메가 알약은 초 처녀자리 1개당 공격력을 1.2 증가시킵니다."
+        ]
+      }
+    ],
+    "Taurus EX": [
+      {
+        "title": "돌진 입력",
+        "items": [
+          "기본 설정에서는 V 키를 누르면 이동 방향으로 돌진합니다. 설정에서 키를 바꾸거나, 이동키를 두 번 누르는 방식으로 변경할 수 있습니다."
+        ]
+      }
+    ]
+  },
+  "corrections": {
+    "Chronos": {
+      "replace": [
+        {
+          "before": "사용 시 그 방의 모든 패밀리어 아이템마다 각자 정해진 아이템으로 바꿉니다.",
+          "after": "사용 시 그 방의 세라핌 아이템을 성스러운 심장으로 바꿉니다."
+        }
+      ],
+      "notes": [
+        "returnItems에는 세라핌→성스러운 심장 1개만 등록되어 있습니다. 모든 패밀리어를 변환한다는 기본 EID 설명은 현재 구현과 다릅니다."
+      ],
+      "sources": [
+        "astro/collectibles/customs/chronos.lua"
+      ]
+    },
+    "Pure Love": {
+      "replace": [
+        {
+          "before": "소지중인 아이템 1개와 {{Quality3}}/{{Quality4}}등급의 아이템을 하나 소환합니다.",
+          "after": "소지중인 아이템 1개를 소지 목록에서 제거한 뒤 그 아이템과 {{Quality3}}/{{Quality4}}퀄리티 아이템 1개를 소환합니다."
+        }
+      ],
+      "notes": [
+        "일반 캐릭터 분기에서는 hadCollectable을 받침대로 소환한 직후 playerWhoUsedItem:RemoveCollectible(hadCollectable)을 실행합니다. 야곱·레아 계열 시너지 분기는 소지 아이템을 제거하지 않고 퀄리티 3 이상 아이템 2개를 소환합니다."
+      ],
+      "sources": [
+        "astro/collectibles/customs/pure-love.lua"
+      ]
+    },
+    "Bicorn": {
+      "replace": [
+        {
+          "before": "스테이지 당 남성 캐릭터는 3번, 여성 캐릭터는 6번 사용할 수 있습니다.",
+          "after": "캐릭터에 따라 스테이지당 3번 또는 6번 사용할 수 있습니다."
+        }
+      ],
+      "notes": [
+        "femaleCharacters 목록은 일반적인 성별 개념과 다릅니다. 릴리스·더럽혀진 릴리스·루시 등 목록에 없는 캐릭터는 3회입니다. 캐릭터별 실제 목록을 별도 조건으로 제공합니다."
+      ],
+      "sources": [
+        "astro/collectibles/customs/bicorn.lua"
+      ]
+    },
+    "Amplifying Mind": {
+      "replace": [
+        {
+          "before": "#{{ArrowGrayRight}} {{Collectible100107}} Quantum Mind",
+          "after": ""
+        }
+      ],
+      "notes": [
+        "리롤 대상 mindSeries는 침착한 정신·신속한 정신·우울한 정신·행운의 정신 4개뿐입니다. 증가량 2배 로직도 이 4개 패시브에만 있습니다. 퀀텀 마인드는 기본 EID 목록에 있으나 리롤 대상과 배율 적용 대상에서 제외되어야 합니다. 가상 ID100107은 이번 sandbox 결과의 값입니다."
+      ],
+      "sources": [
+        "astro/collectibles/customs/mind-series.lua"
+      ]
+    },
+    "WANTED: Seeker of Sinful Spoil": {
+      "replace": [
+        {
+          "before": "{{Player900130}} 캐릭터를 Diabellstar로 변경합니다.",
+          "after": "캐릭터를 디아벨스타로 변경합니다."
+        }
+      ],
+      "notes": [
+        "Player900130은 sandbox의 Player:DIABELLSTAR 가상 ID입니다. EID 정식 캐릭터명은 디아벨스타이며 가상번호를 표시하거나 실제 게임 캐릭터 ID로 오인해서는 안 됩니다."
+      ],
+      "sources": [
+        "astro/collectibles/customs/wanted-seeker-of-sinful-spoil.lua"
+      ]
+    },
+    "Prometheus": {
+      "replace": [
+        {
+          "before": "항상 Curse of Dakrness 저주에 걸립니다.",
+          "after": "어둠의 저주를 추가합니다. 경단 소지 시 최초 획득 판정에서, 올백·낙제·교리 소지 시 대결의 새 층 판정에서 예외가 적용됩니다."
+        }
+      ],
+      "sources": [
+        "astro/collectibles/customs/prometheus.lua",
+        "astro/curse.lua"
+      ],
+      "notes": [
+        "EID의 항상 어둠의 저주 문구는 대결 중 저주 제거 예외와 최초 획득의 경단 예외를 반영해 범위를 명시합니다."
+      ]
+    },
+    "Very EZ Mode": {
+      "replace": [
+        {
+          "before": "Womb/Corpse 이후 스테이지의 체력 제한 시스템이 6칸까지만 적용됩니다.",
+          "after": "대결에서는 허쉬·시체 구간부터 일반 캐릭터의 깨진 하트를 최소 9개로 제한하여 체력 상한을 완화합니다. 다모클레스와 일부 캐릭터에는 별도 조건이 적용됩니다."
+        }
+      ],
+      "sources": [
+        "astro/collectibles/customs/very-ez-mode.lua"
+      ],
+      "extraSources": [
+        "astro-fight/stage.lua"
+      ],
+      "relatedLinks": [
+        {
+          "href": "./rules.html#health-limit-details",
+          "label": "후반 체력 상한의 조건과 예외"
+        }
+      ],
+      "notes": [
+        "EID의 체력 6칸 문구 대신 Astrobirth 기준 커밋의 실제 깨진 하트 최소 9개 처리를 설명합니다. 이미 더 많은 깨진 하트가 있으면 줄이지 않습니다."
+      ]
+    },
+    "Magic Conch Shell": {
+      "replace": [
+        {
+          "before": "여기에 EID 설명 입력",
+          "after": "효과 설명이 등록되어 있지 않습니다."
+        }
+      ],
+      "sources": [
+        "astro/collectibles/customs/magic-conch-shell.lua"
+      ],
+      "notes": [
+        "원본 EID가 미작성 안내 문구이며 구현 모듈에도 별도 사용 효과가 없습니다. 효과를 추측하여 작성하지 않습니다."
+      ]
+    },
+    "Staff of Ainz Ooal Gown": {
+      "replace": [
+        {
+          "before": "{{Battery}} 적에게 일정량의 피해를 줄 때마다 액티브 충전량을 한칸 충전합니다.#!!! 한 칸 충전에 필요한 피해량:#{{Blank}} (스테이지 * 20) + 40",
+          "after": "{{Battery}} 적에게 준 피해량 500마다 한 번 사용할 수 있도록 충전됩니다. 모닥불과 이 아이템의 블랙홀로 준 피해는 충전에서 제외합니다."
+        }
+      ],
+      "sources": [
+        "astro/collectibles/customs/staff-of-ainz-ooal-gown.lua"
+      ],
+      "notes": [
+        "EID의 스테이지별 충전 계산은 구현과 다릅니다. 실제 amount*0.2 누적값이 100이면 사용 가능하므로 피해량 500당 1회입니다."
+      ]
+    },
+    "KAAEN - Auto Reloader": {
+      "replace": [
+        {
+          "before": "{{Crafting19}}마이크로 배터리",
+          "after": "{{Crafting18}}마이크로 배터리"
+        }
+      ],
+      "sources": [
+        "astro/collectibles/customs/manapoly-dolls-sets.lua"
+      ],
+      "notes": [
+        "실제 생성은 작은 배터리 subtype2(마이크로 배터리)이며 EID Crafting18 프레임에 대응합니다."
+      ]
+    }
+  },
+  "chargeLabels": {
+    "Solar System": "6칸",
+    "Oblivion": "6칸",
+    "Laniakea Supercluster": "6칸",
+    "Chaos Dice": "6칸",
+    "Ward": "6칸",
+    "Fortune Coin": "1칸",
+    "Rhongomyniad": "스테이지 진입 시 충전",
+    "Rite of Aramesir": "스테이지 진입 시 충전",
+    "Overwhelming Sinful Spoils": "시간 충전 8초",
+    "Curse of Aramatir": "충전 불필요",
+    "Cain's Secret Bag": "스테이지 진입 시 충전",
+    "The Holy Blood and the Holy Grail": "12칸",
+    "Dunnell, the Noble Arms of Light": "1칸",
+    "Starlit Papillon": "1칸",
+    "Sandevistan": "시간 충전 10초",
+    "Spinup Dice": "12칸",
+    "Bonfire": "1칸",
+    "Mirror Dice": "6칸",
+    "Black Cube": "충전 불필요",
+    "Red Cube": "충전 불필요",
+    "WANTED: Seeker of Sinful Spoil": "12칸",
+    "Quantum Mind": "12칸",
+    "Pure Love": "스테이지 진입 시 충전",
+    "Restock Dice": "10칸",
+    "Sacred Dice": "6칸",
+    "Forbidden Dice": "8칸",
+    "Dad's Box": "12칸",
+    "Albireo": "6칸",
+    "Staff of Ainz Ooal Gown": "적 피해 누적으로 충전",
+    "Qubit Dice": "8칸",
+    "Tainted Eden's Frame": "충전 불필요",
+    "Bonus Potential Cube": "충전 불필요",
+    "Birth Certificate": "충전 불필요",
+    "False Certificate": "충전 불필요",
+    "Puzzle Dice": "8칸",
+    "Graduation Certificate": "충전 불필요",
+    "Coin Detonator": "시간 충전 8초",
+    "Marker Pocket": "6칸",
+    "We Need To Go Astro!": "6칸",
+    "Book of Sun": "3칸",
+    "Book of Moon": "12칸",
+    "Book of Eclipse": "3칸",
+    "Book of Lunar Eclipse": "12칸",
+    "Book of Life": "충전 불필요",
+    "Book of Despair": "6칸",
+    "Glitched D6": "12칸",
+    "Zoltraak": "6칸",
+    "Love Letter": "스테이지 진입 시 충전",
+    "Mega D4": "6칸",
+    "Mega D6": "6칸",
+    "Mega D8": "12칸",
+    "P Key": "패널티 피격 3회 누적",
+    "Bicorn": "3칸",
+    "Plunger": "2칸",
+    "Chronos": "6칸",
+    "Angelic D6": "12칸",
+    "Chubby's Paw": "6칸",
+    "Forbidden Fruit": "충전 불필요",
+    "SnowGrave": "12칸",
+    "Astrophage": "6칸"
+  },
+  "chargeReview": {
+    "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+    "format": "XML English name → 화면용 chargeLabel. 원본 maxcharges/chargetype 보존 필요.",
+    "zeroCharge": "일반형 maxcharges=0은 충전이 필요 없다는 뜻입니다. 재충전 없음은 일회용처럼 읽혀 부정확합니다. 소비용·체력 비용·사용 위치 조건은 별도로 적용됩니다.",
+    "normalOverrides": {
+      "Rhongomyniad": "XML normal50이지만 MC_POST_NEW_LEVEL에서50충전, 스택없는경우사용불가. 스택이실제사용자조건.",
+      "Staff of Ainz Ooal Gown": "XML normal100이지만 .2×적피해 누적을 충전으로 사용,100충전당실행1회.",
+      "P Key": "XML normal3은 방충전요구량이아닌피격횟수카운터. MC_ENTITY_TAKE_DMG에서1씩누적하며3이면아이템제거."
+    },
+    "specialSources": {
+      "Rite of Aramesir": "astro/collectibles/customs/rite-of-aramesir.lua",
+      "Cain's Secret Bag": "astro/collectibles/customs/cains-secret-bag.lua",
+      "Pure Love": "astro/collectibles/customs/pure-love.lua",
+      "Love Letter": "astro/collectibles/customs/love-letter.lua",
+      "Curse of Aramatir": "astro/collectibles/customs/curse-of-aramatir.lua"
+    },
+    "normalSources": {
+      "Rhongomyniad": "astro/collectibles/customs/rhongomyniad.lua",
+      "Staff of Ainz Ooal Gown": "astro/collectibles/customs/staff-of-ainz-ooal-gown.lua",
+      "P Key": "astro/collectibles/customs/p-key.lua"
+    },
+    "frameUnitSource": "https://isaacblueprints.com/tutorials/crash_course/active_item/ (30 game ticks =1 second)",
+    "chargeModePrimarySource": "https://store.steampowered.com/news/posts/?appgroupname=The+Binding+of+Isaac%3A+Rebirth&appids=250900&enddate=1638819661&feed=steam_community_announcements (공식 모딩 업데이트 설명: normal 방클리어, timed 시간, special 자동·배터리충전불가)",
+    "futureNote": "태양계6칸/바이콘3칸 등은 통상충전과별개사용횟수제한이있으므로이충전요구량과조건설명을함께유지."
+  }
+}

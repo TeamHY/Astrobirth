@@ -8,6 +8,7 @@ on:
       - 'scripts/build-guide.py'
       - 'scripts/guide_presentation.py'
       - 'scripts/import-guide-icons.py'
+      - 'scripts/import-guide-astro-items.py'
       - 'scripts/import-guide-player-sprites.py'
       - 'scripts/guide-layout.html'
       - 'scripts/guide-rooms.html'

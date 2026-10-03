@@ -389,52 +389,100 @@
       "image": "assets/items/rotten-penny.png"
     },
     "명품 묵주": {
-      "image": "assets/items/luxury-rosary.png"
+      "image": "assets/astro-items/c-232.png",
+      "name": "Luxury Rosary",
+      "source": "resources/gfx/items/collectibles/Luxury Rosary.png",
+      "sourceSHA256": "4f70287b296ed9a7e1323164987b4e74350acf487f92e5bb43d0f7c980342769"
     },
     "빵 통조림": {
-      "image": "assets/items/canned-bread.png"
+      "image": "assets/astro-items/c-217.png",
+      "name": "Canned Bread",
+      "source": "resources/gfx/items/collectibles/canned bread.png",
+      "sourceSHA256": "0c57685353241ebdf9e501d1e3762907575442a9564f45e66fa0edcec5733b8c"
     },
     "눈무덤": {
-      "image": "assets/items/snowgrave.png"
+      "image": "assets/astro-items/c-240.png",
+      "name": "SnowGrave",
+      "source": "resources/gfx/items/collectibles/SnowGrave.png",
+      "sourceSHA256": "d379e1fa2cfaf68c58638e3bdab3169cb677d5e33c0fd08bc5812e6a7db48742"
     },
     "위조 증명서": {
-      "image": "assets/items/false-certificate.png"
+      "image": "assets/astro-items/c-160.png",
+      "name": "False Certificate",
+      "source": "resources/gfx/items/collectibles/False Certificate.png",
+      "sourceSHA256": "22a958c3c07dfe67e29437bcb35fe05c30122e5678e8f246fca66b5205bdf363"
     },
     "클리너": {
-      "image": "assets/items/cleaner.png"
+      "image": "assets/astro-items/c-40.png",
+      "name": "Cleaner",
+      "source": "resources/gfx/items/collectibles/Cleaner.png",
+      "sourceSHA256": "14bf63d36273f5131047d456320476aebf6fad7a8575ebb29855db6375824b4e"
     },
     "초 독뱀의 키스": {
-      "image": "assets/items/serpents-kiss-ex.png"
+      "image": "assets/astro-items/c-234.png",
+      "name": "Serpent's Kiss EX",
+      "source": "resources/gfx/items/collectibles/Serpent's Kiss EX.png",
+      "sourceSHA256": "d58cd475baa51a6c71de18e45defb7b68d15fb53da8ff9681978b8ecdedefcc6"
     },
     "생자의 서": {
-      "image": "assets/items/book-of-life.png"
+      "image": "assets/astro-items/c-181.png",
+      "name": "Book of Life",
+      "source": "resources/gfx/items/collectibles/Book of Life.png",
+      "sourceSHA256": "96b0d873ea970b9f647b3bcf1ef3be42785a20959e5a91870916f8c4e67e6918"
     },
     "불경스런 망토": {
-      "image": "assets/items/unholy-mantle.png"
+      "image": "assets/astro-items/c-147.png",
+      "name": "Unholy Mantle",
+      "source": "resources/gfx/items/collectibles/Unholy Mantle.png",
+      "sourceSHA256": "39dd0709758a6a9cb81462f65a5a4e224b8b7d94ad846d31aac2921931ee3eb1"
     },
     "경단": {
-      "image": "assets/items/dango.png"
+      "image": "assets/astro-items/c-220.png",
+      "name": "Dango",
+      "source": "resources/gfx/items/collectibles/Dango.png",
+      "sourceSHA256": "4e4fde8f6d5b0c6104f67146cdb0654c01193d946308e657e0e13618cd5a8d05"
     },
     "프로메테우스": {
-      "image": "assets/items/prometheus.png"
+      "image": "assets/astro-items/c-18.png",
+      "name": "Prometheus",
+      "source": "resources/gfx/items/collectibles/Prometheus.png",
+      "sourceSHA256": "c4e74b1a1f7c137f76cc22800abba23bd474d9ae1fd7bc8bfde84da021f2c89d"
     },
     "삼사라": {
-      "image": "assets/items/samsara.png"
+      "image": "assets/astro-items/c-125.png",
+      "name": "Samsara",
+      "source": "resources/gfx/items/collectibles/Samsara.png",
+      "sourceSHA256": "bafb82cd9c3e77b578b5e8988f3c602544f490b984c5b69541e4e82c35589dc7"
     },
     "대왕 8면체 주사위": {
-      "image": "assets/items/mega-d8.png"
+      "image": "assets/astro-items/c-208.png",
+      "name": "Mega D8",
+      "source": "resources/gfx/items/collectibles/Mega D8.png",
+      "sourceSHA256": "80116669802c615a9f476a77be69293371602d71c593c533c8d021285811970c"
     },
     "베들레헴의 한별": {
-      "image": "assets/items/astro-star-of-bethlehem.png"
+      "image": "assets/astro-items/c-170.png",
+      "name": "Astro Star of Bethlehem",
+      "source": "resources/gfx/items/collectibles/Astro Star of Bethlehem.png",
+      "sourceSHA256": "b6271e4e4be64506806379d4208d0f3a09ccf9f6f91bd31ab4978942d65f17ed"
     },
     "돈 = 슬픔": {
-      "image": "assets/items/money-is-sorrow.png"
+      "image": "assets/astro-items/c-225.png",
+      "name": "Money = Sorrow",
+      "source": "resources/gfx/items/collectibles/Money = Sorrow.png",
+      "sourceSHA256": "dd5498fa44f2fdf0eb6d042fc84d48f054fc93caec0322968194a045e3bcaedb"
     },
     "동전 기폭제": {
-      "image": "assets/items/coin-detonator.png"
+      "image": "assets/astro-items/c-166.png",
+      "name": "Coin Detonator",
+      "source": "resources/gfx/items/collectibles/Coin Detonator.png",
+      "sourceSHA256": "b69c66afd7ad9198ba72e79c4638422e5fd98b01b2bfbae6ff69c3b0642d56f0"
     },
     "낙제": {
-      "image": "assets/items/flunk.png"
+      "image": "assets/astro-items/t-13.png",
+      "name": "Flunk",
+      "source": "resources/gfx/items/trinkets/Flunk.png",
+      "sourceSHA256": "df251eceffcf1843407f7bbe37a21dbe532fb2306545daeb56cd8075404d7c71"
     },
     "I - 냉기": {
       "image": "assets/items/the-cold.svg"
@@ -2321,304 +2369,1576 @@
       "eid": "Pill"
     },
     "천사빛 주사위": {
-      "image": "assets/eid/mod-angelic-d6.png",
+      "image": "assets/astro-items/c-227.png",
       "name": "Angelic D6",
-      "source": "astro/collectibles/customs/angelic-d6.lua",
+      "source": "resources/gfx/items/collectibles/Angelic D6.png",
       "sourceSHA256": "012ea9fa13c33d2062b4dd26fae759d9a91b60d56cb4882899e190132b12c8ee"
     },
     "아이작의 액자": {
-      "image": "assets/eid/mod-isaac-s-frame.png",
+      "image": "assets/astro-items/c-65.png",
       "name": "Isaac's Frame",
-      "source": "astro/collectibles/customs/birthright-isaac.lua",
+      "source": "resources/gfx/items/collectibles/Birthright - Isaac.png",
       "sourceSHA256": "0c319c467dcce6608b9bd974bdfe40c692e96df1587bc53f162d01c3630a4d45"
     },
     "매기의 액자": {
-      "image": "assets/eid/mod-maggy-s-frame.png",
+      "image": "assets/astro-items/c-219.png",
       "name": "Maggy's Frame",
-      "source": "astro/collectibles/customs/birthright-maggy.lua",
+      "source": "resources/gfx/items/collectibles/Birthright - Maggy.png",
       "sourceSHA256": "34f0fe26babd8d698088e85bd4142394cf9a3afd418b25e9459d0d587639cc50"
     },
     "화톳불": {
-      "image": "assets/eid/mod-bonfire.png",
+      "image": "assets/astro-items/c-97.png",
       "name": "Bonfire",
-      "source": "astro/collectibles/customs/bonfire.lua",
+      "source": "resources/gfx/items/collectibles/Bonfire.png",
       "sourceSHA256": "f7b7092088cd13bf1bffd9b4abcac19ec3375a9fd394702e0f4b467a56357760"
     },
     "카인의 비밀 주머니": {
-      "image": "assets/eid/mod-cain-s-secret-bag.png",
+      "image": "assets/astro-items/c-84.png",
       "name": "Cain's Secret Bag",
-      "source": "astro/collectibles/customs/cains-secret-bag.lua",
+      "source": "resources/gfx/items/collectibles/Cain's Secret Bag.png",
       "sourceSHA256": "0f610325a0d503a1397c20dac0facbf3920618d2d0cbfce1834cd99cfd647579"
     },
     "혼돈의 주사위": {
-      "image": "assets/eid/mod-chaos-dice.png",
+      "image": "assets/astro-items/c-46.png",
       "name": "Chaos Dice",
-      "source": "astro/collectibles/customs/chaos-dice.lua",
+      "source": "resources/gfx/items/collectibles/Chaos Dice.png",
       "sourceSHA256": "dc50859105876f0dfc8ff24a13b6f4ddca10263a15be1eeaa671494e82290414"
     },
     "금주 아라마티아": {
-      "image": "assets/eid/mod-curse-of-aramatir.png",
+      "image": "assets/astro-items/c-83.png",
       "name": "Curse of Aramatir",
-      "source": "astro/collectibles/customs/curse-of-aramatir.lua",
+      "source": "resources/gfx/items/collectibles/Curse of Aramatir.png",
       "sourceSHA256": "3d5b924b5b03ef1b0bb8ebfa1a6031b67548c558347fb8517f33c0a5960b751f"
     },
     "기룡 드라코백": {
-      "image": "assets/eid/mod-dracoback-the-rideable-dragon.png",
+      "image": "assets/astro-items/c-129.png",
       "name": "Dracoback, the Rideable Dragon",
-      "source": "astro/collectibles/customs/dracoback.lua",
+      "source": "resources/gfx/items/collectibles/Dracoback, the Rideable Dragon.png",
       "sourceSHA256": "573160a102019305bde4bf54eb5cd4af4c69242c0a1bb7c6a2c46233c2be6586"
     },
     "표리일체": {
-      "image": "assets/eid/mod-duality-light-and-darkness.png",
+      "image": "assets/astro-items/c-47.png",
       "name": "Duality - Light and Darkness",
-      "source": "astro/collectibles/customs/duality-light-and-darkness.lua",
-      "sourceSHA256": "42392561f2cabb83c911ecc4007b92f9913b247a36edebc43a538cd778dae563"
+      "source": "resources/gfx/items/collectibles/Duality - Light and Darkness.png",
+      "sourceSHA256": "8c5ab9858ffb4f8a550d3178d05c3a047c5bb7e3f05cbf3e56fccbfa3d418a91"
     },
     "빛의 성검 단넬": {
-      "image": "assets/eid/mod-dunnell-the-noble-arms-of-light.png",
+      "image": "assets/astro-items/c-88.png",
       "name": "Dunnell, the Noble Arms of Light",
-      "source": "astro/collectibles/customs/dunnell-the-noble-arms-of-light.lua",
+      "source": "resources/gfx/items/collectibles/Dunnell, the Noble Arms of Light.png",
       "sourceSHA256": "1f6916a221ca4005e0f1d6eac67d197e4d83c2dc0b962fd115b1c36ca734c9e8"
     },
     "타락한 오브": {
-      "image": "assets/eid/mod-fallen-orb.png",
+      "image": "assets/astro-items/c-32.png",
       "name": "Fallen Orb",
-      "source": "astro/collectibles/customs/fallen-orb.lua",
+      "source": "resources/gfx/items/collectibles/Fallen Orb.png",
       "sourceSHA256": "8f178d9ad81f730c2c4b6d65aad42a857b7986507fa01715d2f0ab25ac9c440e"
     },
     "금지된 주사위": {
-      "image": "assets/eid/mod-forbidden-dice.png",
+      "image": "assets/astro-items/c-122.png",
       "name": "Forbidden Dice",
-      "source": "astro/collectibles/customs/forbidden-dice.lua",
+      "source": "resources/gfx/items/collectibles/Forbidden Dice.png",
       "sourceSHA256": "76d47928f89ec81632368c53b59d32fab56ff09af5bb7fec0599e752fb51dafe"
     },
     "글리치 주사위": {
-      "image": "assets/eid/mod-glitched-d6.png",
+      "image": "assets/astro-items/c-187.png",
       "name": "Glitched D6",
-      "source": "astro/collectibles/customs/glitched-d6.lua",
+      "source": "resources/gfx/items/collectibles/Glitched D6.png",
       "sourceSHA256": "712a0514b1a0512e76f979d5d1b94cbed36bfae5d73027060fac8de2097f3e01"
     },
     "졸업증명서": {
-      "image": "assets/eid/mod-graduation-certificate.png",
+      "image": "assets/astro-items/c-163.png",
       "name": "Graduation Certificate",
-      "source": "astro/collectibles/customs/graduation-certificate.lua",
+      "source": "resources/gfx/items/collectibles/Graduation Certificate.png",
       "sourceSHA256": "5d4f7168128d11a3d18b4adbb431d9c00ad27a34ed838efda68c4d23f48874d3"
     },
     "탐욕": {
-      "image": "assets/eid/mod-greed.png",
+      "image": "assets/astro-items/c-17.png",
       "name": "Greed",
-      "source": "astro/collectibles/customs/greed.lua",
+      "source": "resources/gfx/items/collectibles/Greed.png",
       "sourceSHA256": "41d6d9787b9055b68c3301187ef2f92364affd8b3c94db800bdedd54fcf90d76"
     },
     "연명치료": {
-      "image": "assets/eid/mod-life-sustaining-treatment.png",
+      "image": "assets/astro-items/c-182.png",
       "name": "Life-Sustaining Treatment",
-      "source": "astro/collectibles/customs/life-sustaining-treatment.lua",
+      "source": "resources/gfx/items/collectibles/Life-Sustaining Treatment.png",
       "sourceSHA256": "c0b78a69f34a968650a42d2d8d0eef263d023770a72867e52d0d0c551cadcf90"
     },
     "거울 주사위": {
-      "image": "assets/eid/mod-mirror-dice.png",
+      "image": "assets/astro-items/c-99.png",
       "name": "Mirror Dice",
-      "source": "astro/collectibles/customs/mirror-dice.lua",
+      "source": "resources/gfx/items/collectibles/Mirror Dice.png",
       "sourceSHA256": "609826e6b9009c5075f27f5783e2ab768efecbaea31a1089f3c4458cf5cfab16"
     },
     "나의 달 나의 그대": {
-      "image": "assets/eid/mod-my-moon-my-man.png",
+      "image": "assets/astro-items/c-93.png",
       "name": "My Moon My Man",
-      "source": "astro/collectibles/customs/my-moon-my-man.lua",
+      "source": "resources/gfx/items/collectibles/My Moon My Man.png",
       "sourceSHA256": "ab477b3751e5227c2b79eb7a68a02f5c53659eb12ec8a18769f4f7f2d88f2575"
     },
     "망각": {
-      "image": "assets/eid/mod-oblivion.png",
+      "image": "assets/astro-items/c-30.png",
       "name": "Oblivion",
-      "source": "astro/collectibles/customs/oblivion.lua",
+      "source": "resources/gfx/items/collectibles/Deep Of Abyss.png",
       "sourceSHA256": "ef1c6e8eafdb2756515fbda1078b942a268a14a2f804925131a890c8e359a62d"
     },
     "오메가 321": {
-      "image": "assets/eid/mod-omega-321.png",
+      "image": "assets/astro-items/c-36.png",
       "name": "Omega 321",
-      "source": "astro/collectibles/customs/omega-321.lua",
+      "source": "resources/gfx/items/collectibles/Omega 321.png",
       "sourceSHA256": "4c94994ee72d6a352f2494ec31a67f229ac037365f55a1dd7db8762ce07594e0"
     },
     "원죄보 - 스네이크아이": {
-      "image": "assets/eid/mod-original-sinful-spoils-snake-eye.png",
+      "image": "assets/astro-items/c-70.png",
       "name": "Original Sinful Spoils - Snake Eye",
-      "source": "astro/collectibles/customs/original-sinful-spoils-snake-eye.lua",
+      "source": "resources/gfx/items/collectibles/Original Sinful Spoils - Snake Eye.png",
       "sourceSHA256": "1beba8744aa85ec09efd5b79047b866fbb051045762fa5775f60c343993114fd"
     },
     "폭주하는 죄보": {
-      "image": "assets/eid/mod-overwhelming-sinful-spoils.png",
+      "image": "assets/astro-items/c-80.png",
       "name": "Overwhelming Sinful Spoils",
-      "source": "astro/collectibles/customs/overwhelming-sinful-spoils.lua",
+      "source": "resources/gfx/items/collectibles/Overwhelming Sinful Spoils.png",
       "sourceSHA256": "59b43f5b19442a26ce51f44e64cd793c2a594a8b17029f3441f6e0dddef5b1dd"
     },
     "핑크 와드": {
-      "image": "assets/eid/mod-pink-ward.png",
+      "image": "assets/astro-items/c-59.png",
       "name": "Pink Ward",
-      "source": "astro/collectibles/customs/pink-ward.lua",
-      "sourceSHA256": "5601deca63056491a4b15e0b98745ffb01a19f76c5e93bf104e1ddb306993037"
+      "source": "resources/gfx/items/collectibles/Pink Ward.png",
+      "sourceSHA256": "bcbc8e48c4f23a5e89dea33d6281c47352debbc3ac5b6f71d5d577845dbfe07f"
     },
     "해적 지도": {
-      "image": "assets/eid/mod-pirate-map.png",
+      "image": "assets/astro-items/c-43.png",
       "name": "Pirate Map",
-      "source": "astro/collectibles/customs/pirate-map.lua",
+      "source": "resources/gfx/items/collectibles/Pirate Map.png",
       "sourceSHA256": "a7b47e98c1ebe589ebc2a18ca45c0c89e7e54edafb36f3906831471a53cff302"
     },
     "알비레오": {
-      "image": "assets/eid/mod-albireo.png",
+      "image": "assets/astro-items/c-131.png",
       "name": "Albireo",
-      "source": "astro/collectibles/customs/planetarium/albireo.lua",
-      "sourceSHA256": "98727f4098057a1bcfb4103a5115ea06d77656b731054c567381693f8cc65b3a"
+      "source": "resources/gfx/items/collectibles/Albireo.png",
+      "sourceSHA256": "0375812ab0c53443c8ebabe4b607fa824aebcebfbcc3a7fbf5927e78810bf2da"
     },
     "알타일": {
-      "image": "assets/eid/mod-altair.png",
+      "image": "assets/astro-items/c-22.png",
       "name": "Altair",
-      "source": "astro/collectibles/customs/planetarium/altair.lua",
-      "sourceSHA256": "ddf0689719d7ef5bda2059533deb6701594298ee2ae43d0bfaefce18bd96ae6e"
+      "source": "resources/gfx/items/collectibles/Altair.png",
+      "sourceSHA256": "71c610e00e6421be853e5e53d37aa2e35eb623d61a0850fca909fc03f7813d1b"
     },
     "혜성": {
-      "image": "assets/eid/mod-comet.png",
+      "image": "assets/astro-items/c-14.png",
       "name": "Comet",
-      "source": "astro/collectibles/customs/planetarium/comet.lua",
-      "sourceSHA256": "04058ab25bfa6c517503d1da1172d7b7947a7930a0b74297a95e88d3837b9ea5"
+      "source": "resources/gfx/items/collectibles/Comet.png",
+      "sourceSHA256": "1079399aec90106be2dcbc81e6058f9c06b2e0159c8d234bdb1ecd18335e83d1"
     },
     "초 금성": {
-      "image": "assets/eid/mod-venus-ex.png",
+      "image": "assets/astro-items/c-111.png",
       "name": "VENUS EX",
-      "source": "astro/collectibles/customs/planetarium/venus-ex.lua",
+      "source": "resources/gfx/items/collectibles/VENUS EX.png",
       "sourceSHA256": "cd69ad60f4e70edf0176eebf03f9cfccb11afadec153792e1691755a7f83b9a3"
     },
     "초 처녀자리": {
-      "image": "assets/eid/mod-virgo-ex.png",
+      "image": "assets/astro-items/c-6.png",
       "name": "Virgo EX",
-      "source": "astro/collectibles/customs/planetarium/virgo-ex.lua",
-      "sourceSHA256": "6b9d1f28e7a51a02e429415efd0758ec366ddac7bbe9a792a8654f54de2c29f8"
+      "source": "resources/gfx/items/collectibles/Virgo.png",
+      "sourceSHA256": "439900808e8b1800972f19ae6c201a31eecaf72c62585dfb88b29a4fac20abd2"
     },
     "강력한 밑바닥": {
-      "image": "assets/eid/mod-power-rock-bottom.png",
+      "image": "assets/astro-items/c-66.png",
       "name": "Power Rock Bottom",
-      "source": "astro/collectibles/customs/power-rock-bottom.lua",
+      "source": "resources/gfx/items/collectibles/Power Rock Bottom.png",
       "sourceSHA256": "339632b410d458802be66c14454757c197e3048dcec2995d901dfb210e947353"
     },
     "순애": {
-      "image": "assets/eid/mod-pure-love.png",
+      "image": "assets/astro-items/c-119.png",
       "name": "Pure Love",
-      "source": "astro/collectibles/customs/pure-love.lua",
-      "sourceSHA256": "969fe71fada8f86c7cadca9daf4fc5cc5f62500d1b365eab105acfd2345237bf"
+      "source": "resources/gfx/items/collectibles/Pure Love.png",
+      "sourceSHA256": "2ef85994325fc31f583a13a51140686476a976e58caf69478fa407bba985ac96"
     },
     "퍼즐 주사위": {
-      "image": "assets/eid/mod-puzzle-dice.png",
+      "image": "assets/astro-items/c-161.png",
       "name": "Puzzle Dice",
-      "source": "astro/collectibles/customs/puzzle-dice.lua",
+      "source": "resources/gfx/items/collectibles/Puzzle Dice.png",
       "sourceSHA256": "966e3fa4a6b314a8b428912264f8647ee42991de27ebf17679d1810d24d7caee"
     },
     "퀘이사": {
-      "image": "assets/eid/mod-quasar.png",
+      "image": "assets/astro-items/c-45.png",
       "name": "Quasar",
-      "source": "astro/collectibles/customs/quasar.lua",
+      "source": "resources/gfx/items/collectibles/Quasar.png",
       "sourceSHA256": "cfbb9795deebdff0970b5c04836e3409912f731ba8274a3088be691691f495b2"
     },
     "양자 주사위": {
-      "image": "assets/eid/mod-qubit-dice.png",
+      "image": "assets/astro-items/c-140.png",
       "name": "Qubit Dice",
-      "source": "astro/collectibles/customs/qubit-dice.lua",
+      "source": "resources/gfx/items/collectibles/Qubit Dice.png",
       "sourceSHA256": "cde689d74761c9282950dd90826f639ec77ee2abde75aba8927b0bbe2a1fedc5"
     },
     "재빠른 밑바닥": {
-      "image": "assets/eid/mod-rapid-rock-bottom.png",
+      "image": "assets/astro-items/c-67.png",
       "name": "Rapid Rock Bottom",
-      "source": "astro/collectibles/customs/rapid-rock-bottom.lua",
+      "source": "resources/gfx/items/collectibles/Rapid Rock Bottom.png",
       "sourceSHA256": "b226eeddb92e8d5e46a0bb34d9a19c6cbcde7e1bcdc01c6103cda0b3d8602a0b"
     },
     "재활용 주사위": {
-      "image": "assets/eid/mod-restock-dice.png",
+      "image": "assets/astro-items/c-120.png",
       "name": "Restock Dice",
-      "source": "astro/collectibles/customs/restock-dice.lua",
+      "source": "resources/gfx/items/collectibles/Restock Dice.png",
       "sourceSHA256": "ecc7adc4b297dec3ecda063868e6b875ec6c914843017d0a5307095b2e5d5703"
     },
     "론고미니아드": {
-      "image": "assets/eid/mod-rhongomyniad.png",
+      "image": "assets/astro-items/c-60.png",
       "name": "Rhongomyniad",
-      "source": "astro/collectibles/customs/rhongomyniad.lua",
-      "sourceSHA256": "7cca89eae67d89081a5b18f15a5cf66eeb35b117519fa4725bcba1be404fb8d4"
+      "source": "resources/gfx/items/collectibles/Rhongomyniad.png",
+      "sourceSHA256": "2aa3a867cdede6f953b8ac81628f146b9c2bb37ef86f172da3413bb8080fde71"
     },
     "아라메시아의 의": {
-      "image": "assets/eid/mod-rite-of-aramesir.png",
+      "image": "assets/astro-items/c-79.png",
       "name": "Rite of Aramesir",
-      "source": "astro/collectibles/customs/rite-of-aramesir.lua",
-      "sourceSHA256": "5ca2f048701c8322fe4ad6d5def6a745fde51b2cee4cb18d358bc3f41421ed88"
+      "source": "resources/gfx/items/collectibles/Rite of Aramesir.png",
+      "sourceSHA256": "63ad02f8f85541c3c0ed2c359e7167cf2a8d24ad024271874e9d2370992ef8ad"
     },
     "성스러운 주사위": {
-      "image": "assets/eid/mod-sacred-dice.png",
+      "image": "assets/astro-items/c-121.png",
       "name": "Sacred Dice",
-      "source": "astro/collectibles/customs/sacred-dice.lua",
+      "source": "resources/gfx/items/collectibles/Sacred Dice.png",
       "sourceSHA256": "ea842b9a0c26b69032d1d4e43bc87f136303353a2d862aa94ec0310880dfa979"
     },
     "산데비스탄": {
-      "image": "assets/eid/mod-sandevistan.png",
+      "image": "assets/astro-items/c-92.png",
       "name": "Sandevistan",
-      "source": "astro/collectibles/customs/sandevistan.lua",
+      "source": "resources/gfx/items/collectibles/Sandevistan.png",
       "sourceSHA256": "8d711bacadb5f77e81aeed9d9d367d6e1a3f1dcfaed6eb4b2615f5f7d1d93da5"
     },
     "슈뢰딩거의 고양이": {
-      "image": "assets/eid/mod-schrodinger-s-cat.png",
+      "image": "assets/astro-items/c-155.png",
       "name": "Schrodinger's Cat",
-      "source": "astro/collectibles/customs/schrodingers-cat.lua",
+      "source": "resources/gfx/items/collectibles/Schrodinger's Cat.png",
       "sourceSHA256": "ac912b0614ece7dc04bfb11c1519f89be71a6fc147db69eddef956fbc297b4c2"
     },
     "반역의 죄보 - 스네이크아이": {
-      "image": "assets/eid/mod-sinful-spoils-of-subversion-snake-eye.png",
+      "image": "assets/astro-items/c-69.png",
       "name": "Sinful Spoils of Subversion - Snake Eye",
-      "source": "astro/collectibles/customs/sinful-spoils-of-subversion-snake-eye.lua",
+      "source": "resources/gfx/items/collectibles/Sinful Spoils of Subversion - Snake Eye.png",
       "sourceSHA256": "d348b1516fea9ca7a23ce2c19ad0007dbf798f3bc2b631eba8714610b397dc1f"
     },
     "스네이크아이즈 포프루스": {
-      "image": "assets/eid/mod-snake-eyes-poplar.png",
+      "image": "assets/astro-items/c-135.png",
       "name": "Snake-Eyes Poplar",
-      "source": "astro/collectibles/customs/snake-eyes-poplar.lua",
+      "source": "resources/gfx/items/collectibles/Snake-Eyes Poplar.png",
       "sourceSHA256": "348c6df45122e7b804596b3edf80235011315d961f4785860f3cd6f31d307840"
     },
     "스핀업 주사위": {
-      "image": "assets/eid/mod-spinup-dice.png",
+      "image": "assets/astro-items/c-96.png",
       "name": "Spinup Dice",
-      "source": "astro/collectibles/customs/spinup-dice.lua",
+      "source": "resources/gfx/items/collectibles/Spinup Dice.png",
       "sourceSHA256": "149283b00bc10b0395d605370389dbd9f9f91fbd179618037f4ea87840416bf1"
     },
     "스태프 오브 아인즈 울 고운": {
-      "image": "assets/eid/mod-staff-of-ainz-ooal-gown.png",
+      "image": "assets/astro-items/c-136.png",
       "name": "Staff of Ainz Ooal Gown",
-      "source": "astro/collectibles/customs/staff-of-ainz-ooal-gown.lua",
+      "source": "resources/gfx/items/collectibles/Staff of Ainz Ooal Gown.png",
       "sourceSHA256": "6512b566abcaf1756646f704e15b171d7166f78e949870c7aef85d8659a69f25"
     },
     "스타리트 파피용": {
-      "image": "assets/eid/mod-starlit-papillon.png",
+      "image": "assets/astro-items/c-89.png",
       "name": "Starlit Papillon",
-      "source": "astro/collectibles/customs/starlit-papillon.lua",
+      "source": "resources/gfx/items/collectibles/Starlit Papillon.png",
       "sourceSHA256": "8000de7391b8d7d686520c158ff10d593c0456b76d6884d40c44eac921adf2d8"
     },
     "성혈과 성배": {
-      "image": "assets/eid/mod-the-holy-blood-and-the-holy-grail.png",
+      "image": "assets/astro-items/c-85.png",
       "name": "The Holy Blood and the Holy Grail",
-      "source": "astro/collectibles/customs/the-holy-blood-and-the-holy-grail.lua",
-      "sourceSHA256": "80b2dd0e36c281bf21109025fd9f65e33d79ebaa3111fb7e4c0737fb0292c984"
+      "source": "resources/gfx/items/collectibles/The Holy Blood and the Holy Grail.png",
+      "sourceSHA256": "2a4f6bb777c0e3241d35f9f10a9f52dc7cadb9bc46a22b603faa47335cde489d"
     },
     "죄보사냥의 악마": {
-      "image": "assets/eid/mod-wanted-seeker-of-sinful-spoil.png",
+      "image": "assets/astro-items/c-102.png",
       "name": "WANTED: Seeker of Sinful Spoil",
-      "source": "astro/collectibles/customs/wanted-seeker-of-sinful-spoil.lua",
+      "source": "resources/gfx/items/collectibles/WANTED Seeker of Sinful Spoil.png",
       "sourceSHA256": "43c4d209aa473eced5d065816f5dabb5be565add3a1ac57ba9fa79252cb8be86"
     },
     "와드": {
-      "image": "assets/eid/mod-ward.png",
+      "image": "assets/astro-items/c-49.png",
       "name": "Ward",
-      "source": "astro/collectibles/customs/ward.lua",
-      "sourceSHA256": "8b3a6130eeb3717acb0ac0b6f83eb7cc8ddc25732dcf40090d87a59cdbcb30a8"
+      "source": "resources/gfx/items/collectibles/Ward.png",
+      "sourceSHA256": "c4f312c4c570cc3b233fd66c5e16cf79b38c9b6df56ec5c0e8ba66855d2ee904"
     },
     "목시의 눈": {
-      "image": "assets/eid/mod-moxie-s-eyes.png",
+      "image": "assets/astro-items/t-11.png",
       "name": "Moxie's Eyes",
-      "source": "astro/trinkets/customs/mosis-eyes.lua",
+      "source": "resources/gfx/items/trinkets/Mosi's Eyes.png",
       "sourceSHA256": "fb458499463e88ed6573ba76a3648fa798458015156b277cde43b21dcc3d1d8d"
+    },
+    "백조자리": {
+      "image": "assets/astro-items/c-1.png",
+      "name": "Cygnus",
+      "source": "resources/gfx/items/collectibles/Cygnus.png",
+      "sourceSHA256": "70333d856e1baf20257e5e04251b280a9081b2d4892ecbdf31a4b6b231f9ccfc"
+    },
+    "초 천칭자리": {
+      "image": "assets/astro-items/c-2.png",
+      "name": "Libra EX",
+      "source": "resources/gfx/items/collectibles/Libra.png",
+      "sourceSHA256": "51d88b895b4dc4f8ef1e422aeb77966439b0347137629a7479a461cd82fecec3"
+    },
+    "초 게자리": {
+      "image": "assets/astro-items/c-3.png",
+      "name": "Cancer EX",
+      "source": "resources/gfx/items/collectibles/Cancer.png",
+      "sourceSHA256": "731c01caf9eb1d2b4151f0f552b4b5f4a8f0154f8c380ba3f3d076679ea6cda1"
+    },
+    "초 전갈자리": {
+      "image": "assets/astro-items/c-4.png",
+      "name": "Scorpio EX",
+      "source": "resources/gfx/items/collectibles/Scorpio.png",
+      "sourceSHA256": "ba3fd34a3c3f061ad7e5ff00034413506b1c2061149137dc87173d8fe596f966"
+    },
+    "초 염소자리": {
+      "image": "assets/astro-items/c-5.png",
+      "name": "Capricorn EX",
+      "source": "resources/gfx/items/collectibles/Capricorn.png",
+      "sourceSHA256": "e57b9dc464229f7cd48de86b5064c6477ad5c37aba6d6de4d21f0a183cd4a968"
+    },
+    "초 사자자리": {
+      "image": "assets/astro-items/c-7.png",
+      "name": "Leo EX",
+      "source": "resources/gfx/items/collectibles/Leo.png",
+      "sourceSHA256": "26e928d88e76d0f0b9011a7736b8526c2863abc87db3cac3fe2f8bc1105392ec"
+    },
+    "초 양자리": {
+      "image": "assets/astro-items/c-8.png",
+      "name": "Aries EX",
+      "source": "resources/gfx/items/collectibles/Aries.png",
+      "sourceSHA256": "101d4ba8816ad3a17e679efcf0ef667bedf43d8c3bb999ed2ba6dec480bba598"
+    },
+    "초 황소자리": {
+      "image": "assets/astro-items/c-9.png",
+      "name": "Taurus EX",
+      "source": "resources/gfx/items/collectibles/Taurus.png",
+      "sourceSHA256": "992387f5a4ebe85ab492e6620f796d931efc346d9f7ab3be2023e10dc0d5db94"
+    },
+    "초 물병자리": {
+      "image": "assets/astro-items/c-10.png",
+      "name": "Aquarius EX",
+      "source": "resources/gfx/items/collectibles/Aquarius.png",
+      "sourceSHA256": "b68209f78c474bac7fa4169d56f623a607eb85a2945143aec03658d28b92d3d6"
+    },
+    "카시오페아": {
+      "image": "assets/astro-items/c-11.png",
+      "name": "Casiopea",
+      "source": "resources/gfx/items/collectibles/Casiopea.png",
+      "sourceSHA256": "13f98574f4e2234553b6a0422e3de4bf8bb3760b85bd30116d31ba2255053657"
+    },
+    "까마귀자리": {
+      "image": "assets/astro-items/c-12.png",
+      "name": "Corvus",
+      "source": "resources/gfx/items/collectibles/Corvus.png",
+      "sourceSHA256": "ba191d50deabab3d4995c223697dc069ca2cf84a0c68c19738df1e5391278d31"
+    },
+    "공작자리": {
+      "image": "assets/astro-items/c-13.png",
+      "name": "Pavo",
+      "source": "resources/gfx/items/collectibles/Pavo.png",
+      "sourceSHA256": "d1639c5d88b1f500c67e7b71058de40ee034ff4e2072f7743f370f4e7eb9626b"
+    },
+    "초 물고기자리": {
+      "image": "assets/astro-items/c-15.png",
+      "name": "Pisces EX",
+      "source": "resources/gfx/items/collectibles/Pisces.png",
+      "sourceSHA256": "9c99fd1cacc67f477697f8d073577bb67a317c558fcafa8abafa0b7729e81555"
+    },
+    "초 쌍둥이자리": {
+      "image": "assets/astro-items/c-16.png",
+      "name": "Gemini EX",
+      "source": "resources/gfx/items/collectibles/Gemini.png",
+      "sourceSHA256": "efd4b8938da62844aa74088ebafef372e92b28cebe7124b1ee633230c61e90e5"
+    },
+    "순백의 심장": {
+      "image": "assets/astro-items/c-19.png",
+      "name": "Pure White Heart",
+      "source": "resources/gfx/items/collectibles/Pure White Heart.png",
+      "sourceSHA256": "a0ea38eb1e2b6eddb0bd38a5415fafc55686acc084f61b0bfd272a439a400754"
+    },
+    "백금 탄환": {
+      "image": "assets/astro-items/c-20.png",
+      "name": "Platinum Bullet",
+      "source": "resources/gfx/items/collectibles/Platinum Bullet.png",
+      "sourceSHA256": "57806cf1e8673293ce1b361b75d334c0c1c47abcf0c82ae0360c24f2d936ebfc"
+    },
+    "사신의 눈": {
+      "image": "assets/astro-items/c-21.png",
+      "name": "Death's Eyes",
+      "source": "resources/gfx/items/collectibles/Death's Eyes.png",
+      "sourceSHA256": "306b64a17c1ed1ef3df3ae7272536f56896586cc9354d740d5eafd88c017da35"
+    },
+    "데네브": {
+      "image": "assets/astro-items/c-23.png",
+      "name": "Deneb",
+      "source": "resources/gfx/items/collectibles/Deneb.png",
+      "sourceSHA256": "7aac55a258777b4571b0abbca6a080c6380ecfde31cf11c08641ad41954ec313"
+    },
+    "베가": {
+      "image": "assets/astro-items/c-24.png",
+      "name": "Vega",
+      "source": "resources/gfx/items/collectibles/Vega.png",
+      "sourceSHA256": "a0aa1b25ba30a6ad5a295760d37a1400483765b52bc4d26264f992f99c1fafad"
+    },
+    "저주받은 심장": {
+      "image": "assets/astro-items/c-25.png",
+      "name": "Cursed Heart",
+      "source": "resources/gfx/items/collectibles/Cursed Heart.png",
+      "sourceSHA256": "4463ebe7e9cd9738625db99681b1beb3bf7241da2efdb51fa55cafd6831d0cb0"
+    },
+    "슈퍼 마그넷": {
+      "image": "assets/astro-items/c-26.png",
+      "name": "Super Magneto",
+      "source": "resources/gfx/items/collectibles/Super Magneto.png",
+      "sourceSHA256": "38f49f9d594a8a7a67b2595cdf5218b849fb5e585ba8d361f1b720dd57566aad"
+    },
+    "태양계": {
+      "image": "assets/astro-items/c-27.png",
+      "name": "Solar System",
+      "source": "resources/gfx/items/collectibles/Solar System.png",
+      "sourceSHA256": "8a66d8052ce32277a0c205898f35c2beaf770f87cffc9e4ac6373710b24c3c8c"
+    },
+    "프톨레마이오스": {
+      "image": "assets/astro-items/c-28.png",
+      "name": "Ptolemaeus",
+      "source": "resources/gfx/items/collectibles/Ptolemaeus.png",
+      "sourceSHA256": "263e6e16d7cb13bcc51b52b37e9f79c74d9db4bb6116e19b5f4917fdb26a5fcc"
+    },
+    "화난 양파": {
+      "image": "assets/astro-items/c-29.png",
+      "name": "Angry Onion",
+      "source": "resources/gfx/items/collectibles/Angry Onion.png",
+      "sourceSHA256": "6b0ee77e4db0fcb7cce498db454e79b21cc106298ccae98985ef71b05904bb0f"
+    },
+    "집으로!": {
+      "image": "assets/astro-items/c-31.png",
+      "name": "Go Home!",
+      "source": "gfx/items/collectibles/collectibles_668_dadsnote.png",
+      "sourceSHA256": "4da882073a0eb22e6114a9470c22f415dfbc5601daa14df9ed3424407d014e86"
+    },
+    "삼위일체": {
+      "image": "assets/astro-items/c-33.png",
+      "name": "Trinity",
+      "source": "resources/gfx/items/collectibles/Trinity.png",
+      "sourceSHA256": "72fcd4ff330b516be1c35215039129b1706efbfb44f59d90ed0ca21c7aa49349"
+    },
+    "증오의 피": {
+      "image": "assets/astro-items/c-34.png",
+      "name": "Blood Of Hatred",
+      "source": "resources/gfx/items/collectibles/Blood Of Hatred.png",
+      "sourceSHA256": "dec38a82612ab11ed282ab5f70ad48a3d754e8557a56145eff5eb1d25187ed0f"
+    },
+    "신의 조명": {
+      "image": "assets/astro-items/c-35.png",
+      "name": "Divine Light",
+      "source": "resources/gfx/items/collectibles/Divine Light.png",
+      "sourceSHA256": "b7dec364d2decf6efe7f64bada0c2b23f702278b0287faf4267f14440f0e11e4"
+    },
+    "리인카네이션": {
+      "image": "assets/astro-items/c-37.png",
+      "name": "Reincarnation",
+      "source": "resources/gfx/items/collectibles/Reincarnation.png",
+      "sourceSHA256": "3bb542782c2945a7139cdb74c6c475ec6d265ce2f5db8c6e152cba8a56f6b669"
+    },
+    "급성 부비동염": {
+      "image": "assets/astro-items/c-38.png",
+      "name": "Acute Sinusitis",
+      "source": "resources/gfx/items/collectibles/Acute Sinusitis.png",
+      "sourceSHA256": "1cbd1bda8edf5eb77f05d34f2c4735ed9beb7d7ff3f6342f20c5ac28049bb989"
+    },
+    "라니아케아 초은하단": {
+      "image": "assets/astro-items/c-39.png",
+      "name": "Laniakea Supercluster",
+      "source": "resources/gfx/items/collectibles/Laniakea Supercluster.png",
+      "sourceSHA256": "14e296234a38df46469fe8a6f2d743ecf1f2f812f01c4e1697ec834067264750"
+    },
+    "클로버": {
+      "image": "assets/astro-items/c-41.png",
+      "name": "Clover",
+      "source": "resources/gfx/items/collectibles/Clover.png",
+      "sourceSHA256": "1a5ff7f6520f3b86a93b51844bf16822c81d890b4c40130d8a311218a1033006"
+    },
+    "은하 용맹 훈장": {
+      "image": "assets/astro-items/c-42.png",
+      "name": "Galactic Medal Of Valor",
+      "source": "resources/gfx/items/collectibles/Galactic Medal Of Valor.png",
+      "sourceSHA256": "d6adb68524e63264b55e69095a3054effe6ded3b330c249996642afedead5032"
+    },
+    "모르핀": {
+      "image": "assets/astro-items/c-44.png",
+      "name": "Morphine",
+      "source": "resources/gfx/items/collectibles/Morphine.png",
+      "sourceSHA256": "a93f1e6ec6d38c438c6374fefe446da58280d939729ed81a0db44204a880195e"
+    },
+    "초 사수자리": {
+      "image": "assets/astro-items/c-48.png",
+      "name": "Sagittarius EX",
+      "source": "resources/gfx/items/collectibles/Sagittarius EX.png",
+      "sourceSHA256": "d0065a5a7247762a718b8d2d6b458531749244a2ec6e5ba1d8af33ab6a60258a"
+    },
+    "처비의 머리": {
+      "image": "assets/astro-items/c-50.png",
+      "name": "Chubby's Head",
+      "source": "resources/gfx/items/collectibles/Chubby's Head.png",
+      "sourceSHA256": "6b2338fdb25603801db228b32a86878eea26b5de1be69b705e91d24414731780"
+    },
+    "잠자는 강아지": {
+      "image": "assets/astro-items/c-51.png",
+      "name": "Sleeping Puppy",
+      "source": "resources/gfx/items/collectibles/Sleeping Puppy.png",
+      "sourceSHA256": "17960ffed3bf0954e969f1f872b58791564ad2e32690e2079a557d9333d98497"
+    },
+    "처비의 꼬리": {
+      "image": "assets/astro-items/c-52.png",
+      "name": "Chubby's Tail",
+      "source": "resources/gfx/items/collectibles/Chubby's Tail.png",
+      "sourceSHA256": "d21e5f923a3b38f96304cc23387f09a089332de0ac233b84482a6123e011bb70"
+    },
+    "행복한 양파": {
+      "image": "assets/astro-items/c-53.png",
+      "name": "Happy Onion",
+      "source": "resources/gfx/items/collectibles/Happy Onion.png",
+      "sourceSHA256": "c160e5d85ac4b58bd4f0150a3ff45a1abac1a2560e560374ba00805e3643a1a5"
+    },
+    "열쇠 = 힘": {
+      "image": "assets/astro-items/c-54.png",
+      "name": "Key Is Power",
+      "source": "resources/gfx/items/collectibles/Key Is Power.png",
+      "sourceSHA256": "e7bd0c4f704ab01d50e530ab1efbd77ce691390267d64b47c0b5727fb6fd2155"
+    },
+    "폭탄 = 힘": {
+      "image": "assets/astro-items/c-55.png",
+      "name": "Bomb Is Power",
+      "source": "resources/gfx/items/collectibles/Bomb Is Power.png",
+      "sourceSHA256": "6b5928219020689947e554d1448de698dc46ff80eec541bb5cc15b5751982c52"
+    },
+    "포츈 코인": {
+      "image": "assets/astro-items/c-56.png",
+      "name": "Fortune Coin",
+      "source": "resources/gfx/items/collectibles/Fortune Coin.png",
+      "sourceSHA256": "311912dc5e123dab6b4eadcc5833a9a3f6d78ba2e8bc189addf580da0eeacee1"
+    },
+    "석사학위": {
+      "image": "assets/astro-items/c-57.png",
+      "name": "Master's Degree",
+      "source": "resources/gfx/items/collectibles/Master's Degree.png",
+      "sourceSHA256": "4ca78f9788a5a0459ae59410f6aa55a831ce4434b9488c36f96feca3dd42f31e"
+    },
+    "학사학위": {
+      "image": "assets/astro-items/c-58.png",
+      "name": "Bachelor's Degree",
+      "source": "resources/gfx/items/collectibles/Bachelor's Degree.png",
+      "sourceSHA256": "5470e887dc6bd8ec87bb481aed30545882a02cc769ed34380350abd9dc74db99"
+    },
+    "아티팩트의 신지": {
+      "image": "assets/astro-items/c-61.png",
+      "name": "Artifact Sanctum",
+      "source": "resources/gfx/items/collectibles/Artifact Sanctum.png",
+      "sourceSHA256": "65bcacf26cc0418fd1acf34515dacdb0d58ca34a7817ff343f880780e5f86ef6"
+    },
+    "증폭하는 마음": {
+      "image": "assets/astro-items/c-62.png",
+      "name": "Amplifying Mind",
+      "source": "resources/gfx/items/collectibles/Amplifying Mind.png",
+      "sourceSHA256": "a5300f8e29b11e3b58c33473152b6def7444f2e15c9c9a5b90873c297438d215"
+    },
+    "쉬움 모드": {
+      "image": "assets/astro-items/c-63.png",
+      "name": "EZ Mode",
+      "source": "resources/gfx/items/collectibles/EZ Mode.png",
+      "sourceSHA256": "18eb0b26b1b76c24f585600d60545005b17884e4f891d31833695c632490122c"
+    },
+    "에덴의 액자": {
+      "image": "assets/astro-items/c-64.png",
+      "name": "Eden's Frame",
+      "source": "resources/gfx/items/collectibles/Birthright - Eden.png",
+      "sourceSHA256": "99b08cac53816e4581ca1e745f85fd61fa699c88574e597f1dfcdee7aa7167a3"
+    },
+    "운 좋은 밑바닥": {
+      "image": "assets/astro-items/c-68.png",
+      "name": "Lucky Rock Bottom",
+      "source": "resources/gfx/items/collectibles/Lucky Rock Bottom.png",
+      "sourceSHA256": "97fb94b96dc9ce14b8319410b754b8dcfce99bf812a788321d78d3d6337a3ce8"
+    },
+    "하트 꽃": {
+      "image": "assets/astro-items/c-71.png",
+      "name": "Heart Bloom",
+      "source": "resources/gfx/items/collectibles/Heart Bloom.png",
+      "sourceSHA256": "2428e6abeed0dc7436af861819e2180928a67930902092835785ddb55b180a02"
+    },
+    "앱솔루트 구피": {
+      "image": "assets/astro-items/c-72.png",
+      "name": "Absolut Guppy",
+      "source": "resources/gfx/items/collectibles/Absolut Guppy.png",
+      "sourceSHA256": "b9886f1e864e909e0ca009a4513b54f5b64c425d5d00ed626820fcbdb2a559c2"
+    },
+    "섬망 구피": {
+      "image": "assets/astro-items/c-73.png",
+      "name": "Delirium Guppy",
+      "source": "resources/gfx/items/collectibles/Delirium Guppy.png",
+      "sourceSHA256": "b9e8e9d2662ffdf703e587b22ecd88c241d566e1e16bbc3b2daf99257fd00c3d"
+    },
+    "유다의 액자": {
+      "image": "assets/astro-items/c-74.png",
+      "name": "Judas' Frame",
+      "source": "resources/gfx/items/collectibles/Birthright - Judas.png",
+      "sourceSHA256": "72d52190940b62ed2f40c9513db381fd0752dc7aad63e012ee356e061057ff68"
+    },
+    "더 로스트의 액자": {
+      "image": "assets/astro-items/c-75.png",
+      "name": "The Lost's Frame",
+      "source": "resources/gfx/items/collectibles/Birthright - The Lost.png",
+      "sourceSHA256": "1ec1efa7d09af1fbc113ca8d9adf0c927950c14151e16f012dc8ed92916b0669"
+    },
+    "놀라운 혼돈의 주문서": {
+      "image": "assets/astro-items/c-76.png",
+      "name": "Amazing Chaos Scroll",
+      "source": "resources/gfx/items/collectibles/Amazing Chaos Scroll.png",
+      "sourceSHA256": "55a102ed28237ec5aaf761153269fedf911a7e11ab78e5628c44ee66b8ccf914"
+    },
+    "마법의 소라고동": {
+      "image": "assets/astro-items/c-77.png",
+      "name": "Magic Conch Shell",
+      "source": "resources/gfx/items/collectibles/Magic Conch Shell.png",
+      "sourceSHA256": "53802deaa7f5a1145cdb291d122cb110610851d0f3facccde6d3621a96e3fe48"
+    },
+    "초신성": {
+      "image": "assets/astro-items/c-78.png",
+      "name": "Super Nova",
+      "source": "resources/gfx/items/collectibles/Super Nova.png",
+      "sourceSHA256": "ac80b0947549e67146faa8ea1296e72d5af33f1cc58bf7ce2a76e008e7fb6da3"
+    },
+    "신기술": {
+      "image": "assets/astro-items/c-81.png",
+      "name": "Godtech",
+      "source": "resources/gfx/items/collectibles/Godtech.png",
+      "sourceSHA256": "80beb4553b482a58e846697310005d3074019a6db13dbb18abfb22d1c8cf36f4"
+    },
+    "엄청 쉬움 모드": {
+      "image": "assets/astro-items/c-82.png",
+      "name": "Very EZ Mode",
+      "source": "resources/gfx/items/collectibles/Very EZ Mode.png",
+      "sourceSHA256": "36582c78ea15a10739cd13832a6d15dd02f4c79285ec41979227325653ebac2f"
+    },
+    "아카식 레코드": {
+      "image": "assets/astro-items/c-86.png",
+      "name": "Akashic Records",
+      "source": "resources/gfx/items/collectibles/Akashic Records.png",
+      "sourceSHA256": "bd72a29b188e1268457ec40cfbeba4085cdc11490766f703b85c1cf9065a7da3"
+    },
+    "테라스파크 부츠": {
+      "image": "assets/astro-items/c-87.png",
+      "name": "Terraspark Boots",
+      "source": "resources/gfx/items/collectibles/Terraspark Boots.png",
+      "sourceSHA256": "82ca86e8d266a5241d753a8f8f33cf691427a5f18676d1b10e60d8319479dd69"
+    },
+    "죄보합전": {
+      "image": "assets/astro-items/c-90.png",
+      "name": "Sinful Spoils Struggle",
+      "source": "resources/gfx/items/collectibles/Sinful Spoils Struggle.png",
+      "sourceSHA256": "24a08da43a28dc598dcb1ea1f5feead6a6e555cd06e56f68178661f4cd0961a6"
+    },
+    "블러드 트레일": {
+      "image": "assets/astro-items/c-91.png",
+      "name": "Blood Trail",
+      "source": "resources/gfx/items/collectibles/Blood Trail.png",
+      "sourceSHA256": "393fc31b48381842d11003610ac27f946855032d461c95fcb86dc9c78ae53c3c"
+    },
+    "삼체": {
+      "image": "assets/astro-items/c-94.png",
+      "name": "3 Body Problem",
+      "source": "resources/gfx/items/collectibles/3 Body Problem.png",
+      "sourceSHA256": "94189c07dd5da815a31fcbbf3003fad381f5012c554ec59e7068be8b522639f9"
+    },
+    "완전한 샴쌍둥이": {
+      "image": "assets/astro-items/c-95.png",
+      "name": "Absolut Conjoined",
+      "source": "resources/gfx/items/collectibles/Absolut Conjoined.png",
+      "sourceSHA256": "904c6f77148b0c471017fd25f7dee6b70d972d7524d2cd8025d537cb32b1a77e"
+    },
+    "토끼뜀": {
+      "image": "assets/astro-items/c-98.png",
+      "name": "Bunny Hop",
+      "source": "resources/gfx/items/collectibles/Bunny Hop.png",
+      "sourceSHA256": "fb1ade33723e90fc3c0e8bb9690f7b3cce962e34e173d8ee409e2d5865d23e0b"
+    },
+    "블랙 큐브": {
+      "image": "assets/astro-items/c-100.png",
+      "name": "Black Cube",
+      "source": "resources/gfx/items/collectibles/Black Cube.png",
+      "sourceSHA256": "a2a9cd3a3469b1b9bcd1f4a54bd9b33c7c75b5ee2148f361d7d85ffa75b49eeb"
+    },
+    "레드 큐브": {
+      "image": "assets/astro-items/c-101.png",
+      "name": "Red Cube",
+      "source": "resources/gfx/items/collectibles/Red Cube.png",
+      "sourceSHA256": "1b5b4cda7b5256442751e45e85d1499df9e0df2f44b703d21a7c9d69b731d788"
+    },
+    "침착한 정신": {
+      "image": "assets/astro-items/c-103.png",
+      "name": "Calm Mind",
+      "source": "resources/gfx/items/collectibles/Calm Mind.png",
+      "sourceSHA256": "f7ee0c21a1ef4c05e6d846fcab0217866f4d2673abf57791be9818191479bee2"
+    },
+    "신속한 정신": {
+      "image": "assets/astro-items/c-104.png",
+      "name": "Swift Mind",
+      "source": "resources/gfx/items/collectibles/Swift Mind.png",
+      "sourceSHA256": "e26a39e90d957d2f3404cbdf6837b3659bd8dd3d2f5722200b4a1d6756e06f3e"
+    },
+    "우울한 정신": {
+      "image": "assets/astro-items/c-105.png",
+      "name": "Blue Mind",
+      "source": "resources/gfx/items/collectibles/Blue Mind.png",
+      "sourceSHA256": "f09bd068e8267944926ed8b30be5f23b989652390ba412b80f48b93fc1e9c00d"
+    },
+    "행운의 정신": {
+      "image": "assets/astro-items/c-106.png",
+      "name": "Lucky Mind",
+      "source": "resources/gfx/items/collectibles/Lucky Mind.png",
+      "sourceSHA256": "a57cab20414855f8c9f815a9528cd72aa9d4460c75520cda9900dce4a07e70d6"
+    },
+    "퀀텀 마인드": {
+      "image": "assets/astro-items/c-107.png",
+      "name": "Quantum Mind",
+      "source": "resources/gfx/items/collectibles/Quantum Mind.png",
+      "sourceSHA256": "f4beebfc7536336ecc05c6da35b628ff9fd4cbb51fc3ba75af041c6da6b5cee2"
+    },
+    "초 태양": {
+      "image": "assets/astro-items/c-108.png",
+      "name": "SOL EX",
+      "source": "resources/gfx/items/collectibles/SOL EX.png",
+      "sourceSHA256": "49a5b0d33f1129ea0babc84b721f66e5a62f62fe1f4b9119d8e23dcaced89524"
+    },
+    "초 달": {
+      "image": "assets/astro-items/c-109.png",
+      "name": "LUNA EX",
+      "source": "resources/gfx/items/collectibles/LUNA EX.png",
+      "sourceSHA256": "c0e7e559a135474c0dc680781a4035b48f28331d24f933c4728a3650b02e1d09"
+    },
+    "초 수성": {
+      "image": "assets/astro-items/c-110.png",
+      "name": "MERCURIUS EX",
+      "source": "resources/gfx/items/collectibles/MERCURIUS EX.png",
+      "sourceSHA256": "6c843daa34da7a8f8f27c6a307299f2b8d0249cad254dcb9d05465fb2593c239"
+    },
+    "초 지구": {
+      "image": "assets/astro-items/c-112.png",
+      "name": "TERRA EX",
+      "source": "resources/gfx/items/collectibles/TERRA EX.png",
+      "sourceSHA256": "5276753d849cfd2034517ad6505842bd882f6fb0b83a3f373c54d98687ab6308"
+    },
+    "초 화성": {
+      "image": "assets/astro-items/c-113.png",
+      "name": "MARS EX",
+      "source": "resources/gfx/items/collectibles/MARS EX.png",
+      "sourceSHA256": "eff716e140ad642590555f88a90da10fe4f81aeff381cad15df18986d508b0d3"
+    },
+    "초 목성": {
+      "image": "assets/astro-items/c-114.png",
+      "name": "JUPITER EX",
+      "source": "resources/gfx/items/collectibles/JUPITER EX.png",
+      "sourceSHA256": "c7ddaee7c89f6723a56c4289242fde4d7e4f62efa75e8ad9f2c6bd1b472f73e4"
+    },
+    "초 토성": {
+      "image": "assets/astro-items/c-115.png",
+      "name": "SATURNUS EX",
+      "source": "resources/gfx/items/collectibles/SATURNUS EX.png",
+      "sourceSHA256": "dbcb2e2860bc0d7b30cb5d73bf5fc8a288fea91d98b29b6a4ab9d3e705cfbe9d"
+    },
+    "초 천왕성": {
+      "image": "assets/astro-items/c-116.png",
+      "name": "URANUS EX",
+      "source": "resources/gfx/items/collectibles/URANUS EX.png",
+      "sourceSHA256": "d3f28e0418125bbbe04c6c7e49c51965aa623364c289e44c51fbc3ce0e293de2"
+    },
+    "초 해왕성": {
+      "image": "assets/astro-items/c-117.png",
+      "name": "NEPTUNUS EX",
+      "source": "resources/gfx/items/collectibles/NEPTUNUS EX.png",
+      "sourceSHA256": "e2f8f08c7ea9c5f410891a0e6cfe5f2d403e0a167b3ba49ef8ea6204e35e0644"
+    },
+    "초 명왕성": {
+      "image": "assets/astro-items/c-118.png",
+      "name": "PLUTO EX",
+      "source": "resources/gfx/items/collectibles/PLUTO EX.png",
+      "sourceSHA256": "0b0dd41810044d7c7030f938f1fa3687b8b1d16440edf891243a3236b010b07f"
+    },
+    "아빠의 상자": {
+      "image": "assets/astro-items/c-123.png",
+      "name": "Dad's Box",
+      "source": "resources/gfx/items/collectibles/Dad's Box.png",
+      "sourceSHA256": "22ee63da6c909b5344cb134c261644a9d7b4e2822386a4ea76f71566d091d0ba"
+    },
+    "마트료시카": {
+      "image": "assets/astro-items/c-124.png",
+      "name": "Matryoshka",
+      "source": "resources/gfx/items/collectibles/Matryoshka.png",
+      "sourceSHA256": "bb33c7c83deaac1990853aaccf5b43a06f3c407a6166ed7ce5330f0bd9094017"
+    },
+    "푸른 스튜": {
+      "image": "assets/astro-items/c-126.png",
+      "name": "Blue Stew",
+      "source": "gfx/items/collectibles/questionmark.png",
+      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+    },
+    "초록 스튜": {
+      "image": "assets/astro-items/c-127.png",
+      "name": "Green Stew",
+      "source": "gfx/items/collectibles/questionmark.png",
+      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+    },
+    "갈색 스튜": {
+      "image": "assets/astro-items/c-128.png",
+      "name": "Brown Stew",
+      "source": "gfx/items/collectibles/questionmark.png",
+      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+    },
+    "놀라운 긍정의 혼돈의 주문서": {
+      "image": "assets/astro-items/c-130.png",
+      "name": "Amazing Chaos Scroll of Goodness",
+      "source": "resources/gfx/items/collectibles/Amazing Chaos Scroll of Goodness.png",
+      "sourceSHA256": "d4ad1f3198392de0cd5aaa4ecc9a23fccb3739d01df020aeb7374644cf6fb88c"
+    },
+    "코페르니쿠스": {
+      "image": "assets/astro-items/c-132.png",
+      "name": "Copernicus",
+      "source": "resources/gfx/items/collectibles/Copernicus.png",
+      "sourceSHA256": "0f0569542d845bc5609d6f9d83307f82cc7c419055ab4c26bd734e86c2000723"
+    },
+    "삼원색": {
+      "image": "assets/astro-items/c-133.png",
+      "name": "RGB",
+      "source": "resources/gfx/items/collectibles/RGB.png",
+      "sourceSHA256": "a1c986927e6047ab9cc726ea7936833b0b7881f15841aa2338ebc834c66af735"
+    },
+    "낙태": {
+      "image": "assets/astro-items/c-134.png",
+      "name": "Abortion",
+      "source": "resources/gfx/items/collectibles/Abortion.png",
+      "sourceSHA256": "1126fd9d9a485d2533c4b429ad81d90c9a1bb36c0d7fd47c19e9cc78af6432bb"
+    },
+    "TAANA - 방어 도우미": {
+      "image": "assets/astro-items/c-137.png",
+      "name": "TAANA - Defense Helper",
+      "source": "resources/gfx/items/collectibles/TAANA - Defense Helper.png",
+      "sourceSHA256": "a2ec830437f223a5edbb6ca9c82837a8aa3c7d4cdaf308ff1dc41962d444a110"
+    },
+    "SEERI - 전투 도우미": {
+      "image": "assets/astro-items/c-138.png",
+      "name": "SEERI the Combat Helper",
+      "source": "resources/gfx/items/collectibles/SEERI the Combat Helper.png",
+      "sourceSHA256": "01a5119b6465325a780b8150746a74e8cf5653a7cd024c3438da2f58ebf3fbcc"
+    },
+    "KAAEN - 재장전 도우미": {
+      "image": "assets/astro-items/c-139.png",
+      "name": "KAAEN - Auto Reloader",
+      "source": "resources/gfx/items/collectibles/KAAEN - Auto Reloader.png",
+      "sourceSHA256": "9c55a6f217a1e08f208a259ff4b81beaa8e0df9efc4f31fa86a6705d3f6b2918"
+    },
+    "딸기 우유": {
+      "image": "assets/astro-items/c-141.png",
+      "name": "Strawberry Milk",
+      "source": "resources/gfx/items/collectibles/Strawberry Milk.png",
+      "sourceSHA256": "f9db5cb906a5281573b0dcd1c82bf369f1060b673f709f6949ee9b8877826db1"
+    },
+    "엔토마 바실리사 제타": {
+      "image": "assets/astro-items/c-142.png",
+      "name": "Entoma Vasilissa Zeta",
+      "source": "resources/gfx/items/collectibles/Entoma Vasilissa Zeta.png",
+      "sourceSHA256": "cf3a6a6c02b049a13fe0963a7cebfe773f7414138bb0c05b94c1143d10597e04"
+    },
+    "이브의 액자": {
+      "image": "assets/astro-items/c-143.png",
+      "name": "Eve's Frame",
+      "source": "resources/gfx/items/collectibles/Birthright - Eve.png",
+      "sourceSHA256": "1f2e19c2b22c0303232cef61319de33a6b2b062620f0d63f28a30abc09acef57"
+    },
+    "???의 액자": {
+      "image": "assets/astro-items/c-144.png",
+      "name": "???'s Frame",
+      "source": "resources/gfx/items/collectibles/Birthright - Blue Baby.png",
+      "sourceSHA256": "a6cba9a7b3ad26cdff0909600ed22c80ead23d0003756a5ce54d6fde21b99ddd"
+    },
+    "카인의 액자": {
+      "image": "assets/astro-items/c-145.png",
+      "name": "Cain's Frame",
+      "source": "resources/gfx/items/collectibles/Birthright - Cain.png",
+      "sourceSHA256": "e59b3d90efd936e6c545bbcec0dc7d3613ed1645d81cb5f381dfcd1b3e32cb5d"
+    },
+    "뜨거운 감자": {
+      "image": "assets/astro-items/c-146.png",
+      "name": "Hot Potato",
+      "source": "resources/gfx/items/collectibles/Hot Potato.png",
+      "sourceSHA256": "e23f7b193329ef16bc02228b9eb333ff51370ad7469ebcc89136f4477768b2cf"
+    },
+    "스티븐의 액자": {
+      "image": "assets/astro-items/c-148.png",
+      "name": "Steven's Frame",
+      "source": "resources/gfx/items/collectibles/Birthright - Steven.png",
+      "sourceSHA256": "2abf2f10ad86b054fba3eba0d6563365c6552e3175724d51d7d1bd9e064347b3"
+    },
+    "아폴리온의 액자": {
+      "image": "assets/astro-items/c-149.png",
+      "name": "Apollyon's Frame",
+      "source": "resources/gfx/items/collectibles/Birthright - Apollyon B.png",
+      "sourceSHA256": "f0546c4e19c00bbc32fa373556f17f40892a2bf94854c630ba040181e64c4c2c"
+    },
+    "에덴의 액자?": {
+      "image": "assets/astro-items/c-150.png",
+      "name": "Tainted Eden's Frame",
+      "source": "resources/gfx/items/collectibles/Birthright - Eden B.png",
+      "sourceSHA256": "65e7d2ab633af8dd9c554f0424774f8ba5944298ffbfab049890eafef4a64e70"
+    },
+    "보라 양초": {
+      "image": "assets/astro-items/c-151.png",
+      "name": "Purple Candle",
+      "source": "resources/gfx/items/collectibles/Purple Candle.png",
+      "sourceSHA256": "4202d2b6c04f12bac51a8cf232ed83d7adfc8aac9f44cd3b3597cde824a7189d"
+    },
+    "우주신": {
+      "image": "assets/astro-items/c-152.png",
+      "name": "Astro Godhead",
+      "source": "resources/gfx/items/collectibles/Astro Godhead.png",
+      "sourceSHA256": "a2bee4977c727754fe0ad9c7b4345a054afdec4d09e589205a2d3e6ceec6811f"
+    },
+    "광휘로운 심장": {
+      "image": "assets/astro-items/c-153.png",
+      "name": "Astro Sacred Heart",
+      "source": "resources/gfx/items/collectibles/Astro Sacred Heart.png",
+      "sourceSHA256": "93da6e8d81808a3070362a0e3fcb79da9331e409ba654ce3001d24fe5be979b2"
+    },
+    "에디셔널 큐브": {
+      "image": "assets/astro-items/c-154.png",
+      "name": "Bonus Potential Cube",
+      "source": "resources/gfx/items/collectibles/Bonus Potential Cube.png",
+      "sourceSHA256": "41013b09b78e3d7ef67f11233072bf3227a8b54230ca40ba75e8e8390e26bf4f"
+    },
+    "구피의 조각": {
+      "image": "assets/astro-items/c-156.png",
+      "name": "Guppy Part",
+      "source": "resources/gfx/items/collectibles/Schrodinger's Cat.png",
+      "sourceSHA256": "ac912b0614ece7dc04bfb11c1519f89be71a6fc147db69eddef956fbc297b4c2"
+    },
+    "깨진 밑바닥": {
+      "image": "assets/astro-items/c-157.png",
+      "name": "Cracked Bottom",
+      "source": "resources/gfx/items/collectibles/Cracked Bottom.png",
+      "sourceSHA256": "9a4a5f55f1c59e62cd37bb6388c3aa63842543be79ec31033bde5fb97253f530"
+    },
+    "출생증명서": {
+      "image": "assets/astro-items/c-158.png",
+      "name": "Birth Certificate",
+      "source": "resources/gfx/items/collectibles/Birth Certificate.png",
+      "sourceSHA256": "d112a0a6e5e9de9ce7eecc6bbd6d7f7afd001c520f53bb93e512337f8c8a4c76"
+    },
+    "더 로스트의 액자?": {
+      "image": "assets/astro-items/c-159.png",
+      "name": "Tainted Lost's Frame",
+      "source": "resources/gfx/items/collectibles/Birthright - Tainted Lost.png",
+      "sourceSHA256": "3f60c6e63ddd9e0e2612309ac8e57c985875ba7ca93ae7e6b4217af92ccb92c7"
+    },
+    "밴디지 걸": {
+      "image": "assets/astro-items/c-162.png",
+      "name": "Bandage Girl",
+      "source": "resources/gfx/items/collectibles/Bandage Girl.png",
+      "sourceSHA256": "94efb0aa5ebb1389322511139d66dd248f60399d4a5d5e04a1e8d394d54b3a85"
+    },
+    "슈퍼 로켓 든 병": {
+      "image": "assets/astro-items/c-164.png",
+      "name": "Super Rocket in a Jar",
+      "source": "resources/gfx/items/collectibles/Super Rocket in a Jar.png",
+      "sourceSHA256": "b61493dfeef532f90fe0cb559c7a64c716f67494fdf6c5ae55eca9bc276fe8ca"
+    },
+    "기가 붐": {
+      "image": "assets/astro-items/c-165.png",
+      "name": "Giga Boom",
+      "source": "resources/gfx/items/collectibles/giga boom.png",
+      "sourceSHA256": "8c74ee9b858d5591085c9a808f9ed617a8f7a205641680ad53675fc6c432f4df"
+    },
+    "표식 주머니": {
+      "image": "assets/astro-items/c-167.png",
+      "name": "Marker Pocket",
+      "source": "gfx/items/collectibles/questionmark.png",
+      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+    },
+    "초 공허의 구렁텅이": {
+      "image": "assets/astro-items/c-168.png",
+      "name": "Maw Of The Void EX",
+      "source": "resources/gfx/items/collectibles/Maw of the Void EX.png",
+      "sourceSHA256": "fa97c85f12aeca53a373602b063afbf996cbecefe1b39c4946339121f4dd453d"
+    },
+    "스팀 번들": {
+      "image": "assets/astro-items/c-169.png",
+      "name": "Steam Bundle",
+      "source": "resources/gfx/items/collectibles/Steam Bundle.png",
+      "sourceSHA256": "55d940d7b395fe895f28ed114ee1224e61f4b84329c1a1b79a68050d8d489532"
+    },
+    "더 깊은 한울로!": {
+      "image": "assets/astro-items/c-171.png",
+      "name": "We Need To Go Astro!",
+      "source": "resources/gfx/items/collectibles/We Need To Go Deeper! (Astro).png",
+      "sourceSHA256": "4ab2c79189640554d5ae26393177f4b0dbb1170d2a1e0d565855386284c97495"
+    },
+    "요실금": {
+      "image": "assets/astro-items/c-172.png",
+      "name": "Urinary Incontinence",
+      "source": "resources/gfx/items/collectibles/Urinary incontinence.png",
+      "sourceSHA256": "3098e30079c4a7caf5bf38c886a2036c03b94a28eb7ad5fae309901dba2f75f9"
+    },
+    "거식증": {
+      "image": "assets/astro-items/c-173.png",
+      "name": "Anorexia Nervosa",
+      "source": "resources/gfx/items/collectibles/Anorexia Nervosa.png",
+      "sourceSHA256": "77cd07f3afd89602e81cbe7309ee5167c21830b516fdf96e204064fc49fef292"
+    },
+    "블랙 리스트": {
+      "image": "assets/astro-items/c-174.png",
+      "name": "Black List",
+      "source": "resources/gfx/items/collectibles/black list.png",
+      "sourceSHA256": "ac13fa9b80618dd056310bf3392dc0be730ed2dc5782bb2cb3ad159b0a1c753e"
+    },
+    "안구 건조증": {
+      "image": "assets/astro-items/c-175.png",
+      "name": "Dry Eye Syndrome",
+      "source": "resources/gfx/items/collectibles/Dry Eye Syndrome.png",
+      "sourceSHA256": "24a935d6e1033e1770e0b3c26346d7d97b81b3f993d9681c3d0b56abef45d64b"
+    },
+    "태양의 서": {
+      "image": "assets/astro-items/c-176.png",
+      "name": "Book of Sun",
+      "source": "resources/gfx/items/collectibles/Book of Sun.png",
+      "sourceSHA256": "24f73dcb8f6ce51dc86f1e00a5861e7eb91233fa76dc2085a44521109bc2adc8"
+    },
+    "달의 서": {
+      "image": "assets/astro-items/c-177.png",
+      "name": "Book of Moon",
+      "source": "resources/gfx/items/collectibles/Book of Moon.png",
+      "sourceSHA256": "cd77b79648fe6015e46704c7a178f820bb75b54e142e3b884ec9f22908ebf569"
+    },
+    "개기일식의 서": {
+      "image": "assets/astro-items/c-178.png",
+      "name": "Book of Eclipse",
+      "source": "resources/gfx/items/collectibles/Book of Eclipse.png",
+      "sourceSHA256": "6a0e770dbd4a013a182b08535e90a0072350353c16a1fa3fdf11e706ed4296da"
+    },
+    "개기월식의 서": {
+      "image": "assets/astro-items/c-179.png",
+      "name": "Book of Lunar Eclipse",
+      "source": "resources/gfx/items/collectibles/Book of Lunar Eclipse.png",
+      "sourceSHA256": "e42252048e5c17f07611676baa7e1b02cfc3f93a5825299743c2b6f0ccfe7f31"
+    },
+    "지옥의 계단": {
+      "image": "assets/astro-items/c-180.png",
+      "name": "Stairway to Hell",
+      "source": "resources/gfx/items/collectibles/Stairway to Hell.png",
+      "sourceSHA256": "ad4e599564bf4cee7d68f5bcb144b2fe89cd97b278611ca107e26a26250c6442"
+    },
+    "큰 상자": {
+      "image": "assets/astro-items/c-183.png",
+      "name": "Big Chest",
+      "source": "resources/gfx/items/collectibles/Big Chest.png",
+      "sourceSHA256": "8a9d48cf95b373b101b0047e418f23ec7ff3b188c0b8dff2d58ec5a48c8aa4aa"
+    },
+    "맥스의 머리": {
+      "image": "assets/astro-items/c-184.png",
+      "name": "Max's Head",
+      "source": "resources/gfx/items/collectibles/Max's Head.png",
+      "sourceSHA256": "9da7082523eb49d2b6ee6215f4161db8114603b18b065e201f8557a63ca0dc93"
+    },
+    "절망의 서": {
+      "image": "assets/astro-items/c-185.png",
+      "name": "Book of Despair",
+      "source": "resources/gfx/items/collectibles/Book of Despair.png",
+      "sourceSHA256": "d759fa6c8ecdc0190c2f954b913fd65e1d8d79b3ee212bc793a047a156e80a90"
+    },
+    "위치크래프트": {
+      "image": "assets/astro-items/c-186.png",
+      "name": "Witchcraft",
+      "source": "gfx/items/collectibles/questionmark.png",
+      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+    },
+    "졸트라크": {
+      "image": "assets/astro-items/c-188.png",
+      "name": "Zoltraak",
+      "source": "resources/gfx/items/collectibles/Zoltraak.png",
+      "sourceSHA256": "afc0a2f25214a7b155ae67011d6dae65b98eb07a93a56d7d4b7be6c157661a19"
+    },
+    "플람메의 마도서": {
+      "image": "assets/astro-items/c-189.png",
+      "name": "Flamme's Grimoire",
+      "source": "resources/gfx/items/collectibles/Flammes Grimoire.png",
+      "sourceSHA256": "9d9d4b5d0884c86a6652f00a64ab27533b142d3ed08e4e875786795679618550"
+    },
+    "창조의 기둥": {
+      "image": "assets/astro-items/c-190.png",
+      "name": "Pillars of Creation",
+      "source": "resources/gfx/items/collectibles/Pillars of Creation.png",
+      "sourceSHA256": "750caf708f0d8a761dcb8309e37a4adfd17f02b69af43592ec670a2b0706aeb9"
+    },
+    "IBN 5100": {
+      "image": "assets/astro-items/c-191.png",
+      "name": "IBN 5100",
+      "source": "resources/gfx/items/collectibles/IBN 5100.png",
+      "sourceSHA256": "72ad036e9e3bbbce1913393f4bc1a9e968675332a0d446c620194ab546a4425f"
+    },
+    "상한 우유": {
+      "image": "assets/astro-items/c-192.png",
+      "name": "Expired Milk",
+      "source": "resources/gfx/items/collectibles/Expired Milk.png",
+      "sourceSHA256": "6da6192f1b650cfd8e1d811d5565684f0131af78981f7b0cd7c76120d7e618b2"
+    },
+    "행운의 동전 번들": {
+      "image": "assets/astro-items/c-193.png",
+      "name": "Lucky Coin Bundle",
+      "source": "resources/gfx/items/collectibles/Lucky Coin Bundle.png",
+      "sourceSHA256": "6d234d0b8c59b0f0c7dbb983e9b96b2cd14ec18024856daf6e586e038f8767ce"
+    },
+    "역행 아르카나": {
+      "image": "assets/astro-items/c-194.png",
+      "name": "Retrograde Arcana",
+      "source": "resources/gfx/items/collectibles/Retrograde Arcana.png",
+      "sourceSHA256": "35fdbe4a2fad16245eb4d4ea87dcd7ce9e5b4e437c523690d20bcfd784c54dbc"
+    },
+    "테크라포드": {
+      "image": "assets/astro-items/c-195.png",
+      "name": "Techrapod",
+      "source": "resources/gfx/items/collectibles/Techrapod.png",
+      "sourceSHA256": "ee9e195260e95ea58243746196c1e13d096f95021e82185de61693bb9013b459"
+    },
+    "투척 폭탄": {
+      "image": "assets/astro-items/c-196.png",
+      "name": "Throw Bomb",
+      "source": "resources/gfx/items/collectibles/Throw Bomb.png",
+      "sourceSHA256": "65462bf7a4e78e1d0ebfa3ee3f63696adcdb3ddca1af8443b8f5638efe0f3762"
+    },
+    "고백 편지": {
+      "image": "assets/astro-items/c-197.png",
+      "name": "Love Letter",
+      "source": "resources/gfx/items/collectibles/love letter.png",
+      "sourceSHA256": "0a4c6129d8eb1a29fd5513552186a7cd5744af3577d18d94325930bec8a72387"
+    },
+    "마유시의 회중시계": {
+      "image": "assets/astro-items/c-198.png",
+      "name": "Mayushii's Pocket Watch",
+      "source": "resources/gfx/items/collectibles/Mayushii's Pocket Watch.png",
+      "sourceSHA256": "970c41e52491fdf44610ea6057098ce2c8cda1b081f2b5d84027cfbc9a212642"
+    },
+    "복종의 천칭": {
+      "image": "assets/astro-items/c-199.png",
+      "name": "Scales of Obedience",
+      "source": "resources/gfx/items/collectibles/Scales of Obedience.png",
+      "sourceSHA256": "e5d8775f61a27d8a8fb7a71941b5b78c8e37f12e13188880075ec0d66b6df87d"
+    },
+    "아티팩트 무브먼트": {
+      "image": "assets/astro-items/c-200.png",
+      "name": "Artifact Ignition",
+      "source": "gfx/items/collectibles/questionmark.png",
+      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+    },
+    "스켈레톤 구피": {
+      "image": "assets/astro-items/c-201.png",
+      "name": "Skeleton Guppy",
+      "source": "resources/gfx/items/collectibles/Skeleton Guppy.png",
+      "sourceSHA256": "e3b80d47581c02ca85b705750db0608913114ca1eee0c44cc5859d8adcb67e56"
+    },
+    "부패한 구피": {
+      "image": "assets/astro-items/c-202.png",
+      "name": "Blighted Guppy",
+      "source": "resources/gfx/items/collectibles/Blighted Guppy.png",
+      "sourceSHA256": "14f2f36134ec10825b155e0883adbc7151294a5feb260e3fddbd59c88e3f3180"
+    },
+    "황금 구피": {
+      "image": "assets/astro-items/c-203.png",
+      "name": "Golden Guppy",
+      "source": "resources/gfx/items/collectibles/Golden Guppy.png",
+      "sourceSHA256": "b274e1f819f21aee18ac52f90f128fcbc976d46840b1699032e79c4ff7e4d1c7"
+    },
+    "유황불 구피": {
+      "image": "assets/astro-items/c-204.png",
+      "name": "Brimstone Guppy",
+      "source": "resources/gfx/items/collectibles/Blood Guppy.png",
+      "sourceSHA256": "c8bbd27c1665f9603cf8a696c7360eaa76a89bbae610953ff20c119df0231825"
+    },
+    "신성한 구피": {
+      "image": "assets/astro-items/c-205.png",
+      "name": "Divine Guppy",
+      "source": "resources/gfx/items/collectibles/Divine Guppy.png",
+      "sourceSHA256": "e5c8fce2f19628820d2bf4daa4dc77bab0524c6ae59f1787910dda4788d0a4f2"
+    },
+    "대왕 4면체 주사위": {
+      "image": "assets/astro-items/c-206.png",
+      "name": "Mega D4",
+      "source": "resources/gfx/items/collectibles/Mega D4.png",
+      "sourceSHA256": "1a6ff95e017152b04793146a0fcfbb4e523455960ebadb444f70f993b17ae712"
+    },
+    "대왕 주사위": {
+      "image": "assets/astro-items/c-207.png",
+      "name": "Mega D6",
+      "source": "resources/gfx/items/collectibles/Mega D6.png",
+      "sourceSHA256": "91de85c22f9133292cc0a2a436cd9fe8a322ffc947be71ed18244ad29ae423d3"
+    },
+    "마리골드": {
+      "image": "assets/astro-items/c-209.png",
+      "name": "Marigold",
+      "source": "resources/gfx/items/collectibles/Marigold.png",
+      "sourceSHA256": "fc4c6aa9347b54808415bda2843d773113fad336683b28dd6329f1f1465aa6ca"
+    },
+    "유산": {
+      "image": "assets/astro-items/c-210.png",
+      "name": "Legacy",
+      "source": "resources/gfx/items/collectibles/Legacy.png",
+      "sourceSHA256": "8e01fa855d3ff6e8ec6e0b9cd9a01b9c132ab1b056903137718bc6a4d0c35706"
+    },
+    "P키": {
+      "image": "assets/astro-items/c-211.png",
+      "name": "P Key",
+      "source": "resources/gfx/items/collectibles/P Key.png",
+      "sourceSHA256": "a984b694ac1cd5ea71ba64e786492e46a79a9fae2abcc75f7ce1d8d10b46e15f"
+    },
+    "바이콘": {
+      "image": "assets/astro-items/c-212.png",
+      "name": "Bicorn",
+      "source": "resources/gfx/items/collectibles/Bicorn.png",
+      "sourceSHA256": "31898914b7675d56f0fc2381aac5661a2185b5436e41dda552a847d602e6de6d"
+    },
+    "술병": {
+      "image": "assets/astro-items/c-213.png",
+      "name": "Alcohol Bottle",
+      "source": "resources/gfx/items/collectibles/alcohol bottle.png",
+      "sourceSHA256": "a0fdfccbddcf2f0db042b0c8b59231afd477a9a79473f8d382780e8a7826e930"
+    },
+    "뚫어뻥": {
+      "image": "assets/astro-items/c-214.png",
+      "name": "Plunger",
+      "source": "resources/gfx/items/collectibles/Plunger.png",
+      "sourceSHA256": "f13108229551503094da32de67093ba71fe22e6da15bb75e8b04a6431a5508d5"
+    },
+    "결정적인 일격": {
+      "image": "assets/astro-items/c-215.png",
+      "name": "Decisive Strike",
+      "source": "resources/gfx/items/collectibles/Decisive Strike.png",
+      "sourceSHA256": "56229ab6c85c21e576cf2c72049cca058168205fa36581d469532affd6efd248"
+    },
+    "케이시": {
+      "image": "assets/astro-items/c-216.png",
+      "name": "Casey",
+      "source": "resources/gfx/items/collectibles/Casey.png",
+      "sourceSHA256": "894023d9e00c6db91f39d6fd0f6cb679d0243b54e91c6bda59b78ebcd72b71ab"
+    },
+    "순금 헬리콥터": {
+      "image": "assets/astro-items/c-218.png",
+      "name": "24K Copter",
+      "source": "resources/gfx/items/collectibles/Pure Gold Copter.png",
+      "sourceSHA256": "fb3fc0a0f69d625cb3746fa0d222fc6d098e94a5fe4430d9103b00c6b8fe8157"
+    },
+    "딸기향 해열제": {
+      "image": "assets/astro-items/c-221.png",
+      "name": "Strawberry Medicine",
+      "source": "resources/gfx/items/collectibles/Strawberry Medicine.png",
+      "sourceSHA256": "3c4d011d83aca6c30842ea21949141a74a99bc45dc0b8a4d963eb7372e0d7ed8"
+    },
+    "사투르누스": {
+      "image": "assets/astro-items/c-222.png",
+      "name": "Chronos",
+      "source": "resources/gfx/items/collectibles/chronos.png",
+      "sourceSHA256": "eb2734a36758d68048d2026266a77e9017ec8c2cf9d2ca929917089110d143d2"
+    },
+    "무지개 버섯": {
+      "image": "assets/astro-items/c-223.png",
+      "name": "Rainbow Mushroom",
+      "source": "resources/gfx/items/collectibles/Rainbow Mushroom.png",
+      "sourceSHA256": "f5b203b73bb3640772eef59ba6390d3f3bfcf61e0715f75ac9dccff5b2528835"
+    },
+    "초월체": {
+      "image": "assets/astro-items/c-224.png",
+      "name": "Overmind",
+      "source": "resources/gfx/items/collectibles/Overmind.png",
+      "sourceSHA256": "3f907ff59ee829d246fb8b665bfd51e5d900294d6b7b1657f97d058cbafbe670"
+    },
+    "다윗의 물맷돌": {
+      "image": "assets/astro-items/c-226.png",
+      "name": "David's Stone",
+      "source": "resources/gfx/items/collectibles/David's Stone.png",
+      "sourceSHA256": "aa2c1e9585b805e85d6c560647127bb4ac939051a0dff34246a273523f7c53f5"
+    },
+    "구피의 이름표": {
+      "image": "assets/astro-items/c-228.png",
+      "name": "Guppy's Name Tag",
+      "source": "resources/gfx/items/collectibles/Guppy's Name Tag.png",
+      "sourceSHA256": "a0781faffb355230b9f8bfcd679e14a425468e2bd584cd3bc25cca1dd1e06c3e"
+    },
+    "실험용 혈청": {
+      "image": "assets/astro-items/c-229.png",
+      "name": "Experimental Serum",
+      "source": "resources/gfx/items/collectibles/Experimental Serum.png",
+      "sourceSHA256": "189e5bb70b91c0e2bc93160aa7f0985201df0ffe4ac8ef4ab5fae92f6fed3bd1"
+    },
+    "폭군의 허리띠": {
+      "image": "assets/astro-items/c-230.png",
+      "name": "Tyrant’s Belt",
+      "source": "resources/gfx/items/collectibles/Tyrant's Belt.png",
+      "sourceSHA256": "013804f4554df8f2ad15a1678183220a92aae1ec6c2ef5dfeccfaafc04529fd8"
+    },
+    "미카엘의 눈": {
+      "image": "assets/astro-items/c-231.png",
+      "name": "Eye of Michael",
+      "source": "resources/gfx/items/collectibles/Eye of Michael.png",
+      "sourceSHA256": "ab219b8279d4758ebe1ec758b74ed6bfd34d4baaa0c2695cf61e2315379b49c2"
+    },
+    "미네랄 조각": {
+      "image": "assets/astro-items/c-233.png",
+      "name": "Mineral Shard",
+      "source": "resources/gfx/items/collectibles/Mineral Shard.png",
+      "sourceSHA256": "99291936a92af6a92d0641cea777eac074e4456fe35062b5722b1399238f7aba"
+    },
+    "처비의 발": {
+      "image": "assets/astro-items/c-235.png",
+      "name": "Chubby's Paw",
+      "source": "resources/gfx/items/collectibles/Chubby's Paw.png",
+      "sourceSHA256": "6ae4a1b1f037d486aa616a00ddc7f1ea990dc561723feef1e73bf333a2d856c8"
+    },
+    "깃펜": {
+      "image": "assets/astro-items/c-236.png",
+      "name": "Quill Pen",
+      "source": "resources/gfx/items/collectibles/Quill Pen.png",
+      "sourceSHA256": "648e3678f7065d374bbebd4c7441fb78af78940764bec5dd92abd05a93b6e6d4"
+    },
+    "황금 사과": {
+      "image": "assets/astro-items/c-237.png",
+      "name": "Golden Apple",
+      "source": "resources/gfx/items/collectibles/Golden Apple.png",
+      "sourceSHA256": "50948aedca5c9c06c94f0dce955299ef0aa2c2629b445102537a5f90001490a5"
+    },
+    "금이빨": {
+      "image": "assets/astro-items/c-238.png",
+      "name": "Gold Tooth",
+      "source": "resources/gfx/items/collectibles/Gold Tooth.png",
+      "sourceSHA256": "210da8856f3181eb46925be91827b485a789bdd04eb6042e1ce9c78ef78abceb"
+    },
+    "선악과": {
+      "image": "assets/astro-items/c-239.png",
+      "name": "Forbidden Fruit",
+      "source": "resources/gfx/items/collectibles/Forbidden Fruit.png",
+      "sourceSHA256": "17e730443b8e82f76a44f5d07e4fc3128a17f6ddc29a45ef9df739f5e918846c"
+    },
+    "777": {
+      "image": "assets/astro-items/c-241.png",
+      "name": "777",
+      "source": "resources/gfx/items/collectibles/777.png",
+      "sourceSHA256": "1e82cf5f3bff0288298260bfd1db583ce5b9e6729042f452db7576bafb3631c4"
+    },
+    "해방": {
+      "image": "assets/astro-items/c-242.png",
+      "name": "Liberation",
+      "source": "resources/gfx/items/collectibles/Liberation.png",
+      "sourceSHA256": "36916feb967606b7b94d0b425cb0e5704d303a5cb432b289154a8ffd9b291e64"
+    },
+    "Giant Marble": {
+      "image": "assets/astro-items/c-243.png",
+      "name": "Giant Marble",
+      "source": "resources/gfx/items/collectibles/Giant Marble.png",
+      "sourceSHA256": "7871ecba86872f269ef7a185410b077931dc80fe68c064775b1f93c25675cf3b"
+    },
+    "물풍선": {
+      "image": "assets/astro-items/c-244.png",
+      "name": "Water Balloon",
+      "source": "resources/gfx/items/collectibles/Water Balloon.png",
+      "sourceSHA256": "ab867f4a4be97a965f70e36e72fc54ce04a481a5907392b21b7fef781a8fdd0d"
+    },
+    "아스트로파지": {
+      "image": "assets/astro-items/c-245.png",
+      "name": "Astrophage",
+      "source": "resources/gfx/items/collectibles/Astrophage.png",
+      "sourceSHA256": "62ad28ef3cf79812db181121318d1ddeb9880dd02e35646c29f497a42ca7f6d6"
+    },
+    "로키": {
+      "image": "assets/astro-items/c-246.png",
+      "name": "Rocky",
+      "source": "resources/gfx/items/collectibles/Rocky.png",
+      "sourceSHA256": "83b20ecd55ab48a40ae5ecca93b68ae8029249738790785737590e240366eb52"
+    },
+    "제노나이트": {
+      "image": "assets/astro-items/c-247.png",
+      "name": "Xenonite",
+      "source": "resources/gfx/items/collectibles/Xenonite.png",
+      "sourceSHA256": "2edb4d8d74e3ef9d9ff2326df2384730fc0e63ef481ef2d37e6ae870d7868bcb"
+    },
+    "신의 눈": {
+      "image": "assets/astro-items/t-1.png",
+      "name": "Eye Of God",
+      "source": "resources/gfx/items/trinkets/Eye of God.png",
+      "sourceSHA256": "634416a730911d0085bf2b2c2ea0846312a584d723a36aba965c59e1750e7cee"
+    },
+    "왼발": {
+      "image": "assets/astro-items/t-2.png",
+      "name": "The Left Foot",
+      "source": "resources/gfx/items/trinkets/The Left Foot.png",
+      "sourceSHA256": "b25610b99b4476b5d3e9b74d454f5cc1e7ae9d06486fda9b3bff3908f5bf66d7"
+    },
+    "절대 영도": {
+      "image": "assets/astro-items/t-3.png",
+      "name": "Absolute Zero",
+      "source": "resources/gfx/items/trinkets/Absolute Zero.png",
+      "sourceSHA256": "f0900d06e9a5d067ba94fa807db4185d2beb98e117bd740fdc85590b8ffac783"
+    },
+    "피투성이 붕대": {
+      "image": "assets/astro-items/t-4.png",
+      "name": "Bloody Bandage",
+      "source": "resources/gfx/items/trinkets/Bloody Bandage.png",
+      "sourceSHA256": "e62595bbb1fdaefbda15c2f447bc28975515dc62f8529b7590d57e26d09bfef4"
+    },
+    "에덴의 뱀": {
+      "image": "assets/astro-items/t-5.png",
+      "name": "Eden's Snake",
+      "source": "resources/gfx/items/trinkets/Eden's Snake.png",
+      "sourceSHA256": "2288996af155c660ba8432ed78fa0d14bef5b92add684444aef7d9eb183e2140"
+    },
+    "전자 동전": {
+      "image": "assets/astro-items/t-6.png",
+      "name": "Electronic Penny",
+      "source": "resources/gfx/items/trinkets/Electronic Penny.png",
+      "sourceSHA256": "fd4080014d38a072fe94a08d199bb725fa9c72a48b71d5d2a3b694e7f74d236b"
+    },
+    "검은 거울": {
+      "image": "assets/astro-items/t-7.png",
+      "name": "Black Mirror",
+      "source": "resources/gfx/items/trinkets/Black Mirror.png",
+      "sourceSHA256": "264c9d88f562074c4e98a3d8cd8167b3c6608f8ace864d813c08c087322c31df"
+    },
+    "용암 손": {
+      "image": "assets/astro-items/t-8.png",
+      "name": "Lava Hand",
+      "source": "resources/gfx/items/trinkets/Lava Hand.png",
+      "sourceSHA256": "8990bb922059afe7a282c88a0bd03da8d1723a4a304ef05bd8caca3ed1d05ca5"
+    },
+    "노스텔지아": {
+      "image": "assets/astro-items/t-9.png",
+      "name": "Nostalgia",
+      "source": "resources/gfx/items/trinkets/Nostalgia.png",
+      "sourceSHA256": "8dd5f292d0be19c494d9836f963876fd9641e9baabb9593b2c607e494db07564"
+    },
+    "교리": {
+      "image": "assets/astro-items/t-10.png",
+      "name": "Doctrine",
+      "source": "resources/gfx/items/trinkets/Doctrine.png",
+      "sourceSHA256": "9c867ed24117da410ee09985ff63218c509601690be2846668414043086ae145"
+    },
+    "천체 왕관": {
+      "image": "assets/astro-items/t-12.png",
+      "name": "Planetarium Crown",
+      "source": "resources/gfx/items/trinkets/Planetarium Crown.png",
+      "sourceSHA256": "11e77ef95436e87e2fb947c28231c54cac0124d7029fc3ce7a1334b0d538547b"
+    },
+    "좋아!": {
+      "image": "assets/astro-items/t-14.png",
+      "name": "Yes!",
+      "source": "resources/gfx/items/trinkets/Yes.png",
+      "sourceSHA256": "f0df6e32d0292031f7851d9a5330328569a1d8911cfa5c1428e31976e04c591a"
+    },
+    "흑요석 손": {
+      "image": "assets/astro-items/t-15.png",
+      "name": "Obsidian Hand",
+      "source": "resources/gfx/items/trinkets/Obsidian Hand.png",
+      "sourceSHA256": "af17f8972beb291dff62cb45224a0a00f00365b026a31a028fa02a0c5afb55a3"
+    },
+    "위장약": {
+      "image": "assets/astro-items/t-16.png",
+      "name": "Stomach Medicine",
+      "source": "resources/gfx/items/trinkets/Stomach Medicine.png",
+      "sourceSHA256": "ed228c19cf7b7fa7b529a180313ac02ca33923490f7b90961f9fee00baf6b5db"
+    },
+    "기합의 머리띠": {
+      "image": "assets/astro-items/t-17.png",
+      "name": "Focus Band",
+      "source": "resources/gfx/items/trinkets/focus band.png",
+      "sourceSHA256": "79623027011492af631efc58c47d434c3f806477c642029dab484f4eb94e0e67"
+    },
+    "망원경 렌즈": {
+      "image": "assets/astro-items/t_id-152.png",
+      "eid": "T_ID152",
+      "sourceSHA256": "3c7c67ae71191ace3f0d5452149d2386f7f68ec8046a6c4d1d0589eb3540d29f"
+    },
+    "후두": {
+      "image": "assets/astro-items/c_id-611.png",
+      "eid": "C_ID611",
+      "sourceSHA256": "a7286c9ffdc85b8e57639fc98b3b88d0c4f32ceccf799508799f561fd126512f"
+    },
+    "얼음 큐브": {
+      "image": "assets/astro-items/t_id-188.png",
+      "eid": "T_ID188",
+      "sourceSHA256": "2ab6bea382632c9930d08c9828bf5171faab6e30c2b4797cd42033e8ca1df66d"
+    },
+    "이브의 영혼": {
+      "image": "assets/astro-items/Card86.svg",
+      "eid": "Card86"
+    },
+    "깨진 열쇠": {
+      "image": "assets/astro-items/Card78.svg",
+      "eid": "Card78"
+    },
+    "엔수즈": {
+      "image": "assets/astro-items/Card36.svg",
+      "eid": "Card36"
+    },
+    "검은 룬": {
+      "image": "assets/astro-items/Card41.svg",
+      "eid": "Card41"
+    },
+    "납작한 돌": {
+      "image": "assets/astro-items/c_id-540.png",
+      "eid": "C_ID540",
+      "sourceSHA256": "1ebb592ae34ffbe4c12893faf4628f2dd6de64081ad97aef93e6f7feee8ab088"
+    },
+    "카인의 영혼": {
+      "image": "assets/astro-items/Card83.svg",
+      "eid": "Card83"
+    },
+    "포츈 쿠키": {
+      "image": "assets/astro-items/c_id-557.png",
+      "eid": "C_ID557",
+      "sourceSHA256": "631b31e61b00b274313c68f546b49b3ad61136861a0c1c16d159e2c6445fe866"
+    },
+    "XIX - 해": {
+      "image": "assets/astro-items/Card20.svg",
+      "eid": "Card20"
+    },
+    "하갈라즈": {
+      "image": "assets/astro-items/Card32.svg",
+      "eid": "Card32"
+    },
+    "염동력": {
+      "image": "assets/astro-items/c_id-522.png",
+      "eid": "C_ID522",
+      "sourceSHA256": "8d7aaa387153e24cf56cf52ace3cf673416814db17457070b7561b8ad1238fcf"
+    },
+    "필요없어!": {
+      "image": "assets/astro-items/t_id-88.png",
+      "eid": "T_ID88",
+      "sourceSHA256": "b487e733c7926c83702e3bcd013f60a616c1919bf4414366f3a6335da04ec417"
+    },
+    "???의 영혼": {
+      "image": "assets/astro-items/t_id-57.png",
+      "eid": "T_ID57",
+      "sourceSHA256": "3289ddc200ead237eb556969f744918e73cf53312e11dae818896f42498231c9"
+    },
+    "XVIII - 달": {
+      "image": "assets/astro-items/Card19.svg",
+      "eid": "Card19"
+    },
+    "XIX - 해?": {
+      "image": "assets/astro-items/Card75.svg",
+      "eid": "Card75"
+    },
+    "XVIII - 달?": {
+      "image": "assets/astro-items/Card74.svg",
+      "eid": "Card74"
+    },
+    "막달레나의 영혼": {
+      "image": "assets/astro-items/Card82.svg",
+      "eid": "Card82"
     }
   },
   "sprites": {
@@ -2933,6 +4253,84 @@
         28
       ],
       "sourceSHA256": "f2911e044b6480a59a54457910475f31ad5719434488c578bae383f45d9fe593"
+    },
+    "Quality5": {
+      "image": "assets/astro-items/Quality5.svg",
+      "sheet": "Astro-Items/quality",
+      "animation": "Quality5",
+      "frame": 0,
+      "crop": [
+        0,
+        0,
+        10,
+        10
+      ],
+      "sourceSHA256": "5fb88d7e330aa2a5a50bfc2ef82b04dd33344a039c5199193e3dc325141f7f62"
+    },
+    "Quality6": {
+      "image": "assets/astro-items/Quality6.svg",
+      "sheet": "Astro-Items/quality",
+      "animation": "Quality6",
+      "frame": 0,
+      "crop": [
+        10,
+        0,
+        10,
+        10
+      ],
+      "sourceSHA256": "5fb88d7e330aa2a5a50bfc2ef82b04dd33344a039c5199193e3dc325141f7f62"
+    },
+    "Crafting11": {
+      "image": "assets/astro-items/Crafting11.svg",
+      "sheet": "eid_inline_icons",
+      "animation": "Crafting",
+      "frame": 11,
+      "crop": [
+        50,
+        146,
+        10,
+        11
+      ],
+      "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
+    },
+    "Crafting17": {
+      "image": "assets/astro-items/Crafting17.svg",
+      "sheet": "eid_inline_icons",
+      "animation": "Crafting",
+      "frame": 17,
+      "crop": [
+        16,
+        161,
+        16,
+        15
+      ],
+      "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
+    },
+    "Crafting18": {
+      "image": "assets/astro-items/Crafting18.svg",
+      "sheet": "eid_inline_icons",
+      "animation": "Crafting",
+      "frame": 18,
+      "crop": [
+        35,
+        163,
+        8,
+        10
+      ],
+      "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
+    },
+    "Crafting19": {
+      "image": "assets/astro-items/Crafting19.svg",
+      "sheet": "eid_inline_icons",
+      "animation": "Crafting",
+      "frame": 19,
+      "crop": [
+        50,
+        161,
+        10,
+        13
+      ],
+      "sourceSHA256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c"
     }
   },
   "nameSourceSHA256": "7a92b1437c1432999cab4c0331086ae3d544e907972f562852e761f05a53777e"

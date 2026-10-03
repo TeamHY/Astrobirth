@@ -503,6 +503,13 @@ class Verification:
     def committed_hashes(self, records, sources):
         for project in ["Astrobirth", "Astro-Items"]:
             checkout = ROOT if project == "Astrobirth" else ROOT.parent / "Astro-Items"
+            if project == "Astro-Items" and not checkout.is_dir():
+                common = subprocess.run(["git", "rev-parse", "--git-common-dir"], cwd=ROOT, capture_output=True, text=True)
+                if common.returncode == 0:
+                    shared = Path(common.stdout.strip())
+                    if not shared.is_absolute():
+                        shared = ROOT / shared
+                    checkout = shared.resolve().parent.parent / "Astro-Items"
             sha = sources.get(project)
             if not sha or not checkout.is_dir():
                 continue
@@ -641,6 +648,46 @@ class Verification:
                 self.require(source["commit"] == guide["sources"]["Astro-Items"], "캐릭터 이모션 이미지의 기준 커밋이 가이드와 다릅니다.")
         self.committed_hashes(data["sources"], guide["sources"])
 
+    def added_item_checks(self):
+        data = self.load_json(DOCS / "astro-items.json")
+        guide = self.load_json(DOCS / "guide-content.json")
+        catalog = self.load_json(DOCS / "items-content.json")
+        entries = {entry["id"]: entry for entry in catalog["entries"] if entry.get("origin") == "mod"}
+        records = data["entries"]
+        self.require(data["schema"] == 1 and data["commit"] == guide["sources"]["Astro-Items"], "추가 아이템 자료의 형식 또는 기준 커밋이 다릅니다.")
+        self.require(data["registrationCount"] == 264 and len(records) == 264 and {record["id"] for record in records} == set(entries), "Astro-Items 등록 264종과 문서 항목이 다릅니다.")
+        self.require(Counter(record["type"] for record in records) == {"passive": 179, "familiar": 8, "active": 60, "trinket": 17}, "추가 아이템의 종류별 등록 개수가 다릅니다.")
+        icons = self.load_json(DOCS / "guide-icons.json")
+        review = self.load_json(DOCS / "astro-item-review.json")
+        page = self.pages[(DOCS / "items.html").resolve()]
+        for record in records:
+            label = record["id"]
+            entry = entries[label]
+            card = page.ids[label][0]
+            self.require(entry["title"] == record["eidName"] and entry["name"].casefold() == record["name"].casefold(), f"{label}: 추가 아이템 이름이 EID 등록명과 다릅니다.")
+            self.require(entry["image"] == record["image"] and hashlib.sha256((DOCS / record["image"]).read_bytes()).hexdigest() == record["imageSHA256"], f"{label}: 추가 아이템의 원본 이미지가 다릅니다.")
+            self.require(bool(entry.get("imagePlaceholder")) == record["imagePlaceholder"], f"{label}: 미등록 원본 이미지의 대체 표시가 다릅니다.")
+            self.require(entry["eidEffects"] == record["eidEffects"] and bool(entry["eidEffects"]), f"{label}: 추가 아이템 효과가 누락되었습니다.")
+            self.require(card.attrs.get("data-origin") == "mod", f"{label}: 추가 아이템 출처 필터가 없습니다.")
+            lists = [node for node in card.nodes("ul") if node.has_class("catalog-eid-effects")]
+            def literal_text(node):
+                return "".join(literal_text(child) if isinstance(child, Node) else child for child in node.children)
+            actual = [normalized(literal_text(node)) for effects in lists for node in effects.nodes("li")]
+            expected = [normalized("".join(segment.get("text", segment.get("item", "")) for segment in line)) for line in compact_entry(entry)["eidEffects"]]
+            self.require(actual == expected, f"{label}: EID 효과의 미리보기·상세에 누락 또는 중복이 있습니다.")
+            for line in entry["eidEffects"]:
+                for segment in line:
+                    if "item" in segment:
+                        self.require(segment["item"] in icons["names"], f"{label}: 효과의 아이템 아이콘이 없습니다: {segment['item']}")
+                    if "icon" in segment:
+                        self.require(segment["icon"] in icons["sprites"], f"{label}: 효과의 EID 아이콘이 없습니다: {segment['icon']}")
+            for field in ["quality", "maxcharges", "chargetype"]:
+                if field in entry["modItem"]:
+                    self.require(entry["modItem"][field] == record["definition"][field], f"{label}: 추가 아이템 {field} 값이 원본과 다릅니다.")
+            if record["type"] == "active":
+                self.require(entry["modItem"]["chargeLabel"] == review["chargeLabels"][record["name"]], f"{label}: 검토한 충전 방식과 화면 표기가 다릅니다.")
+        self.committed_hashes(data["sources"], guide["sources"])
+
     def search_checks(self):
         path = DOCS / "search-index.json"
         if not self.require(path.is_file(), "통합 검색 자료가 없습니다."):
@@ -684,6 +731,7 @@ class Verification:
         self.coverage_checks()
         self.icon_checks()
         self.player_sprite_checks()
+        self.added_item_checks()
         self.search_checks()
         if self.errors:
             print(f"가이드 검증 실패: {len(self.errors)}개 오류", file=sys.stderr)

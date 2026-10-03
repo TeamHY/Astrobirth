@@ -159,10 +159,10 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 .catalog-filters button span{font-size:11px;opacity:.7;margin-left:5px}
 .catalog-filters button:hover{border-color:#7f9fcf}
 .catalog-filters button[aria-pressed="true"]{background:var(--dark);color:var(--accent);border-color:var(--dark)}
-.player-filters{display:grid;gap:10px;margin-bottom:23px}
-.player-filter-group{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start}
-.player-filter-group .catalog-filters{margin-bottom:0}
-.player-filter-label{font-size:12px;font-weight:650;color:var(--muted);padding-top:10px}
+.player-filters,.item-filters{display:grid;gap:10px;margin-bottom:23px}
+.player-filter-group,.item-filter-group{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:start}
+.player-filter-group .catalog-filters,.item-filter-group .catalog-filters{margin-bottom:0}
+.player-filter-label,.item-filter-label{font-size:12px;font-weight:650;color:var(--muted);padding-top:10px}
 .catalog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:18px;align-items:start}
 .catalog-card{min-width:0;border:1px solid var(--line);border-radius:11px;background:white;padding:21px 20px 0;scroll-margin-top:25px;overflow:hidden}
 .catalog-card:target{border-color:#547cc3;box-shadow:0 0 0 3px #d9e7ff}
@@ -175,6 +175,13 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 .english-name{font-size:11px;color:var(--muted);font-family:system-ui,sans-serif;margin:3px 0 0;line-height:1.5;overflow-wrap:anywhere}
 .catalog-scene{font-size:14px;font-weight:650;line-height:1.6;color:#294d85;margin:17px 0 9px}
 .catalog-description{font-size:14px;line-height:1.85;margin:0 0 19px;color:#596983}
+.catalog-eid-effects{padding:0;list-style:none;color:#596983;font-size:13px;line-height:1.85;margin:0 0 17px;overflow-wrap:anywhere}
+.catalog-eid-effects li{margin:6px 0}
+.catalog-eid-effects .inline-icon{width:18px;height:18px}
+.catalog-eid-effects .item-inline-icon{width:24px;height:24px}
+.catalog-eid-effects .named-items{line-height:inherit}
+.catalog-eid-effects .named-item{gap:3px}
+.catalog-eid-preview{margin-top:14px}
 .catalog-note p{margin:0;font-size:13px;line-height:1.8}
 .catalog-note .rule-list{padding-left:18px;margin:8px 0 0}
 .catalog-note .rule-list li{font-size:12px;line-height:1.8;margin:3px 0}
