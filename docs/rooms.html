@@ -7,15 +7,17 @@
 <title>방 변경사항 | Astrobirth 시청자 가이드</title>
 <meta name="description" content="기본 게임과 Astrobirth의 방 프리셋을 비교합니다. 위치별 스폰 후보와 문, 가중치, 변경·추가·제거된 방을 확인할 수 있습니다.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101c3c'/%3E%3Cpath d='M16 4l3.4 8.6L28 16l-8.6 3.4L16 28l-3.4-8.6L4 16l8.6-3.4z' fill='%2383c8ff'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="./guide.css?v=346643d78c15">
+<link rel="stylesheet" href="./guide.css?v=2b4af64926ba">
 <link rel="stylesheet" href="./rooms.css">
-<script src="./rooms.js" defer></script>
+<script src="./search.js?v=ff4151eba677" defer></script>
+<script src="./rooms.js?v=b75e4c6a206a" defer></script>
 </head>
 <body data-page="rooms">
 <a class="skip-link" href="#main">본문으로 이동</a>
 <aside class="sidebar" aria-label="가이드 탐색">
   <a class="brand" href="./index.html#overview" aria-label="Astrobirth 가이드 처음으로"><span class="brand-mark" aria-hidden="true">✦</span><span><span class="brand-name">Astrobirth</span><span class="brand-caption" style="display:block">시청자 가이드</span></span></a>
   <p class="sidebar-intro">헌영의 아이작 대결<br>모드 및 규칙 안내</p>
+  <button class="global-search-trigger" id="open-global-search" type="button" aria-haspopup="dialog" aria-controls="global-search-dialog" hidden><span class="search-icon" aria-hidden="true"></span><span>통합 검색</span><kbd aria-hidden="true">/</kbd></button>
   <p class="nav-label">가이드</p>
   <nav class="page-nav" aria-label="가이드 페이지"><a href="./index.html#overview">입문 Q&amp;A</a><a href="./rules.html">전체 규칙</a><a href="./items.html">아이템 변경사항</a><a href="./players.html">플레이어 변경사항</a><a href="./rooms.html" aria-current="page">방 변경사항</a></nav>
   <div class="sidebar-bottom">
@@ -82,8 +84,26 @@
 </div>
 
   </main>
-  <!-- Agent reference: reviewed commit https://github.com/TeamHY/Astrobirth/commit/4c02a2072ac3a304072a5c7424efe06792f700d4 -->
+  <!-- Guide maintenance baseline
+{
+  "reviewed": "2026-10-03",
+  "version": "1.385",
+  "sources": {
+    "Astrobirth": "4c02a2072ac3a304072a5c7424efe06792f700d4",
+    "Astro-Items": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+  }
+}
+  -->
   <footer><span>Astrobirth · 시청자 가이드</span><span>설명 확인 2026-10-03 · <a href="https://github.com/TeamHY/Astrobirth/issues" target="_blank" rel="noopener noreferrer">내용 오류 제보</a></span></footer>
 </div>
+<dialog class="global-search-dialog" id="global-search-dialog" aria-labelledby="global-search-title" data-index="./search-index.json?v=fb5e62bdbb42">
+  <div class="search-dialog-heading"><h2 id="global-search-title">통합 검색</h2><button type="button" id="close-global-search" aria-label="검색 닫기">×</button></div>
+  <form id="global-search-form" role="search">
+    <div class="searchbox"><label for="global-search-input" class="sr-only">전체 가이드 검색</label><span class="search-icon" aria-hidden="true"></span><input type="search" id="global-search-input" placeholder="에이플, 아이템, 캐릭터…" autocomplete="off" spellcheck="false" autofocus><button class="global-search-clear" id="clear-global-search" type="button" aria-label="검색어 지우기" hidden>×</button></div>
+  </form>
+  <p class="global-search-status" id="global-search-status" role="status" aria-live="polite">Q&amp;A·전체 규칙·아이템·플레이어를 검색합니다.</p>
+  <div class="global-search-results" id="global-search-results"><p class="search-message">이름이나 궁금한 규칙을 입력해 주세요.</p></div>
+  <div class="search-dialog-footer"><button type="button" id="more-search-results" hidden>더 보기</button><button type="button" id="retry-global-search" hidden>다시 불러오기</button><span>Enter로 이동 · Esc로 닫기</span></div>
+</dialog>
 </body>
 </html>

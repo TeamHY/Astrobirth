@@ -113,7 +113,7 @@ def old_value(value, default='기본 설정'):
 for entry in catalog['entries']:
     entry['changeKinds'] = [] if entry.get('resourceOnly') else ['effect']
     entry['effectGroups'] = [g for g in entry.get('effectGroups', [])
-                             if g['title'] not in ['가격·충전·획득 설정', '품질·분류 설정']]
+                             if g['title'] not in ['가격·충전·획득 설정', '퀄리티·분류 설정']]
     entry.pop('poolTable', None)
 
 for key, after in items.items():
@@ -163,14 +163,14 @@ for (meta_kind, number), after in meta.items():
     lines = []
     for field, values in sorted(changes.items()):
         b, a = values['before'], values['after']
-        if field == 'quality': lines.append(f'아이템 품질: {b} → {a}입니다. 다음 판 금지 후보 등 품질을 검사하는 규칙에도 적용됩니다.')
-        elif field == 'craftquality': lines.append(f'조합용 품질: {old_value(b, "기본 품질")} → {old_value(a, "기본 품질")}입니다.')
+        if field == 'quality': lines.append(f'아이템 퀄리티: {b} → {a}입니다. 다음 판 금지 후보 등 퀄리티를 검사하는 규칙에도 적용됩니다.')
+        elif field == 'craftquality': lines.append(f'조합용 퀄리티: {old_value(b, "기본 퀄리티")} → {old_value(a, "기본 퀄리티")}입니다.')
         elif field == 'tags':
             added = set((a or '').split()) - set((b or '').split());removed = set((b or '').split()) - set((a or '').split())
             if added: lines.append('분류 추가: ' + ', '.join(tags[x] for x in sorted(added)) + '입니다.')
             if removed: lines.append('분류 제외: ' + ', '.join(tags[x] for x in sorted(removed)) + '입니다.')
         else: raise ValueError(('Unreviewed metadata', field, number))
-    group_rules(entry, '품질·분류 설정', lines, 'resources/items_metadata.xml')
+    group_rules(entry, '퀄리티·분류 설정', lines, 'resources/items_metadata.xml')
     snapshot['metadata'].append({'kind': meta_kind, 'number': number, 'entry': entry['id'], 'changes': changes})
 
 
@@ -224,10 +224,10 @@ for entry in catalog['entries']:
     entry['changeKinds'] = sorted(set(entry['changeKinds']))
     if entry.get('resourceOnly'):
         labels = []
-        if 'config' in entry['changeKinds']: labels.append('가격·품질·충전')
+        if 'config' in entry['changeKinds']: labels.append('가격·퀄리티·충전')
         if 'pool' in entry['changeKinds']: labels.append('배열')
         entry['scene'] = ' · '.join(labels) + ' 설정 변경'
-catalog['intro'] = '효과뿐 아니라 가격·품질·충전량·분류·배열 변경을 아이템별로 확인할 수 있습니다. 카드와 기반 모드의 대결 전용 효과도 포함합니다.'
+catalog['intro'] = '효과뿐 아니라 가격·퀄리티·충전량·분류 변경을 아이템별로 확인할 수 있습니다. 카드와 기반 모드의 대결 전용 효과도 포함합니다.'
 (DOCS / 'items-content.json').write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + '\n')
 (DOCS / 'resource-changes.json').write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + '\n')
 print('Imported', len(snapshot['itemAttributes']), 'item settings,', len(snapshot['metadata']), 'metadata settings,', len(snapshot['pools']), 'pool settings; total', len(catalog['entries']), 'cards.')

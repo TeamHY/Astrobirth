@@ -7,16 +7,19 @@ is read once per file; unchanged presets are intentionally absent from it.
 """
 
 import json
+import base64
 import hashlib
 import math
 import re
 import subprocess
+import struct
 import sys
 from collections import Counter, defaultdict
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 from xml.etree import ElementTree
+from guide_presentation import compact_entry
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -262,19 +265,37 @@ class Verification:
 
     def check_entry(self, page, original, guide, qa_by_id):
         entry = original
+        if page.path.name in {"items.html", "players.html"} and original.get("kind"):
+            entry = compact_entry(original, players=page.path.name == "players.html")
         if original.get("detailsFrom"):
             shared = qa_by_id.get(original["detailsFrom"])
             if not self.require(shared is not None, f"{page.path.name}: 공유 설명이 없습니다: {original['detailsFrom']}"):
                 return
-            entry = {**shared, **original}
+            entry = {**shared, **entry}
             for key in ["rules", "effectGroups"]:
-                entry[key] = shared.get(key, []) + original.get(key, [])
+                entry[key] = shared.get(key, []) + entry.get(key, [])
+        if page.path.name == "items.html":
+            entry = {key: value for key, value in entry.items() if key != "poolTable"}
         label = f"{page.path.name}#{entry['id']}"
         nodes = page.ids.get(entry["id"], [])
         if not self.require(len(nodes) == 1, f"{label}: JSON 항목의 HTML이 없습니다."):
             return
         node = nodes[0]
         self.entry_count += 1
+        for change in entry.get("configChanges", []):
+            rows = [n for n in node.nodes() if n.has_class("fact-row") and any(normalized(change["label"]) == label.text() for label in n.nodes("dt"))]
+            if self.require(bool(rows), f"{label}: 변경 값 요약이 없습니다: {change['label']}"):
+                for key in ["before", "after", "value"]:
+                    if key in change:
+                        self.require(any(normalized(change[key]) in row.text() for row in rows), f"{label}: {change['label']}의 {key} 값이 없습니다.")
+        for loadout in entry.get("loadout", []):
+            self.require(normalized(loadout["label"]) in node.text(), f"{label}: 시작 구성 구분이 없습니다.")
+            for item in loadout.get("items", []):
+                self.require(normalized(item) in node.text(), f"{label}: 시작방 보상이 없습니다: {item}")
+            for value in loadout.get("values", []):
+                self.require(normalized(value["label"]) in node.text() and normalized(value["value"]) in node.text(), f"{label}: 시작 체력·소모품 값이 없습니다.")
+            if loadout.get("note"):
+                self.require(normalized(loadout["note"]) in node.text(), f"{label}: 시작 구성의 예외 조건이 없습니다.")
         for key in ["title", "name", "scene", "body", "watch", "caution", "restrictionNote"]:
             if entry.get(key):
                 self.require(normalized(entry[key]) in node.text(), f"{label}: {key} 문구가 반영되지 않았습니다.")
@@ -307,8 +328,9 @@ class Verification:
             if expected.get("note"):
                 self.require(normalized(expected["note"]) in node.text(), f"{label}: 표 주석이 없습니다.")
         for restriction in entry.get("restrictions", []):
-            expected = normalized(restriction["label"] + " " + ", ".join(restriction["items"]))
-            self.require(expected in node.text(), f"{label}: 캐릭터 금지 목록이 다릅니다.")
+            groups = [n for n in node.nodes("p") if any(child.text() == normalized(restriction["label"]) for child in n.nodes("strong"))]
+            actual_items = [[n.text() for n in group.nodes() if n.has_class("named-item")] for group in groups]
+            self.require([normalized(item) for item in restriction["items"]] in actual_items, f"{label}: 캐릭터 금지 목록이 다릅니다.")
         actual_links = {(n.attrs.get("href"), n.text()) for n in node.nodes("a")}
         for link in entry.get("relatedLinks", []):
             self.require(any(href == link["href"] and normalized(link["label"]) in text for href, text in actual_links), f"{label}: 관련 설명 링크가 없습니다: {link['href']}")
@@ -341,6 +363,10 @@ class Verification:
             entries = data.get("entries", []) or [e for s in data.get("sections", []) for e in s["entries"]]
             ids = [e["id"] for e in entries] + [s["id"] for s in data.get("sections", [])]
             self.require(len(ids) == len(set(ids)), f"{path.name}: JSON 항목 또는 섹션 ID가 중복됩니다.")
+            if page_name == "items":
+                entries = [e for e in entries if any(kind != "pool" for kind in e.get("changeKinds", ["effect"]))]
+                self.require("배열별 등장 설정 변경" not in page.root.text(), "아이템 페이지에 내부 배열 표가 표시됩니다.")
+                self.require(not any(n.attrs.get("data-change") == "pool" for n in page.root.nodes("button")), "아이템 페이지에 배열 필터가 표시됩니다.")
             cards = [n for n in page.root.nodes() if n.has_class("entry") or n.has_class("catalog-card")]
             self.require(Counter(n.attrs.get("id") for n in cards) == Counter(e["id"] for e in entries), f"{page.path.name}: JSON과 생성된 항목 목록이 다릅니다.")
             for section in data.get("sections", []):
@@ -352,6 +378,8 @@ class Verification:
                 self.require(normalized(data["intro"]) in page.root.text(), f"{page.path.name}: 소개 문구가 반영되지 않았습니다.")
             for entry in entries:
                 self.check_entry(page, entry, guide, qa_by_id)
+            for note in data.get("sharedNotes", []):
+                self.check_entry(page, note, guide, qa_by_id)
         perfection = qa_by_id.get("perfection", {})
         self.require(len(perfection.get("effectGroups", [])) == 6, "Perfection의 공유 효과 그룹은 6개를 유지해야 합니다.")
         self.require(len(perfection.get("rewardTable", {}).get("rows", [])) == 9, "Perfection의 보상 표는 9행을 유지해야 합니다.")
@@ -436,6 +464,20 @@ class Verification:
                     self.require(expected_change in entry.get("changeKinds", []), f"{label}: 변경 분야 필터에서 누락됩니다.")
                     if category == "pools":
                         self.require(bool(entry.get("poolTable", {}).get("rows")), f"{label}: 배열 변경 표가 없습니다.")
+                    for field in {"quality", "craftquality", "shopprice", "devilprice", "maxcharges"} & record.get("changes", {}).keys():
+                        page = self.pages[(DOCS / "items.html").resolve()]
+                        cards = page.ids.get(entry["id"], [])
+                        rows = [node for card in cards for node in card.nodes() if node.attrs.get("data-config-field") == field]
+                        if not self.require(len(rows) == 1, f"{label}: {field} 변경 값이 정확히 한 번 표시되어야 합니다."):
+                            continue
+                        for side in ["before", "after"]:
+                            raw_value = record["changes"][field].get(side)
+                            values = [node.text() for node in rows[0].nodes() if node.has_class("fact-" + side)]
+                            correct = len(values) == 1 and (
+                                bool(re.fullmatch(re.escape(str(raw_value)) + r"(?:칸|센트|프레임| \([^)]+\))?", values[0]))
+                                if raw_value is not None else "기본" in values[0]
+                            )
+                            self.require(correct, f"{label}: {field}의 {side} 수치가 원본 비교 자료와 다릅니다.")
         path = DOCS / "entity-changes.json"
         if not path.exists():
             return
@@ -501,12 +543,20 @@ class Verification:
             return
         data = self.load_json(path)
         guide = self.load_json(DOCS / "guide-content.json")
+        internal_pool_refs = {
+            "items.html#" + entry["id"]
+            for entry in self.load_json(DOCS / "items-content.json")["entries"]
+            if entry.get("resourceOnly") and entry.get("changeKinds") == ["pool"]
+        }
         self.require(data["sources"] == guide["sources"], "검토 목록과 가이드 JSON의 출처 커밋이 다릅니다.")
         for category in ["files", "featureGroups", "resourceDifferences"]:
             for record in data.get(category, []):
                 refs = record.get("refs", [])
                 self.require(bool(refs) or bool(record.get("disposition")), f"검토 목록 {category}/{record.get('file')}: 설명 연결 또는 제외 근거가 없습니다.")
                 for ref in refs:
+                    # Pool-only records remain valid internal maintenance references.
+                    if ref in internal_pool_refs:
+                        continue
                     self.local_url(DOCS / "index.html", ref)
         counts = data["counts"]
         expected_counts = {
@@ -529,12 +579,112 @@ class Verification:
             hash_records.append({"project": "Astrobirth", "file": snapshot["source"], "sha256": snapshot["modSHA256"]})
         self.committed_hashes(hash_records, data["sources"])
 
+    def icon_checks(self):
+        data = self.load_json(DOCS / "guide-icons.json")
+        self.require(data.get("schema") == 1, "가이드 아이콘 자료 형식이 다릅니다.")
+        for record in list(data["names"].values()) + list(data["sprites"].values()):
+            self.local_url(DOCS / "index.html", record["image"], False)
+        for name, sprite in data["sprites"].items():
+            svg = ElementTree.parse(DOCS / sprite["image"]).getroot()
+            self.require(svg.get("viewBox") == " ".join(map(str, sprite["crop"])), f"{name}: EID 아이콘의 자르기 영역이 다릅니다.")
+            image = svg.find("{http://www.w3.org/2000/svg}image")
+            png = base64.b64decode(image.get("href").removeprefix("data:image/png;base64,"))
+            self.require(hashlib.sha256(png).hexdigest() == sprite["sourceSHA256"], f"{name}: EID 원본 이미지가 변형되었습니다.")
+            width, height = struct.unpack(">II", png[16:24])
+            x, y, w, h = sprite["crop"]
+            self.require(0 <= x < x + w <= width and 0 <= y < y + h <= height, f"{name}: EID 아이콘이 이미지 범위를 벗어납니다.")
+        page = self.pages[(DOCS / "players.html").resolve()]
+        for original in self.load_json(DOCS / "players-content.json")["entries"]:
+            entry = compact_entry(original, players=True)
+            names = [name for group in entry.get("restrictions", []) for name in group["items"]]
+            names += [name for row in entry["loadout"] for name in row.get("items", [])]
+            card = page.ids[entry["id"]][0]
+            sources = {image.attrs.get("src", "").removeprefix("./") for image in card.nodes("img")}
+            for name in names:
+                record = data["names"].get(name, {})
+                self.require(record.get("image") in sources, f"{entry['id']}: 시작방·금지 아이템 아이콘이 없습니다: {name}")
+
+    def player_sprite_checks(self):
+        data = self.load_json(DOCS / "player-sprites.json")
+        self.require(data.get("schema") == 2, "캐릭터 이모션 이미지 자료 형식이 다릅니다.")
+        entries = {entry["id"]: entry for entry in self.load_json(DOCS / "players-content.json")["entries"]}
+        records = data.get("entries", [])
+        self.require(len(records) == 46 and {record["id"] for record in records} == set(entries), "캐릭터 46종의 이모션 이미지가 누락되었습니다.")
+        custom = [record for record in records if entries[record["id"]]["kind"] == "custom"]
+        self.require(len(custom) == 12 and len({record["pixelSHA256"] for record in custom}) == 12, "모드 캐릭터의 이모션 이미지가 중복됩니다.")
+        self.require(data["frame"] == {"project": "Game", "file": "gfx/001.000_player.anm2", "animation": "Pickup", "layerId": "12", "index": 0, "crop": [0, 192, 64, 64]}, "캐릭터의 공통 이모션 프레임이 다릅니다.")
+        sources = {(source["project"], source["file"]): source for source in data["sources"]}
+        self.require(("Game", data["frame"]["file"]) in sources, "공통 이모션 프레임의 출처 기록이 없습니다.")
+        for record in records:
+            label = record["id"]
+            origin = "mod" if record["source"]["project"] == "Astro-Items" else "base"
+            tainted = record["playerName"].startswith("Tainted ") if origin == "mod" else record["playerId"] >= 21
+            variant = "tainted" if tainted else "normal"
+            card = self.pages[(DOCS / "players.html").resolve()].ids[label][0]
+            self.require(entries[label].get("origin") == origin and entries[label].get("variant") == variant, f"{label}: 원본 캐릭터의 기본·모드 구분이나 일반·더럽혀진 형태가 다릅니다.")
+            self.require(card.attrs.get("data-origin") == origin and card.attrs.get("data-kind") == variant, f"{label}: 캐릭터 필터가 원본 설정과 다릅니다.")
+            self.require(entries[label]["image"] == record["image"], f"{label}: 이모션 이미지가 캐릭터 카드에 연결되지 않았습니다.")
+            png = (DOCS / record["image"]).read_bytes()
+            self.require(png.startswith(b"\x89PNG\r\n\x1a\n") and hashlib.sha256(png).hexdigest() == record["sha256"], f"{label}: 이모션 이미지의 기록과 파일이 다릅니다.")
+            self.require(list(struct.unpack(">II", png[16:24])) == record["size"], f"{label}: 이모션 이미지 크기가 다릅니다.")
+            self.require(record["crop"] == data["frame"]["crop"] and record["padding"] == 2, f"{label}: 이모션의 자르기 기준이 다릅니다.")
+            x, y, w, h = record["crop"]
+            width, height = record["sourceSize"]
+            self.require(0 <= x < x + w <= width and 0 <= y < y + h <= height, f"{label}: 이모션 프레임이 원본 이미지 범위를 벗어납니다.")
+            left, top, right, bottom = record["trim"]
+            self.require(0 <= left < right <= w and 0 <= top < bottom <= h and record["size"] == [right - left + 4, bottom - top + 4], f"{label}: 투명 여백 제거 영역이나 출력 크기가 다릅니다.")
+            expected_project = "Astro-Items" if entries[label]["kind"] == "custom" else "Game"
+            self.require(record["source"]["project"] == expected_project and (expected_project, record["source"]["file"]) in sources, f"{label}: 캐릭터 skin 출처 기록이 없습니다.")
+        guide = self.load_json(DOCS / "guide-content.json")
+        for source in data["sources"]:
+            if source["project"] == "Astro-Items":
+                self.require(source["commit"] == guide["sources"]["Astro-Items"], "캐릭터 이모션 이미지의 기준 커밋이 가이드와 다릅니다.")
+        self.committed_hashes(data["sources"], guide["sources"])
+
+    def search_checks(self):
+        path = DOCS / "search-index.json"
+        if not self.require(path.is_file(), "통합 검색 자료가 없습니다."):
+            return
+        index = self.load_json(path)
+        self.require(index.get("schema") == 1, "통합 검색 자료 형식이 다릅니다.")
+        expected = {}
+        for page, source in [("index", "guide"), ("rules", "rules"), ("items", "items"), ("players", "players")]:
+            content = self.load_json(DOCS / (source + "-content.json"))
+            entries = content["entries"] + content.get("sharedNotes", []) if "entries" in content else [entry for section in content["sections"] for entry in section["entries"]]
+            if page == "items":
+                entries = [entry for entry in entries if any(kind != "pool" for kind in entry.get("changeKinds", ["effect"]))]
+            expected.update({f"./{page}.html#{entry['id']}": entry["title"] for entry in entries})
+        records = index.get("entries", [])
+        self.search_count = len(records)
+        actual = {record.get("href"): record.get("title") for record in records}
+        self.require(actual == expected and len(records) == len(expected), "통합 검색에서 설명이 누락되거나 중복되었습니다.")
+        for record in records:
+            self.require(record.get("page") in {"index", "rules", "items", "players"}, "방 변경사항은 통합 검색에서 제외해야 합니다.")
+            self.require(set(record) <= {"page", "title", "href", "description", "name", "keywords", "text", "image"}, "통합 검색에 내부 근거 필드가 포함되었습니다.")
+            if record.get("page") == "items":
+                self.require("배열별 등장 설정 변경" not in record.get("text", ""), "통합 검색에 내부 배열 표가 포함되었습니다.")
+            self.local_url(DOCS / "index.html", record["href"])
+            if record.get("image"):
+                self.local_url(DOCS / "index.html", record["image"], False)
+        raw = path.read_text(encoding="utf-8")
+        self.require(not CODE_URL.search(raw) and "Agent reference material" not in raw, "통합 검색에 숨긴 코드 근거가 포함되었습니다.")
+        for page in self.pages.values():
+            inputs = [node.attrs.get("id") for node in page.root.nodes("input") if node.attrs.get("type") == "search"]
+            expected_inputs = ["global-search-input", "room-search"] if page.path.name == "rooms.html" else ["global-search-input"]
+            self.require(sorted(inputs) == sorted(expected_inputs), f"{page.path.name}: 검색창 구성이 다릅니다.")
+            dialogs = page.ids.get("global-search-dialog", [])
+            if self.require(len(dialogs) == 1, f"{page.path.name}: 공통 검색 창이 없습니다."):
+                self.local_url(page.path, dialogs[0].attrs["data-index"], False)
+
     def run(self):
         self.page_checks()
         self.content_checks()
         self.room_checks()
         self.snapshot_checks()
         self.coverage_checks()
+        self.icon_checks()
+        self.player_sprite_checks()
+        self.search_checks()
         if self.errors:
             print(f"가이드 검증 실패: {len(self.errors)}개 오류", file=sys.stderr)
             for error in self.errors[:60]:
@@ -545,6 +695,7 @@ class Verification:
         print(f"가이드 검증 통과: HTML {len(self.pages)}개, 항목 {self.entry_count}개, 표 {self.table_count}개, 방 프리셋 {self.room_count}개")
         print(f"Q&A 21개 제목({QA_REVISION}), Perfection 공유 6그룹·보상 9행, 로컬 링크·이미지·근거 주석 확인")
         print(f"검토 목록 연결·수치 및 출처 커밋의 파일 해시 {self.source_hash_count}개 확인")
+        print(f"통합 검색 {self.search_count}개 설명·링크·이미지 확인, 방 자체 검색 유지")
         return 0
 
 

@@ -1,12 +1,33 @@
 {
-  "intro": "시작방에 놓이는 보상, 캐릭터 고유 규칙, 추가 금지 목록을 캐릭터별로 확인할 수 있습니다. 일반·더럽혀진·모드 캐릭터로 구분합니다.",
+  "intro": "시작방에 놓이는 보상, 캐릭터 고유 규칙, 추가 금지 목록을 캐릭터별로 확인할 수 있습니다. 기본·모드 구분과 일반·더럽혀진 형태를 함께 선택할 수 있습니다.",
+  "sharedNotes": [
+    {
+      "id": "player-common-conditions",
+      "title": "시작 구성과 금지 목록",
+      "body": "캐릭터의 기본 효과에 대결 모드 변경사항이 더해집니다. ‘시작방 추가’는 방에 놓이는 보상이며, 이미 소지한 시작 아이템과 구분합니다.",
+      "rules": [
+        "시작 체력·소모품은 별도로 표시한 변경 값입니다. 추가 아이템의 체력 증가 효과 등은 해당 설명에 따라 적용됩니다.",
+        "캐릭터별 추가 금지만 표시합니다. 목록이 없는 캐릭터도 공통 금지와 누적 밴은 적용됩니다."
+      ],
+      "relatedLinks": [
+        {
+          "href": "./rules.html#fixed-bans",
+          "label": "공통 금지 목록"
+        },
+        {
+          "href": "./rules.html#next-ban-details",
+          "label": "누적 밴의 수집과 초기화"
+        }
+      ]
+    }
+  ],
   "entries": [
     {
       "id": "isaac",
       "title": "아이작",
       "name": "Isaac",
       "kind": "normal",
-      "image": "assets/players/isaac.svg",
+      "image": "assets/players/isaac-emotion.png",
       "scene": "주사위 제거 · 새 층마다 주사위 선택",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -43,14 +64,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER ISAAC"
+      "keywords": "PLAYER ISAAC",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "magdalene",
       "title": "막달레나",
       "name": "Magdalene",
       "kind": "normal",
-      "image": "assets/players/magdalene.svg",
+      "image": "assets/players/magdalene-emotion.png",
       "scene": "성혈과 성배 추가 · 첫 층 희생방 보정",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -74,14 +97,16 @@
         "resources/players.xml",
         "astro-fight/entities/shortcut-portal.lua"
       ],
-      "keywords": "PLAYER MAGDALENE"
+      "keywords": "PLAYER MAGDALENE",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "cain",
       "title": "카인",
       "name": "Cain",
       "kind": "normal",
-      "image": "assets/players/cain.svg",
+      "image": "assets/players/cain-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -96,14 +121,16 @@
         "resources/players.xml"
       ],
       "keywords": "PLAYER CAIN",
-      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "judas",
       "title": "유다",
       "name": "Judas",
       "kind": "normal",
-      "image": "assets/players/judas.svg",
+      "image": "assets/players/judas-emotion.png",
       "scene": "별도의 시작방 추가 아이템·카드는 없습니다.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -118,14 +145,16 @@
         "resources/players.xml"
       ],
       "keywords": "PLAYER JUDAS",
-      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "bluebaby",
       "title": "???",
       "name": "??? / Blue Baby",
       "kind": "normal",
-      "image": "assets/players/bluebaby.svg",
+      "image": "assets/players/bluebaby-emotion.png",
       "scene": "시작방에 추가 등장: 구슬, 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -145,14 +174,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER BLUEBABY"
+      "keywords": "PLAYER BLUEBABY",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "eve",
       "title": "이브",
       "name": "Eve",
       "kind": "normal",
-      "image": "assets/players/eve.svg",
+      "image": "assets/players/eve-emotion.png",
       "scene": "시작 면도날 제거 · 신성한 카드 추가",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -168,14 +199,16 @@
         "resources/players.xml"
       ],
       "keywords": "PLAYER EVE",
-      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "samson",
       "title": "삼손",
       "name": "Samson",
       "kind": "normal",
-      "image": "assets/players/samson.svg",
+      "image": "assets/players/samson-emotion.png",
       "scene": "시작방에 추가 등장: 론고미니아드, 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -193,14 +226,16 @@
       "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
       "itemSources": [
         "astro/collectibles/customs/rhongomyniad.lua"
-      ]
+      ],
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "azazel",
       "title": "아자젤",
       "name": "Azazel",
       "kind": "normal",
-      "image": "assets/players/azazel.svg",
+      "image": "assets/players/azazel-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -223,14 +258,16 @@
           "href": "./items.html#birthright",
           "label": "생득권 추가 효과"
         }
-      ]
+      ],
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "lazarus",
       "title": "나사로",
       "name": "Lazarus",
       "kind": "normal",
-      "image": "assets/players/lazarus.svg",
+      "image": "assets/players/lazarus-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -265,14 +302,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER LAZARUS"
+      "keywords": "PLAYER LAZARUS",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "eden",
       "title": "에덴",
       "name": "Eden",
       "kind": "normal",
-      "image": "assets/players/eden.svg",
+      "image": "assets/players/eden-emotion.png",
       "scene": "시작방에 추가 등장: 보비, 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -286,14 +325,16 @@
         "resources/players.xml"
       ],
       "keywords": "PLAYER EDEN",
-      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "thelost",
       "title": "로스트",
       "name": "The Lost",
       "kind": "normal",
-      "image": "assets/players/thelost.svg",
+      "image": "assets/players/thelost-emotion.png",
       "scene": "이터널 주사위 사용 제한 · 보호막 패널티",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -389,14 +430,16 @@
           "href": "./items.html#eternal-d6",
           "label": "이터널 주사위 자세히"
         }
-      ]
+      ],
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "lilith",
       "title": "릴리스",
       "name": "Lilith",
       "kind": "normal",
-      "image": "assets/players/lilith.svg",
+      "image": "assets/players/lilith-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -418,14 +461,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER LILITH"
+      "keywords": "PLAYER LILITH",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "keeper",
       "title": "키퍼",
       "name": "Keeper",
       "kind": "normal",
-      "image": "assets/players/keeper.svg",
+      "image": "assets/players/keeper-emotion.png",
       "scene": "시작방에 추가 등장: 넓은 가방, 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -457,14 +502,16 @@
         "astro-fight/stage.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER KEEPER"
+      "keywords": "PLAYER KEEPER",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "apollyon",
       "title": "아폴리온",
       "name": "Apollyon",
       "kind": "normal",
-      "image": "assets/players/apollyon.svg",
+      "image": "assets/players/apollyon-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -484,14 +531,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER APOLLYON"
+      "keywords": "PLAYER APOLLYON",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "theforgotten",
       "title": "포가튼",
       "name": "The Forgotten",
       "kind": "normal",
-      "image": "assets/players/theforgotten.svg",
+      "image": "assets/players/theforgotten-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -507,14 +556,16 @@
         "resources/players.xml"
       ],
       "keywords": "PLAYER THEFORGOTTEN",
-      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "bethany",
       "title": "베다니",
       "name": "Bethany",
       "kind": "normal",
-      "image": "assets/players/bethany.svg",
+      "image": "assets/players/bethany-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -556,21 +607,23 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER BETHANY"
+      "keywords": "PLAYER BETHANY",
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "jacob",
       "title": "야곱과 에사우",
       "name": "Jacob & Esau",
       "kind": "normal",
-      "image": "assets/players/jacob.svg",
+      "image": "assets/players/jacob-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
         "야곱과 에사우 각각의 시작방에 신성한 카드를 소환합니다.",
         "에사우에도 야곱과 같은 캐릭터별 금지 아이템·장신구 목록이 적용됩니다.",
         "야곱의 시작 아이템으로 추가 선택권을 설정합니다.",
-        "순애를 소지한 경우 초비밀방에서 품질 3 이상 아이템 2개를 선택 보상으로 생성합니다. 일반적인 소지 아이템 제거와 행운 감소는 적용하지 않습니다. 이 예외는 야곱에게 적용하며 에사우는 포함하지 않습니다."
+        "순애를 소지한 경우 초비밀방에서 퀄리티 3 이상 아이템 2개를 선택 보상으로 생성합니다. 일반적인 소지 아이템 제거와 행운 감소는 적용하지 않습니다. 이 예외는 야곱에게 적용하며 에사우는 포함하지 않습니다."
       ],
       "restrictions": [
         {
@@ -600,14 +653,16 @@
       "keywords": "PLAYER JACOB",
       "itemSources": [
         "astro/collectibles/customs/pure-love.lua"
-      ]
+      ],
+      "origin": "base",
+      "variant": "normal"
     },
     {
       "id": "isaac_b",
       "title": "더럽혀진 아이작",
       "name": "Tainted Isaac",
       "kind": "tainted",
-      "image": "assets/players/isaac_b.svg",
+      "image": "assets/players/isaac_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -644,14 +699,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER ISAAC B"
+      "keywords": "PLAYER ISAAC B",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "magdalene_b",
       "title": "더럽혀진 막달레나",
       "name": "Tainted Magdalene",
       "kind": "tainted",
-      "image": "assets/players/magdalene_b.svg",
+      "image": "assets/players/magdalene_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -669,14 +726,16 @@
       "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
       "itemSources": [
         "astro/collectibles/customs/birthright-maggy.lua"
-      ]
+      ],
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "cain_b",
       "title": "더럽혀진 카인",
       "name": "Tainted Cain",
       "kind": "tainted",
-      "image": "assets/players/cain_b.svg",
+      "image": "assets/players/cain_b-emotion.png",
       "scene": "신성한 카드 추가 · 숨겨진 생득권 적용",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -708,14 +767,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER CAIN B"
+      "keywords": "PLAYER CAIN B",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "judas_b",
       "title": "더럽혀진 유다",
       "name": "Tainted Judas",
       "kind": "tainted",
-      "image": "assets/players/judas_b.svg",
+      "image": "assets/players/judas_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -736,14 +797,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER JUDAS B"
+      "keywords": "PLAYER JUDAS B",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "bluebaby_b",
       "title": "더럽혀진 ???",
       "name": "Tainted ??? / Blue Baby",
       "kind": "tainted",
-      "image": "assets/players/bluebaby_b.svg",
+      "image": "assets/players/bluebaby_b-emotion.png",
       "scene": "신성한 카드 추가 · 숨겨진 생득권 적용",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -759,14 +822,16 @@
         "resources/players.xml"
       ],
       "keywords": "PLAYER BLUEBABY B",
-      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "eve_b",
       "title": "더럽혀진 이브",
       "name": "Tainted Eve",
       "kind": "tainted",
-      "image": "assets/players/eve_b.svg",
+      "image": "assets/players/eve_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -780,14 +845,16 @@
         "resources/players.xml"
       ],
       "keywords": "PLAYER EVE B",
-      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "samson_b",
       "title": "더럽혀진 삼손",
       "name": "Tainted Samson",
       "kind": "tainted",
-      "image": "assets/players/samson_b.svg",
+      "image": "assets/players/samson_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -804,14 +871,16 @@
       "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
       "itemSources": [
         "astro/collectibles/customs/rhongomyniad.lua"
-      ]
+      ],
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "azazel_b",
       "title": "더럽혀진 아자젤",
       "name": "Tainted Azazel",
       "kind": "tainted",
-      "image": "assets/players/azazel_b.svg",
+      "image": "assets/players/azazel_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -825,14 +894,16 @@
         "resources/players.xml"
       ],
       "keywords": "PLAYER AZAZEL B",
-      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "lazarus_b",
       "title": "더럽혀진 나사로",
       "name": "Tainted Lazarus",
       "kind": "tainted",
-      "image": "assets/players/lazarus_b.svg",
+      "image": "assets/players/lazarus_b-emotion.png",
       "scene": "신성한 카드 추가 · 숨겨진 생득권 적용",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -863,14 +934,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER LAZARUS B"
+      "keywords": "PLAYER LAZARUS B",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "eden_b",
       "title": "더럽혀진 에덴",
       "name": "Tainted Eden",
       "kind": "tainted",
-      "image": "assets/players/eden_b.svg",
+      "image": "assets/players/eden_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -890,14 +963,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER EDEN B"
+      "keywords": "PLAYER EDEN B",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "thelost_b",
       "title": "더럽혀진 로스트",
       "name": "Tainted The Lost",
       "kind": "tainted",
-      "image": "assets/players/thelost_b.svg",
+      "image": "assets/players/thelost_b-emotion.png",
       "scene": "부정한 망토 추가 · 보호막 패널티",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -988,14 +1063,16 @@
       ],
       "itemSources": [
         "astro/collectibles/customs/unholy-mantle.lua"
-      ]
+      ],
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "lilith_b",
       "title": "더럽혀진 릴리스",
       "name": "Tainted Lilith",
       "kind": "tainted",
-      "image": "assets/players/lilith_b.svg",
+      "image": "assets/players/lilith_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1008,14 +1085,16 @@
         "resources/players.xml"
       ],
       "keywords": "PLAYER LILITH B",
-      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "keeper_b",
       "title": "더럽혀진 키퍼",
       "name": "Tainted Keeper",
       "kind": "tainted",
-      "image": "assets/players/keeper_b.svg",
+      "image": "assets/players/keeper_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1050,14 +1129,16 @@
         "resources/players.xml",
         "astro-fight/trinkets/vanillas/perfection.lua"
       ],
-      "keywords": "PLAYER KEEPER B"
+      "keywords": "PLAYER KEEPER B",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "apollyon_b",
       "title": "더럽혀진 아폴리온",
       "name": "Tainted Apollyon",
       "kind": "tainted",
-      "image": "assets/players/apollyon_b.svg",
+      "image": "assets/players/apollyon_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1080,14 +1161,16 @@
         "resources/players.xml",
         "astro-fight/trinkets/vanillas/perfection.lua"
       ],
-      "keywords": "PLAYER APOLLYON B"
+      "keywords": "PLAYER APOLLYON B",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "theforgotten_b",
       "title": "더럽혀진 포가튼",
       "name": "Tainted The Forgotten",
       "kind": "tainted",
-      "image": "assets/players/theforgotten_b.svg",
+      "image": "assets/players/theforgotten_b-emotion.png",
       "scene": "신성한 카드 추가 · 숨겨진 생득권 적용",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1119,14 +1202,16 @@
         "astro-fight/ban.lua",
         "resources/players.xml"
       ],
-      "keywords": "PLAYER THEFORGOTTEN B"
+      "keywords": "PLAYER THEFORGOTTEN B",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "bethany_b",
       "title": "더럽혀진 베다니",
       "name": "Tainted Bethany",
       "kind": "tainted",
-      "image": "assets/players/bethany_b.svg",
+      "image": "assets/players/bethany_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1140,20 +1225,22 @@
         "resources/players.xml"
       ],
       "keywords": "PLAYER BETHANY B",
-      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다."
+      "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "jacob_b",
       "title": "더럽혀진 야곱과 에사우",
       "name": "Tainted Jacob & Esau",
       "kind": "tainted",
-      "image": "assets/players/jacob_b.svg",
+      "image": "assets/players/jacob_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
         "시작방에 추가 등장: 신성한 카드.",
         "어두운 에사우와 플레이어의 접촉 충돌을 무시합니다. 이 충돌 예외는 접촉한 플레이어의 캐릭터 종류를 구분하지 않습니다.",
-        "순애를 소지한 경우 일반 형태와 로스트 형태 모두 초비밀방에서 품질 3 이상 아이템 2개를 선택 보상으로 생성하며, 소지 아이템 제거와 행운 감소는 적용하지 않습니다."
+        "순애를 소지한 경우 일반 형태와 로스트 형태 모두 초비밀방에서 퀄리티 3 이상 아이템 2개를 선택 보상으로 생성하며, 소지 아이템 제거와 행운 감소는 적용하지 않습니다."
       ],
       "restrictions": [
         {
@@ -1183,14 +1270,16 @@
       "keywords": "PLAYER JACOB B",
       "itemSources": [
         "astro/collectibles/customs/pure-love.lua"
-      ]
+      ],
+      "origin": "base",
+      "variant": "tainted"
     },
     {
       "id": "leah",
       "title": "레아",
       "name": "Leah",
       "kind": "custom",
-      "image": "assets/players/leah.svg",
+      "image": "assets/players/leah-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1198,7 +1287,7 @@
         "고유 액티브는 퀀텀 마인드이며 기본 아이템은 초 금성입니다.",
         "레아가 건전지를 소지하지 않은 상태에서 퀀텀 마인드를 사용하면 해당 액티브 슬롯의 충전량을 6칸으로 남깁니다.",
         "생득권 첫 적용 시 꼬마 아이작 7마리를 소환합니다. 이 패밀리어들은 방을 이동해도 유지되며 피해를 받지 않습니다.",
-        "순애를 사용하면 초비밀방에서 품질 3 이상 아이템 2개를 선택 보상으로 생성합니다. 소지 아이템 제거와 행운 감소는 적용하지 않습니다.",
+        "순애를 사용하면 초비밀방에서 퀄리티 3 이상 아이템 2개를 선택 보상으로 생성합니다. 소지 아이템 제거와 행운 감소는 적용하지 않습니다.",
         "기본 시작 체력은 빨간 하트 1칸·블랙 하트 2칸이며 열쇠 1개를 설정합니다. 초 금성의 체력 추가 효과는 별도로 적용됩니다.",
         "멀티플레이에서는 레아·아자젤을 통틀어 먼저 생득권을 획득한 플레이어에게 해당 캐릭터의 최초 획득 보상을 적용합니다."
       ],
@@ -1215,20 +1304,23 @@
         "astro/collectibles/customs/mind-series.lua",
         "astro/collectibles/customs/planetarium/venus-ex.lua",
         "astro/birthright/1-leah.lua",
-        "astro/collectibles/customs/pure-love.lua"
-      ]
+        "astro/collectibles/customs/pure-love.lua",
+        "resources/gfx/characters/costumes/character_leah.png"
+      ],
+      "origin": "mod",
+      "variant": "normal"
     },
     {
       "id": "leah_b",
       "title": "라헬",
       "name": "Rachel",
       "kind": "custom",
-      "image": "assets/players/leah_b.svg",
+      "image": "assets/players/leah_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
         "시작방에 추가 등장: 신성한 카드.",
-        "고유 액티브는 순애입니다. 초비밀방에서 품질 3 이상 아이템 2개를 선택 보상으로 생성하며, 소지 아이템 제거와 행운 감소는 적용하지 않습니다.",
+        "고유 액티브는 순애입니다. 초비밀방에서 퀄리티 3 이상 아이템 2개를 선택 보상으로 생성하며, 소지 아이템 제거와 행운 감소는 적용하지 않습니다.",
         "기본 시작 체력은 빨간 하트 1칸·블랙 하트 2칸이며 폭탄 2개·열쇠 1개를 설정합니다."
       ],
       "restrictions": [],
@@ -1241,15 +1333,18 @@
       "itemSources": [
         "content/players.xml",
         "astro/player.lua",
-        "astro/collectibles/customs/pure-love.lua"
-      ]
+        "astro/collectibles/customs/pure-love.lua",
+        "resources/gfx/characters/costumes/character_leahb.png"
+      ],
+      "origin": "mod",
+      "variant": "tainted"
     },
     {
       "id": "diabellstar",
       "title": "디아벨스타",
       "name": "Diabellstar",
       "kind": "custom",
-      "image": "assets/players/diabellstar.svg",
+      "image": "assets/players/diabellstar-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1276,15 +1371,18 @@
         "astro/collectibles/customs/snake-eyes-poplar.lua",
         "astro/collectibles/customs/bonfire.lua",
         "astro/collectibles/customs/sinful-spoils-of-subversion-snake-eye.lua",
-        "astro/collectibles/customs/overwhelming-sinful-spoils.lua"
-      ]
+        "astro/collectibles/customs/overwhelming-sinful-spoils.lua",
+        "resources/gfx/characters/costumes/character_diabellstar.png"
+      ],
+      "origin": "mod",
+      "variant": "normal"
     },
     {
       "id": "diabellstar_b",
       "title": "디아벨제",
       "name": "Diabellze",
       "kind": "custom",
-      "image": "assets/players/diabellstar_b.svg",
+      "image": "assets/players/diabellstar_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1307,21 +1405,24 @@
         "astro/player.lua",
         "astro/collectibles/customs/overwhelming-sinful-spoils.lua",
         "astro/collectibles/customs/original-sinful-spoils-snake-eye.lua",
-        "astro/collectibles/customs/snake-eyes-poplar.lua"
-      ]
+        "astro/collectibles/customs/snake-eyes-poplar.lua",
+        "resources/gfx/characters/costumes/character_diabellstarb.png"
+      ],
+      "origin": "mod",
+      "variant": "tainted"
     },
     {
       "id": "water-enchantress",
       "title": "성전의 수견사",
       "name": "Water Enchantress",
       "kind": "custom",
-      "image": "assets/players/water-enchantress.svg",
+      "image": "assets/players/water-enchantress-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
         "시작방에 추가 등장: 신성한 카드.",
         "아라메시아의 의를 사용해도 행운 −2 패널티를 적용하지 않습니다.",
-        "금주 아라마티아를 소지한 경우 초비밀방에서 층마다 한 번 사용합니다. 품질 3 이상 소지 아이템이 있어야 성공하며, 사용 후 아이템은 사라지지 않습니다. 새 층에서 사용 제한을 초기화합니다.",
+        "금주 아라마티아를 소지한 경우 초비밀방에서 층마다 한 번 사용합니다. 퀄리티 3 이상 소지 아이템이 있어야 성공하며, 사용 후 아이템은 사라지지 않습니다. 새 층에서 사용 제한을 초기화합니다.",
         "스타리트 파피용·빛의 성검 단넬을 소지하면 각 영혼 상한은 100개이며 방 클리어 때 해당 아이템의 영혼을 10개 감소시킵니다. 일반 소지자는 상한 50개·감소 5개입니다.",
         "기룡 드라코백을 소지하면 보스방을 제외한 전투방의 적 제거 발동 상한을 층마다 5회로 늘립니다. 공격력·연사·이동속도·사거리·탄속은 1.1배, 양수인 행운도 1.1배로 보정합니다.",
         "고유 액티브는 아라메시아의 의입니다.",
@@ -1356,21 +1457,24 @@
         "astro/collectibles/customs/curse-of-aramatir.lua",
         "astro/collectibles/customs/starlit-papillon.lua",
         "astro/collectibles/customs/dunnell-the-noble-arms-of-light.lua",
-        "astro/collectibles/customs/dracoback.lua"
-      ]
+        "astro/collectibles/customs/dracoback.lua",
+        "resources/gfx/characters/costumes/character_water_enchantress.png"
+      ],
+      "origin": "mod",
+      "variant": "normal"
     },
     {
       "id": "water-enchantress_b",
       "title": "일리걸 나이트",
       "name": "Illegal Knight",
       "kind": "custom",
-      "image": "assets/players/water-enchantress_b.svg",
+      "image": "assets/players/water-enchantress_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
         "시작방에 추가 등장: 신성한 카드.",
         "아라메시아의 의를 사용해도 행운 −2 패널티를 적용하지 않습니다.",
-        "금주 아라마티아를 소지한 경우 초비밀방에서 층마다 한 번 사용합니다. 품질 3 이상 소지 아이템이 있어야 성공하며, 사용 후 아이템은 사라지지 않습니다. 새 층에서 사용 제한을 초기화합니다.",
+        "금주 아라마티아를 소지한 경우 초비밀방에서 층마다 한 번 사용합니다. 퀄리티 3 이상 소지 아이템이 있어야 성공하며, 사용 후 아이템은 사라지지 않습니다. 새 층에서 사용 제한을 초기화합니다.",
         "스타리트 파피용·빛의 성검 단넬을 소지하면 각 영혼 상한은 100개이며 방 클리어 때 해당 아이템의 영혼을 10개 감소시킵니다. 일반 소지자는 상한 50개·감소 5개입니다.",
         "기룡 드라코백을 소지하면 보스방을 제외한 전투방의 적 제거 발동 상한을 층마다 5회로 늘립니다. 공격력·연사·이동속도·사거리·탄속은 1.1배, 양수인 행운도 1.1배로 보정합니다.",
         "고유 액티브는 금주 아라마티아입니다.",
@@ -1404,15 +1508,18 @@
         "astro/collectibles/customs/curse-of-aramatir.lua",
         "astro/collectibles/customs/starlit-papillon.lua",
         "astro/collectibles/customs/dunnell-the-noble-arms-of-light.lua",
-        "astro/collectibles/customs/dracoback.lua"
-      ]
+        "astro/collectibles/customs/dracoback.lua",
+        "resources/gfx/characters/costumes/character_water_enchantressb.png"
+      ],
+      "origin": "mod",
+      "variant": "tainted"
     },
     {
       "id": "david-martinez",
       "title": "데이비드",
       "name": "David Martinez",
       "kind": "custom",
-      "image": "assets/players/david-martinez.svg",
+      "image": "assets/players/david-martinez-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1434,15 +1541,18 @@
         "content/players.xml",
         "astro/player.lua",
         "astro/collectibles/customs/sandevistan.lua",
-        "astro/collectibles/customs/my-moon-my-man.lua"
-      ]
+        "astro/collectibles/customs/my-moon-my-man.lua",
+        "resources/gfx/characters/costumes/character_david_martinez.png"
+      ],
+      "origin": "mod",
+      "variant": "normal"
     },
     {
       "id": "david-martinez_b",
       "title": "루시",
       "name": "Lucy",
       "kind": "custom",
-      "image": "assets/players/david-martinez_b.svg",
+      "image": "assets/players/david-martinez_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1464,15 +1574,18 @@
         "content/players.xml",
         "astro/player.lua",
         "astro/collectibles/customs/sandevistan.lua",
-        "astro/collectibles/customs/my-moon-my-man.lua"
-      ]
+        "astro/collectibles/customs/my-moon-my-man.lua",
+        "resources/gfx/characters/costumes/character_david_martinezb.png"
+      ],
+      "origin": "mod",
+      "variant": "tainted"
     },
     {
       "id": "stellar",
       "title": "스텔라",
       "name": "Stellar",
       "kind": "custom",
-      "image": "assets/players/stellar.svg",
+      "image": "assets/players/stellar-emotion.png",
       "scene": "시작방에 추가 등장: 초 처녀자리, 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1489,15 +1602,18 @@
       "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
       "itemSources": [
         "content/players.xml",
-        "astro/collectibles/customs/planetarium/albireo.lua"
-      ]
+        "astro/collectibles/customs/planetarium/albireo.lua",
+        "resources/gfx/characters/costumes/character_stellar.png"
+      ],
+      "origin": "mod",
+      "variant": "normal"
     },
     {
       "id": "stellar_b",
       "title": "나유타",
       "name": "Nayuta",
       "kind": "custom",
-      "image": "assets/players/stellar_b.svg",
+      "image": "assets/players/stellar_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1513,15 +1629,18 @@
       "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
       "itemSources": [
         "content/players.xml",
-        "astro/player.lua"
-      ]
+        "astro/player.lua",
+        "resources/gfx/characters/costumes/character_stellarb.png"
+      ],
+      "origin": "mod",
+      "variant": "tainted"
     },
     {
       "id": "ainz-ooal-gown",
       "title": "아인즈",
       "name": "Ainz Ooal Gown",
       "kind": "custom",
-      "image": "assets/players/ainz-ooal-gown.svg",
+      "image": "assets/players/ainz-ooal-gown-emotion.png",
       "scene": "시작방에 추가 등장: 스태프 오브 아인즈 울 고운, 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1537,15 +1656,18 @@
       "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
       "itemSources": [
         "content/players.xml",
-        "astro/player.lua"
-      ]
+        "astro/player.lua",
+        "resources/gfx/characters/costumes/character_ainz_ooal_gown.png"
+      ],
+      "origin": "mod",
+      "variant": "normal"
     },
     {
       "id": "ainz-ooal-gown_b",
       "title": "판도라즈 액터",
       "name": "Pandora's Actor",
       "kind": "custom",
-      "image": "assets/players/ainz-ooal-gown_b.svg",
+      "image": "assets/players/ainz-ooal-gown_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
       "body": "캐릭터의 기본 효과에 아래 대결 모드 변경사항이 더해집니다.",
       "rules": [
@@ -1561,8 +1683,11 @@
       "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
       "itemSources": [
         "content/players.xml",
-        "astro/player.lua"
-      ]
+        "astro/player.lua",
+        "resources/gfx/characters/costumes/character_ainz_ooal_gownb.png"
+      ],
+      "origin": "mod",
+      "variant": "tainted"
     }
   ]
 }

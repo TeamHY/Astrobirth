@@ -1,0 +1,1826 @@
+{
+  "schema": 2,
+  "pose": "Leftmost middle emotion frame",
+  "frame": {
+    "project": "Game",
+    "file": "gfx/001.000_player.anm2",
+    "animation": "Pickup",
+    "layerId": "12",
+    "index": 0,
+    "crop": [
+      0,
+      192,
+      64,
+      64
+    ]
+  },
+  "sources": [
+    {
+      "project": "Game",
+      "file": "players.xml",
+      "sha256": "cae5b4fbd29968cfec5ba128706318b97161976b9a1f99346efa32a14e1298ef"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "content/players.xml",
+      "sha256": "16ed0cd74dd5fd103746e335b460ec70aeec9ef8f8220cfc90a3f0893c30ca5e",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/001.000_player.anm2",
+      "sha256": "0f6fff152dd360625b8dfda238d89077c80bdd9666e59b71d145350e08d87505"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_001_isaac.png",
+      "sha256": "0b2e616820b17f5780c34c57543281977ac1f4c1ac40e980a23e8492c1ec9006"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_002_magdalene.png",
+      "sha256": "6ce61c11c56911f1f3bd5e35ed39eeabc1408ef11a0df4455f60ac1e62bf4ac0"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_003_cain.png",
+      "sha256": "6d34bffbe0dd67e8d81ac7ff08d01e9cccfe33be4dddc3d3c9250e98078bc5b6"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_004_judas.png",
+      "sha256": "2170904426abd60f2260a2cb5e35f4b8a3f6e55cd0065b2b9429af47f53a37e0"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_006_bluebaby.png",
+      "sha256": "de93b5d263e9f4645142cfb63f83a14d1bb8fc08ec7f5a3c528dac0b5d3036a8"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_005_eve.png",
+      "sha256": "540c9dc2ff26926f36e5653a19d3a3a7f5ef8df510ed731e2fd00903859ad435"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_007_samson.png",
+      "sha256": "fa8e011b67b996f60fd7643b64c700b99c7059767054be385d994a97a9e00914"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_008_azazel.png",
+      "sha256": "a686780cabb98d57d7e60aff5eab57e380eb4fc1f412328891b45f4e4a1ef1ae"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_009_lazarus.png",
+      "sha256": "72a6b94b0a9b37a3553bcf9880f46025cc39dc170121b0a07f52ef9f4173cadd"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_009_eden.png",
+      "sha256": "6a0b3dd580ecf8bcbba48a76b4b73ad8a9094df6e9fd7de781995e4048822701"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_012_thelost.png",
+      "sha256": "4b2474e0e15394bd95396185c725dc97d90669b80732b8505e7c20ca98d6c951"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_014_lilith.png",
+      "sha256": "a4be53ec2353a2e8088639156e73abdb1bd5742e7220ca90fd5c2281c16e10de"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_015_keeper.png",
+      "sha256": "1fe82a093ec8c880834ac68680fd8a344d71c35cc385126fc098b6da5ad7b650"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_016_apollyon.png",
+      "sha256": "658f9f54cfe29b96df04fc56cfddf1c504ba8b6d68e78a1375dc4985796a1755"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_017_theforgotten.png",
+      "sha256": "96ed24f7ff8bda2e7fd2cd5fe549b91c12a6d29887779aa1adfa661ec0dec77a"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_001x_bethany.png",
+      "sha256": "9d9300e04a533f38f5a70fe2eaae9ffd523e24f64508b466b49920ac18c98fd6"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_002x_jacob.png",
+      "sha256": "d37c622ac72be2d7d6d949757496b3ae189a74e63a804245800e6740268ad112"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_001b_isaac.png",
+      "sha256": "7277fec5c92f4012832f47fa71eeabbe030632674203b235d628a3fbf0ad65b1"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_002b_magdalene.png",
+      "sha256": "ad7fe144181d0bf2b6b27950f0cb51a15d864d4172e86067fe4fa27d657e70cb"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_003b_cain.png",
+      "sha256": "4076486bfbb727b2765af113f219bbd9bb82b3ab247d27172f9a7bf220af05ef"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_004b_judas.png",
+      "sha256": "ac8485a044e02f7dc792c389981bd7a9833de6c4b81059938ba2506a863d4de7"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_005b_bluebaby.png",
+      "sha256": "7d624a1be9db7bdb87d9ca731c6db81c37a9bd9a66d536d25e70bba1a51d95eb"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_006b_eve.png",
+      "sha256": "6d4edb8d0d2e3a5570c5aaa6777289c4bf15917102e16fd955c4bdfffb8504c4"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_007b_samson.png",
+      "sha256": "b3dcce88de6c2fe8e60ad8fea552324835d39a115eecf2af3be345073b1d21ed"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_008b_azazel.png",
+      "sha256": "0e4378adea36bc5483a6833ee9f1fb5258780e9693fe6b6b2146c49d6e855832"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_009b_lazarus.png",
+      "sha256": "22160e3d778b9e41601c89e711a1a628e14b74d2be420060f385e63f5b4f3de8"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_012b_thelost.png",
+      "sha256": "06b3e5cdc98ebabcf0bc13dd4a60979fc3e1af911eb086668e330bf29729b13a"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_014b_lilith.png",
+      "sha256": "8a338fb52129386aff492ec42d0ed045c3192412985c54eff062eda45375d3a3"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_015b_keeper.png",
+      "sha256": "92b8ec663c8bb14783c751eec9bd1b26f8e5f90ad9a764b7fd98db233834d7db"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_016b_apollyon.png",
+      "sha256": "da2db5587086aaf4be0eebff85a418a45fcf762082bdc85ed0b14493178249ac"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_016b_theforgotten.png",
+      "sha256": "488678a7d69fcf24594ae4845e84f5f5fa784aea2e03c307902c015636ab128f"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_018b_bethany.png",
+      "sha256": "612ec3dff741fc808faa57eadb0253a8a4c25f1a4b259fdfd50ab10a57d38231"
+    },
+    {
+      "project": "Game",
+      "file": "gfx/characters/costumes/character_019b_jacob.png",
+      "sha256": "c146bceb0eda6ce2750cad84d9288e38ba56655ca5e39e2d85bad477e2107f0a"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_leah.png",
+      "sha256": "62683b2f187a2bf1a16a4eb17207d8a0c55ec22eb286023b0129685792183d5f",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_leahb.png",
+      "sha256": "5462b7bd1624fbc005a4e033ab43bfd10eb3cf38551336d9fc4663d750dd8d63",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_diabellstar.png",
+      "sha256": "9998751da498547231f874eecc6336221b5052c44811a1dfe4642049804fa0c8",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_diabellstarb.png",
+      "sha256": "e56ea061648a4688cf3e4a840e30dc7bc36d33416acbde1359e7e3be09168ab4",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_water_enchantress.png",
+      "sha256": "95771d61529ad3f77f46f1db5a0f5aab158249be80daac973d9c0b34ad814362",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_water_enchantressb.png",
+      "sha256": "19a4bae15abe87b1d13c0269b1069f572fd5f7f14466b17d9250eb141828f265",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_david_martinez.png",
+      "sha256": "35e6194aebb84a23e53bb2844d28f0527b5e71271d2f9015d2043476a5497c62",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_david_martinezb.png",
+      "sha256": "c063a4feca650f5dec7a91f93a09895bf7ce2d302d4164f5837190fecbe9fc28",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_stellar.png",
+      "sha256": "02e159d9a856ef179349b1291f6f79b057b67314b68844b6da32c0778fcd8d10",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_stellarb.png",
+      "sha256": "25c41d00017a72582aa59afb50142a8bf39c0d55732215f971a10581fd7bc46e",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_ainz_ooal_gown.png",
+      "sha256": "a2acda9e88fc03f64c4d3b811c6d9600dd876d16e6e7f0c6ba3e731613d180ec",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "resources/gfx/characters/costumes/character_ainz_ooal_gownb.png",
+      "sha256": "32312e9110a1161dc90cfd5dfbfcf0ae6f663a437b436fc10e6b355a2c9ca6a0",
+      "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    }
+  ],
+  "entries": [
+    {
+      "id": "isaac",
+      "playerName": "#ISAAC_NAME",
+      "image": "assets/players/isaac-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_001_isaac.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "064f0b166cbf1ed6ac279a6423915455cb9ea6382f2c663e9d0999451926a71a",
+      "framePixelSHA256": "56c2ec8ddea20315662f0ccefd86e93dc545b59b8e308c6618628978c388ce17",
+      "pixelSHA256": "9cf01b49b62abdb0556ac22896c30523674c5dd6e03246868261a718d26d3710",
+      "playerId": 0
+    },
+    {
+      "id": "magdalene",
+      "playerName": "#MAGDALENE_NAME",
+      "image": "assets/players/magdalene-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_002_magdalene.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        13,
+        18,
+        52,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        43,
+        43
+      ],
+      "sha256": "3497a726961f60abb65b3da0017ddc832e6bb567a9493cd48cd89bd1ad78a749",
+      "framePixelSHA256": "901736aced254fc6446134c76b16e08fcfdb1f50036f6e0ae8674b0bdcd3032f",
+      "pixelSHA256": "2cd6e84ac318c50499b8ae8b9ea1878053e3c5b585bb6040e3586db1e7e52970",
+      "playerId": 1
+    },
+    {
+      "id": "cain",
+      "playerName": "#CAIN_NAME",
+      "image": "assets/players/cain-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_003_cain.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "153e0d3e442c2dc67c8c67dcb3eff22c54ae72eb58b9abaee84d516e55b0735d",
+      "framePixelSHA256": "22bc03796520e208b305c2f2619fc7096263384b2d2303e577a291044890055c",
+      "pixelSHA256": "fa48f82548df3d49663baaba4328259b2778df518aaf34c608e975a1b7745faf",
+      "playerId": 2
+    },
+    {
+      "id": "judas",
+      "playerName": "#JUDAS_NAME",
+      "image": "assets/players/judas-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_004_judas.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        19,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        42
+      ],
+      "sha256": "800efd7bd1131755ac9989d4a6c92a8d1d56762a66c1653b8f58feadefdcb54c",
+      "framePixelSHA256": "55d99c079e01e9846894f79066e5e222067a2c5a889733a83ae0e0bb731025d5",
+      "pixelSHA256": "ab2ff55da2d2656824b05ea831db9c2ddcbee2d432f3b927dfa4699d8c62a44b",
+      "playerId": 3
+    },
+    {
+      "id": "bluebaby",
+      "playerName": "#BLUEBABY_NAME",
+      "image": "assets/players/bluebaby-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_006_bluebaby.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "7ce33d25a678036d6415b48f3ba8229b329c170e865d408741300e00d02131b6",
+      "framePixelSHA256": "0c34121115b6906131f7788951945b928bfdd79c120fca2f90e6cf885716368c",
+      "pixelSHA256": "797d2e00d83da7c25abe378c7cf866b1087910c05d085b03b2e4b101f80bfad9",
+      "playerId": 4
+    },
+    {
+      "id": "eve",
+      "playerName": "#EVE_NAME",
+      "image": "assets/players/eve-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_005_eve.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        17,
+        23,
+        47,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        34,
+        38
+      ],
+      "sha256": "e57baea736c6f1fb80486c3a920184d2d99065c8d84cb24466f9618814d791a0",
+      "framePixelSHA256": "f4c23f46cc78f7982e093d30b3cec7a62fa0688756546a3f4580a6051896d50c",
+      "pixelSHA256": "7ae8cb0079e39102ff3742ee13274afbbf2cc05e847777888eef2923f4f24f73",
+      "playerId": 5
+    },
+    {
+      "id": "samson",
+      "playerName": "#SAMSON_NAME",
+      "image": "assets/players/samson-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_007_samson.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        15,
+        22,
+        49,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        38,
+        39
+      ],
+      "sha256": "c518a9d1208b9fb978e6d7cf5d32d9911e14b9190265053ad1231df1fbb0f8c9",
+      "framePixelSHA256": "a772716e94490773ff1f1d7dfcd1ff10ccb4df91313b9ca42703b86f2ef7d7b0",
+      "pixelSHA256": "009a0faae188f6a7448b4b860698ed963d167bb10ba08f0cb7bf26360da0bd8a",
+      "playerId": 6
+    },
+    {
+      "id": "azazel",
+      "playerName": "#AZAZEL_NAME",
+      "image": "assets/players/azazel-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_008_azazel.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        13,
+        15,
+        51,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        42,
+        46
+      ],
+      "sha256": "8e778f563af2b0573bad5d4b04357f01efc792bcd91c167aaba22a8eef3649dc",
+      "framePixelSHA256": "e11cc8084280230771329bd668467e03a3cb372699144c8bdcf0fdbe7f558445",
+      "pixelSHA256": "3bec6f4bb9c98e478bd7634065304875319f676457cabdd109c4e8811decbf66",
+      "playerId": 7
+    },
+    {
+      "id": "lazarus",
+      "playerName": "#LAZARUS_NAME",
+      "image": "assets/players/lazarus-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_009_lazarus.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        17,
+        23,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        33,
+        38
+      ],
+      "sha256": "85a4be1db90cab985f2f16a852bfaf553495b0926b430438d631430be60eaee6",
+      "framePixelSHA256": "0b3a73472baf0a7e0223a81611f4300f01213097bb42edbd9e06d496588d061d",
+      "pixelSHA256": "70969cb927c7cc21c6e2fdfe9a0f9e1f72add89b5adc26ba1d08f623d642f1bb",
+      "playerId": 8
+    },
+    {
+      "id": "eden",
+      "playerName": "#EDEN_NAME",
+      "image": "assets/players/eden-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_009_eden.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "d003a784c36b883a121e1975a5c6e4cfb4b841bdc3e0b4dc59fe4af120b2dc81",
+      "framePixelSHA256": "e23bd8445573a1083868ac2448e12dbbdac047f7759fe9c15e3590e3da994ed9",
+      "pixelSHA256": "b9fc94116fdc717256b32781b2daa11fe3b1aa6eb5446130c7a9dca26b6c59ab",
+      "playerId": 9
+    },
+    {
+      "id": "thelost",
+      "playerName": "#THE_LOST_NAME",
+      "image": "assets/players/thelost-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_012_thelost.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        61
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        41
+      ],
+      "sha256": "f88912f516e5bb489901473ea02a68848a815ac55f35a2814696a178ac4b2143",
+      "framePixelSHA256": "2fa0a4a84e4c051f756cbecd07369fc39e8c98f5aa4b3a32969943805b67d116",
+      "pixelSHA256": "52d21265a1c34bd5059d4a1f2bd4006ff04748d3dc37a411e3aca97a062a6a6d",
+      "playerId": 10
+    },
+    {
+      "id": "lilith",
+      "playerName": "#LILITH_NAME",
+      "image": "assets/players/lilith-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_014_lilith.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        15,
+        24,
+        49,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        38,
+        37
+      ],
+      "sha256": "40e20cb83133d7ebabbc9de026dffab174e585668fa4b7921e4d98e02c0b67d6",
+      "framePixelSHA256": "8d6fa724006b57a1125a29e7c1cfb717c3057f3c64a434b09e50d3bac37b7112",
+      "pixelSHA256": "a6559e7b9f839699727e07692b20c29ad7e6dc24f50081a4677d817121c26d73",
+      "playerId": 13
+    },
+    {
+      "id": "keeper",
+      "playerName": "#KEEPER_NAME",
+      "image": "assets/players/keeper-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_015_keeper.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "ef0bb7ee97aa218e76c6eeae0a35c4ee9fece139a90f570bdccf82d13d25fb34",
+      "framePixelSHA256": "85f298a6936b10dd34c2fadc9faf3259a980b5a0cdcfa17d3d3ef430b7e8edbe",
+      "pixelSHA256": "1c7072e0fdfa116563bbf7743139a32c67a1c1c33c9dff67989ae9957168beee",
+      "playerId": 14
+    },
+    {
+      "id": "apollyon",
+      "playerName": "#APOLLYON_NAME",
+      "image": "assets/players/apollyon-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_016_apollyon.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "8bbd4b3ac9086db7a5d1e7b5a7d4195b89550f0a372ba9a5dc8c82076f34b8e2",
+      "framePixelSHA256": "a790e8400da4b325e969ff2171b69be599056209a2157dbaa2ca37270f704811",
+      "pixelSHA256": "11aeee4222f68afef15582cbb8a255318d8c17dc5fa9086128ca2f2e208d8e54",
+      "playerId": 15
+    },
+    {
+      "id": "theforgotten",
+      "playerName": "#THE_FORGOTTEN_NAME",
+      "image": "assets/players/theforgotten-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_017_theforgotten.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "66372a64b735f755c53a72a24224dc02ae4dcea9d027539cc3aa3de4eb92d018",
+      "framePixelSHA256": "e56c7141d15352aaa622ba310517ee2330cf83408eb90fb35fa7639479aa258e",
+      "pixelSHA256": "bb2b7dd1c0ea36ef0cd0de977a914b8b9fc2eada94eea250d3a637e3a0d80bc5",
+      "playerId": 16
+    },
+    {
+      "id": "bethany",
+      "playerName": "#BETHANY_NAME",
+      "image": "assets/players/bethany-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_001x_bethany.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        10,
+        18,
+        54,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        48,
+        43
+      ],
+      "sha256": "da3c04d4fdf95e130ebe0d2cf30ed1f88348aada3de45fb3f1edd80b09d0ddd7",
+      "framePixelSHA256": "263c9e486749911df7c3287d149955806f50de59d1ad6c3099922ad7f10cc41b",
+      "pixelSHA256": "e64e80411f456a942e0ef9519619b7d02230331ef69581867bb2897c56002f90",
+      "playerId": 18
+    },
+    {
+      "id": "jacob",
+      "playerName": "#JACOB_NAME",
+      "image": "assets/players/jacob-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_002x_jacob.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        17,
+        21,
+        47,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        34,
+        40
+      ],
+      "sha256": "cd36e86d62786559952c4093cd5e12502718d39147c5a83c309f101208699d20",
+      "framePixelSHA256": "556e1f766a0e543898efa0bed91d6138e17c7f5416d67192d38a30ca73f807d7",
+      "pixelSHA256": "1dde6735e0b9e0966b619e3fbdf6e05ad30e31d3a63b3400bce53747c9771bac",
+      "playerId": 19
+    },
+    {
+      "id": "isaac_b",
+      "playerName": "#ISAAC_NAME",
+      "image": "assets/players/isaac_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_001b_isaac.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "db3427289e205cb4261c6b0aacf015624ba9b05ebb19cb9b71bdff71e2a1df80",
+      "framePixelSHA256": "3bdddbb71ff6decb8b77353d60a0ea97baa05837865fa1a2a685ab7a1629a5a4",
+      "pixelSHA256": "9328f39f4650cdbf4ce0951716f324fb4bca14331e904e7af3473fc889158a74",
+      "playerId": 21
+    },
+    {
+      "id": "magdalene_b",
+      "playerName": "#MAGDALENE_NAME",
+      "image": "assets/players/magdalene_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_002b_magdalene.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        11,
+        18,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        39,
+        43
+      ],
+      "sha256": "a56a624c7a78fd4e6149e81534e2d1104bf694777c238ba3fae1f43bdb7f2da8",
+      "framePixelSHA256": "25cf16cd083a51268e4da281ee0b4116816dc88b92746a353c988d75ee8c19a3",
+      "pixelSHA256": "0e1ba5e60a8ae70a087e1ec88090e109b30488c307146ab8ca3304f4c194d482",
+      "playerId": 22
+    },
+    {
+      "id": "cain_b",
+      "playerName": "#CAIN_NAME",
+      "image": "assets/players/cain_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_003b_cain.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "60dae84f895e0ef675127feb31817693212b8c56041c58fca35d5c14bb9edcc2",
+      "framePixelSHA256": "2096f0c5f5fb768e21ec12a92c63daf88ba7e1ca575c51c9cfedd77d8ddb8947",
+      "pixelSHA256": "213ddc599e7b2564369802302e062c3174c649ce1c2d04d71a5d78e25e129fe9",
+      "playerId": 23
+    },
+    {
+      "id": "judas_b",
+      "playerName": "#JUDAS_NAME",
+      "image": "assets/players/judas_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_004b_judas.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        19,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        42
+      ],
+      "sha256": "3b1d1424a97deddf0d05e0fd89c32a7c081b9fa833daa0b7562d0495ce55eab5",
+      "framePixelSHA256": "3adcf0d84f7f9fed7807e598710264cf41c32b40512188e75f4e95167074377e",
+      "pixelSHA256": "d44ffedce899378b9b80acbc3da0bea8c20e36dab0ac2277efb4879779de8089",
+      "playerId": 24
+    },
+    {
+      "id": "bluebaby_b",
+      "playerName": "#BLUEBABY_NAME",
+      "image": "assets/players/bluebaby_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_005b_bluebaby.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "ffccc3ffee09d06d16c6db048662eb46d04960a2ce3645adf96e7d30ea6352e3",
+      "framePixelSHA256": "08ddedf76a4f37aa198a5d0ad39806e82f0dc5379b76ff8378242758b3af3833",
+      "pixelSHA256": "dc80974345a02fd38e9b29c9668964aa83ce5070a4eaf459d2969f075628717f",
+      "playerId": 25
+    },
+    {
+      "id": "eve_b",
+      "playerName": "#EVE_NAME",
+      "image": "assets/players/eve_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_006b_eve.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        15,
+        21,
+        48,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        37,
+        40
+      ],
+      "sha256": "0201b216ffa757e7d59c9ccb17c65195e626b9f1dd016c7d24735e095af864c5",
+      "framePixelSHA256": "902589bf9d8803bedbfcab7230c3b46e6e6c547570ff94aab9e7c1f539507390",
+      "pixelSHA256": "f69c56161b1837e9a8f0b0df7d98649e7fd6711f4b7fb4e46f57c9c2390fb379",
+      "playerId": 26
+    },
+    {
+      "id": "samson_b",
+      "playerName": "#SAMSON_NAME",
+      "image": "assets/players/samson_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_007b_samson.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        21,
+        47,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        33,
+        40
+      ],
+      "sha256": "500b51b52dd5387600d10c8815358263fbf40bff5b058c4e098514342fa37fe2",
+      "framePixelSHA256": "a3df884f920437e280c03c113a21a5ad50564c36402fb5c8c77d1ef5f85343c6",
+      "pixelSHA256": "ec108f5133a559ecf464dad84256c52f729244f36fd4570c3bd3453faf8d9a2b",
+      "playerId": 27
+    },
+    {
+      "id": "azazel_b",
+      "playerName": "#AZAZEL_NAME",
+      "image": "assets/players/azazel_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_008b_azazel.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        16,
+        18,
+        48,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        36,
+        43
+      ],
+      "sha256": "e3d8183669937478ed34245f92fa8b72442f622ad12f4308db44272cdf596538",
+      "framePixelSHA256": "329fe3feeb188f5c256406698a95916c6232e20b451284e4ebeda3137b58e099",
+      "pixelSHA256": "94c44430354beb5a8493d2c3dcace8235bd631832796f0ce9d2b8f7f09ae4acb",
+      "playerId": 28
+    },
+    {
+      "id": "lazarus_b",
+      "playerName": "#LAZARUS_NAME",
+      "image": "assets/players/lazarus_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_009b_lazarus.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        15,
+        22,
+        48,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        37,
+        39
+      ],
+      "sha256": "8119a59541332b8ea0e348488b024c9f4955b78906655145dba9fbb01fd73627",
+      "framePixelSHA256": "027ab02653cc3cb00732f93bd010175892224f29031358957ae6dc6800ec9148",
+      "pixelSHA256": "8ab26ff631c465d5c418e9fc3c3968ebe63a4585c49193aef9337b350107e2bd",
+      "playerId": 29
+    },
+    {
+      "id": "eden_b",
+      "playerName": "#EDEN_NAME",
+      "image": "assets/players/eden_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_009_eden.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "d003a784c36b883a121e1975a5c6e4cfb4b841bdc3e0b4dc59fe4af120b2dc81",
+      "framePixelSHA256": "e23bd8445573a1083868ac2448e12dbbdac047f7759fe9c15e3590e3da994ed9",
+      "pixelSHA256": "b9fc94116fdc717256b32781b2daa11fe3b1aa6eb5446130c7a9dca26b6c59ab",
+      "playerId": 30
+    },
+    {
+      "id": "thelost_b",
+      "playerName": "#THE_LOST_NAME",
+      "image": "assets/players/thelost_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_012b_thelost.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        61
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        41
+      ],
+      "sha256": "482731eaa91840c882cdc7592649c5dc5fb152e3173cc4e7996c6276325e970a",
+      "framePixelSHA256": "90618997b46c39910ad6858a2702922b41d7841e2782b2b7519595f5039f5adf",
+      "pixelSHA256": "39319696da0deb52a0c8ebf089135bab41709c185899c9508c0fe3d376db4e98",
+      "playerId": 31
+    },
+    {
+      "id": "lilith_b",
+      "playerName": "#LILITH_NAME",
+      "image": "assets/players/lilith_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_014b_lilith.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        13,
+        22,
+        50,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        41,
+        39
+      ],
+      "sha256": "7271c338e4c0d716e55e6c320f72d144002f49a93f03293c7761226e0b167ee8",
+      "framePixelSHA256": "1b74a1b4fff065bcfabcd290c6fa4b5997dd53580197ef41d90ca9dbf9ee0f46",
+      "pixelSHA256": "5d1431d5aeac382171b71b49ce37f245436885d125f68dd845189d893a7c545a",
+      "playerId": 32
+    },
+    {
+      "id": "keeper_b",
+      "playerName": "#KEEPER_NAME",
+      "image": "assets/players/keeper_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_015b_keeper.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        24,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        37
+      ],
+      "sha256": "820c96d57c617917f090477cdff8c505d7626ac07cd798a0c748251416aa8a7f",
+      "framePixelSHA256": "cbe026aac63f491fece013268ef7edacafabc9533e6c490ed102b13b8909c606",
+      "pixelSHA256": "cf2e35016ff710031864cbfa3cc7293fe73ca4b14e39f0ad824989fdbeb18cd1",
+      "playerId": 33
+    },
+    {
+      "id": "apollyon_b",
+      "playerName": "#APOLLYON_NAME",
+      "image": "assets/players/apollyon_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_016b_apollyon.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        17,
+        22,
+        47,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        34,
+        39
+      ],
+      "sha256": "765d72d60ba5c36da08b0a35cc392c6e518f9c7bda51fb91614c30ca338e1905",
+      "framePixelSHA256": "96c7b1c5aa5bc4f06c517023bb0a2e3bddcdc558b81f7355dac1b8dc84651331",
+      "pixelSHA256": "3f7474d3afbf339bc1d0271ff8153ebd86557239bdb57abe52b8a379c05a5d26",
+      "playerId": 34
+    },
+    {
+      "id": "theforgotten_b",
+      "playerName": "#THE_FORGOTTEN_NAME",
+      "image": "assets/players/theforgotten_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_016b_theforgotten.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        15,
+        29,
+        47,
+        58
+      ],
+      "padding": 2,
+      "size": [
+        36,
+        33
+      ],
+      "sha256": "2f9480a8b51dcdcec191ca4e4aab36e4d8535644878a40e17295d616627e1530",
+      "framePixelSHA256": "087668c75b8dec749da36dc0afe3b1050f746887e7af6aa0aa143db6e6de6476",
+      "pixelSHA256": "4d8b3607bd63dbe74254d69049c816859de2962a0348037b095abbb1a8bb78ea",
+      "playerId": 35
+    },
+    {
+      "id": "bethany_b",
+      "playerName": "#BETHANY_NAME",
+      "image": "assets/players/bethany_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_018b_bethany.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        11,
+        18,
+        53,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        46,
+        43
+      ],
+      "sha256": "449081048a77b8854e843d82b50a1fdc301713f42e4e918172875a8881e171e4",
+      "framePixelSHA256": "2ce9900b16fabffa2ab2c79dc5d89ff1aa16cd2d3f6862bacd28f5f2e6b5684b",
+      "pixelSHA256": "16104081361b75c7b098205dc6be911862c820ee61eea119a29903db531db3f2",
+      "playerId": 36
+    },
+    {
+      "id": "jacob_b",
+      "playerName": "#JACOB_NAME",
+      "image": "assets/players/jacob_b-emotion.png",
+      "source": {
+        "project": "Game",
+        "file": "gfx/characters/costumes/character_019b_jacob.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        17,
+        19,
+        47,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        34,
+        42
+      ],
+      "sha256": "52d96a21b3a425703d5f55d4c3db3efceeeaa731de5b690e74c1e232887de4a6",
+      "framePixelSHA256": "9308f98e6efa3b4ec13210d74c1e2e22964be0b3dacdd429f6d683f7b40a357b",
+      "pixelSHA256": "5828b82270b73be2a9c2cdd71b7a36e3b906c27ede15fc387c6e6dee84396647",
+      "playerId": 37
+    },
+    {
+      "id": "leah",
+      "playerName": "Leah",
+      "image": "assets/players/leah-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_leah.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        12,
+        20,
+        52,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        44,
+        41
+      ],
+      "sha256": "952b744e6e877de457d26a2ce0d6b1578fa4d02bb440ca0a4d63a1823a60e8e5",
+      "framePixelSHA256": "6025d4ae44d68c63d966f8bed1fb1f5300b9fc42da7a4dc0290fd2f1e503d54a",
+      "pixelSHA256": "f463ba167101639bd03c68f8447ada75c20206c753a685c58f77e2a738841388"
+    },
+    {
+      "id": "leah_b",
+      "playerName": "Tainted Leah",
+      "image": "assets/players/leah_b-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_leahb.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        10,
+        16,
+        54,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        48,
+        45
+      ],
+      "sha256": "da73af2954da60118e9154b64c52cc237c98d6830ea3ce11761b83d98c359f41",
+      "framePixelSHA256": "7b299770629bec383238f687cf9c2d67be98092e334e7e936a1be2656a1c40f9",
+      "pixelSHA256": "11351ad363f1ba59a69e55960cc2cd362f857366952d1c48282527f2bea19a57"
+    },
+    {
+      "id": "diabellstar",
+      "playerName": "Diabellstar",
+      "image": "assets/players/diabellstar-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_diabellstar.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        14,
+        18,
+        50,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        40,
+        43
+      ],
+      "sha256": "38c6e35b1c89c1380fbf1a23dec9bdd14414f023f0eb96fa94301d6af8a8e758",
+      "framePixelSHA256": "614580fd2c2629a4e260f65f69c44c96d1beaa92d718356d384b4bcd89f3b4c5",
+      "pixelSHA256": "73478c7aaf9e8ed2715ffbf65a197cee9d732ed7a52e24dd40219f5a0c8522a4"
+    },
+    {
+      "id": "diabellstar_b",
+      "playerName": "Tainted Diabellstar",
+      "image": "assets/players/diabellstar_b-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_diabellstarb.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        5,
+        6,
+        61,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        60,
+        55
+      ],
+      "sha256": "a3366978de11bf8b842e4de1247ff6215429a63573960da8f2b2c0de445008bb",
+      "framePixelSHA256": "895f5e737c8727d2109ca1f62e4d5f800f74d79c2f773600763d4c70636f0d78",
+      "pixelSHA256": "b0b8db98d071f06838d7a1858abf3433a70048ed005634b0415cde975495997b"
+    },
+    {
+      "id": "water-enchantress",
+      "playerName": "Water Enchantress",
+      "image": "assets/players/water-enchantress-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_water_enchantress.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        14,
+        6,
+        50,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        40,
+        55
+      ],
+      "sha256": "f813b6d16884ff29186a7ff4a33da15809143676568ee9bf2925e3cc23ef4bb2",
+      "framePixelSHA256": "ef6ecab00d1493d630bde28e23fc58f5c38f8f3ce7076cdac1640df9b22e9f29",
+      "pixelSHA256": "0683d071de789a1d250c46f12bd8cf4cc9356d3fbaa72918e262d9d2fe5c5bc2"
+    },
+    {
+      "id": "water-enchantress_b",
+      "playerName": "Tainted Water Enchantress",
+      "image": "assets/players/water-enchantress_b-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_water_enchantressb.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        11,
+        23,
+        53,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        46,
+        38
+      ],
+      "sha256": "16aa31d14a90dd35ce78a5194180d60580ff8f713c48488e7b901748dd5e55f2",
+      "framePixelSHA256": "f25a5c081a69569c82359455e97aa9ed0506c22e73281a9aa0563c2f1a948241",
+      "pixelSHA256": "3d0a8c02cd7c32ce3b73209009718db3ff25b2c297d6e8d0b2b21e90c2b6eb37"
+    },
+    {
+      "id": "david-martinez",
+      "playerName": "David Martinez",
+      "image": "assets/players/david-martinez-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_david_martinez.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        18,
+        14,
+        46,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        32,
+        47
+      ],
+      "sha256": "2fbcd4c07af16286c84c5f66bc8a2f130e6929763c1df7bfee9fc739cfcea944",
+      "framePixelSHA256": "31c06c69ba989fdd2f81222bee6e992ebd39c2f783ab0efcfd12233b0a35a757",
+      "pixelSHA256": "7cec84203eca44093068911bc2b068e460bc5a66b7f36691a2f8572d70eb3260"
+    },
+    {
+      "id": "david-martinez_b",
+      "playerName": "Tainted David Martinez",
+      "image": "assets/players/david-martinez_b-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_david_martinezb.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        15,
+        19,
+        48,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        37,
+        42
+      ],
+      "sha256": "7059f84f614a3043485621bf705a5c0f683ea7c48308bd0048196334f658f85b",
+      "framePixelSHA256": "1f54e4000f52ebd4c967876475c51367f49e289b3a59211a455432e55a3290c2",
+      "pixelSHA256": "26a8e28f2f24393eb169f7111c16247e818f2ed4099713b07d98854e82ae494c"
+    },
+    {
+      "id": "stellar",
+      "playerName": "Stellar",
+      "image": "assets/players/stellar-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_stellar.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        12,
+        18,
+        52,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        44,
+        43
+      ],
+      "sha256": "0a806d9201aed7dce0871a8062d4a3932a399319779392a4fc77daf7a4fa598d",
+      "framePixelSHA256": "f3dff4082254f9f702d2748609f517c6969a7080acb9c82ce295b1fdf59e9a6d",
+      "pixelSHA256": "940f9c69e9a037655bba6d872de1510eb1130b1ecadee136f84a6ef7c045fc75"
+    },
+    {
+      "id": "stellar_b",
+      "playerName": "Tainted Stellar",
+      "image": "assets/players/stellar_b-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_stellarb.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        14,
+        20,
+        48,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        38,
+        41
+      ],
+      "sha256": "d9cb3e58aa85cdc5bb0a1fb18ec6f432f4bfa16a9f8c7df3810fc41cb4a9c11e",
+      "framePixelSHA256": "91304862d2b51b1456f7dc7722c1a4240116a93df68619da5e6a61701eb17865",
+      "pixelSHA256": "f30ed70f3fb0782383d46cd1ac4bdabababf1248bf5b5cead33dd6431f92221d"
+    },
+    {
+      "id": "ainz-ooal-gown",
+      "playerName": "Ainz Ooal Gown",
+      "image": "assets/players/ainz-ooal-gown-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_ainz_ooal_gown.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        2,
+        20,
+        62,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        64,
+        41
+      ],
+      "sha256": "68e9fe172aa240db503094be44c4655617a5b1c91d9292e702cc18e0c1a160c4",
+      "framePixelSHA256": "3d32a675be74abc92d84a95e6332c50fef11c91931de58f01bee69ee9043cf9c",
+      "pixelSHA256": "a83a20ddb33664bf37b2236ab0e53920c33426da74d7db27e4fb805167e89f00"
+    },
+    {
+      "id": "ainz-ooal-gown_b",
+      "playerName": "Tainted Ainz Ooal Gown",
+      "image": "assets/players/ainz-ooal-gown_b-emotion.png",
+      "source": {
+        "project": "Astro-Items",
+        "file": "resources/gfx/characters/costumes/character_ainz_ooal_gownb.png"
+      },
+      "sourceSize": [
+        512,
+        512
+      ],
+      "crop": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "trim": [
+        14,
+        19,
+        49,
+        57
+      ],
+      "padding": 2,
+      "size": [
+        39,
+        42
+      ],
+      "sha256": "d2c5e521242f65a7a19c566cdeba418d00cbeba50e5ba4f407979d1e0d2c098e",
+      "framePixelSHA256": "ae166f33e660af2a5f59aa13458f68b3b431994903f840dd6b650391441e16e9",
+      "pixelSHA256": "21707d0ce65769e0c408850af300a375e652098383f86b7fff660d3333c3d827"
+    }
+  ]
+}
