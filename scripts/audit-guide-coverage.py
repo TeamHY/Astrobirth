@@ -35,7 +35,7 @@ def digest(value):
 
 
 refs = {'Astrobirth': {}, 'Astro-Items': {}}
-for page, filename in [('index', 'guide'), ('rules', 'rules'), ('items', 'items'), ('players', 'players')]:
+for page, filename in [('index', 'guide'), ('rules', 'rules'), ('items', 'items'), ('upgrades', 'upgrades'), ('players', 'players')]:
     data = json.loads((DOCS / (filename + '-content.json')).read_text())
     entries = data.get('entries') or [e for s in data['sections'] for e in s['entries']]
     for entry in entries:

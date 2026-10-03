@@ -1,0 +1,1910 @@
+{
+  "schema": 1,
+  "reviewed": "2026-10-04",
+  "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+  "sourceSHA256": "eb3069981b7435ee7544792e8979a17c0e7b46b9f0799ce46dceca289272f21b",
+  "intro": "원본 아이템이 새로 등장할 때 정해진 확률로 강화 아이템이 대신 나오는 패턴을 모두 정리했습니다. 일반 아이템·행성의 확률과 자동 변환이 없는 대상을 구분합니다.",
+  "entries": [
+    {
+      "id": "standard-auto",
+      "title": "일반 아이템의 자동 업그레이드",
+      "body": "원본이 새로 등장할 때 적용하는 아이템별 대체 확률입니다. 방 종류나 행운에 따른 추가 제한은 이 업그레이드 판정에 없습니다.",
+      "open": true,
+      "keywords": "업글 업그레이드 확률 강화 대체 원본 Death's List Black List Maw of the Void Maw Of The Void EX Black Candle Purple Candle Rocket in a Jar Super Rocket in a Jar Humbleing Bundle Steam Bundle Lil Chest Big Chest Cricket's Head Max's Head Birthright Legacy The D6 Mega D6 D8 Mega D8 Midas' Touch Marigold My Little Unicorn Bicorn Euthanasia Life-Sustaining Treatment Amazing Chaos Scroll Amazing Chaos Scroll of Goodness Magic Mushroom Rainbow Mushroom Hive Mind Overmind The Small Rock David's Stone Guppy's Collar Guppy's Name Tag Experimental Treatment Experimental Serum Red Cube Black Cube Sinus Infection Acute Sinusitis Champion Belt Tyrant’s Belt Rosary Luxury Rosary Lead Pencil Quill Pen Serpent's Kiss Serpent's Kiss EX Holy Light Divine Light Apple! Golden Apple Tough Love Gold Tooth The Mark 777 The Pact Liberation Marbles Giant Marble Bomber Boy Water Balloon Unholy Mantle Holy Mantle Fallen Orb Sacred Orb Sacred Heart Astro Sacred Heart Godhead Astro Godhead Star of Bethlehem Astro Star of Bethlehem We Need To Go Deeper! We Need To Go Astro!",
+      "rewardTable": {
+        "caption": "일반 아이템의 자동 업그레이드 전체 목록",
+        "columns": [
+          "원본 아이템",
+          "강화 아이템",
+          "대체 확률"
+        ],
+        "rows": [
+          [
+            "죽음의 살생부",
+            "블랙 리스트",
+            "20%"
+          ],
+          [
+            "공허의 구렁텅이",
+            "초 공허의 구렁텅이",
+            "50%"
+          ],
+          [
+            "검은 양초",
+            "보라 양초",
+            "50%"
+          ],
+          [
+            "로켓 든 병",
+            "슈퍼 로켓 든 병",
+            "50%"
+          ],
+          [
+            "험블 번들",
+            "스팀 번들",
+            "30%"
+          ],
+          [
+            "꼬마 상자",
+            "큰 상자",
+            "50%"
+          ],
+          [
+            "크리켓의 머리",
+            "맥스의 머리",
+            "30%"
+          ],
+          [
+            "생득권",
+            "유산",
+            "10%"
+          ],
+          [
+            "주사위",
+            "대왕 주사위",
+            "10%"
+          ],
+          [
+            "8면 주사위",
+            "대왕 8면체 주사위",
+            "30%"
+          ],
+          [
+            "미다스의 손길",
+            "마리골드",
+            "30%"
+          ],
+          [
+            "나의 작은 유니콘",
+            "바이콘",
+            "30%"
+          ],
+          [
+            "안락사",
+            "연명치료",
+            "30%"
+          ],
+          [
+            "놀라운 혼돈의 주문서",
+            "놀라운 긍정의 혼돈의 주문서",
+            "40%"
+          ],
+          [
+            "마법의 버섯",
+            "무지개 버섯",
+            "50%"
+          ],
+          [
+            "군체의식",
+            "초월체",
+            "50%"
+          ],
+          [
+            "작은 돌",
+            "다윗의 물맷돌",
+            "50%"
+          ],
+          [
+            "구피의 목걸이",
+            "구피의 이름표",
+            "70%"
+          ],
+          [
+            "임상시험",
+            "실험용 혈청",
+            "70%"
+          ],
+          [
+            "레드 큐브",
+            "블랙 큐브",
+            "50%"
+          ],
+          [
+            "축농증",
+            "급성 부비동염",
+            "50%"
+          ],
+          [
+            "챔피언 벨트",
+            "폭군의 허리띠",
+            "30%"
+          ],
+          [
+            "묵주",
+            "명품 묵주",
+            "50%"
+          ],
+          [
+            "연필",
+            "깃펜",
+            "50%"
+          ],
+          [
+            "독뱀의 키스",
+            "초 독뱀의 키스",
+            "50%"
+          ],
+          [
+            "신성한 빛",
+            "신의 조명",
+            "30%"
+          ],
+          [
+            "사과!",
+            "황금 사과",
+            "20%"
+          ],
+          [
+            "사랑의 매",
+            "금이빨",
+            "20%"
+          ],
+          [
+            "낙인",
+            "777",
+            "30%"
+          ],
+          [
+            "계약",
+            "해방",
+            "30%"
+          ],
+          [
+            "구슬",
+            "Giant Marble",
+            "50%"
+          ],
+          [
+            "봄버맨",
+            "물풍선",
+            "80%"
+          ],
+          [
+            "불경스런 망토",
+            "신성한 망토",
+            "10%"
+          ],
+          [
+            "타락한 오브",
+            "성스러운 오브",
+            "10%"
+          ],
+          [
+            "성스러운 심장",
+            "광휘로운 심장",
+            "10%"
+          ],
+          [
+            "신",
+            "우주신",
+            "30%"
+          ],
+          [
+            "베들레헴의 별",
+            "베들레헴의 한별",
+            "40%"
+          ],
+          [
+            "더 깊이 내려가야 해!",
+            "더 깊은 한울로!",
+            "50%"
+          ]
+        ],
+        "rowLinks": [
+          [
+            "death-s-list-530",
+            "astro-black-list",
+            null
+          ],
+          [
+            "maw-of-the-void-399",
+            "astro-maw-of-the-void-ex",
+            null
+          ],
+          [
+            "black-candle-260",
+            "astro-purple-candle",
+            null
+          ],
+          [
+            "rocket-in-a-jar-583",
+            "astro-super-rocket-in-a-jar",
+            null
+          ],
+          [
+            "humbleing-bundle-203",
+            "astro-steam-bundle",
+            null
+          ],
+          [
+            "lil-chest-362",
+            "astro-big-chest",
+            null
+          ],
+          [
+            "cricket-s-head-4",
+            "astro-max-s-head",
+            null
+          ],
+          [
+            "birthright",
+            "astro-legacy",
+            null
+          ],
+          [
+            "the-d6-105",
+            "astro-mega-d6",
+            null
+          ],
+          [
+            "d8-406",
+            "mega-d8",
+            null
+          ],
+          [
+            "midas-touch-202",
+            "astro-marigold",
+            null
+          ],
+          [
+            "my-little-unicorn-77",
+            "astro-bicorn",
+            null
+          ],
+          [
+            "euthanasia",
+            "astro-life-sustaining-treatment",
+            null
+          ],
+          [
+            "astro-amazing-chaos-scroll",
+            "astro-amazing-chaos-scroll-of-goodness",
+            null
+          ],
+          [
+            "magic-mushroom-12",
+            "astro-rainbow-mushroom",
+            null
+          ],
+          [
+            "hive-mind-248",
+            "astro-overmind",
+            null
+          ],
+          [
+            "the-small-rock",
+            "astro-david-s-stone",
+            null
+          ],
+          [
+            "guppy-s-collar-212",
+            "astro-guppy-s-name-tag",
+            null
+          ],
+          [
+            "experimental-treatment-240",
+            "astro-experimental-serum",
+            null
+          ],
+          [
+            "astro-red-cube",
+            "astro-black-cube",
+            null
+          ],
+          [
+            "sinus-infection-459",
+            "astro-acute-sinusitis",
+            null
+          ],
+          [
+            "champion-belt-208",
+            "astro-tyrant-s-belt",
+            null
+          ],
+          [
+            "rosary-72",
+            "luxury-rosary",
+            null
+          ],
+          [
+            "lead-pencil-444",
+            "astro-quill-pen",
+            null
+          ],
+          [
+            null,
+            "serpents-kiss-ex",
+            null
+          ],
+          [
+            "holy-light",
+            "astro-divine-light",
+            null
+          ],
+          [
+            "apple",
+            "astro-golden-apple",
+            null
+          ],
+          [
+            "tough-love",
+            "astro-gold-tooth",
+            null
+          ],
+          [
+            "the-mark-79",
+            "astro-777",
+            null
+          ],
+          [
+            "the-pact-80",
+            "astro-liberation",
+            null
+          ],
+          [
+            "marbles",
+            "astro-giant-marble",
+            null
+          ],
+          [
+            null,
+            "astro-water-balloon",
+            null
+          ],
+          [
+            "unholy-mantle",
+            "holy-mantle-313",
+            null
+          ],
+          [
+            "astro-fallen-orb",
+            "sacred-orb-691",
+            null
+          ],
+          [
+            "sacred-heart-182",
+            "astro-astro-sacred-heart",
+            null
+          ],
+          [
+            "godhead-331",
+            "astro-astro-godhead",
+            null
+          ],
+          [
+            "star-of-bethlehem-651",
+            "astro-star-of-bethlehem",
+            null
+          ],
+          [
+            "we-need-to-go-deeper-84",
+            "astro-we-need-to-go-astro",
+            null
+          ]
+        ]
+      },
+      "itemSources": [
+        "astro/collectibles/ex-upgrade.lua",
+        "astro/collectibles/reroll.lua"
+      ],
+      "relatedLinks": [
+        {
+          "href": "./index.html#item-upgrade",
+          "label": "업그레이드 사용 방법"
+        }
+      ]
+    },
+    {
+      "id": "planet-auto",
+      "title": "행성의 자동 업그레이드",
+      "body": "비밀방·일급 비밀방·천체관에서만 30% 판정합니다. 협동 플레이를 포함해 누군가 초행성을 보유하면 자동 변환하지 않습니다. 알비레오를 사용하는 직접 변환은 이 제한과 별개입니다.",
+      "open": true,
+      "keywords": "업글 업그레이드 확률 강화 대체 원본 Sol SOL EX Luna LUNA EX Mercurius MERCURIUS EX Venus VENUS EX Terra TERRA EX Mars MARS EX Jupiter JUPITER EX Saturnus SATURNUS EX Uranus URANUS EX Neptunus NEPTUNUS EX Pluto PLUTO EX",
+      "rewardTable": {
+        "caption": "행성의 자동 업그레이드 전체 목록",
+        "columns": [
+          "원본 아이템",
+          "강화 아이템",
+          "대체 확률"
+        ],
+        "rows": [
+          [
+            "태양",
+            "초 태양",
+            "30%"
+          ],
+          [
+            "달",
+            "초 달",
+            "30%"
+          ],
+          [
+            "수성",
+            "초 수성",
+            "30%"
+          ],
+          [
+            "금성",
+            "초 금성",
+            "30%"
+          ],
+          [
+            "지구",
+            "초 지구",
+            "30%"
+          ],
+          [
+            "화성",
+            "초 화성",
+            "30%"
+          ],
+          [
+            "목성",
+            "초 목성",
+            "30%"
+          ],
+          [
+            "토성",
+            "초 토성",
+            "30%"
+          ],
+          [
+            "천왕성",
+            "초 천왕성",
+            "30%"
+          ],
+          [
+            "해왕성",
+            "초 해왕성",
+            "30%"
+          ],
+          [
+            "명왕성",
+            "초 명왕성",
+            "30%"
+          ]
+        ],
+        "rowLinks": [
+          [
+            "sol-588",
+            "astro-sol-ex",
+            null
+          ],
+          [
+            "luna",
+            "astro-luna-ex",
+            null
+          ],
+          [
+            "mercurius",
+            "astro-mercurius-ex",
+            null
+          ],
+          [
+            "venus-591",
+            "astro-venus-ex",
+            null
+          ],
+          [
+            "terra-592",
+            "astro-terra-ex",
+            null
+          ],
+          [
+            "mars-593",
+            "astro-mars-ex",
+            null
+          ],
+          [
+            "jupiter-594",
+            "astro-jupiter-ex",
+            null
+          ],
+          [
+            "saturnus-595",
+            "astro-saturnus-ex",
+            null
+          ],
+          [
+            "uranus-596",
+            "astro-uranus-ex",
+            null
+          ],
+          [
+            "neptunus",
+            "astro-neptunus-ex",
+            null
+          ],
+          [
+            "pluto-598",
+            "astro-pluto-ex",
+            null
+          ]
+        ]
+      },
+      "itemSources": [
+        "astro/collectibles/ex-upgrade.lua",
+        "astro/collectibles/reroll.lua"
+      ],
+      "relatedLinks": [
+        {
+          "href": "./index.html#planet-upgrade",
+          "label": "업그레이드 사용 방법"
+        }
+      ]
+    },
+    {
+      "id": "manual-only",
+      "title": "자동 업그레이드가 없는 아이템",
+      "body": "아래 원본의 자동 업그레이드 확률은 0%입니다. 별자리는 알비레오, 4면 주사위는 주사위방에서의 사용으로 직접 변환합니다.",
+      "open": true,
+      "keywords": "업글 업그레이드 확률 강화 대체 원본 D4 Mega D4 Aquarius Aquarius EX Pisces Pisces EX Aries Aries EX Taurus Taurus EX Gemini Gemini EX Cancer Cancer EX Leo Leo EX Virgo Virgo EX Libra Libra EX Scorpio Scorpio EX Sagittarius Sagittarius EX Capricorn Capricorn EX",
+      "rewardTable": {
+        "caption": "자동 업그레이드가 없는 아이템 전체 목록",
+        "columns": [
+          "원본 아이템",
+          "강화 아이템",
+          "대체 확률"
+        ],
+        "rows": [
+          [
+            "4면 주사위",
+            "대왕 4면체 주사위",
+            "0%"
+          ],
+          [
+            "물병자리",
+            "초 물병자리",
+            "0%"
+          ],
+          [
+            "물고기자리",
+            "초 물고기자리",
+            "0%"
+          ],
+          [
+            "양자리",
+            "초 양자리",
+            "0%"
+          ],
+          [
+            "황소자리",
+            "초 황소자리",
+            "0%"
+          ],
+          [
+            "쌍둥이자리",
+            "초 쌍둥이자리",
+            "0%"
+          ],
+          [
+            "게자리",
+            "초 게자리",
+            "0%"
+          ],
+          [
+            "사자자리",
+            "초 사자자리",
+            "0%"
+          ],
+          [
+            "처녀자리",
+            "초 처녀자리",
+            "0%"
+          ],
+          [
+            "천칭자리",
+            "초 천칭자리",
+            "0%"
+          ],
+          [
+            "전갈자리",
+            "초 전갈자리",
+            "0%"
+          ],
+          [
+            "사수자리",
+            "초 사수자리",
+            "0%"
+          ],
+          [
+            "염소자리",
+            "초 염소자리",
+            "0%"
+          ]
+        ],
+        "rowLinks": [
+          [
+            "d4-284",
+            "astro-mega-d4",
+            null
+          ],
+          [
+            "aquarius",
+            "astro-aquarius-ex",
+            null
+          ],
+          [
+            "pisces-309",
+            "astro-pisces-ex",
+            null
+          ],
+          [
+            "aries",
+            "astro-aries-ex",
+            null
+          ],
+          [
+            null,
+            "astro-taurus-ex",
+            null
+          ],
+          [
+            "gemini-318",
+            "astro-gemini-ex",
+            null
+          ],
+          [
+            "cancer-301",
+            "astro-cancer-ex",
+            null
+          ],
+          [
+            null,
+            "astro-leo-ex",
+            null
+          ],
+          [
+            "virgo-303",
+            "astro-virgo-ex",
+            null
+          ],
+          [
+            null,
+            "astro-libra-ex",
+            null
+          ],
+          [
+            "scorpio-305",
+            "astro-scorpio-ex",
+            null
+          ],
+          [
+            "sagittarius-306",
+            "astro-sagittarius-ex",
+            null
+          ],
+          [
+            "capricorn-307",
+            "astro-capricorn-ex",
+            null
+          ]
+        ],
+        "note": "0%는 자동 대체가 없다는 뜻입니다. 직접 변환 방법은 입문 Q&A에 정리했습니다."
+      },
+      "itemSources": [
+        "astro/collectibles/ex-upgrade.lua",
+        "astro/collectibles/reroll.lua"
+      ],
+      "relatedLinks": [
+        {
+          "href": "./index.html#special-upgrades",
+          "label": "업그레이드 사용 방법"
+        }
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "original": {
+        "id": "death-s-list-530",
+        "title": "죽음의 살생부",
+        "name": "Death's List"
+      },
+      "target": {
+        "id": "astro-black-list",
+        "title": "블랙 리스트",
+        "name": "Black List"
+      },
+      "chance": 20,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_DEATHS_LIST",
+      "targetSymbol": "Astro.Collectible.BLACK_LIST"
+    },
+    {
+      "original": {
+        "id": "maw-of-the-void-399",
+        "title": "공허의 구렁텅이",
+        "name": "Maw of the Void"
+      },
+      "target": {
+        "id": "astro-maw-of-the-void-ex",
+        "title": "초 공허의 구렁텅이",
+        "name": "Maw Of The Void EX"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_MAW_OF_THE_VOID",
+      "targetSymbol": "Astro.Collectible.MAW_OF_THE_VOID_EX"
+    },
+    {
+      "original": {
+        "id": "black-candle-260",
+        "title": "검은 양초",
+        "name": "Black Candle"
+      },
+      "target": {
+        "id": "astro-purple-candle",
+        "title": "보라 양초",
+        "name": "Purple Candle"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_BLACK_CANDLE",
+      "targetSymbol": "Astro.Collectible.PURPLE_CANDLE"
+    },
+    {
+      "original": {
+        "id": "rocket-in-a-jar-583",
+        "title": "로켓 든 병",
+        "name": "Rocket in a Jar"
+      },
+      "target": {
+        "id": "astro-super-rocket-in-a-jar",
+        "title": "슈퍼 로켓 든 병",
+        "name": "Super Rocket in a Jar"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_ROCKET_IN_A_JAR",
+      "targetSymbol": "Astro.Collectible.SUPER_ROCKET_IN_A_JAR"
+    },
+    {
+      "original": {
+        "id": "humbleing-bundle-203",
+        "title": "험블 번들",
+        "name": "Humbleing Bundle"
+      },
+      "target": {
+        "id": "astro-steam-bundle",
+        "title": "스팀 번들",
+        "name": "Steam Bundle"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_HUMBLEING_BUNDLE",
+      "targetSymbol": "Astro.Collectible.STEAM_BUNDLE"
+    },
+    {
+      "original": {
+        "id": "lil-chest-362",
+        "title": "꼬마 상자",
+        "name": "Lil Chest"
+      },
+      "target": {
+        "id": "astro-big-chest",
+        "title": "큰 상자",
+        "name": "Big Chest"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_LIL_CHEST",
+      "targetSymbol": "Astro.Collectible.BIG_CHEST"
+    },
+    {
+      "original": {
+        "id": "cricket-s-head-4",
+        "title": "크리켓의 머리",
+        "name": "Cricket's Head"
+      },
+      "target": {
+        "id": "astro-max-s-head",
+        "title": "맥스의 머리",
+        "name": "Max's Head"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_CRICKETS_HEAD",
+      "targetSymbol": "Astro.Collectible.MAXS_HEAD"
+    },
+    {
+      "original": {
+        "id": "birthright",
+        "title": "생득권",
+        "name": "Birthright"
+      },
+      "target": {
+        "id": "astro-legacy",
+        "title": "유산",
+        "name": "Legacy"
+      },
+      "chance": 10,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_BIRTHRIGHT",
+      "targetSymbol": "Astro.Collectible.LEGACY"
+    },
+    {
+      "original": {
+        "id": "d4-284",
+        "title": "4면 주사위",
+        "name": "D4"
+      },
+      "target": {
+        "id": "astro-mega-d4",
+        "title": "대왕 4면체 주사위",
+        "name": "Mega D4"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_D4",
+      "targetSymbol": "Astro.Collectible.MEGA_D4",
+      "directMethod": "주사위방에서 4면 주사위를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": "the-d6-105",
+        "title": "주사위",
+        "name": "The D6"
+      },
+      "target": {
+        "id": "astro-mega-d6",
+        "title": "대왕 주사위",
+        "name": "Mega D6"
+      },
+      "chance": 10,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_D6",
+      "targetSymbol": "Astro.Collectible.MEGA_D6"
+    },
+    {
+      "original": {
+        "id": "d8-406",
+        "title": "8면 주사위",
+        "name": "D8"
+      },
+      "target": {
+        "id": "mega-d8",
+        "title": "대왕 8면체 주사위",
+        "name": "Mega D8"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_D8",
+      "targetSymbol": "Astro.Collectible.MEGA_D8"
+    },
+    {
+      "original": {
+        "id": "midas-touch-202",
+        "title": "미다스의 손길",
+        "name": "Midas' Touch"
+      },
+      "target": {
+        "id": "astro-marigold",
+        "title": "마리골드",
+        "name": "Marigold"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_MIDAS_TOUCH",
+      "targetSymbol": "Astro.Collectible.MARIGOLD"
+    },
+    {
+      "original": {
+        "id": "my-little-unicorn-77",
+        "title": "나의 작은 유니콘",
+        "name": "My Little Unicorn"
+      },
+      "target": {
+        "id": "astro-bicorn",
+        "title": "바이콘",
+        "name": "Bicorn"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_MY_LITTLE_UNICORN",
+      "targetSymbol": "Astro.Collectible.BICORN"
+    },
+    {
+      "original": {
+        "id": "euthanasia",
+        "title": "안락사",
+        "name": "Euthanasia"
+      },
+      "target": {
+        "id": "astro-life-sustaining-treatment",
+        "title": "연명치료",
+        "name": "Life-Sustaining Treatment"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_EUTHANASIA",
+      "targetSymbol": "Astro.Collectible.LIFE_SUSTAINING_TREATMENT"
+    },
+    {
+      "original": {
+        "id": "astro-amazing-chaos-scroll",
+        "title": "놀라운 혼돈의 주문서",
+        "name": "Amazing Chaos Scroll"
+      },
+      "target": {
+        "id": "astro-amazing-chaos-scroll-of-goodness",
+        "title": "놀라운 긍정의 혼돈의 주문서",
+        "name": "Amazing Chaos Scroll of Goodness"
+      },
+      "chance": 40,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "Astro.Collectible.AMAZING_CHAOS_SCROLL",
+      "targetSymbol": "Astro.Collectible.AMAZING_CHAOS_SCROLL_OF_GOODNESS"
+    },
+    {
+      "original": {
+        "id": "magic-mushroom-12",
+        "title": "마법의 버섯",
+        "name": "Magic Mushroom"
+      },
+      "target": {
+        "id": "astro-rainbow-mushroom",
+        "title": "무지개 버섯",
+        "name": "Rainbow Mushroom"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_MAGIC_MUSHROOM",
+      "targetSymbol": "Astro.Collectible.RAINBOW_MUSHROOM"
+    },
+    {
+      "original": {
+        "id": "hive-mind-248",
+        "title": "군체의식",
+        "name": "Hive Mind"
+      },
+      "target": {
+        "id": "astro-overmind",
+        "title": "초월체",
+        "name": "Overmind"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_HIVE_MIND",
+      "targetSymbol": "Astro.Collectible.OVERMIND"
+    },
+    {
+      "original": {
+        "id": "the-small-rock",
+        "title": "작은 돌",
+        "name": "The Small Rock"
+      },
+      "target": {
+        "id": "astro-david-s-stone",
+        "title": "다윗의 물맷돌",
+        "name": "David's Stone"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_SMALL_ROCK",
+      "targetSymbol": "Astro.Collectible.DAVIDS_STONE"
+    },
+    {
+      "original": {
+        "id": "guppy-s-collar-212",
+        "title": "구피의 목걸이",
+        "name": "Guppy's Collar"
+      },
+      "target": {
+        "id": "astro-guppy-s-name-tag",
+        "title": "구피의 이름표",
+        "name": "Guppy's Name Tag"
+      },
+      "chance": 70,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_GUPPYS_COLLAR",
+      "targetSymbol": "Astro.Collectible.GUPPYS_NAME_TAG"
+    },
+    {
+      "original": {
+        "id": "experimental-treatment-240",
+        "title": "임상시험",
+        "name": "Experimental Treatment"
+      },
+      "target": {
+        "id": "astro-experimental-serum",
+        "title": "실험용 혈청",
+        "name": "Experimental Serum"
+      },
+      "chance": 70,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_EXPERIMENTAL_TREATMENT",
+      "targetSymbol": "Astro.Collectible.EXPERIMENTAL_SERUM"
+    },
+    {
+      "original": {
+        "id": "astro-red-cube",
+        "title": "레드 큐브",
+        "name": "Red Cube"
+      },
+      "target": {
+        "id": "astro-black-cube",
+        "title": "블랙 큐브",
+        "name": "Black Cube"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "Astro.Collectible.RED_CUBE",
+      "targetSymbol": "Astro.Collectible.BLACK_CUBE"
+    },
+    {
+      "original": {
+        "id": "sinus-infection-459",
+        "title": "축농증",
+        "name": "Sinus Infection"
+      },
+      "target": {
+        "id": "astro-acute-sinusitis",
+        "title": "급성 부비동염",
+        "name": "Acute Sinusitis"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_SINUS_INFECTION",
+      "targetSymbol": "Astro.Collectible.ACUTE_SINUSITIS"
+    },
+    {
+      "original": {
+        "id": "champion-belt-208",
+        "title": "챔피언 벨트",
+        "name": "Champion Belt"
+      },
+      "target": {
+        "id": "astro-tyrant-s-belt",
+        "title": "폭군의 허리띠",
+        "name": "Tyrant’s Belt"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_CHAMPION_BELT",
+      "targetSymbol": "Astro.Collectible.TYRANTS_BELT"
+    },
+    {
+      "original": {
+        "id": "rosary-72",
+        "title": "묵주",
+        "name": "Rosary"
+      },
+      "target": {
+        "id": "luxury-rosary",
+        "title": "명품 묵주",
+        "name": "Luxury Rosary"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_ROSARY",
+      "targetSymbol": "Astro.Collectible.LUXURY_ROSARY"
+    },
+    {
+      "original": {
+        "id": "lead-pencil-444",
+        "title": "연필",
+        "name": "Lead Pencil"
+      },
+      "target": {
+        "id": "astro-quill-pen",
+        "title": "깃펜",
+        "name": "Quill Pen"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_LEAD_PENCIL",
+      "targetSymbol": "Astro.Collectible.QUILL_PEN"
+    },
+    {
+      "original": {
+        "id": null,
+        "title": "독뱀의 키스",
+        "name": "Serpent's Kiss"
+      },
+      "target": {
+        "id": "serpents-kiss-ex",
+        "title": "초 독뱀의 키스",
+        "name": "Serpent's Kiss EX"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_SERPENTS_KISS",
+      "targetSymbol": "Astro.Collectible.SERPENTS_KISS_EX"
+    },
+    {
+      "original": {
+        "id": "holy-light",
+        "title": "신성한 빛",
+        "name": "Holy Light"
+      },
+      "target": {
+        "id": "astro-divine-light",
+        "title": "신의 조명",
+        "name": "Divine Light"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_HOLY_LIGHT",
+      "targetSymbol": "Astro.Collectible.DIVINE_LIGHT"
+    },
+    {
+      "original": {
+        "id": "apple",
+        "title": "사과!",
+        "name": "Apple!"
+      },
+      "target": {
+        "id": "astro-golden-apple",
+        "title": "황금 사과",
+        "name": "Golden Apple"
+      },
+      "chance": 20,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_APPLE",
+      "targetSymbol": "Astro.Collectible.GOLDEN_APPLE"
+    },
+    {
+      "original": {
+        "id": "tough-love",
+        "title": "사랑의 매",
+        "name": "Tough Love"
+      },
+      "target": {
+        "id": "astro-gold-tooth",
+        "title": "금이빨",
+        "name": "Gold Tooth"
+      },
+      "chance": 20,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_TOUGH_LOVE",
+      "targetSymbol": "Astro.Collectible.GOLD_TOOTH"
+    },
+    {
+      "original": {
+        "id": "the-mark-79",
+        "title": "낙인",
+        "name": "The Mark"
+      },
+      "target": {
+        "id": "astro-777",
+        "title": "777",
+        "name": "777"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_MARK",
+      "targetSymbol": "Astro.Collectible.SEVEN_SEVEN_SEVEN"
+    },
+    {
+      "original": {
+        "id": "the-pact-80",
+        "title": "계약",
+        "name": "The Pact"
+      },
+      "target": {
+        "id": "astro-liberation",
+        "title": "해방",
+        "name": "Liberation"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_PACT",
+      "targetSymbol": "Astro.Collectible.LIBERATION"
+    },
+    {
+      "original": {
+        "id": "marbles",
+        "title": "구슬",
+        "name": "Marbles"
+      },
+      "target": {
+        "id": "astro-giant-marble",
+        "title": "Giant Marble",
+        "name": "Giant Marble"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_MARBLES",
+      "targetSymbol": "Astro.Collectible.GIANT_MARBLE"
+    },
+    {
+      "original": {
+        "id": null,
+        "title": "봄버맨",
+        "name": "Bomber Boy"
+      },
+      "target": {
+        "id": "astro-water-balloon",
+        "title": "물풍선",
+        "name": "Water Balloon"
+      },
+      "chance": 80,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_BOMBER_BOY",
+      "targetSymbol": "Astro.Collectible.WATER_BALLOON"
+    },
+    {
+      "original": {
+        "id": "unholy-mantle",
+        "title": "불경스런 망토",
+        "name": "Unholy Mantle"
+      },
+      "target": {
+        "id": "holy-mantle-313",
+        "title": "신성한 망토",
+        "name": "Holy Mantle"
+      },
+      "chance": 10,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "Astro.Collectible.UNHOLY_MANTLE",
+      "targetSymbol": "CollectibleType.COLLECTIBLE_HOLY_MANTLE"
+    },
+    {
+      "original": {
+        "id": "astro-fallen-orb",
+        "title": "타락한 오브",
+        "name": "Fallen Orb"
+      },
+      "target": {
+        "id": "sacred-orb-691",
+        "title": "성스러운 오브",
+        "name": "Sacred Orb"
+      },
+      "chance": 10,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "Astro.Collectible.FALLEN_ORB",
+      "targetSymbol": "CollectibleType.COLLECTIBLE_SACRED_ORB"
+    },
+    {
+      "original": {
+        "id": "aquarius",
+        "title": "물병자리",
+        "name": "Aquarius"
+      },
+      "target": {
+        "id": "astro-aquarius-ex",
+        "title": "초 물병자리",
+        "name": "Aquarius EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_AQUARIUS",
+      "targetSymbol": "Astro.Collectible.AQUARIUS_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": "pisces-309",
+        "title": "물고기자리",
+        "name": "Pisces"
+      },
+      "target": {
+        "id": "astro-pisces-ex",
+        "title": "초 물고기자리",
+        "name": "Pisces EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_PISCES",
+      "targetSymbol": "Astro.Collectible.PISCES_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": "aries",
+        "title": "양자리",
+        "name": "Aries"
+      },
+      "target": {
+        "id": "astro-aries-ex",
+        "title": "초 양자리",
+        "name": "Aries EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_ARIES",
+      "targetSymbol": "Astro.Collectible.ARIES_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": null,
+        "title": "황소자리",
+        "name": "Taurus"
+      },
+      "target": {
+        "id": "astro-taurus-ex",
+        "title": "초 황소자리",
+        "name": "Taurus EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_TAURUS",
+      "targetSymbol": "Astro.Collectible.TAURUS_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": "gemini-318",
+        "title": "쌍둥이자리",
+        "name": "Gemini"
+      },
+      "target": {
+        "id": "astro-gemini-ex",
+        "title": "초 쌍둥이자리",
+        "name": "Gemini EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_GEMINI",
+      "targetSymbol": "Astro.Collectible.GEMINI_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": "cancer-301",
+        "title": "게자리",
+        "name": "Cancer"
+      },
+      "target": {
+        "id": "astro-cancer-ex",
+        "title": "초 게자리",
+        "name": "Cancer EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_CANCER",
+      "targetSymbol": "Astro.Collectible.CANCER_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": null,
+        "title": "사자자리",
+        "name": "Leo"
+      },
+      "target": {
+        "id": "astro-leo-ex",
+        "title": "초 사자자리",
+        "name": "Leo EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_LEO",
+      "targetSymbol": "Astro.Collectible.LEO_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": "virgo-303",
+        "title": "처녀자리",
+        "name": "Virgo"
+      },
+      "target": {
+        "id": "astro-virgo-ex",
+        "title": "초 처녀자리",
+        "name": "Virgo EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_VIRGO",
+      "targetSymbol": "Astro.Collectible.VIRGO_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": null,
+        "title": "천칭자리",
+        "name": "Libra"
+      },
+      "target": {
+        "id": "astro-libra-ex",
+        "title": "초 천칭자리",
+        "name": "Libra EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_LIBRA",
+      "targetSymbol": "Astro.Collectible.LIBRA_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": "scorpio-305",
+        "title": "전갈자리",
+        "name": "Scorpio"
+      },
+      "target": {
+        "id": "astro-scorpio-ex",
+        "title": "초 전갈자리",
+        "name": "Scorpio EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_SCORPIO",
+      "targetSymbol": "Astro.Collectible.SCORPIO_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": "sagittarius-306",
+        "title": "사수자리",
+        "name": "Sagittarius"
+      },
+      "target": {
+        "id": "astro-sagittarius-ex",
+        "title": "초 사수자리",
+        "name": "Sagittarius EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_SAGITTARIUS",
+      "targetSymbol": "Astro.Collectible.SAGITTARIUS_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": "capricorn-307",
+        "title": "염소자리",
+        "name": "Capricorn"
+      },
+      "target": {
+        "id": "astro-capricorn-ex",
+        "title": "초 염소자리",
+        "name": "Capricorn EX"
+      },
+      "chance": 0,
+      "group": "manual-only",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_CAPRICORN",
+      "targetSymbol": "Astro.Collectible.CAPRICORN_EX",
+      "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
+    },
+    {
+      "original": {
+        "id": "sacred-heart-182",
+        "title": "성스러운 심장",
+        "name": "Sacred Heart"
+      },
+      "target": {
+        "id": "astro-astro-sacred-heart",
+        "title": "광휘로운 심장",
+        "name": "Astro Sacred Heart"
+      },
+      "chance": 10,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_SACRED_HEART",
+      "targetSymbol": "Astro.Collectible.ASTRO_SACRED_HEART"
+    },
+    {
+      "original": {
+        "id": "godhead-331",
+        "title": "신",
+        "name": "Godhead"
+      },
+      "target": {
+        "id": "astro-astro-godhead",
+        "title": "우주신",
+        "name": "Astro Godhead"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_GODHEAD",
+      "targetSymbol": "Astro.Collectible.ASTRO_GODHEAD"
+    },
+    {
+      "original": {
+        "id": "star-of-bethlehem-651",
+        "title": "베들레헴의 별",
+        "name": "Star of Bethlehem"
+      },
+      "target": {
+        "id": "astro-star-of-bethlehem",
+        "title": "베들레헴의 한별",
+        "name": "Astro Star of Bethlehem"
+      },
+      "chance": 40,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_STAR_OF_BETHLEHEM",
+      "targetSymbol": "Astro.Collectible.ASTRO_STAR_OF_BETHLEHEM"
+    },
+    {
+      "original": {
+        "id": "we-need-to-go-deeper-84",
+        "title": "더 깊이 내려가야 해!",
+        "name": "We Need To Go Deeper!"
+      },
+      "target": {
+        "id": "astro-we-need-to-go-astro",
+        "title": "더 깊은 한울로!",
+        "name": "We Need To Go Astro!"
+      },
+      "chance": 50,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_WE_NEED_TO_GO_DEEPER",
+      "targetSymbol": "Astro.Collectible.WE_NEED_TO_GO_DEEPER_ASTRO"
+    },
+    {
+      "original": {
+        "id": "sol-588",
+        "title": "태양",
+        "name": "Sol"
+      },
+      "target": {
+        "id": "astro-sol-ex",
+        "title": "초 태양",
+        "name": "SOL EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_SOL",
+      "targetSymbol": "Astro.Collectible.SOL_EX"
+    },
+    {
+      "original": {
+        "id": "luna",
+        "title": "달",
+        "name": "Luna"
+      },
+      "target": {
+        "id": "astro-luna-ex",
+        "title": "초 달",
+        "name": "LUNA EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_LUNA",
+      "targetSymbol": "Astro.Collectible.LUNA_EX"
+    },
+    {
+      "original": {
+        "id": "mercurius",
+        "title": "수성",
+        "name": "Mercurius"
+      },
+      "target": {
+        "id": "astro-mercurius-ex",
+        "title": "초 수성",
+        "name": "MERCURIUS EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_MERCURIUS",
+      "targetSymbol": "Astro.Collectible.MERCURIUS_EX"
+    },
+    {
+      "original": {
+        "id": "venus-591",
+        "title": "금성",
+        "name": "Venus"
+      },
+      "target": {
+        "id": "astro-venus-ex",
+        "title": "초 금성",
+        "name": "VENUS EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_VENUS",
+      "targetSymbol": "Astro.Collectible.VENUS_EX"
+    },
+    {
+      "original": {
+        "id": "terra-592",
+        "title": "지구",
+        "name": "Terra"
+      },
+      "target": {
+        "id": "astro-terra-ex",
+        "title": "초 지구",
+        "name": "TERRA EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_TERRA",
+      "targetSymbol": "Astro.Collectible.TERRA_EX"
+    },
+    {
+      "original": {
+        "id": "mars-593",
+        "title": "화성",
+        "name": "Mars"
+      },
+      "target": {
+        "id": "astro-mars-ex",
+        "title": "초 화성",
+        "name": "MARS EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_MARS",
+      "targetSymbol": "Astro.Collectible.MARS_EX"
+    },
+    {
+      "original": {
+        "id": "jupiter-594",
+        "title": "목성",
+        "name": "Jupiter"
+      },
+      "target": {
+        "id": "astro-jupiter-ex",
+        "title": "초 목성",
+        "name": "JUPITER EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_JUPITER",
+      "targetSymbol": "Astro.Collectible.JUPITER_EX"
+    },
+    {
+      "original": {
+        "id": "saturnus-595",
+        "title": "토성",
+        "name": "Saturnus"
+      },
+      "target": {
+        "id": "astro-saturnus-ex",
+        "title": "초 토성",
+        "name": "SATURNUS EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_SATURNUS",
+      "targetSymbol": "Astro.Collectible.SATURNUS_EX"
+    },
+    {
+      "original": {
+        "id": "uranus-596",
+        "title": "천왕성",
+        "name": "Uranus"
+      },
+      "target": {
+        "id": "astro-uranus-ex",
+        "title": "초 천왕성",
+        "name": "URANUS EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_URANUS",
+      "targetSymbol": "Astro.Collectible.URANUS_EX"
+    },
+    {
+      "original": {
+        "id": "neptunus",
+        "title": "해왕성",
+        "name": "Neptunus"
+      },
+      "target": {
+        "id": "astro-neptunus-ex",
+        "title": "초 해왕성",
+        "name": "NEPTUNUS EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_NEPTUNUS",
+      "targetSymbol": "Astro.Collectible.NEPTUNUS_EX"
+    },
+    {
+      "original": {
+        "id": "pluto-598",
+        "title": "명왕성",
+        "name": "Pluto"
+      },
+      "target": {
+        "id": "astro-pluto-ex",
+        "title": "초 명왕성",
+        "name": "PLUTO EX"
+      },
+      "chance": 30,
+      "group": "planet-auto",
+      "condition": "비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.",
+      "sourceTable": "PLANET_UPGRADE_LIST",
+      "originalSymbol": "CollectibleType.COLLECTIBLE_PLUTO",
+      "targetSymbol": "Astro.Collectible.PLUTO_EX"
+    }
+  ],
+  "directPatterns": [
+    {
+      "targetId": "astro-scales-of-obedience",
+      "original": "천칭자리",
+      "condition": "검은 양초를 소지하고 방 바닥의 천칭자리에 버리기 버튼을 길게 누릅니다. 검은 양초를 소모합니다.",
+      "qaId": "upgrade-combinations"
+    },
+    {
+      "targetId": "astro-artifact-ignition",
+      "original": "서큐버스",
+      "condition": "혼돈을 소지하고 방 바닥의 서큐버스에 버리기 버튼을 길게 누릅니다.",
+      "qaId": "upgrade-combinations"
+    },
+    {
+      "targetId": "astro-legacy",
+      "original": "생득권",
+      "condition": "변신 세트 아이템 합계 6개 이상을 소지하고 방 바닥의 생득권에 버리기 버튼을 길게 누릅니다.",
+      "qaId": "upgrade-combinations"
+    },
+    {
+      "targetId": "astro-blighted-guppy",
+      "original": "구피 세트 아이템",
+      "condition": "구피 변신과 썩은 하트를 갖춘 뒤 방 바닥의 구피 아이템에 버리기 버튼을 길게 누릅니다.",
+      "qaId": "upgrade-combinations"
+    },
+    {
+      "targetId": "astro-brimstone-guppy",
+      "original": "구피 세트 아이템",
+      "condition": "구피 변신과 유황불을 갖춘 뒤 방 바닥의 구피 아이템에 버리기 버튼을 길게 누릅니다.",
+      "qaId": "upgrade-combinations"
+    },
+    {
+      "targetId": "astro-divine-guppy",
+      "original": "구피 세트 아이템",
+      "condition": "구피 변신과 이터널 하트를 갖춘 뒤 방 바닥의 구피 아이템에 버리기 버튼을 길게 누릅니다.",
+      "qaId": "upgrade-combinations"
+    },
+    {
+      "targetId": "astro-golden-guppy",
+      "original": "구피 세트 아이템",
+      "condition": "구피 변신 상태에서 황금 하트 개수가 줄어들 때 방 바닥의 구피 아이템을 변환합니다.",
+      "qaId": "special-upgrades"
+    },
+    {
+      "targetId": "astro-skeleton-guppy",
+      "original": "구피 세트 아이템",
+      "condition": "구피 변신 상태에서 뼈 하트 개수가 줄어들 때 방 바닥의 구피 아이템을 변환합니다.",
+      "qaId": "special-upgrades"
+    },
+    {
+      "targetId": "astro-p-key",
+      "original": "R 키",
+      "condition": "R 키를 소지하고 P 키를 누르면 R 키를 소모하고 P키를 바닥에 생성합니다.",
+      "qaId": "special-upgrades"
+    },
+    {
+      "targetId": "astro-marigold",
+      "original": "미다스의 손길",
+      "condition": "미다스의 손길을 소지하거나 방 바닥에 둔 상태에서 꿀꺽! 알약 또는 용광로를 사용합니다.",
+      "qaId": "special-upgrades"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
   const clear = document.getElementById('clear-global-search');
   const more = document.getElementById('more-search-results');
   const retry = document.getElementById('retry-global-search');
-  const pages = {index: '입문 Q&A', rules: '전체 규칙', items: '아이템 가이드', players: '캐릭터 가이드'};
+  const pages = {index: '입문 Q&A', rules: '전체 규칙', items: '아이템 가이드', upgrades: '업그레이드 확률', players: '캐릭터 가이드'};
   const normalize = value => value.normalize('NFKC').toLocaleLowerCase('ko')
     .replace(/[’']/g, '').replace(/\s+/g, ' ').trim();
   let indexPromise, records, matches = [], shown = 0, request = 0, previousFocus;
@@ -91,7 +91,7 @@
     more.hidden = retry.hidden = true;
     if (!query) {
       matches = [];
-      status.textContent = 'Q&A·전체 규칙·아이템·캐릭터를 검색합니다.';
+      status.textContent = 'Q&A·전체 규칙·아이템·캐릭터·업그레이드를 검색합니다.';
       message('이름이나 궁금한 규칙을 입력해 주세요.');
       return false;
     }

@@ -20,6 +20,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 from xml.etree import ElementTree
 from guide_presentation import compact_entry
+from guide_upgrades import apply_upgrade_notes, relation_text
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,6 +49,12 @@ QA_TITLES = {
     "lost-shield": "로스트는 보호막만 깨져도 능력치가 떨어지나요?",
     "champions": "왜 색이 다른 적들이 이렇게 많나요?",
     "pause": "중요한 보스전에서 일시정지가 제한되는 이유",
+}
+UPGRADE_QA_TITLES = {
+    "item-upgrade": "아이템이 다른 모습으로 업그레이드되어 나와요",
+    "planet-upgrade": "행성과 별자리는 어떻게 초 아이템이 되나요?",
+    "upgrade-combinations": "Ctrl을 길게 누르면 아이템을 업그레이드할 수 있나요?",
+    "special-upgrades": "주사위나 구피 아이템도 직접 업그레이드할 수 있나요?",
 }
 CODE_URL = re.compile(
     r"https?://(?:github\.com/[^/\s\"<>]+/[^/\s\"<>]+/(?:blob|tree)/"
@@ -163,6 +170,8 @@ class Verification:
         path = path.resolve()
         if path not in self.json_cache:
             self.json_cache[path] = json.loads(path.read_text(encoding="utf-8"))
+            if path.name == "items-content.json":
+                apply_upgrade_notes(self.json_cache[path], self.load_json(DOCS / "upgrades-content.json"))
         return self.json_cache[path]
 
     def local_url(self, source, value, check_hash=True):
@@ -282,6 +291,8 @@ class Verification:
             return
         node = nodes[0]
         self.entry_count += 1
+        for relation in entry.get("upgradeRelations", []):
+            self.require(normalized(relation_text(relation)).replace(" ", "") in node.text().replace(" ", ""), f"{label}: 원본 아이템·강화 확률·조건이 누락되었습니다.")
         for change in entry.get("configChanges", []):
             rows = [n for n in node.nodes() if n.has_class("fact-row") and any(normalized(change["label"]) == label.text() for label in n.nodes("dt"))]
             if self.require(bool(rows), f"{label}: 변경 값 요약이 없습니다: {change['label']}"):
@@ -345,8 +356,9 @@ class Verification:
         guide = self.load_json(DOCS / "guide-content.json")
         qa = [e for s in guide["sections"] for e in s["entries"]]
         qa_by_id = {e["id"]: e for e in qa}
-        self.require(len(qa) == 21, "입문 Q&A는 21개를 유지해야 합니다.")
-        self.require({e["id"]: e["title"] for e in qa} == QA_TITLES, "입문 Q&A 제목 또는 항목이 ce55086 복원 기준과 다릅니다.")
+        expected_titles = QA_TITLES | UPGRADE_QA_TITLES
+        self.require(len(qa) == len(expected_titles), "입문 Q&A는 기존 21개와 업그레이드 4개를 포함해야 합니다.")
+        self.require({e["id"]: e["title"] for e in qa} == expected_titles, "기존 입문 Q&A 또는 업그레이드 질문 제목·항목이 검토 기준과 다릅니다.")
         baseline = subprocess.run(["git", "show", f"{QA_REVISION}:docs/guide-content.json"], cwd=ROOT, capture_output=True, text=True)
         if baseline.returncode == 0:
             historical = json.loads(baseline.stdout)
@@ -710,7 +722,7 @@ class Verification:
         index = self.load_json(path)
         self.require(index.get("schema") == 1, "통합 검색 자료 형식이 다릅니다.")
         expected = {}
-        for page, source in [("index", "guide"), ("rules", "rules"), ("items", "items"), ("players", "players")]:
+        for page, source in [("index", "guide"), ("rules", "rules"), ("items", "items"), ("upgrades", "upgrades"), ("players", "players")]:
             content = self.load_json(DOCS / (source + "-content.json"))
             entries = content["entries"] + content.get("sharedNotes", []) if "entries" in content else [entry for section in content["sections"] for entry in section["entries"]]
             if page == "items":
@@ -721,7 +733,7 @@ class Verification:
         actual = {record.get("href"): record.get("title") for record in records}
         self.require(actual == expected and len(records) == len(expected), "통합 검색에서 설명이 누락되거나 중복되었습니다.")
         for record in records:
-            self.require(record.get("page") in {"index", "rules", "items", "players"}, "방 변경사항은 통합 검색에서 제외해야 합니다.")
+            self.require(record.get("page") in {"index", "rules", "items", "upgrades", "players"}, "방 변경사항은 통합 검색에서 제외해야 합니다.")
             self.require(set(record) <= {"page", "title", "href", "description", "name", "keywords", "text", "image"}, "통합 검색에 내부 근거 필드가 포함되었습니다.")
             if record.get("page") == "items":
                 self.require("배열별 등장 설정 변경" not in record.get("text", ""), "통합 검색에 내부 배열 표가 포함되었습니다.")
@@ -738,6 +750,28 @@ class Verification:
             if self.require(len(dialogs) == 1, f"{page.path.name}: 공통 검색 창이 없습니다."):
                 self.local_url(page.path, dialogs[0].attrs["data-index"], False)
 
+    def upgrade_checks(self):
+        upgrades = self.load_json(DOCS / "upgrades-content.json")
+        guide = self.load_json(DOCS / "guide-content.json")
+        self.require(upgrades["commit"] == guide["sources"]["Astro-Items"], "업그레이드 확률의 기준 커밋이 가이드와 다릅니다.")
+        patterns = upgrades["patterns"]
+        self.require(Counter(p["group"] for p in patterns) == {"standard-auto": 38, "planet-auto": 11, "manual-only": 13}, "업그레이드 전체 목록에서 패턴이 누락되거나 중복되었습니다.")
+        self.require(len({p["originalSymbol"] for p in patterns}) == len(patterns), "행성의 별도 판정을 포함해 동일 원본의 업그레이드가 중복되었습니다.")
+        for entry in upgrades["entries"]:
+            expected = [[p["original"]["title"], p["target"]["title"], str(p["chance"]) + "%"] for p in patterns if p["group"] == entry["id"]]
+            self.require(entry["rewardTable"]["rows"] == expected, "업그레이드 확률 표와 각 아이템의 관계가 다릅니다.")
+        self.committed_hashes([{"project": "Astro-Items", "file": "astro/collectibles/ex-upgrade.lua", "sha256": upgrades["sourceSHA256"]}], guide["sources"])
+        item_records = {e["id"]: e for e in self.load_json(DOCS / "items-content.json")["entries"]}
+        search = {e["href"]: e for e in self.load_json(DOCS / "search-index.json")["entries"]}
+        for pattern in patterns:
+            self.require(pattern["target"]["id"] in item_records, "업그레이드 결과의 아이템 카드가 없습니다.")
+            if pattern["group"] == "planet-auto":
+                self.require(pattern["chance"] == 30 and bool(pattern["condition"]), "초행성의 30% 확률 또는 방·보유 조건이 누락되었습니다.")
+        for item in item_records.values():
+            for relation in item.get("upgradeRelations", []):
+                result = search.get("./items.html#" + item["id"], {})
+                self.require(normalized(relation_text(relation)).replace(" ", "") in normalized(result.get("text", "")).replace(" ", ""), f"{item['id']}: 통합 검색에 업그레이드 관계가 없습니다.")
+
     def run(self):
         self.page_checks()
         self.content_checks()
@@ -748,6 +782,7 @@ class Verification:
         self.player_sprite_checks()
         self.added_item_checks()
         self.search_checks()
+        self.upgrade_checks()
         if self.errors:
             print(f"가이드 검증 실패: {len(self.errors)}개 오류", file=sys.stderr)
             for error in self.errors[:60]:
@@ -756,7 +791,7 @@ class Verification:
                 print(f"- 나머지 {len(self.errors) - 60}개 오류는 생략했습니다.", file=sys.stderr)
             return 1
         print(f"가이드 검증 통과: HTML {len(self.pages)}개, 항목 {self.entry_count}개, 표 {self.table_count}개, 방 프리셋 {self.room_count}개")
-        print(f"Q&A 21개 제목({QA_REVISION}), Perfection 공유 6그룹·보상 9행, 로컬 링크·이미지·근거 주석 확인")
+        print(f"기존 Q&A 21개 제목({QA_REVISION})·업그레이드 Q&A 4개, Perfection 공유 6그룹·보상 9행, 로컬 링크·이미지·근거 주석 확인")
         print(f"검토 목록 연결·수치 및 출처 커밋의 파일 해시 {self.source_hash_count}개 확인")
         print(f"통합 검색 {self.search_count}개 설명·링크·이미지 확인, 방 자체 검색 유지")
         return 0

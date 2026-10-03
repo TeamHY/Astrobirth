@@ -6,11 +6,14 @@ import json
 from html.parser import HTMLParser
 from pathlib import Path
 from guide_presentation import compact_entry
+from guide_upgrades import apply_upgrade_notes, relation_text
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / 'docs'
 data = json.loads((DOCS / 'guide-content.json').read_text(encoding='utf-8'))
 items = json.loads((DOCS / 'items-content.json').read_text(encoding='utf-8'))
+upgrades = json.loads((DOCS / 'upgrades-content.json').read_text(encoding='utf-8'))
+apply_upgrade_notes(items, upgrades)
 players = json.loads((DOCS / 'players-content.json').read_text(encoding='utf-8'))
 rules = json.loads((DOCS / 'rules-content.json').read_text(encoding='utf-8'))
 room_data = json.loads((DOCS / 'rooms-content.json').read_text(encoding='utf-8'))
@@ -29,6 +32,7 @@ for entry in items['entries']:
     entry['changeKinds'] = [kind for kind in entry.get('changeKinds', ['effect']) if kind != 'pool']
 items['entries'] = [compact_entry(entry) for entry in items['entries']]
 players['entries'] = [compact_entry(entry, players=True) for entry in players['entries']]
+visible_item_ids = {entry['id'] for entry in items['entries']}
 
 
 def icon_image(key, named=False):
@@ -121,8 +125,23 @@ def permalink(entry):
     return f'''<a class="permalink" href="#{entry['id']}" aria-label="{label}" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a>'''
 
 
+def upgrade_notes(entry):
+    notes = []
+    for relation in entry.get('upgradeRelations', []):
+        text = esc(relation_text(relation))
+        item = relation['item']
+        if item.get('id') in visible_item_ids:
+            name = esc(item['title'])
+            text = text.replace(name, f'<a href="./items.html#{esc(item["id"], quote=True)}">{name}</a>', 1)
+        notes.append('<p class="catalog-upgrade">' + text + ' <a class="upgrade-conditions" href="' + esc(relation['href'], quote=True) + '">확률·조건 보기 ↗</a></p>')
+    return ''.join(notes)
+
+
+
 def body(entry, include_body=True, include_facts=True):
     parts = [f'<p>{esc(entry["body"])}</p>'] if include_body else []
+    if include_body:
+        parts.append(upgrade_notes(entry))
     parts.append(eid_effects(entry.get('eidEffects', [])))
     if include_facts:
         parts.append(catalog_facts(entry))
@@ -136,7 +155,18 @@ def body(entry, include_body=True, include_facts=True):
         if not table:
             continue
         headers = ''.join(f'<th scope="col">{esc(column)}</th>' for column in table['columns'])
-        rows = ''.join('<tr><th scope="row">' + esc(row[0]) + '</th>' + ''.join(f'<td>{esc(cell)}</td>' for cell in row[1:]) + '</tr>' for row in table['rows'])
+        rows = []
+        for index, row in enumerate(table['rows']):
+            cells = []
+            row_links = table.get('rowLinks', [])
+            for column, cell in enumerate(row):
+                text = esc(cell)
+                target = row_links[index][column] if row_links else None
+                if target in visible_item_ids:
+                    text = f'<a href="./items.html#{esc(target, quote=True)}">{text}</a>'
+                cells.append(('<th scope="row">' if column == 0 else '<td>') + text + ('</th>' if column == 0 else '</td>'))
+            rows.append('<tr>' + ''.join(cells) + '</tr>')
+        rows = ''.join(rows)
         parts.append(f'<table class="reward-table"><caption>{esc(table["caption"])}</caption><thead><tr>{headers}</tr></thead><tbody>{rows}</tbody></table>')
         if table.get('note'):
             parts.append(f'<p class="table-note">{esc(table["note"])}</p>')
@@ -167,7 +197,7 @@ def body(entry, include_body=True, include_facts=True):
 def write_page(page, title, description, content, script):
     page_nav = '<nav class="page-nav" aria-label="가이드 페이지">' + ''.join(
         f'<a href="./{key}.html' + ('#overview' if key == 'index' else '') + '"' + (' aria-current="page"' if key == page else '') + f'>{esc(label)}</a>'
-        for key, label in [('index', '입문 Q&A'), ('rules', '전체 규칙'), ('items', '아이템 가이드'), ('players', '캐릭터 가이드'), ('rooms', '방 변경사항')]) + '</nav>'
+        for key, label in [('index', '입문 Q&A'), ('rules', '전체 규칙'), ('items', '아이템 가이드'), ('upgrades', '업그레이드 확률'), ('players', '캐릭터 가이드'), ('rooms', '방 변경사항')]) + '</nav>'
     replacements = {'PAGE_TITLE': esc(title), 'DESCRIPTION': esc(description, quote=True),
                     'PAGE_NAV': page_nav, 'CONTENT': content, 'PAGE_KEY': page,
                     'REVIEWED': data['reviewed'], 'VERSION': data['version'],
@@ -214,7 +244,7 @@ class VisibleText(HTMLParser):
 def build_search_index():
     # Index reader-facing content only. Source comments and agent notes are excluded.
     entries = []
-    for page, content in [('index', data), ('rules', rules), ('items', items), ('players', players)]:
+    for page, content in [('index', data), ('rules', rules), ('items', items), ('upgrades', upgrades), ('players', players)]:
         records = content['entries'] + content.get('sharedNotes', []) if 'entries' in content else [entry for section in content['sections'] for entry in section['entries']]
         for entry in records:
             detail = catalog_details(entry) if page in ('items', 'players') else entry
@@ -300,7 +330,7 @@ def render_catalog(page, catalog, kinds, title, subtitle):
         description = f'<p class="catalog-description">{esc(entry["body"])}</p>' if entry.get('body') else ''
         effects = eid_effects(entry.get('eidEffects', []), preview=True)
         image_label = entry['title'] + (' 캐릭터' if is_players else ' 원본 이미지 미등록' if entry.get('imagePlaceholder') else ' 아이콘')
-        cards.append(f'''<article class="catalog-card{' player-card' if is_players else ''}" id="{entry['id']}" data-kind="{kind}"{origin_attribute} data-changes="{esc(' '.join(entry.get('changeKinds', ['effect'])), quote=True)}" data-keywords="{esc(entry.get('keywords',''), quote=True)}"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./{esc(entry['image'])}" alt="{esc(image_label, quote=True)}" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">{esc(tag)}</span><h2 class="catalog-title-row"><span>{esc(entry['title'])}</span>{permalink(entry)}</h2><p class="english-name">{esc(entry['name'])}</p></div></div>{scene}{description}{effects}{catalog_facts(entry)}{details}</article>''')
+        cards.append(f'''<article class="catalog-card{' player-card' if is_players else ''}" id="{entry['id']}" data-kind="{kind}"{origin_attribute} data-changes="{esc(' '.join(entry.get('changeKinds', ['effect'])), quote=True)}" data-keywords="{esc(entry.get('keywords',''), quote=True)}"><div class="catalog-card-heading"><div class="catalog-icon"><img src="./{esc(entry['image'])}" alt="{esc(image_label, quote=True)}" width="80" height="80" loading="lazy" decoding="async"></div><div><span class="catalog-kind">{esc(tag)}</span><h2 class="catalog-title-row"><span>{esc(entry['title'])}</span>{permalink(entry)}</h2><p class="english-name">{esc(entry['name'])}</p></div></div>{scene}{description}{upgrade_notes(entry)}{effects}{catalog_facts(entry)}{details}</article>''')
     buttons = [f'<button type="button" data-kind="all" aria-pressed="true">전체 <span>{len(entries)}</span></button>']
     for key, label in kinds.items():
         count = sum((entry['variant'] if is_players else entry['kind']) == key for entry in entries)
@@ -330,9 +360,24 @@ def render_rooms():
     print('Generated rooms.html: 52 room file comparisons.')
 
 
+def render_upgrades():
+    automatic = sum(pattern['chance'] > 0 for pattern in upgrades['patterns'])
+    direct = len(upgrades['patterns']) - automatic
+    sections, count, chapter_links = render_sections([{
+        'id': 'upgrade-probabilities', 'title': '업그레이드 전체 목록',
+        'subtitle': f'자동 대체 {automatic}종 · 직접 변환 전용 {direct}종', 'entries': upgrades['entries']}])
+    content = f'''<section class="hero" id="overview" aria-labelledby="page-title"><p class="eyebrow">Astro-Items · 아이템 강화</p><h1 id="page-title">업그레이드 확률</h1><p class="hero-copy">{esc(upgrades['intro'])}</p><p class="hero-detail-link"><a href="./index.html#item-upgrades">입문 가이드에서 업그레이드 사용 방법 읽기 ↗</a></p></section>
+<aside class="catalog-note"><strong>확률을 읽는 방법</strong><div class="entry-body"><p>각 확률은 원본 아이템이 새로 결정될 때의 조건부 대체 확률입니다. 전체 아이템 중 강화 아이템이 등장하는 비율이나 원본의 등장 확률을 뜻하지 않습니다. 행운 보정은 없으며, 이미 나온 아이템을 줍거나 방에 재입장해도 재판정하지 않습니다.</p><p>리롤로 새 아이템을 뽑을 때도 적용합니다. 알비레오·Ctrl 조합 등 직접 변환은 별도의 조건을 확인합니다.</p></div></aside>
+{''.join(sections)}'''
+    write_page('upgrades', '업그레이드 확률', upgrades['intro'], content, 'guide.js')
+    print(f'Generated upgrades.html: {len(upgrades["patterns"])} patterns.')
+
+
+
 build_search_index()
 render_qa()
 render_rules()
 render_catalog('items', items, {'passive': '패시브', 'active': '액티브', 'trinket': '장신구', 'card': '카드'}, '아이템 가이드', '아이템 목록')
 render_catalog('players', players, {'normal': '일반', 'tainted': '더럽혀진'}, '캐릭터 가이드', '캐릭터 목록')
 render_rooms()
+render_upgrades()

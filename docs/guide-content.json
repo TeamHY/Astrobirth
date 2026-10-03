@@ -445,6 +445,294 @@
       ]
     },
     {
+      "id": "item-upgrades",
+      "title": "아이템 업그레이드",
+      "subtitle": "자동 강화 · 초행성 · 직접 변환",
+      "entries": [
+        {
+          "id": "item-upgrade",
+          "title": "아이템이 다른 모습으로 업그레이드되어 나와요",
+          "keywords": "업글 업그레이드 강화 자동 변환 확률 EX 원본 상위 아이템 리롤 생득권 Birthright Legacy D6 D8 Magic Mushroom Guppy Collar",
+          "body": "Astro-Items에는 기존 아이템을 정해진 강화 아이템으로 바꾸는 업그레이드 시스템이 있습니다. 등록된 원본 아이템이 새로 등장할 때 아이템별 확률로 강화 버전이 대신 나옵니다. 조건을 갖춰 직접 변환하는 방법도 있습니다.",
+          "rules": [
+            "자동 업그레이드는 아이템이 새로 결정될 때 판정합니다. 리롤로 새 아이템을 뽑는 경우에도 적용하며, 이미 나온 아이템을 줍거나 방에 다시 들어가는 것만으로 재판정하지 않습니다.",
+            "확률은 원본 아이템마다 다르며, 이 자동 판정에는 행운 보정이 없습니다. 성공하면 원본 대신 강화 아이템이 등장합니다.",
+            "아래 표는 대표 예시입니다. 업그레이드 대상과 결과가 등록된 아이템에만 적용합니다."
+          ],
+          "rewardTable": {
+            "caption": "자동 업그레이드의 대표 예시",
+            "columns": [
+              "원본 아이템",
+              "강화 아이템",
+              "변환 확률"
+            ],
+            "rows": [
+              [
+                "죽음의 살생부",
+                "블랙 리스트",
+                "20%"
+              ],
+              [
+                "생득권",
+                "유산",
+                "10%"
+              ],
+              [
+                "주사위(D6)",
+                "대왕 주사위",
+                "10%"
+              ],
+              [
+                "8면 주사위(D8)",
+                "대왕 8면체 주사위",
+                "30%"
+              ],
+              [
+                "마법의 버섯",
+                "무지개 버섯",
+                "50%"
+              ],
+              [
+                "구피의 목걸이",
+                "구피의 이름표",
+                "70%"
+              ]
+            ]
+          },
+          "watch": "아이템이 생성될 때 원본 그림이 잠시 겹쳐 보이고 이름과 효과가 바뀌면 자동 업그레이드가 일어난 것입니다. 획득 전 현재 아이템의 설명을 확인합니다.",
+          "itemSources": [
+            "astro/collectibles/ex-upgrade.lua",
+            "astro/collectibles/reroll.lua"
+          ],
+          "relatedLinks": [
+            {
+              "href": "./upgrades.html",
+              "label": "전체 업그레이드 확률 목록"
+            },
+            {
+              "href": "#planet-upgrade",
+              "label": "행성과 별자리의 강화 조건"
+            },
+            {
+              "href": "#upgrade-combinations",
+              "label": "Ctrl을 사용하는 직접 변환"
+            },
+            {
+              "href": "./items.html#astro-legacy",
+              "label": "유산의 효과"
+            },
+            {
+              "href": "./items.html#astro-mega-d6",
+              "label": "대왕 주사위의 효과"
+            }
+          ]
+        },
+        {
+          "id": "planet-upgrade",
+          "title": "행성과 별자리는 어떻게 초 아이템이 되나요?",
+          "keywords": "업글 초행성 초별자리 행성 별자리 천체관 비밀방 일급 비밀방 EX Sol Luna Pluto 알비레오 Albireo 스텔라",
+          "body": "솔·루나·수성 등 기본 행성 11종은 비밀방·일급 비밀방·천체관에서 새로 등장할 때 각각 30% 확률로 초행성이 됩니다. 별자리는 알비레오를 사용해 초 아이템으로 바꿀 수 있습니다.",
+          "effectGroups": [
+            {
+              "title": "행성의 자동 업그레이드",
+              "items": [
+                "일반 방에서 등장하는 행성에는 이 30% 자동 판정을 적용하지 않습니다.",
+                "플레이어 중 누군가 이미 초행성을 하나라도 보유하면 이후 행성의 자동 업그레이드는 적용하지 않습니다. 협동 플레이에서도 모든 플레이어의 소지 상태를 함께 확인합니다.",
+                "물병자리·물고기자리 등 기본 별자리 12종의 자동 업그레이드 확률은 0%입니다."
+              ]
+            },
+            {
+              "title": "알비레오를 사용하는 직접 업그레이드",
+              "items": [
+                "방 바닥에 행성이나 별자리 아이템을 남겨 두고 알비레오를 사용하면 등록된 초 아이템으로 변환합니다. 이미 소지한 행성·별자리는 대상이 아닙니다.",
+                "알비레오 변환에는 위의 방 종류·30% 확률·초행성 소지 제한을 적용하지 않습니다. 등록된 대상이 방에 여러 개 있으면 모두 변환합니다.",
+                "성스러운 심장·신(Godhead)·베들레헴의 별·더 깊이 내려가야 해!도 알비레오의 변환 대상입니다.",
+                "일반 캐릭터는 사용 후 알비레오를 잃습니다. 스텔라는 사용 후에도 알비레오를 유지하고 다시 충전해 사용할 수 있습니다."
+              ]
+            }
+          ],
+          "watch": "행성이 어느 방에서 등장했는지와 이미 초행성을 보유했는지를 함께 확인합니다. 별자리가 초 아이템으로 바뀌었다면 알비레오 사용 여부를 살펴봅니다.",
+          "itemSources": [
+            "astro/collectibles/ex-upgrade.lua",
+            "astro/collectibles/customs/planetarium/albireo.lua",
+            "astro/utils/init.lua"
+          ],
+          "relatedLinks": [
+            {
+              "href": "./items.html#astro-albireo",
+              "label": "알비레오 아이템 설명"
+            }
+          ]
+        },
+        {
+          "id": "upgrade-combinations",
+          "title": "Ctrl을 길게 누르면 아이템을 업그레이드할 수 있나요?",
+          "keywords": "업글 업그레이드 조합 합성 재료 Ctrl 컨트롤 버리기 버튼 검은 양초 천칭자리 Libra 혼돈 Chaos 서큐버스 Succubus 유산 구피 썩은 하트 이터널 하트",
+          "body": "일부 아이템은 소지 아이템·변신·하트 조건을 갖추고 버리기 버튼을 길게 누르면 직접 업그레이드할 수 있습니다. 키보드 기본 설정은 Ctrl입니다. 변환할 아이템은 줍지 않고 현재 방 바닥에 남겨 둡니다.",
+          "rewardTable": {
+            "caption": "버리기 버튼을 길게 눌러 변환하는 조합",
+            "columns": [
+              "플레이어의 준비 조건",
+              "방 바닥의 대상",
+              "변환 결과와 재료 소모"
+            ],
+            "rows": [
+              [
+                "검은 양초 소지",
+                "천칭자리(Libra)",
+                "복종의 천칭으로 변환하며 검은 양초를 소모합니다."
+              ],
+              [
+                "혼돈(Chaos) 소지",
+                "서큐버스",
+                "아티팩트 무브먼트로 변환합니다. 혼돈은 유지합니다."
+              ],
+              [
+                "변신 세트에 속한 아이템 합계 6개 이상 소지",
+                "생득권",
+                "유산으로 변환합니다. 소지한 세트 아이템은 유지합니다."
+              ],
+              [
+                "구피 변신 완료 + 썩은 하트 보유",
+                "방 안의 구피 세트 아이템",
+                "부패한 구피로 변환합니다. 썩은 하트는 소모하지 않습니다."
+              ],
+              [
+                "구피 변신 완료 + 유황불(Brimstone) 소지",
+                "방 안의 구피 세트 아이템",
+                "유황불 구피로 변환합니다. 유황불은 유지합니다."
+              ],
+              [
+                "구피 변신 완료 + 이터널 하트 보유",
+                "방 안의 구피 세트 아이템",
+                "신성한 구피로 변환합니다. 이터널 하트는 소모하지 않습니다."
+              ]
+            ],
+            "note": "유산의 6개 조건은 변신 6종 완료가 아니라 소지한 세트 아이템의 개수 합계이며, 같은 아이템을 여러 개 소지한 경우도 셉니다. 구피 조합은 구피 변신을 먼저 완료해야 합니다."
+          },
+          "rules": [
+            "조건이 맞으면 해당 조합의 대상 아이템을 한 번에 변환합니다. 변환된 아이템은 방 바닥에 남으므로 직접 획득해야 합니다.",
+            "구피 조합을 여러 개 동시에 충족하면 부패한 구피, 유황불 구피, 신성한 구피 순서로 우선 적용합니다.",
+            "버리기 버튼은 장신구·카드 등을 내려놓는 입력도 겸합니다. 누른 뒤 바닥에 떨어진 소지품을 함께 확인합니다.",
+            "EID와 Mod Config Menu를 사용한다면 Astrobirth의 ‘Show Craft Hint’를 On으로 설정해 등록된 제작·변환 힌트를 표시할 수 있습니다. 기본값은 Off이며 모든 조합에 힌트가 등록된 것은 아닙니다."
+          ],
+          "watch": "플레이어가 바닥 아이템을 바로 먹지 않고 Ctrl을 길게 누르면 조합 조건을 확인하는 장면일 수 있습니다. 원본을 먼저 획득하면 이 바닥 아이템 변환의 대상에서 빠집니다.",
+          "itemSources": [
+            "astro/upgrade-action.lua",
+            "astro/collectibles/init.lua",
+            "astro/collectibles/customs/scales-of-obedience.lua",
+            "astro/collectibles/customs/artifact-ignition.lua",
+            "astro/collectibles/customs/legacy.lua",
+            "astro/collectibles/customs/marigold.lua",
+            "astro/collectibles/customs/blighted-guppy.lua",
+            "astro/collectibles/customs/blood-guppy.lua",
+            "astro/collectibles/customs/divine-guppy.lua",
+            "astro/utils/init.lua",
+            "astro/mcm.lua",
+            "astro/eid.lua"
+          ],
+          "agentNotes": [
+            "marigold.lua에도 검은 양초 + Libra를 마리골드로 바꾸는 UpgradeAction이 중복 등록되어 있습니다. 현재 collectibles/init.lua에서 scales-of-obedience.lua가 먼저 로드되고 upgrade-action.lua가 첫 성공 후 중단하므로 실제 결과는 복종의 천칭입니다. 마리골드는 아래 별도 변환으로 설명합니다.",
+            "버리기 입력은 ACTION_DROP을 60회 MC_POST_RENDER에서 감지한 뒤 실행합니다. 프레임 속도와 별개인 정확한 초 단위 시간으로 안내하지 않습니다.",
+            "ex-upgrade.lua의 힌트 등록은 pairs 순회 중 Chance 0에서 break하므로 등록된 업그레이드 전부가 EID 힌트로 표시된다고 안내하지 않습니다."
+          ],
+          "relatedLinks": [
+            {
+              "href": "./items.html#astro-scales-of-obedience",
+              "label": "복종의 천칭의 효과"
+            },
+            {
+              "href": "./items.html#astro-artifact-ignition",
+              "label": "아티팩트 무브먼트의 효과"
+            },
+            {
+              "href": "#special-upgrades",
+              "label": "주사위와 구피의 다른 변환 방법"
+            }
+          ]
+        },
+        {
+          "id": "special-upgrades",
+          "title": "주사위나 구피 아이템도 직접 업그레이드할 수 있나요?",
+          "keywords": "업글 업그레이드 변환 주사위방 대왕 D4 D6 D8 Mega R Key P Key P키 마리골드 Midas Touch 꿀꺽 Gulp 용광로 Smelter 황금 구피 스켈레톤 구피 뼈 하트 황금 하트",
+          "body": "Ctrl 조합 외에도 특정 방에서 액티브를 사용하거나 다른 키를 누르는 변환이 있습니다. 황금 구피와 스켈레톤 구피는 구피 변신 상태에서 하트가 사라지는 순간 방 안의 구피 아이템을 변환합니다.",
+          "rewardTable": {
+            "caption": "아이템별로 정해진 직접 변환 방법",
+            "columns": [
+              "대상",
+              "실행 조건",
+              "변환 결과"
+            ],
+            "rows": [
+              [
+                "4면 주사위(D4)·주사위(D6)·8면 주사위(D8)",
+                "해당 아이템을 소지한 상태로 주사위방에서 사용합니다.",
+                "원본 액티브를 제거하고 대응하는 대왕 주사위를 플레이어 위치에 생성합니다. 직접 주워야 합니다."
+              ],
+              [
+                "R 키",
+                "R 키를 소지한 상태로 키보드 P 키를 누릅니다.",
+                "R 키를 제거하고 P키 아이템을 플레이어 위치에 생성합니다. R 키를 액티브로 사용하는 변환이 아닙니다."
+              ],
+              [
+                "미다스의 손길",
+                "소지 중이거나 현재 방 바닥에 있을 때 꿀꺽! 알약 또는 용광로를 사용합니다.",
+                "바닥의 미다스의 손길은 마리골드로 바뀝니다. 소지한 미다스의 손길은 제거하고 마리골드를 플레이어 위치에 생성합니다."
+              ],
+              [
+                "방 안의 구피 세트 아이템",
+                "구피 변신 상태에서 황금 하트의 개수가 줄어듭니다.",
+                "황금 구피로 변환합니다. 황금 하트를 보유한 채 Ctrl만 누르는 조건은 아닙니다."
+              ],
+              [
+                "방 안의 구피 세트 아이템",
+                "구피 변신 상태에서 뼈 하트의 개수가 줄어듭니다.",
+                "스켈레톤 구피로 변환합니다. 뼈 하트 내부의 빨간 체력만 줄어드는 것은 해당하지 않습니다."
+              ]
+            ]
+          },
+          "rules": [
+            "4면 주사위의 자동 업그레이드 확률은 0%입니다. 주사위방에서 사용하는 직접 변환을 이용할 수 있습니다. D6·D8은 자동 업그레이드와 주사위방 변환이 모두 있습니다.",
+            "구피 변환은 소지한 구피 아이템을 바꾸는 효과가 아니라 현재 방 바닥의 구피 세트 아이템을 바꾸는 효과입니다."
+          ],
+          "watch": "주사위방에서 액티브를 사용한 뒤 바닥에 대왕 주사위가 생기는지 확인합니다. 구피 변환은 변신 완료 여부, 하트 종류, 방 바닥의 구피 아이템을 함께 살펴봅니다.",
+          "itemSources": [
+            "astro/collectibles/ex-upgrade.lua",
+            "astro/collectibles/customs/mega-d4.lua",
+            "astro/collectibles/customs/mega-d6.lua",
+            "astro/collectibles/customs/mega-d8.lua",
+            "astro/collectibles/customs/p-key.lua",
+            "astro/collectibles/customs/marigold.lua",
+            "astro/collectibles/customs/golden-guppy.lua",
+            "astro/collectibles/customs/skeleton-guppy.lua",
+            "astro/utils/init.lua"
+          ],
+          "relatedLinks": [
+            {
+              "href": "./items.html#astro-mega-d4",
+              "label": "대왕 4면체 주사위의 효과"
+            },
+            {
+              "href": "./items.html#mega-d8",
+              "label": "대왕 8면체 주사위의 효과"
+            },
+            {
+              "href": "./items.html#astro-marigold",
+              "label": "마리골드의 효과"
+            },
+            {
+              "href": "./items.html#astro-p-key",
+              "label": "P키의 효과"
+            },
+            {
+              "href": "#upgrade-combinations",
+              "label": "Ctrl을 사용하는 구피 조합"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "travel",
       "title": "이동 및 루트 진행",
       "subtitle": "포탈 · 루트 · 보스 보상",

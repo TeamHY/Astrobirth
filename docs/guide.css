@@ -192,6 +192,9 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 .english-name{font-size:11px;color:var(--muted);font-family:system-ui,sans-serif;margin:3px 0 0;line-height:1.5;overflow-wrap:anywhere}
 .catalog-scene{font-size:14px;font-weight:650;line-height:1.6;color:#294d85;margin:17px 0 9px}
 .catalog-description{font-size:14px;line-height:1.85;margin:0 0 19px;color:#596983}
+.catalog-upgrade{font-size:13px;line-height:1.8;padding:11px 13px;margin:12px 0 16px;border-left:3px solid #aecaf5;background:#f0f5ff;color:#465674;overflow-wrap:anywhere}
+.catalog-upgrade a,.reward-table a{text-decoration:underline;text-underline-offset:3px}
+.upgrade-conditions{display:inline-block;font-size:12px;color:var(--primary)}
 .catalog-eid-effects{padding:0;list-style:none;color:#596983;font-size:13px;line-height:1.85;margin:0 0 17px;overflow-wrap:anywhere}
 .catalog-eid-effects li{margin:6px 0}
 .catalog-eid-effects .inline-icon{width:18px;height:18px}
