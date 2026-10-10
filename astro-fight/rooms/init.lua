@@ -312,6 +312,12 @@ Astro:AddCallback(
                 end
             end
 
+            if stage == LevelStage.STAGE3_2 and currentRoom:GetBossID() == 6 then
+                for i = 1, Game():GetNumPlayers() do
+                    Isaac.GetPlayer(i - 1):AddCollectible(CollectibleType.COLLECTIBLE_DOGMA)
+                end
+            end
+
             if stage == LevelStage.STAGE1_1 or stage == LevelStage.STAGE1_2 then
                 Astro:SpawnEntity(Astro.Entity.SemiGlitchedMachine, currentRoom:GetCenterPos())
             elseif stage == LevelStage.STAGE3_2 and level:GetStageType() >= StageType.STAGETYPE_REPENTANCE and currentRoom:GetBossID() == 6 then
