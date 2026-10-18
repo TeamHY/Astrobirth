@@ -20,6 +20,19 @@ Astro:AddCallback(
 )
 
 -- 저주 처리
+local CURSE_NAMES = {
+	{ LevelCurse.CURSE_OF_DARKNESS, "Curse of Darkness" },
+	{ LevelCurse.CURSE_OF_LABYRINTH, "Curse of the Labyrinth" },
+	{ LevelCurse.CURSE_OF_THE_LOST, "Curse of the Lost" },
+	{ LevelCurse.CURSE_OF_THE_UNKNOWN, "Curse of the Unknown" },
+	{ LevelCurse.CURSE_OF_THE_CURSED, "Curse of the Cursed" },
+	{ LevelCurse.CURSE_OF_MAZE, "Curse of the Maze" },
+	{ LevelCurse.CURSE_OF_BLIND, "Curse of the Blind" },
+	{ LevelCurse.CURSE_OF_GIANT, "Curse of the Giant" },
+}
+
+local removedCurse = 0
+
 Astro:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL,
 	function (_, curse)
 		local hasPrometheus = false
@@ -37,12 +50,35 @@ Astro:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL,
 			end
 		end
 
+		removedCurse = 0
+
 		if hasPrometheus and not hasCurseCleaner then
 			return curse | LevelCurse.CURSE_OF_DARKNESS
 		end
 
 		if (Game():GetLevel():GetStage() <= 3 and curse ~= 0) or hasCurseCleaner then
+			removedCurse = curse
 			return 0
+		end
+	end
+)
+
+Astro:AddCallback(ModCallbacks.MC_POST_UPDATE,
+	function ()
+		if removedCurse == 0 then return end
+
+		local names = {}
+
+		for _, entry in ipairs(CURSE_NAMES) do
+			if removedCurse & entry[1] ~= 0 then
+				table.insert(names, entry[2])
+			end
+		end
+
+		removedCurse = 0
+
+		if #names > 0 then
+			Astro:ShowNotification(table.concat(names, ", ") .. " 해제됨", { 1, 0.8, 0.4 })
 		end
 	end
 )
