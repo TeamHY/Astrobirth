@@ -1372,7 +1372,7 @@
         <gibs amount="4" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" rock="1"/>
     	<devolve id="44.1.0" weight="1" />
 	</entity>
-    <entity anm2path="045.000_Mom.anm2" baseHP="1500" boss="1" bossID="6" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="35" friction="1" id="45" name="#MOM" numGridCollisionPoints="0" portrait="9" shadowSize="33" stageHP="0" tags="nodelirium" variant="0">
+    <entity anm2path="045.000_Mom.anm2" baseHP="1500" boss="1" bossID="6" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="35" friction="1" id="45" name="#MOM" numGridCollisionPoints="0" portrait="9" shadowSize="33" stageHP="0" shieldStrength="40" tags="nodelirium" variant="0">
         <bestiary anim="Eye" transform="0,0,1"/>
         <gibs amount="20" blood="1" bone="1" eye="1" gut="1" large="0"/>
         <preload-snd id="97"/>
@@ -1383,7 +1383,7 @@
         <preload-snd id="48"/>
         <preload-snd id="265"/>
     </entity>
-    <entity anm2path="045.010_Mom Stomp.anm2" baseHP="645" boss="1" bossID="6" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="35" friction="1" id="45" name="Mom Stomp" numGridCollisionPoints="0" portrait="9" shadowSize="70" stageHP="0" variant="10">
+    <entity anm2path="045.010_Mom Stomp.anm2" baseHP="645" boss="1" bossID="6" champion="0" collisionDamage="2" collisionMass="70" collisionRadius="35" friction="1" id="45" name="Mom Stomp" numGridCollisionPoints="0" portrait="9" shieldStrength="40" shadowSize="70" stageHP="0" variant="10">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
     </entity>
     <entity anm2path="046.000_Sloth.anm2" baseHP="60" boss="1" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="13" friction="1" id="46" name="#SLOTH" numGridCollisionPoints="12" portrait="10" shadowSize="14" stageHP="20" variant="0">
@@ -1762,7 +1762,7 @@
         <preload id="1000" subtype="1" variant="50"/>
         <preload-snd id="5"/>
     </entity>
-    <entity anm2path="078.001_It Lives.anm2" baseHP="120" boss="1" bossID="25" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="35" friction="1" id="78" name="#IT_LIVES" numGridCollisionPoints="0" portrait="48" shadowSize="33" stageHP="450" variant="1">
+    <entity anm2path="078.001_It Lives.anm2" baseHP="120" boss="1" bossID="25" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="35" friction="1" id="78" name="#IT_LIVES" numGridCollisionPoints="0" portrait="48" shadowSize="33" stageHP="450" shieldStrength="40" variant="1">
         <bestiary anim="Heartbeat1" transform="0,12,.8"/>
         <gibs amount="20" blood="1" bone="1" eye="0" gut="1" large="1"/>
         <preload-snd id="87"/>
