@@ -754,7 +754,7 @@
 	<passive	id="726"	achievement="591" gfx="Collectibles_726_Hemoptysis.png" name="#HEMOPTYSIS_NAME" description="#HEMOPTYSIS_DESCRIPTION" cooldown="30" />
 	<passive	id="727"	achievement="594" gfx="Collectibles_727_GhostBombs.png" name="#GHOST_BOMBS_NAME" description="#GHOST_BOMBS_DESCRIPTION" bombs="5" />
 	<active		id="728"	achievement="595" gfx="Collectibles_728_Gello.png" name="#GELLO_NAME" description="#GELLO_DESCRIPTION" maxcharges="2" />
-	<active		id="729"	achievement="598" gfx="Collectibles_729_DecapAttack.png" name="#DECAP_ATTACK_NAME" description="#DECAP_ATTACK_DESCRIPTION" maxcharges="110" chargetype="timed" cache="damage firedelay" />
+	<active		id="729"	achievement="598" gfx="Collectibles_729_DecapAttack.png" name="#DECAP_ATTACK_NAME" shopprice="2" description="#DECAP_ATTACK_DESCRIPTION" maxcharges="110" chargetype="timed" cache="damage firedelay" />
 	
 	<passive	id="730"	gfx="Collectibles_730_GlassEye.png" name="#GLASS_EYE_NAME" description="#GLASS_EYE_DESCRIPTION" shopprice="9" cache="damage luck" />
 	<passive	id="731"	gfx="Collectibles_731_Stye.png" name="#STYE_NAME" description="#STYE_DESCRIPTION" cache="damage range" />
