@@ -123,13 +123,17 @@ Astro:AddCallback(
         local brokenCount = GetBrokenShieldCount(previousState, currentState)
 
         if brokenCount > 0 then
-            local currentRoomDesc = Game():GetLevel():GetCurrentRoomDesc()
+            local level = Game():GetLevel()
+            local currentRoomDesc = level:GetCurrentRoomDesc()
             if currentRoomDesc.Data.Name == "Beast Room" then
                 player:Kill()
             end
 
-            if player:GetPlayerType() == PlayerType.PLAYER_THELOST or player:GetPlayerType() == PlayerType.PLAYER_THELOST_B then
-                ApplyPenalty(player, brokenCount)
+            local currentStage = level:GetAbsoluteStage()
+            if currentStage > 2 then
+                if player:GetPlayerType() == PlayerType.PLAYER_THELOST or player:GetPlayerType() == PlayerType.PLAYER_THELOST_B then
+                    ApplyPenalty(player, brokenCount)
+                end
             end
         end
 
