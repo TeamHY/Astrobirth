@@ -1,6 +1,5 @@
 local hiddenItemManager = Astro.HiddenItemManager
 
-require "astro-fight.collectibles.auto-active"
 require "astro-fight.collectibles.boss-active"
 -- require "Astro.Collectibles.golden"
 require "astro-fight.collectibles.status"
