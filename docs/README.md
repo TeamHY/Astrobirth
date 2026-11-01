@@ -33,6 +33,13 @@ Node.js나 외부 패키지가 필요하지 않습니다. 자바스크립트를 
 
 다음 정보 갱신에서는 저장소마다 새 검토 대상 커밋을 정하고, 기록된 SHA부터 그 커밋까지의 변경 이력과 차이를 확인합니다. 변경된 기능의 설명·근거·검토 목록을 갱신하고 검증을 마친 뒤 `sources`, 버전과 확인 날짜를 함께 갱신합니다. `scripts/guide-coverage.json`의 기준 커밋도 일치시킵니다. 일부만 확인했다면 전체 기준 커밋을 앞당기지 말고 아직 검토하지 않은 변경사항을 내부 기록에 남깁니다. 미커밋 게임 변경사항은 기준 범위에 포함하지 않습니다.
 
+### 미검토 변경 (2026-11-02 기록)
+
+2026-11-02 정기 갱신에서는 기본 게임 리소스(`isaac-baseline`)에 접근할 수 없어 리소스·추가 아이템 재수집을 실행하지 못했습니다. 두 저장소 모두 기준 커밋을 유지하며, 아래 변경은 설명에 아직 반영하지 않았습니다.
+
+- Astrobirth `4c02a20`..`a19a101`(16커밋, 버전 1.394): 황금 장신구 효과 파일(`astro-fight/trinkets/golden.lua`) 제거와 관련 아이템·Q&A 설명, 구피의 머리 자동 사용(`auto-active.lua`)과 겔로·10면 주사위 보스방 차지 초기화(`boss-active.lua`) 제거, 사용 횟수 제한 추가(`astro-fight/use-limit.lua`: 순간이동 스테이지당 2회, 순간이동 2.0 한 게임당 2회, 수정 구슬 일회용, R 키 사용 시 한 게임 횟수 초기화), 다음 판 밴 개수 10→5(`next-ban.lua`), 밴 거지가 밴 목록이 없어도 등장(`ban-beggar.lua`), 로스트 보호막 패널티를 절대 스테이지 3 이상에서만 적용(`penalty.lua`), 챔피언 제외 목록에 9번 추가(`stage.lua`), 초반 저주 해제 알림(`astro-fight/init.lua`), 엄마·엄마 발·It Lives 보호막 수치(`resources/entities2.xml`), 참수 공격 상점 가격·배열 추가(`resources/items.xml`, `resources/itempools.xml`), 특수방·자궁 이후 층 방 구조(`resources/rooms/00.special rooms.*`, `content/rooms/*.stb`).
+- Astro-Items `b978569`..`ce57cac`(18커밋): 신규 아이템 초양자주사위(248)·유전자 가위(249)·카산드라의 수정 구슬(250) 등록과 EID, 업그레이드 확률 조정(`ex-upgrade.lua`: 아스트로 불심 임시 조정, 초양자주사위), 큐비트·스핀업 주사위 연계, 핑크 와드 업그레이드와 숨김 처리, 아스트로 성심 효과 변경과 코스튬, 생자의 서 `noeden` 태그, 로키·제노나이트·슈퍼 마그네토·아스트로페이지·거대 구슬·크로노스·알비레오 등의 효과·EID 정리, 프로메테우스 흰 불 제거 예외, 패널티 아이템 제거 알림 방식 변경(`astro/collectibles/penalty.lua`), 깃펜 음량, 알림·대화 폰트·한글 조사 유틸. 카산드라의 수정 구슬은 등록 이미지 추가 여부를 확인해야 합니다.
+
 ## 내용 수정
 
 1. Q&A는 `guide-content.json`, 전체 규칙은 `rules-content.json`, 아이템은 `items-content.json`, 플레이어는 `players-content.json`에서 설명과 근거 파일 경로를 수정합니다. 방 요약은 `rooms-content.json`, 프리셋 자료는 `assets/rooms/*.json`에서 관리합니다.
