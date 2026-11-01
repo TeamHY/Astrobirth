@@ -55,13 +55,32 @@ def named_items(names):
         for name in names) + '</span>'
 
 
+def item_icon_with_tooltip(name):
+    # EID writes "{{icon}} English Name", so the visible English name already follows.
+    # Show only the icon and expose the Korean name as a hover/focus tooltip.
+    image = icon_image(name, True)
+    if not image:
+        return named_items([name])
+    label = esc(name, quote=True)
+    return ('<span class="item-tip" tabindex="0" role="img" aria-label="' + label + '" data-tip="' + label + '">'
+            + image + '</span>')
+
+
+def followed_by_latin_name(line, index):
+    following = line[index + 1] if index + 1 < len(line) else None
+    return bool(following and 'text' in following and re.match(r'\s*[A-Za-z]', following['text']))
+
+
 def render_effect_segments(line):
     segments = []
     for index, segment in enumerate(line):
         if 'text' in segment:
             segments.append(esc(segment['text']))
         elif 'item' in segment:
-            segments.append(named_items([segment['item']]))
+            if followed_by_latin_name(line, index):
+                segments.append(item_icon_with_tooltip(segment['item']))
+            else:
+                segments.append(named_items([segment['item']]))
         elif 'icon' in segment:
             key = segment['icon']
             segments.append(icon_image(key))

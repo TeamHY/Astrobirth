@@ -697,6 +697,9 @@ class Verification:
             self.require(card.attrs.get("data-origin") == "mod", f"{label}: 추가 아이템 출처 필터가 없습니다.")
             lists = [node for node in card.nodes("ul") if node.has_class("catalog-eid-preview")]
             def literal_text(node):
+                # An icon-only item reference carries its Korean name in the tooltip.
+                if node.has_class("item-tip"):
+                    return node.attrs.get("data-tip", "")
                 return "".join(literal_text(child) if isinstance(child, Node) else child for child in node.children)
             actual = [normalized(literal_text(node)) for effects in lists for node in effects.nodes("li")]
             expected = [normalized(effect_text([line], icons)) for line in compact_entry(entry)["eidEffects"]]

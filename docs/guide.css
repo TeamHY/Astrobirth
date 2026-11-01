@@ -347,3 +347,9 @@ footer a{text-decoration:underline;text-underline-offset:3px}
   .catalog-dialog-content .reward-table{font-size:12px}.catalog-dialog-content .reward-table th,.catalog-dialog-content .reward-table td{padding:9px 7px}
   .catalog-details .entry-links{font-size:12px}.restriction-list p{font-size:13px}
 }
+.item-tip{position:relative;display:inline-flex;align-items:center;vertical-align:middle;margin-right:3px;border-radius:4px;cursor:help}
+.item-tip:focus-visible{outline:3px solid var(--violet);outline-offset:2px}
+.item-tip::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 6px);z-index:4;padding:3px 8px;background:var(--dark);color:#fff;font-size:12px;line-height:1.5;white-space:nowrap;border-radius:6px;transform:translateX(-50%);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .12s}
+.item-tip:hover::after,.item-tip:focus::after{opacity:1;visibility:visible}
+@media (prefers-reduced-motion:reduce){.item-tip::after{transition:none}}
+@media print{.item-tip::after{content:" (" attr(data-tip) ")";position:static;opacity:1;visibility:visible;padding:0;background:none;color:inherit;transform:none}}
