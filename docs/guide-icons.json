@@ -3939,6 +3939,30 @@
     "막달레나의 영혼": {
       "image": "assets/astro-items/Card82.svg",
       "eid": "Card82"
+    },
+    "거대 구슬": {
+      "image": "assets/astro-items/c-243.png",
+      "name": "Giant Marble",
+      "source": "resources/gfx/items/collectibles/Giant Marble.png",
+      "sourceSHA256": "7871ecba86872f269ef7a185410b077931dc80fe68c064775b1f93c25675cf3b"
+    },
+    "초양자 주사위": {
+      "image": "assets/astro-items/c-248.png",
+      "name": "Hyper Quantum Dice",
+      "source": "resources/gfx/items/collectibles/Hyper Quantum Dice.png",
+      "sourceSHA256": "39da569409e955daa922127601a13d62dc92ba05a7dc2ed402088f2139970fdb"
+    },
+    "유전자 가위": {
+      "image": "assets/astro-items/c-249.png",
+      "name": "Gene Scissors",
+      "source": "resources/gfx/items/collectibles/Gene Scissors.png",
+      "sourceSHA256": "cbca39f8242738343a5220d48e07fef6b620f1952b43fadcbd0d72ae77b190d6"
+    },
+    "카산드라의 수정 구슬": {
+      "image": "assets/astro-items/c-250.png",
+      "name": "Cassandra's Crystal Ball",
+      "source": "gfx/items/collectibles/questionmark.png",
+      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
     }
   },
   "sprites": {

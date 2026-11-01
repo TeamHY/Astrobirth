@@ -1,5 +1,5 @@
 {
-  "intro": "기존 아이템·장신구·카드의 변경사항과 Astro-Items 추가 아이템의 효과를 확인할 수 있습니다. 출처와 종류를 선택하거나 통합 검색으로 이름과 효과를 찾을 수 있습니다.",
+  "intro": "기존 아이템의 변경사항과 Astro-Items가 추가한 아이템·장신구의 효과를 확인할 수 있습니다. 출처와 종류를 선택하거나 통합 검색으로 이름과 효과를 찾을 수 있습니다.",
   "sharedNotes": [
     {
       "id": "item-common-conditions",
@@ -7202,6 +7202,9 @@
             "text": "퀄리티 아이템 등장 시 5%의 확률로 세라핌 변신 아이템으로 바꿉니다."
           }
         ]
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -7216,7 +7219,8 @@
       "image": "assets/astro-items/c-217.png",
       "itemSources": [
         "astro/collectibles/customs/canned-bread.lua",
-        "content/items.xml"
+        "content/items.xml",
+        "astro/collectibles/customs/super-magneto.lua"
       ],
       "changeKinds": [
         "effect"
@@ -7248,6 +7252,9 @@
             "text": "빨간하트 +1"
           }
         ]
+      ],
+      "rules": [
+        "Quickpick 모드를 함께 사용하지 않으면 대결 모드가 아니어도 등장 후보에서 제외됩니다."
       ]
     },
     {
@@ -7302,6 +7309,9 @@
             "text": "사용하면 Depths II(6스테이지)의 보스방에서는 보스러시 문이, Womb II(8스테이지)의 보스방에서는 Blue Womb(허쉬)으로 가는 문이 열립니다."
           }
         ]
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -46971,6 +46981,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/planetarium/cancer-ex.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -48295,6 +48308,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/planetarium/solar-system.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 아이템 참조로 한국어 이름이 표시되는 목록 뒤의 중복 영문 이름을 생략합니다. 원문과 효과 조건은 보존합니다."
       ]
     },
     {
@@ -49841,6 +49857,7 @@
       ],
       "origin": "mod",
       "modItem": {
+        "hidden": "true",
         "quality": "2",
         "id": "59",
         "type": "passive"
@@ -49850,6 +49867,17 @@
         [
           {
             "text": "스테이지 중심 5x5의 방을 보여줍니다."
+          }
+        ],
+        [
+          {
+            "text": "방을 6번 클리어할 때마다 "
+          },
+          {
+            "item": "와드"
+          },
+          {
+            "text": "Ward를 발동합니다."
           }
         ],
         [
@@ -51605,6 +51633,10 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/starlit-papillon.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다.",
+        "한국어 EID 이름이 비어 있는 YO LISTEN!은 EID 영문 이름을 표시합니다. 빈 이름으로 잘못된 아이콘이 연결되지 않도록 이 참조 토큰을 표시 문장에서 제외합니다."
       ]
     },
     {
@@ -51684,6 +51716,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/sinful-spoils-struggle.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 아이템 참조로 한국어 이름이 표시되는 목록 뒤의 중복 영문 이름을 생략합니다. 원문과 효과 조건은 보존합니다."
       ]
     },
     {
@@ -52046,6 +52081,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/spinup-dice.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -52147,6 +52185,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/bunny-hop.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -52258,6 +52299,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/maple-cube.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -52314,6 +52358,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/maple-cube.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -52378,7 +52425,8 @@
         "astro/collectibles/customs/wanted-seeker-of-sinful-spoil.lua"
       ],
       "agentNotes": [
-        "Player900130은 sandbox의 Player:DIABELLSTAR 가상 ID입니다. EID 정식 캐릭터명은 디아벨스타이며 가상번호를 표시하거나 실제 게임 캐릭터 ID로 오인해서는 안 됩니다."
+        "Player900130은 sandbox의 Player:DIABELLSTAR 가상 ID입니다. EID 정식 캐릭터명은 디아벨스타이며 가상번호를 표시하거나 실제 게임 캐릭터 ID로 오인해서는 안 됩니다.",
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -54186,7 +54234,7 @@
         {
           "title": "캐릭터별 효과",
           "items": [
-            "스텔라는 사용해도 아이템이 사라지지 않습니다. 나유타에는 적용되지 않습니다."
+            "스텔라는 사용해도 아이템이 사라지지 않습니다. 카산드라에는 적용되지 않습니다."
           ],
           "generatedBy": "astro-items"
         },
@@ -55054,6 +55102,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/birthright-steven.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -55145,6 +55196,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/birthright-eden-b.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: Birthright의 영문 이름 중복을 생략합니다. 한국어 EID 이름이 비어 있는 Missing No.는 EID 영문 이름을 표시하며, 빈 이름으로 잘못된 아이콘이 연결되지 않도록 해당 참조 토큰을 표시 문장에서 제외합니다. 원문과 효과 조건은 보존합니다."
       ]
     },
     {
@@ -55313,6 +55367,13 @@
             "중첩 시 적이 받는 피해량이 합연산으로 증가"
           ],
           "generatedBy": "astro-items"
+        },
+        {
+          "title": "획득 경로",
+          "items": [
+            "성스러운 심장에서 이 아이템으로 바뀌는 업그레이드는 현재 비활성화되어 있습니다. 성스러운 심장의 업그레이드 대상이 성스러운 심장 자신으로 등록되어 있습니다."
+          ],
+          "generatedBy": "astro-items"
         }
       ],
       "changeKinds": [
@@ -55329,50 +55390,10 @@
       "eidEffects": [
         [
           {
-            "text": "↓ "
-          },
-          {
-            "text": "연사 -0.4"
-          }
-        ],
-        [
-          {
             "text": "↑ "
           },
           {
-            "text": "공격력 배율 x2.3"
-          }
-        ],
-        [
-          {
-            "text": "↑ "
-          },
-          {
-            "text": "공격력 +1"
-          }
-        ],
-        [
-          {
-            "text": "↓ "
-          },
-          {
-            "text": "탄속 -0.25"
-          }
-        ],
-        [
-          {
-            "text": "↑ "
-          },
-          {
-            "icon": "Heart"
-          },
-          {
-            "text": "최대 체력 +1"
-          }
-        ],
-        [
-          {
-            "text": "체력을 모두 회복합니다."
+            "text": "사거리 +3"
           }
         ],
         [
@@ -55388,7 +55409,11 @@
       ],
       "itemSources": [
         "content/items.xml",
-        "astro/collectibles/customs/astro-sacred-heart.lua"
+        "astro/collectibles/customs/astro-sacred-heart.lua",
+        "astro/collectibles/ex-upgrade.lua"
+      ],
+      "agentNotes": [
+        "2026-11-02: 숨김 아이템이며 ex-upgrade.lua의 PLANETARIUM_UPGRADE_LIST에서 Sacred Heart의 Id가 Sacred Heart 자신으로 바뀌었습니다(커밋 메시지: 아스트로 불심 임시 조정). 효과는 숨김 성스러운 심장 대신 캐시 평가로 사거리 +3·유도·눈물 색을 적용합니다."
       ]
     },
     {
@@ -55462,6 +55487,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/maple-cube.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -56511,6 +56539,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/book-of-moon.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -56650,6 +56681,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/book-of-moon.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -56745,6 +56779,10 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/life-sustaining-treatment.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다.",
+        "공격력 ×3은 보스 피해량입니다. 같은 파일의 영문 EID와 바늘 눈물 구현으로 확인했습니다."
       ]
     },
     {
@@ -57208,6 +57246,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/ibn-5100.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -58096,6 +58137,9 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/marigold.lua"
+      ],
+      "agentNotes": [
+        "2026-10-04 문장 검토: EID 원문은 보존하고 오타·조사·중복 명칭·어색한 표현을 정리했습니다. 아이템 이름과 효과 조건은 EID를 기준으로 유지합니다."
       ]
     },
     {
@@ -58221,7 +58265,7 @@
         {
           "title": "캐릭터별 사용 횟수",
           "items": [
-            "막달레나, 더럽혀진 막달레나, 이브, 더럽혀진 이브, 베다니, 더럽혀진 베다니, 레아, 라헬, 디아벨스타, 디아벨제, 성전의 수견사, 일리걸 나이트, 스텔라, 나유타는 스테이지당 6번 사용할 수 있습니다.",
+            "막달레나, 더럽혀진 막달레나, 이브, 더럽혀진 이브, 베다니, 더럽혀진 베다니, 레아, 라헬, 디아벨스타, 디아벨제, 성전의 수견사, 일리걸 나이트, 스텔라, 카산드라는 스테이지당 6번 사용할 수 있습니다.",
             "그 외 캐릭터는 스테이지당 3번 사용할 수 있습니다."
           ],
           "generatedBy": "astro-items"
@@ -59646,7 +59690,7 @@
     },
     {
       "id": "astro-giant-marble",
-      "title": "Giant Marble",
+      "title": "거대 구슬",
       "name": "Giant Marble",
       "kind": "passive",
       "scene": "",
@@ -59654,15 +59698,7 @@
       "tag": "Astro-Items 추가",
       "keywords": "Giant Marble Giant Marble",
       "rules": [],
-      "effectGroups": [
-        {
-          "title": "중첩 효과",
-          "items": [
-            "en_us"
-          ],
-          "generatedBy": "astro-items"
-        }
-      ],
+      "effectGroups": [],
       "changeKinds": [
         "effect"
       ],
@@ -59676,13 +59712,19 @@
       "eidEffects": [
         [
           {
-            "text": "Spawns 3 random trinkets and a "
+            "text": "획득 시 랜덤 장신구 3개와 "
           },
           {
             "icon": "Pill"
           },
           {
-            "text": "Mega Gulp! pill on pickup"
+            "text": "Gulp! "
+          },
+          {
+            "text": "말"
+          },
+          {
+            "text": "약을 소환합니다."
           }
         ]
       ],
@@ -59763,7 +59805,15 @@
       "tag": "Astro-Items 추가",
       "keywords": "Astrophage 아스트로파지",
       "rules": [],
-      "effectGroups": [],
+      "effectGroups": [
+        {
+          "title": "천체방 확률",
+          "items": [
+            "천체방 확률 증가와 자궁·시체 스테이지의 천체방 등장은 처음 사용할 때 망원경 렌즈를 흡수하여 적용됩니다."
+          ],
+          "generatedBy": "astro-items"
+        }
+      ],
       "changeKinds": [
         "effect"
       ],
@@ -59779,73 +59829,7 @@
       "eidEffects": [
         [
           {
-            "text": "천체관 "
-          },
-          {
-            "text": " 사용 시 방 안의 모든 행성방 아이템을 흡수합니다."
-          }
-        ],
-        [
-          {
-            "text": "흡수한 개수마다:"
-          }
-        ],
-        [
-          {
-            "text": "↑ "
-          },
-          {
-            "text": "이동 속도 +0.05"
-          }
-        ],
-        [
-          {
-            "text": "↑ "
-          },
-          {
-            "text": "연사 +0.3"
-          }
-        ],
-        [
-          {
-            "text": "↑ "
-          },
-          {
-            "text": "공격력 배율 x1.05"
-          }
-        ],
-        [
-          {
-            "text": "↑ "
-          },
-          {
-            "text": "사거리 +0.5"
-          }
-        ],
-        [
-          {
-            "text": "↑ "
-          },
-          {
-            "text": "행운 +0.5"
-          }
-        ],
-        [
-          {
-            "item": "망원경 렌즈"
-          },
-          {
-            "text": " 최초 사용 시 Telescope Lens를 흡수합니다."
-          }
-        ],
-        [
-          {
-            "text": "숫자 8키를 누르면 스테이지당 1번 소지중인 모든 행성방 아이템을 필드에 소환합니다."
-          }
-        ],
-        [
-          {
-            "text": "!!! 한번이라도 사용했다면 다음 게임에서 "
+            "text": "!!! 한 번이라도 사용하면 다음 게임에서 "
           },
           {
             "item": "태양"
@@ -59859,11 +59843,84 @@
           {
             "text": "Luna가 등장하지 않습니다."
           }
+        ],
+        [
+          {
+            "text": "사용 시:"
+          }
+        ],
+        [
+          {
+            "text": "↑ "
+          },
+          {
+            "text": "천체방 확률 +9%"
+          }
+        ],
+        [
+          {
+            "text": "↑ "
+          },
+          {
+            "text": "첫 천체방 확률 +15%"
+          }
+        ],
+        [
+          {
+            "text": "Womb/Corpse 스테이지에서 천체방이 등장할 수 있습니다."
+          }
+        ],
+        [
+          {
+            "text": "그 방의 "
+          },
+          {
+            "text": "천체관 아이템을 흡수합니다."
+          }
+        ],
+        [
+          {
+            "text": "흡수한 개수마다:"
+          }
+        ],
+        [
+          {
+            "text": "↑ 연사 +0.3"
+          }
+        ],
+        [
+          {
+            "text": "↑ 공격력 배율 x1.05"
+          }
+        ],
+        [
+          {
+            "text": "↑ 이동 속도 +0.05"
+          }
+        ],
+        [
+          {
+            "text": "↑ 사거리 +0.5"
+          }
+        ],
+        [
+          {
+            "text": "↑ 행운 +0.5"
+          }
+        ],
+        [
+          {
+            "text": "숫자 8키를 누르면 소지 중인 모든 천체관 아이템을 바닥에 내려놓습니다. 스테이지당 1번 사용할 수 있습니다."
+          }
         ]
       ],
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/astrophage.lua"
+      ],
+      "agentNotes": [
+        "2026-11-02 문장 검토: EID 원문은 보존하고 어색한 표현과 아이콘으로만 표시된 능력치 이름을 정리했습니다.",
+        "EID의 천체방 확률·자궁/시체 천체방 문구는 첫 사용 때 망원경 렌즈를 흡수(astrophageSmeltedLens)해서 생기는 효과입니다. 능력치 괄호 줄은 아이콘이 없으면 의미가 사라지므로 이전 EID처럼 능력치별 줄로 풀어 씁니다."
       ]
     },
     {
@@ -59880,7 +59937,7 @@
         {
           "title": "중첩 효과",
           "items": [
-            "중첩 시 Xenonite로 바뀔 확률이 중첩된 수만큼 합연산으로 증가"
+            "중첩 시 Xenonite 확률이 중첩된 수만큼 합연산으로 증가"
           ],
           "generatedBy": "astro-items"
         }
@@ -59898,12 +59955,7 @@
       "eidEffects": [
         [
           {
-            "text": "캐릭터를 따라다니는 패밀리어입니다."
-          }
-        ],
-        [
-          {
-            "text": "공격 버튼을 누르면 십자 방향으로 지형 파괴 눈물을 발사합니다."
+            "text": "캐릭터를 따라다니며 바위 눈물을 4갈래로 발사합니다."
           }
         ],
         [
@@ -59924,11 +59976,6 @@
           },
           {
             "text": "Xenonite로 바꿉니다."
-          }
-        ],
-        [
-          {
-            "text": "방 클리어 시 대사를 출력합니다."
           }
         ]
       ],
@@ -59969,10 +60016,7 @@
       "eidEffects": [
         [
           {
-            "item": "그림자의 책"
-          },
-          {
-            "text": " 게임 시간 60.0초마다 10초간 무적 상태가 됩니다."
+            "text": "60초마다 캐릭터가 10초간 무적 상태가 됩니다."
           }
         ]
       ],
@@ -60625,6 +60669,159 @@
       "itemSources": [
         "content/items.xml",
         "astro/trinkets/customs/focus-band.lua"
+      ]
+    },
+    {
+      "id": "astro-hyper-quantum-dice",
+      "title": "초양자 주사위",
+      "name": "Hyper Quantum Dice",
+      "kind": "active",
+      "scene": "",
+      "body": "",
+      "tag": "Astro-Items 추가",
+      "keywords": "Hyper Quantum Dice 초양자 주사위",
+      "rules": [],
+      "effectGroups": [
+        {
+          "title": "사용 방법",
+          "items": [
+            "처음 사용하면 -3, -2, -1, +1, +2, +3 중 하나를 고르는 화면이 열립니다. 좌우 공격 키로 값을 고른 뒤 다시 사용하면 적용되며, 이때 충전을 소모합니다.",
+            "선택 화면에서 버리기 버튼을 누르면 적용하지 않고 닫습니다."
+          ],
+          "generatedBy": "astro-items"
+        }
+      ],
+      "changeKinds": [
+        "effect"
+      ],
+      "origin": "mod",
+      "modItem": {
+        "quality": "5",
+        "hidden": "true",
+        "maxcharges": "8",
+        "id": "248",
+        "type": "active",
+        "chargeLabel": "8칸"
+      },
+      "image": "assets/astro-items/c-248.png",
+      "eidEffects": [
+        [
+          {
+            "text": "사용하면 고른 값만큼 그 방의 아이템을 번호순으로 1~3번 앞 또는 뒤의 아이템으로 바꿉니다."
+          }
+        ],
+        [
+          {
+            "text": "!!! 해금하지 않은 아이템과 현재 게임에서 등장할 수 없는 아이템은 등장하지 않습니다."
+          }
+        ]
+      ],
+      "itemSources": [
+        "content/items.xml",
+        "astro/collectibles/customs/hyper-quantum-dice.lua",
+        "astro/mega-ui.lua"
+      ],
+      "agentNotes": [
+        "2026-11-02 문장 검토: EID 원문은 보존하고 어색한 표현과 아이콘으로만 표시된 능력치 이름을 정리했습니다.",
+        "Astro.MegaUI 선택 화면을 사용합니다. 첫 사용은 화면만 열고 충전을 소모하지 않으며, 다시 사용하면 선택한 값만큼 스핀업 주사위(+) 또는 스핀다운 주사위(-)를 반복 사용합니다."
+      ]
+    },
+    {
+      "id": "astro-gene-scissors",
+      "title": "유전자 가위",
+      "name": "Gene Scissors",
+      "kind": "active",
+      "scene": "",
+      "body": "",
+      "tag": "Astro-Items 추가",
+      "keywords": "Gene Scissors 유전자 가위",
+      "rules": [],
+      "effectGroups": [],
+      "changeKinds": [
+        "effect"
+      ],
+      "origin": "mod",
+      "modItem": {
+        "quality": "4",
+        "maxcharges": "12",
+        "id": "249",
+        "type": "active",
+        "chargeLabel": "12칸"
+      },
+      "image": "assets/astro-items/c-249.png",
+      "eidEffects": [
+        [
+          {
+            "text": "사용하면 그 방에서 하나만 고를 수 있던 아이템과 픽업을 모두 가질 수 있습니다."
+          }
+        ]
+      ],
+      "itemSources": [
+        "content/items.xml",
+        "astro/collectibles/customs/gene-scissors.lua"
+      ],
+      "agentNotes": [
+        "2026-11-02 문장 검토: EID 원문은 보존하고 어색한 표현과 아이콘으로만 표시된 능력치 이름을 정리했습니다."
+      ]
+    },
+    {
+      "id": "astro-cassandra-s-crystal-ball",
+      "title": "카산드라의 수정 구슬",
+      "name": "Cassandra's Crystal Ball",
+      "kind": "active",
+      "scene": "",
+      "body": "",
+      "tag": "Astro-Items 추가",
+      "keywords": "Cassandra's Crystal Ball 카산드라의 수정 구슬",
+      "rules": [],
+      "effectGroups": [
+        {
+          "title": "캐릭터별 효과",
+          "items": [
+            "스텔라와 카산드라는 사용해도 아이템이 사라지지 않습니다."
+          ],
+          "generatedBy": "astro-items"
+        },
+        {
+          "title": "변환 대상",
+          "items": [
+            "일반 아이템 업그레이드 목록에 있는 아이템을 확률 판정 없이 강화 아이템으로 바꿉니다. 자동 확률이 0%인 항목도 바뀌며, 별자리·행성 목록의 아이템은 대상이 아닙니다."
+          ],
+          "generatedBy": "astro-items"
+        }
+      ],
+      "changeKinds": [
+        "effect"
+      ],
+      "origin": "mod",
+      "modItem": {
+        "quality": "4",
+        "maxcharges": "12",
+        "id": "250",
+        "type": "active",
+        "chargeLabel": "12칸"
+      },
+      "image": "assets/astro-items/c-250.png",
+      "imagePlaceholder": true,
+      "eidEffects": [
+        [
+          {
+            "text": "!!! 일회용 !!!"
+          }
+        ],
+        [
+          {
+            "text": "사용 시 그 방의 아이템을 업그레이드합니다."
+          }
+        ]
+      ],
+      "itemSources": [
+        "content/items.xml",
+        "astro/collectibles/customs/cassandras-crystal-ball.lua",
+        "astro/collectibles/ex-upgrade.lua"
+      ],
+      "agentNotes": [
+        "Astro.UPGRADE_LIST만 검사하고 Chance와 무관하게 Morph합니다. PLANETARIUM_UPGRADE_LIST·PLANET_UPGRADE_LIST는 사용하지 않습니다. 등록 이미지가 없어 게임 원본 물음표 이미지를 사용합니다."
       ]
     }
   ]

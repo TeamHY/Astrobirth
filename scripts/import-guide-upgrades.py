@@ -55,6 +55,8 @@ for table in ['UPGRADE_LIST', 'PLANETARIUM_UPGRADE_LIST', 'PLANET_UPGRADE_LIST']
     for old, new, chance in tables[table]:
         if table == 'PLANETARIUM_UPGRADE_LIST' and old in planet_originals:
             continue  # These 0% entries use the separate 30% planet logic.
+        if old == new:
+            continue  # A self-mapping (temporarily disabled upgrade) never changes the item.
         group = 'planet-auto' if table == 'PLANET_UPGRADE_LIST' else 'manual-only' if not chance else 'standard-auto'
         condition = '비밀방·일급 비밀방·천체관에서 등장하고, 모든 플레이어가 초행성을 보유하지 않은 경우에만 적용합니다.' if group == 'planet-auto' else ''
         pattern = {'original': item(old), 'target': item(new), 'chance': chance,
@@ -93,7 +95,7 @@ direct = [
     ('astro-skeleton-guppy', '구피 세트 아이템', '구피 변신 상태에서 뼈 하트 개수가 줄어들 때 방 바닥의 구피 아이템을 변환합니다.', 'special-upgrades'),
     ('astro-p-key', 'R 키', 'R 키를 소지하고 P 키를 누르면 R 키를 소모하고 P키를 바닥에 생성합니다.', 'special-upgrades'),
     ('astro-marigold', '미다스의 손길', '미다스의 손길을 소지하거나 방 바닥에 둔 상태에서 꿀꺽! 알약 또는 용광로를 사용합니다.', 'special-upgrades')]
-payload = {'schema': 1, 'reviewed': '2026-10-04', 'commit': sha,
+payload = {'schema': 1, 'reviewed': '2026-11-02', 'commit': sha,
            'sourceSHA256': hashlib.sha256(source.encode()).hexdigest(),
            'intro': '원본 아이템이 새로 등장할 때 정해진 확률로 강화 아이템이 대신 나오는 패턴을 모두 정리했습니다. 일반 아이템·행성의 확률과 자동 변환이 없는 대상을 구분합니다.',
            'entries': entries, 'patterns': patterns,

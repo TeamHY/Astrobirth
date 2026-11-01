@@ -3,7 +3,7 @@
   "reviewed": "2026-10-03",
   "sources": {
     "Astrobirth": "4c02a2072ac3a304072a5c7424efe06792f700d4",
-    "Astro-Items": "b9785699358291b35eb4195dc5fcd8441ca39c52"
+    "Astro-Items": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
   },
   "reviewMethod": "Reachable released Lua reviewed by functional groups; XML semantic differences; STB tuple comparisons with XML parity; EID name comparison.",
   "limits": [
@@ -15,7 +15,7 @@
     "activeLuaModules": 58,
     "baseFightModules": 22,
     "qa": 25,
-    "items": 989,
+    "items": 992,
     "players": 46,
     "roomFiles": 52
   },
@@ -3322,8 +3322,8 @@
       "file": "astro/collectibles/customs/artifact-ignition.lua",
       "sha256": "9791271067341b7f46b586023fa989e90df266fd22122933e4e4f93c5119969f",
       "refs": [
-        "items.html#astro-artifact-ignition",
-        "index.html#upgrade-combinations"
+        "index.html#upgrade-combinations",
+        "items.html#astro-artifact-ignition"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3351,7 +3351,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/astro-sacred-heart.lua",
-      "sha256": "cfc3909d24f497195072cc02867734a5756abdeef7894410348f568049bbd959",
+      "sha256": "4a90153b5ae8e9dec959b60ceadf66f2851eabdf243b86867bceceb40d256e01",
       "refs": [
         "items.html#astro-astro-sacred-heart"
       ],
@@ -3371,7 +3371,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/astrophage.lua",
-      "sha256": "491fbb9f149b195b8f7119172a57ed9029e3ddd8fefe9b5db0cb8f427207f36e",
+      "sha256": "c1c597bf87048b527b6214d20959320837a5099522c9580b0059d4cdf087158e",
       "refs": [
         "items.html#astro-astrophage"
       ],
@@ -3565,8 +3565,8 @@
       "file": "astro/collectibles/customs/blighted-guppy.lua",
       "sha256": "17eab0ddd8f24eb4d7853f89f49fb20d4200d06115776f190e642c531d5d5451",
       "refs": [
-        "items.html#astro-blighted-guppy",
-        "index.html#upgrade-combinations"
+        "index.html#upgrade-combinations",
+        "items.html#astro-blighted-guppy"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3576,8 +3576,8 @@
       "file": "astro/collectibles/customs/blood-guppy.lua",
       "sha256": "0c78e89a3b7971af823e25dc9b84d9c031077d5aa08f49e586f50eeaef4d2610",
       "refs": [
-        "items.html#astro-brimstone-guppy",
-        "index.html#upgrade-combinations"
+        "index.html#upgrade-combinations",
+        "items.html#astro-brimstone-guppy"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -3707,6 +3707,16 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/cassandras-crystal-ball.lua",
+      "sha256": "986f96f3c046a5f1211dcb58b06c824f82c0a562b6a931cea78647202008aaf9",
+      "refs": [
+        "items.html#astro-cassandra-s-crystal-ball"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/chaos-dice.lua",
       "sha256": "a3a96765ab919b33c79f5fa6d626f4f0cb541c7fe3598e82f10eb1425b918ade",
       "refs": [
@@ -3718,7 +3728,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/chronos.lua",
-      "sha256": "d52ce91a67a77e6d4ca175b259fd8c36a22ccdacef9da06bb6b4e3111f70d12e",
+      "sha256": "7c3b6af30a10b90ed8657daaed6f9e50d5c439c892295137b5bf3515cfba31c9",
       "refs": [
         "items.html#astro-chronos"
       ],
@@ -3877,8 +3887,8 @@
       "file": "astro/collectibles/customs/divine-guppy.lua",
       "sha256": "8c4cd4b97dc3470f6d6ab8e77cfe1826f6361d358ce92648cb83b8a3a003f82a",
       "refs": [
-        "items.html#astro-divine-guppy",
-        "index.html#upgrade-combinations"
+        "index.html#upgrade-combinations",
+        "items.html#astro-divine-guppy"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -4073,8 +4083,18 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/gene-scissors.lua",
+      "sha256": "a515e2733a23e03a37ab8a2441a1913639898eb79e40e55b715268c7049a8017",
+      "refs": [
+        "items.html#astro-gene-scissors"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/giant-marble.lua",
-      "sha256": "5a0f2bed536d176769b846fd513533c743e4ad0647f5a7498f9b97056dcc0c0b",
+      "sha256": "a8b7461942c3075ea1adeb23b463e4f08769492543c39939cf620646075e32fe",
       "refs": [
         "items.html#astro-giant-marble"
       ],
@@ -4147,8 +4167,8 @@
       "file": "astro/collectibles/customs/golden-guppy.lua",
       "sha256": "382f8255f8bbb694817078cf46578028cc5aa4a553454d7ac742c35241991df2",
       "refs": [
-        "items.html#astro-golden-guppy",
-        "index.html#special-upgrades"
+        "index.html#special-upgrades",
+        "items.html#astro-golden-guppy"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -4216,6 +4236,16 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/hyper-quantum-dice.lua",
+      "sha256": "2a566947af5c7e0a9aedda88efea7508ea14c4aec6d311e69cab93e5e075c772",
+      "refs": [
+        "items.html#astro-hyper-quantum-dice"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/ibn-5100.lua",
       "sha256": "31c6519af405483c25db060aba77695ad1b0417399e59435190fc4e5da7d6bae",
       "refs": [
@@ -4237,10 +4267,10 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/legacy.lua",
-      "sha256": "da451c502ef15390a8c1a96a51f3a3ca04bf46fcd30daa3014b93e7dc58a38d6",
+      "sha256": "00e9958fd1b261c8f4be5502d1817eefeec8ffd8d2e80467c6f0a7259eacbbf4",
       "refs": [
-        "items.html#astro-legacy",
-        "index.html#upgrade-combinations"
+        "index.html#upgrade-combinations",
+        "items.html#astro-legacy"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -4358,9 +4388,9 @@
       "file": "astro/collectibles/customs/marigold.lua",
       "sha256": "55c940a60badfcbaa37a0701018e6756b0fa2718c90fbac08ceb4f6a705e5e55",
       "refs": [
-        "items.html#astro-marigold",
+        "index.html#special-upgrades",
         "index.html#upgrade-combinations",
-        "index.html#special-upgrades"
+        "items.html#astro-marigold"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -4420,8 +4450,8 @@
       "file": "astro/collectibles/customs/mega-d4.lua",
       "sha256": "67778fcacdfd2a8b425e935241034d6a3b5c8af712569a53a765b7a904b092cd",
       "refs": [
-        "items.html#astro-mega-d4",
-        "index.html#special-upgrades"
+        "index.html#special-upgrades",
+        "items.html#astro-mega-d4"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -4431,8 +4461,8 @@
       "file": "astro/collectibles/customs/mega-d6.lua",
       "sha256": "d29c70d9b7dd70ba224f86b7efd4f9e5aa901b991351dbeccf19fc4d4b4f4b3e",
       "refs": [
-        "items.html#astro-mega-d6",
-        "index.html#special-upgrades"
+        "index.html#special-upgrades",
+        "items.html#astro-mega-d6"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -4442,8 +4472,8 @@
       "file": "astro/collectibles/customs/mega-d8.lua",
       "sha256": "968c9aa64906f1b87c08bddb4148b27f4c3b4e86ccb8ddf4349219ada4ef289d",
       "refs": [
-        "items.html#mega-d8",
-        "index.html#special-upgrades"
+        "index.html#special-upgrades",
+        "items.html#mega-d8"
       ],
       "activeModule": false,
       "baseFightBranch": true
@@ -4574,8 +4604,8 @@
       "file": "astro/collectibles/customs/p-key.lua",
       "sha256": "4b079729dce697b58c00225487d067f203b91ca657a068006c86ec15ea68aa62",
       "refs": [
-        "items.html#astro-p-key",
-        "index.html#special-upgrades"
+        "index.html#special-upgrades",
+        "items.html#astro-p-key"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -4593,7 +4623,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/pink-ward.lua",
-      "sha256": "39ab5defaa6f51ea11ed2274433dadab123977cde9737101d0e906927827da39",
+      "sha256": "2c9845a6d0035dd8fa136afa413d5c4662d3ef5753e64adbb8894c10ee5709c8",
       "refs": [
         "items.html#astro-pink-ward"
       ],
@@ -4613,11 +4643,11 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/albireo.lua",
-      "sha256": "8492484797449edae1cac07fb026e2259ab5aa84c155b31d8ad705c9cbe81aa7",
+      "sha256": "2a274d52937705273b12e4e2fbf7db59e583de5e006ea51bced2cd5837829528",
       "refs": [
+        "index.html#planet-upgrade",
         "items.html#astro-albireo",
-        "players.html#stellar",
-        "index.html#planet-upgrade"
+        "players.html#stellar"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -4987,7 +5017,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/prometheus.lua",
-      "sha256": "e03125431fc7666cac5b8ac562680c9a1c183f05f539b2107de8df006ca8f309",
+      "sha256": "234f4fd7761896c6f38246ef2f2e023637d98a625f9c6184d1389cd417a9807d",
       "refs": [
         "index.html#perfection",
         "items.html#prometheus"
@@ -5062,7 +5092,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/qubit-dice.lua",
-      "sha256": "59a0ddbef3ad7207232736c1b245989348b04972e9766efe6587d9363d189c59",
+      "sha256": "cf17cf94878abad20d095d85ca953c2aa3d7c0c80d5d575121c67457a0f7ff65",
       "refs": [
         "items.html#astro-qubit-dice"
       ],
@@ -5072,7 +5102,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/quill-pen.lua",
-      "sha256": "568a5fb24a1cebcd6777067a99634ca1e9d3a5fda2c01e3dffd3cd20a74955f3",
+      "sha256": "4fb1303216e7a3dbca6620a80824018f9edf84ea046013d357e6b59bbada4a20",
       "refs": [
         "items.html#astro-quill-pen"
       ],
@@ -5156,7 +5186,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/rocky.lua",
-      "sha256": "d92c9c4d40e978870cae5ec7d798187975e87abaa63e8ee5c6b1ea3598c14a7b",
+      "sha256": "3aee736e1b08b35a801fe7e7048c0d3d5975bca4f39daa8412c69c49a72cc47c",
       "refs": [
         "items.html#astro-rocky"
       ],
@@ -5190,8 +5220,8 @@
       "file": "astro/collectibles/customs/scales-of-obedience.lua",
       "sha256": "5e15444aa60859bd3691f0a0f843ac645eb94734012f58567c1435fce55040ac",
       "refs": [
-        "items.html#astro-scales-of-obedience",
-        "index.html#upgrade-combinations"
+        "index.html#upgrade-combinations",
+        "items.html#astro-scales-of-obedience"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -5243,8 +5273,8 @@
       "file": "astro/collectibles/customs/skeleton-guppy.lua",
       "sha256": "27be44aac6a532fbb3df0eaf1522683fafe144ca1e479d77dd58a3ca6f4512bc",
       "refs": [
-        "items.html#astro-skeleton-guppy",
-        "index.html#special-upgrades"
+        "index.html#special-upgrades",
+        "items.html#astro-skeleton-guppy"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -5274,7 +5304,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/spinup-dice.lua",
-      "sha256": "87166b8e3b23624d94ea02c4cf2d8b3fe743c5ac7f8158d460c400cf3b3c753b",
+      "sha256": "763bcad2f20d36ec999596f86e920419fa2b7a7ba12102ac6df41ef4655fe4ed",
       "refs": [
         "items.html#astro-spinup-dice"
       ],
@@ -5358,9 +5388,10 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/super-magneto.lua",
-      "sha256": "91d07f8d2cac603d1b9eec84e5b0d09fdb93337329ff2f977060ec40321e4149",
+      "sha256": "b43b2e3040c587b97533b44ada32d47e9d14eced3c3fe9fb1b3fdddf44a47d4d",
       "refs": [
-        "items.html#astro-super-magneto"
+        "items.html#astro-super-magneto",
+        "items.html#canned-bread"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -5540,7 +5571,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/xenonite.lua",
-      "sha256": "ee99f9167d87f26393f0931e756bc0f029ea9d9bbe0ec403ff501bbb2c3b30e0",
+      "sha256": "5bb6b0e19339a56e83b006a1bfdf88253e6e22c6e43b2fe8f4dbb04bff303da0",
       "refs": [
         "items.html#astro-xenonite"
       ],
@@ -5559,8 +5590,35 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/ex-upgrade.lua",
+      "sha256": "18e390a11c4b314626087494769fca59675c6060a9d2e55a1023778d7ffa5996",
+      "refs": [
+        "index.html#item-upgrade",
+        "index.html#planet-upgrade",
+        "index.html#special-upgrades",
+        "items.html#astro-astro-sacred-heart",
+        "items.html#astro-cassandra-s-crystal-ball",
+        "upgrades.html#manual-only",
+        "upgrades.html#planet-auto",
+        "upgrades.html#standard-auto"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/init.lua",
+      "sha256": "b298e6e401cb6926b88f2399c985f6ef72414c6ec0ccc9d6cf77c7c1c3e6194c",
+      "refs": [
+        "index.html#upgrade-combinations"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/penalty.lua",
-      "sha256": "d16197cb2c2d487e16fc3710a5cb7247c3fe364c13c243fd29ee8733a3f172f7",
+      "sha256": "5a1fc5b18a811032845b777d2a0dc17465edc599034e43a5344a0408fbd1c14a",
       "refs": [
         "index.html#damage-penalty",
         "index.html#perfection-basics",
@@ -5572,6 +5630,19 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/reroll.lua",
+      "sha256": "2f478de0e4b8bdc57bad7db5feeed784ae4bd4c9373ea2f5b16af7a3f516b0f4",
+      "refs": [
+        "index.html#item-upgrade",
+        "upgrades.html#manual-only",
+        "upgrades.html#planet-auto",
+        "upgrades.html#standard-auto"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/curse.lua",
       "sha256": "18c52790640f2c2fc79025151f8cb0482d7772135f07e0b157601019ce4b37af",
       "refs": [
@@ -5580,6 +5651,16 @@
       ],
       "activeModule": false,
       "baseFightBranch": true
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/eid.lua",
+      "sha256": "ec92b934855f14622010fadea5948d5d5e339226109c58cb43b7cc64af3c28fc",
+      "refs": [
+        "index.html#upgrade-combinations"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
     },
     {
       "project": "Astro-Items",
@@ -5644,8 +5725,28 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/mcm.lua",
+      "sha256": "ac7d82f077db422f6d2698edebc9168e21059dd007c3edb5cb5b6d10305aa697",
+      "refs": [
+        "index.html#upgrade-combinations"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/mega-ui.lua",
+      "sha256": "9da1122057154a2c962245a3a21198251c6b0395805e6f007ee4f39ebbeb83f2",
+      "refs": [
+        "items.html#astro-hyper-quantum-dice"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/player.lua",
-      "sha256": "995622fba4bb9501c4d6d768dc5166d74718b656012a65c3011829954d8f05a0",
+      "sha256": "b55642c1147317f247904068239a60f36d35319c8118f1c16d803a6e38963688",
       "refs": [
         "players.html#ainz-ooal-gown",
         "players.html#ainz-ooal-gown_b",
@@ -5673,6 +5774,16 @@
       ],
       "activeModule": false,
       "baseFightBranch": true
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/translate.lua",
+      "sha256": "1a2502025bd57523f1ed1dfdab9d130cf847994923f9596b91fb365c7fb56ac9",
+      "refs": [
+        "players.html#stellar_b"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
     },
     {
       "project": "Astro-Items",
@@ -5850,9 +5961,22 @@
     },
     {
       "project": "Astro-Items",
-      "file": "astro/utils/init.lua",
-      "sha256": "acfb85d01e50ea78b36c6dce50ef9fa94338f59315995b395d189995b6e23689",
+      "file": "astro/upgrade-action.lua",
+      "sha256": "f6f60a3f3ea8054a12c086df7226d090e58052b8e41d6b8ee5c5ef7abe555b42",
       "refs": [
+        "index.html#upgrade-combinations"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/utils/init.lua",
+      "sha256": "13352bcc104c7e781b63b92f7d1673d3104bfaaa492279f81a5680855cfbd231",
+      "refs": [
+        "index.html#planet-upgrade",
+        "index.html#special-upgrades",
+        "index.html#upgrade-combinations",
         "items.html#aquarius",
         "items.html#bloody-crown",
         "items.html#holy-crown",
@@ -5863,10 +5987,7 @@
         "items.html#number-magnet",
         "items.html#silver-dollar",
         "items.html#wicked-crown",
-        "rules.html#latter-stage-bans",
-        "index.html#planet-upgrade",
-        "index.html#upgrade-combinations",
-        "index.html#special-upgrades"
+        "rules.html#latter-stage-bans"
       ],
       "activeModule": false,
       "baseFightBranch": false
@@ -5874,7 +5995,7 @@
     {
       "project": "Astro-Items",
       "file": "content/items.xml",
-      "sha256": "77bef70e3172c0c595ada4eb3a9e2fca65ed483ec790fd0f98b4f27498f737d6",
+      "sha256": "04db3c082534cb65fba0528667366dd0d69a42aab1e18c44ec5eb89f655f31ef",
       "refs": [
         "items.html#astro-24k-copter",
         "items.html#astro-3-body-problem",
@@ -5934,6 +6055,7 @@
         "items.html#astro-capricorn-ex",
         "items.html#astro-casey",
         "items.html#astro-casiopea",
+        "items.html#astro-cassandra-s-crystal-ball",
         "items.html#astro-chaos-dice",
         "items.html#astro-chronos",
         "items.html#astro-chubby-s-head",
@@ -5978,6 +6100,7 @@
         "items.html#astro-fortune-coin",
         "items.html#astro-galactic-medal-of-valor",
         "items.html#astro-gemini-ex",
+        "items.html#astro-gene-scissors",
         "items.html#astro-giant-marble",
         "items.html#astro-giga-boom",
         "items.html#astro-glitched-d6",
@@ -5994,6 +6117,7 @@
         "items.html#astro-happy-onion",
         "items.html#astro-heart-bloom",
         "items.html#astro-hot-potato",
+        "items.html#astro-hyper-quantum-dice",
         "items.html#astro-ibn-5100",
         "items.html#astro-isaac-s-frame",
         "items.html#astro-judas-frame",
@@ -6753,74 +6877,6 @@
         "rooms.html"
       ],
       "activeModule": false
-    },
-    {
-      "project": "Astro-Items",
-      "file": "astro/collectibles/ex-upgrade.lua",
-      "sha256": "eb3069981b7435ee7544792e8979a17c0e7b46b9f0799ce46dceca289272f21b",
-      "refs": [
-        "index.html#item-upgrade",
-        "index.html#planet-upgrade",
-        "index.html#special-upgrades",
-        "upgrades.html#standard-auto",
-        "upgrades.html#planet-auto",
-        "upgrades.html#manual-only"
-      ],
-      "activeModule": false,
-      "baseFightBranch": false
-    },
-    {
-      "project": "Astro-Items",
-      "file": "astro/collectibles/reroll.lua",
-      "sha256": "2f478de0e4b8bdc57bad7db5feeed784ae4bd4c9373ea2f5b16af7a3f516b0f4",
-      "refs": [
-        "index.html#item-upgrade",
-        "upgrades.html#standard-auto",
-        "upgrades.html#planet-auto",
-        "upgrades.html#manual-only"
-      ],
-      "activeModule": false,
-      "baseFightBranch": false
-    },
-    {
-      "project": "Astro-Items",
-      "file": "astro/upgrade-action.lua",
-      "sha256": "f6f60a3f3ea8054a12c086df7226d090e58052b8e41d6b8ee5c5ef7abe555b42",
-      "refs": [
-        "index.html#upgrade-combinations"
-      ],
-      "activeModule": false,
-      "baseFightBranch": false
-    },
-    {
-      "project": "Astro-Items",
-      "file": "astro/collectibles/init.lua",
-      "sha256": "efb43fe02e6b74817581c06067cb60a7f1be958ec0b13a16ecee3505640b79e9",
-      "refs": [
-        "index.html#upgrade-combinations"
-      ],
-      "activeModule": false,
-      "baseFightBranch": false
-    },
-    {
-      "project": "Astro-Items",
-      "file": "astro/mcm.lua",
-      "sha256": "ac7d82f077db422f6d2698edebc9168e21059dd007c3edb5cb5b6d10305aa697",
-      "refs": [
-        "index.html#upgrade-combinations"
-      ],
-      "activeModule": false,
-      "baseFightBranch": false
-    },
-    {
-      "project": "Astro-Items",
-      "file": "astro/eid.lua",
-      "sha256": "9134a7ca102e6060ddfde7f370332c0e26617e5c93058be059481de1388e8051",
-      "refs": [
-        "index.html#upgrade-combinations"
-      ],
-      "activeModule": false,
-      "baseFightBranch": false
     }
   ],
   "featureGroups": [

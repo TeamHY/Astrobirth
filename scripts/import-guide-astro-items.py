@@ -199,6 +199,7 @@ LABELS={'Crafting11':'행운 동전','Crafting17':'기가 폭탄','Crafting18':'
         'CursedRoom':'저주방','ArcadeRoom':'오락실','ErrorRoom':'에러방','IsaacsRoom':'방','LadderRoom':'계단방',
         'EternalHeart':'이터널 하트','BoneHeart':'뼈 하트','BrokenHeart':'부서진 하트','HalfSoulHeart':'소울 하트 반 칸'}
 
+STAT_ICONS={'DamageSmall','SpeedSmall','TearsSmall','RangeSmall','ShotspeedSmall','LuckSmall'}
 def effects(description):
     description=description.replace('{taurusKeySet}','설정한 돌진 입력으로').replace('{wakaba_md1}','8')
     description=description.replace('품질','퀄리티').replace('등급','퀄리티')
@@ -222,6 +223,8 @@ def effects(description):
                     if i+1<len(pieces):
                         for label in [english,name]:
                             if label:pieces[i+1]=re.sub(r'^\s*'+re.escape(label)+r'(?![\w])',' ',pieces[i+1],flags=re.I)
+                elif token in STAT_ICONS:
+                    pass  # The generator places stat icons on reviewed numeric rows.
                 elif token in registry['sprites']:
                     segments.append({'icon':token})
                 elif token.startswith('Player'):
@@ -298,9 +301,9 @@ for definition in definitions:
                                 'eidEffects':existing['eidEffects'],'source':captured['file'],
                                 'imagePlaceholder':key in placeholder_ids,
                                 'image':existing['image'],'imageSHA256':digest((DOCS/existing['image']).read_bytes())})
-assert len(manifest['entries'])==264
+assert len(manifest['entries'])==267
 manifest['sources']=list(sources.values())
 catalog['intro']='기존 아이템의 변경사항과 Astro-Items가 추가한 아이템·장신구의 효과를 확인할 수 있습니다. 출처와 종류를 선택하거나 통합 검색으로 이름과 효과를 찾을 수 있습니다.'
 for file,data in [('items-content.json',catalog),('guide-icons.json',registry),('astro-items.json',manifest)]:
     (DOCS/file).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
-print('Astro-Items 등록 264종 반영:',new,'개 신규 카드,',264-new,'개 기존 카드에 효과 병합.')
+print('Astro-Items 등록 267종 반영:',new,'개 신규 카드,',267-new,'개 기존 카드에 효과 병합.')

@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "reviewed": "2026-10-04",
-  "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
-  "sourceSHA256": "eb3069981b7435ee7544792e8979a17c0e7b46b9f0799ce46dceca289272f21b",
+  "reviewed": "2026-11-02",
+  "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf",
+  "sourceSHA256": "18e390a11c4b314626087494769fca59675c6060a9d2e55a1023778d7ffa5996",
   "intro": "원본 아이템이 새로 등장할 때 정해진 확률로 강화 아이템이 대신 나오는 패턴을 모두 정리했습니다. 일반 아이템·행성의 확률과 자동 변환이 없는 대상을 구분합니다.",
   "entries": [
     {
@@ -10,7 +10,7 @@
       "title": "일반 아이템의 자동 업그레이드",
       "body": "원본이 새로 등장할 때 적용하는 아이템별 대체 확률입니다. 방 종류나 행운에 따른 추가 제한은 이 업그레이드 판정에 없습니다.",
       "open": true,
-      "keywords": "업글 업그레이드 확률 강화 대체 원본 Death's List Black List Maw of the Void Maw Of The Void EX Black Candle Purple Candle Rocket in a Jar Super Rocket in a Jar Humbleing Bundle Steam Bundle Lil Chest Big Chest Cricket's Head Max's Head Birthright Legacy The D6 Mega D6 D8 Mega D8 Midas' Touch Marigold My Little Unicorn Bicorn Euthanasia Life-Sustaining Treatment Amazing Chaos Scroll Amazing Chaos Scroll of Goodness Magic Mushroom Rainbow Mushroom Hive Mind Overmind The Small Rock David's Stone Guppy's Collar Guppy's Name Tag Experimental Treatment Experimental Serum Red Cube Black Cube Sinus Infection Acute Sinusitis Champion Belt Tyrant’s Belt Rosary Luxury Rosary Lead Pencil Quill Pen Serpent's Kiss Serpent's Kiss EX Holy Light Divine Light Apple! Golden Apple Tough Love Gold Tooth The Mark 777 The Pact Liberation Marbles Giant Marble Bomber Boy Water Balloon Unholy Mantle Holy Mantle Fallen Orb Sacred Orb Sacred Heart Astro Sacred Heart Godhead Astro Godhead Star of Bethlehem Astro Star of Bethlehem We Need To Go Deeper! We Need To Go Astro!",
+      "keywords": "업글 업그레이드 확률 강화 대체 원본 Death's List Black List Maw of the Void Maw Of The Void EX Black Candle Purple Candle Rocket in a Jar Super Rocket in a Jar Humbleing Bundle Steam Bundle Lil Chest Big Chest Cricket's Head Max's Head Birthright Legacy The D6 Mega D6 D8 Mega D8 Midas' Touch Marigold My Little Unicorn Bicorn Euthanasia Life-Sustaining Treatment Amazing Chaos Scroll Amazing Chaos Scroll of Goodness Magic Mushroom Rainbow Mushroom Hive Mind Overmind The Small Rock David's Stone Guppy's Collar Guppy's Name Tag Experimental Treatment Experimental Serum Red Cube Black Cube Sinus Infection Acute Sinusitis Champion Belt Tyrant’s Belt Rosary Luxury Rosary Lead Pencil Quill Pen Serpent's Kiss Serpent's Kiss EX Holy Light Divine Light Apple! Golden Apple Tough Love Gold Tooth The Mark 777 The Pact Liberation Marbles Giant Marble Bomber Boy Water Balloon Unholy Mantle Holy Mantle Fallen Orb Sacred Orb Ward Pink Ward Qubit Dice Hyper Quantum Dice Godhead Astro Godhead Star of Bethlehem Astro Star of Bethlehem We Need To Go Deeper! We Need To Go Astro!",
       "rewardTable": {
         "caption": "일반 아이템의 자동 업그레이드 전체 목록",
         "columns": [
@@ -171,7 +171,7 @@
           ],
           [
             "구슬",
-            "Giant Marble",
+            "거대 구슬",
             "50%"
           ],
           [
@@ -190,8 +190,13 @@
             "10%"
           ],
           [
-            "성스러운 심장",
-            "광휘로운 심장",
+            "와드",
+            "핑크 와드",
+            "30%"
+          ],
+          [
+            "양자 주사위",
+            "초양자 주사위",
             "10%"
           ],
           [
@@ -382,8 +387,13 @@
             null
           ],
           [
-            "sacred-heart-182",
-            "astro-astro-sacred-heart",
+            "astro-ward",
+            "astro-pink-ward",
+            null
+          ],
+          [
+            "astro-qubit-dice",
+            "astro-hyper-quantum-dice",
             null
           ],
           [
@@ -1282,7 +1292,7 @@
       },
       "target": {
         "id": "astro-giant-marble",
-        "title": "Giant Marble",
+        "title": "거대 구슬",
         "name": "Giant Marble"
       },
       "chance": 50,
@@ -1345,6 +1355,42 @@
       "sourceTable": "UPGRADE_LIST",
       "originalSymbol": "Astro.Collectible.FALLEN_ORB",
       "targetSymbol": "CollectibleType.COLLECTIBLE_SACRED_ORB"
+    },
+    {
+      "original": {
+        "id": "astro-ward",
+        "title": "와드",
+        "name": "Ward"
+      },
+      "target": {
+        "id": "astro-pink-ward",
+        "title": "핑크 와드",
+        "name": "Pink Ward"
+      },
+      "chance": 30,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "Astro.Collectible.WARD",
+      "targetSymbol": "Astro.Collectible.PINK_WARD"
+    },
+    {
+      "original": {
+        "id": "astro-qubit-dice",
+        "title": "양자 주사위",
+        "name": "Qubit Dice"
+      },
+      "target": {
+        "id": "astro-hyper-quantum-dice",
+        "title": "초양자 주사위",
+        "name": "Hyper Quantum Dice"
+      },
+      "chance": 10,
+      "group": "standard-auto",
+      "condition": "",
+      "sourceTable": "UPGRADE_LIST",
+      "originalSymbol": "Astro.Collectible.QUBIT_DICE",
+      "targetSymbol": "Astro.Collectible.HYPER_QUANTUM_DICE"
     },
     {
       "original": {
@@ -1573,24 +1619,6 @@
       "originalSymbol": "CollectibleType.COLLECTIBLE_CAPRICORN",
       "targetSymbol": "Astro.Collectible.CAPRICORN_EX",
       "directMethod": "방 바닥에 둔 원본 별자리에 알비레오를 사용해 직접 변환합니다."
-    },
-    {
-      "original": {
-        "id": "sacred-heart-182",
-        "title": "성스러운 심장",
-        "name": "Sacred Heart"
-      },
-      "target": {
-        "id": "astro-astro-sacred-heart",
-        "title": "광휘로운 심장",
-        "name": "Astro Sacred Heart"
-      },
-      "chance": 10,
-      "group": "standard-auto",
-      "condition": "",
-      "sourceTable": "PLANETARIUM_UPGRADE_LIST",
-      "originalSymbol": "CollectibleType.COLLECTIBLE_SACRED_HEART",
-      "targetSymbol": "Astro.Collectible.ASTRO_SACRED_HEART"
     },
     {
       "original": {

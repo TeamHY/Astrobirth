@@ -681,8 +681,8 @@ class Verification:
         entries = {entry["id"]: entry for entry in catalog["entries"] if entry.get("origin") == "mod"}
         records = data["entries"]
         self.require(data["schema"] == 1 and data["commit"] == guide["sources"]["Astro-Items"], "추가 아이템 자료의 형식 또는 기준 커밋이 다릅니다.")
-        self.require(data["registrationCount"] == 264 and len(records) == 264 and {record["id"] for record in records} == set(entries), "Astro-Items 등록 264종과 문서 항목이 다릅니다.")
-        self.require(Counter(record["type"] for record in records) == {"passive": 179, "familiar": 8, "active": 60, "trinket": 17}, "추가 아이템의 종류별 등록 개수가 다릅니다.")
+        self.require(data["registrationCount"] == 267 and len(records) == 267 and {record["id"] for record in records} == set(entries), "Astro-Items 등록 267종과 문서 항목이 다릅니다.")
+        self.require(Counter(record["type"] for record in records) == {"passive": 179, "familiar": 8, "active": 63, "trinket": 17}, "추가 아이템의 종류별 등록 개수가 다릅니다.")
         icons = self.load_json(DOCS / "guide-icons.json")
         review = self.load_json(DOCS / "astro-item-review.json")
         page = self.pages[(DOCS / "items.html").resolve()]
@@ -784,7 +784,7 @@ class Verification:
         guide = self.load_json(DOCS / "guide-content.json")
         self.require(upgrades["commit"] == guide["sources"]["Astro-Items"], "업그레이드 확률의 기준 커밋이 가이드와 다릅니다.")
         patterns = upgrades["patterns"]
-        self.require(Counter(p["group"] for p in patterns) == {"standard-auto": 38, "planet-auto": 11, "manual-only": 13}, "업그레이드 전체 목록에서 패턴이 누락되거나 중복되었습니다.")
+        self.require(Counter(p["group"] for p in patterns) == {"standard-auto": 39, "planet-auto": 11, "manual-only": 13}, "업그레이드 전체 목록에서 패턴이 누락되거나 중복되었습니다.")
         self.require(len({p["originalSymbol"] for p in patterns}) == len(patterns), "행성의 별도 판정을 포함해 동일 원본의 업그레이드가 중복되었습니다.")
         for entry in upgrades["entries"]:
             expected = [[p["original"]["title"], p["target"]["title"], str(p["chance"]) + "%"] for p in patterns if p["group"] == entry["id"]]

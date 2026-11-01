@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "reviewed": "2026-10-04",
-  "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+  "reviewed": "2026-11-02",
+  "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf",
   "conditions": {
     "Bonfire": [
       {
@@ -118,7 +118,7 @@
       {
         "title": "캐릭터별 사용 횟수",
         "items": [
-          "막달레나, 더럽혀진 막달레나, 이브, 더럽혀진 이브, 베다니, 더럽혀진 베다니, 레아, 라헬, 디아벨스타, 디아벨제, 성전의 수견사, 일리걸 나이트, 스텔라, 나유타는 스테이지당 6번 사용할 수 있습니다.",
+          "막달레나, 더럽혀진 막달레나, 이브, 더럽혀진 이브, 베다니, 더럽혀진 베다니, 레아, 라헬, 디아벨스타, 디아벨제, 성전의 수견사, 일리걸 나이트, 스텔라, 카산드라는 스테이지당 6번 사용할 수 있습니다.",
           "그 외 캐릭터는 스테이지당 3번 사용할 수 있습니다."
         ]
       }
@@ -127,7 +127,7 @@
       {
         "title": "캐릭터별 효과",
         "items": [
-          "스텔라는 사용해도 아이템이 사라지지 않습니다. 나유타에는 적용되지 않습니다."
+          "스텔라는 사용해도 아이템이 사라지지 않습니다. 카산드라에는 적용되지 않습니다."
         ]
       },
       {
@@ -182,6 +182,45 @@
         "title": "돌진 입력",
         "items": [
           "기본 설정에서는 V 키를 누르면 이동 방향으로 돌진합니다. 설정에서 키를 바꾸거나, 이동키를 두 번 누르는 방식으로 변경할 수 있습니다."
+        ]
+      }
+    ],
+    "Astrophage": [
+      {
+        "title": "천체방 확률",
+        "items": [
+          "천체방 확률 증가와 자궁·시체 스테이지의 천체방 등장은 처음 사용할 때 망원경 렌즈를 흡수하여 적용됩니다."
+        ]
+      }
+    ],
+    "Hyper Quantum Dice": [
+      {
+        "title": "사용 방법",
+        "items": [
+          "처음 사용하면 -3, -2, -1, +1, +2, +3 중 하나를 고르는 화면이 열립니다. 좌우 공격 키로 값을 고른 뒤 다시 사용하면 적용되며, 이때 충전을 소모합니다.",
+          "선택 화면에서 버리기 버튼을 누르면 적용하지 않고 닫습니다."
+        ]
+      }
+    ],
+    "Cassandra's Crystal Ball": [
+      {
+        "title": "캐릭터별 효과",
+        "items": [
+          "스텔라와 카산드라는 사용해도 아이템이 사라지지 않습니다."
+        ]
+      },
+      {
+        "title": "변환 대상",
+        "items": [
+          "일반 아이템 업그레이드 목록에 있는 아이템을 확률 판정 없이 강화 아이템으로 바꿉니다. 자동 확률이 0%인 항목도 바뀌며, 별자리·행성 목록의 아이템은 대상이 아닙니다."
+        ]
+      }
+    ],
+    "Astro Sacred Heart": [
+      {
+        "title": "획득 경로",
+        "items": [
+          "성스러운 심장에서 이 아이템으로 바뀌는 업그레이드는 현재 비활성화되어 있습니다. 성스러운 심장의 업그레이드 대상이 성스러운 심장 자신으로 등록되어 있습니다."
         ]
       }
     ]
@@ -565,6 +604,78 @@
       "notes": [
         "2026-10-04 문장 검토: Birthright의 영문 이름 중복을 생략합니다. 한국어 EID 이름이 비어 있는 Missing No.는 EID 영문 이름을 표시하며, 빈 이름으로 잘못된 아이콘이 연결되지 않도록 해당 참조 토큰을 표시 문장에서 제외합니다. 원문과 효과 조건은 보존합니다."
       ]
+    },
+    "Astrophage": {
+      "replace": [
+        {
+          "before": "!!! 사용 이후 다음 게임에서 {{Collectible588}}Sol, {{Collectible589}}Luna 미등장",
+          "after": "!!! 한 번이라도 사용하면 다음 게임에서 {{Collectible588}}Sol과 {{Collectible589}}Luna가 등장하지 않습니다."
+        },
+        {
+          "before": "{{IND}} 그 방의 {{Planetarium}}천체관 아이템을 흡수하고 능력치가 증가합니다.#{{IND}}{{Blank}} ({{TearsSmall}}+0.3/{{DamageSmall}}x1.05/{{SpeedSmall}}+0.05/{{RangeSmall}}+0.5/{{LuckSmall}}+0.5)",
+          "after": "{{IND}} 그 방의 {{Planetarium}}천체관 아이템을 흡수합니다.#흡수한 개수마다:#↑ 연사 +0.3#↑ 공격력 배율 x1.05#↑ 이동 속도 +0.05#↑ 사거리 +0.5#↑ 행운 +0.5"
+        },
+        {
+          "before": "스테이지당 1번 숫자 8키를 누르면 소지중인 모든 천체관 아이템을 드랍합니다.",
+          "after": "숫자 8키를 누르면 소지 중인 모든 천체관 아이템을 바닥에 내려놓습니다. 스테이지당 1번 사용할 수 있습니다."
+        }
+      ],
+      "notes": [
+        "2026-11-02 문장 검토: EID 원문은 보존하고 어색한 표현과 아이콘으로만 표시된 능력치 이름을 정리했습니다.",
+        "EID의 천체방 확률·자궁/시체 천체방 문구는 첫 사용 때 망원경 렌즈를 흡수(astrophageSmeltedLens)해서 생기는 효과입니다. 능력치 괄호 줄은 아이콘이 없으면 의미가 사라지므로 이전 EID처럼 능력치별 줄로 풀어 씁니다."
+      ],
+      "sources": [
+        "astro/collectibles/customs/astrophage.lua"
+      ]
+    },
+    "Hyper Quantum Dice": {
+      "replace": [
+        {
+          "before": "사용 시 그 방의 아이템을 코드 1~3번 앞/뒷번호의 아이템으로 바꿉니다.",
+          "after": "사용하면 고른 값만큼 그 방의 아이템을 번호순으로 1~3번 앞 또는 뒤의 아이템으로 바꿉니다."
+        }
+      ],
+      "notes": [
+        "2026-11-02 문장 검토: EID 원문은 보존하고 어색한 표현과 아이콘으로만 표시된 능력치 이름을 정리했습니다.",
+        "Astro.MegaUI 선택 화면을 사용합니다. 첫 사용은 화면만 열고 충전을 소모하지 않으며, 다시 사용하면 선택한 값만큼 스핀업 주사위(+) 또는 스핀다운 주사위(-)를 반복 사용합니다."
+      ],
+      "sources": [
+        "astro/collectibles/customs/hyper-quantum-dice.lua",
+        "astro/mega-ui.lua"
+      ]
+    },
+    "Gene Scissors": {
+      "replace": [
+        {
+          "before": "사용 시 그 방의 선택형 아이템/픽업을 모두 획득할 수 있게 됩니다.",
+          "after": "사용하면 그 방에서 하나만 고를 수 있던 아이템과 픽업을 모두 가질 수 있습니다."
+        }
+      ],
+      "notes": [
+        "2026-11-02 문장 검토: EID 원문은 보존하고 어색한 표현과 아이콘으로만 표시된 능력치 이름을 정리했습니다."
+      ],
+      "sources": [
+        "astro/collectibles/customs/gene-scissors.lua"
+      ]
+    },
+    "Cassandra's Crystal Ball": {
+      "replace": [],
+      "notes": [
+        "Astro.UPGRADE_LIST만 검사하고 Chance와 무관하게 Morph합니다. PLANETARIUM_UPGRADE_LIST·PLANET_UPGRADE_LIST는 사용하지 않습니다. 등록 이미지가 없어 게임 원본 물음표 이미지를 사용합니다."
+      ],
+      "sources": [
+        "astro/collectibles/customs/cassandras-crystal-ball.lua",
+        "astro/collectibles/ex-upgrade.lua"
+      ]
+    },
+    "Astro Sacred Heart": {
+      "replace": [],
+      "notes": [
+        "2026-11-02: 숨김 아이템이며 ex-upgrade.lua의 PLANETARIUM_UPGRADE_LIST에서 Sacred Heart의 Id가 Sacred Heart 자신으로 바뀌었습니다(커밋 메시지: 아스트로 불심 임시 조정). 효과는 숨김 성스러운 심장 대신 캐시 평가로 사거리 +3·유도·눈물 색을 적용합니다."
+      ],
+      "sources": [
+        "astro/collectibles/ex-upgrade.lua"
+      ]
     }
   },
   "chargeLabels": {
@@ -627,10 +738,13 @@
     "Chubby's Paw": "6칸",
     "Forbidden Fruit": "충전 불필요",
     "SnowGrave": "12칸",
-    "Astrophage": "6칸"
+    "Astrophage": "6칸",
+    "Hyper Quantum Dice": "8칸",
+    "Gene Scissors": "12칸",
+    "Cassandra's Crystal Ball": "12칸"
   },
   "chargeReview": {
-    "commit": "b9785699358291b35eb4195dc5fcd8441ca39c52",
+    "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf",
     "format": "XML English name → 화면용 chargeLabel. 원본 maxcharges/chargetype 보존 필요.",
     "zeroCharge": "일반형 maxcharges=0은 충전이 필요 없다는 뜻입니다. 재충전 없음은 일회용처럼 읽혀 부정확합니다. 소비용·체력 비용·사용 위치 조건은 별도로 적용됩니다.",
     "normalOverrides": {

@@ -1610,8 +1610,8 @@
     },
     {
       "id": "stellar_b",
-      "title": "나유타",
-      "name": "Nayuta",
+      "title": "카산드라",
+      "name": "Cassandra",
       "kind": "custom",
       "image": "assets/players/stellar_b-emotion.png",
       "scene": "시작방에 추가 등장: 신성한 카드.",
@@ -1625,12 +1625,13 @@
       "extraSources": [
         "astro-fight/ban.lua"
       ],
-      "keywords": "STELLAR B 더럽혀진 스텔라 Tainted Stellar",
+      "keywords": "STELLAR B 더럽혀진 스텔라 Tainted Stellar 나유타 Nayuta",
       "restrictionNote": "이 캐릭터만의 추가 금지 목록은 없습니다. 공통 금지와 누적 밴은 별도로 적용됩니다.",
       "itemSources": [
         "content/players.xml",
         "astro/player.lua",
-        "resources/gfx/characters/costumes/character_stellarb.png"
+        "resources/gfx/characters/costumes/character_stellarb.png",
+        "astro/translate.lua"
       ],
       "origin": "mod",
       "variant": "tainted"
