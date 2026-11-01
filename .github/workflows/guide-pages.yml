@@ -15,7 +15,6 @@ on:
       - 'scripts/import-guide-astro-items.py'
       - 'scripts/import-guide-player-sprites.py'
       - 'scripts/guide-layout.html'
-      - 'scripts/guide-rooms.html'
       - 'scripts/verify-guide.py'
       - 'scripts/guide-coverage.json'
       - 'scripts/import-guide-resources.py'

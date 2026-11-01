@@ -65,7 +65,7 @@ for path in sorted((args.base_mod / 'astro').rglob('*.lua')):
     relative = path.relative_to(args.base_mod).as_posix()
     if re.search(r'Astro\.(?:IsFight|Fight)\b', committed('Astro-Items', relative).decode()):
         base_fight.append(relative)
-assert not active - refs['Astrobirth'].keys(), 'Active module without a guide reference'
+assert not active - refs['Astrobirth'].keys(), ('Active module without a guide reference', sorted(active - refs['Astrobirth'].keys()))
 assert not set(base_fight) - refs['Astro-Items'].keys(), 'Base fight branch without a guide reference'
 
 file_records = []
@@ -101,29 +101,23 @@ for filename, target in targets.items():
     xml_records.append({'file': 'resources/' + filename, 'originalSHA256': digest(original),
                         'modSHA256': digest(modified), 'rootBefore': before.attrib, 'rootAfter': after.attrib,
                         'changes': differences, 'refs': [target]})
-rooms = json.loads((DOCS / 'rooms-content.json').read_text())
-for floor in rooms['floors']:
-    file_records.append({'project': 'Astrobirth', 'file': floor['metadata']['sourceFile'],
-                         'sha256': floor['metadata']['sha256'], 'refs': ['rooms.html'], 'activeModule': False})
 saved_manifest = ROOT / 'scripts/guide-coverage.json'
 if args.feature_review:
     reviewed_groups = json.loads(args.feature_review.read_text())['records']
 else:
     reviewed_groups = json.loads(saved_manifest.read_text())['featureGroups']
 manifest = {'schemaVersion': 1, 'reviewed': qa['reviewed'], 'sources': sources,
-            'reviewMethod': 'Reachable released Lua reviewed by functional groups; XML semantic differences; STB tuple comparisons with XML parity; EID name comparison.',
+            'reviewMethod': 'Reachable released Lua reviewed by functional groups; XML semantic differences; EID name comparison.',
             'limits': ['File references check coverage placement, not the correctness of every sentence.',
                        'Uncommitted game debugging changes are excluded from the released guide.',
-                       'Presets and entity definitions describe available data; spawn conditions are stated separately.'],
+                       'Entity definitions describe available data; spawn conditions are stated separately.'],
             'counts': {'activeLuaModules': len(active), 'baseFightModules': len(base_fight),
                        'qa': sum(len(s['entries']) for s in qa['sections']),
                        'items': len(json.loads((DOCS / 'items-content.json').read_text())['entries']),
-                       'players': len(json.loads((DOCS / 'players-content.json').read_text())['entries']),
-                       'roomFiles': len(rooms['floors'])},
+                       'players': len(json.loads((DOCS / 'players-content.json').read_text())['entries'])},
             'files': file_records, 'featureGroups': [{k: v for k, v in r.items() if k != 'lines'} for r in reviewed_groups],
             'resourceDifferences': xml_records,
-            'excluded': [{'file': 'resources/rooms/임시/33.corpse.stb', 'reason': 'Temporary directory; not loaded by the game.'},
-                         {'file': 'resources/rooms/임시/33.corpse.xml', 'reason': 'Temporary editor source; not loaded.'},
+            'excluded': [{'file': 'resources/rooms/**, content/rooms/**', 'reason': 'Room layout comparisons are not part of the viewer guide.'},
                          {'file': 'content/sounds.xml', 'reason': 'Epic sound registration has no call in the active module graph.'}]}
 (ROOT / 'scripts/guide-coverage.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
 print('Coverage:', manifest['counts'])

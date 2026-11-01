@@ -159,7 +159,6 @@ class Verification:
         self.links_checked = set()
         self.entry_count = 0
         self.table_count = 0
-        self.room_count = 0
         self.source_hash_count = 0
 
     def require(self, condition, message):
@@ -414,60 +413,6 @@ class Verification:
         self.require(item.get("detailsFrom") == "perfection", "올백 아이템 카드는 Q&A의 Perfection 상세를 공유해야 합니다.")
         self.require(not item.get("rewardTable") or item["rewardTable"] == perfection.get("rewardTable"), "올백 아이템 카드가 공유 보상 표를 다른 내용으로 덮어씁니다.")
 
-    def room_checks(self):
-        path = DOCS / "rooms-content.json"
-        if not path.exists():
-            return
-        index = self.load_json(path)
-        floors = index.get("floors", [])
-        self.require(len(floors) == len({f["id"] for f in floors}), "방 비교 층 ID가 중복됩니다.")
-        self.require(index["statistics"]["files"] == len(floors), "방 비교 파일 합계가 층 목록과 다릅니다.")
-        page = self.pages.get((DOCS / "rooms.html").resolve())
-        self.require(page is not None, "방 비교 JSON의 rooms.html 페이지가 없습니다.")
-        if page:
-            intro = index.get("intro", {})
-            for key in ["title", "body"]:
-                if intro.get(key):
-                    self.require(normalized(intro[key]) in page.root.text(), f"rooms.html: {key} 소개 문구가 없습니다.")
-        totals = Counter()
-        for floor in floors:
-            self.local_url(path, floor["path"], False)
-            asset = DOCS / floor["path"]
-            if not asset.is_file():
-                continue
-            data = self.load_json(asset)
-            self.require(data["id"] == floor["id"], f"{asset.name}: 방 파일 ID가 색인과 다릅니다.")
-            self.require(data["statistics"] == floor["statistics"], f"{asset.name}: 방 파일 통계가 색인과 다릅니다.")
-            if floor.get("bytes") is not None:
-                self.require(asset.stat().st_size == floor["bytes"], f"{asset.name}: 색인의 파일 크기가 다릅니다.")
-            stats = data["statistics"]
-            totals.update(stats)
-            self.require(stats["before"] == stats["same"] + stats["changed"] + stats["removed"], f"{asset.name}: 변경 전 방 개수가 맞지 않습니다.")
-            self.require(stats["after"] == stats["same"] + stats["changed"] + stats["added"], f"{asset.name}: 변경 후 방 개수가 맞지 않습니다.")
-            rooms = data["rooms"]
-            self.room_count += len(rooms)
-            self.require(len(rooms) == len({r["id"] for r in rooms}), f"{asset.name}: 방 프리셋 ID가 중복됩니다.")
-            kinds = Counter(r["change"] for r in rooms)
-            for kind in ["changed", "added", "removed"]:
-                self.require(kinds[kind] == stats[kind], f"{asset.name}: {kind} 프리셋 수가 통계와 다릅니다.")
-            for room in rooms:
-                label = f"{asset.name}#{room['id']}"
-                expected_sides = {"changed": (True, True), "added": (False, True), "removed": (True, False)}.get(room["change"])
-                self.require(expected_sides == (room["before"] is not None, room["after"] is not None), f"{label}: 방 추가·제거 상태가 올바르지 않습니다.")
-                for side in ["before", "after"]:
-                    preset = room[side]
-                    if preset is None:
-                        continue
-                    self.require([preset[k] for k in ["type", "variant", "subtype"]] == room["key"], f"{label}: {side} 방 식별자가 다릅니다.")
-                    for spawn in preset["spawns"]:
-                        self.require(len(spawn) == 3 and bool(spawn[2]), f"{label}: {side} 스폰 후보 묶음이 올바르지 않습니다.")
-                        for candidate in spawn[2]:
-                            self.require(len(candidate) == 4 and isinstance(candidate[3], (int, float)) and math.isfinite(candidate[3]) and candidate[3] >= 0, f"{label}: {side} 스폰 후보 가중치가 올바르지 않습니다.")
-                            entity_id = ".".join(str(x) for x in candidate[:3])
-                            self.require(entity_id in data["entities"][side], f"{label}: {side} 스폰 후보 표시 자료가 없습니다: {entity_id}")
-        for key, value in totals.items():
-            self.require(index["statistics"][key] == value, f"방 비교 색인의 {key} 합계가 파일별 통계와 다릅니다.")
-
     def snapshot_checks(self):
         items = self.load_json(DOCS / "items-content.json")
         entries = {e["id"]: e for e in items["entries"]}
@@ -599,9 +544,6 @@ class Verification:
             "activeLuaModules": sum(bool(r.get("activeModule")) for r in data["files"]),
             "baseFightModules": sum(bool(r.get("baseFightBranch")) for r in data["files"]),
         }
-        rooms = DOCS / "rooms-content.json"
-        if rooms.exists():
-            expected_counts["roomFiles"] = len(self.load_json(rooms)["floors"])
         for key, count in expected_counts.items():
             self.require(counts.get(key) == count, f"검토 목록의 {key} 개수가 현재 자료와 다릅니다.")
         hash_records = list(data["files"])
@@ -776,7 +718,7 @@ class Verification:
         self.require(not CODE_URL.search(raw) and "Agent reference material" not in raw, "통합 검색에 숨긴 코드 근거가 포함되었습니다.")
         for page in self.pages.values():
             inputs = [node.attrs.get("id") for node in page.root.nodes("input") if node.attrs.get("type") == "search"]
-            expected_inputs = ["global-search-input", "room-search"] if page.path.name == "rooms.html" else ["global-search-input"]
+            expected_inputs = ["global-search-input"]
             self.require(sorted(inputs) == sorted(expected_inputs), f"{page.path.name}: 검색창 구성이 다릅니다.")
             dialogs = page.ids.get("global-search-dialog", [])
             if self.require(len(dialogs) == 1, f"{page.path.name}: 공통 검색 창이 없습니다."):
@@ -807,7 +749,6 @@ class Verification:
     def run(self):
         self.page_checks()
         self.content_checks()
-        self.room_checks()
         self.snapshot_checks()
         self.coverage_checks()
         self.icon_checks()
@@ -823,10 +764,10 @@ class Verification:
             if len(self.errors) > 60:
                 print(f"- 나머지 {len(self.errors) - 60}개 오류는 생략했습니다.", file=sys.stderr)
             return 1
-        print(f"가이드 검증 통과: HTML {len(self.pages)}개, 항목 {self.entry_count}개, 표 {self.table_count}개, 방 프리셋 {self.room_count}개")
+        print(f"가이드 검증 통과: HTML {len(self.pages)}개, 항목 {self.entry_count}개, 표 {self.table_count}개")
         print(f"기존 Q&A 21개 제목({QA_REVISION})·업그레이드 Q&A 4개, Perfection 공유 6그룹·보상 9행, 로컬 링크·이미지·근거 주석 확인")
         print(f"검토 목록 연결·수치 및 출처 커밋의 파일 해시 {self.source_hash_count}개 확인")
-        print(f"통합 검색 {self.search_count}개 설명·링크·이미지 확인, 방 자체 검색 유지")
+        print(f"통합 검색 {self.search_count}개 설명·링크·이미지 확인")
         return 0
 
 

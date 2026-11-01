@@ -1,7 +1,7 @@
 {
   "source": "resources/entities2.xml",
   "baseline": "extracted_resources/resources/entities2.xml",
-  "modSHA256": "71657d44bfe197deaab3d9f83f28152a637e9356976576d54f19eaa6352190ec",
+  "modSHA256": "9d4dbc411819799cd70fdae6dbf46fd874ed26c3d162985593f448fa75d2c333",
   "originalSHA256": "af567aca87437feafe8d2dcd7661b92e577f2579fd71fbde490c9042931f292b",
   "originalEntityElements": 1342,
   "modEntityElements": 1342,
@@ -16,8 +16,8 @@
   ],
   "originalEntities": 1341,
   "modEntities": 1341,
-  "changedEntities": 145,
-  "attributeChangedEntities": 143,
+  "changedEntities": 146,
+  "attributeChangedEntities": 144,
   "changedAttributes": {
     "collisionDamage": 7,
     "friction": 1,
@@ -27,9 +27,9 @@
     "baseHP": 116,
     "stageHP": 76,
     "champion": 18,
-    "shieldStrength": 19
+    "shieldStrength": 22
   },
-  "changedAttributeCount": 258,
+  "changedAttributeCount": 261,
   "nestedChangedEntities": 6,
   "nestedOnlyEntities": [
     [
@@ -2678,6 +2678,10 @@
         "tags": {
           "before": null,
           "after": "nodelirium"
+        },
+        "shieldStrength": {
+          "before": null,
+          "after": "40"
         }
       },
       "before": {
@@ -2789,6 +2793,7 @@
           "numGridCollisionPoints": "0",
           "portrait": "9",
           "shadowSize": "33",
+          "shieldStrength": "40",
           "stageHP": "0",
           "tags": "nodelirium",
           "variant": "0"
@@ -2877,11 +2882,114 @@
         ],
         "tags": [
           "entity-classification-collision"
+        ],
+        "shieldStrength": [
+          "major-boss-stats"
         ]
       },
       "nestedDocuments": [],
       "modLine": 1375,
       "originalLine": 1375
+    },
+    {
+      "key": [
+        "entity",
+        "45",
+        "10",
+        "0"
+      ],
+      "name": "Mom Stomp",
+      "displayName": "Mom Stomp",
+      "attributes": {
+        "shieldStrength": {
+          "before": null,
+          "after": "40"
+        }
+      },
+      "before": {
+        "tag": "entity",
+        "attributes": {
+          "anm2path": "045.010_Mom Stomp.anm2",
+          "baseHP": "645",
+          "boss": "1",
+          "bossID": "6",
+          "champion": "0",
+          "collisionDamage": "2",
+          "collisionMass": "70",
+          "collisionRadius": "35",
+          "friction": "1",
+          "id": "45",
+          "name": "Mom Stomp",
+          "numGridCollisionPoints": "0",
+          "portrait": "9",
+          "shadowSize": "70",
+          "stageHP": "0",
+          "variant": "10"
+        },
+        "children": [
+          {
+            "tag": "gibs",
+            "attributes": {
+              "amount": "0",
+              "blood": "0",
+              "bone": "0",
+              "eye": "0",
+              "gut": "0",
+              "large": "0"
+            },
+            "children": []
+          }
+        ]
+      },
+      "after": {
+        "tag": "entity",
+        "attributes": {
+          "anm2path": "045.010_Mom Stomp.anm2",
+          "baseHP": "645",
+          "boss": "1",
+          "bossID": "6",
+          "champion": "0",
+          "collisionDamage": "2",
+          "collisionMass": "70",
+          "collisionRadius": "35",
+          "friction": "1",
+          "id": "45",
+          "name": "Mom Stomp",
+          "numGridCollisionPoints": "0",
+          "portrait": "9",
+          "shadowSize": "70",
+          "shieldStrength": "40",
+          "stageHP": "0",
+          "variant": "10"
+        },
+        "children": [
+          {
+            "tag": "gibs",
+            "attributes": {
+              "amount": "0",
+              "blood": "0",
+              "bone": "0",
+              "eye": "0",
+              "gut": "0",
+              "large": "0"
+            },
+            "children": []
+          }
+        ]
+      },
+      "childrenChanged": false,
+      "documents": [
+        "major-boss-stats"
+      ],
+      "nestedChanges": [],
+      "attributeDocuments": {
+        "shieldStrength": [
+          "major-boss-stats"
+        ]
+      },
+      "nestedDocuments": [],
+      "modLine": 1386,
+      "originalLine": 1386
     },
     {
       "key": [
@@ -5750,6 +5858,10 @@
         "stageHP": {
           "before": "0",
           "after": "450"
+        },
+        "shieldStrength": {
+          "before": null,
+          "after": "40"
         }
       },
       "before": {
@@ -5882,6 +5994,7 @@
           "numGridCollisionPoints": "0",
           "portrait": "48",
           "shadowSize": "33",
+          "shieldStrength": "40",
           "stageHP": "450",
           "variant": "1"
         },
@@ -5992,6 +6105,9 @@
           "entity-classification-collision"
         ],
         "stageHP": [
+          "scaled-boss-stats"
+        ],
+        "shieldStrength": [
           "scaled-boss-stats"
         ]
       },

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the viewer guide, detailed rules, catalogs and room comparison."""
+"""Generate the viewer guide, detailed rules and catalogs."""
 import html
 import hashlib
 import json
@@ -18,7 +18,6 @@ upgrades = json.loads((DOCS / 'upgrades-content.json').read_text(encoding='utf-8
 apply_upgrade_notes(items, upgrades)
 players = json.loads((DOCS / 'players-content.json').read_text(encoding='utf-8'))
 rules = json.loads((DOCS / 'rules-content.json').read_text(encoding='utf-8'))
-room_data = json.loads((DOCS / 'rooms-content.json').read_text(encoding='utf-8'))
 icons = json.loads((DOCS / 'guide-icons.json').read_text(encoding='utf-8'))
 effect_pickup_icons = {'꿀꺽! 알약': 'Pill', '행운 동전': 'Crafting11', '기가 폭탄': 'Crafting17',
                        '마이크로 배터리': 'Crafting18', '블랙하트': 'BlackHeart', '소울하트': 'SoulHeart',
@@ -312,7 +311,7 @@ def body(entry, include_body=True, include_facts=True):
 def write_page(page, title, description, content, script):
     page_nav = '<nav class="page-nav" aria-label="가이드 페이지">' + ''.join(
         f'<a href="./{key}.html' + ('#overview' if key == 'index' else '') + '"' + (' aria-current="page"' if key == page else '') + f'>{esc(label)}</a>'
-        for key, label in [('index', '입문 Q&A'), ('rules', '전체 규칙'), ('items', '아이템 가이드'), ('upgrades', '업그레이드 확률'), ('players', '캐릭터 가이드'), ('rooms', '방 변경사항')]) + '</nav>'
+        for key, label in [('index', '입문 Q&A'), ('rules', '전체 규칙'), ('items', '아이템 가이드'), ('upgrades', '업그레이드 확률'), ('players', '캐릭터 가이드')]) + '</nav>'
     replacements = {'PAGE_TITLE': esc(title), 'DESCRIPTION': esc(description, quote=True),
                     'PAGE_NAV': page_nav, 'CONTENT': content, 'PAGE_KEY': page,
                     'REVIEWED': data['reviewed'], 'VERSION': data['version'],
@@ -322,7 +321,7 @@ def write_page(page, title, description, content, script):
                     'SEARCH_INDEX_REVISION': hashlib.sha256((DOCS / 'search-index.json').read_bytes()).hexdigest()[:12],
                     'BASELINE_RECORD': json.dumps({key: data[key] for key in ('reviewed', 'version', 'sources')}, ensure_ascii=False, indent=2).replace('--', '\\u002d\\u002d'),
                     'STYLE_REVISION': hashlib.sha256((DOCS / 'guide.css').read_bytes()).hexdigest()[:12],
-                    'EXTRA_STYLES': '<link rel="stylesheet" href="./rooms.css">' if page == 'rooms' else ''}
+                    'EXTRA_STYLES': ''}
     output = layout
     for key, value in replacements.items():
         output = output.replace('{{' + key + '}}', value)
@@ -468,13 +467,6 @@ def render_catalog(page, catalog, kinds, title, subtitle):
     print(f'Generated {page}.html: {len(entries)} cards.')
 
 
-def render_rooms():
-    content = (ROOT / 'scripts/guide-rooms.html').read_text(encoding='utf-8')
-    content = content.replace('{{ROOM_INTRO}}', esc(room_data['intro']['body']))
-    write_page('rooms', '방 변경사항', '기본 게임과 Astrobirth의 방 프리셋을 비교합니다. 위치별 스폰 후보와 문, 가중치, 변경·추가·제거된 방을 확인할 수 있습니다.', content, 'rooms.js')
-    print('Generated rooms.html: 52 room file comparisons.')
-
-
 def render_upgrades():
     automatic = sum(pattern['chance'] > 0 for pattern in upgrades['patterns'])
     direct = len(upgrades['patterns']) - automatic
@@ -493,5 +485,4 @@ render_qa()
 render_rules()
 render_catalog('items', items, {'passive': '패시브', 'active': '액티브', 'trinket': '장신구', 'card': '카드'}, '아이템 가이드', '아이템 목록')
 render_catalog('players', players, {'normal': '일반', 'tainted': '더럽혀진'}, '캐릭터 가이드', '캐릭터 목록')
-render_rooms()
 render_upgrades()

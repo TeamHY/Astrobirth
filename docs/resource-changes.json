@@ -2,7 +2,7 @@
   "baseline": {
     "items.xml": "37a8d1b2377feef78b5690b859abff23ab81b98b06f1a41c83d4392db35fc556",
     "items_metadata.xml": "dff50aa979ec67137f2ed1374a50b9386fe98b3935142502bc2630161cf1c6c2",
-    "itempools.xml": "225f4e3db8cce4820b1a78e6aa8998809ab0cb41967e1e780be64b98c594e6e1"
+    "itempools.xml": "8430cb4361512633824c49eb6f291483a21b5eed9e4312f66b79f172e2013512"
   },
   "itemAttributes": [
     {
@@ -10,13 +10,13 @@
       "number": 3,
       "entry": "spoon-bender-3",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "30"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "30"
         }
       }
     },
@@ -157,10 +157,6 @@
       "number": 33,
       "entry": "the-bible-33",
       "changes": {
-        "maxcharges": {
-          "before": "4",
-          "after": "6"
-        },
         "persistent": {
           "before": null,
           "after": "true"
@@ -168,6 +164,10 @@
         "initcharge": {
           "before": null,
           "after": "0"
+        },
+        "maxcharges": {
+          "before": "4",
+          "after": "6"
         },
         "shopprice": {
           "before": null,
@@ -412,13 +412,13 @@
       "number": 78,
       "entry": "book-of-revelations-78",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "5"
-        },
         "devilprice": {
           "before": "2",
           "after": null
+        },
+        "shopprice": {
+          "before": null,
+          "after": "5"
         }
       }
     },
@@ -486,13 +486,13 @@
       "number": 98,
       "entry": "the-relic-98",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "9"
-        },
         "devilprice": {
           "before": "2",
           "after": "1"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "9"
         }
       }
     },
@@ -678,13 +678,13 @@
       "number": 150,
       "entry": "tough-love",
       "changes": {
-        "cache": {
-          "before": null,
-          "after": "luck"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "cache": {
+          "before": null,
+          "after": "luck"
         }
       }
     },
@@ -748,10 +748,6 @@
       "number": 160,
       "entry": "crack-the-sky-160",
       "changes": {
-        "maxcharges": {
-          "before": "4",
-          "after": "3"
-        },
         "persistent": {
           "before": null,
           "after": "false"
@@ -759,6 +755,10 @@
         "cooldown": {
           "before": "30",
           "after": "60"
+        },
+        "maxcharges": {
+          "before": "4",
+          "after": "3"
         }
       }
     },
@@ -896,13 +896,13 @@
       "number": 194,
       "entry": "magic-8-ball",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "9"
-        },
         "hidden": {
           "before": null,
           "after": "true"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "9"
         }
       }
     },
@@ -1153,13 +1153,13 @@
       "number": 251,
       "entry": "starter-deck-251",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "32"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "32"
         }
       }
     },
@@ -1374,6 +1374,10 @@
       "number": 313,
       "entry": "holy-mantle-313",
       "changes": {
+        "hidden": {
+          "before": null,
+          "after": "true"
+        },
         "cache": {
           "before": null,
           "after": "damage"
@@ -1381,10 +1385,6 @@
         "shopprice": {
           "before": null,
           "after": "65"
-        },
-        "hidden": {
-          "before": null,
-          "after": "true"
         }
       }
     },
@@ -1437,6 +1437,10 @@
       "number": 337,
       "entry": "broken-watch",
       "changes": {
+        "devilprice": {
+          "before": null,
+          "after": "2"
+        },
         "cache": {
           "before": "",
           "after": "speed"
@@ -1444,10 +1448,6 @@
         "shopprice": {
           "before": null,
           "after": "10"
-        },
-        "devilprice": {
-          "before": null,
-          "after": "2"
         }
       }
     },
@@ -1511,13 +1511,13 @@
       "number": 362,
       "entry": "lil-chest-362",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "8"
-        },
         "hidden": {
           "before": null,
           "after": "true"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "8"
         }
       }
     },
@@ -1724,13 +1724,13 @@
       "number": 408,
       "entry": "athame",
       "changes": {
-        "cache": {
-          "before": null,
-          "after": "luck"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "cache": {
+          "before": null,
+          "after": "luck"
         }
       }
     },
@@ -1883,13 +1883,13 @@
       "number": 443,
       "entry": "apple",
       "changes": {
-        "cache": {
-          "before": "firedelay",
-          "after": "firedelay luck"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "cache": {
+          "before": "firedelay",
+          "after": "firedelay luck"
         }
       }
     },
@@ -1975,13 +1975,13 @@
       "number": 461,
       "entry": "parasitoid",
       "changes": {
-        "cache": {
-          "before": "range",
-          "after": "range luck"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "cache": {
+          "before": "range",
+          "after": "range luck"
         }
       }
     },
@@ -2126,13 +2126,13 @@
       "number": 495,
       "entry": "ghost-pepper",
       "changes": {
-        "cache": {
-          "before": null,
-          "after": "damage luck"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "cache": {
+          "before": null,
+          "after": "damage luck"
         }
       }
     },
@@ -2141,13 +2141,13 @@
       "number": 496,
       "entry": "euthanasia",
       "changes": {
-        "cache": {
-          "before": null,
-          "after": "damage"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "cache": {
+          "before": null,
+          "after": "damage"
         }
       }
     },
@@ -2167,13 +2167,13 @@
       "number": 503,
       "entry": "little-horn",
       "changes": {
-        "cache": {
-          "before": null,
-          "after": "damage"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "cache": {
+          "before": null,
+          "after": "damage"
         }
       }
     },
@@ -2230,13 +2230,13 @@
       "number": 514,
       "entry": "broken-modem-514",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "25"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "25"
         }
       }
     },
@@ -2388,13 +2388,13 @@
       "number": 560,
       "entry": "it-hurts",
       "changes": {
-        "cache": {
-          "before": null,
-          "after": "damage"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "cache": {
+          "before": null,
+          "after": "damage"
         }
       }
     },
@@ -2499,13 +2499,13 @@
       "number": 581,
       "entry": "psy-fly-581",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "35"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "35"
         }
       }
     },
@@ -2547,13 +2547,13 @@
       "number": 589,
       "entry": "luna",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "18"
-        },
         "devilprice": {
           "before": null,
           "after": "1"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "18"
         }
       }
     },
@@ -2661,13 +2661,13 @@
       "number": 616,
       "entry": "birds-eye",
       "changes": {
-        "cache": {
-          "before": null,
-          "after": "damage luck"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "cache": {
+          "before": null,
+          "after": "damage luck"
         }
       }
     },
@@ -2687,13 +2687,13 @@
       "number": 619,
       "entry": "birthright",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "31"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "31"
         }
       }
     },
@@ -2735,13 +2735,13 @@
       "number": 625,
       "entry": "mega-mush-625",
       "changes": {
-        "chargetype": {
-          "before": null,
-          "after": "special"
-        },
         "maxcharges": {
           "before": "12",
           "after": "50"
+        },
+        "chargetype": {
+          "before": null,
+          "after": "special"
         }
       }
     },
@@ -2750,13 +2750,13 @@
       "number": 628,
       "entry": "death-certificate-628",
       "changes": {
-        "maxcharges": {
-          "before": "0",
-          "after": "12"
-        },
         "initcharge": {
           "before": null,
           "after": "0"
+        },
+        "maxcharges": {
+          "before": "0",
+          "after": "12"
         }
       }
     },
@@ -2798,13 +2798,13 @@
       "number": 633,
       "entry": "dogma-633",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "22"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "22"
         }
       }
     },
@@ -2986,13 +2986,13 @@
       "number": 678,
       "entry": "c-section",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "30"
-        },
         "devilprice": {
           "before": null,
           "after": "2"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "30"
         }
       }
     },
@@ -3034,13 +3034,13 @@
       "number": 689,
       "entry": "glitched-crown-689",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "35"
-        },
         "hidden": {
           "before": null,
           "after": "true"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "35"
         }
       }
     },
@@ -3060,13 +3060,13 @@
       "number": 691,
       "entry": "sacred-orb-691",
       "changes": {
-        "shopprice": {
-          "before": null,
-          "after": "30"
-        },
         "hidden": {
           "before": null,
           "after": "true"
+        },
+        "shopprice": {
+          "before": null,
+          "after": "30"
         }
       }
     },
@@ -3141,13 +3141,13 @@
       "number": 714,
       "entry": "recall-714",
       "changes": {
-        "maxcharges": {
-          "before": "90",
-          "after": "1"
-        },
         "cooldown": {
           "before": "150",
           "after": "45"
+        },
+        "maxcharges": {
+          "before": "90",
+          "after": "1"
         }
       }
     },
@@ -3200,6 +3200,17 @@
         "shopprice": {
           "before": null,
           "after": "35"
+        }
+      }
+    },
+    {
+      "kind": "active",
+      "number": 729,
+      "entry": "decap-attack-729",
+      "changes": {
+        "shopprice": {
+          "before": null,
+          "after": "2"
         }
       }
     },
@@ -3559,13 +3570,13 @@
       "number": 58,
       "entry": "book-of-shadows-58",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "tags": {
           "before": "book",
           "after": "book offensive"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -3585,13 +3596,13 @@
       "number": 64,
       "entry": "steam-sale-64",
       "changes": {
-        "craftquality": {
-          "before": null,
-          "after": "3"
-        },
         "quality": {
           "before": "2",
           "after": "4"
+        },
+        "craftquality": {
+          "before": null,
+          "after": "3"
         }
       }
     },
@@ -3681,13 +3692,13 @@
       "number": 74,
       "entry": "a-quarter-74",
       "changes": {
-        "craftquality": {
-          "before": null,
-          "after": "1"
-        },
         "quality": {
           "before": "0",
           "after": "3"
+        },
+        "craftquality": {
+          "before": null,
+          "after": "1"
         }
       }
     },
@@ -3740,13 +3751,13 @@
       "number": 81,
       "entry": "dead-cat-81",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "tags": {
           "before": "uniquefamiliar dead guppy nocantrip",
           "after": "quest uniquefamiliar dead guppy nocantrip"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -3994,13 +4005,13 @@
       "number": 133,
       "entry": "guppy-s-paw-133",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "quality": {
           "before": "3",
           "after": "2"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -4425,10 +4436,6 @@
       "number": 198,
       "entry": "box",
       "changes": {
-        "craftquality": {
-          "before": null,
-          "after": "1"
-        },
         "quality": {
           "before": "0",
           "after": "2"
@@ -4436,6 +4443,10 @@
         "tags": {
           "before": "offensive",
           "after": "noeden offensive"
+        },
+        "craftquality": {
+          "before": null,
+          "after": "1"
         }
       }
     },
@@ -4466,13 +4477,13 @@
       "number": 206,
       "entry": "guillotine-206",
       "changes": {
-        "craftquality": {
-          "before": "1",
-          "after": null
-        },
         "quality": {
           "before": "0",
           "after": "2"
+        },
+        "craftquality": {
+          "before": "1",
+          "after": null
         }
       }
     },
@@ -4492,13 +4503,13 @@
       "number": 208,
       "entry": "champion-belt-208",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "quality": {
           "before": "3",
           "after": "2"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -4757,13 +4768,13 @@
       "number": 259,
       "entry": "dark-matter-259",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "quality": {
           "before": "3",
           "after": "2"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -4875,10 +4886,6 @@
       "number": 283,
       "entry": "d100-283",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "quality": {
           "before": "1",
           "after": "3"
@@ -4886,6 +4893,10 @@
         "tags": {
           "before": "offensive nocantrip",
           "after": "noeden offensive nocantrip"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -4894,13 +4905,13 @@
       "number": 284,
       "entry": "d4-284",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "quality": {
           "before": "1",
           "after": "2"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -4975,13 +4986,13 @@
       "number": 296,
       "entry": "converter-296",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "quality": {
           "before": "1",
           "after": "2"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -5439,13 +5450,13 @@
       "number": 394,
       "entry": "marked-394",
       "changes": {
-        "craftquality": {
-          "before": "1",
-          "after": null
-        },
         "quality": {
           "before": "0",
           "after": "2"
+        },
+        "craftquality": {
+          "before": "1",
+          "after": null
         }
       }
     },
@@ -6385,10 +6396,6 @@
       "number": 577,
       "entry": "damocles",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "quality": {
           "before": "3",
           "after": "4"
@@ -6396,6 +6403,10 @@
         "tags": {
           "before": "offensive nocantrip",
           "after": "offensive nocantrip noeden"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -6525,10 +6536,6 @@
       "number": 593,
       "entry": "mars-593",
       "changes": {
-        "craftquality": {
-          "before": "1",
-          "after": null
-        },
         "quality": {
           "before": "0",
           "after": "2"
@@ -6536,6 +6543,10 @@
         "tags": {
           "before": "summonable offensive stars",
           "after": "noeden summonable offensive stars"
+        },
+        "craftquality": {
+          "before": "1",
+          "after": null
         }
       }
     },
@@ -6728,13 +6739,13 @@
       "number": 622,
       "entry": "genesis-622",
       "changes": {
-        "craftquality": {
-          "before": "3",
-          "after": null
-        },
         "quality": {
           "before": "2",
           "after": "3"
+        },
+        "craftquality": {
+          "before": "3",
+          "after": null
         }
       }
     },
@@ -6990,10 +7001,6 @@
       "number": 667,
       "entry": "strawman-667",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "quality": {
           "before": "1",
           "after": "2"
@@ -7001,6 +7008,10 @@
         "tags": {
           "before": "uniquefamiliar dead offensive",
           "after": "dead offensive"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -7282,13 +7293,13 @@
       "number": 703,
       "entry": "esau-jr-703",
       "changes": {
-        "craftquality": {
-          "before": "2",
-          "after": null
-        },
         "quality": {
           "before": "1",
           "after": "2"
+        },
+        "craftquality": {
+          "before": "2",
+          "after": null
         }
       }
     },
@@ -15000,6 +15011,19 @@
       "after": [
         {
           "Weight": "0.1",
+          "DecreaseBy": "1",
+          "RemoveOn": "0.1"
+        }
+      ]
+    },
+    {
+      "pool": "shop",
+      "number": 729,
+      "entry": "decap-attack-729",
+      "before": null,
+      "after": [
+        {
+          "Weight": "1",
           "DecreaseBy": "1",
           "RemoveOn": "0.1"
         }
@@ -43191,7 +43215,13 @@
       "pool": "greedDevil",
       "number": 67,
       "entry": "sister-maggy-67",
-      "before": null,
+      "before": [
+        {
+          "Weight": "1",
+          "DecreaseBy": "1",
+          "RemoveOn": "0.1"
+        }
+      ],
       "after": [
         {
           "Weight": "1",
