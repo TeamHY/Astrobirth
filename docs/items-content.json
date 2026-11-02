@@ -7075,13 +7075,14 @@
       "name": "Flunk",
       "kind": "trinket",
       "scene": "올백의 보상 판정 유지 · 일반 형태 행운 −2",
-      "body": "올백을 잃을 때 생성되는 대체 장신구입니다. 올백과 같은 추가 보상·새 층 저주 제거 판정을 유지하며, 일반 형태에서는 행운 −2가 적용됩니다.",
+      "body": "올백을 잃을 때 생성되는 대체 장신구이며, 대체 루트 Basement II 대응 구간의 보스방 클리어 보상으로도 등장합니다. 올백과 같은 추가 보상·새 층 저주 제거 판정을 유지하며, 일반 형태에서는 행운 −2가 적용됩니다.",
       "tag": "노피격 유지",
       "keywords": "Flunk 낙제 flunk",
       "image": "assets/astro-items/t-13.png",
       "source": "astro-fight/trinkets/vanillas/perfection.lua",
       "extraSources": [
-        "astro-fight/init.lua"
+        "astro-fight/init.lua",
+        "astro-fight/rooms/init.lua"
       ],
       "itemSources": [
         "astro/trinkets/customs/flunk.lua",
@@ -7092,7 +7093,8 @@
         "장신구 효과 배수가 2 이상이면 자체 행운 −2 패널티가 무효화됩니다. 엄마의 상자 자체의 행운 +1은 별도로 적용됩니다.",
         "패널티 피격을 받으면 보유한 낙제를 모두 잃습니다. 패널티 없는 피해와 빨간 하트 전용 피해는 제외됩니다.",
         "쉬움 모드를 소지하면 피격 시 낙제가 제거되지 않습니다.",
-        "올백을 잃은 위치에 생성됩니다. 효과를 이어 받으려면 낙제를 다시 획득해야 합니다."
+        "올백을 잃은 위치에 생성됩니다. 효과를 이어 받으려면 낙제를 다시 획득해야 합니다.",
+        "대체 루트 Basement II 대응 구간의 보스방을 클리어하면 올백·낙제 소지 여부와 관계없이 첫 플레이어 위치에 1개 생성됩니다."
       ],
       "relatedLinks": [
         {
@@ -54636,6 +54638,17 @@
           {
             "text": "능력치가 아이작의 기본 능력치보다 낮아지지 않습니다."
           }
+        ],
+        [
+          {
+            "text": "획득한 스테이지에서 방 클리어 시 "
+          },
+          {
+            "item": "대빵 큰 콩"
+          },
+          {
+            "text": "Mega Bean을 발동합니다."
+          }
         ]
       ],
       "itemSources": [
@@ -57053,7 +57066,15 @@
       "tag": "Astro-Items 추가",
       "keywords": "Mega D6 대왕 주사위",
       "rules": [],
-      "effectGroups": [],
+      "effectGroups": [
+        {
+          "title": "상점 아이템",
+          "items": [
+            "가격이 붙은 상점·악마방 아이템을 바꿔도 가격이 유지됩니다."
+          ],
+          "generatedBy": "astro-items"
+        }
+      ],
       "changeKinds": [
         "effect"
       ],
@@ -59851,6 +59872,113 @@
       ],
       "agentNotes": [
         "Astro.UPGRADE_LIST만 검사하고 Chance와 무관하게 Morph합니다. PLANETARIUM_UPGRADE_LIST·PLANET_UPGRADE_LIST는 사용하지 않습니다. 등록 이미지가 없어 게임 원본 물음표 이미지를 사용합니다."
+      ]
+    },
+    {
+      "id": "astro-almagest",
+      "title": "알마게스트",
+      "name": "Almagest",
+      "kind": "active",
+      "scene": "",
+      "body": "",
+      "tag": "Astro-Items 추가",
+      "keywords": "Almagest 알마게스트",
+      "rules": [],
+      "effectGroups": [
+        {
+          "title": "변환 대상",
+          "items": [
+            "열쇠 조각 같은 퀘스트 아이템과 이미 Ptolemaeus인 아이템은 바꾸지 않습니다. 가격이 붙은 아이템은 가격을 유지합니다.",
+            "사용해도 사라지지 않습니다."
+          ],
+          "generatedBy": "astro-items"
+        }
+      ],
+      "changeKinds": [
+        "effect"
+      ],
+      "origin": "mod",
+      "modItem": {
+        "quality": "4",
+        "maxcharges": "12",
+        "id": "251",
+        "type": "active",
+        "chargeLabel": "12칸"
+      },
+      "image": "assets/astro-items/c-251.png",
+      "imagePlaceholder": true,
+      "eidEffects": [
+        [
+          {
+            "text": "사용 시 그 방의 아이템을 "
+          },
+          {
+            "item": "프톨레마이오스"
+          },
+          {
+            "text": "Ptolemaeus로 변경합니다."
+          }
+        ]
+      ],
+      "itemSources": [
+        "content/items.xml",
+        "astro/collectibles/customs/almagest.lua"
+      ]
+    },
+    {
+      "id": "astro-astrolabe",
+      "title": "아스트롤라베",
+      "name": "Astrolabe",
+      "kind": "active",
+      "scene": "",
+      "body": "",
+      "tag": "Astro-Items 추가",
+      "keywords": "Astrolabe 아스트롤라베",
+      "rules": [],
+      "effectGroups": [
+        {
+          "title": "변환 대상",
+          "items": [
+            "열쇠 조각 같은 퀘스트 아이템은 바꾸지 않습니다. 가격이 붙은 아이템은 가격을 유지합니다.",
+            "방에 바꿀 아이템이 있으면 사용해도 사라지지 않습니다."
+          ],
+          "generatedBy": "astro-items"
+        }
+      ],
+      "changeKinds": [
+        "effect"
+      ],
+      "origin": "mod",
+      "modItem": {
+        "quality": "3",
+        "maxcharges": "12",
+        "id": "252",
+        "type": "active",
+        "chargeLabel": "12칸"
+      },
+      "image": "assets/astro-items/c-252.png",
+      "imagePlaceholder": true,
+      "eidEffects": [
+        [
+          {
+            "text": "사용 시 그 방의 아이템을 "
+          },
+          {
+            "text": "천체관 아이템으로 변경합니다."
+          }
+        ],
+        [
+          {
+            "text": "방에 아이템이 없으면 "
+          },
+          {
+            "text": "천체관 아이템을 1개 소환하고 사라집니다."
+          }
+        ]
+      ],
+      "itemSources": [
+        "content/items.xml",
+        "astro/collectibles/customs/astrolabe.lua"
       ]
     }
   ]

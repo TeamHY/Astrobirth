@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "reviewed": "2026-11-02",
-  "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf",
+  "reviewed": "2026-11-03",
+  "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2",
   "conditions": {
     "Bonfire": [
       {
@@ -221,6 +221,32 @@
         "title": "획득 경로",
         "items": [
           "성스러운 심장에서 이 아이템으로 바뀌는 업그레이드는 현재 비활성화되어 있습니다. 성스러운 심장의 업그레이드 대상이 성스러운 심장 자신으로 등록되어 있습니다."
+        ]
+      }
+    ],
+    "Mega D6": [
+      {
+        "title": "상점 아이템",
+        "items": [
+          "가격이 붙은 상점·악마방 아이템을 바꿔도 가격이 유지됩니다."
+        ]
+      }
+    ],
+    "Almagest": [
+      {
+        "title": "변환 대상",
+        "items": [
+          "열쇠 조각 같은 퀘스트 아이템과 이미 Ptolemaeus인 아이템은 바꾸지 않습니다. 가격이 붙은 아이템은 가격을 유지합니다.",
+          "사용해도 사라지지 않습니다."
+        ]
+      }
+    ],
+    "Astrolabe": [
+      {
+        "title": "변환 대상",
+        "items": [
+          "열쇠 조각 같은 퀘스트 아이템은 바꾸지 않습니다. 가격이 붙은 아이템은 가격을 유지합니다.",
+          "방에 바꿀 아이템이 있으면 사용해도 사라지지 않습니다."
         ]
       }
     ]
@@ -741,10 +767,12 @@
     "Astrophage": "6칸",
     "Hyper Quantum Dice": "8칸",
     "Gene Scissors": "12칸",
-    "Cassandra's Crystal Ball": "12칸"
+    "Cassandra's Crystal Ball": "12칸",
+    "Almagest": "12칸",
+    "Astrolabe": "12칸"
   },
   "chargeReview": {
-    "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf",
+    "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2",
     "format": "XML English name → 화면용 chargeLabel. 원본 maxcharges/chargetype 보존 필요.",
     "zeroCharge": "일반형 maxcharges=0은 충전이 필요 없다는 뜻입니다. 재충전 없음은 일회용처럼 읽혀 부정확합니다. 소비용·체력 비용·사용 위치 조건은 별도로 적용됩니다.",
     "normalOverrides": {

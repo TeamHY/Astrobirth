@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "reviewed": "2026-11-02",
+  "reviewed": "2026-11-03",
   "sources": {
-    "Astrobirth": "a19a1010d0694853cf07b3327d9fe5f7bddb0bc1",
-    "Astro-Items": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+    "Astrobirth": "a33286234b2be3717f638d33db2006fd98651ed7",
+    "Astro-Items": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
   },
   "reviewMethod": "Reachable released Lua reviewed by functional groups; XML semantic differences; EID name comparison.",
   "limits": [
@@ -15,7 +15,7 @@
     "activeLuaModules": 56,
     "baseFightModules": 22,
     "qa": 25,
-    "items": 946,
+    "items": 948,
     "players": 46
   },
   "files": [
@@ -638,14 +638,16 @@
     {
       "project": "Astrobirth",
       "file": "astro-fight/rooms/init.lua",
-      "sha256": "c5388703c8397176cafa2dd62baa84e543755d4244571a2b259ebd990922919a",
+      "sha256": "215a833957dedca552f357540c15475b35b9c38f7aa6356e4b95b10445d5aa21",
       "refs": [
         "index.html#choice",
         "index.html#ez-mode",
         "index.html#first-treasure",
         "index.html#machine",
         "index.html#perfection",
+        "index.html#perfection-loss",
         "index.html#route-rewards",
+        "items.html#flunk",
         "rules.html#boss-common-rewards",
         "rules.html#choice-details",
         "rules.html#dogma-transition",
@@ -2671,6 +2673,16 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/almagest.lua",
+      "sha256": "f9d971f0448048925abfa611de7a1a52062e942d73d774da87266311600db702",
+      "refs": [
+        "items.html#astro-almagest"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/amazing-chaos-scroll-of-goodness.lua",
       "sha256": "5d9c43403b59b62a0b301ab32c7a980345ae53ae8ab08ecbde59f9ee03dcf89f",
       "refs": [
@@ -2769,6 +2781,16 @@
       ],
       "activeModule": false,
       "baseFightBranch": true
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/astrolabe.lua",
+      "sha256": "cf3b25d6ce082da55121200fd84a090649be8a253cad4361cd3de47d17b2a0bc",
+      "refs": [
+        "items.html#astro-astrolabe"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
     },
     {
       "project": "Astro-Items",
@@ -3194,7 +3216,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/cracked-bottom.lua",
-      "sha256": "aeaa6f7112db6498111f4068c788a8dbc799f48eea7149af0b3242895c9c1b98",
+      "sha256": "ac6e70b0f7e4e1f24a1617b16ca48dcd8701f93584052169f3139aa7e1bc8aed",
       "refs": [
         "items.html#astro-cracked-bottom"
       ],
@@ -3861,7 +3883,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/mega-d6.lua",
-      "sha256": "d29c70d9b7dd70ba224f86b7efd4f9e5aa901b991351dbeccf19fc4d4b4f4b3e",
+      "sha256": "3a2ffa0d35fb99b6653f19304bf170616fefe65ef51c8fc600e63da86250e03c",
       "refs": [
         "index.html#special-upgrades",
         "items.html#astro-mega-d6"
@@ -5010,7 +5032,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/init.lua",
-      "sha256": "b298e6e401cb6926b88f2399c985f6ef72414c6ec0ccc9d6cf77c7c1c3e6194c",
+      "sha256": "acea900757f7c31a9b3d06c5fd2a613dda4272c02ec97791d66e7625cb443b47",
       "refs": [
         "index.html#upgrade-combinations"
       ],
@@ -5388,7 +5410,7 @@
     {
       "project": "Astro-Items",
       "file": "content/items.xml",
-      "sha256": "04db3c082534cb65fba0528667366dd0d69a42aab1e18c44ec5eb89f655f31ef",
+      "sha256": "2fab9060e2c45018f398881b6ff2a6f910ec30359131841f90aaf8ceb79126f8",
       "refs": [
         "items.html#astro-24k-copter",
         "items.html#astro-3-body-problem",
@@ -5401,6 +5423,7 @@
         "items.html#astro-akashic-records",
         "items.html#astro-albireo",
         "items.html#astro-alcohol-bottle",
+        "items.html#astro-almagest",
         "items.html#astro-altair",
         "items.html#astro-amazing-chaos-scroll",
         "items.html#astro-amazing-chaos-scroll-of-goodness",
@@ -5415,6 +5438,7 @@
         "items.html#astro-artifact-sanctum",
         "items.html#astro-astro-godhead",
         "items.html#astro-astro-sacred-heart",
+        "items.html#astro-astrolabe",
         "items.html#astro-astrophage",
         "items.html#astro-bachelor-s-degree",
         "items.html#astro-bandage-girl",

@@ -3963,6 +3963,18 @@
       "name": "Cassandra's Crystal Ball",
       "source": "gfx/items/collectibles/questionmark.png",
       "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+    },
+    "알마게스트": {
+      "image": "assets/astro-items/c-251.png",
+      "name": "Almagest",
+      "source": "gfx/items/collectibles/questionmark.png",
+      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+    },
+    "아스트롤라베": {
+      "image": "assets/astro-items/c-252.png",
+      "name": "Astrolabe",
+      "source": "gfx/items/collectibles/questionmark.png",
+      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
     }
   },
   "sprites": {

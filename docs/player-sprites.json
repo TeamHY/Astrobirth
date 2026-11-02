@@ -24,7 +24,7 @@
       "project": "Astro-Items",
       "file": "content/players.xml",
       "sha256": "16ed0cd74dd5fd103746e335b460ec70aeec9ef8f8220cfc90a3f0893c30ca5e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Game",
@@ -200,73 +200,73 @@
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_leah.png",
       "sha256": "62683b2f187a2bf1a16a4eb17207d8a0c55ec22eb286023b0129685792183d5f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_leahb.png",
       "sha256": "5462b7bd1624fbc005a4e033ab43bfd10eb3cf38551336d9fc4663d750dd8d63",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_diabellstar.png",
       "sha256": "9998751da498547231f874eecc6336221b5052c44811a1dfe4642049804fa0c8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_diabellstarb.png",
       "sha256": "e56ea061648a4688cf3e4a840e30dc7bc36d33416acbde1359e7e3be09168ab4",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_water_enchantress.png",
       "sha256": "95771d61529ad3f77f46f1db5a0f5aab158249be80daac973d9c0b34ad814362",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_water_enchantressb.png",
       "sha256": "19a4bae15abe87b1d13c0269b1069f572fd5f7f14466b17d9250eb141828f265",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_david_martinez.png",
       "sha256": "35e6194aebb84a23e53bb2844d28f0527b5e71271d2f9015d2043476a5497c62",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_david_martinezb.png",
       "sha256": "c063a4feca650f5dec7a91f93a09895bf7ce2d302d4164f5837190fecbe9fc28",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_stellar.png",
       "sha256": "02e159d9a856ef179349b1291f6f79b057b67314b68844b6da32c0778fcd8d10",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_stellarb.png",
       "sha256": "25c41d00017a72582aa59afb50142a8bf39c0d55732215f971a10581fd7bc46e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_ainz_ooal_gown.png",
       "sha256": "a2acda9e88fc03f64c4d3b811c6d9600dd876d16e6e7f0c6ba3e731613d180ec",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/characters/costumes/character_ainz_ooal_gownb.png",
       "sha256": "32312e9110a1161dc90cfd5dfbfcf0ae6f663a437b436fc10e6b355a2c9ca6a0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     }
   ],
   "entries": [

@@ -1,372 +1,372 @@
 {
   "schema": 1,
-  "reviewed": "2026-11-02",
+  "reviewed": "2026-11-03",
   "sources": [
     {
       "project": "Astro-Items",
       "file": "content/items.xml",
-      "sha256": "04db3c082534cb65fba0528667366dd0d69a42aab1e18c44ec5eb89f655f31ef",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "sha256": "2fab9060e2c45018f398881b6ff2a6f910ec30359131841f90aaf8ceb79126f8",
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Cygnus.png",
       "sha256": "70333d856e1baf20257e5e04251b280a9081b2d4892ecbdf31a4b6b231f9ccfc",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/cygnus.lua",
       "sha256": "9b3a8bf78e8f81707f55b539afc82dae9f157c0c87c3f3127d18b7203d202f87",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Libra.png",
       "sha256": "51d88b895b4dc4f8ef1e422aeb77966439b0347137629a7479a461cd82fecec3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/libra-ex.lua",
       "sha256": "01488677423f2246249d3ba8e79cc2c6ff2c9c08b88280c57d25e7ef7581f3e3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Cancer.png",
       "sha256": "731c01caf9eb1d2b4151f0f552b4b5f4a8f0154f8c380ba3f3d076679ea6cda1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/cancer-ex.lua",
       "sha256": "bdcc6425746b42dbd36c10393130351e2417934d116c829d8ee254098e3cef5e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Scorpio.png",
       "sha256": "ba3fd34a3c3f061ad7e5ff00034413506b1c2061149137dc87173d8fe596f966",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/scorpio-ex.lua",
       "sha256": "26f54317248abb0db6dc4c08553acd9783f56b476a003c31cdc290c80efd8300",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Capricorn.png",
       "sha256": "e57b9dc464229f7cd48de86b5064c6477ad5c37aba6d6de4d21f0a183cd4a968",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/capricorn-ex.lua",
       "sha256": "6ebb8f759088f7d66c40edb319a18657607b477ff7dd9be233c1b1a04807ae34",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Virgo.png",
       "sha256": "439900808e8b1800972f19ae6c201a31eecaf72c62585dfb88b29a4fac20abd2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/virgo-ex.lua",
       "sha256": "c039c44dd72fcb7c38413e64dfe96ea3e498867b20f6c0fbbbe8c7e18692b6f0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Leo.png",
       "sha256": "26e928d88e76d0f0b9011a7736b8526c2863abc87db3cac3fe2f8bc1105392ec",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/leo-ex.lua",
       "sha256": "3894b3f13d7e71b6da44dde6852b028ca613dcd9cd02d965724ee3156cf62285",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Aries.png",
       "sha256": "101d4ba8816ad3a17e679efcf0ef667bedf43d8c3bb999ed2ba6dec480bba598",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/aries-ex.lua",
       "sha256": "e933129fbc78d59a618dcf801ce5b115c4a47e2fd4b3a7e68d817c5d29a2f722",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Taurus.png",
       "sha256": "992387f5a4ebe85ab492e6620f796d931efc346d9f7ab3be2023e10dc0d5db94",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/taurus-ex.lua",
       "sha256": "66960a4108ef825b33743b54f3298ecac9ac6396f8cdca64b76ecf8ccb41328e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Aquarius.png",
       "sha256": "b68209f78c474bac7fa4169d56f623a607eb85a2945143aec03658d28b92d3d6",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/aquarius-ex.lua",
       "sha256": "2f760becedfa359d7f5a90a1030d9f1193dbe95e06ba371c83841077ba190d7d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Casiopea.png",
       "sha256": "13f98574f4e2234553b6a0422e3de4bf8bb3760b85bd30116d31ba2255053657",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/casiopea.lua",
       "sha256": "3a3b173a13578dc743ac432b5db42fd354bad68929c7cb7e836a3fa0e5be23c2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Corvus.png",
       "sha256": "ba191d50deabab3d4995c223697dc069ca2cf84a0c68c19738df1e5391278d31",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/corvus.lua",
       "sha256": "4032df7e61a7a78a46ec560369b0540871e31d4fa2d932cffed4a6e7c1136a45",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Pavo.png",
       "sha256": "d1639c5d88b1f500c67e7b71058de40ee034ff4e2072f7743f370f4e7eb9626b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/pavo.lua",
       "sha256": "cc658bda34c5bf02ece56927bd845271c9172a939327f0980c46ee5791d44f7e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Comet.png",
       "sha256": "1079399aec90106be2dcbc81e6058f9c06b2e0159c8d234bdb1ecd18335e83d1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/comet.lua",
       "sha256": "0e8adee9e63b7d7430b9c727b620c86166a914968f8d1a5cc903f038eb12983e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Pisces.png",
       "sha256": "9c99fd1cacc67f477697f8d073577bb67a317c558fcafa8abafa0b7729e81555",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/pisces-ex.lua",
       "sha256": "65b8e6fe86d30e1756da430064cfc7a81bb101a87342e1f1b012eea6f98f5c1b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Gemini.png",
       "sha256": "efd4b8938da62844aa74088ebafef372e92b28cebe7124b1ee633230c61e90e5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/gemini-ex.lua",
       "sha256": "09ff4e6a21c7c23f05478abc138f1c280cf7c40c0d406c2a18aa72ace2aa4c8c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Greed.png",
       "sha256": "41d6d9787b9055b68c3301187ef2f92364affd8b3c94db800bdedd54fcf90d76",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/greed.lua",
       "sha256": "3cfcd187fdb9941d5e57d04cf7cfc1abbb45c2a118e811a84fd17f13689dbc09",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Prometheus.png",
       "sha256": "c4e74b1a1f7c137f76cc22800abba23bd474d9ae1fd7bc8bfde84da021f2c89d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/prometheus.lua",
       "sha256": "234f4fd7761896c6f38246ef2f2e023637d98a625f9c6184d1389cd417a9807d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Pure White Heart.png",
       "sha256": "a0ea38eb1e2b6eddb0bd38a5415fafc55686acc084f61b0bfd272a439a400754",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/pure-white-heart.lua",
       "sha256": "eefe956229d1710d236733922514b22cfae9f0b7115c46c85038c07900cd47e3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Platinum Bullet.png",
       "sha256": "57806cf1e8673293ce1b361b75d334c0c1c47abcf0c82ae0360c24f2d936ebfc",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/platinum-bullet.lua",
       "sha256": "d6061208862217fa8a4cb685c8c7f07737b8f7d7dca813030f6216aba5bc8c1f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Death's Eyes.png",
       "sha256": "306b64a17c1ed1ef3df3ae7272536f56896586cc9354d740d5eafd88c017da35",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/deaths-eyes.lua",
       "sha256": "3901729aea80200e7a3b011b6ecefe3d282fbac44fe16f57e7d621b06f412ab9",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Altair.png",
       "sha256": "71c610e00e6421be853e5e53d37aa2e35eb623d61a0850fca909fc03f7813d1b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/altair.lua",
       "sha256": "c07174894e1cc4655150e126cfd556ff097cef8e9258f08f831600c47e4e5434",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Deneb.png",
       "sha256": "7aac55a258777b4571b0abbca6a080c6380ecfde31cf11c08641ad41954ec313",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/deneb.lua",
       "sha256": "cf8e7362d33876272e556c57c769ad9e2fa5ab762912c1b7f40280312520d46d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Vega.png",
       "sha256": "a0aa1b25ba30a6ad5a295760d37a1400483765b52bc4d26264f992f99c1fafad",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/vega.lua",
       "sha256": "64089084cfa6541b3bcfcb72ade9a83c30b1cf053b23d0d960cc1c90d2788cf1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Cursed Heart.png",
       "sha256": "4463ebe7e9cd9738625db99681b1beb3bf7241da2efdb51fa55cafd6831d0cb0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/cursed-heart.lua",
       "sha256": "c3434a9507caa7282e82e33ee3c4f3708e01a0c918b5e3b5f2b072d7d113edfb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Super Magneto.png",
       "sha256": "38f49f9d594a8a7a67b2595cdf5218b849fb5e585ba8d361f1b720dd57566aad",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/super-magneto.lua",
       "sha256": "b43b2e3040c587b97533b44ada32d47e9d14eced3c3fe9fb1b3fdddf44a47d4d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Solar System.png",
       "sha256": "8a66d8052ce32277a0c205898f35c2beaf770f87cffc9e4ac6373710b24c3c8c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/solar-system.lua",
       "sha256": "ed44a33485f1f64a9246fb6fe77e02f11f66ad70606393050b0add916dc332f9",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Ptolemaeus.png",
       "sha256": "263e6e16d7cb13bcc51b52b37e9f79c74d9db4bb6116e19b5f4917fdb26a5fcc",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/ptolemaeus.lua",
       "sha256": "8b9852ac8d5403a7b09eb3e50a7d70a52e32c0e1cba757edc7e1f05aea343c9a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Angry Onion.png",
       "sha256": "6b0ee77e4db0fcb7cce498db454e79b21cc106298ccae98985ef71b05904bb0f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/angry-onion.lua",
       "sha256": "d67a2189ce4902cc3ae86cc0a36102aa0b6bbbd6e932ee5a8f4da68cc8f7d4af",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Deep Of Abyss.png",
       "sha256": "ef1c6e8eafdb2756515fbda1078b942a268a14a2f804925131a890c8e359a62d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/oblivion.lua",
       "sha256": "8a1fca38bbbf2e409555e82234802252aec990c8bb42daefc6018eaa6dbec714",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Game",
@@ -377,1069 +377,1069 @@
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/go-home.lua",
       "sha256": "b772af7d7d8c9f0945d886f4cc33e63fba758ec82035a1ef50f86761defb421a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Fallen Orb.png",
       "sha256": "8f178d9ad81f730c2c4b6d65aad42a857b7986507fa01715d2f0ab25ac9c440e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/fallen-orb.lua",
       "sha256": "2decc0d2032d941bbbfb66bf2d16643b2772ad9062efbe1b090e28045d6e63d9",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Trinity.png",
       "sha256": "72fcd4ff330b516be1c35215039129b1706efbfb44f59d90ed0ca21c7aa49349",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/trinity.lua",
       "sha256": "8623829484a4609a218f4394cef1aa37f45938d71e8cd8a2c55afa9259cd283e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Blood Of Hatred.png",
       "sha256": "dec38a82612ab11ed282ab5f70ad48a3d754e8557a56145eff5eb1d25187ed0f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/blood-of-hatred.lua",
       "sha256": "2aae2e818143b44ca99d6d8f0dfa0c7f25d33c86b79fe135713e0cb7bb6cb19f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Divine Light.png",
       "sha256": "b7dec364d2decf6efe7f64bada0c2b23f702278b0287faf4267f14440f0e11e4",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/divine-light.lua",
       "sha256": "066ff3308bda94b126f23890c1b816e051dfe96e653f9b5a971f126b9611e0ce",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Omega 321.png",
       "sha256": "4c94994ee72d6a352f2494ec31a67f229ac037365f55a1dd7db8762ce07594e0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/omega-321.lua",
       "sha256": "8bf091bb0d465679a8ad67f217d6138638756453d655a4f425c9cd0c1d7c8b40",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Reincarnation.png",
       "sha256": "3bb542782c2945a7139cdb74c6c475ec6d265ce2f5db8c6e152cba8a56f6b669",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/manyu-sets.lua",
       "sha256": "033273615f4402bc3305ec5b6b78ebae3a2adbc739e5365e5ec1709332b4da5a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Acute Sinusitis.png",
       "sha256": "1cbd1bda8edf5eb77f05d34f2c4735ed9beb7d7ff3f6342f20c5ac28049bb989",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/acute-sinusitis.lua",
       "sha256": "3b87ed2366b86c18bac7409d8e8215ec8e18d07839bdc8c02d3a0cf6ec5488bb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Laniakea Supercluster.png",
       "sha256": "14e296234a38df46469fe8a6f2d743ecf1f2f812f01c4e1697ec834067264750",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/laniakea-supercluster.lua",
       "sha256": "a88e7ba70086f6ba831a08c22696db3eae40f80d00ad252b8c4f5309543d03fc",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Cleaner.png",
       "sha256": "14bf63d36273f5131047d456320476aebf6fad7a8575ebb29855db6375824b4e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/cleaner.lua",
       "sha256": "7c4308f0aad1d357c9bfe4941a567b16eeefc42ccf5f06e77ac19db2424899bb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Clover.png",
       "sha256": "1a5ff7f6520f3b86a93b51844bf16822c81d890b4c40130d8a311218a1033006",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/clover.lua",
       "sha256": "5f219a09dd13f52d466d90fc9e8e5db355de35720158da7445364aaed3c35089",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Galactic Medal Of Valor.png",
       "sha256": "d6adb68524e63264b55e69095a3054effe6ded3b330c249996642afedead5032",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/galactic-medal-of-valor.lua",
       "sha256": "5721eec8b65e8c4eddbeb2c0568a573a2321879fba889271e204c4dfb719dbc7",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Pirate Map.png",
       "sha256": "a7b47e98c1ebe589ebc2a18ca45c0c89e7e54edafb36f3906831471a53cff302",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/pirate-map.lua",
       "sha256": "af4ba09a05792482c605dfd8001f0bfd53a75007637d06d6093225a99eeb21c5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Morphine.png",
       "sha256": "a93f1e6ec6d38c438c6374fefe446da58280d939729ed81a0db44204a880195e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/morphine.lua",
       "sha256": "f4ddc0bfd7fd2ef1b35d74a15c8a9667738d4e81c387502cdd6204119df7be17",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Quasar.png",
       "sha256": "cfbb9795deebdff0970b5c04836e3409912f731ba8274a3088be691691f495b2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/quasar.lua",
       "sha256": "e6c2c0d51b2ae57192522814113a3c9ceabeb47728e1182bf4cd8e8de4d813f8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Chaos Dice.png",
       "sha256": "dc50859105876f0dfc8ff24a13b6f4ddca10263a15be1eeaa671494e82290414",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/chaos-dice.lua",
       "sha256": "a3a96765ab919b33c79f5fa6d626f4f0cb541c7fe3598e82f10eb1425b918ade",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Duality - Light and Darkness.png",
       "sha256": "8c5ab9858ffb4f8a550d3178d05c3a047c5bb7e3f05cbf3e56fccbfa3d418a91",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/duality-light-and-darkness.lua",
       "sha256": "75b49ee2a8425bbddbf3b5555717c79c552069a70795d504c8f5ef8876c13c51",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Sagittarius EX.png",
       "sha256": "d0065a5a7247762a718b8d2d6b458531749244a2ec6e5ba1d8af33ab6a60258a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/sagittarius-ex.lua",
       "sha256": "1bc0233ea23c71be093da5b8ef7b7b7f7d57ebc5ec37fee35b36b19c998ff50e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Ward.png",
       "sha256": "c4f312c4c570cc3b233fd66c5e16cf79b38c9b6df56ec5c0e8ba66855d2ee904",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/ward.lua",
       "sha256": "1dc3a3ffc241c5223c67e09a75ea86e1f192d1345801333821de95a5e98ffbba",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Chubby's Head.png",
       "sha256": "6b2338fdb25603801db228b32a86878eea26b5de1be69b705e91d24414731780",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/chubby-sets.lua",
       "sha256": "8b73e2c897c709fd9267a164889c3b7eea10d2843d4226571fbc70b18b7f9a3f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Sleeping Puppy.png",
       "sha256": "17960ffed3bf0954e969f1f872b58791564ad2e32690e2079a557d9333d98497",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Chubby's Tail.png",
       "sha256": "d21e5f923a3b38f96304cc23387f09a089332de0ac233b84482a6123e011bb70",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Happy Onion.png",
       "sha256": "c160e5d85ac4b58bd4f0150a3ff45a1abac1a2560e560374ba00805e3643a1a5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/happy-onion.lua",
       "sha256": "a1ea9fea59f50d5c48920a3bdd542fbcea34bbb32522a9feda345a10f7b1a88f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Key Is Power.png",
       "sha256": "e7bd0c4f704ab01d50e530ab1efbd77ce691390267d64b47c0b5727fb6fd2155",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/key-is-power.lua",
       "sha256": "2a81da10298143187b032319b0078c214963f52089b577c0fb117ca7a486fff4",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Bomb Is Power.png",
       "sha256": "6b5928219020689947e554d1448de698dc46ff80eec541bb5cc15b5751982c52",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/bomb-is-power.lua",
       "sha256": "5757cae65f83b2f64b4b6e7743472d109693cf020b7de5eab68f120049fa7736",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Fortune Coin.png",
       "sha256": "311912dc5e123dab6b4eadcc5833a9a3f6d78ba2e8bc189addf580da0eeacee1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/fortune-coin.lua",
       "sha256": "661d832e9943bfbc38ffb5b190542542b397dd3ada6aa914c20abfa55120e78f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Master's Degree.png",
       "sha256": "4ca78f9788a5a0459ae59410f6aa55a831ce4434b9488c36f96feca3dd42f31e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/masters-degree.lua",
       "sha256": "33ecc658b31aa74aed12581c270ce9fb743f6b22a0a04cae3715577f4a9ac761",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Bachelor's Degree.png",
       "sha256": "5470e887dc6bd8ec87bb481aed30545882a02cc769ed34380350abd9dc74db99",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/bachelors-degree.lua",
       "sha256": "b7cb4cb7a8810ee11f2b1edc898ac2b3e3c66117b7f3b1b5dadc279f2037fbae",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Pink Ward.png",
       "sha256": "bcbc8e48c4f23a5e89dea33d6281c47352debbc3ac5b6f71d5d577845dbfe07f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/pink-ward.lua",
       "sha256": "2c9845a6d0035dd8fa136afa413d5c4662d3ef5753e64adbb8894c10ee5709c8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Rhongomyniad.png",
       "sha256": "2aa3a867cdede6f953b8ac81628f146b9c2bb37ef86f172da3413bb8080fde71",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/rhongomyniad.lua",
       "sha256": "6053712fc6a23f0beaae03fbc54627fa1f492079d45edb15c12e9e0dae370091",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Artifact Sanctum.png",
       "sha256": "65bcacf26cc0418fd1acf34515dacdb0d58ca34a7817ff343f880780e5f86ef6",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/artifact-sanctum.lua",
       "sha256": "41f8f771400d956191b380588b2ded2ee8138a4553ea9bf2b0e7fc84954a65e9",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Amplifying Mind.png",
       "sha256": "a5300f8e29b11e3b58c33473152b6def7444f2e15c9c9a5b90873c297438d215",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/mind-series.lua",
       "sha256": "8876aab8e196f6d0879cf9184badc22400928f86a82327813f6a3c26c1f8da99",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/EZ Mode.png",
       "sha256": "18eb0b26b1b76c24f585600d60545005b17884e4f891d31833695c632490122c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/ez-mode.lua",
       "sha256": "a6b7b5e032a34b40ecacb074ef5f1a53fad205ea4690f39fcafcbe9d84ccef98",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Eden.png",
       "sha256": "99b08cac53816e4581ca1e745f85fd61fa699c88574e597f1dfcdee7aa7167a3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-eden.lua",
       "sha256": "78a25e0d7d44c455e0dcee69501bfc0746d5c894aa3eda32cc8099cfbb3fc696",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Isaac.png",
       "sha256": "0c319c467dcce6608b9bd974bdfe40c692e96df1587bc53f162d01c3630a4d45",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-isaac.lua",
       "sha256": "3c548da04f605a25b981d9d9e448b19d759b41e6030c4eb8ad9646cafd30dbe8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Power Rock Bottom.png",
       "sha256": "339632b410d458802be66c14454757c197e3048dcec2995d901dfb210e947353",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/power-rock-bottom.lua",
       "sha256": "ec583eeb3bbcb7796f89cb50ebb6501c5d57c3e326b462590f83a40a9e07579c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Rapid Rock Bottom.png",
       "sha256": "b226eeddb92e8d5e46a0bb34d9a19c6cbcde7e1bcdc01c6103cda0b3d8602a0b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/rapid-rock-bottom.lua",
       "sha256": "37d8ab5de1a0ba2374553873c1f9a93772015a8651b311449f4a77e262ac7d1e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Lucky Rock Bottom.png",
       "sha256": "97fb94b96dc9ce14b8319410b754b8dcfce99bf812a788321d78d3d6337a3ce8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/lucky-rock-bottom.lua",
       "sha256": "752816cc2481b2cc6b616f1a878ecf891646511de3c770cb7a57df82284709d0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Sinful Spoils of Subversion - Snake Eye.png",
       "sha256": "d348b1516fea9ca7a23ce2c19ad0007dbf798f3bc2b631eba8714610b397dc1f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/sinful-spoils-of-subversion-snake-eye.lua",
       "sha256": "741b25ab2c9dfe5e304672b03db5189907084ecb260a7947ac3a4d6ea4ec6ac1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Original Sinful Spoils - Snake Eye.png",
       "sha256": "1beba8744aa85ec09efd5b79047b866fbb051045762fa5775f60c343993114fd",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/original-sinful-spoils-snake-eye.lua",
       "sha256": "2b576ebf672aa6aa629f34d1b0a21b4a153eff8fa3f54d737ed7a6dbc044557a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Heart Bloom.png",
       "sha256": "2428e6abeed0dc7436af861819e2180928a67930902092835785ddb55b180a02",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/heart-bloom.lua",
       "sha256": "e6f6cb9ebcfe4ae35f899dc12fca39a3e73e62f8b7ae48443e1fb0a77a5f662e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Absolut Guppy.png",
       "sha256": "b9886f1e864e909e0ca009a4513b54f5b64c425d5d00ed626820fcbdb2a559c2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/extra-guppy-sets.lua",
       "sha256": "0c689abdf37bc76c6b6c006c2da8fddde601d38ef1aa7b60cd4a1ebb3bcc79fd",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Delirium Guppy.png",
       "sha256": "b9e8e9d2662ffdf703e587b22ecd88c241d566e1e16bbc3b2daf99257fd00c3d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Judas.png",
       "sha256": "72d52190940b62ed2f40c9513db381fd0752dc7aad63e012ee356e061057ff68",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-judas.lua",
       "sha256": "0b96d2aaf9b19e9429d10a7cc90da96e5ce2b57b64ea4d3ae49d528ec584588a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - The Lost.png",
       "sha256": "1ec1efa7d09af1fbc113ca8d9adf0c927950c14151e16f012dc8ed92916b0669",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-the-lost.lua",
       "sha256": "d0af3d8ce1abbdb34f671f06e2f463bf1f6f8899c147455deeda3244d466b12f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Amazing Chaos Scroll.png",
       "sha256": "55a102ed28237ec5aaf761153269fedf911a7e11ab78e5628c44ee66b8ccf914",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/amazing-chaos-scroll.lua",
       "sha256": "60bbefc7c337591fd5cc458fd52e48fc9236521a11a8d1f90f1e4a8c7eb10d4a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Magic Conch Shell.png",
       "sha256": "53802deaa7f5a1145cdb291d122cb110610851d0f3facccde6d3621a96e3fe48",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/magic-conch-shell.lua",
       "sha256": "930326711dc5fa292428c94890a006ea2e0482a04c961ded6d10f81ff2abb151",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Super Nova.png",
       "sha256": "ac80b0947549e67146faa8ea1296e72d5af33f1cc58bf7ce2a76e008e7fb6da3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/super-nova.lua",
       "sha256": "9833d9a67e08cbd0d57d5b12f8ec0cb2296d3c8a69e6c7bb1835a6f684af731b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Rite of Aramesir.png",
       "sha256": "63ad02f8f85541c3c0ed2c359e7167cf2a8d24ad024271874e9d2370992ef8ad",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/rite-of-aramesir.lua",
       "sha256": "dab58dffef3b4e242aeaebe5016acc04547f25e96fa270d5c824598deeb63255",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Overwhelming Sinful Spoils.png",
       "sha256": "59b43f5b19442a26ce51f44e64cd793c2a594a8b17029f3441f6e0dddef5b1dd",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/overwhelming-sinful-spoils.lua",
       "sha256": "02b4fae3f606a70b1a720de44ef44d1b58c431f706ce0197daf2805a82ea0431",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Godtech.png",
       "sha256": "80beb4553b482a58e846697310005d3074019a6db13dbb18abfb22d1c8cf36f4",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/godtech.lua",
       "sha256": "5074896da902409a0dd73113c705ada9d3d7ea62a93da1737245078775f78ebd",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Very EZ Mode.png",
       "sha256": "36582c78ea15a10739cd13832a6d15dd02f4c79285ec41979227325653ebac2f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/very-ez-mode.lua",
       "sha256": "29c79f72a517203d80a8d4135c73bf7a90f1bb51010371770abe350b0271e28d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Curse of Aramatir.png",
       "sha256": "3d5b924b5b03ef1b0bb8ebfa1a6031b67548c558347fb8517f33c0a5960b751f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/curse-of-aramatir.lua",
       "sha256": "19791e7b2b9de969b21f9c08f89e3dd4afd31b7b3d7ea5326baf3146341cb5dd",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Cain's Secret Bag.png",
       "sha256": "0f610325a0d503a1397c20dac0facbf3920618d2d0cbfce1834cd99cfd647579",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/cains-secret-bag.lua",
       "sha256": "894e749033ba98e2579793129f22e027513f36f7ad82ce0e6e229eea4103dc66",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/The Holy Blood and the Holy Grail.png",
       "sha256": "2a4f6bb777c0e3241d35f9f10a9f52dc7cadb9bc46a22b603faa47335cde489d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/the-holy-blood-and-the-holy-grail.lua",
       "sha256": "30594ee18b811ab1087be25511fbf13e499fd4b10bc113f7617eb7ea992e28b0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Akashic Records.png",
       "sha256": "bd72a29b188e1268457ec40cfbeba4085cdc11490766f703b85c1cf9065a7da3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/akashic-records.lua",
       "sha256": "b4755e1d3ca9ca5437786f1e0dc3d478ae268246bf9061a932d3f604350515c8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Terraspark Boots.png",
       "sha256": "82ca86e8d266a5241d753a8f8f33cf691427a5f18676d1b10e60d8319479dd69",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/terraspark-boots.lua",
       "sha256": "60864720a9b10eac7937e3fcedcda54e96bf5a52acfcb93ab7f38559b104d930",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Dunnell, the Noble Arms of Light.png",
       "sha256": "1f6916a221ca4005e0f1d6eac67d197e4d83c2dc0b962fd115b1c36ca734c9e8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/dunnell-the-noble-arms-of-light.lua",
       "sha256": "540cd1d485e0738d16b9571749c3589362ccab2417d2157663f5674d565dc23d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Starlit Papillon.png",
       "sha256": "8000de7391b8d7d686520c158ff10d593c0456b76d6884d40c44eac921adf2d8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/starlit-papillon.lua",
       "sha256": "aff503754f0f6ed3b503023664b24155c3aebdeed43977d171dd52aa441d929f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Sinful Spoils Struggle.png",
       "sha256": "24a08da43a28dc598dcb1ea1f5feead6a6e555cd06e56f68178661f4cd0961a6",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/sinful-spoils-struggle.lua",
       "sha256": "ba302faad0fa02fd70534fce6bc2096b86a08d4dad39147eb30888741df0a5ba",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Blood Trail.png",
       "sha256": "393fc31b48381842d11003610ac27f946855032d461c95fcb86dc9c78ae53c3c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/blood-trail.lua",
       "sha256": "b09bfde4920ecbadf2bfe056fbbd6cb378255065ca8d7eeb5ee39de27f754d79",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Sandevistan.png",
       "sha256": "8d711bacadb5f77e81aeed9d9d367d6e1a3f1dcfaed6eb4b2615f5f7d1d93da5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/sandevistan.lua",
       "sha256": "b871aad6948696181aedacd8cd3e6b1940db2360b697be1ba58c39415a223305",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/My Moon My Man.png",
       "sha256": "ab477b3751e5227c2b79eb7a68a02f5c53659eb12ec8a18769f4f7f2d88f2575",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/my-moon-my-man.lua",
       "sha256": "5e2b3daa01a2b41ce7bd57b7937395feaa4209072e4c23caaa396c80726ca99f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/3 Body Problem.png",
       "sha256": "94189c07dd5da815a31fcbbf3003fad381f5012c554ec59e7068be8b522639f9",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/three-body-problem.lua",
       "sha256": "e4adc48d3f1e7e9d34ef9c5c4432bc3c2c6cfa1603e411f84e86044789093489",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Absolut Conjoined.png",
       "sha256": "904c6f77148b0c471017fd25f7dee6b70d972d7524d2cd8025d537cb32b1a77e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/absolut-conjoined.lua",
       "sha256": "926d63cb46aeaedc89cc739167fed2c281574c01f44781bcf9bfe16d9b60421b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Spinup Dice.png",
       "sha256": "149283b00bc10b0395d605370389dbd9f9f91fbd179618037f4ea87840416bf1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/spinup-dice.lua",
       "sha256": "763bcad2f20d36ec999596f86e920419fa2b7a7ba12102ac6df41ef4655fe4ed",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Bonfire.png",
       "sha256": "f7b7092088cd13bf1bffd9b4abcac19ec3375a9fd394702e0f4b467a56357760",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/bonfire.lua",
       "sha256": "acee31c9acd311c0481a0efb6a14933675662cbb032b53e1ec339eeb10f1233c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Bunny Hop.png",
       "sha256": "fb1ade33723e90fc3c0e8bb9690f7b3cce962e34e173d8ee409e2d5865d23e0b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/bunny-hop.lua",
       "sha256": "4081b89cb8f48fd8db18f0466bda8d90891c08874f130a062dd373c2df505249",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Mirror Dice.png",
       "sha256": "609826e6b9009c5075f27f5783e2ab768efecbaea31a1089f3c4458cf5cfab16",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/mirror-dice.lua",
       "sha256": "2fc605636a28c312f5be287d87a21b1fbb35fa43cb7407dfcacdc8ed04dd1725",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Black Cube.png",
       "sha256": "a2a9cd3a3469b1b9bcd1f4a54bd9b33c7c75b5ee2148f361d7d85ffa75b49eeb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/maple-cube.lua",
       "sha256": "93a159958f0af265aa9aac73b307c4cc10f30ba79ae19067309882a6aee46abf",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Red Cube.png",
       "sha256": "1b5b4cda7b5256442751e45e85d1499df9e0df2f44b703d21a7c9d69b731d788",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/WANTED Seeker of Sinful Spoil.png",
       "sha256": "43c4d209aa473eced5d065816f5dabb5be565add3a1ac57ba9fa79252cb8be86",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/wanted-seeker-of-sinful-spoil.lua",
       "sha256": "9025cd23e316e8d0665cea643bf061a2ab09287a24947b31ac3376db0a440a44",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Calm Mind.png",
       "sha256": "f7ee0c21a1ef4c05e6d846fcab0217866f4d2673abf57791be9818191479bee2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Swift Mind.png",
       "sha256": "e26a39e90d957d2f3404cbdf6837b3659bd8dd3d2f5722200b4a1d6756e06f3e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Blue Mind.png",
       "sha256": "f09bd068e8267944926ed8b30be5f23b989652390ba412b80f48b93fc1e9c00d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Lucky Mind.png",
       "sha256": "a57cab20414855f8c9f815a9528cd72aa9d4460c75520cda9900dce4a07e70d6",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Quantum Mind.png",
       "sha256": "f4beebfc7536336ecc05c6da35b628ff9fd4cbb51fc3ba75af041c6da6b5cee2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/SOL EX.png",
       "sha256": "49a5b0d33f1129ea0babc84b721f66e5a62f62fe1f4b9119d8e23dcaced89524",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/sol-ex.lua",
       "sha256": "88a1a5d1cb2a36f60b04569d173e71f91e4a61c7f1b870e01ff97864962e130c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/LUNA EX.png",
       "sha256": "c0e7e559a135474c0dc680781a4035b48f28331d24f933c4728a3650b02e1d09",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/luna-ex.lua",
       "sha256": "5aef276653ea7dd4ac0e3eb8b038693f6cb478311d2f490fdb332616f4660661",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/MERCURIUS EX.png",
       "sha256": "6c843daa34da7a8f8f27c6a307299f2b8d0249cad254dcb9d05465fb2593c239",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/mercurius-ex.lua",
       "sha256": "0c9d986a0553922604659865e22d8c0034d68d7fb17893b63788b78bddd83010",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/VENUS EX.png",
       "sha256": "cd69ad60f4e70edf0176eebf03f9cfccb11afadec153792e1691755a7f83b9a3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/venus-ex.lua",
       "sha256": "7d5713a6c4fa6738bb32ba40f3f059b263454ee404cce67dddcabb1fdd035be8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/TERRA EX.png",
       "sha256": "5276753d849cfd2034517ad6505842bd882f6fb0b83a3f373c54d98687ab6308",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/terra-ex.lua",
       "sha256": "0574d1ba02ad31358165ff8d1bd9e64b94d959e412e7213e3e0460a1b2defe30",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/MARS EX.png",
       "sha256": "eff716e140ad642590555f88a90da10fe4f81aeff381cad15df18986d508b0d3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/mars-ex.lua",
       "sha256": "64384d74bc775f24b10d812dca7e415c0684af31fd8cafaa8d863bac9d621553",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/JUPITER EX.png",
       "sha256": "c7ddaee7c89f6723a56c4289242fde4d7e4f62efa75e8ad9f2c6bd1b472f73e4",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/jupiter-ex.lua",
       "sha256": "5a28e0f324e6f19b25edacba4fe67c393b15c36cca36383d1cb50c0c80f9e576",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/SATURNUS EX.png",
       "sha256": "dbcb2e2860bc0d7b30cb5d73bf5fc8a288fea91d98b29b6a4ab9d3e705cfbe9d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/saturnus-ex.lua",
       "sha256": "55681b464dcb4e0082797cc0377c6adabdd4ae2af3e23ccfe95d8ca0af9b4844",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/URANUS EX.png",
       "sha256": "d3f28e0418125bbbe04c6c7e49c51965aa623364c289e44c51fbc3ce0e293de2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/uranus-ex.lua",
       "sha256": "3ea4504677311891f831c2e020f6f2cbe7c5d8f39c1a6fa157b65b68f0647076",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/NEPTUNUS EX.png",
       "sha256": "e2f8f08c7ea9c5f410891a0e6cfe5f2d403e0a167b3ba49ef8ea6204e35e0644",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/neptunus-ex.lua",
       "sha256": "a7a9627d926df04d3845cf768a69b6876774ff08e10485c93bfd2781b870375a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/PLUTO EX.png",
       "sha256": "0b0dd41810044d7c7030f938f1fa3687b8b1d16440edf891243a3236b010b07f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/pluto-ex.lua",
       "sha256": "f63646af90946eda7be7379af3c6b0152fdd439128bb5f092b36869060733251",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Pure Love.png",
       "sha256": "2ef85994325fc31f583a13a51140686476a976e58caf69478fa407bba985ac96",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/pure-love.lua",
       "sha256": "04622ad9394d98e4696b967fcf55a091e522ec0e6cac2caeb2622c5a3cf033da",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Restock Dice.png",
       "sha256": "ecc7adc4b297dec3ecda063868e6b875ec6c914843017d0a5307095b2e5d5703",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/restock-dice.lua",
       "sha256": "8182c8dc1c0db3feb98d26845877e6ef94fd5d21e20d1ff9f5ef95fba6f27daf",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Sacred Dice.png",
       "sha256": "ea842b9a0c26b69032d1d4e43bc87f136303353a2d862aa94ec0310880dfa979",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/sacred-dice.lua",
       "sha256": "6e84946f0d227793977d201ae92c5c749686dc4f0b491d55cc359e7e7c9d8693",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Forbidden Dice.png",
       "sha256": "76d47928f89ec81632368c53b59d32fab56ff09af5bb7fec0599e752fb51dafe",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/forbidden-dice.lua",
       "sha256": "6750216058950162ac809061da57ee966050bf550899dcca271dd2d76292b908",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Dad's Box.png",
       "sha256": "22ee63da6c909b5344cb134c261644a9d7b4e2822386a4ea76f71566d091d0ba",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/dads-box.lua",
       "sha256": "ea5dc17a6be05732cc93f29076fc9981f23bfb88753a0d8a35f7a28f0f1b4537",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Matryoshka.png",
       "sha256": "bb33c7c83deaac1990853aaccf5b43a06f3c407a6166ed7ce5330f0bd9094017",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Samsara.png",
       "sha256": "bafb82cd9c3e77b578b5e8988f3c602544f490b984c5b69541e4e82c35589dc7",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Game",
@@ -1450,1637 +1450,1649 @@
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/stew-series.lua",
       "sha256": "558b7a12a3a82349a9cd23220a759112d12c7409e1a429d1d570f109879f2d61",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Dracoback, the Rideable Dragon.png",
       "sha256": "573160a102019305bde4bf54eb5cd4af4c69242c0a1bb7c6a2c46233c2be6586",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/dracoback.lua",
       "sha256": "1c71ea2f69f87da5f42a5227cb37f0de6ab3d7d00173404070c42a1f5ee8c0b7",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Amazing Chaos Scroll of Goodness.png",
       "sha256": "d4ad1f3198392de0cd5aaa4ecc9a23fccb3739d01df020aeb7374644cf6fb88c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/amazing-chaos-scroll-of-goodness.lua",
       "sha256": "5d9c43403b59b62a0b301ab32c7a980345ae53ae8ab08ecbde59f9ee03dcf89f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Albireo.png",
       "sha256": "0375812ab0c53443c8ebabe4b607fa824aebcebfbcc3a7fbf5927e78810bf2da",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/albireo.lua",
       "sha256": "2a274d52937705273b12e4e2fbf7db59e583de5e006ea51bced2cd5837829528",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Copernicus.png",
       "sha256": "0f0569542d845bc5609d6f9d83307f82cc7c419055ab4c26bd734e86c2000723",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/copernicus.lua",
       "sha256": "aee7d9d69cdeaecf10a0e719ba2fc8c6f69ed882368dc6f19c7ca9a7f499d835",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/RGB.png",
       "sha256": "a1c986927e6047ab9cc726ea7936833b0b7881f15841aa2338ebc834c66af735",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/rgb.lua",
       "sha256": "bf2d235e7e382812ab6546e0b01e544411423337e43762435291782824c3fc7f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Abortion.png",
       "sha256": "1126fd9d9a485d2533c4b429ad81d90c9a1bb36c0d7fd47c19e9cc78af6432bb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/abortion.lua",
       "sha256": "e5412a91e706642adb9407ab82113b72b0818797393bbe1d3339d2cd7cb0a001",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Snake-Eyes Poplar.png",
       "sha256": "348c6df45122e7b804596b3edf80235011315d961f4785860f3cd6f31d307840",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/snake-eyes-poplar.lua",
       "sha256": "14ac6e875e805da8a451068e05e623c867bbeb7d31780ced1182fea5df30015d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Staff of Ainz Ooal Gown.png",
       "sha256": "6512b566abcaf1756646f704e15b171d7166f78e949870c7aef85d8659a69f25",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/staff-of-ainz-ooal-gown.lua",
       "sha256": "f279144ed3f8528d1f6b657ce2585290d8c9c945f85ed12e4e1c68a4c38e57f0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/TAANA - Defense Helper.png",
       "sha256": "a2ec830437f223a5edbb6ca9c82837a8aa3c7d4cdaf308ff1dc41962d444a110",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/manapoly-dolls-sets.lua",
       "sha256": "8abc7965ff08912de8df2501985c27fe2d6fffab4b06bc561d8354a283863206",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/SEERI the Combat Helper.png",
       "sha256": "01a5119b6465325a780b8150746a74e8cf5653a7cd024c3438da2f58ebf3fbcc",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/KAAEN - Auto Reloader.png",
       "sha256": "9c55a6f217a1e08f208a259ff4b81beaa8e0df9efc4f31fa86a6705d3f6b2918",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Qubit Dice.png",
       "sha256": "cde689d74761c9282950dd90826f639ec77ee2abde75aba8927b0bbe2a1fedc5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/qubit-dice.lua",
       "sha256": "cf17cf94878abad20d095d85ca953c2aa3d7c0c80d5d575121c67457a0f7ff65",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Strawberry Milk.png",
       "sha256": "f9db5cb906a5281573b0dcd1c82bf369f1060b673f709f6949ee9b8877826db1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/strawberry-milk.lua",
       "sha256": "1c374b0f54bf486bd3a351dc188fd869a018bb41508242a7f42b7e30934a7593",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Entoma Vasilissa Zeta.png",
       "sha256": "cf3a6a6c02b049a13fe0963a7cebfe773f7414138bb0c05b94c1143d10597e04",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/entoma-vasilissa-zeta.lua",
       "sha256": "c2ac9837ffdb6636bfb61b7d623a6c7659e3c4ddbb522281f623d8983b914113",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Eve.png",
       "sha256": "1f2e19c2b22c0303232cef61319de33a6b2b062620f0d63f28a30abc09acef57",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-eve.lua",
       "sha256": "76ea19e0d5de205284c3214e3ceac0d876d2a8efd0800c65cd8cae7f245ffaa5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Blue Baby.png",
       "sha256": "a6cba9a7b3ad26cdff0909600ed22c80ead23d0003756a5ce54d6fde21b99ddd",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-blue-baby.lua",
       "sha256": "6e152ecb3d34441bf3cfbc36a093853b652e7c503dd79e471ee4d72c244d6ea1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Cain.png",
       "sha256": "e59b3d90efd936e6c545bbcec0dc7d3613ed1645d81cb5f381dfcd1b3e32cb5d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-cain.lua",
       "sha256": "6842618561ea7ae73cb1e776fb005f80403e8dceaef3054ff5edc7599265ea43",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Hot Potato.png",
       "sha256": "e23f7b193329ef16bc02228b9eb333ff51370ad7469ebcc89136f4477768b2cf",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/hot-potato.lua",
       "sha256": "99535575b5d49a552e552f16f9cc72bf7d515ec05daa296e8f55a6838f01654c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Unholy Mantle.png",
       "sha256": "39dd0709758a6a9cb81462f65a5a4e224b8b7d94ad846d31aac2921931ee3eb1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/unholy-mantle.lua",
       "sha256": "83d93374b5c381ee93b2c6a97c79de9944eb2dcbae3d284343fc61842711c808",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Steven.png",
       "sha256": "2abf2f10ad86b054fba3eba0d6563365c6552e3175724d51d7d1bd9e064347b3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-steven.lua",
       "sha256": "d49fd324f37042223ee8ff9269b1a40ca5c2b9bcc3604e9a9fcc076cb2eb0957",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Apollyon B.png",
       "sha256": "f0546c4e19c00bbc32fa373556f17f40892a2bf94854c630ba040181e64c4c2c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-apollyon-b.lua",
       "sha256": "5dbfdbabb3fca52b5cfb2525d0cffdd0abe53066ac5e60f4e3d3c206f9479da5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Eden B.png",
       "sha256": "65e7d2ab633af8dd9c554f0424774f8ba5944298ffbfab049890eafef4a64e70",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-eden-b.lua",
       "sha256": "e7e1ad918e1894b963d780e5ba6487b3a40375229443acea2fb778f24b6526be",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Purple Candle.png",
       "sha256": "4202d2b6c04f12bac51a8cf232ed83d7adfc8aac9f44cd3b3597cde824a7189d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/purple-candle.lua",
       "sha256": "dc2cf5bf108f2f49fd0987da191ada43849b63d15a2a6180c7fdd170240758c5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Astro Godhead.png",
       "sha256": "a2bee4977c727754fe0ad9c7b4345a054afdec4d09e589205a2d3e6ceec6811f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/astro-godhead.lua",
       "sha256": "c9a8aa19b5ea659896ca15e391a49869096c1e7935e72ef5458dd425c0053df8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Astro Sacred Heart.png",
       "sha256": "93da6e8d81808a3070362a0e3fcb79da9331e409ba654ce3001d24fe5be979b2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/astro-sacred-heart.lua",
       "sha256": "4a90153b5ae8e9dec959b60ceadf66f2851eabdf243b86867bceceb40d256e01",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Bonus Potential Cube.png",
       "sha256": "41013b09b78e3d7ef67f11233072bf3227a8b54230ca40ba75e8e8390e26bf4f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Schrodinger's Cat.png",
       "sha256": "ac912b0614ece7dc04bfb11c1519f89be71a6fc147db69eddef956fbc297b4c2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/schrodingers-cat.lua",
       "sha256": "53710345bc34172f60754e4a454700bca8874f2ff461a69cad6ee91b87f6c34f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Cracked Bottom.png",
       "sha256": "9a4a5f55f1c59e62cd37bb6388c3aa63842543be79ec31033bde5fb97253f530",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/cracked-bottom.lua",
-      "sha256": "aeaa6f7112db6498111f4068c788a8dbc799f48eea7149af0b3242895c9c1b98",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "sha256": "ac6e70b0f7e4e1f24a1617b16ca48dcd8701f93584052169f3139aa7e1bc8aed",
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birth Certificate.png",
       "sha256": "d112a0a6e5e9de9ce7eecc6bbd6d7f7afd001c520f53bb93e512337f8c8a4c76",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birth-certificate.lua",
       "sha256": "a4340f97ce8362c60207276f80007cc83c3a8dd28433116971381fa04eb5927c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Tainted Lost.png",
       "sha256": "3f60c6e63ddd9e0e2612309ac8e57c985875ba7ca93ae7e6b4217af92ccb92c7",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-tainted-lost.lua",
       "sha256": "fce18d372464284ef89dbcabd028e82f727d6094d1342000bc08ca7f1cef7591",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/False Certificate.png",
       "sha256": "22a958c3c07dfe67e29437bcb35fe05c30122e5678e8f246fca66b5205bdf363",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/false-certificate.lua",
       "sha256": "e825faf052e75823d8bc55cef4d3174a9b705e0075b0c5e57b0d1747d7a6f30d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Puzzle Dice.png",
       "sha256": "966e3fa4a6b314a8b428912264f8647ee42991de27ebf17679d1810d24d7caee",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/puzzle-dice.lua",
       "sha256": "2a809f9bc8ba992bd75c04fc8e6373b1c60e79058cde0b2e4703f9a3d5645472",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Bandage Girl.png",
       "sha256": "94efb0aa5ebb1389322511139d66dd248f60399d4a5d5e04a1e8d394d54b3a85",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/bandage-girl.lua",
       "sha256": "31803afba43eb02c81e069ae740a16da42478bafbd89fe2a4e3f24cd69ff245c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Graduation Certificate.png",
       "sha256": "5d4f7168128d11a3d18b4adbb431d9c00ad27a34ed838efda68c4d23f48874d3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/graduation-certificate.lua",
       "sha256": "c83c5c39cff22f1c95c2c56e15d9fc19ae98a67b240d44be2918d424b718b64c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Super Rocket in a Jar.png",
       "sha256": "b61493dfeef532f90fe0cb559c7a64c716f67494fdf6c5ae55eca9bc276fe8ca",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/super-rocket-in-a-jar.lua",
       "sha256": "e655791f0a076ac3d0ed0950e9955e0d8c6431991fe4326ee22b9e0bd41af9c1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/giga boom.png",
       "sha256": "8c74ee9b858d5591085c9a808f9ed617a8f7a205641680ad53675fc6c432f4df",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/giga-boom.lua",
       "sha256": "cb5b2c2dfff43bed8a692b31f64975668074b71a4c95077a2b093c3b623a6cf1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Coin Detonator.png",
       "sha256": "b69c66afd7ad9198ba72e79c4638422e5fd98b01b2bfbae6ff69c3b0642d56f0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/coin-detonator.lua",
       "sha256": "37404171c29a508354f5f41e70681c34f69ded45737a60dd6243246700276e1d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/marker-pocket.lua",
       "sha256": "e0e9da5edfed71f5a287297815d18b74b4223e644ed0b68768403680d2e4453a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Maw of the Void EX.png",
       "sha256": "fa97c85f12aeca53a373602b063afbf996cbecefe1b39c4946339121f4dd453d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/maw-of-the-void-ex.lua",
       "sha256": "a8158f862f8db473a428f8f4b520c6a7de2fca9262db48d1401d614ef58f58b1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Steam Bundle.png",
       "sha256": "55d940d7b395fe895f28ed114ee1224e61f4b84329c1a1b79a68050d8d489532",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/steam-bundle.lua",
       "sha256": "a73561993c67a63fb2fe141b24662d3e357920212eb896945763903c6342c95c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Astro Star of Bethlehem.png",
       "sha256": "b6271e4e4be64506806379d4208d0f3a09ccf9f6f91bd31ab4978942d65f17ed",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/astro-star-of-bethlehem.lua",
       "sha256": "129d8cb5bf8b056600493c31bd582dc3bef73ccc7f675338db0890189b62683b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/We Need To Go Deeper! (Astro).png",
       "sha256": "4ab2c79189640554d5ae26393177f4b0dbb1170d2a1e0d565855386284c97495",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/we-need-to-go-deeper-astro.lua",
       "sha256": "90c5b5d98569f5b7459bd026c8b0d6fc4075301698338fe131f2411c123e4276",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Urinary incontinence.png",
       "sha256": "3098e30079c4a7caf5bf38c886a2036c03b94a28eb7ad5fae309901dba2f75f9",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/urinary-incontinence.lua",
       "sha256": "1abfa25662d2a036f681907ca88fa8761f0086ba2117c117479537c4bd4bed5b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Anorexia Nervosa.png",
       "sha256": "77cd07f3afd89602e81cbe7309ee5167c21830b516fdf96e204064fc49fef292",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/anorexia-nervosa.lua",
       "sha256": "3da4e706437bb963924facdbe1772b1556866315580319e4c64c4519be4cc628",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/black list.png",
       "sha256": "ac13fa9b80618dd056310bf3392dc0be730ed2dc5782bb2cb3ad159b0a1c753e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/black-list.lua",
       "sha256": "f39922a1466cd9a52acb4b1a926cf48c4b7bfe9b5c4ef163134bbfc52bab81e7",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Dry Eye Syndrome.png",
       "sha256": "24a935d6e1033e1770e0b3c26346d7d97b81b3f993d9681c3d0b56abef45d64b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/dry-eye-syndrome.lua",
       "sha256": "394cfec290c1a47fc0a75d4ea98e6e2938b1cb820d122a5b54df71a30c15b36b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Book of Sun.png",
       "sha256": "24f73dcb8f6ce51dc86f1e00a5861e7eb91233fa76dc2085a44521109bc2adc8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/book-of-sun.lua",
       "sha256": "491df0713efb7a77313abf9729e80de6ab3587bf293b5e33b866e35d7cb7dca2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Book of Moon.png",
       "sha256": "cd77b79648fe6015e46704c7a178f820bb75b54e142e3b884ec9f22908ebf569",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/book-of-moon.lua",
       "sha256": "71808ea8f601a69bb9c58c6e56d187648d889a33b188f13da455a968f682cd6b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Book of Eclipse.png",
       "sha256": "6a0e770dbd4a013a182b08535e90a0072350353c16a1fa3fdf11e706ed4296da",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Book of Lunar Eclipse.png",
       "sha256": "e42252048e5c17f07611676baa7e1b02cfc3f93a5825299743c2b6f0ccfe7f31",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Stairway to Hell.png",
       "sha256": "ad4e599564bf4cee7d68f5bcb144b2fe89cd97b278611ca107e26a26250c6442",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/stairway-to-hell.lua",
       "sha256": "f485b52f8b910f0dcdb49d272dc9831d86fc12df06580bf0f7fda7790f14b2c6",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Book of Life.png",
       "sha256": "96b0d873ea970b9f647b3bcf1ef3be42785a20959e5a91870916f8c4e67e6918",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/book-of-life.lua",
       "sha256": "84bf77fce934aa8c197a19034550cb0bd578227d089b9fe708b69b797abaded3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Life-Sustaining Treatment.png",
       "sha256": "c0b78a69f34a968650a42d2d8d0eef263d023770a72867e52d0d0c551cadcf90",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/life-sustaining-treatment.lua",
       "sha256": "b38210c27a674330d62350c31c5058ede5083f0e98072a180669fa4e16fd4fab",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Big Chest.png",
       "sha256": "8a9d48cf95b373b101b0047e418f23ec7ff3b188c0b8dff2d58ec5a48c8aa4aa",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/big-chest.lua",
       "sha256": "3f06d9cf5eeeb825cdd79e413d2ec24ae11262b881acedab39891d5c33fc83cb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Max's Head.png",
       "sha256": "9da7082523eb49d2b6ee6215f4161db8114603b18b065e201f8557a63ca0dc93",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/maxs-head.lua",
       "sha256": "5726a6495b99f6180ff5695502d4e1c7b7acf0dd9935375876a84af6e618a05c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Book of Despair.png",
       "sha256": "d759fa6c8ecdc0190c2f954b913fd65e1d8d79b3ee212bc793a047a156e80a90",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/book-of-despair.lua",
       "sha256": "1d8a064369a2a6fea29dda19f6df44f15a1a90323877189abb91a406c3716a91",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/witchcraft.lua",
       "sha256": "02dff7e14bb0edbe40bd3e4b8ce0e06e35e08ed7c41c0542514f36a2a61386aa",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Glitched D6.png",
       "sha256": "712a0514b1a0512e76f979d5d1b94cbed36bfae5d73027060fac8de2097f3e01",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/glitched-d6.lua",
       "sha256": "f6865baa0f631bff5202f5251d75aba68d60451a9640e612ee3b81e6b70dbdea",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Zoltraak.png",
       "sha256": "afc0a2f25214a7b155ae67011d6dae65b98eb07a93a56d7d4b7be6c157661a19",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/zoltraak.lua",
       "sha256": "1b51e9c834f49272efbb6cffd09ea4cf6cac55b7acb0147b1ee02e7951965227",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Flammes Grimoire.png",
       "sha256": "9d9d4b5d0884c86a6652f00a64ab27533b142d3ed08e4e875786795679618550",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/flammes-grimoire.lua",
       "sha256": "d8f7be9cbe8eca54befcd802274b97ad1d7afc9a1c6c7bdc1ac7ee5329194670",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Pillars of Creation.png",
       "sha256": "750caf708f0d8a761dcb8309e37a4adfd17f02b69af43592ec670a2b0706aeb9",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/pillars-of-creation.lua",
       "sha256": "4690922111dcaec4f1c8c880c9b146c2b45453ff80e0c16c07ab08c2b94971ca",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/IBN 5100.png",
       "sha256": "72ad036e9e3bbbce1913393f4bc1a9e968675332a0d446c620194ab546a4425f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/ibn-5100.lua",
       "sha256": "31c6519af405483c25db060aba77695ad1b0417399e59435190fc4e5da7d6bae",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Expired Milk.png",
       "sha256": "6da6192f1b650cfd8e1d811d5565684f0131af78981f7b0cd7c76120d7e618b2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/expired-milk.lua",
       "sha256": "d9b7ac0aa3361a35e70e7464368c4c412d5f42c52c59ded5eb709b1e4edf9d48",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Lucky Coin Bundle.png",
       "sha256": "6d234d0b8c59b0f0c7dbb983e9b96b2cd14ec18024856daf6e586e038f8767ce",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/lucky-coin-bundle.lua",
       "sha256": "d812962bc84f726d1b2015ca38c25d8db2e00621f088f348aad674eaa088dbe2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Retrograde Arcana.png",
       "sha256": "35fdbe4a2fad16245eb4d4ea87dcd7ce9e5b4e437c523690d20bcfd784c54dbc",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/retrograde-arcana.lua",
       "sha256": "a8dd9e18aa4b241275bdff15545f9c9d9f76151ce6169122b9175b1bacc7af3f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Techrapod.png",
       "sha256": "ee9e195260e95ea58243746196c1e13d096f95021e82185de61693bb9013b459",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/techrapod.lua",
       "sha256": "707096fed75e5695fde918c57a158ea76af4bb1345a4438866a1767cb4b23abd",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Throw Bomb.png",
       "sha256": "65462bf7a4e78e1d0ebfa3ee3f63696adcdb3ddca1af8443b8f5638efe0f3762",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/throw-bomb.lua",
       "sha256": "10121adddcf6d1649e4ee8370f85f56ff678dcdc16dac04ca08fe694a931dcef",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/love letter.png",
       "sha256": "0a4c6129d8eb1a29fd5513552186a7cd5744af3577d18d94325930bec8a72387",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/love-letter.lua",
       "sha256": "617ed8820a313c3085f0f83135b00dd7a0cb7a04288f74f009ee212093d03a9b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Mayushii's Pocket Watch.png",
       "sha256": "970c41e52491fdf44610ea6057098ce2c8cda1b081f2b5d84027cfbc9a212642",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/mayushiis-pocket-watch.lua",
       "sha256": "041484172c130fd6c320166f2df0f17cb0bfe044060fdb8dcaeca24f519fd900",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Scales of Obedience.png",
       "sha256": "e5d8775f61a27d8a8fb7a71941b5b78c8e37f12e13188880075ec0d66b6df87d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/scales-of-obedience.lua",
       "sha256": "5e15444aa60859bd3691f0a0f843ac645eb94734012f58567c1435fce55040ac",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/artifact-ignition.lua",
       "sha256": "9791271067341b7f46b586023fa989e90df266fd22122933e4e4f93c5119969f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Skeleton Guppy.png",
       "sha256": "e3b80d47581c02ca85b705750db0608913114ca1eee0c44cc5859d8adcb67e56",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/skeleton-guppy.lua",
       "sha256": "27be44aac6a532fbb3df0eaf1522683fafe144ca1e479d77dd58a3ca6f4512bc",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Blighted Guppy.png",
       "sha256": "14f2f36134ec10825b155e0883adbc7151294a5feb260e3fddbd59c88e3f3180",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/blighted-guppy.lua",
       "sha256": "17eab0ddd8f24eb4d7853f89f49fb20d4200d06115776f190e642c531d5d5451",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Golden Guppy.png",
       "sha256": "b274e1f819f21aee18ac52f90f128fcbc976d46840b1699032e79c4ff7e4d1c7",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/golden-guppy.lua",
       "sha256": "382f8255f8bbb694817078cf46578028cc5aa4a553454d7ac742c35241991df2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Blood Guppy.png",
       "sha256": "c8bbd27c1665f9603cf8a696c7360eaa76a89bbae610953ff20c119df0231825",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/blood-guppy.lua",
       "sha256": "0c78e89a3b7971af823e25dc9b84d9c031077d5aa08f49e586f50eeaef4d2610",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Divine Guppy.png",
       "sha256": "e5c8fce2f19628820d2bf4daa4dc77bab0524c6ae59f1787910dda4788d0a4f2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/divine-guppy.lua",
       "sha256": "8c4cd4b97dc3470f6d6ab8e77cfe1826f6361d358ce92648cb83b8a3a003f82a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Mega D4.png",
       "sha256": "1a6ff95e017152b04793146a0fcfbb4e523455960ebadb444f70f993b17ae712",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/mega-d4.lua",
       "sha256": "67778fcacdfd2a8b425e935241034d6a3b5c8af712569a53a765b7a904b092cd",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Mega D6.png",
       "sha256": "91de85c22f9133292cc0a2a436cd9fe8a322ffc947be71ed18244ad29ae423d3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/mega-d6.lua",
-      "sha256": "d29c70d9b7dd70ba224f86b7efd4f9e5aa901b991351dbeccf19fc4d4b4f4b3e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "sha256": "3a2ffa0d35fb99b6653f19304bf170616fefe65ef51c8fc600e63da86250e03c",
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Mega D8.png",
       "sha256": "80116669802c615a9f476a77be69293371602d71c593c533c8d021285811970c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/mega-d8.lua",
       "sha256": "968c9aa64906f1b87c08bddb4148b27f4c3b4e86ccb8ddf4349219ada4ef289d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Marigold.png",
       "sha256": "fc4c6aa9347b54808415bda2843d773113fad336683b28dd6329f1f1465aa6ca",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/marigold.lua",
       "sha256": "55c940a60badfcbaa37a0701018e6756b0fa2718c90fbac08ceb4f6a705e5e55",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Legacy.png",
       "sha256": "8e01fa855d3ff6e8ec6e0b9cd9a01b9c132ab1b056903137718bc6a4d0c35706",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/legacy.lua",
       "sha256": "00e9958fd1b261c8f4be5502d1817eefeec8ffd8d2e80467c6f0a7259eacbbf4",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/P Key.png",
       "sha256": "a984b694ac1cd5ea71ba64e786492e46a79a9fae2abcc75f7ce1d8d10b46e15f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/p-key.lua",
       "sha256": "4b079729dce697b58c00225487d067f203b91ca657a068006c86ec15ea68aa62",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Bicorn.png",
       "sha256": "31898914b7675d56f0fc2381aac5661a2185b5436e41dda552a847d602e6de6d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/bicorn.lua",
       "sha256": "2f4f02f50ac4ff4e05701531b053161c2fc671d084544cd19aa8ae738ffe22c7",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/alcohol bottle.png",
       "sha256": "a0fdfccbddcf2f0db042b0c8b59231afd477a9a79473f8d382780e8a7826e930",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/alcohol-bottle.lua",
       "sha256": "5c506feaf647767d24199a31ada3404b22393062c0e6c5b8f1d89d8b91d47140",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Plunger.png",
       "sha256": "f13108229551503094da32de67093ba71fe22e6da15bb75e8b04a6431a5508d5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/plunger.lua",
       "sha256": "535163119faecb1a0999da0842b607c9e0a9d98367537e49d734d2c7a2d9c4a0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Decisive Strike.png",
       "sha256": "56229ab6c85c21e576cf2c72049cca058168205fa36581d469532affd6efd248",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/decisive-strike.lua",
       "sha256": "559ae91f8340f64e88bf6360a8d6e70dd5205d47a805082fe484eab0f8f46cbe",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Casey.png",
       "sha256": "894023d9e00c6db91f39d6fd0f6cb679d0243b54e91c6bda59b78ebcd72b71ab",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/casey.lua",
       "sha256": "252c53940e4769e9434eb91f6693d619089daa11c1402e90c74a10ae6780ee6c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/canned bread.png",
       "sha256": "0c57685353241ebdf9e501d1e3762907575442a9564f45e66fa0edcec5733b8c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/canned-bread.lua",
       "sha256": "a6c8d0ad8b6b45cb4e06d84170205d6f2cad614f0f65ae156d627d0e5b128445",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Pure Gold Copter.png",
       "sha256": "fb3fc0a0f69d625cb3746fa0d222fc6d098e94a5fe4430d9103b00c6b8fe8157",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/pure-gold-copter.lua",
       "sha256": "e8f5b695f5adf3e66f4175194e3aad75db50244cae68387980a0a2cae134f251",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Birthright - Maggy.png",
       "sha256": "34f0fe26babd8d698088e85bd4142394cf9a3afd418b25e9459d0d587639cc50",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/birthright-maggy.lua",
       "sha256": "6c14d07aee0f844baf6c25f53dc5e63c7dca1b64bd10c8ba9fa99ef3320f38ee",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Dango.png",
       "sha256": "4e4fde8f6d5b0c6104f67146cdb0654c01193d946308e657e0e13618cd5a8d05",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/dango.lua",
       "sha256": "0660e30238281c4b3236efd7eabc5b87d7c1544391f2844c85fe7a5ab83f7b01",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Strawberry Medicine.png",
       "sha256": "3c4d011d83aca6c30842ea21949141a74a99bc45dc0b8a4d963eb7372e0d7ed8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/strawberry-medicine.lua",
       "sha256": "b585b15d6a507b502a54f071ea3191ed3e47cb646afd128daedd755d867b55ba",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/chronos.png",
       "sha256": "eb2734a36758d68048d2026266a77e9017ec8c2cf9d2ca929917089110d143d2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/chronos.lua",
       "sha256": "7c3b6af30a10b90ed8657daaed6f9e50d5c439c892295137b5bf3515cfba31c9",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Rainbow Mushroom.png",
       "sha256": "f5b203b73bb3640772eef59ba6390d3f3bfcf61e0715f75ac9dccff5b2528835",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/rainbow-mushroom.lua",
       "sha256": "ecf71a9e8dd233ec180166ab41ec8c06519418489bdfc16939e8ad755608841a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Overmind.png",
       "sha256": "3f907ff59ee829d246fb8b665bfd51e5d900294d6b7b1657f97d058cbafbe670",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/overmind.lua",
       "sha256": "d5d14d540cbe676727bf3c7952999f126c5b55c233681431a2c57f07ffb725e8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Money = Sorrow.png",
       "sha256": "dd5498fa44f2fdf0eb6d042fc84d48f054fc93caec0322968194a045e3bcaedb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/money-is-sorrow.lua",
       "sha256": "3819a44f2a7f18d6e1868d3a898b0557b831c7888f12a9846a8c5213a9101167",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/David's Stone.png",
       "sha256": "aa2c1e9585b805e85d6c560647127bb4ac939051a0dff34246a273523f7c53f5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/davids-stone.lua",
       "sha256": "386499d0b757d472a6bf55032393c476bab61a7afac269a338338f0d302d0d30",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Angelic D6.png",
       "sha256": "012ea9fa13c33d2062b4dd26fae759d9a91b60d56cb4882899e190132b12c8ee",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/angelic-d6.lua",
       "sha256": "7472f349eb832219bc17bb88d9dbadc9c199511d74e23dd26b11fb5071244626",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Guppy's Name Tag.png",
       "sha256": "a0781faffb355230b9f8bfcd679e14a425468e2bd584cd3bc25cca1dd1e06c3e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/guppys-name-tag.lua",
       "sha256": "6d9d28ac5adc9357bc736c7bd7fa387846646b96db4af9f2914e94314607a4be",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Experimental Serum.png",
       "sha256": "189e5bb70b91c0e2bc93160aa7f0985201df0ffe4ac8ef4ab5fae92f6fed3bd1",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/experimental-serum.lua",
       "sha256": "2baee71afc7def8f32338eaf467e3418a7ddc704d9c3d3cdcee47ae2381044d5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Tyrant's Belt.png",
       "sha256": "013804f4554df8f2ad15a1678183220a92aae1ec6c2ef5dfeccfaafc04529fd8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/tyrants-belt.lua",
       "sha256": "54baf7de8c92d7146ac003e5b1b97b4184f024ecb452b2d6db4cda65934d33b7",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Eye of Michael.png",
       "sha256": "ab219b8279d4758ebe1ec758b74ed6bfd34d4baaa0c2695cf61e2315379b49c2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/eye-of-michael.lua",
       "sha256": "99f9462425858bcccdd246467a30020ac469ccd55730a05efec6d302cd98df6e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Luxury Rosary.png",
       "sha256": "4f70287b296ed9a7e1323164987b4e74350acf487f92e5bb43d0f7c980342769",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/luxury-rosary.lua",
       "sha256": "7707bf56809cdecd955b41ab580b86a967dafab24ea6284e1954c44dcdc76339",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Mineral Shard.png",
       "sha256": "99291936a92af6a92d0641cea777eac074e4456fe35062b5722b1399238f7aba",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/mineral-shard.lua",
       "sha256": "ef520fdaeb9fcd0e19d089ff0df57b504e82e3a31b4ee3c9396924259b493443",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Serpent's Kiss EX.png",
       "sha256": "d58cd475baa51a6c71de18e45defb7b68d15fb53da8ff9681978b8ecdedefcc6",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/serpents-kiss-ex.lua",
       "sha256": "8239cdc1cf553f23aa91858c4030bfdf34da9e56d6bfeb67abcdd6aa9843df31",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Chubby's Paw.png",
       "sha256": "6ae4a1b1f037d486aa616a00ddc7f1ea990dc561723feef1e73bf333a2d856c8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Quill Pen.png",
       "sha256": "648e3678f7065d374bbebd4c7441fb78af78940764bec5dd92abd05a93b6e6d4",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/quill-pen.lua",
       "sha256": "4fb1303216e7a3dbca6620a80824018f9edf84ea046013d357e6b59bbada4a20",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Golden Apple.png",
       "sha256": "50948aedca5c9c06c94f0dce955299ef0aa2c2629b445102537a5f90001490a5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/golden-apple.lua",
       "sha256": "026344cf9b43f71505d8ffdf433dd49a7803072f155d0bc3067057c79c7ac684",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Gold Tooth.png",
       "sha256": "210da8856f3181eb46925be91827b485a789bdd04eb6042e1ce9c78ef78abceb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/gold-tooth.lua",
       "sha256": "e63ca84736ca3b611fb705e3c43959d251aaecbd24a6b2d8654af6169c9cba2b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Forbidden Fruit.png",
       "sha256": "17e730443b8e82f76a44f5d07e4fc3128a17f6ddc29a45ef9df739f5e918846c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/forbidden-fruit.lua",
       "sha256": "5cfd6a41eee31f10e28572e1c55ca4083d5a0164d22baf3825237cdeba55f5bb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/SnowGrave.png",
       "sha256": "d379e1fa2cfaf68c58638e3bdab3169cb677d5e33c0fd08bc5812e6a7db48742",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/snowgrave.lua",
       "sha256": "9ff9dc20427f6b20898d33f90040afe36d7b70fcd7010f8ab22024720e921edc",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/777.png",
       "sha256": "1e82cf5f3bff0288298260bfd1db583ce5b9e6729042f452db7576bafb3631c4",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/777.lua",
       "sha256": "9d96df0308265d7b79ba870d5c4454559129611e747c90d6f633588520b5d0bb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Liberation.png",
       "sha256": "36916feb967606b7b94d0b425cb0e5704d303a5cb432b289154a8ffd9b291e64",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/liberation.lua",
       "sha256": "6091319eeaa5ae32bb1f40e927570192082e986c3a53a288f777eca0efdaa1de",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Giant Marble.png",
       "sha256": "7871ecba86872f269ef7a185410b077931dc80fe68c064775b1f93c25675cf3b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/giant-marble.lua",
       "sha256": "a8b7461942c3075ea1adeb23b463e4f08769492543c39939cf620646075e32fe",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Water Balloon.png",
       "sha256": "ab867f4a4be97a965f70e36e72fc54ce04a481a5907392b21b7fef781a8fdd0d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/water-balloon.lua",
       "sha256": "3b191abdf22a28bf3d8dfe1f59a211b983a121b4c816a857c1354fb2db3c546b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Astrophage.png",
       "sha256": "62ad28ef3cf79812db181121318d1ddeb9880dd02e35646c29f497a42ca7f6d6",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/astrophage.lua",
       "sha256": "c1c597bf87048b527b6214d20959320837a5099522c9580b0059d4cdf087158e",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Rocky.png",
       "sha256": "83b20ecd55ab48a40ae5ecca93b68ae8029249738790785737590e240366eb52",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/rocky.lua",
       "sha256": "3aee736e1b08b35a801fe7e7048c0d3d5975bca4f39daa8412c69c49a72cc47c",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Xenonite.png",
       "sha256": "2edb4d8d74e3ef9d9ff2326df2384730fc0e63ef481ef2d37e6ae870d7868bcb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/xenonite.lua",
       "sha256": "5bb6b0e19339a56e83b006a1bfdf88253e6e22c6e43b2fe8f4dbb04bff303da0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Hyper Quantum Dice.png",
       "sha256": "39da569409e955daa922127601a13d62dc92ba05a7dc2ed402088f2139970fdb",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/hyper-quantum-dice.lua",
       "sha256": "2a566947af5c7e0a9aedda88efea7508ea14c4aec6d311e69cab93e5e075c772",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/collectibles/Gene Scissors.png",
       "sha256": "cbca39f8242738343a5220d48e07fef6b620f1952b43fadcbd0d72ae77b190d6",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/gene-scissors.lua",
       "sha256": "a515e2733a23e03a37ab8a2441a1913639898eb79e40e55b715268c7049a8017",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/cassandras-crystal-ball.lua",
       "sha256": "986f96f3c046a5f1211dcb58b06c824f82c0a562b6a931cea78647202008aaf9",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/almagest.lua",
+      "sha256": "f9d971f0448048925abfa611de7a1a52062e942d73d774da87266311600db702",
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
+    },
+    {
+      "project": "Astro-Items",
+      "file": "astro/collectibles/customs/astrolabe.lua",
+      "sha256": "cf3b25d6ce082da55121200fd84a090649be8a253cad4361cd3de47d17b2a0bc",
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Eye of God.png",
       "sha256": "634416a730911d0085bf2b2c2ea0846312a584d723a36aba965c59e1750e7cee",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/eye-of-god.lua",
       "sha256": "d2e1cb0d7a663db72991b15d3c3068f33ce0cff2a58f987bbe4a10fe26707d1d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/The Left Foot.png",
       "sha256": "b25610b99b4476b5d3e9b74d454f5cc1e7ae9d06486fda9b3bff3908f5bf66d7",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/left-foot.lua",
       "sha256": "ecda66ed7e71c97f331dab8087378a95c966716feda60675d270a0e8034d4644",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Absolute Zero.png",
       "sha256": "f0900d06e9a5d067ba94fa807db4185d2beb98e117bd740fdc85590b8ffac783",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/absolute-zero.lua",
       "sha256": "4f52ad1c4e62902f79a9abad9f700ffe4400bdbe9416a104fa8a7d2cd660d692",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Bloody Bandage.png",
       "sha256": "e62595bbb1fdaefbda15c2f447bc28975515dc62f8529b7590d57e26d09bfef4",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/bloody-bandage.lua",
       "sha256": "3a4f9631cf0153545043a6af768896c0e15e7b3a3546f5fa81d7b44e5a4447a2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Eden's Snake.png",
       "sha256": "2288996af155c660ba8432ed78fa0d14bef5b92add684444aef7d9eb183e2140",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/edens-snake.lua",
       "sha256": "e052d74cb359db2369f9edf45a7ef1831c5ff4ad699d031693d7e43306f2024f",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Electronic Penny.png",
       "sha256": "fd4080014d38a072fe94a08d199bb725fa9c72a48b71d5d2a3b694e7f74d236b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/electronic-penny.lua",
       "sha256": "1cc4d42f9e5385ce6639391dc568b70ed681776c7d69f93674e5b70796f15ec0",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Black Mirror.png",
       "sha256": "264c9d88f562074c4e98a3d8cd8167b3c6608f8ace864d813c08c087322c31df",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/black-mirror.lua",
       "sha256": "713bc4bb2e0e7cc1d9102ee956a5a4c734e06734e14126ff3aca1d2e8eb99e43",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Lava Hand.png",
       "sha256": "8990bb922059afe7a282c88a0bd03da8d1723a4a304ef05bd8caca3ed1d05ca5",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/lava-hand.lua",
       "sha256": "3d177aaf9ef09d376a8380bdae95225aaa896775a9e8f68c8951511a2a657a80",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Nostalgia.png",
       "sha256": "8dd5f292d0be19c494d9836f963876fd9641e9baabb9593b2c607e494db07564",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/nostalgia.lua",
       "sha256": "fd97f1ec2d81d9dbe695a81cf18021962ef27ac363474327f66596581a24d233",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Doctrine.png",
       "sha256": "9c867ed24117da410ee09985ff63218c509601690be2846668414043086ae145",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/doctrine.lua",
       "sha256": "58fc58843787fa77ce20023233b8719e36749d589f7d33e3124f4d1273df2810",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Mosi's Eyes.png",
       "sha256": "fb458499463e88ed6573ba76a3648fa798458015156b277cde43b21dcc3d1d8d",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/mosis-eyes.lua",
       "sha256": "e836fb3aea6bfc5b15a3991a3ae76399f7ca072dddb9bf7ac575398b35942834",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Planetarium Crown.png",
       "sha256": "11e77ef95436e87e2fb947c28231c54cac0124d7029fc3ce7a1334b0d538547b",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/planetarium-crown.lua",
       "sha256": "824091d62a990819bb5797107d2ec595980e9266faaceb66da393036c8e2e93a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Flunk.png",
       "sha256": "df251eceffcf1843407f7bbe37a21dbe532fb2306545daeb56cd8075404d7c71",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/flunk.lua",
       "sha256": "cc72f7ea509d53a72dc78d3b0f650a3ed980b08d6b4e4bc15dbdc3d834e857b6",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Yes.png",
       "sha256": "f0df6e32d0292031f7851d9a5330328569a1d8911cfa5c1428e31976e04c591a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/yes.lua",
       "sha256": "43905227d9f9c7177cf42dfa44cbb1731055296f9f26476b30daf28ab019603a",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Obsidian Hand.png",
       "sha256": "af17f8972beb291dff62cb45224a0a00f00365b026a31a028fa02a0c5afb55a3",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/obsidian-hand.lua",
       "sha256": "88249f03cce1f5d00450deb1d0143c52a9f9a671ecd0dd3288865c520f1c32c8",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/Stomach Medicine.png",
       "sha256": "ed228c19cf7b7fa7b529a180313ac02ca33923490f7b90961f9fee00baf6b5db",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/stomach-medicine.lua",
       "sha256": "41e925a9b2558930d4dbb3fe8978b7f1d62f0e0ef4f3126f1de0a77dfb11b087",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/items/trinkets/focus band.png",
       "sha256": "79623027011492af631efc58c47d434c3f806477c642029dab484f4eb94e0e67",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/trinkets/customs/focus-band.lua",
       "sha256": "2e45a6306261e404441e41cc6e1d3bad1b35232e1a9b8daef71f0fdc1b10ad74",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/ui/eid/quality.anm2",
       "sha256": "386588648d3ce499e0ddc6fceff190c224e1208df7c89eb25257f2f9353609d6",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "resources/gfx/ui/eid/quality.png",
       "sha256": "5fb88d7e330aa2a5a50bfc2ef82b04dd33344a039c5199193e3dc325141f7f62",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/curse.lua",
       "sha256": "18c52790640f2c2fc79025151f8cb0482d7772135f07e0b157601019ce4b37af",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/ex-upgrade.lua",
       "sha256": "18e390a11c4b314626087494769fca59675c6060a9d2e55a1023778d7ffa5996",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     },
     {
       "project": "Astro-Items",
       "file": "astro/mega-ui.lua",
       "sha256": "9da1122057154a2c962245a3a21198251c6b0395805e6f007ee4f39ebbeb83f2",
-      "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf"
+      "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
     }
   ],
-  "commit": "ce57cac9aa019e85660b6c604e3e997a52d456bf",
-  "registrationCount": 267,
+  "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2",
+  "registrationCount": 269,
   "entries": [
     {
       "id": "astro-cygnus",
@@ -10795,13 +10807,24 @@
       "type": "passive",
       "name": "Cracked Bottom",
       "eidName": "깨진 밑바닥",
-      "eidDescription": "{{Player0}} 능력치가 Isaac의 기본 능력치보다 낮아지지 않습니다.",
+      "eidDescription": "{{Player0}} 능력치가 Isaac의 기본 능력치보다 낮아지지 않습니다.#획득한 스테이지에서 방 클리어 시 {{Collectible351}}Mega Bean을 발동합니다.",
       "copied": null,
       "golden": null,
       "eidEffects": [
         [
           {
             "text": "능력치가 아이작의 기본 능력치보다 낮아지지 않습니다."
+          }
+        ],
+        [
+          {
+            "text": "획득한 스테이지에서 방 클리어 시 "
+          },
+          {
+            "item": "대빵 큰 콩"
+          },
+          {
+            "text": "Mega Bean을 발동합니다."
           }
         ]
       ],
@@ -15206,6 +15229,81 @@
       "source": "astro/collectibles/customs/cassandras-crystal-ball.lua",
       "imagePlaceholder": true,
       "image": "assets/astro-items/c-250.png",
+      "imageSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+    },
+    {
+      "id": "astro-almagest",
+      "definition": {
+        "gfx": "Almagest.png",
+        "quality": "4",
+        "devilprice": "2",
+        "shopprice": "30",
+        "maxcharges": "12",
+        "name": "Almagest",
+        "id": "251"
+      },
+      "type": "active",
+      "name": "Almagest",
+      "eidName": "알마게스트",
+      "eidDescription": "사용 시 그 방의 아이템을 {{Collectible100028}}Ptolemaeus로 변경합니다.",
+      "copied": null,
+      "golden": null,
+      "eidEffects": [
+        [
+          {
+            "text": "사용 시 그 방의 아이템을 "
+          },
+          {
+            "item": "프톨레마이오스"
+          },
+          {
+            "text": "Ptolemaeus로 변경합니다."
+          }
+        ]
+      ],
+      "source": "astro/collectibles/customs/almagest.lua",
+      "imagePlaceholder": true,
+      "image": "assets/astro-items/c-251.png",
+      "imageSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+    },
+    {
+      "id": "astro-astrolabe",
+      "definition": {
+        "gfx": "Astrolabe.png",
+        "quality": "3",
+        "devilprice": "2",
+        "shopprice": "20",
+        "maxcharges": "12",
+        "name": "Astrolabe",
+        "id": "252"
+      },
+      "type": "active",
+      "name": "Astrolabe",
+      "eidName": "아스트롤라베",
+      "eidDescription": "사용 시 그 방의 아이템을 {{Planetarium}}천체관 아이템으로 변경합니다.#방에 아이템이 없으면 {{Planetarium}}천체관 아이템을 1개 소환하고 사라집니다.",
+      "copied": null,
+      "golden": null,
+      "eidEffects": [
+        [
+          {
+            "text": "사용 시 그 방의 아이템을 "
+          },
+          {
+            "text": "천체관 아이템으로 변경합니다."
+          }
+        ],
+        [
+          {
+            "text": "방에 아이템이 없으면 "
+          },
+          {
+            "text": "천체관 아이템을 1개 소환하고 사라집니다."
+          }
+        ]
+      ],
+      "source": "astro/collectibles/customs/astrolabe.lua",
+      "imagePlaceholder": true,
+      "image": "assets/astro-items/c-252.png",
       "imageSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
     },
     {
