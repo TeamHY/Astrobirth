@@ -310,6 +310,8 @@ Astro:AddCallback(
                         player:UseActiveItem(CollectibleType.COLLECTIBLE_SMELTER, false, true, false, false)
                     end
                 end
+
+                Astro:SpawnTrinket(Astro.Trinket.FLUNK, player.Position)
             end
 
             if stage == LevelStage.STAGE1_1 or stage == LevelStage.STAGE1_2 then
