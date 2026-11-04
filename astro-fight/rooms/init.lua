@@ -408,7 +408,6 @@ Astro:AddCallback(
         Astro:AddRerollCondition(
             function(selectedCollectible)
                 local room = Game():GetRoom()
-                local level = Game():GetLevel()
                 local itemConfig = Isaac.GetItemConfig()
                 local itemConfigitem = itemConfig:GetCollectible(selectedCollectible)
 
@@ -421,21 +420,6 @@ Astro:AddCallback(
                     return {
                         reroll = true,
                         modifierName = "Ultra Secret Room"
-                    }
-                elseif room:GetType() == RoomType.ROOM_TREASURE and level:GetAbsoluteStage() == LevelStage.STAGE1_1 and level:GetStageType() < StageType.STAGETYPE_REPENTANCE and itemConfigitem.Quality <= 1 then
-                    return {
-                        reroll = true,
-                        modifierName = "Treasure Room"
-                    }
-                elseif room:GetType() == RoomType.ROOM_DEVIL and level:GetAbsoluteStage() == LevelStage.STAGE1_1 and itemConfigitem.Quality >= 4 then
-                    return {
-                        reroll = true,
-                        modifierName = "Devil Room"
-                    }
-                elseif room:GetType() == RoomType.ROOM_SECRET and level:GetAbsoluteStage() == LevelStage.STAGE1_1 and itemConfigitem.Quality >= 4 then
-                    return {
-                        reroll = true,
-                        modifierName = "Secret Room"
                     }
                 end
 

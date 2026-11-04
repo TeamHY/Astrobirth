@@ -37,6 +37,7 @@ require "astro-fight.use-limit"
 require "astro-fight.ban"
 require "astro-fight.next-ban"
 require "astro-fight.rooms.init"
+require "astro-fight.1stage-quality"
 require "astro-fight.translate"
 -- require "astro-fight.challenges"
 
