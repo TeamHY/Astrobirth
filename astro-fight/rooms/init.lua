@@ -13,7 +13,6 @@ require "astro-fight.rooms.void-portal"
 
 -- Backdrop Start
 
-local BACKDROP_VARIANT = Isaac.GetEntityVariantByName("Backdrop")
 local GFX_ROOT = "gfx/backdrop/test_wall"
 
 local LAYER_TYPE = {
@@ -51,34 +50,13 @@ local LAYER = {
 
 ---@param bgSpriteSheet table
 local function SpawnBackdrop(bgSpriteSheet)
-    local room = Game():GetRoom()
+    local layerSpritesheets = {}
 
-    local wall = Isaac.Spawn(EntityType.ENTITY_EFFECT, BACKDROP_VARIANT, 0, room:GetTopLeftPos(), Vector.Zero, nil)
-    local wallSprite = wall:GetSprite()
-
-    for i = 0, #LAYER - 1, 1 do
-        local string = bgSpriteSheet[LAYER[i]]
-        wallSprite:ReplaceSpritesheet(i, GFX_ROOT .. string .. ".png")
+    for layer, layerType in pairs(LAYER) do
+        layerSpritesheets[layer] = GFX_ROOT .. bgSpriteSheet[layerType] .. ".png"
     end
 
-    wallSprite:Play(room:GetRoomShape(), true)
-    wallSprite:LoadGraphics()
-
-    wall.DepthOffset = -9999
-    wall:AddEntityFlags(EntityFlag.FLAG_RENDER_WALL)
-
-    local floor = Isaac.Spawn(EntityType.ENTITY_EFFECT, BACKDROP_VARIANT, 0, room:GetTopLeftPos(), Vector.Zero, nil)
-    local floorSprite = floor:GetSprite()
-
-    for i = 0, #LAYER - 1, 1 do
-        local string = bgSpriteSheet[LAYER[i]]
-        floorSprite:ReplaceSpritesheet(i, GFX_ROOT .. string .. ".png")
-    end
-    floorSprite:Play(room:GetRoomShape(), true)
-    floorSprite:LoadGraphics()
-
-    floor.DepthOffset = -9999
-    floor:AddEntityFlags(EntityFlag.FLAG_RENDER_FLOOR)
+    Astro:SpawnBackdrop(layerSpritesheets)
 end
 
 Astro:AddCallback(
