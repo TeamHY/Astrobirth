@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "reviewed": "2026-11-03",
-  "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2",
+  "reviewed": "2026-11-09",
+  "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
   "conditions": {
     "Bonfire": [
       {
@@ -247,6 +247,29 @@
         "items": [
           "열쇠 조각 같은 퀘스트 아이템은 바꾸지 않습니다. 가격이 붙은 아이템은 가격을 유지합니다.",
           "방에 바꿀 아이템이 있으면 사용해도 사라지지 않습니다."
+        ]
+      }
+    ],
+    "Sigil of Duality": [
+      {
+        "title": "획득 방법",
+        "items": [
+          "아이템 배열에 등록되어 있지 않습니다. 이중성을 소지한 상태에서만 변환으로 얻을 수 있습니다."
+        ]
+      },
+      {
+        "title": "석상과 천사 보스",
+        "items": [
+          "획득한 뒤에는 아이템을 잃어도 그 판이 끝날 때까지 효과가 유지됩니다. 탐욕 모드에서는 적용되지 않습니다.",
+          "석상은 보스방 왼쪽 위 구석에 생기며 한 층에서 한 번만 사용할 수 있습니다. 접촉하면 잠시 빛난 뒤 부서지고 별도의 방으로 이동합니다.",
+          "천사 보스는 우리엘, 가브리엘과 각각의 타락한 형태 중 하나입니다. 전투 중에는 문이 닫힙니다."
+        ]
+      },
+      {
+        "title": "보상 거래",
+        "items": [
+          "천사방 아이템은 부서진 하트 1개, 악마방 거래 가격이 2인 아이템은 부서진 하트 2개를 대가로 얻습니다.",
+          "악마방 아이템은 악마방 거래 가격에 따라 하트 1개 또는 2개로 거래합니다. 두 아이템은 선택 묶음이 아니므로 모두 얻을 수 있습니다."
         ]
       }
     ]
@@ -687,7 +710,7 @@
     "Cassandra's Crystal Ball": {
       "replace": [],
       "notes": [
-        "Astro.UPGRADE_LIST만 검사하고 Chance와 무관하게 Morph합니다. PLANETARIUM_UPGRADE_LIST·PLANET_UPGRADE_LIST는 사용하지 않습니다. 등록 이미지가 없어 게임 원본 물음표 이미지를 사용합니다."
+        "Astro.UPGRADE_LIST만 검사하고 Chance와 무관하게 Morph합니다. PLANETARIUM_UPGRADE_LIST·PLANET_UPGRADE_LIST는 사용하지 않습니다."
       ],
       "sources": [
         "astro/collectibles/customs/cassandras-crystal-ball.lua",
@@ -772,7 +795,7 @@
     "Astrolabe": "12칸"
   },
   "chargeReview": {
-    "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2",
+    "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
     "format": "XML English name → 화면용 chargeLabel. 원본 maxcharges/chargetype 보존 필요.",
     "zeroCharge": "일반형 maxcharges=0은 충전이 필요 없다는 뜻입니다. 재충전 없음은 일회용처럼 읽혀 부정확합니다. 소비용·체력 비용·사용 위치 조건은 별도로 적용됩니다.",
     "normalOverrides": {

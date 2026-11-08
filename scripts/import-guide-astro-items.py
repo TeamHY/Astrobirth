@@ -35,12 +35,18 @@ for group,number,name in re.findall(r'\[(C_ID|T_ID|Card_ID|Pill_ID)\s*\.\.\s*(\d
  key=re.sub('[^A-Z0-9]+','_',name.upper().replace("'","").replace("\\","")).strip('_')
  for candidate in {key,key.removeprefix('THE_')}:
   base_ids[(group,candidate)]=int(number)
-unknown={}
+# Virtual IDs referenced by reviewed corrections and icon labels stay fixed even
+# when new mod code adds unknown enum lookups earlier in the load order.
+PINNED_IDS={'Player:DIABELLSTAR':900130}
+unknown=dict(PINNED_IDS)
 def enum_id(group,name):
  key=name.removeprefix({'C_ID':'COLLECTIBLE_','T_ID':'TRINKET_','Card_ID':'CARD_','Pill_ID':'PILLEFFECT_'}.get(group,''))
  if (group,key) in base_ids:return base_ids[(group,key)]
  token=group+':'+name
- if token not in unknown:unknown[token]=900000+len(unknown)
+ if token not in unknown:
+  number=900000+len(unknown)
+  while number in unknown.values():number+=1
+  unknown[token]=number
  return unknown[token]
 g.enum_id=enum_id
 g.get_item=lambda name:ids.get(str(name).casefold(),0)
@@ -301,9 +307,9 @@ for definition in definitions:
                                 'eidEffects':existing['eidEffects'],'source':captured['file'],
                                 'imagePlaceholder':key in placeholder_ids,
                                 'image':existing['image'],'imageSHA256':digest((DOCS/existing['image']).read_bytes())})
-assert len(manifest['entries'])==269
+assert len(manifest['entries'])==270
 manifest['sources']=list(sources.values())
 catalog['intro']='기존 아이템의 변경사항과 Astro-Items가 추가한 아이템·장신구의 효과를 확인할 수 있습니다. 출처와 종류를 선택하거나 통합 검색으로 이름과 효과를 찾을 수 있습니다.'
 for file,data in [('items-content.json',catalog),('guide-icons.json',registry),('astro-items.json',manifest)]:
     (DOCS/file).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
-print('Astro-Items 등록 269종 반영:',new,'개 신규 카드,',269-new,'개 기존 카드에 효과 병합.')
+print('Astro-Items 등록 270종 반영:',new,'개 신규 카드,',270-new,'개 기존 카드에 효과 병합.')

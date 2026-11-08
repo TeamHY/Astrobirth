@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "reviewed": "2026-11-03",
+  "reviewed": "2026-11-09",
   "sources": {
-    "Astrobirth": "a33286234b2be3717f638d33db2006fd98651ed7",
-    "Astro-Items": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2"
+    "Astrobirth": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+    "Astro-Items": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177"
   },
   "reviewMethod": "Reachable released Lua reviewed by functional groups; XML semantic differences; EID name comparison.",
   "limits": [
@@ -12,13 +12,25 @@
     "Entity definitions describe available data; spawn conditions are stated separately."
   ],
   "counts": {
-    "activeLuaModules": 56,
+    "activeLuaModules": 57,
     "baseFightModules": 22,
     "qa": 25,
-    "items": 948,
+    "items": 949,
     "players": 46
   },
   "files": [
+    {
+      "project": "Astrobirth",
+      "file": "astro-fight/1stage-quality.lua",
+      "sha256": "43863002315e7c7a25fd1c3b8054832ff55699589dc58435acbfe1a0b7e7c198",
+      "refs": [
+        "index.html#first-treasure",
+        "items.html#1up-11",
+        "rules.html#choice-details"
+      ],
+      "activeModule": true,
+      "baseFightBranch": false
+    },
     {
       "project": "Astrobirth",
       "file": "astro-fight/ban.lua",
@@ -638,7 +650,7 @@
     {
       "project": "Astrobirth",
       "file": "astro-fight/rooms/init.lua",
-      "sha256": "215a833957dedca552f357540c15475b35b9c38f7aa6356e4b95b10445d5aa21",
+      "sha256": "fccbbf85e1a73cc480482de7578e83b6dc02c2391cb86fb8b136f9f2f7776819",
       "refs": [
         "index.html#choice",
         "index.html#ez-mode",
@@ -795,7 +807,7 @@
     {
       "project": "Astrobirth",
       "file": "content/entities2.xml",
-      "sha256": "2c4540466b9f61f69265b524f7b972d45df9df09124532972ec8c567dd84e6d6",
+      "sha256": "ec42acdbb9f7ab7e8c48619ca29c26683a24354c952827fecfb04c902ee0320e",
       "refs": [
         "rules.html#entity-custom-registration",
         "rules.html#presentation-changes"
@@ -823,7 +835,7 @@
     {
       "project": "Astrobirth",
       "file": "main.lua",
-      "sha256": "2cd621761a77bb3c8efecb87d231f5bbc768b4f3f155f9e621a1ead9752cec00",
+      "sha256": "e25df28404961eab8eab1e41cd4874d6c3dbcdbe7b660c13b617800b695f418e",
       "refs": [
         "rules.html#overview"
       ],
@@ -2674,7 +2686,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/almagest.lua",
-      "sha256": "f9d971f0448048925abfa611de7a1a52062e942d73d774da87266311600db702",
+      "sha256": "f7d6eb5a39cc5674fbdc17043db4247211dfeb611f3848abebec2603acefbfa0",
       "refs": [
         "items.html#astro-almagest"
       ],
@@ -2785,7 +2797,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/astrolabe.lua",
-      "sha256": "cf3b25d6ce082da55121200fd84a090649be8a253cad4361cd3de47d17b2a0bc",
+      "sha256": "0e7b350035570718b62e134e50176ab52a9d503bee83bb235fd8cf17b95d2250",
       "refs": [
         "items.html#astro-astrolabe"
       ],
@@ -3132,7 +3144,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/cassandras-crystal-ball.lua",
-      "sha256": "986f96f3c046a5f1211dcb58b06c824f82c0a562b6a931cea78647202008aaf9",
+      "sha256": "6f02be2e6c6349b45a8d19655ff4aca8cd793fb9ef67cd9ffd73fe9db3f72d86",
       "refs": [
         "items.html#astro-cassandra-s-crystal-ball"
       ],
@@ -3162,7 +3174,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/chubby-sets.lua",
-      "sha256": "8b73e2c897c709fd9267a164889c3b7eea10d2843d4226571fbc70b18b7f9a3f",
+      "sha256": "b27d87896d281769b440acad5eef247a909f1387d0587a23e7d1a11449022f6c",
       "refs": [
         "items.html#astro-chubby-s-head",
         "items.html#astro-chubby-s-paw",
@@ -3508,7 +3520,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/gene-scissors.lua",
-      "sha256": "a515e2733a23e03a37ab8a2441a1913639898eb79e40e55b715268c7049a8017",
+      "sha256": "016470b841c65befb098731c3df19b3612f2110cc68c2fdfea3c891e10df1adf",
       "refs": [
         "items.html#astro-gene-scissors"
       ],
@@ -3786,7 +3798,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/manyu-sets.lua",
-      "sha256": "033273615f4402bc3305ec5b6b78ebae3a2adbc739e5365e5ec1709332b4da5a",
+      "sha256": "35d8a6ccfd47d9fb085d92b487f3a9a0411e7cf2a2a70e2e0ba02b756813e86a",
       "refs": [
         "items.html#astro-matryoshka",
         "items.html#astro-reincarnation",
@@ -4673,6 +4685,17 @@
     },
     {
       "project": "Astro-Items",
+      "file": "astro/collectibles/customs/sigil-of-duality.lua",
+      "sha256": "d9ebda9a7fb2db2c07cd2437a77ea3818244c852ab5949c16c1e497b43125906",
+      "refs": [
+        "index.html#upgrade-combinations",
+        "items.html#astro-sigil-of-duality"
+      ],
+      "activeModule": false,
+      "baseFightBranch": false
+    },
+    {
+      "project": "Astro-Items",
       "file": "astro/collectibles/customs/sinful-spoils-of-subversion-snake-eye.lua",
       "sha256": "741b25ab2c9dfe5e304672b03db5189907084ecb260a7947ac3a4d6ea4ec6ac1",
       "refs": [
@@ -4748,7 +4771,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/stairway-to-hell.lua",
-      "sha256": "f485b52f8b910f0dcdb49d272dc9831d86fc12df06580bf0f7fda7790f14b2c6",
+      "sha256": "5c23843759e52b0345f9698ac7158777fd0b39a1de0abb8a28d54aa247430cfc",
       "refs": [
         "items.html#astro-stairway-to-hell"
       ],
@@ -5396,7 +5419,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/utils/init.lua",
-      "sha256": "13352bcc104c7e781b63b92f7d1673d3104bfaaa492279f81a5680855cfbd231",
+      "sha256": "2706197f468670dd960f06eee332f3b6ba1b8222a1353ade04232ff98ce77502",
       "refs": [
         "index.html#planet-upgrade",
         "index.html#special-upgrades",
@@ -5410,7 +5433,7 @@
     {
       "project": "Astro-Items",
       "file": "content/items.xml",
-      "sha256": "2fab9060e2c45018f398881b6ff2a6f910ec30359131841f90aaf8ceb79126f8",
+      "sha256": "af60d573fce83e3918dc50b0dc943784625827d630aa732b29684ef5dcceee57",
       "refs": [
         "items.html#astro-24k-copter",
         "items.html#astro-3-body-problem",
@@ -5618,6 +5641,7 @@
         "items.html#astro-schrodinger-s-cat",
         "items.html#astro-scorpio-ex",
         "items.html#astro-seeri-the-combat-helper",
+        "items.html#astro-sigil-of-duality",
         "items.html#astro-sinful-spoils-of-subversion-snake-eye",
         "items.html#astro-sinful-spoils-struggle",
         "items.html#astro-skeleton-guppy",

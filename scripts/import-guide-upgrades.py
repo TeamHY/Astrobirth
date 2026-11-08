@@ -91,6 +91,7 @@ direct = [
     ('astro-blighted-guppy', '구피 세트 아이템', '구피 변신과 썩은 하트를 갖춘 뒤 방 바닥의 구피 아이템에 버리기 버튼을 길게 누릅니다.', 'upgrade-combinations'),
     ('astro-brimstone-guppy', '구피 세트 아이템', '구피 변신과 유황불을 갖춘 뒤 방 바닥의 구피 아이템에 버리기 버튼을 길게 누릅니다.', 'upgrade-combinations'),
     ('astro-divine-guppy', '구피 세트 아이템', '구피 변신과 이터널 하트를 갖춘 뒤 방 바닥의 구피 아이템에 버리기 버튼을 길게 누릅니다.', 'upgrade-combinations'),
+    ('astro-sigil-of-duality', '이중성', '이중성을 소지하고 세라핌 또는 레비아탄 변신을 완료한 상태에서 버리기 버튼을 길게 누릅니다. 소지한 이중성을 소모하고 발밑에 이중성의 인장을 생성합니다.', 'upgrade-combinations'),
     ('astro-golden-guppy', '구피 세트 아이템', '구피 변신 상태에서 황금 하트 개수가 줄어들 때 방 바닥의 구피 아이템을 변환합니다.', 'special-upgrades'),
     ('astro-skeleton-guppy', '구피 세트 아이템', '구피 변신 상태에서 뼈 하트 개수가 줄어들 때 방 바닥의 구피 아이템을 변환합니다.', 'special-upgrades'),
     ('astro-p-key', 'R 키', 'R 키를 소지하고 P 키를 누르면 R 키를 소모하고 P키를 바닥에 생성합니다.', 'special-upgrades'),

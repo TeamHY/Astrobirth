@@ -269,15 +269,23 @@
               [
                 "첫 층 악마방·비밀방",
                 "퀄리티 4"
+              ],
+              [
+                "첫 층 · 모든 방",
+                "1up!(퀄리티와 무관)"
               ]
             ]
           },
           "rules": [
             "선택 묶음 대상은 미니보스방, 블랙마켓, 울트라 비밀방, 악마방, 천체관, 도전방, 보물방, 주사위방, 비밀방, 일급비밀방, 저주방입니다. 처음 입장해 생성된 받침대에 적용합니다.",
             "주사위방에는 열쇠 거지 배열의 추가 아이템 2개를 같은 선택 묶음으로 생성합니다.",
-            "대체 루트 첫 보물방에는 일반 첫 보물방의 퀄리티 0·1 재추첨을 적용하지 않습니다. 첫 층 악마방·비밀방의 퀄리티 4 재추첨은 루트 형태를 구분하지 않습니다."
+            "대체 루트 첫 보물방에는 일반 첫 보물방의 퀄리티 0·1 재추첨을 적용하지 않습니다. 첫 층 악마방·비밀방의 퀄리티 4 재추첨은 루트 형태를 구분하지 않습니다.",
+            "첫 층에서는 1up!이 선택되면 방 종류와 루트에 관계없이 다시 뽑습니다."
           ],
           "source": "astro-fight/rooms/init.lua",
+          "extraSources": [
+            "astro-fight/1stage-quality.lua"
+          ],
           "relatedLinks": [
             {
               "href": "./index.html#choice",
@@ -3360,7 +3368,7 @@
         {
           "id": "entity-custom-registration",
           "title": "추가 오브젝트와 효과 등록",
-          "body": "기본 엔티티의 조정과 별개로 거지·재입고 기계·이동 포탈 등 전용 오브젝트 6종을 등록합니다. 표시와 작동 내용은 각 오브젝트의 별도 설명에서 확인할 수 있습니다.",
+          "body": "기본 엔티티의 조정과 별개로 거지·재입고 기계·이동 포탈 등 전용 오브젝트 5종을 등록합니다. 표시와 작동 내용은 각 오브젝트의 별도 설명에서 확인할 수 있습니다.",
           "source": "content/entities2.xml",
           "rewardTable": {
             "caption": "추가 오브젝트와 효과 등록",
@@ -3380,10 +3388,6 @@
               [
                 "Shop Restock Machine",
                 "대결용 전용 재입고 기계를 등록합니다."
-              ],
-              [
-                "Backdrop",
-                "대결용 배경 효과를 등록합니다."
               ],
               [
                 "ShortcutPortal",
@@ -3428,15 +3432,6 @@
                 "0"
               ],
               "name": "Shop Restock Machine"
-            },
-            {
-              "key": [
-                "entity",
-                "1000",
-                "671",
-                "0"
-              ],
-              "name": "Backdrop"
             },
             {
               "key": [
@@ -3805,7 +3800,6 @@
             "resources/gfx/backdrop/backdrop(dlc3)/water_purple_smooth.png",
             "resources/gfx/backdrop/backdrop(dlc3)/water_red_smooth.png",
             "resources/gfx/backdrop/backdrop(dlc3)/white_overlay.png",
-            "resources/gfx/backdrop/backdrop.anm2",
             "resources/gfx/backdrop/backdrop모음/backbasement.zip",
             "resources/gfx/backdrop/blue_overlay.png",
             "resources/gfx/backdrop/darkcloset_detail_0.png",
@@ -3939,7 +3933,7 @@
             "resources/gfx/ui/wakaba_idesc_menu.anm2"
           ],
           "rules": [
-            "원본과 동일한 경로의 파일 75종을 변경합니다. 이 밖에 같은 경로의 원본이 없는 PNG 270종, 애니메이션 50종과 편집·보관용 파일 2종도 포함합니다."
+            "원본과 동일한 경로의 파일 75종을 변경합니다. 이 밖에 같은 경로의 원본이 없는 PNG 270종, 애니메이션 49종과 편집·보관용 파일 2종도 포함합니다."
           ]
         }
       ]

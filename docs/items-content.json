@@ -7731,14 +7731,15 @@
       "name": "1up!",
       "number": 11,
       "kind": "passive",
-      "scene": "가격·퀄리티·충전 · 배열 설정 변경",
-      "body": "기본 게임과 달라진 설정은 아래에 정리했습니다.",
+      "scene": "첫 층 등장 제한 · 가격·퀄리티·충전 · 배열 설정 변경",
+      "body": "첫 층에서는 선택되어도 다른 아이템으로 다시 뽑습니다. 기본 게임과 달라진 설정은 아래에 정리했습니다.",
       "tag": "설정 변경",
       "image": "assets/items/1up-11.png",
       "keywords": "1up! 11",
       "source": "resources/items.xml",
       "resourceOnly": true,
       "changeKinds": [
+        "effect",
         "config",
         "pool"
       ],
@@ -7758,7 +7759,8 @@
       ],
       "extraSources": [
         "resources/itempools.xml",
-        "resources/items_metadata.xml"
+        "resources/items_metadata.xml",
+        "astro-fight/1stage-quality.lua"
       ],
       "origin": "base",
       "poolTable": {
@@ -7811,7 +7813,10 @@
           ]
         ],
         "note": "가중치는 같은 배열 안에서의 상대값입니다. 감소는 배열에서 뽑힐 때의 가중치 감소량이며, 제외 기준 이하가 되면 더 이상 뽑히지 않습니다. 같은 아이템의 여러 설정은 함께 표시합니다. 고정 금지·캐릭터 금지·다음 판 금지는 별도로 적용됩니다."
-      }
+      },
+      "rules": [
+        "첫 층에서는 방 종류와 루트에 관계없이 1up!이 선택되면 다른 아이템으로 다시 뽑습니다."
+      ]
     },
     {
       "id": "the-virus-13",
@@ -59852,7 +59857,6 @@
         "chargeLabel": "12칸"
       },
       "image": "assets/astro-items/c-250.png",
-      "imagePlaceholder": true,
       "eidEffects": [
         [
           {
@@ -59871,7 +59875,7 @@
         "astro/collectibles/ex-upgrade.lua"
       ],
       "agentNotes": [
-        "Astro.UPGRADE_LIST만 검사하고 Chance와 무관하게 Morph합니다. PLANETARIUM_UPGRADE_LIST·PLANET_UPGRADE_LIST는 사용하지 않습니다. 등록 이미지가 없어 게임 원본 물음표 이미지를 사용합니다."
+        "Astro.UPGRADE_LIST만 검사하고 Chance와 무관하게 Morph합니다. PLANETARIUM_UPGRADE_LIST·PLANET_UPGRADE_LIST는 사용하지 않습니다."
       ]
     },
     {
@@ -59906,7 +59910,6 @@
         "chargeLabel": "12칸"
       },
       "image": "assets/astro-items/c-251.png",
-      "imagePlaceholder": true,
       "eidEffects": [
         [
           {
@@ -59957,7 +59960,6 @@
         "chargeLabel": "12칸"
       },
       "image": "assets/astro-items/c-252.png",
-      "imagePlaceholder": true,
       "eidEffects": [
         [
           {
@@ -59979,6 +59981,91 @@
       "itemSources": [
         "content/items.xml",
         "astro/collectibles/customs/astrolabe.lua"
+      ]
+    },
+    {
+      "id": "astro-sigil-of-duality",
+      "title": "이중성의 인장",
+      "name": "Sigil of Duality",
+      "kind": "passive",
+      "scene": "",
+      "body": "",
+      "tag": "Astro-Items 추가",
+      "keywords": "Sigil of Duality 이중성의 인장",
+      "rules": [],
+      "effectGroups": [
+        {
+          "title": "획득 방법",
+          "items": [
+            "아이템 배열에 등록되어 있지 않습니다. 이중성을 소지한 상태에서만 변환으로 얻을 수 있습니다."
+          ],
+          "generatedBy": "astro-items"
+        },
+        {
+          "title": "석상과 천사 보스",
+          "items": [
+            "획득한 뒤에는 아이템을 잃어도 그 판이 끝날 때까지 효과가 유지됩니다. 탐욕 모드에서는 적용되지 않습니다.",
+            "석상은 보스방 왼쪽 위 구석에 생기며 한 층에서 한 번만 사용할 수 있습니다. 접촉하면 잠시 빛난 뒤 부서지고 별도의 방으로 이동합니다.",
+            "천사 보스는 우리엘, 가브리엘과 각각의 타락한 형태 중 하나입니다. 전투 중에는 문이 닫힙니다."
+          ],
+          "generatedBy": "astro-items"
+        },
+        {
+          "title": "보상 거래",
+          "items": [
+            "천사방 아이템은 부서진 하트 1개, 악마방 거래 가격이 2인 아이템은 부서진 하트 2개를 대가로 얻습니다.",
+            "악마방 아이템은 악마방 거래 가격에 따라 하트 1개 또는 2개로 거래합니다. 두 아이템은 선택 묶음이 아니므로 모두 얻을 수 있습니다."
+          ],
+          "generatedBy": "astro-items"
+        }
+      ],
+      "changeKinds": [
+        "effect"
+      ],
+      "origin": "mod",
+      "modItem": {
+        "quality": "4",
+        "id": "253",
+        "type": "passive"
+      },
+      "image": "assets/astro-items/c-253.png",
+      "eidEffects": [
+        [
+          {
+            "text": "이번 게임 보스방에서 "
+          },
+          {
+            "text": "악마방과 "
+          },
+          {
+            "text": "천사방 문이 열리지 않습니다."
+          }
+        ],
+        [
+          {
+            "text": "보스방 클리어 시 석상이 등장합니다."
+          }
+        ],
+        [
+          {
+            "text": "석상에게 접촉 시 천사 보스와 전투합니다."
+          }
+        ],
+        [
+          {
+            "text": "처치 시 각각의 거래 방식을 가진 "
+          },
+          {
+            "text": "천사방 아이템과 "
+          },
+          {
+            "text": "악마방 아이템이 등장합니다."
+          }
+        ]
+      ],
+      "itemSources": [
+        "content/items.xml",
+        "astro/collectibles/customs/sigil-of-duality.lua"
       ]
     }
   ]

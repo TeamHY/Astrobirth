@@ -623,8 +623,8 @@ class Verification:
         entries = {entry["id"]: entry for entry in catalog["entries"] if entry.get("origin") == "mod"}
         records = data["entries"]
         self.require(data["schema"] == 1 and data["commit"] == guide["sources"]["Astro-Items"], "추가 아이템 자료의 형식 또는 기준 커밋이 다릅니다.")
-        self.require(data["registrationCount"] == 269 and len(records) == 269 and {record["id"] for record in records} == set(entries), "Astro-Items 등록 269종과 문서 항목이 다릅니다.")
-        self.require(Counter(record["type"] for record in records) == {"passive": 179, "familiar": 8, "active": 65, "trinket": 17}, "추가 아이템의 종류별 등록 개수가 다릅니다.")
+        self.require(data["registrationCount"] == 270 and len(records) == 270 and {record["id"] for record in records} == set(entries), "Astro-Items 등록 270종과 문서 항목이 다릅니다.")
+        self.require(Counter(record["type"] for record in records) == {"passive": 180, "familiar": 8, "active": 65, "trinket": 17}, "추가 아이템의 종류별 등록 개수가 다릅니다.")
         icons = self.load_json(DOCS / "guide-icons.json")
         review = self.load_json(DOCS / "astro-item-review.json")
         page = self.pages[(DOCS / "items.html").resolve()]

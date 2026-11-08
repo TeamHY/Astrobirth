@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "reviewed": "2026-11-02",
-  "commit": "d8f99a87f7d848d814d8bf66c6a624d6322bbec2",
+  "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
   "sourceSHA256": "18e390a11c4b314626087494769fca59675c6060a9d2e55a1023778d7ffa5996",
   "intro": "원본 아이템이 새로 등장할 때 정해진 확률로 강화 아이템이 대신 나오는 패턴을 모두 정리했습니다. 일반 아이템·행성의 확률과 자동 변환이 없는 대상을 구분합니다.",
   "entries": [
@@ -1908,6 +1908,12 @@
       "targetId": "astro-divine-guppy",
       "original": "구피 세트 아이템",
       "condition": "구피 변신과 이터널 하트를 갖춘 뒤 방 바닥의 구피 아이템에 버리기 버튼을 길게 누릅니다.",
+      "qaId": "upgrade-combinations"
+    },
+    {
+      "targetId": "astro-sigil-of-duality",
+      "original": "이중성",
+      "condition": "이중성을 소지하고 세라핌 또는 레비아탄 변신을 완료한 상태에서 버리기 버튼을 길게 누릅니다. 소지한 이중성을 소모하고 발밑에 이중성의 인장을 생성합니다.",
       "qaId": "upgrade-combinations"
     },
     {

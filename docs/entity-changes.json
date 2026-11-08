@@ -21820,40 +21820,6 @@
     {
       "tag": "entity",
       "attributes": {
-        "name": "Backdrop",
-        "id": "1000",
-        "variant": "671",
-        "subtype": "0",
-        "anm2path": "backdrop/backdrop.anm2",
-        "baseHP": "0",
-        "boss": "0",
-        "champion": "0",
-        "collisionDamage": "0",
-        "collisionMass": "1",
-        "collisionRadius": "0",
-        "friction": "1",
-        "numGridCollisionPoints": "0",
-        "shadowSize": "0",
-        "stageHP": "0"
-      },
-      "children": [
-        {
-          "tag": "gibs",
-          "attributes": {
-            "amount": "0",
-            "blood": "0",
-            "bone": "0",
-            "eye": "0",
-            "gut": "0",
-            "large": "0"
-          },
-          "children": []
-        }
-      ]
-    },
-    {
-      "tag": "entity",
-      "attributes": {
         "name": "ShortcutPortal",
         "id": "1000",
         "variant": "3001",
@@ -21937,15 +21903,15 @@
     }
   ],
   "graphics": {
-    "checkedFiles": 400,
-    "changedOrAddedFiles": 397,
+    "checkedFiles": 399,
+    "changedOrAddedFiles": 396,
     "overrides": 75,
-    "additions": 322,
+    "additions": 321,
     "byType": [
       {
         "classification": "additional",
         "extension": ".anm2",
-        "count": 50
+        "count": 49
       },
       {
         "classification": "additional",
@@ -23563,12 +23529,6 @@
         "classification": "additional",
         "originalSHA256": null,
         "modSHA256": "307d823706dbfe534d2cf57a29ff7dd2ecb5799de1339e82b45225e2802c07a2"
-      },
-      {
-        "path": "resources/gfx/backdrop/backdrop.anm2",
-        "classification": "additional",
-        "originalSHA256": null,
-        "modSHA256": "f3653b6a6bdabe9944972b9edada4b73837c9cf3323df9c7575cec97a56373a7"
       },
       {
         "path": "resources/gfx/backdrop/backdrop모음/backbasement.zip",

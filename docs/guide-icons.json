@@ -3961,20 +3961,26 @@
     "카산드라의 수정 구슬": {
       "image": "assets/astro-items/c-250.png",
       "name": "Cassandra's Crystal Ball",
-      "source": "gfx/items/collectibles/questionmark.png",
-      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+      "source": "resources/gfx/items/collectibles/Cassandra's Crystal Ball.png",
+      "sourceSHA256": "d1516f163226d11be50cfe95e8bf4d6deaa6a21e8c2363880ee0b8cecc37fe06"
     },
     "알마게스트": {
       "image": "assets/astro-items/c-251.png",
       "name": "Almagest",
-      "source": "gfx/items/collectibles/questionmark.png",
-      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+      "source": "resources/gfx/items/collectibles/Almagest.png",
+      "sourceSHA256": "1c31c9ed6e6cf71ca8a9313597608760958a38ec4af35acaeb1db83962fb2764"
     },
     "아스트롤라베": {
       "image": "assets/astro-items/c-252.png",
       "name": "Astrolabe",
-      "source": "gfx/items/collectibles/questionmark.png",
-      "sourceSHA256": "0a7f0b4a15785896b598714cc4bed7977de1f631c396566b06b8ec14728b3976"
+      "source": "resources/gfx/items/collectibles/Astrolabe.png",
+      "sourceSHA256": "8be51b40175800a35c27ac82b5b7019480d73546ed946d1f7ef793a4550a6bb8"
+    },
+    "이중성의 인장": {
+      "image": "assets/astro-items/c-253.png",
+      "name": "Sigil of Duality",
+      "source": "resources/gfx/items/collectibles/Sigil of Duality.png",
+      "sourceSHA256": "b1098d5a00ec9c3a8b06fce6fa45c0fe7248fbbd7026595ebe45e4525f5714fa"
     }
   },
   "sprites": {
