@@ -380,7 +380,7 @@
     <item id="382" quality="1" tags="offensive nocantrip"/>
     <item id="383" quality="1" tags="offensive"/>
     <item id="384" quality="2" tags="summonable monstermanual offensive"/>
-    <item id="385" quality="1" tags="summonable offensive"/>
+    <item id="385" quality="1" tags="noeden summonable offensive"/>
     <item id="386" quality="1" tags="offensive"/>
     <item id="387" quality="3" tags="summonable"/>
     <item id="388" quality="0" tags="summonable offensive"/>
