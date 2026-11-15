@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "reviewed": "2026-11-09",
-  "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+  "reviewed": "2026-11-16",
+  "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
   "conditions": {
     "Bonfire": [
       {

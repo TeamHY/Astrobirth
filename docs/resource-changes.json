@@ -5399,6 +5399,17 @@
     },
     {
       "kind": "item",
+      "number": 385,
+      "entry": "bumbo-385",
+      "changes": {
+        "tags": {
+          "before": "summonable offensive",
+          "after": "noeden summonable offensive"
+        }
+      }
+    },
+    {
+      "kind": "item",
       "number": 387,
       "entry": "censer-387",
       "changes": {

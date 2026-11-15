@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "reviewed": "2026-11-09",
+  "reviewed": "2026-11-16",
   "sources": {
-    "Astrobirth": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
-    "Astro-Items": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177"
+    "Astrobirth": "b917194b24401214dc67510748335c3eab88cd32",
+    "Astro-Items": "211acf8fb7cb90129f0ad947c36e98401879bb0f"
   },
   "reviewMethod": "Reachable released Lua reviewed by functional groups; XML semantic differences; EID name comparison.",
   "limits": [
@@ -540,7 +540,7 @@
     {
       "project": "Astrobirth",
       "file": "astro-fight/next-ban.lua",
-      "sha256": "2d1ec35c852627ba57f551e9068245a04632b904adba9aee86b36d98afa8bce6",
+      "sha256": "744fc06d5f3d304c7ddaf54e215bfcd65297acfaff3680fdfa136ed0da0f780a",
       "refs": [
         "index.html#next-ban",
         "items.html#samsara",
@@ -2148,7 +2148,7 @@
     {
       "project": "Astrobirth",
       "file": "resources/items_metadata.xml",
-      "sha256": "c0eb98e8f061db4f8032045d1c2e40c2c4f0d87db547461ec21642455ce7c95b",
+      "sha256": "b4dc5d70b0bd061e8a602b829a035b10807524242dc65dc11dbb6b6f9f26254f",
       "refs": [
         "items.html#1up-11",
         "items.html#2spooky-554",
@@ -2214,6 +2214,7 @@
         "items.html#broken-glass-cannon-474",
         "items.html#broken-modem-514",
         "items.html#buddy-in-a-box-518",
+        "items.html#bumbo-385",
         "items.html#butt-bombs-209",
         "items.html#butter-bean-294",
         "items.html#cambion-conception-412",
@@ -4142,7 +4143,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/casiopea.lua",
-      "sha256": "3a3b173a13578dc743ac432b5db42fd354bad68929c7cb7e836a3fa0e5be23c2",
+      "sha256": "40ff0f7fa7854baac9b5d8062822395fa3bff47becbb7af52e8f8157316be1b6",
       "refs": [
         "items.html#astro-casiopea"
       ],

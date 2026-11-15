@@ -43701,7 +43701,7 @@
       "name": "Bumbo",
       "number": 385,
       "kind": "passive",
-      "scene": "배열 설정 변경",
+      "scene": "가격·퀄리티·충전 · 배열 설정 변경",
       "body": "기본 게임과 달라진 설정은 아래에 정리했습니다.",
       "tag": "설정 변경",
       "image": "assets/items/bumbo-385.png",
@@ -43709,12 +43709,21 @@
       "source": "resources/items.xml",
       "resourceOnly": true,
       "changeKinds": [
+        "config",
         "pool"
       ],
       "extraSources": [
-        "resources/itempools.xml"
+        "resources/itempools.xml",
+        "resources/items_metadata.xml"
       ],
-      "effectGroups": [],
+      "effectGroups": [
+        {
+          "title": "퀄리티·분류 설정",
+          "items": [
+            "분류 추가: 에덴 무작위 시작 아이템 제외입니다."
+          ]
+        }
+      ],
       "origin": "base",
       "poolTable": {
         "caption": "배열별 등장 설정 변경",
@@ -46569,6 +46578,32 @@
           },
           {
             "text": "Gulp!를 드랍합니다."
+          }
+        ],
+        [
+          {
+            "item": "위조 학위"
+          },
+          {
+            "text": " 소지 시 "
+          },
+          {
+            "icon": "Pill"
+          },
+          {
+            "text": "Gulp!를 드랍하는 대신 "
+          },
+          {
+            "icon": "Pill"
+          },
+          {
+            "text": "Gulp! "
+          },
+          {
+            "text": "말"
+          },
+          {
+            "text": "약을 즉시 사용합니다."
           }
         ],
         [

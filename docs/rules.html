@@ -23,12 +23,12 @@
   <div class="sidebar-bottom">
     <a href="https://www.youtube.com/user/afreecaBJHY/" target="_blank" rel="noopener noreferrer">헌영 유튜브</a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2492350811" target="_blank" rel="noopener noreferrer">대결 모드 워크숍</a>
-    <div class="version"><strong>Astrobirth v1.394</strong><br>설명 확인 2026-11-09<br>Astro-Items 기반</div>
+    <div class="version"><strong>Astrobirth v1.398</strong><br>설명 확인 2026-11-16<br>Astro-Items 기반</div>
   </div>
 </aside>
 <div class="shell">
   <!-- Agent reference: repository https://github.com/TeamHY/Astrobirth -->
-  <header class="topbar"><span>시청자 가이드 / 전체 규칙</span><span class="topbar-version">v1.394</span></header>
+  <header class="topbar"><span>시청자 가이드 / 전체 규칙</span><span class="topbar-version">v1.398</span></header>
   <main id="main">
     <section class="hero" id="overview" aria-labelledby="page-title"><p class="eyebrow">Astrobirth 대결</p><h1 id="page-title">전체 규칙</h1><p class="hero-copy">금지 목록, 방·층 구성, 피격과 보상, 적의 수치, 소비 아이템과 배열의 세부 변경사항을 정리했습니다. 개별 아이템과 캐릭터는 아이템 가이드·캐릭터 가이드에서 확인할 수 있습니다.</p></section>
 <nav class="chapter-toc" aria-label="전체 규칙 목차"><p class="toc-label">이 페이지 목차</p><div class="section-nav"><a href="#ban-rules"><span class="nav-number" aria-hidden="true">01</span>등장 제한과 누적 밴</a><a href="#room-rules"><span class="nav-number" aria-hidden="true">02</span>방의 보상과 기계</a><a href="#stage-rules"><span class="nav-number" aria-hidden="true">03</span>층 진행과 적 배치</a><a href="#combat-rules"><span class="nav-number" aria-hidden="true">04</span>피격과 주요 보스전</a><a href="#consumable-rules"><span class="nav-number" aria-hidden="true">05</span>카드와 알약</a><a href="#common-player-rules"><span class="nav-number" aria-hidden="true">06</span>플레이어 공통 설정</a><a href="#greed-rules"><span class="nav-number" aria-hidden="true">07</span>탐욕 모드 보상</a><a href="#resource-settings"><span class="nav-number" aria-hidden="true">08</span>수치·배열 설정</a><a href="#display-rules"><span class="nav-number" aria-hidden="true">09</span>표시·연출과 연동</a><a href="#entity-balance"><span class="nav-number" aria-hidden="true">10</span>보스·적·패밀리어 밸런스</a></div></nav>
@@ -39,9 +39,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/ban.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/ban.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/ban.lua"
     }
   ]
 }
@@ -53,41 +53,41 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/ban.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/ban.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/ban.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/ban.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/ban.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/ban.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/utils/init.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/utils/init.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/utils/init.lua"
     }
   ]
 }
 -->
-</div></details><details class="entry" id="next-ban-details" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">누적 밴의 수집과 초기화</span><a class="permalink" href="#next-ban-details" aria-label="누적 밴의 수집과 초기화 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>퀄리티 3·4 아이템을 얻으면 다음 새 게임의 밴 후보로 기록합니다. 한 런에서 같은 종류를 여러 번 획득해도 후보에는 한 번만 기록하며, 이전 밴을 유지한 채 새 후보를 최대 5개 추가합니다.</p><ul class="rule-list"><li>게임 시작 첫 프레임의 초기 소지품은 후보 수집에서 제외합니다. 이후 얻는 시작방 보상은 기록될 수 있습니다.</li><li>이미 밴된 항목, 아빠의 쪽지와 퀘스트 태그가 붙은 아이템은 추가 추첨에서 제외합니다. 제외 후 후보가 5개보다 적으면 남은 후보만 추가합니다.</li><li>이어하기는 새 추첨을 하지 않고 현재 밴을 유지합니다.</li><li>밴 해제 거지는 해제가 예약되지 않았다면 현재 밴 목록이 비어 있어도 시작방에 등장합니다. 허쉬 구간의 시작방에는 등장하지 않습니다. 거지에게 접촉해 확인 문구를 읽고, 떨어졌다가 다시 접촉하면 초기화를 예약합니다.</li><li>밴 해제 예약이나 모드 아이템 삼사라를 획득한 상태에서 다음 새 게임을 시작하면 누적 밴을 비우고 그 게임의 추가 추첨을 건너뜁니다. 공통 금지와 캐릭터별 금지는 그대로 적용합니다.</li></ul><div class="entry-links"><a class="related-link" href="./index.html#next-ban">입문 Q&amp;A · 다음 판의 밴 <span aria-hidden="true">↗</span></a></div>
+</div></details><details class="entry" id="next-ban-details" data-keywords=""><summary><span class="entry-title-row"><span class="entry-title">누적 밴의 수집과 초기화</span><a class="permalink" href="#next-ban-details" aria-label="누적 밴의 수집과 초기화 고유 링크" title="이 설명의 고유 링크"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg></a></span></summary><div class="entry-body"><p>퀄리티 3·4 아이템을 얻으면 다음 새 게임의 밴 후보로 기록합니다. 한 런에서 같은 종류를 여러 번 획득해도 후보에는 한 번만 기록하며, 이전 밴을 유지한 채 새 후보를 최대 7개 추가합니다.</p><ul class="rule-list"><li>게임 시작 첫 프레임의 초기 소지품은 후보 수집에서 제외합니다. 이후 얻는 시작방 보상은 기록될 수 있습니다.</li><li>이미 밴된 항목, 아빠의 쪽지와 퀘스트 태그가 붙은 아이템은 추가 추첨에서 제외합니다. 제외 후 후보가 7개보다 적으면 남은 후보만 추가합니다.</li><li>이어하기는 새 추첨을 하지 않고 현재 밴을 유지합니다.</li><li>밴 해제 거지는 해제가 예약되지 않았다면 현재 밴 목록이 비어 있어도 시작방에 등장합니다. 허쉬 구간의 시작방에는 등장하지 않습니다. 거지에게 접촉해 확인 문구를 읽고, 떨어졌다가 다시 접촉하면 초기화를 예약합니다.</li><li>밴 해제 예약이나 모드 아이템 삼사라를 획득한 상태에서 다음 새 게임을 시작하면 누적 밴을 비우고 그 게임의 추가 추첨을 건너뜁니다. 공통 금지와 캐릭터별 금지는 그대로 적용합니다.</li></ul><div class="entry-links"><a class="related-link" href="./index.html#next-ban">입문 Q&amp;A · 다음 판의 밴 <span aria-hidden="true">↗</span></a></div>
 <!-- Agent reference material
 {
   "entry": "next-ban-details",
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/next-ban.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/next-ban.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/next-ban.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/entities/ban-beggar.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/entities/ban-beggar.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/entities/ban-beggar.lua"
     }
   ]
 }
@@ -99,15 +99,15 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/init.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/1stage-quality.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/1stage-quality.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/1stage-quality.lua"
     }
   ]
 }
@@ -119,15 +119,15 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/init.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/room.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/room.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/room.lua"
     }
   ]
 }
@@ -139,33 +139,33 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/entities/restock-machine.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/entities/restock-machine.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/entities/restock-machine.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/init.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/entities/glitched-machine.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/entities/glitched-machine.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/entities/glitched-machine.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/entities/semi-glitched-machine.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/entities/semi-glitched-machine.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/entities/semi-glitched-machine.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/entities/astro-crane-game.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/entities/astro-crane-game.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/entities/astro-crane-game.lua"
     }
   ]
 }
@@ -177,15 +177,15 @@
   "sources": [
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/entities/planetarium-beggar.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/entities/planetarium-beggar.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/entities/planetarium-beggar.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/entities/lava-beggar.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/entities/lava-beggar.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/entities/lava-beggar.lua"
     }
   ]
 }
@@ -197,9 +197,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/chest-room.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/chest-room.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/chest-room.lua"
     }
   ]
 }
@@ -211,15 +211,15 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/init.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/entities/statue.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/entities/statue.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/entities/statue.lua"
     }
   ]
 }
@@ -231,21 +231,21 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/entities/shortcut-portal.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/entities/shortcut-portal.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/entities/shortcut-portal.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/void-portal.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/void-portal.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/void-portal.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/collectibles/vanillas/card-reading.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/collectibles/vanillas/card-reading.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/collectibles/vanillas/card-reading.lua"
     }
   ]
 }
@@ -257,21 +257,21 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/init.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/death-certificate-room.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/death-certificate-room.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/death-certificate-room.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/room.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/room.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/room.lua"
     }
   ]
 }
@@ -283,9 +283,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/stage.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/stage.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/stage.lua"
     }
   ]
 }
@@ -297,9 +297,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/init.lua"
     }
   ]
 }
@@ -311,9 +311,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/stage.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/stage.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/stage.lua"
     }
   ]
 }
@@ -325,9 +325,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/stage.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/stage.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/stage.lua"
     }
   ],
   "references": [
@@ -345,15 +345,15 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/room-boss.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/room-boss.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/room-boss.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/entities2.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/entities2.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/entities2.xml"
     }
   ]
 }
@@ -365,21 +365,21 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/penalty.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/penalty.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/penalty.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/collectibles/penalty.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/collectibles/penalty.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/collectibles/penalty.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/callbacks.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/callbacks.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/callbacks.lua"
     }
   ]
 }
@@ -391,15 +391,15 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/penalty.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/penalty.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/penalty.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/init.lua"
     }
   ]
 }
@@ -411,9 +411,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/entities/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/entities/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/entities/init.lua"
     }
   ]
 }
@@ -425,9 +425,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/entities/dark-esau.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/entities/dark-esau.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/entities/dark-esau.lua"
     }
   ]
 }
@@ -439,15 +439,15 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/rooms/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/rooms/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/rooms/init.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/room.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/room.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/room.lua"
     }
   ]
 }
@@ -459,9 +459,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/penalty.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/penalty.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/penalty.lua"
     }
   ],
   "agentNotes": [
@@ -476,9 +476,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/ban.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/ban.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/ban.lua"
     }
   ]
 }
@@ -490,9 +490,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/cards/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/cards/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/cards/init.lua"
     }
   ]
 }
@@ -504,21 +504,21 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/players.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/players.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/players.xml"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/player.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/player.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/player.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "content/players.xml",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/content/players.xml"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/content/players.xml"
     }
   ]
 }
@@ -530,9 +530,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/collectibles/transformation.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/collectibles/transformation.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/collectibles/transformation.lua"
     }
   ]
 }
@@ -544,15 +544,15 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-greedier/award.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-greedier/award.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-greedier/award.lua"
     },
     {
       "repository": "Astro-Items",
-      "commit": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177",
+      "commit": "211acf8fb7cb90129f0ad947c36e98401879bb0f",
       "path": "astro/callbacks.lua",
-      "url": "https://github.com/TeamHY/Astro-Items/blob/945906cc8d6e9ce177d7eb083fe7a2ba3941f177/astro/callbacks.lua"
+      "url": "https://github.com/TeamHY/Astro-Items/blob/211acf8fb7cb90129f0ad947c36e98401879bb0f/astro/callbacks.lua"
     }
   ]
 }
@@ -564,21 +564,21 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/items.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/items.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/items.xml"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/items_metadata.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/items_metadata.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/items_metadata.xml"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/itempools.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/itempools.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/itempools.xml"
     }
   ],
   "references": [
@@ -600,15 +600,15 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/itempools.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/itempools.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/itempools.xml"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/items.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/items.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/items.xml"
     }
   ]
 }
@@ -620,9 +620,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/pocketitems.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/pocketitems.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/pocketitems.xml"
     }
   ]
 }
@@ -634,15 +634,15 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/translate.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/translate.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/translate.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/cards/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/cards/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/cards/init.lua"
     }
   ]
 }
@@ -654,9 +654,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/init.lua"
     }
   ]
 }
@@ -668,21 +668,21 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/giantbook.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/giantbook.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/giantbook.xml"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/cutscenes.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/cutscenes.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/cutscenes.xml"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "content/entities2.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/content/entities2.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/content/entities2.xml"
     }
   ]
 }
@@ -694,9 +694,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/trinkets/auto-smelter.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/trinkets/auto-smelter.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/trinkets/auto-smelter.lua"
     }
   ]
 }
@@ -708,15 +708,15 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/entities2.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/entities2.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/entities2.xml"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/collectibles/init.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/collectibles/init.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/collectibles/init.lua"
     }
   ]
 }
@@ -728,9 +728,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/entities2.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/entities2.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/entities2.xml"
     }
   ]
 }
@@ -742,9 +742,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/entities2.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/entities2.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/entities2.xml"
     }
   ]
 }
@@ -756,9 +756,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/entities2.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/entities2.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/entities2.xml"
     }
   ]
 }
@@ -770,9 +770,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/entities2.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/entities2.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/entities2.xml"
     }
   ]
 }
@@ -784,9 +784,9 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/entities2.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/entities2.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/entities2.xml"
     }
   ]
 }
@@ -798,27 +798,27 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "content/entities2.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/content/entities2.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/content/entities2.xml"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/entities/ban-beggar.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/entities/ban-beggar.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/entities/ban-beggar.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/entities/restock-machine.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/entities/restock-machine.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/entities/restock-machine.lua"
     },
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "astro-fight/entities/shortcut-portal.lua",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/astro-fight/entities/shortcut-portal.lua"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/astro-fight/entities/shortcut-portal.lua"
     }
   ]
 }
@@ -830,29 +830,29 @@
   "sources": [
     {
       "repository": "Astrobirth",
-      "commit": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
+      "commit": "b917194b24401214dc67510748335c3eab88cd32",
       "path": "resources/entities2.xml",
-      "url": "https://github.com/TeamHY/Astrobirth/blob/e87e66b070577dc7ed8f8126f74fb7cd4371d3dd/resources/entities2.xml"
+      "url": "https://github.com/TeamHY/Astrobirth/blob/b917194b24401214dc67510748335c3eab88cd32/resources/entities2.xml"
     }
   ]
 }
 -->
 </div></details></section></section>
-<aside class="catalog-end"><p>설명 기준 Astrobirth v1.394 · 확인 2026-11-09</p><a href="./index.html">입문 Q&amp;A로 돌아가기 ↗</a></aside>
+<aside class="catalog-end"><p>설명 기준 Astrobirth v1.398 · 확인 2026-11-16</p><a href="./index.html">입문 Q&amp;A로 돌아가기 ↗</a></aside>
   </main>
   <!-- Guide maintenance baseline
 {
-  "reviewed": "2026-11-09",
-  "version": "1.394",
+  "reviewed": "2026-11-16",
+  "version": "1.398",
   "sources": {
-    "Astrobirth": "e87e66b070577dc7ed8f8126f74fb7cd4371d3dd",
-    "Astro-Items": "945906cc8d6e9ce177d7eb083fe7a2ba3941f177"
+    "Astrobirth": "b917194b24401214dc67510748335c3eab88cd32",
+    "Astro-Items": "211acf8fb7cb90129f0ad947c36e98401879bb0f"
   }
 }
   -->
-  <footer><span>Astrobirth · 시청자 가이드</span><span>설명 확인 2026-11-09 · <a href="https://github.com/TeamHY/Astrobirth/issues" target="_blank" rel="noopener noreferrer">내용 오류 제보</a></span></footer>
+  <footer><span>Astrobirth · 시청자 가이드</span><span>설명 확인 2026-11-16 · <a href="https://github.com/TeamHY/Astrobirth/issues" target="_blank" rel="noopener noreferrer">내용 오류 제보</a></span></footer>
 </div>
-<dialog class="global-search-dialog" id="global-search-dialog" aria-labelledby="global-search-title" data-index="./search-index.json?v=4f5c1818d4bb">
+<dialog class="global-search-dialog" id="global-search-dialog" aria-labelledby="global-search-title" data-index="./search-index.json?v=421b20e0e4b2">
   <div class="search-dialog-heading"><h2 id="global-search-title">통합 검색</h2><button type="button" id="close-global-search" aria-label="검색 닫기">×</button></div>
   <form id="global-search-form" role="search">
     <div class="searchbox"><label for="global-search-input" class="sr-only">전체 가이드 검색</label><span class="search-icon" aria-hidden="true"></span><input type="search" id="global-search-input" placeholder="에이플, 아이템, 캐릭터…" autocomplete="off" spellcheck="false" autofocus><button class="global-search-clear" id="clear-global-search" type="button" aria-label="검색어 지우기" hidden>×</button></div>
