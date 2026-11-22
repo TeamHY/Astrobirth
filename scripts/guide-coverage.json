@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "reviewed": "2026-11-16",
+  "reviewed": "2026-11-23",
   "sources": {
     "Astrobirth": "b917194b24401214dc67510748335c3eab88cd32",
-    "Astro-Items": "211acf8fb7cb90129f0ad947c36e98401879bb0f"
+    "Astro-Items": "6c848aa371c9f9ca2faa8bac8988397e932b1dbf"
   },
   "reviewMethod": "Reachable released Lua reviewed by functional groups; XML semantic differences; EID name comparison.",
   "limits": [
@@ -3239,7 +3239,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/curse-of-aramatir.lua",
-      "sha256": "19791e7b2b9de969b21f9c08f89e3dd4afd31b7b3d7ea5326baf3146341cb5dd",
+      "sha256": "f48b703a2bfa8198d9e2893cb7a045cb85a799259896ce5fde519d8220f60408",
       "refs": [
         "items.html#astro-curse-of-aramatir",
         "players.html#water-enchantress",
@@ -3417,7 +3417,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/extra-guppy-sets.lua",
-      "sha256": "0c689abdf37bc76c6b6c006c2da8fddde601d38ef1aa7b60cd4a1ebb3bcc79fd",
+      "sha256": "88f2bdbd8351de31ce8b89dcb88e98690086bdeda845d92496741033372e323f",
       "refs": [
         "items.html#astro-absolut-guppy",
         "items.html#astro-delirium-guppy"
@@ -4333,7 +4333,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/scorpio-ex.lua",
-      "sha256": "26f54317248abb0db6dc4c08553acd9783f56b476a003c31cdc290c80efd8300",
+      "sha256": "74b1d39a1ab4433f40358256492929da7ce0c2d821edc592c9e47a7b521ad188",
       "refs": [
         "items.html#astro-scorpio-ex"
       ],
@@ -4353,7 +4353,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/planetarium/solar-system.lua",
-      "sha256": "ed44a33485f1f64a9246fb6fe77e02f11f66ad70606393050b0add916dc332f9",
+      "sha256": "b3307cc0911d58bd8ae672cb36fb59fe64c1da321959b6f3812444ce13421a03",
       "refs": [
         "items.html#astro-solar-system"
       ],
@@ -4666,7 +4666,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/schrodingers-cat.lua",
-      "sha256": "53710345bc34172f60754e4a454700bca8874f2ff461a69cad6ee91b87f6c34f",
+      "sha256": "0d4ce58bbcddca025b6edc02a991343103b451ff144c93fe735f472bbcc56504",
       "refs": [
         "items.html#astro-guppy-part",
         "items.html#astro-schrodinger-s-cat"
@@ -4742,7 +4742,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/collectibles/customs/snowgrave.lua",
-      "sha256": "9ff9dc20427f6b20898d33f90040afe36d7b70fcd7010f8ab22024720e921edc",
+      "sha256": "81f86d61c29a7ac9b9681122748f4b8038f6a78defc253f700073ce40a84b4b2",
       "refs": [
         "items.html#snowgrave"
       ],
@@ -5103,7 +5103,7 @@
     {
       "project": "Astro-Items",
       "file": "astro/eid.lua",
-      "sha256": "ec92b934855f14622010fadea5948d5d5e339226109c58cb43b7cc64af3c28fc",
+      "sha256": "c8c26aff320e313a9a20f3269e1c7376319fac21daed5f18a7e528beb108f2da",
       "refs": [
         "index.html#upgrade-combinations"
       ],
