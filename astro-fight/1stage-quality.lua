@@ -1,6 +1,7 @@
 ---@type table<CollectibleType, boolean>
 local REROLL_ITEMS = {
     [CollectibleType.COLLECTIBLE_1UP] = true,
+    [CollectibleType.COLLECTIBLE_DOLLAR] = true,
 }
 
 Astro:AddCallback(
