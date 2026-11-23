@@ -986,6 +986,7 @@
 		<Item Id="305" Weight="0.25" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="309" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="322" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="328" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="339" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<Item Id="340" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
