@@ -42388,6 +42388,9 @@
 		<spawn x="5" y="3">
 			<entity type="5" variant="20" subtype="0" weight="1.0"/>
 		</spawn>
+		<spawn x="6" y="3">
+			<entity type="5" variant="70" subtype="3" weight="1.0"/>
+		</spawn>
 		<spawn x="7" y="3">
 			<entity type="5" variant="20" subtype="0" weight="1.0"/>
 			<entity type="5" variant="20" subtype="1" weight="1.0"/>
@@ -42397,9 +42400,6 @@
 			<entity type="5" variant="20" subtype="0" weight="1.0"/>
 		</spawn>
 		<spawn x="6" y="4">
-			<entity type="5" variant="70" subtype="3" weight="1.0"/>
-		</spawn>
-		<spawn x="6" y="5">
 			<entity type="6" variant="1" subtype="0" weight="1.0"/>
 		</spawn>
 	</room>
