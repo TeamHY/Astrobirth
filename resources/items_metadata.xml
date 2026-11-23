@@ -420,7 +420,7 @@
     <item id="422" quality="3" craftquality="-1" tags="noeden offensive nocantrip"/>
     <item id="423" quality="2" tags="summonable"/>
     <item id="424" quality="2" tags="summonable offensive"/>
-    <item id="425" quality="3" tags="summonable"/>
+    <item id="425" quality="2" tags="summonable"/>
     <item id="426" quality="0" tags="summonable offensive fly"/>
     <item id="427" quality="1" tags="offensive"/>
     <item id="428" quality="2" tags="nolostbr"/>
