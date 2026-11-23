@@ -390,7 +390,7 @@
 	<active description="#TEAR_DETONATOR_DESCRIPTION" gfx="Collectibles_383_TearDetonator.png" id="383" name="#TEAR_DETONATOR_NAME" shopprice="10" maxcharges="450" chargetype="timed" />
 	<familiar description="#LIL_GURDY_DESCRIPTION" gfx="Collectibles_384_LilGurdy.png" id="384" name="#LIL_GURDY_NAME" />
 	<familiar description="#BUMBO_DESCRIPTION" gfx="Collectibles_385_Bumbo.png" id="385" name="#BUMBO_NAME" />
-	<active achievement="181" description="#D12_DESCRIPTION" gfx="Collectibles_386_D12.png" id="386" name="#D12_NAME" maxcharges="3" />
+	<active achievement="181" description="#D12_DESCRIPTION" gfx="Collectibles_386_D12.png" id="386" name="#D12_NAME" maxcharges="1" />
 	<familiar achievement="193" description="#CENSER_DESCRIPTION" devilprice="2" gfx="Collectibles_387_Censer.png" id="387" name="#CENSER_NAME" />
 	<familiar achievement="200" description="#KEY_BUM_DESCRIPTION" gfx="Collectibles_388_KeyBum.png" id="388" name="#KEY_BUM_NAME" />
 	<familiar achievement="218" description="#RUNE_BAG_DESCRIPTION" gfx="Collectibles_389_RuneBag.png" id="389" name="#RUNE_BAG_NAME" />
