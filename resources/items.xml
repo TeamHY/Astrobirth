@@ -544,7 +544,7 @@
 	
 	<!-- Booster Pack #3 -->
 	<familiar achievement="372" description="#7_SEALS_DESCRIPTION" gfx="Collectibles_526_7Seals.png" name="#7_SEALS_NAME" devilprice="1" id="526"/>
-	<active achievement="371" description="#MR_ME_DESCRIPTION" gfx="Collectibles_527_Mr_Me.png" maxcharges="4" name="#MR_ME_NAME" id="527" />
+	<active achievement="371" description="#MR_ME_DESCRIPTION" gfx="Collectibles_527_Mr_Me.png" maxcharges="3" name="#MR_ME_NAME" id="527" />
 	<familiar achievement="373" description="#ANGELIC_PRISM_DESCRIPTION" gfx="collectibles_528_angelic prism.png" name="#ANGELIC_PRISM_NAME" id="528" />
 	<passive achievement="374" cache="tearflag" description="#POP_DESCRIPTION" gfx="Collectibles_529_Pop.png" name="#POP_NAME" id="529" />
 	
