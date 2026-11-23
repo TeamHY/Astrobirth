@@ -37,7 +37,7 @@
 	<active description="#THE_POOP_DESCRIPTION" gfx="Collectibles_036_ThePoop.png" id="36" maxcharges="1" name="#THE_POOP_NAME" />
 	<active description="#MR_BOOM_DESCRIPTION" gfx="Collectibles_037_MrBoom.png" id="37" maxcharges="1" name="#MR_BOOM_NAME" />
 	<active description="#TAMMYS_HEAD_DESCRIPTION" gfx="Collectibles_038_TammysHead.png" id="38" maxcharges="1" name="#TAMMYS_HEAD_NAME" />
-	<active cooldown="220" description="#MOMS_BRA_DESCRIPTION" gfx="Collectibles_039_MomsBra.png" id="39" maxcharges="3" name="#MOMS_BRA_NAME" />
+	<active cooldown="220" description="#MOMS_BRA_DESCRIPTION" gfx="Collectibles_039_MomsBra.png" id="39" maxcharges="1" name="#MOMS_BRA_NAME" />
 	<active cooldown="30" description="#KAMIKAZE_DESCRIPTION" gfx="Collectibles_040_Kamikaze.png" id="40" shopprice="5" maxcharges="0" name="#KAMIKAZE_NAME" addcostumeonpickup="true" />
 	<active cooldown="450" description="#MOMS_PAD_DESCRIPTION" gfx="Collectibles_041_MomsPad.png" id="41" maxcharges="1" name="#MOMS_PAD_NAME" />
 	<active description="#BOBS_ROTTEN_HEAD_DESCRIPTION" gfx="Collectibles_042_BobsRottenHead.png" id="42" shopprice="3" maxcharges="1" name="#BOBS_ROTTEN_HEAD_NAME" />
