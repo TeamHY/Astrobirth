@@ -1,19 +1,19 @@
 ---@type table<CollectibleType, integer>
 local STAGE_LIMIT = {
-    [CollectibleType.COLLECTIBLE_TELEPORT] = 2,
+    [CollectibleType.COLLECTIBLE_TELEPORT] = 10,
 }
 
 ---@type table<CollectibleType, integer>
 local GAME_LIMIT = {
-    [CollectibleType.COLLECTIBLE_TELEPORT_2] = 2,
+    [CollectibleType.COLLECTIBLE_TELEPORT_2] = 10,
 }
 
 ---@type table<CollectibleType, boolean>
 local ONE_TIME_USE = {
-    [CollectibleType.COLLECTIBLE_CRYSTAL_BALL] = true,
+    [CollectibleType.COLLECTIBLE_EDENS_SOUL] = true,
 }
 
-local TEXT_DURATION = 90
+local TEXT_DURATION = 145
 
 local font = Font()
 font:Load(Astro.Fight.modPath .. "resources/font/eid_korean_soyanon.fnt")
