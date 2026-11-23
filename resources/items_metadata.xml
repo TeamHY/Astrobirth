@@ -153,7 +153,7 @@
     <item id="154" quality="2" tags="summonable offensive"/>
     <item id="155" quality="2" tags="summonable monstermanual offensive"/>
     <item id="156" quality="2" tags="nolostbr summonable nocantrip"/>
-    <item id="157" quality="3" tags="nolostbr summonable"/>
+    <item id="157" quality="2" tags="summonable"/>
     <item id="158" quality="4" tags="offensive stars lazarussharedglobal"/>
     <item id="159" quality="2" tags="devil nolostbr summonable"/>
     <item id="160" quality="2" tags="offensive"/>
@@ -683,7 +683,7 @@
     <item id="692" quality="1" tags="nolostbr summonable"/>
     <item id="693" quality="3" tags="summonable fly"/>
     <item id="694" quality="2" tags="summonable"/>
-    <item id="695" quality="3" tags="nolostbr summonable"/>
+    <item id="695" quality="2" tags="summonable"/>
     <item id="696" quality="1" tags="summonable offensive angel"/>
     <item id="697" quality="4" tags="uniquefamiliar offensive lazarusshared nogreed"/>
     <item id="698" quality="4" tags="summonable monstermanual offensive"/>
