@@ -171,7 +171,8 @@ local currentStage = 0
 local currentBossID = 0
 local blockedActions = {
     [ButtonAction.ACTION_MENUBACK] = true,
-    [ButtonAction.ACTION_PAUSE] = true
+    [ButtonAction.ACTION_PAUSE] = true,
+    [33] = true
 }
 
 Astro:AddCallback(
